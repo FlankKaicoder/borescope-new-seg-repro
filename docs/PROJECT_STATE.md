@@ -13,7 +13,7 @@
 | Current Gate | Data Gate STOP; Environment Gate PASS |
 | Next allowed experiment | Human decisions and reviewed annotation remediation only; Exp01 remains disallowed |
 | Formal training allowed | NO |
-| Git HEAD | Exp00.4/00.5 implementation baseline `584474c`; use `git rev-parse HEAD` for the final documentation commit |
+| Git HEAD | Server execution baseline `3d7a1c56930c0a6e93d8042cc883adafc80f1673`; use `git rev-parse HEAD` for the final documentation commit |
 | Last updated time | 2026-08-12T19:09:55+08:00 |
 
 ## Next allowed work

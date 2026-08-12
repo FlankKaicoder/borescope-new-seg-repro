@@ -6,3 +6,6 @@
 | Exp00.1 | JSON/schema/pair audit | PASS / DATA_GATE_STOP | `docs/exp00_1_schema_pair_audit.md` |
 | Exp00.2 | Class/polygon/statistics audit | PASS / CONSISTENCY_GATE_STOP | `docs/exp00_2_class_polygon_audit.md` |
 | Exp00.3 | Duplicate/near-duplicate audit | PASS / LEAKAGE_GATE_STOP | `docs/exp00_3_duplicate_audit.md` |
+| Exp00.4 | Unpaired-image review package | PASS / HUMAN_DECISION_PENDING | `docs/exp00_4_unpaired_image_review.md` |
+| Exp00.5 | Near-duplicate conflict review package | PASS / HUMAN_DECISION_PENDING | `docs/exp00_5_near_duplicate_conflict_review.md` |
+| Env00.1 | Isolated training environment preparation | PASS / NO_TRAINING_STARTED | `training_environment_report.md` |
