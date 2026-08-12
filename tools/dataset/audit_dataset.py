@@ -556,11 +556,28 @@ def main() -> int:
     for group_index, group in enumerate(near_groups, 1):
         for path in group:
             near_group_for_path[path] = f"near_{group_index:04d}"
-    near_rows: list[dict[str, Any]] = []
+    near_pair_output_rows: list[dict[str, Any]] = []
     for row in near_pair_rows:
-        row["group_id"] = near_group_for_path[row["image_a"]]
-        row["group_size"] = len(next(group for group in near_groups if row["image_a"] in group))
-        near_rows.append(row)
+        near_pair_output_rows.append({
+            "group_id": near_group_for_path[row["image_a"]],
+            **row,
+        })
+    fingerprint_index = {safe_relative(path, root): index for index, path in enumerate(fingerprint_paths)}
+    near_member_rows: list[dict[str, Any]] = []
+    for group_index, group in enumerate(near_groups, 1):
+        group_id = f"near_{group_index:04d}"
+        for relative in group:
+            index = fingerprint_index[relative]
+            path = fingerprint_paths[index]
+            near_member_rows.append({
+                "group_id": group_id,
+                "group_size": len(group),
+                "image_path": relative,
+                "stem": path.stem,
+                "sha256": sha_by_path[path],
+                "phash_hex": f"{phashes[index]:016x}",
+                "dhash_hex": f"{dhashes[index]:016x}",
+            })
 
     numeric_runs = numeric_stem_runs(images)
     numeric_stems = sum(bool(re.fullmatch(r"\d+", path.stem)) for path in images)
@@ -630,7 +647,8 @@ def main() -> int:
     write_csv(output / "json_parse_failed.csv", ["json_path", "error"], json_parse_failed)
     write_csv(output / "missing_pairs.csv", ["type", "path"], ([{"type": "image_without_json", "path": safe_relative(path, root)} for path in image_without_json] + [{"type": "json_without_image", "path": safe_relative(path, root)} for path in json_without_image]))
     write_csv(output / "duplicate_groups.csv", ["group_id", "group_size", "sha256", "image_path", "stem"], exact_rows)
-    write_csv(output / "near_duplicate_groups.csv", ["group_id", "group_size", "image_a", "image_b", "phash_distance", "dhash_distance", "gray_correlation"], near_rows)
+    write_csv(output / "near_duplicate_groups.csv", ["group_id", "group_size", "image_path", "stem", "sha256", "phash_hex", "dhash_hex"], near_member_rows)
+    write_csv(output / "near_duplicate_pairs.csv", ["group_id", "image_a", "image_b", "phash_distance", "dhash_distance", "gray_correlation"], near_pair_output_rows)
     write_csv(output / "image_hashes.csv", ["image_path", "sha256", "phash_hex", "dhash_hex"], ({"image_path": safe_relative(path, root), "sha256": sha_by_path[path], "phash_hex": f"{phashes[index]:016x}", "dhash_hex": f"{dhashes[index]:016x}"} for index, path in enumerate(fingerprint_paths)))
     json_dump(output / "dataset_summary.json", summary)
 
@@ -733,4 +751,3 @@ Exp01 将冻结类别映射，转换合法 polygon，排除项逐条留痕，创
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

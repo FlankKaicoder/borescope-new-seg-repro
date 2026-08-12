@@ -25,7 +25,11 @@ if [[ "$return_code" -ne 0 ]]; then
   printf 'Exp00 audit failed; see run.log\n' > "$RUN_DIR/abnormal.txt"
   exit "$return_code"
 fi
+"$PYTHON_BIN" "$PROJECT_ROOT/tools/visualization/render_near_duplicate_groups.py" \
+  --data-root "$DATA_ROOT" \
+  --groups-csv "$RUN_DIR/artifacts/near_duplicate_groups.csv" \
+  --output-dir "$RUN_DIR/artifacts/near_duplicate_contact_sheets" \
+  2>&1 | tee -a "$RUN_DIR/run.log"
 printf 'No runtime abnormality. Data issues are recorded in artifacts/polygon_issues.csv and docs/01_dataset_audit.md.\n' > "$RUN_DIR/abnormal.txt"
 ln -sfn "$(basename "$RUN_DIR")" "$PROJECT_ROOT/results/dataset_audit/latest"
 printf '%s\n' "$RUN_DIR"
-
