@@ -14,8 +14,9 @@
 - [x] Exp01.1 group-aware multilabel-stratified split：668/154/147，88 near groups 零泄漏
 - [x] Exp01.2 Dataset v1 冻结、50 张七类反读 overlay、三 split Ultralytics load smoke（Dataset Freeze Gate PASS）
 - [x] 用户审阅 Exp01 handoff 并明确授权进入 Exp02
-- [ ] Exp02.0 YOLO11n-seg smoke / batch probe（当前 active）
-- [ ] Exp02.1 YOLO11n-seg 640 baseline（仅 Exp02.0 PASS 后）
-- [ ] Exp02.2 baseline size + error audit（仅 train/val）
+- [x] Exp02.0 YOLO11n-seg smoke / batch probe（PASS；frozen batch=32）
+- [x] Exp02.1 YOLO11n-seg 640 baseline（100 epochs 完成；early val-loss NaN 导致 Baseline Gate STOP）
+- [x] Exp02.2 baseline size + error audit（PASS；仅 train/val，test untouched）
 - [ ] Exp02.3 960/1280 resolution ablation（本轮明确禁止）
 - [ ] Exp03+ 后续方法（本轮明确禁止）
+- [ ] 用户审查 Exp02 Baseline Gate STOP；审查前不允许 Exp02.3 或其他训练

@@ -13,3 +13,5 @@
 | Exp01.1 | Group-aware stratified split | PASS / 0 LEAKAGE | `docs/exp01_1_group_aware_split.md` |
 | Exp01.2 | Dataset v1 freeze and verification | PASS / DATASET_FREEZE_GATE_PASS | `docs/exp01_2_dataset_freeze.md` |
 | Exp02.0 | YOLO11n-seg batch probe and one-epoch smoke | PASS / SMOKE_GATE_PASS | `docs/exp02_0_smoke_batch_probe.md` |
+| Exp02.1 | YOLO11n-seg 640 / 100-epoch baseline | COMPLETE / BASELINE_GATE_STOP | `docs/exp02_1_yolo11n_seg_640_baseline.md` |
+| Exp02.2 | Baseline size and error audit | PASS / VAL_ONLY | `docs/exp02_2_baseline_size_error_audit.md` |

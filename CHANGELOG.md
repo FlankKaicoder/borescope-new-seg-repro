@@ -10,6 +10,10 @@
 - Dataset Freeze Gate PASS；本轮按边界停止，未启动 Exp02 或任何模型训练。
 - Exp01 冻结事实校准：969 张权威监督图片、1847 polygon、7 类、24 张 `excluded_unpaired`，group-aware split 的 near-duplicate cross-split leakage 为 0。
 - 用户已明确授权进入 Exp02；当前范围仅限 Exp02.0 smoke/batch probe、Exp02.1 640 baseline 和 Exp02.2 train-only size thresholds + val error audit。test 与 Exp02.3 禁止使用。
+- Exp02.0 PASS：8/16/24/32 满批探测稳定，冻结 batch=32；1 epoch 全量 train/val/checkpoint/reload smoke PASS。
+- Exp02.1 完成 100 epochs；best epoch 99；独立 VAL mask mAP50-95=0.29898；best/last 均可加载并保存 SHA256。
+- Exp02.2 PASS：train-only relative-mask-area quartiles、val size/class×size、固定点错误和 near-duplicate cross-label 审计完成；test untouched。
+- 训练曲线审计发现 epoch 1--5 的四项 val loss 为 NaN；按明确 no NaN/Inf 硬条件，Exp02 Baseline Gate STOP，等待用户审查；未执行 Exp02.3。
 
 - 初始化 Exp00 工程结构、实验 registry 与基础文档。
 - 增加只读环境和数据审计脚本。
