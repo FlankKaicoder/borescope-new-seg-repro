@@ -1,6 +1,6 @@
-# Proposed split policy（候选，不是最终 split）
+# Exp01 split policy
 
-当前不生成 `train/val/test`，不生成 `split_manifest.csv`。本文只定义 Data Gate 通过后 Exp01.1 应遵守的候选策略。
+Data Gate 已按用户权威政策通过。本策略用于 Exp01.1 的正式冻结 split。
 
 ## Group policy
 
@@ -9,8 +9,8 @@
 | SHA256 exact duplicate | 必须同组；若保留多份，整体进入同一 split |
 | 高置信 near duplicate | 必须使用 Exp00.3 连通分量作为同一 `group_id` |
 | 连续采集/视觉高度相似 | 优先同组；若取得视频/工件/发动机/采集批次 ID，以真实来源组为上位约束 |
-| 标签冲突且未确认 | Data Gate STOP，不进入最终 split |
-| 无 JSON 且语义未确认 | Data Gate STOP，不进入最终 split |
+| 22 个跨类近重复组 | 原专业标签保持不变，整个连通组进入同一 split |
+| 24 张无 JSON 图 | `excluded_unpaired`，不进入 train/val/test |
 
 ## Future split objective
 
@@ -30,8 +30,7 @@
 1. 真实来源组（若获得）；
 2. exact duplicate group；
 3. high-confidence near-duplicate connected component；
-4. 文件序列/视觉相似的保守扩展组；
+4. 文件序列只作 provenance 线索；当前没有可靠采集边界，不凭连续数字 stem 编造来源组；
 5. 单图组。
 
 组约束合并时取传递闭包，禁止把同一连通组拆到不同 split。正式 split 仍需用户确认后另行执行。
-

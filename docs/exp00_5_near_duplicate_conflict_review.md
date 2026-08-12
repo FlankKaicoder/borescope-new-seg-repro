@@ -1,6 +1,6 @@
 # Exp00.5 跨类别近重复冲突组审查
 
-状态：**PASS（材料生成完成） / 22 GROUP DECISIONS PENDING / Data Gate STOP**
+状态：**PASS / RESOLVED_BY_POLICY**。下文保留当时的审查证据；用户后续权威决定为专业 JSON 全部作为 GT，22 个组不改标签、不多数表决，连通组整体用于 leakage-safe split。
 
 ## 产物
 
@@ -43,4 +43,3 @@
 - 若无法确认，是否整组排除出 v1 并保留 review pool。
 
 禁止自动采取“多数表决改标签”或“删除少数标签图片”。在人工结论冻结前 Data Gate 保持 STOP。
-

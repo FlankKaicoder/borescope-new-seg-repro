@@ -2,7 +2,7 @@
 
 本工程用于新孔探多类别 polygon 数据集的可审计方法重建与研究性对比。
 
-Exp00.0–00.5 已完成基础审计与阻塞项审查材料生成。当前状态为 **Data Gate STOP / Environment Gate PASS / Exp01 NOT ALLOWED**：24 张无 JSON 图和 22 个近重复跨类冲突组仍等待人工语义决定。
+Exp00.0–00.5 已完成。用户已正式规定：专业 JSON 是权威 GT；24 张无 JSON 图统一 `excluded_unpaired`；22 个近重复跨类组保留原标签并作为不可拆 split group。当前状态为 **Data Gate PASS FOR EXP01 / Environment Gate PASS / Exp02 TRAINING NOT ALLOWED**。
 
 当前实测训练拓扑为单张约 22GB RTX 2080 Ti；初始“双 11GB GPU”规划已被 Exp00 实测覆盖。项目 `.venv` 已完成依赖与 CUDA/Ultralytics/OpenCV smoke，但这不代表允许训练。
 

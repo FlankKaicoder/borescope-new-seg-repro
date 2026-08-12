@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- 用户政策正式关闭 Exp00 数据 blocker：24 张无 JSON 图统一排除为 `excluded_unpaired`；专业 JSON 作为权威 GT，22 个近重复跨类组保留原标签并仅用于防泄漏分组与困难类别研究。
+- Data Gate 更新为 `PASS FOR EXP01`；仍禁止在 Dataset Freeze Gate 通过前训练，并且本轮不得启动 Exp02。
+
 - 初始化 Exp00 工程结构、实验 registry 与基础文档。
 - 增加只读环境和数据审计脚本。
 - 完成 Exp00.0--00.3：环境、schema/配对、类别/polygon/尺度、重复和泄漏审计。

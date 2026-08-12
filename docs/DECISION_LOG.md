@@ -9,4 +9,7 @@
 | 2026-08-12 | D005 | SimSiam 的历史定位是什么？ | 后续新增扩展，不冒充旧 537 张实验。 | Exp09 |
 | 2026-08-12 | D006 | GPU 规划采用哪种事实？ | 当前单张约 22GB RTX 2080 Ti 的实测拓扑覆盖初始“双 2080 Ti × 11GB”假设。 | Environment and all training |
 | 2026-08-12 | D007 | 当前能否进入 Exp01？ | 不能；Data Gate STOP。 | Exp00.4/00.5, Exp01 |
-
+| 2026-08-12 | D008 | 专业 JSON 是否需要继续人工复核或自动统一类别？ | 不需要。全部专业 JSON 作为权威 Ground Truth，原标签保持不变。 | Exp00.5, Exp01+ |
+| 2026-08-12 | D009 | 24 张无 JSON 图片如何处理？ | 统一记录为 `excluded_unpaired`，不删除、不补空 JSON、不当作 background、不进入任何 split。 | Exp00.4, Exp01 |
+| 2026-08-12 | D010 | 22 个 near-duplicate cross-label groups 如何处理？ | 保留全部原专业标签；连通组不可拆分，仅作为 split 防泄漏约束和后续混淆分析证据。 | Exp01+ |
+| 2026-08-12 | D011 | 本轮允许推进到哪里？ | Data Gate PASS FOR EXP01；只执行 Exp01.0--01.2 和 Dataset Freeze Gate，禁止启动 Exp02。 | Exp01 |

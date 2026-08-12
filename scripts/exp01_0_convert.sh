@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -uo pipefail
+PROJECT_ROOT="${PROJECT_ROOT:-/root/autodl-tmp/borescope-new-seg-repro}"
+DATA_ROOT="${DATA_ROOT:-/root/autodl-tmp/损伤训练数据集}"
+PYTHON_BIN="${PYTHON_BIN:-$PROJECT_ROOT/.venv/bin/python}"
+STAMP="$(date -u +%Y%m%dT%H%M%SZ)"
+OUT="$PROJECT_ROOT/results/dataset_build/exp01_0_conversion_$STAMP"
+AUDIT="$PROJECT_ROOT/results/dataset_audit/exp00_3_duplicate_20260812T101033Z/artifacts"
+RAW="$PROJECT_ROOT/results/dataset_audit/exp00_1_schema_pair_20260812T101033Z/artifacts/raw_file_manifest.csv"
+mkdir -p "$OUT"
+printf '%q ' "$PYTHON_BIN" "$PROJECT_ROOT/tools/dataset/build_dataset_v1.py" convert --data-root "$DATA_ROOT" --raw-manifest "$RAW" --near-groups "$AUDIT/near_duplicate_groups.csv" --output "$OUT/artifacts" > "$OUT/command.txt"; printf '\n' >> "$OUT/command.txt"
+"$PYTHON_BIN" "$PROJECT_ROOT/tools/dataset/build_dataset_v1.py" convert --data-root "$DATA_ROOT" --raw-manifest "$RAW" --near-groups "$AUDIT/near_duplicate_groups.csv" --output "$OUT/artifacts" 2>&1 | tee "$OUT/run.log"
+code="${PIPESTATUS[0]}"; printf 'return_code=%s\n' "$code" > "$OUT/summary.txt"
+[[ "$code" -eq 0 ]] && printf 'No runtime abnormalities. See artifacts/conversion_issues.csv.\n' > "$OUT/abnormal.txt" || printf 'Exp01.0 failed; see run.log.\n' > "$OUT/abnormal.txt"
+printf 'No model is produced by Exp01.0.\n' > "$OUT/model_sha256.txt"
+[[ "$code" -eq 0 ]] && ln -sfn "$(basename "$OUT")" "$PROJECT_ROOT/results/dataset_build/exp01_0_latest"
+exit "$code"

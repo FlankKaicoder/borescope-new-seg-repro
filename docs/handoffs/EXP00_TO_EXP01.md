@@ -1,7 +1,9 @@
 # EXP00 → EXP01 handoff
 
 Generated: 2026-08-12 Asia/Shanghai  
-Authoritative status: **Data Gate STOP / Environment Gate PASS / Exp01 allowed NO**
+Authoritative status: **Data Gate PASS FOR EXP01 / Environment Gate PASS / Exp01 allowed YES / Exp02 training NO**
+
+> Policy closure (2026-08-12): this section supersedes the former pending state below. Professional JSON annotations are authoritative GT. The 24 unpaired images are `excluded_unpaired`. All 22 cross-label near-duplicate groups retain their professional annotations unchanged and remain indivisible split groups.
 
 ## Dataset
 
@@ -77,12 +79,11 @@ The environment is ready for later smoke experiments, but **formal training rema
 - Exact/high-confidence near duplicates must remain in one future split group.
 - No final split exists; test discipline remains mandatory.
 
-### Pending human confirmation
+### Resolved by authoritative user policy
 
-- Final semantics of all 24 images without JSON.
-- Correct label/annotation action for each of 22 conflict groups.
-- Whether unresolved items are repaired or excluded to a review pool.
-- Whether real video/engine/workpiece/acquisition IDs can be provided.
+- 24 images without JSON: `excluded_unpaired`; do not treat as background and do not include in any split.
+- 22 cross-label near-duplicate groups: retain all original professional annotations; no remediation or majority vote.
+- Real acquisition IDs remain unavailable. Exp01 uses visual near-duplicate connected components as a documented leakage-control proxy.
 
 ## Git
 
@@ -95,23 +96,22 @@ The environment is ready for later smoke experiments, but **formal training rema
 
 ```text
 Data Gate:
-STOP
+PASS FOR EXP01
 
 Environment Gate:
 PASS
 
 Exp01 allowed:
+YES
+
+Formal model training:
 NO
 ```
 
-## Minimum questions requiring user/domain-expert answers
+## Remaining limitation
 
-1. 对 24 张无 JSON 图片，逐张确认：background / missing annotation / missing JSON / exclude-unknown？
-2. 对 22 个冲突组，确认正确类别、是否漏标实例，以及修复还是整组排除？
-3. 是否能提供视频、发动机、工件或采集批次 ID 作为真实 group boundary？
+真实视频、发动机、工件或采集批次 ID 仍不可用，不得编造；这不再阻塞本版 Exp01，但必须写入 provenance。
 
 ## Next
 
-**DO NOT START EXP01.**
-
-收到人工决定后，先生成修复/排除 proposal 和审查后 manifest，再重新计算 Data Gate。即使所有 Gate PASS，也必须先提交 Exp01.0–01.2 具体计划并等待用户确认，不能自动转换数据、冻结 split 或训练 YOLO。
+Proceed with Exp01.0--Exp01.2 and recompute the Dataset Freeze Gate. Do not start Exp02 or any formal YOLO training in this work cycle.

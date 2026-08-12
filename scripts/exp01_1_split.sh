@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -uo pipefail
+PROJECT_ROOT="${PROJECT_ROOT:-/root/autodl-tmp/borescope-new-seg-repro}"
+DATA_ROOT="${DATA_ROOT:-/root/autodl-tmp/损伤训练数据集}"
+PYTHON_BIN="${PYTHON_BIN:-$PROJECT_ROOT/.venv/bin/python}"
+CONVERSION="$(readlink -f "$PROJECT_ROOT/results/dataset_build/exp01_0_latest")/artifacts"
+STAMP="$(date -u +%Y%m%dT%H%M%SZ)"; OUT="$PROJECT_ROOT/results/dataset_build/exp01_1_split_$STAMP"
+mkdir -p "$OUT"
+printf '%q ' "$PYTHON_BIN" "$PROJECT_ROOT/tools/dataset/build_dataset_v1.py" split --data-root "$DATA_ROOT" --conversion "$CONVERSION" --output "$OUT/artifacts" --seed 42 > "$OUT/command.txt"; printf '\n' >> "$OUT/command.txt"
+"$PYTHON_BIN" "$PROJECT_ROOT/tools/dataset/build_dataset_v1.py" split --data-root "$DATA_ROOT" --conversion "$CONVERSION" --output "$OUT/artifacts" --seed 42 2>&1 | tee "$OUT/run.log"
+code="${PIPESTATUS[0]}"; printf 'return_code=%s\n' "$code" > "$OUT/summary.txt"
+[[ "$code" -eq 0 ]] && printf 'No runtime abnormalities; actual ratio deviations are in summary.json.\n' > "$OUT/abnormal.txt" || printf 'Exp01.1 failed; see run.log.\n' > "$OUT/abnormal.txt"
+printf 'No model is produced by Exp01.1.\n' > "$OUT/model_sha256.txt"
+[[ "$code" -eq 0 ]] && ln -sfn "$(basename "$OUT")" "$PROJECT_ROOT/results/dataset_build/exp01_1_latest"
+exit "$code"

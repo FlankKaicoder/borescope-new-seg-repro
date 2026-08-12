@@ -90,9 +90,9 @@ Exp01 使用固定 `seed=42` 的 **multilabel-stratified + group-aware 70/15/15 
 
 ## 进入 Exp01 前必须处理
 
-1. 确认缺失配对样本的处置（排除、补标或找回文件），禁止静默纳入训练。
+1. **已按用户政策解决：**24 张缺失 JSON 图片统一 `excluded_unpaired`，不进入监督数据集。
 2. 冻结 duplicate/near-duplicate group，同组样本必须整体进入同一 split。
-3. 人工复核近重复组中的类别集合冲突，尤其是 Dent / Material missing / Tears / Tip curl 的标注口径。
+3. **已按用户政策解决：**专业 JSON 是权威 GT；22 个跨类组保持原标签，仅将连通组作为不可拆 split 单元。
 4. 确认当前单卡约 22GB 的 RTX 2080 Ti 是否就是预期租用配置；若仍要求双卡实验，需要先修复容器 GPU 映射。
 5. Exp01 manifest 必须记录 JSON version/图片后缀，并验证 split 中的批次分布；不得把批次效应误认为类别特征。
 

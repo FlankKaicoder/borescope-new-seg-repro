@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -uo pipefail
+PROJECT_ROOT="${PROJECT_ROOT:-/root/autodl-tmp/borescope-new-seg-repro}"
+DATA_ROOT="${DATA_ROOT:-/root/autodl-tmp/损伤训练数据集}"
+DATASET_ROOT="${DATASET_ROOT:-/root/autodl-tmp/borescope-new-seg-data/v1}"
+PYTHON_BIN="${PYTHON_BIN:-$PROJECT_ROOT/.venv/bin/python}"
+CONVERSION="$(readlink -f "$PROJECT_ROOT/results/dataset_build/exp01_0_latest")/artifacts"
+SPLIT_DIR="$(readlink -f "$PROJECT_ROOT/results/dataset_build/exp01_1_latest")/artifacts"
+RAW_HASH="$PROJECT_ROOT/results/dataset_audit/exp00_1_schema_pair_20260812T101033Z/artifacts/raw_file_manifest_sha256.txt"
+STAMP="$(date -u +%Y%m%dT%H%M%SZ)"; OUT="$PROJECT_ROOT/results/dataset_build/exp01_2_freeze_$STAMP"
+mkdir -p "$OUT"
+printf '%q ' "$PYTHON_BIN" "$PROJECT_ROOT/tools/dataset/build_dataset_v1.py" freeze --data-root "$DATA_ROOT" --conversion "$CONVERSION" --split-dir "$SPLIT_DIR" --dataset-root "$DATASET_ROOT" --raw-manifest-hash "$RAW_HASH" --git-commit "$(git -C "$PROJECT_ROOT" rev-parse HEAD)" > "$OUT/command.txt"; printf '\n' >> "$OUT/command.txt"
+"$PYTHON_BIN" "$PROJECT_ROOT/tools/dataset/build_dataset_v1.py" freeze --data-root "$DATA_ROOT" --conversion "$CONVERSION" --split-dir "$SPLIT_DIR" --dataset-root "$DATASET_ROOT" --raw-manifest-hash "$RAW_HASH" --git-commit "$(git -C "$PROJECT_ROOT" rev-parse HEAD)" 2>&1 | tee "$OUT/run.log"
+freeze_code="${PIPESTATUS[0]}"
+if [[ "$freeze_code" -eq 0 ]]; then "$PYTHON_BIN" "$PROJECT_ROOT/tools/dataset/build_dataset_v1.py" verify --dataset-root "$DATASET_ROOT" --output "$OUT/artifacts" 2>&1 | tee -a "$OUT/run.log"; code="${PIPESTATUS[0]}"; else code="$freeze_code"; fi
+printf 'return_code=%s\n' "$code" > "$OUT/summary.txt"
+[[ "$code" -eq 0 ]] && printf 'No runtime abnormalities. Dataset Freeze verification PASS.\n' > "$OUT/abnormal.txt" || printf 'Exp01.2 failed; see run.log. Dataset Freeze Gate STOP.\n' > "$OUT/abnormal.txt"
+printf 'No model is produced by Exp01.2.\n' > "$OUT/model_sha256.txt"
+[[ "$code" -eq 0 ]] && ln -sfn "$(basename "$OUT")" "$PROJECT_ROOT/results/dataset_build/exp01_2_latest"
+exit "$code"

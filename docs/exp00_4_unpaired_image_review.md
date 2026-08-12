@@ -1,6 +1,6 @@
 # Exp00.4 24 张无 JSON 图片审查包
 
-状态：**PASS（材料生成完成） / HUMAN DECISION PENDING / Data Gate STOP**
+状态：**PASS / RESOLVED_BY_POLICY**。下文保留当时的审查证据；用户后续权威决定为 24 张全部 `excluded_unpaired`，不作为 background、不生成空 JSON、不进入 split。
 
 ## 方法与边界
 
@@ -40,4 +40,3 @@
 4. 对不能确认的图片，是先从 v1 数据集排除并留在 review pool，还是补齐标注后再冻结？
 
 在这些问题得到明确答复前，Data Gate 不能 PASS。
-
