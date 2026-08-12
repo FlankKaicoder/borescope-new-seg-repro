@@ -361,16 +361,29 @@ def parse_label(path: Path) -> list[tuple[int, list[tuple[float, float]]]]:
 
 
 def choose_overlay_rows(rows: list[dict[str, str]], count: int, seed: int) -> list[dict[str, str]]:
-    rng = random.Random(seed); chosen: list[dict[str, str]] = []
+    rng = random.Random(seed); chosen: list[dict[str, str]] = []; selected_stems: set[str] = set()
     per_split = {"train": 20, "val": 15, "test": 15}
+    split_counts = Counter()
+
+    def priority(row: dict[str, str]) -> float:
+        labels = row["labels_present"].split("|")
+        return 4 * ("Tip curl" in labels) + 3 * ("Tears" in labels) + 2 * (len(labels) > 1) + int(row["instance_count"]) + 2 * bool(row["near_duplicate_group_id"]) + rng.random()
+
+    # The verification set must cover every frozen class at least once.
+    for label in CLASSES:
+        pool = [row for row in rows if label in row["labels_present"].split("|") and row["stem"] not in selected_stems and split_counts[row["split"]] < per_split[row["split"]]]
+        if not pool: raise RuntimeError(f"Cannot cover class in overlay verification: {label}")
+        row = max(pool, key=priority)
+        chosen.append(row); selected_stems.add(row["stem"]); split_counts[row["split"]] += 1
+
     for split_name, n in per_split.items():
-        pool = [row for row in rows if row["split"] == split_name]
-        priority = []
+        pool = [row for row in rows if row["split"] == split_name and row["stem"] not in selected_stems]
+        ranked = []
         for row in pool:
-            labels = row["labels_present"].split("|")
-            score = 4 * ("Tip curl" in labels) + 3 * ("Tears" in labels) + 2 * (len(labels) > 1) + int(row["instance_count"]) + 2 * bool(row["near_duplicate_group_id"])
-            priority.append((score + rng.random(), row))
-        chosen.extend(row for _, row in sorted(priority, key=lambda item: item[0], reverse=True)[:n])
+            ranked.append((priority(row), row))
+        needed = n - split_counts[split_name]
+        added = [row for _, row in sorted(ranked, key=lambda item: item[0], reverse=True)[:needed]]
+        chosen.extend(added); selected_stems.update(row["stem"] for row in added)
     return chosen[:count]
 
 
@@ -398,7 +411,7 @@ def verify(args: argparse.Namespace) -> None:
     leakage_groups = [group for group, values in group_splits.items() if len(values) > 1]
     for group in leakage_groups: issues.append({"type": "group_leakage", "detail": group})
 
-    overlay_dir = args.output / "artifacts" / "gt_overlays"; overlay_dir.mkdir(parents=True, exist_ok=True)
+    overlay_dir = args.output / "gt_overlays"; overlay_dir.mkdir(parents=True, exist_ok=True)
     selected = choose_overlay_rows(rows, 50, 42)
     overlay_manifest = []
     font = ImageFont.load_default()
@@ -414,7 +427,7 @@ def verify(args: argparse.Namespace) -> None:
             image.thumbnail((960, 720), Image.Resampling.LANCZOS)
             out_name = f"{index:03d}_{row['split']}_{row['stem']}.jpg"; image.save(overlay_dir / out_name, quality=92)
         overlay_manifest.append({"overlay": out_name, "split": row["split"], "stem": row["stem"], "labels_present": row["labels_present"], "instance_count": row["instance_count"], "near_duplicate_group_id": row["near_duplicate_group_id"]})
-    write_csv(args.output / "artifacts" / "overlay_manifest.csv", overlay_manifest)
+    write_csv(args.output / "overlay_manifest.csv", overlay_manifest)
 
     smoke = {"status": "NOT_RUN", "detail": ""}
     try:
@@ -431,7 +444,12 @@ def verify(args: argparse.Namespace) -> None:
         "overlay_count": len(selected), "overlay_pipeline": "YOLO txt read -> denormalize -> polygon overlay",
         "ultralytics_dataset_load_smoke": smoke,
     }
-    write_csv(args.output / "artifacts" / "verification_issues.csv", issues, ["type", "detail"])
+    selected_classes = sorted({label for row in selected for label in row["labels_present"].split("|")}, key=CLASSES.index)
+    summary["overlay_classes_covered"] = selected_classes
+    if selected_classes != CLASSES:
+        summary["status"] = "FAIL"
+        issues.append({"type": "overlay_class_coverage", "detail": "|".join(selected_classes)})
+    write_csv(args.output / "verification_issues.csv", issues, ["type", "detail"])
     dump_json(args.output / "summary.json", summary)
     print(json.dumps(summary, ensure_ascii=False, indent=2))
     if summary["status"] != "PASS": raise SystemExit(2)
