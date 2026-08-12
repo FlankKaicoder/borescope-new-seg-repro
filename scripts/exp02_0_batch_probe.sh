@@ -3,10 +3,10 @@ set -uo pipefail
 ROOT="${PROJECT_ROOT:-/root/autodl-tmp/borescope-new-seg-repro}"; PY="$ROOT/.venv/bin/python"
 MODEL="$ROOT/weights/yolo11n-seg.pt"; DATA="/root/autodl-tmp/borescope-new-seg-data/v1/data.yaml"
 STAMP="$(date -u +%Y%m%dT%H%M%SZ)"; OUT="$ROOT/results/training/exp02_0_batch_probe_$STAMP"; mkdir -p "$OUT"
-printf 'batches=8,16,24,32;imgsz=640;fraction=0.03;real_train_steps=true\n' > "$OUT/command.txt"; nvidia-smi > "$OUT/env.txt"
+printf 'batches=8,16,24,32;imgsz=640;fraction=0.06;min_subset_images=40;real_train_steps=true\n' > "$OUT/command.txt"; nvidia-smi > "$OUT/env.txt"
 code=0
 for batch in 8 16 24 32; do
-  "$PY" "$ROOT/tools/training/run_yolo_seg.py" --mode probe --model "$MODEL" --data "$DATA" --output "$OUT/batch_$batch" --batch "$batch" --fraction 0.03 2>&1 | tee "$OUT/batch_$batch.log"
+  "$PY" "$ROOT/tools/training/run_yolo_seg.py" --mode probe --model "$MODEL" --data "$DATA" --output "$OUT/batch_$batch" --batch "$batch" --fraction 0.06 2>&1 | tee "$OUT/batch_$batch.log"
   rc="${PIPESTATUS[0]}"; printf 'batch=%s return_code=%s\n' "$batch" "$rc" >> "$OUT/probe_status.txt"
   [[ "$rc" -ne 0 && "$rc" -ne 42 ]] && code="$rc"
 done
