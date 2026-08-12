@@ -75,7 +75,8 @@ def main() -> int:
     p=argparse.ArgumentParser();p.add_argument("--manifest",type=Path,required=True);p.add_argument("--data",type=Path,required=True);p.add_argument("--output",type=Path,required=True);a=p.parse_args()
     if a.output.exists():raise FileExistsError(a.output)
     a.output.mkdir(parents=True);device=select_device("0")
-    entries=json.loads(a.manifest.read_text())
+    manifest=json.loads(a.manifest.read_text())
+    entries=manifest["checkpoints"] if isinstance(manifest,dict) else manifest
     checkpoints=[]
     for e in entries:
         path=Path(e["path"]) if e["checkpoint_epoch"]==0 else Path(e["raw_ema_path"])
