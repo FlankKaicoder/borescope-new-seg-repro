@@ -13,5 +13,9 @@
 - [x] Exp01.0 JSON → YOLO-seg 转换：969 样本 / 1847 polygon / 0 error
 - [x] Exp01.1 group-aware multilabel-stratified split：668/154/147，88 near groups 零泄漏
 - [x] Exp01.2 Dataset v1 冻结、50 张七类反读 overlay、三 split Ultralytics load smoke（Dataset Freeze Gate PASS）
-- [ ] 用户审阅 Exp01 handoff 并明确授权是否进入 Exp02
-- [ ] Exp02+ 模型实验（不在当前阶段执行）
+- [x] 用户审阅 Exp01 handoff 并明确授权进入 Exp02
+- [ ] Exp02.0 YOLO11n-seg smoke / batch probe（当前 active）
+- [ ] Exp02.1 YOLO11n-seg 640 baseline（仅 Exp02.0 PASS 后）
+- [ ] Exp02.2 baseline size + error audit（仅 train/val）
+- [ ] Exp02.3 960/1280 resolution ablation（本轮明确禁止）
+- [ ] Exp03+ 后续方法（本轮明确禁止）

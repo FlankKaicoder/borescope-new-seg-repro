@@ -1,5 +1,7 @@
 # EXP00 → EXP01 handoff
 
+> **SUPERSEDED BY `docs/handoffs/EXP01_TO_EXP02.md`.** This file is retained as historical evidence and is not the current project Gate.
+
 Generated: 2026-08-12 Asia/Shanghai  
 Authoritative status: **Data Gate PASS FOR EXP01 / Environment Gate PASS / Exp01 allowed YES / Exp02 training NO**
 

@@ -1,7 +1,7 @@
 # EXP01 → EXP02 handoff
 
 Generated: 2026-08-12 Asia/Shanghai  
-Authoritative status: **Dataset Freeze Gate PASS / Exp02 allowed YES / Exp02 not started**
+Authoritative status: **Dataset Freeze Gate PASS / Exp02 explicitly authorized / Exp02.0--02.2 active**
 
 ## Policy closure
 
@@ -47,9 +47,9 @@ Authoritative status: **Dataset Freeze Gate PASS / Exp02 allowed YES / Exp02 not
 ## Git commits
 
 - Exp01 execution commit: `dc8cd55383112b48113545ea86532a157531475e` (final execution/smoke implementation before documentation).
-- Exp01 final documentation commit: the commit that adds this handoff and Exp01 final Markdown; report exact hash after commit.
-- Final Git HEAD: obtain with `git rev-parse HEAD` after the finalization commit and report separately; do not call either value a generic “final commit”.
+- Exp01 final documentation commit: `d55cdb555c37099753ca8e1a55a456e3f0455818`.
+- Exp01 final Git HEAD: `d55cdb555c37099753ca8e1a55a456e3f0455818`.
 
 ## Next boundary
 
-Exp02 is technically allowed by the Dataset Freeze Gate, but the user required this cycle to stop. Do not start YOLO11n-seg smoke or formal baseline training until explicit authorization.
+The user has now explicitly authorized Exp02.0--Exp02.2. Test predictions/metrics are forbidden in this cycle. Exp02.3 and all later methods remain prohibited until a new review.

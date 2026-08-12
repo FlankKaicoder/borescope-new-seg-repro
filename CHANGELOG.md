@@ -8,6 +8,8 @@
 - 完成 Exp01.1：按 88 个 near-duplicate connected components 做 seed=42 group-aware split；最终 668/154/147 张且 0 cross-split leakage。
 - 完成 Exp01.2：冻结 `/root/autodl-tmp/borescope-new-seg-data/v1`，完成 50 张七类 YOLO 反读 overlay、全量 label 验证与三 split Ultralytics segmentation dataset load smoke。
 - Dataset Freeze Gate PASS；本轮按边界停止，未启动 Exp02 或任何模型训练。
+- Exp01 冻结事实校准：969 张权威监督图片、1847 polygon、7 类、24 张 `excluded_unpaired`，group-aware split 的 near-duplicate cross-split leakage 为 0。
+- 用户已明确授权进入 Exp02；当前范围仅限 Exp02.0 smoke/batch probe、Exp02.1 640 baseline 和 Exp02.2 train-only size thresholds + val error audit。test 与 Exp02.3 禁止使用。
 
 - 初始化 Exp00 工程结构、实验 registry 与基础文档。
 - 增加只读环境和数据审计脚本。
