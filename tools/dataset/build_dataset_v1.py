@@ -212,7 +212,7 @@ def build_groups(rows: list[dict[str, str]]) -> list[dict[str, Any]]:
     return groups
 
 
-def score_assignment(assignments: dict[str, str], groups: list[dict[str, Any]], totals: dict[str, Any]) -> float:
+def score_assignment(assignments: dict[str, str], groups: list[dict[str, Any]], totals: dict[str, Any], ratio_weight: float) -> float:
     counts = {split: 0 for split in SPLITS}
     image_cls = {split: Counter() for split in SPLITS}
     inst_cls = {split: Counter() for split in SPLITS}
@@ -224,7 +224,7 @@ def score_assignment(assignments: dict[str, str], groups: list[dict[str, Any]], 
     score = 0.0
     total_images = totals["images"]
     for split in SPLITS:
-        score += 12.0 * ((counts[split] - TARGET[split] * total_images) / total_images) ** 2
+        score += ratio_weight * ((counts[split] - TARGET[split] * total_images) / total_images) ** 2
         for label in CLASSES:
             expected_images = TARGET[split] * totals["image_cls"][label]
             expected_instances = TARGET[split] * totals["inst_cls"][label]
@@ -264,13 +264,13 @@ def split(args: argparse.Namespace) -> None:
                 trial = dict(assignment); trial[group["group_id"]] = candidate
                 remaining = [g for g in groups if g["group_id"] not in trial]
                 for rest in remaining: trial[rest["group_id"]] = "train"
-                candidates.append((score_assignment(trial, groups, totals), rng.random(), candidate))
+                candidates.append((score_assignment(trial, groups, totals, args.ratio_weight), rng.random(), candidate))
             assignment[group["group_id"]] = min(candidates)[2]
-        current = score_assignment(assignment, groups, totals)
+        current = score_assignment(assignment, groups, totals, args.ratio_weight)
         for _ in range(args.iterations):
             group = rng.choice(groups); old = assignment[group["group_id"]]; new = rng.choice([s for s in SPLITS if s != old])
             assignment[group["group_id"]] = new
-            candidate = score_assignment(assignment, groups, totals)
+            candidate = score_assignment(assignment, groups, totals, args.ratio_weight)
             if candidate <= current or rng.random() < math.exp(min(0.0, (current - candidate) / 0.02)):
                 current = candidate
             else: assignment[group["group_id"]] = old
@@ -442,7 +442,7 @@ def parser() -> argparse.ArgumentParser:
     common = argparse.ArgumentParser(add_help=False)
     common.add_argument("--data-root", type=Path, required=True)
     p = sub.add_parser("convert", parents=[common]); p.add_argument("--raw-manifest", type=Path, required=True); p.add_argument("--near-groups", type=Path, required=True); p.add_argument("--output", type=Path, required=True); p.set_defaults(func=convert)
-    p = sub.add_parser("split", parents=[common]); p.add_argument("--conversion", type=Path, required=True); p.add_argument("--output", type=Path, required=True); p.add_argument("--seed", type=int, default=42); p.add_argument("--restarts", type=int, default=6); p.add_argument("--iterations", type=int, default=300); p.set_defaults(func=split)
+    p = sub.add_parser("split", parents=[common]); p.add_argument("--conversion", type=Path, required=True); p.add_argument("--output", type=Path, required=True); p.add_argument("--seed", type=int, default=42); p.add_argument("--restarts", type=int, default=6); p.add_argument("--iterations", type=int, default=300); p.add_argument("--ratio-weight", type=float, default=800.0); p.set_defaults(func=split)
     p = sub.add_parser("freeze", parents=[common]); p.add_argument("--conversion", type=Path, required=True); p.add_argument("--split-dir", type=Path, required=True); p.add_argument("--dataset-root", type=Path, required=True); p.add_argument("--raw-manifest-hash", type=Path, required=True); p.add_argument("--git-commit", required=True); p.set_defaults(func=freeze)
     p = sub.add_parser("verify"); p.add_argument("--dataset-root", type=Path, required=True); p.add_argument("--output", type=Path, required=True); p.set_defaults(func=verify)
     return root
