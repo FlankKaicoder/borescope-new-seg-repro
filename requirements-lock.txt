@@ -1,0 +1,8 @@
+# Exp00 uses packages already present in the system Miniconda Python.
+# Exact environment state is captured in pip_freeze.txt after execution.
+numpy==2.3.2
+pillow==11.3.0
+torch==2.8.0+cu128
+torchvision==0.23.0+cu128
+matplotlib==3.10.5
+

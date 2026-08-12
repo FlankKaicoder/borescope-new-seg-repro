@@ -1,0 +1,6 @@
+experiment_id,name,status,start_time,end_time,git_commit,data_root,data_manifest_sha256,command,output_dir,summary
+Exp00.0,Environment audit,PENDING,,,,,,,results/dataset_audit,
+Exp00.1,JSON schema and pair audit,PENDING,,,,,,,results/dataset_audit,
+Exp00.2,Class polygon and scale audit,PENDING,,,,,,,results/dataset_audit,
+Exp00.3,Duplicate and leakage audit,PENDING,,,,,,,results/dataset_audit,
+
