@@ -12,3 +12,4 @@
 | Exp01.0 | JSON → YOLO segmentation conversion | PASS | `docs/exp01_0_json_to_yolo.md` |
 | Exp01.1 | Group-aware stratified split | PASS / 0 LEAKAGE | `docs/exp01_1_group_aware_split.md` |
 | Exp01.2 | Dataset v1 freeze and verification | PASS / DATASET_FREEZE_GATE_PASS | `docs/exp01_2_dataset_freeze.md` |
+| Exp02.0 | YOLO11n-seg batch probe and one-epoch smoke | PASS / SMOKE_GATE_PASS | `docs/exp02_0_smoke_batch_probe.md` |
