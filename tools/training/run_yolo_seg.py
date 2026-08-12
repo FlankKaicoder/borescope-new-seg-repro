@@ -72,6 +72,9 @@ def main() -> int:
 
     start = datetime.now(timezone.utc); wall = time.monotonic()
     torch.cuda.empty_cache(); torch.cuda.reset_peak_memory_stats(0)
+    dataset_root = args.data.parent
+    cache_paths = [dataset_root / "labels" / "train.cache", dataset_root / "labels" / "val.cache"]
+    cache_existed = {path: path.exists() for path in cache_paths}
     status = "FAIL"; error = ""; save_dir = None
     try:
         model = YOLO(str(args.model))
@@ -103,6 +106,10 @@ def main() -> int:
             reloaded = YOLO(str(reload_path))
             reload_metrics = reloaded.val(data=str(args.data), split="val", imgsz=640, batch=args.batch, device=0, plots=False, verbose=False)
             checkpoints["reload_val_results"] = dict(reload_metrics.results_dict)
+    removed_caches = []
+    for path in cache_paths:
+        if not cache_existed[path] and path.exists():
+            path.unlink(); removed_caches.append(str(path))
     summary = {
         "status": status, "mode": args.mode, "batch": args.batch,
         "start_utc": start.isoformat(), "end_utc": datetime.now(timezone.utc).isoformat(),
@@ -112,6 +119,7 @@ def main() -> int:
         "error": error, "environment": environment(), "model_path": str(args.model),
         "model_sha256": sha256(args.model), "data": str(args.data), "save_dir": str(save_dir) if save_dir else None,
         "checkpoints": checkpoints,
+        "transient_train_val_caches_removed": removed_caches,
     }
     dump(args.output / "summary.json", summary)
     print(json.dumps(summary, indent=2, ensure_ascii=False))
