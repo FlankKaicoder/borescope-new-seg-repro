@@ -135,7 +135,7 @@ def draw_visual(path: Path, image: np.ndarray, stem: str, categories: set[str], 
 
 def summarize_group(rows: list[dict], keys: tuple[str, ...]) -> list[dict]:
     grouped: dict[tuple, list[dict]] = defaultdict(list)
-    for row in rows:
+    for row in (*train_rows, *val_rows):
         grouped[tuple(row[k] for k in keys)].append(row)
     out = []
     for key, items in sorted(grouped.items()):
