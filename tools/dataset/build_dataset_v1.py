@@ -431,9 +431,32 @@ def verify(args: argparse.Namespace) -> None:
 
     smoke = {"status": "NOT_RUN", "detail": ""}
     try:
+        from ultralytics.cfg import DEFAULT_CFG
+        from ultralytics.data.dataset import YOLODataset
         from ultralytics.data.utils import check_det_dataset
         loaded = check_det_dataset(str(args.dataset_root / "data.yaml"), autodownload=False)
-        smoke = {"status": "PASS", "detail": {key: str(loaded.get(key)) for key in ("train", "val", "test", "nc", "names")}}
+        loaded_splits = {}
+        cache_paths = [args.dataset_root / "labels" / f"{split_name}.cache" for split_name in SPLITS]
+        cache_existed = {path: path.exists() for path in cache_paths}
+        for split_name in SPLITS:
+            dataset = YOLODataset(
+                img_path=loaded[split_name], data=loaded, task="segment", imgsz=640,
+                augment=False, rect=False, cache=False, batch_size=1, hyp=DEFAULT_CFG,
+            )
+            sample = dataset[0]
+            loaded_splits[split_name] = {
+                "dataset_length": len(dataset),
+                "sample_image_shape": list(sample["img"].shape),
+                "sample_instance_count": int(sample["cls"].shape[0]),
+                "sample_has_masks": "masks" in sample,
+            }
+        for path in cache_paths:
+            if not cache_existed[path] and path.exists():
+                path.unlink()
+        smoke = {"status": "PASS", "detail": {
+            "nc": loaded["nc"], "names": loaded["names"], "loaded_splits": loaded_splits,
+            "transient_label_caches_removed": True,
+        }}
     except Exception as exc:
         smoke = {"status": "FAIL", "detail": f"{type(exc).__name__}: {exc}"}
         issues.append({"type": "ultralytics_dataset_load", "detail": smoke["detail"]})
