@@ -10,12 +10,14 @@ OUT="$PROJECT_ROOT/environment_report.md"
   echo
   echo "Generated UTC: $(date -u --iso-8601=seconds)"
   echo
-  for title in nvidia-smi uname os-release python gcc df free; do
+  for title in nvidia-smi nvidia-smi-L nvcc uname os-release python gcc df free; do
     echo "## $title"
     echo
     echo '```text'
     case "$title" in
       nvidia-smi) nvidia-smi 2>&1 ;;
+      nvidia-smi-L) nvidia-smi -L 2>&1 ;;
+      nvcc) if command -v nvcc >/dev/null 2>&1; then nvcc --version 2>&1; else echo 'MISSING: nvcc is not on PATH'; fi ;;
       uname) uname -a 2>&1 ;;
       os-release) cat /etc/os-release 2>&1 ;;
       python) "$PYTHON_BIN" -V 2>&1 ;;
@@ -58,4 +60,3 @@ PY
 } > "$OUT"
 
 "$PYTHON_BIN" -m pip freeze > "$PROJECT_ROOT/pip_freeze.txt"
-

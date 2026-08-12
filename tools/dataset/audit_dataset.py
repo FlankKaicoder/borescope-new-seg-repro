@@ -254,6 +254,20 @@ def main() -> int:
     images = [path for path in all_files if path.suffix.lower() in IMAGE_SUFFIXES]
     json_files = [path for path in all_files if path.suffix.lower() == ".json"]
     other_files = [path for path in all_files if path not in images and path not in json_files]
+    raw_manifest_rows: list[dict[str, Any]] = []
+    for path in all_files:
+        if path in images:
+            file_type = "image"
+        elif path in json_files:
+            file_type = "json"
+        else:
+            file_type = "other"
+        raw_manifest_rows.append({
+            "relative_path": safe_relative(path, root),
+            "file_type": file_type,
+            "size_bytes": path.stat().st_size,
+            "sha256": sha256_file(path),
+        })
 
     stem_images: dict[str, list[Path]] = defaultdict(list)
     stem_json: dict[str, list[Path]] = defaultdict(list)
@@ -579,6 +593,55 @@ def main() -> int:
                 "dhash_hex": f"{dhashes[index]:016x}",
             })
 
+    json_for_image = {safe_relative(image_path, root): json_path for image_path, json_path in pairs}
+    consistency_rows: list[dict[str, Any]] = []
+    mismatch_groups: list[str] = []
+    label_set_mismatch_groups: list[str] = []
+    instance_count_only_groups: list[str] = []
+    missing_json_near_groups: list[str] = []
+    for group_index, group in enumerate(near_groups, 1):
+        group_id = f"near_{group_index:04d}"
+        members: list[tuple[str, str]] = []
+        signatures: set[str] = set()
+        label_sets: set[str] = set()
+        missing_json = False
+        for image_relative in group:
+            json_path = json_for_image.get(image_relative)
+            if json_path is None:
+                signature = "<NO_JSON>"
+                label_set = "<NO_JSON>"
+                missing_json = True
+            else:
+                counts = Counter(str(shape.get("label", "")) for shape in json_data[json_path].get("shapes", []) if isinstance(shape, dict))
+                signature = "|".join(f"{label}:{counts[label]}" for label in sorted(counts))
+                label_set = "|".join(sorted(counts))
+            signatures.add(signature)
+            label_sets.add(label_set)
+            members.append((image_relative, signature))
+        annotation_mismatch = len(signatures) > 1
+        label_set_mismatch = len(label_sets) > 1
+        count_only_mismatch = annotation_mismatch and not label_set_mismatch
+        if annotation_mismatch:
+            mismatch_groups.append(group_id)
+        if label_set_mismatch:
+            label_set_mismatch_groups.append(group_id)
+        if count_only_mismatch:
+            instance_count_only_groups.append(group_id)
+        if missing_json:
+            missing_json_near_groups.append(group_id)
+        for image_relative, signature in members:
+            consistency_rows.append({
+                "group_id": group_id,
+                "group_size": len(group),
+                "image_path": image_relative,
+                "annotation_signature": signature,
+                "group_signature_count": len(signatures),
+                "group_has_annotation_mismatch": annotation_mismatch,
+                "group_has_label_set_mismatch": label_set_mismatch,
+                "group_has_instance_count_only_mismatch": count_only_mismatch,
+                "group_has_missing_json": missing_json,
+            })
+
     numeric_runs = numeric_stem_runs(images)
     numeric_stems = sum(bool(re.fullmatch(r"\d+", path.stem)) for path in images)
     prefix_counts: Counter[str] = Counter()
@@ -624,6 +687,10 @@ def main() -> int:
         "duplicates": {
             "exact_group_count": len(exact_groups), "exact_image_count": sum(len(group) for group in exact_groups),
             "near_group_count": len(near_groups), "near_image_count": sum(len(group) for group in near_groups), "near_pair_count": len(near_pair_rows),
+            "near_annotation_mismatch_group_count": len(mismatch_groups),
+            "near_label_set_mismatch_group_count": len(label_set_mismatch_groups),
+            "near_instance_count_only_mismatch_group_count": len(instance_count_only_groups),
+            "near_groups_with_missing_json_count": len(missing_json_near_groups),
         },
         "source_clues": {
             "numeric_stem_image_count": numeric_stems, "numeric_stem_percentage": 100 * numeric_stems / len(images) if images else 0,
@@ -639,6 +706,7 @@ def main() -> int:
     }
 
     write_csv(output / "class_stats.csv", list(class_rows[0].keys()) if class_rows else ["class_id", "class_name"], class_rows)
+    write_csv(output / "raw_file_manifest.csv", ["relative_path", "file_type", "size_bytes", "sha256"], raw_manifest_rows)
     write_csv(output / "instance_stats.csv", list(instance_rows[0].keys()) if instance_rows else ["json_path"], instance_rows)
     write_csv(output / "cooccurrence.csv", ["class_name", *class_names], cooccurrence_rows)
     write_csv(output / "polygon_issues.csv", ["json_path", "shape_index", "label", "issue_type", "detail"], issue_rows)
@@ -649,8 +717,11 @@ def main() -> int:
     write_csv(output / "duplicate_groups.csv", ["group_id", "group_size", "sha256", "image_path", "stem"], exact_rows)
     write_csv(output / "near_duplicate_groups.csv", ["group_id", "group_size", "image_path", "stem", "sha256", "phash_hex", "dhash_hex"], near_member_rows)
     write_csv(output / "near_duplicate_pairs.csv", ["group_id", "image_a", "image_b", "phash_distance", "dhash_distance", "gray_correlation"], near_pair_output_rows)
+    write_csv(output / "near_duplicate_annotation_consistency.csv", ["group_id", "group_size", "image_path", "annotation_signature", "group_signature_count", "group_has_annotation_mismatch", "group_has_label_set_mismatch", "group_has_instance_count_only_mismatch", "group_has_missing_json"], consistency_rows)
     write_csv(output / "image_hashes.csv", ["image_path", "sha256", "phash_hex", "dhash_hex"], ({"image_path": safe_relative(path, root), "sha256": sha_by_path[path], "phash_hex": f"{phashes[index]:016x}", "dhash_hex": f"{dhashes[index]:016x}"} for index, path in enumerate(fingerprint_paths)))
     json_dump(output / "dataset_summary.json", summary)
+    manifest_hash = sha256_file(output / "raw_file_manifest.csv")
+    (output / "raw_file_manifest_sha256.txt").write_text(f"{manifest_hash}  raw_file_manifest.csv\n", encoding="ascii")
 
     def md_table(rows: list[dict[str, Any]], fields: list[str]) -> str:
         header = "| " + " | ".join(fields) + " |"
@@ -667,6 +738,8 @@ def main() -> int:
         required_before_exp01.append("逐项复核 polygon 异常；退化、非有限坐标和无法可靠转换的标注必须排除并留痕。")
     if exact_groups or near_groups:
         required_before_exp01.append("冻结 duplicate/near-duplicate group，同组样本必须整体进入同一 split。")
+    if label_set_mismatch_groups:
+        required_before_exp01.append("人工复核近重复组中的类别集合冲突，尤其是 Dent / Material missing / Tears / Tip curl 的标注口径。")
     if not required_before_exp01:
         required_before_exp01.append("未发现阻塞性数据问题；Exp01 仍需进行至少 50 张 overlay 反向验证。")
 
@@ -684,6 +757,7 @@ def main() -> int:
 - 图片缺 JSON：**{len(image_without_json)}**；JSON 缺图片：**{len(json_without_image)}**；图片解码失败：**{len(decode_failed)}**；JSON 解析失败：**{len(json_parse_failed)}**。
 - polygon 问题记录：**{len(issue_rows)}** 条；空标注 JSON：**{len(empty_json)}**。
 - exact duplicate：**{len(exact_groups)} 组 / {sum(len(group) for group in exact_groups)} 张**；near duplicate：**{len(near_groups)} 组 / {sum(len(group) for group in near_groups)} 张 / {len(near_pair_rows)} 对**。
+- 近重复组内标注签名不一致：**{len(mismatch_groups)}/{len(near_groups)} 组**；其中类别集合不一致 **{len(label_set_mismatch_groups)} 组**，仅实例数不一致 **{len(instance_count_only_groups)} 组**。
 
 ## 类别与实例
 
@@ -718,6 +792,7 @@ def main() -> int:
 
 - exact duplicate 使用文件 SHA256。
 - near duplicate 聚类阈值固定为：pHash Hamming ≤ {PHASH_DISTANCE}、dHash Hamming ≤ {DHASH_DISTANCE}，且 32×32 标准化灰度相关性 ≥ {CORRELATION_MIN}；exact pair 不重复计入 near pair。
+- 近重复组内部有 **{len(mismatch_groups)}** 组类别/实例数签名不同，其中 **{len(label_set_mismatch_groups)}** 组类别集合本身不同。这些组必须人工核查标注口径。
 - 数字 stem 图片：**{numeric_stems}/{len(images)}（{100 * numeric_stems / len(images) if images else 0:.2f}%）**；连续编号段：`{numeric_runs}`。
 - 文件名前缀线索：`{dict(prefix_counts.most_common(20))}`；EXIF 时间线索：`{dict(exif_datetime.most_common(20))}`。
 

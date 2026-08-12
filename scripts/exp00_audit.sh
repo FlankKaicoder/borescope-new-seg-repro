@@ -30,6 +30,16 @@ fi
   --groups-csv "$RUN_DIR/artifacts/near_duplicate_groups.csv" \
   --output-dir "$RUN_DIR/artifacts/near_duplicate_contact_sheets" \
   2>&1 | tee -a "$RUN_DIR/run.log"
+"$PYTHON_BIN" "$PROJECT_ROOT/tools/dataset/inspect_source_fields.py" \
+  --data-root "$DATA_ROOT" \
+  --output "$RUN_DIR/artifacts/source_field_audit.json" \
+  >> "$RUN_DIR/run.log" 2>&1
+"$PYTHON_BIN" "$PROJECT_ROOT/tools/visualization/render_image_list.py" \
+  --data-root "$DATA_ROOT" \
+  --csv "$RUN_DIR/artifacts/missing_pairs.csv" \
+  --output "$RUN_DIR/artifacts/image_without_json_contact_sheet.jpg" \
+  --title 'Images without JSON' \
+  2>&1 | tee -a "$RUN_DIR/run.log"
 printf 'No runtime abnormality. Data issues are recorded in artifacts/polygon_issues.csv and docs/01_dataset_audit.md.\n' > "$RUN_DIR/abnormal.txt"
 ln -sfn "$(basename "$RUN_DIR")" "$PROJECT_ROOT/results/dataset_audit/latest"
 printf '%s\n' "$RUN_DIR"
