@@ -71,7 +71,8 @@ def main() -> int:
         raise RuntimeError("Training data argument unexpectedly references test")
 
     start = datetime.now(timezone.utc); wall = time.monotonic()
-    torch.cuda.empty_cache(); torch.cuda.reset_peak_memory_stats(0)
+    torch.cuda.set_device(0)
+    torch.cuda.empty_cache(); torch.cuda.reset_peak_memory_stats()
     dataset_root = args.data.parent
     cache_paths = [dataset_root / "labels" / "train.cache", dataset_root / "labels" / "val.cache"]
     cache_existed = {path: path.exists() for path in cache_paths}
@@ -93,7 +94,7 @@ def main() -> int:
         status = "OOM"; error = f"{type(exc).__name__}: {exc}"
     except Exception as exc:
         status = "FAIL"; error = f"{type(exc).__name__}: {exc}"
-    peak_alloc = torch.cuda.max_memory_allocated(0); peak_reserved = torch.cuda.max_memory_reserved(0)
+    peak_alloc = torch.cuda.max_memory_allocated(); peak_reserved = torch.cuda.max_memory_reserved()
     total = torch.cuda.get_device_properties(0).total_memory
     checkpoints: dict[str, object] = {}
     if save_dir:
