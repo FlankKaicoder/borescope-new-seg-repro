@@ -1,8 +1,15 @@
 # Exp00 数据集完整审计
 
-生成时间（UTC）：`2026-08-12T09:55:41.149799+00:00`  
+生成时间（UTC）：`2026-08-12T10:08:02.876071+00:00`  
 原始数据：`/root/autodl-tmp/损伤训练数据集`（全程只读）  
 审计脚本：`tools/dataset/audit_dataset.py`
+
+## Exp00.0 环境结论
+
+- Ubuntu 22.04.5 LTS；NVIDIA Driver 595.71.05；驱动声明 CUDA 13.2；`nvcc` 不在 PATH。
+- 系统 Miniconda Python 3.12.3；PyTorch 2.8.0+cu128；torchvision 0.23.0+cu128。
+- 容器和 PyTorch 都只看到 **1 张 RTX 2080 Ti**；`nvidia-smi` 报告 **22528 MiB**，PyTorch 报告约 **22001 MiB**。这与任务文件所述“两张各约 11GB”不一致，不能执行原定双卡并行调度。
+- Ultralytics、OpenCV、scikit-learn、pandas、shapely 当前未安装。Exp00 使用已有 Pillow/NumPy 完成，没有创建虚拟环境，也没有训练模型。
 
 ## 结论摘要
 
@@ -12,6 +19,7 @@
 - 图片缺 JSON：**24**；JSON 缺图片：**0**；图片解码失败：**0**；JSON 解析失败：**0**。
 - polygon 问题记录：**0** 条；空标注 JSON：**0**。
 - exact duplicate：**0 组 / 0 张**；near duplicate：**88 组 / 252 张 / 265 对**。
+- 近重复组内标注签名不一致：**37/88 组**；其中类别集合不一致 **22 组**，仅实例数不一致 **15 组**。
 
 ## 类别与实例
 
@@ -38,6 +46,16 @@
 - imageData：`{'missing_or_null': 969}`；group_id：`{'null_or_missing': 1847}`。
 - `imagePath` 为绝对路径：**0** 份。配对实际按 stem 完成，不依赖该字段。
 
+### 标注批次线索
+
+JSON version 与类别/文件格式高度相关：
+
+- `2026.8.3.0`：573 份，393 PNG + 180 JPG；包含全部 7 类。
+- `5.0.1`：354 份，全部 JPG；仅出现 Dent（178）、Material missing（132）、Tears（55）。
+- `5.1.1`：42 份，全部 JPG；仅出现 Crack（22）、Burn（57）。
+
+这证明数据至少经过多个标注工具版本或导入批次，且批次与类别分布耦合。它不等于真实设备/视频来源，但后续应把 `annotation_version` 写入 manifest 并检查各 split 的批次分布，避免模型只学习到批次/图像格式差异。
+
 ## Polygon、尺度与标注异常
 
 - 每图实例数：`{'count': 969, 'min': 1.0, 'p25': 1.0, 'median': 1.0, 'p75': 2.0, 'p90': 4.0, 'p95': 5.0, 'max': 28.0, 'mean': 1.9060887512899898}`。
@@ -54,6 +72,7 @@
 
 - exact duplicate 使用文件 SHA256。
 - near duplicate 聚类阈值固定为：pHash Hamming ≤ 6、dHash Hamming ≤ 8，且 32×32 标准化灰度相关性 ≥ 0.98；exact pair 不重复计入 near pair。
+- 近重复组内部有 **37** 组类别/实例数签名不同，其中 **22** 组类别集合本身不同。这些组必须人工核查标注口径。
 - 数字 stem 图片：**993/993（100.00%）**；连续编号段：`[{'start': 1, 'end': 24, 'count': 24, 'first_file': '1.png', 'last_file': '24.png'}, {'start': 26, 'end': 111, 'count': 86, 'first_file': '26.png', 'last_file': '111.png'}, {'start': 113, 'end': 126, 'count': 14, 'first_file': '113.png', 'last_file': '126.png'}, {'start': 128, 'end': 141, 'count': 14, 'first_file': '128.png', 'last_file': '141.png'}, {'start': 143, 'end': 160, 'count': 18, 'first_file': '143.png', 'last_file': '160.png'}, {'start': 162, 'end': 173, 'count': 12, 'first_file': '162.png', 'last_file': '173.png'}, {'start': 175, 'end': 202, 'count': 28, 'first_file': '175.png', 'last_file': '202.png'}, {'start': 204, 'end': 225, 'count': 22, 'first_file': '204.png', 'last_file': '225.png'}, {'start': 230, 'end': 241, 'count': 12, 'first_file': '230.png', 'last_file': '241.png'}, {'start': 243, 'end': 245, 'count': 3, 'first_file': '243.png', 'last_file': '245.png'}, {'start': 248, 'end': 350, 'count': 103, 'first_file': '248.png', 'last_file': '350.png'}, {'start': 352, 'end': 369, 'count': 18, 'first_file': '352.png', 'last_file': '369.png'}, {'start': 371, 'end': 405, 'count': 35, 'first_file': '371.png', 'last_file': '405.png'}, {'start': 407, 'end': 1008, 'count': 602, 'first_file': '407.png', 'last_file': '1008.jpg'}]`。
 - 文件名前缀线索：`{}`；EXIF 时间线索：`{}`。
 
@@ -73,6 +92,9 @@ Exp01 使用固定 `seed=42` 的 **multilabel-stratified + group-aware 70/15/15 
 
 1. 确认缺失配对样本的处置（排除、补标或找回文件），禁止静默纳入训练。
 2. 冻结 duplicate/near-duplicate group，同组样本必须整体进入同一 split。
+3. 人工复核近重复组中的类别集合冲突，尤其是 Dent / Material missing / Tears / Tip curl 的标注口径。
+4. 确认当前单卡约 22GB 的 RTX 2080 Ti 是否就是预期租用配置；若仍要求双卡实验，需要先修复容器 GPU 映射。
+5. Exp01 manifest 必须记录 JSON version/图片后缀，并验证 split 中的批次分布；不得把批次效应误认为类别特征。
 
 此外，建议向数据提供方索取真实采集来源字段（视频/发动机/部位/时间段）。仅凭数字文件名与视觉哈希无法完全排除跨序列泄漏。
 
