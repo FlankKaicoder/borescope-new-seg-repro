@@ -2,20 +2,21 @@
 
 | Field | Current fact |
 |---|---|
-| Current phase | Exp00 policy closure complete / Exp01 dataset construction authorized |
-| Last completed experiment | Exp00.5 near-duplicate conflict review package; blockers closed by user policy |
-| Current data version | Raw dataset audit manifest `1b0d6379800661c4b71e81db50f5b280bd46c5952e29f219c8f8427bc9c142a2` |
-| Current split hash | NOT CREATED |
+| Current phase | Exp01 complete / Dataset Freeze Gate PASS / stopped before Exp02 |
+| Last completed experiment | Exp01.2 Dataset v1 freeze and seven-class visual/load verification |
+| Current data version | `/root/autodl-tmp/borescope-new-seg-data/v1` from raw manifest `1b0d6379800661c4b71e81db50f5b280bd46c5952e29f219c8f8427bc9c142a2` |
+| Current split hash | `35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d` |
 | Current environment | Project `.venv`: Python 3.12.3, torch 2.8.0+cu128, Ultralytics 8.4.117, OpenCV-headless 5.0.0; one visible RTX 2080 Ti, ~22GB; smoke PASS |
 | Current best model | NONE |
 | Current primary metric | NOT ESTABLISHED; planned primary metric is mask mAP50-95 after baseline |
-| Active blockers | None for Exp01. The 24 unpaired images are `excluded_unpaired`; all professional JSON labels are authoritative GT. |
-| Current Gate | Annotation Authority PASS; Data Gate PASS FOR EXP01; Environment Gate PASS |
-| Next allowed experiment | Exp01.0--Exp01.2 dataset construction and Dataset Freeze Gate only |
+| Active blockers | None for Exp02 entry. Real acquisition IDs remain unavailable and are documented as a leakage-control limitation. |
+| Current Gate | Annotation Authority PASS; Environment Gate PASS; Data Gate PASS; Dataset Freeze Gate PASS |
+| Next allowed experiment | Exp02.0 smoke only after explicit user authorization; this cycle stops here |
 | Formal training allowed | NO |
-| Git HEAD | Server execution baseline `3d7a1c56930c0a6e93d8042cc883adafc80f1673`; use `git rev-parse HEAD` for the final documentation commit |
-| Last updated time | 2026-08-12T19:09:55+08:00 |
+| Exp01 execution commit | `dc8cd55383112b48113545ea86532a157531475e` |
+| Exp01 final documentation commit | The commit containing this final Exp01 documentation; report its exact hash separately after commit. |
+| Last updated time | 2026-08-12T20:38:00+08:00 |
 
 ## Next allowed work
 
-Build and validate Exp01.0--Exp01.2. Formal model training remains prohibited until the Dataset Freeze Gate passes, and this work cycle must stop before Exp02 even if it passes.
+Wait for explicit user review and authorization. Dataset Freeze Gate is PASS, so Exp02 is technically allowed, but no formal model training was started in this cycle.

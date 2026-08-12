@@ -4,6 +4,10 @@
 
 - 用户政策正式关闭 Exp00 数据 blocker：24 张无 JSON 图统一排除为 `excluded_unpaired`；专业 JSON 作为权威 GT，22 个近重复跨类组保留原标签并仅用于防泄漏分组与困难类别研究。
 - Data Gate 更新为 `PASS FOR EXP01`；仍禁止在 Dataset Freeze Gate 通过前训练，并且本轮不得启动 Exp02。
+- 完成 Exp01.0：969 份权威 JSON 转为 YOLO segmentation，1847/1847 polygon 成功，0 conversion error，冻结 7 类 mapping。
+- 完成 Exp01.1：按 88 个 near-duplicate connected components 做 seed=42 group-aware split；最终 668/154/147 张且 0 cross-split leakage。
+- 完成 Exp01.2：冻结 `/root/autodl-tmp/borescope-new-seg-data/v1`，完成 50 张七类 YOLO 反读 overlay、全量 label 验证与三 split Ultralytics segmentation dataset load smoke。
+- Dataset Freeze Gate PASS；本轮按边界停止，未启动 Exp02 或任何模型训练。
 
 - 初始化 Exp00 工程结构、实验 registry 与基础文档。
 - 增加只读环境和数据审计脚本。

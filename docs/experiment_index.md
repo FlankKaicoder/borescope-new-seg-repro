@@ -9,3 +9,6 @@
 | Exp00.4 | Unpaired-image review package | PASS / HUMAN_DECISION_PENDING | `docs/exp00_4_unpaired_image_review.md` |
 | Exp00.5 | Near-duplicate conflict review package | PASS / HUMAN_DECISION_PENDING | `docs/exp00_5_near_duplicate_conflict_review.md` |
 | Env00.1 | Isolated training environment preparation | PASS / NO_TRAINING_STARTED | `training_environment_report.md` |
+| Exp01.0 | JSON → YOLO segmentation conversion | PASS | `docs/exp01_0_json_to_yolo.md` |
+| Exp01.1 | Group-aware stratified split | PASS / 0 LEAKAGE | `docs/exp01_1_group_aware_split.md` |
+| Exp01.2 | Dataset v1 freeze and verification | PASS / DATASET_FREEZE_GATE_PASS | `docs/exp01_2_dataset_freeze.md` |
