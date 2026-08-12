@@ -14,6 +14,7 @@
 - Exp02.1 完成 100 epochs；best epoch 99；独立 VAL mask mAP50-95=0.29898；best/last 均可加载并保存 SHA256。
 - Exp02.2 PASS：train-only relative-mask-area quartiles、val size/class×size、固定点错误和 near-duplicate cross-label 审计完成；test untouched。
 - 训练曲线审计发现 epoch 1--5 的四项 val loss 为 NaN；按明确 no NaN/Inf 硬条件，Exp02 Baseline Gate STOP，等待用户审查；未执行 Exp02.3。
+- 用户人工审查决定继续保持 Baseline Gate STOP；授权且仅授权 Exp02.2a 短程复现与逐 checkpoint AMP/FP32 validation-loss 根因诊断。
 
 - 初始化 Exp00 工程结构、实验 registry 与基础文档。
 - 增加只读环境和数据审计脚本。

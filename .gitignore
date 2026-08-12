@@ -8,6 +8,7 @@ __pycache__/
 outputs/
 results/training/
 results/evaluation/
+results/diagnostics/
 results/environment/
 results/dataset_audit/exp*/
 results/dataset_audit/latest

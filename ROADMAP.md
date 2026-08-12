@@ -20,3 +20,4 @@
 - [ ] Exp02.3 960/1280 resolution ablation（本轮明确禁止）
 - [ ] Exp03+ 后续方法（本轮明确禁止）
 - [ ] 用户审查 Exp02 Baseline Gate STOP；审查前不允许 Exp02.3 或其他训练
+- [ ] Exp02.2a early-validation-loss NaN root-cause probe（当前 active；唯一获批诊断）
