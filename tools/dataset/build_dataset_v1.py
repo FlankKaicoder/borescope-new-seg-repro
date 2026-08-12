@@ -267,7 +267,7 @@ def split(args: argparse.Namespace) -> None:
                 candidates.append((score_assignment(trial, groups, totals), rng.random(), candidate))
             assignment[group["group_id"]] = min(candidates)[2]
         current = score_assignment(assignment, groups, totals)
-        for _ in range(2000):
+        for _ in range(args.iterations):
             group = rng.choice(groups); old = assignment[group["group_id"]]; new = rng.choice([s for s in SPLITS if s != old])
             assignment[group["group_id"]] = new
             candidate = score_assignment(assignment, groups, totals)
@@ -442,7 +442,7 @@ def parser() -> argparse.ArgumentParser:
     common = argparse.ArgumentParser(add_help=False)
     common.add_argument("--data-root", type=Path, required=True)
     p = sub.add_parser("convert", parents=[common]); p.add_argument("--raw-manifest", type=Path, required=True); p.add_argument("--near-groups", type=Path, required=True); p.add_argument("--output", type=Path, required=True); p.set_defaults(func=convert)
-    p = sub.add_parser("split", parents=[common]); p.add_argument("--conversion", type=Path, required=True); p.add_argument("--output", type=Path, required=True); p.add_argument("--seed", type=int, default=42); p.add_argument("--restarts", type=int, default=48); p.set_defaults(func=split)
+    p = sub.add_parser("split", parents=[common]); p.add_argument("--conversion", type=Path, required=True); p.add_argument("--output", type=Path, required=True); p.add_argument("--seed", type=int, default=42); p.add_argument("--restarts", type=int, default=6); p.add_argument("--iterations", type=int, default=300); p.set_defaults(func=split)
     p = sub.add_parser("freeze", parents=[common]); p.add_argument("--conversion", type=Path, required=True); p.add_argument("--split-dir", type=Path, required=True); p.add_argument("--dataset-root", type=Path, required=True); p.add_argument("--raw-manifest-hash", type=Path, required=True); p.add_argument("--git-commit", required=True); p.set_defaults(func=freeze)
     p = sub.add_parser("verify"); p.add_argument("--dataset-root", type=Path, required=True); p.add_argument("--output", type=Path, required=True); p.set_defaults(func=verify)
     return root
