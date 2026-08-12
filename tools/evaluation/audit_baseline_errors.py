@@ -168,6 +168,11 @@ def main() -> int:
     rows = load_manifest(args.manifest)
     train_rows = [r for r in rows if r["split"] == "train"]
     val_rows = [r for r in rows if r["split"] == "val"]
+    group_label_sets: dict[str, set[str]] = defaultdict(set)
+    for row in rows:
+        near_id = row.get("near_duplicate_group_id", "").strip()
+        if near_id:
+            group_label_sets[near_id].add(row.get("labels_present", "").strip())
     # The test rows are deliberately neither resolved to paths nor passed to the model.
 
     train_areas = []
@@ -209,6 +214,8 @@ def main() -> int:
 
         image_categories = set()
         near_id = row.get("near_duplicate_group_id", "").strip()
+        duplicate_context = ("singleton" if not near_id else
+                             "near_cross_label" if len(group_label_sets[near_id]) > 1 else "near_same_label")
         for gi, gt in enumerate(gts):
             pi = spatial_matches.get(gi)
             best_m = float(miou[gi].max()) if len(preds) else 0.0
@@ -230,6 +237,7 @@ def main() -> int:
             if error != "TP": image_categories.add(error)
             gt_audit.append({"stem": row["stem"], "near_duplicate_group_id": near_id,
                              "is_near_duplicate_member": bool(near_id), "gt_index": gi,
+                             "duplicate_context": duplicate_context,
                              "class_id": gt["class_id"], "class_name": names[gt["class_id"]],
                              "relative_mask_area": gt["relative_mask_area"], "size_bin": size_bin(gt["relative_mask_area"], quartiles),
                              "error_type": error, "pred_class_id": pred_class, "matched_confidence": matched_conf,
@@ -245,6 +253,7 @@ def main() -> int:
                 error = "FP_unmatched"
             if error != "TP": image_categories.add(error)
             pred_audit.append({"stem": row["stem"], "near_duplicate_group_id": near_id,
+                               "duplicate_context": duplicate_context,
                                "pred_index": pi, "class_id": pred["class_id"], "class_name": names[pred["class_id"]],
                                "confidence": pred["confidence"], "error_type": error,
                                "matched_gt_index": "" if matched_gt is None else matched_gt})
@@ -278,10 +287,12 @@ def main() -> int:
     write_json(args.output / "error_summary.json", summary)
 
     near_rows = []
-    for flag in (False, True):
-        subset = [x for x in gt_audit if x["is_near_duplicate_member"] == flag]
+    for context in ("singleton", "near_same_label", "near_cross_label"):
+        subset = [x for x in gt_audit if x["duplicate_context"] == context]
         errors = sum(x["error_type"] != "TP" for x in subset)
-        near_rows.append({"is_near_duplicate_member": flag, "gt_instances": len(subset), "errors": errors,
+        wrong = sum(x["error_type"] == "wrong_class" for x in subset)
+        near_rows.append({"duplicate_context": context, "gt_instances": len(subset), "errors": errors,
+                          "wrong_class": wrong,
                           "error_rate": errors / len(subset) if subset else 0.0})
     write_csv(args.output / "near_duplicate_error_concentration.csv", near_rows)
     write_json(args.output / "run_summary.json", summary | {"train_area_quartiles": quartiles.tolist()})
