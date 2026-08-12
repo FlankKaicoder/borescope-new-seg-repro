@@ -1,10 +1,12 @@
 __pycache__/
+.venv/
 *.py[cod]
 .pytest_cache/
 .idea/
 .vscode/
 outputs/
 results/training/
+results/environment/
 results/dataset_audit/exp*/
 results/dataset_audit/latest
 results/dataset_audit/*_source_field_audit.json
