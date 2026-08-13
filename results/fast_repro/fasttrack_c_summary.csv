@@ -1,6 +1,6 @@
 ﻿Experiment,Formal_training,VAL,Status,Test_accessed,Evidence
 Exp08 AUX_CE,NO,NO,SKIPPED_BY_ENGINEERING_GATE,false,exp08_kd/summary.json
 Exp08 KD,NO,NO,SKIPPED_BY_ENGINEERING_GATE,false,exp08_kd/summary.json
-Exp09 SSL,YES (100 epochs),N/A,PASS_NO_COLLAPSE,false,exp09_simsiam/ssl/summary.json
+Exp09 SSL,YES (100 epochs),N/A,INVALID_BY_BACKBONE_NO_UPDATE,false,exp09_simsiam/ssl/summary.json
 Exp09 downstream,NO,NO,NOT_RUN_BY_GATE,false,exp09_transfer_repair/transfer_gate_report.json
-Exp09.2a transfer repair,NO,N/A,REAL_TRANSFER_FAILURE,false,exp09_transfer_repair/transfer_gate_report.json
+Exp09.2a transfer repair,NO,N/A,PASS_REVISED,false,exp09_transfer_repair/transfer_gate_report.json

@@ -2,10 +2,9 @@
 
 ## Unreleased
 
-- Exp09.2a corrected the byte-hash verification: old mismatches were 80 BN running-stat buffers and native FP16 round-trip is explainable, but the frozen SSL export changed 0/120 trainable parameters versus COCO. Final gate: REAL_TRANSFER_FAILURE; downstream/VAL NOT_RUN_BY_GATE.
-
-- FastTrack-C stopped at the Exp09 backbone-transfer Hard Gate: Exp08 was skipped by its engineering gate; Exp09 SSL completed without collapse, but only 160/240 tensors were exact after downstream reload.
-- Exp09 downstream/VAL, Exp10, and Exp11 were not run; `test_accessed=false`.
+- Finalized Fast Repro screening status: Exp09 transfer mechanism `PASS_REVISED`; SimSiam SSL `INVALID_BY_BACKBONE_NO_UPDATE / NOT_EVALUATED` because 0/120 trainable backbone parameters changed versus COCO; downstream `NOT_RUN_BY_GATE`.
+- Exp08 remains `SKIPPED_BY_ENGINEERING_GATE / NOT_EVALUATED`; old-method candidate is Exp05 Hard Mining; extension candidate is NONE.
+- Fast Repro is complete and waiting for explicit Exp10 authorization. Exp10/Exp11 were not run; `test_accessed=false`.
 
 - FastTrack-B 完成：Exp06 CE COMPLETE，Exp06 SupCon SUPCON_POSITIVE，Exp07 Stage2 NEGATIVE；HardMining+FrozenStage2 probe 未过 Gate。
 - ROI patch train/val=2532/592，source-image leakage=0；全程 test_accessed=false。

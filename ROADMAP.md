@@ -28,6 +28,8 @@
 - [x] Exp07 Stage2（NEGATIVE；组合 probe 未过 Gate）
 - [x] Exp08 KD implementation/smoke: SKIPPED_BY_ENGINEERING_GATE
 - [x] Exp09 SimSiam SSL 100 epochs: PASS / no collapse
-- [x] Exp09.2a transfer repair: REAL_TRANSFER_FAILURE
-- [x] Exp09 downstream/VAL: NOT_RUN_BY_GATE
-- [ ] Exp10/Exp11: forbidden pending review
+- [x] Exp09 transfer mechanism verification: PASS_REVISED
+- [x] Exp09 SimSiam reconstruction: INVALID_BY_BACKBONE_NO_UPDATE; downstream NOT_RUN_BY_GATE
+- [x] Fast Repro method screening complete
+- [ ] Exp10 three-seed Baseline vs Hard Mining: pending authorization
+- [ ] Exp11 frozen final TEST: forbidden until Exp10 candidate freeze

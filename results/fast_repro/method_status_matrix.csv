@@ -8,4 +8,4 @@ SupCon,Historical,SUPCON_POSITIVE,VAL classifier macro F1 0.69370,NO_SEG_MODEL,S
 Stage2,Historical,NEGATIVE,Best mask F1 below YOLO at conf 0.25,NO,End-to-end degradation
 AUX CE,Historical reconstruction,SKIPPED_BY_ENGINEERING_GATE,batch32 smoke over 70 seconds,NO,No comparable formal result
 KD,Historical reconstruction,SKIPPED_BY_ENGINEERING_GATE,same online-teacher bottleneck,NO,No comparable formal result
-SimSiam,New extension,REAL_TRANSFER_FAILURE,0/120 trainable parameters changed vs COCO,NO,Frozen SSL export changed only BN buffers
+SimSiam,New extension,INVALID_BY_BACKBONE_NO_UPDATE / NOT_EVALUATED,0/120 trainable parameters changed vs COCO; transfer mechanism PASS,NO,No effective trainable backbone adaptation; downstream not evaluated

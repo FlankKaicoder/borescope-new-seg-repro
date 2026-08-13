@@ -25,4 +25,4 @@
 | Exp07 | YOLO + ResNet Stage2 | COMPLETE / NEGATIVE / VAL ONLY | `docs/exp07_stage2_fast_repro.md` |
 
 | Exp08 | Classifier Teacher to YOLO KD | SKIPPED_BY_ENGINEERING_GATE | `docs/exp08_kd_fast_repro.md` |
-| Exp09/09.2a | SimSiam adaptation and transfer repair | REAL_TRANSFER_FAILURE / downstream NOT_RUN_BY_GATE | `docs/exp09_transfer_verification_repair.md` |
+| Exp09/09.2a | SimSiam reconstruction and transfer verification | INVALID_BY_BACKBONE_NO_UPDATE / NOT_EVALUATED | `docs/exp09_transfer_verification_repair.md` |
