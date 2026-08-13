@@ -23,4 +23,7 @@
 - [x] Exp04 Crack one-class diagnostic（NO_CLEAR_GAIN）
 - [x] Exp05 fair hard-mining comparison（POSITIVE_CANDIDATE）
 - [x] Exp02.3 960/1280 resolution ablation（DEFERRED_BY_EVIDENCE）
-- [ ] Exp03+ 其他后续方法（未授权）
+- [x] Exp06 ROI ResNet18 CE（COMPLETE）
+- [x] Exp06 SupCon（SUPCON_POSITIVE）
+- [x] Exp07 Stage2（NEGATIVE；组合 probe 未过 Gate）
+- [ ] FastTrack-C KD / SimSiam（未授权）

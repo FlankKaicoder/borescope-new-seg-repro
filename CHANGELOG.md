@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- FastTrack-B 完成：Exp06 CE COMPLETE，Exp06 SupCon SUPCON_POSITIVE，Exp07 Stage2 NEGATIVE；HardMining+FrozenStage2 probe 未过 Gate。
+- ROI patch train/val=2532/592，source-image leakage=0；全程 test_accessed=false。
+- 新增 FastTrack-B 总表、跨阶段 master summary、规定图表与定性案例；artifact 全量 decode PASS。
+
 - 用户政策正式关闭 Exp00 数据 blocker：24 张无 JSON 图统一排除为 `excluded_unpaired`；专业 JSON 作为权威 GT，22 个近重复跨类组保留原标签并仅用于防泄漏分组与困难类别研究。
 - Data Gate 更新为 `PASS FOR EXP01`；仍禁止在 Dataset Freeze Gate 通过前训练，并且本轮不得启动 Exp02。
 - 完成 Exp01.0：969 份权威 JSON 转为 YOLO segmentation，1847/1847 polygon 成功，0 conversion error，冻结 7 类 mapping。
@@ -22,7 +26,7 @@
 - 用户人工裁决 Exp02 Baseline Gate = `PASS_WITH_NUMERICAL_WAIVER`；Exp02.3 = `DEFERRED_BY_EVIDENCE`。
 - FastTrack-A 完成：Exp03 low-confidence recovery POSITIVE，Exp04 Crack-only NO_CLEAR_GAIN，Exp05 fair hard mining POSITIVE_CANDIDATE。
 - Exp05 Control/Treatment 均 20,040 sampled images / 331 optimizer updates；Treatment Mask mAP50-95 比 Control +0.03035。
-- 共 151 个关键图像 artifact 全部存在、非空且 decode PASS；FastTrack-A 全程 `test_accessed=false`。
+- 共 152 个 FastTrack-A 关键图像 artifact 全部存在、非空且 decode PASS；FastTrack-A 全程 `test_accessed=false`。
 
 - 初始化 Exp00 工程结构、实验 registry 与基础文档。
 - 增加只读环境和数据审计脚本。

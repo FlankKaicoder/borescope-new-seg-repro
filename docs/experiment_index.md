@@ -19,3 +19,7 @@
 | Exp03 | Low-confidence recovery | COMPLETE / POSITIVE / VAL_ONLY | `docs/exp03_low_conf_fast_repro.md` |
 | Exp04 | Crack one-class diagnostic | COMPLETE / NO_CLEAR_GAIN | `docs/exp04_crack_oneclass_fast_repro.md` |
 | Exp05 | Fair hard-mining comparison | COMPLETE / POSITIVE_CANDIDATE | `docs/exp05_hard_mining_fast_repro.md` |
+
+| Exp06.0/1 | ROI patch + ResNet18 CE | COMPLETE / VAL ONLY | `docs/exp06_roi_resnet_fast_repro.md` |
+| Exp06.2 | ResNet18 CE + SupCon | COMPLETE / SUPCON_POSITIVE | `docs/exp06_supcon_fast_repro.md` |
+| Exp07 | YOLO + ResNet Stage2 | COMPLETE / NEGATIVE / VAL ONLY | `docs/exp07_stage2_fast_repro.md` |
