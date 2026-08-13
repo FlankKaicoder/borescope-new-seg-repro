@@ -28,5 +28,6 @@
 - [x] Exp07 Stage2（NEGATIVE；组合 probe 未过 Gate）
 - [x] Exp08 KD implementation/smoke: SKIPPED_BY_ENGINEERING_GATE
 - [x] Exp09 SimSiam SSL 100 epochs: PASS / no collapse
-- [ ] Exp09 downstream: STOP_BY_BACKBONE_TRANSFER_HARD_GATE
+- [x] Exp09.2a transfer repair: REAL_TRANSFER_FAILURE
+- [x] Exp09 downstream/VAL: NOT_RUN_BY_GATE
 - [ ] Exp10/Exp11: forbidden pending review

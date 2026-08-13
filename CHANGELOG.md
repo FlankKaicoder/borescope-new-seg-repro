@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Exp09.2a corrected the byte-hash verification: old mismatches were 80 BN running-stat buffers and native FP16 round-trip is explainable, but the frozen SSL export changed 0/120 trainable parameters versus COCO. Final gate: REAL_TRANSFER_FAILURE; downstream/VAL NOT_RUN_BY_GATE.
+
 - FastTrack-C stopped at the Exp09 backbone-transfer Hard Gate: Exp08 was skipped by its engineering gate; Exp09 SSL completed without collapse, but only 160/240 tensors were exact after downstream reload.
 - Exp09 downstream/VAL, Exp10, and Exp11 were not run; `test_accessed=false`.
 
