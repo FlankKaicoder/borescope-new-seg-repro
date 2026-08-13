@@ -12,6 +12,7 @@ import ultralytics
 from ultralytics.engine.validator import BaseValidator
 from ultralytics.models.yolo.segment.train import SegmentationTrainer
 from ultralytics.models.yolo.segment.val import SegmentationValidator
+from ultralytics.nn.modules.block import Attention
 from ultralytics.nn.tasks import BaseModel, SegmentationModel
 from ultralytics.utils.loss import v8DetectionLoss, v8SegmentationLoss
 
@@ -37,19 +38,20 @@ def main() -> None:
     import ultralytics.models.yolo.segment.train as segment_train_mod
     import ultralytics.models.yolo.segment.val as segment_val_mod
     import ultralytics.nn.tasks as tasks_mod
+    import ultralytics.nn.modules.block as block_mod
     import ultralytics.utils.loss as loss_mod
 
     import argparse
     ap = argparse.ArgumentParser(); ap.add_argument("--output", type=Path, required=True); a = ap.parse_args()
     a.output.mkdir(parents=True, exist_ok=False)
-    modules = [validator_mod, trainer_mod, loss_mod, tasks_mod, segment_train_mod, segment_val_mod,
+    modules = [validator_mod, trainer_mod, loss_mod, tasks_mod, block_mod, segment_train_mod, segment_val_mod,
                segment_predict_mod, detect_val_mod]
     files = sorted({Path(inspect.getsourcefile(m)).resolve() for m in modules})
     rows = [{"path": str(p), "sha256": sha256(p), "size_bytes": p.stat().st_size} for p in files]
     with (a.output / "source_hashes.csv").open("w", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)
 
-    symbols = [BaseValidator.__call__, SegmentationTrainer.get_validator, BaseModel.forward,
+    symbols = [BaseValidator.__call__, SegmentationTrainer.get_validator, BaseModel.forward, Attention.forward,
                SegmentationModel.init_criterion, v8DetectionLoss.get_assigned_targets_and_loss,
                v8SegmentationLoss.loss, v8SegmentationLoss.single_mask_loss,
                v8SegmentationLoss.calculate_segmentation_loss, SegmentationValidator.preprocess]
