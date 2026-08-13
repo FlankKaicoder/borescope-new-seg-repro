@@ -184,6 +184,13 @@ def metrics(details,classaware=True):
   if classaware:wrong+=sum(1 for i,j in greedy(g,p,False).items() if g[i]['class_id']!=p[j]['class_id'])
  fp=pred-tp;fn=gt-tp;pr=tp/(tp+fp) if tp+fp else 0;re=tp/gt;f=2*pr*re/(pr+re) if pr+re else 0
  return {'TP':tp,'FP':fp,'FN':fn,'Precision':pr,'Recall':re,'F1':f,'WrongClass':wrong,'Mask_AP50':'N/A','Mask_AP50_95':'N/A'}
+def draw_stage2(path,d,title):
+ im=d['im'].copy()
+ for g in d['gt']:
+  cs,_=cv2.findContours(g['mask'].astype(np.uint8),cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE);cv2.drawContours(im,cs,-1,(0,220,0),2)
+ for p in d['pred']:
+  x1,y1,x2,y2=map(int,p['box']);cv2.rectangle(im,(x1,y1),(x2,y2),(0,0,230),2);cv2.putText(im,f"{NAMES[p['class_id']]} {p['confidence']:.2f}",(x1,max(18,y1)),0,.45,(0,0,230),1)
+ cv2.rectangle(im,(0,0),(im.shape[1],30),(20,20,20),-1);cv2.putText(im,title,(5,20),0,.48,(255,255,255),1);cv2.imwrite(str(path),im)
 def stage2(args):
  check_frozen();kind=args.classifier;cls=load_cls(kind);mrs=[r for r in split_rows() if r['split']=='val'];ips=[paths(r)[0] for r in mrs];yolo=YOLO(str(BASE));t0=time.perf_counter();res=list(yolo.predict(source=[str(x) for x in ips],imgsz=640,conf=.05,iou=.70,batch=32,device=0,retina_masks=True,verbose=False,stream=True));torch.cuda.synchronize();stage1_ms=(time.perf_counter()-t0)*1000/len(mrs);cache=[];cls_times=[]
  for r,rr in zip(mrs,res,strict=True):
@@ -222,21 +229,38 @@ def stage2(args):
  analyses={}
  for mode in ('A','B'):
   b=best[mode];before=filt(b['stage1_conf'],0,'A');after=filt(b['stage1_conf'],b['stage2_threshold'],mode);kept=0;eligible=0
+  corrected=harmful=0
   for d0,d1 in zip(before,after):
-   ma=greedy(d1['gt'],d1['pred'],True)
+   mb=greedy(d0['gt'],d0['pred'],True);ma=greedy(d1['gt'],d1['pred'],True);sb=greedy(d0['gt'],d0['pred'],False);sa=greedy(d1['gt'],d1['pred'],False)
    for gi in range(len(d1['gt'])):
-    if (d1['stem'],gi) in rec:eligible+=1;kept+=gi in ma
-  bm=metrics(before);am=metrics(after);spatial_before=sum(metrics([x],True)['WrongClass'] for x in before);spatial_after=sum(metrics([x],True)['WrongClass'] for x in after)
-  analyses[mode]={'recoverable_total':91,'recoverable_candidate_at_selected_conf':eligible,'recoverable_retained':kept,'recoverable_filtered':91-kept,'FP_before':bm['FP'],'FP_removed':bm['FP']-am['FP'],'FP_retained':am['FP'],'FP_removal_rate':(bm['FP']-am['FP'])/bm['FP'] if bm['FP'] else 0,'wrong_class_before':spatial_before,'wrong_class_after':spatial_after,'net_correction':spatial_before-spatial_after}
+    if (d1['stem'],gi) in rec:
+     eligible+=gi in mb;kept+=gi in ma
+    if gi in sb and d0['gt'][gi]['class_id']!=d0['pred'][sb[gi]]['class_id'] and gi in ma:corrected+=1
+    if gi in mb and gi in sa and d1['gt'][gi]['class_id']!=d1['pred'][sa[gi]]['class_id']:harmful+=1
+  bm=metrics(before);am=metrics(after);spatial_before=bm['WrongClass'];spatial_after=am['WrongClass']
+  analyses[mode]={'recoverable_total':91,'recoverable_candidate_at_selected_conf':eligible,'recoverable_stage1_unavailable':91-eligible,'recoverable_retained':kept,'recoverable_filtered_by_stage2':eligible-kept,'FP_before':bm['FP'],'FP_removed':bm['FP']-am['FP'],'FP_retained':am['FP'],'FP_removal_rate':(bm['FP']-am['FP'])/bm['FP'] if bm['FP'] else 0,'wrong_class_before':spatial_before,'wrong_class_after':spatial_after,'correct_reclassification':corrected,'harmful_reclassification':harmful,'net_correction':corrected-harmful}
  # Plots
  fd=FIG/'exp07_stage2';fd.mkdir(parents=True,exist_ok=True)
  st=[x for x in grids if x['mode']=='stage1_only'];plt.figure();plt.plot([x['stage1_conf'] for x in st],[x['Recall'] for x in st],'o-',label='Recall');plt.plot([x['stage1_conf'] for x in st],[x['FP'] for x in st],'o-',label='FP');plt.legend();plt.tight_layout();plt.savefig(fd/'exp07_stage1_threshold_tradeoff.png',dpi=160);plt.close()
  for mode in ('A','B'):
   z=np.array([[next(x['F1'] for x in grids if x['mode']==mode and x['stage1_conf']==a and x['stage2_threshold']==b) for b in (.3,.5,.7)] for a in (.05,.10,.15)]);plt.figure();plt.imshow(z,vmin=0,vmax=max(.6,z.max()),cmap='viridis');plt.xticks(range(3),(.3,.5,.7));plt.yticks(range(3),(.05,.10,.15));plt.colorbar(label='Mask F1');plt.xlabel('Stage2 threshold');plt.ylabel('Stage1 conf');plt.tight_layout();plt.savefig(fd/f'exp07_stage2_mode{mode}_grid.png',dpi=160);plt.close()
  comp=[base25,max(st,key=lambda x:x['F1']),best['A'],best['B']];plt.figure(figsize=(8,4));plt.bar(['YOLO .25','Low-conf','Mode A','Mode B'],[x['F1'] for x in comp]);plt.ylabel('Mask F1');plt.tight_layout();plt.savefig(fd/'exp07_stage2_main_comparison.png',dpi=160);plt.close()
- latency={'stage1_mean_ms_image':stage1_ms,'stage1_median_ms_image':stage1_ms,'classifier_mean_ms_candidate':float(np.mean(cls_times)),'classifier_median_ms_candidate':float(np.median(cls_times)),'end_to_end_mean_ms_image':stage1_ms+sum(len(d['pred']) for d in cache)*float(np.mean(cls_times))/len(cache),'end_to_end_median_ms_image':'N/A'}
+ stage1_samples=[float(x.speed.get('inference',stage1_ms)) for x in res];candidate_counts=[len(x['pred']) for x in cache];e2e=[s+n*t for s,n,t in zip(stage1_samples,candidate_counts,cls_times)]
+ latency={'stage1_mean_ms_image':float(np.mean(stage1_samples)),'stage1_median_ms_image':float(np.median(stage1_samples)),'classifier_mean_ms_candidate':float(np.mean(cls_times)),'classifier_median_ms_candidate':float(np.median(cls_times)),'end_to_end_mean_ms_image':float(np.mean(e2e)),'end_to_end_median_ms_image':float(np.median(e2e))}
+ # Small qualitative audit set from the selected configuration (up to 5 per category).
+ qdir=fd/'qualitative';qdir.mkdir(exist_ok=True);a0=filt(best['A']['stage1_conf'],0,'A');aa=filt(best['A']['stage1_conf'],best['A']['stage2_threshold'],'A');bb=filt(best['B']['stage1_conf'],best['B']['stage2_threshold'],'B');qc=Counter()
+ for d0,da,db in zip(a0,aa,bb):
+  m0=metrics([d0]);ma=metrics([da]);mb=metrics([db]);cats=[]
+  if m0['FP']>ma['FP']:cats.append('success_filter_fp')
+  rec_here={gi for stem,gi in rec if stem==d0['stem']};matched_a=set(greedy(da['gt'],da['pred'],True));
+  if rec_here&matched_a:cats.append('success_keep_low_conf_tp')
+  if m0['WrongClass']>mb['WrongClass']:cats.append('success_reclassify')
+  if m0['TP']>ma['TP']:cats.append('error_filter_tp')
+  if m0['TP']>mb['TP'] and mb['WrongClass']>=m0['WrongClass']:cats.append('error_reclassify')
+  for cat in cats:
+   if qc[cat]<5:draw_stage2(qdir/f"{cat}__{d0['stem']}.jpg",db if 'reclass' in cat else da,f"{cat} {d0['stem']}");qc[cat]+=1
  conclusion='POSITIVE_CANDIDATE' if max(best['A']['F1'],best['B']['F1'])>base25['F1']+.02 else ('TRADEOFF_ONLY' if max(best['A']['F1'],best['B']['F1'])>=base25['F1'] else 'NEGATIVE')
- dump(ROOT/'results/fast_repro/exp07_stage2/summary.json',{'status':'PASS','test_accessed':False,'classifier':kind,'baseline':base25,'best':best,'analysis':analyses,'latency':latency,'AP_note':'N/A: current post-processing fixed-point evaluator has no reliable arbitrary-prediction COCO AP adapter; deferred by Fast Repro rule.','conclusion':conclusion})
+ dump(ROOT/'results/fast_repro/exp07_stage2/summary.json',{'status':'PASS','test_accessed':False,'classifier':kind,'baseline':base25,'best':best,'analysis':analyses,'latency':latency,'qualitative_counts':dict(qc),'AP_note':'N/A: current post-processing fixed-point evaluator has no reliable arbitrary-prediction COCO AP adapter; deferred by Fast Repro rule.','conclusion':conclusion})
  print(json.dumps({'baseline':base25,'best':best,'analysis':analyses,'latency':latency,'conclusion':conclusion},indent=2),flush=True)
 
 def compare(args):
