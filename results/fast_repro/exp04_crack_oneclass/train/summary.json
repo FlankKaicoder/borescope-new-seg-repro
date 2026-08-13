@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "test_accessed": false,
+  "start_utc": "2026-08-13T07:56:11.719867+00:00",
+  "end_utc": "2026-08-13T08:06:10.218253+00:00",
+  "wall_seconds": 598.498388540931,
+  "epochs": 100,
+  "train_losses_finite": true,
+  "checkpoint_audit": {
+    "best.pt": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/fast_repro/exp04_crack_oneclass/train/ultralytics/crack_only/weights/best.pt",
+      "sha256": "3da20e0ad7b0d5433a1df93427419cdf9a636f60164a42201496be077c2ac1e1",
+      "finite": true,
+      "bad_tensors": []
+    },
+    "last.pt": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/fast_repro/exp04_crack_oneclass/train/ultralytics/crack_only/weights/last.pt",
+      "sha256": "5f495733e82f75948e7a5eef104487e550ba89f20f6ac7806b268bfdea3a55f2",
+      "finite": true,
+      "bad_tensors": []
+    }
+  },
+  "save_dir": "/root/autodl-tmp/borescope-new-seg-repro/results/fast_repro/exp04_crack_oneclass/train/ultralytics/crack_only"
+}

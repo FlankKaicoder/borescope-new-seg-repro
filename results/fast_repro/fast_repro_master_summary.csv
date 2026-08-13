@@ -1,0 +1,9 @@
+﻿Experiment,Metric_domain,Primary_metric,Value,Conclusion
+Exp02 Baseline,Segmentation,Mask mAP50-95,0.29898123412927496,PASS_WITH_NUMERICAL_WAIVER
+Exp03 Low-conf,Segmentation fixed-point,Mask F1 @ conf .25,0.4749034749034749,POSITIVE
+Exp04 Crack-only,Segmentation,Crack AP50-95,0.055484,NO_CLEAR_GAIN
+Exp05 Hard Mining,Segmentation,Mask mAP50-95,0.311318,POSITIVE_CANDIDATE
+Exp06 CE ROI,Classification,Macro F1,0.6778044125787699,COMPLETE
+Exp06 SupCon ROI,Classification,Macro F1,0.6936984075290706,SUPCON_POSITIVE
+Exp07 Stage2 Mode A,Segmentation fixed-point,Mask F1,0.4523364485981308,NEGATIVE
+Exp07 Stage2 Mode B,Segmentation fixed-point,Mask F1,0.4508196721311475,NEGATIVE

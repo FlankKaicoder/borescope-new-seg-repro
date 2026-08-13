@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "split": "val",
+  "test_accessed": false,
+  "confidence": 0.25,
+  "TP": 117,
+  "FP": 104,
+  "FN": 179,
+  "GT": 296,
+  "prediction_count": 221
+}

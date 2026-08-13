@@ -1,0 +1,20 @@
+{
+  "data": "/root/autodl-tmp/borescope-new-seg-data/v1/data.yaml",
+  "imgsz": 640,
+  "batch": 32,
+  "epochs": 30,
+  "seed": 42,
+  "deterministic": true,
+  "amp": true,
+  "optimizer": "AdamW",
+  "device": 0,
+  "workers": 4,
+  "cache": false,
+  "val": true,
+  "plots": true,
+  "save": true,
+  "project": "/root/autodl-tmp/borescope-new-seg-repro/results/fast_repro/exp05_hard_mining/control/ultralytics",
+  "name": "control",
+  "exist_ok": false,
+  "verbose": true
+}

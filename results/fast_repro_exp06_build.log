@@ -1,0 +1,31 @@
+positive patches 1562
+{
+  "status": "PASS",
+  "test_accessed": false,
+  "patch_count": 3124,
+  "train_count": 2532,
+  "val_count": 592,
+  "source_image_leakage": 0,
+  "counts": {
+    "train|corrosion|gt_positive": 500,
+    "train|Burn|gt_positive": 287,
+    "train|Material missing|gt_positive": 184,
+    "train|Crack|gt_positive": 95,
+    "train|Dent|gt_positive": 128,
+    "train|Tip curl|gt_positive": 27,
+    "train|Tears|gt_positive": 45,
+    "val|corrosion|gt_positive": 109,
+    "val|Material missing|gt_positive": 32,
+    "val|Burn|gt_positive": 81,
+    "val|Crack|gt_positive": 24,
+    "val|Tip curl|gt_positive": 3,
+    "val|Tears|gt_positive": 10,
+    "val|Dent|gt_positive": 37,
+    "train|background|hard_fp_background": 633,
+    "train|background|random_background": 633,
+    "val|background|hard_fp_background": 148,
+    "val|background|random_background": 148
+  },
+  "split_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "baseline_sha256": "c007fbefffcbe474384a12e3f9bf85a1308b159a22df69ac2be099a33e0311e7"
+}

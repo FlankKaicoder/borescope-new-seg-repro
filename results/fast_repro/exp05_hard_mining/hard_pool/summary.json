@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "derivation_split": "train",
+  "test_accessed": false,
+  "train_images": 668,
+  "hard_images": 201,
+  "hard_fraction": 0.3008982035928144,
+  "weights_sha256": "c007fbefffcbe474384a12e3f9bf85a1308b159a22df69ac2be099a33e0311e7",
+  "hard_score": "3*FN + 2*wrong_class + 2*localization_failure + FP",
+  "class_presence_in_hard_pool": {
+    "corrosion": 103,
+    "Burn": 71,
+    "Material missing": 59,
+    "Dent": 10,
+    "Crack": 35,
+    "Tip curl": 2,
+    "Tears": 2
+  },
+  "score_min": 0,
+  "score_max": 30
+}

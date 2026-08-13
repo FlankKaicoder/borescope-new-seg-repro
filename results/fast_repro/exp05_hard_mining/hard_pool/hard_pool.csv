@@ -1,0 +1,669 @@
+﻿image_stem,hard_score,FN,wrong_class,localization_failure,FP,labels_present,is_hard
+1,7,0,0,3,1,corrosion,True
+2,1,0,0,0,1,corrosion,False
+3,6,0,0,3,0,Burn,True
+6,5,0,0,2,1,corrosion,True
+7,8,0,0,3,2,corrosion,True
+8,0,0,0,0,0,corrosion,False
+9,10,0,0,4,2,corrosion,True
+12,10,0,1,3,2,corrosion,True
+13,2,0,0,1,0,corrosion,False
+14,7,2,0,0,1,Burn|corrosion,True
+15,4,1,0,0,1,Material missing,True
+17,3,1,0,0,0,Crack|corrosion,False
+18,12,4,0,0,0,Dent|Material missing,True
+20,12,1,2,1,3,Burn|corrosion,True
+21,3,1,0,0,0,Dent|corrosion,False
+23,2,0,0,1,0,corrosion,False
+24,13,4,0,0,1,Burn|corrosion,True
+26,18,4,1,1,2,Burn|corrosion,True
+27,2,0,0,1,0,corrosion,False
+28,3,1,0,0,0,Dent,False
+29,2,0,0,1,0,corrosion,False
+31,15,3,0,2,2,Burn|Crack|Material missing|corrosion,True
+33,22,0,0,8,6,corrosion,True
+34,1,0,0,0,1,corrosion,False
+37,8,0,0,2,4,corrosion,True
+38,12,4,0,0,0,corrosion,True
+43,4,0,0,2,0,corrosion,True
+44,8,2,0,0,2,Burn|Material missing|corrosion,True
+48,12,4,0,0,0,Burn,True
+49,2,0,0,0,2,corrosion,False
+50,11,1,0,3,2,Burn|Material missing|corrosion,True
+52,3,0,0,1,1,corrosion,True
+53,0,0,0,0,0,corrosion,False
+54,16,1,0,4,5,Material missing|corrosion,True
+55,4,0,0,1,2,corrosion,True
+56,4,0,0,2,0,corrosion,True
+57,3,0,1,0,1,corrosion,True
+58,12,2,0,2,2,Material missing|corrosion,True
+59,4,0,0,1,2,corrosion,True
+63,6,2,0,0,0,Burn,True
+64,6,2,0,0,0,Burn,True
+65,6,0,0,1,4,Material missing|corrosion,True
+66,2,0,0,1,0,corrosion,False
+67,4,0,0,1,2,corrosion,True
+68,1,0,0,0,1,corrosion,False
+69,4,1,0,0,1,Material missing|corrosion,True
+71,13,0,0,6,1,corrosion,True
+72,6,2,0,0,0,Crack|corrosion,True
+73,3,1,0,0,0,corrosion,True
+75,0,0,0,0,0,Material missing|corrosion,False
+76,7,0,0,2,3,Burn,True
+79,4,1,0,0,1,Burn,True
+80,0,0,0,0,0,corrosion,False
+81,6,1,1,0,1,corrosion,True
+82,3,1,0,0,0,Dent,True
+83,3,0,0,0,3,Burn,True
+84,7,2,0,0,1,Material missing,True
+85,9,2,0,1,1,Dent|Material missing,True
+86,3,1,0,0,0,Crack,True
+88,7,2,0,0,1,Burn,True
+89,2,0,0,1,0,corrosion,False
+91,0,0,0,0,0,corrosion,False
+93,3,1,0,0,0,corrosion,True
+94,6,2,0,0,0,Burn|corrosion,True
+95,12,3,0,0,3,Burn|Material missing|corrosion,True
+96,6,1,1,0,1,corrosion,True
+97,9,3,0,0,0,Burn,True
+98,13,0,0,3,7,corrosion,True
+99,10,1,0,3,1,Burn|corrosion,True
+100,3,1,0,0,0,Material missing,False
+101,9,3,0,0,0,Crack|corrosion,True
+102,7,1,0,1,2,Burn|Material missing,True
+103,9,0,1,2,3,Material missing|corrosion,True
+104,2,0,0,0,2,corrosion,False
+105,1,0,0,0,1,corrosion,False
+106,0,0,0,0,0,corrosion,False
+107,0,0,0,0,0,corrosion,False
+108,5,0,0,2,1,Burn,True
+109,1,0,0,0,1,Burn|corrosion,False
+110,6,0,0,2,2,Burn,True
+111,4,1,0,0,1,Crack,True
+113,4,0,0,1,2,corrosion,True
+114,3,1,0,0,0,Material missing,False
+115,4,1,0,0,1,Burn|Crack,True
+117,3,0,0,1,1,Burn,False
+119,6,2,0,0,0,Burn,True
+120,3,0,0,1,1,Burn,False
+123,3,0,0,1,1,Crack|corrosion,False
+124,10,3,0,0,1,Crack|Material missing,True
+129,10,3,0,0,1,Material missing,True
+131,4,0,1,0,2,corrosion,True
+132,1,0,0,0,1,Material missing,False
+133,4,0,0,2,0,corrosion,True
+135,7,1,0,0,4,Crack|corrosion,True
+136,3,0,0,0,3,Burn|corrosion,False
+137,1,0,0,0,1,corrosion,False
+139,1,0,0,0,1,Material missing,False
+141,8,2,0,0,2,Material missing|corrosion,True
+143,6,2,0,0,0,Burn|corrosion,True
+144,0,0,0,0,0,Burn,False
+146,3,1,0,0,0,Crack,False
+147,4,0,0,1,2,Burn,True
+148,3,0,1,0,1,Burn,False
+149,0,0,0,0,0,Material missing,False
+151,13,4,0,0,1,Material missing,True
+153,5,0,0,1,3,Material missing,True
+154,5,0,0,1,3,Burn,True
+155,7,0,0,2,3,corrosion,True
+156,1,0,0,0,1,Material missing,False
+157,6,0,0,0,6,corrosion,True
+165,3,0,0,1,1,corrosion,False
+166,0,0,0,0,0,corrosion,False
+167,4,1,0,0,1,corrosion,True
+168,0,0,0,0,0,Burn,False
+169,14,0,0,6,2,corrosion,True
+170,10,3,0,0,1,Material missing|corrosion,True
+171,7,0,0,2,3,corrosion,True
+173,11,1,0,3,2,Burn|corrosion,True
+175,8,2,0,0,2,Material missing,True
+176,4,1,0,0,1,Burn|Crack,True
+177,4,1,0,0,1,Crack|Material missing,True
+179,3,1,0,0,0,Burn,False
+180,5,1,0,1,0,Burn|Crack,True
+182,3,1,0,0,0,Dent,False
+184,3,1,0,0,0,corrosion,False
+185,6,0,0,2,2,corrosion,True
+188,5,0,0,2,1,Burn|corrosion,True
+189,3,1,0,0,0,corrosion,False
+190,4,0,1,0,2,Dent|corrosion,True
+191,2,0,0,1,0,corrosion,False
+192,3,0,0,1,1,corrosion,False
+193,4,0,0,1,2,Crack|corrosion,True
+195,3,0,0,1,1,corrosion,False
+196,3,1,0,0,0,Dent|corrosion,False
+197,9,0,0,3,3,corrosion,True
+198,16,4,1,0,2,Crack|Material missing,True
+199,1,0,0,0,1,corrosion,False
+202,3,1,0,0,0,Material missing,False
+205,3,0,0,1,1,corrosion,False
+206,8,0,0,4,0,corrosion,True
+207,10,0,1,2,4,Burn|Material missing|corrosion,True
+208,3,1,0,0,0,corrosion,False
+209,9,0,0,2,5,Material missing,True
+210,9,0,0,3,3,corrosion,True
+213,4,0,0,0,4,corrosion,True
+215,9,3,0,0,0,corrosion,True
+216,0,0,0,0,0,Dent,False
+217,0,0,0,0,0,corrosion,False
+219,9,3,0,0,0,Dent|corrosion,True
+220,0,0,0,0,0,Material missing,False
+221,6,1,0,1,1,Dent|corrosion,True
+222,10,3,0,0,1,Burn|Crack,True
+223,0,0,0,0,0,corrosion,False
+224,0,0,0,0,0,corrosion,False
+225,4,0,0,2,0,Burn,True
+227,6,2,0,0,0,corrosion,True
+228,6,0,0,0,6,corrosion,True
+233,2,0,0,1,0,Burn,False
+234,0,0,0,0,0,corrosion,False
+235,7,0,0,2,3,corrosion,True
+236,3,0,0,1,1,corrosion,False
+237,3,1,0,0,0,Burn|Crack,False
+238,7,1,0,1,2,Crack|corrosion,True
+239,3,1,0,0,0,Dent,False
+240,2,0,0,0,2,corrosion,False
+243,4,1,0,0,1,Material missing,True
+249,3,1,0,0,0,Burn|corrosion,False
+250,1,0,0,0,1,Dent,False
+252,2,0,0,0,2,Burn,False
+253,3,1,0,0,0,Burn|Crack,False
+254,2,0,0,1,0,corrosion,False
+255,6,1,0,1,1,Burn|Material missing,True
+257,3,0,0,1,1,corrosion,False
+258,6,2,0,0,0,corrosion,True
+259,4,0,0,1,2,Burn,True
+260,0,0,0,0,0,Crack,False
+261,2,0,0,1,0,corrosion,False
+263,0,0,0,0,0,corrosion,False
+264,6,1,1,0,1,Burn|Material missing|corrosion,True
+265,0,0,0,0,0,Burn,False
+266,9,2,0,1,1,Burn|Material missing|corrosion,True
+268,3,0,0,1,1,Burn,False
+269,4,0,0,2,0,Burn,True
+270,3,0,0,1,1,corrosion,False
+271,0,0,0,0,0,corrosion,False
+272,4,1,0,0,1,Crack|corrosion,True
+273,2,0,0,0,2,corrosion,False
+274,4,1,0,0,1,Burn,True
+275,3,0,0,1,1,corrosion,False
+276,0,0,0,0,0,Burn,False
+277,6,2,0,0,0,corrosion,True
+278,0,0,0,0,0,corrosion,False
+279,0,0,0,0,0,corrosion,False
+281,0,0,0,0,0,corrosion,False
+282,2,0,0,1,0,corrosion,False
+283,3,1,0,0,0,Dent|Material missing,False
+284,6,2,0,0,0,Material missing|corrosion,True
+285,3,0,0,1,1,Burn,False
+286,9,3,0,0,0,Crack|corrosion,True
+287,2,0,0,1,0,corrosion,False
+288,4,0,0,1,2,Material missing,True
+289,3,0,0,1,1,corrosion,False
+290,6,1,0,1,1,Burn|Crack,True
+291,6,2,0,0,0,Material missing|corrosion,True
+292,3,0,0,1,1,Burn,False
+294,0,0,0,0,0,corrosion,False
+295,3,0,0,1,1,Burn,False
+296,4,1,0,0,1,Burn,True
+297,5,0,1,1,1,Material missing,True
+299,3,0,0,1,1,corrosion,False
+300,3,0,1,0,1,Dent|corrosion,False
+301,3,1,0,0,0,Dent,False
+302,3,0,0,1,1,corrosion,False
+303,0,0,0,0,0,corrosion,False
+304,3,1,0,0,0,Dent|corrosion,False
+305,9,1,0,2,2,Burn|Material missing,True
+306,3,1,0,0,0,corrosion,False
+307,4,0,0,1,2,corrosion,True
+311,9,3,0,0,0,Crack|Dent|Material missing,True
+312,3,1,0,0,0,Crack,False
+313,10,2,0,1,2,Burn|Material missing|corrosion,True
+314,16,0,0,3,10,corrosion,True
+315,8,1,1,1,1,Burn|Material missing|corrosion,True
+316,9,2,0,1,1,Burn|Material missing,True
+317,0,0,0,0,0,corrosion,False
+318,3,0,0,1,1,corrosion,False
+319,3,1,0,0,0,corrosion,False
+321,2,0,0,0,2,corrosion,False
+322,2,0,0,0,2,corrosion,False
+325,0,0,0,0,0,corrosion,False
+326,0,0,0,0,0,corrosion,False
+327,1,0,0,0,1,corrosion,False
+329,5,1,0,1,0,Burn|Crack,True
+331,30,10,0,0,0,Burn|Crack|Material missing|corrosion,True
+332,0,0,0,0,0,Material missing,False
+333,2,0,0,0,2,corrosion,False
+334,1,0,0,0,1,corrosion,False
+335,7,1,0,1,2,Crack|Material missing,True
+336,2,0,0,1,0,Burn,False
+337,8,1,0,1,3,Burn|Material missing,True
+338,1,0,0,0,1,Burn,False
+339,4,0,0,2,0,Burn,True
+341,0,0,0,0,0,corrosion,False
+343,6,0,0,2,2,Burn|Material missing,True
+344,3,1,0,0,0,Burn,False
+345,3,0,0,1,1,corrosion,False
+346,9,2,0,1,1,Burn|corrosion,True
+347,3,1,0,0,0,Burn,False
+348,2,0,0,0,2,corrosion,False
+349,1,0,0,0,1,corrosion,False
+352,5,0,0,2,1,Burn,True
+354,3,1,0,0,0,Crack,False
+355,6,1,1,0,1,Burn,True
+356,9,3,0,0,0,Crack,True
+358,10,0,1,3,2,corrosion,True
+359,4,0,0,2,0,corrosion,True
+360,3,0,1,0,1,Burn,False
+362,0,0,0,0,0,Material missing,False
+363,3,1,0,0,0,corrosion,False
+365,1,0,0,0,1,Burn,False
+366,0,0,0,0,0,corrosion,False
+367,0,0,0,0,0,Burn,False
+368,1,0,0,0,1,corrosion,False
+369,0,0,0,0,0,corrosion,False
+374,6,1,0,1,1,Burn|corrosion,True
+376,3,1,0,0,0,corrosion,False
+377,8,0,0,3,2,Burn|corrosion,True
+378,0,0,0,0,0,corrosion,False
+379,2,0,0,1,0,corrosion,False
+382,1,0,0,0,1,Burn,False
+384,9,0,0,3,3,corrosion,True
+385,1,0,0,0,1,Burn,False
+386,6,1,0,0,3,Material missing,True
+387,6,2,0,0,0,corrosion,True
+388,11,3,0,1,0,Burn|Material missing,True
+389,10,3,0,0,1,Material missing|corrosion,True
+391,10,2,0,1,2,Burn|Material missing|corrosion,True
+393,5,0,0,2,1,corrosion,True
+394,3,1,0,0,0,corrosion,True
+395,6,2,0,0,0,Burn|corrosion,True
+396,6,2,0,0,0,corrosion,True
+397,0,0,0,0,0,Burn,False
+398,11,0,1,4,1,Material missing|corrosion,True
+399,4,0,0,2,0,corrosion,True
+401,4,0,0,1,2,corrosion,True
+402,3,1,0,0,0,corrosion,True
+404,3,1,0,0,0,corrosion,True
+405,5,1,0,0,2,Burn,True
+407,7,2,0,0,1,Crack|Material missing,True
+410,3,1,0,0,0,Material missing,True
+412,0,0,0,0,0,corrosion,False
+413,16,2,1,3,2,Burn|Material missing,True
+415,4,0,0,1,2,corrosion,True
+417,8,1,1,0,3,Material missing,True
+418,0,0,0,0,0,corrosion,False
+419,0,0,0,0,0,Material missing,False
+420,0,0,0,0,0,corrosion,False
+421,8,0,0,4,0,corrosion,True
+423,2,0,0,1,0,corrosion,False
+424,6,2,0,0,0,corrosion,True
+426,4,0,0,2,0,corrosion,True
+427,0,0,0,0,0,corrosion,False
+428,3,0,0,1,1,corrosion,True
+429,0,0,0,0,0,corrosion,False
+431,2,0,0,1,0,corrosion,False
+434,3,1,0,0,0,Tip curl,True
+435,3,1,0,0,0,Tip curl,True
+436,0,0,0,0,0,Tip curl,False
+439,0,0,0,0,0,Tip curl,False
+441,1,0,0,0,1,Tip curl,False
+442,0,0,0,0,0,Tip curl,False
+443,0,0,0,0,0,Tip curl,False
+444,0,0,0,0,0,Tip curl,False
+445,0,0,0,0,0,Tip curl,False
+446,0,0,0,0,0,Tip curl,False
+447,0,0,0,0,0,Tip curl,False
+448,0,0,0,0,0,Tip curl,False
+449,1,0,0,0,1,Tip curl,False
+450,0,0,0,0,0,Tip curl,False
+451,0,0,0,0,0,Tip curl,False
+452,0,0,0,0,0,Tip curl,False
+455,0,0,0,0,0,Tip curl,False
+456,0,0,0,0,0,Tip curl,False
+457,0,0,0,0,0,Tip curl,False
+458,0,0,0,0,0,Tip curl,False
+459,0,0,0,0,0,Tip curl,False
+461,0,0,0,0,0,Tip curl,False
+462,1,0,0,0,1,Tip curl,False
+463,0,0,0,0,0,Tip curl,False
+465,0,0,0,0,0,Tip curl,False
+466,0,0,0,0,0,Tip curl,False
+467,1,0,0,0,1,Tip curl,False
+468,1,0,0,0,1,Crack,False
+469,2,0,0,0,2,Crack,False
+470,2,0,0,0,2,Crack,False
+471,5,0,0,1,3,Crack,True
+474,2,0,0,0,2,Crack,False
+476,2,0,0,1,0,Crack,False
+478,3,0,0,1,1,Crack,True
+480,2,0,0,0,2,Crack,False
+481,0,0,0,0,0,Crack,False
+482,9,0,0,4,1,Crack,True
+483,0,0,0,0,0,Crack,False
+485,1,0,0,0,1,Crack,False
+486,0,0,0,0,0,Crack,False
+487,4,0,0,1,2,Crack,True
+488,3,0,0,1,1,Crack,True
+489,7,0,0,3,1,Crack,True
+492,0,0,0,0,0,Crack,False
+494,3,1,0,0,0,Crack,True
+495,1,0,0,0,1,Crack,False
+497,0,0,0,0,0,Crack,False
+498,0,0,0,0,0,Crack,False
+499,0,0,0,0,0,Crack,False
+501,0,0,0,0,0,Crack,False
+503,0,0,0,0,0,Crack,False
+505,4,0,0,0,4,Crack,True
+508,3,0,0,1,1,Crack,True
+510,3,0,0,1,1,Crack,True
+512,1,0,0,0,1,Crack,False
+513,0,0,0,0,0,Crack,False
+514,2,0,0,0,2,Crack,False
+518,0,0,0,0,0,Crack,False
+520,1,0,0,0,1,Crack,False
+524,0,0,0,0,0,Crack,False
+526,0,0,0,0,0,Crack,False
+528,1,0,0,0,1,Crack,False
+529,2,0,0,0,2,Crack,False
+530,0,0,0,0,0,Crack,False
+531,1,0,0,0,1,Crack,False
+532,1,0,0,0,1,Crack,False
+533,0,0,0,0,0,Crack,False
+534,0,0,0,0,0,Crack,False
+536,2,0,0,0,2,Crack,False
+537,2,0,0,0,2,Crack,False
+541,8,0,0,3,2,Crack,True
+542,0,0,0,0,0,Crack,False
+544,0,0,0,0,0,Crack,False
+546,1,0,0,0,1,Crack,False
+547,0,0,0,0,0,Crack,False
+551,1,0,0,0,1,Burn,False
+553,2,0,0,1,0,Burn,False
+556,1,0,0,0,1,Burn,False
+557,0,0,0,0,0,Burn,False
+558,1,0,0,0,1,Burn,False
+559,4,0,0,1,2,Burn,True
+560,0,0,0,0,0,Burn,False
+562,3,0,0,1,1,Burn,True
+563,1,0,0,0,1,Burn,False
+567,1,0,0,0,1,Burn,False
+569,1,0,0,0,1,Burn,False
+570,0,0,0,0,0,Burn,False
+572,4,0,0,2,0,Burn,True
+573,1,0,0,0,1,Burn,False
+578,2,0,0,1,0,Burn,False
+579,0,0,0,0,0,Burn,False
+580,1,0,0,0,1,Burn,False
+582,3,0,0,0,3,Burn,True
+583,0,0,0,0,0,Burn,False
+584,10,0,0,3,4,Burn,True
+585,0,0,0,0,0,Burn,False
+586,0,0,0,0,0,Burn,False
+588,2,0,0,0,2,Burn,False
+590,1,0,0,0,1,Burn,False
+591,1,0,0,0,1,Burn,False
+593,2,0,0,1,0,Burn,False
+594,0,0,0,0,0,Burn,False
+602,0,0,0,0,0,Burn,False
+604,2,0,0,0,2,Burn,False
+606,1,0,0,0,1,Burn,False
+608,1,0,0,0,1,Burn,False
+610,1,0,0,0,1,Burn,False
+612,0,0,0,0,0,Burn,False
+613,2,0,0,0,2,Burn,False
+615,1,0,0,0,1,Burn,False
+616,0,0,0,0,0,Burn,False
+617,3,0,0,1,1,Burn,True
+618,3,0,0,1,1,Burn,True
+619,1,0,0,0,1,Burn,False
+620,1,0,0,0,1,Burn,False
+621,0,0,0,0,0,Burn,False
+622,0,0,0,0,0,Burn,False
+623,0,0,0,0,0,Burn,False
+624,8,0,0,4,0,Burn,True
+626,2,0,0,1,0,Burn,False
+627,4,0,0,0,4,Burn,True
+628,0,0,0,0,0,Burn,False
+630,0,0,0,0,0,Burn,False
+631,0,0,0,0,0,Burn,False
+632,0,0,0,0,0,Burn,False
+633,10,0,0,3,4,Burn,True
+634,0,0,0,0,0,Material missing,False
+636,0,0,0,0,0,Material missing,False
+637,0,0,0,0,0,Material missing,False
+638,0,0,0,0,0,Material missing,False
+639,0,0,0,0,0,Material missing,False
+640,0,0,0,0,0,Material missing,False
+641,0,0,0,0,0,Material missing,False
+642,0,0,0,0,0,Material missing,False
+645,0,0,0,0,0,Material missing,False
+650,0,0,0,0,0,Material missing,False
+652,1,0,0,0,1,Material missing,False
+653,0,0,0,0,0,Material missing,False
+654,0,0,0,0,0,Material missing,False
+655,3,1,0,0,0,Material missing,True
+656,0,0,0,0,0,Material missing,False
+658,0,0,0,0,0,Material missing,False
+659,0,0,0,0,0,Material missing,False
+661,3,1,0,0,0,Material missing,True
+663,0,0,0,0,0,Material missing,False
+665,1,0,0,0,1,Material missing,False
+666,0,0,0,0,0,Material missing,False
+667,0,0,0,0,0,Material missing,False
+670,1,0,0,0,1,Material missing,False
+672,0,0,0,0,0,Material missing,False
+674,0,0,0,0,0,Material missing,False
+675,0,0,0,0,0,Material missing,False
+676,1,0,0,0,1,Material missing,False
+678,0,0,0,0,0,Material missing,False
+679,0,0,0,0,0,Material missing,False
+682,0,0,0,0,0,Material missing,False
+683,3,1,0,0,0,Material missing,True
+685,0,0,0,0,0,Material missing,False
+688,0,0,0,0,0,Material missing,False
+689,1,0,0,0,1,Material missing,False
+690,0,0,0,0,0,Material missing,False
+694,0,0,0,0,0,Material missing,False
+695,0,0,0,0,0,Material missing,False
+696,0,0,0,0,0,Material missing,False
+697,0,0,0,0,0,Material missing,False
+698,0,0,0,0,0,Material missing,False
+699,0,0,0,0,0,Material missing,False
+701,0,0,0,0,0,Material missing,False
+702,0,0,0,0,0,Material missing,False
+705,0,0,0,0,0,Material missing,False
+707,0,0,0,0,0,Material missing,False
+708,0,0,0,0,0,Material missing,False
+710,0,0,0,0,0,Material missing,False
+711,0,0,0,0,0,Material missing,False
+712,0,0,0,0,0,Material missing,False
+714,0,0,0,0,0,Material missing,False
+715,0,0,0,0,0,Material missing,False
+716,0,0,0,0,0,Material missing,False
+717,3,1,0,0,0,Material missing,True
+719,0,0,0,0,0,Material missing,False
+721,0,0,0,0,0,Material missing,False
+724,0,0,0,0,0,Material missing,False
+726,0,0,0,0,0,Material missing,False
+727,0,0,0,0,0,Material missing,False
+728,0,0,0,0,0,Material missing,False
+731,0,0,0,0,0,Material missing,False
+732,0,0,0,0,0,Material missing,False
+733,0,0,0,0,0,Material missing,False
+734,0,0,0,0,0,Material missing,False
+735,0,0,0,0,0,Material missing,False
+737,0,0,0,0,0,Material missing,False
+740,0,0,0,0,0,Material missing,False
+741,0,0,0,0,0,Material missing,False
+742,0,0,0,0,0,Material missing,False
+744,0,0,0,0,0,Material missing,False
+745,0,0,0,0,0,Material missing,False
+746,0,0,0,0,0,Material missing,False
+747,0,0,0,0,0,Material missing,False
+748,0,0,0,0,0,Material missing,False
+751,0,0,0,0,0,Material missing,False
+754,0,0,0,0,0,Material missing,False
+755,3,1,0,0,0,Material missing,True
+756,1,0,0,0,1,Material missing,False
+758,1,0,0,0,1,Material missing,False
+760,0,0,0,0,0,Material missing,False
+761,0,0,0,0,0,Material missing,False
+762,1,0,0,0,1,Material missing,False
+763,0,0,0,0,0,Material missing,False
+764,2,0,0,0,2,Material missing,False
+765,0,0,0,0,0,Material missing,False
+766,0,0,0,0,0,Material missing,False
+769,4,0,1,0,2,Material missing,True
+770,0,0,0,0,0,Material missing,False
+771,3,0,1,0,1,Material missing,True
+772,3,1,0,0,0,Material missing,True
+774,0,0,0,0,0,Material missing,False
+777,0,0,0,0,0,Tears,False
+779,0,0,0,0,0,Tears,False
+780,0,0,0,0,0,Tears,False
+782,1,0,0,0,1,Tears,False
+784,0,0,0,0,0,Tears,False
+786,0,0,0,0,0,Tears,False
+787,1,0,0,0,1,Tears,False
+788,0,0,0,0,0,Tears,False
+789,0,0,0,0,0,Tears,False
+790,0,0,0,0,0,Tears,False
+791,0,0,0,0,0,Tears,False
+794,0,0,0,0,0,Tears,False
+795,3,1,0,0,0,Tears,True
+796,0,0,0,0,0,Tears,False
+797,0,0,0,0,0,Tears,False
+798,0,0,0,0,0,Tears,False
+799,1,0,0,0,1,Tears,False
+800,0,0,0,0,0,Tears,False
+802,1,0,0,0,1,Tears,False
+803,0,0,0,0,0,Tears,False
+804,0,0,0,0,0,Tears,False
+805,0,0,0,0,0,Tears,False
+807,0,0,0,0,0,Tears,False
+808,0,0,0,0,0,Tears,False
+809,0,0,0,0,0,Tears,False
+810,0,0,0,0,0,Tears,False
+812,0,0,0,0,0,Tears,False
+813,0,0,0,0,0,Tears,False
+814,0,0,0,0,0,Tears,False
+815,0,0,0,0,0,Tears,False
+816,0,0,0,0,0,Tears,False
+817,0,0,0,0,0,Tears,False
+818,0,0,0,0,0,Tears,False
+821,0,0,0,0,0,Tears,False
+822,3,0,1,0,1,Tears,True
+825,0,0,0,0,0,Tears,False
+826,0,0,0,0,0,Tears,False
+828,0,0,0,0,0,Tears,False
+830,0,0,0,0,0,Tears,False
+831,0,0,0,0,0,Tears,False
+832,0,0,0,0,0,Tears,False
+833,0,0,0,0,0,Tears,False
+834,0,0,0,0,0,Tears,False
+835,0,0,0,0,0,Tears,False
+838,1,0,0,0,1,Tears,False
+844,0,0,0,0,0,Dent,False
+847,1,0,0,0,1,Dent,False
+850,0,0,0,0,0,Dent,False
+852,0,0,0,0,0,Dent,False
+854,0,0,0,0,0,Dent,False
+855,0,0,0,0,0,Dent,False
+856,0,0,0,0,0,Dent,False
+859,0,0,0,0,0,Dent,False
+860,0,0,0,0,0,Dent,False
+861,0,0,0,0,0,Dent,False
+862,0,0,0,0,0,Dent,False
+866,0,0,0,0,0,Dent,False
+868,0,0,0,0,0,Dent,False
+871,0,0,0,0,0,Dent,False
+872,1,0,0,0,1,Dent,False
+873,0,0,0,0,0,Dent,False
+874,1,0,0,0,1,Dent,False
+875,0,0,0,0,0,Dent,False
+879,0,0,0,0,0,Dent,False
+883,0,0,0,0,0,Dent,False
+884,0,0,0,0,0,Dent,False
+885,3,1,0,0,0,Dent,True
+886,0,0,0,0,0,Dent,False
+887,0,0,0,0,0,Dent,False
+889,0,0,0,0,0,Dent,False
+890,0,0,0,0,0,Dent,False
+891,0,0,0,0,0,Dent,False
+892,0,0,0,0,0,Dent,False
+893,1,0,0,0,1,Dent,False
+894,1,0,0,0,1,Dent,False
+895,0,0,0,0,0,Dent,False
+898,2,0,0,0,2,Dent,False
+899,0,0,0,0,0,Dent,False
+900,1,0,0,0,1,Dent,False
+901,0,0,0,0,0,Dent,False
+902,0,0,0,0,0,Dent,False
+903,0,0,0,0,0,Dent,False
+904,0,0,0,0,0,Dent,False
+908,0,0,0,0,0,Dent,False
+909,0,0,0,0,0,Dent,False
+911,1,0,0,0,1,Dent,False
+912,0,0,0,0,0,Dent,False
+913,0,0,0,0,0,Dent,False
+914,0,0,0,0,0,Dent,False
+916,0,0,0,0,0,Dent,False
+917,0,0,0,0,0,Dent,False
+918,0,0,0,0,0,Dent,False
+919,0,0,0,0,0,Dent,False
+920,0,0,0,0,0,Dent,False
+921,1,0,0,0,1,Dent,False
+923,0,0,0,0,0,Dent,False
+927,0,0,0,0,0,Dent,False
+929,0,0,0,0,0,Dent,False
+930,0,0,0,0,0,Dent,False
+931,0,0,0,0,0,Dent,False
+934,0,0,0,0,0,Dent,False
+935,0,0,0,0,0,Dent,False
+936,0,0,0,0,0,Dent,False
+938,0,0,0,0,0,Dent,False
+941,0,0,0,0,0,Dent,False
+942,0,0,0,0,0,Dent,False
+943,0,0,0,0,0,Dent,False
+944,0,0,0,0,0,Dent,False
+945,0,0,0,0,0,Dent,False
+947,0,0,0,0,0,Dent,False
+949,0,0,0,0,0,Dent,False
+950,0,0,0,0,0,Dent,False
+952,3,1,0,0,0,Dent,True
+953,0,0,0,0,0,Dent,False
+954,0,0,0,0,0,Dent,False
+958,0,0,0,0,0,Dent,False
+959,0,0,0,0,0,Dent,False
+960,0,0,0,0,0,Dent,False
+961,0,0,0,0,0,Dent,False
+963,0,0,0,0,0,Dent,False
+964,1,0,0,0,1,Dent,False
+966,0,0,0,0,0,Dent,False
+968,0,0,0,0,0,Dent,False
+969,0,0,0,0,0,Dent,False
+970,0,0,0,0,0,Dent,False
+971,0,0,0,0,0,Dent,False
+973,0,0,0,0,0,Dent,False
+974,0,0,0,0,0,Dent,False
+976,3,1,0,0,0,Dent,True
+977,0,0,0,0,0,Dent,False
+980,0,0,0,0,0,Dent,False
+981,1,0,0,0,1,Dent,False
+984,0,0,0,0,0,Dent,False
+985,0,0,0,0,0,Dent,False
+986,0,0,0,0,0,Dent,False
+991,0,0,0,0,0,Dent,False
+992,0,0,0,0,0,Dent,False
+995,0,0,0,0,0,Dent,False
+996,0,0,0,0,0,Dent,False
+997,0,0,0,0,0,Dent,False
+998,0,0,0,0,0,Dent,False
+999,0,0,0,0,0,Dent,False
+1001,2,0,0,1,0,Dent,False
+1003,0,0,0,0,0,Dent,False
+1004,0,0,0,0,0,Dent,False
+1005,0,0,0,0,0,Dent,False
+1008,0,0,0,0,0,Dent,False

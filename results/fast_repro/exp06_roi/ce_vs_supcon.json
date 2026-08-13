@@ -1,0 +1,11 @@
+{
+  "macro_f1_delta": 0.01589399495030075,
+  "difficult_recall_delta": {
+    "Burn": 0.012345679012345734,
+    "Crack": 0.08333333333333326,
+    "corrosion": 0.11009174311926606,
+    "background": 0.06756756756756754
+  },
+  "conclusion": "SUPCON_POSITIVE",
+  "stage2_classifier": "supcon"
+}

@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "test_accessed": false,
+  "weights_sha256": "c007fbefffcbe474384a12e3f9bf85a1308b159a22df69ac2be099a33e0311e7",
+  "fixed_point": {
+    "confidence": 0.25,
+    "TP": 123,
+    "FP": 99,
+    "FN": 173,
+    "Precision": 0.5540540540540541,
+    "Recall": 0.4155405405405405,
+    "F1": 0.4749034749034749,
+    "prediction_count": 222,
+    "recall_Burn": 0.2839506172839506,
+    "recall_Crack": 0.20833333333333334,
+    "recall_Dent": 0.9459459459459459,
+    "recall_Material missing": 0.40625,
+    "recall_Tears": 0.8,
+    "recall_Tip curl": 0.6666666666666666,
+    "recall_corrosion": 0.3394495412844037
+  },
+  "threshold_f1_best": 0.25,
+  "threshold_recall95": 0.005,
+  "max_recall": 0.722972972972973,
+  "recall95_metrics": {
+    "confidence": 0.005,
+    "TP": 204,
+    "FP": 4569,
+    "FN": 92,
+    "Precision": 0.04274041483343809,
+    "Recall": 0.6891891891891891,
+    "F1": 0.08048924837246005,
+    "prediction_count": 4773,
+    "recall_Burn": 0.5925925925925926,
+    "recall_Crack": 0.5833333333333334,
+    "recall_Dent": 0.972972972972973,
+    "recall_Material missing": 0.5625,
+    "recall_Tears": 0.9,
+    "recall_Tip curl": 0.6666666666666666,
+    "recall_corrosion": 0.7064220183486238
+  },
+  "fn_total": 173,
+  "fn_recovery_counts": {
+    "LOCALIZATION_FAILURE": 51,
+    "LOW_CONF_RECOVERABLE": 91,
+    "WRONG_CLASS": 30,
+    "NO_RESPONSE": 1
+  },
+  "recovery_rate": 0.5260115606936416,
+  "difficult_class_recovery": {
+    "Crack": {
+      "LOCALIZATION_FAILURE": 4,
+      "WRONG_CLASS": 6,
+      "LOW_CONF_RECOVERABLE": 9
+    },
+    "Burn": {
+      "LOCALIZATION_FAILURE": 27,
+      "LOW_CONF_RECOVERABLE": 25,
+      "WRONG_CLASS": 6
+    },
+    "corrosion": {
+      "LOCALIZATION_FAILURE": 19,
+      "LOW_CONF_RECOVERABLE": 46,
+      "WRONG_CLASS": 7
+    }
+  },
+  "conclusion": "POSITIVE"
+}

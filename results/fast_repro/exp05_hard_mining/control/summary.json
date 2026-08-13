@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "test_accessed": false,
+  "mode": "control",
+  "train_images": 668,
+  "samples_per_epoch": 668,
+  "epochs": 30,
+  "total_sampled_images": 20040,
+  "expected_sampled_images": 20040,
+  "optimizer_steps": 331,
+  "nominal_train_batches": 630,
+  "optimizer_step_note": "actual optimizer.step calls; equality is enforced after both arms complete because gradient accumulation is trainer-controlled",
+  "wall_seconds": 238.06970449350774,
+  "train_losses_finite": true,
+  "checkpoint_audit": {
+    "best.pt": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/fast_repro/exp05_hard_mining/control/ultralytics/control/weights/best.pt",
+      "sha256": "bfdd776ddeac3d5e062d3b9a2d124b5092544652450e650571b24335f47070a6",
+      "finite": true
+    },
+    "last.pt": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/fast_repro/exp05_hard_mining/control/ultralytics/control/weights/last.pt",
+      "sha256": "e3517a3f9b45eb50573caf46e8d4a091ed3f4fe8713810737881ee261540a1b1",
+      "finite": true
+    }
+  },
+  "hard_draws": 6077,
+  "sampler_indices_generated_including_prefetch": 21376,
+  "save_dir": "/root/autodl-tmp/borescope-new-seg-repro/results/fast_repro/exp05_hard_mining/control/ultralytics/control"
+}

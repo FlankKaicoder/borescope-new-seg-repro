@@ -1,0 +1,161 @@
+{
+  "accuracy": 0.6351351351351351,
+  "macro_f1": 0.6778044125787699,
+  "weighted_f1": 0.6325910203215064,
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "Burn",
+      "precision": 0.72,
+      "recall": 0.6666666666666666,
+      "f1": 0.6923076923076923,
+      "support": 81
+    },
+    {
+      "class_id": 1,
+      "class_name": "Crack",
+      "precision": 0.6086956521739131,
+      "recall": 0.5833333333333334,
+      "f1": 0.5957446808510638,
+      "support": 24
+    },
+    {
+      "class_id": 2,
+      "class_name": "Dent",
+      "precision": 0.7894736842105263,
+      "recall": 0.8108108108108109,
+      "f1": 0.8,
+      "support": 37
+    },
+    {
+      "class_id": 3,
+      "class_name": "Material missing",
+      "precision": 0.6774193548387096,
+      "recall": 0.65625,
+      "f1": 0.6666666666666666,
+      "support": 32
+    },
+    {
+      "class_id": 4,
+      "class_name": "Tears",
+      "precision": 1.0,
+      "recall": 0.7,
+      "f1": 0.8235294117647058,
+      "support": 10
+    },
+    {
+      "class_id": 5,
+      "class_name": "Tip curl",
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8,
+      "support": 3
+    },
+    {
+      "class_id": 6,
+      "class_name": "corrosion",
+      "precision": 0.37373737373737376,
+      "recall": 0.3394495412844037,
+      "f1": 0.3557692307692308,
+      "support": 109
+    },
+    {
+      "class_id": 7,
+      "class_name": "background",
+      "precision": 0.6656151419558359,
+      "recall": 0.7128378378378378,
+      "f1": 0.6884176182707994,
+      "support": 296
+    }
+  ],
+  "confusion_matrix": [
+    [
+      54,
+      0,
+      2,
+      2,
+      0,
+      0,
+      7,
+      16
+    ],
+    [
+      0,
+      14,
+      0,
+      0,
+      0,
+      0,
+      2,
+      8
+    ],
+    [
+      0,
+      1,
+      30,
+      0,
+      0,
+      0,
+      2,
+      4
+    ],
+    [
+      0,
+      0,
+      3,
+      21,
+      0,
+      0,
+      0,
+      8
+    ],
+    [
+      0,
+      0,
+      3,
+      0,
+      7,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1
+    ],
+    [
+      0,
+      2,
+      0,
+      1,
+      0,
+      0,
+      37,
+      69
+    ],
+    [
+      21,
+      6,
+      0,
+      7,
+      0,
+      0,
+      51,
+      211
+    ]
+  ],
+  "status": "PASS",
+  "test_accessed": false,
+  "epochs": 50,
+  "batch": 64,
+  "checkpoint_sha256": "0e5e1a54755c4a68a4acbe80d7a9c3015fc0809e060b1cc4fd428524e69e1b97",
+  "manifest_sha256": "ea997979392bfc4f9cc9acff2e4ed6ad4aff935ebb3dc9edc9d3eb3205e5a87d",
+  "loss_finite": true,
+  "embedding_std_finite_nonzero": "N/A"
+}

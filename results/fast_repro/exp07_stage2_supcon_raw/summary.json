@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "test_accessed": false,
+  "classifier": "supcon",
+  "baseline": {
+    "mode": "baseline",
+    "stage1_conf": 0.25,
+    "stage2_threshold": "N/A",
+    "TP": 123,
+    "FP": 99,
+    "FN": 173,
+    "Precision": 0.5540540540540541,
+    "Recall": 0.4155405405405405,
+    "F1": 0.4749034749034749,
+    "WrongClass": 6,
+    "Mask_AP50": "N/A",
+    "Mask_AP50_95": "N/A"
+  },
+  "best": {
+    "A": {
+      "mode": "A",
+      "stage1_conf": 0.15,
+      "stage2_threshold": 0.3,
+      "TP": 121,
+      "FP": 118,
+      "FN": 175,
+      "Precision": 0.5062761506276151,
+      "Recall": 0.40878378378378377,
+      "F1": 0.4523364485981308,
+      "WrongClass": 6,
+      "Mask_AP50": "N/A",
+      "Mask_AP50_95": "N/A"
+    },
+    "B": {
+      "mode": "B",
+      "stage1_conf": 0.15,
+      "stage2_threshold": 0.7,
+      "TP": 110,
+      "FP": 82,
+      "FN": 186,
+      "Precision": 0.5729166666666666,
+      "Recall": 0.3716216216216216,
+      "F1": 0.4508196721311475,
+      "WrongClass": 4,
+      "Mask_AP50": "N/A",
+      "Mask_AP50_95": "N/A"
+    }
+  },
+  "analysis": {
+    "A": {
+      "recoverable_total": 91,
+      "recoverable_candidate_at_selected_conf": 91,
+      "recoverable_retained": 16,
+      "recoverable_filtered": 75,
+      "FP_before": 195,
+      "FP_removed": 77,
+      "FP_retained": 118,
+      "FP_removal_rate": 0.39487179487179486,
+      "wrong_class_before": 8,
+      "wrong_class_after": 6,
+      "net_correction": 2
+    },
+    "B": {
+      "recoverable_total": 91,
+      "recoverable_candidate_at_selected_conf": 91,
+      "recoverable_retained": 15,
+      "recoverable_filtered": 76,
+      "FP_before": 195,
+      "FP_removed": 113,
+      "FP_retained": 82,
+      "FP_removal_rate": 0.5794871794871795,
+      "wrong_class_before": 8,
+      "wrong_class_after": 4,
+      "net_correction": 4
+    }
+  },
+  "latency": {
+    "stage1_mean_ms_image": 20.87254087476955,
+    "stage1_median_ms_image": 20.87254087476955,
+    "classifier_mean_ms_candidate": 6.229145252068211,
+    "classifier_median_ms_candidate": 2.1016462706029415,
+    "end_to_end_mean_ms_image": 53.150838999123,
+    "end_to_end_median_ms_image": "N/A"
+  },
+  "AP_note": "N/A: current post-processing fixed-point evaluator has no reliable arbitrary-prediction COCO AP adapter; deferred by Fast Repro rule.",
+  "conclusion": "NEGATIVE"
+}

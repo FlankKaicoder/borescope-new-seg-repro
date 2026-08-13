@@ -1,0 +1,20 @@
+{
+  "data": "/root/autodl-tmp/borescope-new-seg-data/crack_only_v1/data.yaml",
+  "imgsz": 640,
+  "batch": 32,
+  "epochs": 100,
+  "seed": 42,
+  "deterministic": true,
+  "amp": true,
+  "optimizer": "AdamW",
+  "device": 0,
+  "workers": 4,
+  "cache": false,
+  "val": true,
+  "plots": true,
+  "save": true,
+  "project": "/root/autodl-tmp/borescope-new-seg-repro/results/fast_repro/exp04_crack_oneclass/train/ultralytics",
+  "name": "crack_only",
+  "exist_ok": false,
+  "verbose": true
+}

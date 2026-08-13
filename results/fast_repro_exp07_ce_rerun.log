@@ -1,0 +1,89 @@
+{
+  "baseline": {
+    "mode": "baseline",
+    "stage1_conf": 0.25,
+    "stage2_threshold": "N/A",
+    "TP": 123,
+    "FP": 99,
+    "FN": 173,
+    "Precision": 0.5540540540540541,
+    "Recall": 0.4155405405405405,
+    "F1": 0.4749034749034749,
+    "WrongClass": 6,
+    "Mask_AP50": "N/A",
+    "Mask_AP50_95": "N/A"
+  },
+  "best": {
+    "A": {
+      "mode": "A",
+      "stage1_conf": 0.15,
+      "stage2_threshold": 0.3,
+      "TP": 123,
+      "FP": 139,
+      "FN": 173,
+      "Precision": 0.46946564885496184,
+      "Recall": 0.4155405405405405,
+      "F1": 0.44086021505376344,
+      "WrongClass": 7,
+      "Mask_AP50": "N/A",
+      "Mask_AP50_95": "N/A"
+    },
+    "B": {
+      "mode": "B",
+      "stage1_conf": 0.15,
+      "stage2_threshold": 0.3,
+      "TP": 112,
+      "FP": 120,
+      "FN": 184,
+      "Precision": 0.4827586206896552,
+      "Recall": 0.3783783783783784,
+      "F1": 0.42424242424242425,
+      "WrongClass": 7,
+      "Mask_AP50": "N/A",
+      "Mask_AP50_95": "N/A"
+    }
+  },
+  "analysis": {
+    "A": {
+      "recoverable_total": 91,
+      "recoverable_candidate_at_selected_conf": 21,
+      "recoverable_stage1_unavailable": 70,
+      "recoverable_retained": 14,
+      "recoverable_filtered_by_stage2": 7,
+      "FP_before": 195,
+      "FP_removed": 56,
+      "FP_retained": 139,
+      "FP_removal_rate": 0.28717948717948716,
+      "wrong_class_before": 8,
+      "wrong_class_after": 7,
+      "correct_reclassification": 0,
+      "harmful_reclassification": 0,
+      "net_correction": 0
+    },
+    "B": {
+      "recoverable_total": 91,
+      "recoverable_candidate_at_selected_conf": 21,
+      "recoverable_stage1_unavailable": 70,
+      "recoverable_retained": 12,
+      "recoverable_filtered_by_stage2": 9,
+      "FP_before": 195,
+      "FP_removed": 75,
+      "FP_retained": 120,
+      "FP_removal_rate": 0.38461538461538464,
+      "wrong_class_before": 8,
+      "wrong_class_after": 7,
+      "correct_reclassification": 3,
+      "harmful_reclassification": 5,
+      "net_correction": -2
+    }
+  },
+  "latency": {
+    "stage1_mean_ms_image": 1.7930355177006942,
+    "stage1_median_ms_image": 1.7930355177006938,
+    "classifier_mean_ms_candidate": 4.160106551039488,
+    "classifier_median_ms_candidate": 1.4570611529052258,
+    "end_to_end_mean_ms_image": 17.781890365406273,
+    "end_to_end_median_ms_image": 6.783263038166544
+  },
+  "conclusion": "NEGATIVE"
+}
