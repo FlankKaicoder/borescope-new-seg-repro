@@ -15,3 +15,4 @@
 | Exp02.0 | YOLO11n-seg batch probe and one-epoch smoke | PASS / SMOKE_GATE_PASS | `docs/exp02_0_smoke_batch_probe.md` |
 | Exp02.1 | YOLO11n-seg 640 / 100-epoch baseline | COMPLETE / BASELINE_GATE_STOP | `docs/exp02_1_yolo11n_seg_640_baseline.md` |
 | Exp02.2 | Baseline size and error audit | PASS / VAL_ONLY | `docs/exp02_2_baseline_size_error_audit.md` |
+| Exp02.2a | Early-validation-loss NaN root-cause probe | COMPLETE / CASE_C / BASELINE_GATE_STOP | `docs/exp02_2a_early_val_nan_root_cause.md` |

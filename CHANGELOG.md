@@ -15,6 +15,10 @@
 - Exp02.2 PASS：train-only relative-mask-area quartiles、val size/class×size、固定点错误和 near-duplicate cross-label 审计完成；test untouched。
 - 训练曲线审计发现 epoch 1--5 的四项 val loss 为 NaN；按明确 no NaN/Inf 硬条件，Exp02 Baseline Gate STOP，等待用户审查；未执行 Exp02.3。
 - 用户人工审查决定继续保持 Baseline Gate STOP；授权且仅授权 Exp02.2a 短程复现与逐 checkpoint AMP/FP32 validation-loss 根因诊断。
+- Exp02.2a 完成：`epochs=100` 配置下 callback 于 epoch 6 停止，完全复现 epoch1--5 四项 val loss NaN 与 epoch6 恢复。
+- 完成 epoch0--6 共 70 条 AMP/FP32 逐 val-batch loss probe；epoch1--5 每个 AMP batch 的 raw prediction/loss non-finite，同 checkpoint/batch FP32 全 finite。
+- 根因定位为 `Case C / MODEL_FORWARD_NUMERICAL_INSTABILITY`：C2PSA Attention 的 FP16 qk matmul 溢出为 Inf，softmax 后产生 NaN 并污染 forward/loss。
+- 原 Exp02.1 `best.pt` SHA256 未变，加载 PASS 且 561 个 state tensors 全 finite；Exp02 Baseline Gate 仍 STOP pending human review，未运行 Exp02.3/Exp03/完整重训，`test_accessed=false`。
 
 - 初始化 Exp00 工程结构、实验 registry 与基础文档。
 - 增加只读环境和数据审计脚本。

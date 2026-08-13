@@ -12,6 +12,9 @@ printf 'Exp02.2a only; test forbidden; no full 100-epoch rerun.\n' > "$OUT/confi
 printf '%q ' "$PY" "$ROOT/tools/evaluation/exp02_2a_source_audit.py" --output "$OUT/source_audit" > "$OUT/command.txt"; printf '\n' >> "$OUT/command.txt"
 printf '%q ' "$PY" "$ROOT/tools/evaluation/exp02_2a_early_epoch_audit.py" --results-csv "$ORIGINAL" --output "$OUT/original_early_epoch_audit" >> "$OUT/command.txt"; printf '\n' >> "$OUT/command.txt"
 printf '%q ' "$PY" "$ROOT/tools/training/exp02_2a_short_repro.py" --model "$MODEL" --data "$DATA" --output "$OUT/short_repro" >> "$OUT/command.txt"; printf '\n' >> "$OUT/command.txt"
+printf '%q ' "$PY" "$ROOT/tools/evaluation/exp02_2a_val_loss_probe.py" --manifest "$OUT/short_repro/summary.json" --data "$DATA" --output "$OUT/val_loss_probe" >> "$OUT/command.txt"; printf '\n' >> "$OUT/command.txt"
+printf '%q ' "$PY" "$ROOT/tools/evaluation/exp02_2a_forward_trace.py" --checkpoint "$OUT/short_repro/raw_ema_before_validation/epoch1_raw_ema.pt" --data "$DATA" --output "$OUT/forward_trace" >> "$OUT/command.txt"; printf '\n' >> "$OUT/command.txt"
+printf '%q ' "$PY" "$ROOT/tools/evaluation/exp02_2a_finalize.py" --run "$OUT" --baseline-best "$ROOT/results/training/exp02_1_baseline_20260812T135254Z/artifacts/ultralytics/baseline/weights/best.pt" >> "$OUT/command.txt"; printf '\n' >> "$OUT/command.txt"
 nvidia-smi > "$OUT/env.txt"; "$PY" -m pip freeze > "$OUT/pip_freeze.txt"
 code=0
 "$PY" "$ROOT/tools/evaluation/exp02_2a_source_audit.py" --output "$OUT/source_audit" 2>&1 | tee "$OUT/source_audit.log"; rc="${PIPESTATUS[0]}"; [[ "$rc" -ne 0 ]] && code="$rc"
