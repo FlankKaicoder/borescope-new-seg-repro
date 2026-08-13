@@ -1,0 +1,31 @@
+{
+  "status": "REAL_TRANSFER_FAILURE",
+  "test_accessed": false,
+  "source_sha256": "31d918c3d290d91ed38befc1fa1902443d99940e37e5e9de2945ce5e94ae1a24",
+  "expected": 240,
+  "loaded": 240,
+  "missing": 0,
+  "unexpected": 0,
+  "shape_mismatch": 0,
+  "trainable_parameter_count": 120,
+  "immediate_trainable_parameter_failures": 0,
+  "fp32_roundtrip_exact": 240,
+  "native_roundtrip_fp16_explained": 240,
+  "native_roundtrip_unexplained": 0,
+  "old_byte_mismatch_count": 80,
+  "old_mismatch_by_category": {
+    "bn_running_mean": 40,
+    "bn_running_var": 40
+  },
+  "old_mismatch_by_parameter_or_buffer": {
+    "buffer": 80
+  },
+  "eval_bn_changed_count": 0,
+  "train_bn_changed_count": 120,
+  "coco_changed_tensor_count": 120,
+  "coco_changed_trainable_parameter_count": 0,
+  "witness_parameter": null,
+  "witness_pass": false,
+  "native_checkpoint_sha256": "74856631ec1e48b83c3203a7a43fbc805a130575fbb13911dd45789c30e8dc97",
+  "fp32_control_sha256": "d31cd67b1b07ec4949b9e2238a37368e16e1c8d897b54137fc9f73947652f77b"
+}

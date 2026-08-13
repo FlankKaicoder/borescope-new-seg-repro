@@ -1,0 +1,17 @@
+Ultralytics version: 8.4.117
+Site-packages modified: no
+
+source file: /root/autodl-tmp/borescope-new-seg-repro/.venv/lib/python3.12/site-packages/ultralytics/engine/model.py
+function: Model.save
+actual code location: line 364
+checkpoint model dtype behavior: "model": deepcopy(self.model).half() if isinstance(self.model, torch.nn.Module) else self.model,
+
+source file: /root/autodl-tmp/borescope-new-seg-repro/.venv/lib/python3.12/site-packages/ultralytics/engine/trainer.py
+function: Trainer.save_model
+actual code location: line 725
+checkpoint model dtype behavior: ema = deepcopy(ema).half().to(memory_format=torch.contiguous_format)
+
+source file: /root/autodl-tmp/borescope-new-seg-repro/.venv/lib/python3.12/site-packages/ultralytics/utils/torch_utils.py
+function: strip_optimizer
+actual code location: line 828
+checkpoint model dtype behavior: x["model"].half()  # to FP16
