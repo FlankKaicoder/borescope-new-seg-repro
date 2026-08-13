@@ -10,7 +10,7 @@ from ultralytics import YOLO
 from ultralytics.data.build import InfiniteDataLoader,seed_worker
 from ultralytics.models.yolo.segment.train import SegmentationTrainer
 
-ACTIVE_MODE="control";HARD=set();SAMPLED=[]
+ACTIVE_MODE="control";HARD=set();SAMPLED=[];CONSUMED=0;STEPS=0;HARD_CONSUMED=0
 class LoggingWeightedSampler(WeightedRandomSampler):
  def __iter__(self):
   vals=list(super().__iter__());SAMPLED.extend(vals);return iter(vals)
@@ -20,6 +20,13 @@ class FairSamplerTrainer(SegmentationTrainer):
   ds=self.build_dataset(dataset_path,mode,batch_size);weights=[2.0 if ACTIVE_MODE=="treatment" and Path(x).stem in HARD else 1.0 for x in ds.im_files]
   g=torch.Generator();g.manual_seed(42);sampler=LoggingWeightedSampler(weights,num_samples=len(ds),replacement=True,generator=g);nw=min(self.args.workers,math.ceil(len(ds)/batch_size));lg=torch.Generator();lg.manual_seed(6148914691236517205)
   return InfiniteDataLoader(dataset=ds,batch_size=batch_size,shuffle=False,num_workers=nw,sampler=sampler,prefetch_factor=4 if nw else None,pin_memory=True,collate_fn=ds.collate_fn,worker_init_fn=seed_worker,generator=lg,drop_last=False)
+ def preprocess_batch(self,batch):
+  global CONSUMED,HARD_CONSUMED
+  CONSUMED+=len(batch["img"]);HARD_CONSUMED+=sum(Path(x).stem in HARD for x in batch["im_file"])
+  return super().preprocess_batch(batch)
+ def optimizer_step(self):
+  global STEPS
+  super().optimizer_step();STEPS+=1
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
  global ACTIVE_MODE,HARD
@@ -33,6 +40,6 @@ def main():
  cps={}
  for n in ("best.pt","last.pt"):
   q=sd/"weights"/n;c=torch.load(q,map_location="cpu",weights_only=False);mo=c.get("ema") or c.get("model");bad=[k for k,v in mo.state_dict().items() if not bool(torch.isfinite(v).all())];YOLO(str(q));cps[n]={"path":str(q),"sha256":sha(q),"finite":not bad}
- expected=668*30;steps=math.ceil(668/32)*30;summary={"status":"PASS" if finite and len(SAMPLED)==expected and all(x["finite"] for x in cps.values()) else "HARD_GATE","test_accessed":False,"mode":a.mode,"train_images":668,"samples_per_epoch":668,"epochs":30,"total_sampled_images":len(SAMPLED),"expected_sampled_images":expected,"optimizer_steps":steps,"wall_seconds":time.monotonic()-wall,"train_losses_finite":finite,"checkpoint_audit":cps,"hard_draws":sum(Path(m.trainer.train_loader.dataset.im_files[i]).stem in HARD for i in SAMPLED),"save_dir":str(sd)}
+ expected=668*30;nominal_batches=math.ceil(668/32)*30;summary={"status":"PASS" if finite and CONSUMED==expected and all(x["finite"] for x in cps.values()) else "HARD_GATE","test_accessed":False,"mode":a.mode,"train_images":668,"samples_per_epoch":668,"epochs":30,"total_sampled_images":CONSUMED,"expected_sampled_images":expected,"optimizer_steps":STEPS,"nominal_train_batches":nominal_batches,"optimizer_step_note":"actual optimizer.step calls; equality is enforced after both arms complete because gradient accumulation is trainer-controlled","wall_seconds":time.monotonic()-wall,"train_losses_finite":finite,"checkpoint_audit":cps,"hard_draws":HARD_CONSUMED,"sampler_indices_generated_including_prefetch":len(SAMPLED),"save_dir":str(sd)}
  (a.output/"summary.json").write_text(json.dumps(summary,indent=2)+"\n");print(json.dumps(summary,indent=2));raise SystemExit(0 if summary["status"]=="PASS" else 3)
 if __name__=="__main__":main()
