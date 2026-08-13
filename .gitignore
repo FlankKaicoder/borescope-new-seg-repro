@@ -10,6 +10,7 @@ results/training/
 results/evaluation/
 results/diagnostics/
 results/fast_repro/
+results/final_verify/
 results/fast_repro_*_launcher.log
 results/fast_repro_exp08_*.log
 results/fast_repro_exp09_*.log
