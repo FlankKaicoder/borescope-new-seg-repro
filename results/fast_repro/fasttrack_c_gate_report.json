@@ -1,0 +1,8 @@
+{
+  "status": "STOP_TRANSFER_HARD_GATE",
+  "test_accessed": false,
+  "artifact_count": 202,
+  "artifact_decode_pass": true,
+  "ssl_summary_sha256": "c94abdb71e3b8bad138596362ac70c253125f3315b9ed5644f021c366a69b76d",
+  "transfer_report_sha256": "aa5ae3c00b436b47d61bf83381226e4e87670f015b2abf19f5a2fa486e54c978"
+}

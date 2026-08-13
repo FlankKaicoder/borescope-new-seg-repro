@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "test_accessed": false,
+  "ssl_train_images": 668,
+  "val_images_seen": 0,
+  "test_images_seen": 0,
+  "encoder_layers": [
+    0,
+    10
+  ],
+  "encoder_parameter_count": 1365472,
+  "expected_backbone_tensors": 240,
+  "epochs": 100,
+  "batch": 32,
+  "optimizer": "SGD",
+  "lr": 0.00625,
+  "loss_finite": true,
+  "feature_std_min": 0.10535778068006038,
+  "embedding_std_min": 1.0078562438488006,
+  "collapse": false,
+  "checkpoint_finite": true,
+  "adapted_backbone_sha256": "31d918c3d290d91ed38befc1fa1902443d99940e37e5e9de2945ce5e94ae1a24",
+  "wall_seconds": 3421.0412114588544
+}

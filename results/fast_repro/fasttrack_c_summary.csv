@@ -1,0 +1,5 @@
+﻿Experiment,Formal_training,VAL,Status,Test_accessed,Evidence
+Exp08 AUX_CE,NO,NO,SKIPPED_BY_ENGINEERING_GATE,false,exp08_kd/summary.json
+Exp08 KD,NO,NO,SKIPPED_BY_ENGINEERING_GATE,false,exp08_kd/summary.json
+Exp09 SSL,YES (100 epochs),N/A,PASS_NO_COLLAPSE,false,exp09_simsiam/ssl/summary.json
+Exp09 downstream,NO,NO,STOP_TRANSFER_HARD_GATE,false,exp09_simsiam/transfer_report.json

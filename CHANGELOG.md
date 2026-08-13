@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- FastTrack-C stopped at the Exp09 backbone-transfer Hard Gate: Exp08 was skipped by its engineering gate; Exp09 SSL completed without collapse, but only 160/240 tensors were exact after downstream reload.
+- Exp09 downstream/VAL, Exp10, and Exp11 were not run; `test_accessed=false`.
+
 - FastTrack-B 完成：Exp06 CE COMPLETE，Exp06 SupCon SUPCON_POSITIVE，Exp07 Stage2 NEGATIVE；HardMining+FrozenStage2 probe 未过 Gate。
 - ROI patch train/val=2532/592，source-image leakage=0；全程 test_accessed=false。
 - 新增 FastTrack-B 总表、跨阶段 master summary、规定图表与定性案例；artifact 全量 decode PASS。

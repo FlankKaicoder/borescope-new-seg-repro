@@ -26,4 +26,7 @@
 - [x] Exp06 ROI ResNet18 CE（COMPLETE）
 - [x] Exp06 SupCon（SUPCON_POSITIVE）
 - [x] Exp07 Stage2（NEGATIVE；组合 probe 未过 Gate）
-- [ ] FastTrack-C KD / SimSiam（未授权）
+- [x] Exp08 KD implementation/smoke: SKIPPED_BY_ENGINEERING_GATE
+- [x] Exp09 SimSiam SSL 100 epochs: PASS / no collapse
+- [ ] Exp09 downstream: STOP_BY_BACKBONE_TRANSFER_HARD_GATE
+- [ ] Exp10/Exp11: forbidden pending review

@@ -1,0 +1,22 @@
+{
+  "status": "SKIPPED_BY_ENGINEERING_GATE",
+  "test_accessed": false,
+  "teacher_sha256": "8e22f17c029eb0f3cb9416673a3503e0d37c7b98b91f126da2107e23fe58c32b",
+  "student_feature_layer": 4,
+  "student_feature_module": "C3k2",
+  "student_feature_stride": 8,
+  "student_feature_channels": 128,
+  "roi_align_output": [
+    7,
+    7
+  ],
+  "teacher_crop_scale": 1.2,
+  "teacher_crop_size": [
+    224,
+    224
+  ],
+  "formal_aux_ce_run": false,
+  "formal_kd_run": false,
+  "val_run": false,
+  "engineering_gate_reason": "Online teacher ROI extraction exceeded 70 seconds for one batch=32 training step after the OOM-safe chunking fix."
+}

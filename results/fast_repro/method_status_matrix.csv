@@ -1,0 +1,11 @@
+﻿Method,Historical_or_extension,Result,Primary_evidence,Keep_for_final_verify,Reason
+Baseline,Baseline,PASS_WITH_NUMERICAL_WAIVER,VAL mask mAP50-95 0.298981,YES,Required reference
+Low-confidence,Historical,POSITIVE,91/173 false negatives recoverable,NO_MODEL,Diagnostic only
+One-class,Historical,NO_CLEAR_GAIN,Crack AP50-95 0.055484,NO,No clear gain
+Hard Mining,Historical,POSITIVE_CANDIDATE,VAL mask mAP50-95 0.311318,YES,Best completed segmentation candidate
+ROI CE,Historical,COMPLETE,VAL classifier macro F1 0.67780,NO_SEG_MODEL,Different metric domain
+SupCon,Historical,SUPCON_POSITIVE,VAL classifier macro F1 0.69370,NO_SEG_MODEL,Stage2 was negative
+Stage2,Historical,NEGATIVE,Best mask F1 below YOLO at conf 0.25,NO,End-to-end degradation
+AUX CE,Historical reconstruction,SKIPPED_BY_ENGINEERING_GATE,batch32 smoke over 70 seconds,NO,No comparable formal result
+KD,Historical reconstruction,SKIPPED_BY_ENGINEERING_GATE,same online-teacher bottleneck,NO,No comparable formal result
+SimSiam,New extension,STOP_TRANSFER_HARD_GATE,SSL PASS; reload exact 160/240,NO,Backbone transfer not proven

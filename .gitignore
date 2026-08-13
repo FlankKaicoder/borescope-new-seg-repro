@@ -11,6 +11,9 @@ results/evaluation/
 results/diagnostics/
 results/fast_repro/
 results/fast_repro_*_launcher.log
+results/fast_repro_exp08_*.log
+results/fast_repro_exp09_*.log
+runs/
 results/environment/
 results/dataset_audit/exp*/
 results/dataset_audit/latest

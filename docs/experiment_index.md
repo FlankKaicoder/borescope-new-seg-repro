@@ -23,3 +23,6 @@
 | Exp06.0/1 | ROI patch + ResNet18 CE | COMPLETE / VAL ONLY | `docs/exp06_roi_resnet_fast_repro.md` |
 | Exp06.2 | ResNet18 CE + SupCon | COMPLETE / SUPCON_POSITIVE | `docs/exp06_supcon_fast_repro.md` |
 | Exp07 | YOLO + ResNet Stage2 | COMPLETE / NEGATIVE / VAL ONLY | `docs/exp07_stage2_fast_repro.md` |
+
+| Exp08 | Classifier Teacher to YOLO KD | SKIPPED_BY_ENGINEERING_GATE | `docs/exp08_kd_fast_repro.md` |
+| Exp09 | SimSiam YOLO backbone adaptation | STOP / TRANSFER_HARD_GATE | `docs/exp09_simsiam_fast_repro.md` |

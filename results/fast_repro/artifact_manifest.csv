@@ -198,3 +198,6 @@ fasttrack_b,jpg,results/fast_repro/figures/exp07_stage2/qualitative/success_recl
 fasttrack_b,jpg,results/fast_repro/figures/exp07_stage2/qualitative/success_reclassify__648.jpg,21545,True
 fasttrack_b,jpg,results/fast_repro/figures/exp07_stage2/qualitative/success_reclassify__671.jpg,22178,True
 fasttrack_b,jpg,results/fast_repro/figures/exp07_stage2/qualitative/success_reclassify__704.jpg,21665,True
+fasttrack_c,png,results/fast_repro/figures/exp09_simsiam/exp09_feature_std.png,26083,True
+fasttrack_c,png,results/fast_repro/figures/exp09_simsiam/exp09_simsiam_loss.png,42456,True
+fasttrack_c,png,results/fast_repro/figures/exp09_simsiam/exp09_transfer_verification.png,29652,True

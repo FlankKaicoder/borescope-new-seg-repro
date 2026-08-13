@@ -1,0 +1,14 @@
+{
+  "status": "HARD_GATE",
+  "test_accessed": false,
+  "expected_tensor_count": 240,
+  "loaded_tensor_count": 160,
+  "missing_tensor_count": 0,
+  "unexpected_tensor_count": 0,
+  "changed_tensor_count": 120,
+  "sample_layer": "0.bn.running_mean",
+  "coco_hash": "f1e972f52aab9a528d9439e30b907b9563ef9d33bb2e15563952f7caedf0a50a",
+  "simsiam_hash": "d762bdb605dbf5f3b6bb00e081555ff60745dc5a780c53db709d8f74fab54c0b",
+  "downstream_hash": "81c406e5aae32d91dff8d0a319cd72373df06fd5df592da21911c0aea971a426",
+  "output_sha256": "1111b385bea41d499ffbf00830ef93a42b4d617f800234bdc7bcf95fd5a2ea0b"
+}
