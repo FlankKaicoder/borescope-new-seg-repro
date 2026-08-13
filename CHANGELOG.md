@@ -19,6 +19,10 @@
 - 完成 epoch0--6 共 70 条 AMP/FP32 逐 val-batch loss probe；epoch1--5 每个 AMP batch 的 raw prediction/loss non-finite，同 checkpoint/batch FP32 全 finite。
 - 根因定位为 `Case C / MODEL_FORWARD_NUMERICAL_INSTABILITY`：C2PSA Attention 的 FP16 qk matmul 溢出为 Inf，softmax 后产生 NaN 并污染 forward/loss。
 - 原 Exp02.1 `best.pt` SHA256 未变，加载 PASS 且 561 个 state tensors 全 finite；Exp02 Baseline Gate 仍 STOP pending human review，未运行 Exp02.3/Exp03/完整重训，`test_accessed=false`。
+- 用户人工裁决 Exp02 Baseline Gate = `PASS_WITH_NUMERICAL_WAIVER`；Exp02.3 = `DEFERRED_BY_EVIDENCE`。
+- FastTrack-A 完成：Exp03 low-confidence recovery POSITIVE，Exp04 Crack-only NO_CLEAR_GAIN，Exp05 fair hard mining POSITIVE_CANDIDATE。
+- Exp05 Control/Treatment 均 20,040 sampled images / 331 optimizer updates；Treatment Mask mAP50-95 比 Control +0.03035。
+- 共 151 个关键图像 artifact 全部存在、非空且 decode PASS；FastTrack-A 全程 `test_accessed=false`。
 
 - 初始化 Exp00 工程结构、实验 registry 与基础文档。
 - 增加只读环境和数据审计脚本。

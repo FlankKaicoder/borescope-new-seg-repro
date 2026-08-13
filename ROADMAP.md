@@ -18,7 +18,9 @@
 - [x] Exp02.1 YOLO11n-seg 640 baseline（100 epochs 完成；early val-loss NaN 导致 Baseline Gate STOP）
 - [x] Exp02.2 baseline size + error audit（PASS；仅 train/val，test untouched）
 - [x] Exp02.2a early-validation-loss NaN root-cause probe（Case C；FP16 C2PSA qk matmul overflow；test untouched）
-- [ ] 用户审查 Exp02 Baseline Gate STOP；决定是否严格豁免已定位的 early training-validation AMP overflow
-- [ ] Exp03 low-confidence threshold sweep（仅建议；未授权、未执行）
-- [ ] Exp02.3 960/1280 resolution ablation（未授权；当前证据不支持优先）
+- [x] 用户裁决 Exp02 Baseline Gate = PASS_WITH_NUMERICAL_WAIVER
+- [x] Exp03 low-confidence threshold sweep（POSITIVE）
+- [x] Exp04 Crack one-class diagnostic（NO_CLEAR_GAIN）
+- [x] Exp05 fair hard-mining comparison（POSITIVE_CANDIDATE）
+- [x] Exp02.3 960/1280 resolution ablation（DEFERRED_BY_EVIDENCE）
 - [ ] Exp03+ 其他后续方法（未授权）
