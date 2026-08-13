@@ -42,7 +42,7 @@ def negcos(p,z):return -F.cosine_similarity(p,z.detach(),dim=1).mean()
 def finite_model(m):return all(bool(torch.isfinite(v).all()) for v in m.state_dict().values() if torch.is_tensor(v))
 def ssl(a):
  if a.output.exists():raise FileExistsError(a.output)
- a.output.mkdir(parents=True);torch.manual_seed(42);np.random.seed(42);random.seed(42);paths=train_paths();ds=SSLDS(paths);g=torch.Generator().manual_seed(42);dl=DataLoader(ds,batch_size=a.batch,shuffle=True,num_workers=4,pin_memory=True,drop_last=True,generator=g);m=SimSiam().cuda();opt=torch.optim.SGD(m.parameters(),lr=.05*a.batch/256,momentum=.9,weight_decay=1e-4);hist=[];wall=time.monotonic();best=1e9
+ a.output.mkdir(parents=True);torch.manual_seed(42);np.random.seed(42);random.seed(42);paths=train_paths();ds=SSLDS(paths);g=torch.Generator().manual_seed(42);dl=DataLoader(ds,batch_size=a.batch,shuffle=True,num_workers=12,pin_memory=True,persistent_workers=True,prefetch_factor=3,drop_last=True,generator=g);m=SimSiam().cuda();opt=torch.optim.SGD(m.parameters(),lr=.05*a.batch/256,momentum=.9,weight_decay=1e-4);hist=[];wall=time.monotonic();best=1e9
  for ep in range(1,a.epochs+1):
   m.train();ls=[];fs=[];zs=[]
   for x1,x2 in dl:
@@ -60,7 +60,9 @@ def transfer(a):
  st=torch.load(a.backbone,map_location='cpu',weights_only=False)['backbone'];y=YOLO(str(OFFICIAL));model=y.model;expected={k:v for k,v in model.model[:BACKBONE_END+1].state_dict().items()};before={k:thash(v) for k,v in expected.items()};missing=[k for k in expected if k not in st];unexpected=[k for k in st if k not in expected]
  if missing or unexpected:raise RuntimeError(f'TRANSFER_KEYS {len(missing)} {len(unexpected)}')
  model.model[:BACKBONE_END+1].load_state_dict(st,strict=True);after={k:thash(v) for k,v in model.model[:BACKBONE_END+1].state_dict().items()};changed=[k for k in before if before[k]!=after[k]]
- if not changed:raise RuntimeError('BACKBONE_NOT_CHANGED');a.output.parent.mkdir(parents=True,exist_ok=True);y.save(a.output)
+ if not changed:
+  raise RuntimeError('BACKBONE_NOT_CHANGED')
+ a.output.parent.mkdir(parents=True,exist_ok=True);y.save(a.output)
  check=YOLO(str(a.output)).model;loaded=check.model[:BACKBONE_END+1].state_dict();verified=sum(thash(loaded[k])==after[k] for k in after);rep={'status':'PASS' if verified==len(expected) else 'HARD_GATE','test_accessed':False,'expected_tensor_count':len(expected),'loaded_tensor_count':verified,'missing_tensor_count':len(missing),'unexpected_tensor_count':len(unexpected),'changed_tensor_count':len(changed),'sample_layer':changed[0],'coco_hash':before[changed[0]],'simsiam_hash':after[changed[0]],'downstream_hash':thash(loaded[changed[0]]),'output_sha256':sha(a.output)};(a.report).write_text(json.dumps(rep,indent=2)+'\n');print(json.dumps(rep,indent=2));return 0 if rep['status']=='PASS' else 3
 def downstream(a):
  if a.output.exists():raise FileExistsError(a.output)
