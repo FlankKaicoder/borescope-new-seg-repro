@@ -1,6 +1,6 @@
 # Exp02.2a Early-validation-loss NaN root-cause probe
 
-状态：**DIAGNOSTIC COMPLETE / CASE C / EXP02 BASELINE GATE STOP**
+状态：**DIAGNOSTIC COMPLETE / CASE C / LATER ACCEPTED BY EXPLICIT NUMERICAL WAIVER**
 
 ## 实验边界
 
@@ -110,5 +110,7 @@ ROOT_CAUSE_CLASS = MODEL_FORWARD_NUMERICAL_INSTABILITY
 - 不建议现在盲目重跑完整 baseline，因为短复现已稳定重现机理；
 - 可供人工评审的 Gate 修订方向：train loss、最终 checkpoint、独立 VAL metrics 及 FP32 val-loss 审计必须 finite；对已定位且仅存在于早期 training-validation AMP forward 的溢出，可由人工明确豁免。本轮不自行把 Gate 改 PASS。
 - 若人工后续接受 baseline，优先建议 Exp03 low-confidence threshold sweep，但本轮未执行。
+
+后续状态：2026-08-13 用户已显式裁决 `PASS_WITH_NUMERICAL_WAIVER`。上述 STOP 是 Exp02.2a 完成当时的历史状态，NaN 证据和 Case C 分类保持不变。
 
 Exp02.2 的 GT=296, TP=123, FN=173, FP=99 及 size/error 结论全部保留；仍无“目标越小越难”的单调证据。

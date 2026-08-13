@@ -13,9 +13,9 @@
 | Exp01.1 | Group-aware stratified split | PASS / 0 LEAKAGE | `docs/exp01_1_group_aware_split.md` |
 | Exp01.2 | Dataset v1 freeze and verification | PASS / DATASET_FREEZE_GATE_PASS | `docs/exp01_2_dataset_freeze.md` |
 | Exp02.0 | YOLO11n-seg batch probe and one-epoch smoke | PASS / SMOKE_GATE_PASS | `docs/exp02_0_smoke_batch_probe.md` |
-| Exp02.1 | YOLO11n-seg 640 / 100-epoch baseline | COMPLETE / BASELINE_GATE_STOP | `docs/exp02_1_yolo11n_seg_640_baseline.md` |
+| Exp02.1 | YOLO11n-seg 640 / 100-epoch baseline | COMPLETE / PASS_WITH_NUMERICAL_WAIVER | `docs/exp02_1_yolo11n_seg_640_baseline.md` |
 | Exp02.2 | Baseline size and error audit | PASS / VAL_ONLY | `docs/exp02_2_baseline_size_error_audit.md` |
-| Exp02.2a | Early-validation-loss NaN root-cause probe | COMPLETE / CASE_C / BASELINE_GATE_STOP | `docs/exp02_2a_early_val_nan_root_cause.md` |
+| Exp02.2a | Early-validation-loss NaN root-cause probe | COMPLETE / CASE_C / WAIVER_ACCEPTED_LATER | `docs/exp02_2a_early_val_nan_root_cause.md` |
 | Exp03 | Low-confidence recovery | COMPLETE / POSITIVE / VAL_ONLY | `docs/exp03_low_conf_fast_repro.md` |
 | Exp04 | Crack one-class diagnostic | COMPLETE / NO_CLEAR_GAIN | `docs/exp04_crack_oneclass_fast_repro.md` |
 | Exp05 | Fair hard-mining comparison | COMPLETE / POSITIVE_CANDIDATE | `docs/exp05_hard_mining_fast_repro.md` |
