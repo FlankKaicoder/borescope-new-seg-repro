@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "seed": 43,
+  "derivation_split": "train",
+  "test_accessed": false,
+  "train_images": 668,
+  "hard_images": 201,
+  "hard_fraction": 0.3008982035928144,
+  "weights_sha256": "09f115c80de4d624f4fb36ee8ede1a65a372cce395d963a8e02e4b6bd65e732c",
+  "hard_score": "3*FN + 2*wrong_class + 2*localization_failure + FP",
+  "tie_break": "hard_score descending; image_stem ascending"
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "test_accessed": false,
+  "mode": "baseline",
+  "seed": 43,
+  "initial_checkpoint": "/root/autodl-tmp/borescope-new-seg-repro/weights/yolo11n-seg.pt",
+  "initial_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+  "epochs": 100,
+  "train_losses_finite": true,
+  "checkpoint_audit": {
+    "best.pt": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/final_verify/exp10/seed43/baseline100/ultralytics/baseline/weights/best.pt",
+      "sha256": "09f115c80de4d624f4fb36ee8ede1a65a372cce395d963a8e02e4b6bd65e732c",
+      "finite": true,
+      "reload": true
+    },
+    "last.pt": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/final_verify/exp10/seed43/baseline100/ultralytics/baseline/weights/last.pt",
+      "sha256": "3a57cd702f69fafb876307f6fd9ab6665385e9a13b25c63c2862519185c14a19",
+      "finite": true,
+      "reload": true
+    }
+  },
+  "total_sampled_images": null,
+  "expected_sampled_images": null,
+  "optimizer_steps": null,
+  "hard_draws": null,
+  "save_dir": "/root/autodl-tmp/borescope-new-seg-repro/results/final_verify/exp10/seed43/baseline100/ultralytics/baseline",
+  "wall_seconds": 656.0256896819919
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "seed": 42,
+  "test_accessed": false,
+  "baseline_sha256": "c007fbefffcbe474384a12e3f9bf85a1308b159a22df69ac2be099a33e0311e7",
+  "control_sha256": "bfdd776ddeac3d5e062d3b9a2d124b5092544652450e650571b24335f47070a6",
+  "treatment_sha256": "2d962735de9dd3f596780cc4e3bab6e745b06b5ae23aa4bc56f1f554c98f3d06",
+  "hard_pool_images": 201,
+  "samples_per_arm": 20040,
+  "optimizer_steps_per_arm": 331,
+  "configuration_match": true
+}

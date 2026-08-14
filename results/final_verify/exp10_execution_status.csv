@@ -1,0 +1,10 @@
+﻿seed,model_type,status,checkpoint_sha256,test_accessed
+42,baseline100,REUSED_PASS,c007fbefffcbe474384a12e3f9bf85a1308b159a22df69ac2be099a33e0311e7,false
+42,uniform_control30,REUSED_PASS,bfdd776ddeac3d5e062d3b9a2d124b5092544652450e650571b24335f47070a6,false
+42,hard_treatment30,REUSED_PASS,2d962735de9dd3f596780cc4e3bab6e745b06b5ae23aa4bc56f1f554c98f3d06,false
+43,baseline100,PASS,09f115c80de4d624f4fb36ee8ede1a65a372cce395d963a8e02e4b6bd65e732c,false
+43,uniform_control30,PASS,8a1b785ecc3125a0d34b4c120d04aca10a46d7296c6a0b763b7b3629442924cd,false
+43,hard_treatment30,HARD_GATE_TRAIN_NONFINITE,N/A,false
+44,baseline100,NOT_RUN_BY_GATE,N/A,false
+44,uniform_control30,NOT_RUN_BY_GATE,N/A,false
+44,hard_treatment30,NOT_RUN_BY_GATE,N/A,false

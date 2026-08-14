@@ -1,0 +1,20 @@
+{
+  "status": "EXP10_STOPPED_BY_SEED43_TREATMENT_TRAIN_NONFINITE",
+  "test_accessed": false,
+  "seed42_reuse": "PASS",
+  "seed43_baseline": "PASS",
+  "seed43_hard_pool_images": 201,
+  "seed43_hard_pool_split": "train",
+  "seed43_control": "PASS",
+  "seed43_control_total_samples": 20040,
+  "seed43_control_optimizer_steps": 331,
+  "seed43_treatment": "HARD_GATE_TRAIN_NONFINITE",
+  "seed43_treatment_first_saved_nonfinite_epoch": 1,
+  "seed43_treatment_completed_epochs": 0,
+  "seed44": "NOT_RUN_BY_GATE",
+  "paired_statistics": "NOT_AVAILABLE_BY_GATE",
+  "recommendation": "NOT_AVAILABLE_BY_GATE",
+  "exp10_2_extension": "SKIPPED_BY_CANDIDATE_GATE",
+  "exp11": "NOT_RUN",
+  "artifact_manifest_count_unchanged": 203
+}

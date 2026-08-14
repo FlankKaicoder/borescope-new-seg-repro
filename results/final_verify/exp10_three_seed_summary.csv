@@ -1,0 +1,10 @@
+﻿seed,model_type,Mask_P,Mask_R,Mask_mAP50,Mask_mAP50_95,Box_mAP50_95,TP,FP,FN,fixed_F1,tiny_R,small_R,medium_R,large_R,Burn_R,Burn_AP50_95,Crack_R,Crack_AP50_95,corrosion_R,corrosion_AP50_95,checkpoint_sha256,status
+42,baseline100,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,c007fbefffcbe474384a12e3f9bf85a1308b159a22df69ac2be099a33e0311e7,REUSED_PASS
+42,uniform_control30,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,bfdd776ddeac3d5e062d3b9a2d124b5092544652450e650571b24335f47070a6,REUSED_PASS
+42,hard_treatment30,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,2d962735de9dd3f596780cc4e3bab6e745b06b5ae23aa4bc56f1f554c98f3d06,REUSED_PASS
+43,baseline100,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,09f115c80de4d624f4fb36ee8ede1a65a372cce395d963a8e02e4b6bd65e732c,PASS
+43,uniform_control30,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,8a1b785ecc3125a0d34b4c120d04aca10a46d7296c6a0b763b7b3629442924cd,PASS
+43,hard_treatment30,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,HARD_GATE_TRAIN_NONFINITE
+44,baseline100,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,NOT_RUN_BY_GATE
+44,uniform_control30,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,NOT_RUN_BY_GATE
+44,hard_treatment30,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,NOT_RUN_BY_GATE

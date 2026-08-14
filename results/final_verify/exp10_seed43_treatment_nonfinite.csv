@@ -1,0 +1,5 @@
+﻿epoch,field,value
+1,train/box_loss,nan
+1,train/seg_loss,nan
+1,train/cls_loss,nan
+1,train/dfl_loss,nan
