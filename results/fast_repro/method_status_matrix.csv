@@ -2,7 +2,7 @@
 Baseline,Baseline,PASS_WITH_NUMERICAL_WAIVER,VAL mask mAP50-95 0.298981,YES,Required reference
 Low-confidence,Historical,POSITIVE,91/173 false negatives recoverable,NO_MODEL,Diagnostic only
 One-class,Historical,NO_CLEAR_GAIN,Crack AP50-95 0.055484,NO,No clear gain
-Hard Mining,Historical,POSITIVE_CANDIDATE,VAL mask mAP50-95 0.311318,YES,Best completed segmentation candidate
+Hard Mining,Historical,POSITIVE_CANDIDATE / EXP10_INCOMPLETE_HARD_GATE,VAL mask mAP50-95 0.311318,UNRESOLVED,Seed43 Treatment non-finite; no three-seed conclusion
 ROI CE,Historical,COMPLETE,VAL classifier macro F1 0.67780,NO_SEG_MODEL,Different metric domain
 SupCon,Historical,SUPCON_POSITIVE,VAL classifier macro F1 0.69370,NO_SEG_MODEL,Stage2 was negative
 Stage2,Historical,NEGATIVE,Best mask F1 below YOLO at conf 0.25,NO,End-to-end degradation

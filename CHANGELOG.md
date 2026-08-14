@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Exp10 stopped at seed43 Hard Treatment train-loss non-finite Hard Gate. Seed42 reuse, seed43 baseline and Control passed; seed44 and all three-seed statistics were not run; test untouched.
+
 - Finalized Fast Repro screening status: Exp09 transfer mechanism `PASS_REVISED`; SimSiam SSL `INVALID_BY_BACKBONE_NO_UPDATE / NOT_EVALUATED` because 0/120 trainable backbone parameters changed versus COCO; downstream `NOT_RUN_BY_GATE`.
 - Exp08 remains `SKIPPED_BY_ENGINEERING_GATE / NOT_EVALUATED`; old-method candidate is Exp05 Hard Mining; extension candidate is NONE.
 - Fast Repro is complete and waiting for explicit Exp10 authorization. Exp10/Exp11 were not run; `test_accessed=false`.

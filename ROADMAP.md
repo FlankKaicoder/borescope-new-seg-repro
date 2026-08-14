@@ -31,5 +31,5 @@
 - [x] Exp09 transfer mechanism verification: PASS_REVISED
 - [x] Exp09 SimSiam reconstruction: INVALID_BY_BACKBONE_NO_UPDATE; downstream NOT_RUN_BY_GATE
 - [x] Fast Repro method screening complete
-- [ ] Exp10 three-seed Baseline vs Hard Mining: pending authorization
-- [ ] Exp11 frozen final TEST: forbidden until Exp10 candidate freeze
+- [ ] Exp10 three-seed Baseline vs Hard Mining: STOPPED_BY_SEED43_TREATMENT_TRAIN_NONFINITE
+- [ ] Exp11 frozen final TEST: FORBIDDEN; Exp10 Candidate Freeze unavailable
