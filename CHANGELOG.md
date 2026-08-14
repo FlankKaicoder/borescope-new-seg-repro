@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Exp10.1a TRAIN-only root-cause probe completed: first non-finite is epoch1 batch1 forward, before optimizer step1; exact saved state/batch is non-finite in both AMP and FP32, yielding `CASE C FP32_MODEL_OR_OPTIMIZATION_INSTABILITY`.
+- Audited the seed43 sampler (201 hard/467 normal; theoretical hard probability 0.46260069; epoch1 actual 306/668=0.45808383) and all 668 TRAIN images/targets with zero invalid image/target, illegal index, path mismatch, wrong manifest, or double-weight application.
+- Runtime AMP self-check drift between Control/original Treatment and failed retry is recorded as a secondary fairness anomaly, not the sufficient root cause. No formal hyperparameter change, seed44, new Treatment, VAL, TEST, Candidate Freeze, or Exp11 was run.
+
 - Exp10 stopped at seed43 Hard Treatment train-loss non-finite Hard Gate. Seed42 reuse, seed43 baseline and Control passed; seed44 and all three-seed statistics were not run; test untouched.
 
 - Finalized Fast Repro screening status: Exp09 transfer mechanism `PASS_REVISED`; SimSiam SSL `INVALID_BY_BACKBONE_NO_UPDATE / NOT_EVALUATED` because 0/120 trainable backbone parameters changed versus COCO; downstream `NOT_RUN_BY_GATE`.

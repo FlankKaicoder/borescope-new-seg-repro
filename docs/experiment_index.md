@@ -27,3 +27,4 @@
 | Exp08 | Classifier Teacher to YOLO KD | SKIPPED_BY_ENGINEERING_GATE | `docs/exp08_kd_fast_repro.md` |
 | Exp09/09.2a | SimSiam reconstruction and transfer verification | INVALID_BY_BACKBONE_NO_UPDATE / NOT_EVALUATED | `docs/exp09_transfer_verification_repair.md` |
 | Exp10 | Three-seed Baseline vs Hard Mining | STOPPED / SEED43 TREATMENT TRAIN NONFINITE | `docs/exp10_three_seed_final_verify.md` |
+| Exp10.1a | Seed43 Treatment TRAIN NaN root-cause probe | COMPLETE / CASE C / WAITING REVIEW | `docs/exp10_1a_seed43_treatment_nan_root_cause.md` |
