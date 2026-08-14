@@ -1,0 +1,9 @@
+first_inf_or_nan,input_dtype,input_max_abs,mode,module_name,module_type,output_dtype,output_max_abs,qk_matmul_finite,softmax_finite,state
+True,torch.float16,2290.0,AMP,model.1.conv,Conv2d,torch.float16,46560.0,,,treatment_pre_step
+True,torch.float16,,AMP,model.10.m.0.attn,Attention_operator_trace,torch.float16,,False,False,treatment_pre_step
+True,torch.float32,1.374601647544185e+36,FP32,model.2.cv1.conv,Conv2d,torch.float32,5.752117112748431e+35,,,treatment_pre_step
+False,torch.float32,56.36091232299805,FP32,model.10.m.0.attn,Attention_operator_trace,torch.float32,1037.6549072265625,True,True,treatment_pre_step
+True,torch.float16,92.125,AMP,model.1.conv,Conv2d,torch.float16,61408.0,,,baseline_initial
+True,torch.float16,,AMP,model.10.m.0.attn,Attention_operator_trace,torch.float16,,False,False,baseline_initial
+True,torch.float32,1.7083108265105914e+36,FP32,model.1.conv,Conv2d,torch.float32,6.885794078587477e+35,,,baseline_initial
+False,torch.float32,18.4205322265625,FP32,model.10.m.0.attn,Attention_operator_trace,torch.float32,81.80303955078125,True,True,baseline_initial

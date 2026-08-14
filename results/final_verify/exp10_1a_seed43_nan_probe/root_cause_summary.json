@@ -1,0 +1,64 @@
+{
+  "status": "EXP10_DIAGNOSTIC_COMPLETE_WAITING_REVIEW",
+  "root_cause_case": "CASE C FP32_MODEL_OR_OPTIMIZATION_INSTABILITY",
+  "root_cause": "FP32_FORWARD_INSTABILITY_ON_EXACT_SEED43_HARD_TREATMENT_BATCH",
+  "nonfinite_stage": "FORWARD_NONFINITE",
+  "amp_reproduced": true,
+  "exact_fp32_finite": false,
+  "baseline_initial_amp_finite": false,
+  "baseline_initial_fp32_finite": false,
+  "pre_step_parameters_finite": true,
+  "runtime_amp_drift": true,
+  "sampler": {
+    "seed": 43,
+    "train_images": 668,
+    "hard_images": 201,
+    "normal_images": 467,
+    "hard_weight": 2.0,
+    "normal_weight": 1.0,
+    "theoretical_hard_draw_probability": 0.4626006904487917,
+    "sampler_class": "torch.utils.data.WeightedRandomSampler",
+    "replacement": true,
+    "num_samples": 668,
+    "control_replacement_same": true,
+    "control_num_samples_same": true,
+    "sample_count_actual": 668,
+    "illegal_index_count": 0,
+    "path_mismatch_count": 0,
+    "empty_label_count": 0,
+    "weight_double_application": false,
+    "weight_application_count": 1,
+    "manifest_seed43_only": true,
+    "wrong_manifest": false,
+    "pool_stems_match_dataset": true,
+    "epoch1_hard_draw_count": 306,
+    "epoch1_normal_draw_count": 362,
+    "epoch1_hard_draw_ratio": 0.45808383233532934
+  },
+  "integrity": {
+    "invalid_images": 0,
+    "invalid_targets": 0,
+    "hard_invalid_images": 0,
+    "hard_invalid_targets": 0
+  },
+  "formal_hyperparameters_modified": false,
+  "seed44_run": false,
+  "new_formal_treatment_completed": false,
+  "val_accessed_for_probe": false,
+  "test_accessed": false,
+  "candidate_freeze": false,
+  "exp11_run": false,
+  "large_artifacts": {
+    "snapshot": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/final_verify/exp10_1a_seed43_nan_probe/first_nonfinite_snapshot.pt",
+      "sha256": "fc1e78db6cb284f7ed3ebaefefa7351beda745ef001f8f01d71c10eff1b5e790"
+    },
+    "baseline_initial_state": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/final_verify/exp10_1a_seed43_nan_probe/baseline_initial_state.pt",
+      "sha256": "2c6a2e62d59717f35b0caa77ef13a7f894776055f2560ba5ec5b1fdb7509ec30"
+    }
+  },
+  "runtime_amp_drift_is_secondary_not_sufficient": true,
+  "isolated_replay_processes": true,
+  "c2psa_qk_fp16_is_first_nonfinite": false
+}

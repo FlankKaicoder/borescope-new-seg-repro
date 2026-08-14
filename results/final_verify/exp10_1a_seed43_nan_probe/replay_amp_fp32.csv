@@ -1,0 +1,5 @@
+state,mode,raw_output_finite,box_loss,seg_loss,cls_loss,dfl_loss,sem_loss,total_loss,loss_finite,first_nonfinite_module,attention_qk_finite,attention_softmax_finite
+treatment_pre_step,AMP,False,nan,nan,nan,nan,0.0,nan,False,model.1.conv,False,False
+treatment_pre_step,FP32,False,nan,nan,nan,nan,0.0,nan,False,model.2.cv1.conv,True,True
+baseline_initial,AMP,False,nan,nan,nan,nan,0.0,nan,False,model.1.conv,False,False
+baseline_initial,FP32,False,nan,nan,nan,nan,0.0,nan,False,model.1.conv,True,True

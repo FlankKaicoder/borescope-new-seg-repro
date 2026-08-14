@@ -1,0 +1,32 @@
+Exp10.1a seed43 Control vs Treatment configuration audit
+
+field | control | treatment | equal
+starting checkpoint SHA256 | 09f115c80de4d624f4fb36ee8ede1a65a372cce395d963a8e02e4b6bd65e732c | 09f115c80de4d624f4fb36ee8ede1a65a372cce395d963a8e02e4b6bd65e732c | True
+epochs | 30 | 30 | True
+imgsz | 640 | 640 | True
+batch | 32 | 32 | True
+optimizer | AdamW | AdamW | True
+initial_lr | 0.01 | 0.01 | True
+final_lr | 0.0001 | 0.0001 | True
+weight_decay | 0.0005 | 0.0005 | True
+momentum/betas | beta1=0.937, beta2=0.999 | beta1=0.937, beta2=0.999 | True
+warmup | {'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1} | {'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1} | True
+augmentation | {'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0, 'cutmix': 0.0, 'copy_paste': 0.0, 'close_mosaic': 10} | {'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0, 'cutmix': 0.0, 'copy_paste': 0.0, 'close_mosaic': 10} | True
+AMP requested | True | True | True
+deterministic | True | True | True
+seed | 43 | 43 | True
+workers | 4 | 4 | True
+sampler class | WeightedRandomSampler | WeightedRandomSampler | True
+replacement | True | True | True
+num_samples | 668 | 668 | True
+dataset | /root/autodl-tmp/borescope-new-seg-data/v1/data.yaml | /root/autodl-tmp/borescope-new-seg-data/v1/data.yaml | True
+split | train | train | True
+model | 09f115c80de4d624f4fb36ee8ede1a65a372cce395d963a8e02e4b6bd65e732c | 09f115c80de4d624f4fb36ee8ede1a65a372cce395d963a8e02e4b6bd65e732c | True
+resume flag | False | False | True
+sampling weights | all=1 | normal=1, hard=2 | False
+runtime effective AMP (frozen logs) | True | False | False
+
+requested/resolved unexpected differences excluding arm paths/names: NONE
+CONFIG_IMPLEMENTATION_BUG_CANDIDATE: runtime effective AMP drift (Control=True; failed retry=False)
+Original Treatment AMP check passed and epoch1 was finite; retry AMP check failed and epoch1 batch0 was NaN.
+No fix is applied in Exp10.1a.
