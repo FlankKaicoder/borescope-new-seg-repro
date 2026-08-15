@@ -31,3 +31,4 @@
 | Exp10.1b | TRUE-FP32 / Trainer-path no-update verification | COMPLETE / CASE B REPLAY-SIDE / WAITING REVIEW | `docs/exp10_1b_true_fp32_verification.md` |
 | Exp10-R | Controlled multi-seed restart with unified numerical guards | COMPLETE / ALL NUMERICAL AND FAIRNESS GATES PASS | `docs/exp10_controlled_restart.md` |
 | Review10.5 | New Dataset Full Experiment Review | COMPLETE / WAITING_NEXT_EXPERIMENT_DECISION / NO TRAINING / NO TEST | `docs/new_dataset_full_experiment_review.md` |
+| Freeze10.6 | Final Baseline Candidate Freeze | PASS / SEED44 / TEST_NOT_ACCESSED | `docs/final_candidate_freeze.md` |

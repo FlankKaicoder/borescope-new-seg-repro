@@ -37,6 +37,9 @@
 - [x] Exp10 controlled restart: seed43 Treatment → seed43 VAL → seed44 → unified three-seed VAL/statistics
 - [x] Exp00–Exp10 current reproduction experiments complete or formally closed by Gate
 - [x] New Dataset Full Experiment Review: evidence consolidation, status/outcome matrices, RQ1–RQ10, future-decision matrix
-- [ ] Human decision: stop experiments / 960 resolution mechanism ablation / continued fine-tune study / new improvement phase
-- [ ] Candidate Freeze: pending post-review decision; `NOT_EXECUTED`
-- [ ] Exp11 final one-time TEST: forbidden until final experiment decision + Candidate Freeze + explicit authorization
+- [x] Human decision: `OPTION_A_DIRECT_FINALIZATION`; no more model experiments
+- [x] Candidate Freeze: YOLO11n-seg Baseline / seed44 / TEST not accessed at freeze
+- [ ] Exp11.0 final unified TEST: authorized only for frozen seed44 Baseline
+- [ ] Exp11.1 qualitative/error audit
+- [ ] Exp11.2 paper/thesis/project materials
+- [ ] Current experimental phase complete

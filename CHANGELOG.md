@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Completed Candidate Freeze before any TEST model access: final method YOLO11n-seg Baseline, seed44 checkpoint SHA256 `2dbec80d31d978bdadcd436cf243921be81903284e00b08c5beb75d9808948e9`, selected by highest frozen VAL Mask mAP50-95 among Baseline seeds 42/43/44.
+- Recorded `OPTION_A_DIRECT_FINALIZATION`; Hard Mining remains `HARD_MINING_NOT_CONFIRMED`, Uniform Control remains control-only, and resolution remains deferred future work.
+- Added a single-checkpoint Exp11 evaluator that reuses frozen Exp10 evaluation semantics and forbids output overwrite, checkpoint mismatch, selection, sweep, or training. TEST remained unaccessed in this commit.
+
 - Consolidated all Exp00–Exp10 new-dataset evidence into a full research review, experiment timeline, research takeaways, figure index, method/outcome matrices, comparable segmentation table, ROI representation table, dataset summary, and future-experiment decision/time-cost matrices.
 - No model training, optimizer step, inference, Candidate Freeze, Exp11, or TEST access was performed; `test_accessed=false`.
 - Calibrated final statuses: Exp05 seed42 is preliminary only; Exp10 is `HARD_MINING_NOT_CONFIRMED`; Exp08 and Exp09 remain `NOT_EVALUATED`; Uniform Control is a budget-control research signal and not a final candidate.
