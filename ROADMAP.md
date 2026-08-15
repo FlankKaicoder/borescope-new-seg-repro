@@ -32,5 +32,6 @@
 - [x] Exp09 SimSiam reconstruction: INVALID_BY_BACKBONE_NO_UPDATE; downstream NOT_RUN_BY_GATE
 - [x] Fast Repro method screening complete
 - [ ] Exp10 three-seed Baseline vs Hard Mining: STOPPED_BY_SEED43_TREATMENT_TRAIN_NONFINITE
-- [x] Exp10.1a seed43 Treatment TRAIN-only NaN probe: CASE C FP32_MODEL_OR_OPTIMIZATION_INSTABILITY / WAITING_REVIEW
+- [x] Exp10.1a seed43 Treatment TRAIN-only NaN probe: historical CASE C superseded by Exp10.1b
+- [x] Exp10.1b TRUE-FP32 / Trainer-path no-update verification: CASE B replay-side non-reproducibility / WAITING_REVIEW
 - [ ] Exp11 frozen final TEST: FORBIDDEN; Exp10 Candidate Freeze unavailable

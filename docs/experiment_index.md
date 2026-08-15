@@ -28,3 +28,4 @@
 | Exp09/09.2a | SimSiam reconstruction and transfer verification | INVALID_BY_BACKBONE_NO_UPDATE / NOT_EVALUATED | `docs/exp09_transfer_verification_repair.md` |
 | Exp10 | Three-seed Baseline vs Hard Mining | STOPPED / SEED43 TREATMENT TRAIN NONFINITE | `docs/exp10_three_seed_final_verify.md` |
 | Exp10.1a | Seed43 Treatment TRAIN NaN root-cause probe | COMPLETE / CASE C / WAITING REVIEW | `docs/exp10_1a_seed43_treatment_nan_root_cause.md` |
+| Exp10.1b | TRUE-FP32 / Trainer-path no-update verification | COMPLETE / CASE B REPLAY-SIDE / WAITING REVIEW | `docs/exp10_1b_true_fp32_verification.md` |

@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Exp10.1b TRUE-FP32 / Trainer-path no-update verification completed. Explicit FP32 params/buffers/input with autocast disabled, TRUE-AMP from the same FP32 master state, and both formal Trainer-path branches are finite.
+- Revised root cause to `CASE B REPLAY_OR_PREPROCESS_PIPELINE_BUG`, subtype `NONREPRODUCIBLE_EXP10_1A_DIAGNOSTIC_REPLAY`: preprocessing tensor hashes are identical, while the frozen old replay implementation now reproduces finite FP32/AMP values exactly.
+- Exp10 remains incomplete/stopped. No formal hyperparameter change, optimizer step, seed44, formal Treatment resume, VAL, TEST, Candidate Freeze, or Exp11 was performed.
+
 - Exp10.1a TRAIN-only root-cause probe completed: first non-finite is epoch1 batch1 forward, before optimizer step1; exact saved state/batch is non-finite in both AMP and FP32, yielding `CASE C FP32_MODEL_OR_OPTIMIZATION_INSTABILITY`.
 - Audited the seed43 sampler (201 hard/467 normal; theoretical hard probability 0.46260069; epoch1 actual 306/668=0.45808383) and all 668 TRAIN images/targets with zero invalid image/target, illegal index, path mismatch, wrong manifest, or double-weight application.
 - Runtime AMP self-check drift between Control/original Treatment and failed retry is recorded as a secondary fairness anomaly, not the sufficient root cause. No formal hyperparameter change, seed44, new Treatment, VAL, TEST, Candidate Freeze, or Exp11 was run.
