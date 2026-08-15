@@ -22,5 +22,6 @@
 | Formal training allowed | `NO` |
 | Next allowed experiment | `NONE` |
 | Exp11 results commit | `fb584621b816de8f344d49daeba2656caee46e92` |
+| Final docs commit | `b094d16bacb325e44d61eb4bedad54b00d231790` |
 
 No required experiment remains. Future work is outside the closed experimental phase.
