@@ -37,3 +37,8 @@ Uniform Control 的预定义角色是 training-budget control，不是 final can
 Candidate Freeze 提交后，只允许对上述唯一 checkpoint 执行一次 frozen TEST evaluation：147 images / 285 instances。禁止 threshold/NMS sweep、checkpoint/seed/method comparison、训练或任何 TEST-driven tuning。第一份正式 TEST metrics 生成后，`MODEL_SELECTION_CLOSED=true`。
 
 机器可读冻结证据：`results/final_test/candidate_freeze.json`。
+
+
+## Post-TEST preservation record
+
+Candidate Freeze remained unchanged. The selected seed44 checkpoint scored frozen VAL Mask mAP50-95 `0.3251567516` and final TEST Mask mAP50-95 `0.2716207089`. Checkpoint: `/root/autodl-tmp/borescope-new-seg-repro/results/final_verify/exp10_controlled_restart/seed44/baseline100/formal/ultralytics/baseline/weights/best.pt`; SHA256 `2dbec80d31d978bdadcd436cf243921be81903284e00b08c5beb75d9808948e9`. The `.pt` is excluded from Git; download it before releasing AutoDL.

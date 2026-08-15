@@ -1,45 +1,14 @@
 # Roadmap
 
-- [x] 建立工程、Git 与实验 registry
-- [x] Exp00.0 服务器环境审计（审计 PASS；训练环境 Gate STOP）
-- [x] Exp00.1 JSON schema 与文件配对审计（审计 PASS；24 张图无 JSON 待确认）
-- [x] Exp00.2 类别、实例、polygon 和尺度审计（审计 PASS；类别不均衡与语义一致性待处理）
-- [x] Exp00.3 exact/near duplicate 与泄漏风险审计（审计 PASS；group-aware split Gate STOP）
-- [x] Exp00.4 24 张无 JSON 图片人工审查包（材料完成；24 个决定待人工确认）
-- [x] Exp00.5 22 个跨类别近重复冲突组审查包（材料完成；22 个组决定待人工确认）
-- [x] 建立项目 `.venv` 并通过 import/CUDA/Ultralytics/OpenCV smoke（Environment Gate PASS）
-- [x] 建立长期项目状态、决策、历史方法与 handoff 机制
-- [x] 用户政策关闭 Exp00 blocker：24 张无 JSON 图统一 `excluded_unpaired`；专业 JSON 全部作为权威 GT，不修订 22 个跨类组
-- [x] Exp01.0 JSON → YOLO-seg 转换：969 样本 / 1847 polygon / 0 error
-- [x] Exp01.1 group-aware multilabel-stratified split：668/154/147，88 near groups 零泄漏
-- [x] Exp01.2 Dataset v1 冻结、50 张七类反读 overlay、三 split Ultralytics load smoke（Dataset Freeze Gate PASS）
-- [x] 用户审阅 Exp01 handoff 并明确授权进入 Exp02
-- [x] Exp02.0 YOLO11n-seg smoke / batch probe（PASS；frozen batch=32）
-- [x] Exp02.1 YOLO11n-seg 640 baseline（100 epochs 完成；early val-loss NaN 导致 Baseline Gate STOP）
-- [x] Exp02.2 baseline size + error audit（PASS；仅 train/val，test untouched）
-- [x] Exp02.2a early-validation-loss NaN root-cause probe（Case C；FP16 C2PSA qk matmul overflow；test untouched）
-- [x] 用户裁决 Exp02 Baseline Gate = PASS_WITH_NUMERICAL_WAIVER
-- [x] Exp03 low-confidence threshold sweep（POSITIVE）
-- [x] Exp04 Crack one-class diagnostic（NO_CLEAR_GAIN）
-- [x] Exp05 fair hard-mining comparison（POSITIVE_CANDIDATE）
-- [x] Exp02.3 960/1280 resolution ablation（DEFERRED_BY_EVIDENCE）
-- [x] Exp06 ROI ResNet18 CE（COMPLETE）
-- [x] Exp06 SupCon（SUPCON_POSITIVE）
-- [x] Exp07 Stage2（NEGATIVE；组合 probe 未过 Gate）
-- [x] Exp08 KD implementation/smoke: SKIPPED_BY_ENGINEERING_GATE
-- [x] Exp09 SimSiam SSL 100 epochs: PASS / no collapse
-- [x] Exp09 transfer mechanism verification: PASS_REVISED
-- [x] Exp09 SimSiam reconstruction: INVALID_BY_BACKBONE_NO_UPDATE; downstream NOT_RUN_BY_GATE
-- [x] Fast Repro method screening complete
-- [x] Exp10 three-seed Baseline vs Hard Mining: COMPLETE / HARD_MINING_NOT_CONFIRMED / WAITING_CANDIDATE_FREEZE_REVIEW
-- [x] Exp10.1a seed43 Treatment TRAIN-only NaN probe: historical CASE C superseded by Exp10.1b
-- [x] Exp10.1b TRUE-FP32 / Trainer-path no-update verification: CASE B replay-side non-reproducibility / WAITING_REVIEW
-- [x] Exp10 controlled restart: seed43 Treatment → seed43 VAL → seed44 → unified three-seed VAL/statistics
-- [x] Exp00–Exp10 current reproduction experiments complete or formally closed by Gate
-- [x] New Dataset Full Experiment Review: evidence consolidation, status/outcome matrices, RQ1–RQ10, future-decision matrix
-- [x] Human decision: `OPTION_A_DIRECT_FINALIZATION`; no more model experiments
-- [x] Candidate Freeze: YOLO11n-seg Baseline / seed44 / TEST not accessed at freeze
-- [ ] Exp11.0 final unified TEST: first attempt interrupted before metrics; exactly one unchanged retry explicitly authorized
-- [ ] Exp11.1 qualitative/error audit
-- [ ] Exp11.2 paper/thesis/project materials
-- [ ] Current experimental phase complete
+- [x] Exp00 environment, schema/pair, class/polygon/scale, duplicate/leakage audit
+- [x] Exp01 JSON → YOLO-seg, group-aware split, Dataset v1 freeze
+- [x] Exp02 baseline, numerical diagnosis and size/error audit
+- [x] Exp03–Exp09 historical-method reconstruction and engineering/validity Gates
+- [x] Exp10 controlled three-seed verification; Hard Mining not confirmed
+- [x] Full Dataset Review and RQ1–RQ10 evidence consolidation
+- [x] Option A direct finalization selected; no more model experiments
+- [x] Candidate Freeze: Baseline / seed44 / TEST not accessed at freeze
+- [x] Exp11.0 final unified TEST
+- [x] Exp11.1 qualitative/error audit
+- [x] Exp11.2 paper/thesis/project materials
+- [x] Current experimental phase complete (`PROJECT_COMPLETE`)

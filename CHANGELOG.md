@@ -74,3 +74,13 @@
 - 完成 Exp00.5：为 22 个跨类近重复组生成 74 张成员记录及逐组原图+GT overlay 审查图。
 - 建立项目 `.venv`，复用 torch 2.8.0+cu128；安装 Ultralytics/OpenCV-headless/pandas/scikit-learn/shapely 并通过 smoke。
 - 初始双 GPU 规划保留为历史，但已由 Exp00 实测的单张约 22GB RTX 2080 Ti 覆盖。
+
+
+## 2026-08-15 — Exp11 final project closure
+
+- Candidate Freeze completed before TEST (`9991fcfcb9cf6c0ab8920ad7deadeed579ce5585`), Baseline seed44, SHA `2dbec80d31d978bdadcd436cf243921be81903284e00b08c5beb75d9808948e9`.
+- Initial Exp11 execution interrupted before metrics; evidence preserved; one unchanged retry explicitly authorized.
+- Final TEST: Box mAP50-95 0.293253; Mask mAP50-95 0.271621; 147 images / 285 instances.
+- Fixed conf .25: TP 127, FP 101, FN 158, F1 0.495127; 64 qualitative cases generated.
+- No TEST-driven retraining, tuning, threshold sweep, or model/seed/checkpoint selection.
+- Final paper/report tables and figures completed; experimental phase closed.
