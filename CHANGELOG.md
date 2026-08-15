@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Exp11 first attempt was interrupted by an insufficient client SSH timeout before formal TEST metrics were written. The four pre-metric files were preserved; `summary.json` and `overall_metrics.csv` do not exist.
+- Raised `EXP11_EVALUATION_INVALIDATING_GATE`; conservatively marked TEST access as possibly partial, closed model selection, and prohibited any automatic retry pending explicit user + ChatGPT review.
+
 - Completed Candidate Freeze before any TEST model access: final method YOLO11n-seg Baseline, seed44 checkpoint SHA256 `2dbec80d31d978bdadcd436cf243921be81903284e00b08c5beb75d9808948e9`, selected by highest frozen VAL Mask mAP50-95 among Baseline seeds 42/43/44.
 - Recorded `OPTION_A_DIRECT_FINALIZATION`; Hard Mining remains `HARD_MINING_NOT_CONFIRMED`, Uniform Control remains control-only, and resolution remains deferred future work.
 - Added a single-checkpoint Exp11 evaluator that reuses frozen Exp10 evaluation semantics and forbids output overwrite, checkpoint mismatch, selection, sweep, or training. TEST remained unaccessed in this commit.

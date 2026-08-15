@@ -1,0 +1,28 @@
+{
+  "gate": "EXP11_EVALUATION_INVALIDATING_GATE",
+  "status": "STOP_WAITING_USER_CHATGPT_REVIEW",
+  "timestamp": "2026-08-15T17:48:12+08:00",
+  "candidate_freeze_commit": "9991fcfcb9cf6c0ab8920ad7deadeed579ce5585",
+  "frozen_checkpoint_sha256": "2dbec80d31d978bdadcd436cf243921be81903284e00b08c5beb75d9808948e9",
+  "cause_class": "CLIENT_ORCHESTRATION_TIMEOUT_INTERRUPTION",
+  "cause": "The SSH client command was launched with an insufficient timeout and terminated the remote evaluator process before formal metrics were written.",
+  "evaluator_code_bug_detected": false,
+  "checkpoint_mismatch_detected": false,
+  "split_mismatch_detected": false,
+  "formal_test_metrics_generated": false,
+  "summary_json_generated": false,
+  "overall_metrics_csv_generated": false,
+  "remote_process_running": false,
+  "partial_files_preserved": [
+    "results/final_test/exp11/candidate_freeze.json",
+    "results/final_test/exp11/checkpoint_sha256.txt",
+    "results/final_test/exp11/command.txt",
+    "results/final_test/exp11/environment.json"
+  ],
+  "test_access_state": "POSSIBLY_ACCESSED_BY_INTERRUPTED_ATTEMPT",
+  "model_selection_closed": true,
+  "training_after_attempt": false,
+  "threshold_model_seed_selection_after_attempt": false,
+  "retry_authorized": false,
+  "required_user_decision": "Explicitly authorize or reject one retry of the exact same frozen seed44 checkpoint and committed evaluator."
+}

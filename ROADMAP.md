@@ -39,7 +39,7 @@
 - [x] New Dataset Full Experiment Review: evidence consolidation, status/outcome matrices, RQ1–RQ10, future-decision matrix
 - [x] Human decision: `OPTION_A_DIRECT_FINALIZATION`; no more model experiments
 - [x] Candidate Freeze: YOLO11n-seg Baseline / seed44 / TEST not accessed at freeze
-- [ ] Exp11.0 final unified TEST: authorized only for frozen seed44 Baseline
+- [ ] Exp11.0 final unified TEST: first attempt interrupted before metrics; `EXP11_EVALUATION_INVALIDATING_GATE`; retry requires explicit review
 - [ ] Exp11.1 qualitative/error audit
 - [ ] Exp11.2 paper/thesis/project materials
 - [ ] Current experimental phase complete
