@@ -35,4 +35,8 @@
 - [x] Exp10.1a seed43 Treatment TRAIN-only NaN probe: historical CASE C superseded by Exp10.1b
 - [x] Exp10.1b TRUE-FP32 / Trainer-path no-update verification: CASE B replay-side non-reproducibility / WAITING_REVIEW
 - [x] Exp10 controlled restart: seed43 Treatment → seed43 VAL → seed44 → unified three-seed VAL/statistics
-- [ ] Exp11 frozen final TEST: FORBIDDEN; Exp10 Candidate Freeze unavailable
+- [x] Exp00–Exp10 current reproduction experiments complete or formally closed by Gate
+- [x] New Dataset Full Experiment Review: evidence consolidation, status/outcome matrices, RQ1–RQ10, future-decision matrix
+- [ ] Human decision: stop experiments / 960 resolution mechanism ablation / continued fine-tune study / new improvement phase
+- [ ] Candidate Freeze: pending post-review decision; `NOT_EXECUTED`
+- [ ] Exp11 final one-time TEST: forbidden until final experiment decision + Candidate Freeze + explicit authorization

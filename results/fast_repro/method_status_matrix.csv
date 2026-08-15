@@ -1,10 +1,11 @@
-﻿Method,Historical_or_extension,Result,Primary_evidence,Keep_for_final_verify,Reason
-Baseline,Baseline,PASS_WITH_NUMERICAL_WAIVER,VAL mask mAP50-95 0.298981,YES,Required reference
-Low-confidence,Historical,POSITIVE,91/173 false negatives recoverable,NO_MODEL,Diagnostic only
+Method,Historical_or_extension,Result,Primary_evidence,Keep_for_final_verify,Reason
+Baseline,Baseline,PASS_WITH_NUMERICAL_WAIVER,Three-seed VAL mask mAP50-95 0.307881 ± 0.014963,YES,Required stable reference
+Low-confidence,Historical,POSITIVE_DIAGNOSTIC,91/173 false negatives recoverable,NO_MODEL,Diagnostic only; threshold reduction causes FP explosion
 One-class,Historical,NO_CLEAR_GAIN,Crack AP50-95 0.055484,NO,No clear gain
-Hard Mining,Historical,POSITIVE_CANDIDATE / EXP10_INCOMPLETE_HARD_GATE,VAL mask mAP50-95 0.311318,UNRESOLVED,Seed43 Treatment non-finite; no three-seed conclusion
-ROI CE,Historical,COMPLETE,VAL classifier macro F1 0.67780,NO_SEG_MODEL,Different metric domain
-SupCon,Historical,SUPCON_POSITIVE,VAL classifier macro F1 0.69370,NO_SEG_MODEL,Stage2 was negative
+Hard Mining,Historical,HARD_MINING_NOT_CONFIRMED,Treatment-Control delta -0.005543 ± 0.035346 and positive on 1/3 seeds,NO,Exp10 supersedes the seed42 preliminary candidate
+Uniform continued fine-tune,Budget control,RESEARCH_SIGNAL_NOT_FINAL_CANDIDATE,Three-seed mask mAP50-95 0.317041 ± 0.031950,OPTIONAL_FUTURE_QUESTION,Large seed sensitivity and post-hoc status prohibit automatic promotion
+ROI CE,Historical,COMPLETE_DIAGNOSTIC,VAL classifier macro F1 0.677804,NO_SEG_MODEL,Different metric domain
+SupCon,Historical,SUPCON_POSITIVE,VAL classifier macro F1 0.693698,NO_SEG_MODEL,Positive ROI representation result only
 Stage2,Historical,NEGATIVE,Best mask F1 below YOLO at conf 0.25,NO,End-to-end degradation
 AUX CE,Historical reconstruction,SKIPPED_BY_ENGINEERING_GATE,batch32 smoke over 70 seconds,NO,No comparable formal result
 KD,Historical reconstruction,SKIPPED_BY_ENGINEERING_GATE,same online-teacher bottleneck,NO,No comparable formal result

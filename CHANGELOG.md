@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Consolidated all Exp00–Exp10 new-dataset evidence into a full research review, experiment timeline, research takeaways, figure index, method/outcome matrices, comparable segmentation table, ROI representation table, dataset summary, and future-experiment decision/time-cost matrices.
+- No model training, optimizer step, inference, Candidate Freeze, Exp11, or TEST access was performed; `test_accessed=false`.
+- Calibrated final statuses: Exp05 seed42 is preliminary only; Exp10 is `HARD_MINING_NOT_CONFIRMED`; Exp08 and Exp09 remain `NOT_EVALUATED`; Uniform Control is a budget-control research signal and not a final candidate.
+- Project phase is now `NEW_DATASET_FULL_REVIEW_COMPLETE_WAITING_NEXT_EXPERIMENT_DECISION`; default recommendation is direct finalization, with 960 resolution retained only as an optional mechanism ablation if RQ2 must be closed.
+
 - Completed Exp10 controlled restart and unified nine-checkpoint VAL. Seed43 Treatment restart, seed44 Baseline/Control/Treatment, numerical Gates, checkpoint audits, and Control/Treatment fairness all passed.
 - Three-seed Treatment-Control Mask mAP50-95 deltas are +0.030354/-0.006673/-0.040311; positive count 1/3 and mean -0.005543 ± 0.035346. Final recommendation: `HARD_MINING_NOT_CONFIRMED`; recommend Baseline for human Candidate Freeze review.
 - Generated summary/effect CSVs, aggregate JSON, five required figures, and a 165-image artifact manifest with exists/non-empty/decode PASS. Candidate Freeze, Exp11, and TEST were not executed.
