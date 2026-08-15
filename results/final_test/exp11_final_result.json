@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "canonical_result_dir": "results/final_test/exp11_retry1",
+  "initial_attempt": "INTERRUPTED_PREMETRIC_PRESERVED",
+  "retry": "ONE_EXPLICITLY_AUTHORIZED_RETRY",
+  "candidate_freeze_commit": "9991fcfcb9cf6c0ab8920ad7deadeed579ce5585",
+  "retry_authorization_commit": "4fd982f49fc949fd99f4dd121b77791d3060c649",
+  "checkpoint": "/root/autodl-tmp/borescope-new-seg-repro/results/final_verify/exp10_controlled_restart/seed44/baseline100/formal/ultralytics/baseline/weights/best.pt",
+  "checkpoint_sha256": "2dbec80d31d978bdadcd436cf243921be81903284e00b08c5beb75d9808948e9",
+  "seed": 44,
+  "test_accessed": true,
+  "model_selection_closed": true,
+  "post_test_training": false,
+  "post_test_selection": false,
+  "Mask_mAP50_95": 0.2716207089319057,
+  "Box_mAP50_95": 0.29325312862397146
+}

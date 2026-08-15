@@ -1,0 +1,387 @@
+stem,image_path,gt_index,gt_class_id,gt_class_name,size_bin,multi_defect_scene,pred_index,pred_class_id,pred_class_name,confidence,mask_iou,box_iou,category,notes
+4,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/4.png,0,0,Burn,large,False,0,0,Burn,0.2695012092590332,0.3606704229740607,0.3617022633552551,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+4,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/4.png,,,,N/A,False,0,0,Burn,0.2695012092590332,,,FP,unmatched prediction at frozen conf=0.25
+5,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/5.png,0,6,corrosion,medium,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+5,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/5.png,1,6,corrosion,medium,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+5,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/5.png,2,6,corrosion,small,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+5,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/5.png,3,6,corrosion,large,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+11,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/11.png,0,0,Burn,large,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+11,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/11.png,1,0,Burn,medium,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+11,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/11.png,2,0,Burn,small,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+11,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/11.png,3,0,Burn,medium,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+16,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/16.png,0,0,Burn,large,True,0,0,Burn,0.268128901720047,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+16,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/16.png,1,6,corrosion,large,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+16,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/16.png,2,6,corrosion,medium,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+16,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/16.png,3,6,corrosion,small,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+16,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/16.png,,,,N/A,True,0,0,Burn,0.268128901720047,,,FP,unmatched prediction at frozen conf=0.25
+19,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/19.png,0,1,Crack,small,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+19,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/19.png,1,6,corrosion,large,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+19,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/19.png,2,1,Crack,medium,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+22,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/22.png,0,6,corrosion,medium,True,2,6,corrosion,0.8671531677246094,0.9219088937093276,0.8920167088508606,TP,matched at frozen conf=0.25
+22,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/22.png,1,6,corrosion,small,True,0,6,corrosion,0.954598605632782,0.7943349753694581,0.7954804301261902,TP,matched at frozen conf=0.25
+22,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/22.png,2,6,corrosion,small,True,5,6,corrosion,0.597079873085022,0.844149459193707,0.824634313583374,TP,matched at frozen conf=0.25
+22,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/22.png,3,6,corrosion,small,True,1,6,corrosion,0.8876365423202515,0.8964421855146124,0.9162479043006897,TP,matched at frozen conf=0.25
+22,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/22.png,4,6,corrosion,tiny,True,3,6,corrosion,0.7272681593894958,0.7407407407407407,0.6810855865478516,TP,matched at frozen conf=0.25
+22,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/22.png,5,6,corrosion,tiny,True,0,6,corrosion,0.954598605632782,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+22,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/22.png,6,6,corrosion,tiny,True,0,6,corrosion,0.954598605632782,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+22,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/22.png,7,6,corrosion,tiny,True,7,6,corrosion,0.28911760449409485,0.6914893617021277,0.6965336799621582,TP,matched at frozen conf=0.25
+22,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/22.png,8,6,corrosion,tiny,True,8,6,corrosion,0.2843686640262604,0.7299813780260708,0.7975461483001709,TP,matched at frozen conf=0.25
+22,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/22.png,9,6,corrosion,tiny,True,4,6,corrosion,0.7239128947257996,0.7238562091503268,0.749911367893219,TP,matched at frozen conf=0.25
+22,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/22.png,10,6,corrosion,tiny,True,0,6,corrosion,0.954598605632782,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+22,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/22.png,11,6,corrosion,tiny,True,9,6,corrosion,0.27496275305747986,0.7808219178082192,0.8184890151023865,TP,matched at frozen conf=0.25
+22,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/22.png,12,6,corrosion,tiny,True,0,6,corrosion,0.954598605632782,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+22,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/22.png,13,6,corrosion,small,True,0,6,corrosion,0.954598605632782,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+22,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/22.png,,,,N/A,True,6,6,corrosion,0.3650524616241455,,,FP,unmatched prediction at frozen conf=0.25
+22,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/22.png,,,,N/A,True,10,6,corrosion,0.26008155941963196,,,FP,unmatched prediction at frozen conf=0.25
+30,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/30.png,0,6,corrosion,small,True,1,6,corrosion,0.7229974865913391,0.6118047673098751,0.5258863568305969,POOR_MASK_BOUNDARY,matched at frozen conf=0.25
+30,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/30.png,1,6,corrosion,small,True,2,6,corrosion,0.6797548532485962,0.8124581379772271,0.8244879841804504,TP,matched at frozen conf=0.25
+30,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/30.png,2,6,corrosion,tiny,True,0,6,corrosion,0.8177633285522461,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+30,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/30.png,3,6,corrosion,small,True,0,6,corrosion,0.8177633285522461,0.8482446206115515,0.8944766521453857,TP,matched at frozen conf=0.25
+30,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/30.png,4,6,corrosion,tiny,True,6,6,corrosion,0.30814266204833984,0.7823275862068966,0.7317897081375122,TP,matched at frozen conf=0.25
+30,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/30.png,5,6,corrosion,tiny,True,3,6,corrosion,0.5578234195709229,0.7857142857142857,0.7587770819664001,TP,matched at frozen conf=0.25
+30,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/30.png,6,6,corrosion,tiny,True,0,6,corrosion,0.8177633285522461,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+30,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/30.png,7,6,corrosion,small,True,4,6,corrosion,0.442083477973938,0.4375,0.3436911106109619,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+30,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/30.png,8,6,corrosion,tiny,True,5,6,corrosion,0.3550032079219818,0.7788309636650869,0.7794763445854187,TP,matched at frozen conf=0.25
+30,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/30.png,9,6,corrosion,small,True,0,6,corrosion,0.8177633285522461,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+30,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/30.png,10,6,corrosion,tiny,True,0,6,corrosion,0.8177633285522461,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+30,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/30.png,11,6,corrosion,tiny,True,7,6,corrosion,0.28046929836273193,0.6368421052631579,0.638417661190033,POOR_MASK_BOUNDARY,matched at frozen conf=0.25
+30,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/30.png,12,6,corrosion,tiny,True,0,6,corrosion,0.8177633285522461,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+30,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/30.png,13,6,corrosion,tiny,True,0,6,corrosion,0.8177633285522461,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+30,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/30.png,14,6,corrosion,tiny,True,0,6,corrosion,0.8177633285522461,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+30,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/30.png,15,6,corrosion,small,True,0,6,corrosion,0.8177633285522461,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+30,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/30.png,,,,N/A,True,4,6,corrosion,0.442083477973938,,,FP,unmatched prediction at frozen conf=0.25
+30,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/30.png,,,,N/A,True,8,6,corrosion,0.2794114351272583,,,FP,unmatched prediction at frozen conf=0.25
+36,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/36.png,0,6,corrosion,medium,False,1,6,corrosion,0.3094343841075897,0.46510210301737276,0.20831890404224396,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+36,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/36.png,,,,N/A,False,0,6,corrosion,0.3696118891239166,,,FP,unmatched prediction at frozen conf=0.25
+36,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/36.png,,,,N/A,False,1,6,corrosion,0.3094343841075897,,,FP,unmatched prediction at frozen conf=0.25
+39,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/39.png,0,6,corrosion,tiny,False,0,6,corrosion,0.2620653808116913,0.6221889055472264,0.5512706637382507,POOR_MASK_BOUNDARY,matched at frozen conf=0.25
+40,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/40.png,0,3,Material missing,medium,True,0,0,Burn,0.359293669462204,0.04616079808126803,0.520161509513855,WRONG_CLASS,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+40,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/40.png,1,6,corrosion,large,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+40,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/40.png,,,,N/A,True,0,0,Burn,0.359293669462204,,,FP,unmatched prediction at frozen conf=0.25
+46,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/46.png,0,6,corrosion,large,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+46,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/46.png,1,3,Material missing,medium,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+74,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/74.png,0,0,Burn,large,True,1,0,Burn,0.2634071111679077,0.2795404288049226,0.29080328345298767,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+74,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/74.png,1,0,Burn,medium,True,1,0,Burn,0.2634071111679077,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+74,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/74.png,2,0,Burn,medium,True,1,0,Burn,0.2634071111679077,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+74,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/74.png,3,0,Burn,large,True,2,0,Burn,0.2589494585990906,0.0011760278483394487,0.1484479457139969,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+74,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/74.png,4,0,Burn,large,True,2,0,Burn,0.2589494585990906,0.2819009930560741,0.14921897649765015,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+74,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/74.png,,,,N/A,True,0,6,corrosion,0.2894887924194336,,,FP,unmatched prediction at frozen conf=0.25
+74,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/74.png,,,,N/A,True,1,0,Burn,0.2634071111679077,,,FP,unmatched prediction at frozen conf=0.25
+74,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/74.png,,,,N/A,True,2,0,Burn,0.2589494585990906,,,FP,unmatched prediction at frozen conf=0.25
+77,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/77.png,0,6,corrosion,large,True,0,6,corrosion,0.3841518461704254,0.7976250125263052,0.7709420323371887,TP,matched at frozen conf=0.25
+77,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/77.png,1,6,corrosion,medium,True,1,6,corrosion,0.2730388343334198,0.004070352513555325,0.10006599128246307,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+77,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/77.png,,,,N/A,True,1,6,corrosion,0.2730388343334198,,,FP,unmatched prediction at frozen conf=0.25
+118,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/118.png,0,6,corrosion,small,True,1,6,corrosion,0.44178423285484314,0.8159806295399515,0.7932513952255249,TP,matched at frozen conf=0.25
+118,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/118.png,1,6,corrosion,tiny,True,0,6,corrosion,0.516983687877655,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+118,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/118.png,2,6,corrosion,tiny,True,0,6,corrosion,0.516983687877655,0.6736842105263158,0.7290446758270264,TP,matched at frozen conf=0.25
+118,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/118.png,3,6,corrosion,tiny,True,0,6,corrosion,0.516983687877655,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+118,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/118.png,4,6,corrosion,tiny,True,0,6,corrosion,0.516983687877655,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+118,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/118.png,5,6,corrosion,tiny,True,0,6,corrosion,0.516983687877655,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+118,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/118.png,6,6,corrosion,small,True,0,6,corrosion,0.516983687877655,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+152,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/152.png,0,0,Burn,large,False,0,0,Burn,0.5588622093200684,0.2595775884855771,0.6685894131660461,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+152,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/152.png,,,,N/A,False,0,0,Burn,0.5588622093200684,,,FP,unmatched prediction at frozen conf=0.25
+152,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/152.png,,,,N/A,False,1,0,Burn,0.2745805084705353,,,FP,unmatched prediction at frozen conf=0.25
+158,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/158.png,0,6,corrosion,small,True,1,6,corrosion,0.6366918087005615,0.8796718322698268,0.8649851083755493,TP,matched at frozen conf=0.25
+158,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/158.png,1,6,corrosion,small,True,0,6,corrosion,0.7344052791595459,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+158,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/158.png,2,6,corrosion,small,True,0,6,corrosion,0.7344052791595459,0.768409818569904,0.7665479183197021,TP,matched at frozen conf=0.25
+158,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/158.png,3,6,corrosion,tiny,True,2,6,corrosion,0.41540199518203735,0.10362257792754845,0.2305065542459488,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+158,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/158.png,4,6,corrosion,tiny,True,2,6,corrosion,0.41540199518203735,0.24934612031386225,0.39898425340652466,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+158,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/158.png,,,,N/A,True,2,6,corrosion,0.41540199518203735,,,FP,unmatched prediction at frozen conf=0.25
+162,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/162.png,0,0,Burn,large,True,1,0,Burn,0.28848981857299805,0.18822627667291716,0.18334881961345673,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+162,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/162.png,1,0,Burn,medium,True,1,0,Burn,0.28848981857299805,0.09406037545813166,0.09754692018032074,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+162,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/162.png,2,0,Burn,large,True,0,0,Burn,0.42764702439308167,0.11171446503124403,0.15689273178577423,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+162,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/162.png,3,0,Burn,large,True,1,0,Burn,0.28848981857299805,0.0696431279381287,0.05936749652028084,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+162,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/162.png,,,,N/A,True,0,0,Burn,0.42764702439308167,,,FP,unmatched prediction at frozen conf=0.25
+162,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/162.png,,,,N/A,True,1,0,Burn,0.28848981857299805,,,FP,unmatched prediction at frozen conf=0.25
+162,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/162.png,,,,N/A,True,2,0,Burn,0.2652607858181,,,FP,unmatched prediction at frozen conf=0.25
+181,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/181.png,0,6,corrosion,medium,True,0,6,corrosion,0.9571164846420288,0.9288126055149127,0.9317615032196045,TP,matched at frozen conf=0.25
+181,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/181.png,1,6,corrosion,large,True,0,6,corrosion,0.9571164846420288,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+181,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/181.png,2,6,corrosion,small,True,0,6,corrosion,0.9571164846420288,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+181,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/181.png,3,6,corrosion,small,True,3,6,corrosion,0.38300466537475586,0.7901701323251418,0.7940202951431274,TP,matched at frozen conf=0.25
+181,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/181.png,4,6,corrosion,medium,True,4,6,corrosion,0.32983237504959106,0.8344481605351171,0.9275442361831665,TP,matched at frozen conf=0.25
+181,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/181.png,5,6,corrosion,small,True,0,6,corrosion,0.9571164846420288,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+181,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/181.png,6,6,corrosion,small,True,0,6,corrosion,0.9571164846420288,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+181,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/181.png,7,6,corrosion,small,True,1,6,corrosion,0.523195743560791,0.7800546448087432,0.7927247285842896,TP,matched at frozen conf=0.25
+181,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/181.png,,,,N/A,True,2,6,corrosion,0.4707382321357727,,,FP,unmatched prediction at frozen conf=0.25
+186,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/186.png,0,3,Material missing,tiny,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+201,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/201.png,0,6,corrosion,large,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+212,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/212.png,0,6,corrosion,small,True,0,6,corrosion,0.3866924047470093,0.524790236460717,0.4982532858848572,POOR_MASK_BOUNDARY,matched at frozen conf=0.25
+212,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/212.png,1,6,corrosion,tiny,True,0,6,corrosion,0.3866924047470093,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+212,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/212.png,2,6,corrosion,small,True,0,6,corrosion,0.3866924047470093,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+218,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/218.png,0,2,Dent,small,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+218,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/218.png,1,6,corrosion,small,True,0,6,corrosion,0.6738664507865906,0.8508064516129032,0.9383273124694824,TP,matched at frozen conf=0.25
+230,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/230.png,0,6,corrosion,medium,True,0,6,corrosion,0.41829219460487366,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+230,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/230.png,1,6,corrosion,medium,True,0,6,corrosion,0.41829219460487366,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+230,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/230.png,2,0,Burn,large,True,0,6,corrosion,0.41829219460487366,0.7187116342890156,0.8613741993904114,WRONG_CLASS,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+230,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/230.png,,,,N/A,True,0,6,corrosion,0.41829219460487366,,,FP,unmatched prediction at frozen conf=0.25
+230,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/230.png,,,,N/A,True,1,6,corrosion,0.31381434202194214,,,FP,unmatched prediction at frozen conf=0.25
+232,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/232.png,0,6,corrosion,medium,True,0,6,corrosion,0.36622750759124756,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+232,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/232.png,1,0,Burn,medium,True,1,0,Burn,0.25444942712783813,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+232,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/232.png,,,,N/A,True,0,6,corrosion,0.36622750759124756,,,FP,unmatched prediction at frozen conf=0.25
+232,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/232.png,,,,N/A,True,1,0,Burn,0.25444942712783813,,,FP,unmatched prediction at frozen conf=0.25
+248,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/248.png,0,3,Material missing,medium,True,0,0,Burn,0.6641612648963928,0.7248146988203361,0.6205611228942871,WRONG_CLASS,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+248,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/248.png,1,0,Burn,large,True,0,0,Burn,0.6641612648963928,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+248,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/248.png,,,,N/A,True,0,0,Burn,0.6641612648963928,,,FP,unmatched prediction at frozen conf=0.25
+248,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/248.png,,,,N/A,True,1,0,Burn,0.4795379936695099,,,FP,unmatched prediction at frozen conf=0.25
+280,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/280.png,0,6,corrosion,medium,False,1,6,corrosion,0.3603690266609192,0.09834653806407165,0.06907545775175095,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+280,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/280.png,,,,N/A,False,0,6,corrosion,0.39018139243125916,,,FP,unmatched prediction at frozen conf=0.25
+280,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/280.png,,,,N/A,False,1,6,corrosion,0.3603690266609192,,,FP,unmatched prediction at frozen conf=0.25
+293,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/293.png,0,6,corrosion,medium,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+293,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/293.png,1,6,corrosion,medium,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+293,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/293.png,,,,N/A,True,0,0,Burn,0.3915361166000366,,,FP,unmatched prediction at frozen conf=0.25
+293,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/293.png,,,,N/A,True,1,0,Burn,0.3490632176399231,,,FP,unmatched prediction at frozen conf=0.25
+309,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/309.png,0,6,corrosion,small,True,0,6,corrosion,0.4474121928215027,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+309,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/309.png,1,6,corrosion,small,True,2,6,corrosion,0.28597739338874817,0.7756618671620994,0.7182938456535339,TP,matched at frozen conf=0.25
+309,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/309.png,2,6,corrosion,medium,True,1,6,corrosion,0.39821282029151917,0.8526758869512928,0.8794779777526855,TP,matched at frozen conf=0.25
+309,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/309.png,3,2,Dent,tiny,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+309,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/309.png,4,2,Dent,tiny,True,0,6,corrosion,0.4474121928215027,0.7807692307692308,0.7874420285224915,WRONG_CLASS,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+309,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/309.png,,,,N/A,True,0,6,corrosion,0.4474121928215027,,,FP,unmatched prediction at frozen conf=0.25
+310,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/310.png,0,6,corrosion,small,True,0,6,corrosion,0.6321306824684143,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+310,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/310.png,1,6,corrosion,small,True,2,6,corrosion,0.4201241433620453,0.803963577932512,0.80855792760849,TP,matched at frozen conf=0.25
+310,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/310.png,2,6,corrosion,tiny,True,0,6,corrosion,0.6321306824684143,0.6064516129032258,0.6037885546684265,POOR_MASK_BOUNDARY,matched at frozen conf=0.25
+310,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/310.png,3,6,corrosion,small,True,3,6,corrosion,0.34172236919403076,0.7693059628543499,0.6950188279151917,TP,matched at frozen conf=0.25
+310,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/310.png,4,6,corrosion,tiny,True,1,6,corrosion,0.4805648922920227,0.6808988764044944,0.62697434425354,TP,matched at frozen conf=0.25
+310,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/310.png,,,,N/A,True,4,6,corrosion,0.2765958607196808,,,FP,unmatched prediction at frozen conf=0.25
+320,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/320.png,0,6,corrosion,medium,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+323,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/323.png,0,6,corrosion,large,True,0,6,corrosion,0.9730970859527588,0.0,0.024730155244469643,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+323,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/323.png,1,6,corrosion,large,True,0,6,corrosion,0.9730970859527588,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+323,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/323.png,2,6,corrosion,small,True,0,6,corrosion,0.9730970859527588,0.9318525996971226,0.8961817026138306,TP,matched at frozen conf=0.25
+323,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/323.png,3,6,corrosion,small,True,0,6,corrosion,0.9730970859527588,0.0,0.02892015501856804,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+323,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/323.png,4,6,corrosion,small,True,0,6,corrosion,0.9730970859527588,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+324,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/324.png,0,3,Material missing,medium,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+324,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/324.png,1,0,Burn,medium,True,1,0,Burn,0.4398800730705261,0.013622161255906111,0.017975976690649986,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+324,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/324.png,2,1,Crack,medium,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+324,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/324.png,3,1,Crack,medium,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+324,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/324.png,,,,N/A,True,0,0,Burn,0.5468170642852783,,,FP,unmatched prediction at frozen conf=0.25
+324,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/324.png,,,,N/A,True,1,0,Burn,0.4398800730705261,,,FP,unmatched prediction at frozen conf=0.25
+324,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/324.png,,,,N/A,True,2,0,Burn,0.39440855383872986,,,FP,unmatched prediction at frozen conf=0.25
+340,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/340.png,0,1,Crack,small,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+342,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/342.png,0,6,corrosion,large,False,1,6,corrosion,0.32849806547164917,0.6725036650920345,0.7128443717956543,TP,matched at frozen conf=0.25
+342,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/342.png,,,,N/A,False,0,6,corrosion,0.36410626769065857,,,FP,unmatched prediction at frozen conf=0.25
+350,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/350.png,0,6,corrosion,medium,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+357,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/357.png,0,0,Burn,large,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+357,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/357.png,1,6,corrosion,tiny,True,0,6,corrosion,0.386376291513443,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+357,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/357.png,2,6,corrosion,small,True,0,6,corrosion,0.386376291513443,0.6155632984901278,0.7383423447608948,POOR_MASK_BOUNDARY,matched at frozen conf=0.25
+357,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/357.png,3,6,corrosion,tiny,True,1,6,corrosion,0.2560330033302307,0.368,0.3501882255077362,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+357,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/357.png,,,,N/A,True,1,6,corrosion,0.2560330033302307,,,FP,unmatched prediction at frozen conf=0.25
+371,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/371.png,0,6,corrosion,small,True,2,6,corrosion,0.8554598689079285,0.8924129353233831,0.9170861840248108,TP,matched at frozen conf=0.25
+371,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/371.png,1,6,corrosion,small,True,7,6,corrosion,0.5927409529685974,0.8831814415907208,0.90826016664505,TP,matched at frozen conf=0.25
+371,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/371.png,2,6,corrosion,medium,True,5,6,corrosion,0.6858987212181091,0.8737214059884694,0.862870991230011,TP,matched at frozen conf=0.25
+371,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/371.png,3,6,corrosion,tiny,True,1,6,corrosion,0.860054612159729,0.8898071625344353,0.8499000668525696,TP,matched at frozen conf=0.25
+371,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/371.png,4,6,corrosion,tiny,True,0,6,corrosion,0.87018221616745,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+371,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/371.png,5,6,corrosion,small,True,0,6,corrosion,0.87018221616745,0.4212173913043478,0.35934221744537354,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+371,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/371.png,6,6,corrosion,tiny,True,10,6,corrosion,0.44288870692253113,0.4358974358974359,0.4501754939556122,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+371,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/371.png,7,6,corrosion,tiny,True,3,6,corrosion,0.7972893118858337,0.8589473684210527,0.8148565292358398,TP,matched at frozen conf=0.25
+371,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/371.png,8,6,corrosion,tiny,True,14,6,corrosion,0.2541900873184204,0.801038062283737,0.8208086490631104,TP,matched at frozen conf=0.25
+371,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/371.png,9,6,corrosion,tiny,True,12,6,corrosion,0.3126281797885895,0.7679180887372014,0.838198184967041,TP,matched at frozen conf=0.25
+371,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/371.png,10,6,corrosion,tiny,True,8,6,corrosion,0.5511819124221802,0.7859078590785907,0.8266681432723999,TP,matched at frozen conf=0.25
+371,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/371.png,11,6,corrosion,tiny,True,6,6,corrosion,0.6794666051864624,0.8160621761658031,0.7009651064872742,TP,matched at frozen conf=0.25
+371,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/371.png,,,,N/A,True,0,6,corrosion,0.87018221616745,,,FP,unmatched prediction at frozen conf=0.25
+371,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/371.png,,,,N/A,True,4,6,corrosion,0.7498398423194885,,,FP,unmatched prediction at frozen conf=0.25
+371,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/371.png,,,,N/A,True,9,6,corrosion,0.49597418308258057,,,FP,unmatched prediction at frozen conf=0.25
+371,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/371.png,,,,N/A,True,10,6,corrosion,0.44288870692253113,,,FP,unmatched prediction at frozen conf=0.25
+371,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/371.png,,,,N/A,True,11,0,Burn,0.3334610164165497,,,FP,unmatched prediction at frozen conf=0.25
+371,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/371.png,,,,N/A,True,13,6,corrosion,0.3013925552368164,,,FP,unmatched prediction at frozen conf=0.25
+372,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/372.png,0,6,corrosion,small,True,5,6,corrosion,0.750386655330658,0.861262014208107,0.7640208601951599,TP,matched at frozen conf=0.25
+372,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/372.png,1,6,corrosion,medium,True,1,6,corrosion,0.9556751847267151,0.8551077136900626,0.8095374703407288,TP,matched at frozen conf=0.25
+372,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/372.png,2,6,corrosion,small,True,0,6,corrosion,0.9653016924858093,0.9401645474943904,0.8994316458702087,TP,matched at frozen conf=0.25
+372,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/372.png,3,6,corrosion,small,True,7,6,corrosion,0.4502984583377838,0.8219761499148212,0.9000199437141418,TP,matched at frozen conf=0.25
+372,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/372.png,4,6,corrosion,medium,True,3,6,corrosion,0.7882934808731079,0.8581774290887145,0.8489304780960083,TP,matched at frozen conf=0.25
+372,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/372.png,5,6,corrosion,small,True,4,6,corrosion,0.7739713788032532,0.8162878787878788,0.8041117191314697,TP,matched at frozen conf=0.25
+372,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/372.png,6,6,corrosion,medium,True,7,6,corrosion,0.4502984583377838,0.14145496535796767,0.11479533463716507,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+372,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/372.png,7,6,corrosion,tiny,True,0,6,corrosion,0.9653016924858093,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+372,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/372.png,8,6,corrosion,tiny,True,10,6,corrosion,0.2877136766910553,0.6932153392330384,0.7232086658477783,TP,matched at frozen conf=0.25
+372,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/372.png,,,,N/A,True,2,6,corrosion,0.8792304992675781,,,FP,unmatched prediction at frozen conf=0.25
+372,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/372.png,,,,N/A,True,6,6,corrosion,0.6309589743614197,,,FP,unmatched prediction at frozen conf=0.25
+372,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/372.png,,,,N/A,True,8,6,corrosion,0.38910120725631714,,,FP,unmatched prediction at frozen conf=0.25
+372,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/372.png,,,,N/A,True,9,6,corrosion,0.3365262746810913,,,FP,unmatched prediction at frozen conf=0.25
+372,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/372.png,,,,N/A,True,11,6,corrosion,0.25898662209510803,,,FP,unmatched prediction at frozen conf=0.25
+383,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/383.png,0,0,Burn,large,True,0,0,Burn,0.47283312678337097,0.5689887036040883,0.554620087146759,POOR_MASK_BOUNDARY,matched at frozen conf=0.25
+383,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/383.png,1,0,Burn,medium,True,1,0,Burn,0.3116649389266968,0.17811032863849766,0.09872808307409286,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+383,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/383.png,2,0,Burn,medium,True,1,0,Burn,0.3116649389266968,0.12849566679601604,0.10231396555900574,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+383,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/383.png,3,0,Burn,medium,True,1,0,Burn,0.3116649389266968,0.24091406020851666,0.17380256950855255,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+383,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/383.png,4,0,Burn,small,True,1,0,Burn,0.3116649389266968,0.023161445021211563,0.029347296804189682,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+383,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/383.png,,,,N/A,True,1,0,Burn,0.3116649389266968,,,FP,unmatched prediction at frozen conf=0.25
+390,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/390.png,0,6,corrosion,tiny,False,0,6,corrosion,0.27251434326171875,0.6598079561042524,0.5553085207939148,TP,matched at frozen conf=0.25
+400,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/400.png,0,6,corrosion,medium,True,0,6,corrosion,0.5334534645080566,0.7081667618503712,0.5939290523529053,TP,matched at frozen conf=0.25
+400,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/400.png,1,6,corrosion,small,True,0,6,corrosion,0.5334534645080566,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+400,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/400.png,2,6,corrosion,medium,True,0,6,corrosion,0.5334534645080566,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+403,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/403.png,0,0,Burn,large,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+403,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/403.png,1,0,Burn,large,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+403,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/403.png,2,0,Burn,medium,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+403,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/403.png,,,,N/A,True,0,6,corrosion,0.3680238723754883,,,FP,unmatched prediction at frozen conf=0.25
+403,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/403.png,,,,N/A,True,1,3,Material missing,0.2867127060890198,,,FP,unmatched prediction at frozen conf=0.25
+425,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/425.png,0,3,Material missing,small,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+425,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/425.png,1,0,Burn,large,True,2,0,Burn,0.35293564200401306,0.4041478988269069,0.14972355961799622,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+425,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/425.png,2,0,Burn,large,True,3,0,Burn,0.2655215561389923,0.5062542891010045,0.48495662212371826,POOR_MASK_BOUNDARY,matched at frozen conf=0.25
+425,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/425.png,3,0,Burn,large,True,3,0,Burn,0.2655215561389923,0.002785515320334262,0.03040194697678089,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+425,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/425.png,,,,N/A,True,0,0,Burn,0.5326637625694275,,,FP,unmatched prediction at frozen conf=0.25
+425,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/425.png,,,,N/A,True,1,0,Burn,0.42946651577949524,,,FP,unmatched prediction at frozen conf=0.25
+425,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/425.png,,,,N/A,True,2,0,Burn,0.35293564200401306,,,FP,unmatched prediction at frozen conf=0.25
+425,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/425.png,,,,N/A,True,4,0,Burn,0.25518685579299927,,,FP,unmatched prediction at frozen conf=0.25
+430,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/430.png,0,6,corrosion,small,False,1,6,corrosion,0.3004051446914673,0.7330383480825958,0.7319554686546326,TP,matched at frozen conf=0.25
+430,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/430.png,,,,N/A,False,0,6,corrosion,0.4451929032802582,,,FP,unmatched prediction at frozen conf=0.25
+433,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/433.jpg,0,5,Tip curl,small,False,0,5,Tip curl,0.35885098576545715,0.586937137761926,0.4918813109397888,POOR_MASK_BOUNDARY,matched at frozen conf=0.25
+437,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/437.jpg,0,5,Tip curl,medium,False,0,5,Tip curl,0.8142756223678589,0.6217973985021679,0.6146058440208435,POOR_MASK_BOUNDARY,matched at frozen conf=0.25
+438,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/438.jpg,0,5,Tip curl,medium,False,0,5,Tip curl,0.6373055577278137,0.8139971817754814,0.7608619332313538,TP,matched at frozen conf=0.25
+453,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/453.jpg,0,5,Tip curl,medium,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+454,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/454.jpg,0,5,Tip curl,small,False,0,5,Tip curl,0.29329732060432434,0.7354189944134079,0.6501352787017822,TP,matched at frozen conf=0.25
+472,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/472.jpg,0,1,Crack,tiny,False,0,1,Crack,0.6919986009597778,0.7015748031496063,0.614423394203186,TP,matched at frozen conf=0.25
+472,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/472.jpg,,,,N/A,False,1,1,Crack,0.3715057373046875,,,FP,unmatched prediction at frozen conf=0.25
+477,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/477.jpg,0,1,Crack,small,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+477,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/477.jpg,,,,N/A,False,0,0,Burn,0.4068404734134674,,,FP,unmatched prediction at frozen conf=0.25
+477,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/477.jpg,,,,N/A,False,1,3,Material missing,0.3145715892314911,,,FP,unmatched prediction at frozen conf=0.25
+477,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/477.jpg,,,,N/A,False,2,2,Dent,0.25061947107315063,,,FP,unmatched prediction at frozen conf=0.25
+490,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/490.jpg,0,1,Crack,tiny,False,0,1,Crack,0.6848289370536804,0.44384739387426114,0.35865670442581177,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+490,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/490.jpg,,,,N/A,False,0,1,Crack,0.6848289370536804,,,FP,unmatched prediction at frozen conf=0.25
+491,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/491.jpg,0,1,Crack,tiny,False,2,1,Crack,0.2637390196323395,0.7484076433121019,0.743374764919281,TP,matched at frozen conf=0.25
+491,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/491.jpg,,,,N/A,False,0,1,Crack,0.7950277328491211,,,FP,unmatched prediction at frozen conf=0.25
+491,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/491.jpg,,,,N/A,False,1,1,Crack,0.6462304592132568,,,FP,unmatched prediction at frozen conf=0.25
+493,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/493.jpg,0,1,Crack,tiny,False,0,1,Crack,0.7591366767883301,0.4867924528301887,0.37591585516929626,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+493,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/493.jpg,,,,N/A,False,0,1,Crack,0.7591366767883301,,,FP,unmatched prediction at frozen conf=0.25
+496,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/496.jpg,0,1,Crack,tiny,False,0,1,Crack,0.7126049995422363,0.5848806366047745,0.4261961877346039,POOR_MASK_BOUNDARY,matched at frozen conf=0.25
+496,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/496.jpg,,,,N/A,False,1,1,Crack,0.5290987491607666,,,FP,unmatched prediction at frozen conf=0.25
+502,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/502.jpg,0,1,Crack,tiny,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+502,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/502.jpg,,,,N/A,False,0,0,Burn,0.3941480219364166,,,FP,unmatched prediction at frozen conf=0.25
+504,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/504.jpg,0,1,Crack,small,False,0,1,Crack,0.5772935748100281,0.660431654676259,0.6930665969848633,TP,matched at frozen conf=0.25
+507,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/507.jpg,0,1,Crack,small,False,3,1,Crack,0.3782641291618347,0.49027819323960514,0.8499122262001038,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+507,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/507.jpg,,,,N/A,False,0,1,Crack,0.5740314722061157,,,FP,unmatched prediction at frozen conf=0.25
+507,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/507.jpg,,,,N/A,False,1,1,Crack,0.4248265027999878,,,FP,unmatched prediction at frozen conf=0.25
+507,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/507.jpg,,,,N/A,False,2,3,Material missing,0.40965110063552856,,,FP,unmatched prediction at frozen conf=0.25
+507,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/507.jpg,,,,N/A,False,3,1,Crack,0.3782641291618347,,,FP,unmatched prediction at frozen conf=0.25
+507,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/507.jpg,,,,N/A,False,4,1,Crack,0.27988556027412415,,,FP,unmatched prediction at frozen conf=0.25
+507,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/507.jpg,,,,N/A,False,5,1,Crack,0.2570768892765045,,,FP,unmatched prediction at frozen conf=0.25
+511,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/511.jpg,0,1,Crack,tiny,False,0,1,Crack,0.5970252156257629,0.7038081805359662,0.7605690956115723,TP,matched at frozen conf=0.25
+511,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/511.jpg,,,,N/A,False,1,1,Crack,0.3782769739627838,,,FP,unmatched prediction at frozen conf=0.25
+511,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/511.jpg,,,,N/A,False,2,1,Crack,0.3253767192363739,,,FP,unmatched prediction at frozen conf=0.25
+515,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/515.jpg,0,1,Crack,small,False,0,1,Crack,0.7953014969825745,0.7950889077053345,0.7065975069999695,TP,matched at frozen conf=0.25
+515,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/515.jpg,,,,N/A,False,1,1,Crack,0.5675988793373108,,,FP,unmatched prediction at frozen conf=0.25
+521,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/521.jpg,0,1,Crack,medium,False,0,1,Crack,0.36230596899986267,0.4408109875735775,0.5038098692893982,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+521,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/521.jpg,,,,N/A,False,0,1,Crack,0.36230596899986267,,,FP,unmatched prediction at frozen conf=0.25
+539,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/539.jpg,0,1,Crack,tiny,False,1,1,Crack,0.4544307589530945,0.6989164086687306,0.7201015949249268,TP,matched at frozen conf=0.25
+539,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/539.jpg,,,,N/A,False,0,1,Crack,0.5895358920097351,,,FP,unmatched prediction at frozen conf=0.25
+540,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/540.jpg,0,1,Crack,tiny,True,0,1,Crack,0.5044950246810913,0.6331409727947238,0.688571035861969,POOR_MASK_BOUNDARY,matched at frozen conf=0.25
+540,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/540.jpg,1,1,Crack,tiny,True,0,1,Crack,0.5044950246810913,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+540,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/540.jpg,2,1,Crack,tiny,True,0,1,Crack,0.5044950246810913,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+549,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/549.jpg,0,0,Burn,large,False,0,0,Burn,0.7125687599182129,0.8537906532238061,0.8935332298278809,TP,matched at frozen conf=0.25
+554,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/554.jpg,0,0,Burn,medium,False,0,0,Burn,0.5565419793128967,0.8761154855643044,0.8334935307502747,TP,matched at frozen conf=0.25
+564,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/564.jpg,0,0,Burn,medium,False,0,0,Burn,0.7999902367591858,0.7363787770640019,0.8552488684654236,TP,matched at frozen conf=0.25
+575,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/575.jpg,0,0,Burn,large,True,1,0,Burn,0.45536863803863525,0.7932559632648617,0.48868849873542786,TP,matched at frozen conf=0.25
+575,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/575.jpg,1,0,Burn,large,True,0,0,Burn,0.6021215319633484,0.9465196129435023,0.8250889182090759,TP,matched at frozen conf=0.25
+575,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/575.jpg,,,,N/A,True,2,0,Burn,0.4329968988895416,,,FP,unmatched prediction at frozen conf=0.25
+575,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/575.jpg,,,,N/A,True,3,0,Burn,0.32716459035873413,,,FP,unmatched prediction at frozen conf=0.25
+575,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/575.jpg,,,,N/A,True,4,0,Burn,0.29311054944992065,,,FP,unmatched prediction at frozen conf=0.25
+575,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/575.jpg,,,,N/A,True,5,0,Burn,0.25411659479141235,,,FP,unmatched prediction at frozen conf=0.25
+581,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/581.jpg,0,0,Burn,large,True,1,0,Burn,0.4027668833732605,0.785846475854825,0.5069010853767395,TP,matched at frozen conf=0.25
+581,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/581.jpg,1,0,Burn,large,True,0,0,Burn,0.5915772318840027,0.9431421647006768,0.7765538096427917,TP,matched at frozen conf=0.25
+581,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/581.jpg,,,,N/A,True,2,0,Burn,0.34027159214019775,,,FP,unmatched prediction at frozen conf=0.25
+581,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/581.jpg,,,,N/A,True,3,0,Burn,0.30936479568481445,,,FP,unmatched prediction at frozen conf=0.25
+581,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/581.jpg,,,,N/A,True,4,0,Burn,0.3079506456851959,,,FP,unmatched prediction at frozen conf=0.25
+581,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/581.jpg,,,,N/A,True,5,0,Burn,0.29027971625328064,,,FP,unmatched prediction at frozen conf=0.25
+581,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/581.jpg,,,,N/A,True,6,1,Crack,0.271865576505661,,,FP,unmatched prediction at frozen conf=0.25
+587,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/587.jpg,0,0,Burn,large,False,0,0,Burn,0.7733153700828552,0.8077434708128507,0.8753856420516968,TP,matched at frozen conf=0.25
+587,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/587.jpg,,,,N/A,False,1,0,Burn,0.3720325231552124,,,FP,unmatched prediction at frozen conf=0.25
+592,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/592.jpg,0,0,Burn,tiny,True,1,0,Burn,0.5724042057991028,0.7728194726166329,0.8807554244995117,TP,matched at frozen conf=0.25
+592,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/592.jpg,1,0,Burn,medium,True,0,0,Burn,0.8846727013587952,0.6640723073060507,0.6886593699455261,TP,matched at frozen conf=0.25
+597,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/597.jpg,0,0,Burn,medium,True,0,0,Burn,0.6192419528961182,0.8251398880895284,0.811042845249176,TP,matched at frozen conf=0.25
+597,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/597.jpg,1,0,Burn,tiny,True,0,0,Burn,0.6192419528961182,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+598,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/598.jpg,0,0,Burn,tiny,True,1,0,Burn,0.5594092011451721,0.00018270049150888326,0.003290301887318492,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+598,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/598.jpg,1,0,Burn,tiny,True,1,0,Burn,0.5594092011451721,4.902048164851423e-05,0.0005411108722910285,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+598,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/598.jpg,2,0,Burn,large,True,0,0,Burn,0.7918985486030579,0.8790604484610793,0.8462538123130798,TP,matched at frozen conf=0.25
+598,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/598.jpg,3,0,Burn,large,True,1,0,Burn,0.5594092011451721,0.8869638801051084,0.8811994791030884,TP,matched at frozen conf=0.25
+598,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/598.jpg,4,0,Burn,small,True,0,0,Burn,0.7918985486030579,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+601,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/601.jpg,0,0,Burn,large,True,1,0,Burn,0.43555355072021484,0.7590639171212773,0.45500069856643677,TP,matched at frozen conf=0.25
+601,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/601.jpg,1,0,Burn,large,True,0,0,Burn,0.6599604487419128,0.9474148666006452,0.824155330657959,TP,matched at frozen conf=0.25
+601,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/601.jpg,,,,N/A,True,2,0,Burn,0.3539249002933502,,,FP,unmatched prediction at frozen conf=0.25
+601,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/601.jpg,,,,N/A,True,3,1,Crack,0.2560349702835083,,,FP,unmatched prediction at frozen conf=0.25
+603,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/603.jpg,0,0,Burn,medium,True,0,0,Burn,0.6933199167251587,0.8483927019982623,0.8764966130256653,TP,matched at frozen conf=0.25
+603,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/603.jpg,1,0,Burn,tiny,True,0,0,Burn,0.6933199167251587,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+605,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/605.jpg,0,0,Burn,medium,False,0,0,Burn,0.7776559591293335,0.7921834776503628,0.7655701041221619,TP,matched at frozen conf=0.25
+609,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/609.jpg,0,0,Burn,small,False,0,0,Burn,0.40164104104042053,0.8578745198463509,0.8296677470207214,TP,matched at frozen conf=0.25
+611,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/611.jpg,0,0,Burn,medium,True,0,0,Burn,0.6517484784126282,0.8434728810063931,0.8593611121177673,TP,matched at frozen conf=0.25
+611,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/611.jpg,1,0,Burn,tiny,True,0,0,Burn,0.6517484784126282,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+629,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/629.jpg,0,0,Burn,large,False,0,0,Burn,0.6719006299972534,0.6812982393159603,0.6766080260276794,TP,matched at frozen conf=0.25
+629,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/629.jpg,,,,N/A,False,1,3,Material missing,0.3971102237701416,,,FP,unmatched prediction at frozen conf=0.25
+635,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/635.jpg,0,3,Material missing,small,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+647,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/647.jpg,0,3,Material missing,medium,False,0,3,Material missing,0.9336485266685486,0.8946821271491403,0.923079252243042,TP,matched at frozen conf=0.25
+649,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/649.jpg,0,3,Material missing,medium,False,0,3,Material missing,0.9417204260826111,0.8881763527054108,0.9258682727813721,TP,matched at frozen conf=0.25
+657,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/657.jpg,0,3,Material missing,medium,False,0,3,Material missing,0.9190394282341003,0.8697192949734216,0.8948993682861328,TP,matched at frozen conf=0.25
+662,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/662.jpg,0,3,Material missing,small,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+664,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/664.jpg,0,3,Material missing,medium,False,0,3,Material missing,0.8506933450698853,0.7614218981428734,0.8863549828529358,TP,matched at frozen conf=0.25
+669,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/669.jpg,0,3,Material missing,large,False,0,3,Material missing,0.8442397713661194,0.8781049998773939,0.940593957901001,TP,matched at frozen conf=0.25
+673,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/673.jpg,0,3,Material missing,medium,False,0,3,Material missing,0.8894180059432983,0.8520316027088036,0.9522307515144348,TP,matched at frozen conf=0.25
+680,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/680.jpg,0,3,Material missing,large,False,0,3,Material missing,0.7907766699790955,0.843233922673402,0.86298006772995,TP,matched at frozen conf=0.25
+686,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/686.jpg,0,3,Material missing,medium,False,0,3,Material missing,0.9012506008148193,0.8369637512470901,0.8408418297767639,TP,matched at frozen conf=0.25
+687,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/687.jpg,0,3,Material missing,small,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+691,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/691.jpg,0,3,Material missing,medium,False,0,3,Material missing,0.8901251554489136,0.8744400705850414,0.9513794183731079,TP,matched at frozen conf=0.25
+692,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/692.jpg,0,3,Material missing,small,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+693,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/693.jpg,0,3,Material missing,medium,False,0,3,Material missing,0.9358073472976685,0.8534296028880867,0.8481580018997192,TP,matched at frozen conf=0.25
+713,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/713.jpg,0,3,Material missing,small,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+718,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/718.jpg,0,3,Material missing,large,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+720,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/720.jpg,0,3,Material missing,large,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+723,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/723.jpg,0,3,Material missing,large,False,0,3,Material missing,0.8180444836616516,0.8716193250789026,0.9266760945320129,TP,matched at frozen conf=0.25
+725,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/725.jpg,0,3,Material missing,large,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+736,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/736.jpg,0,3,Material missing,medium,False,0,3,Material missing,0.9009990096092224,0.8718936381709742,0.894112765789032,TP,matched at frozen conf=0.25
+739,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/739.jpg,0,3,Material missing,small,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+743,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/743.jpg,0,3,Material missing,medium,False,0,3,Material missing,0.934262216091156,0.9254126014406857,0.9511725902557373,TP,matched at frozen conf=0.25
+753,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/753.jpg,0,3,Material missing,medium,False,0,3,Material missing,0.94208824634552,0.8877856579984239,0.9287438988685608,TP,matched at frozen conf=0.25
+759,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/759.jpg,0,3,Material missing,tiny,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+768,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/768.jpg,0,3,Material missing,tiny,False,0,2,Dent,0.27722087502479553,0.5751295336787565,0.664892315864563,WRONG_CLASS,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+768,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/768.jpg,,,,N/A,False,0,2,Dent,0.27722087502479553,,,FP,unmatched prediction at frozen conf=0.25
+773,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/773.jpg,0,3,Material missing,tiny,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+775,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/775.jpg,0,3,Material missing,small,False,0,2,Dent,0.512731671333313,0.5344952795933188,0.6903735399246216,WRONG_CLASS,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+775,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/775.jpg,,,,N/A,False,0,2,Dent,0.512731671333313,,,FP,unmatched prediction at frozen conf=0.25
+775,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/775.jpg,,,,N/A,False,1,4,Tears,0.2693620026111603,,,FP,unmatched prediction at frozen conf=0.25
+778,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/778.jpg,0,4,Tears,small,False,0,4,Tears,0.8237308263778687,0.7005494505494505,0.7587357759475708,TP,matched at frozen conf=0.25
+806,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/806.jpg,0,4,Tears,small,False,0,4,Tears,0.6620043516159058,0.6942889137737962,0.7198543548583984,TP,matched at frozen conf=0.25
+811,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/811.jpg,0,4,Tears,tiny,False,0,2,Dent,0.29492682218551636,0.64,0.4585079848766327,WRONG_CLASS,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+811,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/811.jpg,,,,N/A,False,0,2,Dent,0.29492682218551636,,,FP,unmatched prediction at frozen conf=0.25
+819,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/819.jpg,0,4,Tears,tiny,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+823,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/823.jpg,0,4,Tears,tiny,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+827,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/827.jpg,0,4,Tears,tiny,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+829,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/829.jpg,0,4,Tears,tiny,False,0,2,Dent,0.28016647696495056,0.6795740561471443,0.7771398425102234,WRONG_CLASS,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+829,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/829.jpg,,,,N/A,False,0,2,Dent,0.28016647696495056,,,FP,unmatched prediction at frozen conf=0.25
+837,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/837.jpg,0,4,Tears,medium,False,0,4,Tears,0.9423731565475464,0.7818515123739689,0.8956230878829956,TP,matched at frozen conf=0.25
+839,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/839.jpg,0,4,Tears,tiny,False,0,2,Dent,0.29249700903892517,0.554006968641115,0.7822432518005371,WRONG_CLASS,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+839,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/839.jpg,,,,N/A,False,0,2,Dent,0.29249700903892517,,,FP,unmatched prediction at frozen conf=0.25
+840,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/840.jpg,0,4,Tears,tiny,False,0,2,Dent,0.29742172360420227,0.6003787878787878,0.7652929425239563,WRONG_CLASS,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+840,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/840.jpg,,,,N/A,False,0,2,Dent,0.29742172360420227,,,FP,unmatched prediction at frozen conf=0.25
+841,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/841.jpg,0,4,Tears,tiny,False,0,4,Tears,0.563653826713562,0.7622950819672131,0.8129172325134277,TP,matched at frozen conf=0.25
+841,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/841.jpg,,,,N/A,False,1,2,Dent,0.47747471928596497,,,FP,unmatched prediction at frozen conf=0.25
+845,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/845.jpg,0,2,Dent,tiny,False,0,2,Dent,0.2775295674800873,0.8350877192982457,0.7563813924789429,TP,matched at frozen conf=0.25
+846,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/846.jpg,0,2,Dent,tiny,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+848,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/848.jpg,0,2,Dent,tiny,False,0,2,Dent,0.7730225920677185,0.7596899224806202,0.7939993739128113,TP,matched at frozen conf=0.25
+849,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/849.jpg,0,2,Dent,tiny,True,0,2,Dent,0.7010453343391418,0.6795918367346939,0.7996184229850769,TP,matched at frozen conf=0.25
+849,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/849.jpg,1,2,Dent,tiny,True,0,2,Dent,0.7010453343391418,0.0,0.0,LOCALIZATION_FAILURE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+851,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/851.jpg,0,2,Dent,tiny,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+853,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/853.jpg,0,2,Dent,tiny,False,0,2,Dent,0.8037590980529785,0.7894736842105263,0.8696640729904175,TP,matched at frozen conf=0.25
+863,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/863.jpg,0,2,Dent,tiny,False,0,2,Dent,0.756481945514679,0.7829457364341085,0.8128082752227783,TP,matched at frozen conf=0.25
+867,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/867.jpg,0,2,Dent,tiny,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+867,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/867.jpg,,,,N/A,False,0,3,Material missing,0.25414979457855225,,,FP,unmatched prediction at frozen conf=0.25
+869,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/869.jpg,0,2,Dent,tiny,False,0,2,Dent,0.605299711227417,0.6612685560053981,0.7142381072044373,TP,matched at frozen conf=0.25
+870,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/870.jpg,0,2,Dent,tiny,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+876,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/876.jpg,0,2,Dent,medium,False,0,2,Dent,0.5493554472923279,0.8766865390649514,0.9021307826042175,TP,matched at frozen conf=0.25
+876,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/876.jpg,,,,N/A,False,1,4,Tears,0.3943323791027069,,,FP,unmatched prediction at frozen conf=0.25
+880,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/880.jpg,0,2,Dent,small,False,0,2,Dent,0.8411081433296204,0.6867469879518072,0.7999241352081299,TP,matched at frozen conf=0.25
+880,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/880.jpg,,,,N/A,False,1,2,Dent,0.32376039028167725,,,FP,unmatched prediction at frozen conf=0.25
+882,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/882.jpg,0,2,Dent,small,False,0,2,Dent,0.7359108328819275,0.696165191740413,0.721423327922821,TP,matched at frozen conf=0.25
+906,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/906.jpg,0,2,Dent,tiny,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+915,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/915.jpg,0,2,Dent,small,False,0,2,Dent,0.8027521967887878,0.7443820224719101,0.7562674283981323,TP,matched at frozen conf=0.25
+922,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/922.jpg,0,2,Dent,small,False,0,2,Dent,0.29870709776878357,0.7292724196277496,0.835383951663971,TP,matched at frozen conf=0.25
+924,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/924.jpg,0,2,Dent,tiny,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+928,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/928.jpg,0,2,Dent,tiny,False,0,2,Dent,0.6965503096580505,0.7282608695652174,0.6553762555122375,TP,matched at frozen conf=0.25
+932,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/932.jpg,0,2,Dent,tiny,False,0,2,Dent,0.7460405230522156,0.7856477166821995,0.8147146105766296,TP,matched at frozen conf=0.25
+933,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/933.jpg,0,2,Dent,tiny,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+937,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/937.jpg,0,2,Dent,tiny,False,0,2,Dent,0.8497509360313416,0.5967391304347827,0.7581889033317566,POOR_MASK_BOUNDARY,matched at frozen conf=0.25
+948,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/948.jpg,0,2,Dent,tiny,False,0,2,Dent,0.7385397553443909,0.6842105263157895,0.9337400794029236,TP,matched at frozen conf=0.25
+957,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/957.jpg,0,2,Dent,tiny,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+978,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/978.jpg,0,2,Dent,small,True,0,2,Dent,0.7105545401573181,0.7842323651452282,0.7584490180015564,TP,matched at frozen conf=0.25
+978,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/978.jpg,1,2,Dent,tiny,True,1,2,Dent,0.7097984552383423,0.7894736842105263,0.6011503338813782,TP,matched at frozen conf=0.25
+979,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/979.jpg,0,2,Dent,tiny,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+982,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/982.jpg,0,2,Dent,tiny,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+982,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/982.jpg,1,2,Dent,tiny,True,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+983,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/983.jpg,0,2,Dent,small,False,0,2,Dent,0.8940250873565674,0.7849740932642487,0.807182252407074,TP,matched at frozen conf=0.25
+988,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/988.jpg,0,2,Dent,tiny,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+993,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/993.jpg,0,2,Dent,tiny,False,0,2,Dent,0.633770227432251,0.8265895953757225,0.7317481637001038,TP,matched at frozen conf=0.25
+1002,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/1002.jpg,0,2,Dent,tiny,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed
+1006,/root/autodl-tmp/borescope-new-seg-data/v1/images/test/1006.jpg,0,2,Dent,tiny,False,,,,,,,NO_RESPONSE,LOW_CONF status NOT_AVAILABLE; no TEST threshold sweep performed

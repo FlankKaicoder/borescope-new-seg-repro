@@ -1,0 +1,162 @@
+{
+  "status": "PASS",
+  "phase": "EXP11_ONE_FINAL_FROZEN_EVALUATION",
+  "test_accessed": true,
+  "model_selection_closed": true,
+  "post_test_training": false,
+  "post_test_threshold_model_seed_selection": false,
+  "checkpoint": "/root/autodl-tmp/borescope-new-seg-repro/results/final_verify/exp10_controlled_restart/seed44/baseline100/formal/ultralytics/baseline/weights/best.pt",
+  "checkpoint_sha256": "2dbec80d31d978bdadcd436cf243921be81903284e00b08c5beb75d9808948e9",
+  "seed": 44,
+  "test_images": 147,
+  "test_instances": 285,
+  "Box": {
+    "P": 0.6623845851033376,
+    "R": 0.4749269181535191,
+    "mAP50": 0.5416358687031739,
+    "mAP50_95": 0.29325312862397146
+  },
+  "Mask": {
+    "P": 0.6807274095275775,
+    "R": 0.4986543401568032,
+    "mAP50": 0.5827035545703015,
+    "mAP50_95": 0.2716207089319057
+  },
+  "fixed_threshold": {
+    "scope": "OVERALL",
+    "class_id": "ALL",
+    "class_name": "ALL",
+    "GT": 285,
+    "TP": 127,
+    "FP": 101,
+    "FN": 158,
+    "Precision": 0.5570175438596491,
+    "Recall": 0.4456140350877193,
+    "F1": 0.49512670565302147
+  },
+  "size_metrics": [
+    {
+      "size_bin": "tiny",
+      "GT": 101,
+      "TP": 41,
+      "FN": 60,
+      "Recall": 0.40594059405940597
+    },
+    {
+      "size_bin": "small",
+      "GT": 72,
+      "TP": 38,
+      "FN": 34,
+      "Recall": 0.5277777777777778
+    },
+    {
+      "size_bin": "medium",
+      "GT": 65,
+      "TP": 30,
+      "FN": 35,
+      "Recall": 0.46153846153846156
+    },
+    {
+      "size_bin": "large",
+      "GT": 47,
+      "TP": 18,
+      "FN": 29,
+      "Recall": 0.3829787234042553
+    }
+  ],
+  "selected_val_mask_map50_95": 0.3251567516159603,
+  "test_minus_val_mask_map50_95": -0.0535360426840546,
+  "hardest_by_mask_ap50_95": [
+    {
+      "class_id": 1,
+      "class_name": "Crack",
+      "GT": 21,
+      "Box_P": 0.40754991597445905,
+      "Box_R": 0.42857142857142855,
+      "Box_AP50": 0.35143889090675196,
+      "Box_AP50_95": 0.13596255110393035,
+      "Mask_P": 0.4054733675216917,
+      "Mask_R": 0.42857142857142855,
+      "Mask_AP50": 0.43118129211063155,
+      "Mask_AP50_95": 0.13054327803959284
+    },
+    {
+      "class_id": 0,
+      "class_name": "Burn",
+      "GT": 58,
+      "Box_P": 0.4710895581648966,
+      "Box_R": 0.39655172413793105,
+      "Box_AP50": 0.44456541395237387,
+      "Box_AP50_95": 0.24513463267649724,
+      "Mask_P": 0.4483644336153888,
+      "Mask_R": 0.3793103448275862,
+      "Mask_AP50": 0.3976969484054962,
+      "Mask_AP50_95": 0.21913385229267823
+    },
+    {
+      "class_id": 6,
+      "class_name": "corrosion",
+      "GT": 120,
+      "Box_P": 0.6841087614563319,
+      "Box_R": 0.425,
+      "Box_AP50": 0.5048091912302243,
+      "Box_AP50_95": 0.2874570471254168,
+      "Mask_P": 0.6548987200596149,
+      "Mask_R": 0.4083333333333333,
+      "Mask_AP50": 0.4816175596668355,
+      "Mask_AP50_95": 0.2485313664126331
+    }
+  ],
+  "hardest_by_mask_recall": [
+    {
+      "class_id": 4,
+      "class_name": "Tears",
+      "GT": 11,
+      "Box_P": 0.6972496953672895,
+      "Box_R": 0.36363636363636365,
+      "Box_AP50": 0.7321470588235297,
+      "Box_AP50_95": 0.42106742676827824,
+      "Mask_P": 0.6942454290827282,
+      "Mask_R": 0.36363636363636365,
+      "Mask_AP50": 0.7434915966386557,
+      "Mask_AP50_95": 0.35911694867136046
+    },
+    {
+      "class_id": 0,
+      "class_name": "Burn",
+      "GT": 58,
+      "Box_P": 0.4710895581648966,
+      "Box_R": 0.39655172413793105,
+      "Box_AP50": 0.44456541395237387,
+      "Box_AP50_95": 0.24513463267649724,
+      "Mask_P": 0.4483644336153888,
+      "Mask_R": 0.3793103448275862,
+      "Mask_AP50": 0.3976969484054962,
+      "Mask_AP50_95": 0.21913385229267823
+    },
+    {
+      "class_id": 6,
+      "class_name": "corrosion",
+      "GT": 120,
+      "Box_P": 0.6841087614563319,
+      "Box_R": 0.425,
+      "Box_AP50": 0.5048091912302243,
+      "Box_AP50_95": 0.2874570471254168,
+      "Mask_P": 0.6548987200596149,
+      "Mask_R": 0.4083333333333333,
+      "Mask_AP50": 0.4816175596668355,
+      "Mask_AP50_95": 0.2485313664126331
+    }
+  ],
+  "error_taxonomy_counts": {
+    "LOCALIZATION_FAILURE": 83,
+    "FP": 101,
+    "NO_RESPONSE": 65,
+    "TP": 114,
+    "POOR_MASK_BOUNDARY": 13,
+    "WRONG_CLASS": 10
+  },
+  "low_conf_test_taxonomy": "NOT_AVAILABLE_NO_THRESHOLD_SWEEP",
+  "qualitative_image_count": 64,
+  "evaluation_semantics": "Exp10 unified Ultralytics semantics; split=test; imgsz=640; fixed conf=0.25 NMS IoU=0.70 mask match IoU=0.50"
+}

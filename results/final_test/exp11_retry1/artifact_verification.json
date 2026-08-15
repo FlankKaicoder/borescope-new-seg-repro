@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checked_images": 81,
+  "all_images_exist_nonempty_decode": true,
+  "decode_failures": [],
+  "parsed_csv": 5,
+  "parsed_json": 3,
+  "test_accessed": true,
+  "model_selection_closed": true
+}
