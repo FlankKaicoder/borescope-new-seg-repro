@@ -31,7 +31,8 @@
 - [x] Exp09 transfer mechanism verification: PASS_REVISED
 - [x] Exp09 SimSiam reconstruction: INVALID_BY_BACKBONE_NO_UPDATE; downstream NOT_RUN_BY_GATE
 - [x] Fast Repro method screening complete
-- [ ] Exp10 three-seed Baseline vs Hard Mining: STOPPED_BY_SEED43_TREATMENT_TRAIN_NONFINITE
+- [ ] Exp10 three-seed Baseline vs Hard Mining: CONTROLLED_RESTART_IN_PROGRESS; seed43 Treatment is the active Gate
 - [x] Exp10.1a seed43 Treatment TRAIN-only NaN probe: historical CASE C superseded by Exp10.1b
 - [x] Exp10.1b TRUE-FP32 / Trainer-path no-update verification: CASE B replay-side non-reproducibility / WAITING_REVIEW
+- [ ] Exp10 controlled restart: seed43 Treatment → gated seed43 VAL → gated seed44 → unified three-seed VAL/statistics
 - [ ] Exp11 frozen final TEST: FORBIDDEN; Exp10 Candidate Freeze unavailable

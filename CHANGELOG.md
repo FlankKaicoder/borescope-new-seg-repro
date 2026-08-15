@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Authorized Exp10 controlled restart under a verification/recording/fail-fast-only numerical protocol. The first and only active formal run is seed43 Hard Treatment from the frozen baseline and frozen 201/668 TRAIN hard pool.
+- Added an independent no-update first-batch preflight plus formal Trainer Gates for effective AMP, FP32 master params/buffers, exact first-batch hash, pre-backward finite forward/loss, fixed batch, disabled NaN recovery, and finite/reloadable checkpoints.
+- Calibrated the Exp10.1a interpretation to `NONREPRODUCIBLE_DIAGNOSTIC_REPLAY`; preprocessing remains hash-identical and no preprocessing bug is claimed.
+
 - Exp10.1b TRUE-FP32 / Trainer-path no-update verification completed. Explicit FP32 params/buffers/input with autocast disabled, TRUE-AMP from the same FP32 master state, and both formal Trainer-path branches are finite.
 - Revised root cause to `CASE B REPLAY_OR_PREPROCESS_PIPELINE_BUG`, subtype `NONREPRODUCIBLE_EXP10_1A_DIAGNOSTIC_REPLAY`: preprocessing tensor hashes are identical, while the frozen old replay implementation now reproduces finite FP32/AMP values exactly.
 - Exp10 remains incomplete/stopped. No formal hyperparameter change, optimizer step, seed44, formal Treatment resume, VAL, TEST, Candidate Freeze, or Exp11 was performed.

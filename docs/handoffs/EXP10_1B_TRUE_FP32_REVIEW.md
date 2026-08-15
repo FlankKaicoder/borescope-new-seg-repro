@@ -2,7 +2,7 @@
 
 ## Review decision
 
-Exp10.1b completed the authorized TRAIN-only diagnostic and stopped. The revised classification is `CASE B REPLAY_OR_PREPROCESS_PIPELINE_BUG`, subtype `NONREPRODUCIBLE_EXP10_1A_DIAGNOSTIC_REPLAY`.
+Exp10.1b completed the authorized TRAIN-only diagnostic. The final human interpretation is `EXP10_1A_ROOT_CAUSE=NONREPRODUCIBLE_DIAGNOSTIC_REPLAY`.
 
 This does **not** mean the preprocessing tensor differed. Saved and recreated Trainer batches are hash-identical. It means the prior Exp10.1a non-finite replay evidence cannot be reproduced: the old replay code, the new explicit TRUE-FP32/TRUE-AMP replay, and formal Trainer no-update path now all return finite values with identical corresponding losses.
 
@@ -19,7 +19,7 @@ This does **not** mean the preprocessing tensor differed. Saved and recreated Tr
 
 ## Required reviewer decision
 
-Decide whether a future, separately authorized Exp10 restart should use a newly unified numerical/reproducibility protocol. Do not infer authorization from this handoff.
+The controlled Exp10 restart is now separately authorized under `docs/exp10_controlled_restart.md`; its strict ordered Gates apply.
 
 Until that decision:
 

@@ -2,11 +2,11 @@
 
 ## Conclusion
 
-Exp10.1b is complete as a TRAIN-only, forward-and-loss, no-update diagnostic. The revised classification is:
+Exp10.1b is complete as a TRAIN-only, forward-and-loss, no-update diagnostic. The final human interpretation is:
 
-`CASE B REPLAY_OR_PREPROCESS_PIPELINE_BUG`
+`EXP10_1A_ROOT_CAUSE=NONREPRODUCIBLE_DIAGNOSTIC_REPLAY`
 
-The precise subtype is `NONREPRODUCIBLE_EXP10_1A_DIAGNOSTIC_REPLAY`. This is a replay-side classification, not a preprocessing-transform mismatch: the saved post-preprocess tensor and the deterministically recreated Trainer batch match in shape, statistics, every recorded tensor SHA256, and finiteness.
+This does not claim that a preprocessing bug was found: the saved post-preprocess tensor and the deterministically recreated Trainer batch match in shape, statistics, every recorded tensor SHA256, and finiteness.
 
 The earlier Exp10.1a `CASE C FP32_MODEL_OR_OPTIMIZATION_INSTABILITY` conclusion is superseded. In particular, “optimization instability” is not supported because the event was reported before optimizer step 1 and no optimizer step was performed in this verification.
 
@@ -85,7 +85,7 @@ The frozen Exp10.1a `--replay-only-mode` implementation was rerun in fresh proce
 - FP32: raw output and loss finite; total loss `236.9442596435547`.
 - AMP: raw output and loss finite; total loss `236.7904052734375`.
 
-The old implementation now agrees exactly with the new gated replays and formal Trainer path. Together with hash-identical preprocessing, this makes the prior non-finite replay evidence non-reproducible. Under the task's permitted A–E taxonomy, the replay-side branch of CASE B is the supported classification. No evidence supports CASE A, C, D, or E.
+The old implementation now agrees exactly with the new gated replays and formal Trainer path. Together with hash-identical preprocessing, this makes the prior non-finite replay evidence non-reproducible. The historical formal seed43 Treatment failure remains real, but its deterministic FP32/model-forward explanation is invalidated and requires one controlled formal restart.
 
 ## Conv FP32 sanity and CPU control
 

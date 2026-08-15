@@ -1,5 +1,7 @@
 # Exp10.1a seed43 Hard Treatment train-NaN root-cause probe
 
+> **SUPERSEDED / INVALIDATED_BY_EXP10_1B:** The historical seed43 formal Treatment failure remains a real failed run, but the diagnostic replay used below to claim a deterministic FP32/model-forward cause is non-reproducible. Current interpretation: `EXP10_1A_ROOT_CAUSE=NONREPRODUCIBLE_DIAGNOSTIC_REPLAY`. The historical evidence is retained for audit and must not be used as proof of Hard Mining FP32 forward instability.
+
 Status: **EXP10_DIAGNOSTIC_COMPLETE_WAITING_REVIEW**. Root-cause gate: **CASE C — FP32_MODEL_OR_OPTIMIZATION_INSTABILITY**. This was a TRAIN-only diagnostic; `val_accessed_for_probe=false` and `test_accessed=false`.
 
 ## Boundary and frozen inputs
