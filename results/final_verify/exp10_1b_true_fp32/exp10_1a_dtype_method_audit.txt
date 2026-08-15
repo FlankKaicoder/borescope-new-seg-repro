@@ -1,0 +1,12 @@
+Exp10.1a old replay dtype-method audit
+implementation: model.load_state_dict(state); model.train(); batch=to_device(batch_cpu); autocast(enabled=False)
+old replay called model.float(): NO
+old replay called input.float(): NO
+old replay state first parameter dtype: torch.float32
+old replay parameter dtype distribution: ['torch.float32'] counts fp16=0 fp32=291 other=0
+old replay floating buffer dtype distribution: ['torch.float32'] counts fp16=0 fp32=180 other=0
+old replay input dtype: torch.float32
+old replay autocast: disabled for FP32-labelled branch
+old replay CUDA device: cuda:0
+old replay model mode: train
+EXP10_1A_FP32_REPLAY_INVALID_BY_DTYPE: false

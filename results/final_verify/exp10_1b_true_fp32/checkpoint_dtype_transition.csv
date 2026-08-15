@@ -1,0 +1,5 @@
+stage,float16_parameter_count,float32_parameter_count,other_parameter_count,float16_buffer_count,float32_buffer_count,other_buffer_count
+raw_serialized_checkpoint_ema,291,0,0,180,0,0
+YOLO_checkpoint_load,0,291,0,0,180,0
+trainer_setup_complete,0,291,0,0,180,0
+explicit_model_float,0,291,0,0,180,0

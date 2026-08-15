@@ -1,0 +1,67 @@
+{
+  "implementation": "frozen Exp10.1a --replay-only-mode, fresh process, no update",
+  "fp32": {
+    "row": {
+      "state": "treatment_pre_step",
+      "mode": "FP32",
+      "raw_output_finite": true,
+      "box_loss": 1.530516266822815,
+      "seg_loss": 2.7600321769714355,
+      "cls_loss": 1.883516550064087,
+      "dfl_loss": 1.2304433584213257,
+      "sem_loss": 0.0,
+      "total_loss": 236.9442596435547,
+      "loss_finite": true,
+      "first_nonfinite_module": "NONE",
+      "attention_qk_finite": true,
+      "attention_softmax_finite": true
+    },
+    "trace": [],
+    "attention": {
+      "module_name": "model.10.m.0.attn",
+      "input_dtype": "torch.float32",
+      "input_max_abs": 18.420944213867188,
+      "qkv_dtype": "torch.float32",
+      "qkv_max_abs": 16.4890193939209,
+      "qk_dtype": "torch.float32",
+      "qk_max_abs": 81.81580352783203,
+      "qk_matmul_finite": true,
+      "softmax_dtype": "torch.float32",
+      "softmax_max_abs": 0.9981591105461121,
+      "softmax_finite": true
+    }
+  },
+  "amp": {
+    "row": {
+      "state": "treatment_pre_step",
+      "mode": "AMP",
+      "raw_output_finite": true,
+      "box_loss": 1.530712604522705,
+      "seg_loss": 2.7542011737823486,
+      "cls_loss": 1.8842017650604248,
+      "dfl_loss": 1.2305846214294434,
+      "sem_loss": 0.0,
+      "total_loss": 236.7904052734375,
+      "loss_finite": true,
+      "first_nonfinite_module": "NONE",
+      "attention_qk_finite": true,
+      "attention_softmax_finite": true
+    },
+    "trace": [],
+    "attention": {
+      "module_name": "model.10.m.0.attn",
+      "input_dtype": "torch.float16",
+      "input_max_abs": 18.421875,
+      "qkv_dtype": "torch.float16",
+      "qkv_max_abs": 16.5,
+      "qk_dtype": "torch.float16",
+      "qk_max_abs": 81.8125,
+      "qk_matmul_finite": true,
+      "softmax_dtype": "torch.float32",
+      "softmax_max_abs": 0.9982117414474487,
+      "softmax_finite": true
+    }
+  },
+  "fp32_finite": true,
+  "amp_finite": true
+}

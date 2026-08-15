@@ -1,0 +1,54 @@
+{
+  "formal_setup_model_dtypes": {
+    "first_parameter_dtype": "torch.float32",
+    "float16_parameter_count": 0,
+    "float32_parameter_count": 291,
+    "other_parameter_count": 0,
+    "float16_buffer_count": 0,
+    "float32_buffer_count": 180,
+    "other_buffer_count": 0,
+    "parameter_dtype_unique": [
+      "torch.float32"
+    ],
+    "buffer_dtype_unique": [
+      "torch.float32"
+    ]
+  },
+  "effective_amp": true,
+  "saved_batch_used_directly_as_post_preprocess_tensor": true,
+  "formal_trainer_path_amp": {
+    "raw_output_finite": true,
+    "box_loss_finite": true,
+    "seg_loss_finite": true,
+    "cls_loss_finite": true,
+    "dfl_loss_finite": true,
+    "sem_loss_finite": true,
+    "box_loss": 1.530712604522705,
+    "seg_loss": 2.7542011737823486,
+    "cls_loss": 1.8842017650604248,
+    "dfl_loss": 1.2305846214294434,
+    "sem_loss": 0.0,
+    "total_loss": 236.7904052734375,
+    "total_loss_finite": true,
+    "all_loss_finite": true
+  },
+  "formal_trainer_path_true_fp32": {
+    "raw_output_finite": true,
+    "box_loss_finite": true,
+    "seg_loss_finite": true,
+    "cls_loss_finite": true,
+    "dfl_loss_finite": true,
+    "sem_loss_finite": true,
+    "box_loss": 1.530516266822815,
+    "seg_loss": 2.7600321769714355,
+    "cls_loss": 1.883516550064087,
+    "dfl_loss": 1.2304433584213257,
+    "sem_loss": 0.0,
+    "total_loss": 236.9442596435547,
+    "total_loss_finite": true,
+    "all_loss_finite": true
+  },
+  "optimizer_step_performed": false,
+  "val_accessed_for_probe": false,
+  "test_accessed": false
+}

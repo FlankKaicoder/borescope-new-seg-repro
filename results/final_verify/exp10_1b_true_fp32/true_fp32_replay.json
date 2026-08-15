@@ -1,0 +1,31 @@
+{
+  "name": "TRUE_FP32_REPLAY",
+  "model_parameter_dtype_unique": [
+    "torch.float32"
+  ],
+  "model_buffer_dtype_unique": [
+    "torch.float32"
+  ],
+  "input_dtype": "torch.float32",
+  "input_finite": true,
+  "targets_finite": true,
+  "autocast_enabled": false,
+  "model_mode": "train",
+  "device": "cuda:0",
+  "dtype_gate_pass": true,
+  "first_nonfinite_module": "NONE",
+  "raw_output_finite": true,
+  "box_loss_finite": true,
+  "seg_loss_finite": true,
+  "cls_loss_finite": true,
+  "dfl_loss_finite": true,
+  "sem_loss_finite": true,
+  "box_loss": 1.530516266822815,
+  "seg_loss": 2.7600321769714355,
+  "cls_loss": 1.883516550064087,
+  "dfl_loss": 1.2304433584213257,
+  "sem_loss": 0.0,
+  "total_loss": 236.9442596435547,
+  "total_loss_finite": true,
+  "all_loss_finite": true
+}

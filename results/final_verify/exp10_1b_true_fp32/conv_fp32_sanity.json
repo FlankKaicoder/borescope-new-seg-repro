@@ -1,0 +1,20 @@
+{
+  "module": "model.1.conv",
+  "input_dtype": "torch.float32",
+  "output_dtype": "torch.float32",
+  "input_finite": true,
+  "output_finite": true,
+  "input_max_abs": 92.16114044189453,
+  "output_max_abs": 187.26121520996094,
+  "weight_max_abs": 0.7236328125,
+  "bias_max_abs": 0.0,
+  "kernel_size": [
+    3,
+    3
+  ],
+  "in_channels": 16,
+  "groups": 1,
+  "conservative_accumulation_scale": 9603.478837609291,
+  "float32_max": 3.4028234663852886e+38,
+  "scale_far_below_float32_overflow": true
+}

@@ -1,0 +1,4 @@
+stage,effective_amp,first_parameter_dtype,float16_parameter_count,float32_parameter_count,other_parameter_count,float16_buffer_count,float32_buffer_count,other_buffer_count,parameter_dtype_unique,buffer_dtype_unique
+trainer_setup,True,torch.float32,0,291,0,0,180,0,['torch.float32'],['torch.float32']
+trainer_exact_state_loaded,True,torch.float32,0,291,0,0,180,0,['torch.float32'],['torch.float32']
+trainer_explicit_float,False,torch.float32,0,291,0,0,180,0,['torch.float32'],['torch.float32']
