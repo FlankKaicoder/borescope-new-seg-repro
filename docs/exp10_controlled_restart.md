@@ -1,6 +1,14 @@
 # Exp10 controlled restart
 
-Status: **IN PROGRESS / SEED43 HARD TREATMENT ACTIVE GATE**. `test_accessed=false`; Exp11 is forbidden.
+Status: **COMPLETE / HARD_MINING_NOT_CONFIRMED / WAITING CANDIDATE FREEZE REVIEW**. `test_accessed=false`; Exp11 is forbidden.
+
+## Final result
+
+Seed43 Hard Treatment controlled restart passed 30/30 with all TRAIN losses finite, requested/effective AMP=true, FP32 master params/buffers, exact preflight/formal first-batch match, 20,040 sampled images, 331 optimizer steps, and finite/reloadable best/last checkpoints. Best SHA256: `8a97ebdf1a84ba43adb9fd7a4ea25d8990b7a81daee85b9a0b08bd5b69f62c69`.
+
+Seed44 Baseline passed 100/100; best SHA256 `2dbec80d31d978bdadcd436cf243921be81903284e00b08c5beb75d9808948e9`. Its TRAIN-only hard pool contains 201/668 images. Uniform Control and Hard Treatment both passed 30/30 from that same checkpoint, consumed 20,040 images and 331 optimizer steps, and have best SHA256 values `0c9eec4b3588dbe6b428641d70414d53776dd6cbb0c730103ede1cf381187671` and `af7d614718958cbc839d2a24a2416d660375cd7c3a1912d90c81af136aab6207`.
+
+Unified VAL was rerun for all nine seed×model checkpoints. Treatment-Control Mask mAP50-95 deltas are seed42 `+0.030354`, seed43 `-0.006673`, and seed44 `-0.040311`; positive seed count is 1/3 and mean paired delta is `-0.005543 ± 0.035346` sample std. Final recommendation: `HARD_MINING_NOT_CONFIRMED`. Candidate Freeze recommendation is Baseline, but Candidate Freeze was not executed.
 
 ## Reason for restart
 
@@ -33,4 +41,4 @@ The protocol changes no training hyperparameter or mathematical definition. It a
 
 If seed43 Treatment repeats TRAIN non-finite, no retry or new diagnosis is allowed. Exp10 stops as `HARD_MINING_FINAL_VERIFY_FAILED_NUMERICAL_ROBUSTNESS`; seed44 becomes `NOT_RUN_BY_GATE`.
 
-Only a complete 30/30 PASS permits unified seed43 VAL and then the separately gated seed44 sequence. Candidate Freeze is recommendation-only after complete Exp10; TEST and Exp11 remain forbidden.
+All ordered Gates passed and Exp10 is complete. Candidate Freeze remains recommendation-only; TEST and Exp11 remain forbidden.

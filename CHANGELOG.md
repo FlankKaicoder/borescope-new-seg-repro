@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Completed Exp10 controlled restart and unified nine-checkpoint VAL. Seed43 Treatment restart, seed44 Baseline/Control/Treatment, numerical Gates, checkpoint audits, and Control/Treatment fairness all passed.
+- Three-seed Treatment-Control Mask mAP50-95 deltas are +0.030354/-0.006673/-0.040311; positive count 1/3 and mean -0.005543 ± 0.035346. Final recommendation: `HARD_MINING_NOT_CONFIRMED`; recommend Baseline for human Candidate Freeze review.
+- Generated summary/effect CSVs, aggregate JSON, five required figures, and a 165-image artifact manifest with exists/non-empty/decode PASS. Candidate Freeze, Exp11, and TEST were not executed.
+
 - Authorized Exp10 controlled restart under a verification/recording/fail-fast-only numerical protocol. The first and only active formal run is seed43 Hard Treatment from the frozen baseline and frozen 201/668 TRAIN hard pool.
 - Added an independent no-update first-batch preflight plus formal Trainer Gates for effective AMP, FP32 master params/buffers, exact first-batch hash, pre-backward finite forward/loss, fixed batch, disabled NaN recovery, and finite/reloadable checkpoints.
 - Calibrated the Exp10.1a interpretation to `NONREPRODUCIBLE_DIAGNOSTIC_REPLAY`; preprocessing remains hash-identical and no preprocessing bug is claimed.
