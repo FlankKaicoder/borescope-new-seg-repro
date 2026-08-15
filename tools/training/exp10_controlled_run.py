@@ -196,6 +196,10 @@ class ControlledTrainer(SegmentationTrainer):
             if self.preflight_only:
                 raise RuntimeError("VAL/TEST loader construction is forbidden in controlled preflight")
             return super().get_dataloader(dataset_path, batch_size, rank, mode)
+        if self.protocol_mode == "baseline":
+            # Preserve the formal Ultralytics baseline sampler exactly. Only
+            # Control/Treatment use the paired replacement weighted sampler.
+            return super().get_dataloader(dataset_path, batch_size, rank, mode)
         dataset = self.build_dataset(dataset_path, mode, batch_size)
         weights = [
             2.0 if self.protocol_mode == "treatment" and Path(path).stem in self.protocol_hard else 1.0
