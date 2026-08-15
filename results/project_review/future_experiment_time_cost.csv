@@ -1,0 +1,5 @@
+Candidate,GPU_training_cost,Coding_cost,Debug_risk,Analysis_cost,Overall_time_cost,Notes
+A_NO_MORE_MODEL_EXPERIMENTS_DIRECT_FINALIZATION,VERY_LOW,LOW,LOW,MEDIUM,LOW,Only writing and final evidence packaging remain
+B_960_RESOLUTION_MECHANISM_ABLATION,MEDIUM,LOW,MEDIUM,MEDIUM,MEDIUM,If authorized limit scope to one controlled 640-vs-960 mechanism comparison
+C_UNIFORM_CONTINUED_FINETUNE_STUDY,MEDIUM,LOW,MEDIUM,MEDIUM,MEDIUM,Requires a new preregistered question and fair initialization/budget policy
+D_NEW_MODEL_IMPROVEMENT_PHASE,HIGH,HIGH,HIGH,HIGH,HIGH,Separate future phase with new success criteria

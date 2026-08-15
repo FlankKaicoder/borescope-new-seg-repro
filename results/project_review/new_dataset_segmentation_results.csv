@@ -1,0 +1,19 @@
+Experiment,Arm,Seed,Split,Metric_source,Mask_P,Mask_R,Mask_F1,Mask_mAP50,Mask_mAP50_95,TP,FP,FN,Directly_comparable,Status,Evidence_path
+Exp02,Baseline,42,VAL,Ultralytics independent VAL,0.66292,0.52302,N/A,0.53192,0.29898123412927496,N/A,99,173,YES_FOR_MAP,PASS_WITH_NUMERICAL_WAIVER,results/fast_repro/fasttrack_a_summary.csv
+Exp05,Uniform Control,42,VAL,Ultralytics VAL,0.727749,0.437593,N/A,0.514963,0.2809637607266954,N/A,104,179,YES_WITHIN_EXP05,CONTROL,results/fast_repro/fasttrack_a_summary.csv
+Exp05,Hard Treatment,42,VAL,Ultralytics VAL,0.579190,0.558448,N/A,0.535774,0.3113180661075626,N/A,80,179,YES_WITHIN_EXP05,POSITIVE_CANDIDATE_SUPERSEDED_BY_EXP10,results/fast_repro/fasttrack_a_summary.csv
+Exp07,YOLO fixed point conf0.25,42,VAL,Fixed-point mask matching,0.554054,0.415541,0.474903,N/A,N/A,123,99,173,YES_FIXED_POINT_ONLY,REFERENCE,results/fast_repro/exp07_stage2/summary.json
+Exp07,Stage2 Mode A,42,VAL,Fixed-point mask matching,0.506276,0.408784,0.452336,N/A,N/A,121,118,175,YES_FIXED_POINT_ONLY,NEGATIVE,results/fast_repro/exp07_stage2/summary.json
+Exp07,Stage2 Mode B,42,VAL,Fixed-point mask matching,0.572917,0.371622,0.450820,N/A,N/A,110,82,186,YES_FIXED_POINT_ONLY,NEGATIVE,results/fast_repro/exp07_stage2/summary.json
+Exp10,Baseline,42,VAL,Unified Ultralytics VAL,N/A,N/A,N/A,N/A,0.29898123412927496,N/A,N/A,N/A,YES_WITHIN_EXP10,PASS,results/final_verify/exp10_three_seed_summary.csv
+Exp10,Uniform Control,42,VAL,Unified Ultralytics VAL,N/A,N/A,N/A,N/A,0.2809637607266954,N/A,N/A,N/A,YES_WITHIN_EXP10,PASS,results/final_verify/exp10_three_seed_summary.csv
+Exp10,Hard Treatment,42,VAL,Unified Ultralytics VAL,N/A,N/A,N/A,N/A,0.3113180661075626,N/A,N/A,N/A,YES_WITHIN_EXP10,PASS,results/final_verify/exp10_three_seed_summary.csv
+Exp10,Baseline,43,VAL,Unified Ultralytics VAL,0.712201,0.488922,N/A,0.525300,0.29950558246122316,127,100,169,YES_WITHIN_EXP10,PASS,results/final_verify/exp10_three_seed_summary.csv
+Exp10,Uniform Control,43,VAL,Unified Ultralytics VAL,0.701565,0.524283,N/A,0.589981,0.32839910651463605,126,102,170,YES_WITHIN_EXP10,PASS,results/final_verify/exp10_three_seed_summary.csv
+Exp10,Hard Treatment,43,VAL,Unified Ultralytics VAL,0.721420,0.528715,N/A,0.612345,0.32172581608685324,136,118,160,YES_WITHIN_EXP10,PASS,results/final_verify/exp10_three_seed_summary.csv
+Exp10,Baseline,44,VAL,Unified Ultralytics VAL,0.753985,0.494527,N/A,0.580192,0.3251567516159603,123,87,173,YES_WITHIN_EXP10,PASS,results/final_verify/exp10_three_seed_summary.csv
+Exp10,Uniform Control,44,VAL,Unified Ultralytics VAL,0.722367,0.579510,N/A,0.613844,0.3417600378767482,141,118,155,YES_WITHIN_EXP10,PASS,results/final_verify/exp10_three_seed_summary.csv
+Exp10,Hard Treatment,44,VAL,Unified Ultralytics VAL,0.777124,0.458268,N/A,0.535118,0.3014491938472924,115,92,181,YES_WITHIN_EXP10,PASS,results/final_verify/exp10_three_seed_summary.csv
+Exp10,Baseline mean,42/43/44,VAL,Three-seed aggregate,N/A,N/A,N/A,N/A,0.307881 ± 0.014963,N/A,N/A,N/A,YES_AGGREGATE,PASS,results/final_verify/exp10_aggregate_summary.json
+Exp10,Uniform Control mean,42/43/44,VAL,Three-seed aggregate,N/A,N/A,N/A,N/A,0.317041 ± 0.031950,N/A,N/A,N/A,YES_AGGREGATE,BUDGET_CONTROL_NOT_FINAL_CANDIDATE,results/final_verify/exp10_aggregate_summary.json
+Exp10,Hard Treatment mean,42/43/44,VAL,Three-seed aggregate,N/A,N/A,N/A,N/A,0.311498 ± 0.010140,N/A,N/A,N/A,YES_AGGREGATE,HARD_MINING_NOT_CONFIRMED,results/final_verify/exp10_aggregate_summary.json

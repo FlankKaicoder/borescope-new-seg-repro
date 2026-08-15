@@ -1,0 +1,19 @@
+Model,Class,Accuracy,Macro_F1,Weighted_F1,Precision,Recall,F1,Support,Split,Metric_domain,Evidence_path
+ResNet18 CE,OVERALL,0.635135,0.677804,0.632591,N/A,N/A,N/A,592,VAL,ROI classification,docs/exp06_roi_resnet_fast_repro.md
+ResNet18 CE,Burn,N/A,N/A,N/A,0.7200,0.6667,0.6923,81,VAL,ROI classification,docs/exp06_roi_resnet_fast_repro.md
+ResNet18 CE,Crack,N/A,N/A,N/A,0.6087,0.5833,0.5957,24,VAL,ROI classification,docs/exp06_roi_resnet_fast_repro.md
+ResNet18 CE,Dent,N/A,N/A,N/A,0.7895,0.8108,0.8000,37,VAL,ROI classification,docs/exp06_roi_resnet_fast_repro.md
+ResNet18 CE,Material missing,N/A,N/A,N/A,0.6774,0.6562,0.6667,32,VAL,ROI classification,docs/exp06_roi_resnet_fast_repro.md
+ResNet18 CE,Tears,N/A,N/A,N/A,1.0000,0.7000,0.8235,10,VAL,ROI classification,docs/exp06_roi_resnet_fast_repro.md
+ResNet18 CE,Tip curl,N/A,N/A,N/A,1.0000,0.6667,0.8000,3,VAL,ROI classification,docs/exp06_roi_resnet_fast_repro.md
+ResNet18 CE,corrosion,N/A,N/A,N/A,0.3737,0.3394,0.3558,109,VAL,ROI classification,docs/exp06_roi_resnet_fast_repro.md
+ResNet18 CE,background,N/A,N/A,N/A,0.6656,0.7128,0.6884,296,VAL,ROI classification,docs/exp06_roi_resnet_fast_repro.md
+ResNet18 CE + SupCon,OVERALL,0.697635,0.693698,0.693200,N/A,N/A,N/A,592,VAL,ROI classification,docs/exp06_supcon_fast_repro.md
+ResNet18 CE + SupCon,Burn,N/A,N/A,N/A,0.7432,0.6790,0.7097,81,VAL,ROI classification,docs/exp06_supcon_fast_repro.md
+ResNet18 CE + SupCon,Crack,N/A,N/A,N/A,0.6667,0.6667,0.6667,24,VAL,ROI classification,docs/exp06_supcon_fast_repro.md
+ResNet18 CE + SupCon,Dent,N/A,N/A,N/A,0.8205,0.8649,0.8421,37,VAL,ROI classification,docs/exp06_supcon_fast_repro.md
+ResNet18 CE + SupCon,Material missing,N/A,N/A,N/A,0.7778,0.6562,0.7119,32,VAL,ROI classification,docs/exp06_supcon_fast_repro.md
+ResNet18 CE + SupCon,Tears,N/A,N/A,N/A,1.0000,0.8000,0.8889,10,VAL,ROI classification,docs/exp06_supcon_fast_repro.md
+ResNet18 CE + SupCon,Tip curl,N/A,N/A,N/A,1.0000,0.3333,0.5000,3,VAL,ROI classification,docs/exp06_supcon_fast_repro.md
+ResNet18 CE + SupCon,corrosion,N/A,N/A,N/A,0.5385,0.4495,0.4900,109,VAL,ROI classification,docs/exp06_supcon_fast_repro.md
+ResNet18 CE + SupCon,background,N/A,N/A,N/A,0.7043,0.7804,0.7404,296,VAL,ROI classification,docs/exp06_supcon_fast_repro.md

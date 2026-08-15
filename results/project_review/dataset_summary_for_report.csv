@@ -1,0 +1,89 @@
+Category,Scope,Split,Class_or_bin,Metric,Value,Unit,Source,Notes
+Dataset,Global,ALL,ALL,supervised_images,969,images,docs/exp01_2_dataset_freeze.md,24 unpaired images excluded and not background
+Dataset,Global,ALL,ALL,total_instances,1847,instances,docs/01_dataset_audit.md,All annotations are polygons
+Dataset,Global,ALL,ALL,class_count,7,classes,docs/01_dataset_audit.md,Frozen IDs 0-6
+Dataset,Global,ALL,ALL,exact_duplicate_groups,0,groups,docs/01_dataset_audit.md,SHA256 exact duplicate
+Dataset,Global,ALL,ALL,near_duplicate_groups,88,groups,docs/01_dataset_audit.md,252 images and 265 pairs
+Dataset,Global,ALL,ALL,cross_label_near_duplicate_groups,22,groups,docs/01_dataset_audit.md,Professional GT retained; split grouping only
+Dataset,Global,ALL,ALL,polygon_issue_rows,0,rows,docs/01_dataset_audit.md,No automatic polygon anomaly found
+Dataset,Global,ALL,ALL,class_imbalance_max_to_min,20.828571,ratio,docs/01_dataset_audit.md,corrosion 729 versus Tip curl 35
+Dataset,Global,ALL,ALL,instances_per_image_mean,1.906089,instances/image,docs/01_dataset_audit.md,Median 1; max 28
+Dataset,Global,ALL,ALL,relative_polygon_area_median,0.0058436214,fraction,docs/01_dataset_audit.md,Raw polygon-area audit
+Split,Images,train,ALL,image_count,668,images,Exp01 frozen split summary,Group-aware seed42
+Split,Images,val,ALL,image_count,154,images,Exp01 frozen split summary,Group-aware seed42
+Split,Images,test,ALL,image_count,147,images,Exp01 frozen split summary,Manifest-only statistic; no model access
+Split,Instances,train,ALL,instance_count,1266,instances,Exp01 frozen split summary,
+Split,Instances,val,ALL,instance_count,296,instances,Exp01 frozen split summary,
+Split,Instances,test,ALL,instance_count,285,instances,Exp01 frozen split summary,Manifest-only statistic; no model access
+Class,Global,ALL,Burn,instance_count,426,instances,docs/01_dataset_audit.md,23.0644 percent
+Class,Global,ALL,Crack,instance_count,140,instances,docs/01_dataset_audit.md,7.5799 percent
+Class,Global,ALL,Dent,instance_count,202,instances,docs/01_dataset_audit.md,10.9367 percent
+Class,Global,ALL,Material missing,instance_count,249,instances,docs/01_dataset_audit.md,13.4813 percent
+Class,Global,ALL,Tears,instance_count,66,instances,docs/01_dataset_audit.md,3.5734 percent
+Class,Global,ALL,Tip curl,instance_count,35,instances,docs/01_dataset_audit.md,1.8950 percent
+Class,Global,ALL,corrosion,instance_count,729,instances,docs/01_dataset_audit.md,39.4694 percent
+Class,Split,train,Burn,instance_count,287,instances,Exp01 frozen split summary,
+Class,Split,train,Crack,instance_count,95,instances,Exp01 frozen split summary,
+Class,Split,train,Dent,instance_count,128,instances,Exp01 frozen split summary,
+Class,Split,train,Material missing,instance_count,184,instances,Exp01 frozen split summary,
+Class,Split,train,Tears,instance_count,45,instances,Exp01 frozen split summary,
+Class,Split,train,Tip curl,instance_count,27,instances,Exp01 frozen split summary,
+Class,Split,train,corrosion,instance_count,500,instances,Exp01 frozen split summary,
+Class,Split,val,Burn,instance_count,81,instances,Exp01 frozen split summary,
+Class,Split,val,Crack,instance_count,24,instances,Exp01 frozen split summary,
+Class,Split,val,Dent,instance_count,37,instances,Exp01 frozen split summary,
+Class,Split,val,Material missing,instance_count,32,instances,Exp01 frozen split summary,
+Class,Split,val,Tears,instance_count,10,instances,Exp01 frozen split summary,
+Class,Split,val,Tip curl,instance_count,3,instances,Exp01 frozen split summary,
+Class,Split,val,corrosion,instance_count,109,instances,Exp01 frozen split summary,
+Class,Split,test,Burn,instance_count,58,instances,Exp01 frozen split summary,Manifest-only statistic
+Class,Split,test,Crack,instance_count,21,instances,Exp01 frozen split summary,Manifest-only statistic
+Class,Split,test,Dent,instance_count,37,instances,Exp01 frozen split summary,Manifest-only statistic
+Class,Split,test,Material missing,instance_count,33,instances,Exp01 frozen split summary,Manifest-only statistic
+Class,Split,test,Tears,instance_count,11,instances,Exp01 frozen split summary,Manifest-only statistic
+Class,Split,test,Tip curl,instance_count,5,instances,Exp01 frozen split summary,Manifest-only statistic
+Class,Split,test,corrosion,instance_count,120,instances,Exp01 frozen split summary,Manifest-only statistic
+Size,Global,ALL,tiny,instance_count,462,instances,Existing instance audit + frozen manifest,Raw q25 threshold <=0.0016162544
+Size,Global,ALL,small,instance_count,462,instances,Existing instance audit + frozen manifest,Raw q50 threshold <=0.0058436214
+Size,Global,ALL,medium,instance_count,461,instances,Existing instance audit + frozen manifest,Raw q75 threshold <=0.0250666790
+Size,Global,ALL,large,instance_count,462,instances,Existing instance audit + frozen manifest,Above raw q75
+Size,Split,train,tiny,instance_count,282,instances,Existing instance audit + frozen manifest,
+Size,Split,train,small,instance_count,305,instances,Existing instance audit + frozen manifest,
+Size,Split,train,medium,instance_count,326,instances,Existing instance audit + frozen manifest,
+Size,Split,train,large,instance_count,353,instances,Existing instance audit + frozen manifest,
+Size,Split,val,tiny,instance_count,92,instances,Existing instance audit + frozen manifest,
+Size,Split,val,small,instance_count,82,instances,Existing instance audit + frozen manifest,
+Size,Split,val,medium,instance_count,65,instances,Existing instance audit + frozen manifest,
+Size,Split,val,large,instance_count,57,instances,Existing instance audit + frozen manifest,
+Size,Split,test,tiny,instance_count,88,instances,Existing instance audit + frozen manifest,Manifest-only statistic
+Size,Split,test,small,instance_count,75,instances,Existing instance audit + frozen manifest,Manifest-only statistic
+Size,Split,test,medium,instance_count,70,instances,Existing instance audit + frozen manifest,Manifest-only statistic
+Size,Split,test,large,instance_count,52,instances,Existing instance audit + frozen manifest,Manifest-only statistic
+ClassSize,Global,ALL,Burn-tiny,instance_count,66,instances,Existing instance audit,
+ClassSize,Global,ALL,Burn-small,instance_count,25,instances,Existing instance audit,
+ClassSize,Global,ALL,Burn-medium,instance_count,113,instances,Existing instance audit,
+ClassSize,Global,ALL,Burn-large,instance_count,222,instances,Existing instance audit,
+ClassSize,Global,ALL,Crack-tiny,instance_count,49,instances,Existing instance audit,
+ClassSize,Global,ALL,Crack-small,instance_count,63,instances,Existing instance audit,
+ClassSize,Global,ALL,Crack-medium,instance_count,27,instances,Existing instance audit,
+ClassSize,Global,ALL,Crack-large,instance_count,1,instances,Existing instance audit,
+ClassSize,Global,ALL,Dent-tiny,instance_count,112,instances,Existing instance audit,
+ClassSize,Global,ALL,Dent-small,instance_count,62,instances,Existing instance audit,
+ClassSize,Global,ALL,Dent-medium,instance_count,17,instances,Existing instance audit,
+ClassSize,Global,ALL,Dent-large,instance_count,11,instances,Existing instance audit,
+ClassSize,Global,ALL,Material missing-tiny,instance_count,30,instances,Existing instance audit,
+ClassSize,Global,ALL,Material missing-small,instance_count,53,instances,Existing instance audit,
+ClassSize,Global,ALL,Material missing-medium,instance_count,107,instances,Existing instance audit,
+ClassSize,Global,ALL,Material missing-large,instance_count,59,instances,Existing instance audit,
+ClassSize,Global,ALL,Tears-tiny,instance_count,12,instances,Existing instance audit,
+ClassSize,Global,ALL,Tears-small,instance_count,14,instances,Existing instance audit,
+ClassSize,Global,ALL,Tears-medium,instance_count,36,instances,Existing instance audit,
+ClassSize,Global,ALL,Tears-large,instance_count,4,instances,Existing instance audit,
+ClassSize,Global,ALL,Tip curl-tiny,instance_count,0,instances,Existing instance audit,
+ClassSize,Global,ALL,Tip curl-small,instance_count,12,instances,Existing instance audit,
+ClassSize,Global,ALL,Tip curl-medium,instance_count,20,instances,Existing instance audit,
+ClassSize,Global,ALL,Tip curl-large,instance_count,3,instances,Existing instance audit,
+ClassSize,Global,ALL,corrosion-tiny,instance_count,193,instances,Existing instance audit,
+ClassSize,Global,ALL,corrosion-small,instance_count,233,instances,Existing instance audit,
+ClassSize,Global,ALL,corrosion-medium,instance_count,141,instances,Existing instance audit,
+ClassSize,Global,ALL,corrosion-large,instance_count,162,instances,Existing instance audit,
