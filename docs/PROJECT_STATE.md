@@ -2,7 +2,7 @@
 
 | Field | Current fact |
 |---|---|
-| Current phase | `EXP11_EVALUATION_INVALIDATING_GATE_WAITING_REVIEW` |
+| Current phase | `EXP11_AUTHORIZED_RETRY_READY` |
 | Last completed formal experiment | Exp10 controlled three-seed verification: `HARD_MINING_NOT_CONFIRMED` |
 | Last completed project work | Review10.5 New Dataset Full Experiment Review; training=false; test_accessed=false |
 | Current data version | `/root/autodl-tmp/borescope-new-seg-data/v1` from raw manifest `1b0d6379800661c4b71e81db50f5b280bd46c5952e29f219c8f8427bc9c142a2` |
@@ -12,13 +12,13 @@
 | Option decision | `OPTION_A_DIRECT_FINALIZATION` |
 | Current candidate | Final frozen YOLO11n-seg Baseline; seed44; VAL Mask mAP50-95 `0.3251567516159603` |
 | Final checkpoint | `/root/autodl-tmp/borescope-new-seg-repro/results/final_verify/exp10_controlled_restart/seed44/baseline100/formal/ultralytics/baseline/weights/best.pt`; SHA256 `2dbec80d31d978bdadcd436cf243921be81903284e00b08c5beb75d9808948e9` |
-| Current Gate | Exp11 client-orchestration timeout interrupted the first attempt before formal metrics; partial evidence preserved |
-| Active blockers | Retry is not authorized. TEST access state is conservatively `POSSIBLY_ACCESSED_BY_INTERRUPTED_ATTEMPT`; all training and selection remain forbidden. |
+| Current Gate | User explicitly authorized exactly one retry of the unchanged frozen candidate; original partial evidence remains preserved |
+| Active blockers | No additional automatic retry is allowed. All training and model/seed/threshold selection remain forbidden. |
 | Documented limitations | Exp02 early AMP validation numerical overflow is covered by `PASS_WITH_NUMERICAL_WAIVER`; Exp08 is engineering-gated and not evaluated; Exp09 SSL left 0/120 trainable backbone parameters changed and downstream is not evaluated. |
-| Next allowed work | User + ChatGPT review of `docs/handoffs/EXP11_EVALUATION_INVALIDATING_GATE.md` only |
+| Next allowed work | Run `scripts/exp11_authorized_retry.sh` once, writing only to `results/final_test/exp11_retry1` |
 | Formal training allowed | NO |
 | Candidate Freeze | `PASS` |
-| Exp11 | `INTERRUPTED_BEFORE_METRICS / RETRY_NOT_AUTHORIZED` |
+| Exp11 | `INTERRUPTED_BEFORE_METRICS / ONE_RETRY_EXPLICITLY_AUTHORIZED` |
 | Model selection closed | `true` |
 | Exp01 execution commit | `dc8cd55383112b48113545ea86532a157531475e` |
 | Exp01 final documentation commit | `d55cdb555c37099753ca8e1a55a456e3f0455818` |
@@ -29,4 +29,4 @@
 
 ## Next allowed work
 
-Candidate Freeze remains valid. The first Exp11 attempt was interrupted by the client orchestration timeout before formal metrics. Do not retry or access TEST again without explicit user + ChatGPT authorization. No training, sweep, comparison, or selection is allowed.
+Candidate Freeze remains valid. The first Exp11 attempt was interrupted before metrics; the user explicitly authorized one retry with the same checkpoint, SHA, evaluator and parameters. Preserve the original partial directory and do not perform any additional retry. No training, sweep, comparison, or selection is allowed.

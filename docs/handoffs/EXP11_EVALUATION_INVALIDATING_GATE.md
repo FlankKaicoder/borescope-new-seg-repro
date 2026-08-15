@@ -17,3 +17,7 @@ Candidate Freeze 已在任何 TEST 尝试前完成并提交：`9991fcfcb9cf6c0ab
 由于无法证明中断前 TEST dataloader 完全未被触达，`test_access_state` 保守记录为 `POSSIBLY_ACCESSED_BY_INTERRUPTED_ATTEMPT`。不得静默删除输出目录后重跑，也不得把重跑自动称为同一次访问。
 
 继续所需的唯一人工决定：是否明确授权对**完全相同的冻结 seed44 Baseline checkpoint、相同 SHA、相同已提交 evaluator、相同固定参数**重试一次。若授权，必须先保留当前 partial 目录并使用新的 retry 输出目录；若不授权，则项目以 TEST metrics NOT_AVAILABLE 收口。
+
+## 人工裁决
+
+用户已于 `2026-08-15T19:35:06+08:00` 明确批准一次重试。授权范围固定为：相同 seed44 Baseline、相同 checkpoint SHA、相同 evaluator、相同参数；输出写入 `results/final_test/exp11_retry1`，原 `results/final_test/exp11` 保持不动；不允许第二次自动重试。

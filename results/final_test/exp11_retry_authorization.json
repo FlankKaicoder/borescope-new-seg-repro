@@ -1,0 +1,18 @@
+{
+  "authorization_status": "PASS",
+  "authorization_timestamp": "2026-08-15T19:35:06+08:00",
+  "authorized_by": "user_explicit_approval",
+  "source_gate_commit": "193e53b447b1cef4cfe951446ca4c5412d4d1c5f",
+  "candidate_freeze_commit": "9991fcfcb9cf6c0ab8920ad7deadeed579ce5585",
+  "retry_count_authorized": 1,
+  "retry_output_directory": "results/final_test/exp11_retry1",
+  "preserve_original_partial_directory": "results/final_test/exp11",
+  "method": "YOLO11n-seg Baseline",
+  "seed": 44,
+  "checkpoint_sha256": "2dbec80d31d978bdadcd436cf243921be81903284e00b08c5beb75d9808948e9",
+  "evaluator": "tools/evaluation/exp11_final_test.py",
+  "parameters_unchanged": true,
+  "model_selection_closed": true,
+  "training_allowed": false,
+  "additional_automatic_retry_allowed": false
+}

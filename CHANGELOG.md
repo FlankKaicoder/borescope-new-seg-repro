@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- User explicitly authorized one retry of the unchanged frozen Exp11 candidate after the client-timeout interruption. The original partial directory is preserved; retry output is isolated at `results/final_test/exp11_retry1`; no further automatic retry is allowed.
+
 - Exp11 first attempt was interrupted by an insufficient client SSH timeout before formal TEST metrics were written. The four pre-metric files were preserved; `summary.json` and `overall_metrics.csv` do not exist.
 - Raised `EXP11_EVALUATION_INVALIDATING_GATE`; conservatively marked TEST access as possibly partial, closed model selection, and prohibited any automatic retry pending explicit user + ChatGPT review.
 
