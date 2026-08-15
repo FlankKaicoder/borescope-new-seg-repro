@@ -1,0 +1,163 @@
+{
+  "paired_treatment_minus_control": {
+    "Mask_mAP50_95": {
+      "mean": -0.005543276358790465,
+      "sample_std": 0.03534612474010281,
+      "min": -0.040310844029455783,
+      "max": 0.030354305380867197,
+      "positive_seed_count": 1
+    },
+    "Mask_R": {
+      "mean": 0.0013485328174888123,
+      "sample_std": 0.12107857702812398,
+      "min": -0.12124261740776404,
+      "max": 0.12085561220540836,
+      "positive_seed_count": 2
+    },
+    "fixed_F1": {
+      "mean": -0.005062803669034073,
+      "sample_std": 0.039876334528230084,
+      "min": -0.05085164687550375,
+      "max": 0.022033811857298136,
+      "positive_seed_count": 2
+    },
+    "FP": {
+      "mean": -11.333333333333334,
+      "sample_std": 23.692474191889147,
+      "min": -26.0,
+      "max": 16.0,
+      "positive_seed_count": 1
+    },
+    "FN": {
+      "mean": 5.333333333333333,
+      "sample_std": 18.58314648635514,
+      "min": -10.0,
+      "max": 26.0,
+      "positive_seed_count": 1
+    }
+  },
+  "models": {
+    "baseline100": {
+      "Mask_mAP50_95": {
+        "mean": 0.3078811894021528,
+        "sample_std": 0.014963372702892025
+      },
+      "Mask_R": {
+        "mean": 0.5021574724410682,
+        "sample_std": 0.018286670386647788
+      },
+      "fixed_F1": {
+        "mean": 0.4822430462134511,
+        "sample_std": 0.0063612953371328254
+      },
+      "FP": {
+        "mean": 95.33333333333333,
+        "sample_std": 7.234178138070235
+      },
+      "FN": {
+        "mean": 171.66666666666666,
+        "sample_std": 2.309401076758503
+      }
+    },
+    "uniform_control30": {
+      "Mask_mAP50_95": {
+        "mean": 0.3170409683726932,
+        "sample_std": 0.031949996954070296
+      },
+      "Mask_R": {
+        "mean": 0.513795176925803,
+        "sample_std": 0.07153768777650034
+      },
+      "fixed_F1": {
+        "mean": 0.4805451190703749,
+        "sample_std": 0.027750303937504172
+      },
+      "FP": {
+        "mean": 108.0,
+        "sample_std": 8.717797887081348
+      },
+      "FN": {
+        "mean": 168.0,
+        "sample_std": 12.12435565298214
+      }
+    },
+    "hard_treatment30": {
+      "Mask_mAP50_95": {
+        "mean": 0.31149769201390276,
+        "sample_std": 0.010139504497811256
+      },
+      "Mask_R": {
+        "mean": 0.5151437097432918,
+        "sample_std": 0.051450739922730006
+      },
+      "fixed_F1": {
+        "mean": 0.47548231540134084,
+        "sample_std": 0.01865859159124667
+      },
+      "FP": {
+        "mean": 96.66666666666667,
+        "sample_std": 19.42506971244462
+      },
+      "FN": {
+        "mean": 173.33333333333334,
+        "sample_std": 11.590225767142472
+      }
+    }
+  },
+  "difficult_class_treatment_minus_control": {
+    "Burn": {
+      "Mask_AP50_95": {
+        "mean": 0.008706879271345428,
+        "sample_std": 0.014107108898593596
+      },
+      "Mask_R": {
+        "mean": 0.03292181069958847,
+        "sample_std": 0.1106529190102778
+      }
+    },
+    "Crack": {
+      "Mask_AP50_95": {
+        "mean": 0.010762551182599464,
+        "sample_std": 0.03796253899020949
+      },
+      "Mask_R": {
+        "mean": 0.006011440898786589,
+        "sample_std": 0.3080499484124394
+      }
+    },
+    "corrosion": {
+      "Mask_AP50_95": {
+        "mean": -0.012920174495398043,
+        "sample_std": 0.020685096593803912
+      },
+      "Mask_R": {
+        "mean": -0.030534790430207643,
+        "sample_std": 0.06443171402586922
+      }
+    }
+  },
+  "size_recall_treatment_minus_control": {
+    "tiny": {
+      "mean": -0.003236245954692555,
+      "sample_std": 0.05605342419316753
+    },
+    "small": {
+      "mean": -0.02192982456140352,
+      "sample_std": 0.07596714068284549
+    },
+    "medium": {
+      "mean": -0.04301075268817206,
+      "sample_std": 0.1166802925495199
+    },
+    "large": {
+      "mean": -0.012121212121212116,
+      "sample_std": 0.03784847271756605
+    }
+  },
+  "recommendation": "HARD_MINING_NOT_CONFIRMED",
+  "candidate_freeze_recommendation": "Baseline",
+  "candidate_freeze_executed": false,
+  "exp11_run": false,
+  "test_accessed": false,
+  "statistical_significance_claimed": false
+}

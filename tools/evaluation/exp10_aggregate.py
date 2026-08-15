@@ -263,6 +263,12 @@ def verify_artifacts() -> None:
         "val_batch0_labels.jpg", "val_batch0_pred.jpg",
     ]
     paths = [directory / name for directory in formal_dirs for name in required_names]
+    unified_dirs = [
+        CONTROLLED / f"seed{seed}/unified_val/ultralytics/{model}"
+        for seed in SEEDS for model in MODELS
+    ]
+    unified_required = [name for name in required_names if name != "results.png"]
+    paths += [directory / name for directory in unified_dirs for name in unified_required]
     paths += [FIGURES / name for name in (
         "exp10_mask_map_three_seeds.png", "exp10_paired_hard_mining_delta.png",
         "exp10_mean_std_main_metrics.png", "exp10_fp_fn_three_seeds.png", "exp10_difficult_classes.png",

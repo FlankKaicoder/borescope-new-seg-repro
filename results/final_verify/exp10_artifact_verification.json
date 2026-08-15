@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checked_images": 165,
+  "all_exist": true,
+  "all_nonempty": true,
+  "all_decode_pass": true,
+  "test_accessed": false
+}

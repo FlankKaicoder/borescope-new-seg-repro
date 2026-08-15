@@ -1,0 +1,14 @@
+{
+  "python": "3.12.3",
+  "python_executable": "/root/autodl-tmp/borescope-new-seg-repro/.venv/bin/python",
+  "torch": "2.8.0+cu128",
+  "torchvision": "0.23.0+cu128",
+  "ultralytics": "8.4.117",
+  "cuda_runtime": "12.8",
+  "cudnn": 91002,
+  "gpu": "NVIDIA GeForce RTX 2080 Ti",
+  "gpu_total_memory_bytes": 23069917184,
+  "dataset_split_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "starting_checkpoint_sha256": "09f115c80de4d624f4fb36ee8ede1a65a372cce395d963a8e02e4b6bd65e732c",
+  "git_head": "10a4377395e2129d6ccfceeb0ad6b980171eff0c"
+}

@@ -1,0 +1,20 @@
+{
+  "parameter_dtype_unique": [
+    "torch.float32"
+  ],
+  "buffer_dtype_unique": [
+    "torch.float32"
+  ],
+  "float16_parameter_count": 0,
+  "float32_parameter_count": 291,
+  "other_parameter_count": 0,
+  "float16_buffer_count": 0,
+  "float32_buffer_count": 180,
+  "other_buffer_count": 0,
+  "requested_amp": true,
+  "effective_amp": true,
+  "requested_batch": 32,
+  "trainer_batch_size": 32,
+  "device": "cuda:0",
+  "fp32_master_pass": true
+}
