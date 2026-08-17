@@ -15,3 +15,15 @@
 | Exp10 three-seed/paired figures | `results/final_verify/figures/` | VAL multi-seed |
 
 No figure was created from a new model run; summary figures use existing CSV evidence only.
+
+## Report-learning consolidation (2026-08-17)
+
+| Resource | Path | Scope |
+|---|---|---|
+| Chinese figure guide | `docs/zh/05_图表与可视化索引.md` | Exp00–Exp11 learning/report layer |
+| Existing-figure audit | `results/report_consolidation/figure_audit.csv` | 289 pre-existing PNG/JPG files |
+| Visualization gap matrix | `results/report_consolidation/visualization_gap_matrix.csv` | Existing / newly added / unavailable / inappropriate |
+| New report-figure manifest | `results/report_visualization_retro/figure_manifest.csv` | 18 evidence-derived figures; no new inference |
+| OpenCV decode audit | `results/report_visualization_retro/opencv_decode_audit.json` | 18/18 new PNG files PASS |
+
+The consolidation preserved every historical figure. New figures were written only under `results/report_visualization_retro/` and were derived from frozen CSV/JSON/Markdown evidence or reused qualitative images. No training, inference, threshold selection, checkpoint selection, or TEST access was performed.

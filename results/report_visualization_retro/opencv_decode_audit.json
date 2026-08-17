@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "decoder": "OpenCV cv2.imdecode (Unicode-safe byte input)",
+  "opencv_version": "5.0.0",
+  "manifest_rows": 18,
+  "decoded_png_count": 18,
+  "failed": [],
+  "decoded": [
+    {
+      "figure_path": "results/report_visualization_retro/exp06_roi_ce/per_class_precision_recall_f1_support.png",
+      "width": 1200,
+      "height": 650
+    },
+    {
+      "figure_path": "results/report_visualization_retro/exp06_supcon/ce_vs_supcon_overall.png",
+      "width": 1200,
+      "height": 650
+    },
+    {
+      "figure_path": "results/report_visualization_retro/exp06_supcon/per_class_recall_delta.png",
+      "width": 1100,
+      "height": 610
+    },
+    {
+      "figure_path": "results/report_visualization_retro/exp06_supcon/per_class_f1_delta.png",
+      "width": 1100,
+      "height": 610
+    },
+    {
+      "figure_path": "results/report_visualization_retro/exp06_supcon/ce_vs_supcon_confusion_matrix.png",
+      "width": 1500,
+      "height": 760
+    },
+    {
+      "figure_path": "results/report_visualization_retro/exp07_stage2/fixed_point_quantitative_comparison.png",
+      "width": 1200,
+      "height": 650
+    },
+    {
+      "figure_path": "results/report_visualization_retro/exp07_stage2/fp_fn_comparison.png",
+      "width": 1200,
+      "height": 650
+    },
+    {
+      "figure_path": "results/report_visualization_retro/exp07_stage2/selected_success_failure_cases.png",
+      "width": 1240,
+      "height": 1170
+    },
+    {
+      "figure_path": "results/report_visualization_retro/exp09_simsiam/ssl_training_diagnostics.png",
+      "width": 1100,
+      "height": 620
+    },
+    {
+      "figure_path": "results/report_visualization_retro/exp09_simsiam/backbone_parameter_audit.png",
+      "width": 1200,
+      "height": 650
+    },
+    {
+      "figure_path": "results/report_visualization_retro/exp09_simsiam/transfer_verification_summary.png",
+      "width": 1200,
+      "height": 650
+    },
+    {
+      "figure_path": "results/report_visualization_retro/exp09_simsiam/exp09_failure_chain.png",
+      "width": 1200,
+      "height": 772
+    },
+    {
+      "figure_path": "results/report_visualization_retro/project_overview/full_project_pipeline.png",
+      "width": 1200,
+      "height": 1060
+    },
+    {
+      "figure_path": "results/report_visualization_retro/project_overview/method_relationships.png",
+      "width": 1200,
+      "height": 868
+    },
+    {
+      "figure_path": "results/report_visualization_retro/exp00_dataset/dataset_audit_summary.png",
+      "width": 1200,
+      "height": 650
+    },
+    {
+      "figure_path": "results/report_visualization_retro/exp01_dataset/split_summary.png",
+      "width": 1200,
+      "height": 650
+    },
+    {
+      "figure_path": "results/report_visualization_retro/exp08_kd/kd_engineering_gate.png",
+      "width": 1200,
+      "height": 484
+    },
+    {
+      "figure_path": "results/report_visualization_retro/exp11_final/val_vs_test_generalization.png",
+      "width": 1200,
+      "height": 650
+    }
+  ],
+  "no_training": true,
+  "no_inference": true,
+  "test_accessed": false
+}

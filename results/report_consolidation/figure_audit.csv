@@ -1,0 +1,290 @@
+experiment,figure,exists,what_it_explains,report_quality,missing_information,keep,regenerate,new_figure_needed
+exp02-baseline,results/fast_repro/figures/exp02_baseline/BoxF1_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/BoxPR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/BoxP_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/BoxR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/MaskF1_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/MaskPR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/MaskP_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/MaskR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/confusion_matrix.png,true,类别混淆结构,report_ready,由中文图索引补充讲解口径,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/confusion_matrix_normalized.png,true,类别混淆结构,report_ready,由中文图索引补充讲解口径,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/labels.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/results.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/train_batch0.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/train_batch1.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/train_batch1890.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/train_batch1891.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/train_batch1892.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/train_batch2.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/val_batch0_labels.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/val_batch0_pred.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/val_batch1_labels.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/val_batch1_pred.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/val_batch2_labels.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp02-baseline,results/fast_repro/figures/exp02_baseline/val_batch2_pred.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/LOCALIZATION_FAILURE__10__1.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/LOCALIZATION_FAILURE__10__25.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/LOCALIZATION_FAILURE__32__1.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/LOCALIZATION_FAILURE__32__2.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/LOCALIZATION_FAILURE__42__0.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/LOCALIZATION_FAILURE__47__3.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/LOCALIZATION_FAILURE__47__4.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/LOCALIZATION_FAILURE__62__1.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/LOW_CONF_RECOVERABLE__10__10.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/LOW_CONF_RECOVERABLE__10__15.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/LOW_CONF_RECOVERABLE__10__16.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/LOW_CONF_RECOVERABLE__10__2.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/LOW_CONF_RECOVERABLE__10__20.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/LOW_CONF_RECOVERABLE__10__21.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/LOW_CONF_RECOVERABLE__10__22.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/LOW_CONF_RECOVERABLE__10__23.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/NO_RESPONSE__440__0.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/WRONG_CLASS__47__0.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/WRONG_CLASS__47__1.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/WRONG_CLASS__62__3.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/WRONG_CLASS__62__4.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/WRONG_CLASS__70__1.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/WRONG_CLASS__90__1.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/WRONG_CLASS__92__1.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/WRONG_CLASS__92__2.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/exp03_fn_recovery_summary.png,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/exp03_threshold_f1.png,true,冻结阈值下的权衡或网格结果,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/exp03_threshold_precision_recall.png,true,冻结阈值下的权衡或网格结果,report_ready,由中文图索引补充讲解口径,true,false,false
+exp03-low-conf,results/fast_repro/figures/exp03_low_conf/exp03_threshold_tp_fp_fn.png,true,冻结阈值下的权衡或网格结果,report_ready,由中文图索引补充讲解口径,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/BoxF1_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/BoxPR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/BoxP_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/BoxR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/MaskF1_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/MaskPR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/MaskP_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/MaskR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/confusion_matrix.png,true,类别混淆结构,report_ready,由中文图索引补充讲解口径,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/confusion_matrix_normalized.png,true,类别混淆结构,report_ready,由中文图索引补充讲解口径,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/exp04_crack_multiclass_vs_oneclass.png,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/labels.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/results.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/train_batch0.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/train_batch1.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/train_batch1890.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/train_batch1891.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/train_batch1892.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/train_batch2.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/val_batch0_labels.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/val_batch0_pred.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/val_batch1_labels.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/val_batch1_pred.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/val_batch2_labels.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp04-crack-oneclass,results/fast_repro/figures/exp04_crack_oneclass/val_batch2_pred.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/BoxF1_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/BoxPR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/BoxP_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/BoxR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/MaskF1_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/MaskPR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/MaskP_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/MaskR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/confusion_matrix.png,true,类别混淆结构,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/confusion_matrix_normalized.png,true,类别混淆结构,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/exp05_control_vs_hard_mining_errors.png,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/exp05_control_vs_hard_mining_metrics.png,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/labels.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/results.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/train_batch0.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/train_batch1.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/train_batch2.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/train_batch420.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/train_batch421.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/train_batch422.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/val_batch0_labels.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/val_batch0_pred.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/val_batch1_labels.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/val_batch1_pred.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/val_batch2_labels.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/comparison/val_batch2_pred.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/BoxF1_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/BoxPR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/BoxP_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/BoxR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/MaskF1_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/MaskPR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/MaskP_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/MaskR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/confusion_matrix.png,true,类别混淆结构,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/confusion_matrix_normalized.png,true,类别混淆结构,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/labels.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/results.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/train_batch0.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/train_batch1.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/train_batch2.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/train_batch420.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/train_batch421.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/train_batch422.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/val_batch0_labels.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/val_batch0_pred.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/val_batch1_labels.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/val_batch1_pred.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/val_batch2_labels.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/control/val_batch2_pred.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/BoxF1_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/BoxPR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/BoxP_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/BoxR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/MaskF1_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/MaskPR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/MaskP_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/MaskR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/confusion_matrix.png,true,类别混淆结构,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/confusion_matrix_normalized.png,true,类别混淆结构,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/labels.jpg,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/results.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/train_batch0.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/train_batch1.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/train_batch2.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/train_batch420.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/train_batch421.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/train_batch422.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/val_batch0_labels.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/val_batch0_pred.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/val_batch1_labels.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/val_batch1_pred.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/val_batch2_labels.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp05-hard-mining,results/fast_repro/figures/exp05_hard_mining/treatment/val_batch2_pred.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp06-roi-ce,results/fast_repro/figures/exp06_roi_ce/accuracy_macro_f1.png,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp06-roi-ce,results/fast_repro/figures/exp06_roi_ce/confusion_matrix.png,true,类别混淆结构,report_ready,由中文图索引补充讲解口径,true,false,false
+exp06-roi-ce,results/fast_repro/figures/exp06_roi_ce/confusion_matrix_normalized.png,true,类别混淆结构,report_ready,由中文图索引补充讲解口径,true,false,false
+exp06-roi-ce,results/fast_repro/figures/exp06_roi_ce/per_class_f1.png,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp06-roi-ce,results/fast_repro/figures/exp06_roi_ce/training_loss.png,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp06-supcon,results/fast_repro/figures/exp06_supcon/accuracy_macro_f1.png,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp06-supcon,results/fast_repro/figures/exp06_supcon/confusion_matrix.png,true,类别混淆结构,report_ready,由中文图索引补充讲解口径,true,false,false
+exp06-supcon,results/fast_repro/figures/exp06_supcon/confusion_matrix_normalized.png,true,类别混淆结构,report_ready,由中文图索引补充讲解口径,true,false,false
+exp06-supcon,results/fast_repro/figures/exp06_supcon/embedding_std.png,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp06-supcon,results/fast_repro/figures/exp06_supcon/exp06_ce_vs_supcon.png,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp06-supcon,results/fast_repro/figures/exp06_supcon/per_class_f1.png,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp06-supcon,results/fast_repro/figures/exp06_supcon/training_loss.png,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/exp07_stage1_threshold_tradeoff.png,true,冻结阈值下的权衡或网格结果,report_ready,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/exp07_stage2_main_comparison.png,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/exp07_stage2_modeA_grid.png,true,冻结阈值下的权衡或网格结果,report_ready,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/exp07_stage2_modeB_grid.png,true,冻结阈值下的权衡或网格结果,report_ready,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/error_filter_tp__10.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/error_filter_tp__160.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/error_filter_tp__245.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/error_filter_tp__251.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/error_filter_tp__262.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/error_filter_tp__308.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/error_filter_tp__364.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/error_filter_tp__41.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/error_reclassify__10.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/error_reclassify__160.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/error_reclassify__187.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/error_reclassify__245.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/error_reclassify__41.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/error_reclassify__42.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/success_filter_fp__10.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/success_filter_fp__45.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/success_filter_fp__60.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/success_filter_fp__62.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/success_filter_fp__70.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/success_filter_fp__78.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/success_keep_low_conf_tp__10.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/success_keep_low_conf_tp__251.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/success_keep_low_conf_tp__267.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/success_keep_low_conf_tp__42.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/success_keep_low_conf_tp__432.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/success_keep_low_conf_tp__61.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/success_reclassify__422.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/success_reclassify__60.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/success_reclassify__648.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/success_reclassify__671.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp07-stage2,results/fast_repro/figures/exp07_stage2/qualitative/success_reclassify__704.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp09-simsiam,results/fast_repro/figures/exp09_simsiam/exp09_feature_std.png,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp09-simsiam,results/fast_repro/figures/exp09_simsiam/exp09_simsiam_loss.png,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp09-simsiam,results/fast_repro/figures/exp09_simsiam/exp09_transfer_verification.png,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp09-simsiam,results/fast_repro/figures/exp09_simsiam/exp09_transfer_verification_summary.png,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/artifacts/baseline_test_qualitative_grid.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/artifacts/ultralytics/final_seed44_baseline/BoxF1_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/artifacts/ultralytics/final_seed44_baseline/BoxPR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/artifacts/ultralytics/final_seed44_baseline/BoxP_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/artifacts/ultralytics/final_seed44_baseline/BoxR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/artifacts/ultralytics/final_seed44_baseline/MaskF1_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/artifacts/ultralytics/final_seed44_baseline/MaskPR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/artifacts/ultralytics/final_seed44_baseline/MaskP_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/artifacts/ultralytics/final_seed44_baseline/MaskR_curve.png,true,训练或 P/R/F1/PR 曲线,report_ready,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/artifacts/ultralytics/final_seed44_baseline/confusion_matrix.png,true,类别混淆结构,report_ready,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/artifacts/ultralytics/final_seed44_baseline/confusion_matrix_normalized.png,true,类别混淆结构,report_ready,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/artifacts/ultralytics/final_seed44_baseline/val_batch0_labels.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/artifacts/ultralytics/final_seed44_baseline/val_batch0_pred.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/artifacts/ultralytics/final_seed44_baseline/val_batch1_labels.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/artifacts/ultralytics/final_seed44_baseline/val_batch1_pred.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/artifacts/ultralytics/final_seed44_baseline/val_batch2_labels.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/artifacts/ultralytics/final_seed44_baseline/val_batch2_pred.jpg,true,训练或评估过程的原始可视化证据,supporting,需要中文图注与上下文,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/001_40.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/002_230.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/003_248.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/004_309.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/005_768.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/006_775.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/007_811.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/008_829.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/009_4.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/010_16.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/011_22.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/012_30.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/013_36.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/014_5.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/015_11.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/016_19.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/017_46.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/018_186.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/019_39.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/020_212.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/021_310.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/022_357.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/023_383.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/024_425.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/025_433.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/026_118.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/027_74.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/028_77.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/029_158.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/030_152.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/031_162.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/032_181.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/033_201.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/034_218.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/035_232.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/036_280.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/037_293.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/038_320.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/039_323.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/040_324.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/041_340.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/042_342.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/043_350.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/044_371.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/045_372.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/046_390.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/047_400.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/048_403.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/049_430.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/050_437.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/051_438.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/052_453.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/053_454.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/054_472.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/055_477.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/056_490.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/057_491.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/058_493.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/059_496.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/060_502.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/061_504.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/062_507.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/063_511.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp11-retry1,results/final_test/exp11_retry1/qualitative/064_515.jpg,true,成功与失败的定性案例,good,由中文图索引补充讲解口径,true,false,false
+exp10,results/final_verify/figures/exp10/exp10_difficult_classes.png,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp10,results/final_verify/figures/exp10/exp10_fp_fn_three_seeds.png,true,三随机种子稳健性或配对效应,report_ready,由中文图索引补充讲解口径,true,false,false
+exp10,results/final_verify/figures/exp10/exp10_mask_map_three_seeds.png,true,三随机种子稳健性或配对效应,report_ready,由中文图索引补充讲解口径,true,false,false
+exp10,results/final_verify/figures/exp10/exp10_mean_std_main_metrics.png,true,训练或评估过程的原始可视化证据,report_ready,由中文图索引补充讲解口径,true,false,false
+exp10,results/final_verify/figures/exp10/exp10_paired_hard_mining_delta.png,true,三随机种子稳健性或配对效应,report_ready,由中文图索引补充讲解口径,true,false,false

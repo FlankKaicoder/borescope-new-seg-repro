@@ -1,0 +1,14 @@
+experiment,existing_visualization,missing_or_needed,disposition,rationale
+Exp00,已有 dataset audit/contact sheets；最终 class/size distribution 可复用,项目级数据审计摘要图,新补,仅基于现有 CSV
+Exp01,已有 50 张 round-trip overlays 与 split 证据,split/leakage 汇报摘要,新补,仅基于 manifest 审计事实
+Exp02,已有训练曲线、PR/P/R/F1、confusion matrix、size/error 表,无需重新推理,已有,复用原图
+Exp03,已有 threshold、FN recovery、定性错误图,无需新增,已有,复用原图
+Exp04,已有 one-class comparison 和标准曲线,无需新增,已有,复用原图
+Exp05,已有 Control/Treatment 对比；但单 seed 结论已被 Exp10 覆盖,汇报时需显著标注 preliminary,已有,不得包装为最终提升
+Exp06 CE,已有 raw/normalized confusion matrix、F1、training curves,P/R/F1+support 汇报合并图；样本级预测无缓存,新补+无法补,不做重新推理
+Exp06 SupCon,已有 confusion matrix、CE vs SupCon 总指标、loss/std,Recall/F1 delta；t-SNE/迁移案例缺 embedding/逐样本预测,新补+无法补,t-SNE 不作为定量证据，不重新推理
+Exp07,已有 grid、主对比、5 类定性案例,数值热图和统一 P/R/F1/FP/FN 图；复用案例 contact sheet,新补,AP 保持 N/A
+Exp08,已有工程 Gate 文档,工程 Gate 流程摘要,新补,不得写 KD negative
+Exp09,已有 loss/std/transfer 图,参数 changed/unchanged 图和 failure-chain 图,新补,只做工程诊断；不得做下游分割对比
+Exp10,已有 5 张三 seed 图,无需新增模型结果,已有,复用原图
+Exp11,已有 TEST confusion/curves/64 cases/grid,VAL vs TEST 汇报摘要,新补,只读既有 TEST CSV；不重新访问 TEST

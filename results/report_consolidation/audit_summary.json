@@ -1,0 +1,16 @@
+{
+  "markdown_count": 61,
+  "english_dominant_markdown": 26,
+  "mixed_markdown": 17,
+  "zh_dominant_markdown": 18,
+  "audited_existing_visualizations": 289,
+  "audit_scope": [
+    "results/fast_repro/figures",
+    "results/final_verify/figures",
+    "results/final_test",
+    "results/project_review"
+  ],
+  "no_training": true,
+  "no_inference": true,
+  "test_accessed": false
+}
