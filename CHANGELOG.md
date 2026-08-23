@@ -99,3 +99,11 @@
 - Early AMP validation-loss NaN accounting was retained as a caveat (A epochs 1--5; B epochs 1--6); no retry or protocol change occurred.
 - Status is a positive single-seed VAL signal only. TEST access remained zero and Exp00--Exp11 final conclusions were not modified.
 - Multi-scale Local Change Localization remains unimplemented and requires separate authorization.
+
+## 2026-08-23 — Exp12.4/12.5 multi-scale local-change completion
+
+- Added a new TRAIN-only P3/P4/P5 local-change localization proxy with texture transplant, photometric change and blur masks; historical gas-pore code was not copied.
+- Exp12.4 smoke and fixed 30-epoch formal Gates PASS: 120/120 backbone tensors changed, all 1,365,472 formal elements changed, checkpoint/export reload 120/120, no collapse, VAL/TEST access 0/0.
+- Retained one Exp12.5 smoke HARD_GATE caused only by relative-vs-absolute YAML string comparison; v2 normalized resolved path and SHA without changing the training protocol.
+- Exp12.5 Route C fairness Gate PASS and 100 epochs completed. Frozen VAL Mask mAP50-95 A/B/C = 0.298981/0.321897/0.293530.
+- Local-change proxy learning is valid but shows no Mask mAP50-95 downstream gain in this single seed. TEST remained untouched and Exp00-Exp11 conclusions were not modified.

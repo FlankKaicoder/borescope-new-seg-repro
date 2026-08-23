@@ -1,0 +1,15 @@
+{
+  "route": "c",
+  "phase": "formal",
+  "official_weights": "/root/autodl-tmp/borescope-new-seg-repro/weights/yolo11n-seg.pt",
+  "official_weights_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+  "ssl_backbone": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_local_change/formal_20260823T064923Z/adapted_backbone_final.pt",
+  "ssl_backbone_sha256": "e0358d2674752fb7a151a4fe9f6ef1a1d58bc0cf0a60de3b55ad61b5060bdbf0",
+  "data_yaml": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_downstream_ab/formal_20260822T090202Z/exp12_train_val_only.yaml",
+  "data_yaml_sha256": "ae5016bcbaec327d55d75a0044b94e6cfde05a687995260f128e0ffb9ec7b9aa",
+  "train_image_count": 668,
+  "val_image_count": 154,
+  "test_path_present_in_yaml": false,
+  "torch_version": "2.8.0+cu128",
+  "cuda_device": "NVIDIA GeForce RTX 2080 Ti"
+}

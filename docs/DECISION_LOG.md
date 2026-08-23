@@ -20,3 +20,5 @@
 | 2026-08-22 | D016 | Exp12.1-S 是否证明 YOLO backbone 被真实更新，能否自动进入正式 SSL？ | 工程 Gate PASS：单步和一整个 epoch 均改变 `120/120` encoder 参数，梯度、collapse、checkpoint/export reload 和 TRAIN-only Gate 全 PASS；但只授权到 smoke，正式 SSL 仍需单独确认。 | Exp12.1-S–12.2 |
 | 2026-08-22 | D017 | Exp12.1/12.2 是否完成且可否自动进入下游？ | 100-epoch TRAIN-only SimSiam 与正式参数审计 PASS：120/120 encoder 参数变化且 checkpoint/export round-trip 120/120；但这只证明真实域适配更新，不能证明 mAP 收益，Exp12.3 Route A/B 仍需单独确认。 | Exp12.1–12.3 |
 | 2026-08-22 | D018 | Exp12.3 公平下游是否支持普通 SimSiam 的表征收益结论？ | 工程和公平性 Gate PASS；单 seed42 冻结 VAL 上 Route B Mask mAP50-95 比 Route A 高 0.022916，但 precision 上升、recall 下降。结论限定为单种子 VAL 正信号，不替换最终 Baseline、不推断 TEST 泛化、不自动进入 Multi-scale。 | Exp12.3 |
+| 2026-08-23 | D019 | 是否授权在普通 SimSiam 通过后进入 Multi-scale Local Change？ | 已明确授权。仍按 TRAIN-only SSL、smoke-first、backbone-update hard Gate 执行；任何 changed_ratio=0 立即标记 INVALID_BY_BACKBONE_NO_UPDATE 并停止。 | Exp12.4 |
+| 2026-08-23 | D020 | Exp12.4/12.5 是否证明局部变化表征优于 COCO 或 SimSiam？ | 否。工程与代理任务 Gate 均 PASS，但单 seed42 冻结 VAL Mask mAP50-95 Route C=0.293530，低于 A=0.298981 与 B=0.321897。结论为代理任务有效但无下游 Mask 增益；不访问 TEST，不改变 Exp00-Exp11。 | Exp12.4-12.5 |

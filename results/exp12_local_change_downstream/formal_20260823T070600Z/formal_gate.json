@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "phase": "formal",
+  "checks": {
+    "locked_route_a_pass": true,
+    "locked_route_b_pass": true,
+    "new_route_c_pass": true,
+    "route_c_local_backbone_exact_after_trainer_setup": true,
+    "route_c_backbone_really_differs_from_official": true,
+    "neck_head_identical_after_model_construction": true,
+    "neck_head_identical_after_trainer_setup": true,
+    "first_train_batch_stems_identical": true,
+    "first_train_batch_tensor_identical": true,
+    "training_arguments_identical": true,
+    "local_backbone_hash_exact": true,
+    "test_access_zero": true
+  },
+  "reference_exp12_3": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_downstream_ab/formal_20260822T090202Z",
+  "reference_route_a_checkpoint_sha256": "d053cc65b3b61826d08cfd0f20261b6cdff6050c747ac87cadb66afd64a34c25",
+  "reference_route_b_checkpoint_sha256": "da7276bba76955056b5217f241962cf416657abe42d9a105113f1de68b1e477c",
+  "route_c_changed_parameter_count": 120,
+  "route_c_total_parameter_count": 120,
+  "route_c_changed_ratio": 1.0,
+  "local_backbone_sha256": "e0358d2674752fb7a151a4fe9f6ef1a1d58bc0cf0a60de3b55ad61b5060bdbf0",
+  "test_accessed": false,
+  "frozen_val_comparison_status": "PASS"
+}

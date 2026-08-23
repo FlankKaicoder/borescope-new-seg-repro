@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "primary_metric": "metrics/mAP50-95(M)",
+  "selection_policy": "ULTRALYTICS_BEST_BY_FROZEN_VAL_FITNESS",
+  "evaluation_split": "val",
+  "route_a_vs_c": {
+    "fitness": {
+      "reference": 0.6368116233735622,
+      "candidate": 0.634464429401215,
+      "candidate_minus_reference": -0.0023471939723472834
+    },
+    "metrics/mAP50(B)": {
+      "reference": 0.5937538324254982,
+      "candidate": 0.567798050287461,
+      "candidate_minus_reference": -0.025955782138037176
+    },
+    "metrics/mAP50(M)": {
+      "reference": 0.5319196336254952,
+      "candidate": 0.5302805828458003,
+      "candidate_minus_reference": -0.0016390507796949505
+    },
+    "metrics/mAP50-95(B)": {
+      "reference": 0.33783038924428727,
+      "candidate": 0.34093456820506846,
+      "candidate_minus_reference": 0.00310417896078119
+    },
+    "metrics/mAP50-95(M)": {
+      "reference": 0.29898123412927496,
+      "candidate": 0.29352986119614655,
+      "candidate_minus_reference": -0.005451372933128418
+    },
+    "metrics/precision(B)": {
+      "reference": 0.6905834635943638,
+      "candidate": 0.721781025744382,
+      "candidate_minus_reference": 0.03119756215001812
+    },
+    "metrics/precision(M)": {
+      "reference": 0.6629227853627156,
+      "candidate": 0.6696851236993636,
+      "candidate_minus_reference": 0.006762338336647966
+    },
+    "metrics/recall(B)": {
+      "reference": 0.5814337730849287,
+      "candidate": 0.5149298657922995,
+      "candidate_minus_reference": -0.06650390729262923
+    },
+    "metrics/recall(M)": {
+      "reference": 0.5230236529730811,
+      "candidate": 0.48671626621271485,
+      "candidate_minus_reference": -0.03630738676036621
+    }
+  },
+  "route_b_vs_c": {
+    "fitness": {
+      "reference": 0.6762512092332065,
+      "candidate": 0.634464429401215,
+      "candidate_minus_reference": -0.04178677983199153
+    },
+    "metrics/mAP50(B)": {
+      "reference": 0.5873950499448899,
+      "candidate": 0.567798050287461,
+      "candidate_minus_reference": -0.019596999657428893
+    },
+    "metrics/mAP50(M)": {
+      "reference": 0.5616547081743521,
+      "candidate": 0.5302805828458003,
+      "candidate_minus_reference": -0.03137412532855188
+    },
+    "metrics/mAP50-95(B)": {
+      "reference": 0.35435405828796684,
+      "candidate": 0.34093456820506846,
+      "candidate_minus_reference": -0.013419490082898389
+    },
+    "metrics/mAP50-95(M)": {
+      "reference": 0.3218971509452397,
+      "candidate": 0.29352986119614655,
+      "candidate_minus_reference": -0.02836728974909314
+    },
+    "metrics/precision(B)": {
+      "reference": 0.7267607687059817,
+      "candidate": 0.721781025744382,
+      "candidate_minus_reference": -0.0049797429615997535
+    },
+    "metrics/precision(M)": {
+      "reference": 0.731249106064933,
+      "candidate": 0.6696851236993636,
+      "candidate_minus_reference": -0.06156398236556937
+    },
+    "metrics/recall(B)": {
+      "reference": 0.490576034427385,
+      "candidate": 0.5149298657922995,
+      "candidate_minus_reference": 0.02435383136491448
+    },
+    "metrics/recall(M)": {
+      "reference": 0.4748876276808752,
+      "candidate": 0.48671626621271485,
+      "candidate_minus_reference": 0.01182863853183963
+    }
+  },
+  "route_metrics": {
+    "a": {
+      "metrics/precision(B)": 0.6905834635943638,
+      "metrics/recall(B)": 0.5814337730849287,
+      "metrics/mAP50(B)": 0.5937538324254982,
+      "metrics/mAP50-95(B)": 0.33783038924428727,
+      "metrics/precision(M)": 0.6629227853627156,
+      "metrics/recall(M)": 0.5230236529730811,
+      "metrics/mAP50(M)": 0.5319196336254952,
+      "metrics/mAP50-95(M)": 0.29898123412927496,
+      "fitness": 0.6368116233735622
+    },
+    "b": {
+      "metrics/precision(B)": 0.7267607687059817,
+      "metrics/recall(B)": 0.490576034427385,
+      "metrics/mAP50(B)": 0.5873950499448899,
+      "metrics/mAP50-95(B)": 0.35435405828796684,
+      "metrics/precision(M)": 0.731249106064933,
+      "metrics/recall(M)": 0.4748876276808752,
+      "metrics/mAP50(M)": 0.5616547081743521,
+      "metrics/mAP50-95(M)": 0.3218971509452397,
+      "fitness": 0.6762512092332065
+    },
+    "c": {
+      "metrics/precision(B)": 0.721781025744382,
+      "metrics/recall(B)": 0.5149298657922995,
+      "metrics/mAP50(B)": 0.567798050287461,
+      "metrics/mAP50-95(B)": 0.34093456820506846,
+      "metrics/precision(M)": 0.6696851236993636,
+      "metrics/recall(M)": 0.48671626621271485,
+      "metrics/mAP50(M)": 0.5302805828458003,
+      "metrics/mAP50-95(M)": 0.29352986119614655,
+      "fitness": 0.634464429401215
+    }
+  },
+  "test_accessed": false,
+  "conclusion_scope": "INDEPENDENT_EXP12_RESEARCH_EXTENSION_ONLY",
+  "exp00_exp11_conclusions_modified": false
+}

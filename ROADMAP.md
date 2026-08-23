@@ -19,3 +19,5 @@
 - [x] Exp12.2 final parameter/checkpoint/export audit (`PASS`; 120/120 changed)
 - [x] Exp12.3-S downstream fairness/Trainer-initialization smoke (PASS)
 - [x] Exp12.3 Route A/B 100-epoch frozen-VAL comparison (PASS; single-seed positive signal)
+- [x] Exp12.4 multi-scale local-change SSL smoke and 30-epoch formal audit (PASS; backbone update 120/120)
+- [x] Exp12.5 Route C 100-epoch frozen-VAL comparison (PASS; no Mask mAP50-95 gain; TEST untouched)

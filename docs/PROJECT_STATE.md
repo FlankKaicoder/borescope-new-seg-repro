@@ -42,3 +42,13 @@ No required experiment remains. Future work is outside the closed experimental p
 - Both routes completed 100/100 epochs, 66,800 TRAIN draws and 1,066 optimizer steps with finite TRAIN losses and reloadable checkpoints; TEST access was zero.
 - Frozen VAL Mask mAP50-95 was 0.298981 for Route A and 0.321897 for Route B, delta +0.022916. Mask precision increased while mask recall decreased.
 - This is a positive single-seed VAL signal only; it does not replace the final Baseline or modify Exp00–Exp11. Multi-scale work remains outside scope pending separate authorization.
+
+### Authorized Exp12 continuation (2026-08-23)
+
+- This section supersedes the earlier `Multi-scale work remains outside scope pending separate authorization` boundary: the user explicitly authorized completing the remaining Exp12 work.
+- Current extension status: `EXP12_COMPLETE_LOCAL_CHANGE_VALID_PROXY_NO_FROZEN_VAL_MASK_GAIN`.
+- Exp12.4-S and 30-epoch formal multi-scale local-change SSL PASS; first-step and formal final audits changed 120/120 backbone tensors, and formal changed all 1,365,472 elements.
+- Exp12.4 formal proxy IoU ended at 0.952284 without collapse; checkpoint/export round trip matched 120/120 parameter hashes; SSL VAL/TEST access stayed 0/0.
+- Exp12.5 Route C fairness and Trainer-initialization Gates PASS; 100 epochs, 66,800 TRAIN draws and 1,066 optimizer steps completed; TEST access was zero.
+- Frozen VAL Mask mAP50-95: Route A COCO 0.298981, Route B SimSiam 0.321897, Route C local change 0.293530. Route C minus A = -0.005451; Route C minus B = -0.028367.
+- The local-change proxy is valid but produced no single-seed frozen-VAL Mask mAP50-95 gain. Exp12 is complete and Exp00-Exp11 remain unchanged.

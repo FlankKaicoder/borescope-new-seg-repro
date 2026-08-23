@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "route": "c",
+  "phase": "smoke",
+  "checks": {
+    "epochs_complete": true,
+    "train_losses_finite": true,
+    "train_images_seen_exact": true,
+    "optimizer_steps_positive": true,
+    "checkpoints_valid": true,
+    "no_test_loader": true
+  },
+  "epochs_requested": 1,
+  "epochs_completed": 1,
+  "train_images_seen": 668,
+  "expected_train_images_seen": 668,
+  "optimizer_steps": 10,
+  "first_train_batch": {
+    "stems": [
+      "551",
+      "678",
+      "99",
+      "457",
+      "622",
+      "719",
+      "959",
+      "65",
+      "199",
+      "6",
+      "103",
+      "271",
+      "745",
+      "135",
+      "428",
+      "291",
+      "715",
+      "966",
+      "747",
+      "480",
+      "624",
+      "958",
+      "410",
+      "895",
+      "478",
+      "202",
+      "195",
+      "620",
+      "445",
+      "524",
+      "423",
+      "427"
+    ],
+    "input_shape": [
+      32,
+      3,
+      640,
+      640
+    ],
+    "input_dtype": "torch.float32",
+    "input_sha256": "2ee95ef7f78d42707bc660966b073c636299ce70970d7dad4a42da03f2497b2f",
+    "input_finite": true,
+    "targets_finite": true
+  },
+  "loader_paths": [
+    {
+      "mode": "train",
+      "path": "/root/autodl-tmp/borescope-new-seg-data/v1/images/train"
+    },
+    {
+      "mode": "val",
+      "path": "/root/autodl-tmp/borescope-new-seg-data/v1/images/val"
+    }
+  ],
+  "final_epoch_metrics": {
+    "epoch": 1.0,
+    "time": 26.5627,
+    "train/box_loss": 3.0195,
+    "train/seg_loss": 5.92421,
+    "train/cls_loss": 5.19668,
+    "train/dfl_loss": 2.45748,
+    "train/sem_loss": 0.0,
+    "metrics/precision(B)": 0.0,
+    "metrics/recall(B)": 0.0,
+    "metrics/mAP50(B)": 0.0,
+    "metrics/mAP50-95(B)": 0.0,
+    "metrics/precision(M)": 0.0,
+    "metrics/recall(M)": 0.0,
+    "metrics/mAP50(M)": 0.0,
+    "metrics/mAP50-95(M)": 0.0,
+    "val/box_loss": NaN,
+    "val/seg_loss": NaN,
+    "val/cls_loss": NaN,
+    "val/dfl_loss": NaN,
+    "val/sem_loss": 0.0,
+    "lr/pg0": 0.01,
+    "lr/pg1": 0.01,
+    "lr/pg2": 0.01
+  },
+  "checkpoints": {
+    "best.pt": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_local_change_downstream/smoke_20260823T070449Z/route_c/ultralytics/train/weights/best.pt",
+      "exists": true,
+      "sha256": "90983ad90e233f3605b85b3c42fa8a168a423a60718785768122bf120c3857ac",
+      "state_finite": true,
+      "torch_load_pass": true,
+      "yolo_reload_pass": true
+    },
+    "last.pt": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_local_change_downstream/smoke_20260823T070449Z/route_c/ultralytics/train/weights/last.pt",
+      "exists": true,
+      "sha256": "8e7f28a1168f5b924928d5d9d2d9960227b6abca324eb772400aaafbd445e3b0",
+      "state_finite": true,
+      "torch_load_pass": true,
+      "yolo_reload_pass": true
+    }
+  },
+  "save_dir": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_local_change_downstream/smoke_20260823T070449Z/route_c/ultralytics/train",
+  "val_accessed": true,
+  "test_accessed": false,
+  "retry_performed": false,
+  "hyperparameters_modified": false,
+  "wall_seconds": 43.989823929965496
+}

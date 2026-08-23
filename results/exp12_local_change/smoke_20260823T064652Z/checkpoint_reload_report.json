@@ -1,0 +1,9 @@
+{
+  "final_checkpoint": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_local_change/smoke_20260823T064652Z/last.pt",
+  "final_checkpoint_sha256": "88c3895405cc32d8e54dca6fce102db77a124712779439b05cb52901b92e3832",
+  "backbone_export": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_local_change/smoke_20260823T064652Z/adapted_backbone_final.pt",
+  "backbone_export_sha256": "1c2127b6e957517e2028cb714204b0534f56df438114d4b5fa4cd3c7fbd48f51",
+  "checkpoint_reload_match_count": 120,
+  "export_reload_match_count": 120,
+  "status": "PASS"
+}

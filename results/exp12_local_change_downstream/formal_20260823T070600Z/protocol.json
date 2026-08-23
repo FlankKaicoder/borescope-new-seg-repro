@@ -1,0 +1,14 @@
+{
+  "scope": "EXP12.5_LOCAL_CHANGE_DOWNSTREAM_ABC",
+  "phase": "formal",
+  "route_a": "locked Exp12.3 official COCO reference",
+  "route_b": "locked Exp12.3 SimSiam reference",
+  "route_c": "new Exp12.4 local-change backbone supervised fine-tuning",
+  "reference_retrained": false,
+  "epochs": 100,
+  "data_yaml": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_downstream_ab/formal_20260822T090202Z/exp12_train_val_only.yaml",
+  "data_yaml_sha256": "ae5016bcbaec327d55d75a0044b94e6cfde05a687995260f128e0ffb9ec7b9aa",
+  "selection_policy": "ULTRALYTICS_BEST_BY_FROZEN_VAL_FITNESS",
+  "test_in_yaml": false,
+  "test_accessed": false
+}

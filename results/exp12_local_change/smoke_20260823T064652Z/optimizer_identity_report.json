@@ -1,0 +1,12 @@
+{
+  "optimizer_parameter_object_count": 134,
+  "optimizer_unique_parameter_object_count": 134,
+  "optimizer_duplicate_object_count": 0,
+  "model_parameter_object_count": 134,
+  "encoder_parameter_tensor_count": 120,
+  "encoder_parameter_element_count": 1365472,
+  "encoder_parameters_present_exactly_once": 120,
+  "all_model_parameters_present_exactly_once": true,
+  "no_optimizer_duplicates": true,
+  "status": "PASS"
+}
