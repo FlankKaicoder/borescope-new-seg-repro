@@ -1,0 +1,5 @@
+{"time_monotonic": 5019220.863512607, "event": "DATA_GATE_PASS", "train_images": 668, "split_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d"}
+{"time_monotonic": 5019221.51259972, "event": "EXPLICIT_UNFREEZE_PASS", "framework_load": 0, "after_unfreeze": 120}
+{"time_monotonic": 5019221.757476651, "event": "OPTIMIZER_IDENTITY_PASS", "encoder_parameters": 120}
+{"time_monotonic": 5019234.920853023, "event": "SINGLE_STEP_UPDATE_PASS", "changed_parameter_count": 120, "changed_ratio": 1.0, "encoder_nonzero_gradient_tensors": 120}
+{"time_monotonic": 5019264.980303177, "event": "EXP12_1S_COMPLETE", "status": "PASS", "changed_ratio": 1.0}

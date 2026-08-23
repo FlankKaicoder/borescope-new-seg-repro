@@ -1,0 +1,241 @@
+{
+  "status": "PASS",
+  "gates": {
+    "train_manifest_exact_set_668": true,
+    "train_symlink_targets_frozen_read_only_source": true,
+    "encoder_layer_count_11": true,
+    "encoder_class_sequence": true,
+    "encoder_output_shape": true,
+    "parameter_tensor_count_120": true,
+    "parameter_element_count_1365472": true,
+    "state_tensor_count_240": true,
+    "all_parameters_finite": true
+  },
+  "training_performed": false,
+  "optimizer_created": false,
+  "backward_called": false,
+  "test_accessed": false,
+  "val_images_seen": 0,
+  "test_images_seen": 0,
+  "data_root": "/root/autodl-tmp/borescope-new-seg-data/v1",
+  "ssl_input_root": "/root/autodl-tmp/borescope-new-seg-data/v1/images/train",
+  "ssl_train_image_count": 668,
+  "ssl_train_symlink_count": 668,
+  "read_only_source_root": "/root/autodl-tmp/损伤训练数据集",
+  "split_manifest": "/root/autodl-tmp/borescope-new-seg-repro/results/dataset_build/exp01_1_split_20260812T122306Z/artifacts/split_manifest.csv",
+  "split_manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "official_weights": "/root/autodl-tmp/borescope-new-seg-repro/weights/yolo11n-seg.pt",
+  "official_weights_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+  "encoder_layer_range": [
+    0,
+    10
+  ],
+  "encoder_layer_count": 11,
+  "input_shape": [
+    2,
+    3,
+    512,
+    512
+  ],
+  "encoder_output_shape": [
+    2,
+    256,
+    16,
+    16
+  ],
+  "pooled_feature_dimension": 256,
+  "parameter_tensor_count": 120,
+  "parameter_element_count": 1365472,
+  "state_tensor_count": 240,
+  "all_parameters_finite": true,
+  "requires_grad_true_at_framework_load": 0,
+  "layers": [
+    {
+      "index": 0,
+      "class": "Conv",
+      "from": -1,
+      "input_shape": [
+        2,
+        3,
+        512,
+        512
+      ],
+      "output_shape": [
+        2,
+        16,
+        256,
+        256
+      ]
+    },
+    {
+      "index": 1,
+      "class": "Conv",
+      "from": -1,
+      "input_shape": [
+        2,
+        16,
+        256,
+        256
+      ],
+      "output_shape": [
+        2,
+        32,
+        128,
+        128
+      ]
+    },
+    {
+      "index": 2,
+      "class": "C3k2",
+      "from": -1,
+      "input_shape": [
+        2,
+        32,
+        128,
+        128
+      ],
+      "output_shape": [
+        2,
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "index": 3,
+      "class": "Conv",
+      "from": -1,
+      "input_shape": [
+        2,
+        64,
+        128,
+        128
+      ],
+      "output_shape": [
+        2,
+        64,
+        64,
+        64
+      ]
+    },
+    {
+      "index": 4,
+      "class": "C3k2",
+      "from": -1,
+      "input_shape": [
+        2,
+        64,
+        64,
+        64
+      ],
+      "output_shape": [
+        2,
+        128,
+        64,
+        64
+      ]
+    },
+    {
+      "index": 5,
+      "class": "Conv",
+      "from": -1,
+      "input_shape": [
+        2,
+        128,
+        64,
+        64
+      ],
+      "output_shape": [
+        2,
+        128,
+        32,
+        32
+      ]
+    },
+    {
+      "index": 6,
+      "class": "C3k2",
+      "from": -1,
+      "input_shape": [
+        2,
+        128,
+        32,
+        32
+      ],
+      "output_shape": [
+        2,
+        128,
+        32,
+        32
+      ]
+    },
+    {
+      "index": 7,
+      "class": "Conv",
+      "from": -1,
+      "input_shape": [
+        2,
+        128,
+        32,
+        32
+      ],
+      "output_shape": [
+        2,
+        256,
+        16,
+        16
+      ]
+    },
+    {
+      "index": 8,
+      "class": "C3k2",
+      "from": -1,
+      "input_shape": [
+        2,
+        256,
+        16,
+        16
+      ],
+      "output_shape": [
+        2,
+        256,
+        16,
+        16
+      ]
+    },
+    {
+      "index": 9,
+      "class": "SPPF",
+      "from": -1,
+      "input_shape": [
+        2,
+        256,
+        16,
+        16
+      ],
+      "output_shape": [
+        2,
+        256,
+        16,
+        16
+      ]
+    },
+    {
+      "index": 10,
+      "class": "C2PSA",
+      "from": -1,
+      "input_shape": [
+        2,
+        256,
+        16,
+        16
+      ],
+      "output_shape": [
+        2,
+        256,
+        16,
+        16
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "primary_metric": "metrics/mAP50-95(M)",
+  "selection_policy": "ULTRALYTICS_BEST_BY_FROZEN_VAL_FITNESS",
+  "evaluation_split": "val",
+  "metrics": {
+    "fitness": {
+      "route_a": 0.6368116233735622,
+      "route_b": 0.6762512092332065,
+      "b_minus_a": 0.039439585859644244
+    },
+    "metrics/mAP50(B)": {
+      "route_a": 0.5937538324254982,
+      "route_b": 0.5873950499448899,
+      "b_minus_a": -0.006358782480608283
+    },
+    "metrics/mAP50(M)": {
+      "route_a": 0.5319196336254952,
+      "route_b": 0.5616547081743521,
+      "b_minus_a": 0.029735074548856932
+    },
+    "metrics/mAP50-95(B)": {
+      "route_a": 0.33783038924428727,
+      "route_b": 0.35435405828796684,
+      "b_minus_a": 0.01652366904367958
+    },
+    "metrics/mAP50-95(M)": {
+      "route_a": 0.29898123412927496,
+      "route_b": 0.3218971509452397,
+      "b_minus_a": 0.02291591681596472
+    },
+    "metrics/precision(B)": {
+      "route_a": 0.6905834635943638,
+      "route_b": 0.7267607687059817,
+      "b_minus_a": 0.036177305111617875
+    },
+    "metrics/precision(M)": {
+      "route_a": 0.6629227853627156,
+      "route_b": 0.731249106064933,
+      "b_minus_a": 0.06832632070221734
+    },
+    "metrics/recall(B)": {
+      "route_a": 0.5814337730849287,
+      "route_b": 0.490576034427385,
+      "b_minus_a": -0.09085773865754371
+    },
+    "metrics/recall(M)": {
+      "route_a": 0.5230236529730811,
+      "route_b": 0.4748876276808752,
+      "b_minus_a": -0.04813602529220584
+    }
+  },
+  "test_accessed": false,
+  "conclusion_scope": "INDEPENDENT_EXP12_RESEARCH_EXTENSION_ONLY",
+  "exp00_exp11_conclusions_modified": false
+}

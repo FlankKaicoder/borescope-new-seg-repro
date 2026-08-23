@@ -1,0 +1,8 @@
+{
+  "requires_grad_true_at_framework_load_is_0": true,
+  "requires_grad_true_after_explicit_unfreeze_is_120": true,
+  "parameter_tensor_count_120": true,
+  "parameter_element_count_1365472": true,
+  "all_before_parameters_finite": true,
+  "exp12_0_parameter_snapshot_exact_match": true
+}

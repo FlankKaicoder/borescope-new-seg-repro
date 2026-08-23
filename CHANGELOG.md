@@ -1,6 +1,11 @@
 # Changelog
 
 ## Unreleased
+- Exp12.1 formal TRAIN-only SimSiam and Exp12.2 audit PASS: 100/100 epochs and 2,000 optimizer steps completed with finite metrics and no collapse; 120/120 encoder parameter tensors changed; final checkpoint and backbone export matched 120/120 in-memory hashes; VAL/TEST access remained 0/0. Downstream Route A/B remains separately gated.
+
+- Exp12.1-S TRAIN-only smoke PASS: explicit unfreeze changed the encoder from 0/120 to 120/120 trainable parameter tensors; optimizer identity, real-batch gradient and update Gates all passed. The first step and full one-epoch smoke each changed 120/120 backbone parameters; checkpoint/export reload matched 120/120 hashes; metrics were finite with no smoke collapse signal; VAL/TEST access was 0/0. Formal SSL remains separately gated.
+- Added Exp12.0 as an independent post-project SimSiam representation-learning extension. Defined the layers 0–10 encoder, TRAIN-only provenance Gate, explicit unfreeze/optimizer/gradient checks, parameter-vs-buffer audit, collapse monitoring and downstream fairness rules. Added a no-training runtime probe and handoff; no optimizer, training, VAL/TEST access, checkpoint or Exp00–Exp11 conclusion changed.
+- Exp12.0 runtime probe PASS on instance `b67c4c8bad-03c084fc`: 668 TRAIN symlinks exactly matched the frozen manifest and read-only source root; encoder output was `[2,256,16,16]` with 120 parameter tensors and 240 state tensors. Framework load yielded `requires_grad=True` for `0/120`, so explicit unfreeze remains a hard prerequisite. No optimizer, backward, training or VAL/TEST access occurred.
 
 - User explicitly authorized one retry of the unchanged frozen Exp11 candidate after the client-timeout interruption. The original partial directory is preserved; retry output is isolated at `results/final_test/exp11_retry1`; no further automatic retry is allowed.
 
@@ -84,3 +89,13 @@
 - Fixed conf .25: TP 127, FP 101, FN 158, F1 0.495127; 64 qualitative cases generated.
 - No TEST-driven retraining, tuning, threshold sweep, or model/seed/checkpoint selection.
 - Final paper/report tables and figures completed; experimental phase closed.
+
+## 2026-08-22 — Exp12.3 controlled SimSiam downstream comparison
+
+- Added a fresh-process Route A/B runner with strict layers 0--10 injection, pre-training Trainer-state hashes, identical neck/head and first-batch Gates, finite TRAIN-loss enforcement and TEST-loader prohibition.
+- Exp12.3-S PASS: Route B differed from official COCO in 120/120 backbone parameters and remained exactly equal to the SSL export after Trainer setup; A/B neck/head and first-batch input hashes matched.
+- Both formal routes completed 100 epochs, 66,800 TRAIN draws and 1,066 optimizer steps with finite TRAIN losses and reloadable best/last checkpoints.
+- Independent frozen VAL: Route A/Route B Mask mAP50-95 = 0.298981/0.321897, delta +0.022916; Mask mAP50 delta +0.029735, precision delta +0.068326 and recall delta -0.048136.
+- Early AMP validation-loss NaN accounting was retained as a caveat (A epochs 1--5; B epochs 1--6); no retry or protocol change occurred.
+- Status is a positive single-seed VAL signal only. TEST access remained zero and Exp00--Exp11 final conclusions were not modified.
+- Multi-scale Local Change Localization remains unimplemented and requires separate authorization.

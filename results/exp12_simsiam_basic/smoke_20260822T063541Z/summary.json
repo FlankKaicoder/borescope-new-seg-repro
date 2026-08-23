@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "scope": "EXP12.1-S_SINGLE_STEP_AND_ONE_EPOCH_SMOKE",
+  "formal_training_performed": false,
+  "smoke_training_epochs": 1,
+  "gates": {
+    "data_train_only": true,
+    "explicit_unfreeze": true,
+    "optimizer_identity": true,
+    "single_step_gradient_and_update": true,
+    "one_epoch_parameter_update": true,
+    "metrics_finite": true,
+    "collapse_not_suspected": true,
+    "checkpoint_and_export_reload": true,
+    "val_images_seen_0": true,
+    "test_images_seen_0": true
+  },
+  "test_accessed": false,
+  "val_images_seen": 0,
+  "test_images_seen": 0,
+  "ssl_train_images": 668,
+  "epoch_metrics": {
+    "epoch": 1,
+    "steps": 20,
+    "processed_samples": 640,
+    "loss": -0.00971067625505384,
+    "feature_mean": -0.06456175744533539,
+    "feature_std": 0.10479771047830581,
+    "embedding_variance": 0.999902555346489,
+    "learning_rate": 0.00625,
+    "all_metrics_finite": true
+  },
+  "single_step_changed_parameter_count": 120,
+  "single_step_changed_ratio": 1.0,
+  "changed_parameter_count": 120,
+  "total_parameter_count": 120,
+  "changed_ratio": 1.0,
+  "checkpoint_sha256": "6b07853a02bde6f43d6e7bf7d5acf613bc1fb7d336bc7cc6a5839c624c394718",
+  "exported_backbone_sha256": "15b8007e21077ed59a84be9814faac8e0deddec6a0c5be26ac7d19e0720f9724",
+  "wall_seconds": 44.13425921369344,
+  "next_gate": "WAITING_SEPARATE_AUTHORIZATION_BEFORE_FORMAL_SSL"
+}

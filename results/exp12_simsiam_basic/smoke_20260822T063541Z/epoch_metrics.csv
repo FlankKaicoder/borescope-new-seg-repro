@@ -1,0 +1,2 @@
+﻿epoch,steps,processed_samples,loss,feature_mean,feature_std,embedding_variance,learning_rate,all_metrics_finite
+1,20,640,-0.00971067625505384,-0.06456175744533539,0.10479771047830581,0.999902555346489,0.00625,True

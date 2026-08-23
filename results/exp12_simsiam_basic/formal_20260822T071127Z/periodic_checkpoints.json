@@ -1,0 +1,47 @@
+[
+  {
+    "epoch": 10,
+    "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_simsiam_basic/formal_20260822T071127Z/epoch_010.pt",
+    "sha256": "ce99ca32d0b45630b91660112065b0564f7d5bc835fde364c2c60a8724b81bdf"
+  },
+  {
+    "epoch": 20,
+    "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_simsiam_basic/formal_20260822T071127Z/epoch_020.pt",
+    "sha256": "9c112d67969f47c6ca21cba4720cf2cb2416b1bdb41c6e5e7c60e8b4d580d39e"
+  },
+  {
+    "epoch": 30,
+    "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_simsiam_basic/formal_20260822T071127Z/epoch_030.pt",
+    "sha256": "cee194008a31f7bb2f2b87fd838128435ab636a653247840cb84e700d93ea167"
+  },
+  {
+    "epoch": 40,
+    "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_simsiam_basic/formal_20260822T071127Z/epoch_040.pt",
+    "sha256": "0bd04c0f76279a6da14209a6860b0e4191f7a8ba332c4810f209fba5b086ded9"
+  },
+  {
+    "epoch": 50,
+    "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_simsiam_basic/formal_20260822T071127Z/epoch_050.pt",
+    "sha256": "813166bb061eba58be60796a7b2622860d5840543051b146e2e0b3b0b6228cfb"
+  },
+  {
+    "epoch": 60,
+    "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_simsiam_basic/formal_20260822T071127Z/epoch_060.pt",
+    "sha256": "1d42076391802796c9eec68ac3483de117fe26f3888aa12ea882af216886431b"
+  },
+  {
+    "epoch": 70,
+    "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_simsiam_basic/formal_20260822T071127Z/epoch_070.pt",
+    "sha256": "0461d4a977d345d9bd719df60a8a870d2ffcd2ef00cb57b90e0db16d0537f2c3"
+  },
+  {
+    "epoch": 80,
+    "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_simsiam_basic/formal_20260822T071127Z/epoch_080.pt",
+    "sha256": "42612ffd4b17fff58e986eba363e9694a3651ddab35df1a16551aefec1f0e2d5"
+  },
+  {
+    "epoch": 90,
+    "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_simsiam_basic/formal_20260822T071127Z/epoch_090.pt",
+    "sha256": "0a14c96a8afb3062b23f2b317941ec5537dd10d00543f479051e8583103c9775"
+  }
+]

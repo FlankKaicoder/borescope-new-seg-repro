@@ -1,0 +1,12 @@
+# Exp12.3 frozen supervised TRAIN/VAL configuration. TEST is intentionally absent.
+path: /root/autodl-tmp/borescope-new-seg-data/v1
+train: images/train
+val: images/val
+names:
+  0: Burn
+  1: Crack
+  2: Dent
+  3: Material missing
+  4: Tears
+  5: Tip curl
+  6: corrosion

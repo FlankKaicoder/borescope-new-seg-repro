@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "route": "b",
+  "checkpoint": "/root/autodl-tmp/borescope-new-seg-repro/runs/segment/results/exp12_downstream_ab/formal_20260822T090202Z/route_b/ultralytics/train/weights/best.pt",
+  "checkpoint_sha256": "da7276bba76955056b5217f241962cf416657abe42d9a105113f1de68b1e477c",
+  "selection_policy": "ULTRALYTICS_BEST_BY_FROZEN_VAL_FITNESS",
+  "evaluation_split": "val",
+  "metrics": {
+    "metrics/precision(B)": 0.7267607687059817,
+    "metrics/recall(B)": 0.490576034427385,
+    "metrics/mAP50(B)": 0.5873950499448899,
+    "metrics/mAP50-95(B)": 0.35435405828796684,
+    "metrics/precision(M)": 0.731249106064933,
+    "metrics/recall(M)": 0.4748876276808752,
+    "metrics/mAP50(M)": 0.5616547081743521,
+    "metrics/mAP50-95(M)": 0.3218971509452397,
+    "fitness": 0.6762512092332065
+  },
+  "test_accessed": false,
+  "wall_seconds": 6.919082218781114
+}

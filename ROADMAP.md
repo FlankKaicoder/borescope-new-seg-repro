@@ -12,3 +12,10 @@
 - [x] Exp11.1 qualitative/error audit
 - [x] Exp11.2 paper/thesis/project materials
 - [x] Current experimental phase complete (`PROJECT_COMPLETE`)
+- [x] Exp12.0 independent SimSiam encoder/audit design (`NO_TRAINING`)
+- [x] Exp12.0 runtime structure and TRAIN-only probe (`PASS_NO_TRAINING`)
+- [x] Exp12.1-S single-step and 1 epoch smoke (`PASS`; backbone update 120/120)
+- [x] Exp12.1 formal 100-epoch TRAIN-only SimSiam (`PASS`; no collapse)
+- [x] Exp12.2 final parameter/checkpoint/export audit (`PASS`; 120/120 changed)
+- [x] Exp12.3-S downstream fairness/Trainer-initialization smoke (PASS)
+- [x] Exp12.3 Route A/B 100-epoch frozen-VAL comparison (PASS; single-seed positive signal)

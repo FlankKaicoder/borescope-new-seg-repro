@@ -1,0 +1,12 @@
+{
+  "scope": "EXP12.3_SIMSIAM_DOWNSTREAM_AB",
+  "phase": "formal",
+  "route_a": "official COCO YOLO11n-seg -> supervised fine-tuning",
+  "route_b": "official COCO YOLO11n-seg -> strict layers 0..10 SSL injection -> supervised fine-tuning",
+  "epochs": 100,
+  "selection_policy": "ULTRALYTICS_BEST_BY_FROZEN_VAL_FITNESS",
+  "data_yaml": "results/exp12_downstream_ab/formal_20260822T090202Z/exp12_train_val_only.yaml",
+  "data_yaml_sha256": "ae5016bcbaec327d55d75a0044b94e6cfde05a687995260f128e0ffb9ec7b9aa",
+  "test_in_yaml": false,
+  "test_accessed": false
+}

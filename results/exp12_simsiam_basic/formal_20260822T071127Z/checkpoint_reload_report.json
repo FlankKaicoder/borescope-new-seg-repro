@@ -1,0 +1,10 @@
+{
+  "final_checkpoint": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_simsiam_basic/formal_20260822T071127Z/last.pt",
+  "final_checkpoint_sha256": "478a5cd14f850925c8c6ba1a78459d7d93c0076511234a20b4c58f4de0a88c7b",
+  "backbone_export": "/root/autodl-tmp/borescope-new-seg-repro/results/exp12_simsiam_basic/formal_20260822T071127Z/adapted_backbone_final.pt",
+  "backbone_export_sha256": "3ae6909d1d377ed18c8d532b7fde50cb0d64c092f4137dc035aff5a2a94f580c",
+  "in_memory_parameter_count": 120,
+  "checkpoint_reload_match_count": 120,
+  "export_reload_match_count": 120,
+  "status": "PASS"
+}

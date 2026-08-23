@@ -1,0 +1,8 @@
+{
+  "checkpoint_sha256": "6b07853a02bde6f43d6e7bf7d5acf613bc1fb7d336bc7cc6a5839c624c394718",
+  "exported_backbone_sha256": "15b8007e21077ed59a84be9814faac8e0deddec6a0c5be26ac7d19e0720f9724",
+  "in_memory_parameter_count": 120,
+  "checkpoint_reload_match_count": 120,
+  "export_reload_match_count": 120,
+  "status": "PASS"
+}
