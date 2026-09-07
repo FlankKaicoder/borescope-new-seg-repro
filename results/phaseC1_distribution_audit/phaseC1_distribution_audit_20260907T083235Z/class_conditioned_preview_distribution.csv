@@ -1,0 +1,29 @@
+﻿class_name,family,source_image_count,preview_count,edit_count,family_count,family_percentage,morphology_family_coverage_count
+Burn,A_small_low_contrast,141,423,862,252,0.2923433874709977,4
+Burn,B_diffuse_texture,141,423,862,253,0.29350348027842227,4
+Burn,C_elongated_ribbon,141,423,862,229,0.265661252900232,4
+Burn,D_irregular_boundary,141,423,862,128,0.14849187935034802,4
+Crack,A_small_low_contrast,80,240,481,136,0.28274428274428276,4
+Crack,B_diffuse_texture,80,240,481,153,0.3180873180873181,4
+Crack,C_elongated_ribbon,80,240,481,114,0.23700623700623702,4
+Crack,D_irregular_boundary,80,240,481,78,0.16216216216216217,4
+Dent,A_small_low_contrast,120,360,712,192,0.2696629213483146,4
+Dent,B_diffuse_texture,120,360,712,206,0.2893258426966292,4
+Dent,C_elongated_ribbon,120,360,712,179,0.25140449438202245,4
+Dent,D_irregular_boundary,120,360,712,135,0.1896067415730337,4
+Material missing,A_small_low_contrast,154,462,930,254,0.2731182795698925,4
+Material missing,B_diffuse_texture,154,462,930,278,0.2989247311827957,4
+Material missing,C_elongated_ribbon,154,462,930,253,0.27204301075268816,4
+Material missing,D_irregular_boundary,154,462,930,145,0.15591397849462366,4
+Tears,A_small_low_contrast,45,135,269,84,0.31226765799256506,4
+Tears,B_diffuse_texture,45,135,269,88,0.3271375464684015,4
+Tears,C_elongated_ribbon,45,135,269,55,0.20446096654275092,4
+Tears,D_irregular_boundary,45,135,269,42,0.15613382899628253,4
+Tip curl,A_small_low_contrast,27,81,160,49,0.30625,4
+Tip curl,B_diffuse_texture,27,81,160,39,0.24375,4
+Tip curl,C_elongated_ribbon,27,81,160,44,0.275,4
+Tip curl,D_irregular_boundary,27,81,160,28,0.175,4
+corrosion,A_small_low_contrast,195,585,1132,329,0.29063604240282687,4
+corrosion,B_diffuse_texture,195,585,1132,348,0.30742049469964666,4
+corrosion,C_elongated_ribbon,195,585,1132,271,0.2393992932862191,4
+corrosion,D_irregular_boundary,195,585,1132,184,0.1625441696113074,4
