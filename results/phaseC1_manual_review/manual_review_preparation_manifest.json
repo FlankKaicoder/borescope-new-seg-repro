@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "mode": "READ_ONLY_MANUAL_REVIEW_PREPARATION",
+  "selection_seed": 42,
+  "quality_review_dir": "/root/autodl-tmp/borescope-new-seg-repro/results/phaseC1_quality_review/phaseC1_quality_review_20260907T090555Z",
+  "preview_run_dir": "/root/autodl-tmp/borescope-new-seg-repro/results/phaseC1_preview_generation/phaseC1_preview_20260907T075012Z_seed42_1_0",
+  "input_sha256": {
+    "outlier_manual_review.csv": "192cea02468a46bd53e75a5820e8713c442a5078bdc8590e75b8164a91a88ccd",
+    "edit_metrics.csv": "c4fc3226b03453aa64620c9a66a54bfb377a87ca9181307e6263192ef5285dda",
+    "generation_manifest.json": "36bbeaecd6aa742c8b3c8af2ed3946713a0fc3b0fa1324a9e153357d0595e2ec"
+  },
+  "selection": {
+    "weak_change": {
+      "selection_mode": "ALL",
+      "count": 96
+    },
+    "C_noise": {
+      "selection_mode": "RANDOM_SAMPLE_FIXED_SEED",
+      "pool_count": 324,
+      "count": 100
+    },
+    "D_noise": {
+      "selection_mode": "RANDOM_SAMPLE_FIXED_SEED",
+      "pool_count": 439,
+      "count": 100
+    }
+  },
+  "annotation_template_unique_count": 290,
+  "human_labels_populated": 0,
+  "contact_sheets": {
+    "weak_change": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/phaseC1_manual_review/contact_sheet/weak_change_review.png",
+      "sample_count": 96,
+      "columns": 4,
+      "rows": 24,
+      "sha256": "56993fbff37b6aede3f25a1f437442f3b72337adec7dba01c94806a706239b73"
+    },
+    "C_noise": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/phaseC1_manual_review/contact_sheet/C_noise_review.png",
+      "sample_count": 100,
+      "columns": 4,
+      "rows": 25,
+      "sha256": "4906f2d5ce00702ad866761b4493c4afb51c5b98c646cf479f817dd8299cad00"
+    },
+    "D_noise": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/phaseC1_manual_review/contact_sheet/D_noise_review.png",
+      "sample_count": 100,
+      "columns": 4,
+      "rows": 25,
+      "sha256": "e74b75a292e407259a060c6154f635b199bfa77dd63dc27f6c44690db37a107c"
+    }
+  },
+  "sheet_mask_scope": "COMBINED_FINAL_PREVIEW_DIFFERENCE_WITH_CANDIDATE_BBOX_CONTEXT",
+  "selected_candidate_type_counts": {
+    "WEAK_CHANGE_CANDIDATE": 96,
+    "NOISE_PATTERN_CANDIDATE": 200
+  }
+}

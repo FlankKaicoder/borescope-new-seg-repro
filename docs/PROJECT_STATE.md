@@ -60,3 +60,11 @@ No required experiment remains. Future work is outside the closed experimental p
 - The existing review has 876 candidate records for 860 unique edits, with 16 edits carrying both candidate reasons. All `review_label` fields are blank.
 - C and D retain the unresolved risks: 41.74% and 42.41% respectively below visible-change ratio 0.50, with mean connected-component counts 19.84 and 80.23.
 - No generator repair is confirmed or authorized. Gate C is not `PASS`, and Proxy Training is not authorized.
+
+### Phase C1 manual-review preparation (2026-09-08)
+
+- Status: `PREPARED_AWAITING_HUMAN_ANNOTATION`; this is a read-only preparation package and makes no new Gate decision.
+- `results/phaseC1_manual_review/` contains all 96 weak-change candidates, plus fixed-seed (`42`) samples of 100 C-family and 100 D-family noise candidates.
+- The additive `manual_annotation_template.csv` contains 290 unique `(source_id, edit_id)` records after preserving six overlaps between the three selected groups. Every `human_label` and `comment` field remains blank.
+- The three contact sheets provide source, edited, combined final-preview difference mask, stored-bbox context, and the requested metadata for each selected sample. The displayed difference mask is not edit-isolated evidence.
+- Gate C remains `CONDITIONAL_PASS`; generator repair and Proxy Training remain unauthorized pending completed human annotation and a later read-only Gate decision.

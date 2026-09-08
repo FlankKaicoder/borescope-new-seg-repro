@@ -44,3 +44,4 @@ Exp12 is a separately scoped post-project research extension. It does not alter 
 | Experiment | Status | Canonical evidence |
 |---|---|---|
 | Phase C1 Quality Review | INSUFFICIENT_EVIDENCE_NEEDS_MANUAL_REVIEW | `docs/phaseC1_quality_review.md` |
+| Phase C1 Manual Review Preparation | PREPARED_AWAITING_HUMAN_ANNOTATION | `docs/phaseC1_manual_review_protocol.md` and `results/phaseC1_manual_review/manual_review_preparation_manifest.json` |
