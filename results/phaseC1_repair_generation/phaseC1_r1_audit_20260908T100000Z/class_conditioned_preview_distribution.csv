@@ -1,0 +1,29 @@
+﻿class_name,family,source_image_count,preview_count,edit_count,family_count,family_percentage,morphology_family_coverage_count
+Burn,A_small_low_contrast,141,423,846,257,0.3037825059101655,4
+Burn,B_diffuse_texture,141,423,846,248,0.29314420803782504,4
+Burn,C_crack_like_structural_evolution,141,423,846,208,0.2458628841607565,4
+Burn,D_boundary_evolution,141,423,846,133,0.15721040189125296,4
+Crack,A_small_low_contrast,80,240,474,148,0.31223628691983124,4
+Crack,B_diffuse_texture,80,240,474,150,0.31645569620253167,4
+Crack,C_crack_like_structural_evolution,80,240,474,122,0.25738396624472576,4
+Crack,D_boundary_evolution,80,240,474,54,0.11392405063291139,4
+Dent,A_small_low_contrast,120,360,705,192,0.2723404255319149,4
+Dent,B_diffuse_texture,120,360,705,217,0.3078014184397163,4
+Dent,C_crack_like_structural_evolution,120,360,705,202,0.2865248226950355,4
+Dent,D_boundary_evolution,120,360,705,94,0.13333333333333333,4
+Material missing,A_small_low_contrast,154,462,947,275,0.29039070749736007,4
+Material missing,B_diffuse_texture,154,462,947,280,0.29567053854276665,4
+Material missing,C_crack_like_structural_evolution,154,462,947,244,0.2576557550158395,4
+Material missing,D_boundary_evolution,154,462,947,148,0.1562829989440338,4
+Tears,A_small_low_contrast,45,135,263,90,0.34220532319391633,4
+Tears,B_diffuse_texture,45,135,263,74,0.2813688212927757,4
+Tears,C_crack_like_structural_evolution,45,135,263,57,0.21673003802281368,4
+Tears,D_boundary_evolution,45,135,263,42,0.1596958174904943,4
+Tip curl,A_small_low_contrast,27,81,169,51,0.30177514792899407,4
+Tip curl,B_diffuse_texture,27,81,169,51,0.30177514792899407,4
+Tip curl,C_crack_like_structural_evolution,27,81,169,41,0.24260355029585798,4
+Tip curl,D_boundary_evolution,27,81,169,26,0.15384615384615385,4
+corrosion,A_small_low_contrast,195,585,1196,361,0.30183946488294316,4
+corrosion,B_diffuse_texture,195,585,1196,376,0.31438127090301005,4
+corrosion,C_crack_like_structural_evolution,195,585,1196,267,0.22324414715719063,4
+corrosion,D_boundary_evolution,195,585,1196,192,0.1605351170568562,4

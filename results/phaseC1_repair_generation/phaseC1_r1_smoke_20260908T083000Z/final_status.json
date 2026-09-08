@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "status": "PASS",
+  "mode": "debug",
+  "formal_gate": false,
+  "run_id": "phaseC1_r1_smoke_20260908T083000Z",
+  "generator_version": "phaseC1-r1-local-change-v2",
+  "image_count": 12,
+  "seed": 42,
+  "seeds": [
+    42,
+    1,
+    0
+  ],
+  "failed_edits": 0,
+  "failed_images": 0,
+  "rejected_candidate_count": 5,
+  "hard_gate_reasons": [],
+  "val_images_seen": 0,
+  "test_images_seen": 0,
+  "test_accessed": false
+}

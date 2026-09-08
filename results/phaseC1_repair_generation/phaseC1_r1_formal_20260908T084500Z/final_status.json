@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "status": "PASS",
+  "mode": "formal",
+  "formal_gate": true,
+  "run_id": "phaseC1_r1_formal_20260908T084500Z",
+  "generator_version": "phaseC1-r1-local-change-v2",
+  "image_count": 668,
+  "seed": 42,
+  "seeds": [
+    42,
+    1,
+    0
+  ],
+  "failed_edits": 0,
+  "failed_images": 0,
+  "rejected_candidate_count": 442,
+  "hard_gate_reasons": [],
+  "val_images_seen": 0,
+  "test_images_seen": 0,
+  "test_accessed": false
+}

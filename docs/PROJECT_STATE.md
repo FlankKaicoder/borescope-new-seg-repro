@@ -68,3 +68,12 @@ No required experiment remains. Future work is outside the closed experimental p
 - The additive `manual_annotation_template.csv` contains 290 unique `(source_id, edit_id)` records after preserving six overlaps between the three selected groups. Every `human_label` and `comment` field remains blank.
 - The three contact sheets provide source, edited, combined final-preview difference mask, stored-bbox context, and the requested metadata for each selected sample. The displayed difference mask is not edit-isolated evidence.
 - Gate C remains `CONDITIONAL_PASS`; generator repair and Proxy Training remain unauthorized pending completed human annotation and a later read-only Gate decision.
+
+### Phase C1-R1 Local Change V2 repair (2026-09-08)
+
+- This is an independently numbered TRAIN-only generation/audit extension authorized to test C/D morphology repair; A/B and the V1 preview remain unchanged.
+- Formal generation: `PASS`; 668 TRAIN images, 2004 preview pairs, seeds `42,1,0`, 4052 accepted edits, 442 rejected candidates, zero exhausted edits, VAL/TEST access 0/0.
+- C changed from `C_elongated_ribbon` to `C_crack_like_structural_evolution`; accepted audit mean components 1.00 and visible-change-ratio-below-0.5 fraction 0.00.
+- D changed from `D_irregular_boundary` to `D_boundary_evolution`; accepted audit mean components 1.00 and visible-change-ratio-below-0.5 fraction 0.00.
+- Read-only audit: `CONDITIONAL_PASS`; remaining candidates are 2 weak and 13 noise under the frozen combined-preview audit, with one image-level ratio above 0.30. This is evidence of C/D improvement, not a global Gate C promotion.
+- R1 stops after audit. Proxy Training, SSL pretraining, downstream evaluation, split changes, and further repair are not executed.

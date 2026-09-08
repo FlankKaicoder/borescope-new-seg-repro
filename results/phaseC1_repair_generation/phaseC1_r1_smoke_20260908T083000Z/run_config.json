@@ -1,0 +1,38 @@
+{
+  "scope": "PHASE_C1_R1_LOCAL_CHANGE_V2_REPAIR_PREVIEW",
+  "generator_version": "phaseC1-r1-local-change-v2",
+  "mode": "debug",
+  "seeds": [
+    42,
+    1,
+    0
+  ],
+  "image_size": 640,
+  "families": [
+    "A_small_low_contrast",
+    "B_diffuse_texture",
+    "C_crack_like_structural_evolution",
+    "D_boundary_evolution"
+  ],
+  "family_probability": {
+    "A_small_low_contrast": 0.3,
+    "B_diffuse_texture": 0.3,
+    "C_crack_like_structural_evolution": 0.25,
+    "D_boundary_evolution": 0.15
+  },
+  "max_attempts": 10,
+  "C_acceptance": {
+    "component_count": 1,
+    "minimum_skeleton_length": 24,
+    "minimum_elongation_score": 2.0
+  },
+  "D_acceptance": {
+    "component_count": 1,
+    "minimum_largest_component_ratio": 0.95,
+    "minimum_boundary_score": 0.18
+  },
+  "A_B_status": "V1_UNCHANGED",
+  "val_images_seen": 0,
+  "test_images_seen": 0,
+  "test_accessed": false
+}

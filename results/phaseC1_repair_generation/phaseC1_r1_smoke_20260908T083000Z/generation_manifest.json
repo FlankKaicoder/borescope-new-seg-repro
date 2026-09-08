@@ -1,0 +1,509 @@
+{
+  "schema_version": 2,
+  "run_id": "phaseC1_r1_smoke_20260908T083000Z",
+  "timestamp": "20260908T065616Z",
+  "mode": "debug",
+  "formal_gate": false,
+  "generator_version": "phaseC1-r1-local-change-v2",
+  "seed_policy": "DETERMINISTIC_PER_IMAGE_WITH_SEED_PREFIX",
+  "seed": 42,
+  "seeds": [
+    42,
+    1,
+    0
+  ],
+  "source_root": "/root/autodl-tmp/borescope-new-seg-data/v1",
+  "physical_source_root": "/root/autodl-tmp/损伤训练数据集",
+  "train_dir": "/root/autodl-tmp/borescope-new-seg-data/v1/images/train",
+  "manifest": "/root/autodl-tmp/borescope-new-seg-repro/results/dataset_build/exp01_1_split_20260812T122306Z/artifacts/split_manifest.csv",
+  "manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "image_count": 12,
+  "edit_count": 83,
+  "failed_edit_count": 0,
+  "failed_source_image_count": 0,
+  "rejected_candidate_count": 5,
+  "per_image": [
+    {
+      "seed": 42,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/1.png",
+      "generated_output": "images/seed42_1.jpg",
+      "edit_type": "A_small_low_contrast,D_boundary_evolution,A_small_low_contrast",
+      "edit_types": [
+        "A_small_low_contrast",
+        "D_boundary_evolution",
+        "A_small_low_contrast"
+      ],
+      "edit_count": 3,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 42,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/100.png",
+      "generated_output": "images/seed42_100.jpg",
+      "edit_type": "D_boundary_evolution,B_diffuse_texture",
+      "edit_types": [
+        "D_boundary_evolution",
+        "B_diffuse_texture"
+      ],
+      "edit_count": 2,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 42,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/1001.jpg",
+      "generated_output": "images/seed42_1001.jpg",
+      "edit_type": "C_crack_like_structural_evolution,B_diffuse_texture",
+      "edit_types": [
+        "C_crack_like_structural_evolution",
+        "B_diffuse_texture"
+      ],
+      "edit_count": 2,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 42,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/1003.jpg",
+      "generated_output": "images/seed42_1003.jpg",
+      "edit_type": "A_small_low_contrast,B_diffuse_texture,A_small_low_contrast",
+      "edit_types": [
+        "A_small_low_contrast",
+        "B_diffuse_texture",
+        "A_small_low_contrast"
+      ],
+      "edit_count": 3,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 42,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/1004.jpg",
+      "generated_output": "images/seed42_1004.jpg",
+      "edit_type": "A_small_low_contrast",
+      "edit_types": [
+        "A_small_low_contrast"
+      ],
+      "edit_count": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 42,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/1005.jpg",
+      "generated_output": "images/seed42_1005.jpg",
+      "edit_type": "C_crack_like_structural_evolution,A_small_low_contrast",
+      "edit_types": [
+        "C_crack_like_structural_evolution",
+        "A_small_low_contrast"
+      ],
+      "edit_count": 2,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 42,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/1008.jpg",
+      "generated_output": "images/seed42_1008.jpg",
+      "edit_type": "A_small_low_contrast,B_diffuse_texture,C_crack_like_structural_evolution",
+      "edit_types": [
+        "A_small_low_contrast",
+        "B_diffuse_texture",
+        "C_crack_like_structural_evolution"
+      ],
+      "edit_count": 3,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 42,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/101.png",
+      "generated_output": "images/seed42_101.jpg",
+      "edit_type": "D_boundary_evolution,C_crack_like_structural_evolution,B_diffuse_texture",
+      "edit_types": [
+        "D_boundary_evolution",
+        "C_crack_like_structural_evolution",
+        "B_diffuse_texture"
+      ],
+      "edit_count": 3,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 42,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/102.png",
+      "generated_output": "images/seed42_102.jpg",
+      "edit_type": "A_small_low_contrast,B_diffuse_texture,A_small_low_contrast",
+      "edit_types": [
+        "A_small_low_contrast",
+        "B_diffuse_texture",
+        "A_small_low_contrast"
+      ],
+      "edit_count": 3,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 42,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/103.png",
+      "generated_output": "images/seed42_103.jpg",
+      "edit_type": "C_crack_like_structural_evolution,A_small_low_contrast",
+      "edit_types": [
+        "C_crack_like_structural_evolution",
+        "A_small_low_contrast"
+      ],
+      "edit_count": 2,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 42,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/104.png",
+      "generated_output": "images/seed42_104.jpg",
+      "edit_type": "B_diffuse_texture,C_crack_like_structural_evolution",
+      "edit_types": [
+        "B_diffuse_texture",
+        "C_crack_like_structural_evolution"
+      ],
+      "edit_count": 2,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 42,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/105.png",
+      "generated_output": "images/seed42_105.jpg",
+      "edit_type": "D_boundary_evolution,D_boundary_evolution,C_crack_like_structural_evolution",
+      "edit_types": [
+        "D_boundary_evolution",
+        "D_boundary_evolution",
+        "C_crack_like_structural_evolution"
+      ],
+      "edit_count": 3,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 1,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/1.png",
+      "generated_output": "images/seed01_1.jpg",
+      "edit_type": "A_small_low_contrast",
+      "edit_types": [
+        "A_small_low_contrast"
+      ],
+      "edit_count": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 1,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/100.png",
+      "generated_output": "images/seed01_100.jpg",
+      "edit_type": "C_crack_like_structural_evolution",
+      "edit_types": [
+        "C_crack_like_structural_evolution"
+      ],
+      "edit_count": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 1,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/1001.jpg",
+      "generated_output": "images/seed01_1001.jpg",
+      "edit_type": "A_small_low_contrast",
+      "edit_types": [
+        "A_small_low_contrast"
+      ],
+      "edit_count": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 1,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/1003.jpg",
+      "generated_output": "images/seed01_1003.jpg",
+      "edit_type": "B_diffuse_texture",
+      "edit_types": [
+        "B_diffuse_texture"
+      ],
+      "edit_count": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 1,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/1004.jpg",
+      "generated_output": "images/seed01_1004.jpg",
+      "edit_type": "C_crack_like_structural_evolution,A_small_low_contrast,A_small_low_contrast",
+      "edit_types": [
+        "C_crack_like_structural_evolution",
+        "A_small_low_contrast",
+        "A_small_low_contrast"
+      ],
+      "edit_count": 3,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 1,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/1005.jpg",
+      "generated_output": "images/seed01_1005.jpg",
+      "edit_type": "C_crack_like_structural_evolution,B_diffuse_texture",
+      "edit_types": [
+        "C_crack_like_structural_evolution",
+        "B_diffuse_texture"
+      ],
+      "edit_count": 2,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 1,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/1008.jpg",
+      "generated_output": "images/seed01_1008.jpg",
+      "edit_type": "B_diffuse_texture,A_small_low_contrast,B_diffuse_texture",
+      "edit_types": [
+        "B_diffuse_texture",
+        "A_small_low_contrast",
+        "B_diffuse_texture"
+      ],
+      "edit_count": 3,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 1,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/101.png",
+      "generated_output": "images/seed01_101.jpg",
+      "edit_type": "C_crack_like_structural_evolution",
+      "edit_types": [
+        "C_crack_like_structural_evolution"
+      ],
+      "edit_count": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 1,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/102.png",
+      "generated_output": "images/seed01_102.jpg",
+      "edit_type": "A_small_low_contrast,B_diffuse_texture",
+      "edit_types": [
+        "A_small_low_contrast",
+        "B_diffuse_texture"
+      ],
+      "edit_count": 2,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 1,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/103.png",
+      "generated_output": "images/seed01_103.jpg",
+      "edit_type": "B_diffuse_texture,A_small_low_contrast,B_diffuse_texture",
+      "edit_types": [
+        "B_diffuse_texture",
+        "A_small_low_contrast",
+        "B_diffuse_texture"
+      ],
+      "edit_count": 3,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 1,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/104.png",
+      "generated_output": "images/seed01_104.jpg",
+      "edit_type": "A_small_low_contrast,B_diffuse_texture,B_diffuse_texture",
+      "edit_types": [
+        "A_small_low_contrast",
+        "B_diffuse_texture",
+        "B_diffuse_texture"
+      ],
+      "edit_count": 3,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 1,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/105.png",
+      "generated_output": "images/seed01_105.jpg",
+      "edit_type": "A_small_low_contrast,C_crack_like_structural_evolution,B_diffuse_texture",
+      "edit_types": [
+        "A_small_low_contrast",
+        "C_crack_like_structural_evolution",
+        "B_diffuse_texture"
+      ],
+      "edit_count": 3,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 0,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/1.png",
+      "generated_output": "images/seed00_1.jpg",
+      "edit_type": "B_diffuse_texture,B_diffuse_texture,B_diffuse_texture",
+      "edit_types": [
+        "B_diffuse_texture",
+        "B_diffuse_texture",
+        "B_diffuse_texture"
+      ],
+      "edit_count": 3,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 0,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/100.png",
+      "generated_output": "images/seed00_100.jpg",
+      "edit_type": "B_diffuse_texture,D_boundary_evolution",
+      "edit_types": [
+        "B_diffuse_texture",
+        "D_boundary_evolution"
+      ],
+      "edit_count": 2,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 0,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/1001.jpg",
+      "generated_output": "images/seed00_1001.jpg",
+      "edit_type": "D_boundary_evolution,C_crack_like_structural_evolution,C_crack_like_structural_evolution",
+      "edit_types": [
+        "D_boundary_evolution",
+        "C_crack_like_structural_evolution",
+        "C_crack_like_structural_evolution"
+      ],
+      "edit_count": 3,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 0,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/1003.jpg",
+      "generated_output": "images/seed00_1003.jpg",
+      "edit_type": "C_crack_like_structural_evolution,A_small_low_contrast",
+      "edit_types": [
+        "C_crack_like_structural_evolution",
+        "A_small_low_contrast"
+      ],
+      "edit_count": 2,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 0,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/1004.jpg",
+      "generated_output": "images/seed00_1004.jpg",
+      "edit_type": "C_crack_like_structural_evolution,B_diffuse_texture,C_crack_like_structural_evolution",
+      "edit_types": [
+        "C_crack_like_structural_evolution",
+        "B_diffuse_texture",
+        "C_crack_like_structural_evolution"
+      ],
+      "edit_count": 3,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 0,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/1005.jpg",
+      "generated_output": "images/seed00_1005.jpg",
+      "edit_type": "C_crack_like_structural_evolution,A_small_low_contrast",
+      "edit_types": [
+        "C_crack_like_structural_evolution",
+        "A_small_low_contrast"
+      ],
+      "edit_count": 2,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 0,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/1008.jpg",
+      "generated_output": "images/seed00_1008.jpg",
+      "edit_type": "A_small_low_contrast",
+      "edit_types": [
+        "A_small_low_contrast"
+      ],
+      "edit_count": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 0,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/101.png",
+      "generated_output": "images/seed00_101.jpg",
+      "edit_type": "D_boundary_evolution,B_diffuse_texture,A_small_low_contrast",
+      "edit_types": [
+        "D_boundary_evolution",
+        "B_diffuse_texture",
+        "A_small_low_contrast"
+      ],
+      "edit_count": 3,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 0,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/102.png",
+      "generated_output": "images/seed00_102.jpg",
+      "edit_type": "B_diffuse_texture,C_crack_like_structural_evolution,C_crack_like_structural_evolution",
+      "edit_types": [
+        "B_diffuse_texture",
+        "C_crack_like_structural_evolution",
+        "C_crack_like_structural_evolution"
+      ],
+      "edit_count": 3,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 0,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/103.png",
+      "generated_output": "images/seed00_103.jpg",
+      "edit_type": "A_small_low_contrast,D_boundary_evolution,B_diffuse_texture",
+      "edit_types": [
+        "A_small_low_contrast",
+        "D_boundary_evolution",
+        "B_diffuse_texture"
+      ],
+      "edit_count": 3,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 0,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/104.png",
+      "generated_output": "images/seed00_104.jpg",
+      "edit_type": "C_crack_like_structural_evolution,C_crack_like_structural_evolution",
+      "edit_types": [
+        "C_crack_like_structural_evolution",
+        "C_crack_like_structural_evolution"
+      ],
+      "edit_count": 2,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "seed": 0,
+      "source_image": "/root/autodl-tmp/损伤训练数据集/105.png",
+      "generated_output": "images/seed00_105.jpg",
+      "edit_type": "A_small_low_contrast,B_diffuse_texture,A_small_low_contrast",
+      "edit_types": [
+        "A_small_low_contrast",
+        "B_diffuse_texture",
+        "A_small_low_contrast"
+      ],
+      "edit_count": 3,
+      "status": "PASS",
+      "failures": []
+    }
+  ],
+  "val_images_seen": 0,
+  "test_images_seen": 0,
+  "test_accessed": false
+}

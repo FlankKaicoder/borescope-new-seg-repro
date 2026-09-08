@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "audit_run_id": "phaseC1_r1_audit_20260908T100000Z",
+  "timestamp": "20260908T071537Z",
+  "preview_run_dir": "/root/autodl-tmp/borescope-new-seg-repro/results/phaseC1_repair_generation/phaseC1_r1_formal_20260908T084500Z",
+  "preview_run_id": "phaseC1_r1_formal_20260908T084500Z",
+  "split_manifest": "/root/autodl-tmp/borescope-new-seg-repro/results/dataset_build/exp01_1_split_20260812T122306Z/artifacts/split_manifest.csv",
+  "split_manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "generation_manifest_sha256": "35590cb469cb612c634f89ffedbb194b39ade816906a36986dbb461f5c97a7a2",
+  "final_status_sha256": "8140bd6c7dd2dd6fd6c2e6075928d9845dc72f776a0c522ce9ba9222275891ec",
+  "mode": "READ_ONLY_DISTRIBUTION_AUDIT",
+  "thresholds": {
+    "weak_change": 0.0005,
+    "strong_change": 0.2,
+    "noise_components": 20,
+    "visible_change_low": 0.5,
+    "image_level_changed_ratio_strong": 0.3
+  },
+  "summary": {
+    "train_image_count": 668,
+    "preview_pair_count": 2004,
+    "edit_count": 4052,
+    "family_counts": {
+      "A_small_low_contrast": 1216,
+      "B_diffuse_texture": 1225,
+      "C_crack_like_structural_evolution": 1011,
+      "D_boundary_evolution": 600
+    },
+    "class_edit_counts": {
+      "Burn": 846,
+      "Crack": 474,
+      "Dent": 705,
+      "Material missing": 947,
+      "Tears": 263,
+      "Tip curl": 169,
+      "corrosion": 1196
+    },
+    "class_family_coverage": {
+      "Burn": 4,
+      "Crack": 4,
+      "Dent": 4,
+      "Material missing": 4,
+      "Tears": 4,
+      "Tip curl": 4,
+      "corrosion": 4
+    },
+    "changed_pixel_ratio": {
+      "edit_count": 4052,
+      "changed_pixel_ratio_min": 8.544921875e-05,
+      "changed_pixel_ratio_max": 0.18041259765625,
+      "changed_pixel_ratio_mean": 0.03057850904549451,
+      "changed_pixel_ratio_median": 0.004404296875,
+      "changed_pixel_ratio_p1": 0.00072509765625,
+      "changed_pixel_ratio_p5": 0.0011072998046875,
+      "changed_pixel_ratio_p95": 0.14773681640624997,
+      "changed_pixel_count_min": 35,
+      "changed_pixel_count_max": 73897,
+      "changed_pixel_count_mean": 12524.957305034552,
+      "delta_pixels_min": -400,
+      "delta_pixels_max": 73897,
+      "delta_pixels_mean": 12134.942744323791,
+      "mean_absolute_difference_mean": 25.82223614111821,
+      "visible_change_ratio_below_0_5_fraction": 0.0009871668311944718,
+      "connected_components_min": 1,
+      "connected_components_max": 54,
+      "connected_components_mean": 1.62142152023692,
+      "largest_component_ratio_lower_bound_min": 1.7089843749999998e-05,
+      "largest_component_ratio_lower_bound_max": 0.17309326171875,
+      "largest_component_ratio_lower_bound_mean": 0.018188646436492564
+    },
+    "image_level_changed_pixel_ratio": {
+      "count": 2004,
+      "min": 0.0006884765625,
+      "max": 0.34921142578125,
+      "mean": 0.06317867195296907,
+      "median": 0.027098388671875,
+      "p1": 0.0012408203125,
+      "p5": 0.0025800781250000003,
+      "p95": 0.1816807861328124
+    },
+    "image_level_largest_component_ratio": {
+      "count": 2004,
+      "min": 0.0002880859375,
+      "max": 0.346787109375,
+      "mean": 0.05649174916768026,
+      "median": 0.020855712890625,
+      "p1": 0.001081982421875,
+      "p5": 0.002097900390625,
+      "p95": 0.16885974121093747
+    },
+    "outlier_counts": {
+      "WEAK_CHANGE_CANDIDATE": 2,
+      "NOISE_PATTERN_CANDIDATE": 13
+    }
+  },
+  "manifest_integrity": {
+    "run_id": "phaseC1_r1_formal_20260908T084500Z",
+    "final_status": "PASS",
+    "formal_gate": true,
+    "manifest_sha256": "35590cb469cb612c634f89ffedbb194b39ade816906a36986dbb461f5c97a7a2",
+    "final_status_sha256": "8140bd6c7dd2dd6fd6c2e6075928d9845dc72f776a0c522ce9ba9222275891ec",
+    "expected_train_image_count": 668,
+    "manifest_image_count": 668,
+    "expected_preview_count": 2004,
+    "manifest_per_image_count": 2004,
+    "filesystem_preview_count": 2004,
+    "unique_source_image_count": 668,
+    "unique_source_stem_count": 668,
+    "unique_generated_output_count": 2004,
+    "source_path_repeat_count": 1336,
+    "duplicate_source_path_within_seed_count": 0,
+    "duplicate_generated_output_count": 0,
+    "duplicate_preview_key_count": 0,
+    "missing_source_image_count": 0,
+    "missing_source_images": [],
+    "missing_generated_output_count": 0,
+    "missing_generated_outputs": [],
+    "failed_per_image_record_count": 0,
+    "failed_per_image_records": [],
+    "seed_mismatches": [],
+    "manifest_seed_list": [
+      42,
+      1,
+      0
+    ],
+    "final_status_seed_list": [
+      42,
+      1,
+      0
+    ],
+    "unexpected_class_stems": [],
+    "missing_class_stems": [],
+    "val_images_seen": 0,
+    "test_images_seen": 0,
+    "test_accessed": false
+  },
+  "integrity_failures": [],
+  "hard_failures": [],
+  "conditional_reasons": [
+    "OUTLIER_CANDIDATES_PRESENT:NOISE_PATTERN_CANDIDATE=13,WEAK_CHANGE_CANDIDATE=2",
+    "IMAGE_LEVEL_CHANGED_RATIO_OVER_30_PERCENT:0.349211"
+  ],
+  "gate_decision": "CONDITIONAL_PASS"
+}

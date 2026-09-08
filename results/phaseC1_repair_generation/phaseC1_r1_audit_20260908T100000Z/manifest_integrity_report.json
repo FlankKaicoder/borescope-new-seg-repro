@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "run_id": "phaseC1_r1_formal_20260908T084500Z",
+  "integrity": {
+    "run_id": "phaseC1_r1_formal_20260908T084500Z",
+    "final_status": "PASS",
+    "formal_gate": true,
+    "manifest_sha256": "35590cb469cb612c634f89ffedbb194b39ade816906a36986dbb461f5c97a7a2",
+    "final_status_sha256": "8140bd6c7dd2dd6fd6c2e6075928d9845dc72f776a0c522ce9ba9222275891ec",
+    "expected_train_image_count": 668,
+    "manifest_image_count": 668,
+    "expected_preview_count": 2004,
+    "manifest_per_image_count": 2004,
+    "filesystem_preview_count": 2004,
+    "unique_source_image_count": 668,
+    "unique_source_stem_count": 668,
+    "unique_generated_output_count": 2004,
+    "source_path_repeat_count": 1336,
+    "duplicate_source_path_within_seed_count": 0,
+    "duplicate_generated_output_count": 0,
+    "duplicate_preview_key_count": 0,
+    "missing_source_image_count": 0,
+    "missing_source_images": [],
+    "missing_generated_output_count": 0,
+    "missing_generated_outputs": [],
+    "failed_per_image_record_count": 0,
+    "failed_per_image_records": [],
+    "seed_mismatches": [],
+    "manifest_seed_list": [
+      42,
+      1,
+      0
+    ],
+    "final_status_seed_list": [
+      42,
+      1,
+      0
+    ],
+    "unexpected_class_stems": [],
+    "missing_class_stems": [],
+    "val_images_seen": 0,
+    "test_images_seen": 0,
+    "test_accessed": false
+  },
+  "failures": []
+}
