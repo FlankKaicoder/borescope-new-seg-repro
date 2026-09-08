@@ -77,3 +77,11 @@ No required experiment remains. Future work is outside the closed experimental p
 - D changed from `D_irregular_boundary` to `D_boundary_evolution`; accepted audit mean components 1.00 and visible-change-ratio-below-0.5 fraction 0.00.
 - Read-only audit: `CONDITIONAL_PASS`; remaining candidates are 2 weak and 13 noise under the frozen combined-preview audit, with one image-level ratio above 0.30. This is evidence of C/D improvement, not a global Gate C promotion.
 - R1 stops after audit. Proxy Training, SSL pretraining, downstream evaluation, split changes, and further repair are not executed.
+
+### Phase C1-R1 semantic quality review preparation (2026-09-08)
+
+- Status: `PREPARED_AWAITING_HUMAN_ANNOTATION`; this is a read-only semantic-review preparation package built only from the completed R1 formal V2 artifacts.
+- Fixed seed `42` selected 100 unique-source family C edits, 100 unique-source family D edits, and 50 unique-source samples for each A/B sanity group. All 300 `human_label` and `comment` fields are blank.
+- Contact sheets show saved source/final preview panels and a combined final-preview difference mask around the stored edit bbox. The completed run did not retain isolated per-edit masks, so no automatic edit-level semantic conclusion is made.
+- R1 formal artifacts do not contain a source-to-class mapping. `class` is recorded as `CLASS_PROVENANCE_UNAVAILABLE`; seven-class coverage is not asserted.
+- Gate C remains `CONDITIONAL_PASS`. Human annotation and a later read-only Gate decision are required before any Proxy Training consideration.

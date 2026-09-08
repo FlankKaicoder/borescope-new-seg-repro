@@ -46,3 +46,4 @@ Exp12 is a separately scoped post-project research extension. It does not alter 
 | Phase C1 Quality Review | INSUFFICIENT_EVIDENCE_NEEDS_MANUAL_REVIEW | `docs/phaseC1_quality_review.md` |
 | Phase C1 Manual Review Preparation | PREPARED_AWAITING_HUMAN_ANNOTATION | `docs/phaseC1_manual_review_protocol.md` and `results/phaseC1_manual_review/manual_review_preparation_manifest.json` |
 | Phase C1-R1 Local Change V2 Repair | GENERATION_PASS / AUDIT_CONDITIONAL_PASS / C_D_IMPROVED | `docs/phaseC1_R1_repair_audit.md` and `results/phaseC1_repair_generation/phaseC1_r1_audit_20260908T100000Z/phaseC1_distribution_audit_report.json` |
+| Phase C1-R1 Semantic Quality Review Preparation | PREPARED_AWAITING_HUMAN_ANNOTATION | `docs/phaseC1_R1_semantic_review_protocol.md` and `results/phaseC1_R1_semantic_review/semantic_review_preparation_manifest.json` |

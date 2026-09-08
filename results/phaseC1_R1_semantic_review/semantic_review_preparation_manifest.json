@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "PREPARED_AWAITING_HUMAN_ANNOTATION",
+  "mode": "READ_ONLY_R1_SEMANTIC_REVIEW_PREPARATION",
+  "repair_run_dir": "E:\\github_repositories\\borescope-new-seg-repro\\results\\phaseC1_repair_generation\\phaseC1_r1_formal_20260908T084500Z",
+  "repair_run_id": "phaseC1_r1_formal_20260908T084500Z",
+  "selection_seed": 42,
+  "input_sha256": {
+    "generation_manifest.json": "35590cb469cb612c634f89ffedbb194b39ade816906a36986dbb461f5c97a7a2",
+    "final_status.json": "8140bd6c7dd2dd6fd6c2e6075928d9845dc72f776a0c522ce9ba9222275891ec",
+    "edit_metrics.csv": "bb85ce41bf6795064c6d6b4e00ca893cdc756ef0a45c5f8a10e5f3bf1a61c2ec"
+  },
+  "selection": {
+    "A": {
+      "family": "A_small_low_contrast",
+      "count": 50,
+      "unique_source_count": 50,
+      "selection_mode": "FIXED_SEED_42_SOURCE_UNIQUE_SAMPLE"
+    },
+    "B": {
+      "family": "B_diffuse_texture",
+      "count": 50,
+      "unique_source_count": 50,
+      "selection_mode": "FIXED_SEED_42_SOURCE_UNIQUE_SAMPLE"
+    },
+    "C": {
+      "family": "C_crack_like_structural_evolution",
+      "count": 100,
+      "unique_source_count": 100,
+      "selection_mode": "FIXED_SEED_42_SOURCE_UNIQUE_SAMPLE"
+    },
+    "D": {
+      "family": "D_boundary_evolution",
+      "count": 100,
+      "unique_source_count": 100,
+      "selection_mode": "FIXED_SEED_42_SOURCE_UNIQUE_SAMPLE"
+    }
+  },
+  "class_coverage": {
+    "status": "UNAVAILABLE_FROM_R1_FORMAL_ARTIFACTS",
+    "reason": "R1 formal manifest stores source IDs and R1 audit stores only aggregate class statistics; no source_id-to-class mapping is present in the allowed inputs.",
+    "requested_seven_class_coverage_verified": false
+  },
+  "annotation_template_count": 300,
+  "human_labels_populated": 0,
+  "contact_sheets": {
+    "A": {
+      "path": "E:\\github_repositories\\borescope-new-seg-repro\\results\\phaseC1_R1_semantic_review\\contact_sheet\\A_semantic_review.png",
+      "sample_count": 50,
+      "columns": 4,
+      "rows": 13,
+      "sha256": "a7210e6d09201ea66e9f5945203f57b0785b98a0c35d1dfff884cdfeec7428b4"
+    },
+    "B": {
+      "path": "E:\\github_repositories\\borescope-new-seg-repro\\results\\phaseC1_R1_semantic_review\\contact_sheet\\B_semantic_review.png",
+      "sample_count": 50,
+      "columns": 4,
+      "rows": 13,
+      "sha256": "a6968725acc991b18bf969102e5fff4b882ba1eeba2e01765728992f59dc5a61"
+    },
+    "C": {
+      "path": "E:\\github_repositories\\borescope-new-seg-repro\\results\\phaseC1_R1_semantic_review\\contact_sheet\\C_semantic_review.png",
+      "sample_count": 100,
+      "columns": 4,
+      "rows": 25,
+      "sha256": "37715741c9ba40be3820927d6ca23358bf433df5fdf0724f4b58611110779fa7"
+    },
+    "D": {
+      "path": "E:\\github_repositories\\borescope-new-seg-repro\\results\\phaseC1_R1_semantic_review\\contact_sheet\\D_semantic_review.png",
+      "sample_count": 100,
+      "columns": 4,
+      "rows": 25,
+      "sha256": "b2810294595ad737235804635bedd502266a0d34b99785f111fc029bfb781642"
+    }
+  },
+  "preview_evidence_scope": "SOURCE_AND_FINAL_PREVIEW_PANELS_ONLY; CHANGE_MASK_IS_COMBINED_FINAL_PREVIEW_DIFFERENCE_WITH_SELECTED_BBOX_CONTEXT; PER_EDIT_INTERMEDIATE_PREVIEW_AND_MASK_NOT_STORED",
+  "automatic_semantic_decision": "NOT_MADE"
+}
