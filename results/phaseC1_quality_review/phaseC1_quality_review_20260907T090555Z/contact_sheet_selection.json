@@ -1,0 +1,65 @@
+{
+  "review_seed": 42,
+  "weak_change": {
+    "selection_mode": "ALL",
+    "sample_count": 96,
+    "family_counts": {
+      "C_elongated_ribbon": 86,
+      "D_irregular_boundary": 8,
+      "A_small_low_contrast": 2
+    },
+    "class_counts": {
+      "Burn": 19,
+      "Crack": 12,
+      "Dent": 25,
+      "Material missing": 19,
+      "Tears": 12,
+      "Tip curl": 6,
+      "corrosion": 3
+    }
+  },
+  "noise_pattern": {
+    "selection_mode": "DETERMINISTIC_STRATIFIED",
+    "sample_count": 100,
+    "family_counts": {
+      "B_diffuse_texture": 17,
+      "C_elongated_ribbon": 46,
+      "D_irregular_boundary": 37
+    },
+    "class_counts": {
+      "Burn": 17,
+      "Crack": 16,
+      "Dent": 16,
+      "Material missing": 14,
+      "Tears": 16,
+      "Tip curl": 14,
+      "corrosion": 23
+    }
+  },
+  "family_C": {
+    "selection_mode": "DETERMINISTIC_STRATIFIED",
+    "sample_count": 50,
+    "class_counts": {
+      "Burn": 8,
+      "Crack": 8,
+      "Dent": 7,
+      "Material missing": 8,
+      "Tears": 8,
+      "Tip curl": 7,
+      "corrosion": 11
+    }
+  },
+  "family_D": {
+    "selection_mode": "DETERMINISTIC_STRATIFIED",
+    "sample_count": 50,
+    "class_counts": {
+      "Burn": 8,
+      "Crack": 8,
+      "Dent": 8,
+      "Material missing": 8,
+      "Tears": 8,
+      "Tip curl": 8,
+      "corrosion": 9
+    }
+  }
+}

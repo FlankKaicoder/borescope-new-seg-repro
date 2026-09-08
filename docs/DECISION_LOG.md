@@ -22,3 +22,4 @@
 | 2026-08-22 | D018 | Exp12.3 公平下游是否支持普通 SimSiam 的表征收益结论？ | 工程和公平性 Gate PASS；单 seed42 冻结 VAL 上 Route B Mask mAP50-95 比 Route A 高 0.022916，但 precision 上升、recall 下降。结论限定为单种子 VAL 正信号，不替换最终 Baseline、不推断 TEST 泛化、不自动进入 Multi-scale。 | Exp12.3 |
 | 2026-08-23 | D019 | 是否授权在普通 SimSiam 通过后进入 Multi-scale Local Change？ | 已明确授权。仍按 TRAIN-only SSL、smoke-first、backbone-update hard Gate 执行；任何 changed_ratio=0 立即标记 INVALID_BY_BACKBONE_NO_UPDATE 并停止。 | Exp12.4 |
 | 2026-08-23 | D020 | Exp12.4/12.5 是否证明局部变化表征优于 COCO 或 SimSiam？ | 否。工程与代理任务 Gate 均 PASS，但单 seed42 冻结 VAL Mask mAP50-95 Route C=0.293530，低于 A=0.298981 与 B=0.321897。结论为代理任务有效但无下游 Mask 增益；不访问 TEST，不改变 Exp00-Exp11。 | Exp12.4-12.5 |
+| 2026-09-08 | D021 | Phase C1 C/D 异常是否已确认是 Local Change generator 设计问题？ | 未确认，状态为 `INSUFFICIENT_EVIDENCE_NEEDS_MANUAL_REVIEW`。 | 876 条候选记录中的 `review_label` 均为空；量化结果显示 C/D 风险，但现有 contact sheet 不能隔离单次 edit。Gate C 保持 `CONDITIONAL_PASS`，不允许 Proxy Training。 | Phase C1 |

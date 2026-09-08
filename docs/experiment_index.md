@@ -38,3 +38,9 @@ Exp12 is a separately scoped post-project research extension. It does not alter 
 | Exp12.5-S0 | HARD_GATE / YAML PATH NORMALIZATION ONLY / RETAINED | `results/exp12_local_change_downstream/smoke_20260823T070045Z/smoke_gate.json` |
 | Exp12.5-S | PASS / ROUTE C FAIRNESS AND TRAINER-INIT GATE | `results/exp12_local_change_downstream/smoke_20260823T070449Z/smoke_gate.json` |
 | Exp12.5 | PASS / NO SINGLE-SEED FROZEN-VAL MASK GAIN | `docs/exp12_4_5_local_change.md` |
+
+## Phase C1 Local Change review
+
+| Experiment | Status | Canonical evidence |
+|---|---|---|
+| Phase C1 Quality Review | INSUFFICIENT_EVIDENCE_NEEDS_MANUAL_REVIEW | `docs/phaseC1_quality_review.md` |

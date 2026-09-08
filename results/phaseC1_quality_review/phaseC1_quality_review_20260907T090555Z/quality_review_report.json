@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "review_run_id": "phaseC1_quality_review_20260907T090555Z",
+  "timestamp": "20260907T090605Z",
+  "preview_run_dir": "/root/autodl-tmp/borescope-new-seg-repro/results/phaseC1_preview_generation/phaseC1_preview_20260907T075012Z_seed42_1_0",
+  "preview_run_id": "phaseC1_preview_20260907T075012Z_seed42_1_0",
+  "audit_run_dir": "/root/autodl-tmp/borescope-new-seg-repro/results/phaseC1_distribution_audit/phaseC1_distribution_audit_20260907T083235Z",
+  "audit_run_id": "phaseC1_distribution_audit_20260907T083235Z",
+  "mode": "READ_ONLY_QUALITY_REVIEW",
+  "review_seed": 42,
+  "generation_manifest_sha256": "36bbeaecd6aa742c8b3c8af2ed3946713a0fc3b0fa1324a9e153357d0595e2ec",
+  "final_status_sha256": "af7abe41a0a6752b559d6542f893dfab107bff8876fdca8f0a69f4d139205b04",
+  "outlier_input_sha256": "24d428e1583eb0ff91250bf7c92104dd086a398043e5d29f2bf84f206ae905f8",
+  "gate_c_decision": "CONDITIONAL_PASS",
+  "outlier_input_counts": {
+    "NOISE_PATTERN_CANDIDATE": 780,
+    "WEAK_CHANGE_CANDIDATE": 96
+  },
+  "contact_sheets": {
+    "weak_change": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/phaseC1_quality_review/phaseC1_quality_review_20260907T090555Z/weak_change_contact_sheet.png",
+      "sample_count": 96,
+      "columns": 8,
+      "rows": 12,
+      "sha256": "a913083723fbf9346e3de060e8d1f6bd680be4b8d2ef0511c580af496a211fa2"
+    },
+    "noise_pattern": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/phaseC1_quality_review/phaseC1_quality_review_20260907T090555Z/noise_pattern_contact_sheet.png",
+      "sample_count": 100,
+      "columns": 8,
+      "rows": 13,
+      "sha256": "35777daedeef05d45ff4cd82f6a7ab25c68035044ce557ea78ed52b816d3c8e5"
+    },
+    "family_C": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/phaseC1_quality_review/phaseC1_quality_review_20260907T090555Z/family_C_contact_sheet.png",
+      "sample_count": 50,
+      "columns": 8,
+      "rows": 7,
+      "sha256": "3c19edf302525c114b45560b484bc1cd635785b316ffb5187f509fe9591df891"
+    },
+    "family_D": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/phaseC1_quality_review/phaseC1_quality_review_20260907T090555Z/family_D_contact_sheet.png",
+      "sample_count": 50,
+      "columns": 8,
+      "rows": 7,
+      "sha256": "7055ccff293b6a5b132330a7d71a513410189243dff156c8b35caceda733a6e1"
+    }
+  },
+  "selection": {
+    "review_seed": 42,
+    "weak_change": {
+      "selection_mode": "ALL",
+      "sample_count": 96,
+      "family_counts": {
+        "C_elongated_ribbon": 86,
+        "D_irregular_boundary": 8,
+        "A_small_low_contrast": 2
+      },
+      "class_counts": {
+        "Burn": 19,
+        "Crack": 12,
+        "Dent": 25,
+        "Material missing": 19,
+        "Tears": 12,
+        "Tip curl": 6,
+        "corrosion": 3
+      }
+    },
+    "noise_pattern": {
+      "selection_mode": "DETERMINISTIC_STRATIFIED",
+      "sample_count": 100,
+      "family_counts": {
+        "B_diffuse_texture": 17,
+        "C_elongated_ribbon": 46,
+        "D_irregular_boundary": 37
+      },
+      "class_counts": {
+        "Burn": 17,
+        "Crack": 16,
+        "Dent": 16,
+        "Material missing": 14,
+        "Tears": 16,
+        "Tip curl": 14,
+        "corrosion": 23
+      }
+    },
+    "family_C": {
+      "selection_mode": "DETERMINISTIC_STRATIFIED",
+      "sample_count": 50,
+      "class_counts": {
+        "Burn": 8,
+        "Crack": 8,
+        "Dent": 7,
+        "Material missing": 8,
+        "Tears": 8,
+        "Tip curl": 7,
+        "corrosion": 11
+      }
+    },
+    "family_D": {
+      "selection_mode": "DETERMINISTIC_STRATIFIED",
+      "sample_count": 50,
+      "class_counts": {
+        "Burn": 8,
+        "Crack": 8,
+        "Dent": 8,
+        "Material missing": 8,
+        "Tears": 8,
+        "Tip curl": 8,
+        "corrosion": 9
+      }
+    }
+  },
+  "component_analysis": [
+    {
+      "family": "A_small_low_contrast",
+      "edit_count": 1146,
+      "mean_component_count": 1.0654450261780104,
+      "median_component_count": 1.0,
+      "p95_component_count": 1.0,
+      "mean_largest_component_ratio": 0.0019204352819581763,
+      "fragmentation_score": 0.0654450261780104
+    },
+    {
+      "family": "B_diffuse_texture",
+      "edit_count": 1195,
+      "mean_component_count": 3.5154811715481173,
+      "median_component_count": 2.0,
+      "p95_component_count": 11.0,
+      "mean_largest_component_ratio": 0.05340431063151893,
+      "fragmentation_score": 2.5154811715481173
+    },
+    {
+      "family": "C_elongated_ribbon",
+      "edit_count": 1011,
+      "mean_component_count": 19.839762611275965,
+      "median_component_count": 7.0,
+      "p95_component_count": 79.5,
+      "mean_largest_component_ratio": 0.0035365398774665816,
+      "fragmentation_score": 18.839762611275965
+    },
+    {
+      "family": "D_irregular_boundary",
+      "edit_count": 639,
+      "mean_component_count": 80.23161189358372,
+      "median_component_count": 43.0,
+      "p95_component_count": 262.30000000000007,
+      "mean_largest_component_ratio": 0.0014571730834706433,
+      "fragmentation_score": 79.23161189358372
+    }
+  ],
+  "manual_review_row_count": 876
+}

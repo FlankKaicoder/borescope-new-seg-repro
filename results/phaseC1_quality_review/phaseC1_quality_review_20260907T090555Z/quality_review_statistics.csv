@@ -1,0 +1,81 @@
+﻿candidate_type,morphology_family,defect_class,outlier_record_count,unique_edit_count,review_label_empty_count,review_label_nonempty_count
+WEAK_CHANGE_CANDIDATE,A_small_low_contrast,Burn,1,1,1,0
+WEAK_CHANGE_CANDIDATE,A_small_low_contrast,Crack,0,0,0,0
+WEAK_CHANGE_CANDIDATE,A_small_low_contrast,Dent,1,1,1,0
+WEAK_CHANGE_CANDIDATE,A_small_low_contrast,Material missing,0,0,0,0
+WEAK_CHANGE_CANDIDATE,A_small_low_contrast,Tears,0,0,0,0
+WEAK_CHANGE_CANDIDATE,A_small_low_contrast,Tip curl,0,0,0,0
+WEAK_CHANGE_CANDIDATE,A_small_low_contrast,corrosion,0,0,0,0
+WEAK_CHANGE_CANDIDATE,A_small_low_contrast,ALL,2,2,2,0
+WEAK_CHANGE_CANDIDATE,B_diffuse_texture,Burn,0,0,0,0
+WEAK_CHANGE_CANDIDATE,B_diffuse_texture,Crack,0,0,0,0
+WEAK_CHANGE_CANDIDATE,B_diffuse_texture,Dent,0,0,0,0
+WEAK_CHANGE_CANDIDATE,B_diffuse_texture,Material missing,0,0,0,0
+WEAK_CHANGE_CANDIDATE,B_diffuse_texture,Tears,0,0,0,0
+WEAK_CHANGE_CANDIDATE,B_diffuse_texture,Tip curl,0,0,0,0
+WEAK_CHANGE_CANDIDATE,B_diffuse_texture,corrosion,0,0,0,0
+WEAK_CHANGE_CANDIDATE,B_diffuse_texture,ALL,0,0,0,0
+WEAK_CHANGE_CANDIDATE,C_elongated_ribbon,Burn,14,14,14,0
+WEAK_CHANGE_CANDIDATE,C_elongated_ribbon,Crack,12,12,12,0
+WEAK_CHANGE_CANDIDATE,C_elongated_ribbon,Dent,22,22,22,0
+WEAK_CHANGE_CANDIDATE,C_elongated_ribbon,Material missing,18,18,18,0
+WEAK_CHANGE_CANDIDATE,C_elongated_ribbon,Tears,11,11,11,0
+WEAK_CHANGE_CANDIDATE,C_elongated_ribbon,Tip curl,6,6,6,0
+WEAK_CHANGE_CANDIDATE,C_elongated_ribbon,corrosion,3,3,3,0
+WEAK_CHANGE_CANDIDATE,C_elongated_ribbon,ALL,86,86,86,0
+WEAK_CHANGE_CANDIDATE,D_irregular_boundary,Burn,4,4,4,0
+WEAK_CHANGE_CANDIDATE,D_irregular_boundary,Crack,0,0,0,0
+WEAK_CHANGE_CANDIDATE,D_irregular_boundary,Dent,2,2,2,0
+WEAK_CHANGE_CANDIDATE,D_irregular_boundary,Material missing,1,1,1,0
+WEAK_CHANGE_CANDIDATE,D_irregular_boundary,Tears,1,1,1,0
+WEAK_CHANGE_CANDIDATE,D_irregular_boundary,Tip curl,0,0,0,0
+WEAK_CHANGE_CANDIDATE,D_irregular_boundary,corrosion,0,0,0,0
+WEAK_CHANGE_CANDIDATE,D_irregular_boundary,ALL,8,8,8,0
+WEAK_CHANGE_CANDIDATE,ALL,Burn,19,19,19,0
+WEAK_CHANGE_CANDIDATE,ALL,Crack,12,12,12,0
+WEAK_CHANGE_CANDIDATE,ALL,Dent,25,25,25,0
+WEAK_CHANGE_CANDIDATE,ALL,Material missing,19,19,19,0
+WEAK_CHANGE_CANDIDATE,ALL,Tears,12,12,12,0
+WEAK_CHANGE_CANDIDATE,ALL,Tip curl,6,6,6,0
+WEAK_CHANGE_CANDIDATE,ALL,corrosion,3,3,3,0
+WEAK_CHANGE_CANDIDATE,ALL,ALL,96,96,96,0
+NOISE_PATTERN_CANDIDATE,A_small_low_contrast,Burn,0,0,0,0
+NOISE_PATTERN_CANDIDATE,A_small_low_contrast,Crack,0,0,0,0
+NOISE_PATTERN_CANDIDATE,A_small_low_contrast,Dent,0,0,0,0
+NOISE_PATTERN_CANDIDATE,A_small_low_contrast,Material missing,0,0,0,0
+NOISE_PATTERN_CANDIDATE,A_small_low_contrast,Tears,0,0,0,0
+NOISE_PATTERN_CANDIDATE,A_small_low_contrast,Tip curl,0,0,0,0
+NOISE_PATTERN_CANDIDATE,A_small_low_contrast,corrosion,0,0,0,0
+NOISE_PATTERN_CANDIDATE,A_small_low_contrast,ALL,0,0,0,0
+NOISE_PATTERN_CANDIDATE,B_diffuse_texture,Burn,3,3,3,0
+NOISE_PATTERN_CANDIDATE,B_diffuse_texture,Crack,3,3,3,0
+NOISE_PATTERN_CANDIDATE,B_diffuse_texture,Dent,3,3,3,0
+NOISE_PATTERN_CANDIDATE,B_diffuse_texture,Material missing,1,1,1,0
+NOISE_PATTERN_CANDIDATE,B_diffuse_texture,Tears,3,3,3,0
+NOISE_PATTERN_CANDIDATE,B_diffuse_texture,Tip curl,1,1,1,0
+NOISE_PATTERN_CANDIDATE,B_diffuse_texture,corrosion,6,6,6,0
+NOISE_PATTERN_CANDIDATE,B_diffuse_texture,ALL,17,17,17,0
+NOISE_PATTERN_CANDIDATE,C_elongated_ribbon,Burn,54,54,54,0
+NOISE_PATTERN_CANDIDATE,C_elongated_ribbon,Crack,43,43,43,0
+NOISE_PATTERN_CANDIDATE,C_elongated_ribbon,Dent,43,43,43,0
+NOISE_PATTERN_CANDIDATE,C_elongated_ribbon,Material missing,88,88,88,0
+NOISE_PATTERN_CANDIDATE,C_elongated_ribbon,Tears,14,14,14,0
+NOISE_PATTERN_CANDIDATE,C_elongated_ribbon,Tip curl,23,23,23,0
+NOISE_PATTERN_CANDIDATE,C_elongated_ribbon,corrosion,94,94,94,0
+NOISE_PATTERN_CANDIDATE,C_elongated_ribbon,ALL,324,324,324,0
+NOISE_PATTERN_CANDIDATE,D_irregular_boundary,Burn,58,58,58,0
+NOISE_PATTERN_CANDIDATE,D_irregular_boundary,Crack,57,57,57,0
+NOISE_PATTERN_CANDIDATE,D_irregular_boundary,Dent,117,117,117,0
+NOISE_PATTERN_CANDIDATE,D_irregular_boundary,Material missing,95,95,95,0
+NOISE_PATTERN_CANDIDATE,D_irregular_boundary,Tears,36,36,36,0
+NOISE_PATTERN_CANDIDATE,D_irregular_boundary,Tip curl,24,24,24,0
+NOISE_PATTERN_CANDIDATE,D_irregular_boundary,corrosion,86,86,86,0
+NOISE_PATTERN_CANDIDATE,D_irregular_boundary,ALL,439,439,439,0
+NOISE_PATTERN_CANDIDATE,ALL,Burn,115,115,115,0
+NOISE_PATTERN_CANDIDATE,ALL,Crack,103,103,103,0
+NOISE_PATTERN_CANDIDATE,ALL,Dent,163,163,163,0
+NOISE_PATTERN_CANDIDATE,ALL,Material missing,184,184,184,0
+NOISE_PATTERN_CANDIDATE,ALL,Tears,53,53,53,0
+NOISE_PATTERN_CANDIDATE,ALL,Tip curl,48,48,48,0
+NOISE_PATTERN_CANDIDATE,ALL,corrosion,186,186,186,0
+NOISE_PATTERN_CANDIDATE,ALL,ALL,780,780,780,0
