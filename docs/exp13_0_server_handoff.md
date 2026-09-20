@@ -48,5 +48,5 @@ Review the manifest, overlays, schema, and prompt template. Do not enter Diffusi
 
 ## Git commit
 
-The commit hash is recorded after the preparation commit is created.
+Preparation commit: e76bab6cbf5d41a235732947641f29ca2c9d2b31
 
