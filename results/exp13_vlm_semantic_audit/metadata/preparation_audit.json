@@ -1,0 +1,19 @@
+{
+  "experiment": "Exp13.0",
+  "scope": "VLM semantic audit preparation only",
+  "data_root": "/root/autodl-tmp/borescope-new-seg-data/v1",
+  "split_accessed": [
+    "train"
+  ],
+  "val_accessed": false,
+  "test_accessed": false,
+  "synthetic_images_generated": false,
+  "gpu_or_model_called": false,
+  "total_images": 40,
+  "unique_source_ids": 40,
+  "class_counts": {
+    "Crack": 20,
+    "corrosion": 20
+  },
+  "train_label_files_verified": 668
+}

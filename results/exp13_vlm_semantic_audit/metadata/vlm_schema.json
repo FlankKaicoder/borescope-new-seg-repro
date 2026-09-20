@@ -1,0 +1,56 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "class",
+    "shape",
+    "boundary",
+    "texture",
+    "color",
+    "scale",
+    "orientation",
+    "surface",
+    "lighting",
+    "industrial_context",
+    "generation_hint",
+    "confidence"
+  ],
+  "properties": {
+    "class": {
+      "type": "string"
+    },
+    "shape": {
+      "type": "string"
+    },
+    "boundary": {
+      "type": "string"
+    },
+    "texture": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "scale": {
+      "type": "string"
+    },
+    "orientation": {
+      "type": "string"
+    },
+    "surface": {
+      "type": "string"
+    },
+    "lighting": {
+      "type": "string"
+    },
+    "industrial_context": {
+      "type": "string"
+    },
+    "generation_hint": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string"
+    }
+  }
+}

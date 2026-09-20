@@ -1,0 +1,3 @@
+# Exp13.0 VLM semantic-audit prompt template
+
+Input: one real industrial borescope TRAIN image, polygon/mask overlay, and known class. Use only visible evidence; do not invent causes, materials, depth, measurements, or unobserved structure. Describe geometry, boundary, texture, color, scale, orientation, surface, lighting, and industrial context. Return exactly one JSON object matching metadata/vlm_schema.json with the twelve fixed string fields and no free text outside. generation_hint is future prompt-building only; do not generate images or invoke diffusion. Record uncertainty in confidence.
