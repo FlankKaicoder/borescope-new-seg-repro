@@ -1,0 +1,6 @@
+2026-09-21 smoke test
+model=runwayml/stable-diffusion-inpainting revision=main
+smoke_ids=crack_86_v1,corrosion_1_v1
+status=FAILED
+reason=Hugging Face Hub metadata request to huggingface.co timed out; model was not present in local cache.
+no_image_generation_performed=true

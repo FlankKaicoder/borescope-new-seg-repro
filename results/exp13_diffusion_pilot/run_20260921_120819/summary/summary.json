@@ -1,0 +1,19 @@
+{
+  "run_id": "run_20260921_120819",
+  "status": "HARD_STOP_MODEL_RUNTIME_FAILURE",
+  "source_selection": "Existing Exp13.0 sample_manifest.csv, per class stable source_id sort, first 10 Crack and first 10 corrosion",
+  "crack_sources": 10,
+  "corrosion_sources": 10,
+  "variants_per_source": 2,
+  "planned_outputs": 40,
+  "successful_outputs": 0,
+  "failed_outputs": 0,
+  "smoke_status": "FAILED_BEFORE_INFERENCE",
+  "model_load_status": "FAILED",
+  "failure_reason": "Hugging Face Hub connection to huggingface.co timed out and the selected checkpoint was not cached locally.",
+  "val_access": 0,
+  "test_access": 0,
+  "training_performed": false,
+  "ssl_performed": false,
+  "synthetic_images_generated": false
+}

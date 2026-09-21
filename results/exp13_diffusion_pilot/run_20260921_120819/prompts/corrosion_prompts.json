@@ -1,0 +1,5 @@
+{
+  "prompt_id": "corrosion_human_reviewed_v1",
+  "text": "A realistic localized corrosion region on a metallic engine interior surface, an irregular oxidized patch with rough granular surface degradation and an uneven or diffuse natural boundary, preserving the original metallic geometry, surrounding structure, surface context, and realistic borescope inspection illumination.",
+  "negative": "scratch, paint mark, stain, text, watermark, new object, changed component geometry, smooth plastic, cartoon, illustration, blurry, duplicated defect"
+}
