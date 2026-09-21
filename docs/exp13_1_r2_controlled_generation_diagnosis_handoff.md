@@ -4,7 +4,7 @@
 - Path: `/root/autodl-tmp/borescope-new-seg-repro`
 - Branch: `exp13/vlm-semantic-audit`
 - Starting HEAD: `7010864e1f3eadb6a98405b02aa7f7cd671293b3`
-- Final HEAD: to be filled after commit
+- Final HEAD: `9f64567da68c2d02405dbe3f0abe03eb922ec8af`
 - Model: `aiplayground/dreamshaper-8-inpainting`, revision `master`
 - Sources: Crack 260, Crack 469, corrosion 9, corrosion 23
 - Masks: mask_A = R1 3 px dilation; mask_B = fixed 5 px dilation; both feathered
@@ -17,8 +17,8 @@
 - Training: false
 - SSL: false
 - Protected R1 runs were preserved and not overwritten
-- Git commit: to be filled after commit
-- Push: to be filled after push
+- Git commit: `9f64567da68c2d02405dbe3f0abe03eb922ec8af`
+- Push: completed to `origin/exp13/vlm-semantic-audit`
 - Current Gate: `DIAGNOSIS_COMPLETED_WAITING_REVIEW`
 
 The run is complete for artifact generation only. Wait for review before any Exp13.1 continuation; do not enter SSL or broaden the source set.
