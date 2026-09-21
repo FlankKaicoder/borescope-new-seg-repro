@@ -52,3 +52,8 @@ No required experiment remains. Future work is outside the closed experimental p
 - Exp12.5 Route C fairness and Trainer-initialization Gates PASS; 100 epochs, 66,800 TRAIN draws and 1,066 optimizer steps completed; TEST access was zero.
 - Frozen VAL Mask mAP50-95: Route A COCO 0.298981, Route B SimSiam 0.321897, Route C local change 0.293530. Route C minus A = -0.005451; Route C minus B = -0.028367.
 - The local-change proxy is valid but produced no single-seed frozen-VAL Mask mAP50-95 gain. Exp12 is complete and Exp00-Exp11 remain unchanged.
+
+
+## Post-project Exp13 extension
+
+- Exp13.1-R2 controlled generation diagnosis completed on 2026-09-21 with four fixed TRAIN-only sources and 48 successful outputs. It is waiting for visual review and does not reopen the closed project conclusions. No VAL/TEST access, SSL, YOLO training, or downstream training occurred.

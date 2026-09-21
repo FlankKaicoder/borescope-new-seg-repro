@@ -1,0 +1,5 @@
+model=aiplayground/dreamshaper-8-inpainting
+revision=master
+seed=17001
+val_access=0
+test_access=0

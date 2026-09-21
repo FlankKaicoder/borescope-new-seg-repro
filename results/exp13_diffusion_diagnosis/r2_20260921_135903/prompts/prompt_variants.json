@@ -1,0 +1,14 @@
+{
+  "v1": {
+    "Crack": "A realistic thin industrial crack or fracture on a metallic engine interior surface, appearing as a narrow dark fracture line with thin linear or slightly curved morphology and optional subtle branching, irregular but natural sharp boundaries, preserving the original metallic surface texture, component geometry, and realistic borescope illumination. Preserve the surrounding structure. Do not create a scratch, paint mark, or stain.",
+    "corrosion": "A realistic localized corrosion region on a metallic engine interior surface, an irregular oxidized patch with rough granular surface degradation and an uneven or diffuse natural boundary, preserving the original metallic geometry, surrounding structure, surface context, and realistic borescope inspection illumination."
+  },
+  "v2": {
+    "Crack": "Generate a clearly visible realistic crack on the metallic engine interior surface. Keep the defect as a crack or fracture, not a repaired clean surface. Make it a thin dark fracture line with natural irregular boundaries while preserving the surrounding geometry and borescope illumination.",
+    "corrosion": "Generate a clearly visible realistic corrosion region on the metallic engine interior surface. Keep it as corrosion, not a clean repaired area, hole, fastener, or seam. Use an irregular rough oxidized patch with natural uneven boundaries while preserving the surrounding geometry and borescope illumination."
+  },
+  "negative": {
+    "Crack": "scratch, paint mark, stain, text, watermark, changed geometry, smooth clean surface, cartoon, blurry",
+    "corrosion": "scratch, paint mark, stain, hole, fastener, seam, text, watermark, changed geometry, smooth clean surface, cartoon, blurry"
+  }
+}
