@@ -4,7 +4,7 @@
 - Repository: `/root/autodl-tmp/borescope-new-seg-repro`
 - Branch: `exp13/vlm-semantic-audit`
 - Starting HEAD: `25230a662989488f2c5a8b74a157af4ad4e80992`
-- Final HEAD: recorded after the failure-preparation commit
+- Final HEAD: `01ee2b6c58c0c16132459016eaa78d5aed18379c`
 - GPU: NVIDIA GeForce RTX 2080 Ti, 22528 MiB
 - Diffusion model: `runwayml/stable-diffusion-inpainting`, revision `main`
 - diffusers: `0.35.1`; torch: `2.8.0+cu128`
@@ -19,8 +19,8 @@
 - TEST access: 0
 - training_performed: false
 - SSL_performed: false
-- Git commit: recorded after commit
-- Push: pending final commit
+- Git commit: `01ee2b6c58c0c16132459016eaa78d5aed18379c`
+- Push: completed to `origin/exp13/vlm-semantic-audit`
 
 ## Gate
 
