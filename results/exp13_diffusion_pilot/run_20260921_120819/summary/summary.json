@@ -15,5 +15,7 @@
   "test_access": 0,
   "training_performed": false,
   "ssl_performed": false,
-  "synthetic_images_generated": false
+  "synthetic_images_generated": false,
+  "not_attempted_outputs": 40,
+  "manifest_status": "NOT_ATTEMPTED_MODEL_LOAD_FAILED"
 }
