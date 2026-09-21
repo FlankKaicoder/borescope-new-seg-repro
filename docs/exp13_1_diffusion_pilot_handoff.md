@@ -4,7 +4,7 @@
 - Repository: `/root/autodl-tmp/borescope-new-seg-repro`
 - Branch: `exp13/vlm-semantic-audit`
 - Starting HEAD: `25230a662989488f2c5a8b74a157af4ad4e80992`
-- Final HEAD: `d87ce55ab09757d9a8a42713d0451bddd5303856`
+- Final HEAD: `54b89abafaf997fe7853e3ec0a35440acf6e05f3`
 - GPU: NVIDIA GeForce RTX 2080 Ti, 22528 MiB
 - Diffusion model: `runwayml/stable-diffusion-inpainting`, revision `main`
 - diffusers: `0.35.1`; torch: `2.8.0+cu128`
