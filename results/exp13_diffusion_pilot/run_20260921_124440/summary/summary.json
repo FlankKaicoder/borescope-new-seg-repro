@@ -1,0 +1,21 @@
+{
+  "run_id": "run_20260921_124440",
+  "parent_failed_run": "run_20260921_120819",
+  "recovery_reason": "HF_NETWORK_TIMEOUT",
+  "model_acquisition_source": "ModelScope",
+  "model_id": "aiplayground/dreamshaper-8-inpainting",
+  "model_revision": "master",
+  "crack_sources": 10,
+  "corrosion_sources": 10,
+  "variants_per_source": 2,
+  "planned_outputs": 40,
+  "successful_outputs": 40,
+  "failed_outputs": 0,
+  "smoke_crack": "PASS",
+  "smoke_corrosion": "PASS",
+  "val_access": 0,
+  "test_access": 0,
+  "training_performed": false,
+  "ssl_performed": false,
+  "gate": "MODEL_ACQUISITION_RECOVERED_PILOT_COMPLETED_WAITING_QUALITY_REVIEW"
+}

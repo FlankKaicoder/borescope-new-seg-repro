@@ -1,0 +1,9 @@
+hostname=autodl-container-8e424bb370-61e7c45a
+repository=/root/autodl-tmp/borescope-new-seg-repro
+branch=exp13/vlm-semantic-audit
+starting_head=8e8983b2bc956af4a8a0aa39cafa889250c123b3
+val_access=0
+test_access=0
+training_performed=false
+ssl_performed=false
+model_loading=offline_local_snapshot

@@ -1,0 +1,9 @@
+{
+  "parent_failed_run": "run_20260921_120819",
+  "recovery_reason": "HF_NETWORK_TIMEOUT",
+  "model_acquisition_source": "ModelScope",
+  "model_id": "aiplayground/dreamshaper-8-inpainting",
+  "revision": "master",
+  "snapshot_path": "/root/autodl-tmp/model_cache/exp13/dreamshaper-8-inpainting",
+  "model_identity_changed": true
+}

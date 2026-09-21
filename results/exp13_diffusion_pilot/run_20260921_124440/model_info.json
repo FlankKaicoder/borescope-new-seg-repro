@@ -1,0 +1,33 @@
+{
+  "model_id": "aiplayground/dreamshaper-8-inpainting",
+  "revision": "master",
+  "source": "ModelScope",
+  "snapshot_path": "/root/autodl-tmp/model_cache/exp13/dreamshaper-8-inpainting",
+  "snapshot_size_bytes": 8223756642,
+  "snapshot_size_human": "7.7G",
+  "model_identity_changed": true,
+  "previous_candidate": "runwayml/stable-diffusion-inpainting",
+  "license": "creativeml-openrail-m",
+  "pipeline": "StableDiffusionInpaintPipeline",
+  "diffusers": "0.35.1",
+  "transformers": "4.55.4",
+  "accelerate": "1.10.1",
+  "safetensors": "0.6.2",
+  "torch": "2.8.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 2080 Ti",
+  "gpu_memory_mb": 22528,
+  "fp16": true,
+  "smoke": {
+    "crack_86_v1": "PASS",
+    "corrosion_1_v1": "PASS",
+    "seed": 13001,
+    "resolution": "512x512"
+  },
+  "key_sha256": {
+    "model_index.json": "46ea67d13eb2d900af2418f65a6e25cd2a90172668f9b1e8aaec5903e626bf0f",
+    "unet/config.json": "cc131629836bcadc3e3833fecfeb11affae9fd02235b492e7986f397abfc779c",
+    "unet/diffusion_pytorch_model.fp16.safetensors": "d56db133108398dcbb3886b0744f3b5c9965574a9ec3983e34ecb875fefde286",
+    "vae/config.json": "00bd4083de8de71d7f7c4f4c27bf09eede783c05dee6db5226681cc2785a0787",
+    "vae/diffusion_pytorch_model.fp16.safetensors": "9e614d1d936ceffff2f80b9ca4db9d72ecc30f4e576b338c8d20cac4c05d6679"
+  }
+}

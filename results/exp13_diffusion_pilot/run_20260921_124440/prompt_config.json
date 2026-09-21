@@ -1,0 +1,15 @@
+{
+  "source": "human-reviewed VLM-oriented semantic templates; not per-image automatic VLM output",
+  "templates": {
+    "Crack": {
+      "prompt_id": "crack_human_reviewed_v1",
+      "text": "A realistic thin industrial crack or fracture on a metallic engine interior surface, appearing as a narrow dark fracture line with thin linear or slightly curved morphology and optional subtle branching, irregular but natural sharp boundaries, preserving the original metallic surface texture, component geometry, and realistic borescope illumination. Preserve the surrounding structure. Do not create a scratch, paint mark, or stain.",
+      "negative": "scratch, paint mark, stain, text, watermark, new object, changed component geometry, smooth plastic, cartoon, illustration, blurry, duplicated defect"
+    },
+    "corrosion": {
+      "prompt_id": "corrosion_human_reviewed_v1",
+      "text": "A realistic localized corrosion region on a metallic engine interior surface, an irregular oxidized patch with rough granular surface degradation and an uneven or diffuse natural boundary, preserving the original metallic geometry, surrounding structure, surface context, and realistic borescope inspection illumination.",
+      "negative": "scratch, paint mark, stain, text, watermark, new object, changed component geometry, smooth plastic, cartoon, illustration, blurry, duplicated defect"
+    }
+  }
+}
