@@ -19,7 +19,7 @@
 - training_performed: false
 - SSL_performed: false
 - Quality scores: not filled; awaiting review
-- Final commit and push: recorded after documentation commit
+- Final commit and push: `ca14f92aa9d32743f64d6624b71f3488a1e63c3a` pushed to origin/exp13/vlm-semantic-audit
 
 ## Gate
 
