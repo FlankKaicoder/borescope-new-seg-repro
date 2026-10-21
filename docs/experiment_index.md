@@ -45,3 +45,13 @@ Exp12 is a separately scoped post-project research extension. It does not alter 
 | Experiment | Status | Canonical evidence |
 |---|---|---|
 | Exp13.1-R2 | DIAGNOSIS_COMPLETED_WAITING_REVIEW / 48 outputs | `docs/exp13_1_r2_controlled_generation_diagnosis.md` |
+
+## Exp13 subsequent quality decision (2026-10-21)
+
+The Exp13.1-R2 waiting-review row above is retained as a historical execution snapshot. The following row records the later authorized archival decision.
+
+| Record | Status | Canonical evidence |
+|---|---|---|
+| Exp13.1-R2-QA | EXP13_1_R2_QUALITY_GATE_ARCHIVED / GENERIC_TEXT_ONLY_INPAINTING_NOT_APPROVED_FOR_CURRENT_SSL_SYNTHESIS | [Final quality review](exp13_1_r2_final_quality_gate_review.md) |
+
+Current text-only inpainting SSL, seven-class generation, R3 parameter sweep, and Exp13.2 generation authorizations are all NO. Only Exp13.2-A method research/design discussion is the proposed next stage. Evidence is earlier ChatGPT qualitative sheet review relayed and authorized by the user; no new visual review or quantitative scores were produced. See [QA handoff](exp13_1_r2_qa_archival_handoff.md).

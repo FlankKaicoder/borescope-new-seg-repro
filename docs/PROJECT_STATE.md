@@ -57,3 +57,17 @@ No required experiment remains. Future work is outside the closed experimental p
 ## Post-project Exp13 extension
 
 - Exp13.1-R2 controlled generation diagnosis completed on 2026-09-21 with four fixed TRAIN-only sources and 48 successful outputs. It is waiting for visual review and does not reopen the closed project conclusions. No VAL/TEST access, SSL, YOLO training, or downstream training occurred.
+
+### Exp13.1-R2-QA final quality archival (2026-10-21)
+
+- Status: `EXP13_1_R2_QUALITY_GATE_ARCHIVED`; documentation archival only.
+- Final quality Gate: `GENERIC_TEXT_ONLY_INPAINTING_NOT_APPROVED_FOR_CURRENT_SSL_SYNTHESIS`.
+- This dated decision follows the waiting-review snapshot above; historical R1/R2 Gates and runs are retained. R1 completed 40/40 outputs but failed qualitative quality review; R2 completed 48/48 outputs from four TRAIN-only sources.
+- Evidence is the user's authorized account of earlier ChatGPT qualitative review of uploaded contact/diagnosis sheets, not a new review, expert annotation, or complete quantitative scoring. Existing blank review scores remain blank.
+- Scope: current DreamShaper-8-Inpainting checkpoint, Crack/corrosion task, and current generation/controlled-diagnosis protocol; no claim that all Diffusion models fail.
+- `CURRENT_TEXT_ONLY_INPAINTING_SSL_AUTHORIZATION = NO`
+- `SEVEN_CLASS_GENERATION_AUTHORIZATION = NO`
+- `FURTHER_R3_PARAMETER_SWEEP = NO`
+- `EXP13_2_GENERATION_AUTHORIZATION = NO`
+- Ready for Exp13.2-A method research/design discussion only; generation requires separate authorization. Exp00–Exp11 and Exp12 conclusions remain unchanged.
+- Evidence: [final quality review](exp13_1_r2_final_quality_gate_review.md); [QA handoff](exp13_1_r2_qa_archival_handoff.md).
