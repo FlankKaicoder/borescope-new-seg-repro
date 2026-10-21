@@ -63,3 +63,11 @@ Current text-only inpainting SSL, seven-class generation, R3 parameter sweep, an
 | Exp13.2-A0 | RESTORATION_REVIEW_ASSETS_PREPARED_AWAITING_HUMAN_REVIEW | [Preparation report](exp13_2_a0_restoration_feasibility_preparation.md); `results/exp13_restoration_feasibility/a0_20261021_081812/summary.json` |
 
 88 historical candidates form 20 source groups; R2 sources overlap R1. Twenty source sheets and two class overviews are ready, with all human review fields blank. Historical crop truncation and nonzero mask-exterior differences remain review limitations. This later preparation record preserves all historical Gates and does not authorize quality PASS, new generation, training or Exp13.2-B. See [A0 handoff](exp13_2_a0_restoration_feasibility_handoff.md).
+
+## Exp13.2-A0-QA source visual screening (2026-10-21)
+
+| Record | Status | Canonical evidence |
+|---|---|---|
+| Exp13.2-A0-QA | EXP13_2_A0_SOURCE_VISUAL_SCREENING_ARCHIVED | [Screening review](exp13_2_a0_source_visual_screening_review.md); `results/exp13_restoration_feasibility/qa_20261021_090000/summary.json` |
+
+The source-level first pass classified 15 sources as promising for further review, 2 uncertain, and 3 restricted. All 88 variant rows remain unaccepted: two qualitative notes for Crack 111 require follow-up, and 86 are pending. No trusted pair set is frozen; A1 discussion may continue, but Exp13.2-B/SSL remain unauthorized. See [QA handoff](exp13_2_a0_source_visual_screening_handoff.md).

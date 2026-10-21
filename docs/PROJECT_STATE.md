@@ -82,3 +82,12 @@ No required experiment remains. Future work is outside the closed experimental p
 - Annotation-derived polygon masks must be disclosed as supervision in any future design. Credible pseudo-normal pair count and source coverage remain unknown.
 - SSL, seven-class generation, R3 sweep, Exp13.2 generation and Exp13.2-B authorizations remain NO. Stop for ChatGPT/user visual review.
 - Evidence: [A0 preparation report](exp13_2_a0_restoration_feasibility_preparation.md); [A0 handoff](exp13_2_a0_restoration_feasibility_handoff.md); `results/exp13_restoration_feasibility/a0_20261021_081812/`.
+
+### Exp13.2-A0-QA source visual screening archival (2026-10-21)
+
+- Status: `EXP13_2_A0_SOURCE_VISUAL_SCREENING_COMPLETE`; source-level qualitative first-pass screening archived only.
+- Screening of 20 source sheets: 15 promising for further review, 2 uncertain, 3 corrosion sources restricted. This is not 15 accepted training pairs or a pass-rate estimate.
+- Candidate ledger covers all 88 historical variants. Crack 111 v1/v2 have qualitative notes only and still require variant review; remaining 86 are pending. No variant PASS.
+- Original A0 blank quality template remains unchanged; 792 judgment cells blank. Formal candidate-level review incomplete; trusted repair-pair set not frozen.
+- Exp13.2-A1 method discussion may continue. `FINAL_TRUSTED_PAIR_FREEZE = NO`, `RESTORATION_QUALITY_GATE_PASS = NO`, `EXP13_2_B_AUTHORIZATION = NO`, `SSL_AUTHORIZATION = NO`.
+- Evidence source: ChatGPT qualitative screen of user-uploaded source-level review sheets, not industrial-expert review, full variant scoring, or statistical significance. See [screening report](exp13_2_a0_source_visual_screening_review.md), [handoff](exp13_2_a0_source_visual_screening_handoff.md), and `results/exp13_restoration_feasibility/qa_20261021_090000/`.

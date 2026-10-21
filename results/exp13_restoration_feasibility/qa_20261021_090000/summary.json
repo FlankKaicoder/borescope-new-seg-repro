@@ -1,0 +1,15 @@
+{
+  "archive_id": "qa_20261021_090000",
+  "source_count": 20,
+  "candidate_count": 88,
+  "source_status_counts": {
+    "PROMISING_NEEDS_FURTHER_REVIEW": 15,
+    "UNCERTAIN": 2,
+    "REJECT_RESTRICTED": 3
+  },
+  "variant_pending_count": 86,
+  "variant_qualitative_note_only_count": 2,
+  "trusted_pair_freeze": false,
+  "restoration_quality_gate_pass": false,
+  "exp13_2_b_authorized": false
+}
