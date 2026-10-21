@@ -71,3 +71,11 @@ Current text-only inpainting SSL, seven-class generation, R3 parameter sweep, an
 | Exp13.2-A0-QA | EXP13_2_A0_SOURCE_VISUAL_SCREENING_ARCHIVED | [Screening review](exp13_2_a0_source_visual_screening_review.md); `results/exp13_restoration_feasibility/qa_20261021_090000/summary.json` |
 
 The source-level first pass classified 15 sources as promising for further review, 2 uncertain, and 3 restricted. All 88 variant rows remain unaccepted: two qualitative notes for Crack 111 require follow-up, and 86 are pending. No trusted pair set is frozen; A1 discussion may continue, but Exp13.2-B/SSL remain unauthorized. See [QA handoff](exp13_2_a0_source_visual_screening_handoff.md).
+
+## Exp13.2-A1 method design (2026-10-21)
+
+| Record | Status | Canonical evidence |
+|---|---|---|
+| Exp13.2-A1 | EXP13_2_A1_DESIGN_READY_FOR_CHATGPT_REVIEW | [Design specification](exp13_2_a1_method_design_spec.md), [code audit](exp13_2_a1_code_reuse_audit.md), [fairness protocol](exp13_2_a1_fairness_protocol.md), [future gates](exp13_2_a1_gate_definition.md), [handoff](exp13_2_a1_design_handoff.md) |
+
+Documentation-only design and code-surface audit. No model, data, training code, or historical result changed. Design is not frozen; no trusted pairs are frozen; Restoration Quality Gate, Exp13.2-B, and SSL remain unauthorized.

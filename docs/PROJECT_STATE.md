@@ -91,3 +91,7 @@ No required experiment remains. Future work is outside the closed experimental p
 - Original A0 blank quality template remains unchanged; 792 judgment cells blank. Formal candidate-level review incomplete; trusted repair-pair set not frozen.
 - Exp13.2-A1 method discussion may continue. `FINAL_TRUSTED_PAIR_FREEZE = NO`, `RESTORATION_QUALITY_GATE_PASS = NO`, `EXP13_2_B_AUTHORIZATION = NO`, `SSL_AUTHORIZATION = NO`.
 - Evidence source: ChatGPT qualitative screen of user-uploaded source-level review sheets, not industrial-expert review, full variant scoring, or statistical significance. See [screening report](exp13_2_a0_source_visual_screening_review.md), [handoff](exp13_2_a0_source_visual_screening_handoff.md), and `results/exp13_restoration_feasibility/qa_20261021_090000/`.
+
+## Exp13.2-A1 method design (2026-10-21)
+
+Status: `EXP13_2_A1_DESIGN_READY_FOR_CHATGPT_REVIEW`. This is documentation-only; the design is not frozen and no implementation, data construction, training, inference, generation, or pair selection is authorized. The source-level A0 screening is not candidate-level quality approval. `FINAL_TRUSTED_PAIR_FREEZE = NO`, `RESTORATION_QUALITY_GATE_PASS = NO`, `EXP13_2_B_AUTHORIZATION = NO`, and `SSL_AUTHORIZATION = NO`. See [A1 handoff](exp13_2_a1_design_handoff.md).
