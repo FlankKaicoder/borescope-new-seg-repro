@@ -1,0 +1,6 @@
+{
+  "results/exp13_vlm_semantic_audit/sample_manifest.csv": "8991f0416109f1d9a3061a813191712deb26ec0d52e6c71596c3dbb9bf6dc204",
+  "tools/exp13_diffusion_pilot.py": "44b07cbece17e59506d5b5b60a7ae6546cdaa1235e57a4a31301c420ae09b91d",
+  "tools/exp13_diffusion_pilot_r1.py": "189463f559018bcf94d1238e7fa957bea14c2f2eb86123d218a8b3271a9deece",
+  "tools/exp13_diffusion_diagnosis.py": "9e14eead0145997490cd748f25a36dc0e9f8733422545140193a4352f73b6aa1"
+}

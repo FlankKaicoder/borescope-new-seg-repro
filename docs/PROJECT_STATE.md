@@ -71,3 +71,14 @@ No required experiment remains. Future work is outside the closed experimental p
 - `EXP13_2_GENERATION_AUTHORIZATION = NO`
 - Ready for Exp13.2-A method research/design discussion only; generation requires separate authorization. Exp00–Exp11 and Exp12 conclusions remain unchanged.
 - Evidence: [final quality review](exp13_1_r2_final_quality_gate_review.md); [QA handoff](exp13_1_r2_qa_archival_handoff.md).
+
+### Exp13.2-A0 historical restoration review preparation (2026-10-21)
+
+- Status: `RESTORATION_REVIEW_ASSETS_PREPARED_AWAITING_HUMAN_REVIEW`; user-authorized historical asset preparation only.
+- R1 40 outputs/20 sources + R2 48 outputs/4 overlapping sources = 88 candidates/20 source groups (Crack/corrosion 10 sources each). Variants are correlated, not independent samples.
+- All referenced source/mask/output files decoded; historical central crop/fit to 512x512 reproduced. Ten source masks are partly cropped (minimum retained area 44.1285%); cropped-away defects cannot count as restoration.
+- Prepared 20 source review sheets, two class overviews, diagnostic differences, spatial/file reports and an 88-row human review CSV. All 792 human judgment cells remain blank; no candidate accepted or scored.
+- All 195 historical R1/R2 files retained identical SHA256; Phase C1 untracked files, datasets, model caches and previous Gates/templates preserved. No generation/training or VAL/TEST image access.
+- Annotation-derived polygon masks must be disclosed as supervision in any future design. Credible pseudo-normal pair count and source coverage remain unknown.
+- SSL, seven-class generation, R3 sweep, Exp13.2 generation and Exp13.2-B authorizations remain NO. Stop for ChatGPT/user visual review.
+- Evidence: [A0 preparation report](exp13_2_a0_restoration_feasibility_preparation.md); [A0 handoff](exp13_2_a0_restoration_feasibility_handoff.md); `results/exp13_restoration_feasibility/a0_20261021_081812/`.

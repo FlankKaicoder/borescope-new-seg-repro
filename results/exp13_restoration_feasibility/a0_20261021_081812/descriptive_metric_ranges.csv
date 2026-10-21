@@ -1,0 +1,25 @@
+stage,class_name,metric,candidate_count,source_count,minimum,median,maximum,unit
+R1,Crack,defect_mask_mae,20,10,14.837981,26.263143499999998,69.561852,mean absolute RGB difference; 0..255; descriptive only
+R1,Crack,edit_support_mae,20,10,10.264128,16.7265185,36.666374,mean absolute RGB difference; 0..255; descriptive only
+R1,Crack,outside_edit_support_mae,20,10,2.325809,5.120326,9.012239,mean absolute RGB difference; 0..255; descriptive only
+R1,Crack,outside_support_plus_8px_mae,20,10,2.284136,5.1053345,8.995583,mean absolute RGB difference; 0..255; descriptive only
+R1,Crack,outside_roi_bbox_mae,20,10,2.221157,5.05645,8.963778,mean absolute RGB difference; 0..255; descriptive only
+R1,Crack,outer_20px_frame_mae,20,10,2.402498,6.6894515000000006,9.84796,mean absolute RGB difference; 0..255; descriptive only
+R1,corrosion,defect_mask_mae,20,10,16.244442,24.937138500000003,40.427792,mean absolute RGB difference; 0..255; descriptive only
+R1,corrosion,edit_support_mae,20,10,14.686706,18.1775795,31.646322,mean absolute RGB difference; 0..255; descriptive only
+R1,corrosion,outside_edit_support_mae,20,10,5.030215,6.54757,7.178926,mean absolute RGB difference; 0..255; descriptive only
+R1,corrosion,outside_support_plus_8px_mae,20,10,5.016965,6.5461535,7.185655,mean absolute RGB difference; 0..255; descriptive only
+R1,corrosion,outside_roi_bbox_mae,20,10,5.022988,6.8774875,7.802671,mean absolute RGB difference; 0..255; descriptive only
+R1,corrosion,outer_20px_frame_mae,20,10,7.181952,8.3668615,11.097993,mean absolute RGB difference; 0..255; descriptive only
+R2,Crack,defect_mask_mae,24,2,20.488688,39.751185,71.278351,mean absolute RGB difference; 0..255; descriptive only
+R2,Crack,edit_support_mae,24,2,14.431756,20.3763075,33.976944,mean absolute RGB difference; 0..255; descriptive only
+R2,Crack,outside_edit_support_mae,24,2,2.305662,3.8178235000000003,5.149724,mean absolute RGB difference; 0..255; descriptive only
+R2,Crack,outside_support_plus_8px_mae,24,2,2.263252,3.7889095,5.133873,mean absolute RGB difference; 0..255; descriptive only
+R2,Crack,outside_roi_bbox_mae,24,2,2.193552,3.7103450000000002,5.054607,mean absolute RGB difference; 0..255; descriptive only
+R2,Crack,outer_20px_frame_mae,24,2,2.35083,4.7026345,6.917438,mean absolute RGB difference; 0..255; descriptive only
+R2,corrosion,defect_mask_mae,24,2,17.317923,21.389288999999998,37.243446,mean absolute RGB difference; 0..255; descriptive only
+R2,corrosion,edit_support_mae,24,2,15.451074,18.9140835,33.300674,mean absolute RGB difference; 0..255; descriptive only
+R2,corrosion,outside_edit_support_mae,24,2,6.256418,6.4978845,7.038297,mean absolute RGB difference; 0..255; descriptive only
+R2,corrosion,outside_support_plus_8px_mae,24,2,6.242939,6.498394,7.039556,mean absolute RGB difference; 0..255; descriptive only
+R2,corrosion,outside_roi_bbox_mae,24,2,6.238962,7.1284695,8.257205,mean absolute RGB difference; 0..255; descriptive only
+R2,corrosion,outer_20px_frame_mae,24,2,8.609807,9.8021465,10.804386,mean absolute RGB difference; 0..255; descriptive only

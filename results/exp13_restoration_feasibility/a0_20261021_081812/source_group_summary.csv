@@ -1,0 +1,21 @@
+source_group_id,class_name,source_id,candidate_count,r1_count,r2_count,unique_output_sha256_count,source_sha256,independence
+Crack:86,Crack,86,2,2,0,2,d659abce4048824cfe7bcefae94f60f78f05688fc3943aef5328decb3269f452,one source group; variants are not independent
+Crack:111,Crack,111,2,2,0,2,51d8286c2128485d42f8b9a9527504b7271f49e0ed30ae7aff9cae93e9513c1e,one source group; variants are not independent
+Crack:146,Crack,146,2,2,0,2,39a2a77fd7fc6d579bcb32dc43f55672252a5ff97f4f072a75dc682534de55ec,one source group; variants are not independent
+Crack:260,Crack,260,14,2,12,14,222419556d6bd4761d6ec6c66102b6bd4775a1989d517eb4cc93f91ecf3c2bd2,one source group; variants are not independent
+Crack:312,Crack,312,2,2,0,2,3bc33ab62b843b506435d3f2b1ae76a5ae6c82a98a7760222c9624e03eddab34,one source group; variants are not independent
+Crack:354,Crack,354,2,2,0,2,da0e920e0f8302330ea5868cabefcd8afed5bee97f412254792ea16b50b2ab26,one source group; variants are not independent
+Crack:356,Crack,356,2,2,0,2,8c99b9bd37b5f8cc0d305f10be758ff4ccc2f80377ef2b2d8b0c018a9084aa1e,one source group; variants are not independent
+Crack:468,Crack,468,2,2,0,2,be24d2362b017dbf8db85a1652ea05705c64290554f9050f24f0f2ce61113e2c,one source group; variants are not independent
+Crack:469,Crack,469,14,2,12,14,203e6c3a4f48e37c7d0787a054fc8718dd007d2b4fe17af732f831e4a6d305c5,one source group; variants are not independent
+Crack:470,Crack,470,2,2,0,2,6d1537bb91157f82a679581d82fa3e20d72dde3b29cc14d2f47974931c3d0ec1,one source group; variants are not independent
+corrosion:1,corrosion,1,2,2,0,2,4cacb0d2c49d471fada2c05f0fc006d87367e0bdd6568c623e677ed0d382d904,one source group; variants are not independent
+corrosion:2,corrosion,2,2,2,0,2,514d07947ee5ff2d3ac8e160ac58a28bb159ed2549105e4998eaed4b0ba4bc03,one source group; variants are not independent
+corrosion:6,corrosion,6,2,2,0,2,cca3c05fb41aca92e846f3f94e4f33b4b412ac80ca2e74f588eba5e23d283fcd,one source group; variants are not independent
+corrosion:7,corrosion,7,2,2,0,2,f95bacb8bfbcb84dd937c1c8d52fea4a6f76afede47febd4b49ffcd62a061c2f,one source group; variants are not independent
+corrosion:8,corrosion,8,2,2,0,2,57eac89a6d22aa47f47f8f019e25d90fb71c5bd2ddbdeec60cf379c61f30850d,one source group; variants are not independent
+corrosion:9,corrosion,9,14,2,12,14,6d3500179a426adeed2ce36fce563c645bbc0ec7b704311f030ca6c53386dd02,one source group; variants are not independent
+corrosion:12,corrosion,12,2,2,0,2,c7d2c7a40ca09e5cd06b7684470b10875a5dc751892cd20b72d69fe700340029,one source group; variants are not independent
+corrosion:13,corrosion,13,2,2,0,2,42387d1d1ac38a74200395ea46d25c173f70e879e0f9d9b8c30d285629e2ee6c,one source group; variants are not independent
+corrosion:23,corrosion,23,14,2,12,14,c57384471d743fc179add88589fa0d7c8d59e59d14c6947ab9f6d4fd692dbddb,one source group; variants are not independent
+corrosion:27,corrosion,27,2,2,0,2,a59535053063e8590c957f971fe2956eb93f2afaa639b3b0fca7f2390a5c6889,one source group; variants are not independent

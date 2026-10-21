@@ -1,0 +1,6 @@
+2026-10-21T08:24:21.903050+00:00 START CPU-only historical audit preparation
+Parsed R1=40 and R2=48 manifest rows; all SUCCESS and TRAIN-provenance matched.
+Validated referenced file decodes, raster sizes, saved mask recipe and source grouping.
+Replayed historical central crop/fit, computed descriptive differences and rendered 22 review PNGs.
+Historical before/after SHA256 equal for 195 files.
+2026-10-21T08:25:29.935783+00:00 END RESTORATION_REVIEW_ASSETS_PREPARED_AWAITING_HUMAN_REVIEW

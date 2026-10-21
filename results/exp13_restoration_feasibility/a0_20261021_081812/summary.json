@@ -1,0 +1,38 @@
+{
+  "run_id": "a0_20261021_081812",
+  "gate": "RESTORATION_REVIEW_ASSETS_PREPARED_AWAITING_HUMAN_REVIEW",
+  "started_utc": "2026-10-21T08:24:21.903050+00:00",
+  "completed_utc": "2026-10-21T08:25:29.935783+00:00",
+  "hostname": "autodl-container-8e424bb370-61e7c45a",
+  "branch": "exp13/vlm-semantic-audit",
+  "evidence_base_head": "1d85844362862993e358dfdf943be4951f95eb65",
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "numpy": "2.3.2",
+  "pillow": "11.3.0",
+  "r1_outputs": 40,
+  "r1_sources": 20,
+  "r2_outputs": 48,
+  "r2_sources": 4,
+  "combined_candidates": 88,
+  "combined_unique_class_source_groups": 20,
+  "combined_unique_source_file_hashes": 20,
+  "cross_run_repeated_sources": 4,
+  "unique_output_file_hashes": 88,
+  "source_class_counts": {
+    "Crack": 10,
+    "corrosion": 10
+  },
+  "candidate_class_counts": {
+    "Crack": 44,
+    "corrosion": 44
+  },
+  "contact_sheets": 22,
+  "human_judgment_cells_blank": 792,
+  "validation_errors": [],
+  "historical_files_unchanged": true,
+  "generation": false,
+  "training": false,
+  "val_test_image_access": false,
+  "restoration_quality_gate_pass": false,
+  "exp13_2_b_authorized": false
+}

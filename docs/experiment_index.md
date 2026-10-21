@@ -55,3 +55,11 @@ The Exp13.1-R2 waiting-review row above is retained as a historical execution sn
 | Exp13.1-R2-QA | EXP13_1_R2_QUALITY_GATE_ARCHIVED / GENERIC_TEXT_ONLY_INPAINTING_NOT_APPROVED_FOR_CURRENT_SSL_SYNTHESIS | [Final quality review](exp13_1_r2_final_quality_gate_review.md) |
 
 Current text-only inpainting SSL, seven-class generation, R3 parameter sweep, and Exp13.2 generation authorizations are all NO. Only Exp13.2-A method research/design discussion is the proposed next stage. Evidence is earlier ChatGPT qualitative sheet review relayed and authorized by the user; no new visual review or quantitative scores were produced. See [QA handoff](exp13_1_r2_qa_archival_handoff.md).
+
+## Exp13.2-A0 historical restoration preparation (2026-10-21)
+
+| Record | Status | Canonical evidence |
+|---|---|---|
+| Exp13.2-A0 | RESTORATION_REVIEW_ASSETS_PREPARED_AWAITING_HUMAN_REVIEW | [Preparation report](exp13_2_a0_restoration_feasibility_preparation.md); `results/exp13_restoration_feasibility/a0_20261021_081812/summary.json` |
+
+88 historical candidates form 20 source groups; R2 sources overlap R1. Twenty source sheets and two class overviews are ready, with all human review fields blank. Historical crop truncation and nonzero mask-exterior differences remain review limitations. This later preparation record preserves all historical Gates and does not authorize quality PASS, new generation, training or Exp13.2-B. See [A0 handoff](exp13_2_a0_restoration_feasibility_handoff.md).
