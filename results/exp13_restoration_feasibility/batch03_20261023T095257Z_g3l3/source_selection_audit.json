@@ -1,0 +1,344 @@
+{
+  "rule": "Quota3corrosion+1Crack; greedily cover new historical screening status, ties numeric ID ascending; no image-quality or model-output selection",
+  "independent_key": [
+    "class",
+    "source_id"
+  ],
+  "all_source_count": 20,
+  "previously_covered_source_count": 8,
+  "remaining_before_count": 12,
+  "all_sources": [
+    {
+      "class_name": "corrosion",
+      "source_id": "1"
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "2"
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "6"
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "7"
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "8"
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "9"
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "12"
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "13"
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "23"
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "27"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "86"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "111"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "146"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "260"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "312"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "354"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "356"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "468"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "469"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "470"
+    }
+  ],
+  "covered_sources": [
+    {
+      "class_name": "corrosion",
+      "source_id": "2"
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "8"
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "13"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "86"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "111"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "146"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "260"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "470"
+    }
+  ],
+  "remaining_before": [
+    {
+      "class_name": "corrosion",
+      "source_id": "1",
+      "historical_screening": {
+        "source_id": "1",
+        "class": "corrosion",
+        "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+        "risk_and_evidence": "Historical source screening only; verify residual corrosion and surrounding structure per variant. A0 spatial report: historical center crop truncates part of the native defect mask; cropped-away area is not evidence of repair.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+      }
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "6",
+      "historical_screening": {
+        "source_id": "6",
+        "class": "corrosion",
+        "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+        "risk_and_evidence": "Historical source screening only; verify residual corrosion and surrounding structure per variant. A0 spatial report: historical center crop truncates part of the native defect mask; cropped-away area is not evidence of repair.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+      }
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "7",
+      "historical_screening": {
+        "source_id": "7",
+        "class": "corrosion",
+        "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+        "risk_and_evidence": "Historical source screening only; verify residual corrosion and surrounding structure per variant. A0 spatial report: historical center crop truncates part of the native defect mask; cropped-away area is not evidence of repair.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+      }
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "9",
+      "historical_screening": {
+        "source_id": "9",
+        "class": "corrosion",
+        "source_level_review_status": "REJECT_RESTRICTED",
+        "risk_and_evidence": "RESTRICTED: prior source-level screen noted conspicuous mechanical hallucination; do not consider for freeze without documented reassessment. A0 spatial report: historical center crop truncates part of the native defect mask; cropped-away area is not evidence of repair.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Keep excluded from any freeze unless a documented human reassessment changes this screen."
+      }
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "12",
+      "historical_screening": {
+        "source_id": "12",
+        "class": "corrosion",
+        "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+        "risk_and_evidence": "Part of the native defect mask is cropped by the historical center crop; inspect only the retained aligned inference view.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+      }
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "23",
+      "historical_screening": {
+        "source_id": "23",
+        "class": "corrosion",
+        "source_level_review_status": "REJECT_RESTRICTED",
+        "risk_and_evidence": "RESTRICTED: prior source-level screen noted erroneous seam/mechanical-structure generation; do not consider for freeze without documented reassessment. A0 spatial report: historical center crop truncates part of the native defect mask; cropped-away area is not evidence of repair.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Keep excluded from any freeze unless a documented human reassessment changes this screen."
+      }
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "27",
+      "historical_screening": {
+        "source_id": "27",
+        "class": "corrosion",
+        "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+        "risk_and_evidence": "Historical source screening only; verify residual corrosion and surrounding structure per variant. A0 spatial report: historical center crop truncates part of the native defect mask; cropped-away area is not evidence of repair.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+      }
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "312",
+      "historical_screening": {
+        "source_id": "312",
+        "class": "Crack",
+        "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+        "risk_and_evidence": "Historical source screening only; verify residual crack and surface texture independently per variant.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+      }
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "354",
+      "historical_screening": {
+        "source_id": "354",
+        "class": "Crack",
+        "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+        "risk_and_evidence": "Historical source screening only; verify residual crack and surface texture independently per variant.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+      }
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "356",
+      "historical_screening": {
+        "source_id": "356",
+        "class": "Crack",
+        "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+        "risk_and_evidence": "Historical source screening only; verify residual crack and surface texture independently per variant.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+      }
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "468",
+      "historical_screening": {
+        "source_id": "468",
+        "class": "Crack",
+        "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+        "risk_and_evidence": "Historical source screening only; verify residual crack and surface texture independently per variant.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+      }
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "469",
+      "historical_screening": {
+        "source_id": "469",
+        "class": "Crack",
+        "source_level_review_status": "UNCERTAIN",
+        "risk_and_evidence": "Uncertain source-level appearance; inspect all variants for residual defect, smoothing and structural plausibility.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Resolve uncertainty through explicit variant-by-variant review."
+      }
+    }
+  ],
+  "selected_sources": [
+    {
+      "class_name": "corrosion",
+      "source_id": "1",
+      "historical_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+      "status_not_previously_selected": true,
+      "rule": "Prefer status not yet represented in this batch, then numeric source_id ascending; corrosion quota first"
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "9",
+      "historical_status": "REJECT_RESTRICTED",
+      "status_not_previously_selected": true,
+      "rule": "Prefer status not yet represented in this batch, then numeric source_id ascending; corrosion quota first"
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "6",
+      "historical_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+      "status_not_previously_selected": false,
+      "rule": "Prefer status not yet represented in this batch, then numeric source_id ascending; corrosion quota first"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "469",
+      "historical_status": "UNCERTAIN",
+      "status_not_previously_selected": true,
+      "rule": "Prefer status not yet represented in this batch, then numeric source_id ascending; corrosion quota first"
+    }
+  ],
+  "unselected_after": [
+    {
+      "class_name": "corrosion",
+      "source_id": "7"
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "12"
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "23"
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "27"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "312"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "354"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "356"
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "468"
+    }
+  ],
+  "input_sha256": {
+    "results/exp13_restoration_feasibility/a0_20261021_081812/source_variant_review_index.csv": "075d4600e2c4d497cf5d359cb32b71352835c0be94590e00ff4b22c1c48f64a6",
+    "results/exp13_restoration_feasibility/qa_20261021_090000/source_visual_screening.csv": "47203f26efd77c936cc45cce788ef244448ffd396ccfb07415460a565f0e694a",
+    "results/exp13_restoration_feasibility/qa_20261023_batch01_manifest.csv": "b58691a5b8745c22bf2c303df38d14cdd5bde26d505c039d598416d802ff10a2",
+    "results/exp13_restoration_feasibility/qa_20261023_batch01_user_review_overlay.csv": "d40fd45af195574510daa29fb3338e3fb8ec8079a88c18a6caf5c232e4c3093e",
+    "results/exp13_restoration_feasibility/qa_20261023_batch02_manifest.csv": "fa5ff1d3106846155017578202cd204f56e162e1f9340b188786009262332815",
+    "results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_overlay.csv": "3898311a275f89a53aeb15a6ac58ea1c34a86e2ab4f4d6c85469eb95be799781"
+  }
+}

@@ -1,0 +1,725 @@
+{
+  "prepared_utc": "2026-10-23T09:56:38.837296+00:00",
+  "gate": "BATCH03_REVIEW_PACKET_PREPARED_AWAITING_HUMAN_REVIEW",
+  "flags": {
+    "FINAL_TRUSTED_PAIR_FREEZE": "NO",
+    "RESTORATION_QUALITY_GATE_PASS": "NO",
+    "EXP13_2_B_AUTHORIZATION": "NO",
+    "SSL_AUTHORIZATION": "NO"
+  },
+  "hostname": "autodl-container-m6ahgmrgv8-57f0f00d",
+  "branch": "exp13/vlm-semantic-audit",
+  "starting_head": "75dda701c054fb9ea6efb4ffbf4332fbed797f4e",
+  "starting_snapshot_path": "/root/autodl-tmp/exp13_2_a2_batch03_delivery_5vh_g3l3/starting_state_snapshot.json",
+  "selection": {
+    "rule": "Quota3corrosion+1Crack; greedily cover new historical screening status, ties numeric ID ascending; no image-quality or model-output selection",
+    "independent_key": [
+      "class",
+      "source_id"
+    ],
+    "all_source_count": 20,
+    "previously_covered_source_count": 8,
+    "remaining_before_count": 12,
+    "all_sources": [
+      {
+        "class_name": "corrosion",
+        "source_id": "1"
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "2"
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "6"
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "7"
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "8"
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "9"
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "12"
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "13"
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "23"
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "27"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "86"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "111"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "146"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "260"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "312"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "354"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "356"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "468"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "469"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "470"
+      }
+    ],
+    "covered_sources": [
+      {
+        "class_name": "corrosion",
+        "source_id": "2"
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "8"
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "13"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "86"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "111"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "146"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "260"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "470"
+      }
+    ],
+    "remaining_before": [
+      {
+        "class_name": "corrosion",
+        "source_id": "1",
+        "historical_screening": {
+          "source_id": "1",
+          "class": "corrosion",
+          "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+          "risk_and_evidence": "Historical source screening only; verify residual corrosion and surrounding structure per variant. A0 spatial report: historical center crop truncates part of the native defect mask; cropped-away area is not evidence of repair.",
+          "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+          "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+        }
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "6",
+        "historical_screening": {
+          "source_id": "6",
+          "class": "corrosion",
+          "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+          "risk_and_evidence": "Historical source screening only; verify residual corrosion and surrounding structure per variant. A0 spatial report: historical center crop truncates part of the native defect mask; cropped-away area is not evidence of repair.",
+          "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+          "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+        }
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "7",
+        "historical_screening": {
+          "source_id": "7",
+          "class": "corrosion",
+          "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+          "risk_and_evidence": "Historical source screening only; verify residual corrosion and surrounding structure per variant. A0 spatial report: historical center crop truncates part of the native defect mask; cropped-away area is not evidence of repair.",
+          "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+          "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+        }
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "9",
+        "historical_screening": {
+          "source_id": "9",
+          "class": "corrosion",
+          "source_level_review_status": "REJECT_RESTRICTED",
+          "risk_and_evidence": "RESTRICTED: prior source-level screen noted conspicuous mechanical hallucination; do not consider for freeze without documented reassessment. A0 spatial report: historical center crop truncates part of the native defect mask; cropped-away area is not evidence of repair.",
+          "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+          "next_step": "Keep excluded from any freeze unless a documented human reassessment changes this screen."
+        }
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "12",
+        "historical_screening": {
+          "source_id": "12",
+          "class": "corrosion",
+          "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+          "risk_and_evidence": "Part of the native defect mask is cropped by the historical center crop; inspect only the retained aligned inference view.",
+          "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+          "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+        }
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "23",
+        "historical_screening": {
+          "source_id": "23",
+          "class": "corrosion",
+          "source_level_review_status": "REJECT_RESTRICTED",
+          "risk_and_evidence": "RESTRICTED: prior source-level screen noted erroneous seam/mechanical-structure generation; do not consider for freeze without documented reassessment. A0 spatial report: historical center crop truncates part of the native defect mask; cropped-away area is not evidence of repair.",
+          "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+          "next_step": "Keep excluded from any freeze unless a documented human reassessment changes this screen."
+        }
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "27",
+        "historical_screening": {
+          "source_id": "27",
+          "class": "corrosion",
+          "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+          "risk_and_evidence": "Historical source screening only; verify residual corrosion and surrounding structure per variant. A0 spatial report: historical center crop truncates part of the native defect mask; cropped-away area is not evidence of repair.",
+          "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+          "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+        }
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "312",
+        "historical_screening": {
+          "source_id": "312",
+          "class": "Crack",
+          "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+          "risk_and_evidence": "Historical source screening only; verify residual crack and surface texture independently per variant.",
+          "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+          "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+        }
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "354",
+        "historical_screening": {
+          "source_id": "354",
+          "class": "Crack",
+          "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+          "risk_and_evidence": "Historical source screening only; verify residual crack and surface texture independently per variant.",
+          "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+          "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+        }
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "356",
+        "historical_screening": {
+          "source_id": "356",
+          "class": "Crack",
+          "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+          "risk_and_evidence": "Historical source screening only; verify residual crack and surface texture independently per variant.",
+          "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+          "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+        }
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "468",
+        "historical_screening": {
+          "source_id": "468",
+          "class": "Crack",
+          "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+          "risk_and_evidence": "Historical source screening only; verify residual crack and surface texture independently per variant.",
+          "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+          "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+        }
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "469",
+        "historical_screening": {
+          "source_id": "469",
+          "class": "Crack",
+          "source_level_review_status": "UNCERTAIN",
+          "risk_and_evidence": "Uncertain source-level appearance; inspect all variants for residual defect, smoothing and structural plausibility.",
+          "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+          "next_step": "Resolve uncertainty through explicit variant-by-variant review."
+        }
+      }
+    ],
+    "selected_sources": [
+      {
+        "class_name": "corrosion",
+        "source_id": "1",
+        "historical_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+        "status_not_previously_selected": true,
+        "rule": "Prefer status not yet represented in this batch, then numeric source_id ascending; corrosion quota first"
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "9",
+        "historical_status": "REJECT_RESTRICTED",
+        "status_not_previously_selected": true,
+        "rule": "Prefer status not yet represented in this batch, then numeric source_id ascending; corrosion quota first"
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "6",
+        "historical_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+        "status_not_previously_selected": false,
+        "rule": "Prefer status not yet represented in this batch, then numeric source_id ascending; corrosion quota first"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "469",
+        "historical_status": "UNCERTAIN",
+        "status_not_previously_selected": true,
+        "rule": "Prefer status not yet represented in this batch, then numeric source_id ascending; corrosion quota first"
+      }
+    ],
+    "unselected_after": [
+      {
+        "class_name": "corrosion",
+        "source_id": "7"
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "12"
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "23"
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "27"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "312"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "354"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "356"
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "468"
+      }
+    ],
+    "input_sha256": {
+      "results/exp13_restoration_feasibility/a0_20261021_081812/source_variant_review_index.csv": "075d4600e2c4d497cf5d359cb32b71352835c0be94590e00ff4b22c1c48f64a6",
+      "results/exp13_restoration_feasibility/qa_20261021_090000/source_visual_screening.csv": "47203f26efd77c936cc45cce788ef244448ffd396ccfb07415460a565f0e694a",
+      "results/exp13_restoration_feasibility/qa_20261023_batch01_manifest.csv": "b58691a5b8745c22bf2c303df38d14cdd5bde26d505c039d598416d802ff10a2",
+      "results/exp13_restoration_feasibility/qa_20261023_batch01_user_review_overlay.csv": "d40fd45af195574510daa29fb3338e3fb8ec8079a88c18a6caf5c232e4c3093e",
+      "results/exp13_restoration_feasibility/qa_20261023_batch02_manifest.csv": "fa5ff1d3106846155017578202cd204f56e162e1f9340b188786009262332815",
+      "results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_overlay.csv": "3898311a275f89a53aeb15a6ac58ea1c34a86e2ab4f4d6c85469eb95be799781"
+    }
+  },
+  "source_count": 4,
+  "candidate_count": 8,
+  "join_failures": 0,
+  "missing_files": [],
+  "historical_run": "run_20260921_124440",
+  "split": "train",
+  "source_spatial_checks": [
+    {
+      "class_name": "corrosion",
+      "source_id": "1",
+      "native_size": [
+        720,
+        540
+      ],
+      "native_crop_xyxy": [
+        90.0,
+        0.0,
+        630.0,
+        540.0
+      ],
+      "transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+      "mask_pixels_total": 3074,
+      "mask_pixels_inside": 2996,
+      "mask_pixels_outside": 78,
+      "retained_fraction": 0.9746258945998699,
+      "a0_spatial_match": true,
+      "fit_matches_explicit_resize_box": true,
+      "fit_original_mask_pixels": 2663,
+      "quality_not_assessed": true
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "9",
+      "native_size": [
+        720,
+        540
+      ],
+      "native_crop_xyxy": [
+        90.0,
+        0.0,
+        630.0,
+        540.0
+      ],
+      "transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+      "mask_pixels_total": 77694,
+      "mask_pixels_inside": 72709,
+      "mask_pixels_outside": 4985,
+      "retained_fraction": 0.9358380312508044,
+      "a0_spatial_match": true,
+      "fit_matches_explicit_resize_box": true,
+      "fit_original_mask_pixels": 65276,
+      "quality_not_assessed": true
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "6",
+      "native_size": [
+        720,
+        540
+      ],
+      "native_crop_xyxy": [
+        90.0,
+        0.0,
+        630.0,
+        540.0
+      ],
+      "transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+      "mask_pixels_total": 4757,
+      "mask_pixels_inside": 2789,
+      "mask_pixels_outside": 1968,
+      "retained_fraction": 0.5862938826991801,
+      "a0_spatial_match": true,
+      "fit_matches_explicit_resize_box": true,
+      "fit_original_mask_pixels": 2509,
+      "quality_not_assessed": true
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "469",
+      "native_size": [
+        960,
+        720
+      ],
+      "native_crop_xyxy": [
+        120.0,
+        0.0,
+        840.0,
+        720.0
+      ],
+      "transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+      "mask_pixels_total": 1562,
+      "mask_pixels_inside": 1562,
+      "mask_pixels_outside": 0,
+      "retained_fraction": 1.0,
+      "a0_spatial_match": true,
+      "fit_matches_explicit_resize_box": true,
+      "fit_original_mask_pixels": 776,
+      "quality_not_assessed": true
+    }
+  ],
+  "input_file_inventory": [
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/corrosion/inputs/vlm_11_1.png",
+      "sha256": "4cacb0d2c49d471fada2c05f0fc006d87367e0bdd6568c623e677ed0d382d904",
+      "dimensions": "720x540",
+      "bytes": 654583,
+      "a0_sha256_matches": true
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/original/vlm_11_1_mask.png",
+      "sha256": "71fe10b1ba9cfd666e177302a3715fac94092230112dc44c3d350e560093359c",
+      "dimensions": "720x540",
+      "bytes": 1138,
+      "a0_sha256_matches": true
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_11_1_mask.png",
+      "sha256": "496457ce3793bdf0a7982be76b79f8f217d5f39fe11139ad57bfe6533c058bc5",
+      "dimensions": "720x540",
+      "bytes": 3493,
+      "a0_sha256_matches": true
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_1_v1.png",
+      "sha256": "b58b8ac849f3d26a5f49bd8328840c0feb42c31b06c37ef9eb4cd0b59a95f051",
+      "dimensions": "512x512",
+      "bytes": 371364,
+      "a0_sha256_matches": true
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_1_v2.png",
+      "sha256": "96b67b902ea5dce73d28544e10e9c5c141ec0d306df6d5479e3736468d35c7b0",
+      "dimensions": "512x512",
+      "bytes": 370997,
+      "a0_sha256_matches": true
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/corrosion/inputs/vlm_16_9.png",
+      "sha256": "6d3500179a426adeed2ce36fce563c645bbc0ec7b704311f030ca6c53386dd02",
+      "dimensions": "720x540",
+      "bytes": 592399,
+      "a0_sha256_matches": true
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/original/vlm_16_9_mask.png",
+      "sha256": "5ad71728b5eda4e7eeee56491ca89b1dca3b1c72d7cd1f96862ec7b23e6570a5",
+      "dimensions": "720x540",
+      "bytes": 4926,
+      "a0_sha256_matches": true
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_16_9_mask.png",
+      "sha256": "10f0aa92a3027c730dc65ab4c9bfa62ea0404782dfe1d7172e9e1b38bbfddbaa",
+      "dimensions": "720x540",
+      "bytes": 15087,
+      "a0_sha256_matches": true
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_9_v1.png",
+      "sha256": "dba79b71caab82f3ce049bf122c64111befbb1f6389a3023edf3459aed3ac3d6",
+      "dimensions": "512x512",
+      "bytes": 361657,
+      "a0_sha256_matches": true
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_9_v2.png",
+      "sha256": "976e360eba86842d4841c63b6e0727307f0aabf5aa785d2085a4a5d70f185caf",
+      "dimensions": "512x512",
+      "bytes": 369708,
+      "a0_sha256_matches": true
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/corrosion/inputs/vlm_13_6.png",
+      "sha256": "cca3c05fb41aca92e846f3f94e4f33b4b412ac80ca2e74f588eba5e23d283fcd",
+      "dimensions": "720x540",
+      "bytes": 621076,
+      "a0_sha256_matches": true
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/original/vlm_13_6_mask.png",
+      "sha256": "08fdc731eaf45f45b649f735762f2c500df12772423beb734b5fd3cc102b431a",
+      "dimensions": "720x540",
+      "bytes": 1062,
+      "a0_sha256_matches": true
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_13_6_mask.png",
+      "sha256": "b4ac22e0004d19c9a86c598aca7ad4341a4827bd58373c06a764c8c63d207346",
+      "dimensions": "720x540",
+      "bytes": 3291,
+      "a0_sha256_matches": true
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_6_v1.png",
+      "sha256": "5d18ba13a3e61c37665ba4a9029d0360414a90fd34ea5f6a5e86aecb6bbd2572",
+      "dimensions": "512x512",
+      "bytes": 365395,
+      "a0_sha256_matches": true
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_6_v2.png",
+      "sha256": "a81eb9ea35add3c469d0be546ffb963bd6299b6835e5f725a05cadcb785e2016",
+      "dimensions": "512x512",
+      "bytes": 364765,
+      "a0_sha256_matches": true
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/inputs/vlm_09_469.jpg",
+      "sha256": "203e6c3a4f48e37c7d0787a054fc8718dd007d2b4fe17af732f831e4a6d305c5",
+      "dimensions": "960x720",
+      "bytes": 32134,
+      "a0_sha256_matches": true
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/original/vlm_09_469_mask.png",
+      "sha256": "b92518a10beabf158759b9d4696a6d9d4205c7fd2b697ed9929a64b03ee8719a",
+      "dimensions": "960x720",
+      "bytes": 1445,
+      "a0_sha256_matches": true
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_09_469_mask.png",
+      "sha256": "fa0b01b00b12774b8e84b8f211c074342797ce26dd41aed13c30a6d51c1b95ad",
+      "dimensions": "960x720",
+      "bytes": 3708,
+      "a0_sha256_matches": true
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_469_v1.png",
+      "sha256": "a13ebf7f5a15c065cd7bfbc22ba300d0af88a54ae45d045b2607a94f0d90eabc",
+      "dimensions": "512x512",
+      "bytes": 244486,
+      "a0_sha256_matches": true
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_469_v2.png",
+      "sha256": "fdb4e5fa8525a22e7251fd7fc18b8c5c747659f9a203ddc7bd00362de3c84789",
+      "dimensions": "512x512",
+      "bytes": 242131,
+      "a0_sha256_matches": true
+    }
+  ],
+  "review_assets": [
+    {
+      "path": "contact_sheets/corrosion_1_review.png",
+      "size": [
+        1608,
+        1615
+      ],
+      "sha256": "d3fdb3a468c9c13e713e682c25ade75bd769cb097fb2054e89664eeb8e763963"
+    },
+    {
+      "path": "variant_review_sheets/corrosion_1_v1_review.png",
+      "size": [
+        1608,
+        1640
+      ],
+      "sha256": "2f24fd61486f450f6b545b8d12af8b03033139c8808262503117f4e8d5d2b552"
+    },
+    {
+      "path": "variant_review_sheets/corrosion_1_v2_review.png",
+      "size": [
+        1608,
+        1640
+      ],
+      "sha256": "12dc91150b94b4fc19e4874eddc2cfc8cd09cbbebcdb2d85b855f7090bac1d74"
+    },
+    {
+      "path": "contact_sheets/corrosion_9_review.png",
+      "size": [
+        1608,
+        1615
+      ],
+      "sha256": "b209b1f955dfe6a3ca93963071484f833d7733654216c987d731a3739c7549d5"
+    },
+    {
+      "path": "variant_review_sheets/corrosion_9_v1_review.png",
+      "size": [
+        1608,
+        1640
+      ],
+      "sha256": "a21510cb0dce6018621ee8f49b000215291c1ca5fed8c25441689c695b0e4663"
+    },
+    {
+      "path": "variant_review_sheets/corrosion_9_v2_review.png",
+      "size": [
+        1608,
+        1640
+      ],
+      "sha256": "e1a6d93af742573d32a1c04ea316a1e48bc9d4ebf0319a593792185e1c805e3f"
+    },
+    {
+      "path": "contact_sheets/corrosion_6_review.png",
+      "size": [
+        1608,
+        1615
+      ],
+      "sha256": "5c3e1e2eb3c4de435af2205c09d2bbe8d5ae81a51d4314b62da4b26d068d7ec8"
+    },
+    {
+      "path": "variant_review_sheets/corrosion_6_v1_review.png",
+      "size": [
+        1608,
+        1640
+      ],
+      "sha256": "b5f26effb4c9f90d9138dbb0d4b46239fdf8c71c7695199ea18b6da477c59440"
+    },
+    {
+      "path": "variant_review_sheets/corrosion_6_v2_review.png",
+      "size": [
+        1608,
+        1640
+      ],
+      "sha256": "6ba8a2abd5423b8ac5cebf0de0cde43930bf3566c6036d1694ce13df3b6a185f"
+    },
+    {
+      "path": "contact_sheets/crack_469_review.png",
+      "size": [
+        1608,
+        1615
+      ],
+      "sha256": "0230d66c3ffd087f21f7062afc028c43e4bb2c921c32088c4ec13125400418cc"
+    },
+    {
+      "path": "variant_review_sheets/crack_469_v1_review.png",
+      "size": [
+        1608,
+        1640
+      ],
+      "sha256": "e25e55affbf5ba2da4bd75dd7a475efb06f729e220d0ca38fc83501cfa075f28"
+    },
+    {
+      "path": "variant_review_sheets/crack_469_v2_review.png",
+      "size": [
+        1608,
+        1640
+      ],
+      "sha256": "2f70761c87c436f4b0b069cf41d1cc266006fd131695b40d746e7a32917d2102"
+    },
+    {
+      "path": "contact_sheets/batch03_overview.png",
+      "size": [
+        1216,
+        1856
+      ],
+      "sha256": "bd0a484c4311de22280007aca3812b8790c0795765e363dce3aab2774c34b13d"
+    }
+  ],
+  "manifest_sha256": "aa256388947c0de5785cf39e95a59bc07bc8dad94bc6bc1f911cfe0efabf228d",
+  "template_sha256": "f8c3050e524e7dd3b91c891331f9a5053c4938676a0b3d4d3063eb930a038e59",
+  "human_fields_blank": true,
+  "protection": {
+    "legacy_untracked_paths": 11258,
+    "paths_size_mtime_ns_mode_unchanged": true,
+    "protected_sha256_count": 233,
+    "historical_unique_r1_r2_files": 164,
+    "a0_blank_human_fields": 792,
+    "batch01_batch02_records_unchanged": true
+  },
+  "pillow_version": "11.3.0",
+  "numpy_version": "2.3.2",
+  "display": "PNG composites only; original bytes unchanged; deterministic aligned display reconstruction; no source/output stretching",
+  "no_models_or_new_candidates": true,
+  "no_new_visual_quality_judgments": true,
+  "no_val_test_images_read": true,
+  "no_dataset_images_read": true,
+  "checklist": "Decode all input/output/masks and13review sheets; SHA matches A0; transform/crop/native-mask counts match A0; blank independent human template"
+}

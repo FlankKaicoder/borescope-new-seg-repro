@@ -120,3 +120,7 @@ Historical TRAIN R1 only: Crack86/260, corrosion2/8, each v1/v2;8variants/4indep
 | Exp13.2-A2-CrossBatch-SourceEligibility | EXP13_2_A2_CROSS_BATCH_SOURCE_ELIGIBILITY_AUDITED_AWAITING_CHATGPT_AUDIT | [Audit and handoff](exp13_2_a2_cross_batch_source_eligibility_audit.md); [JSON](../results/exp13_restoration_feasibility/qa_20261023_cross_batch_source_eligibility.json) |
 
 8source/16variant;7source with user acceptance,0with sufficient formal trusted-pair admission evidence. Proposed10/5/5 not frozen. Historical decisions retained; no formal quality PASS or further experimental authorization.
+
+## Exp13.2-A2 Batch03 review preparation (2026-10-23T09:56:39.700061+00:00)
+
+`BATCH03_REVIEW_PACKET_PREPARED_AWAITING_HUMAN_REVIEW`. [Handoff](exp13_2_a2_batch03_20261023T095257Z_handoff.md); [packet](../results/exp13_restoration_feasibility/batch03_20261023T095257Z_g3l3/README.md). Recomputed20sources minus8covered leaves12; select corrosion1/9/6 and Crack469 by status diversity then numeric ID,3corrosion+1Crack.8R1variants/4sources;13review PNGs; no models or new decisions. Historical overlays and A0 unchanged; all freeze/quality/Exp13.2-B/SSL remain NO. Stop for human/ChatGPT review.

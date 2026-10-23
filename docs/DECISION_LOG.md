@@ -57,3 +57,7 @@
 | Date | Decision ID | Question | Decision | Reason | Affected experiments |
 |---|---|---|---|---|---|
 | 2026-10-23 UTC | D029 | Do cross-batch user acceptances meet the proposed trusted-source minimum? | `EXP13_2_A2_CROSS_BATCH_SOURCE_ELIGIBILITY_AUDITED_AWAITING_CHATGPT_AUDIT`; no Gate PASS, freeze or training authorization. | 8 independent sources,7 with visual acceptance,0 with sufficient formal admission evidence; 10/5/5 remains an unfrozen proposal. Keep crop/reservation/conflict/pending strata and all original decisions. Correct only two inaccurate verbatim-comment claims. See [audit](exp13_2_a2_cross_batch_source_eligibility_audit.md). | Exp13.2-A2 metadata audit only; stop for ChatGPT |
+
+## Exp13.2-A2 Batch03 review preparation (2026-10-23T09:56:39.700015+00:00)
+
+Decision D030: prepare only new historical review assets, without a semantic quality or admission decision. `BATCH03_REVIEW_PACKET_PREPARED_AWAITING_HUMAN_REVIEW`. [Handoff](exp13_2_a2_batch03_20261023T095257Z_handoff.md); [packet](../results/exp13_restoration_feasibility/batch03_20261023T095257Z_g3l3/README.md). Recomputed20sources minus8covered leaves12; select corrosion1/9/6 and Crack469 by status diversity then numeric ID,3corrosion+1Crack.8R1variants/4sources;13review PNGs; no models or new decisions. Historical overlays and A0 unchanged; all freeze/quality/Exp13.2-B/SSL remain NO. Stop for human/ChatGPT review.
