@@ -112,3 +112,11 @@ Historical TRAIN R1 only: Crack86/260, corrosion2/8, each v1/v2;8variants/4indep
 | Exp13.2-A2-Batch02-UserReview | EXP13_2_A2_BATCH02_USER_REVIEW_RECORDED_AWAITING_CHATGPT_AUDIT | [Decision record](exp13_2_a2_batch02_human_review_decision.md); [overlay](../results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_overlay.csv); [validation](../results/exp13_restoration_feasibility/qa_20261023_batch02_registration_validation.json); [handoff](exp13_2_a2_batch02_user_review_handoff.md) |
 
 8 user decisions /4 independent sources, with crop-only and reservation limits retained. Formal quality fields and original A0/Batch01/Batch02 artifacts unchanged. No pair freeze, quality PASS, Batch03 or training authorization. This appends a current registration state without replacing historical gates.
+
+## Exp13.2-A2 cross-batch source eligibility audit (2026-10-23T09:34:10.618872+00:00)
+
+| Record | Status | Evidence |
+|---|---|---|
+| Exp13.2-A2-CrossBatch-SourceEligibility | EXP13_2_A2_CROSS_BATCH_SOURCE_ELIGIBILITY_AUDITED_AWAITING_CHATGPT_AUDIT | [Audit and handoff](exp13_2_a2_cross_batch_source_eligibility_audit.md); [JSON](../results/exp13_restoration_feasibility/qa_20261023_cross_batch_source_eligibility.json) |
+
+8source/16variant;7source with user acceptance,0with sufficient formal trusted-pair admission evidence. Proposed10/5/5 not frozen. Historical decisions retained; no formal quality PASS or further experimental authorization.

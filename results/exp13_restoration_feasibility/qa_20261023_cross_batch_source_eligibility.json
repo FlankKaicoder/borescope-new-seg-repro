@@ -1,0 +1,1193 @@
+{
+  "audit_utc": "2026-10-23T09:34:10.618872+00:00",
+  "status": "EXP13_2_A2_CROSS_BATCH_SOURCE_ELIGIBILITY_AUDITED_AWAITING_CHATGPT_AUDIT",
+  "evidence_head": "13b9059a5471bdf6d00bdf052641301e3be21c96",
+  "hostname": "autodl-container-m6ahgmrgv8-57f0f00d",
+  "branch": "exp13/vlm-semantic-audit",
+  "scope": "Existing metadata/decision review only; no new visual review or model inference",
+  "independent_unit": [
+    "class",
+    "source_id"
+  ],
+  "join_failures": 0,
+  "source_count": 8,
+  "variant_count": 16,
+  "source_records": [
+    {
+      "class_name": "corrosion",
+      "source_id": "2",
+      "independent_source_key": [
+        "corrosion",
+        "2"
+      ],
+      "batch": "Batch 02",
+      "variants": [
+        {
+          "batch": "Batch 02",
+          "class_name": "corrosion",
+          "source_id": "2",
+          "run_id": "run_20260921_124440",
+          "variant_id": "corrosion_2_v1",
+          "registered_user_decision": "ACCEPT_WITH_SCOPE_LIMITATION",
+          "decision_kind": "accepted",
+          "registered_scope": "仅历史裁切视野",
+          "registered_comment_or_summary": "用户接受当前审核视野；不得声称裁切框外缺陷已修复",
+          "comment_is_verbatim_quote": false,
+          "decision_source": "本次用户指令《Exp13.2-A2 Batch 02：登记人工视觉审核决定》第二节；用户明确人工决定，非新的模型或独立专家评价",
+          "registration_utc": "2026-10-23T09:14:43.048190+00:00",
+          "registered_technical_status": "FILES_HASH_DIMENSIONS_CROP_CONSISTENT_NOT_QUALITY_APPROVAL",
+          "explicit_crop_scoped_acceptance": true,
+          "acceptance_with_reservation": false,
+          "historical_mask_retained_fraction": "0.5488721804511278",
+          "historical_native_crop_xyxy": [
+            80.0,
+            0.0,
+            560.0,
+            480.0
+          ],
+          "historical_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+          "manifest_path": "results/exp13_restoration_feasibility/qa_20261023_batch02_manifest.csv",
+          "manifest_sha256": "fa5ff1d3106846155017578202cd204f56e162e1f9340b188786009262332815",
+          "overlay_path": "results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_overlay.csv",
+          "overlay_sha256": "3898311a275f89a53aeb15a6ac58ea1c34a86e2ab4f4d6c85469eb95be799781",
+          "trusted_pair_frozen": false,
+          "restoration_quality_gate_pass": false
+        },
+        {
+          "batch": "Batch 02",
+          "class_name": "corrosion",
+          "source_id": "2",
+          "run_id": "run_20260921_124440",
+          "variant_id": "corrosion_2_v2",
+          "registered_user_decision": "ACCEPT_WITH_SCOPE_LIMITATION",
+          "decision_kind": "accepted",
+          "registered_scope": "仅历史裁切视野",
+          "registered_comment_or_summary": "用户接受当前审核视野；不得声称裁切框外缺陷已修复",
+          "comment_is_verbatim_quote": false,
+          "decision_source": "本次用户指令《Exp13.2-A2 Batch 02：登记人工视觉审核决定》第二节；用户明确人工决定，非新的模型或独立专家评价",
+          "registration_utc": "2026-10-23T09:14:43.048190+00:00",
+          "registered_technical_status": "FILES_HASH_DIMENSIONS_CROP_CONSISTENT_NOT_QUALITY_APPROVAL",
+          "explicit_crop_scoped_acceptance": true,
+          "acceptance_with_reservation": false,
+          "historical_mask_retained_fraction": "0.5488721804511278",
+          "historical_native_crop_xyxy": [
+            80.0,
+            0.0,
+            560.0,
+            480.0
+          ],
+          "historical_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+          "manifest_path": "results/exp13_restoration_feasibility/qa_20261023_batch02_manifest.csv",
+          "manifest_sha256": "fa5ff1d3106846155017578202cd204f56e162e1f9340b188786009262332815",
+          "overlay_path": "results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_overlay.csv",
+          "overlay_sha256": "3898311a275f89a53aeb15a6ac58ea1c34a86e2ab4f4d6c85469eb95be799781",
+          "trusted_pair_frozen": false,
+          "restoration_quality_gate_pass": false
+        }
+      ],
+      "accepted_variant_ids": [
+        "corrosion_2_v1",
+        "corrosion_2_v2"
+      ],
+      "rejected_variant_ids": [],
+      "pending_variant_ids": [],
+      "has_user_accepted_variant": true,
+      "has_explicit_crop_scoped_acceptance": true,
+      "has_reservation": false,
+      "historical_mask_retained_fraction": "0.5488721804511278",
+      "historical_mask_area_counts": {
+        "inside": 1314,
+        "total": 2394,
+        "outside": 1080
+      },
+      "historical_native_crop_xyxy": [
+        80.0,
+        0.0,
+        560.0,
+        480.0
+      ],
+      "historical_annotation_truncated": true,
+      "historical_unresolved_text_numerical_contradiction": false,
+      "historical_source_screen_preserved": {
+        "source_id": "2",
+        "class": "corrosion",
+        "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+        "risk_and_evidence": "Historical source screening only; verify residual corrosion and surrounding structure per variant. A0 spatial report: historical center crop truncates part of the native defect mask; cropped-away area is not evidence of repair.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+      },
+      "current_technical_evidence": [
+        "Batch02历史文件/尺寸/裁切/保留比例审计一致；非语义几何或修复质量认证"
+      ],
+      "source_specific_follow_up": [
+        "仅历史裁切视野接受，1314/2394=0.5488721804511278；框外1080个标注像素不能声称已修复"
+      ],
+      "enough_evidence_for_formal_trusted_pair_admission": false,
+      "admission_evidence_status": "INSUFFICIENT_DOCUMENTED_EVIDENCE_NOT_A_NEW_VISUAL_REJECTION",
+      "missing_admission_evidence": [
+        "缺少正式逐候选多维准入审查证据：缺陷消除、正常金属纹理、结构/几何保持、边界伪影与编辑区外变化尚未整体认证；用户视觉决定不替代该证据",
+        "缺少符合A1的人工确认修复支撑C、可信正常背景B0及联合变换后的P/N/I有效区域证据；细裂纹占据率和空区域安全处理仍未验证",
+        "未完成正式source级准入判定及未来canonical variant确认；本审计不进行版本优选或冻结"
+      ],
+      "current_eligibility": "RESTRICTED_CANDIDATE",
+      "decision_stratum": "crop_scoped_acceptance",
+      "trusted_pair_frozen": false,
+      "restoration_quality_gate_pass": false
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "8",
+      "independent_source_key": [
+        "corrosion",
+        "8"
+      ],
+      "batch": "Batch 02",
+      "variants": [
+        {
+          "batch": "Batch 02",
+          "class_name": "corrosion",
+          "source_id": "8",
+          "run_id": "run_20260921_124440",
+          "variant_id": "corrosion_8_v1",
+          "registered_user_decision": "REJECT",
+          "decision_kind": "rejected",
+          "registered_scope": "当前审核候选",
+          "registered_comment_or_summary": "用户认为该版本效果不理想",
+          "comment_is_verbatim_quote": false,
+          "decision_source": "本次用户指令《Exp13.2-A2 Batch 02：登记人工视觉审核决定》第二节；用户明确人工决定，非新的模型或独立专家评价",
+          "registration_utc": "2026-10-23T09:14:43.048190+00:00",
+          "registered_technical_status": "FILES_HASH_DIMENSIONS_CROP_CONSISTENT_NOT_QUALITY_APPROVAL",
+          "explicit_crop_scoped_acceptance": false,
+          "acceptance_with_reservation": false,
+          "historical_mask_retained_fraction": "1.0",
+          "historical_native_crop_xyxy": [
+            90.0,
+            0.0,
+            630.0,
+            540.0
+          ],
+          "historical_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+          "manifest_path": "results/exp13_restoration_feasibility/qa_20261023_batch02_manifest.csv",
+          "manifest_sha256": "fa5ff1d3106846155017578202cd204f56e162e1f9340b188786009262332815",
+          "overlay_path": "results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_overlay.csv",
+          "overlay_sha256": "3898311a275f89a53aeb15a6ac58ea1c34a86e2ab4f4d6c85469eb95be799781",
+          "trusted_pair_frozen": false,
+          "restoration_quality_gate_pass": false
+        },
+        {
+          "batch": "Batch 02",
+          "class_name": "corrosion",
+          "source_id": "8",
+          "run_id": "run_20260921_124440",
+          "variant_id": "corrosion_8_v2",
+          "registered_user_decision": "ACCEPT_WITH_RESERVATION",
+          "decision_kind": "accepted",
+          "registered_scope": "当前审核候选",
+          "registered_comment_or_summary": "用户认为该版本基本可以接受，保留意见",
+          "comment_is_verbatim_quote": false,
+          "decision_source": "本次用户指令《Exp13.2-A2 Batch 02：登记人工视觉审核决定》第二节；用户明确人工决定，非新的模型或独立专家评价",
+          "registration_utc": "2026-10-23T09:14:43.048190+00:00",
+          "registered_technical_status": "FILES_HASH_DIMENSIONS_CROP_CONSISTENT_NOT_QUALITY_APPROVAL",
+          "explicit_crop_scoped_acceptance": false,
+          "acceptance_with_reservation": true,
+          "historical_mask_retained_fraction": "1.0",
+          "historical_native_crop_xyxy": [
+            90.0,
+            0.0,
+            630.0,
+            540.0
+          ],
+          "historical_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+          "manifest_path": "results/exp13_restoration_feasibility/qa_20261023_batch02_manifest.csv",
+          "manifest_sha256": "fa5ff1d3106846155017578202cd204f56e162e1f9340b188786009262332815",
+          "overlay_path": "results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_overlay.csv",
+          "overlay_sha256": "3898311a275f89a53aeb15a6ac58ea1c34a86e2ab4f4d6c85469eb95be799781",
+          "trusted_pair_frozen": false,
+          "restoration_quality_gate_pass": false
+        }
+      ],
+      "accepted_variant_ids": [
+        "corrosion_8_v2"
+      ],
+      "rejected_variant_ids": [
+        "corrosion_8_v1"
+      ],
+      "pending_variant_ids": [],
+      "has_user_accepted_variant": true,
+      "has_explicit_crop_scoped_acceptance": false,
+      "has_reservation": true,
+      "historical_mask_retained_fraction": "1.0",
+      "historical_mask_area_counts": {
+        "inside": 951,
+        "total": 951,
+        "outside": 0
+      },
+      "historical_native_crop_xyxy": [
+        90.0,
+        0.0,
+        630.0,
+        540.0
+      ],
+      "historical_annotation_truncated": false,
+      "historical_unresolved_text_numerical_contradiction": false,
+      "historical_source_screen_preserved": {
+        "source_id": "8",
+        "class": "corrosion",
+        "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+        "risk_and_evidence": "Historical source screening only; verify residual corrosion and surrounding structure per variant.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+      },
+      "current_technical_evidence": [
+        "Batch02历史文件/尺寸/裁切/保留比例审计一致；非语义几何或修复质量认证"
+      ],
+      "source_specific_follow_up": [
+        "v1拒绝仅适用于v1；v2为基本可以接受并保留意见，仍需明确保留意见及正式准入复核"
+      ],
+      "enough_evidence_for_formal_trusted_pair_admission": false,
+      "admission_evidence_status": "INSUFFICIENT_DOCUMENTED_EVIDENCE_NOT_A_NEW_VISUAL_REJECTION",
+      "missing_admission_evidence": [
+        "缺少正式逐候选多维准入审查证据：缺陷消除、正常金属纹理、结构/几何保持、边界伪影与编辑区外变化尚未整体认证；用户视觉决定不替代该证据",
+        "缺少符合A1的人工确认修复支撑C、可信正常背景B0及联合变换后的P/N/I有效区域证据；细裂纹占据率和空区域安全处理仍未验证",
+        "未完成正式source级准入判定及未来canonical variant确认；本审计不进行版本优选或冻结"
+      ],
+      "current_eligibility": "RESTRICTED_CANDIDATE",
+      "decision_stratum": "reservation_acceptance",
+      "trusted_pair_frozen": false,
+      "restoration_quality_gate_pass": false
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "13",
+      "independent_source_key": [
+        "corrosion",
+        "13"
+      ],
+      "batch": "Batch 01",
+      "variants": [
+        {
+          "batch": "Batch 01",
+          "class_name": "corrosion",
+          "source_id": "13",
+          "run_id": "run_20260921_124440",
+          "variant_id": "corrosion_13_v1",
+          "registered_user_decision": "USER_ACCEPTED_VISUAL_CROP_SCOPED",
+          "decision_kind": "accepted",
+          "registered_scope": "仅已审核的历史512x512中心裁切视野",
+          "registered_comment_or_summary": "用户接受历史512x512视野中的视觉表现",
+          "comment_is_verbatim_quote": false,
+          "decision_source": "用户本次 Exp13.2-A2 Batch 01 Human Decision Registration & Spatial Audit 指令第2节",
+          "registration_utc": "2026-10-23T07:04:53.701228+00:00",
+          "registered_technical_status": "CROP_SCOPE_VERIFIED_NO_FULL_RAW_CLAIM",
+          "explicit_crop_scoped_acceptance": true,
+          "acceptance_with_reservation": false,
+          "historical_mask_retained_fraction": "0.441285140562249",
+          "historical_native_crop_xyxy": [
+            90.0,
+            0.0,
+            630.0,
+            540.0
+          ],
+          "historical_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+          "manifest_path": "results/exp13_restoration_feasibility/qa_20261023_batch01_manifest.csv",
+          "manifest_sha256": "b58691a5b8745c22bf2c303df38d14cdd5bde26d505c039d598416d802ff10a2",
+          "overlay_path": "results/exp13_restoration_feasibility/qa_20261023_batch01_user_review_overlay.csv",
+          "overlay_sha256": "d40fd45af195574510daa29fb3338e3fb8ec8079a88c18a6caf5c232e4c3093e",
+          "trusted_pair_frozen": false,
+          "restoration_quality_gate_pass": false
+        },
+        {
+          "batch": "Batch 01",
+          "class_name": "corrosion",
+          "source_id": "13",
+          "run_id": "run_20260921_124440",
+          "variant_id": "corrosion_13_v2",
+          "registered_user_decision": "USER_ACCEPTED_VISUAL_CROP_SCOPED",
+          "decision_kind": "accepted",
+          "registered_scope": "仅已审核的历史512x512中心裁切视野",
+          "registered_comment_or_summary": "用户接受历史512x512视野中的视觉表现",
+          "comment_is_verbatim_quote": false,
+          "decision_source": "用户本次 Exp13.2-A2 Batch 01 Human Decision Registration & Spatial Audit 指令第2节",
+          "registration_utc": "2026-10-23T07:04:53.701228+00:00",
+          "registered_technical_status": "CROP_SCOPE_VERIFIED_NO_FULL_RAW_CLAIM",
+          "explicit_crop_scoped_acceptance": true,
+          "acceptance_with_reservation": false,
+          "historical_mask_retained_fraction": "0.441285140562249",
+          "historical_native_crop_xyxy": [
+            90.0,
+            0.0,
+            630.0,
+            540.0
+          ],
+          "historical_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+          "manifest_path": "results/exp13_restoration_feasibility/qa_20261023_batch01_manifest.csv",
+          "manifest_sha256": "b58691a5b8745c22bf2c303df38d14cdd5bde26d505c039d598416d802ff10a2",
+          "overlay_path": "results/exp13_restoration_feasibility/qa_20261023_batch01_user_review_overlay.csv",
+          "overlay_sha256": "d40fd45af195574510daa29fb3338e3fb8ec8079a88c18a6caf5c232e4c3093e",
+          "trusted_pair_frozen": false,
+          "restoration_quality_gate_pass": false
+        }
+      ],
+      "accepted_variant_ids": [
+        "corrosion_13_v1",
+        "corrosion_13_v2"
+      ],
+      "rejected_variant_ids": [],
+      "pending_variant_ids": [],
+      "has_user_accepted_variant": true,
+      "has_explicit_crop_scoped_acceptance": true,
+      "has_reservation": false,
+      "historical_mask_retained_fraction": "0.441285140562249",
+      "historical_mask_area_counts": {
+        "inside": 2747,
+        "total": 6225,
+        "outside": 3478
+      },
+      "historical_native_crop_xyxy": [
+        90.0,
+        0.0,
+        630.0,
+        540.0
+      ],
+      "historical_annotation_truncated": true,
+      "historical_unresolved_text_numerical_contradiction": false,
+      "historical_source_screen_preserved": {
+        "source_id": "13",
+        "class": "corrosion",
+        "source_level_review_status": "REJECT_RESTRICTED",
+        "risk_and_evidence": "RESTRICTED: center crop retains only 44.1285% of native defect mask; full-RAW repair cannot be claimed and edited structural realism is doubtful.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Keep excluded from any freeze unless a documented human reassessment changes this screen."
+      },
+      "current_technical_evidence": [
+        "Batch01已完成确定性坐标/网格/原生mask计数审计；ChatGPT登记及空间审计结论已归档为PASS / BOUNDED，不是修复质量PASS"
+      ],
+      "source_specific_follow_up": [
+        "仅历史裁切视野接受，3478个框外标注像素未覆盖；旧source级REJECT_RESTRICTED及结构真实性疑问保留，需后续正式复核"
+      ],
+      "enough_evidence_for_formal_trusted_pair_admission": false,
+      "admission_evidence_status": "INSUFFICIENT_DOCUMENTED_EVIDENCE_NOT_A_NEW_VISUAL_REJECTION",
+      "missing_admission_evidence": [
+        "缺少正式逐候选多维准入审查证据：缺陷消除、正常金属纹理、结构/几何保持、边界伪影与编辑区外变化尚未整体认证；用户视觉决定不替代该证据",
+        "缺少符合A1的人工确认修复支撑C、可信正常背景B0及联合变换后的P/N/I有效区域证据；细裂纹占据率和空区域安全处理仍未验证",
+        "未完成正式source级准入判定及未来canonical variant确认；本审计不进行版本优选或冻结"
+      ],
+      "current_eligibility": "RESTRICTED_CANDIDATE",
+      "decision_stratum": "crop_scoped_acceptance",
+      "trusted_pair_frozen": false,
+      "restoration_quality_gate_pass": false
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "86",
+      "independent_source_key": [
+        "crack",
+        "86"
+      ],
+      "batch": "Batch 02",
+      "variants": [
+        {
+          "batch": "Batch 02",
+          "class_name": "Crack",
+          "source_id": "86",
+          "run_id": "run_20260921_124440",
+          "variant_id": "crack_86_v1",
+          "registered_user_decision": "ACCEPT",
+          "decision_kind": "accepted",
+          "registered_scope": "当前审核候选",
+          "registered_comment_or_summary": "用户接受",
+          "comment_is_verbatim_quote": false,
+          "decision_source": "本次用户指令《Exp13.2-A2 Batch 02：登记人工视觉审核决定》第二节；用户明确人工决定，非新的模型或独立专家评价",
+          "registration_utc": "2026-10-23T09:14:43.048190+00:00",
+          "registered_technical_status": "FILES_HASH_DIMENSIONS_CROP_CONSISTENT_NOT_QUALITY_APPROVAL",
+          "explicit_crop_scoped_acceptance": false,
+          "acceptance_with_reservation": false,
+          "historical_mask_retained_fraction": "1.0",
+          "historical_native_crop_xyxy": [
+            90.0,
+            0.0,
+            630.0,
+            540.0
+          ],
+          "historical_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+          "manifest_path": "results/exp13_restoration_feasibility/qa_20261023_batch02_manifest.csv",
+          "manifest_sha256": "fa5ff1d3106846155017578202cd204f56e162e1f9340b188786009262332815",
+          "overlay_path": "results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_overlay.csv",
+          "overlay_sha256": "3898311a275f89a53aeb15a6ac58ea1c34a86e2ab4f4d6c85469eb95be799781",
+          "trusted_pair_frozen": false,
+          "restoration_quality_gate_pass": false
+        },
+        {
+          "batch": "Batch 02",
+          "class_name": "Crack",
+          "source_id": "86",
+          "run_id": "run_20260921_124440",
+          "variant_id": "crack_86_v2",
+          "registered_user_decision": "ACCEPT",
+          "decision_kind": "accepted",
+          "registered_scope": "当前审核候选",
+          "registered_comment_or_summary": "用户接受",
+          "comment_is_verbatim_quote": false,
+          "decision_source": "本次用户指令《Exp13.2-A2 Batch 02：登记人工视觉审核决定》第二节；用户明确人工决定，非新的模型或独立专家评价",
+          "registration_utc": "2026-10-23T09:14:43.048190+00:00",
+          "registered_technical_status": "FILES_HASH_DIMENSIONS_CROP_CONSISTENT_NOT_QUALITY_APPROVAL",
+          "explicit_crop_scoped_acceptance": false,
+          "acceptance_with_reservation": false,
+          "historical_mask_retained_fraction": "1.0",
+          "historical_native_crop_xyxy": [
+            90.0,
+            0.0,
+            630.0,
+            540.0
+          ],
+          "historical_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+          "manifest_path": "results/exp13_restoration_feasibility/qa_20261023_batch02_manifest.csv",
+          "manifest_sha256": "fa5ff1d3106846155017578202cd204f56e162e1f9340b188786009262332815",
+          "overlay_path": "results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_overlay.csv",
+          "overlay_sha256": "3898311a275f89a53aeb15a6ac58ea1c34a86e2ab4f4d6c85469eb95be799781",
+          "trusted_pair_frozen": false,
+          "restoration_quality_gate_pass": false
+        }
+      ],
+      "accepted_variant_ids": [
+        "crack_86_v1",
+        "crack_86_v2"
+      ],
+      "rejected_variant_ids": [],
+      "pending_variant_ids": [],
+      "has_user_accepted_variant": true,
+      "has_explicit_crop_scoped_acceptance": false,
+      "has_reservation": false,
+      "historical_mask_retained_fraction": "1.0",
+      "historical_mask_area_counts": {
+        "inside": 609,
+        "total": 609,
+        "outside": 0
+      },
+      "historical_native_crop_xyxy": [
+        90.0,
+        0.0,
+        630.0,
+        540.0
+      ],
+      "historical_annotation_truncated": false,
+      "historical_unresolved_text_numerical_contradiction": false,
+      "historical_source_screen_preserved": {
+        "source_id": "86",
+        "class": "Crack",
+        "source_level_review_status": "UNCERTAIN",
+        "risk_and_evidence": "Uncertain source-level appearance; inspect all variants for residual defect, smoothing and structural plausibility.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Resolve uncertainty through explicit variant-by-variant review."
+      },
+      "current_technical_evidence": [
+        "Batch02历史文件/尺寸/裁切/保留比例审计一致；非语义几何或修复质量认证"
+      ],
+      "source_specific_follow_up": [],
+      "enough_evidence_for_formal_trusted_pair_admission": false,
+      "admission_evidence_status": "INSUFFICIENT_DOCUMENTED_EVIDENCE_NOT_A_NEW_VISUAL_REJECTION",
+      "missing_admission_evidence": [
+        "缺少正式逐候选多维准入审查证据：缺陷消除、正常金属纹理、结构/几何保持、边界伪影与编辑区外变化尚未整体认证；用户视觉决定不替代该证据",
+        "缺少符合A1的人工确认修复支撑C、可信正常背景B0及联合变换后的P/N/I有效区域证据；细裂纹占据率和空区域安全处理仍未验证",
+        "未完成正式source级准入判定及未来canonical variant确认；本审计不进行版本优选或冻结"
+      ],
+      "current_eligibility": "CANDIDATE",
+      "decision_stratum": "accepted_without_explicit_crop_or_reservation",
+      "trusted_pair_frozen": false,
+      "restoration_quality_gate_pass": false
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "111",
+      "independent_source_key": [
+        "crack",
+        "111"
+      ],
+      "batch": "Batch 01",
+      "variants": [
+        {
+          "batch": "Batch 01",
+          "class_name": "Crack",
+          "source_id": "111",
+          "run_id": "run_20260921_124440",
+          "variant_id": "crack_111_v1",
+          "registered_user_decision": "PENDING_USER_DECISION",
+          "decision_kind": "pending",
+          "registered_scope": "无新增最终接受范围",
+          "registered_comment_or_summary": "本次没有新的最终接受或拒绝决定",
+          "comment_is_verbatim_quote": false,
+          "decision_source": "用户本次 Exp13.2-A2 Batch 01 Human Decision Registration & Spatial Audit 指令第2节",
+          "registration_utc": "2026-10-23T07:04:53.701228+00:00",
+          "registered_technical_status": "NOT_AUDITED_IN_THIS_STAGE",
+          "explicit_crop_scoped_acceptance": false,
+          "acceptance_with_reservation": false,
+          "historical_mask_retained_fraction": "1.0",
+          "historical_native_crop_xyxy": [
+            90.0,
+            0.0,
+            630.0,
+            540.0
+          ],
+          "historical_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+          "manifest_path": "results/exp13_restoration_feasibility/qa_20261023_batch01_manifest.csv",
+          "manifest_sha256": "b58691a5b8745c22bf2c303df38d14cdd5bde26d505c039d598416d802ff10a2",
+          "overlay_path": "results/exp13_restoration_feasibility/qa_20261023_batch01_user_review_overlay.csv",
+          "overlay_sha256": "d40fd45af195574510daa29fb3338e3fb8ec8079a88c18a6caf5c232e4c3093e",
+          "trusted_pair_frozen": false,
+          "restoration_quality_gate_pass": false
+        },
+        {
+          "batch": "Batch 01",
+          "class_name": "Crack",
+          "source_id": "111",
+          "run_id": "run_20260921_124440",
+          "variant_id": "crack_111_v2",
+          "registered_user_decision": "USER_ACCEPTED_VISUAL",
+          "decision_kind": "accepted",
+          "registered_scope": "仅该历史候选已审核视野的用户视觉表现接受",
+          "registered_comment_or_summary": "用户认为棕色不规则痕迹从全局观察更像原背景内容并接受该候选的视觉表现",
+          "comment_is_verbatim_quote": false,
+          "decision_source": "用户本次 Exp13.2-A2 Batch 01 Human Decision Registration & Spatial Audit 指令第2节",
+          "registration_utc": "2026-10-23T07:04:53.701228+00:00",
+          "registered_technical_status": "NOT_AUDITED_IN_THIS_STAGE",
+          "explicit_crop_scoped_acceptance": false,
+          "acceptance_with_reservation": false,
+          "historical_mask_retained_fraction": "1.0",
+          "historical_native_crop_xyxy": [
+            90.0,
+            0.0,
+            630.0,
+            540.0
+          ],
+          "historical_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+          "manifest_path": "results/exp13_restoration_feasibility/qa_20261023_batch01_manifest.csv",
+          "manifest_sha256": "b58691a5b8745c22bf2c303df38d14cdd5bde26d505c039d598416d802ff10a2",
+          "overlay_path": "results/exp13_restoration_feasibility/qa_20261023_batch01_user_review_overlay.csv",
+          "overlay_sha256": "d40fd45af195574510daa29fb3338e3fb8ec8079a88c18a6caf5c232e4c3093e",
+          "trusted_pair_frozen": false,
+          "restoration_quality_gate_pass": false
+        }
+      ],
+      "accepted_variant_ids": [
+        "crack_111_v2"
+      ],
+      "rejected_variant_ids": [],
+      "pending_variant_ids": [
+        "crack_111_v1"
+      ],
+      "has_user_accepted_variant": true,
+      "has_explicit_crop_scoped_acceptance": false,
+      "has_reservation": false,
+      "historical_mask_retained_fraction": "1.0",
+      "historical_mask_area_counts": null,
+      "historical_native_crop_xyxy": [
+        90.0,
+        0.0,
+        630.0,
+        540.0
+      ],
+      "historical_annotation_truncated": false,
+      "historical_unresolved_text_numerical_contradiction": false,
+      "historical_source_screen_preserved": {
+        "source_id": "111",
+        "class": "Crack",
+        "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+        "risk_and_evidence": "Variant-specific observations differ; v1 may be smoothed with a small residual dark spot; v2 has new irregular brown texture that may be residual defect or generation artifact.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+      },
+      "current_technical_evidence": [
+        "采用历史A0/Batch01 manifest空间记录；Batch01未对该source执行新的独立native-mask专项复核"
+      ],
+      "source_specific_follow_up": [
+        "v1仍待用户决定；v2视觉接受不传播至v1，历史定性备注不改为数字评分；其他技术条件未整体认证"
+      ],
+      "enough_evidence_for_formal_trusted_pair_admission": false,
+      "admission_evidence_status": "INSUFFICIENT_DOCUMENTED_EVIDENCE_NOT_A_NEW_VISUAL_REJECTION",
+      "missing_admission_evidence": [
+        "缺少正式逐候选多维准入审查证据：缺陷消除、正常金属纹理、结构/几何保持、边界伪影与编辑区外变化尚未整体认证；用户视觉决定不替代该证据",
+        "缺少符合A1的人工确认修复支撑C、可信正常背景B0及联合变换后的P/N/I有效区域证据；细裂纹占据率和空区域安全处理仍未验证",
+        "未完成正式source级准入判定及未来canonical variant确认；本审计不进行版本优选或冻结"
+      ],
+      "current_eligibility": "CANDIDATE",
+      "decision_stratum": "accepted_without_explicit_crop_or_reservation",
+      "trusted_pair_frozen": false,
+      "restoration_quality_gate_pass": false
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "146",
+      "independent_source_key": [
+        "crack",
+        "146"
+      ],
+      "batch": "Batch 01",
+      "variants": [
+        {
+          "batch": "Batch 01",
+          "class_name": "Crack",
+          "source_id": "146",
+          "run_id": "run_20260921_124440",
+          "variant_id": "crack_146_v1",
+          "registered_user_decision": "PENDING_USER_DECISION",
+          "decision_kind": "pending",
+          "registered_scope": "无新增最终接受范围",
+          "registered_comment_or_summary": "用户说明绿色标记原本就在输入图像中且模糊源自原图并未最终接受或拒绝",
+          "comment_is_verbatim_quote": false,
+          "decision_source": "用户本次 Exp13.2-A2 Batch 01 Human Decision Registration & Spatial Audit 指令第2节",
+          "registration_utc": "2026-10-23T07:04:53.701228+00:00",
+          "registered_technical_status": "NOT_AUDITED_IN_THIS_STAGE",
+          "explicit_crop_scoped_acceptance": false,
+          "acceptance_with_reservation": false,
+          "historical_mask_retained_fraction": "0.9651221566975569",
+          "historical_native_crop_xyxy": [
+            80.0,
+            0.0,
+            560.0,
+            480.0
+          ],
+          "historical_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+          "manifest_path": "results/exp13_restoration_feasibility/qa_20261023_batch01_manifest.csv",
+          "manifest_sha256": "b58691a5b8745c22bf2c303df38d14cdd5bde26d505c039d598416d802ff10a2",
+          "overlay_path": "results/exp13_restoration_feasibility/qa_20261023_batch01_user_review_overlay.csv",
+          "overlay_sha256": "d40fd45af195574510daa29fb3338e3fb8ec8079a88c18a6caf5c232e4c3093e",
+          "trusted_pair_frozen": false,
+          "restoration_quality_gate_pass": false
+        },
+        {
+          "batch": "Batch 01",
+          "class_name": "Crack",
+          "source_id": "146",
+          "run_id": "run_20260921_124440",
+          "variant_id": "crack_146_v2",
+          "registered_user_decision": "PENDING_USER_DECISION",
+          "decision_kind": "pending",
+          "registered_scope": "无新增最终接受范围",
+          "registered_comment_or_summary": "用户说明绿色标记原本就在输入图像中且模糊源自原图并未最终接受或拒绝",
+          "comment_is_verbatim_quote": false,
+          "decision_source": "用户本次 Exp13.2-A2 Batch 01 Human Decision Registration & Spatial Audit 指令第2节",
+          "registration_utc": "2026-10-23T07:04:53.701228+00:00",
+          "registered_technical_status": "NOT_AUDITED_IN_THIS_STAGE",
+          "explicit_crop_scoped_acceptance": false,
+          "acceptance_with_reservation": false,
+          "historical_mask_retained_fraction": "0.9651221566975569",
+          "historical_native_crop_xyxy": [
+            80.0,
+            0.0,
+            560.0,
+            480.0
+          ],
+          "historical_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+          "manifest_path": "results/exp13_restoration_feasibility/qa_20261023_batch01_manifest.csv",
+          "manifest_sha256": "b58691a5b8745c22bf2c303df38d14cdd5bde26d505c039d598416d802ff10a2",
+          "overlay_path": "results/exp13_restoration_feasibility/qa_20261023_batch01_user_review_overlay.csv",
+          "overlay_sha256": "d40fd45af195574510daa29fb3338e3fb8ec8079a88c18a6caf5c232e4c3093e",
+          "trusted_pair_frozen": false,
+          "restoration_quality_gate_pass": false
+        }
+      ],
+      "accepted_variant_ids": [],
+      "rejected_variant_ids": [],
+      "pending_variant_ids": [
+        "crack_146_v1",
+        "crack_146_v2"
+      ],
+      "has_user_accepted_variant": false,
+      "has_explicit_crop_scoped_acceptance": false,
+      "has_reservation": false,
+      "historical_mask_retained_fraction": "0.9651221566975569",
+      "historical_mask_area_counts": null,
+      "historical_native_crop_xyxy": [
+        80.0,
+        0.0,
+        560.0,
+        480.0
+      ],
+      "historical_annotation_truncated": true,
+      "historical_unresolved_text_numerical_contradiction": false,
+      "historical_source_screen_preserved": {
+        "source_id": "146",
+        "class": "Crack",
+        "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+        "risk_and_evidence": "Part of the native defect mask is cropped by the historical center crop; inspect residual crack only in aligned inference view.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+      },
+      "current_technical_evidence": [
+        "采用历史A0/Batch01 manifest空间记录；Batch01未对该source执行新的独立native-mask专项复核"
+      ],
+      "source_specific_follow_up": [
+        "两变体仍待用户决定；绿色标记及模糊来自原图，不得直接作为生成伪影否定理由；retained=0.9651221566975569，裁切范围仍需后续核验"
+      ],
+      "enough_evidence_for_formal_trusted_pair_admission": false,
+      "admission_evidence_status": "INSUFFICIENT_DOCUMENTED_EVIDENCE_NOT_A_NEW_VISUAL_REJECTION",
+      "missing_admission_evidence": [
+        "缺少正式逐候选多维准入审查证据：缺陷消除、正常金属纹理、结构/几何保持、边界伪影与编辑区外变化尚未整体认证；用户视觉决定不替代该证据",
+        "缺少符合A1的人工确认修复支撑C、可信正常背景B0及联合变换后的P/N/I有效区域证据；细裂纹占据率和空区域安全处理仍未验证",
+        "未完成正式source级准入判定及未来canonical variant确认；本审计不进行版本优选或冻结"
+      ],
+      "current_eligibility": "PENDING",
+      "decision_stratum": "pending_only",
+      "trusted_pair_frozen": false,
+      "restoration_quality_gate_pass": false
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "260",
+      "independent_source_key": [
+        "crack",
+        "260"
+      ],
+      "batch": "Batch 02",
+      "variants": [
+        {
+          "batch": "Batch 02",
+          "class_name": "Crack",
+          "source_id": "260",
+          "run_id": "run_20260921_124440",
+          "variant_id": "crack_260_v1",
+          "registered_user_decision": "ACCEPT",
+          "decision_kind": "accepted",
+          "registered_scope": "当前审核候选",
+          "registered_comment_or_summary": "用户接受",
+          "comment_is_verbatim_quote": false,
+          "decision_source": "本次用户指令《Exp13.2-A2 Batch 02：登记人工视觉审核决定》第二节；用户明确人工决定，非新的模型或独立专家评价",
+          "registration_utc": "2026-10-23T09:14:43.048190+00:00",
+          "registered_technical_status": "FILES_HASH_DIMENSIONS_CROP_CONSISTENT_NOT_QUALITY_APPROVAL",
+          "explicit_crop_scoped_acceptance": false,
+          "acceptance_with_reservation": false,
+          "historical_mask_retained_fraction": "1.0",
+          "historical_native_crop_xyxy": [
+            90.0,
+            0.0,
+            630.0,
+            540.0
+          ],
+          "historical_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+          "manifest_path": "results/exp13_restoration_feasibility/qa_20261023_batch02_manifest.csv",
+          "manifest_sha256": "fa5ff1d3106846155017578202cd204f56e162e1f9340b188786009262332815",
+          "overlay_path": "results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_overlay.csv",
+          "overlay_sha256": "3898311a275f89a53aeb15a6ac58ea1c34a86e2ab4f4d6c85469eb95be799781",
+          "trusted_pair_frozen": false,
+          "restoration_quality_gate_pass": false
+        },
+        {
+          "batch": "Batch 02",
+          "class_name": "Crack",
+          "source_id": "260",
+          "run_id": "run_20260921_124440",
+          "variant_id": "crack_260_v2",
+          "registered_user_decision": "ACCEPT",
+          "decision_kind": "accepted",
+          "registered_scope": "当前审核候选",
+          "registered_comment_or_summary": "用户接受",
+          "comment_is_verbatim_quote": false,
+          "decision_source": "本次用户指令《Exp13.2-A2 Batch 02：登记人工视觉审核决定》第二节；用户明确人工决定，非新的模型或独立专家评价",
+          "registration_utc": "2026-10-23T09:14:43.048190+00:00",
+          "registered_technical_status": "FILES_HASH_DIMENSIONS_CROP_CONSISTENT_NOT_QUALITY_APPROVAL",
+          "explicit_crop_scoped_acceptance": false,
+          "acceptance_with_reservation": false,
+          "historical_mask_retained_fraction": "1.0",
+          "historical_native_crop_xyxy": [
+            90.0,
+            0.0,
+            630.0,
+            540.0
+          ],
+          "historical_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+          "manifest_path": "results/exp13_restoration_feasibility/qa_20261023_batch02_manifest.csv",
+          "manifest_sha256": "fa5ff1d3106846155017578202cd204f56e162e1f9340b188786009262332815",
+          "overlay_path": "results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_overlay.csv",
+          "overlay_sha256": "3898311a275f89a53aeb15a6ac58ea1c34a86e2ab4f4d6c85469eb95be799781",
+          "trusted_pair_frozen": false,
+          "restoration_quality_gate_pass": false
+        }
+      ],
+      "accepted_variant_ids": [
+        "crack_260_v1",
+        "crack_260_v2"
+      ],
+      "rejected_variant_ids": [],
+      "pending_variant_ids": [],
+      "has_user_accepted_variant": true,
+      "has_explicit_crop_scoped_acceptance": false,
+      "has_reservation": false,
+      "historical_mask_retained_fraction": "1.0",
+      "historical_mask_area_counts": {
+        "inside": 6575,
+        "total": 6575,
+        "outside": 0
+      },
+      "historical_native_crop_xyxy": [
+        90.0,
+        0.0,
+        630.0,
+        540.0
+      ],
+      "historical_annotation_truncated": false,
+      "historical_unresolved_text_numerical_contradiction": false,
+      "historical_source_screen_preserved": {
+        "source_id": "260",
+        "class": "Crack",
+        "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+        "risk_and_evidence": "Historical source screening only; verify residual crack and surface texture independently per variant.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+      },
+      "current_technical_evidence": [
+        "Batch02历史文件/尺寸/裁切/保留比例审计一致；非语义几何或修复质量认证"
+      ],
+      "source_specific_follow_up": [],
+      "enough_evidence_for_formal_trusted_pair_admission": false,
+      "admission_evidence_status": "INSUFFICIENT_DOCUMENTED_EVIDENCE_NOT_A_NEW_VISUAL_REJECTION",
+      "missing_admission_evidence": [
+        "缺少正式逐候选多维准入审查证据：缺陷消除、正常金属纹理、结构/几何保持、边界伪影与编辑区外变化尚未整体认证；用户视觉决定不替代该证据",
+        "缺少符合A1的人工确认修复支撑C、可信正常背景B0及联合变换后的P/N/I有效区域证据；细裂纹占据率和空区域安全处理仍未验证",
+        "未完成正式source级准入判定及未来canonical variant确认；本审计不进行版本优选或冻结"
+      ],
+      "current_eligibility": "CANDIDATE",
+      "decision_stratum": "accepted_without_explicit_crop_or_reservation",
+      "trusted_pair_frozen": false,
+      "restoration_quality_gate_pass": false
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "470",
+      "independent_source_key": [
+        "crack",
+        "470"
+      ],
+      "batch": "Batch 01",
+      "variants": [
+        {
+          "batch": "Batch 01",
+          "class_name": "Crack",
+          "source_id": "470",
+          "run_id": "run_20260921_124440",
+          "variant_id": "crack_470_v1",
+          "registered_user_decision": "USER_ACCEPTED_VISUAL_PENDING_SPATIAL_AUDIT",
+          "decision_kind": "accepted",
+          "registered_scope": "仅历史候选已审核视野的视觉表现且保留用户原始待空间审计状态",
+          "registered_comment_or_summary": "用户接受视觉表现但未指定v1优于v2",
+          "comment_is_verbatim_quote": false,
+          "decision_source": "用户本次 Exp13.2-A2 Batch 01 Human Decision Registration & Spatial Audit 指令第2节",
+          "registration_utc": "2026-10-23T07:04:53.701228+00:00",
+          "registered_technical_status": "GRID_AND_MASK_CHECKS_CONSISTENT_HISTORICAL_NOTE_CONFLICT_RETAINED",
+          "explicit_crop_scoped_acceptance": false,
+          "acceptance_with_reservation": false,
+          "historical_mask_retained_fraction": "1.0",
+          "historical_native_crop_xyxy": [
+            120.0,
+            0.0,
+            840.0,
+            720.0
+          ],
+          "historical_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+          "manifest_path": "results/exp13_restoration_feasibility/qa_20261023_batch01_manifest.csv",
+          "manifest_sha256": "b58691a5b8745c22bf2c303df38d14cdd5bde26d505c039d598416d802ff10a2",
+          "overlay_path": "results/exp13_restoration_feasibility/qa_20261023_batch01_user_review_overlay.csv",
+          "overlay_sha256": "d40fd45af195574510daa29fb3338e3fb8ec8079a88c18a6caf5c232e4c3093e",
+          "trusted_pair_frozen": false,
+          "restoration_quality_gate_pass": false
+        },
+        {
+          "batch": "Batch 01",
+          "class_name": "Crack",
+          "source_id": "470",
+          "run_id": "run_20260921_124440",
+          "variant_id": "crack_470_v2",
+          "registered_user_decision": "USER_ACCEPTED_VISUAL_PENDING_SPATIAL_AUDIT",
+          "decision_kind": "accepted",
+          "registered_scope": "仅历史候选已审核视野的视觉表现且保留用户原始待空间审计状态",
+          "registered_comment_or_summary": "用户接受视觉表现但未指定v1优于v2",
+          "comment_is_verbatim_quote": false,
+          "decision_source": "用户本次 Exp13.2-A2 Batch 01 Human Decision Registration & Spatial Audit 指令第2节",
+          "registration_utc": "2026-10-23T07:04:53.701228+00:00",
+          "registered_technical_status": "GRID_AND_MASK_CHECKS_CONSISTENT_HISTORICAL_NOTE_CONFLICT_RETAINED",
+          "explicit_crop_scoped_acceptance": false,
+          "acceptance_with_reservation": false,
+          "historical_mask_retained_fraction": "1.0",
+          "historical_native_crop_xyxy": [
+            120.0,
+            0.0,
+            840.0,
+            720.0
+          ],
+          "historical_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST",
+          "manifest_path": "results/exp13_restoration_feasibility/qa_20261023_batch01_manifest.csv",
+          "manifest_sha256": "b58691a5b8745c22bf2c303df38d14cdd5bde26d505c039d598416d802ff10a2",
+          "overlay_path": "results/exp13_restoration_feasibility/qa_20261023_batch01_user_review_overlay.csv",
+          "overlay_sha256": "d40fd45af195574510daa29fb3338e3fb8ec8079a88c18a6caf5c232e4c3093e",
+          "trusted_pair_frozen": false,
+          "restoration_quality_gate_pass": false
+        }
+      ],
+      "accepted_variant_ids": [
+        "crack_470_v1",
+        "crack_470_v2"
+      ],
+      "rejected_variant_ids": [],
+      "pending_variant_ids": [],
+      "has_user_accepted_variant": true,
+      "has_explicit_crop_scoped_acceptance": false,
+      "has_reservation": false,
+      "historical_mask_retained_fraction": "1.0",
+      "historical_mask_area_counts": {
+        "inside": 3134,
+        "total": 3134,
+        "outside": 0
+      },
+      "historical_native_crop_xyxy": [
+        120.0,
+        0.0,
+        840.0,
+        720.0
+      ],
+      "historical_annotation_truncated": false,
+      "historical_unresolved_text_numerical_contradiction": true,
+      "historical_source_screen_preserved": {
+        "source_id": "470",
+        "class": "Crack",
+        "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+        "risk_and_evidence": "Part of the native defect mask is cropped by the historical center crop; inspect residual crack only in aligned inference view.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+      },
+      "current_technical_evidence": [
+        "Batch01已完成确定性坐标/网格/原生mask计数审计；ChatGPT登记及空间审计结论已归档为PASS / BOUNDED，不是修复质量PASS"
+      ],
+      "source_specific_follow_up": [
+        "3134/3134标注像素位于裁切框内，retained=1.0；历史部分mask被裁掉文字的由来仍未解决，不能忽略数值或删改备注",
+        "登记时PENDING_SPATIAL标签保留；当前空间审计已完成，不应声称计数审计尚未做；仅历史文字矛盾/未标注内容与语义真实性仍待后续审查"
+      ],
+      "enough_evidence_for_formal_trusted_pair_admission": false,
+      "admission_evidence_status": "INSUFFICIENT_DOCUMENTED_EVIDENCE_NOT_A_NEW_VISUAL_REJECTION",
+      "missing_admission_evidence": [
+        "缺少正式逐候选多维准入审查证据：缺陷消除、正常金属纹理、结构/几何保持、边界伪影与编辑区外变化尚未整体认证；用户视觉决定不替代该证据",
+        "缺少符合A1的人工确认修复支撑C、可信正常背景B0及联合变换后的P/N/I有效区域证据；细裂纹占据率和空区域安全处理仍未验证",
+        "未完成正式source级准入判定及未来canonical variant确认；本审计不进行版本优选或冻结"
+      ],
+      "current_eligibility": "RESTRICTED_CANDIDATE",
+      "decision_stratum": "accepted_with_historical_note_conflict",
+      "trusted_pair_frozen": false,
+      "restoration_quality_gate_pass": false
+    }
+  ],
+  "statistics": {
+    "independent_sources": {
+      "total": 8,
+      "Crack": 5,
+      "corrosion": 3
+    },
+    "sources_with_any_user_acceptance": {
+      "total": 7,
+      "Crack": 4,
+      "corrosion": 3
+    },
+    "sources_with_any_pending_variant": {
+      "total": 2,
+      "Crack": 2,
+      "corrosion": 0
+    },
+    "sources_with_any_rejected_variant": {
+      "total": 1,
+      "Crack": 0,
+      "corrosion": 1
+    },
+    "exclusive_strata": {
+      "accepted_without_explicit_crop_or_reservation": {
+        "total": 3,
+        "Crack": 3,
+        "corrosion": 0
+      },
+      "accepted_with_historical_note_conflict": {
+        "total": 1,
+        "Crack": 1,
+        "corrosion": 0
+      },
+      "crop_scoped_acceptance": {
+        "total": 2,
+        "Crack": 0,
+        "corrosion": 2
+      },
+      "reservation_acceptance": {
+        "total": 1,
+        "Crack": 0,
+        "corrosion": 1
+      },
+      "pending_only": {
+        "total": 1,
+        "Crack": 1,
+        "corrosion": 0
+      },
+      "rejected_only": {
+        "total": 0,
+        "Crack": 0,
+        "corrosion": 0
+      }
+    },
+    "current_eligibility_counts": {
+      "RESTRICTED_CANDIDATE": 4,
+      "CANDIDATE": 3,
+      "PENDING": 1
+    },
+    "variant_decision_kind_counts": {
+      "pending": 3,
+      "accepted": 12,
+      "rejected": 1
+    },
+    "sufficient_formal_admission_evidence": {
+      "total": 0,
+      "Crack": 0,
+      "corrosion": 0
+    }
+  },
+  "proposed_threshold_comparison": {
+    "status": "PROPOSED_NOT_FROZEN_NOT_STATISTICAL_SUFFICIENCY",
+    "suggested_independent_trusted_sources": {
+      "total": 10,
+      "Crack": 5,
+      "corrosion": 5
+    },
+    "sufficiently_supported_formal_admission_sources": {
+      "total": 0,
+      "Crack": 0,
+      "corrosion": 0
+    },
+    "formal_evidence_gap": {
+      "total": 10,
+      "Crack": 5,
+      "corrosion": 5
+    },
+    "user_acceptance_only_counts_not_admission": {
+      "total": 7,
+      "Crack": 4,
+      "corrosion": 3
+    },
+    "user_acceptance_only_arithmetic_gap_not_gate": {
+      "total": 3,
+      "Crack": 1,
+      "corrosion": 2
+    },
+    "all_reviewed_sources_upper_bound_not_admission": {
+      "total": 8,
+      "Crack": 5,
+      "corrosion": 3
+    },
+    "all_reviewed_sources_arithmetic_gap_not_gate": {
+      "total": 2,
+      "Crack": 0,
+      "corrosion": 2
+    }
+  },
+  "decision_meaning_policy": "Registered decisions/scopes are faithful in meaning; some comments are normalized summaries, not verbatim quotations; no overlay or decision changed",
+  "source_classification_policy": "Metadata-derived triage only; not replacement of historical labels or quality judgment. CANDIDATE means further review; RESTRICTED_CANDIDATE includes explicit crop/reservation or historical contradiction.",
+  "evidence_sha256_at_start": {
+    "results/exp13_restoration_feasibility/qa_20261023_batch01_manifest.csv": "b58691a5b8745c22bf2c303df38d14cdd5bde26d505c039d598416d802ff10a2",
+    "results/exp13_restoration_feasibility/qa_20261023_batch01_user_review_overlay.csv": "d40fd45af195574510daa29fb3338e3fb8ec8079a88c18a6caf5c232e4c3093e",
+    "results/exp13_restoration_feasibility/qa_20261023_batch02_manifest.csv": "fa5ff1d3106846155017578202cd204f56e162e1f9340b188786009262332815",
+    "results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_overlay.csv": "3898311a275f89a53aeb15a6ac58ea1c34a86e2ab4f4d6c85469eb95be799781",
+    "results/exp13_restoration_feasibility/qa_20261023_batch01_spatial_audit.json": "0697ca507df3f1abc54be4e49f96235717c2eafa34475e458c199c0379244d24",
+    "results/exp13_restoration_feasibility/qa_20261023_batch02_integrity.json": "380c3467ee9fecb9441f51b3aaec4f7e51f2660c1ecea5970d6a8473e810db33",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/spatial_correspondence_report.csv": "968865549ba408e8306a91219a121572a9e4dedd95cbbac69ed5fce1b31b5f46",
+    "results/exp13_restoration_feasibility/qa_20261021_090000/source_visual_screening.csv": "47203f26efd77c936cc45cce788ef244448ffd396ccfb07415460a565f0e694a",
+    "docs/exp13_2_a1_method_design_spec.md": "1998738acfad5726e7f6bdb4016c47d93de9ee4f03d6155ae3584368e05d8b04",
+    "docs/exp13_2_a1_fairness_protocol.md": "7233b1a36caca3aaca69b4a9023417ac7ab5861b333beadbd9d03c903d441e3b",
+    "docs/exp13_2_a1_gate_definition.md": "4b067641417068017e80f2047568846adbf167aae38782e87700756a6dda711c",
+    "docs/exp13_2_a2_batch01_human_review_decision.md": "fb141f0e6c3301391b4336a940acc4fd5631e1f902795de535a335e4260a65f0",
+    "docs/exp13_2_a2_batch01_spatial_audit.md": "6f6290d02659b4cc81effe9f35879fb21bf206bc9d59858793a672fcd50cb92d",
+    "docs/exp13_2_a2_batch01_chatgpt_audit.md": "112f225195ce10694bb21e2ce5bc46e838278c541c64095bbaecb3aaf355c573",
+    "docs/exp13_2_a2_batch01_handoff.md": "19dbb87151c34b4a8364fab24622eb2bdd0e4b7cbeeee5f2454528f77b45c14f",
+    "docs/exp13_2_a2_batch02_handoff.md": "7a3c3278140b0a298e9a0721128973357dddb054b382b150897abb668e078e0c",
+    "results/exp13_restoration_feasibility/qa_20261023_batch02_review_report.md": "910a2c12bded8d7a9943349c718be70164aa67d3847aa408f967a384bb0880f4",
+    "docs/exp13_2_a2_batch02_human_review_decision.md": "4dff37ae48dfffa7d0be41b7e268d770350b0f8f60f9b4a771d7d60ee0525ea8",
+    "docs/exp13_2_a2_batch02_user_review_handoff.md": "7c501bf35a641a7414b9da39eefdfa7d3c89d82647cccc4da979efa6f4adb607"
+  },
+  "protected_record_paths": [
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/corrosion_12_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/corrosion_13_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/corrosion_1_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/corrosion_23_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/corrosion_27_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/corrosion_2_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/corrosion_6_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/corrosion_7_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/corrosion_8_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/corrosion_9_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/corrosion_overview.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/crack_111_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/crack_146_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/crack_260_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/crack_312_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/crack_354_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/crack_356_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/crack_468_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/crack_469_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/crack_470_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/crack_86_review.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets/crack_overview.png",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/descriptive_metric_ranges.csv",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/execution_log.txt",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/file_integrity.csv",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/historical_preservation_report.json",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/historical_sha256_before.json",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/human_quality_review_template.csv",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/provenance.json",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/quantitative_differences.csv",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/review_navigation.md",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/source_group_summary.csv",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/source_variant_review_index.csv",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/spatial_correspondence_report.csv",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/summary.json",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/summary.md",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/validation_report.json",
+    "results/exp13_restoration_feasibility/qa_20261021_090000/candidate_freeze_protocol.md",
+    "results/exp13_restoration_feasibility/qa_20261021_090000/candidate_shortlist.csv",
+    "results/exp13_restoration_feasibility/qa_20261021_090000/review_priority.md",
+    "results/exp13_restoration_feasibility/qa_20261021_090000/source_visual_screening.csv",
+    "results/exp13_restoration_feasibility/qa_20261021_090000/summary.json",
+    "results/exp13_restoration_feasibility/qa_20261021_090000/summary.md",
+    "results/exp13_restoration_feasibility/qa_20261023_batch01_manifest.csv",
+    "results/exp13_restoration_feasibility/qa_20261023_batch01_registration_validation.json",
+    "results/exp13_restoration_feasibility/qa_20261023_batch01_spatial_audit.json",
+    "results/exp13_restoration_feasibility/qa_20261023_batch01_user_review_overlay.csv",
+    "results/exp13_restoration_feasibility/qa_20261023_batch02_integrity.json",
+    "results/exp13_restoration_feasibility/qa_20261023_batch02_manifest.csv",
+    "results/exp13_restoration_feasibility/qa_20261023_batch02_review/batch02_overview.png",
+    "results/exp13_restoration_feasibility/qa_20261023_batch02_review/corrosion_2_review.png",
+    "results/exp13_restoration_feasibility/qa_20261023_batch02_review/corrosion_8_review.png",
+    "results/exp13_restoration_feasibility/qa_20261023_batch02_review/crack_260_review.png",
+    "results/exp13_restoration_feasibility/qa_20261023_batch02_review/crack_86_review.png",
+    "results/exp13_restoration_feasibility/qa_20261023_batch02_review_report.md",
+    "results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_template.csv",
+    "results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_overlay.csv"
+  ],
+  "current_admission_evidence_count_reason": "Zero because formal multidimensional candidate-quality and P/N/I support evidence is incomplete, not merely because freeze is NO",
+  "global_training_readiness_blockers": [
+    "A1 design and proposed10/5/5 threshold not frozen",
+    "Artifact pseudo-edit/non-Diffusion controls and frozen response criteria absent",
+    "Budgets, executable batch and authorized engineering smoke not complete",
+    "No explicit training/SSL/Exp13.2-B authorization"
+  ],
+  "preservation": {
+    "legacy_untracked_count": 11258,
+    "legacy_metadata_unchanged": true,
+    "protected_hashes_verified": 229,
+    "historical_unique_r1_r2_file_hashes_verified": 164,
+    "a0_rows": 88,
+    "a0_blank_cells": 792,
+    "overlays_manifests_and_historical_labels_unchanged": true,
+    "batch01_pending_decisions_unchanged": 3
+  },
+  "snapshot_path": "/root/autodl-tmp/exp13_2_a2_cross_batch_eligibility_um5px7qd/starting_state_snapshot.json",
+  "models_executed": 0,
+  "new_visual_judgments": 0,
+  "new_images": 0,
+  "val_test_images_read": 0,
+  "flags": {
+    "FINAL_TRUSTED_PAIR_FREEZE": "NO",
+    "RESTORATION_QUALITY_GATE_PASS": "NO",
+    "EXP13_2_B_AUTHORIZATION": "NO",
+    "SSL_AUTHORIZATION": "NO"
+  }
+}

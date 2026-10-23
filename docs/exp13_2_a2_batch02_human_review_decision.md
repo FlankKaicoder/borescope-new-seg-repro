@@ -23,7 +23,7 @@
 
 已检查 Batch 02 manifest、模板、integrity、handoff、报告，Batch 01 overlay/说明及既有一次性登记实现，并检索仓库登记/schema 引用。未发现要求这些决定映射到统一限制枚举的共享注册 schema；不改任何既有枚举。独立 overlay 沿用 Batch 02 模板列名，原样保存本次用户的四种决定值，追加 `batch_manifest_sha256` 绑定原 manifest。Batch 01 的不同状态词保留原样。
 
-`user_decision_scope` 对应用户表中的 decision_scope；`user_comment` 原样保存中文意见；`user_decision_source` 说明来源；`user_decision_recorded_utc` 为本次登记 UTC。`technical_audit_status`、客观坐标和来源列逐字继承 manifest，与人工决定分别存储。技术状态仍为 FILES_HASH_DIMENSIONS_CROP_CONSISTENT_NOT_QUALITY_APPROVAL，不是正式质量通过。
+`user_decision_scope` 对应用户表中的 decision_scope；`user_comment` 中部分备注为归一化摘要，不应引用为用户逐字原话；用户决定及其范围已按原意登记，原始决定来源、登记 UTC、决定枚举及 scope 不变；`user_decision_source` 说明来源；`user_decision_recorded_utc` 为本次登记 UTC。`technical_audit_status`、客观坐标和来源列逐字继承 manifest，与人工决定分别存储。技术状态仍为 FILES_HASH_DIMENSIONS_CROP_CONSISTENT_NOT_QUALITY_APPROVAL，不是正式质量通过。
 
 所有 9 项正式质量判断字段保持空白，每行 `trusted_pair_frozen=false`、`restoration_quality_gate_pass=false`。原模板继续保持历史待定快照；决定只存在于新 overlay，不回填原始 A0、Batch 02 模板或旧标签。
 

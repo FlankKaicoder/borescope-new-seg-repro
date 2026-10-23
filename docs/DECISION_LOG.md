@@ -51,3 +51,9 @@
 | Date | Decision ID | Question | Decision | Reason | Affected experiments |
 |---|---|---|---|---|---|
 | 2026-10-23 UTC | D028 | Do the eight Batch02 user visual decisions authorize trusted pairs or training? | `EXP13_2_A2_BATCH02_USER_REVIEW_RECORDED_AWAITING_CHATGPT_AUDIT` only; freeze/quality/Exp13.2-B/SSL remain NO. | Preserve exact ACCEPT, scope-limited ACCEPT, REJECT and reservation ACCEPT in a new overlay; corrosion2 outside-crop1080 pixels are not accepted as repaired, corrosion8 v1/v2 remain distinct. See [record](exp13_2_a2_batch02_human_review_decision.md). No new visual scoring or model operation. | Exp13.2-A2 Batch02 registration only; stop for ChatGPT audit |
+
+## Exp13.2-A2 cross-batch source eligibility decision (2026-10-23T09:34:10.618872+00:00)
+
+| Date | Decision ID | Question | Decision | Reason | Affected experiments |
+|---|---|---|---|---|---|
+| 2026-10-23 UTC | D029 | Do cross-batch user acceptances meet the proposed trusted-source minimum? | `EXP13_2_A2_CROSS_BATCH_SOURCE_ELIGIBILITY_AUDITED_AWAITING_CHATGPT_AUDIT`; no Gate PASS, freeze or training authorization. | 8 independent sources,7 with visual acceptance,0 with sufficient formal admission evidence; 10/5/5 remains an unfrozen proposal. Keep crop/reservation/conflict/pending strata and all original decisions. Correct only two inaccurate verbatim-comment claims. See [audit](exp13_2_a2_cross_batch_source_eligibility_audit.md). | Exp13.2-A2 metadata audit only; stop for ChatGPT |
