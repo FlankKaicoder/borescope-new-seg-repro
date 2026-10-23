@@ -27,3 +27,9 @@
 | 2026-10-21 | D023 | What did the Exp13.2-A0 source-level visual screen establish? | Archive `EXP13_2_A0_SOURCE_VISUAL_SCREENING_COMPLETE` for source-level triage only: 15 promising for further review, 2 uncertain, 3 restricted. No variant PASS, trusted-pair freeze, Restoration Quality Gate pass, SSL, or Exp13.2-B authorization. | User-provided report of ChatGPT qualitative first-pass review of uploaded source sheets; not independent industrial expertise, complete variant scoring, statistical significance, or a pass rate. Crack 111 notes remain qualitative and pending variant review. | Exp13.2-A0-QA |
 
 | 2026-10-21 | D024 | Is Exp13.2-A1 design ready to implement or train? | Archive `EXP13_2_A1_DESIGN_READY_FOR_CHATGPT_REVIEW` only; design remains unfrozen and implementation/training are unauthorized. | Proposed shared layers 0-10 restoration-guided method, T0-T4 controls and future gates are documented from inspected Exp12 code. A0 source-level triage is not candidate PASS; Crack 470 crop warning conflicts with reported retained fraction 1.0 and needs coordinate verification. Polygon-guided losses are annotation-assisted. | Exp13.2-A1; see design handoff |
+
+## Exp13.2-A1-R1 subsequent design decision (2026-10-23)
+
+| Date | Decision ID | Question | Decision | Reason | Affected experiments |
+|---|---|---|---|---|---|
+| 2026-10-23 | D025 | Does A1 consistency repair authorize data admission or training? | `EXP13_2_A1_R1_DESIGN_READY_FOR_CHATGPT_REVIEW` only; design/pairs unfrozen and all quality/training authorization flags remain NO. | Clarify disjoint localization regions, identical T2/T3 differences, source/annotation/update budgets and future artifact controls. Trusted pairs remain 0; proposed minimum is 10 independent trusted sources with each class at least 5, pending approval. See [R1 response](exp13_2_a1_r1_design_review_response.md). | Exp13.2-A1-R1 documentation only |

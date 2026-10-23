@@ -95,3 +95,9 @@ No required experiment remains. Future work is outside the closed experimental p
 ## Exp13.2-A1 method design (2026-10-21)
 
 Status: `EXP13_2_A1_DESIGN_READY_FOR_CHATGPT_REVIEW`. This is documentation-only; the design is not frozen and no implementation, data construction, training, inference, generation, or pair selection is authorized. The source-level A0 screening is not candidate-level quality approval. `FINAL_TRUSTED_PAIR_FREEZE = NO`, `RESTORATION_QUALITY_GATE_PASS = NO`, `EXP13_2_B_AUTHORIZATION = NO`, and `SSL_AUTHORIZATION = NO`. See [A1 handoff](exp13_2_a1_design_handoff.md).
+
+## Exp13.2-A1-R1 consistency repair (2026-10-23)
+
+Status: `EXP13_2_A1_R1_DESIGN_READY_FOR_CHATGPT_REVIEW`. The user-relayed A1 review was conditional and requested specification repair. P/N/I localization regions, identical T2/T3 difference heads, proposed budgets and future artifact gates are clarified in [R1 response](exp13_2_a1_r1_design_review_response.md) and [R1 handoff](exp13_2_a1_r1_handoff.md). Historical statuses above remain snapshots. Formally trusted/frozen pairs remain 0; the proposed exploratory minimum is at least 10 independent trusted sources, Crack/corrosion each at least 5, pending approval and not statistical sufficiency.
+
+`EXP13_2_A1_DESIGN_FROZEN = NO`; `FINAL_TRUSTED_PAIR_FREEZE = NO`; `RESTORATION_QUALITY_GATE_PASS = NO`; `EXP13_2_B_AUTHORIZATION = NO`; `SSL_AUTHORIZATION = NO`. Design approval is not Data Quality PASS, data approval is not training authorization, and smoke PASS is not formal SSL approval. No implementation, control-data generation, inference, training, or VAL/TEST image access.

@@ -79,3 +79,11 @@ The source-level first pass classified 15 sources as promising for further revie
 | Exp13.2-A1 | EXP13_2_A1_DESIGN_READY_FOR_CHATGPT_REVIEW | [Design specification](exp13_2_a1_method_design_spec.md), [code audit](exp13_2_a1_code_reuse_audit.md), [fairness protocol](exp13_2_a1_fairness_protocol.md), [future gates](exp13_2_a1_gate_definition.md), [handoff](exp13_2_a1_design_handoff.md) |
 
 Documentation-only design and code-surface audit. No model, data, training code, or historical result changed. Design is not frozen; no trusted pairs are frozen; Restoration Quality Gate, Exp13.2-B, and SSL remain unauthorized.
+
+## Exp13.2-A1-R1 design consistency repair (2026-10-23)
+
+| Record | Status | Canonical evidence |
+|---|---|---|
+| Exp13.2-A1-R1 | EXP13_2_A1_R1_DESIGN_READY_FOR_CHATGPT_REVIEW | [Review response](exp13_2_a1_r1_design_review_response.md); [handoff](exp13_2_a1_r1_handoff.md); revised A1 method/fairness/gate documents |
+
+Document-only repair of loss regions, T2/T3 matching, proposed budgets and artifact gates. Previous A1/A0 entries remain historical snapshots. Trusted-pair freeze, Restoration Quality Gate PASS, Exp13.2-B and SSL authorizations remain NO; no runtime experiment or registry change.
