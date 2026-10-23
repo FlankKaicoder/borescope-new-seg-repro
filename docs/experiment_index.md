@@ -104,3 +104,11 @@ Eight historical candidates/four sources; user visual decisions only, no quality
 | Exp13.2-A2-Batch02-ReviewPacket | EXP13_2_A2_BATCH02_REVIEW_PACKET_PREPARED_AWAITING_CHATGPT_AUDIT | [Manifest](../results/exp13_restoration_feasibility/qa_20261023_batch02_manifest.csv); [user template](../results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_template.csv); [integrity](../results/exp13_restoration_feasibility/qa_20261023_batch02_integrity.json); [report](../results/exp13_restoration_feasibility/qa_20261023_batch02_review_report.md); [handoff](exp13_2_a2_batch02_handoff.md) |
 
 Historical TRAIN R1 only: Crack86/260, corrosion2/8, each v1/v2;8variants/4independent sources. corrosion2 native mask retention0.5488721804511278, not repair success. Five review PNGs; all user decisions pending, quality/comment fields empty. Batch01 labels and historical records remain unchanged. No models, quality approval, freeze or training authorization; stop for ChatGPT/user review.
+
+## Exp13.2-A2 Batch 02 user decision registration (2026-10-23T09:14:43.048190+00:00)
+
+| Record | Status | Canonical evidence |
+|---|---|---|
+| Exp13.2-A2-Batch02-UserReview | EXP13_2_A2_BATCH02_USER_REVIEW_RECORDED_AWAITING_CHATGPT_AUDIT | [Decision record](exp13_2_a2_batch02_human_review_decision.md); [overlay](../results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_overlay.csv); [validation](../results/exp13_restoration_feasibility/qa_20261023_batch02_registration_validation.json); [handoff](exp13_2_a2_batch02_user_review_handoff.md) |
+
+8 user decisions /4 independent sources, with crop-only and reservation limits retained. Formal quality fields and original A0/Batch01/Batch02 artifacts unchanged. No pair freeze, quality PASS, Batch03 or training authorization. This appends a current registration state without replacing historical gates.

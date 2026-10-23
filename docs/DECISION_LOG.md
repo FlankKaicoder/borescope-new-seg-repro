@@ -45,3 +45,9 @@
 | Date | Decision ID | Question | Decision | Reason | Affected experiments |
 |---|---|---|---|---|---|
 | 2026-10-23 | D027 | Does Batch01 ChatGPT audit or Batch02 packaging authorize restoration quality PASS or training? | Archive user-relayed Batch01 `PASS / BOUNDED` for registration/spatial consistency; prepare Batch02 review packet only, Gate `EXP13_2_A2_BATCH02_REVIEW_PACKET_PREPARED_AWAITING_CHATGPT_AUDIT`. Freeze/quality/Exp13.2-B/SSL remain NO. | Batch01 original manifest preserved verbatim; pending decisions/overlay unchanged. Batch02 has8 historical R1 variants/4 independent sources, no acceptance or quality scoring. corrosion2 retains54.8872% annotation; outside-crop defects are unreviewed. See [audit](exp13_2_a2_batch01_chatgpt_audit.md) and [handoff](exp13_2_a2_batch02_handoff.md). | Exp13.2-A2 Batch01 archival and Batch02 review assets only |
+
+## Exp13.2-A2 Batch 02 user decision registration (2026-10-23T09:14:43.048190+00:00)
+
+| Date | Decision ID | Question | Decision | Reason | Affected experiments |
+|---|---|---|---|---|---|
+| 2026-10-23 UTC | D028 | Do the eight Batch02 user visual decisions authorize trusted pairs or training? | `EXP13_2_A2_BATCH02_USER_REVIEW_RECORDED_AWAITING_CHATGPT_AUDIT` only; freeze/quality/Exp13.2-B/SSL remain NO. | Preserve exact ACCEPT, scope-limited ACCEPT, REJECT and reservation ACCEPT in a new overlay; corrosion2 outside-crop1080 pixels are not accepted as repaired, corrosion8 v1/v2 remain distinct. See [record](exp13_2_a2_batch02_human_review_decision.md). No new visual scoring or model operation. | Exp13.2-A2 Batch02 registration only; stop for ChatGPT audit |
