@@ -95,3 +95,12 @@ Document-only repair of loss regions, T2/T3 matching, proposed budgets and artif
 | Exp13.2-A2-Batch01-UserReview | EXP13_2_A2_BATCH01_USER_REVIEW_RECORDED_AWAITING_CHATGPT_AUDIT | [User decision record](exp13_2_a2_batch01_human_review_decision.md); [spatial audit](exp13_2_a2_batch01_spatial_audit.md); [handoff](exp13_2_a2_batch01_handoff.md); [overlay](../results/exp13_restoration_feasibility/qa_20261023_batch01_user_review_overlay.csv) |
 
 Eight historical candidates/four sources; user visual decisions only, no quality pass or freeze. Crack470 mask retained1.0 with conflicting historical note retained; corrosion13 retained0.441285140562249, crop-only acceptance. Historical A0/A1 entries remain snapshots. Exact registration UTC is in the overlay; Exp13.2-B/SSL remain NO. No Batch02 or model execution.
+
+## Exp13.2-A2 Batch 02 review preparation and Batch 01 audit archival (2026-10-23 UTC)
+
+| Record | Status | Canonical evidence |
+|---|---|---|
+| Exp13.2-A2-Batch01-ChatGPTAudit | PASS / BOUNDED for registration and spatial audit only | [Audit archival](exp13_2_a2_batch01_chatgpt_audit.md); [original manifest archive](../results/exp13_restoration_feasibility/qa_20261023_batch01_manifest.csv) |
+| Exp13.2-A2-Batch02-ReviewPacket | EXP13_2_A2_BATCH02_REVIEW_PACKET_PREPARED_AWAITING_CHATGPT_AUDIT | [Manifest](../results/exp13_restoration_feasibility/qa_20261023_batch02_manifest.csv); [user template](../results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_template.csv); [integrity](../results/exp13_restoration_feasibility/qa_20261023_batch02_integrity.json); [report](../results/exp13_restoration_feasibility/qa_20261023_batch02_review_report.md); [handoff](exp13_2_a2_batch02_handoff.md) |
+
+Historical TRAIN R1 only: Crack86/260, corrosion2/8, each v1/v2;8variants/4independent sources. corrosion2 native mask retention0.5488721804511278, not repair success. Five review PNGs; all user decisions pending, quality/comment fields empty. Batch01 labels and historical records remain unchanged. No models, quality approval, freeze or training authorization; stop for ChatGPT/user review.

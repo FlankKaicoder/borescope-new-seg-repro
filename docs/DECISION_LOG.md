@@ -39,3 +39,9 @@
 | Date | Decision ID | Question | Decision | Reason | Affected experiments |
 |---|---|---|---|---|---|
 | 2026-10-23 | D026 | Does user visual acceptance admit trusted restoration pairs or training? | `EXP13_2_A2_BATCH01_USER_REVIEW_RECORDED_AWAITING_CHATGPT_AUDIT`; record8user decisions in independent overlay only. Trusted-pair freeze, Restoration Quality Gate PASS, Exp13.2-B and SSL remain NO. | Native-mask audit confirms Crack470 retained1.0 with historical warning preserved, corrosion13 retained0.441285140562249 with crop-only acceptance. Three candidates await user decision; no ranking, full-RAW upgrade or new visual scoring. Exact UTC and evidence in [decision record](exp13_2_a2_batch01_human_review_decision.md) and [spatial audit](exp13_2_a2_batch01_spatial_audit.md). | Exp13.2-A2 Batch01 only; stop for ChatGPT audit |
+
+## Exp13.2-A2 Batch 02 preparation decision (2026-10-23 UTC)
+
+| Date | Decision ID | Question | Decision | Reason | Affected experiments |
+|---|---|---|---|---|---|
+| 2026-10-23 | D027 | Does Batch01 ChatGPT audit or Batch02 packaging authorize restoration quality PASS or training? | Archive user-relayed Batch01 `PASS / BOUNDED` for registration/spatial consistency; prepare Batch02 review packet only, Gate `EXP13_2_A2_BATCH02_REVIEW_PACKET_PREPARED_AWAITING_CHATGPT_AUDIT`. Freeze/quality/Exp13.2-B/SSL remain NO. | Batch01 original manifest preserved verbatim; pending decisions/overlay unchanged. Batch02 has8 historical R1 variants/4 independent sources, no acceptance or quality scoring. corrosion2 retains54.8872% annotation; outside-crop defects are unreviewed. See [audit](exp13_2_a2_batch01_chatgpt_audit.md) and [handoff](exp13_2_a2_batch02_handoff.md). | Exp13.2-A2 Batch01 archival and Batch02 review assets only |

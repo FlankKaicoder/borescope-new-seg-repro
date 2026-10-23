@@ -1,0 +1,913 @@
+{
+  "prepared_utc": "2026-10-23T07:35:20.844210+00:00",
+  "gate": "EXP13_2_A2_BATCH02_REVIEW_PACKET_PREPARED_AWAITING_CHATGPT_AUDIT",
+  "starting_snapshot_path": "/root/autodl-tmp/exp13_2_a2_batch02_preparation_xxhaw2r4/starting_state_snapshot.json",
+  "starting_snapshot_sha256": "5f137e6e3934b5f9316094606cf9e22d5d66c400a78736fe5fcbee72fa1616d3",
+  "environment": {
+    "hostname": "autodl-container-m6ahgmrgv8-57f0f00d",
+    "pwd": "/root/autodl-tmp/borescope-new-seg-repro",
+    "branch": "exp13/vlm-semantic-audit",
+    "head": "a1b757c93c0c515946823ee2fb7435f514670905",
+    "origin_url": "git@github-borescope:FlankKaicoder/borescope-new-seg-repro.git",
+    "remote_head": "a1b757c93c0c515946823ee2fb7435f514670905",
+    "index_sha256": "4d8a168fb3d2bf20cc4174e6e5726c828767391f8812a8f3fc4242e2ceb5cbdf"
+  },
+  "batch01_chatgpt_audit": "PASS / BOUNDED as relayed by user; no new review performed",
+  "batch01_manifest_archival": {
+    "source_path": "/root/autodl-tmp/exp13_2_a2_batch01_visual_review_20261023T062216Z_078cbbde/batch01_manifest.csv",
+    "expected_sha256": "b58691a5b8745c22bf2c303df38d14cdd5bde26d505c039d598416d802ff10a2",
+    "archived": true,
+    "actual_sha256": "b58691a5b8745c22bf2c303df38d14cdd5bde26d505c039d598416d802ff10a2",
+    "archive_path": "results/exp13_restoration_feasibility/qa_20261023_batch01_manifest.csv",
+    "archive_sha256": "b58691a5b8745c22bf2c303df38d14cdd5bde26d505c039d598416d802ff10a2",
+    "original_bytes_preserved": true
+  },
+  "candidates": 8,
+  "independent_sources": 4,
+  "join_failures": 0,
+  "historical_run_id": "run_20260921_124440",
+  "split": "train",
+  "source_spatial_checks": [
+    {
+      "class_name": "Crack",
+      "source_id": "86",
+      "native_size": [
+        720,
+        540
+      ],
+      "native_crop_xyxy": [
+        90.0,
+        0.0,
+        630.0,
+        540.0
+      ],
+      "native_original_mask_pixels": 609,
+      "native_mask_pixels_inside_crop": 609,
+      "native_mask_pixels_outside_crop": 0,
+      "retained_fraction": 1.0,
+      "transformed_defect_pixels": 553,
+      "variants": [
+        {
+          "variant_id": "crack_86_v1",
+          "historical_fields_match": true,
+          "retained_fraction_matches_shortlist_spatial_expected": true
+        },
+        {
+          "variant_id": "crack_86_v2",
+          "historical_fields_match": true,
+          "retained_fraction_matches_shortlist_spatial_expected": true
+        }
+      ]
+    },
+    {
+      "class_name": "Crack",
+      "source_id": "260",
+      "native_size": [
+        720,
+        540
+      ],
+      "native_crop_xyxy": [
+        90.0,
+        0.0,
+        630.0,
+        540.0
+      ],
+      "native_original_mask_pixels": 6575,
+      "native_mask_pixels_inside_crop": 6575,
+      "native_mask_pixels_outside_crop": 0,
+      "retained_fraction": 1.0,
+      "transformed_defect_pixels": 5879,
+      "variants": [
+        {
+          "variant_id": "crack_260_v1",
+          "historical_fields_match": true,
+          "retained_fraction_matches_shortlist_spatial_expected": true
+        },
+        {
+          "variant_id": "crack_260_v2",
+          "historical_fields_match": true,
+          "retained_fraction_matches_shortlist_spatial_expected": true
+        }
+      ]
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "2",
+      "native_size": [
+        640,
+        480
+      ],
+      "native_crop_xyxy": [
+        80.0,
+        0.0,
+        560.0,
+        480.0
+      ],
+      "native_original_mask_pixels": 2394,
+      "native_mask_pixels_inside_crop": 1314,
+      "native_mask_pixels_outside_crop": 1080,
+      "retained_fraction": 0.5488721804511278,
+      "transformed_defect_pixels": 1462,
+      "variants": [
+        {
+          "variant_id": "corrosion_2_v1",
+          "historical_fields_match": true,
+          "retained_fraction_matches_shortlist_spatial_expected": true
+        },
+        {
+          "variant_id": "corrosion_2_v2",
+          "historical_fields_match": true,
+          "retained_fraction_matches_shortlist_spatial_expected": true
+        }
+      ]
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "8",
+      "native_size": [
+        720,
+        540
+      ],
+      "native_crop_xyxy": [
+        90.0,
+        0.0,
+        630.0,
+        540.0
+      ],
+      "native_original_mask_pixels": 951,
+      "native_mask_pixels_inside_crop": 951,
+      "native_mask_pixels_outside_crop": 0,
+      "retained_fraction": 1.0,
+      "transformed_defect_pixels": 854,
+      "variants": [
+        {
+          "variant_id": "corrosion_8_v1",
+          "historical_fields_match": true,
+          "retained_fraction_matches_shortlist_spatial_expected": true
+        },
+        {
+          "variant_id": "corrosion_8_v2",
+          "historical_fields_match": true,
+          "retained_fraction_matches_shortlist_spatial_expected": true
+        }
+      ]
+    }
+  ],
+  "input_file_inventory": [
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/crack/inputs/vlm_01_86.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/inputs/vlm_01_86.png",
+      "sha256": "d659abce4048824cfe7bcefae94f60f78f05688fc3943aef5328decb3269f452",
+      "bytes": 563835,
+      "width": 720,
+      "height": 540,
+      "mode": "RGB"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/masks/original/vlm_01_86_mask.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/original/vlm_01_86_mask.png",
+      "sha256": "133ccfcec4135e145a464ff9995210420f8a9d048bac23fb7cef85728a4cb3c6",
+      "bytes": 705,
+      "width": 720,
+      "height": 540,
+      "mode": "L"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_01_86_mask.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_01_86_mask.png",
+      "sha256": "dd3c01af746cd42af46f8e262aaff8400878044bc5b66f0c43aadbc049611f2d",
+      "bytes": 1260,
+      "width": 720,
+      "height": 540,
+      "mode": "L"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_86_v1.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_86_v1.png",
+      "sha256": "b73e68784bd5073a1d8209c3c6eabb6f19e237d162c92b440b91a714c96cb4c8",
+      "bytes": 343849,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_86_v2.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_86_v2.png",
+      "sha256": "ff45ea9f29ad7a9e40bcc67377f9d9857d52f3e5d3fd2b782fc2ef9feeed7cfb",
+      "bytes": 343871,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/crack/inputs/vlm_04_260.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/inputs/vlm_04_260.png",
+      "sha256": "222419556d6bd4761d6ec6c66102b6bd4775a1989d517eb4cc93f91ecf3c2bd2",
+      "bytes": 571803,
+      "width": 720,
+      "height": 540,
+      "mode": "RGB"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/masks/original/vlm_04_260_mask.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/original/vlm_04_260_mask.png",
+      "sha256": "c406fad5dfaf983b69872d1836032483184a2dbca3bc17ad156665f96f9e302e",
+      "bytes": 1690,
+      "width": 720,
+      "height": 540,
+      "mode": "L"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_04_260_mask.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_04_260_mask.png",
+      "sha256": "34a461f8db28b2cc9a955a01682904f2061183b8d415990e24ca9cbda578a1c5",
+      "bytes": 3947,
+      "width": 720,
+      "height": 540,
+      "mode": "L"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_260_v1.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_260_v1.png",
+      "sha256": "55c2eb8579da6b01d684d8cfb31e01c91eff896e6426045c88ba29c9dd5737de",
+      "bytes": 341024,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_260_v2.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_260_v2.png",
+      "sha256": "76edee5e890ca528b8c4296dfcb80f8f200f0156b63d264a255fb4711f25db5f",
+      "bytes": 340405,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/corrosion/inputs/vlm_12_2.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/corrosion/inputs/vlm_12_2.png",
+      "sha256": "514d07947ee5ff2d3ac8e160ac58a28bb159ed2549105e4998eaed4b0ba4bc03",
+      "bytes": 462146,
+      "width": 640,
+      "height": 480,
+      "mode": "RGB"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/masks/original/vlm_12_2_mask.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/original/vlm_12_2_mask.png",
+      "sha256": "50b32cc4c054416228193c5290cd7389e7bf5dc3c768c0cc050d28eaba1276da",
+      "bytes": 720,
+      "width": 640,
+      "height": 480,
+      "mode": "L"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_12_2_mask.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_12_2_mask.png",
+      "sha256": "02d4c5fd5644b59516d8ce374d6e3c00613f869e96b7128ca89b82c8d64fdea0",
+      "bytes": 1843,
+      "width": 640,
+      "height": 480,
+      "mode": "L"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_2_v1.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_2_v1.png",
+      "sha256": "a72ef40f99372e60d805b43ca26bcb444f76905740480fc733a3baebc42d904f",
+      "bytes": 365489,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_2_v2.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_2_v2.png",
+      "sha256": "4dfb9ec64d031dd11b23752892468fc79a4fb56896a561f2df4696d2891e1545",
+      "bytes": 365468,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/corrosion/inputs/vlm_15_8.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/corrosion/inputs/vlm_15_8.png",
+      "sha256": "57eac89a6d22aa47f47f8f019e25d90fb71c5bd2ddbdeec60cf379c61f30850d",
+      "bytes": 631681,
+      "width": 720,
+      "height": 540,
+      "mode": "RGB"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/masks/original/vlm_15_8_mask.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/original/vlm_15_8_mask.png",
+      "sha256": "46c472c84490ad1f6970eb22657cc05fa87780e035510692247659f20cf455c5",
+      "bytes": 698,
+      "width": 720,
+      "height": 540,
+      "mode": "L"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_15_8_mask.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_15_8_mask.png",
+      "sha256": "046fe47681fa9cc7abd37466190e6d73039dd8f13313663accbf048ac8dca8b8",
+      "bytes": 1560,
+      "width": 720,
+      "height": 540,
+      "mode": "L"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_8_v1.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_8_v1.png",
+      "sha256": "ab73ad55fd2a50ad07ca23c5e2fc087246e9c06de5e37ef863ca83f6bac14df8",
+      "bytes": 381827,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_8_v2.png",
+      "repository_path": "results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_8_v2.png",
+      "sha256": "2d61db0e5cfed35c6246635b3fcfdece90107fdf31575fd130b1fddea50dc785",
+      "bytes": 381083,
+      "width": 512,
+      "height": 512,
+      "mode": "RGB"
+    }
+  ],
+  "source_metadata_sha256": {
+    "results/exp13_restoration_feasibility/a0_20261021_081812/source_variant_review_index.csv": "075d4600e2c4d497cf5d359cb32b71352835c0be94590e00ff4b22c1c48f64a6",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/spatial_correspondence_report.csv": "968865549ba408e8306a91219a121572a9e4dedd95cbbac69ed5fce1b31b5f46",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/human_quality_review_template.csv": "273013b0478e44eec4137c2ce7d3a0c6cbd2d340127fe5daa55a99d706de18e8",
+    "results/exp13_restoration_feasibility/qa_20261021_090000/candidate_shortlist.csv": "e117b1b38decdb29a9b25bcc9647e7d164fb48c572e0725da1243d211833afdc",
+    "results/exp13_restoration_feasibility/qa_20261021_090000/source_visual_screening.csv": "47203f26efd77c936cc45cce788ef244448ffd396ccfb07415460a565f0e694a",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/file_integrity.csv": "9f7cf08e97ddd2ca084c55d5b5ade236aa9705e9bb8da5ec6a845e08b504845d",
+    "results/exp13_diffusion_pilot/run_20260921_124440/manifests/pilot_manifest.csv": "0e12511396349cdd1ffd0826e913e684a12b81cf93f2b583581cdde262933705",
+    "results/exp13_vlm_semantic_audit/sample_manifest.csv": "8991f0416109f1d9a3061a813191712deb26ec0d52e6c71596c3dbb9bf6dc204",
+    "results/exp13_restoration_feasibility/qa_20261023_batch01_user_review_overlay.csv": "d40fd45af195574510daa29fb3338e3fb8ec8079a88c18a6caf5c232e4c3093e",
+    "results/exp13_restoration_feasibility/qa_20261023_batch01_spatial_audit.json": "0697ca507df3f1abc54be4e49f96235717c2eafa34475e458c199c0379244d24",
+    "tools/exp13_diffusion_pilot.py": "44b07cbece17e59506d5b5b60a7ae6546cdaa1235e57a4a31301c420ae09b91d",
+    "tools/exp13_diffusion_pilot_r1.py": "189463f559018bcf94d1238e7fa957bea14c2f2eb86123d218a8b3271a9deece"
+  },
+  "review_assets": [
+    {
+      "path": "results/exp13_restoration_feasibility/qa_20261023_batch02_review/crack_86_review.png",
+      "sha256": "0dd1dd8779631cde188f11a07f8769edfa3f0761a92f7fc536f09798281fc41f",
+      "bytes": 1810173,
+      "size": [
+        2400,
+        2670
+      ]
+    },
+    {
+      "path": "results/exp13_restoration_feasibility/qa_20261023_batch02_review/crack_260_review.png",
+      "sha256": "43bcae583ed8fdac74652e2a0d26e25b5ce40f74549770812f1d536120709a9f",
+      "bytes": 1817325,
+      "size": [
+        2400,
+        2670
+      ]
+    },
+    {
+      "path": "results/exp13_restoration_feasibility/qa_20261023_batch02_review/corrosion_2_review.png",
+      "sha256": "3a104048e96260a90027e25f17cddc22801926ae0bcfd4c42aba43f8b63a032d",
+      "bytes": 1782635,
+      "size": [
+        2400,
+        2670
+      ]
+    },
+    {
+      "path": "results/exp13_restoration_feasibility/qa_20261023_batch02_review/corrosion_8_review.png",
+      "sha256": "324ae0852e291f009d0992adab04a54ad40ec5eccf9641a1b31e2a9e9394ea00",
+      "bytes": 2039642,
+      "size": [
+        2400,
+        2670
+      ]
+    },
+    {
+      "path": "results/exp13_restoration_feasibility/qa_20261023_batch02_review/batch02_overview.png",
+      "sha256": "2458a2d9d29a2621ed58141f993b8686930aa0d26607d97e95ecf8d7d31b102e",
+      "bytes": 4545499,
+      "size": [
+        1800,
+        2580
+      ]
+    }
+  ],
+  "display_layouts": {
+    "crack_86_review.png": [
+      {
+        "original_size": [
+          720,
+          540
+        ],
+        "display_size": [
+          720,
+          540
+        ],
+        "display_xy": [
+          50,
+          327
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          720,
+          540
+        ],
+        "display_size": [
+          720,
+          540
+        ],
+        "display_xy": [
+          840,
+          327
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          720,
+          540
+        ],
+        "display_size": [
+          720,
+          540
+        ],
+        "display_xy": [
+          1630,
+          327
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          512,
+          512
+        ],
+        "display_size": [
+          512,
+          512
+        ],
+        "display_xy": [
+          154,
+          1171
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          512,
+          512
+        ],
+        "display_size": [
+          512,
+          512
+        ],
+        "display_xy": [
+          944,
+          1171
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          720,
+          540
+        ],
+        "display_size": [
+          720,
+          540
+        ],
+        "display_xy": [
+          1630,
+          1157
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          512,
+          512
+        ],
+        "display_size": [
+          512,
+          512
+        ],
+        "display_xy": [
+          154,
+          2001
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          512,
+          512
+        ],
+        "display_size": [
+          512,
+          512
+        ],
+        "display_xy": [
+          944,
+          2001
+        ],
+        "aspect_ratio_preserved": true
+      }
+    ],
+    "crack_260_review.png": [
+      {
+        "original_size": [
+          720,
+          540
+        ],
+        "display_size": [
+          720,
+          540
+        ],
+        "display_xy": [
+          50,
+          327
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          720,
+          540
+        ],
+        "display_size": [
+          720,
+          540
+        ],
+        "display_xy": [
+          840,
+          327
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          720,
+          540
+        ],
+        "display_size": [
+          720,
+          540
+        ],
+        "display_xy": [
+          1630,
+          327
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          512,
+          512
+        ],
+        "display_size": [
+          512,
+          512
+        ],
+        "display_xy": [
+          154,
+          1171
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          512,
+          512
+        ],
+        "display_size": [
+          512,
+          512
+        ],
+        "display_xy": [
+          944,
+          1171
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          720,
+          540
+        ],
+        "display_size": [
+          720,
+          540
+        ],
+        "display_xy": [
+          1630,
+          1157
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          512,
+          512
+        ],
+        "display_size": [
+          512,
+          512
+        ],
+        "display_xy": [
+          154,
+          2001
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          512,
+          512
+        ],
+        "display_size": [
+          512,
+          512
+        ],
+        "display_xy": [
+          944,
+          2001
+        ],
+        "aspect_ratio_preserved": true
+      }
+    ],
+    "corrosion_2_review.png": [
+      {
+        "original_size": [
+          640,
+          480
+        ],
+        "display_size": [
+          640,
+          480
+        ],
+        "display_xy": [
+          90,
+          357
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          640,
+          480
+        ],
+        "display_size": [
+          640,
+          480
+        ],
+        "display_xy": [
+          880,
+          357
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          640,
+          480
+        ],
+        "display_size": [
+          640,
+          480
+        ],
+        "display_xy": [
+          1670,
+          357
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          512,
+          512
+        ],
+        "display_size": [
+          512,
+          512
+        ],
+        "display_xy": [
+          154,
+          1171
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          512,
+          512
+        ],
+        "display_size": [
+          512,
+          512
+        ],
+        "display_xy": [
+          944,
+          1171
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          640,
+          480
+        ],
+        "display_size": [
+          640,
+          480
+        ],
+        "display_xy": [
+          1670,
+          1187
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          512,
+          512
+        ],
+        "display_size": [
+          512,
+          512
+        ],
+        "display_xy": [
+          154,
+          2001
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          512,
+          512
+        ],
+        "display_size": [
+          512,
+          512
+        ],
+        "display_xy": [
+          944,
+          2001
+        ],
+        "aspect_ratio_preserved": true
+      }
+    ],
+    "corrosion_8_review.png": [
+      {
+        "original_size": [
+          720,
+          540
+        ],
+        "display_size": [
+          720,
+          540
+        ],
+        "display_xy": [
+          50,
+          327
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          720,
+          540
+        ],
+        "display_size": [
+          720,
+          540
+        ],
+        "display_xy": [
+          840,
+          327
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          720,
+          540
+        ],
+        "display_size": [
+          720,
+          540
+        ],
+        "display_xy": [
+          1630,
+          327
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          512,
+          512
+        ],
+        "display_size": [
+          512,
+          512
+        ],
+        "display_xy": [
+          154,
+          1171
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          512,
+          512
+        ],
+        "display_size": [
+          512,
+          512
+        ],
+        "display_xy": [
+          944,
+          1171
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          720,
+          540
+        ],
+        "display_size": [
+          720,
+          540
+        ],
+        "display_xy": [
+          1630,
+          1157
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          512,
+          512
+        ],
+        "display_size": [
+          512,
+          512
+        ],
+        "display_xy": [
+          154,
+          2001
+        ],
+        "aspect_ratio_preserved": true
+      },
+      {
+        "original_size": [
+          512,
+          512
+        ],
+        "display_size": [
+          512,
+          512
+        ],
+        "display_xy": [
+          944,
+          2001
+        ],
+        "aspect_ratio_preserved": true
+      }
+    ]
+  },
+  "pillow_version": "11.3.0",
+  "numpy_version": "2.3.2",
+  "manifest_path": "results/exp13_restoration_feasibility/qa_20261023_batch02_manifest.csv",
+  "manifest_sha256": "fa5ff1d3106846155017578202cd204f56e162e1f9340b188786009262332815",
+  "template_path": "results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_template.csv",
+  "template_sha256": "8be56590e83b91606f19f12158b17b66e1c9eb8d444f7f1c9821fe5f2f97f6ed",
+  "template_all8_user_decisions_pending": true,
+  "template_human_fields_blank": true,
+  "original_a0_human_cells_blank": 792,
+  "index_unchanged_before_staging": true,
+  "legacy_untracked_count": 11258,
+  "legacy_untracked_metadata_unchanged": true,
+  "all_historical_input_hashes_unchanged": true,
+  "no_models_executed": true,
+  "no_raw_dataset_images_read": true,
+  "no_val_test_images_read": true,
+  "no_subjective_history_labels_in_review_panels": true,
+  "assembly_method": "Pillow contact-sheet assembly only; no model generation; aspect-ratio-preserving thumbnail; 512 views shown at512px",
+  "flags": {
+    "FINAL_TRUSTED_PAIR_FREEZE": "NO",
+    "RESTORATION_QUALITY_GATE_PASS": "NO",
+    "EXP13_2_B_AUTHORIZATION": "NO",
+    "SSL_AUTHORIZATION": "NO"
+  }
+}
