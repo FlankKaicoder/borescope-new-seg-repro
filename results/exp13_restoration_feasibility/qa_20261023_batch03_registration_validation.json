@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "validation_kind": "Decision registration consistency only; not restoration-quality approval",
+  "validation_phase": "Actual installed overlay and append-only records checked before staging; post-push evidence external",
+  "validated_utc": "2026-10-23T10:43:44.397114+00:00",
+  "registration_utc": "2026-10-23T10:43:43.207444+00:00",
+  "hostname": "autodl-container-m6ahgmrgv8-57f0f00d",
+  "repository": "/root/autodl-tmp/borescope-new-seg-repro",
+  "branch": "exp13/vlm-semantic-audit",
+  "starting_head": "cefae5ad9a7761153b0f7fe6fc7bf087e538101f",
+  "starting_snapshot_path": "/root/autodl-tmp/exp13_2_a2_batch03_registration_mi3uk2eb/starting_state_snapshot.json",
+  "external_final_receipt_path": "/root/autodl-tmp/exp13_2_a2_batch03_registration_mi3uk2eb/final_delivery_receipt.json",
+  "manifest_path": "results/exp13_restoration_feasibility/batch03_20261023T095257Z_g3l3/batch03_manifest.csv",
+  "manifest_sha256": "aa256388947c0de5785cf39e95a59bc07bc8dad94bc6bc1f911cfe0efabf228d",
+  "overlay_path": "results/exp13_restoration_feasibility/qa_20261023_batch03_user_review_overlay.csv",
+  "overlay_sha256": "fa565f7e86d6995f090ebbbd562e4d3748db7693ba164efadb4849c80696882e",
+  "overlay_columns": 84,
+  "batch02_columns_preserved_in_order": true,
+  "appended_columns": [
+    "batch_manifest_path",
+    "variant_review_sheet",
+    "condition",
+    "source_image_relative_path",
+    "original_defect_mask_relative_path",
+    "edit_mask_relative_path",
+    "output_image_relative_path",
+    "historical_screening_status",
+    "historical_screening_risk",
+    "historical_screening_evidence",
+    "existing_registered_user_decision",
+    "existing_decision_record_status",
+    "historical_screening_ledger"
+  ],
+  "missing_manifest_fields": {
+    "bleed": "blank: not separately recorded in Batch03 manifest",
+    "technical_audit_scope": "Batch02 explanatory scope reused; status inherited verbatim"
+  },
+  "registration_source": "本次用户明确指令《Exp13.2-A2 Batch03 人工视觉决定登记任务》第二节权威人工决定表；仅转录用户视觉意见，非独立工业专家认证或正式质量评分",
+  "checks": {
+    "candidate_count": 8,
+    "independent_source_count": 4,
+    "composite_key": [
+      "class",
+      "source_id",
+      "run_id",
+      "variant_id"
+    ],
+    "join_failures": 0,
+    "duplicate_keys": 0,
+    "decision_counts": {
+      "PENDING_BLANK": 2,
+      "REJECT": 3,
+      "ACCEPT_WITH_SCOPE_LIMITATION": 2,
+      "ACCEPT": 1
+    },
+    "formal_quality_blank_cells": 72,
+    "all_freeze_and_quality_gate_values_false": true,
+    "corrosion6_crop_scope_enforced": true,
+    "corrosion6_retained_pixels": 2789,
+    "corrosion6_total_pixels": 4757,
+    "corrosion6_outside_pixels": 1968,
+    "corrosion6_retained_fraction": "0.5862938826991801",
+    "unique_historical_files": {
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/corrosion/inputs/vlm_11_1.png": {
+        "sha256": "4cacb0d2c49d471fada2c05f0fc006d87367e0bdd6568c623e677ed0d382d904",
+        "dimensions": "720x540"
+      },
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/masks/original/vlm_11_1_mask.png": {
+        "sha256": "71fe10b1ba9cfd666e177302a3715fac94092230112dc44c3d350e560093359c",
+        "dimensions": "720x540"
+      },
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_11_1_mask.png": {
+        "sha256": "496457ce3793bdf0a7982be76b79f8f217d5f39fe11139ad57bfe6533c058bc5",
+        "dimensions": "720x540"
+      },
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_1_v1.png": {
+        "sha256": "b58b8ac849f3d26a5f49bd8328840c0feb42c31b06c37ef9eb4cd0b59a95f051",
+        "dimensions": "512x512"
+      },
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_1_v2.png": {
+        "sha256": "96b67b902ea5dce73d28544e10e9c5c141ec0d306df6d5479e3736468d35c7b0",
+        "dimensions": "512x512"
+      },
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/corrosion/inputs/vlm_16_9.png": {
+        "sha256": "6d3500179a426adeed2ce36fce563c645bbc0ec7b704311f030ca6c53386dd02",
+        "dimensions": "720x540"
+      },
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/masks/original/vlm_16_9_mask.png": {
+        "sha256": "5ad71728b5eda4e7eeee56491ca89b1dca3b1c72d7cd1f96862ec7b23e6570a5",
+        "dimensions": "720x540"
+      },
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_16_9_mask.png": {
+        "sha256": "10f0aa92a3027c730dc65ab4c9bfa62ea0404782dfe1d7172e9e1b38bbfddbaa",
+        "dimensions": "720x540"
+      },
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_9_v1.png": {
+        "sha256": "dba79b71caab82f3ce049bf122c64111befbb1f6389a3023edf3459aed3ac3d6",
+        "dimensions": "512x512"
+      },
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_9_v2.png": {
+        "sha256": "976e360eba86842d4841c63b6e0727307f0aabf5aa785d2085a4a5d70f185caf",
+        "dimensions": "512x512"
+      },
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/corrosion/inputs/vlm_13_6.png": {
+        "sha256": "cca3c05fb41aca92e846f3f94e4f33b4b412ac80ca2e74f588eba5e23d283fcd",
+        "dimensions": "720x540"
+      },
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/masks/original/vlm_13_6_mask.png": {
+        "sha256": "08fdc731eaf45f45b649f735762f2c500df12772423beb734b5fd3cc102b431a",
+        "dimensions": "720x540"
+      },
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_13_6_mask.png": {
+        "sha256": "b4ac22e0004d19c9a86c598aca7ad4341a4827bd58373c06a764c8c63d207346",
+        "dimensions": "720x540"
+      },
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_6_v1.png": {
+        "sha256": "5d18ba13a3e61c37665ba4a9029d0360414a90fd34ea5f6a5e86aecb6bbd2572",
+        "dimensions": "512x512"
+      },
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_6_v2.png": {
+        "sha256": "a81eb9ea35add3c469d0be546ffb963bd6299b6835e5f725a05cadcb785e2016",
+        "dimensions": "512x512"
+      },
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/crack/inputs/vlm_09_469.jpg": {
+        "sha256": "203e6c3a4f48e37c7d0787a054fc8718dd007d2b4fe17af732f831e4a6d305c5",
+        "dimensions": "960x720"
+      },
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/masks/original/vlm_09_469_mask.png": {
+        "sha256": "b92518a10beabf158759b9d4696a6d9d4205c7fd2b697ed9929a64b03ee8719a",
+        "dimensions": "960x720"
+      },
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_09_469_mask.png": {
+        "sha256": "fa0b01b00b12774b8e84b8f211c074342797ce26dd41aed13c30a6d51c1b95ad",
+        "dimensions": "960x720"
+      },
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_469_v1.png": {
+        "sha256": "a13ebf7f5a15c065cd7bfbc22ba300d0af88a54ae45d045b2607a94f0d90eabc",
+        "dimensions": "512x512"
+      },
+      "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_469_v2.png": {
+        "sha256": "fdb4e5fa8525a22e7251fd7fc18b8c5c747659f9a203ddc7bd00362de3c84789",
+        "dimensions": "512x512"
+      }
+    },
+    "candidate_checks": [
+      {
+        "class_name": "corrosion",
+        "source_id": "1",
+        "run_id": "run_20260921_124440",
+        "variant_id": "corrosion_1_v1",
+        "user_decision": "",
+        "user_decision_scope": "",
+        "user_comment": "",
+        "manifest_fields_verified": true,
+        "source_paths_hashes_dimensions_verified": true,
+        "formal_quality_blank": true,
+        "trusted_pair_frozen": false,
+        "restoration_quality_gate_pass": false
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "1",
+        "run_id": "run_20260921_124440",
+        "variant_id": "corrosion_1_v2",
+        "user_decision": "",
+        "user_decision_scope": "",
+        "user_comment": "",
+        "manifest_fields_verified": true,
+        "source_paths_hashes_dimensions_verified": true,
+        "formal_quality_blank": true,
+        "trusted_pair_frozen": false,
+        "restoration_quality_gate_pass": false
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "9",
+        "run_id": "run_20260921_124440",
+        "variant_id": "corrosion_9_v1",
+        "user_decision": "REJECT",
+        "user_decision_scope": "当前审核候选",
+        "user_comment": "用户反馈效果很差，仍存在机械结构幻觉",
+        "manifest_fields_verified": true,
+        "source_paths_hashes_dimensions_verified": true,
+        "formal_quality_blank": true,
+        "trusted_pair_frozen": false,
+        "restoration_quality_gate_pass": false
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "9",
+        "run_id": "run_20260921_124440",
+        "variant_id": "corrosion_9_v2",
+        "user_decision": "REJECT",
+        "user_decision_scope": "当前审核候选",
+        "user_comment": "用户反馈效果很差，仍存在机械结构幻觉",
+        "manifest_fields_verified": true,
+        "source_paths_hashes_dimensions_verified": true,
+        "formal_quality_blank": true,
+        "trusted_pair_frozen": false,
+        "restoration_quality_gate_pass": false
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "6",
+        "run_id": "run_20260921_124440",
+        "variant_id": "corrosion_6_v1",
+        "user_decision": "ACCEPT_WITH_SCOPE_LIMITATION",
+        "user_decision_scope": "仅历史裁切视野",
+        "user_comment": "用户认为当前审核视野内效果可以接受；不代表裁切框外缺陷已修复",
+        "manifest_fields_verified": true,
+        "source_paths_hashes_dimensions_verified": true,
+        "formal_quality_blank": true,
+        "trusted_pair_frozen": false,
+        "restoration_quality_gate_pass": false
+      },
+      {
+        "class_name": "corrosion",
+        "source_id": "6",
+        "run_id": "run_20260921_124440",
+        "variant_id": "corrosion_6_v2",
+        "user_decision": "ACCEPT_WITH_SCOPE_LIMITATION",
+        "user_decision_scope": "仅历史裁切视野",
+        "user_comment": "用户认为当前审核视野内效果可以接受；不代表裁切框外缺陷已修复",
+        "manifest_fields_verified": true,
+        "source_paths_hashes_dimensions_verified": true,
+        "formal_quality_blank": true,
+        "trusted_pair_frozen": false,
+        "restoration_quality_gate_pass": false
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "469",
+        "run_id": "run_20260921_124440",
+        "variant_id": "crack_469_v1",
+        "user_decision": "REJECT",
+        "user_decision_scope": "当前审核候选",
+        "user_comment": "用户认为该版本仍有缺陷残留，不能接受",
+        "manifest_fields_verified": true,
+        "source_paths_hashes_dimensions_verified": true,
+        "formal_quality_blank": true,
+        "trusted_pair_frozen": false,
+        "restoration_quality_gate_pass": false
+      },
+      {
+        "class_name": "Crack",
+        "source_id": "469",
+        "run_id": "run_20260921_124440",
+        "variant_id": "crack_469_v2",
+        "user_decision": "ACCEPT",
+        "user_decision_scope": "当前审核候选",
+        "user_comment": "用户认为该版本效果可以接受",
+        "manifest_fields_verified": true,
+        "source_paths_hashes_dimensions_verified": true,
+        "formal_quality_blank": true,
+        "trusted_pair_frozen": false,
+        "restoration_quality_gate_pass": false
+      }
+    ]
+  },
+  "historical_preservation": {
+    "protected_sha256_count": 256,
+    "all_protected_hashes_unchanged": true,
+    "legacy_untracked_paths": 11258,
+    "legacy_size_mtime_ns_mode_unchanged": true,
+    "original_tracked_metadata_outside_append_whitelist_unchanged": true,
+    "a0_rows": 88,
+    "a0_blank_quality_cells": 792,
+    "batch01_three_pending_unchanged": true,
+    "batch01_batch02_manifests_overlays_unchanged": true,
+    "batch03_original_manifest_template_package_unchanged": true
+  },
+  "index_unchanged_before_staging": true,
+  "appendix_prefixes_preserved": true,
+  "registry_columns": 11,
+  "csv_valid": true,
+  "git_diff_check": true,
+  "stage_commit_push_status": "Not yet performed at this pre-staging snapshot; see external final receipt",
+  "gate": "EXP13_2_A2_BATCH03_USER_REVIEW_RECORDED_AWAITING_CHATGPT_AUDIT",
+  "flags": {
+    "FINAL_TRUSTED_PAIR_FREEZE": "NO",
+    "RESTORATION_QUALITY_GATE_PASS": "NO",
+    "EXP13_2_B_AUTHORIZATION": "NO",
+    "SSL_AUTHORIZATION": "NO"
+  }
+}
