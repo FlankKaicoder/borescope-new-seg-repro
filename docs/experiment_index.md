@@ -87,3 +87,11 @@ Documentation-only design and code-surface audit. No model, data, training code,
 | Exp13.2-A1-R1 | EXP13_2_A1_R1_DESIGN_READY_FOR_CHATGPT_REVIEW | [Review response](exp13_2_a1_r1_design_review_response.md); [handoff](exp13_2_a1_r1_handoff.md); revised A1 method/fairness/gate documents |
 
 Document-only repair of loss regions, T2/T3 matching, proposed budgets and artifact gates. Previous A1/A0 entries remain historical snapshots. Trusted-pair freeze, Restoration Quality Gate PASS, Exp13.2-B and SSL authorizations remain NO; no runtime experiment or registry change.
+
+## Exp13.2-A2 Batch 01 human decision registration and spatial audit (2026-10-23)
+
+| Record | Status | Canonical evidence |
+|---|---|---|
+| Exp13.2-A2-Batch01-UserReview | EXP13_2_A2_BATCH01_USER_REVIEW_RECORDED_AWAITING_CHATGPT_AUDIT | [User decision record](exp13_2_a2_batch01_human_review_decision.md); [spatial audit](exp13_2_a2_batch01_spatial_audit.md); [handoff](exp13_2_a2_batch01_handoff.md); [overlay](../results/exp13_restoration_feasibility/qa_20261023_batch01_user_review_overlay.csv) |
+
+Eight historical candidates/four sources; user visual decisions only, no quality pass or freeze. Crack470 mask retained1.0 with conflicting historical note retained; corrosion13 retained0.441285140562249, crop-only acceptance. Historical A0/A1 entries remain snapshots. Exact registration UTC is in the overlay; Exp13.2-B/SSL remain NO. No Batch02 or model execution.

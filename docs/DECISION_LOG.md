@@ -33,3 +33,9 @@
 | Date | Decision ID | Question | Decision | Reason | Affected experiments |
 |---|---|---|---|---|---|
 | 2026-10-23 | D025 | Does A1 consistency repair authorize data admission or training? | `EXP13_2_A1_R1_DESIGN_READY_FOR_CHATGPT_REVIEW` only; design/pairs unfrozen and all quality/training authorization flags remain NO. | Clarify disjoint localization regions, identical T2/T3 differences, source/annotation/update budgets and future artifact controls. Trusted pairs remain 0; proposed minimum is 10 independent trusted sources with each class at least 5, pending approval. See [R1 response](exp13_2_a1_r1_design_review_response.md). | Exp13.2-A1-R1 documentation only |
+
+## Exp13.2-A2 Batch 01 subsequent user decision record (2026-10-23)
+
+| Date | Decision ID | Question | Decision | Reason | Affected experiments |
+|---|---|---|---|---|---|
+| 2026-10-23 | D026 | Does user visual acceptance admit trusted restoration pairs or training? | `EXP13_2_A2_BATCH01_USER_REVIEW_RECORDED_AWAITING_CHATGPT_AUDIT`; record8user decisions in independent overlay only. Trusted-pair freeze, Restoration Quality Gate PASS, Exp13.2-B and SSL remain NO. | Native-mask audit confirms Crack470 retained1.0 with historical warning preserved, corrosion13 retained0.441285140562249 with crop-only acceptance. Three candidates await user decision; no ranking, full-RAW upgrade or new visual scoring. Exact UTC and evidence in [decision record](exp13_2_a2_batch01_human_review_decision.md) and [spatial audit](exp13_2_a2_batch01_spatial_audit.md). | Exp13.2-A2 Batch01 only; stop for ChatGPT audit |

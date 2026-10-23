@@ -1,0 +1,343 @@
+{
+  "audit_utc": "2026-10-23T07:00:42.731136+00:00",
+  "hostname": "autodl-container-m6ahgmrgv8-57f0f00d",
+  "branch": "exp13/vlm-semantic-audit",
+  "starting_head": "70c4afd64470b1739a0a21183837ea21fcde8fa4",
+  "snapshot_path": "/root/autodl-tmp/exp13_2_a2_batch01_human_spatial_audit_ly9ufxq4/starting_state_snapshot.json",
+  "snapshot_sha256": "5c0c09986d8defed4e91eae847b357d8de359b815190b41c71538640f47b7f73",
+  "pillow_version": "11.3.0",
+  "numpy_version": "2.3.2",
+  "image_reads_scope": "Historical TRAIN run copies only; no dataset or VAL/TEST image reads",
+  "no_new_images_saved": true,
+  "no_model_import_or_execution": true,
+  "baseline_all_metadata_unchanged": true,
+  "baseline_index_sha256": "0c10f66694f47db7454715e9bdb3cf24879423504a90365f487d048fccef4d6d",
+  "historical_tables": {
+    "index": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_restoration_feasibility/a0_20261021_081812/source_variant_review_index.csv",
+      "sha256": "075d4600e2c4d497cf5d359cb32b71352835c0be94590e00ff4b22c1c48f64a6",
+      "rows": 88
+    },
+    "template": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_restoration_feasibility/a0_20261021_081812/human_quality_review_template.csv",
+      "sha256": "273013b0478e44eec4137c2ce7d3a0c6cbd2d340127fe5daa55a99d706de18e8",
+      "rows": 88
+    },
+    "spatial": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_restoration_feasibility/a0_20261021_081812/spatial_correspondence_report.csv",
+      "sha256": "968865549ba408e8306a91219a121572a9e4dedd95cbbac69ed5fce1b31b5f46",
+      "rows": 88
+    },
+    "shortlist": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_restoration_feasibility/qa_20261021_090000/candidate_shortlist.csv",
+      "sha256": "e117b1b38decdb29a9b25bcc9647e7d164fb48c572e0725da1243d211833afdc",
+      "rows": 88
+    },
+    "source_screen": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_restoration_feasibility/qa_20261021_090000/source_visual_screening.csv",
+      "sha256": "47203f26efd77c936cc45cce788ef244448ffd396ccfb07415460a565f0e694a",
+      "rows": 20
+    },
+    "batch_manifest": {
+      "path": "/root/autodl-tmp/exp13_2_a2_batch01_visual_review_20261023T062216Z_078cbbde/batch01_manifest.csv",
+      "sha256": "b58691a5b8745c22bf2c303df38d14cdd5bde26d505c039d598416d802ff10a2",
+      "rows": 8
+    },
+    "a0_integrity": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_restoration_feasibility/a0_20261021_081812/file_integrity.csv",
+      "sha256": "9f7cf08e97ddd2ca084c55d5b5ade236aa9705e9bb8da5ec6a845e08b504845d",
+      "rows": 352
+    },
+    "r1_manifest": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/manifests/pilot_manifest.csv",
+      "sha256": "0e12511396349cdd1ffd0826e913e684a12b81cf93f2b583581cdde262933705",
+      "rows": 40
+    }
+  },
+  "original_human_judgment_cells": 792,
+  "original_human_judgment_cells_blank": 792,
+  "batch_candidates": 8,
+  "batch_independent_sources": 4,
+  "join_failures": 0,
+  "method": "Native nonzero binary mask pixel counts; integral crop [left,right) x [top,bottom); ImageOps.fit 512x512 center=(0.5,0.5), bleed=0, RGB LANCZOS, masks NEAREST; no saved rasters",
+  "sources": [
+    {
+      "class_name": "crack",
+      "source_id": "470",
+      "files": {
+        "source_image": {
+          "path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/inputs/vlm_10_470.jpg",
+          "sha256": "6d1537bb91157f82a679581d82fa3e20d72dde3b29cc14d2f47974931c3d0ec1",
+          "size": [
+            960,
+            720
+          ],
+          "mode": "RGB",
+          "bytes": 40784,
+          "matches_a0_integrity_sha256": true
+        },
+        "original_defect_mask": {
+          "path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/original/vlm_10_470_mask.png",
+          "sha256": "357c075fe563c4a9a24976ce355cf0a3538d24df95f5c9b52c8f2e61171d776f",
+          "size": [
+            960,
+            720
+          ],
+          "mode": "L",
+          "bytes": 1899,
+          "matches_a0_integrity_sha256": true
+        },
+        "edit_mask": {
+          "path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_10_470_mask.png",
+          "sha256": "62e6e63f231260f3d05b67b1354218153f2441ed6ea992ecc922018658739f60",
+          "size": [
+            960,
+            720
+          ],
+          "mode": "L",
+          "bytes": 5352,
+          "matches_a0_integrity_sha256": true
+        }
+      },
+      "outputs": [
+        {
+          "variant_id": "crack_470_v1",
+          "path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_470_v1.png",
+          "sha256": "7b563b50fc6ce16f7192e0246c83a953b75e2c0cc80bb86271f3fd01fcb1813b",
+          "size": [
+            512,
+            512
+          ],
+          "matches_a0_integrity_sha256": true,
+          "historical_manifest_paths_match": true
+        },
+        {
+          "variant_id": "crack_470_v2",
+          "path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_470_v2.png",
+          "sha256": "692d3aa136c4dc6f5baa2743ea6a9cf820ed7ded75862073efc73dcfb912a33d",
+          "size": [
+            512,
+            512
+          ],
+          "matches_a0_integrity_sha256": true,
+          "historical_manifest_paths_match": true
+        }
+      ],
+      "native_size": [
+        960,
+        720
+      ],
+      "native_crop_xyxy": [
+        120.0,
+        0.0,
+        840.0,
+        720.0
+      ],
+      "native_nonzero_mask_bbox_xyxy": [
+        200,
+        110,
+        464,
+        297
+      ],
+      "native_original_mask_pixels": 3134,
+      "native_mask_pixels_inside_crop": 3134,
+      "native_mask_pixels_outside_crop": 0,
+      "independently_recomputed_retained_fraction": 1.0,
+      "fit_original_mask_pixels": 1583,
+      "fit_edit_support_pixels": 4061,
+      "edit_mask_recipe_matches": true,
+      "fit_rgb_equals_explicit_recorded_crop_resize": true,
+      "fit_rgb_pixel_sha256": "9b859f6d27f5c6132a31f904d950db34b4dd7ae61ab50e77420097295442edf4",
+      "historical_source_screen": {
+        "source_id": "470",
+        "class": "Crack",
+        "source_level_review_status": "PROMISING_NEEDS_FURTHER_REVIEW",
+        "risk_and_evidence": "Part of the native defect mask is cropped by the historical center crop; inspect residual crack only in aligned inference view.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Prioritize variant-by-variant review; source screen is not acceptance."
+      },
+      "variant_field_comparisons": [
+        {
+          "variant_id": "crack_470_v1",
+          "recorded_fields": {
+            "original_mask_retained_fraction": "1.0",
+            "spatial_original_mask_retained_fraction_native_crop": "1.0",
+            "spatial_native_crop_xyxy": "[120.0, 0.0, 840.0, 720.0]",
+            "spatial_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST"
+          },
+          "comparisons": {
+            "original_mask_retained_fraction": true,
+            "spatial_original_mask_retained_fraction_native_crop": true,
+            "spatial_native_crop_xyxy": true,
+            "spatial_transform": true,
+            "a0_original_defect_px_fit": true
+          }
+        },
+        {
+          "variant_id": "crack_470_v2",
+          "recorded_fields": {
+            "original_mask_retained_fraction": "1.0",
+            "spatial_original_mask_retained_fraction_native_crop": "1.0",
+            "spatial_native_crop_xyxy": "[120.0, 0.0, 840.0, 720.0]",
+            "spatial_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST"
+          },
+          "comparisons": {
+            "original_mask_retained_fraction": true,
+            "spatial_original_mask_retained_fraction_native_crop": true,
+            "spatial_native_crop_xyxy": true,
+            "spatial_transform": true,
+            "a0_original_defect_px_fit": true
+          }
+        }
+      ],
+      "spatial_grid_correspondence": "Historical manifest linkage and deterministic crop/grid consistent; model-output semantic geometry is not certified",
+      "current_visual_review": "No new visual review performed; user judgments are registered separately"
+    },
+    {
+      "class_name": "corrosion",
+      "source_id": "13",
+      "files": {
+        "source_image": {
+          "path": "results/exp13_diffusion_pilot/run_20260921_124440/corrosion/inputs/vlm_18_13.png",
+          "sha256": "42387d1d1ac38a74200395ea46d25c173f70e879e0f9d9b8c30d285629e2ee6c",
+          "size": [
+            720,
+            540
+          ],
+          "mode": "RGB",
+          "bytes": 529785,
+          "matches_a0_integrity_sha256": true
+        },
+        "original_defect_mask": {
+          "path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/original/vlm_18_13_mask.png",
+          "sha256": "0fba85f917584920bce1971b1e94ebdb3be558e800b9076fd2d5cae2057c44a3",
+          "size": [
+            720,
+            540
+          ],
+          "mode": "L",
+          "bytes": 1107,
+          "matches_a0_integrity_sha256": true
+        },
+        "edit_mask": {
+          "path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_18_13_mask.png",
+          "sha256": "3533b847e5d2c227065b3ccedcd0579ae877f2b664ef1cfab98b0b23d962b67c",
+          "size": [
+            720,
+            540
+          ],
+          "mode": "L",
+          "bytes": 2904,
+          "matches_a0_integrity_sha256": true
+        }
+      },
+      "outputs": [
+        {
+          "variant_id": "corrosion_13_v1",
+          "path": "results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_13_v1.png",
+          "sha256": "3b173145c89d5de75b1f8ec5fd84cd95022d16c52c8a96679923a74aa65ddc2d",
+          "size": [
+            512,
+            512
+          ],
+          "matches_a0_integrity_sha256": true,
+          "historical_manifest_paths_match": true
+        },
+        {
+          "variant_id": "corrosion_13_v2",
+          "path": "results/exp13_diffusion_pilot/run_20260921_124440/corrosion/outputs/corrosion_13_v2.png",
+          "sha256": "4d3374badc39159ee094e885675c98cc5d5a039f356dad07ef18b6cc7aacc263",
+          "size": [
+            512,
+            512
+          ],
+          "matches_a0_integrity_sha256": true,
+          "historical_manifest_paths_match": true
+        }
+      ],
+      "native_size": [
+        720,
+        540
+      ],
+      "native_crop_xyxy": [
+        90.0,
+        0.0,
+        630.0,
+        540.0
+      ],
+      "native_nonzero_mask_bbox_xyxy": [
+        466,
+        198,
+        677,
+        540
+      ],
+      "native_original_mask_pixels": 6225,
+      "native_mask_pixels_inside_crop": 2747,
+      "native_mask_pixels_outside_crop": 3478,
+      "independently_recomputed_retained_fraction": 0.441285140562249,
+      "fit_original_mask_pixels": 2435,
+      "fit_edit_support_pixels": 4334,
+      "edit_mask_recipe_matches": true,
+      "fit_rgb_equals_explicit_recorded_crop_resize": true,
+      "fit_rgb_pixel_sha256": "e013629a0934422769f19388362a4a6ab5760564c323d9ec14deaf07a4befcdb",
+      "historical_source_screen": {
+        "source_id": "13",
+        "class": "corrosion",
+        "source_level_review_status": "REJECT_RESTRICTED",
+        "risk_and_evidence": "RESTRICTED: center crop retains only 44.1285% of native defect mask; full-RAW repair cannot be claimed and edited structural realism is doubtful.",
+        "evidence_source": "ChatGPT qualitative first-pass screening of user-uploaded A0 source-level review sheets; relayed by user, no independent industrial-expert review.",
+        "next_step": "Keep excluded from any freeze unless a documented human reassessment changes this screen."
+      },
+      "variant_field_comparisons": [
+        {
+          "variant_id": "corrosion_13_v1",
+          "recorded_fields": {
+            "original_mask_retained_fraction": "0.441285140562249",
+            "spatial_original_mask_retained_fraction_native_crop": "0.441285140562249",
+            "spatial_native_crop_xyxy": "[90.0, 0.0, 630.0, 540.0]",
+            "spatial_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST"
+          },
+          "comparisons": {
+            "original_mask_retained_fraction": true,
+            "spatial_original_mask_retained_fraction_native_crop": true,
+            "spatial_native_crop_xyxy": true,
+            "spatial_transform": true,
+            "a0_original_defect_px_fit": true
+          }
+        },
+        {
+          "variant_id": "corrosion_13_v2",
+          "recorded_fields": {
+            "original_mask_retained_fraction": "0.441285140562249",
+            "spatial_original_mask_retained_fraction_native_crop": "0.441285140562249",
+            "spatial_native_crop_xyxy": "[90.0, 0.0, 630.0, 540.0]",
+            "spatial_transform": "ImageOps.fit; center=(0.5,0.5); RGB=LANCZOS; masks=NEAREST"
+          },
+          "comparisons": {
+            "original_mask_retained_fraction": true,
+            "spatial_original_mask_retained_fraction_native_crop": true,
+            "spatial_native_crop_xyxy": true,
+            "spatial_transform": true,
+            "a0_original_defect_px_fit": true
+          }
+        }
+      ],
+      "spatial_grid_correspondence": "Historical manifest linkage and deterministic crop/grid consistent; model-output semantic geometry is not certified",
+      "current_visual_review": "No new visual review performed; user judgments are registered separately"
+    }
+  ],
+  "implementation_evidence": [
+    {
+      "path": "tools/exp13_diffusion_pilot.py",
+      "sha256": "44b07cbece17e59506d5b5b60a7ae6546cdaa1235e57a4a31301c420ae09b91d"
+    },
+    {
+      "path": "tools/exp13_diffusion_pilot_r1.py",
+      "sha256": "189463f559018bcf94d1238e7fa957bea14c2f2eb86123d218a8b3271a9deece"
+    },
+    {
+      "path": "tools/exp13_restoration_feasibility_audit.py",
+      "sha256": "577184aa3d450a29382b406141d8e5902fa61d139b14d7cc294d4e6137381497"
+    }
+  ]
+}
