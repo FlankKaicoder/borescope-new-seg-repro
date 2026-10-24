@@ -1,0 +1,8 @@
+﻿class,train_image_count,train_instance_count,image_fraction,instance_fraction,cooccurring_labels
+Burn,141,287,0.21107784431137724,0.22669826224328593,Crack;Material missing;corrosion
+Crack,80,95,0.11976047904191617,0.0750394944707741,Burn;Dent;Material missing;corrosion
+Dent,120,128,0.17964071856287425,0.10110584518167456,Crack;Material missing;corrosion
+Material missing,154,184,0.23053892215568864,0.14533965244865718,Burn;Crack;Dent;corrosion
+Tears,45,45,0.06736526946107785,0.035545023696682464,
+Tip curl,27,27,0.040419161676646706,0.02132701421800948,
+corrosion,195,500,0.29191616766467066,0.3949447077409163,Burn;Crack;Dent;Material missing

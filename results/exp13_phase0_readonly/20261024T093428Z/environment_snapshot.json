@@ -1,0 +1,23 @@
+{
+  "timestamp_utc": "2026-10-24T09:34:35.726276+00:00",
+  "hostname": "autodl-container-6u284zzev8-49811a0a",
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "repo": "/root/autodl-tmp/borescope-new-seg-repro",
+  "branch": "exp13/vlm-semantic-audit",
+  "head": "e664f95cc3d3315819d65420b003f282d2aa84ac",
+  "git_status_short": "## exp13/vlm-semantic-audit...origin/exp13/vlm-semantic-audit\n?? results/exp13_phase0_readonly/\n?? results/phaseC1_R2A_canonical_roi/\n?? results/phaseC1_distribution_audit/\n?? results/phaseC1_manual_review/\n?? results/phaseC1_preview/\n?? results/phaseC1_preview_generation/\n?? results/phaseC1_quality_review/\n?? results/phaseC1_repair_generation/\n?? tools/exp13_phase0_readonly_audit.py\n?? tools/ssl/phaseC1_distribution_audit.py\n?? tools/ssl/phaseC1_preview_generation.py\n?? tools/ssl/phaseC1_r1_distribution_audit.py\n?? tools/ssl/phaseC1_r1_repair_generation.py",
+  "gpu": "NVIDIA GeForce RTX 3080 Ti, 12288 MiB, 1 MiB",
+  "disk": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/sdb         50G   21G   30G  41% /root/autodl-tmp",
+  "python_executable": "/root/miniconda3/bin/python",
+  "packages": {
+    "numpy": "2.3.2",
+    "Pillow": "11.3.0"
+  },
+  "raw_dataset": "/root/autodl-tmp/损伤训练数据集",
+  "frozen_manifest": "/root/autodl-tmp/borescope-new-seg-repro/results/dataset_build/exp01_1_split_20260812T122306Z/artifacts/split_manifest.csv",
+  "manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "script_sha256": "2bb3f066c98907e4f43f4d08c1476d63a0b905b4379e68b6fabb962c4105dfda",
+  "output_dir": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase0_readonly/20261024T093428Z",
+  "raw_write_policy": "read-only; no derived files written under raw_dataset"
+}

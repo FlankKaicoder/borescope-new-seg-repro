@@ -1,0 +1,12 @@
+{
+  "pilot_sources": 21,
+  "pilot_rows": 21,
+  "pilot_source_strength_combinations": 42,
+  "roi_count_for_pilot_sources": 25,
+  "smoke_plan": "2 source-level smoke calls; each call may contain multiple ROIs and is not equal to one ROI",
+  "smoke_call_cap": 120,
+  "total_local_call_cap": 300,
+  "source_cap": 100,
+  "roi_accounting_note": "21 sources x 2 strengths is 42 source-strength combinations; actual ROI work is multiplicative by source ROI count and must be scheduled separately",
+  "estimated_total_source_strength_calls": 42
+}

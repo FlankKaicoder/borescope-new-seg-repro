@@ -1,0 +1,20 @@
+{
+  "run_id": "20261024T093428Z",
+  "script": "/root/autodl-tmp/borescope-new-seg-repro/tools/exp13_phase0_readonly_audit.py",
+  "manifest": "/root/autodl-tmp/borescope-new-seg-repro/results/dataset_build/exp01_1_split_20260812T122306Z/artifacts/split_manifest.csv",
+  "manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "raw_root": "/root/autodl-tmp/损伤训练数据集",
+  "frozen_root": "/root/autodl-tmp/borescope-new-seg-data/v1",
+  "read_only_assertion": true,
+  "input_split_filter": "split == train",
+  "output_files": [
+    "class_source_distribution.csv",
+    "environment_snapshot.json",
+    "fov_border_risk_audit.csv",
+    "inference_budget_estimate.json",
+    "pilot_source_proposal.csv",
+    "roi_planning_audit.csv",
+    "source_geometry_audit.csv",
+    "summary.json"
+  ]
+}

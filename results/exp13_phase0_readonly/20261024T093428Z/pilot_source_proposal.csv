@@ -1,0 +1,22 @@
+﻿class,pilot_rank,stem,difficulty_label,objective_basis,source_instance_count,source_roi_count,source_class_count,split
+Burn,1,557,simple,instance/ROI count and class co-occurrence only; no restoration judgment,1,1,1,train
+Burn,2,628,medium,instance/ROI count and class co-occurrence only; no restoration judgment,2,1,1,train
+Burn,3,48,difficult,instance/ROI count and class co-occurrence only; no restoration judgment,4,2,1,train
+Crack,1,481,simple,instance/ROI count and class co-occurrence only; no restoration judgment,1,1,1,train
+Crack,2,533,medium,instance/ROI count and class co-occurrence only; no restoration judgment,1,1,1,train
+Crack,3,286,difficult,instance/ROI count and class co-occurrence only; no restoration judgment,3,1,2,train
+Dent,1,860,simple,instance/ROI count and class co-occurrence only; no restoration judgment,1,1,1,train
+Dent,2,929,medium,instance/ROI count and class co-occurrence only; no restoration judgment,1,1,1,train
+Dent,3,997,difficult,instance/ROI count and class co-occurrence only; no restoration judgment,1,1,1,train
+Material missing,1,645,simple,instance/ROI count and class co-occurrence only; no restoration judgment,1,1,1,train
+Material missing,2,733,medium,instance/ROI count and class co-occurrence only; no restoration judgment,1,1,1,train
+Material missing,3,264,difficult,instance/ROI count and class co-occurrence only; no restoration judgment,3,2,3,train
+Tears,1,788,simple,instance/ROI count and class co-occurrence only; no restoration judgment,1,1,1,train
+Tears,2,807,medium,instance/ROI count and class co-occurrence only; no restoration judgment,1,1,1,train
+Tears,3,828,difficult,instance/ROI count and class co-occurrence only; no restoration judgment,1,1,1,train
+Tip curl,1,441,simple,instance/ROI count and class co-occurrence only; no restoration judgment,1,1,1,train
+Tip curl,2,450,medium,instance/ROI count and class co-occurrence only; no restoration judgment,1,1,1,train
+Tip curl,3,462,difficult,instance/ROI count and class co-occurrence only; no restoration judgment,1,1,1,train
+corrosion,1,318,simple,instance/ROI count and class co-occurrence only; no restoration judgment,1,1,1,train
+corrosion,2,190,medium,instance/ROI count and class co-occurrence only; no restoration judgment,2,2,2,train
+corrosion,3,399,difficult,instance/ROI count and class co-occurrence only; no restoration judgment,5,2,1,train

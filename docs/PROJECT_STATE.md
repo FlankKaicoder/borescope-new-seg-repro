@@ -137,3 +137,11 @@ Prepared only historical TRAIN R1 Crack86/260 and corrosion2/8 v1/v2: 8 candidat
 ## Exp13.2-A2 Post-Batch03 source eligibility audit (2026-10-23T11:13:32.760984+00:00)
 
 `EXP13_2_A2_POST_BATCH03_SOURCE_ELIGIBILITY_AUDITED_AWAITING_CHATGPT_REVIEW`. [Post-Batch03 audit](exp13_2_a2_post_batch03_source_eligibility_audit.md); [source ledger](../results/exp13_restoration_feasibility/qa_20261023_post_batch03_source_eligibility.json). Rebuilt from A0/manifests/three independent overlays: 20A0 sources; 12covered, 8uncovered; 5pending variant decisions; formal admission evidence sufficient=0. Visual acceptance, scope limitation, reservation and historical contradiction are separate strata. 10/5/5 remains an unconfirmed proposal. No freeze, quality PASS, training or Batch04 authorization; stop for ChatGPT review.
+
+### Exp13 Phase 0 read-only data and ROI audit (2026-10-24)
+
+- Status: `EXP13_PHASE0_AUDIT_COMPLETED_PENDING_CHATGPT_GATE`.
+- Frozen TRAIN-only audit completed on 668 images and 1,266 valid polygon instances; all seven classes were covered and 844 native-coordinate ROIs were planned.
+- Gates: 0-A PASS, 0-B CONDITIONAL_PASS (geometry usable; gray/padding/FOV border remains heuristic), 0-C PASS, 0-D PASS, 0-E PASS.
+- No VAL/TEST access, model download/inference, diffusion, synthetic generation, training, SSL, or raw-data write occurred. No trusted pair or Exp13.2-B/SSL authorization is implied.
+- Evidence: `results/exp13_phase0_readonly/20261024T093428Z/`; audit and handoff: `docs/exp13_phase0_readonly_audit.md` and `docs/exp13_phase0_readonly_handoff.md`.
