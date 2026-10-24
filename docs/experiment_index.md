@@ -163,3 +163,9 @@ The required Hugging Face metadata request timed out before model download, so e
 `EXP13_PHASE1B_SMOKE_HOLD` / `NETWORK_HOLD`. [Review](exp13_phase1b_r1_review.md); [handoff](exp13_phase1b_r1_handoff.md); [evidence](../results/exp13_phase1b_r1/20261024T132018Z/summary.json).
 
 AutoDL IPv4 TCP/HTTPS to Hugging Face failed and the Windows controlled host timed out, so no trusted official model acquisition path existed. Exact revision/license/file manifest remain unknown; no model artifact, transfer, load, inference or budget use occurred. Source 2/17 candidates remain unfrozen and Pilot/SSL remain prohibited.
+
+## Exp13 Phase 1-B-R2 trusted model channel validation (2026-10-24)
+
+`NETWORK_HOLD` / `MODEL_ARTIFACT_HOLD`. [Review](exp13_phase1b_r2_review.md); [handoff](exp13_phase1b_r2_handoff.md); [evidence](../results/exp13_phase1b_r2/20261024T134647Z/summary.json).
+
+System DNS answers on Windows and AutoDL were inconsistent and could not be authenticated because Google/Cloudflare DoH were unreachable. Hugging Face metadata, fixed revision resolve and official LFS CDN were all unreachable. The supplied revision/license references remain unverified; no model artifact, transfer, load, inference, budget use, data access or configuration change occurred.

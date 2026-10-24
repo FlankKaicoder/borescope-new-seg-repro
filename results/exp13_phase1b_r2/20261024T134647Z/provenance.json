@@ -1,0 +1,12 @@
+{
+  "run_id": "20261024T134647Z",
+  "repository": "FlankKaicoder/borescope-new-seg-repro",
+  "branch": "exp13/vlm-semantic-audit",
+  "starting_head": "c51c1a4222d5bad3b9670ef22fdf0972d3bc9136",
+  "official_model": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+  "reference_revision": "115134f363124c53c7d878647567d04daf26e41e",
+  "dataset_scope": "No dataset access; TRAIN/VAL/TEST all untouched",
+  "execution_scope": "DNS and bounded official HTTPS diagnostics only",
+  "evidence_source": "Windows controlled host and ssh borescope7",
+  "network_hold": true
+}

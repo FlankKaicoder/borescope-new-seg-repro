@@ -200,3 +200,10 @@ Prepared only historical TRAIN R1 Crack86/260 and corrosion2/8 v1/v2: 8 candidat
 - Runtime facts were recorded: RTX 3080 Ti 12 GiB; Python 3.12.3; Torch 2.8.0+cu128; CUDA 12.8; Diffusers 0.35.1; Transformers 4.55.4; Accelerate 1.10.1; about 30 GiB free on `/root/autodl-tmp`.
 - R2 candidate geometry remains source `2` single ROI and source `17` double ROI, but final source/mask hash freeze and Smoke execution are deferred. No Pilot, pair freeze or SSL authorization is implied.
 - Evidence, review and handoff: `results/exp13_phase1b_r1/20261024T132018Z/`, `docs/exp13_phase1b_r1_review.md`, and `docs/exp13_phase1b_r1_handoff.md`.
+
+### Exp13 Phase 1-B-R2 trusted model channel validation (2026-10-24)
+
+- Status: `NETWORK_HOLD` / `MODEL_ARTIFACT_HOLD`.
+- This run was read-only network validation only. Windows and AutoDL system DNS returned different unverified answers; Google DoH was unreachable and Cloudflare DoH was reset. Hugging Face root HTTPS, fixed-revision API/resolve, and official `cdn-lfs.huggingface.co` were unreachable within bounded timeouts.
+- The supplied reference revision `115134f363124c53c7d878647567d04daf26e41e` and `openrail++` label remain unverified references. No metadata, file list, weights, transfer, cache, model load, inference, or budget use occurred.
+- No DNS/hosts/proxy/TLS changes, third-party mirror, token, VAL/TEST access, raw-data write, Pilot, SSL, or training occurred. Evidence and handoff: `results/exp13_phase1b_r2/20261024T134647Z/`, `docs/exp13_phase1b_r2_review.md`, and `docs/exp13_phase1b_r2_handoff.md`.

@@ -1,0 +1,13 @@
+{
+  "status": "MODEL_ARTIFACT_HOLD",
+  "model_id": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+  "revision": "115134f363124c53c7d878647567d04daf26e41e",
+  "downloaded_bytes": 0,
+  "estimated_required_bytes": null,
+  "disk_available_gib": 30,
+  "download_feasible": false,
+  "transfer_path": null,
+  "transfer_integrity": "NOT_APPLICABLE",
+  "required_next_path": "A user-controlled environment with authenticated access to the official Hugging Face API and weights CDN, followed by per-file hash verification and secure transfer.",
+  "no_download_reason": "No official metadata or file list could be reached; no artifact was requested."
+}

@@ -1,0 +1,16 @@
+{
+  "status": "UNVERIFIED_NETWORK_HOLD",
+  "model_id": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+  "official_url": "https://huggingface.co/diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+  "reference_revision_sha": "115134f363124c53c7d878647567d04daf26e41e",
+  "reference_revision_source": "User-supplied official public commit reference; not fetched in this run",
+  "revision_verified_locally": false,
+  "license_label_reference": "openrail++",
+  "license_verified_locally": false,
+  "components": null,
+  "required_files": null,
+  "file_sizes": null,
+  "lfs_sha256": null,
+  "fp16_complete": false,
+  "reason": "Official revision API and repository metadata were unreachable from both trusted environments."
+}

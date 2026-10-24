@@ -1,0 +1,23 @@
+{
+  "run_id": "20261024T134647Z",
+  "status": "NETWORK_HOLD",
+  "method": "read_only_system_dns_and_https_doh",
+  "windows": {
+    "system_dns_a": ["208.101.60.87"],
+    "system_dns_aaaa": ["2001::1f0d:5f26"],
+    "google_doh": {"status": "NOT_REACHABLE", "observed": "curl timeout after 5 seconds"},
+    "cloudflare_doh": {"status": "NOT_REACHABLE", "observed": "TLS connection reset"},
+    "cross_checked": false,
+    "assessment": "System answers are unverified; no trusted DNS conclusion."
+  },
+  "autodl": {
+    "system_dns_a": ["18.164.174.55", "18.164.174.17", "18.164.174.23", "18.164.174.118"],
+    "system_dns_aaaa": [],
+    "google_doh": {"status": "NOT_REACHABLE", "observed": "DNS resolution timed out after 5 seconds"},
+    "cloudflare_doh": {"status": "NOT_REACHABLE", "observed": "TLS connection reset"},
+    "cross_checked": false,
+    "assessment": "System answers are unverified; no trusted DNS conclusion."
+  },
+  "dns_interpretation": "The two system resolvers returned different unverified answers. This is consistent with DNS path interference or resolver divergence, but poisoning is not asserted without an authoritative cross-check.",
+  "changes_made": {"dns": false, "hosts": false, "proxy": false}
+}

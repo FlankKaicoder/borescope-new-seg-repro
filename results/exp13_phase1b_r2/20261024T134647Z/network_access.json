@@ -1,0 +1,26 @@
+{
+  "run_id": "20261024T134647Z",
+  "status": "NETWORK_HOLD",
+  "official_host": "huggingface.co",
+  "windows": {
+    "root_https": {"status": "TIMEOUT", "timeout_seconds": 5},
+    "revision_api": {"status": "TIMEOUT", "timeout_seconds": 5},
+    "revision_resolve_model_index": {"status": "TIMEOUT", "timeout_seconds": 5},
+    "cdn_host": "cdn-lfs.huggingface.co",
+    "cdn_dns_a": ["202.160.129.6"],
+    "cdn_https": {"status": "TIMEOUT", "timeout_seconds": 5}
+  },
+  "autodl": {
+    "root_https": {"status": "TIMEOUT", "timeout_seconds": 5},
+    "revision_api": {"status": "TIMEOUT", "timeout_seconds": 5},
+    "revision_resolve_model_index": {"status": "TIMEOUT", "timeout_seconds": 5},
+    "cdn_host": "cdn-lfs.huggingface.co",
+    "cdn_dns_a": ["192.133.77.197"],
+    "cdn_https": {"status": "TIMEOUT", "timeout_seconds": 5}
+  },
+  "api_reached": false,
+  "weights_cdn_reached": false,
+  "tls_verification_disabled": false,
+  "proxy_override": false,
+  "third_party_mirror_used": false
+}
