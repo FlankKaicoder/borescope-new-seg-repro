@@ -136,3 +136,6 @@ Historical TRAIN R1 only: Crack86/260, corrosion2/8, each v1/v2;8variants/4indep
 | Exp13 Phase 0 | AUDIT_COMPLETED_PENDING_CHATGPT_GATE | `docs/exp13_phase0_readonly_audit.md` and `results/exp13_phase0_readonly/20261024T093428Z/summary.json` |
 
 | Exp13 Phase 0-R1 | AUDIT_COMPLETED_PENDING_CHATGPT_GATE | `docs/exp13_phase0_r1_audit_review.md` and `results/exp13_phase0_r1/20261024T100624Z/summary.json` |
+| Exp13 Phase 1-A | COMPLETED_PENDING_CHATGPT_GATE | `docs/exp13_phase1a_handoff.md` and `results/exp13_phase1a/20261024T_PHASE1A_PROTOCOL/summary.json` |
+
+Phase 1-A is a deterministic protocol/geometry audit only. Eight direct assertion tests pass; the frozen TRAIN pilot proposal and Burn source50 metadata are verified. No model download/load/inference, generated images, VAL/TEST access, training, SSL or trusted-pair authorization occurred. Runtime smoke remains separately gated.

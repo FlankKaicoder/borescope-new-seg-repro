@@ -1,0 +1,24 @@
+{
+  "boundary_clamp": "FOV_UNCERTAIN",
+  "gray_padding": "UNRESOLVED_HEURISTIC",
+  "large_roi_context_risk": "FLAG_ONLY",
+  "native_sizes_tested": [
+    [
+      640,
+      480
+    ],
+    [
+      720,
+      540
+    ],
+    [
+      384,
+      288
+    ]
+  ],
+  "order_independent_composition": true,
+  "output_shape_preserved": true,
+  "outside_approved_edit_support_difference": 0,
+  "polygon_coverage": 1.0,
+  "thin_crack": "PASS"
+}

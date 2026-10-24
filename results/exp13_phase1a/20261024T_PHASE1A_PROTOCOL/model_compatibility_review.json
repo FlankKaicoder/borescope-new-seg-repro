@@ -1,0 +1,36 @@
+{
+  "cache_estimate": "NEEDS_ONLINE_VERIFICATION",
+  "candidates": [
+    {
+      "gpu_risk": "RTX 3080 Ti 12GB / 1024 canvas high memory risk",
+      "id": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+      "license": "NEEDS_ONLINE_VERIFICATION",
+      "mask_support": "NEEDS_ONLINE_VERIFICATION",
+      "mitigations": [
+        "FP16",
+        "VAE slicing/tiling if supported",
+        "attention slicing",
+        "CPU offload"
+      ],
+      "revision": "NEEDS_ONLINE_VERIFICATION",
+      "role": "preferred",
+      "runtime": "NEEDS_RUNTIME_SMOKE"
+    },
+    {
+      "id": "stable-diffusion-v1-5/stable-diffusion-inpainting",
+      "license": "NEEDS_ONLINE_VERIFICATION",
+      "mask_support": "NEEDS_ONLINE_VERIFICATION",
+      "role": "fallback",
+      "runtime": "NEEDS_RUNTIME_SMOKE"
+    },
+    {
+      "id": "aiplayground/dreamshaper-8-inpainting@master",
+      "role": "historical_reference_only",
+      "runtime": "NEEDS_RUNTIME_SMOKE"
+    }
+  ],
+  "inference_calls": 0,
+  "model_downloaded": false,
+  "model_loaded": false,
+  "status": "AUDIT_ONLY_NO_RUNTIME_CONFIRMATION"
+}

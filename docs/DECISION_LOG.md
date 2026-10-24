@@ -69,3 +69,8 @@ Decision D031: register only explicit user visual decisions; no quality PASS or 
 ## Exp13.2-A2 Post-Batch03 source eligibility audit (2026-10-23T11:13:32.760984+00:00)
 
 Decision D032: separate user visual decisions, current-view candidacy and formal admission evidence; preserve all historical decisions and gates. `EXP13_2_A2_POST_BATCH03_SOURCE_ELIGIBILITY_AUDITED_AWAITING_CHATGPT_REVIEW`. [Post-Batch03 audit](exp13_2_a2_post_batch03_source_eligibility_audit.md); [source ledger](../results/exp13_restoration_feasibility/qa_20261023_post_batch03_source_eligibility.json). Rebuilt from A0/manifests/three independent overlays: 20A0 sources; 12covered, 8uncovered; 5pending variant decisions; formal admission evidence sufficient=0. Visual acceptance, scope limitation, reservation and historical contradiction are separate strata. 10/5/5 remains an unconfirmed proposal. No freeze, quality PASS, training or Batch04 authorization; stop for ChatGPT review.
+## Exp13 Phase 1-A protocol decision (2026-10-24)
+
+| Date | Decision ID | Question | Decision | Reason | Affected experiments |
+|---|---|---|---|---|---|
+| 2026-10-24 | D033 | Does Phase 1-A protocol audit authorize Diffusion smoke or restoration training? | `EXP13_PHASE1A_COMPLETED_PENDING_CHATGPT_GATE`; no runtime authorization. | Deterministic geometry/composition/budget tests pass, but model compatibility and runtime behavior are unverified; FOV/gray-padding and composition conflicts remain explicit hold/risk states. Burn source50 was checked from frozen TRAIN metadata. | Exp13 Phase 1-A only; Diffusion smoke, generation, training, SSL and Exp13.2-B remain NO |

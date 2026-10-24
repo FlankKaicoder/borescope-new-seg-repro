@@ -1,0 +1,22 @@
+﻿class,pilot_rank,stem,difficulty_label,recommended_action,reason,source_roi_count,source_polygon_count,source_class_count,boundary_polygon_count,split
+Burn,1,623,simple,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,1,5,1,2,train
+Burn,2,50,medium,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,5,7,3,2,train
+Burn,3,264,difficult,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,2,3,3,3,train
+Crack,1,485,simple,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,1,1,1,0,train
+Crack,2,146,medium,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,1,1,1,0,train
+Crack,3,531,difficult,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,1,1,1,0,train
+Dent,1,960,simple,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,1,1,1,0,train
+Dent,2,844,medium,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,1,1,1,0,train
+Dent,3,1003,difficult,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,1,1,1,1,train
+Material missing,1,676,simple,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,1,1,1,0,train
+Material missing,2,697,medium,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,1,1,1,0,train
+Material missing,3,774,difficult,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,1,1,1,0,train
+Tears,1,794,simple,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,1,1,1,0,train
+Tears,2,809,medium,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,1,1,1,0,train
+Tears,3,786,difficult,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,1,1,1,0,train
+Tip curl,1,441,simple,retain,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,1,1,1,0,train
+Tip curl,2,467,medium,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,1,1,1,0,train
+Tip curl,3,447,difficult,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,1,1,1,0,train
+corrosion,1,282,simple,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,2,2,1,0,train
+corrosion,2,213,medium,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,1,1,1,1,train
+corrosion,3,193,difficult,replace_or_add,quantile of area/aspect/context/boundary/co-occurrence geometry; no restoration outcome,1,2,2,1,train

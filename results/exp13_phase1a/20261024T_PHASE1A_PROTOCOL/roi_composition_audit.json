@@ -1,0 +1,8 @@
+{
+  "composition_status": "PASS",
+  "hold_policy_available": true,
+  "hold_sources_cannot_pass_by_skipping": true,
+  "multi_class_same_source": "covered_by deterministic ownership",
+  "overlap_pixels": 56,
+  "ownership_rule": "lexicographically smallest roi_id per overlapping support pixel"
+}

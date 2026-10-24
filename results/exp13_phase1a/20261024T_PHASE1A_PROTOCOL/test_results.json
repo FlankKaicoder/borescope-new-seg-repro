@@ -1,0 +1,12 @@
+{
+  "direct_assertion_tests": 8,
+  "model_calls": 0,
+  "status": "PASS",
+  "synthetic_arrays_only": true,
+  "tests": {
+    "budget": "PASS",
+    "composition": "PASS",
+    "geometry": "PASS"
+  },
+  "val_test_access": 0
+}

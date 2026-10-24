@@ -1,0 +1,20 @@
+{
+  "canvas": [
+    1024,
+    1024
+  ],
+  "dtype": "float16",
+  "guidance_scale": 7.5,
+  "mask_definition": "polygon edit core plus explicit transition halo; background is immutable",
+  "model_id": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+  "negative_prompt": "new component, hole, seam, defect, text, watermark, geometry change, altered non-editable area",
+  "prompt": "Restore a credible normal industrial metal surface; preserve texture, mechanical geometry, reflection, and lighting; do not add parts, holes, seams, or defects; do not change non-editable pixels.",
+  "revision": "NEEDS_ONLINE_VERIFICATION",
+  "runtime_status": "NOT_RUN",
+  "seed_policy": "fixed per ROI and strength",
+  "steps": 20,
+  "strengths": [
+    0.75,
+    0.9
+  ]
+}

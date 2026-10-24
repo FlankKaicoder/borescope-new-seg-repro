@@ -1,0 +1,12 @@
+{
+  "budget": "CONDITIONAL_FEASIBLE",
+  "burn_source_50_verified": true,
+  "composition": "PASS_WITH_HOLD_POLICY",
+  "geometry": "PASS",
+  "model": "AUDIT_ONLY",
+  "next_action": "WAIT_FOR_CHATGPT_GATE; DO_NOT_RUN_DIFFUSION_SMOKE",
+  "pilot_roi_count": 27,
+  "pilot_unique_sources": 21,
+  "status": "EXP13_PHASE1A_COMPLETED_PENDING_CHATGPT_GATE",
+  "train_pilot_rows": 21
+}

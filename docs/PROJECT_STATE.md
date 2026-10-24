@@ -154,3 +154,10 @@ Prepared only historical TRAIN R1 Crack86/260 and corrosion2/8 v1/v2: 8 candidat
 - Boundary-risk recomputation is 317/1266 (25.04%) across 202 sources under the documented geometric rule; gray/black/padding remains `UNRESOLVED_HEURISTIC`; merge/re-paste risks remain disclosed.
 - Gates: R1-A CONDITIONAL_PASS, R1-B PASS, R1-C CONDITIONAL_PASS, R1-D CONDITIONAL_PASS, R1-E PASS. No Diffusion, training, SSL, trusted-pair freeze, or Exp13.2-B authorization.
 - Evidence: `results/exp13_phase0_r1/20261024T100624Z/`; review and handoff: `docs/exp13_phase0_r1_audit_review.md` and `docs/exp13_phase0_r1_handoff.md`.
+### Exp13 Phase 1-A model and geometry protocol (2026-10-24)
+
+- Status: `EXP13_PHASE1A_COMPLETED_PENDING_CHATGPT_GATE`.
+- Deterministic TRAIN-metadata protocol audit completed without downloading/loading/running a Diffusion model. Polygon edit-core, transition halo, immutable background, FOV uncertainty, clamped ROI, non-square canvas mapping, inverse mapping, order-independent grouping, deterministic overlap ownership, and explicit `ROI_COMPOSITION_HOLD` are implemented and tested.
+- Deterministic tests: 8/8 direct assertion tests PASS; result JSON/CSV schema checks PASS. Real frozen TRAIN pilot metadata verifies Burn source `50`; boundary and thin-Crack candidates are recorded with status/risk fields. No image decode, VAL/TEST access, raw-data write, model call, generation, training, SSL, pair freeze, or Exp13.2-B authorization.
+- Candidate model and configuration are audit-only. Online license/revision/mask/cache facts remain unverified and runtime fields remain `NEEDS_RUNTIME_SMOKE`; no generated images are stored. Budget counters separate planned/actual/retry calls and block local calls above the 300 cap; GPT fallback remains unauthorized.
+- Evidence: `results/exp13_phase1a/20261024T_PHASE1A_PROTOCOL/`; docs: `docs/exp13_phase1a_model_protocol.md`, `docs/exp13_phase1a_geometry_design.md`, `docs/exp13_phase1a_smoke_pilot_protocol.md`, `docs/exp13_phase1a_handoff.md`.

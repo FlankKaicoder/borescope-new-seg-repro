@@ -1,0 +1,44 @@
+{
+  "actual_calls": 0,
+  "caps": {
+    "all_local": 300,
+    "gpt_fallback": 14,
+    "production_sources": 100,
+    "retry_sources": 10,
+    "smoke": 4,
+    "smoke_pilot_revision": 120
+  },
+  "definition": "one LOCAL_MODEL_CALL = one ROI, one strength, one actual inference",
+  "execution_blocked_if_over_cap": true,
+  "formal_production_default_strengths": 1,
+  "gpt_fallback": "DISABLED_UNAUTHORIZED",
+  "gpt_fallback_calls": 0,
+  "history": [
+    {
+      "count": 4,
+      "event": "planned",
+      "kind": "smoke_planned",
+      "source_id": null,
+      "strength": null
+    },
+    {
+      "count": 54,
+      "event": "planned",
+      "kind": "pilot_planned",
+      "source_id": null,
+      "strength": null
+    },
+    {
+      "count": 16,
+      "event": "planned",
+      "kind": "revision_reserve",
+      "source_id": null,
+      "strength": null
+    }
+  ],
+  "pilot_rois": 27,
+  "pilot_sources": 21,
+  "pilot_two_strength_planned": 54,
+  "planned_calls": 74,
+  "retry_calls": 0
+}
