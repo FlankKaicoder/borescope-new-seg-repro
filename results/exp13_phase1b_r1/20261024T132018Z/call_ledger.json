@@ -1,0 +1,13 @@
+{
+  "status": "NETWORK_HOLD",
+  "ledger_schema": "BudgetProtocol schema v2",
+  "ledger_path": null,
+  "max_smoke_calls": 4,
+  "planned_calls": 3,
+  "reserved": 0,
+  "started": 0,
+  "terminal": 0,
+  "cancelled": 0,
+  "actual_model_calls": 0,
+  "reason": "No call was eligible before official model metadata and artifact verification."
+}

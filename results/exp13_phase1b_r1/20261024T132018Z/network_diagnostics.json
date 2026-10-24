@@ -1,0 +1,22 @@
+{
+  "status": "NETWORK_HOLD",
+  "model_url": "https://huggingface.co/diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+  "autodl": {
+    "dns_ipv4": {"status": "PASS", "addresses": ["103.252.115.153", "103.39.76.66"]},
+    "dns_ipv6": {"status": "NO_USABLE_ROUTE", "observed": "IPv6 unavailable"},
+    "ipv4_tcp_443": {"status": "FAIL", "observed": "connection could not be established within bounded timeout"},
+    "ipv6_tcp_443": {"status": "FAIL", "observed": "network unreachable"},
+    "tls_https": {"status": "NOT_REACHED", "observed": "curl -4 could not connect"},
+    "hf_api": {"status": "NOT_REACHED", "observed": "bounded curl request failed before HTTP response"},
+    "proxy_environment": {"status": "NONE_CONFIGURED"}
+  },
+  "windows_controlled_host": {
+    "dns_ipv4": {"status": "PASS", "addresses": ["108.160.172.204"]},
+    "dns_ipv6": {"status": "PASS", "address": "2a03:2880:f129:83:face:b00c:0:25de"},
+    "https": {"status": "TIMEOUT", "bounded_timeout_seconds": 10}
+  },
+  "third_party_mirror_used": false,
+  "tls_verification_disabled": false,
+  "access_token_saved": false,
+  "decision": "No trusted official download path is available; stop without model acquisition."
+}

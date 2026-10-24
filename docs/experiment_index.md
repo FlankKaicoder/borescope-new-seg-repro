@@ -157,3 +157,9 @@ R2 adds non-identity RGB composition evidence, locked persistent budget accounti
 `EXP13_PHASE1B_SMOKE_HOLD` / `PREFLIGHT_HOLD`. [Smoke review](exp13_phase1b_smoke_review.md); [handoff](exp13_phase1b_smoke_handoff.md); [evidence](../results/exp13_phase1b_smoke/20261024T130500Z/summary.json).
 
 The required Hugging Face metadata request timed out before model download, so exact revision/license verification failed and no SDXL model was loaded or called. The R2 geometry candidates (source 2 single ROI, source 17 double ROI) remain unfrozen; no output or contact sheet exists. Pilot, fallback models, pair freeze and SSL remain prohibited.
+
+## Exp13 Phase 1-B-R1 SDXL preflight recovery (2026-10-24)
+
+`EXP13_PHASE1B_SMOKE_HOLD` / `NETWORK_HOLD`. [Review](exp13_phase1b_r1_review.md); [handoff](exp13_phase1b_r1_handoff.md); [evidence](../results/exp13_phase1b_r1/20261024T132018Z/summary.json).
+
+AutoDL IPv4 TCP/HTTPS to Hugging Face failed and the Windows controlled host timed out, so no trusted official model acquisition path existed. Exact revision/license/file manifest remain unknown; no model artifact, transfer, load, inference or budget use occurred. Source 2/17 candidates remain unfrozen and Pilot/SSL remain prohibited.

@@ -1,0 +1,16 @@
+{
+  "run_id": "20261024T132018Z",
+  "git_head": "4d2ac52eb92e0a6d4f0e207c14d047f37567e753",
+  "dataset_scope": "TRAIN-only candidate metadata; no model input/output",
+  "model_id": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+  "revision": null,
+  "model_download": 0,
+  "model_load": 0,
+  "model_calls": 0,
+  "val_access": 0,
+  "test_access": 0,
+  "raw_write": 0,
+  "network_status": "NETWORK_HOLD",
+  "artifact_status": "MODEL_ARTIFACT_HOLD",
+  "fallback_model": false
+}

@@ -1,0 +1,10 @@
+{
+  "status": "NOT_APPLICABLE_NETWORK_HOLD",
+  "source_host": null,
+  "destination_host": "borescope7",
+  "files_transferred": 0,
+  "source_manifest_sha256": null,
+  "destination_manifest_sha256": null,
+  "hashes_match": false,
+  "reason": "No official model artifact was available for transfer."
+}

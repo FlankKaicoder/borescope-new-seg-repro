@@ -1,0 +1,9 @@
+{
+  "status": "NETWORK_HOLD",
+  "candidate_sources": {"2": {"roi_count": 1, "polygon_count": 1, "r2_status": "PASS", "final_hash_freeze": false}, "17": {"roi_count": 2, "polygon_count": 2, "r2_status": "PASS", "edit_support_overlap_pixels": 0, "final_hash_freeze": false}},
+  "native_mask_raster": "Phase 0-R1 Pillow rule",
+  "final_boundary_risk_recheck": "NOT_RUN",
+  "canvas_native_runtime_mapping": "NOT_RUN",
+  "full_image_repaste": "NOT_RUN",
+  "reason": "Model acquisition stopped before Smoke input freezing and inference."
+}

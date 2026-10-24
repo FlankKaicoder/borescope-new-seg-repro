@@ -1,0 +1,8 @@
+{
+  "status": "NOT_FROZEN_NETWORK_HOLD",
+  "candidate": {"canvas": [1024, 1024], "precision": "fp16", "steps": 20, "guidance": 7.5, "strength": 0.8, "seed": 130500, "prompt": "restore a clean, uniform normal metallic borescope surface; preserve realistic metal texture and lighting"},
+  "planned_calls": 3,
+  "hard_max_smoke_calls": 4,
+  "model_revision": null,
+  "freeze_blocked_by": "NETWORK_HOLD"
+}

@@ -191,3 +191,12 @@ Prepared only historical TRAIN R1 Crack86/260 and corrosion2/8 v1/v2: 8 candidat
 - No model download/load/inference, API call, fallback checkpoint, budget reservation, VAL/TEST access, or raw-data write occurred. No contact sheet was produced because no model output exists.
 - R2 identifies source `2` as a one-ROI candidate and source `17` as a two-ROI candidate with zero edit-support overlap, but final source/mask hash freeze and Smoke execution remain undone.
 - Evidence, review and handoff: `results/exp13_phase1b_smoke/20261024T130500Z/`, `docs/exp13_phase1b_smoke_review.md`, and `docs/exp13_phase1b_smoke_handoff.md`.
+
+### Exp13 Phase 1-B-R1 SDXL preflight recovery (2026-10-24)
+
+- Status: `EXP13_PHASE1B_SMOKE_HOLD` / `NETWORK_HOLD`.
+- AutoDL DNS resolved Hugging Face IPv4, but IPv4 TCP 443 failed and IPv6 had no usable route. The Windows controlled host resolved DNS but its bounded HTTPS request timed out. No proxy, TLS bypass, token, certificate or third-party mirror was used.
+- Exact model revision, `openrail++` license text, component/file manifest, LFS hashes and FP16 completeness remain unverified. No model download, transfer, load, inference, fallback model or budget reservation occurred.
+- Runtime facts were recorded: RTX 3080 Ti 12 GiB; Python 3.12.3; Torch 2.8.0+cu128; CUDA 12.8; Diffusers 0.35.1; Transformers 4.55.4; Accelerate 1.10.1; about 30 GiB free on `/root/autodl-tmp`.
+- R2 candidate geometry remains source `2` single ROI and source `17` double ROI, but final source/mask hash freeze and Smoke execution are deferred. No Pilot, pair freeze or SSL authorization is implied.
+- Evidence, review and handoff: `results/exp13_phase1b_r1/20261024T132018Z/`, `docs/exp13_phase1b_r1_review.md`, and `docs/exp13_phase1b_r1_handoff.md`.

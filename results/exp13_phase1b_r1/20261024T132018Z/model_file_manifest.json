@@ -1,0 +1,11 @@
+{
+  "status": "MODEL_ARTIFACT_HOLD",
+  "model_id": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+  "revision_sha": null,
+  "files": [],
+  "expected_total_bytes": null,
+  "downloaded_bytes": 0,
+  "sha256_verified": false,
+  "lfs_verified": false,
+  "reason": "Metadata and official file listing unavailable; no artifact download attempted."
+}

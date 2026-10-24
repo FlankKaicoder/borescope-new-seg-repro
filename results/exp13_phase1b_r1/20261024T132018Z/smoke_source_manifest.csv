@@ -1,0 +1,3 @@
+source_id,role,polygon_count,roi_count,roi_ids,geometry_evidence,source_hash,mask_hash,status
+2,single_roi,1,1,roi_0,R2 PASS candidate; final boundary/hash recheck deferred,NOT_FINALIZED,NOT_FINALIZED,NETWORK_HOLD
+17,double_roi,2,2,roi_0|roi_1,R2 PASS candidate; edit-support overlap 0; final boundary/hash recheck deferred,NOT_FINALIZED,NOT_FINALIZED,NETWORK_HOLD

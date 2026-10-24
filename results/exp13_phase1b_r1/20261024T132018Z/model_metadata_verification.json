@@ -1,0 +1,13 @@
+{
+  "status": "NETWORK_HOLD",
+  "model_id": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+  "official_url": "https://huggingface.co/diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+  "revision_sha": null,
+  "license": null,
+  "expected_license_label": "openrail++",
+  "components": null,
+  "required_files": null,
+  "fp16_verified": false,
+  "diffusers_structure_verified": false,
+  "reason": "Official Hugging Face API/repository could not be reached from AutoDL or the Windows controlled host."
+}
