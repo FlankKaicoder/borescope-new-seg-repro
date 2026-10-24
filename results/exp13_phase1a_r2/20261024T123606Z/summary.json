@@ -1,0 +1,22 @@
+{
+  "experiment": "EXP13_PHASE1A_R2_FINAL_ENGINEERING_GATE_REPAIR",
+  "run_id": "20261024T123606Z",
+  "status": "EXP13_PHASE1A_R2_COMPLETED_PENDING_CHATGPT_GATE",
+  "gates": {
+    "test_execution": "PASS",
+    "nonidentity_rgb": "PASS",
+    "overlap_policy": "PASS",
+    "raster_statistics": "PASS",
+    "budget": "PASS",
+    "integrity": "PASS"
+  },
+  "prohibitions": {
+    "diffusion": 0,
+    "training": 0,
+    "ssl": 0,
+    "val_access": 0,
+    "test_access": 0,
+    "raw_write": 0,
+    "model_calls": 0
+  }
+}

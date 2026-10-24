@@ -1,0 +1,34 @@
+{
+  "normative": "Pillow ImageDraw polygon with round(x/y), fill=1",
+  "legacy_comparator": "pixel-center ray casting",
+  "total_polygons": 1266,
+  "different_polygons": 1266,
+  "categories": {
+    "boundary": {
+      "polygon_count": 118,
+      "different_polygon_count": 118,
+      "affected_source_count": 90,
+      "different_pixel_count": 80741,
+      "different_pixel_ratio": 0.009253578726247026,
+      "affected_sources_le_affected_polygons": true
+    },
+    "thin_crack_or_small": {
+      "polygon_count": 97,
+      "different_polygon_count": 97,
+      "affected_source_count": 81,
+      "different_pixel_count": 14344,
+      "different_pixel_ratio": 0.08160664504750527,
+      "affected_sources_le_affected_polygons": true
+    },
+    "small_area": {
+      "polygon_count": 2,
+      "different_polygon_count": 2,
+      "affected_source_count": 1,
+      "different_pixel_count": 15,
+      "different_pixel_ratio": 0.5769230769230769,
+      "affected_sources_le_affected_polygons": true
+    }
+  },
+  "all_category_source_cardinality_assertions": true,
+  "r1_error_explained": "R1 reused a set variable while accumulating category counts; R2 allocates independent source sets per category."
+}

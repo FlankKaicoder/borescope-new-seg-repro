@@ -145,3 +145,9 @@ Phase 1-A is a deterministic protocol/geometry audit only. Eight direct assertio
 `EXP13_PHASE1A_R1_COMPLETED_PENDING_CHATGPT_GATE`. [Implementation review](exp13_phase1a_r1_implementation_review.md); [handoff](exp13_phase1a_r1_handoff.md); [evidence](../results/exp13_phase1a_r1/20261024T113936Z/summary.json).
 
 The repair records real test execution with a standard-library fallback (9/9), compares all 1,266 TRAIN polygons against the historical Phase 0-R1 Pillow raster, validates native RGB multi-ROI full-image composition including Burn source50/all 7 polygons, and exercises persistent budget recovery and hard caps. No Diffusion/model call, VAL/TEST access, training, SSL, or raw-data write occurred. Smoke is a revised protocol only and remains unrun pending ChatGPT gate.
+
+## Exp13 Phase 1-A-R2 minimal engineering closure (2026-10-24)
+
+`EXP13_PHASE1A_R2_COMPLETED_PENDING_CHATGPT_GATE`. [Final engineering review](exp13_phase1a_r2_final_engineering_review.md); [handoff](exp13_phase1a_r2_handoff.md); [evidence](../results/exp13_phase1a_r2/20261024T123606Z/summary.json).
+
+R2 adds non-identity RGB composition evidence, locked persistent budget accounting with cross-process contention tests, and corrected independent raster category statistics. Direct tests are 9/9 PASS; real TRAIN sources 2, 17, 50 and 13 pass native composition checks, including all seven Burn-50 polygons and five ROI groups. No model, Diffusion, generation, training, SSL, VAL/TEST access or raw-data write occurred; the result is pending ChatGPT gate.

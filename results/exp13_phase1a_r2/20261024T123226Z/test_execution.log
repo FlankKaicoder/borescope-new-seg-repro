@@ -1,0 +1,4 @@
+COMMAND: /root/miniconda3/bin/python -m tools.exp13_restoration.run_phase1a_r2
+EXIT_CODE: 0
+STDOUT: direct stdlib tests and R2 assertions recorded in test_results.json
+STDERR: empty

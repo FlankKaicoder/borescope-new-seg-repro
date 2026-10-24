@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "checks": {
+    "smoke_5th_rejected": true,
+    "pilot_121st_rejected": true,
+    "301st_all_reserved_rejected": true,
+    "started_restart_occupies": true,
+    "duplicate_idempotent": true,
+    "same_id_different_params_rejected": true,
+    "failed_unknown_consume_budget": true,
+    "reserved_only_cancel_audited": true,
+    "cancelled_id_cannot_restart": true,
+    "multi_roi_group_atomic_reject": true,
+    "unique_source_cap_all_stages": true,
+    "retry_source_cap": true,
+    "same_source_retry_rejected": true,
+    "gpt_unauthorized_rejected": true,
+    "multiprocess_last_slot_one_winner": true,
+    "corrupt_ledger_holds": true,
+    "partial_ledger_holds": true
+  },
+  "details": {
+    "multiprocess_outcomes": [
+      "RESERVED",
+      "RuntimeError"
+    ]
+  },
+  "caps": {
+    "smoke": 4,
+    "smoke_pilot_revision": 120,
+    "all_local": 300,
+    "unique_sources": 100,
+    "retry_sources": 10,
+    "gpt_authorized": false
+  }
+}

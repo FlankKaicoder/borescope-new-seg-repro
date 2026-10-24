@@ -171,3 +171,14 @@ Prepared only historical TRAIN R1 Crack86/260 and corrosion2/8 v1/v2: 8 candidat
 - Native RGB multi-ROI full-image composition is implemented and validated on real TRAIN sources including source `50` with all 7 polygons; shape/dtype, target coverage, and immutable outside-support pixels passed.
 - BudgetProtocol now persists an atomic ledger, resumes STARTED calls as occupied, rejects duplicate IDs without double charging, enforces 4/120/300 calls, 100 production sources, 10 retry sources, and unauthorized GPT fallback.
 - Smoke protocol is revised to 3 planned ROI calls across one single-ROI and one double-ROI TRAIN source; it remains protocol-only and was not run. No Diffusion, generation, training, SSL, or downstream authorization is implied.
+
+### Exp13 Phase 1-A-R2 minimal engineering closure (2026-10-24)
+
+- Status: `EXP13_PHASE1A_R2_COMPLETED_PENDING_CHATGPT_GATE`.
+- R2 repaired the three bounded R1 findings: non-identity RGB re-paste evidence, strict persistent budget accounting, and independent raster-statistics category sets. Evidence: `results/exp13_phase1a_r2/20261024T123606Z/`.
+- Standard-library tests passed 9/9 with captured command, interpreter, stdout/stderr and exit code. Real TRAIN RGB composition passed for sources `2`, `17`, `50` and `13`; source `50` covered all 7 polygons in 5 independent ROI groups, with 72 overlap pixels audited.
+- Native output shape/dtype, polygon-level changes, immutable support outside the edit mask, padding preservation, mask/RGB synchronization and RGB order independence passed. Overlap conflicts are explicitly held when `hold_on_overlap` is requested.
+- BudgetProtocol schema v2 uses a single locked ledger with RESERVED/STARTED/terminal accounting, atomic writes and restart/corruption HOLD. Caps, retry/source limits, group atomicity, GPT denial and two-process contention passed.
+- Corrected independent raster sets report boundary 118 polygons/90 sources, thin-Crack-or-small 97/81 and small-area 2/1; each satisfies affected sources <= affected polygons. Historical R0/R1 evidence and the frozen manifest hash remain unchanged.
+- No Diffusion/model call, generation, SSL, YOLO training, evaluation, VAL/TEST access or raw-data write occurred. Smoke remains unrun and no trusted pair, downstream training or Exp13.2-B authorization is implied.
+- Review and handoff: `docs/exp13_phase1a_r2_final_engineering_review.md` and `docs/exp13_phase1a_r2_handoff.md`.

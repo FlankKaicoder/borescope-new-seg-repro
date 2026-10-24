@@ -5,8 +5,9 @@ from dataclasses import dataclass
 from typing import Iterable
 
 import numpy as np
+from PIL import Image
 
-from .geometry import Polygon, build_geometry
+from .geometry import Polygon, GeometryBundle, build_geometry, inverse_canvas_mask, map_mask_to_canvas
 
 
 @dataclass(frozen=True)
@@ -47,6 +48,72 @@ class FullImageCompositionResult:
     hold: bool
     hold_sources: tuple[str, ...]
     provenance: dict
+
+
+@dataclass(frozen=True)
+class CanvasMockResult:
+    """Deterministic non-identity canvas edit and its auditable masks."""
+    native_roi_rgb: np.ndarray
+    canvas_rgb: np.ndarray
+    mock_canvas_rgb: np.ndarray
+    canvas_polygon_mask: np.ndarray
+    canvas_padding_mask: np.ndarray
+    native_changed_mask: np.ndarray
+    native_polygon_mask: np.ndarray
+    provenance: dict
+
+
+def deterministic_canvas_mock(
+    native_roi_rgb: np.ndarray,
+    geometry: GeometryBundle,
+    *,
+    padding_rgb: tuple[int, int, int] = (0, 0, 0),
+    xor_value: int = 0x5A,
+) -> CanvasMockResult:
+    """Run ROI crop -> 1024 letterbox -> non-identity mock -> inverse map."""
+    crop = np.asarray(native_roi_rgb)
+    transform = geometry.transform
+    if crop.shape != (transform.native_height, transform.native_width, 3) or crop.dtype != np.uint8:
+        raise ValueError("native ROI must match geometry dimensions and be uint8 RGB")
+    resized = np.asarray(Image.fromarray(crop, mode="RGB").resize((transform.resized_width, transform.resized_height), Image.Resampling.BILINEAR), dtype=np.uint8)
+    canvas = np.empty((transform.canvas_size, transform.canvas_size, 3), dtype=np.uint8)
+    canvas[...] = np.asarray(padding_rgb, dtype=np.uint8)
+    y0, y1 = transform.pad_top, transform.pad_top + transform.resized_height
+    x0, x1 = transform.pad_left, transform.pad_left + transform.resized_width
+    canvas[y0:y1, x0:x1] = resized
+    crop_polygon = geometry.polygon_mask[geometry.roi_box.y0:geometry.roi_box.y1, geometry.roi_box.x0:geometry.roi_box.x1]
+    canvas_polygon = map_mask_to_canvas(crop_polygon, transform)
+    content = np.zeros((transform.canvas_size, transform.canvas_size), dtype=bool)
+    content[y0:y1, x0:x1] = True
+    padding = ~content
+    mock_canvas = canvas.copy()
+    mock_canvas[canvas_polygon] ^= np.uint8(xor_value)
+    yy = np.minimum(transform.canvas_size - 1, transform.pad_top + ((np.arange(transform.native_height) + 0.5) * transform.scale - 0.5)).astype(int)
+    xx = np.minimum(transform.canvas_size - 1, transform.pad_left + ((np.arange(transform.native_width) + 0.5) * transform.scale - 0.5)).astype(int)
+    yy = np.maximum(yy, 0); xx = np.maximum(xx, 0)
+    inverse = mock_canvas[np.ix_(yy, xx)]
+    inverse_mask = inverse_canvas_mask(canvas_polygon, transform)
+    native_out = crop.copy()
+    native_out[inverse_mask] = inverse[inverse_mask]
+    changed = np.any(native_out != crop, axis=2)
+    return CanvasMockResult(
+        native_roi_rgb=native_out,
+        canvas_rgb=canvas,
+        mock_canvas_rgb=mock_canvas,
+        canvas_polygon_mask=canvas_polygon,
+        canvas_padding_mask=padding,
+        native_changed_mask=changed,
+        native_polygon_mask=crop_polygon,
+        provenance={
+            "pipeline": "Native RGB -> ROI Crop -> Aspect-preserving Resize -> 1024 Canvas -> Non-identity Mock Canvas -> Inverse Mapping -> Native ROI RGB -> Full Image",
+            "padding_rgb": list(padding_rgb),
+            "padding_edited_pixels": int(np.count_nonzero(np.any(mock_canvas[padding] != canvas[padding], axis=1))),
+            "canvas_polygon_pixels": int(canvas_polygon.sum()),
+            "native_polygon_pixels": int(crop_polygon.sum()),
+            "native_changed_pixels": int(np.count_nonzero(changed & crop_polygon)),
+            "mask_rgb_space_synchronized": bool(np.all(~changed | inverse_mask)),
+        },
+    )
 
 
 def _stable_key(item: CompositionItem) -> tuple:

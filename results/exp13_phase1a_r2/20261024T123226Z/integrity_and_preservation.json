@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "historical_hashes_before": {
+    "results/exp13_phase1a_r1/20261024T113936Z/polygon_raster_compatibility.json": "da52f37eefe75caa8ef0d92c8d11e1f24833c7690d9f4af7bce5b32bb2ecf38b",
+    "results/exp13_phase1a_r1/20261024T113936Z/summary.json": "60e17bbc78300399154d03d76a1f2ad6eb0ffbb6414058b1d6997fa620a35646",
+    "results/exp13_phase0_r1/20261024T100624Z/summary.json": "ee2bddbe3cfac59f51d2638e3059b6aadffba6c585b5a5faf0a14d506628046d"
+  },
+  "historical_hashes_after": {
+    "results/exp13_phase1a_r1/20261024T113936Z/polygon_raster_compatibility.json": "da52f37eefe75caa8ef0d92c8d11e1f24833c7690d9f4af7bce5b32bb2ecf38b",
+    "results/exp13_phase1a_r1/20261024T113936Z/summary.json": "60e17bbc78300399154d03d76a1f2ad6eb0ffbb6414058b1d6997fa620a35646",
+    "results/exp13_phase0_r1/20261024T100624Z/summary.json": "ee2bddbe3cfac59f51d2638e3059b6aadffba6c585b5a5faf0a14d506628046d"
+  },
+  "manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "manifest_expected": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "raw_root": "/root/autodl-tmp/损伤训练数据集",
+  "raw_write": 0,
+  "val_access": 0,
+  "test_access": 0,
+  "model_download": 0,
+  "model_load": 0,
+  "model_calls": 0,
+  "unexpected_model_files": []
+}

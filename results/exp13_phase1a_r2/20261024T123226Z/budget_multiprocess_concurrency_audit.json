@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": {
+    "multiprocess_last_slot_one_winner": true
+  },
+  "details": {
+    "multiprocess_outcomes": [
+      "RESERVED",
+      "RuntimeError"
+    ]
+  }
+}

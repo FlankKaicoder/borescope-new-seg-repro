@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checks": {
+    "multi_roi_group_atomic_reject": true,
+    "unique_source_cap_all_stages": true,
+    "retry_source_cap": true,
+    "same_source_retry_rejected": true
+  }
+}

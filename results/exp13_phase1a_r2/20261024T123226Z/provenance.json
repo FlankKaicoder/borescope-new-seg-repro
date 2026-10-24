@@ -1,0 +1,13 @@
+{
+  "run_id": "20261024T123226Z",
+  "script": "/root/autodl-tmp/borescope-new-seg-repro/tools/exp13_restoration/run_phase1a_r2.py",
+  "script_sha256": "d6b21dd470e77af3b7b1a0065c2fc94f5e8c582a6e672daf9e85a3e284a099df",
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "train_rows": 668,
+  "command": "python -m tools.exp13_restoration.run_phase1a_r2",
+  "actual_model_calls": 0,
+  "val_access": 0,
+  "test_access": 0
+}

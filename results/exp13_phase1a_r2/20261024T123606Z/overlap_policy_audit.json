@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "cases": {
+    "disjoint": {
+      "overlap_pixels": 0,
+      "order_equal": true,
+      "status": "PASS"
+    },
+    "context_overlap_edit_support_disjoint": {
+      "roi_context_boxes_intersect": true,
+      "edit_support_overlap_pixels": 0,
+      "order_equal": true,
+      "status": "PASS"
+    },
+    "edit_support_overlap": {
+      "overlap_pixels": 25,
+      "order_equal": true,
+      "conflict_rgb_resolved_by_owner": true,
+      "status": "PASS"
+    },
+    "hold_on_overlap": {
+      "hold": true,
+      "status": "ROI_COMPOSITION_HOLD",
+      "explicit_rejection": true
+    }
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "source_id": "50",
+  "polygon_count": 7,
+  "class_names": [
+    "corrosion",
+    "Burn",
+    "Burn",
+    "Burn",
+    "Material missing",
+    "Burn",
+    "corrosion"
+  ],
+  "independent_roi_groups": [
+    [
+      "roi_0"
+    ],
+    [
+      "roi_1"
+    ],
+    [
+      "roi_2"
+    ],
+    [
+      "roi_3",
+      "roi_4",
+      "roi_6"
+    ],
+    [
+      "roi_5"
+    ]
+  ],
+  "independent_roi_count": 5,
+  "historical_phase0_r1_planned_roi_count": 5,
+  "polygon_changes": [
+    {
+      "roi_id": "roi_0",
+      "class_name": "corrosion",
+      "changed_pixels": 12248,
+      "polygon_pixels": 12503
+    },
+    {
+      "roi_id": "roi_1",
+      "class_name": "Burn",
+      "changed_pixels": 4213,
+      "polygon_pixels": 4377
+    },
+    {
+      "roi_id": "roi_2",
+      "class_name": "Burn",
+      "changed_pixels": 4519,
+      "polygon_pixels": 4674
+    },
+    {
+      "roi_id": "roi_3",
+      "class_name": "Burn",
+      "changed_pixels": 5953,
+      "polygon_pixels": 6216
+    },
+    {
+      "roi_id": "roi_4",
+      "class_name": "Material missing",
+      "changed_pixels": 3027,
+      "polygon_pixels": 3143
+    },
+    {
+      "roi_id": "roi_5",
+      "class_name": "Burn",
+      "changed_pixels": 5746,
+      "polygon_pixels": 5945
+    },
+    {
+      "roi_id": "roi_6",
+      "class_name": "corrosion",
+      "changed_pixels": 1727,
+      "polygon_pixels": 1854
+    }
+  ],
+  "outside_support_changed_pixels": 0,
+  "overlap_pixels": 72,
+  "owner_map_values": [
+    "roi_0",
+    "roi_1",
+    "roi_2",
+    "roi_3",
+    "roi_4",
+    "roi_5",
+    "roi_6"
+  ],
+  "composition_status": "PASS",
+  "records": [
+    {
+      "roi_id": "roi_1",
+      "class_name": "Burn",
+      "roi_box": [
+        395,
+        0,
+        526,
+        120
+      ],
+      "polygon_pixels": 4377,
+      "mock_changed_pixels": 4213,
+      "padding_edited_pixels": 0,
+      "mask_rgb_space_synchronized": true,
+      "mock_provenance": {
+        "pipeline": "Native RGB -> ROI Crop -> Aspect-preserving Resize -> 1024 Canvas -> Non-identity Mock Canvas -> Inverse Mapping -> Native ROI RGB -> Full Image",
+        "padding_rgb": [
+          0,
+          0,
+          0
+        ],
+        "padding_edited_pixels": 0,
+        "canvas_polygon_pixels": 267453,
+        "native_polygon_pixels": 4377,
+        "native_changed_pixels": 4213,
+        "mask_rgb_space_synchronized": true
+      }
+    },
+    {
+      "roi_id": "roi_3",
+      "class_name": "Burn",
+      "roi_box": [
+        239,
+        149,
+        369,
+        384
+      ],
+      "polygon_pixels": 6216,
+      "mock_changed_pixels": 5953,
+      "padding_edited_pixels": 0,
+      "mask_rgb_space_synchronized": true,
+      "mock_provenance": {
+        "pipeline": "Native RGB -> ROI Crop -> Aspect-preserving Resize -> 1024 Canvas -> Non-identity Mock Canvas -> Inverse Mapping -> Native ROI RGB -> Full Image",
+        "padding_rgb": [
+          0,
+          0,
+          0
+        ],
+        "padding_edited_pixels": 0,
+        "canvas_polygon_pixels": 118010,
+        "native_polygon_pixels": 6216,
+        "native_changed_pixels": 5953,
+        "mask_rgb_space_synchronized": true
+      }
+    },
+    {
+      "roi_id": "roi_5",
+      "class_name": "Burn",
+      "roi_box": [
+        0,
+        48,
+        158,
+        160
+      ],
+      "polygon_pixels": 5945,
+      "mock_changed_pixels": 5746,
+      "padding_edited_pixels": 0,
+      "mask_rgb_space_synchronized": true,
+      "mock_provenance": {
+        "pipeline": "Native RGB -> ROI Crop -> Aspect-preserving Resize -> 1024 Canvas -> Non-identity Mock Canvas -> Inverse Mapping -> Native ROI RGB -> Full Image",
+        "padding_rgb": [
+          0,
+          0,
+          0
+        ],
+        "padding_edited_pixels": 0,
+        "canvas_polygon_pixels": 249807,
+        "native_polygon_pixels": 5945,
+        "native_changed_pixels": 5746,
+        "mask_rgb_space_synchronized": true
+      }
+    },
+    {
+      "roi_id": "roi_0",
+      "class_name": "corrosion",
+      "roi_box": [
+        623,
+        0,
+        720,
+        271
+      ],
+      "polygon_pixels": 12503,
+      "mock_changed_pixels": 12248,
+      "padding_edited_pixels": 0,
+      "mask_rgb_space_synchronized": true,
+      "mock_provenance": {
+        "pipeline": "Native RGB -> ROI Crop -> Aspect-preserving Resize -> 1024 Canvas -> Non-identity Mock Canvas -> Inverse Mapping -> Native ROI RGB -> Full Image",
+        "padding_rgb": [
+          0,
+          0,
+          0
+        ],
+        "padding_edited_pixels": 0,
+        "canvas_polygon_pixels": 178651,
+        "native_polygon_pixels": 12503,
+        "native_changed_pixels": 12248,
+        "mask_rgb_space_synchronized": true
+      }
+    },
+    {
+      "roi_id": "roi_2",
+      "class_name": "Burn",
+      "roi_box": [
+        411,
+        183,
+        545,
+        295
+      ],
+      "polygon_pixels": 4674,
+      "mock_changed_pixels": 4519,
+      "padding_edited_pixels": 0,
+      "mask_rgb_space_synchronized": true,
+      "mock_provenance": {
+        "pipeline": "Native RGB -> ROI Crop -> Aspect-preserving Resize -> 1024 Canvas -> Non-identity Mock Canvas -> Inverse Mapping -> Native ROI RGB -> Full Image",
+        "padding_rgb": [
+          0,
+          0,
+          0
+        ],
+        "padding_edited_pixels": 0,
+        "canvas_polygon_pixels": 273036,
+        "native_polygon_pixels": 4674,
+        "native_changed_pixels": 4519,
+        "mask_rgb_space_synchronized": true
+      }
+    },
+    {
+      "roi_id": "roi_4",
+      "class_name": "Material missing",
+      "roi_box": [
+        269,
+        141,
+        380,
+        324
+      ],
+      "polygon_pixels": 3143,
+      "mock_changed_pixels": 3032,
+      "padding_edited_pixels": 0,
+      "mask_rgb_space_synchronized": true,
+      "mock_provenance": {
+        "pipeline": "Native RGB -> ROI Crop -> Aspect-preserving Resize -> 1024 Canvas -> Non-identity Mock Canvas -> Inverse Mapping -> Native ROI RGB -> Full Image",
+        "padding_rgb": [
+          0,
+          0,
+          0
+        ],
+        "padding_edited_pixels": 0,
+        "canvas_polygon_pixels": 98424,
+        "native_polygon_pixels": 3143,
+        "native_changed_pixels": 3032,
+        "mask_rgb_space_synchronized": true
+      }
+    },
+    {
+      "roi_id": "roi_6",
+      "class_name": "corrosion",
+      "roi_box": [
+        342,
+        115,
+        422,
+        300
+      ],
+      "polygon_pixels": 1854,
+      "mock_changed_pixels": 1727,
+      "padding_edited_pixels": 0,
+      "mask_rgb_space_synchronized": true,
+      "mock_provenance": {
+        "pipeline": "Native RGB -> ROI Crop -> Aspect-preserving Resize -> 1024 Canvas -> Non-identity Mock Canvas -> Inverse Mapping -> Native ROI RGB -> Full Image",
+        "padding_rgb": [
+          0,
+          0,
+          0
+        ],
+        "padding_edited_pixels": 0,
+        "canvas_polygon_pixels": 56692,
+        "native_polygon_pixels": 1854,
+        "native_changed_pixels": 1727,
+        "mask_rgb_space_synchronized": true
+      }
+    }
+  ],
+  "checks": {
+    "shape_preserved": true,
+    "dtype_preserved": true,
+    "each_polygon_changed": true,
+    "support_outside_changes_zero": true,
+    "order_rgb_and_owner_identical": true,
+    "source_identity": true,
+    "mask_rgb_space_synchronized": true,
+    "padding_not_edited": true,
+    "background_immutable": true
+  },
+  "status": "PASS"
+}
