@@ -1,0 +1,140 @@
+{
+  "status": "PASS",
+  "selected_sources": {
+    "single_roi": "2",
+    "double_roi": "17",
+    "burn_50": "50",
+    "boundary_risk": "13",
+    "thin_crack": "17",
+    "multi_class": "14"
+  },
+  "records": {
+    "single_roi": {
+      "source_id": "2",
+      "polygon_count": 1,
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "dtype": "uint8",
+      "output_shape": [
+        480,
+        640,
+        3
+      ],
+      "output_dtype": "uint8",
+      "target_polygon_covered": true,
+      "outside_support_unchanged": true,
+      "overlap_pixels": 0,
+      "composition_status": "PASS",
+      "hold_sources": []
+    },
+    "double_roi": {
+      "source_id": "17",
+      "polygon_count": 2,
+      "shape": [
+        540,
+        720,
+        3
+      ],
+      "dtype": "uint8",
+      "output_shape": [
+        540,
+        720,
+        3
+      ],
+      "output_dtype": "uint8",
+      "target_polygon_covered": true,
+      "outside_support_unchanged": true,
+      "overlap_pixels": 0,
+      "composition_status": "PASS",
+      "hold_sources": []
+    },
+    "burn_50": {
+      "source_id": "50",
+      "polygon_count": 7,
+      "shape": [
+        540,
+        720,
+        3
+      ],
+      "dtype": "uint8",
+      "output_shape": [
+        540,
+        720,
+        3
+      ],
+      "output_dtype": "uint8",
+      "target_polygon_covered": true,
+      "outside_support_unchanged": true,
+      "overlap_pixels": 0,
+      "composition_status": "PASS",
+      "hold_sources": []
+    },
+    "boundary_risk": {
+      "source_id": "13",
+      "polygon_count": 3,
+      "shape": [
+        540,
+        720,
+        3
+      ],
+      "dtype": "uint8",
+      "output_shape": [
+        540,
+        720,
+        3
+      ],
+      "output_dtype": "uint8",
+      "target_polygon_covered": true,
+      "outside_support_unchanged": true,
+      "overlap_pixels": 0,
+      "composition_status": "PASS",
+      "hold_sources": []
+    },
+    "thin_crack": {
+      "source_id": "17",
+      "polygon_count": 2,
+      "shape": [
+        540,
+        720,
+        3
+      ],
+      "dtype": "uint8",
+      "output_shape": [
+        540,
+        720,
+        3
+      ],
+      "output_dtype": "uint8",
+      "target_polygon_covered": true,
+      "outside_support_unchanged": true,
+      "overlap_pixels": 0,
+      "composition_status": "PASS",
+      "hold_sources": []
+    },
+    "multi_class": {
+      "source_id": "14",
+      "polygon_count": 4,
+      "shape": [
+        540,
+        720,
+        3
+      ],
+      "dtype": "uint8",
+      "output_shape": [
+        540,
+        720,
+        3
+      ],
+      "output_dtype": "uint8",
+      "target_polygon_covered": true,
+      "outside_support_unchanged": true,
+      "overlap_pixels": 0,
+      "composition_status": "PASS",
+      "hold_sources": []
+    }
+  },
+  "burn_50_all_7_polygons": true
+}

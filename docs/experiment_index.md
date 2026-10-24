@@ -139,3 +139,9 @@ Historical TRAIN R1 only: Crack86/260, corrosion2/8, each v1/v2;8variants/4indep
 | Exp13 Phase 1-A | COMPLETED_PENDING_CHATGPT_GATE | `docs/exp13_phase1a_handoff.md` and `results/exp13_phase1a/20261024T_PHASE1A_PROTOCOL/summary.json` |
 
 Phase 1-A is a deterministic protocol/geometry audit only. Eight direct assertion tests pass; the frozen TRAIN pilot proposal and Burn source50 metadata are verified. No model download/load/inference, generated images, VAL/TEST access, training, SSL or trusted-pair authorization occurred. Runtime smoke remains separately gated.
+
+## Exp13 Phase 1-A-R1 implementation repair (2026-10-24)
+
+`EXP13_PHASE1A_R1_COMPLETED_PENDING_CHATGPT_GATE`. [Implementation review](exp13_phase1a_r1_implementation_review.md); [handoff](exp13_phase1a_r1_handoff.md); [evidence](../results/exp13_phase1a_r1/20261024T113936Z/summary.json).
+
+The repair records real test execution with a standard-library fallback (9/9), compares all 1,266 TRAIN polygons against the historical Phase 0-R1 Pillow raster, validates native RGB multi-ROI full-image composition including Burn source50/all 7 polygons, and exercises persistent budget recovery and hard caps. No Diffusion/model call, VAL/TEST access, training, SSL, or raw-data write occurred. Smoke is a revised protocol only and remains unrun pending ChatGPT gate.

@@ -74,3 +74,9 @@ Decision D032: separate user visual decisions, current-view candidacy and formal
 | Date | Decision ID | Question | Decision | Reason | Affected experiments |
 |---|---|---|---|---|---|
 | 2026-10-24 | D033 | Does Phase 1-A protocol audit authorize Diffusion smoke or restoration training? | `EXP13_PHASE1A_COMPLETED_PENDING_CHATGPT_GATE`; no runtime authorization. | Deterministic geometry/composition/budget tests pass, but model compatibility and runtime behavior are unverified; FOV/gray-padding and composition conflicts remain explicit hold/risk states. Burn source50 was checked from frozen TRAIN metadata. | Exp13 Phase 1-A only; Diffusion smoke, generation, training, SSL and Exp13.2-B remain NO |
+
+## Exp13 Phase 1-A-R1 implementation repair decision (2026-10-24)
+
+| Date | Decision ID | Question | Decision | Reason | Affected experiments |
+|---|---|---|---|---|---|
+| 2026-10-24 | D034 | Does the Phase 1-A implementation repair pass its execution, raster, RGB composition, and budget hard gates? | `EXP13_PHASE1A_R1_COMPLETED_PENDING_CHATGPT_GATE`; ChatGPT gate required before any model smoke. | Standard-library test runner passed 9/9 with captured evidence; all 1,266 TRAIN polygons were compared to the historical Pillow raster; real TRAIN RGB composition passed including Burn source50/all 7 polygons; persistent budget recovery and limits passed. | Exp13 Phase 1-A-R1 only; Diffusion/model download/inference, training, SSL, VAL/TEST and Exp13.2-B remain NO |

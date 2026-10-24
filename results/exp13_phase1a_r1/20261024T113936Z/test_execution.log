@@ -1,0 +1,6 @@
+COMMAND: /root/autodl-tmp/borescope-new-seg-repro/.venv/bin/python -m tools.exp13_restoration.run_phase1a_r1 --stdlib-tests
+EXIT_CODE: 0
+STDOUT:
+{"passed": 9}
+
+STDERR:

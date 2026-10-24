@@ -9,6 +9,7 @@ from dataclasses import dataclass, field
 from typing import Iterable, Mapping, Sequence
 
 import numpy as np
+from PIL import Image, ImageDraw
 
 
 @dataclass(frozen=True)
@@ -83,8 +84,18 @@ def _as_points(points: Sequence[Sequence[float]]) -> np.ndarray:
     return arr
 
 
-def polygon_mask(points: Sequence[Sequence[float]], width: int, height: int) -> np.ndarray:
-    """Rasterize a polygon using pixel-center ray casting, deterministically."""
+def pillow_polygon_mask(points: Sequence[Sequence[float]], width: int, height: int) -> np.ndarray:
+    """Phase 0-R1 normative raster: Pillow ImageDraw + Python round."""
+    if width <= 0 or height <= 0:
+        raise ValueError("image dimensions must be positive")
+    p = _as_points(points)
+    canvas = Image.new("1", (width, height), 0)
+    ImageDraw.Draw(canvas).polygon([(round(float(x)), round(float(y))) for x, y in p], fill=1)
+    return np.asarray(canvas, dtype=bool)
+
+
+def center_ray_polygon_mask(points: Sequence[Sequence[float]], width: int, height: int) -> np.ndarray:
+    """Legacy Phase 1-A raster retained only for compatibility comparison."""
     if width <= 0 or height <= 0:
         raise ValueError("image dimensions must be positive")
     p = _as_points(points)
@@ -103,6 +114,11 @@ def polygon_mask(points: Sequence[Sequence[float]], width: int, height: int) -> 
         inside ^= cross & intersects
         x0, y0 = x1, y1
     return inside
+
+
+def polygon_mask(points: Sequence[Sequence[float]], width: int, height: int) -> np.ndarray:
+    """Normative native mask, kept compatible with Phase 0-R1."""
+    return pillow_polygon_mask(points, width, height)
 
 
 def dilate(mask: np.ndarray, radius: int) -> np.ndarray:
@@ -200,6 +216,10 @@ def build_geometry(points: Sequence[Sequence[float]], image_width: int, image_he
         fov[-gray_border_width:, :] = True
         fov[:, :gray_border_width] = True
         fov[:, -gray_border_width:] = True
+        # An already-approved edit support pixel is not reclassified as a
+        # border uncertainty; the marker remains auditable without overlapping
+        # the immutable/edit partition.
+        fov &= ~support
     # A clamped ROI is geometric evidence of a border risk, not padding proof.
     clamped = box.x0 == 0 or box.y0 == 0 or box.x1 == image_width or box.y1 == image_height
     transform = canvas_transform(box, canvas_size)

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "branch": "exp13/vlm-semantic-audit",
+  "head": "eaa4d793cac14d8c88e0bc9f94e1f922e5d15c5a",
+  "manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "manifest_expected": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "raw_root": "/root/autodl-tmp/损伤训练数据集",
+  "raw_write": false,
+  "val_access": 0,
+  "test_access": 0,
+  "model_download": false,
+  "model_load": false,
+  "model_calls": 0
+}

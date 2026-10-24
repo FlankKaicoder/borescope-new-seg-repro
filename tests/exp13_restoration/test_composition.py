@@ -1,6 +1,6 @@
 import numpy as np
 
-from tools.exp13_restoration.roi_composition import CompositionItem, compose_support
+from tools.exp13_restoration.roi_composition import CompositionItem, RGBROIEdit, compose_support, compose_full_image
 from tools.exp13_restoration.protocol import BudgetProtocol
 
 
@@ -42,3 +42,14 @@ def test_budget_caps_block_execution():
         pass
     else:
         raise AssertionError("smoke/pilot/revision cap did not block")
+
+
+def test_full_rgb_composition_preserves_background_and_shape():
+    native = np.zeros((12, 16, 3), dtype=np.uint8)
+    native[:, :, :] = [3, 4, 5]
+    polygon = ((2, 2), (8, 2), (8, 7), (2, 7))
+    edit = RGBROIEdit("r", "source", polygon, native[2:8, 2:9].copy())
+    result = compose_full_image(native, "source", [edit], context=0, halo_radius=0)
+    assert result.image.shape == native.shape and result.image.dtype == native.dtype
+    assert np.array_equal(result.image[~result.edit_support], native[~result.edit_support])
+    assert result.provenance["background_immutable"]

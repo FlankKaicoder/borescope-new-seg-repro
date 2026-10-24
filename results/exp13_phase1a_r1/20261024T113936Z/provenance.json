@@ -1,0 +1,24 @@
+{
+  "run_id": "20261024T113936Z",
+  "script": "/root/autodl-tmp/borescope-new-seg-repro/tools/exp13_restoration/run_phase1a_r1.py",
+  "script_sha256": "cd44a9b645f3f91c181ea08a1c6603a317f7bf60cbad234799d4dc91f85691dd",
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "dependencies": {
+    "pip_freeze_path": "/root/autodl-tmp/borescope-new-seg-repro/pip_freeze.txt",
+    "pip_freeze_sha256": "62b20defa599a4b9287e2d40f002a3c55a308ffd8ac078801f03fb17d96fd49e"
+  },
+  "train_rows": 668,
+  "manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "outputs": [
+    "budget_recovery_and_limits.json",
+    "full_image_composition_validation.json",
+    "integrity_and_preservation.json",
+    "polygon_raster_compatibility.json",
+    "real_train_geometry_validation.json",
+    "smoke_protocol_revision.json",
+    "summary.json",
+    "test_execution.log",
+    "test_results.json"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "records": {
+    "2": {
+      "source_id": "2",
+      "polygon_count": 1,
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "dtype": "uint8",
+      "output_shape": [
+        480,
+        640,
+        3
+      ],
+      "output_dtype": "uint8",
+      "target_polygon_covered": true,
+      "outside_support_unchanged": true,
+      "overlap_pixels": 0,
+      "composition_status": "PASS",
+      "hold_sources": []
+    },
+    "17": {
+      "source_id": "17",
+      "polygon_count": 2,
+      "shape": [
+        540,
+        720,
+        3
+      ],
+      "dtype": "uint8",
+      "output_shape": [
+        540,
+        720,
+        3
+      ],
+      "output_dtype": "uint8",
+      "target_polygon_covered": true,
+      "outside_support_unchanged": true,
+      "overlap_pixels": 0,
+      "composition_status": "PASS",
+      "hold_sources": []
+    },
+    "50": {
+      "source_id": "50",
+      "polygon_count": 7,
+      "shape": [
+        540,
+        720,
+        3
+      ],
+      "dtype": "uint8",
+      "output_shape": [
+        540,
+        720,
+        3
+      ],
+      "output_dtype": "uint8",
+      "target_polygon_covered": true,
+      "outside_support_unchanged": true,
+      "overlap_pixels": 0,
+      "composition_status": "PASS",
+      "hold_sources": []
+    },
+    "13": {
+      "source_id": "13",
+      "polygon_count": 3,
+      "shape": [
+        540,
+        720,
+        3
+      ],
+      "dtype": "uint8",
+      "output_shape": [
+        540,
+        720,
+        3
+      ],
+      "output_dtype": "uint8",
+      "target_polygon_covered": true,
+      "outside_support_unchanged": true,
+      "overlap_pixels": 0,
+      "composition_status": "PASS",
+      "hold_sources": []
+    },
+    "14": {
+      "source_id": "14",
+      "polygon_count": 4,
+      "shape": [
+        540,
+        720,
+        3
+      ],
+      "dtype": "uint8",
+      "output_shape": [
+        540,
+        720,
+        3
+      ],
+      "output_dtype": "uint8",
+      "target_polygon_covered": true,
+      "outside_support_unchanged": true,
+      "overlap_pixels": 0,
+      "composition_status": "PASS",
+      "hold_sources": []
+    }
+  }
+}

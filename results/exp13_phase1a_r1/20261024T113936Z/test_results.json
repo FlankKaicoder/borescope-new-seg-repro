@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "runner": "stdlib_fallback",
+  "command": [
+    "/root/autodl-tmp/borescope-new-seg-repro/.venv/bin/python",
+    "-m",
+    "tools.exp13_restoration.run_phase1a_r1",
+    "--stdlib-tests"
+  ],
+  "exit_code": 0,
+  "passed": 9,
+  "failed": 0,
+  "skipped": 0,
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "stdout_sha256": "f70e96824963a102842f3d8147092e8166055fed748cc5681a36af57e037af8e",
+  "model_calls": 0,
+  "val_access": 0,
+  "test_access": 0,
+  "real_train_images_read": 0
+}

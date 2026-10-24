@@ -1,0 +1,14 @@
+{
+  "status": "PROTOCOL_ONLY_NOT_RUN",
+  "sources": [
+    "single_roi_train_source",
+    "double_roi_train_source"
+  ],
+  "strengths": [
+    0.8
+  ],
+  "planned_roi_calls": 3,
+  "actual_model_calls": 0,
+  "smoke_cap": 4,
+  "burn_50_role": "deterministic_mock_only"
+}

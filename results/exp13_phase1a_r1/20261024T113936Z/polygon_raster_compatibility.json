@@ -1,0 +1,17 @@
+{
+  "normative": "Phase 0-R1 Pillow ImageDraw polygon with round(x/y), fill=1",
+  "legacy_comparator": "Phase 1-A pixel-center ray casting",
+  "total_polygons": 1266,
+  "different_polygons": 1266,
+  "different_pixel_ratio_over_all_polygons": 1.0,
+  "different_pixels": 294081,
+  "normative_pixels_compared": 18603487,
+  "affected_sources": 668,
+  "boundary_polygons": 118,
+  "thin_crack_or_small_polygons": 97,
+  "small_area_polygons": 2,
+  "affected_boundary_sources": 163,
+  "affected_thin_sources": 163,
+  "affected_small_sources": 163,
+  "decision": "KEEP_PHASE0_R1_PILLOW_AS_NORMATIVE"
+}

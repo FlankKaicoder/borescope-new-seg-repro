@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "checks": {
+    "smoke_5th_planned_rejected": true,
+    "smoke_5th_rejected": true,
+    "pilot_121st_rejected": true,
+    "global_301st_rejected": true,
+    "restart_preserves_started": true,
+    "duplicate_idempotent": true,
+    "gpt_unauthorized_rejected": true,
+    "multi_roi_group_reserved": true,
+    "production_cap": true,
+    "retry_source_cap": true
+  },
+  "caps": {
+    "smoke": 4,
+    "smoke_pilot_revision": 120,
+    "all_local": 300,
+    "production_sources": 100,
+    "retry_sources": 10,
+    "gpt_authorized": false
+  }
+}
