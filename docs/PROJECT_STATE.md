@@ -182,3 +182,12 @@ Prepared only historical TRAIN R1 Crack86/260 and corrosion2/8 v1/v2: 8 candidat
 - Corrected independent raster sets report boundary 118 polygons/90 sources, thin-Crack-or-small 97/81 and small-area 2/1; each satisfies affected sources <= affected polygons. Historical R0/R1 evidence and the frozen manifest hash remain unchanged.
 - No Diffusion/model call, generation, SSL, YOLO training, evaluation, VAL/TEST access or raw-data write occurred. Smoke remains unrun and no trusted pair, downstream training or Exp13.2-B authorization is implied.
 - Review and handoff: `docs/exp13_phase1a_r2_final_engineering_review.md` and `docs/exp13_phase1a_r2_handoff.md`.
+
+### Exp13 Phase 1-B SDXL engineering Smoke preflight (2026-10-24)
+
+- Status: `EXP13_PHASE1B_SMOKE_HOLD` / `PREFLIGHT_HOLD`.
+- The authorized Smoke did not start. The required Hugging Face metadata request for `diffusers/stable-diffusion-xl-1.0-inpainting-0.1` timed out from `borescope7`; exact revision, license and file manifest could not be verified.
+- Environment facts were recorded: RTX 3080 Ti 12 GiB with about 11.9 GiB free at probe time, Python 3.12.3, Torch 2.8.0+cu128, CUDA 12.8, Diffusers 0.35.1, Transformers 4.55.4, Accelerate 1.10.1, and about 30 GiB free on `/root/autodl-tmp`.
+- No model download/load/inference, API call, fallback checkpoint, budget reservation, VAL/TEST access, or raw-data write occurred. No contact sheet was produced because no model output exists.
+- R2 identifies source `2` as a one-ROI candidate and source `17` as a two-ROI candidate with zero edit-support overlap, but final source/mask hash freeze and Smoke execution remain undone.
+- Evidence, review and handoff: `results/exp13_phase1b_smoke/20261024T130500Z/`, `docs/exp13_phase1b_smoke_review.md`, and `docs/exp13_phase1b_smoke_handoff.md`.

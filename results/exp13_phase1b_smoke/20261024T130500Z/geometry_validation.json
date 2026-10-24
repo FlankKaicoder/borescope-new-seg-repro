@@ -1,0 +1,11 @@
+{
+  "status": "PREFLIGHT_HOLD",
+  "candidate_sources": {
+    "2": {"roi_count": 1, "polygon_count": 1, "r2_composition_status": "PASS", "final_mask_hash_frozen": false},
+    "17": {"roi_count": 2, "polygon_count": 2, "r2_composition_status": "PASS", "edit_support_overlap_pixels": 0, "final_mask_hash_frozen": false}
+  },
+  "native_mask_raster": "Phase 0-R1 Pillow rule",
+  "model_canvas_checks": "NOT_RUN",
+  "native_repaste_checks": "NOT_RUN",
+  "reason": "Preflight stopped before model loading; no smoke input/output was created."
+}

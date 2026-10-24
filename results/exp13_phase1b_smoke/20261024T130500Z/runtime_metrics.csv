@@ -1,0 +1,2 @@
+call_id,source_id,roi_id,status,input_size,output_size,seconds,cuda_peak_allocated_mib,cuda_peak_reserved_mib,nan_inf,model_calls
+,,,,,,,,,,0

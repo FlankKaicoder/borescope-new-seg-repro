@@ -1,0 +1,12 @@
+{
+  "status": "PREFLIGHT_HOLD",
+  "ledger_schema": "BudgetProtocol schema v2 available; no new ledger was opened because model preflight failed",
+  "max_smoke_calls": 4,
+  "planned_calls": 3,
+  "reserved": 0,
+  "started": 0,
+  "terminal": 0,
+  "cancelled": 0,
+  "actual_model_calls": 0,
+  "reason": "No call may be reserved or started before model revision/license preflight passes."
+}

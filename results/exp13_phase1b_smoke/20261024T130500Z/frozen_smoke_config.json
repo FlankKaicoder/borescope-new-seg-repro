@@ -1,0 +1,18 @@
+{
+  "status": "NOT_FROZEN_PREFLIGHT_HOLD",
+  "candidate": {
+    "canvas": [1024, 1024],
+    "precision": "fp16",
+    "steps": 20,
+    "guidance": 7.5,
+    "strength": 0.8,
+    "seed": 130500,
+    "prompt": "restore a clean, uniform normal metallic borescope surface; preserve realistic metal texture and lighting",
+    "mask_raster": "Phase 0-R1 Pillow ImageDraw.polygon(round(x/y), fill=1)",
+    "native_edit_support": "R2 validated native polygon support only"
+  },
+  "planned_calls": 3,
+  "hard_max_smoke_calls": 4,
+  "model_revision": null,
+  "freeze_blocked_by": "PREFLIGHT_HOLD"
+}

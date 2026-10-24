@@ -1,0 +1,12 @@
+{
+  "status": "PREFLIGHT_HOLD",
+  "model_id": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+  "requested_revision": null,
+  "resolved_revision": null,
+  "license": null,
+  "components": null,
+  "downloaded_bytes": 0,
+  "cache_reused": false,
+  "reason": "Hugging Face API/resolve metadata could not be reached from borescope7; exact revision and license are therefore unverified.",
+  "fallback_model_used": false
+}

@@ -151,3 +151,9 @@ The repair records real test execution with a standard-library fallback (9/9), c
 `EXP13_PHASE1A_R2_COMPLETED_PENDING_CHATGPT_GATE`. [Final engineering review](exp13_phase1a_r2_final_engineering_review.md); [handoff](exp13_phase1a_r2_handoff.md); [evidence](../results/exp13_phase1a_r2/20261024T123606Z/summary.json).
 
 R2 adds non-identity RGB composition evidence, locked persistent budget accounting with cross-process contention tests, and corrected independent raster category statistics. Direct tests are 9/9 PASS; real TRAIN sources 2, 17, 50 and 13 pass native composition checks, including all seven Burn-50 polygons and five ROI groups. No model, Diffusion, generation, training, SSL, VAL/TEST access or raw-data write occurred; the result is pending ChatGPT gate.
+
+## Exp13 Phase 1-B SDXL engineering Smoke preflight (2026-10-24)
+
+`EXP13_PHASE1B_SMOKE_HOLD` / `PREFLIGHT_HOLD`. [Smoke review](exp13_phase1b_smoke_review.md); [handoff](exp13_phase1b_smoke_handoff.md); [evidence](../results/exp13_phase1b_smoke/20261024T130500Z/summary.json).
+
+The required Hugging Face metadata request timed out before model download, so exact revision/license verification failed and no SDXL model was loaded or called. The R2 geometry candidates (source 2 single ROI, source 17 double ROI) remain unfrozen; no output or contact sheet exists. Pilot, fallback models, pair freeze and SSL remain prohibited.

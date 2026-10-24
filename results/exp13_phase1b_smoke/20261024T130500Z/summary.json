@@ -1,0 +1,21 @@
+{
+  "experiment": "EXP13_PHASE1B_SDXL_ENGINEERING_SMOKE",
+  "run_id": "20261024T130500Z",
+  "status": "EXP13_PHASE1B_SMOKE_HOLD",
+  "preflight_status": "PREFLIGHT_HOLD",
+  "gates": {
+    "B-S1_environment_and_model_load": "HOLD",
+    "B-S2_budget_and_runtime_safety": "CONDITIONAL_PASS_NO_CALLS",
+    "B-S3_mask_roi_native_alignment": "CONDITIONAL_PASS_R2_CANDIDATE_ONLY",
+    "B-S4_full_image_repaste": "NOT_TESTED",
+    "B-S5_output_checkability_quality": "NOT_TESTED",
+    "B-S6_data_git_history_protection": "PASS"
+  },
+  "planned_calls": 3,
+  "actual_model_calls": 0,
+  "model_download": 0,
+  "val_access": 0,
+  "test_access": 0,
+  "raw_write": 0,
+  "stop_reason": "Hugging Face metadata/revision/license preflight timed out; exact model provenance could not be verified."
+}
