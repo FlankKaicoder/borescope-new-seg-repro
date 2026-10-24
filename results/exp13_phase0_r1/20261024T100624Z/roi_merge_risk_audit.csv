@@ -1,0 +1,669 @@
+﻿stem,original_roi_count,closure_roi_count,order_dependency,connected_components_not_merged,overlap_roi_pairs,oversized_merge_count,coverage_loss_pixels,re_paste_conflict_risk,geometry_recommendation
+1,3,3,false,0,0,0,0,LOW,no structural issue detected
+2,1,1,false,0,0,0,0,LOW,no structural issue detected
+3,1,1,false,0,0,1,0,LOW,inspect
+6,3,3,false,0,0,0,0,LOW,no structural issue detected
+7,7,6,true,1,1,0,0,HIGH,inspect
+8,1,1,false,0,0,0,0,LOW,no structural issue detected
+9,1,1,false,0,0,1,0,LOW,inspect
+12,1,1,false,0,0,0,0,LOW,no structural issue detected
+13,3,3,false,0,0,0,0,LOW,no structural issue detected
+14,1,1,false,0,0,1,0,LOW,inspect
+15,1,1,false,0,0,0,0,LOW,no structural issue detected
+17,2,2,false,0,0,0,0,LOW,no structural issue detected
+18,4,4,false,0,0,0,0,LOW,no structural issue detected
+20,2,2,false,0,1,1,0,HIGH,inspect
+21,2,2,false,0,0,0,0,LOW,no structural issue detected
+23,1,1,false,0,0,1,0,LOW,inspect
+24,1,1,false,0,0,1,0,LOW,inspect
+26,3,1,true,1,2,2,0,HIGH,inspect
+27,3,3,false,0,0,0,0,LOW,no structural issue detected
+28,1,1,false,0,0,0,0,LOW,no structural issue detected
+29,4,4,false,0,0,0,0,LOW,no structural issue detected
+31,1,1,false,0,0,1,0,LOW,inspect
+33,3,4,true,2,2,1,0,HIGH,inspect
+34,1,1,false,0,0,0,0,LOW,no structural issue detected
+37,5,5,false,0,0,0,0,LOW,no structural issue detected
+38,3,3,false,0,0,0,0,LOW,no structural issue detected
+43,1,1,false,0,0,1,0,LOW,inspect
+44,1,1,false,0,0,1,0,LOW,inspect
+48,2,1,true,1,0,1,0,LOW,inspect
+49,1,1,false,0,0,1,0,LOW,inspect
+50,5,3,true,1,2,0,0,HIGH,inspect
+52,1,1,false,0,0,0,0,LOW,no structural issue detected
+53,1,1,false,0,0,0,0,LOW,no structural issue detected
+54,1,1,false,0,0,1,0,LOW,inspect
+55,1,1,false,0,0,1,0,LOW,inspect
+56,3,3,false,0,0,0,0,LOW,no structural issue detected
+57,2,2,false,0,0,0,0,LOW,no structural issue detected
+58,8,8,false,0,1,0,0,HIGH,inspect
+59,1,1,false,0,0,0,0,LOW,no structural issue detected
+63,1,1,false,0,0,1,0,LOW,inspect
+64,1,1,false,0,0,1,0,LOW,inspect
+65,1,1,false,0,0,0,0,LOW,no structural issue detected
+66,1,1,false,0,0,0,0,LOW,no structural issue detected
+67,1,1,false,0,0,0,0,LOW,no structural issue detected
+68,1,1,false,0,0,0,0,LOW,no structural issue detected
+69,1,1,false,0,0,0,0,LOW,no structural issue detected
+71,1,1,false,0,0,1,0,LOW,inspect
+72,1,1,false,0,0,0,0,LOW,no structural issue detected
+73,1,1,false,0,0,0,0,LOW,no structural issue detected
+75,2,2,false,0,0,0,0,LOW,no structural issue detected
+76,1,1,false,0,0,1,0,LOW,inspect
+79,1,1,false,0,0,0,0,LOW,no structural issue detected
+80,1,1,false,0,0,0,0,LOW,no structural issue detected
+81,1,1,false,0,0,0,0,LOW,no structural issue detected
+82,1,1,false,0,0,0,0,LOW,no structural issue detected
+83,1,1,false,0,0,1,0,LOW,inspect
+84,1,1,false,0,0,0,0,LOW,no structural issue detected
+85,3,3,false,0,0,0,0,LOW,no structural issue detected
+86,1,1,false,0,0,0,0,LOW,no structural issue detected
+88,1,1,false,0,0,1,0,LOW,inspect
+89,1,1,false,0,0,0,0,LOW,no structural issue detected
+91,1,1,false,0,0,1,0,LOW,inspect
+93,1,1,false,0,0,0,0,LOW,no structural issue detected
+94,1,1,false,0,0,1,0,LOW,inspect
+95,1,1,false,0,0,1,0,LOW,inspect
+96,1,1,false,0,0,1,0,LOW,inspect
+97,2,2,false,0,0,0,0,LOW,no structural issue detected
+98,1,1,false,0,0,1,0,LOW,inspect
+99,1,1,false,0,0,1,0,LOW,inspect
+100,1,1,false,0,0,0,0,LOW,no structural issue detected
+101,1,1,false,0,0,1,0,LOW,inspect
+102,1,1,false,0,0,1,0,LOW,inspect
+103,2,1,true,1,1,1,0,HIGH,inspect
+104,3,3,false,0,0,0,0,LOW,no structural issue detected
+105,1,1,false,0,0,0,0,LOW,no structural issue detected
+106,1,1,false,0,0,1,0,LOW,inspect
+107,1,1,false,0,0,0,0,LOW,no structural issue detected
+108,1,1,false,0,0,1,0,LOW,inspect
+109,3,3,false,0,0,0,0,LOW,no structural issue detected
+110,2,2,false,0,1,1,0,HIGH,inspect
+111,1,1,false,0,0,0,0,LOW,no structural issue detected
+113,1,1,false,0,0,0,0,LOW,no structural issue detected
+114,1,1,false,0,0,0,0,LOW,no structural issue detected
+115,1,1,false,0,0,1,0,LOW,inspect
+117,1,1,false,0,0,1,0,LOW,inspect
+119,1,1,false,0,0,0,0,LOW,no structural issue detected
+120,1,1,false,0,0,1,0,LOW,inspect
+123,2,2,false,0,0,0,0,LOW,no structural issue detected
+124,1,1,false,0,0,1,0,LOW,inspect
+129,1,1,false,0,0,1,0,LOW,inspect
+131,1,1,false,0,0,0,0,LOW,no structural issue detected
+132,1,1,false,0,0,0,0,LOW,no structural issue detected
+133,2,1,true,1,1,0,0,HIGH,inspect
+135,1,1,false,0,0,0,0,LOW,no structural issue detected
+136,1,1,false,0,0,0,0,LOW,no structural issue detected
+137,1,1,false,0,0,0,0,LOW,no structural issue detected
+139,1,1,false,0,0,0,0,LOW,no structural issue detected
+141,2,2,false,0,0,0,0,LOW,no structural issue detected
+143,1,1,false,0,0,1,0,LOW,inspect
+144,1,1,false,0,0,1,0,LOW,inspect
+146,1,1,false,0,0,0,0,LOW,no structural issue detected
+147,2,2,false,0,0,0,0,LOW,no structural issue detected
+148,1,1,false,0,0,0,0,LOW,no structural issue detected
+149,1,1,false,0,0,0,0,LOW,no structural issue detected
+151,2,2,false,0,0,0,0,LOW,no structural issue detected
+153,1,1,false,0,0,1,0,LOW,inspect
+154,1,1,false,0,0,0,0,LOW,no structural issue detected
+155,6,6,false,0,0,0,0,LOW,no structural issue detected
+156,1,1,false,0,0,0,0,LOW,no structural issue detected
+157,1,1,false,0,0,0,0,LOW,no structural issue detected
+165,3,1,true,1,2,1,0,HIGH,inspect
+166,1,1,false,0,0,0,0,LOW,no structural issue detected
+167,1,1,false,0,0,0,0,LOW,no structural issue detected
+168,1,1,false,0,0,0,0,LOW,no structural issue detected
+169,3,1,true,1,2,1,0,HIGH,inspect
+170,1,1,false,0,0,1,0,LOW,inspect
+171,1,1,false,0,0,0,0,LOW,no structural issue detected
+173,2,1,true,1,0,0,0,LOW,inspect
+175,2,2,false,0,0,0,0,LOW,no structural issue detected
+176,1,1,false,0,0,0,0,LOW,no structural issue detected
+177,1,1,false,0,0,0,0,LOW,no structural issue detected
+179,1,1,false,0,0,1,0,LOW,inspect
+180,2,2,false,0,0,0,0,LOW,no structural issue detected
+182,1,1,false,0,0,0,0,LOW,no structural issue detected
+184,1,1,false,0,0,0,0,LOW,no structural issue detected
+185,2,1,true,1,1,1,0,HIGH,inspect
+188,1,1,false,0,0,1,0,LOW,inspect
+189,1,1,false,0,0,0,0,LOW,no structural issue detected
+190,2,2,false,0,0,0,0,LOW,no structural issue detected
+191,1,1,false,0,0,0,0,LOW,no structural issue detected
+192,1,1,false,0,0,0,0,LOW,no structural issue detected
+193,1,1,false,0,0,0,0,LOW,no structural issue detected
+195,1,1,false,0,0,0,0,LOW,no structural issue detected
+196,3,3,false,0,0,0,0,LOW,no structural issue detected
+197,1,1,false,0,0,1,0,LOW,inspect
+198,1,3,true,3,0,1,0,LOW,inspect
+199,2,2,false,0,0,0,0,LOW,no structural issue detected
+202,1,1,false,0,0,0,0,LOW,no structural issue detected
+205,1,1,false,0,0,0,0,LOW,no structural issue detected
+206,4,3,true,1,1,0,0,HIGH,inspect
+207,3,3,false,0,0,0,0,LOW,no structural issue detected
+208,1,1,false,0,0,0,0,LOW,no structural issue detected
+209,2,2,false,0,0,0,0,LOW,no structural issue detected
+210,5,2,true,1,4,1,0,HIGH,inspect
+213,1,1,false,0,0,0,0,LOW,no structural issue detected
+215,2,2,false,0,0,1,0,LOW,inspect
+216,1,1,false,0,0,0,0,LOW,no structural issue detected
+217,1,1,false,0,0,0,0,LOW,no structural issue detected
+219,1,1,false,0,0,0,0,LOW,no structural issue detected
+220,1,1,false,0,0,0,0,LOW,no structural issue detected
+221,1,1,false,0,0,0,0,LOW,no structural issue detected
+222,2,1,true,1,1,0,0,HIGH,inspect
+223,1,1,false,0,0,0,0,LOW,no structural issue detected
+224,1,1,false,0,0,0,0,LOW,no structural issue detected
+225,1,1,false,0,0,1,0,LOW,inspect
+227,1,1,false,0,0,1,0,LOW,inspect
+228,1,1,false,0,0,1,0,LOW,inspect
+233,2,2,false,0,0,0,0,LOW,no structural issue detected
+234,1,1,false,0,0,0,0,LOW,no structural issue detected
+235,3,3,false,0,0,0,0,LOW,no structural issue detected
+236,3,3,false,0,0,0,0,LOW,no structural issue detected
+237,1,1,false,0,0,0,0,LOW,no structural issue detected
+238,2,2,false,0,0,0,0,LOW,no structural issue detected
+239,1,1,false,0,0,0,0,LOW,no structural issue detected
+240,1,1,false,0,0,1,0,LOW,inspect
+243,1,1,false,0,0,0,0,LOW,no structural issue detected
+249,2,2,false,0,0,0,0,LOW,no structural issue detected
+250,1,1,false,0,0,0,0,LOW,no structural issue detected
+252,1,1,false,0,0,1,0,LOW,inspect
+253,1,1,false,0,0,0,0,LOW,no structural issue detected
+254,2,2,false,0,0,0,0,LOW,no structural issue detected
+255,1,1,false,0,0,1,0,LOW,inspect
+257,1,1,false,0,0,0,0,LOW,no structural issue detected
+258,2,2,false,0,0,0,0,LOW,no structural issue detected
+259,1,1,false,0,0,1,0,LOW,inspect
+260,1,1,false,0,0,0,0,LOW,no structural issue detected
+261,1,1,false,0,0,0,0,LOW,no structural issue detected
+263,1,1,false,0,0,0,0,LOW,no structural issue detected
+264,2,2,false,0,1,1,0,HIGH,inspect
+265,1,1,false,0,0,1,0,LOW,inspect
+266,1,1,false,0,0,1,0,LOW,inspect
+268,1,1,false,0,0,1,0,LOW,inspect
+269,1,1,false,0,0,1,0,LOW,inspect
+270,1,1,false,0,0,0,0,LOW,no structural issue detected
+271,1,1,false,0,0,0,0,LOW,no structural issue detected
+272,1,1,false,0,0,1,0,LOW,inspect
+273,1,1,false,0,0,1,0,LOW,inspect
+274,1,1,false,0,0,0,0,LOW,no structural issue detected
+275,2,2,false,0,0,0,0,LOW,no structural issue detected
+276,1,1,false,0,0,1,0,LOW,inspect
+277,2,2,false,0,0,0,0,LOW,no structural issue detected
+278,1,1,false,0,0,0,0,LOW,no structural issue detected
+279,1,1,false,0,0,0,0,LOW,no structural issue detected
+281,1,1,false,0,0,0,0,LOW,no structural issue detected
+282,2,2,false,0,0,0,0,LOW,no structural issue detected
+283,2,2,false,0,0,0,0,LOW,no structural issue detected
+284,2,2,false,0,0,0,0,LOW,no structural issue detected
+285,1,1,false,0,0,0,0,LOW,no structural issue detected
+286,1,1,false,0,0,0,0,LOW,no structural issue detected
+287,2,2,false,0,0,0,0,LOW,no structural issue detected
+288,1,1,false,0,0,0,0,LOW,no structural issue detected
+289,4,4,false,0,0,0,0,LOW,no structural issue detected
+290,2,2,false,0,0,0,0,LOW,no structural issue detected
+291,1,1,false,0,0,0,0,LOW,no structural issue detected
+292,1,1,false,0,0,0,0,LOW,no structural issue detected
+294,2,2,false,0,0,0,0,LOW,no structural issue detected
+295,1,1,false,0,0,1,0,LOW,inspect
+296,1,1,false,0,0,0,0,LOW,no structural issue detected
+297,1,1,false,0,0,0,0,LOW,no structural issue detected
+299,1,1,false,0,0,0,0,LOW,no structural issue detected
+300,1,1,false,0,0,0,0,LOW,no structural issue detected
+301,1,1,false,0,0,0,0,LOW,no structural issue detected
+302,1,1,false,0,0,1,0,LOW,inspect
+303,2,2,false,0,0,0,0,LOW,no structural issue detected
+304,4,4,false,0,0,0,0,LOW,no structural issue detected
+305,2,2,false,0,0,0,0,LOW,no structural issue detected
+306,1,1,false,0,0,0,0,LOW,no structural issue detected
+307,3,3,false,0,0,0,0,LOW,no structural issue detected
+311,3,3,false,0,0,0,0,LOW,no structural issue detected
+312,1,1,false,0,0,0,0,LOW,no structural issue detected
+313,3,3,false,0,0,0,0,LOW,no structural issue detected
+314,2,2,false,0,1,1,0,HIGH,inspect
+315,2,1,true,1,1,0,0,HIGH,inspect
+316,1,1,false,0,0,0,0,LOW,no structural issue detected
+317,1,1,false,0,0,0,0,LOW,no structural issue detected
+318,1,1,false,0,0,1,0,LOW,inspect
+319,1,1,false,0,0,0,0,LOW,no structural issue detected
+321,1,1,false,0,0,1,0,LOW,inspect
+322,3,3,false,0,0,0,0,LOW,no structural issue detected
+325,1,1,false,0,0,0,0,LOW,no structural issue detected
+326,1,1,false,0,0,0,0,LOW,no structural issue detected
+327,3,3,false,0,0,0,0,LOW,no structural issue detected
+329,1,1,false,0,0,0,0,LOW,no structural issue detected
+331,4,2,true,2,1,1,0,HIGH,inspect
+332,2,2,false,0,0,0,0,LOW,no structural issue detected
+333,1,1,false,0,0,1,0,LOW,inspect
+334,1,1,false,0,0,1,0,LOW,inspect
+335,1,1,false,0,0,1,0,LOW,inspect
+336,1,1,false,0,0,1,0,LOW,inspect
+337,3,2,true,1,1,1,0,HIGH,inspect
+338,1,1,false,0,0,0,0,LOW,no structural issue detected
+339,3,3,false,0,0,0,0,LOW,no structural issue detected
+341,1,1,false,0,0,0,0,LOW,no structural issue detected
+343,1,1,false,0,0,1,0,LOW,inspect
+344,1,1,false,0,0,0,0,LOW,no structural issue detected
+345,3,3,false,0,0,0,0,LOW,no structural issue detected
+346,2,1,true,1,1,0,0,HIGH,inspect
+347,1,1,false,0,0,0,0,LOW,no structural issue detected
+348,1,1,false,0,0,1,0,LOW,inspect
+349,2,2,false,0,0,0,0,LOW,no structural issue detected
+352,1,1,false,0,0,1,0,LOW,inspect
+354,1,1,false,0,0,0,0,LOW,no structural issue detected
+355,2,2,false,0,0,0,0,LOW,no structural issue detected
+356,2,2,false,0,0,0,0,LOW,no structural issue detected
+358,4,1,true,1,3,1,0,HIGH,inspect
+359,2,2,false,0,0,0,0,LOW,no structural issue detected
+360,1,1,false,0,0,1,0,LOW,inspect
+362,1,1,false,0,0,0,0,LOW,no structural issue detected
+363,1,1,false,0,0,0,0,LOW,no structural issue detected
+365,2,2,false,0,0,0,0,LOW,no structural issue detected
+366,1,1,false,0,0,0,0,LOW,no structural issue detected
+367,2,2,false,0,0,1,0,LOW,inspect
+368,1,1,false,0,0,0,0,LOW,no structural issue detected
+369,1,1,false,0,0,0,0,LOW,no structural issue detected
+374,1,1,false,0,0,1,0,LOW,inspect
+376,1,1,false,0,0,0,0,LOW,no structural issue detected
+377,1,1,false,0,0,1,0,LOW,inspect
+378,1,1,false,0,0,1,0,LOW,inspect
+379,1,1,false,0,0,1,0,LOW,inspect
+382,1,1,false,0,0,0,0,LOW,no structural issue detected
+384,2,1,true,1,1,1,0,HIGH,inspect
+385,1,1,false,0,0,1,0,LOW,inspect
+386,1,1,false,0,0,0,0,LOW,no structural issue detected
+387,1,1,false,0,0,0,0,LOW,no structural issue detected
+388,1,1,false,0,0,1,0,LOW,inspect
+389,2,1,true,1,1,0,0,HIGH,inspect
+391,3,3,false,0,0,0,0,LOW,no structural issue detected
+393,2,2,false,0,0,0,0,LOW,no structural issue detected
+394,1,1,false,0,0,0,0,LOW,no structural issue detected
+395,1,1,false,0,0,1,0,LOW,inspect
+396,1,1,false,0,0,0,0,LOW,no structural issue detected
+397,3,3,false,0,0,1,0,LOW,inspect
+398,5,4,true,1,1,0,0,HIGH,inspect
+399,2,2,false,0,0,0,0,LOW,no structural issue detected
+401,1,1,false,0,0,1,0,LOW,inspect
+402,1,1,false,0,0,0,0,LOW,no structural issue detected
+404,1,1,false,0,0,0,0,LOW,no structural issue detected
+405,1,1,false,0,0,1,0,LOW,inspect
+407,1,1,false,0,0,0,0,LOW,no structural issue detected
+410,1,1,false,0,0,0,0,LOW,no structural issue detected
+412,1,1,false,0,0,0,0,LOW,no structural issue detected
+413,4,1,true,1,3,1,0,HIGH,inspect
+415,1,1,false,0,0,0,0,LOW,no structural issue detected
+417,2,2,false,0,0,0,0,LOW,no structural issue detected
+418,1,1,false,0,0,0,0,LOW,no structural issue detected
+419,1,1,false,0,0,0,0,LOW,no structural issue detected
+420,1,1,false,0,0,0,0,LOW,no structural issue detected
+421,1,1,false,0,0,0,0,LOW,no structural issue detected
+423,2,2,false,0,0,0,0,LOW,no structural issue detected
+424,2,2,false,0,0,0,0,LOW,no structural issue detected
+426,1,1,false,0,0,0,0,LOW,no structural issue detected
+427,1,1,false,0,0,0,0,LOW,no structural issue detected
+428,1,1,false,0,0,0,0,LOW,no structural issue detected
+429,1,1,false,0,0,0,0,LOW,no structural issue detected
+431,1,1,false,0,0,0,0,LOW,no structural issue detected
+434,1,1,false,0,0,0,0,LOW,no structural issue detected
+435,1,1,false,0,0,0,0,LOW,no structural issue detected
+436,1,1,false,0,0,0,0,LOW,no structural issue detected
+439,1,1,false,0,0,0,0,LOW,no structural issue detected
+441,1,1,false,0,0,0,0,LOW,no structural issue detected
+442,1,1,false,0,0,0,0,LOW,no structural issue detected
+443,1,1,false,0,0,0,0,LOW,no structural issue detected
+444,1,1,false,0,0,0,0,LOW,no structural issue detected
+445,1,1,false,0,0,0,0,LOW,no structural issue detected
+446,1,1,false,0,0,0,0,LOW,no structural issue detected
+447,1,1,false,0,0,0,0,LOW,no structural issue detected
+448,1,1,false,0,0,0,0,LOW,no structural issue detected
+449,1,1,false,0,0,0,0,LOW,no structural issue detected
+450,1,1,false,0,0,0,0,LOW,no structural issue detected
+451,1,1,false,0,0,0,0,LOW,no structural issue detected
+452,1,1,false,0,0,0,0,LOW,no structural issue detected
+455,1,1,false,0,0,0,0,LOW,no structural issue detected
+456,1,1,false,0,0,0,0,LOW,no structural issue detected
+457,1,1,false,0,0,0,0,LOW,no structural issue detected
+458,1,1,false,0,0,0,0,LOW,no structural issue detected
+459,1,1,false,0,0,0,0,LOW,no structural issue detected
+461,1,1,false,0,0,0,0,LOW,no structural issue detected
+462,1,1,false,0,0,0,0,LOW,no structural issue detected
+463,1,1,false,0,0,0,0,LOW,no structural issue detected
+465,1,1,false,0,0,0,0,LOW,no structural issue detected
+466,1,1,false,0,0,0,0,LOW,no structural issue detected
+467,1,1,false,0,0,0,0,LOW,no structural issue detected
+468,1,1,false,0,0,0,0,LOW,no structural issue detected
+469,1,1,false,0,0,0,0,LOW,no structural issue detected
+470,1,1,false,0,0,0,0,LOW,no structural issue detected
+471,1,1,false,0,0,0,0,LOW,no structural issue detected
+474,1,1,false,0,0,0,0,LOW,no structural issue detected
+476,1,1,false,0,0,0,0,LOW,no structural issue detected
+478,1,1,false,0,0,0,0,LOW,no structural issue detected
+480,1,1,false,0,0,0,0,LOW,no structural issue detected
+481,1,1,false,0,0,0,0,LOW,no structural issue detected
+482,1,1,false,0,0,0,0,LOW,no structural issue detected
+483,1,1,false,0,0,0,0,LOW,no structural issue detected
+485,1,1,false,0,0,0,0,LOW,no structural issue detected
+486,1,1,false,0,0,0,0,LOW,no structural issue detected
+487,1,1,false,0,0,0,0,LOW,no structural issue detected
+488,1,1,false,0,0,0,0,LOW,no structural issue detected
+489,1,1,false,0,0,0,0,LOW,no structural issue detected
+492,1,1,false,0,0,0,0,LOW,no structural issue detected
+494,1,1,false,0,0,0,0,LOW,no structural issue detected
+495,1,1,false,0,0,0,0,LOW,no structural issue detected
+497,1,1,false,0,0,0,0,LOW,no structural issue detected
+498,1,1,false,0,0,0,0,LOW,no structural issue detected
+499,1,1,false,0,0,0,0,LOW,no structural issue detected
+501,1,1,false,0,0,0,0,LOW,no structural issue detected
+503,1,1,false,0,0,0,0,LOW,no structural issue detected
+505,1,1,false,0,0,0,0,LOW,no structural issue detected
+508,1,1,false,0,0,0,0,LOW,no structural issue detected
+510,1,1,false,0,0,0,0,LOW,no structural issue detected
+512,1,1,false,0,0,0,0,LOW,no structural issue detected
+513,1,1,false,0,0,0,0,LOW,no structural issue detected
+514,1,1,false,0,0,0,0,LOW,no structural issue detected
+518,1,1,false,0,0,0,0,LOW,no structural issue detected
+520,1,1,false,0,0,0,0,LOW,no structural issue detected
+524,1,1,false,0,0,0,0,LOW,no structural issue detected
+526,1,1,false,0,0,0,0,LOW,no structural issue detected
+528,1,1,false,0,0,0,0,LOW,no structural issue detected
+529,1,1,false,0,0,0,0,LOW,no structural issue detected
+530,1,1,false,0,0,0,0,LOW,no structural issue detected
+531,1,1,false,0,0,0,0,LOW,no structural issue detected
+532,1,1,false,0,0,0,0,LOW,no structural issue detected
+533,1,1,false,0,0,0,0,LOW,no structural issue detected
+534,1,1,false,0,0,0,0,LOW,no structural issue detected
+536,1,1,false,0,0,0,0,LOW,no structural issue detected
+537,1,1,false,0,0,0,0,LOW,no structural issue detected
+541,1,1,false,0,0,0,0,LOW,no structural issue detected
+542,1,1,false,0,0,0,0,LOW,no structural issue detected
+544,1,1,false,0,0,0,0,LOW,no structural issue detected
+546,1,1,false,0,0,0,0,LOW,no structural issue detected
+547,1,1,false,0,0,0,0,LOW,no structural issue detected
+551,1,1,false,0,0,0,0,LOW,no structural issue detected
+553,1,1,false,0,0,1,0,LOW,inspect
+556,1,1,false,0,0,0,0,LOW,no structural issue detected
+557,1,1,false,0,0,0,0,LOW,no structural issue detected
+558,1,1,false,0,0,0,0,LOW,no structural issue detected
+559,1,1,false,0,0,1,0,LOW,inspect
+560,1,1,false,0,0,0,0,LOW,no structural issue detected
+562,1,1,false,0,0,1,0,LOW,inspect
+563,1,1,false,0,0,0,0,LOW,no structural issue detected
+567,1,1,false,0,0,1,0,LOW,inspect
+569,1,1,false,0,0,0,0,LOW,no structural issue detected
+570,1,1,false,0,0,0,0,LOW,no structural issue detected
+572,2,2,false,0,0,1,0,LOW,inspect
+573,1,1,false,0,0,0,0,LOW,no structural issue detected
+578,1,1,false,0,0,0,0,LOW,no structural issue detected
+579,2,2,false,0,0,0,0,LOW,no structural issue detected
+580,1,1,false,0,0,1,0,LOW,inspect
+582,1,1,false,0,0,1,0,LOW,inspect
+583,1,1,false,0,0,1,0,LOW,inspect
+584,1,1,false,0,0,0,0,LOW,no structural issue detected
+585,1,1,false,0,0,0,0,LOW,no structural issue detected
+586,1,1,false,0,0,0,0,LOW,no structural issue detected
+588,2,2,false,0,0,0,0,LOW,no structural issue detected
+590,1,1,false,0,0,0,0,LOW,no structural issue detected
+591,1,1,false,0,0,1,0,LOW,inspect
+593,1,1,false,0,0,1,0,LOW,inspect
+594,1,1,false,0,0,0,0,LOW,no structural issue detected
+602,1,1,false,0,0,0,0,LOW,no structural issue detected
+604,1,1,false,0,0,1,0,LOW,inspect
+606,1,1,false,0,0,0,0,LOW,no structural issue detected
+608,1,1,false,0,0,1,0,LOW,inspect
+610,1,1,false,0,0,1,0,LOW,inspect
+612,1,1,false,0,0,1,0,LOW,inspect
+613,1,1,false,0,0,0,0,LOW,no structural issue detected
+615,1,1,false,0,0,0,0,LOW,no structural issue detected
+616,1,1,false,0,0,0,0,LOW,no structural issue detected
+617,1,1,false,0,0,1,0,LOW,inspect
+618,1,1,false,0,0,0,0,LOW,no structural issue detected
+619,1,1,false,0,0,0,0,LOW,no structural issue detected
+620,1,1,false,0,0,1,0,LOW,inspect
+621,1,1,false,0,0,0,0,LOW,no structural issue detected
+622,1,1,false,0,0,0,0,LOW,no structural issue detected
+623,1,1,false,0,0,1,0,LOW,inspect
+624,1,1,false,0,0,0,0,LOW,no structural issue detected
+626,1,1,false,0,0,1,0,LOW,inspect
+627,1,1,false,0,0,1,0,LOW,inspect
+628,1,1,false,0,0,0,0,LOW,no structural issue detected
+630,1,1,false,0,0,0,0,LOW,no structural issue detected
+631,1,1,false,0,0,0,0,LOW,no structural issue detected
+632,1,1,false,0,0,0,0,LOW,no structural issue detected
+633,1,1,false,0,0,0,0,LOW,no structural issue detected
+634,1,1,false,0,0,0,0,LOW,no structural issue detected
+636,1,1,false,0,0,0,0,LOW,no structural issue detected
+637,1,1,false,0,0,0,0,LOW,no structural issue detected
+638,1,1,false,0,0,0,0,LOW,no structural issue detected
+639,1,1,false,0,0,0,0,LOW,no structural issue detected
+640,1,1,false,0,0,0,0,LOW,no structural issue detected
+641,1,1,false,0,0,0,0,LOW,no structural issue detected
+642,1,1,false,0,0,0,0,LOW,no structural issue detected
+645,1,1,false,0,0,0,0,LOW,no structural issue detected
+650,1,1,false,0,0,0,0,LOW,no structural issue detected
+652,1,1,false,0,0,0,0,LOW,no structural issue detected
+653,1,1,false,0,0,0,0,LOW,no structural issue detected
+654,1,1,false,0,0,0,0,LOW,no structural issue detected
+655,1,1,false,0,0,0,0,LOW,no structural issue detected
+656,1,1,false,0,0,0,0,LOW,no structural issue detected
+658,1,1,false,0,0,0,0,LOW,no structural issue detected
+659,1,1,false,0,0,0,0,LOW,no structural issue detected
+661,1,1,false,0,0,0,0,LOW,no structural issue detected
+663,1,1,false,0,0,0,0,LOW,no structural issue detected
+665,1,1,false,0,0,0,0,LOW,no structural issue detected
+666,1,1,false,0,0,0,0,LOW,no structural issue detected
+667,1,1,false,0,0,0,0,LOW,no structural issue detected
+670,1,1,false,0,0,0,0,LOW,no structural issue detected
+672,1,1,false,0,0,0,0,LOW,no structural issue detected
+674,1,1,false,0,0,0,0,LOW,no structural issue detected
+675,1,1,false,0,0,0,0,LOW,no structural issue detected
+676,1,1,false,0,0,0,0,LOW,no structural issue detected
+678,1,1,false,0,0,0,0,LOW,no structural issue detected
+679,1,1,false,0,0,0,0,LOW,no structural issue detected
+682,1,1,false,0,0,0,0,LOW,no structural issue detected
+683,1,1,false,0,0,0,0,LOW,no structural issue detected
+685,1,1,false,0,0,0,0,LOW,no structural issue detected
+688,1,1,false,0,0,0,0,LOW,no structural issue detected
+689,1,1,false,0,0,0,0,LOW,no structural issue detected
+690,1,1,false,0,0,0,0,LOW,no structural issue detected
+694,1,1,false,0,0,0,0,LOW,no structural issue detected
+695,1,1,false,0,0,0,0,LOW,no structural issue detected
+696,1,1,false,0,0,0,0,LOW,no structural issue detected
+697,1,1,false,0,0,0,0,LOW,no structural issue detected
+698,1,1,false,0,0,0,0,LOW,no structural issue detected
+699,1,1,false,0,0,0,0,LOW,no structural issue detected
+701,1,1,false,0,0,0,0,LOW,no structural issue detected
+702,1,1,false,0,0,0,0,LOW,no structural issue detected
+705,1,1,false,0,0,0,0,LOW,no structural issue detected
+707,1,1,false,0,0,0,0,LOW,no structural issue detected
+708,1,1,false,0,0,0,0,LOW,no structural issue detected
+710,1,1,false,0,0,0,0,LOW,no structural issue detected
+711,1,1,false,0,0,0,0,LOW,no structural issue detected
+712,1,1,false,0,0,0,0,LOW,no structural issue detected
+714,1,1,false,0,0,0,0,LOW,no structural issue detected
+715,1,1,false,0,0,0,0,LOW,no structural issue detected
+716,1,1,false,0,0,0,0,LOW,no structural issue detected
+717,1,1,false,0,0,0,0,LOW,no structural issue detected
+719,1,1,false,0,0,0,0,LOW,no structural issue detected
+721,1,1,false,0,0,0,0,LOW,no structural issue detected
+724,1,1,false,0,0,0,0,LOW,no structural issue detected
+726,1,1,false,0,0,0,0,LOW,no structural issue detected
+727,1,1,false,0,0,0,0,LOW,no structural issue detected
+728,1,1,false,0,0,0,0,LOW,no structural issue detected
+731,1,1,false,0,0,0,0,LOW,no structural issue detected
+732,1,1,false,0,0,0,0,LOW,no structural issue detected
+733,1,1,false,0,0,0,0,LOW,no structural issue detected
+734,1,1,false,0,0,0,0,LOW,no structural issue detected
+735,1,1,false,0,0,0,0,LOW,no structural issue detected
+737,1,1,false,0,0,0,0,LOW,no structural issue detected
+740,1,1,false,0,0,0,0,LOW,no structural issue detected
+741,1,1,false,0,0,0,0,LOW,no structural issue detected
+742,1,1,false,0,0,0,0,LOW,no structural issue detected
+744,1,1,false,0,0,0,0,LOW,no structural issue detected
+745,1,1,false,0,0,0,0,LOW,no structural issue detected
+746,1,1,false,0,0,0,0,LOW,no structural issue detected
+747,1,1,false,0,0,0,0,LOW,no structural issue detected
+748,1,1,false,0,0,0,0,LOW,no structural issue detected
+751,1,1,false,0,0,0,0,LOW,no structural issue detected
+754,1,1,false,0,0,0,0,LOW,no structural issue detected
+755,1,1,false,0,0,0,0,LOW,no structural issue detected
+756,1,1,false,0,0,0,0,LOW,no structural issue detected
+758,1,1,false,0,0,0,0,LOW,no structural issue detected
+760,1,1,false,0,0,0,0,LOW,no structural issue detected
+761,1,1,false,0,0,0,0,LOW,no structural issue detected
+762,1,1,false,0,0,0,0,LOW,no structural issue detected
+763,1,1,false,0,0,0,0,LOW,no structural issue detected
+764,1,1,false,0,0,0,0,LOW,no structural issue detected
+765,1,1,false,0,0,0,0,LOW,no structural issue detected
+766,1,1,false,0,0,0,0,LOW,no structural issue detected
+769,1,1,false,0,0,0,0,LOW,no structural issue detected
+770,1,1,false,0,0,0,0,LOW,no structural issue detected
+771,1,1,false,0,0,0,0,LOW,no structural issue detected
+772,1,1,false,0,0,0,0,LOW,no structural issue detected
+774,1,1,false,0,0,0,0,LOW,no structural issue detected
+777,1,1,false,0,0,0,0,LOW,no structural issue detected
+779,1,1,false,0,0,0,0,LOW,no structural issue detected
+780,1,1,false,0,0,0,0,LOW,no structural issue detected
+782,1,1,false,0,0,0,0,LOW,no structural issue detected
+784,1,1,false,0,0,0,0,LOW,no structural issue detected
+786,1,1,false,0,0,0,0,LOW,no structural issue detected
+787,1,1,false,0,0,0,0,LOW,no structural issue detected
+788,1,1,false,0,0,0,0,LOW,no structural issue detected
+789,1,1,false,0,0,0,0,LOW,no structural issue detected
+790,1,1,false,0,0,0,0,LOW,no structural issue detected
+791,1,1,false,0,0,0,0,LOW,no structural issue detected
+794,1,1,false,0,0,0,0,LOW,no structural issue detected
+795,1,1,false,0,0,0,0,LOW,no structural issue detected
+796,1,1,false,0,0,0,0,LOW,no structural issue detected
+797,1,1,false,0,0,0,0,LOW,no structural issue detected
+798,1,1,false,0,0,0,0,LOW,no structural issue detected
+799,1,1,false,0,0,0,0,LOW,no structural issue detected
+800,1,1,false,0,0,0,0,LOW,no structural issue detected
+802,1,1,false,0,0,0,0,LOW,no structural issue detected
+803,1,1,false,0,0,0,0,LOW,no structural issue detected
+804,1,1,false,0,0,0,0,LOW,no structural issue detected
+805,1,1,false,0,0,0,0,LOW,no structural issue detected
+807,1,1,false,0,0,0,0,LOW,no structural issue detected
+808,1,1,false,0,0,0,0,LOW,no structural issue detected
+809,1,1,false,0,0,0,0,LOW,no structural issue detected
+810,1,1,false,0,0,0,0,LOW,no structural issue detected
+812,1,1,false,0,0,0,0,LOW,no structural issue detected
+813,1,1,false,0,0,0,0,LOW,no structural issue detected
+814,1,1,false,0,0,0,0,LOW,no structural issue detected
+815,1,1,false,0,0,0,0,LOW,no structural issue detected
+816,1,1,false,0,0,0,0,LOW,no structural issue detected
+817,1,1,false,0,0,0,0,LOW,no structural issue detected
+818,1,1,false,0,0,0,0,LOW,no structural issue detected
+821,1,1,false,0,0,0,0,LOW,no structural issue detected
+822,1,1,false,0,0,0,0,LOW,no structural issue detected
+825,1,1,false,0,0,0,0,LOW,no structural issue detected
+826,1,1,false,0,0,0,0,LOW,no structural issue detected
+828,1,1,false,0,0,0,0,LOW,no structural issue detected
+830,1,1,false,0,0,0,0,LOW,no structural issue detected
+831,1,1,false,0,0,0,0,LOW,no structural issue detected
+832,1,1,false,0,0,0,0,LOW,no structural issue detected
+833,1,1,false,0,0,0,0,LOW,no structural issue detected
+834,1,1,false,0,0,0,0,LOW,no structural issue detected
+835,1,1,false,0,0,0,0,LOW,no structural issue detected
+838,1,1,false,0,0,0,0,LOW,no structural issue detected
+844,1,1,false,0,0,0,0,LOW,no structural issue detected
+847,1,1,false,0,0,0,0,LOW,no structural issue detected
+850,1,1,false,0,0,0,0,LOW,no structural issue detected
+852,1,1,false,0,0,0,0,LOW,no structural issue detected
+854,1,1,false,0,0,0,0,LOW,no structural issue detected
+855,1,1,false,0,0,0,0,LOW,no structural issue detected
+856,1,1,false,0,0,0,0,LOW,no structural issue detected
+859,2,2,false,0,0,0,0,LOW,no structural issue detected
+860,1,1,false,0,0,0,0,LOW,no structural issue detected
+861,1,1,false,0,0,0,0,LOW,no structural issue detected
+862,1,1,false,0,0,0,0,LOW,no structural issue detected
+866,1,1,false,0,0,0,0,LOW,no structural issue detected
+868,1,1,false,0,0,0,0,LOW,no structural issue detected
+871,1,1,false,0,0,0,0,LOW,no structural issue detected
+872,1,1,false,0,0,0,0,LOW,no structural issue detected
+873,1,1,false,0,0,0,0,LOW,no structural issue detected
+874,1,1,false,0,0,0,0,LOW,no structural issue detected
+875,1,1,false,0,0,0,0,LOW,no structural issue detected
+879,1,1,false,0,0,0,0,LOW,no structural issue detected
+883,1,1,false,0,0,0,0,LOW,no structural issue detected
+884,1,1,false,0,0,0,0,LOW,no structural issue detected
+885,1,1,false,0,0,0,0,LOW,no structural issue detected
+886,2,2,false,0,0,0,0,LOW,no structural issue detected
+887,1,1,false,0,0,0,0,LOW,no structural issue detected
+889,1,1,false,0,0,0,0,LOW,no structural issue detected
+890,1,1,false,0,0,0,0,LOW,no structural issue detected
+891,1,1,false,0,0,0,0,LOW,no structural issue detected
+892,1,1,false,0,0,0,0,LOW,no structural issue detected
+893,1,1,false,0,0,0,0,LOW,no structural issue detected
+894,1,1,false,0,0,0,0,LOW,no structural issue detected
+895,1,1,false,0,0,0,0,LOW,no structural issue detected
+898,1,1,false,0,0,0,0,LOW,no structural issue detected
+899,1,1,false,0,0,0,0,LOW,no structural issue detected
+900,1,1,false,0,0,0,0,LOW,no structural issue detected
+901,1,1,false,0,0,0,0,LOW,no structural issue detected
+902,2,2,false,0,0,0,0,LOW,no structural issue detected
+903,1,1,false,0,0,0,0,LOW,no structural issue detected
+904,1,1,false,0,0,0,0,LOW,no structural issue detected
+908,1,1,false,0,0,0,0,LOW,no structural issue detected
+909,1,1,false,0,0,0,0,LOW,no structural issue detected
+911,1,1,false,0,0,0,0,LOW,no structural issue detected
+912,1,1,false,0,0,0,0,LOW,no structural issue detected
+913,1,1,false,0,0,0,0,LOW,no structural issue detected
+914,1,1,false,0,0,0,0,LOW,no structural issue detected
+916,1,1,false,0,0,0,0,LOW,no structural issue detected
+917,1,1,false,0,0,0,0,LOW,no structural issue detected
+918,1,1,false,0,0,0,0,LOW,no structural issue detected
+919,1,1,false,0,0,0,0,LOW,no structural issue detected
+920,1,1,false,0,0,0,0,LOW,no structural issue detected
+921,1,1,false,0,0,0,0,LOW,no structural issue detected
+923,1,1,false,0,0,0,0,LOW,no structural issue detected
+927,1,1,false,0,0,0,0,LOW,no structural issue detected
+929,1,1,false,0,0,0,0,LOW,no structural issue detected
+930,1,1,false,0,0,0,0,LOW,no structural issue detected
+931,1,1,false,0,0,0,0,LOW,no structural issue detected
+934,1,1,false,0,0,0,0,LOW,no structural issue detected
+935,1,1,false,0,0,0,0,LOW,no structural issue detected
+936,1,1,false,0,0,0,0,LOW,no structural issue detected
+938,1,1,false,0,0,0,0,LOW,no structural issue detected
+941,1,1,false,0,0,0,0,LOW,no structural issue detected
+942,1,1,false,0,0,0,0,LOW,no structural issue detected
+943,1,1,false,0,0,0,0,LOW,no structural issue detected
+944,1,1,false,0,0,0,0,LOW,no structural issue detected
+945,1,1,false,0,0,0,0,LOW,no structural issue detected
+947,1,1,false,0,0,0,0,LOW,no structural issue detected
+949,1,1,false,0,0,0,0,LOW,no structural issue detected
+950,1,1,false,0,0,0,0,LOW,no structural issue detected
+952,1,1,false,0,0,0,0,LOW,no structural issue detected
+953,1,1,false,0,0,0,0,LOW,no structural issue detected
+954,1,1,false,0,0,0,0,LOW,no structural issue detected
+958,1,1,false,0,0,0,0,LOW,no structural issue detected
+959,1,1,false,0,0,0,0,LOW,no structural issue detected
+960,1,1,false,0,0,0,0,LOW,no structural issue detected
+961,1,1,false,0,0,0,0,LOW,no structural issue detected
+963,1,1,false,0,0,0,0,LOW,no structural issue detected
+964,1,1,false,0,0,0,0,LOW,no structural issue detected
+966,1,1,false,0,0,0,0,LOW,no structural issue detected
+968,1,1,false,0,0,0,0,LOW,no structural issue detected
+969,1,1,false,0,0,0,0,LOW,no structural issue detected
+970,1,1,false,0,0,0,0,LOW,no structural issue detected
+971,1,1,false,0,0,0,0,LOW,no structural issue detected
+973,1,1,false,0,0,0,0,LOW,no structural issue detected
+974,1,1,false,0,0,0,0,LOW,no structural issue detected
+976,1,1,false,0,0,0,0,LOW,no structural issue detected
+977,1,1,false,0,0,0,0,LOW,no structural issue detected
+980,1,1,false,0,0,0,0,LOW,no structural issue detected
+981,1,1,false,0,0,0,0,LOW,no structural issue detected
+984,1,1,false,0,0,0,0,LOW,no structural issue detected
+985,1,1,false,0,0,0,0,LOW,no structural issue detected
+986,1,1,false,0,0,0,0,LOW,no structural issue detected
+991,1,1,false,0,0,0,0,LOW,no structural issue detected
+992,2,2,false,0,0,0,0,LOW,no structural issue detected
+995,1,1,false,0,0,0,0,LOW,no structural issue detected
+996,1,1,false,0,0,0,0,LOW,no structural issue detected
+997,1,1,false,0,0,0,0,LOW,no structural issue detected
+998,1,1,false,0,0,0,0,LOW,no structural issue detected
+999,1,1,false,0,0,0,0,LOW,no structural issue detected
+1001,2,2,false,0,0,0,0,LOW,no structural issue detected
+1003,1,1,false,0,0,0,0,LOW,no structural issue detected
+1004,1,1,false,0,0,0,0,LOW,no structural issue detected
+1005,1,1,false,0,0,0,0,LOW,no structural issue detected
+1008,1,1,false,0,0,0,0,LOW,no structural issue detected

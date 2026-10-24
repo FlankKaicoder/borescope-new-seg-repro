@@ -1,0 +1,7 @@
+﻿scenario,counting_unit,planned_calls,actual_triggered_calls,unique_sources_touched,notes
+Smoke,one representative ROI x two strengths,4,0,2,"sources=2,1; multi-ROI source contributes one representative ROI; cap=4; source/pilot overlap=False"
+Pilot,one ROI x two strengths,54,0,21,"21 unique sources, 27 ROIs; candidate audit only"
+ApprovedRevision,one affected ROI x one revised prompt,16,0,,"upper bound: two categories, one source with maximum observed ROI count per category; conservative and pending approval"
+ProductionMean,one ROI x two strengths,200,0,,79 additional sources to reach 100; empirical TRAIN mean ROI/source=1.263
+ProductionP90,one ROI x two strengths,316,0,,79 additional sources; empirical TRAIN p90 ROI/source=2.000
+Retry,one ROI retry,10,0,,up to ten source-targeted single-ROI retries

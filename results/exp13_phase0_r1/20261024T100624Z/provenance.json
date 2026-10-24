@@ -1,0 +1,33 @@
+{
+  "run_id": "20261024T100624Z",
+  "script": "/root/autodl-tmp/borescope-new-seg-repro/tools/exp13_phase0_r1_audit.py",
+  "script_sha256": "9607a3543d997de9b277af258b97bf20947399b374bcee590af6944d9c33eb52",
+  "manifest": "/root/autodl-tmp/borescope-new-seg-repro/results/dataset_build/exp01_1_split_20260812T122306Z/artifacts/split_manifest.csv",
+  "manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "r0_root": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase0_readonly/20261024T093428Z",
+  "r0_artifact_sha256": {
+    "summary.json": "389731e99e0e154b9a76d43f5c29c463d102e0ba9c71270a1bd38b822769a4ac",
+    "source_geometry_audit.csv": "72c849cced1cc8593b60273c4eec5a25076428e0bcca117f55af1285928b6bae",
+    "class_source_distribution.csv": "c3ef0fd2c02a7236ee17c0c840c90d223290e9a8de54a26f708d15b14d123eef",
+    "fov_border_risk_audit.csv": "4ade7ef6589405d9a135ccdeda3eb8e0511c0d843a16b1c683f1b892aafb7e6e",
+    "roi_planning_audit.csv": "bebaf795cc0ec1c4006d1c805f6e4dd284d5de3618fb4a16385a5a714089377f",
+    "pilot_source_proposal.csv": "f4f94cad882c5220f28f74e07fb3c0fc8750cfc12a460fbcde79b83087691fb3",
+    "inference_budget_estimate.json": "e3e6bb378ccea9ddc6f53d7c4a00e219344131da7e95ec9415e1d23725d32406",
+    "environment_snapshot.json": "85af9b2a4c5327642e3926da9e30ca5ddedad4549d2d982c1028c82437868547",
+    "provenance.json": "8a7968e19f38e2695cad33b4d617b20c5fe935897ea0964881cdb67c0c9c63ce"
+  },
+  "raw_root": "/root/autodl-tmp/损伤训练数据集",
+  "input_split_filter": "split == train",
+  "output_files": [
+    "border_risk_summary.json",
+    "budget_scenarios.json",
+    "class_geometry_coverage.csv",
+    "integrity_and_preservation.json",
+    "pilot_revision_proposal.csv",
+    "polygon_roi_coverage.csv",
+    "roi_call_budget_ledger.csv",
+    "roi_merge_risk_audit.csv",
+    "source_roi_coverage.csv",
+    "summary.json"
+  ]
+}

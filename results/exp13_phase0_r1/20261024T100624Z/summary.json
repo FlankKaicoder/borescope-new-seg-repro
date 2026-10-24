@@ -1,0 +1,44 @@
+{
+  "experiment": "EXP13_PHASE0_R1_BUDGET_AND_GEOMETRY_AUDIT_REPAIR",
+  "run_id": "20261024T100624Z",
+  "status": "EXP13_PHASE0_R1_AUDIT_COMPLETED_PENDING_CHATGPT_GATE",
+  "gates": {
+    "R1-A_BUDGET_ACCOUNTING": "CONDITIONAL_PASS",
+    "R1-B_POLYGON_COVERAGE": "PASS",
+    "R1-C_GEOMETRY_AND_FOV_RISKS": "CONDITIONAL_PASS",
+    "R1-D_PILOT_REPRESENTATIVENESS": "CONDITIONAL_PASS",
+    "R1-E_DATA_AND_GIT_PRESERVATION": "PASS"
+  },
+  "train_images": 668,
+  "valid_polygons": 1266,
+  "sources": 668,
+  "original_r0_roi_count": 844,
+  "recomputed_original_roi_count": 844,
+  "pilot_sources": 21,
+  "pilot_rois": 27,
+  "all_polygon_coverage_ratio": 1.0,
+  "merge_structural_issue_detected": true,
+  "boundary_risk_instances": 317,
+  "prohibitions": {
+    "val_access": 0,
+    "test_access": 0,
+    "model_inference": false,
+    "model_download": false,
+    "diffusion": false,
+    "training": false,
+    "ssl": false,
+    "synthetic_generation": false,
+    "raw_write": false,
+    "trusted_pair_freeze": false,
+    "exp13_2_b_authorization": false,
+    "ssl_authorization": false
+  },
+  "budget_status": "CONDITIONAL_FEASIBLE",
+  "manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "r0_artifacts_unchanged": true,
+  "notes": [
+    "R1 evidence is additive; R0 files are not rewritten.",
+    "All planned model calls have actual_triggered_calls=0.",
+    "Pilot revision is a proposal only; no generation or model authorization is implied."
+  ]
+}

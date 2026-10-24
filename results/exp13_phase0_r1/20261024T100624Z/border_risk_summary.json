@@ -1,0 +1,47 @@
+{
+  "boundary_risk_instances": 317,
+  "boundary_risk_fraction": 0.25039494470774093,
+  "boundary_risk_sources": 202,
+  "class_distribution": {
+    "Burn": {
+      "instances": 287,
+      "boundary_risk": 137
+    },
+    "Crack": {
+      "instances": 95,
+      "boundary_risk": 5
+    },
+    "Dent": {
+      "instances": 128,
+      "boundary_risk": 8
+    },
+    "Material missing": {
+      "instances": 184,
+      "boundary_risk": 37
+    },
+    "Tears": {
+      "instances": 45,
+      "boundary_risk": 2
+    },
+    "Tip curl": {
+      "instances": 27,
+      "boundary_risk": 1
+    },
+    "corrosion": {
+      "instances": 500,
+      "boundary_risk": 127
+    }
+  },
+  "multi_instance_source_risk_count": 145,
+  "roi_boundary_clamp_count": 236,
+  "gray_black_padding_status": "UNRESOLVED_HEURISTIC",
+  "unknown_effective_fov_source_count": 202,
+  "facts": [
+    "boundary risk is geometric proximity/clamping only",
+    "coverage ratio is pixel-count verification"
+  ],
+  "heuristics": [
+    "gray/black edge appearance is not proof of padding",
+    "large ROI context risk uses ROI/image area threshold"
+  ]
+}

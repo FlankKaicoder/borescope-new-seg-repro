@@ -145,3 +145,12 @@ Prepared only historical TRAIN R1 Crack86/260 and corrosion2/8 v1/v2: 8 candidat
 - Gates: 0-A PASS, 0-B CONDITIONAL_PASS (geometry usable; gray/padding/FOV border remains heuristic), 0-C PASS, 0-D PASS, 0-E PASS.
 - No VAL/TEST access, model download/inference, diffusion, synthetic generation, training, SSL, or raw-data write occurred. No trusted pair or Exp13.2-B/SSL authorization is implied.
 - Evidence: `results/exp13_phase0_readonly/20261024T093428Z/`; audit and handoff: `docs/exp13_phase0_readonly_audit.md` and `docs/exp13_phase0_readonly_handoff.md`.
+
+### Exp13 Phase 0-R1 budget and geometry audit repair (2026-10-24)
+
+- Status: `EXP13_PHASE0_R1_AUDIT_COMPLETED_PENDING_CHATGPT_GATE`; R0 outputs remain unchanged.
+- Frozen TRAIN-only recheck: 668 images, 1,266 polygons, original 844 ROI merge reproduced; exact polygon and source-union coverage ratio 1.0.
+- R1 budget: revised 21-source proposal contains 27 ROIs and 54 planned pilot calls; actual model calls 0. Smoke 4, pilot/revision 74, mean 100-source total 284, p90 total 400; budget is `CONDITIONAL_FEASIBLE`.
+- Boundary-risk recomputation is 317/1266 (25.04%) across 202 sources under the documented geometric rule; gray/black/padding remains `UNRESOLVED_HEURISTIC`; merge/re-paste risks remain disclosed.
+- Gates: R1-A CONDITIONAL_PASS, R1-B PASS, R1-C CONDITIONAL_PASS, R1-D CONDITIONAL_PASS, R1-E PASS. No Diffusion, training, SSL, trusted-pair freeze, or Exp13.2-B authorization.
+- Evidence: `results/exp13_phase0_r1/20261024T100624Z/`; review and handoff: `docs/exp13_phase0_r1_audit_review.md` and `docs/exp13_phase0_r1_handoff.md`.

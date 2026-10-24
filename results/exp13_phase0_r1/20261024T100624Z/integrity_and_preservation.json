@@ -1,0 +1,28 @@
+{
+  "starting_head": "004c7b8cd513b03220e4e2fddb900f7667f2c906",
+  "branch": "exp13/vlm-semantic-audit",
+  "remote_head": "004c7b8cd513b03220e4e2fddb900f7667f2c906",
+  "manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "r0_artifact_sha256": {
+    "summary.json": "389731e99e0e154b9a76d43f5c29c463d102e0ba9c71270a1bd38b822769a4ac",
+    "source_geometry_audit.csv": "72c849cced1cc8593b60273c4eec5a25076428e0bcca117f55af1285928b6bae",
+    "class_source_distribution.csv": "c3ef0fd2c02a7236ee17c0c840c90d223290e9a8de54a26f708d15b14d123eef",
+    "fov_border_risk_audit.csv": "4ade7ef6589405d9a135ccdeda3eb8e0511c0d843a16b1c683f1b892aafb7e6e",
+    "roi_planning_audit.csv": "bebaf795cc0ec1c4006d1c805f6e4dd284d5de3618fb4a16385a5a714089377f",
+    "pilot_source_proposal.csv": "f4f94cad882c5220f28f74e07fb3c0fc8750cfc12a460fbcde79b83087691fb3",
+    "inference_budget_estimate.json": "e3e6bb378ccea9ddc6f53d7c4a00e219344131da7e95ec9415e1d23725d32406",
+    "environment_snapshot.json": "85af9b2a4c5327642e3926da9e30ca5ddedad4549d2d982c1028c82437868547",
+    "provenance.json": "8a7968e19f38e2695cad33b4d617b20c5fe935897ea0964881cdb67c0c9c63ce"
+  },
+  "raw_root": "/root/autodl-tmp/损伤训练数据集",
+  "frozen_root": "/root/autodl-tmp/borescope-new-seg-data/v1",
+  "raw_write": false,
+  "val_access": 0,
+  "test_access": 0,
+  "train_source_reads": 668,
+  "tracked_status_before_commit": "## exp13/vlm-semantic-audit...origin/exp13/vlm-semantic-audit\n?? results/exp13_phase0_r1/\n?? results/phaseC1_R2A_canonical_roi/\n?? results/phaseC1_distribution_audit/\n?? results/phaseC1_manual_review/\n?? results/phaseC1_preview/\n?? results/phaseC1_preview_generation/\n?? results/phaseC1_quality_review/\n?? results/phaseC1_repair_generation/\n?? tools/exp13_phase0_r1_audit.py\n?? tools/ssl/phaseC1_distribution_audit.py\n?? tools/ssl/phaseC1_preview_generation.py\n?? tools/ssl/phaseC1_r1_distribution_audit.py\n?? tools/ssl/phaseC1_r1_repair_generation.py",
+  "untracked_preservation": "all pre-existing untracked paths were left untouched",
+  "gpu": "NVIDIA GeForce RTX 3080 Ti, 12288 MiB, 1 MiB",
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "script_sha256": "9607a3543d997de9b277af258b97bf20947399b374bcee590af6944d9c33eb52"
+}

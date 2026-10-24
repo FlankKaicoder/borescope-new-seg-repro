@@ -1,0 +1,50 @@
+{
+  "counting_definition": "1 LOCAL_MODEL_CALL = one ROI inference at one strength; actual triggered calls are zero because no model ran",
+  "actual_candidate_pilot_calls": 54,
+  "smoke": {
+    "sources": [
+      "2",
+      "1"
+    ],
+    "roi_count": 2,
+    "calls": 4,
+    "cap": 4,
+    "multi_roi_source_policy": "one representative ROI only for smoke accounting"
+  },
+  "pilot": {
+    "sources": 21,
+    "rois": 27,
+    "calls": 54,
+    "source_strength_combinations": 42
+  },
+  "approved_revision": {
+    "calls": 16,
+    "formula": "2 categories x max observed ROI count per category x 1 revised prompt"
+  },
+  "production": {
+    "additional_sources": 79,
+    "mean_roi_source": 1.2634730538922156,
+    "p90_roi_source": 2.0,
+    "mean_calls": 200,
+    "p90_calls": 316
+  },
+  "retry": {
+    "sources": 10,
+    "calls": 10
+  },
+  "totals": {
+    "mean_case": 284,
+    "p90_case": 400,
+    "all_local_cap": 300,
+    "smoke_pilot_revision_cap": 120
+  },
+  "feasibility": {
+    "smoke_pilot_revision_mean": 74,
+    "smoke_pilot_revision_pass": true,
+    "mean_100_source_total_pass": true,
+    "p90_100_source_total_pass": false,
+    "source_cap_100_and_call_cap_300": "CONDITIONAL_FEASIBLE",
+    "minimum_100_source_calls": 226,
+    "note": "100 is a maximum source count; no difficult ROI is discarded to force the target"
+  }
+}
