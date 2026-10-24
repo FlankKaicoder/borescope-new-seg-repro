@@ -6,6 +6,7 @@
   "different_pixel_ratio_over_all_polygons": 1.0,
   "different_pixels": 294081,
   "normative_pixels_compared": 18603487,
+  "different_pixel_ratio_over_normative_pixels": 0.01580784290601004,
   "affected_sources": 668,
   "boundary_polygons": 118,
   "thin_crack_or_small_polygons": 97,
