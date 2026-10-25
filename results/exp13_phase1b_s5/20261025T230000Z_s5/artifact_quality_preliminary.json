@@ -1,0 +1,8 @@
+{
+  "semantic_quality": "PENDING_USER_VISUAL_REVIEW",
+  "formal_quality_pass": 0,
+  "training_pair_admission": "NOT_YET_FROZEN",
+  "candidate": "Crack:260",
+  "user_source_visual_acceptance": "PASS",
+  "interpretation_limit": "one source and one call cannot rank models or establish general success"
+}

@@ -1,0 +1,177 @@
+{
+  "environment": {
+    "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+    "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "diffusers": "0.35.1",
+    "transformers": "4.55.4",
+    "accelerate": "1.10.1",
+    "gpu_name": "NVIDIA GeForce RTX 3080 Ti",
+    "gpu_free_bytes_before_load": 12219580416,
+    "gpu_total_bytes": 12491292672,
+    "cpu_ram_bytes_available": 219214364672,
+    "gpu_preflight_threshold_bytes": 10737418240,
+    "cpu_ram_preflight_threshold_bytes": 17179869184
+  },
+  "model": {
+    "revision": "115134f363124c53c7d878647567d04daf26e41e",
+    "manifest_sha256": "a1a0302f7f8f9a0e2bf21e9b47a7757fd4e1ba9f246bf0c59bfcef1d5eb9607e",
+    "files_verified": 19,
+    "verified_bytes": 6941223330,
+    "files": [
+      {
+        "path": "model_index.json",
+        "bytes": 690,
+        "sha256": "308a792b15086bf89807b88729ef80d33d5b8264b14a96b57d2c92b5ab7f5a53"
+      },
+      {
+        "path": "README.md",
+        "bytes": 4861,
+        "sha256": "80f91748ac64a5f0a72d7b133fc6a2ff5291a35464ea341960b8c23ea59affa4"
+      },
+      {
+        "path": "scheduler/scheduler_config.json",
+        "bytes": 479,
+        "sha256": "a8e9a8517e8739938ea85819012bad195d41ccb3e11e2501cf196da64099b1f6"
+      },
+      {
+        "path": "text_encoder/config.json",
+        "bytes": 746,
+        "sha256": "46ae51fa8bde7817168d97faa0556cc0ac42ec0a7a53248bab4a52f8f5866f13"
+      },
+      {
+        "path": "text_encoder/model.fp16.safetensors",
+        "bytes": 246144867,
+        "sha256": "fc83cf401d930147807e7c44021c164bcc5508c9d4cc0ff35f4e354685ca9cd0"
+      },
+      {
+        "path": "text_encoder_2/config.json",
+        "bytes": 758,
+        "sha256": "fbcd3aad07a99e28d4c51550bd798903922083527ec69ad026f25699518af82d"
+      },
+      {
+        "path": "text_encoder_2/model.fp16.safetensors",
+        "bytes": 1389382884,
+        "sha256": "a8622bd41f8d359df484fdf9de091edb9337a2fd747f0a5c9c320a62e24d1fd3"
+      },
+      {
+        "path": "tokenizer/merges.txt",
+        "bytes": 524619,
+        "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a"
+      },
+      {
+        "path": "tokenizer/special_tokens_map.json",
+        "bytes": 472,
+        "sha256": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac"
+      },
+      {
+        "path": "tokenizer/tokenizer_config.json",
+        "bytes": 737,
+        "sha256": "19d7b034cb0cc3ce9766c2231373ab8aa8991fc72e2c8f76558bfaae3de0d563"
+      },
+      {
+        "path": "tokenizer/vocab.json",
+        "bytes": 1059962,
+        "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349"
+      },
+      {
+        "path": "tokenizer_2/merges.txt",
+        "bytes": 524619,
+        "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a"
+      },
+      {
+        "path": "tokenizer_2/special_tokens_map.json",
+        "bytes": 460,
+        "sha256": "f118ab3a983206e4f32583448de6bd6aae4ee21869135cef1f5848a753cdaab6"
+      },
+      {
+        "path": "tokenizer_2/tokenizer_config.json",
+        "bytes": 725,
+        "sha256": "c9d23941f76a41cbd50eda9290f57be7828f0a7a677939e9ef181f7e12bd1bdf"
+      },
+      {
+        "path": "tokenizer_2/vocab.json",
+        "bytes": 1059962,
+        "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349"
+      },
+      {
+        "path": "unet/config.json",
+        "bytes": 1932,
+        "sha256": "aaedf41fbcb29d2d8725241413b8525bd97005dea3f86d8056199469032537e9"
+      },
+      {
+        "path": "unet/diffusion_pytorch_model.fp16.safetensors",
+        "bytes": 5135178560,
+        "sha256": "6470840731e98cc16713ddf3ac7ee458c9fdbcb881a98c6727cd4a938f227d3f"
+      },
+      {
+        "path": "vae/config.json",
+        "bytes": 659,
+        "sha256": "b822341e6125efedebffb8e3f35e7288aab06bb4c49853d50a16964bf104a727"
+      },
+      {
+        "path": "vae/diffusion_pytorch_model.fp16.safetensors",
+        "bytes": 167335338,
+        "sha256": "4ad62825e5c8b31eefb77355ba6693785619bf7d669d9b1a6fd9f19dec6d65b3"
+      }
+    ]
+  },
+  "ledger": {
+    "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s2/20261025T055350Z_smoke/call_ledger.json",
+    "sha256": "0acecb19e0b050c7c2fb2b0c06aa4df5ffb4ec8a695863d01e830459130231bd",
+    "occupied_calls": 3,
+    "actual_calls": 3,
+    "remaining_smoke": 1,
+    "gpt_fallback_calls": 0,
+    "calls": {
+      "2:roi_0:s0.8": {
+        "call_id": "2:roi_0:s0.8",
+        "source_id": "2",
+        "roi_id": "roi_0",
+        "stage": "smoke",
+        "strength": 0.8,
+        "model_config_id": "exp13_phase1b_s2_sdxl_fp16_1024_s130500",
+        "retry": false,
+        "status": "SUCCEEDED",
+        "real_model_call": true,
+        "reserved_at": "2026-10-25T05:54:12.642744+00:00",
+        "started_at": "2026-10-25T05:54:12.661905+00:00",
+        "finished_at": "2026-10-25T05:54:26.186876+00:00"
+      },
+      "65:roi_0:s0.8": {
+        "call_id": "65:roi_0:s0.8",
+        "source_id": "65",
+        "roi_id": "roi_0",
+        "stage": "smoke",
+        "strength": 0.8,
+        "model_config_id": "exp13_phase1b_s2_sdxl_fp16_1024_s130500",
+        "retry": false,
+        "status": "SUCCEEDED",
+        "real_model_call": true,
+        "reserved_at": "2026-10-25T05:54:27.495962+00:00",
+        "started_at": "2026-10-25T05:54:27.509604+00:00",
+        "finished_at": "2026-10-25T05:54:39.018759+00:00"
+      },
+      "65:roi_1:s0.8": {
+        "call_id": "65:roi_1:s0.8",
+        "source_id": "65",
+        "roi_id": "roi_1",
+        "stage": "smoke",
+        "strength": 0.8,
+        "model_config_id": "exp13_phase1b_s2_sdxl_fp16_1024_s130500",
+        "retry": false,
+        "status": "SUCCEEDED",
+        "real_model_call": true,
+        "reserved_at": "2026-10-25T05:54:27.495992+00:00",
+        "started_at": "2026-10-25T05:54:39.578533+00:00",
+        "finished_at": "2026-10-25T05:54:50.021333+00:00"
+      }
+    }
+  },
+  "raw_data_write": 0,
+  "val_access": 0,
+  "test_access": 0,
+  "model_load": 0,
+  "inference_calls": 0
+}

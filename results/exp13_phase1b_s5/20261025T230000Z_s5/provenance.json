@@ -1,0 +1,13 @@
+{
+  "phase": "Exp13 Phase 1-B-S5",
+  "scope": "one TRAIN source, one SDXL call",
+  "source_id": "260",
+  "source_sha256": "222419556d6bd4761d6ec6c66102b6bd4775a1989d517eb4cc93f91ecf3c2bd2",
+  "s2_ledger": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s2/20261025T055350Z_smoke/call_ledger.json",
+  "s2_ledger_sha256": "0acecb19e0b050c7c2fb2b0c06aa4df5ffb4ec8a695863d01e830459130231bd",
+  "model_revision": "115134f363124c53c7d878647567d04daf26e41e",
+  "new_model_calls": 1,
+  "val_access": 0,
+  "test_access": 0,
+  "raw_data_write": 0
+}

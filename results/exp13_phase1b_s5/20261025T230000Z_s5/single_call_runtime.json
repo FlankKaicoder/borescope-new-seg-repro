@@ -1,0 +1,29 @@
+{
+  "call_id": "260:matched_center512:s0.8",
+  "status": "SUCCEEDED",
+  "elapsed_seconds": 12.756242112256587,
+  "input_size": [
+    1024,
+    1024
+  ],
+  "output_size": [
+    1024,
+    1024
+  ],
+  "output_shape_hwc": [
+    1024,
+    1024,
+    3
+  ],
+  "output_dtype": "uint8",
+  "mask_polarity": "white=redraw; black=preserve",
+  "mask_pixels_1024": 41472,
+  "changed_pixels_gt5_aligned_512": 75253,
+  "changed_pixels_gt5_inside_mask_512": 8518,
+  "changed_pixels_gt5_outside_mask_512": 66735,
+  "nan_inf": false,
+  "black_or_constant_output": false,
+  "gpu_peak_allocated_bytes": 5764813824,
+  "gpu_peak_reserved_bytes": 6247415808,
+  "model_revision": "115134f363124c53c7d878647567d04daf26e41e"
+}

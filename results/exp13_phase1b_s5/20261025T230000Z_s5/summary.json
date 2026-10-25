@@ -1,0 +1,42 @@
+{
+  "status": "EXP13_PHASE1B_S5_COMPLETED_PENDING_CHATGPT_GATE",
+  "label": "BOUNDED_SINGLE_SOURCE_INPUT_ALIGNMENT_STUDY",
+  "scope": "TRAIN-only; one Crack:260 source; one real SDXL call; no retry",
+  "source_id": "260",
+  "source_sha256": "222419556d6bd4761d6ec6c66102b6bd4775a1989d517eb4cc93f91ecf3c2bd2",
+  "model_revision": "115134f363124c53c7d878647567d04daf26e41e",
+  "model_load": "SUCCESS_OFFLINE",
+  "actual_new_model_calls": 1,
+  "budget": {
+    "occupied_calls": 4,
+    "actual_calls": 4,
+    "smoke_remaining": 0,
+    "retry_calls": 0,
+    "gpt_fallback_calls": 0
+  },
+  "runtime": {
+    "elapsed_seconds": 12.756242112256587,
+    "gpu_peak_allocated_bytes": 5764813824,
+    "gpu_peak_reserved_bytes": 6247415808
+  },
+  "input_alignment": {
+    "fov": "DreamShaper center fit 512 then SDXL LANCZOS 2x",
+    "mask": "same 512 mask then NEAREST 2x",
+    "reflect_padding": false,
+    "mask_2x_nearest_exact": true
+  },
+  "preservation": {
+    "raw_output_preserved": true,
+    "aligned_changed_gt5_outside_mask": 66735,
+    "protected_comparison_only": true,
+    "val_access": 0,
+    "test_access": 0,
+    "raw_data_write": 0
+  },
+  "quality": {
+    "semantic_quality": "PENDING_USER_VISUAL_REVIEW",
+    "formal_quality_pass": 0,
+    "training_pair_admission": "NOT_YET_FROZEN"
+  },
+  "interpretation_limit": "One source/call tests input-protocol compatibility only; it cannot rank models or establish general restoration success."
+}

@@ -1,0 +1,19 @@
+{
+  "overlay_id": "S5_USER_SOURCE_VISUAL_ACCEPTANCE_20261025",
+  "source_scope": {
+    "Crack": {
+      "86": "PASS",
+      "111": "PASS",
+      "146": "PASS",
+      "260": "PASS",
+      "470": "PASS"
+    },
+    "corrosion": {
+      "2": "PASS_CROP_SCOPED",
+      "8": "PASS_V2_PREFERRED_V1_REJECTED_HISTORY",
+      "13": "PASS_CROP_SCOPED"
+    }
+  },
+  "source": "USER_PROVIDED_S5_GATE",
+  "independent_training_pair_admission": "NOT_YET_FROZEN"
+}

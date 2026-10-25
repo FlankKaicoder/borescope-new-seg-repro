@@ -1,0 +1,10 @@
+{
+  "source_sha256": "222419556d6bd4761d6ec6c66102b6bd4775a1989d517eb4cc93f91ecf3c2bd2",
+  "raw_data_write": 0,
+  "val_access": 0,
+  "test_access": 0,
+  "outside_mask_changed_pixels_aligned_512": 66735,
+  "protected_comparison_only": true,
+  "raw_output_preserved": true,
+  "historical_outputs_untouched": true
+}

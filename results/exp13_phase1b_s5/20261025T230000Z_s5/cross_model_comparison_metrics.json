@@ -1,0 +1,84 @@
+{
+  "label": "BOUNDED_SINGLE_SOURCE_INPUT_ALIGNMENT_STUDY",
+  "same_fov_and_mask_content_not_identical_native_resolution": true,
+  "historical_outputs": {
+    "dreamshaper_v1": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_260_v1.png",
+    "dreamshaper_v2": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_260_v2.png"
+  },
+  "sdxl_raw_output": "sdxl_raw_output_1024.png",
+  "sdxl_aligned_output": "sdxl_aligned_512.png",
+  "sdxl_postprocess_label": "POSTPROCESS_COMPARISON_ONLY",
+  "metrics": {
+    "call_id": "260:matched_center512:s0.8",
+    "status": "SUCCEEDED",
+    "elapsed_seconds": 12.756242112256587,
+    "input_size": [
+      1024,
+      1024
+    ],
+    "output_size": [
+      1024,
+      1024
+    ],
+    "output_shape_hwc": [
+      1024,
+      1024,
+      3
+    ],
+    "output_dtype": "uint8",
+    "mask_polarity": "white=redraw; black=preserve",
+    "mask_pixels_1024": 41472,
+    "changed_pixels_gt5_aligned_512": 75253,
+    "changed_pixels_gt5_inside_mask_512": 8518,
+    "changed_pixels_gt5_outside_mask_512": 66735,
+    "nan_inf": false,
+    "black_or_constant_output": false,
+    "gpu_peak_allocated_bytes": 5764813824,
+    "gpu_peak_reserved_bytes": 6247415808,
+    "model_revision": "115134f363124c53c7d878647567d04daf26e41e"
+  },
+  "per_output_metrics": {
+    "dreamshaper_v1": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s5/20261025T230000Z_s5/dreamshaper_v1_512.png",
+      "size": [
+        512,
+        512
+      ],
+      "changed_pixels_gt5": 146712,
+      "changed_pixels_gt5_inside_mask": 8687,
+      "changed_pixels_gt5_outside_mask": 138025,
+      "mean_abs_rgb_delta": 5.555062611897786,
+      "max_abs_rgb_delta": 201
+    },
+    "dreamshaper_v2": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s5/20261025T230000Z_s5/dreamshaper_v2_512.png",
+      "size": [
+        512,
+        512
+      ],
+      "changed_pixels_gt5": 146087,
+      "changed_pixels_gt5_inside_mask": 8574,
+      "changed_pixels_gt5_outside_mask": 137513,
+      "mean_abs_rgb_delta": 5.530975341796875,
+      "max_abs_rgb_delta": 194
+    },
+    "sdxl_aligned_512": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s5/20261025T230000Z_s5/sdxl_aligned_512.png",
+      "size": [
+        512,
+        512
+      ],
+      "changed_pixels_gt5": 75253,
+      "changed_pixels_gt5_inside_mask": 8518,
+      "changed_pixels_gt5_outside_mask": 66735,
+      "mean_abs_rgb_delta": 3.5609423319498696,
+      "max_abs_rgb_delta": 117
+    },
+    "protocol": {
+      "label": "BOUNDED_SINGLE_SOURCE_INPUT_ALIGNMENT_STUDY",
+      "same_fov_and_mask_content_not_identical_native_resolution": true,
+      "postprocess_label": "POSTPROCESS_COMPARISON_ONLY",
+      "no_model_ranking": true
+    }
+  }
+}

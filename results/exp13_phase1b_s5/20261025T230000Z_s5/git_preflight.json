@@ -1,0 +1,7 @@
+{
+  "branch": "exp13/vlm-semantic-audit",
+  "head": "787a3be0190dfa9b11c5416a5b686a6bae4598d9",
+  "expected_start_head": "10f189938ef61572deb002056439ee0e2dcd7059",
+  "remote_check_deferred_to_host": true,
+  "historical_untracked_assets_preserved": true
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PREFLIGHT_PASS_MODEL_NOT_LOADED",
+  "source_id": "260",
+  "source_sha256": "222419556d6bd4761d6ec6c66102b6bd4775a1989d517eb4cc93f91ecf3c2bd2",
+  "config": {
+    "model_id": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+    "revision": "115134f363124c53c7d878647567d04daf26e41e",
+    "resolution": [
+      1024,
+      1024
+    ],
+    "precision": "float16",
+    "steps": 20,
+    "guidance_scale": 7.5,
+    "strength": 0.8,
+    "seed": 130500,
+    "prompt": "restore a clean, uniform normal metallic borescope surface; preserve realistic metal texture and lighting",
+    "negative_prompt": null,
+    "input_protocol": "historical DreamShaper center ImageOps.fit 512 then LANCZOS 2x",
+    "mask_protocol": "historical 3px MaxFilter + GaussianBlur(sigma=1.0), fit NEAREST, 2x NEAREST",
+    "padding": "none",
+    "mask_polarity": "white=redraw, black=preserve",
+    "cpu_offload": true,
+    "vae_tiling": true,
+    "vae_slicing": true
+  },
+  "user_source_visual_acceptance": "PASS",
+  "training_pair_geometry_and_quality_admission": "NOT_YET_FROZEN",
+  "label": "BOUNDED_SINGLE_SOURCE_INPUT_ALIGNMENT_STUDY"
+}

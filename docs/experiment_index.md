@@ -227,3 +227,9 @@ TRAIN-only CPU audit indexes all 88 historical candidates (40 R1, 48 R2 diagnost
 `EXP13_2_A4_TARGETED_QUALITY_EVIDENCE_PREPARED_PENDING_CHATGPT_GATE`. [Review](exp13_2_a4_targeted_quality_review.md); [handoff](exp13_2_a4_handoff.md); evidence `results/exp13_2_a4_targeted_quality/20261025T221500Z_a4/`.
 
 CPU-only evidence covers five shortlist variants from three source groups; no semantic PASS or trusted pair is created. The source-2 DreamShaper/SDXL comparison is labeled `CROSS_PROTOCOL_CASE_STUDY_NOT_MODEL_RANKING`; actual source hashes differ and the persisted S2 mask/native dimensions are not directly comparable. The 16/16 corrected decision crosswalk preserves historical labels. S2 remains 3/4 with one slot held; no model calls, training, VAL/TEST access or raw writes occurred. Industrial review PNGs/ZIP remain controlled on AutoDL and are excluded from Git.
+
+## Exp13 Phase 1-B-S5 matched-input SDXL single-call study (2026-10-25)
+
+`EXP13_PHASE1B_S5_COMPLETED_PENDING_CHATGPT_GATE`. [Review](exp13_phase1b_s5_matched_input_review.md); [handoff](exp13_phase1b_s5_handoff.md); evidence `results/exp13_phase1b_s5/20261025T230000Z_s5/`.
+
+One TRAIN source (`Crack:260`) used the historical DreamShaper center crop and reconstructed mask as a fixed 1024 SDXL input, with no reflect padding. The one authorized call succeeded under the inherited successor ledger (4/4 occupied, 0 remaining). The raw aligned output has 66,735 >5 changes outside the mask; semantic quality and training-pair admission remain pending/zero. This is a bounded input-protocol study and not model ranking; controlled review images remain on AutoDL and are excluded from Git.

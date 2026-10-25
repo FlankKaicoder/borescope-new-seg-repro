@@ -279,3 +279,10 @@ Prepared only historical TRAIN R1 Crack86/260 and corrosion2/8 v1/v2: 8 candidat
 - CPU-only TRAIN audit covered five preliminary shortlist variants from three source groups. Pixel-level crop/mask/output evidence and controlled review sheets were created without model loading, generation, training, VAL/TEST access or raw-data writes; semantic restoration quality and trusted-pair admission remain zero.
 - The corrected crosswalk reconciles all 16 A3 decisions to the immutable Batch 01/02 overlays with 16/16 decision labels preserved. The source-2 cross-protocol case study is explicitly non-ranking; actual DreamShaper and S2 source hashes differ (`514d...bc03` vs `4993...44c44`) and S2 mask/native dimensions are not directly comparable.
 - S2 ledger remains 3/4 occupied with one Smoke slot held; this phase added zero model calls. Controlled five-sheet ZIP remains outside Git on AutoDL. See [A4 review](exp13_2_a4_targeted_quality_review.md), [handoff](exp13_2_a4_handoff.md), and `results/exp13_2_a4_targeted_quality/20261025T221500Z_a4/`.
+
+### Exp13 Phase 1-B-S5 matched-input SDXL single-call study (2026-10-25)
+
+- Status: `EXP13_PHASE1B_S5_COMPLETED_PENDING_CHATGPT_GATE`; one TRAIN-only source (`Crack:260`) and one authorized SDXL call.
+- The historical DreamShaper center crop and exact reconstructed 512 mask were reused, enlarged to 1024 without reflect padding, and processed by the pinned offline SDXL model. The model loaded and the call succeeded; the inherited successor ledger ends at 4/4 occupied/actual calls with zero Smoke calls remaining.
+- The raw aligned output changed 66,735 pixels outside the mask at threshold >5. Therefore semantic quality remains pending, formal quality PASS is 0, and trusted-pair admission is 0. DreamShaper comparisons are CPU-only and explicitly non-ranking.
+- No VAL/TEST access, raw-data writes, Pilot, SSL, YOLO or further inference occurred. See [S5 review](exp13_phase1b_s5_matched_input_review.md), [handoff](exp13_phase1b_s5_handoff.md), and `results/exp13_phase1b_s5/20261025T230000Z_s5/`.

@@ -1,0 +1,140 @@
+{
+  "raw_path": "/root/autodl-tmp/损伤训练数据集/260.png",
+  "source_meta": {
+    "row": {
+      "image_path": "260.png",
+      "json_path": "260.json",
+      "stem": "260",
+      "split": "train",
+      "group_id": "singleton_260",
+      "sha256": "222419556d6bd4761d6ec6c66102b6bd4775a1989d517eb4cc93f91ecf3c2bd2",
+      "labels_present": "Crack",
+      "instance_count": "1",
+      "near_duplicate_group_id": "",
+      "source_status": "matched_authoritative",
+      "annotation_version": "2026.8.3.0",
+      "image_suffix": ".png",
+      "image_width": "720",
+      "image_height": "540",
+      "json_sha256": "cc1147fadda327791890229b515b5b8aa1456729ba3dd9b52c42dbe767474344",
+      "label_path": "labels_all/260.txt",
+      "label_sha256": "e2b248f273fa84567d211d096e3b7df2d1c89b20680bf1e90f44ae1fc4230d42"
+    },
+    "json_path": "/root/autodl-tmp/损伤训练数据集/260.json",
+    "json_sha256": "cc1147fadda327791890229b515b5b8aa1456729ba3dd9b52c42dbe767474344"
+  },
+  "points_xy": [
+    [
+      338.8321167883212,
+      233.50364963503648
+    ],
+    [
+      316.68613138686135,
+      243.68613138686135
+    ],
+    [
+      330.68613138686135,
+      261.68613138686135
+    ],
+    [
+      326.68613138686135,
+      296.68613138686135
+    ],
+    [
+      313.68613138686135,
+      325.68613138686135
+    ],
+    [
+      327.68613138686135,
+      358.68613138686135
+    ],
+    [
+      294.68613138686135,
+      373.68613138686135
+    ],
+    [
+      286.68613138686135,
+      397.68613138686135
+    ],
+    [
+      292.68613138686135,
+      420.68613138686135
+    ],
+    [
+      278.68613138686135,
+      442.68613138686135
+    ],
+    [
+      195.68613138686135,
+      455.68613138686135
+    ],
+    [
+      191.68613138686135,
+      473.68613138686135
+    ],
+    [
+      294.68613138686135,
+      446.68613138686135
+    ],
+    [
+      307.68613138686135,
+      414.68613138686135
+    ],
+    [
+      307.68613138686135,
+      406.68613138686135
+    ],
+    [
+      359.68613138686135,
+      372.68613138686135
+    ],
+    [
+      337.68613138686135,
+      351.68613138686135
+    ],
+    [
+      343.68613138686135,
+      321.68613138686135
+    ],
+    [
+      340.68613138686135,
+      304.68613138686135
+    ],
+    [
+      353.68613138686135,
+      282.68613138686135
+    ]
+  ],
+  "native_size": [
+    720,
+    540
+  ],
+  "native_sha256": "222419556d6bd4761d6ec6c66102b6bd4775a1989d517eb4cc93f91ecf3c2bd2",
+  "historical_input_sha256": "222419556d6bd4761d6ec6c66102b6bd4775a1989d517eb4cc93f91ecf3c2bd2",
+  "historical_original_mask_sha256": "c406fad5dfaf983b69872d1836032483184a2dbca3bc17ad156665f96f9e302e",
+  "historical_inpaint_mask_sha256": "34a461f8db28b2cc9a955a01682904f2061183b8d415990e24ca9cbda578a1c5",
+  "reconstructed_original_mask_sha256": "006ccaa1db440570d98cfc1d963d6e35af7d4a0f9c7378a143fe3acec9927bc0",
+  "reconstructed_inpaint_mask_sha256": "5fdd1071fd54198d6c3c2a171ec8bc85681863796586d12d81dbc62507cd84f5",
+  "original_mask_pixel_equal_historical": true,
+  "inpaint_mask_pixel_equal_historical": true,
+  "crop_xyxy": [
+    90,
+    0,
+    630,
+    540
+  ],
+  "crop_description": "ImageOps.fit center crop [90,0,630,540] from 720x540",
+  "common_rgb_512_sha256": "c5dbb991dfd28a3911b0c4d05f02ffb62ef5696c0dcc6028f8c839fa54d0b108",
+  "common_mask_512_sha256": "862fd09af676925a2843c5b8ff05f438e3bd2e048e5de0748450edcd7ed237d5",
+  "sdxl_input_1024_sha256": "32071c7385f1dae25846b3f4d607d790188a8111580cea0a096a905e471e11b6",
+  "sdxl_mask_1024_sha256": "eaadb771c648808477b594e4cb8605f86340f8f2781cf9c0db8dd36e54701877",
+  "common_mask_512_pixels": 10368,
+  "sdxl_mask_1024_pixels": 41472,
+  "mask_2x_nearest_exact": true,
+  "same_fov_and_mask_content_not_identical_native_resolution": true,
+  "ui_fov_review": {
+    "status": "PASS_BOUNDED_USER_SOURCE_ACCEPTANCE",
+    "basis": "USER_SOURCE_VISUAL_ACCEPTANCE=PASS for Crack 260; this is not pair admission",
+    "automatic_ui_detector": "NOT_USED"
+  }
+}

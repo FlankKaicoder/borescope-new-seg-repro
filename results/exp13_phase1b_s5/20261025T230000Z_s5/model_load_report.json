@@ -1,0 +1,12 @@
+{
+  "attempted": true,
+  "success": true,
+  "revision": "115134f363124c53c7d878647567d04daf26e41e",
+  "local_path": "/root/autodl-tmp/models_staging/exp13_phase1b_r3_20261025T042354Z/sdxl-inpainting-0.1",
+  "local_files_only": true,
+  "load_seconds": 0.9047077996656299,
+  "pipeline_class": "StableDiffusionXLInpaintPipeline",
+  "cpu_offload": true,
+  "vae_tiling": true,
+  "vae_slicing": true
+}

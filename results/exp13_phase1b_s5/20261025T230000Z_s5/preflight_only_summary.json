@@ -1,0 +1,13 @@
+{
+  "status": "EXP13_PHASE1B_S5_PREFLIGHT_PASS",
+  "model_load": 0,
+  "inference_calls": 0,
+  "source_id": "260",
+  "model_files": 19,
+  "verified_model_bytes": 6941223330,
+  "source_sha256": "222419556d6bd4761d6ec6c66102b6bd4775a1989d517eb4cc93f91ecf3c2bd2",
+  "ledger_remaining_smoke": 1,
+  "val_access": 0,
+  "test_access": 0,
+  "raw_data_write": 0
+}
