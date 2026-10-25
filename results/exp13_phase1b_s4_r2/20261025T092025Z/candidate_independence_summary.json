@@ -1,0 +1,17 @@
+{
+  "status": "AUDITED_NOT_PROVEN_INDEPENDENT_PHYSICAL_SAMPLES",
+  "candidate_count": 26,
+  "unique_source_ids": 26,
+  "unique_image_sha256": 26,
+  "unique_annotation_sha256": 26,
+  "exact_image_hash_collisions": {},
+  "exact_annotation_hash_collisions": {},
+  "near_duplicate_proxy_pair_count": 0,
+  "near_duplicate_proxy_pairs": [],
+  "independence_statement": "Different files and source IDs are verified; independent physical scenes/parts are NOT proven by this audit.",
+  "recommended_future_admission": [
+    "retain source-level grouping",
+    "require capture metadata or expert scene labels before treating groups as independent",
+    "do not count correlated variants or possibly related scenes as independent training evidence"
+  ]
+}

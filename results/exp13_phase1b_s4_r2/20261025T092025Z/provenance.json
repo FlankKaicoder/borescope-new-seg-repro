@@ -1,0 +1,14 @@
+{
+  "status": "TRAIN_ONLY_CPU",
+  "script_sha256": "93df7fb82c5997e9048658cca9cc317f512d3cf5d1cf8495b76be98edbd85a7e",
+  "s4r1_run": "20261025T171500Z_s4r1",
+  "raw_root": "/root/autodl-tmp/损伤训练数据集",
+  "source_manifest": "strict26_candidate_manifest.json",
+  "s4_csv_sha256": "5bbf0eb4a4af99eb934d6108bcd95329a03706e25b776b266664c19fac745ed9",
+  "model_load": 0,
+  "model_calls": 0,
+  "val_access": 0,
+  "test_access": 0,
+  "raw_dataset_write": 0,
+  "visual_source": "CHATGPT_PRELIMINARY_VISUAL_REVIEW"
+}

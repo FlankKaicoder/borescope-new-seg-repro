@@ -209,3 +209,9 @@ TRAIN-only CPU screening found 1,266 polygons/668 images, with 816 geometry-prox
 `EXP13_PHASE1B_S4_R1_STRICT26_REVIEW_PREPARED_PENDING_CHATGPT_GATE`. [Review preparation](exp13_phase1b_s4_r1_strict_review_preparation.md); [handoff](exp13_phase1b_s4_r1_handoff.md); evidence `results/exp13_phase1b_s4_r1/20261025T171500Z_s4r1/`.
 
 The strict predicate was independently reapplied and geometry hashes rebuilt: 26 polygons / 26 independent TRAIN sources (Material missing 14, Burn 8, corrosion 4), with zero overlap against the original 20-sheet packet. AutoDL contains 26 CPU-only review sheets, a category overview, pending template and a 16,536,565-byte ZIP (SHA256 `a29af7cd862ad3fe433dcaf2ea068216d95ca909208848a2af13df51a1f2bd3f`). No candidate is restoration-eligible; S2 budget remains 3/4 and no model or training action occurred.
+
+## Exp13 Phase 1-B-S4-R2 visual review archival and candidate independence audit (2026-10-25)
+
+`EXP13_PHASE1B_S4_R2_COMPLETED_PENDING_CHATGPT_GATE`. [Review](exp13_phase1b_s4_r2_review.md); [handoff](exp13_phase1b_s4_r2_handoff.md); evidence `results/exp13_phase1b_s4_r2/20261025T092025Z/`.
+
+The 26 S4-R1 review images are archived as `CHATGPT_PRELIMINARY_VISUAL_REVIEW`: 24 are not recommended for the current compact ROI text-only SDXL protocol, while 285/378 remain method-design review only; formal restoration eligibility and trusted pairs remain zero. CPU/TRAIN-only source audit verified 26 unique source/image/annotation hashes, no exact collisions and 325 pairwise records; exploratory near-duplicate proxy pairs were zero, but physical scene independence is unproven. Current SDXL is held, DreamShaper is audit-only, and classical CPU texture repair is only a separately authorized control. S2 remains 3/4 with one Smoke call unused; no model, VAL/TEST, raw write, Pilot, SSL or training action occurred.

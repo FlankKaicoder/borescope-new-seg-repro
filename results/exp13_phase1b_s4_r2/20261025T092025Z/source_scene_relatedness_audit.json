@@ -1,0 +1,366 @@
+{
+  "status": "TRAIN_ONLY_CPU_PROXY_AUDIT",
+  "candidate_count": 26,
+  "source_count": 26,
+  "pair_count": 325,
+  "group_assessments": {
+    "leaf_notch_dark_cavity": {
+      "source_ids": [
+        "639",
+        "641",
+        "650",
+        "653",
+        "676",
+        "688",
+        "695",
+        "701",
+        "702",
+        "707",
+        "728",
+        "740"
+      ],
+      "candidate_count": 12,
+      "pair_summary": {
+        "pair_count": 66,
+        "near_duplicate_proxy_count": 0,
+        "metrics": {
+          "normalized_gray_cosine": {
+            "min": -0.19781652092933655,
+            "mean": 0.2579178621509169,
+            "max": 0.903681755065918
+          },
+          "normalized_gray_rmse": {
+            "min": 0.4389035701751709,
+            "mean": 1.1805308560530345,
+            "max": 1.5477831363677979
+          },
+          "ahash_hamming_256": {
+            "min": 10,
+            "mean": 81.43939393939394,
+            "max": 134
+          },
+          "dhash_hamming_256": {
+            "min": 16,
+            "mean": 75.34848484848484,
+            "max": 120
+          },
+          "color_hist_intersection": {
+            "min": 2.349943161010742,
+            "mean": 2.582666772784609,
+            "max": 2.9280872344970703
+          },
+          "roi_center_distance_normalized": {
+            "min": 0.006077273482770842,
+            "mean": 0.1503185875402661,
+            "max": 0.3739887267320786
+          },
+          "polygon_area_ratio": {
+            "min": 0.5990034441015986,
+            "mean": 0.8642908075109295,
+            "max": 0.9976165701108097
+          }
+        },
+        "highest_gray_cosine_pair": {
+          "candidate_a": "639:roi_0",
+          "candidate_b": "701:roi_0",
+          "source_ids_distinct": true,
+          "image_sha256_equal": false,
+          "annotation_sha256_equal": false,
+          "normalized_gray_cosine": 0.903681755065918,
+          "normalized_gray_rmse": 0.4389035701751709,
+          "ahash_hamming_256": 10,
+          "dhash_hamming_256": 18,
+          "color_hist_intersection": 2.9280872344970703,
+          "roi_center_distance_normalized": 0.012228983489647929,
+          "polygon_area_ratio": 0.9789859188872767,
+          "native_dimensions_equal": true,
+          "near_duplicate_proxy": false
+        }
+      },
+      "visual_review_source": "CHATGPT_PRELIMINARY_VISUAL_REVIEW",
+      "physical_part_identity": "UNKNOWN_REQUIRES_METADATA_OR_EXPERT_EVIDENCE"
+    },
+    "sheet_burn_or_spall": {
+      "source_ids": [
+        "559",
+        "618",
+        "623",
+        "627"
+      ],
+      "candidate_count": 4,
+      "pair_summary": {
+        "pair_count": 6,
+        "near_duplicate_proxy_count": 0,
+        "metrics": {
+          "normalized_gray_cosine": {
+            "min": 0.2444171905517578,
+            "mean": 0.4037931064764659,
+            "max": 0.7146493792533875
+          },
+          "normalized_gray_rmse": {
+            "min": 0.7554476261138916,
+            "mean": 1.0798258384068806,
+            "max": 1.2292946577072144
+          },
+          "ahash_hamming_256": {
+            "min": 62,
+            "mean": 76.5,
+            "max": 91
+          },
+          "dhash_hamming_256": {
+            "min": 115,
+            "mean": 132.5,
+            "max": 152
+          },
+          "color_hist_intersection": {
+            "min": 2.1865625381469727,
+            "mean": 2.4248618682225547,
+            "max": 2.7071714401245117
+          },
+          "roi_center_distance_normalized": {
+            "min": 0.1590630267824599,
+            "mean": 0.26442843114163755,
+            "max": 0.43486031264343467
+          },
+          "polygon_area_ratio": {
+            "min": 0.17000425708325934,
+            "mean": 0.4299793492683816,
+            "max": 0.7056016361777572
+          }
+        },
+        "highest_gray_cosine_pair": {
+          "candidate_a": "559:roi_1",
+          "candidate_b": "627:roi_0",
+          "source_ids_distinct": true,
+          "image_sha256_equal": false,
+          "annotation_sha256_equal": false,
+          "normalized_gray_cosine": 0.7146493792533875,
+          "normalized_gray_rmse": 0.7554476261138916,
+          "ahash_hamming_256": 62,
+          "dhash_hamming_256": 152,
+          "color_hist_intersection": 2.318337917327881,
+          "roi_center_distance_normalized": 0.1590630267824599,
+          "polygon_area_ratio": 0.40647183062101,
+          "native_dimensions_equal": true,
+          "near_duplicate_proxy": false
+        }
+      },
+      "visual_review_source": "CHATGPT_PRELIMINARY_VISUAL_REVIEW",
+      "physical_part_identity": "UNKNOWN_REQUIRES_METADATA_OR_EXPERT_EVIDENCE"
+    },
+    "round_mechanical_burn": {
+      "source_ids": [
+        "115",
+        "276",
+        "367"
+      ],
+      "candidate_count": 3,
+      "pair_summary": {
+        "pair_count": 3,
+        "near_duplicate_proxy_count": 0,
+        "metrics": {
+          "normalized_gray_cosine": {
+            "min": -0.17923423647880554,
+            "mean": 0.06434026857217152,
+            "max": 0.20418816804885864
+          },
+          "normalized_gray_rmse": {
+            "min": 1.2615954875946045,
+            "mean": 1.3624117771784465,
+            "max": 1.5357304811477661
+          },
+          "ahash_hamming_256": {
+            "min": 92,
+            "mean": 113.33333333333333,
+            "max": 141
+          },
+          "dhash_hamming_256": {
+            "min": 115,
+            "mean": 121.33333333333333,
+            "max": 133
+          },
+          "color_hist_intersection": {
+            "min": 1.8389480113983154,
+            "mean": 2.1564102172851562,
+            "max": 2.6785569190979004
+          },
+          "roi_center_distance_normalized": {
+            "min": 0.07422763307788864,
+            "mean": 0.1667402171591976,
+            "max": 0.24643723341597026
+          },
+          "polygon_area_ratio": {
+            "min": 0.6035191244739929,
+            "mean": 0.7199745670868177,
+            "max": 0.8238057661823994
+          }
+        },
+        "highest_gray_cosine_pair": {
+          "candidate_a": "276:roi_0",
+          "candidate_b": "367:roi_0",
+          "source_ids_distinct": true,
+          "image_sha256_equal": false,
+          "annotation_sha256_equal": false,
+          "normalized_gray_cosine": 0.20418816804885864,
+          "normalized_gray_rmse": 1.2615954875946045,
+          "ahash_hamming_256": 107,
+          "dhash_hamming_256": 116,
+          "color_hist_intersection": 1.951725721359253,
+          "roi_center_distance_normalized": 0.24643723341597026,
+          "polygon_area_ratio": 0.8238057661823994,
+          "native_dimensions_equal": true,
+          "near_duplicate_proxy": false
+        }
+      },
+      "visual_review_source": "CHATGPT_PRELIMINARY_VISUAL_REVIEW",
+      "physical_part_identity": "UNKNOWN_REQUIRES_METADATA_OR_EXPERT_EVIDENCE"
+    },
+    "method_design_review_only": {
+      "source_ids": [
+        "285",
+        "378"
+      ],
+      "candidate_count": 2,
+      "pair_summary": {
+        "pair_count": 1,
+        "near_duplicate_proxy_count": 0,
+        "metrics": {
+          "normalized_gray_cosine": {
+            "min": 0.41200321912765503,
+            "mean": 0.41200321912765503,
+            "max": 0.41200321912765503
+          },
+          "normalized_gray_rmse": {
+            "min": 1.0844322443008423,
+            "mean": 1.0844322443008423,
+            "max": 1.0844322443008423
+          },
+          "ahash_hamming_256": {
+            "min": 85,
+            "mean": 85.0,
+            "max": 85
+          },
+          "dhash_hamming_256": {
+            "min": 129,
+            "mean": 129.0,
+            "max": 129
+          },
+          "color_hist_intersection": {
+            "min": 2.2630615234375,
+            "mean": 2.2630615234375,
+            "max": 2.2630615234375
+          },
+          "roi_center_distance_normalized": {
+            "min": 0.13714882507685217,
+            "mean": 0.13714882507685217,
+            "max": 0.13714882507685217
+          },
+          "polygon_area_ratio": {
+            "min": 0.7605611233675643,
+            "mean": 0.7605611233675643,
+            "max": 0.7605611233675643
+          }
+        },
+        "highest_gray_cosine_pair": {
+          "candidate_a": "285:roi_0",
+          "candidate_b": "378:roi_0",
+          "source_ids_distinct": true,
+          "image_sha256_equal": false,
+          "annotation_sha256_equal": false,
+          "normalized_gray_cosine": 0.41200321912765503,
+          "normalized_gray_rmse": 1.0844322443008423,
+          "ahash_hamming_256": 85,
+          "dhash_hamming_256": 129,
+          "color_hist_intersection": 2.2630615234375,
+          "roi_center_distance_normalized": 0.13714882507685217,
+          "polygon_area_ratio": 0.7605611233675643,
+          "native_dimensions_equal": false,
+          "near_duplicate_proxy": false
+        }
+      },
+      "visual_review_source": "CHATGPT_PRELIMINARY_VISUAL_REVIEW",
+      "physical_part_identity": "UNKNOWN_REQUIRES_METADATA_OR_EXPERT_EVIDENCE"
+    }
+  },
+  "all_pair_summary": {
+    "pair_count": 325,
+    "near_duplicate_proxy_count": 0,
+    "metrics": {
+      "normalized_gray_cosine": {
+        "min": -0.5130788087844849,
+        "mean": 0.13580374745025228,
+        "max": 0.903681755065918
+      },
+      "normalized_gray_rmse": {
+        "min": 0.4389035701751709,
+        "mean": 1.294993916291457,
+        "max": 1.7395853996276855
+      },
+      "ahash_hamming_256": {
+        "min": 10,
+        "mean": 109.86153846153846,
+        "max": 186
+      },
+      "dhash_hamming_256": {
+        "min": 16,
+        "mean": 114.03384615384616,
+        "max": 185
+      },
+      "color_hist_intersection": {
+        "min": 1.270767331123352,
+        "mean": 2.2805162866298967,
+        "max": 2.9280872344970703
+      },
+      "roi_center_distance_normalized": {
+        "min": 0.006077273482770842,
+        "mean": 0.20233989048034867,
+        "max": 0.5182954891493303
+      },
+      "polygon_area_ratio": {
+        "min": 0.04861647667488884,
+        "mean": 0.5853657043116124,
+        "max": 0.9988624835719656
+      }
+    },
+    "highest_gray_cosine_pair": {
+      "candidate_a": "639:roi_0",
+      "candidate_b": "701:roi_0",
+      "source_ids_distinct": true,
+      "image_sha256_equal": false,
+      "annotation_sha256_equal": false,
+      "normalized_gray_cosine": 0.903681755065918,
+      "normalized_gray_rmse": 0.4389035701751709,
+      "ahash_hamming_256": 10,
+      "dhash_hamming_256": 18,
+      "color_hist_intersection": 2.9280872344970703,
+      "roi_center_distance_normalized": 0.012228983489647929,
+      "polygon_area_ratio": 0.9789859188872767,
+      "native_dimensions_equal": true,
+      "near_duplicate_proxy": false
+    }
+  },
+  "near_duplicate_proxy_definition": "normalized gray cosine >=0.98 AND aHash Hamming <=8 AND dHash Hamming <=24; exploratory only, not identity proof",
+  "near_duplicate_proxy_pairs": [],
+  "metadata_evidence": {
+    "file_extensions": {
+      ".png": 10,
+      ".jpg": 16
+    },
+    "dimensions": {
+      "720x540": 9,
+      "640x480": 1,
+      "960x720": 4,
+      "880x600": 12
+    },
+    "exif_nonempty_count": 0,
+    "known_capture_metadata": "NOT_PRESENT_IN_FROZEN_MANIFEST_OR_FILE_EXIF"
+  },
+  "physical_scene_conclusion": "IMAGE_AND_ROI_SIMILARITY_CAN_SUPPORT_RELATED_SCENE_HYPOTHESES_ONLY; SAME_PART_OR_SAME_PHYSICAL_DEFECT_IS_UNRESOLVED",
+  "unknowns": [
+    "camera/time/sequence metadata",
+    "physical part identity",
+    "whether repeated morphology is same defect or recurring geometry",
+    "capture order and viewpoint trajectory"
+  ],
+  "no_split_change": true
+}

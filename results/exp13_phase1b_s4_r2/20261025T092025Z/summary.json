@@ -1,0 +1,16 @@
+{
+  "status": "EXP13_PHASE1B_S4_R2_COMPLETED_PENDING_CHATGPT_GATE",
+  "candidate_count": 26,
+  "source_count": 26,
+  "visual_review_viewed": 26,
+  "compact_roi_sdxl_not_recommended": 24,
+  "method_design_review_only": [
+    "285:roi_0",
+    "378:roi_0"
+  ],
+  "formal_restoration_eligible": 0,
+  "near_duplicate_proxy_pairs": 0,
+  "same_physical_part_proven": false,
+  "new_inference": 0,
+  "smoke_remaining": 1
+}

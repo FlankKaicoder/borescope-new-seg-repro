@@ -1,0 +1,74 @@
+{
+  "status": "ANALYSIS_ONLY_NO_NEW_EXPERIMENT",
+  "evidence_basis": [
+    "S2: three TRAIN-only SDXL ROI calls completed; engineering paste/outside-support checks passed but source 2 black rectangle and source 65 small-ROI dark/implausible output failed semantic quality.",
+    "S3: source 2 artifact and source 65 roi_1 darkening first appear in persisted raw SDXL Canvas output; input UI/FOV/structure contamination, reflect padding and small-information ROI risks recorded.",
+    "S4/S4-R1: geometry proxies and strict 26 review packet do not establish semantic restoration eligibility; all decisions remain pending and formal eligible count is zero.",
+    "Historical DreamShaper R1/R2: 88 generated candidates from 20 source groups, designed for defect-variant generation rather than a complete pseudo-normal repair protocol; variants are correlated and no trusted-pair freeze exists."
+  ],
+  "routes": {
+    "A_current_sdxl_compact_roi_text_only": {
+      "recommendation": "HOLD_NO_GO_FOR_CURRENT_PROTOCOL",
+      "applicability_boundary": [
+        "texture-like local defect entirely inside continuous normal metal",
+        "no UI/FOV/overlay or physical structure boundary in full context",
+        "sufficient native information and moderate scale/padding",
+        "mask/context and raw Canvas artifact checks pass"
+      ],
+      "go_conditions": [
+        "RESTORATION_ELIGIBILITY_GATE PASS for each source/ROI",
+        "single controlled geometry/context repair is specified",
+        "raw Canvas output and native return both pass artifact audit",
+        "independent human review accepts semantics; no training admission by engineering checks alone"
+      ],
+      "hold_conditions": [
+        "any UI/FOV/structure ambiguity",
+        "reflect-padding dominates useful context",
+        "defect crosses a physical boundary or requires geometry inference",
+        "raw output artifact or darkening recurs"
+      ],
+      "new_experiment_executed": false
+    },
+    "B_historical_dreamshaper_reuse": {
+      "recommendation": "HOLD_AUDIT_ONLY_NO_DIRECT_TRAINING_REUSE",
+      "facts": [
+        "88 R1/R2 candidates",
+        "20 source groups",
+        "Crack/corrosion historical task",
+        "defect-variant generation objective, not complete pseudo-normal repair"
+      ],
+      "go_conditions": [
+        "per-candidate source/mask/output provenance and full-defect coverage verified",
+        "formal human quality review records background preservation, defect removal and no hallucination",
+        "source-level independence and split policy are explicit",
+        "separate admission Gate freezes only reviewed candidates"
+      ],
+      "no_go_conditions": [
+        "using historical visual acceptance as automatic trusted-pair admission",
+        "mixing correlated variants as independent samples",
+        "including cropped-away defect regions or unresolved semantic failures"
+      ],
+      "new_experiment_executed": false
+    },
+    "C_classical_cpu_texture_repair_control": {
+      "recommendation": "CONDITIONALLY_WORTH_A_SEPARATE_CPU_CONTROL_ONLY",
+      "applicability_boundary": [
+        "small texture-like spot on continuous metal",
+        "ample normal reference around the mask",
+        "no missing geometry, UI/FOV, seam or structural boundary",
+        "deterministic method and fixed mask with unchanged source provenance"
+      ],
+      "go_conditions": [
+        "a separate authorization and source selection review",
+        "leave-one-region-out reference policy prevents copying the defect",
+        "native-space seam and outside-support checks pass",
+        "human review remains separate from geometric pass"
+      ],
+      "no_go_conditions": [
+        "large missing geometry, cross-boundary damage, insufficient reference, or claim that CPU output is trusted training data"
+      ],
+      "new_experiment_executed": false
+    }
+  },
+  "next_stage": "WAIT_FOR_CHATGPT_GATE_AND_FORMAL_REVIEW; NO_AUTOMATIC_GENERATION_OR_TRAINING"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ZERO_NEW_INFERENCE",
+  "inherited_ledger": "results/exp13_phase1b_s2/20261025T055350Z_smoke/call_ledger.json",
+  "actual_calls": 3,
+  "occupied_calls": 3,
+  "smoke_remaining": 1,
+  "new_model_load": 0,
+  "new_inference": 0,
+  "gpt_fallback": 0,
+  "val_access": 0,
+  "test_access": 0,
+  "raw_dataset_write": 0,
+  "ssl_training": 0,
+  "yolo_training": 0,
+  "ledger_reset": false
+}

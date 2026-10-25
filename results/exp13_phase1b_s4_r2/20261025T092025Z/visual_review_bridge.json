@@ -1,0 +1,59 @@
+{
+  "source": "CHATGPT_PRELIMINARY_VISUAL_REVIEW",
+  "status": "PRELIMINARY_NOT_USER_FORMAL_ACCEPTANCE_NOT_INDUSTRIAL_EXPERT_SIGNOFF",
+  "reviewed_count": 26,
+  "current_compact_roi_text_only_sdxl_not_recommended_count": 24,
+  "method_design_review_only": [
+    "285:roi_0",
+    "378:roi_0"
+  ],
+  "formal_restoration_eligible_pass_count": 0,
+  "trusted_pseudo_normal_pair_count": 0,
+  "risk_groups": {
+    "leaf_notch_dark_cavity": [
+      "639:roi_0",
+      "641:roi_0",
+      "650:roi_0",
+      "653:roi_0",
+      "676:roi_0",
+      "688:roi_0",
+      "695:roi_0",
+      "701:roi_0",
+      "702:roi_0",
+      "707:roi_0",
+      "728:roi_0",
+      "740:roi_0"
+    ],
+    "sheet_burn_or_spall": [
+      "559:roi_1",
+      "618:roi_1",
+      "623:roi_3",
+      "627:roi_0"
+    ],
+    "round_mechanical_burn": [
+      "115:roi_0",
+      "276:roi_0",
+      "367:roi_0"
+    ],
+    "method_design_review_only": [
+      "285:roi_0",
+      "378:roi_0"
+    ]
+  },
+  "risk_group_notes": {
+    "leaf_notch_dark_cavity": "Visually similar leaf notches and dark cavities; possible related capture scene. Scene/part identity is unresolved.",
+    "sheet_burn_or_spall": "Visually similar sheet-like burn or spall regions; possible related scene or defect morphology.",
+    "round_mechanical_burn": "Similar round mechanical-structure burn appearance; 367 mask reportedly covers normal mechanical structure and requires a dedicated note.",
+    "method_design_review_only": "Worth method-design review only; no restoration eligibility PASS."
+  },
+  "other_strict_candidates_preserve_risks": [
+    "68:roi_1",
+    "84:roi_0",
+    "123:roi_1",
+    "170:roi_0",
+    "302:roi_0"
+  ],
+  "unknown_group_source_ids": [],
+  "codex_independent_visual_validation": false,
+  "no_historical_manifest_or_selection_modified": true
+}
