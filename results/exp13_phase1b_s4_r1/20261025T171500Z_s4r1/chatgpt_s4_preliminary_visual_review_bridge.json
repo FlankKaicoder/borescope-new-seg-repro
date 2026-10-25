@@ -1,0 +1,34 @@
+{
+  "source": "CHATGPT_PRELIMINARY_VISUAL_REVIEW_FROM_USER_UPLOADED_S4_CONTACT_SHEETS",
+  "status": "PRELIMINARY_NOT_FORMAL_ACCEPTANCE",
+  "reviewed_original_count": 20,
+  "further_structural_review": [
+    "488:roi_0",
+    "470:roi_0"
+  ],
+  "future_cpu_control": [
+    "624:roi_3",
+    "359:roi_3",
+    "584:roi_4",
+    "633:roi_5"
+  ],
+  "current_compact_roi_sdxl_unsuitable": [
+    "862:roi_0",
+    "316:roi_1",
+    "822:roi_0",
+    "459:roi_0",
+    "985:roi_0",
+    "18:roi_0",
+    "815:roi_0",
+    "465:roi_0",
+    "7:roi_8",
+    "101:roi_0",
+    "899:roi_0",
+    "769:roi_0",
+    "796:roi_0",
+    "448:roi_0"
+  ],
+  "formal_restoration_eligible": 0,
+  "codex_independent_visual_validation": false,
+  "server_zip_assumed": false
+}

@@ -1,0 +1,17 @@
+{
+  "status": "EXP13_PHASE1B_S4_R1_STRICT26_REVIEW_PREPARED_PENDING_CHATGPT_GATE",
+  "strict_polygons": 26,
+  "strict_sources": 26,
+  "class_counts": {
+    "corrosion": 4,
+    "Material missing": 14,
+    "Burn": 8
+  },
+  "original20_intersection": 0,
+  "contact_sheets": 26,
+  "zip_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4_r1/20261025T171500Z_s4r1/strict26_review_package/exp13_s4_r1_strict26_review.zip",
+  "zip_size_bytes": 16536565,
+  "zip_sha256": "a29af7cd862ad3fe433dcaf2ea068216d95ca909208848a2af13df51a1f2bd3f",
+  "restoration_eligible": 0,
+  "new_inference": 0
+}

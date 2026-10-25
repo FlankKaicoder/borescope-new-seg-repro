@@ -249,3 +249,10 @@ Prepared only historical TRAIN R1 Crack86/260 and corrosion2/8 v1/v2: 8 candidat
   - Exploratory sensitivity: `scale<=4x` plus valid Canvas content `>=75%` leaves 26 polygons/26 sources; `scale<=8x` plus content `>=75%` leaves 116/110. These are engineering filters, not validated science thresholds.
   - Full-context UI/FOV, normal-metal continuity, physical-boundary and padding/mirror risks remain human review requirements. S2 connected components were added as a new CPU addendum without rewriting S3. Route B is suitable only as a separate deterministic CPU control; no pseudo-normal training data is approved.
   - See [S4 review](exp13_phase1b_s4_eligibility_review.md), [handoff](exp13_phase1b_s4_handoff.md), and `results/exp13_phase1b_s4/20261025T075800Z/`. No fourth Smoke, Pilot, pair freeze, SSL or training is authorized.
+
+### Exp13 Phase 1-B-S4-R1 strict candidate review preparation (2026-10-25)
+
+- Status: `EXP13_PHASE1B_S4_R1_STRICT26_REVIEW_PREPARED_PENDING_CHATGPT_GATE`.
+- The persisted S4 screening CSV and threshold-sensitivity evidence were independently recomputed. Strict conditions (`train`, geometry eligible, scale <=4, Canvas content >=75%, native short side >=16, unclamped, edge distance >=24px, no support overlap) yield exactly 26 polygons from 26 independent sources: Material missing 14, Burn 8 and corrosion 4. Rebuilt Phase 0-R1 polygon/support hashes match all 26 records.
+- The strict set has zero intersection with the original S4 20-sheet packet. A complete 26-sheet CPU review package, category overview, pending CSV and ZIP is on controlled AutoDL under `results/exp13_phase1b_s4_r1/20261025T171500Z_s4r1/strict26_review_package/`; industrial PNG/ZIP assets are not committed.
+- UI/FOV, normal-metal continuity, physical boundaries and semantic restoration remain human-review requirements; formal restoration eligibility and selection remain zero/null. S2 remains 3/4 calls with one slot unused; new model load/inference, VAL/TEST, raw writes, SSL and YOLO training remain zero.

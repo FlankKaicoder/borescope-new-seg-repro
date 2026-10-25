@@ -1,0 +1,41 @@
+{
+  "status": "READ_ONLY_ID_HASH_OVERLAP",
+  "strict_source_ids": [
+    "68",
+    "84",
+    "115",
+    "123",
+    "170",
+    "276",
+    "285",
+    "302",
+    "367",
+    "378",
+    "559",
+    "618",
+    "623",
+    "627",
+    "639",
+    "641",
+    "650",
+    "653",
+    "676",
+    "688",
+    "695",
+    "701",
+    "702",
+    "707",
+    "728",
+    "740"
+  ],
+  "historical_manifests_checked": [
+    "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_120819/manifests/pilot_manifest.csv",
+    "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_120819/manifests/seed_manifest.csv",
+    "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/manifests/pilot_manifest.csv",
+    "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/manifests/seed_manifest.csv",
+    "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_pilot/run_20260921_124440/review_assets/source_variant_manifest.csv"
+  ],
+  "overlaps": [],
+  "no_historical_variant_selected": true,
+  "no_visual_acceptance_upgraded": true
+}

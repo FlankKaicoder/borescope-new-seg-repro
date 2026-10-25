@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "source_csv": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_screening.csv",
+  "threshold_sensitivity": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/eligibility_threshold_sensitivity.json",
+  "threshold_evidence_match": true,
+  "geometry_hash_mismatches": [],
+  "conditions": {
+    "split": "train",
+    "geometry_status": "GEOMETRY_ELIGIBLE",
+    "scale_max": 4.0,
+    "content_fraction_min": 0.75,
+    "native_short_side_min": 16,
+    "roi_clamped": false,
+    "edge_distance_min": 24.0,
+    "support_overlap": false
+  },
+  "strict_count": 26,
+  "strict_source_count": 26,
+  "class_counts": {
+    "corrosion": 4,
+    "Material missing": 14,
+    "Burn": 8
+  },
+  "rejection_reason_counts": {
+    "SCALE_GT_4": 957,
+    "CONTENT_FRACTION_LT_0_75": 594,
+    "GEOMETRY_NOT_ELIGIBLE": 450,
+    "ROI_CLAMPED": 327,
+    "EDGE_DISTANCE_LT_24": 365,
+    "SUPPORT_OVERLAP": 156
+  }
+}

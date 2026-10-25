@@ -203,3 +203,9 @@ CPU-only comparisons of existing S2 source 2/65 Canvas, mask, inverse and paste 
 | Exp13 Phase 1-B-S4 | RESTORATION_ELIGIBILITY_PREPARED_AWAITING_HUMAN_REVIEW | [Eligibility review](exp13_phase1b_s4_eligibility_review.md); [handoff](exp13_phase1b_s4_handoff.md); `results/exp13_phase1b_s4/20261025T075800Z/` |
 
 TRAIN-only CPU screening found 1,266 polygons/668 images, with 816 geometry-proxy polygons from 530 sources. Twenty contact sheets cover all seven labels and 20 distinct sources, but no candidate is restoration-eligible before full-context human review. At `scale<=4x` and Canvas content `>=75%`, 26 polygons/26 sources remain. S2 connected-component precision was added without rewriting S3. No model load, inference, fourth Smoke call, VAL/TEST access, raw write, Pilot or training occurred.
+
+## Exp13 Phase 1-B-S4-R1 strict candidate review preparation (2026-10-25)
+
+`EXP13_PHASE1B_S4_R1_STRICT26_REVIEW_PREPARED_PENDING_CHATGPT_GATE`. [Review preparation](exp13_phase1b_s4_r1_strict_review_preparation.md); [handoff](exp13_phase1b_s4_r1_handoff.md); evidence `results/exp13_phase1b_s4_r1/20261025T171500Z_s4r1/`.
+
+The strict predicate was independently reapplied and geometry hashes rebuilt: 26 polygons / 26 independent TRAIN sources (Material missing 14, Burn 8, corrosion 4), with zero overlap against the original 20-sheet packet. AutoDL contains 26 CPU-only review sheets, a category overview, pending template and a 16,536,565-byte ZIP (SHA256 `a29af7cd862ad3fe433dcaf2ea068216d95ca909208848a2af13df51a1f2bd3f`). No candidate is restoration-eligible; S2 budget remains 3/4 and no model or training action occurred.

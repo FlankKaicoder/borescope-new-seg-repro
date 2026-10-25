@@ -1,0 +1,14 @@
+{
+  "status": "CPU_TRAIN_ONLY",
+  "script_sha256": "0b8f69ce253c9fd82dffd1fa904ea9e0b1d610a4597efe579662aaf1aff8164d",
+  "s4_run": "20261025T075800Z",
+  "s4_csv_sha256": "5bbf0eb4a4af99eb934d6108bcd95329a03706e25b776b266664c19fac745ed9",
+  "frozen_manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "raw_root": "/root/autodl-tmp/损伤训练数据集",
+  "strict_conditions": "recomputed from persisted S4 CSV; geometry hashes recomputed in sheet generation",
+  "model_load": 0,
+  "model_calls": 0,
+  "val_access": 0,
+  "test_access": 0,
+  "raw_dataset_write": 0
+}
