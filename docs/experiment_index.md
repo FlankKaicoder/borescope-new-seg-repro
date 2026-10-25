@@ -181,3 +181,9 @@ All 19 server-side files match the supplied Windows manifest by size and SHA256;
 `EXP13_PHASE1B_S1_HOLD`. [Review](exp13_phase1b_s1_smoke_review.md); [handoff](exp13_phase1b_s1_handoff.md); [evidence](../results/exp13_phase1b_s1/20261025T044024Z/summary.json).
 
 Stopped before model load because source 17 ROI1 reaches the image's right edge and overlaps unresolved FOV/frame/overlay content. Both authorized sources are required, so source 2 was not run alone. Local model hashes pass the supplied R3 manifest; GPU model load/inference and budget reservations remain zero. The input-only contact sheet is retained on AutoDL, not in Git.
+
+## Exp13 Phase 1-B-S2 safe source reselection and SDXL Smoke (2026-10-25)
+
+`EXP13_PHASE1B_S2_COMPLETED_PENDING_CHATGPT_GATE`. [Review](exp13_phase1b_s2_smoke_review.md); [handoff](exp13_phase1b_s2_handoff.md); [summary](../results/exp13_phase1b_s2/20261025T055350Z_smoke/summary.json); [ledger](../results/exp13_phase1b_s2/20261025T055350Z_smoke/call_ledger.json).
+
+Three real TRAIN-only ROI calls ran for source 2 and dual-ROI source 65 using pinned offline SDXL. Native geometry, paste-back, and immutable outside-support checks passed; 3/4 Smoke calls are occupied. Semantic quality failed: source 2 has a black rectangular artifact and source 65's small ROI is dark/implausible. Neither is an approved pseudo-normal sample. The candidate audit's null selection and malformed process exit-code capture remain explicit audit limitations. Stop for ChatGPT review; no Pilot or training is authorized.

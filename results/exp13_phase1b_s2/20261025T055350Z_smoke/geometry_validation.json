@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "source_2": {
+    "native_shape_hwc": [480, 640, 3],
+    "native_dtype": "uint8",
+    "changed_pixels": 3134,
+    "edit_support_pixels": 3135,
+    "outside_support_changed_pixels": 0,
+    "overlap_pixels": 0,
+    "order_independent": true,
+    "background_immutable": true
+  },
+  "source_65": {
+    "native_shape_hwc": [540, 720, 3],
+    "native_dtype": "uint8",
+    "changed_pixels": 9419,
+    "edit_support_union_pixels": 9428,
+    "outside_support_changed_pixels": 0,
+    "overlap_pixels": 0,
+    "order_independent": true,
+    "background_immutable": true
+  }
+}

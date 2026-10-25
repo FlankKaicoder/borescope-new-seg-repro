@@ -1,0 +1,309 @@
+{
+  "train_manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "sources": [
+    {
+      "source_id": "2",
+      "split": "train",
+      "image_path": "2.png",
+      "annotation_path": "2.json",
+      "image_sha256": "514d07947ee5ff2d3ac8e160ac58a28bb159ed2549105e4998eaed4b0ba4bc03",
+      "annotation_sha256": "e4fa956d8ae736e4e851dde5fcf66e16faf2bf87deb284c81039da3e5621717a",
+      "native_shape_hwc": [
+        480,
+        640,
+        3
+      ],
+      "native_dtype": "uint8",
+      "rois": [
+        {
+          "source_id": "2",
+          "roi_id": "roi_0",
+          "class_name": "corrosion",
+          "points_xy": [
+            [
+              158.0,
+              112.0
+            ],
+            [
+              138.0,
+              110.0
+            ],
+            [
+              127.0,
+              112.0
+            ],
+            [
+              66.0,
+              111.0
+            ],
+            [
+              64.0,
+              107.0
+            ],
+            [
+              52.0,
+              100.0
+            ],
+            [
+              50.0,
+              82.0
+            ],
+            [
+              53.0,
+              77.0
+            ],
+            [
+              46.0,
+              69.0
+            ],
+            [
+              43.0,
+              71.0
+            ],
+            [
+              40.0,
+              64.0
+            ],
+            [
+              53.0,
+              64.0
+            ],
+            [
+              59.0,
+              68.0
+            ],
+            [
+              62.0,
+              74.0
+            ],
+            [
+              69.0,
+              78.0
+            ],
+            [
+              93.0,
+              78.0
+            ],
+            [
+              101.0,
+              83.0
+            ],
+            [
+              118.0,
+              101.0
+            ],
+            [
+              121.0,
+              99.0
+            ],
+            [
+              126.0,
+              104.0
+            ],
+            [
+              131.0,
+              101.0
+            ],
+            [
+              135.0,
+              102.0
+            ],
+            [
+              135.0,
+              106.0
+            ],
+            [
+              138.0,
+              109.0
+            ],
+            [
+              143.0,
+              106.0
+            ],
+            [
+              159.0,
+              109.0
+            ]
+          ],
+          "polygon_mask_sha256": "ff94041bce6b68941bb1ebc0cc6d36d243bb30cb1b6d2767b912f4edc519bdc2",
+          "edit_support_sha256": "f78ce836654ba6e3d7ee0b3c9163deb00c4255238c324b6dad2bc175585af59f",
+          "polygon_pixels": 2394,
+          "edit_support_pixels": 3135,
+          "roi_box_xyxy": [
+            24,
+            48,
+            176,
+            129
+          ],
+          "transform": {
+            "native_width": 152,
+            "native_height": 81,
+            "canvas_size": 1024,
+            "scale": 6.7368421052631575,
+            "resized_width": 1024,
+            "resized_height": 546,
+            "pad_left": 0,
+            "pad_top": 239,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        }
+      ]
+    },
+    {
+      "source_id": "65",
+      "split": "train",
+      "image_path": "65.png",
+      "annotation_path": "65.json",
+      "image_sha256": "d784438e2b8ac660fa76fc53e9c16192e9dad0a39a3d5d37d278b53f32d7a684",
+      "annotation_sha256": "1f1d80f90167c23bd3cdbdfaf0cb3ad8b6979bb2cfbbb05a09bde382686c20f4",
+      "native_shape_hwc": [
+        540,
+        720,
+        3
+      ],
+      "native_dtype": "uint8",
+      "rois": [
+        {
+          "source_id": "65",
+          "roi_id": "roi_0",
+          "class_name": "corrosion",
+          "points_xy": [
+            [
+              155.03968253968256,
+              177.14285714285714
+            ],
+            [
+              167.00793650793653,
+              197.36507936507937
+            ],
+            [
+              207.00793650793653,
+              200.36507936507937
+            ],
+            [
+              292.0079365079365,
+              216.36507936507937
+            ],
+            [
+              329.0079365079365,
+              228.36507936507937
+            ],
+            [
+              387.0079365079365,
+              243.36507936507937
+            ],
+            [
+              505.0079365079365,
+              242.36507936507937
+            ],
+            [
+              574.0079365079365,
+              244.36507936507937
+            ],
+            [
+              557.0079365079365,
+              228.36507936507937
+            ],
+            [
+              499.0079365079365,
+              230.36507936507937
+            ],
+            [
+              371.0079365079365,
+              216.36507936507937
+            ],
+            [
+              208.00793650793653,
+              191.36507936507937
+            ]
+          ],
+          "polygon_mask_sha256": "1924f675bbb14cc05bf5c22698cfaf91095e906720397729ed589d3e75db2928",
+          "edit_support_sha256": "5868071f158567de4ea994de9c422018cfa02a97aaad467e54a220fb171a3411",
+          "polygon_pixels": 6427,
+          "edit_support_pixels": 8407,
+          "roi_box_xyxy": [
+            139,
+            161,
+            592,
+            262
+          ],
+          "transform": {
+            "native_width": 453,
+            "native_height": 101,
+            "canvas_size": 1024,
+            "scale": 2.260485651214128,
+            "resized_width": 1024,
+            "resized_height": 228,
+            "pad_left": 0,
+            "pad_top": 398,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        },
+        {
+          "source_id": "65",
+          "roi_id": "roi_1",
+          "class_name": "Material missing",
+          "points_xy": [
+            [
+              582.4206349206349,
+              215.23809523809524
+            ],
+            [
+              576.0079365079365,
+              228.36507936507937
+            ],
+            [
+              583.0079365079365,
+              239.36507936507937
+            ],
+            [
+              606.0079365079365,
+              244.36507936507937
+            ],
+            [
+              608.0079365079365,
+              232.36507936507937
+            ],
+            [
+              607.0079365079365,
+              216.36507936507937
+            ]
+          ],
+          "polygon_mask_sha256": "160c96f28cb5b0fc7a54c32955d21e7f85b411f19f56ee1105c31b60f79acc01",
+          "edit_support_sha256": "208240d96124626f41076885a213e05d06586b58cd2ee229d5498888ecc0807f",
+          "polygon_pixels": 753,
+          "edit_support_pixels": 1021,
+          "roi_box_xyxy": [
+            560,
+            199,
+            626,
+            262
+          ],
+          "transform": {
+            "native_width": 66,
+            "native_height": 63,
+            "canvas_size": 1024,
+            "scale": 15.515151515151516,
+            "resized_width": 1024,
+            "resized_height": 977,
+            "pad_left": 0,
+            "pad_top": 23,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        }
+      ]
+    }
+  ],
+  "val_access": 0,
+  "test_access": 0,
+  "raw_data_write": 0
+}

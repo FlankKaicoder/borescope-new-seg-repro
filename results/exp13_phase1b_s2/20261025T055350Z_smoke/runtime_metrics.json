@@ -1,0 +1,155 @@
+{
+  "calls": [
+    {
+      "call_id": "2:roi_0:s0.8",
+      "source_id": "2",
+      "roi_id": "roi_0",
+      "input_size": [
+        1024,
+        1024
+      ],
+      "mask_size": [
+        1024,
+        1024
+      ],
+      "mask_white_pixels": 142196,
+      "mask_black_pixels": 906380,
+      "mask_polarity": "white=redraw; black=preserve",
+      "native_roi_xyxy": [
+        24,
+        48,
+        176,
+        129
+      ],
+      "status": "SUCCEEDED",
+      "elapsed_seconds": 13.489039616659284,
+      "output_canvas_size": [
+        1024,
+        1024
+      ],
+      "output_native_roi_shape_hwc": [
+        81,
+        152,
+        3
+      ],
+      "output_native_roi_dtype": "uint8",
+      "raw_model_roi_changed_pixels_before_support_clip": 12260,
+      "raw_model_roi_changes_outside_native_support_clipped": 9126,
+      "native_support_pixels": 3135,
+      "native_support_changed_pixels": 3134,
+      "nan_inf": false,
+      "black_or_constant_output": false,
+      "gpu_peak_allocated_bytes": 5764813824,
+      "gpu_peak_reserved_bytes": 6247415808
+    },
+    {
+      "call_id": "65:roi_0:s0.8",
+      "source_id": "65",
+      "roi_id": "roi_0",
+      "input_size": [
+        1024,
+        1024
+      ],
+      "mask_size": [
+        1024,
+        1024
+      ],
+      "mask_white_pixels": 42944,
+      "mask_black_pixels": 1005632,
+      "mask_polarity": "white=redraw; black=preserve",
+      "native_roi_xyxy": [
+        139,
+        161,
+        592,
+        262
+      ],
+      "status": "SUCCEEDED",
+      "elapsed_seconds": 11.472820865921676,
+      "output_canvas_size": [
+        1024,
+        1024
+      ],
+      "output_native_roi_shape_hwc": [
+        101,
+        453,
+        3
+      ],
+      "output_native_roi_dtype": "uint8",
+      "raw_model_roi_changed_pixels_before_support_clip": 45603,
+      "raw_model_roi_changes_outside_native_support_clipped": 37205,
+      "native_support_pixels": 8407,
+      "native_support_changed_pixels": 8398,
+      "nan_inf": false,
+      "black_or_constant_output": false,
+      "gpu_peak_allocated_bytes": 5764813824,
+      "gpu_peak_reserved_bytes": 6247415808
+    },
+    {
+      "call_id": "65:roi_1:s0.8",
+      "source_id": "65",
+      "roi_id": "roi_1",
+      "input_size": [
+        1024,
+        1024
+      ],
+      "mask_size": [
+        1024,
+        1024
+      ],
+      "mask_white_pixels": 245962,
+      "mask_black_pixels": 802614,
+      "mask_polarity": "white=redraw; black=preserve",
+      "native_roi_xyxy": [
+        560,
+        199,
+        626,
+        262
+      ],
+      "status": "SUCCEEDED",
+      "elapsed_seconds": 10.39963505603373,
+      "output_canvas_size": [
+        1024,
+        1024
+      ],
+      "output_native_roi_shape_hwc": [
+        63,
+        66,
+        3
+      ],
+      "output_native_roi_dtype": "uint8",
+      "raw_model_roi_changed_pixels_before_support_clip": 3906,
+      "raw_model_roi_changes_outside_native_support_clipped": 2885,
+      "native_support_pixels": 1021,
+      "native_support_changed_pixels": 1021,
+      "nan_inf": false,
+      "black_or_constant_output": false,
+      "gpu_peak_allocated_bytes": 5764813824,
+      "gpu_peak_reserved_bytes": 6247415808
+    }
+  ],
+  "summary": [
+    {
+      "source_id": "2",
+      "roi_id": "roi_0",
+      "elapsed_seconds": 13.489039616659284,
+      "gpu_peak_allocated_bytes": 5764813824,
+      "gpu_peak_reserved_bytes": 6247415808
+    },
+    {
+      "source_id": "65",
+      "roi_id": "roi_0",
+      "elapsed_seconds": 11.472820865921676,
+      "gpu_peak_allocated_bytes": 5764813824,
+      "gpu_peak_reserved_bytes": 6247415808
+    },
+    {
+      "source_id": "65",
+      "roi_id": "roi_1",
+      "elapsed_seconds": 10.39963505603373,
+      "gpu_peak_allocated_bytes": 5764813824,
+      "gpu_peak_reserved_bytes": 6247415808
+    }
+  ],
+  "gpu_peak_allocated_bytes": 5764813824,
+  "gpu_peak_reserved_bytes": 6247415808
+}

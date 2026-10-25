@@ -1,0 +1,61 @@
+{
+  "experiment": "Exp13 Phase 1-B-S2",
+  "run_id": "20261025T055350Z_smoke",
+  "status": "EXP13_PHASE1B_S2_COMPLETED_PENDING_CHATGPT_GATE",
+  "branch": "exp13/vlm-semantic-audit",
+  "execution_head": "787a3be0190dfa9b11c5416a5b686a6bae4598d9",
+  "train_manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "model_id": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+  "model_revision": "115134f363124c53c7d878647567d04daf26e41e",
+  "model_files_verified": 19,
+  "model_bytes_verified": 6941223330,
+  "model_manifest_sha256": "a1a0302f7f8f9a0e2bf21e9b47a7757fd4e1ba9f246bf0c59bfcef1d5eb9607e",
+  "sources": [
+    {
+      "source_id": "2",
+      "split": "train",
+      "image_sha256": "514d07947ee5ff2d3ac8e160ac58a28bb159ed2549105e4998eaed4b0ba4bc03",
+      "annotation_sha256": "e4fa956d8ae736e4e851dde5fcf66e16faf2bf87deb284c81039da3e5621717a",
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "box_xyxy": [24, 48, 176, 129],
+          "polygon_mask_sha256": "ff94041bce6b68941bb1ebc0cc6d36d243bb30cb1b6d2767b912f4edc519bdc2",
+          "edit_support_sha256": "f78ce836654ba6e3d7ee0b3c9163deb00c4255238c324b6dad2bc175585af59f"
+        }
+      ]
+    },
+    {
+      "source_id": "65",
+      "split": "train",
+      "image_sha256": "d784438e2b8ac660fa76fc53e9c16192e9dad0a39a3d5d37d278b53f32d7a684",
+      "annotation_sha256": "1f1d80f90167c23bd3cdbdfaf0cb3ad8b6979bb2cfbbb05a09bde382686c20f4",
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "box_xyxy": [139, 161, 592, 262],
+          "polygon_mask_sha256": "1924f675bbb14cc05bf5c22698cfaf91095e906720397729ed589d3e75db2928",
+          "edit_support_sha256": "5868071f158567de4ea994de9c422018cfa02a97aaad467e54a220fb171a3411"
+        },
+        {
+          "roi_id": "roi_1",
+          "box_xyxy": [560, 199, 626, 262],
+          "polygon_mask_sha256": "160c96f28cb5b0fc7a54c32955d21e7f85b411f19f56ee1105c31b60f79acc01",
+          "edit_support_sha256": "208240d96124626f41076885a213e05d06586b58cd2ee229d5498888ecc0807f"
+        }
+      ]
+    }
+  ],
+  "calls": 3,
+  "smoke_call_cap": 4,
+  "retry_calls": 0,
+  "val_access": 0,
+  "test_access": 0,
+  "raw_data_write": 0,
+  "ssl_training": 0,
+  "yolo_training": 0,
+  "gpt_fallback": 0,
+  "generated_images_committed": false,
+  "model_weights_committed": false,
+  "exit_code_capture": "invalid/malformed; no exit code asserted"
+}

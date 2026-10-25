@@ -1,0 +1,136 @@
+{
+  "schema_version": 2,
+  "definition": "one LOCAL_MODEL_CALL = one ROI, one strength, one actual inference; every non-cancelled reservation occupies budget",
+  "planned_calls": 3,
+  "actual_calls": 3,
+  "occupied_calls": 3,
+  "retry_calls": 0,
+  "gpt_fallback_calls": 0,
+  "smoke_reserved": 3,
+  "staged_reserved": 3,
+  "caps": {
+    "smoke": 4,
+    "smoke_pilot_revision": 120,
+    "all_local": 300,
+    "unique_sources": 100,
+    "retry_sources": 10,
+    "gpt_fallback": 14
+  },
+  "production_sources": [
+    "2",
+    "65"
+  ],
+  "retry_sources": [],
+  "calls": {
+    "2:roi_0:s0.8": {
+      "call_id": "2:roi_0:s0.8",
+      "source_id": "2",
+      "roi_id": "roi_0",
+      "stage": "smoke",
+      "strength": 0.8,
+      "model_config_id": "exp13_phase1b_s2_sdxl_fp16_1024_s130500",
+      "retry": false,
+      "status": "SUCCEEDED",
+      "real_model_call": true,
+      "reserved_at": "2026-10-25T05:54:12.642744+00:00",
+      "started_at": "2026-10-25T05:54:12.661905+00:00",
+      "finished_at": "2026-10-25T05:54:26.186876+00:00"
+    },
+    "65:roi_0:s0.8": {
+      "call_id": "65:roi_0:s0.8",
+      "source_id": "65",
+      "roi_id": "roi_0",
+      "stage": "smoke",
+      "strength": 0.8,
+      "model_config_id": "exp13_phase1b_s2_sdxl_fp16_1024_s130500",
+      "retry": false,
+      "status": "SUCCEEDED",
+      "real_model_call": true,
+      "reserved_at": "2026-10-25T05:54:27.495962+00:00",
+      "started_at": "2026-10-25T05:54:27.509604+00:00",
+      "finished_at": "2026-10-25T05:54:39.018759+00:00"
+    },
+    "65:roi_1:s0.8": {
+      "call_id": "65:roi_1:s0.8",
+      "source_id": "65",
+      "roi_id": "roi_1",
+      "stage": "smoke",
+      "strength": 0.8,
+      "model_config_id": "exp13_phase1b_s2_sdxl_fp16_1024_s130500",
+      "retry": false,
+      "status": "SUCCEEDED",
+      "real_model_call": true,
+      "reserved_at": "2026-10-25T05:54:27.495992+00:00",
+      "started_at": "2026-10-25T05:54:39.578533+00:00",
+      "finished_at": "2026-10-25T05:54:50.021333+00:00"
+    }
+  },
+  "history": [
+    {
+      "event": "MIGRATED_FROM_S1_ZERO_OCCUPANCY",
+      "source_ledger": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s1/20261025T044024Z/call_ledger.json",
+      "verified_actual_calls": 0,
+      "verified_occupied_calls": 0,
+      "timestamp": "2026-10-25T05:54:11.631237+00:00"
+    },
+    {
+      "event": "RESERVED",
+      "call_id": "2:roi_0:s0.8",
+      "status": "RESERVED",
+      "occupied_calls_after": 1
+    },
+    {
+      "event": "STARTED",
+      "call_id": "2:roi_0:s0.8",
+      "status": "STARTED"
+    },
+    {
+      "event": "SUCCEEDED",
+      "call_id": "2:roi_0:s0.8",
+      "status": "SUCCEEDED",
+      "error": null
+    },
+    {
+      "event": "RESERVED",
+      "call_id": "65:roi_0:s0.8",
+      "status": "RESERVED",
+      "occupied_calls_after": 2
+    },
+    {
+      "event": "RESERVED",
+      "call_id": "65:roi_1:s0.8",
+      "status": "RESERVED",
+      "occupied_calls_after": 3
+    },
+    {
+      "event": "STARTED",
+      "call_id": "65:roi_0:s0.8",
+      "status": "STARTED"
+    },
+    {
+      "event": "SUCCEEDED",
+      "call_id": "65:roi_0:s0.8",
+      "status": "SUCCEEDED",
+      "error": null
+    },
+    {
+      "event": "STARTED",
+      "call_id": "65:roi_1:s0.8",
+      "status": "STARTED"
+    },
+    {
+      "event": "SUCCEEDED",
+      "call_id": "65:roi_1:s0.8",
+      "status": "SUCCEEDED",
+      "error": null
+    }
+  ],
+  "remaining": {
+    "all_local": 297,
+    "smoke_pilot_revision": 117,
+    "smoke": 1,
+    "unique_sources": 98,
+    "retry_sources": 10
+  },
+  "execution_blocked_if_over_cap": true
+}

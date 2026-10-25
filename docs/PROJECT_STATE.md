@@ -223,3 +223,13 @@ Prepared only historical TRAIN R1 Crack86/260 and corrosion2/8 v1/v2: 8 candidat
 - R3 local model artifact recheck passed against the supplied manifest (19/19, 6,941,223,330 bytes). This did not invoke `from_pretrained` or GPU loading. Persistent ledger has zero reserved/started/actual calls; VAL/TEST and raw-data writes are zero.
 - Input-only source/FOV preview is retained on AutoDL at `results/exp13_phase1b_s1/20261025T044024Z/source_fov_review_contact.png` and not committed. Review/handoff: `docs/exp13_phase1b_s1_smoke_review.md`, `docs/exp13_phase1b_s1_handoff.md`.
 - Stop for ChatGPT Gate and explicit resolution of source eligibility; no substitution, Pilot, trusted-pair freeze, SSL, or downstream training is implied.
+
+### Exp13 Phase 1-B-S2 safe source reselection and bounded GPU Smoke (2026-10-25)
+
+- Status: `EXP13_PHASE1B_S2_COMPLETED_PENDING_CHATGPT_GATE`; three real SDXL ROI calls completed, but semantic restoration quality failed and no result is approved for training.
+- Source 17 remained excluded for right-edge/FOV/annotation-overlay risk. Source 2 was used for the single-ROI call. Source 65 was the first visually approved dual-ROI candidate in numeric filename order; its supports were disjoint and native round-trip validation passed.
+- Pinned local SDXL Inpainting loaded offline. GPU peak was 5,764,813,824 bytes allocated / 6,247,415,808 reserved. Calls took 13.489, 11.473 and 10.400 seconds. The durable S2 ledger records 3/4 Smoke calls, zero retries and one remaining call; future phases must inherit it.
+- Native output shapes/dtypes and paste-back checks passed; changed pixels outside edit support were 0 for both images. Visual inspection found a black rectangular artifact in source 2 and dark/implausible output in source 65's small ROI; both outputs are rejected as pseudo-normal samples.
+- Audit traceability caveat: the safe-candidate JSON is still `VISUAL_REVIEW_REQUIRED` with null selection, while the frozen pre-inference config and source manifest identify sources 2 and 65 and include source/hash provenance. The malformed process exit-code capture is preserved and not interpreted as success; stdout and terminal ledger report completion.
+- TRAIN-only; VAL/TEST access 0/0, raw-data write 0, SSL/YOLO training 0. Generated images/contact sheets and all model files remain outside Git. See [S2 review](exp13_phase1b_s2_smoke_review.md), [handoff](exp13_phase1b_s2_handoff.md), and `results/exp13_phase1b_s2/`.
+- Stop for ChatGPT Gate. No Pilot, batch repair, trusted-pair freeze, SSL or downstream training is authorized.

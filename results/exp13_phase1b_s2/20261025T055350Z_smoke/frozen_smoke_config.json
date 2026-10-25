@@ -1,0 +1,30 @@
+{
+  "model_id": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+  "revision": "115134f363124c53c7d878647567d04daf26e41e",
+  "local_path": "/root/autodl-tmp/models_staging/exp13_phase1b_r3_20261025T042354Z/sdxl-inpainting-0.1",
+  "model_manifest_sha256": "a1a0302f7f8f9a0e2bf21e9b47a7757fd4e1ba9f246bf0c59bfcef1d5eb9607e",
+  "config": {
+    "canvas": 1024,
+    "precision": "float16",
+    "steps": 20,
+    "guidance_scale": 7.5,
+    "strength": 0.8,
+    "seed": 130500,
+    "prompt": "restore a clean, uniform normal metallic borescope surface; preserve realistic metal texture and lighting",
+    "negative_prompt": null,
+    "cpu_offload": "enable_model_cpu_offload(gpu_id=0)",
+    "vae_tiling": true,
+    "vae_slicing": true,
+    "image_resize": "Pillow LANCZOS",
+    "mask_resize": "nearest",
+    "mask_polarity": "white=redraw, black=preserve",
+    "padding": "reflect image; black mask"
+  },
+  "source_ids": [
+    "2",
+    "65"
+  ],
+  "source2_visual_review": "PASS: edit polygon lies on metal and does not intersect displayed UI; source UI remains outside edit support",
+  "source65_visual_review": "PASS: first geometry-eligible dual candidate; both polygons lie on visible metal, no edge/FOV/gray-border contact observed",
+  "audit_run_id": "20261025T054633Z"
+}

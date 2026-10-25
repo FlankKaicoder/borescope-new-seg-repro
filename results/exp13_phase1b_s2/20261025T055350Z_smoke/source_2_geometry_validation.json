@@ -1,0 +1,15 @@
+{
+  "source_id": "2",
+  "output_shape_hwc": [
+    480,
+    640,
+    3
+  ],
+  "output_dtype": "uint8",
+  "changed_pixels": 3134,
+  "support_pixels": 3135,
+  "outside_support_changed_pixels": 0,
+  "overlap_pixels": 0,
+  "order_independent": true,
+  "background_immutable": true
+}

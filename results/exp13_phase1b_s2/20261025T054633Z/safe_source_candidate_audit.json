@@ -1,0 +1,7103 @@
+{
+  "run_id": "20261025T054633Z",
+  "status": "VISUAL_REVIEW_REQUIRED",
+  "train_manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "candidate_order": "numeric filename stem ascending; nonnumeric stable casefolded lexical fallback",
+  "excluded_source_ids": {
+    "13": "bottom-edge risk not independently approved",
+    "17": "prior S1 right-edge/FOV risk",
+    "50": "complex overlap reserved",
+    "2": "authorized single-ROI source, not a dual candidate"
+  },
+  "source2": {
+    "source_id": "2",
+    "split": "train",
+    "image_path": "2.png",
+    "annotation_path": "2.json",
+    "image_sha256": "514d07947ee5ff2d3ac8e160ac58a28bb159ed2549105e4998eaed4b0ba4bc03",
+    "annotation_sha256": "e4fa956d8ae736e4e851dde5fcf66e16faf2bf87deb284c81039da3e5621717a",
+    "native_size_wh": [
+      640,
+      480
+    ],
+    "polygon_count": 1,
+    "roi_group_count": 1,
+    "support_overlap_pixels": null,
+    "native_roundtrip_mock": "NOT_RUN",
+    "rejection_reasons": [],
+    "geometry_eligible": true,
+    "rois": [
+      {
+        "roi_id": "roi_0",
+        "class_name": "corrosion",
+        "points": [
+          [
+            158.0,
+            112.0
+          ],
+          [
+            138.0,
+            110.0
+          ],
+          [
+            127.0,
+            112.0
+          ],
+          [
+            66.0,
+            111.0
+          ],
+          [
+            64.0,
+            107.0
+          ],
+          [
+            52.0,
+            100.0
+          ],
+          [
+            50.0,
+            82.0
+          ],
+          [
+            53.0,
+            77.0
+          ],
+          [
+            46.0,
+            69.0
+          ],
+          [
+            43.0,
+            71.0
+          ],
+          [
+            40.0,
+            64.0
+          ],
+          [
+            53.0,
+            64.0
+          ],
+          [
+            59.0,
+            68.0
+          ],
+          [
+            62.0,
+            74.0
+          ],
+          [
+            69.0,
+            78.0
+          ],
+          [
+            93.0,
+            78.0
+          ],
+          [
+            101.0,
+            83.0
+          ],
+          [
+            118.0,
+            101.0
+          ],
+          [
+            121.0,
+            99.0
+          ],
+          [
+            126.0,
+            104.0
+          ],
+          [
+            131.0,
+            101.0
+          ],
+          [
+            135.0,
+            102.0
+          ],
+          [
+            135.0,
+            106.0
+          ],
+          [
+            138.0,
+            109.0
+          ],
+          [
+            143.0,
+            106.0
+          ],
+          [
+            159.0,
+            109.0
+          ]
+        ],
+        "edge_distance_px": 40.0,
+        "polygon_mask_sha256": "ff94041bce6b68941bb1ebc0cc6d36d243bb30cb1b6d2767b912f4edc519bdc2",
+        "edit_support_sha256": "f78ce836654ba6e3d7ee0b3c9163deb00c4255238c324b6dad2bc175585af59f",
+        "polygon_pixels": 2394,
+        "edit_support_pixels": 3135,
+        "roi_box_xyxy": [
+          24,
+          48,
+          176,
+          129
+        ],
+        "canvas_transform": {
+          "native_width": 152,
+          "native_height": 81,
+          "canvas_size": 1024,
+          "scale": 6.7368421052631575,
+          "resized_width": 1024,
+          "resized_height": 546,
+          "pad_left": 0,
+          "pad_top": 239,
+          "resize_interpolation": "lanczos_image_nearest_mask",
+          "mask_interpolation": "nearest",
+          "padding_mode": "reflect_or_constant_declared_by_runner"
+        },
+        "roi_clamped": false
+      }
+    ],
+    "contact_sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s2/20261025T054633Z/source2_fov_review.png",
+    "contact_sheet_sha256": "e3bb2e3efc74c4ee708ab51ecb9fe5aef50fb425f863df0c7e67675ff75412b3"
+  },
+  "dual_roi_candidates_in_screening_order": [
+    {
+      "source_id": "65",
+      "split": "train",
+      "image_path": "65.png",
+      "annotation_path": "65.json",
+      "image_sha256": "d784438e2b8ac660fa76fc53e9c16192e9dad0a39a3d5d37d278b53f32d7a684",
+      "annotation_sha256": "1f1d80f90167c23bd3cdbdfaf0cb3ad8b6979bb2cfbbb05a09bde382686c20f4",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 2,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "PASS",
+      "rejection_reasons": [],
+      "geometry_eligible": true,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "corrosion",
+          "points": [
+            [
+              155.03968253968256,
+              177.14285714285714
+            ],
+            [
+              167.00793650793653,
+              197.36507936507937
+            ],
+            [
+              207.00793650793653,
+              200.36507936507937
+            ],
+            [
+              292.0079365079365,
+              216.36507936507937
+            ],
+            [
+              329.0079365079365,
+              228.36507936507937
+            ],
+            [
+              387.0079365079365,
+              243.36507936507937
+            ],
+            [
+              505.0079365079365,
+              242.36507936507937
+            ],
+            [
+              574.0079365079365,
+              244.36507936507937
+            ],
+            [
+              557.0079365079365,
+              228.36507936507937
+            ],
+            [
+              499.0079365079365,
+              230.36507936507937
+            ],
+            [
+              371.0079365079365,
+              216.36507936507937
+            ],
+            [
+              208.00793650793653,
+              191.36507936507937
+            ]
+          ],
+          "edge_distance_px": 144.9920634920635,
+          "polygon_mask_sha256": "1924f675bbb14cc05bf5c22698cfaf91095e906720397729ed589d3e75db2928",
+          "edit_support_sha256": "5868071f158567de4ea994de9c422018cfa02a97aaad467e54a220fb171a3411",
+          "polygon_pixels": 6427,
+          "edit_support_pixels": 8407,
+          "roi_box_xyxy": [
+            139,
+            161,
+            592,
+            262
+          ],
+          "canvas_transform": {
+            "native_width": 453,
+            "native_height": 101,
+            "canvas_size": 1024,
+            "scale": 2.260485651214128,
+            "resized_width": 1024,
+            "resized_height": 228,
+            "pad_left": 0,
+            "pad_top": 398,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "Material missing",
+          "points": [
+            [
+              582.4206349206349,
+              215.23809523809524
+            ],
+            [
+              576.0079365079365,
+              228.36507936507937
+            ],
+            [
+              583.0079365079365,
+              239.36507936507937
+            ],
+            [
+              606.0079365079365,
+              244.36507936507937
+            ],
+            [
+              608.0079365079365,
+              232.36507936507937
+            ],
+            [
+              607.0079365079365,
+              216.36507936507937
+            ]
+          ],
+          "edge_distance_px": 110.9920634920635,
+          "polygon_mask_sha256": "160c96f28cb5b0fc7a54c32955d21e7f85b411f19f56ee1105c31b60f79acc01",
+          "edit_support_sha256": "208240d96124626f41076885a213e05d06586b58cd2ee229d5498888ecc0807f",
+          "polygon_pixels": 753,
+          "edit_support_pixels": 1021,
+          "roi_box_xyxy": [
+            560,
+            199,
+            626,
+            262
+          ],
+          "canvas_transform": {
+            "native_width": 66,
+            "native_height": 63,
+            "canvas_size": 1024,
+            "scale": 15.515151515151516,
+            "resized_width": 1024,
+            "resized_height": 977,
+            "pad_left": 0,
+            "pad_top": 23,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        }
+      ],
+      "contact_sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s2/20261025T054633Z/candidate_contact_sheets/01_source_65.png",
+      "contact_sheet_sha256": "dee444a9de0b63d10c92457c5988f4fa608172d2b5818fb6262e1529b2b02244"
+    },
+    {
+      "source_id": "81",
+      "split": "train",
+      "image_path": "81.png",
+      "annotation_path": "81.json",
+      "image_sha256": "9f37efbba573a1402638edf80ef7d257455ce10dc6efc64d56eba1bdc8926c96",
+      "annotation_sha256": "9eadc78128560ba11ebcb07cc2439200c7a14a5c099fb0054740d09a42c55205",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 2,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "PASS",
+      "rejection_reasons": [],
+      "geometry_eligible": true,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "corrosion",
+          "points": [
+            [
+              359.0079365079365,
+              217.61904761904762
+            ],
+            [
+              359.0079365079365,
+              246.36507936507937
+            ],
+            [
+              314.0079365079365,
+              284.36507936507934
+            ],
+            [
+              298.0079365079365,
+              314.36507936507934
+            ],
+            [
+              313.0079365079365,
+              333.36507936507934
+            ],
+            [
+              339.0079365079365,
+              318.36507936507934
+            ],
+            [
+              346.0079365079365,
+              335.36507936507934
+            ],
+            [
+              348.0079365079365,
+              347.36507936507934
+            ],
+            [
+              341.0079365079365,
+              357.36507936507934
+            ],
+            [
+              370.0079365079365,
+              345.36507936507934
+            ],
+            [
+              388.0079365079365,
+              353.36507936507934
+            ],
+            [
+              402.0079365079365,
+              380.36507936507934
+            ],
+            [
+              415.0079365079365,
+              404.36507936507934
+            ],
+            [
+              437.0079365079365,
+              416.36507936507934
+            ],
+            [
+              442.0079365079365,
+              388.36507936507934
+            ],
+            [
+              426.0079365079365,
+              360.36507936507934
+            ],
+            [
+              408.0079365079365,
+              325.36507936507934
+            ],
+            [
+              440.0079365079365,
+              314.36507936507934
+            ],
+            [
+              447.0079365079365,
+              293.36507936507934
+            ],
+            [
+              434.0079365079365,
+              279.36507936507934
+            ],
+            [
+              412.0079365079365,
+              242.36507936507937
+            ],
+            [
+              394.0079365079365,
+              220.36507936507937
+            ]
+          ],
+          "edge_distance_px": 122.63492063492066,
+          "polygon_mask_sha256": "255536db22710d57e8992493bbe83ddad684d913738735d19a4b2595e30097e4",
+          "edit_support_sha256": "5bc19d164a33a244673541a100d0272f30350cdbc8e2c1a80821c647c4bc782f",
+          "polygon_pixels": 13975,
+          "edit_support_pixels": 15650,
+          "roi_box_xyxy": [
+            282,
+            201,
+            465,
+            434
+          ],
+          "canvas_transform": {
+            "native_width": 183,
+            "native_height": 233,
+            "canvas_size": 1024,
+            "scale": 4.394849785407725,
+            "resized_width": 804,
+            "resized_height": 1024,
+            "pad_left": 110,
+            "pad_top": 0,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "corrosion",
+          "points": [
+            [
+              253.84920634920636,
+              148.96825396825398
+            ],
+            [
+              330.0079365079365,
+              112.36507936507935
+            ],
+            [
+              319.0079365079365,
+              96.36507936507935
+            ],
+            [
+              370.0079365079365,
+              98.36507936507935
+            ],
+            [
+              384.0079365079365,
+              115.36507936507935
+            ],
+            [
+              347.0079365079365,
+              147.36507936507937
+            ],
+            [
+              285.0079365079365,
+              145.36507936507937
+            ],
+            [
+              231.00793650793653,
+              175.36507936507937
+            ]
+          ],
+          "edge_distance_px": 96.36507936507935,
+          "polygon_mask_sha256": "4f3687d5001205efd8c0a556ca5762c93666cb26db206c017e93d3599b92624f",
+          "edit_support_sha256": "8fa981752c86cdc4450a918633809a688b06eabdc62cc09f093d4696c8ba104f",
+          "polygon_pixels": 3681,
+          "edit_support_pixels": 4681,
+          "roi_box_xyxy": [
+            215,
+            80,
+            402,
+            193
+          ],
+          "canvas_transform": {
+            "native_width": 187,
+            "native_height": 113,
+            "canvas_size": 1024,
+            "scale": 5.475935828877005,
+            "resized_width": 1024,
+            "resized_height": 619,
+            "pad_left": 0,
+            "pad_top": 202,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        }
+      ],
+      "contact_sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s2/20261025T054633Z/candidate_contact_sheets/02_source_81.png",
+      "contact_sheet_sha256": "755d87efd6ef45d450f837a1897c980df4a38c28f9780ba0c1f713339a4c21b9"
+    },
+    {
+      "source_id": "84",
+      "split": "train",
+      "image_path": "84.png",
+      "annotation_path": "84.json",
+      "image_sha256": "0c962a0e6517764915e029ff87229c8614d955a6b7bfe797fad0be465c6d1aba",
+      "annotation_sha256": "e21eed5ef58defa8b431581b67e1c25ad5870031f5cf948d16c1d31c3d4e0129",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 2,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "PASS",
+      "rejection_reasons": [],
+      "geometry_eligible": true,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "Material missing",
+          "points": [
+            [
+              348.2936507936508,
+              263.25396825396825
+            ],
+            [
+              362.0079365079365,
+              276.36507936507934
+            ],
+            [
+              364.0079365079365,
+              299.36507936507934
+            ],
+            [
+              371.0079365079365,
+              309.36507936507934
+            ],
+            [
+              391.0079365079365,
+              313.36507936507934
+            ],
+            [
+              388.0079365079365,
+              334.36507936507934
+            ],
+            [
+              409.0079365079365,
+              345.36507936507934
+            ],
+            [
+              434.0079365079365,
+              358.36507936507934
+            ],
+            [
+              423.0079365079365,
+              365.36507936507934
+            ],
+            [
+              456.0079365079365,
+              375.36507936507934
+            ],
+            [
+              466.0079365079365,
+              385.36507936507934
+            ],
+            [
+              492.0079365079365,
+              390.36507936507934
+            ],
+            [
+              507.0079365079365,
+              398.36507936507934
+            ],
+            [
+              528.0079365079365,
+              412.36507936507934
+            ],
+            [
+              517.0079365079365,
+              422.36507936507934
+            ],
+            [
+              534.0079365079365,
+              428.36507936507934
+            ],
+            [
+              555.0079365079365,
+              442.36507936507934
+            ],
+            [
+              563.0079365079365,
+              454.36507936507934
+            ],
+            [
+              545.0079365079365,
+              452.36507936507934
+            ],
+            [
+              457.0079365079365,
+              401.36507936507934
+            ],
+            [
+              433.0079365079365,
+              382.36507936507934
+            ],
+            [
+              397.0079365079365,
+              355.36507936507934
+            ],
+            [
+              365.0079365079365,
+              319.36507936507934
+            ],
+            [
+              346.0079365079365,
+              291.36507936507934
+            ],
+            [
+              336.0079365079365,
+              256.36507936507934
+            ]
+          ],
+          "edge_distance_px": 84.63492063492066,
+          "polygon_mask_sha256": "ba0a2443afebea98658d77f1fa239ea84233bdded3a0030358aecd226a7d2ed2",
+          "edit_support_sha256": "eb6ca3d68f1f041708af0e9ff9976c14bae8a6eaf1db3b4e3ce82090aee55171",
+          "polygon_pixels": 5214,
+          "edit_support_pixels": 7024,
+          "roi_box_xyxy": [
+            320,
+            240,
+            581,
+            472
+          ],
+          "canvas_transform": {
+            "native_width": 261,
+            "native_height": 232,
+            "canvas_size": 1024,
+            "scale": 3.9233716475095783,
+            "resized_width": 1024,
+            "resized_height": 910,
+            "pad_left": 0,
+            "pad_top": 57,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "Material missing",
+          "points": [
+            [
+              455.43650793650795,
+              110.07936507936506
+            ],
+            [
+              505.0079365079365,
+              152.36507936507937
+            ],
+            [
+              565.0079365079365,
+              183.36507936507937
+            ],
+            [
+              612.0079365079365,
+              203.36507936507937
+            ],
+            [
+              612.0079365079365,
+              198.36507936507937
+            ],
+            [
+              578.0079365079365,
+              176.36507936507937
+            ],
+            [
+              525.0079365079365,
+              142.36507936507937
+            ],
+            [
+              488.0079365079365,
+              120.36507936507935
+            ]
+          ],
+          "edge_distance_px": 106.9920634920635,
+          "polygon_mask_sha256": "2c9d7bd6917092c5cea4c9e2cdb79f76a3cc0c885ed8012c80a40f4e81dc2bf1",
+          "edit_support_sha256": "70b892fcc7513554553071860a50a5937b0a57c9660929c6c6cb42284a0414cb",
+          "polygon_pixels": 2336,
+          "edit_support_pixels": 3360,
+          "roi_box_xyxy": [
+            439,
+            94,
+            630,
+            221
+          ],
+          "canvas_transform": {
+            "native_width": 191,
+            "native_height": 127,
+            "canvas_size": 1024,
+            "scale": 5.361256544502618,
+            "resized_width": 1024,
+            "resized_height": 681,
+            "pad_left": 0,
+            "pad_top": 171,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        }
+      ],
+      "contact_sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s2/20261025T054633Z/candidate_contact_sheets/03_source_84.png",
+      "contact_sheet_sha256": "4c2779217185dabdce823995027c4df1d98fef20289ad643ee0030349f81c399"
+    },
+    {
+      "source_id": "89",
+      "split": "train",
+      "image_path": "89.png",
+      "annotation_path": "89.json",
+      "image_sha256": "66d9cbcb78a063b9eb1fe26712c04df7d5e040564080f78e557c922e70d2e87c",
+      "annotation_sha256": "54d4a2e6a02416da34be653377661af8d82004fbaa17f3123c3a6241904f1d97",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 2,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "PASS",
+      "rejection_reasons": [],
+      "geometry_eligible": true,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "corrosion",
+          "points": [
+            [
+              156.23015873015876,
+              333.0952380952381
+            ],
+            [
+              159.00793650793653,
+              372.36507936507934
+            ],
+            [
+              172.00793650793653,
+              387.36507936507934
+            ],
+            [
+              228.00793650793653,
+              371.36507936507934
+            ],
+            [
+              254.00793650793653,
+              353.36507936507934
+            ],
+            [
+              236.00793650793653,
+              336.36507936507934
+            ],
+            [
+              173.00793650793653,
+              326.36507936507934
+            ]
+          ],
+          "edge_distance_px": 151.63492063492066,
+          "polygon_mask_sha256": "0cb7f359c80227041847e973eaba8d3c8b8367950df0c318454f371d8c5b3597",
+          "edit_support_sha256": "b33f89e12695917c6bb10fb1b210323ef7126128af13c8d271526fe487ad77c9",
+          "polygon_pixels": 4029,
+          "edit_support_pixels": 4689,
+          "roi_box_xyxy": [
+            140,
+            310,
+            272,
+            405
+          ],
+          "canvas_transform": {
+            "native_width": 132,
+            "native_height": 95,
+            "canvas_size": 1024,
+            "scale": 7.757575757575758,
+            "resized_width": 1024,
+            "resized_height": 737,
+            "pad_left": 0,
+            "pad_top": 143,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "corrosion",
+          "points": [
+            [
+              397.5,
+              304.9206349206349
+            ],
+            [
+              468.0079365079365,
+              312.36507936507934
+            ],
+            [
+              509.0079365079365,
+              359.36507936507934
+            ],
+            [
+              628.0079365079365,
+              413.36507936507934
+            ],
+            [
+              618.0079365079365,
+              467.36507936507934
+            ],
+            [
+              475.0079365079365,
+              389.36507936507934
+            ],
+            [
+              407.0079365079365,
+              335.36507936507934
+            ],
+            [
+              321.0079365079365,
+              281.36507936507934
+            ],
+            [
+              327.0079365079365,
+              269.36507936507934
+            ],
+            [
+              369.0079365079365,
+              287.36507936507934
+            ]
+          ],
+          "edge_distance_px": 71.63492063492066,
+          "polygon_mask_sha256": "a411f66c80025aebfa67ba1ec07d306c473d4a0bc24a11098b5e7942630529fd",
+          "edit_support_sha256": "3e4a3235208ec12c7ae9b976e999bf64921d7af93952486f6d8916ec62d0b505",
+          "polygon_pixels": 13702,
+          "edit_support_pixels": 15746,
+          "roi_box_xyxy": [
+            305,
+            253,
+            646,
+            485
+          ],
+          "canvas_transform": {
+            "native_width": 341,
+            "native_height": 232,
+            "canvas_size": 1024,
+            "scale": 3.002932551319648,
+            "resized_width": 1024,
+            "resized_height": 697,
+            "pad_left": 0,
+            "pad_top": 163,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        }
+      ],
+      "contact_sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s2/20261025T054633Z/candidate_contact_sheets/04_source_89.png",
+      "contact_sheet_sha256": "16830f8c0606fd4706b8425b252f8663ebf0ea772d712881e36c64af7b10c124"
+    },
+    {
+      "source_id": "117",
+      "split": "train",
+      "image_path": "117.png",
+      "annotation_path": "117.json",
+      "image_sha256": "b59133c12e5816409d2240ceba92bf53f37935da8b1d62e9a7db3f7797ad74ec",
+      "annotation_sha256": "ae628ff06885fac3766a022dcd9aef5ebd0a0c5120ea3f4470bc73a159ba790b",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 2,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "PASS",
+      "rejection_reasons": [],
+      "geometry_eligible": true,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "Burn",
+          "points": [
+            [
+              472.0,
+              312.0
+            ],
+            [
+              451.0,
+              358.0
+            ],
+            [
+              396.0,
+              395.0
+            ],
+            [
+              254.0,
+              397.0
+            ],
+            [
+              240.0,
+              366.0
+            ],
+            [
+              108.0,
+              304.0
+            ],
+            [
+              60.0,
+              212.0
+            ],
+            [
+              92.0,
+              180.0
+            ],
+            [
+              102.0,
+              192.0
+            ],
+            [
+              131.0,
+              176.0
+            ],
+            [
+              120.0,
+              194.0
+            ],
+            [
+              94.0,
+              193.0
+            ],
+            [
+              101.0,
+              228.0
+            ],
+            [
+              175.0,
+              316.0
+            ],
+            [
+              249.0,
+              342.0
+            ],
+            [
+              307.0,
+              339.0
+            ],
+            [
+              374.0,
+              309.0
+            ],
+            [
+              387.0,
+              276.0
+            ],
+            [
+              378.0,
+              244.0
+            ],
+            [
+              290.0,
+              190.0
+            ],
+            [
+              172.0,
+              188.0
+            ],
+            [
+              140.0,
+              167.0
+            ],
+            [
+              194.0,
+              146.0
+            ],
+            [
+              347.0,
+              171.0
+            ],
+            [
+              433.0,
+              225.0
+            ],
+            [
+              466.0,
+              271.0
+            ]
+          ],
+          "edge_distance_px": 60.0,
+          "polygon_mask_sha256": "a4d9b96ab54bf22d936a9ee32b6d243eff91d722fde64480155116f9d889ae61",
+          "edit_support_sha256": "898d95afdcf58a60b4d91a4fa9ec456b9e4ead40a9c364ab73c519a44aa3d361",
+          "polygon_pixels": 38492,
+          "edit_support_pixels": 43015,
+          "roi_box_xyxy": [
+            44,
+            130,
+            489,
+            414
+          ],
+          "canvas_transform": {
+            "native_width": 445,
+            "native_height": 284,
+            "canvas_size": 1024,
+            "scale": 2.301123595505618,
+            "resized_width": 1024,
+            "resized_height": 654,
+            "pad_left": 0,
+            "pad_top": 185,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "Burn",
+          "points": [
+            [
+              404.0,
+              137.0
+            ],
+            [
+              396.0,
+              143.0
+            ],
+            [
+              357.0,
+              145.0
+            ],
+            [
+              344.0,
+              142.0
+            ],
+            [
+              335.0,
+              123.0
+            ],
+            [
+              368.0,
+              120.0
+            ],
+            [
+              370.0,
+              115.0
+            ],
+            [
+              336.0,
+              97.0
+            ],
+            [
+              334.0,
+              93.0
+            ],
+            [
+              327.0,
+              93.0
+            ],
+            [
+              321.0,
+              87.0
+            ],
+            [
+              333.0,
+              91.0
+            ],
+            [
+              346.0,
+              89.0
+            ],
+            [
+              379.0,
+              99.0
+            ],
+            [
+              396.0,
+              108.0
+            ],
+            [
+              407.0,
+              117.0
+            ],
+            [
+              408.0,
+              124.0
+            ]
+          ],
+          "edge_distance_px": 87.0,
+          "polygon_mask_sha256": "7fdb789dd6b49d2faeb6065f246c306f67c618a3ca653c66abe65593b7f44596",
+          "edit_support_sha256": "457bdae47cc2e83f6126e7d42637a0240f19732dcb16f7d66541cb601011d1c3",
+          "polygon_pixels": 2661,
+          "edit_support_pixels": 3411,
+          "roi_box_xyxy": [
+            305,
+            71,
+            425,
+            162
+          ],
+          "canvas_transform": {
+            "native_width": 120,
+            "native_height": 91,
+            "canvas_size": 1024,
+            "scale": 8.533333333333333,
+            "resized_width": 1024,
+            "resized_height": 777,
+            "pad_left": 0,
+            "pad_top": 123,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        }
+      ],
+      "contact_sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s2/20261025T054633Z/candidate_contact_sheets/05_source_117.png",
+      "contact_sheet_sha256": "11af4ed9b4b01ce4843e3b087f49193cf027d0443768b396c060533f9514b253"
+    },
+    {
+      "source_id": "119",
+      "split": "train",
+      "image_path": "119.png",
+      "annotation_path": "119.json",
+      "image_sha256": "669cc297a5156fff97a4f787d9231a8346d41da44ecd1a7010907bd0cf69514e",
+      "annotation_sha256": "9604debbb8c16878666e89b88f8b373614efab07a51f9f68c29cae298fdec783",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 2,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "PASS",
+      "rejection_reasons": [],
+      "geometry_eligible": true,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "Burn",
+          "points": [
+            [
+              326.43518518518516,
+              317.22222222222223
+            ],
+            [
+              289.25,
+              334.1666666666667
+            ],
+            [
+              285.25,
+              358.1666666666667
+            ],
+            [
+              309.25,
+              380.1666666666667
+            ],
+            [
+              395.25,
+              397.1666666666667
+            ],
+            [
+              429.25,
+              399.1666666666667
+            ],
+            [
+              451.25,
+              388.1666666666667
+            ],
+            [
+              459.25,
+              374.1666666666667
+            ],
+            [
+              466.25,
+              351.1666666666667
+            ],
+            [
+              459.25,
+              338.1666666666667
+            ],
+            [
+              442.25,
+              330.1666666666667
+            ],
+            [
+              407.25,
+              315.1666666666667
+            ],
+            [
+              397.25,
+              312.1666666666667
+            ],
+            [
+              358.25,
+              314.1666666666667
+            ]
+          ],
+          "edge_distance_px": 139.83333333333331,
+          "polygon_mask_sha256": "83d727275d1b67f5c4b27e4bf1b9cf488227e06c792f5f2500605be886cf3ffb",
+          "edit_support_sha256": "e966ee70490368622b6dfa324c24d0d3c985147d0c5b6b8be670bfcbc519c2b3",
+          "polygon_pixels": 11884,
+          "edit_support_pixels": 12980,
+          "roi_box_xyxy": [
+            269,
+            296,
+            484,
+            417
+          ],
+          "canvas_transform": {
+            "native_width": 215,
+            "native_height": 121,
+            "canvas_size": 1024,
+            "scale": 4.7627906976744185,
+            "resized_width": 1024,
+            "resized_height": 576,
+            "pad_left": 0,
+            "pad_top": 224,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "Burn",
+          "points": [
+            [
+              546.3425925925925,
+              319.0740740740741
+            ],
+            [
+              526.25,
+              321.1666666666667
+            ],
+            [
+              516.25,
+              332.1666666666667
+            ],
+            [
+              512.25,
+              339.1666666666667
+            ],
+            [
+              508.25,
+              358.1666666666667
+            ],
+            [
+              512.25,
+              371.1666666666667
+            ],
+            [
+              528.25,
+              385.1666666666667
+            ],
+            [
+              539.25,
+              390.1666666666667
+            ],
+            [
+              585.25,
+              399.1666666666667
+            ],
+            [
+              603.25,
+              399.1666666666667
+            ],
+            [
+              613.25,
+              392.1666666666667
+            ],
+            [
+              624.25,
+              379.1666666666667
+            ],
+            [
+              622.25,
+              357.1666666666667
+            ],
+            [
+              602.25,
+              343.1666666666667
+            ],
+            [
+              571.25,
+              326.1666666666667
+            ]
+          ],
+          "edge_distance_px": 94.75,
+          "polygon_mask_sha256": "4598b98a7b5076987c0b66f718b61ae4c275a27b4c58943858e6fe3ab8a80184",
+          "edit_support_sha256": "d0196c6d1dfd24d8ab01276a159555b30d1200efe93bbd85b6109ebce68aafa9",
+          "polygon_pixels": 6814,
+          "edit_support_pixels": 7622,
+          "roi_box_xyxy": [
+            492,
+            303,
+            642,
+            417
+          ],
+          "canvas_transform": {
+            "native_width": 150,
+            "native_height": 114,
+            "canvas_size": 1024,
+            "scale": 6.826666666666667,
+            "resized_width": 1024,
+            "resized_height": 778,
+            "pad_left": 0,
+            "pad_top": 123,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        }
+      ],
+      "contact_sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s2/20261025T054633Z/candidate_contact_sheets/06_source_119.png",
+      "contact_sheet_sha256": "5a82b9ddde8b0300488911a4a855cadfab1c800757b13c6a154d3ecbf91bc027"
+    },
+    {
+      "source_id": "123",
+      "split": "train",
+      "image_path": "123.png",
+      "annotation_path": "123.json",
+      "image_sha256": "4a9601673aa0f070d9283cefec0dab4adb0dac6ed65a314a46e27151a8903089",
+      "annotation_sha256": "7def1e3093d5f564c7217c7fb547f75d8938d24d0ca9703fdc077365d4d1ad38",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 2,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "PASS",
+      "rejection_reasons": [],
+      "geometry_eligible": true,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "Crack",
+          "points": [
+            [
+              288.0,
+              254.0
+            ],
+            [
+              282.0,
+              269.0
+            ],
+            [
+              279.0,
+              272.0
+            ],
+            [
+              276.0,
+              273.0
+            ],
+            [
+              268.0,
+              273.0
+            ],
+            [
+              259.0,
+              275.0
+            ],
+            [
+              232.0,
+              266.0
+            ],
+            [
+              225.0,
+              266.0
+            ],
+            [
+              228.0,
+              259.0
+            ],
+            [
+              237.0,
+              261.0
+            ],
+            [
+              245.0,
+              259.0
+            ],
+            [
+              246.0,
+              256.0
+            ],
+            [
+              248.0,
+              256.0
+            ],
+            [
+              260.0,
+              248.0
+            ],
+            [
+              267.0,
+              248.0
+            ],
+            [
+              268.0,
+              247.0
+            ],
+            [
+              275.0,
+              248.0
+            ],
+            [
+              282.0,
+              253.0
+            ]
+          ],
+          "edge_distance_px": 225.0,
+          "polygon_mask_sha256": "89fdc90b49829acbd1cad2ed546600417a04e94ecb707a91087060c2b0430768",
+          "edit_support_sha256": "50d55251387813dcc7ca7c1c735dc3565e22332bc901ba39bd92d851c454a5a1",
+          "polygon_pixels": 1062,
+          "edit_support_pixels": 1458,
+          "roi_box_xyxy": [
+            209,
+            231,
+            305,
+            292
+          ],
+          "canvas_transform": {
+            "native_width": 96,
+            "native_height": 61,
+            "canvas_size": 1024,
+            "scale": 10.666666666666666,
+            "resized_width": 1024,
+            "resized_height": 651,
+            "pad_left": 0,
+            "pad_top": 186,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "corrosion",
+          "points": [
+            [
+              625.0,
+              403.0
+            ],
+            [
+              590.0,
+              405.0
+            ],
+            [
+              588.0,
+              413.0
+            ],
+            [
+              574.0,
+              405.0
+            ],
+            [
+              573.0,
+              390.0
+            ],
+            [
+              552.0,
+              381.0
+            ],
+            [
+              534.0,
+              344.0
+            ],
+            [
+              499.0,
+              299.0
+            ],
+            [
+              491.0,
+              272.0
+            ],
+            [
+              371.0,
+              152.0
+            ],
+            [
+              404.0,
+              160.0
+            ],
+            [
+              420.0,
+              146.0
+            ],
+            [
+              461.0,
+              165.0
+            ],
+            [
+              511.0,
+              202.0
+            ],
+            [
+              531.0,
+              277.0
+            ],
+            [
+              590.0,
+              319.0
+            ],
+            [
+              591.0,
+              350.0
+            ],
+            [
+              606.0,
+              368.0
+            ],
+            [
+              591.0,
+              376.0
+            ],
+            [
+              619.0,
+              397.0
+            ],
+            [
+              635.0,
+              387.0
+            ]
+          ],
+          "edge_distance_px": 84.0,
+          "polygon_mask_sha256": "420b6f4ac2f071a2bc1e0c40dc99a6137e3b34e0e1e7a4af61e6fed43da42737",
+          "edit_support_sha256": "cca8941d6a6c101bec0577cb06a5085660b4aff04b7a3e98355f24f1657826cb",
+          "polygon_pixels": 16156,
+          "edit_support_pixels": 18428,
+          "roi_box_xyxy": [
+            355,
+            130,
+            652,
+            430
+          ],
+          "canvas_transform": {
+            "native_width": 297,
+            "native_height": 300,
+            "canvas_size": 1024,
+            "scale": 3.4133333333333336,
+            "resized_width": 1014,
+            "resized_height": 1024,
+            "pad_left": 5,
+            "pad_top": 0,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        }
+      ],
+      "contact_sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s2/20261025T054633Z/candidate_contact_sheets/07_source_123.png",
+      "contact_sheet_sha256": "801d4b21062c5ffa8449f43389263ae30e870905a06a18dc109b7be3d034a65c"
+    },
+    {
+      "source_id": "136",
+      "split": "train",
+      "image_path": "136.png",
+      "annotation_path": "136.json",
+      "image_sha256": "63932026e8493ddcb79d0edc5692ddb469b129ce1aad745dfe10235b7acfdf6a",
+      "annotation_sha256": "71d9868d93bc06558366b471825f119ec3a356380bc06ca8467216d2caa86114",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 2,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "PASS",
+      "rejection_reasons": [],
+      "geometry_eligible": true,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "Burn",
+          "points": [
+            [
+              582.0,
+              356.0
+            ],
+            [
+              572.0,
+              360.0
+            ],
+            [
+              558.0,
+              359.0
+            ],
+            [
+              529.0,
+              345.0
+            ],
+            [
+              512.0,
+              327.0
+            ],
+            [
+              500.0,
+              304.0
+            ],
+            [
+              484.0,
+              289.0
+            ],
+            [
+              481.0,
+              281.0
+            ],
+            [
+              486.0,
+              269.0
+            ],
+            [
+              485.0,
+              257.0
+            ],
+            [
+              475.0,
+              230.0
+            ],
+            [
+              478.0,
+              212.0
+            ],
+            [
+              483.0,
+              206.0
+            ],
+            [
+              498.0,
+              208.0
+            ],
+            [
+              529.0,
+              232.0
+            ],
+            [
+              569.0,
+              254.0
+            ],
+            [
+              581.0,
+              265.0
+            ],
+            [
+              584.0,
+              274.0
+            ],
+            [
+              582.0,
+              285.0
+            ],
+            [
+              599.0,
+              325.0
+            ],
+            [
+              597.0,
+              342.0
+            ]
+          ],
+          "edge_distance_px": 120.0,
+          "polygon_mask_sha256": "b22ac4e490802a29df5560cbfbb7ff8af06e440f7878e690796ecbcba04463f4",
+          "edit_support_sha256": "20e1dcdae7bb6efc6f0d940f97365ecc423fadbb9da6dc3a25eaf6daac1f4505",
+          "polygon_pixels": 11389,
+          "edit_support_pixels": 12553,
+          "roi_box_xyxy": [
+            459,
+            190,
+            616,
+            377
+          ],
+          "canvas_transform": {
+            "native_width": 157,
+            "native_height": 187,
+            "canvas_size": 1024,
+            "scale": 5.475935828877005,
+            "resized_width": 860,
+            "resized_height": 1024,
+            "pad_left": 82,
+            "pad_top": 0,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "corrosion",
+          "points": [
+            [
+              505.5,
+              443.0
+            ],
+            [
+              501.5,
+              443.0
+            ],
+            [
+              500.5,
+              442.0
+            ],
+            [
+              497.5,
+              442.0
+            ],
+            [
+              496.5,
+              441.0
+            ],
+            [
+              492.5,
+              441.0
+            ],
+            [
+              491.5,
+              440.0
+            ],
+            [
+              488.5,
+              440.0
+            ],
+            [
+              487.5,
+              439.0
+            ],
+            [
+              485.5,
+              439.0
+            ],
+            [
+              485.0,
+              436.5
+            ],
+            [
+              484.0,
+              435.5
+            ],
+            [
+              484.0,
+              433.5
+            ],
+            [
+              482.5,
+              432.0
+            ],
+            [
+              481.5,
+              432.0
+            ],
+            [
+              480.5,
+              431.0
+            ],
+            [
+              478.5,
+              431.0
+            ],
+            [
+              477.5,
+              430.0
+            ],
+            [
+              474.5,
+              429.0
+            ],
+            [
+              473.0,
+              427.5
+            ],
+            [
+              472.0,
+              424.5
+            ],
+            [
+              470.0,
+              422.5
+            ],
+            [
+              469.0,
+              419.5
+            ],
+            [
+              465.0,
+              414.5
+            ],
+            [
+              465.0,
+              413.5
+            ],
+            [
+              462.0,
+              409.5
+            ],
+            [
+              461.0,
+              406.5
+            ],
+            [
+              451.0,
+              399.5
+            ],
+            [
+              451.0,
+              396.5
+            ],
+            [
+              450.0,
+              395.5
+            ],
+            [
+              450.0,
+              389.5
+            ],
+            [
+              449.0,
+              388.5
+            ],
+            [
+              449.0,
+              385.5
+            ],
+            [
+              445.0,
+              380.5
+            ],
+            [
+              451.5,
+              377.0
+            ],
+            [
+              452.5,
+              377.0
+            ],
+            [
+              454.0,
+              375.5
+            ],
+            [
+              453.0,
+              374.5
+            ],
+            [
+              452.0,
+              369.5
+            ],
+            [
+              451.0,
+              368.5
+            ],
+            [
+              451.5,
+              367.0
+            ],
+            [
+              452.5,
+              367.0
+            ],
+            [
+              453.5,
+              366.0
+            ],
+            [
+              455.5,
+              366.0
+            ],
+            [
+              456.5,
+              365.0
+            ],
+            [
+              458.5,
+              365.0
+            ],
+            [
+              461.5,
+              363.0
+            ],
+            [
+              463.5,
+              363.0
+            ],
+            [
+              464.5,
+              362.0
+            ],
+            [
+              466.5,
+              362.0
+            ],
+            [
+              467.5,
+              361.0
+            ],
+            [
+              470.5,
+              362.0
+            ],
+            [
+              472.5,
+              364.0
+            ],
+            [
+              473.5,
+              364.0
+            ],
+            [
+              475.5,
+              366.0
+            ],
+            [
+              476.5,
+              366.0
+            ],
+            [
+              478.5,
+              368.0
+            ],
+            [
+              479.5,
+              368.0
+            ],
+            [
+              483.5,
+              371.0
+            ],
+            [
+              484.5,
+              371.0
+            ],
+            [
+              487.5,
+              369.0
+            ],
+            [
+              489.5,
+              369.0
+            ],
+            [
+              492.5,
+              367.0
+            ],
+            [
+              494.5,
+              367.0
+            ],
+            [
+              495.5,
+              366.0
+            ],
+            [
+              496.5,
+              366.0
+            ],
+            [
+              500.0,
+              370.5
+            ],
+            [
+              497.5,
+              372.0
+            ],
+            [
+              495.5,
+              372.0
+            ],
+            [
+              495.0,
+              371.5
+            ],
+            [
+              495.0,
+              368.5
+            ],
+            [
+              493.5,
+              368.0
+            ],
+            [
+              493.0,
+              368.5
+            ],
+            [
+              493.0,
+              372.5
+            ],
+            [
+              493.5,
+              373.0
+            ],
+            [
+              494.5,
+              373.0
+            ],
+            [
+              495.5,
+              374.0
+            ],
+            [
+              498.5,
+              374.0
+            ],
+            [
+              499.5,
+              375.0
+            ],
+            [
+              501.0,
+              373.5
+            ],
+            [
+              501.0,
+              372.5
+            ],
+            [
+              502.5,
+              372.0
+            ],
+            [
+              506.0,
+              374.5
+            ],
+            [
+              505.0,
+              375.5
+            ],
+            [
+              505.5,
+              377.0
+            ],
+            [
+              511.5,
+              377.0
+            ],
+            [
+              512.5,
+              378.0
+            ],
+            [
+              520.5,
+              378.0
+            ],
+            [
+              521.0,
+              378.5
+            ],
+            [
+              521.0,
+              381.5
+            ],
+            [
+              520.5,
+              382.0
+            ],
+            [
+              515.5,
+              382.0
+            ],
+            [
+              514.5,
+              381.0
+            ],
+            [
+              510.5,
+              381.0
+            ],
+            [
+              510.0,
+              381.5
+            ],
+            [
+              510.0,
+              382.5
+            ],
+            [
+              511.5,
+              384.0
+            ],
+            [
+              514.5,
+              382.0
+            ],
+            [
+              515.0,
+              382.5
+            ],
+            [
+              515.0,
+              389.5
+            ],
+            [
+              516.0,
+              390.5
+            ],
+            [
+              516.0,
+              394.5
+            ],
+            [
+              516.5,
+              395.0
+            ],
+            [
+              517.0,
+              393.5
+            ],
+            [
+              519.0,
+              391.5
+            ],
+            [
+              518.0,
+              388.5
+            ],
+            [
+              517.0,
+              387.5
+            ],
+            [
+              517.5,
+              386.0
+            ],
+            [
+              519.5,
+              386.0
+            ],
+            [
+              520.5,
+              387.0
+            ],
+            [
+              523.5,
+              387.0
+            ],
+            [
+              524.5,
+              388.0
+            ],
+            [
+              527.5,
+              388.0
+            ],
+            [
+              530.0,
+              389.5
+            ],
+            [
+              527.5,
+              394.0
+            ],
+            [
+              526.5,
+              394.0
+            ],
+            [
+              525.5,
+              393.0
+            ],
+            [
+              522.5,
+              393.0
+            ],
+            [
+              521.5,
+              392.0
+            ],
+            [
+              521.0,
+              392.5
+            ],
+            [
+              521.0,
+              393.5
+            ],
+            [
+              522.5,
+              395.0
+            ],
+            [
+              526.5,
+              395.0
+            ],
+            [
+              527.0,
+              396.5
+            ],
+            [
+              530.0,
+              399.5
+            ],
+            [
+              530.0,
+              400.5
+            ],
+            [
+              528.0,
+              403.5
+            ],
+            [
+              528.0,
+              405.5
+            ],
+            [
+              527.0,
+              406.5
+            ],
+            [
+              527.0,
+              407.5
+            ],
+            [
+              537.5,
+              417.0
+            ],
+            [
+              538.5,
+              417.0
+            ],
+            [
+              539.5,
+              418.0
+            ],
+            [
+              542.5,
+              418.0
+            ],
+            [
+              543.5,
+              419.0
+            ],
+            [
+              545.5,
+              419.0
+            ],
+            [
+              548.0,
+              420.5
+            ],
+            [
+              544.5,
+              427.0
+            ],
+            [
+              543.5,
+              427.0
+            ],
+            [
+              542.5,
+              426.0
+            ],
+            [
+              540.5,
+              426.0
+            ],
+            [
+              539.5,
+              425.0
+            ],
+            [
+              537.5,
+              425.0
+            ],
+            [
+              536.5,
+              424.0
+            ],
+            [
+              534.5,
+              424.0
+            ],
+            [
+              533.5,
+              423.0
+            ],
+            [
+              531.5,
+              423.0
+            ],
+            [
+              530.5,
+              424.0
+            ],
+            [
+              527.5,
+              424.0
+            ],
+            [
+              526.5,
+              425.0
+            ],
+            [
+              525.5,
+              425.0
+            ],
+            [
+              525.0,
+              425.5
+            ],
+            [
+              529.0,
+              432.5
+            ],
+            [
+              527.0,
+              437.5
+            ],
+            [
+              525.5,
+              439.0
+            ],
+            [
+              523.5,
+              439.0
+            ],
+            [
+              522.5,
+              440.0
+            ],
+            [
+              517.5,
+              440.0
+            ],
+            [
+              516.5,
+              441.0
+            ],
+            [
+              512.5,
+              441.0
+            ],
+            [
+              511.5,
+              442.0
+            ],
+            [
+              506.5,
+              442.0
+            ]
+          ],
+          "edge_distance_px": 96.0,
+          "polygon_mask_sha256": "3b234860e2091ee1b2feccddc9e0bd808eae8ce422120cb52e75d7531dc8ef76",
+          "edit_support_sha256": "61157c44af6d2eb83afea26cbfadd1be85d1dc4004cfb96de81872557dbdbb8c",
+          "polygon_pixels": 4884,
+          "edit_support_pixels": 5783,
+          "roi_box_xyxy": [
+            429,
+            345,
+            565,
+            460
+          ],
+          "canvas_transform": {
+            "native_width": 136,
+            "native_height": 115,
+            "canvas_size": 1024,
+            "scale": 7.529411764705882,
+            "resized_width": 1024,
+            "resized_height": 866,
+            "pad_left": 0,
+            "pad_top": 79,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        }
+      ],
+      "contact_sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s2/20261025T054633Z/candidate_contact_sheets/08_source_136.png",
+      "contact_sheet_sha256": "8d55e0df7d9950838a9c66453dd9cf85f9bce08512e81b3885c18bc4eced0e86"
+    }
+  ],
+  "geometry_rejected_two_polygon_candidates": [
+    {
+      "source_id": "21",
+      "split": "train",
+      "image_path": "21.png",
+      "annotation_path": "21.json",
+      "image_sha256": "6c4d9efdbebb150657c4d8afa489b09a96544fc9ea0f15935133837ec9e122ca",
+      "annotation_sha256": "8b64674bad744aaee9d7a19f38b2067efa70d5591ee6a583ec898ffc34fa9650",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 2,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "NOT_RUN",
+      "rejection_reasons": [
+        "polygon_1: border distance 23.000px < 24px"
+      ],
+      "geometry_eligible": false,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "Dent",
+          "points": [
+            [
+              504.6428571428571,
+              342.6190476190476
+            ],
+            [
+              520.0079365079365,
+              346.36507936507934
+            ],
+            [
+              519.0079365079365,
+              358.36507936507934
+            ],
+            [
+              516.0079365079365,
+              385.36507936507934
+            ],
+            [
+              505.0079365079365,
+              402.36507936507934
+            ],
+            [
+              504.0079365079365,
+              373.36507936507934
+            ]
+          ],
+          "edge_distance_px": 136.63492063492066,
+          "polygon_mask_sha256": "4977d4e3fa73e46da406e84eef65aa02011da0421585a39a040e00a5b1f32961",
+          "edit_support_sha256": "1517087b62c89a9f75f193313429c2e104aece2e613c80fc85fd15ef66605d75",
+          "polygon_pixels": 716,
+          "edit_support_pixels": 1040,
+          "roi_box_xyxy": [
+            488,
+            326,
+            538,
+            420
+          ],
+          "canvas_transform": {
+            "native_width": 50,
+            "native_height": 94,
+            "canvas_size": 1024,
+            "scale": 10.893617021276595,
+            "resized_width": 545,
+            "resized_height": 1024,
+            "pad_left": 239,
+            "pad_top": 0,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "corrosion",
+          "points": [
+            [
+              637.0,
+              420.0
+            ],
+            [
+              638.0,
+              416.0
+            ],
+            [
+              642.0,
+              411.0
+            ],
+            [
+              650.0,
+              405.0
+            ],
+            [
+              656.0,
+              403.0
+            ],
+            [
+              662.0,
+              399.0
+            ],
+            [
+              670.0,
+              392.0
+            ],
+            [
+              677.0,
+              391.0
+            ],
+            [
+              693.0,
+              382.0
+            ],
+            [
+              696.0,
+              383.0
+            ],
+            [
+              689.0,
+              396.0
+            ],
+            [
+              678.0,
+              405.0
+            ],
+            [
+              658.0,
+              415.0
+            ],
+            [
+              656.0,
+              415.0
+            ],
+            [
+              642.0,
+              423.0
+            ],
+            [
+              639.0,
+              423.0
+            ]
+          ],
+          "edge_distance_px": 23.0,
+          "polygon_mask_sha256": "78bb0d7028fbc6939e0a567c552fe51682a41a01973c1fe59ddb61f35a8782a7",
+          "edit_support_sha256": "a9840f9142669e172cf046e33394c1552a987aaee539e85fc5cf70a6ebf967c4",
+          "polygon_pixels": 780,
+          "edit_support_pixels": 1204,
+          "roi_box_xyxy": [
+            621,
+            366,
+            713,
+            440
+          ],
+          "canvas_transform": {
+            "native_width": 92,
+            "native_height": 74,
+            "canvas_size": 1024,
+            "scale": 11.130434782608695,
+            "resized_width": 1024,
+            "resized_height": 824,
+            "pad_left": 0,
+            "pad_top": 100,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        }
+      ]
+    },
+    {
+      "source_id": "23",
+      "split": "train",
+      "image_path": "23.png",
+      "annotation_path": "23.json",
+      "image_sha256": "c57384471d743fc179add88589fa0d7c8d59e59d14c6947ab9f6d4fd692dbddb",
+      "annotation_sha256": "2cb23a813ddd4bf2f90a59a688ad22f6c9c5f1e27351f74d06875cb945e5e4df",
+      "native_size_wh": [
+        640,
+        480
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 1,
+      "support_overlap_pixels": 108,
+      "native_roundtrip_mock": "NOT_RUN",
+      "rejection_reasons": [
+        "polygon_0: border distance 0.000px < 24px",
+        "polygon_0: context ROI clamped to native image edge",
+        "independent ROI groups=1; expected exactly 2",
+        "native edit-support overlap=108px"
+      ],
+      "geometry_eligible": false,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "corrosion",
+          "points": [
+            [
+              0.0,
+              280.0
+            ],
+            [
+              0.0,
+              249.0
+            ],
+            [
+              8.0,
+              258.0
+            ],
+            [
+              28.0,
+              251.0
+            ],
+            [
+              33.0,
+              238.0
+            ],
+            [
+              59.0,
+              228.0
+            ],
+            [
+              97.0,
+              193.0
+            ],
+            [
+              142.0,
+              180.0
+            ],
+            [
+              183.0,
+              156.0
+            ],
+            [
+              256.0,
+              152.0
+            ],
+            [
+              290.0,
+              141.0
+            ],
+            [
+              354.0,
+              147.0
+            ],
+            [
+              390.0,
+              130.0
+            ],
+            [
+              423.0,
+              132.0
+            ],
+            [
+              432.0,
+              143.0
+            ],
+            [
+              411.0,
+              144.0
+            ],
+            [
+              200.0,
+              218.0
+            ],
+            [
+              29.0,
+              285.0
+            ]
+          ],
+          "edge_distance_px": 0.0,
+          "polygon_mask_sha256": "e7d4391e2e1d8c7731d3b72f83c4b71dac6b5c70d58146ad55daa87758dd169e",
+          "edit_support_sha256": "7160d3d9e14951ad27e6bac888a89f3dd3de577612c052d9c850761758e37892",
+          "polygon_pixels": 18909,
+          "edit_support_pixels": 21268,
+          "roi_box_xyxy": [
+            0,
+            114,
+            449,
+            302
+          ],
+          "canvas_transform": {
+            "native_width": 449,
+            "native_height": 188,
+            "canvas_size": 1024,
+            "scale": 2.2806236080178173,
+            "resized_width": 1024,
+            "resized_height": 429,
+            "pad_left": 0,
+            "pad_top": 297,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": true
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "corrosion",
+          "points": [
+            [
+              208.20422535211267,
+              91.40845070422532
+            ],
+            [
+              256.3732394366197,
+              74.85915492957743
+            ],
+            [
+              316.3732394366197,
+              50.859154929577436
+            ],
+            [
+              344.3732394366197,
+              43.859154929577436
+            ],
+            [
+              378.3732394366197,
+              37.859154929577436
+            ],
+            [
+              413.3732394366197,
+              41.859154929577436
+            ],
+            [
+              418.3732394366197,
+              45.859154929577436
+            ],
+            [
+              425.3732394366197,
+              48.859154929577436
+            ],
+            [
+              436.3732394366197,
+              55.859154929577436
+            ],
+            [
+              453.3732394366197,
+              64.85915492957743
+            ],
+            [
+              444.3732394366197,
+              74.85915492957743
+            ],
+            [
+              419.3732394366197,
+              79.85915492957743
+            ],
+            [
+              417.3732394366197,
+              94.85915492957743
+            ],
+            [
+              381.3732394366197,
+              109.85915492957743
+            ],
+            [
+              371.3732394366197,
+              122.85915492957743
+            ],
+            [
+              303.3732394366197,
+              128.85915492957744
+            ],
+            [
+              251.3732394366197,
+              135.85915492957744
+            ],
+            [
+              199.3732394366197,
+              141.85915492957744
+            ],
+            [
+              154.3732394366197,
+              169.85915492957744
+            ],
+            [
+              163.3732394366197,
+              155.85915492957744
+            ],
+            [
+              170.3732394366197,
+              122.85915492957743
+            ],
+            [
+              192.3732394366197,
+              91.85915492957743
+            ]
+          ],
+          "edge_distance_px": 37.859154929577436,
+          "polygon_mask_sha256": "87bb27325ba43c85888dfdb5354236742b1d047bc106abee4064c7ad75169e57",
+          "edit_support_sha256": "2700ec1cdf38140696722ee32748a851c29f8b244a1e8cdc898dc4a82a7910c8",
+          "polygon_pixels": 17109,
+          "edit_support_pixels": 18857,
+          "roi_box_xyxy": [
+            138,
+            21,
+            471,
+            187
+          ],
+          "canvas_transform": {
+            "native_width": 333,
+            "native_height": 166,
+            "canvas_size": 1024,
+            "scale": 3.075075075075075,
+            "resized_width": 1024,
+            "resized_height": 510,
+            "pad_left": 0,
+            "pad_top": 257,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        }
+      ]
+    },
+    {
+      "source_id": "55",
+      "split": "train",
+      "image_path": "55.png",
+      "annotation_path": "55.json",
+      "image_sha256": "1c188eb8ad831e55cee96ecd803ea56a8b202ea2903e64df947adfacb76e2851",
+      "annotation_sha256": "ead816e700664810e836b5f51333edd1aa62e7befe921650b53e478b7e5de9ae",
+      "native_size_wh": [
+        640,
+        480
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 1,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "NOT_RUN",
+      "rejection_reasons": [
+        "independent ROI groups=1; expected exactly 2"
+      ],
+      "geometry_eligible": false,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "corrosion",
+          "points": [
+            [
+              54.330985915492946,
+              174.50704225352112
+            ],
+            [
+              74.3732394366197,
+              178.85915492957744
+            ],
+            [
+              92.3732394366197,
+              182.85915492957744
+            ],
+            [
+              111.3732394366197,
+              187.85915492957744
+            ],
+            [
+              136.3732394366197,
+              197.85915492957744
+            ],
+            [
+              153.3732394366197,
+              213.85915492957744
+            ],
+            [
+              164.3732394366197,
+              215.85915492957744
+            ],
+            [
+              169.3732394366197,
+              205.85915492957744
+            ],
+            [
+              184.3732394366197,
+              204.85915492957744
+            ],
+            [
+              201.3732394366197,
+              211.85915492957744
+            ],
+            [
+              219.3732394366197,
+              214.85915492957744
+            ],
+            [
+              239.3732394366197,
+              223.85915492957744
+            ],
+            [
+              253.3732394366197,
+              235.85915492957744
+            ],
+            [
+              237.3732394366197,
+              241.85915492957744
+            ],
+            [
+              239.3732394366197,
+              248.85915492957744
+            ],
+            [
+              177.3732394366197,
+              232.85915492957744
+            ],
+            [
+              154.3732394366197,
+              228.85915492957744
+            ],
+            [
+              122.3732394366197,
+              217.85915492957744
+            ],
+            [
+              70.3732394366197,
+              207.85915492957744
+            ],
+            [
+              34.3732394366197,
+              197.85915492957744
+            ],
+            [
+              31.373239436619702,
+              171.85915492957744
+            ]
+          ],
+          "edge_distance_px": 31.373239436619702,
+          "polygon_mask_sha256": "50fc8e3df6cac8091b33ad8c865790cce94814366d63ae18dfda60bd96d419e3",
+          "edit_support_sha256": "cea47bd0c3c68a02fbac07924402ab6aa324d2631a5cec73f4e514e6844205c5",
+          "polygon_pixels": 5618,
+          "edit_support_pixels": 6888,
+          "roi_box_xyxy": [
+            15,
+            155,
+            271,
+            266
+          ],
+          "canvas_transform": {
+            "native_width": 256,
+            "native_height": 111,
+            "canvas_size": 1024,
+            "scale": 4.0,
+            "resized_width": 1024,
+            "resized_height": 444,
+            "pad_left": 0,
+            "pad_top": 290,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "corrosion",
+          "points": [
+            [
+              197.64084507042253,
+              140.70422535211267
+            ],
+            [
+              271.3732394366197,
+              151.85915492957744
+            ],
+            [
+              334.3732394366197,
+              163.85915492957744
+            ],
+            [
+              431.3732394366197,
+              186.85915492957744
+            ],
+            [
+              493.3732394366197,
+              201.85915492957744
+            ],
+            [
+              529.3732394366197,
+              235.85915492957744
+            ],
+            [
+              554.3732394366197,
+              272.8591549295774
+            ],
+            [
+              544.3732394366197,
+              284.8591549295774
+            ],
+            [
+              473.3732394366197,
+              266.8591549295774
+            ],
+            [
+              439.3732394366197,
+              268.8591549295774
+            ],
+            [
+              335.3732394366197,
+              238.85915492957744
+            ],
+            [
+              256.3732394366197,
+              216.85915492957744
+            ],
+            [
+              216.3732394366197,
+              199.85915492957744
+            ],
+            [
+              261.3732394366197,
+              202.85915492957744
+            ],
+            [
+              321.3732394366197,
+              211.85915492957744
+            ],
+            [
+              407.3732394366197,
+              222.85915492957744
+            ],
+            [
+              407.3732394366197,
+              216.85915492957744
+            ],
+            [
+              347.3732394366197,
+              198.85915492957744
+            ],
+            [
+              273.3732394366197,
+              176.85915492957744
+            ],
+            [
+              215.3732394366197,
+              168.85915492957744
+            ],
+            [
+              165.3732394366197,
+              162.85915492957744
+            ],
+            [
+              146.3732394366197,
+              149.85915492957744
+            ]
+          ],
+          "edge_distance_px": 84.62676056338034,
+          "polygon_mask_sha256": "345a3d2efb29d5fa4c2f0aa05bc7061f790aecb8048acabfa55205ab518aa748",
+          "edit_support_sha256": "977b585945c13e5930049759cdb0c0f8ea71a5aad1699a684f3a619b70651a20",
+          "polygon_pixels": 20366,
+          "edit_support_pixels": 23462,
+          "roi_box_xyxy": [
+            130,
+            124,
+            572,
+            302
+          ],
+          "canvas_transform": {
+            "native_width": 442,
+            "native_height": 178,
+            "canvas_size": 1024,
+            "scale": 2.316742081447964,
+            "resized_width": 1024,
+            "resized_height": 412,
+            "pad_left": 0,
+            "pad_top": 306,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        }
+      ]
+    },
+    {
+      "source_id": "63",
+      "split": "train",
+      "image_path": "63.png",
+      "annotation_path": "63.json",
+      "image_sha256": "c12292be5cde9a23466e8d808c831b8d497c0808095a0a70d66586f9882a46c8",
+      "annotation_sha256": "7dc9e9c7217e6889db05993803eca815152ca0679a41affa6624225cab1d8b65",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 1,
+      "support_overlap_pixels": 186,
+      "native_roundtrip_mock": "NOT_RUN",
+      "rejection_reasons": [
+        "polygon_0: border distance 5.000px < 24px",
+        "polygon_0: context ROI clamped to native image edge",
+        "polygon_1: border distance 1.365px < 24px",
+        "polygon_1: context ROI clamped to native image edge",
+        "independent ROI groups=1; expected exactly 2",
+        "native edit-support overlap=186px"
+      ],
+      "geometry_eligible": false,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "Burn",
+          "points": [
+            [
+              611.0,
+              355.0
+            ],
+            [
+              609.0,
+              340.0
+            ],
+            [
+              597.0,
+              332.0
+            ],
+            [
+              575.0,
+              332.0
+            ],
+            [
+              567.0,
+              310.0
+            ],
+            [
+              598.0,
+              243.0
+            ],
+            [
+              601.0,
+              226.0
+            ],
+            [
+              594.0,
+              220.0
+            ],
+            [
+              600.0,
+              203.0
+            ],
+            [
+              609.0,
+              206.0
+            ],
+            [
+              616.0,
+              177.0
+            ],
+            [
+              612.0,
+              96.0
+            ],
+            [
+              628.0,
+              60.0
+            ],
+            [
+              640.0,
+              55.0
+            ],
+            [
+              656.0,
+              64.0
+            ],
+            [
+              637.0,
+              31.0
+            ],
+            [
+              638.0,
+              8.0
+            ],
+            [
+              648.0,
+              5.0
+            ],
+            [
+              669.0,
+              35.0
+            ],
+            [
+              677.0,
+              77.0
+            ],
+            [
+              680.0,
+              171.0
+            ],
+            [
+              668.0,
+              251.0
+            ],
+            [
+              649.0,
+              299.0
+            ],
+            [
+              621.0,
+              348.0
+            ]
+          ],
+          "edge_distance_px": 5.0,
+          "polygon_mask_sha256": "e78b2e6aab8681bbe3ca01150e95b3df365a019ae2adc5556574792fec0665dd",
+          "edit_support_sha256": "e5f761ca123f0231c8debd555766396346da2a13adf7f1adc469315ada30ca4d",
+          "polygon_pixels": 20366,
+          "edit_support_pixels": 22383,
+          "roi_box_xyxy": [
+            551,
+            0,
+            697,
+            372
+          ],
+          "canvas_transform": {
+            "native_width": 146,
+            "native_height": 372,
+            "canvas_size": 1024,
+            "scale": 2.752688172043011,
+            "resized_width": 402,
+            "resized_height": 1024,
+            "pad_left": 311,
+            "pad_top": 0,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": true
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "Burn",
+          "points": [
+            [
+              320.515873015873,
+              8.095238095238086
+            ],
+            [
+              288.0079365079365,
+              32.36507936507935
+            ],
+            [
+              266.0079365079365,
+              57.36507936507935
+            ],
+            [
+              246.00793650793653,
+              95.36507936507935
+            ],
+            [
+              238.00793650793653,
+              121.36507936507935
+            ],
+            [
+              227.00793650793653,
+              162.36507936507937
+            ],
+            [
+              224.00793650793653,
+              178.36507936507937
+            ],
+            [
+              223.00793650793653,
+              205.36507936507937
+            ],
+            [
+              215.00793650793653,
+              233.36507936507937
+            ],
+            [
+              225.00793650793653,
+              249.36507936507937
+            ],
+            [
+              243.00793650793653,
+              303.36507936507934
+            ],
+            [
+              272.0079365079365,
+              352.36507936507934
+            ],
+            [
+              299.0079365079365,
+              372.36507936507934
+            ],
+            [
+              324.0079365079365,
+              391.36507936507934
+            ],
+            [
+              374.0079365079365,
+              403.36507936507934
+            ],
+            [
+              452.0079365079365,
+              394.36507936507934
+            ],
+            [
+              505.0079365079365,
+              361.36507936507934
+            ],
+            [
+              537.0079365079365,
+              330.36507936507934
+            ],
+            [
+              560.0079365079365,
+              317.36507936507934
+            ],
+            [
+              571.0079365079365,
+              328.36507936507934
+            ],
+            [
+              583.0079365079365,
+              336.36507936507934
+            ],
+            [
+              597.0079365079365,
+              336.36507936507934
+            ],
+            [
+              606.0079365079365,
+              341.36507936507934
+            ],
+            [
+              609.0079365079365,
+              353.36507936507934
+            ],
+            [
+              610.0079365079365,
+              365.36507936507934
+            ],
+            [
+              593.0079365079365,
+              388.36507936507934
+            ],
+            [
+              568.0079365079365,
+              430.36507936507934
+            ],
+            [
+              529.0079365079365,
+              460.36507936507934
+            ],
+            [
+              489.0079365079365,
+              466.36507936507934
+            ],
+            [
+              443.0079365079365,
+              453.36507936507934
+            ],
+            [
+              359.0079365079365,
+              428.36507936507934
+            ],
+            [
+              343.0079365079365,
+              438.36507936507934
+            ],
+            [
+              283.0079365079365,
+              417.36507936507934
+            ],
+            [
+              239.00793650793653,
+              401.36507936507934
+            ],
+            [
+              224.00793650793653,
+              367.36507936507934
+            ],
+            [
+              195.00793650793653,
+              321.36507936507934
+            ],
+            [
+              162.00793650793653,
+              180.36507936507937
+            ],
+            [
+              187.00793650793653,
+              110.36507936507935
+            ],
+            [
+              211.00793650793653,
+              43.36507936507935
+            ],
+            [
+              241.00793650793653,
+              11.365079365079357
+            ],
+            [
+              260.0079365079365,
+              1.365079365079356
+            ]
+          ],
+          "edge_distance_px": 1.365079365079356,
+          "polygon_mask_sha256": "8ef65e55308346a60c1d09c224408c5575babc387cd907d2047eebb4023cdb33",
+          "edit_support_sha256": "5511b4c9224215d92f23401eaeb50b5dced0eef40e50e3cee9af4a2b8dc93527",
+          "polygon_pixels": 44835,
+          "edit_support_pixels": 49312,
+          "roi_box_xyxy": [
+            146,
+            0,
+            628,
+            484
+          ],
+          "canvas_transform": {
+            "native_width": 482,
+            "native_height": 484,
+            "canvas_size": 1024,
+            "scale": 2.115702479338843,
+            "resized_width": 1020,
+            "resized_height": 1024,
+            "pad_left": 2,
+            "pad_top": 0,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": true
+        }
+      ]
+    },
+    {
+      "source_id": "64",
+      "split": "train",
+      "image_path": "64.png",
+      "annotation_path": "64.json",
+      "image_sha256": "e7b3db27152c12be112916cec8d2be958ac5669aa37c501c0bc5b486741d9abc",
+      "annotation_sha256": "73f1704d2e939cf1eb998ef64027cb7a3b24de81a0fa7f3134997163484d2072",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 1,
+      "support_overlap_pixels": 106,
+      "native_roundtrip_mock": "NOT_RUN",
+      "rejection_reasons": [
+        "polygon_0: border distance -0.365px < 24px",
+        "polygon_0: context ROI clamped to native image edge",
+        "polygon_1: border distance -0.365px < 24px",
+        "polygon_1: context ROI clamped to native image edge",
+        "independent ROI groups=1; expected exactly 2",
+        "native edit-support overlap=106px"
+      ],
+      "geometry_eligible": false,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "Burn",
+          "points": [
+            [
+              209.00793650793653,
+              208.0952380952381
+            ],
+            [
+              215.00793650793653,
+              185.36507936507937
+            ],
+            [
+              233.00793650793653,
+              159.36507936507937
+            ],
+            [
+              265.0079365079365,
+              127.36507936507935
+            ],
+            [
+              273.0079365079365,
+              137.36507936507937
+            ],
+            [
+              305.0079365079365,
+              112.36507936507935
+            ],
+            [
+              337.0079365079365,
+              107.36507936507935
+            ],
+            [
+              386.0079365079365,
+              108.36507936507935
+            ],
+            [
+              415.0079365079365,
+              118.36507936507935
+            ],
+            [
+              461.0079365079365,
+              125.36507936507935
+            ],
+            [
+              490.0079365079365,
+              129.36507936507937
+            ],
+            [
+              558.0079365079365,
+              156.36507936507937
+            ],
+            [
+              617.0079365079365,
+              181.36507936507937
+            ],
+            [
+              647.0079365079365,
+              206.36507936507937
+            ],
+            [
+              678.0079365079365,
+              230.36507936507937
+            ],
+            [
+              694.0079365079365,
+              256.36507936507934
+            ],
+            [
+              684.0079365079365,
+              278.36507936507934
+            ],
+            [
+              653.0079365079365,
+              308.36507936507934
+            ],
+            [
+              635.0079365079365,
+              323.36507936507934
+            ],
+            [
+              672.0079365079365,
+              326.36507936507934
+            ],
+            [
+              697.0079365079365,
+              334.36507936507934
+            ],
+            [
+              708.0079365079365,
+              341.36507936507934
+            ],
+            [
+              716.0079365079365,
+              345.36507936507934
+            ],
+            [
+              719.0079365079365,
+              403.36507936507934
+            ],
+            [
+              715.0079365079365,
+              508.36507936507934
+            ],
+            [
+              715.0079365079365,
+              539.3650793650794
+            ],
+            [
+              642.0079365079365,
+              539.3650793650794
+            ],
+            [
+              610.0079365079365,
+              528.3650793650794
+            ],
+            [
+              535.0079365079365,
+              450.36507936507934
+            ],
+            [
+              501.0079365079365,
+              414.36507936507934
+            ],
+            [
+              486.0079365079365,
+              371.36507936507934
+            ],
+            [
+              460.0079365079365,
+              352.36507936507934
+            ],
+            [
+              391.0079365079365,
+              334.36507936507934
+            ],
+            [
+              349.0079365079365,
+              303.36507936507934
+            ],
+            [
+              296.0079365079365,
+              261.36507936507934
+            ],
+            [
+              284.0079365079365,
+              233.36507936507937
+            ],
+            [
+              263.0079365079365,
+              216.36507936507937
+            ],
+            [
+              226.00793650793653,
+              218.36507936507937
+            ]
+          ],
+          "edge_distance_px": -0.36507936507939576,
+          "polygon_mask_sha256": "220b7e657ae5379f6af2dc30187e0ac27beecf7de17785737a3fc97a43833a16",
+          "edit_support_sha256": "413fe20b2f770e7918f49048260f3b17d12c3e63e59faba2e4cff3623a28ea78",
+          "polygon_pixels": 114985,
+          "edit_support_pixels": 118793,
+          "roi_box_xyxy": [
+            193,
+            91,
+            720,
+            540
+          ],
+          "canvas_transform": {
+            "native_width": 527,
+            "native_height": 449,
+            "canvas_size": 1024,
+            "scale": 1.9430740037950665,
+            "resized_width": 1024,
+            "resized_height": 872,
+            "pad_left": 0,
+            "pad_top": 76,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": true
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "Burn",
+          "points": [
+            [
+              188.7698412698413,
+              220.3968253968254
+            ],
+            [
+              153.00793650793653,
+              257.36507936507934
+            ],
+            [
+              156.00793650793653,
+              285.36507936507934
+            ],
+            [
+              169.00793650793653,
+              291.36507936507934
+            ],
+            [
+              202.00793650793653,
+              273.36507936507934
+            ],
+            [
+              233.00793650793653,
+              278.36507936507934
+            ],
+            [
+              234.00793650793653,
+              288.36507936507934
+            ],
+            [
+              237.00793650793653,
+              301.36507936507934
+            ],
+            [
+              248.00793650793653,
+              322.36507936507934
+            ],
+            [
+              261.0079365079365,
+              335.36507936507934
+            ],
+            [
+              273.0079365079365,
+              353.36507936507934
+            ],
+            [
+              301.0079365079365,
+              381.36507936507934
+            ],
+            [
+              319.0079365079365,
+              393.36507936507934
+            ],
+            [
+              308.0079365079365,
+              404.36507936507934
+            ],
+            [
+              293.0079365079365,
+              413.36507936507934
+            ],
+            [
+              280.0079365079365,
+              427.36507936507934
+            ],
+            [
+              281.0079365079365,
+              440.36507936507934
+            ],
+            [
+              289.0079365079365,
+              454.36507936507934
+            ],
+            [
+              321.0079365079365,
+              446.36507936507934
+            ],
+            [
+              347.0079365079365,
+              428.36507936507934
+            ],
+            [
+              378.0079365079365,
+              427.36507936507934
+            ],
+            [
+              391.0079365079365,
+              448.36507936507934
+            ],
+            [
+              434.0079365079365,
+              472.36507936507934
+            ],
+            [
+              444.0079365079365,
+              482.36507936507934
+            ],
+            [
+              457.0079365079365,
+              507.36507936507934
+            ],
+            [
+              458.0079365079365,
+              529.3650793650794
+            ],
+            [
+              493.0079365079365,
+              537.3650793650794
+            ],
+            [
+              531.0079365079365,
+              535.3650793650794
+            ],
+            [
+              590.0079365079365,
+              539.3650793650794
+            ],
+            [
+              601.0079365079365,
+              531.3650793650794
+            ],
+            [
+              558.0079365079365,
+              489.36507936507934
+            ],
+            [
+              507.0079365079365,
+              441.36507936507934
+            ],
+            [
+              475.0079365079365,
+              382.36507936507934
+            ],
+            [
+              441.0079365079365,
+              355.36507936507934
+            ],
+            [
+              372.0079365079365,
+              328.36507936507934
+            ],
+            [
+              327.0079365079365,
+              301.36507936507934
+            ],
+            [
+              276.0079365079365,
+              259.36507936507934
+            ],
+            [
+              261.0079365079365,
+              229.36507936507937
+            ]
+          ],
+          "edge_distance_px": -0.36507936507939576,
+          "polygon_mask_sha256": "8b2ab9e3ac8aad3d20b02befd1e3973ade7622800862a53cc0eff2e57d2e8031",
+          "edit_support_sha256": "ef89e4a6c196916218d30a1470f882840159574b35a73014b578e236ab43648f",
+          "polygon_pixels": 42064,
+          "edit_support_pixels": 45470,
+          "roi_box_xyxy": [
+            137,
+            204,
+            619,
+            540
+          ],
+          "canvas_transform": {
+            "native_width": 482,
+            "native_height": 336,
+            "canvas_size": 1024,
+            "scale": 2.12448132780083,
+            "resized_width": 1024,
+            "resized_height": 714,
+            "pad_left": 0,
+            "pad_top": 155,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": true
+        }
+      ]
+    },
+    {
+      "source_id": "66",
+      "split": "train",
+      "image_path": "66.png",
+      "annotation_path": "66.json",
+      "image_sha256": "43102d0961de181bca30fe7726e2affce1b6e03c3dca67c8c797c710310e0cf8",
+      "annotation_sha256": "c4bbdde0cf60db7166f7376f79b5f6329973f2cfce80ce0353892771dbf0d485",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 1,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "NOT_RUN",
+      "rejection_reasons": [
+        "polygon_0: border distance 1.635px < 24px",
+        "polygon_0: context ROI clamped to native image edge",
+        "independent ROI groups=1; expected exactly 2"
+      ],
+      "geometry_eligible": false,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "corrosion",
+          "points": [
+            [
+              356.6269841269841,
+              348.9682539682539
+            ],
+            [
+              331.0079365079365,
+              368.36507936507934
+            ],
+            [
+              305.0079365079365,
+              401.36507936507934
+            ],
+            [
+              328.0079365079365,
+              408.36507936507934
+            ],
+            [
+              304.0079365079365,
+              434.36507936507934
+            ],
+            [
+              283.0079365079365,
+              467.36507936507934
+            ],
+            [
+              244.00793650793653,
+              500.36507936507934
+            ],
+            [
+              226.00793650793653,
+              537.3650793650794
+            ],
+            [
+              269.0079365079365,
+              491.36507936507934
+            ],
+            [
+              300.0079365079365,
+              462.36507936507934
+            ],
+            [
+              317.0079365079365,
+              442.36507936507934
+            ],
+            [
+              346.0079365079365,
+              428.36507936507934
+            ],
+            [
+              378.0079365079365,
+              403.36507936507934
+            ],
+            [
+              401.0079365079365,
+              378.36507936507934
+            ],
+            [
+              410.0079365079365,
+              361.36507936507934
+            ],
+            [
+              392.0079365079365,
+              356.36507936507934
+            ],
+            [
+              376.0079365079365,
+              349.36507936507934
+            ]
+          ],
+          "edge_distance_px": 1.6349206349206042,
+          "polygon_mask_sha256": "157c1a9fc5f249c28d3de1d927d98ac02525d0b4ced06bd05ca8236b60225c25",
+          "edit_support_sha256": "35adf546552f983c6b424df0b430987222acb9c936117a6cee8d49f3f75b01ed",
+          "polygon_pixels": 6480,
+          "edit_support_pixels": 8078,
+          "roi_box_xyxy": [
+            210,
+            332,
+            428,
+            540
+          ],
+          "canvas_transform": {
+            "native_width": 218,
+            "native_height": 208,
+            "canvas_size": 1024,
+            "scale": 4.697247706422019,
+            "resized_width": 1024,
+            "resized_height": 977,
+            "pad_left": 0,
+            "pad_top": 23,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": true
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "corrosion",
+          "points": [
+            [
+              289.56349206349205,
+              304.5238095238095
+            ],
+            [
+              294.0079365079365,
+              327.36507936507934
+            ],
+            [
+              307.0079365079365,
+              331.36507936507934
+            ],
+            [
+              320.0079365079365,
+              339.36507936507934
+            ],
+            [
+              313.0079365079365,
+              354.36507936507934
+            ],
+            [
+              281.0079365079365,
+              363.36507936507934
+            ],
+            [
+              246.00793650793653,
+              371.36507936507934
+            ],
+            [
+              258.0079365079365,
+              353.36507936507934
+            ],
+            [
+              266.0079365079365,
+              333.36507936507934
+            ],
+            [
+              269.0079365079365,
+              318.36507936507934
+            ],
+            [
+              249.00793650793653,
+              333.36507936507934
+            ],
+            [
+              259.0079365079365,
+              317.36507936507934
+            ],
+            [
+              276.0079365079365,
+              310.36507936507934
+            ]
+          ],
+          "edge_distance_px": 167.63492063492066,
+          "polygon_mask_sha256": "3bad298283698daec7b6c9f659aae03b939362b7a9a31575a86e9e79a3ebe89e",
+          "edit_support_sha256": "7b5210797c0fa8d49322eaef715f97536a2a1312c489566c0185165672866a63",
+          "polygon_pixels": 2487,
+          "edit_support_pixels": 3197,
+          "roi_box_xyxy": [
+            230,
+            288,
+            338,
+            389
+          ],
+          "canvas_transform": {
+            "native_width": 108,
+            "native_height": 101,
+            "canvas_size": 1024,
+            "scale": 9.481481481481481,
+            "resized_width": 1024,
+            "resized_height": 958,
+            "pad_left": 0,
+            "pad_top": 33,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        }
+      ]
+    },
+    {
+      "source_id": "68",
+      "split": "train",
+      "image_path": "68.png",
+      "annotation_path": "68.json",
+      "image_sha256": "f5fd002d635b3f3b99b74801218ee2f48fc485936472e818e9cad3754126c048",
+      "annotation_sha256": "3db13e607226b20387627212ab03c163a62f778aa85b2dfaa95a95dcae7c1a44",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 1,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "NOT_RUN",
+      "rejection_reasons": [
+        "independent ROI groups=1; expected exactly 2"
+      ],
+      "geometry_eligible": false,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "corrosion",
+          "points": [
+            [
+              272.0,
+              171.0
+            ],
+            [
+              274.0,
+              148.0
+            ],
+            [
+              418.0,
+              93.0
+            ],
+            [
+              493.0,
+              79.0
+            ],
+            [
+              510.0,
+              81.0
+            ],
+            [
+              522.0,
+              98.0
+            ],
+            [
+              526.0,
+              127.0
+            ],
+            [
+              497.0,
+              166.0
+            ],
+            [
+              497.0,
+              187.0
+            ],
+            [
+              489.0,
+              188.0
+            ],
+            [
+              492.0,
+              195.0
+            ],
+            [
+              487.0,
+              196.0
+            ],
+            [
+              490.0,
+              205.0
+            ],
+            [
+              473.0,
+              219.0
+            ],
+            [
+              458.0,
+              222.0
+            ],
+            [
+              446.0,
+              239.0
+            ],
+            [
+              423.0,
+              237.0
+            ],
+            [
+              402.0,
+              244.0
+            ],
+            [
+              361.0,
+              215.0
+            ],
+            [
+              358.0,
+              220.0
+            ],
+            [
+              349.0,
+              212.0
+            ],
+            [
+              336.0,
+              211.0
+            ],
+            [
+              332.0,
+              203.0
+            ],
+            [
+              315.0,
+              198.0
+            ]
+          ],
+          "edge_distance_px": 79.0,
+          "polygon_mask_sha256": "014e57e5e06dbbe980582e1e2f29d9769646b6d485d0a9466e27172bbb0526bc",
+          "edit_support_sha256": "1a110491103ceaa1dcad877c589c748d29cd4cd658a953b2d8db0112ebb3ca09",
+          "polygon_pixels": 25841,
+          "edit_support_pixels": 27585,
+          "roi_box_xyxy": [
+            256,
+            63,
+            543,
+            261
+          ],
+          "canvas_transform": {
+            "native_width": 287,
+            "native_height": 198,
+            "canvas_size": 1024,
+            "scale": 3.56794425087108,
+            "resized_width": 1024,
+            "resized_height": 706,
+            "pad_left": 0,
+            "pad_top": 159,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "corrosion",
+          "points": [
+            [
+              392.0,
+              331.0
+            ],
+            [
+              592.0,
+              207.0
+            ],
+            [
+              611.0,
+              207.0
+            ],
+            [
+              603.0,
+              209.0
+            ],
+            [
+              624.0,
+              224.0
+            ],
+            [
+              626.0,
+              256.0
+            ],
+            [
+              633.0,
+              258.0
+            ],
+            [
+              628.0,
+              260.0
+            ],
+            [
+              636.0,
+              271.0
+            ],
+            [
+              621.0,
+              274.0
+            ],
+            [
+              608.0,
+              286.0
+            ],
+            [
+              612.0,
+              327.0
+            ],
+            [
+              597.0,
+              320.0
+            ],
+            [
+              589.0,
+              337.0
+            ],
+            [
+              563.0,
+              345.0
+            ],
+            [
+              557.0,
+              380.0
+            ],
+            [
+              561.0,
+              396.0
+            ],
+            [
+              553.0,
+              394.0
+            ],
+            [
+              550.0,
+              381.0
+            ],
+            [
+              538.0,
+              370.0
+            ],
+            [
+              521.0,
+              364.0
+            ],
+            [
+              501.0,
+              371.0
+            ],
+            [
+              485.0,
+              398.0
+            ],
+            [
+              484.0,
+              380.0
+            ],
+            [
+              469.0,
+              363.0
+            ],
+            [
+              431.0,
+              344.0
+            ],
+            [
+              406.0,
+              338.0
+            ],
+            [
+              403.0,
+              343.0
+            ]
+          ],
+          "edge_distance_px": 83.0,
+          "polygon_mask_sha256": "00da7f5c97ccd84fcb8b8cc864c093ad426672262a8bfbd146321d2e5ff8deae",
+          "edit_support_sha256": "7d7a700f7925089a3a2432c014bf80ad31751a1276e8082b356ef647d2858b29",
+          "polygon_pixels": 21203,
+          "edit_support_pixels": 23212,
+          "roi_box_xyxy": [
+            376,
+            191,
+            653,
+            415
+          ],
+          "canvas_transform": {
+            "native_width": 277,
+            "native_height": 224,
+            "canvas_size": 1024,
+            "scale": 3.696750902527076,
+            "resized_width": 1024,
+            "resized_height": 828,
+            "pad_left": 0,
+            "pad_top": 98,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        }
+      ]
+    },
+    {
+      "source_id": "69",
+      "split": "train",
+      "image_path": "69.png",
+      "annotation_path": "69.json",
+      "image_sha256": "75f8580bd47a6eb58b96dc8d3b0fc1571574d31d0dc343e6c6ab3091a4807455",
+      "annotation_sha256": "2a9c98b455b54e02efc219281754c6d4b6c59cedb7e5adae30cbe9b9223fd8cc",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 1,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "NOT_RUN",
+      "rejection_reasons": [
+        "independent ROI groups=1; expected exactly 2"
+      ],
+      "geometry_eligible": false,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "Material missing",
+          "points": [
+            [
+              493.531746031746,
+              215.23809523809524
+            ],
+            [
+              521.0079365079365,
+              218.36507936507937
+            ],
+            [
+              573.0079365079365,
+              215.36507936507937
+            ],
+            [
+              586.0079365079365,
+              214.36507936507937
+            ],
+            [
+              584.0079365079365,
+              238.36507936507937
+            ],
+            [
+              573.0079365079365,
+              245.36507936507937
+            ],
+            [
+              533.0079365079365,
+              262.36507936507934
+            ],
+            [
+              523.0079365079365,
+              249.36507936507937
+            ],
+            [
+              526.0079365079365,
+              232.36507936507937
+            ]
+          ],
+          "edge_distance_px": 132.9920634920635,
+          "polygon_mask_sha256": "ce043f8085a7de9730df655962af2af7a221111f58f56714d4a9af846cbeca4a",
+          "edit_support_sha256": "fe4a24c765da8d28380b125ea91cdf6de63558f15ad9b5ac37b30dae50c43547",
+          "polygon_pixels": 2394,
+          "edit_support_pixels": 3001,
+          "roi_box_xyxy": [
+            477,
+            198,
+            604,
+            280
+          ],
+          "canvas_transform": {
+            "native_width": 127,
+            "native_height": 82,
+            "canvas_size": 1024,
+            "scale": 8.062992125984252,
+            "resized_width": 1024,
+            "resized_height": 661,
+            "pad_left": 0,
+            "pad_top": 181,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "corrosion",
+          "points": [
+            [
+              115.75396825396827,
+              224.76190476190476
+            ],
+            [
+              79.00793650793652,
+              251.36507936507937
+            ],
+            [
+              83.00793650793652,
+              254.36507936507937
+            ],
+            [
+              123.00793650793652,
+              247.36507936507937
+            ],
+            [
+              171.00793650793653,
+              255.36507936507937
+            ],
+            [
+              172.00793650793653,
+              258.36507936507934
+            ],
+            [
+              228.00793650793653,
+              241.36507936507937
+            ],
+            [
+              248.00793650793653,
+              235.36507936507937
+            ],
+            [
+              231.00793650793653,
+              255.36507936507937
+            ],
+            [
+              255.00793650793653,
+              248.36507936507937
+            ],
+            [
+              277.0079365079365,
+              240.36507936507937
+            ],
+            [
+              317.0079365079365,
+              267.36507936507934
+            ],
+            [
+              366.0079365079365,
+              264.36507936507934
+            ],
+            [
+              433.0079365079365,
+              261.36507936507934
+            ],
+            [
+              440.0079365079365,
+              269.36507936507934
+            ],
+            [
+              483.0079365079365,
+              262.36507936507934
+            ],
+            [
+              494.0079365079365,
+              269.36507936507934
+            ],
+            [
+              513.0079365079365,
+              255.36507936507937
+            ],
+            [
+              501.0079365079365,
+              234.36507936507937
+            ],
+            [
+              468.0079365079365,
+              216.36507936507937
+            ],
+            [
+              430.0079365079365,
+              218.36507936507937
+            ],
+            [
+              346.0079365079365,
+              219.36507936507937
+            ],
+            [
+              252.00793650793653,
+              222.36507936507937
+            ],
+            [
+              190.00793650793653,
+              228.36507936507937
+            ],
+            [
+              136.00793650793653,
+              226.36507936507937
+            ]
+          ],
+          "edge_distance_px": 79.00793650793652,
+          "polygon_mask_sha256": "4e89d14c34977f1486dc19e299725406c40c9bfcfba44399aae3cbb0d375eaf9",
+          "edit_support_sha256": "ad587d89a7d723c61c0699d3d9bdd49955a051666fff62fa9c3ed490f3d34a81",
+          "polygon_pixels": 14113,
+          "edit_support_pixels": 16377,
+          "roi_box_xyxy": [
+            63,
+            200,
+            531,
+            287
+          ],
+          "canvas_transform": {
+            "native_width": 468,
+            "native_height": 87,
+            "canvas_size": 1024,
+            "scale": 2.1880341880341883,
+            "resized_width": 1024,
+            "resized_height": 190,
+            "pad_left": 0,
+            "pad_top": 417,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        }
+      ]
+    },
+    {
+      "source_id": "72",
+      "split": "train",
+      "image_path": "72.png",
+      "annotation_path": "72.json",
+      "image_sha256": "a7a54901607cb097a0dd1d450c221bd4ba1e41feab6ae7e71932bda377359d50",
+      "annotation_sha256": "22f3a71f3657298bb775216562085cbac42a9e9642cea1057aef5a9c25ea2f30",
+      "native_size_wh": [
+        640,
+        480
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 1,
+      "support_overlap_pixels": 8182,
+      "native_roundtrip_mock": "NOT_RUN",
+      "rejection_reasons": [
+        "polygon_1: border distance 0.000px < 24px",
+        "polygon_1: context ROI clamped to native image edge",
+        "independent ROI groups=1; expected exactly 2",
+        "native edit-support overlap=8182px"
+      ],
+      "geometry_eligible": false,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "Crack",
+          "points": [
+            [
+              372.0576131687243,
+              279.91769547325106
+            ],
+            [
+              347.55555555555554,
+              286.2592592592593
+            ],
+            [
+              312.55555555555554,
+              297.2592592592593
+            ],
+            [
+              284.55555555555554,
+              322.2592592592593
+            ],
+            [
+              258.55555555555554,
+              341.2592592592593
+            ],
+            [
+              232.55555555555557,
+              366.2592592592593
+            ],
+            [
+              192.55555555555557,
+              384.2592592592593
+            ],
+            [
+              174.55555555555557,
+              398.2592592592593
+            ],
+            [
+              140.55555555555557,
+              404.2592592592593
+            ],
+            [
+              128.55555555555557,
+              418.2592592592593
+            ],
+            [
+              112.55555555555557,
+              443.2592592592593
+            ],
+            [
+              112.55555555555557,
+              448.2592592592593
+            ],
+            [
+              160.55555555555557,
+              431.2592592592593
+            ],
+            [
+              181.55555555555557,
+              418.2592592592593
+            ],
+            [
+              196.55555555555557,
+              406.2592592592593
+            ],
+            [
+              247.55555555555557,
+              373.2592592592593
+            ],
+            [
+              274.55555555555554,
+              359.2592592592593
+            ],
+            [
+              295.55555555555554,
+              347.2592592592593
+            ],
+            [
+              309.55555555555554,
+              334.2592592592593
+            ],
+            [
+              330.55555555555554,
+              313.2592592592593
+            ],
+            [
+              339.55555555555554,
+              312.2592592592593
+            ],
+            [
+              357.55555555555554,
+              304.2592592592593
+            ],
+            [
+              361.55555555555554,
+              302.2592592592593
+            ],
+            [
+              371.55555555555554,
+              292.2592592592593
+            ]
+          ],
+          "edge_distance_px": 30.740740740740705,
+          "polygon_mask_sha256": "638070d6936801b235d2cddcc77d62e37e93cb9ad6eeb7a350d48e6e108ec0ed",
+          "edit_support_sha256": "aa9661cb38e426335868d9612563465818c23712ae00e8ebee7e23c2b9b76588",
+          "polygon_pixels": 6651,
+          "edit_support_pixels": 8383,
+          "roi_box_xyxy": [
+            96,
+            263,
+            390,
+            466
+          ],
+          "canvas_transform": {
+            "native_width": 294,
+            "native_height": 203,
+            "canvas_size": 1024,
+            "scale": 3.4829931972789114,
+            "resized_width": 1024,
+            "resized_height": 707,
+            "pad_left": 0,
+            "pad_top": 158,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "corrosion",
+          "points": [
+            [
+              377.0,
+              276.0
+            ],
+            [
+              297.0,
+              359.0
+            ],
+            [
+              259.0,
+              383.0
+            ],
+            [
+              237.0,
+              423.0
+            ],
+            [
+              230.0,
+              479.0
+            ],
+            [
+              0.0,
+              479.0
+            ],
+            [
+              0.0,
+              256.0
+            ],
+            [
+              59.0,
+              269.0
+            ],
+            [
+              118.0,
+              322.0
+            ],
+            [
+              153.0,
+              340.0
+            ],
+            [
+              218.0,
+              323.0
+            ],
+            [
+              295.0,
+              280.0
+            ]
+          ],
+          "edge_distance_px": 0.0,
+          "polygon_mask_sha256": "1884ef9074f166975ab8eb38adc641b5421bc9c84bceac06ee07d9ad3fb1492a",
+          "edit_support_sha256": "89e0c1d621e31eed5c273664abb95c8376982d9486f22281d6989be683b3ff2a",
+          "polygon_pixels": 50021,
+          "edit_support_pixels": 51779,
+          "roi_box_xyxy": [
+            0,
+            240,
+            394,
+            480
+          ],
+          "canvas_transform": {
+            "native_width": 394,
+            "native_height": 240,
+            "canvas_size": 1024,
+            "scale": 2.598984771573604,
+            "resized_width": 1024,
+            "resized_height": 624,
+            "pad_left": 0,
+            "pad_top": 200,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": true
+        }
+      ]
+    },
+    {
+      "source_id": "75",
+      "split": "train",
+      "image_path": "75.png",
+      "annotation_path": "75.json",
+      "image_sha256": "d37c81f0e89df0cc24a1a856b41edd54ce2729b958d21beb463accc24302a212",
+      "annotation_sha256": "ced98d93cc6c23b1d6e390dcf0e46d20a6eeb20a48cb11b7866c8b983ad8c05e",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 2,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "NOT_RUN",
+      "rejection_reasons": [
+        "polygon_1: border distance 3.992px < 24px",
+        "polygon_1: context ROI clamped to native image edge"
+      ],
+      "geometry_eligible": false,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "Material missing",
+          "points": [
+            [
+              278.8492063492063,
+              189.04761904761904
+            ],
+            [
+              269.0079365079365,
+              208.36507936507937
+            ],
+            [
+              283.0079365079365,
+              221.36507936507937
+            ],
+            [
+              304.0079365079365,
+              214.36507936507937
+            ],
+            [
+              315.0079365079365,
+              197.36507936507937
+            ],
+            [
+              311.0079365079365,
+              185.36507936507937
+            ]
+          ],
+          "edge_distance_px": 185.36507936507937,
+          "polygon_mask_sha256": "6d95a09d3d22a9117f9cddd5c510fc55229527cdd1cb54069b69e228d9deda27",
+          "edit_support_sha256": "a9a938971c579eea6df4b82c3451e3d7ee5f31cd338bc415abe8ab7f17dc0a1e",
+          "polygon_pixels": 1135,
+          "edit_support_pixels": 1487,
+          "roi_box_xyxy": [
+            253,
+            169,
+            333,
+            239
+          ],
+          "canvas_transform": {
+            "native_width": 80,
+            "native_height": 70,
+            "canvas_size": 1024,
+            "scale": 12.8,
+            "resized_width": 1024,
+            "resized_height": 896,
+            "pad_left": 0,
+            "pad_top": 64,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "corrosion",
+          "points": [
+            [
+              420.515873015873,
+              12.857142857142849
+            ],
+            [
+              478.0079365079365,
+              25.365079365079357
+            ],
+            [
+              529.0079365079365,
+              36.36507936507935
+            ],
+            [
+              601.0079365079365,
+              62.36507936507935
+            ],
+            [
+              691.0079365079365,
+              88.36507936507935
+            ],
+            [
+              715.0079365079365,
+              95.36507936507935
+            ],
+            [
+              714.0079365079365,
+              377.36507936507934
+            ],
+            [
+              564.0079365079365,
+              167.36507936507937
+            ],
+            [
+              449.0079365079365,
+              58.36507936507935
+            ],
+            [
+              407.0079365079365,
+              24.365079365079357
+            ]
+          ],
+          "edge_distance_px": 3.992063492063494,
+          "polygon_mask_sha256": "466ce281d223ce5d7812d545de34ddfe4ce9bbdac468b928ece66012da0cd0f2",
+          "edit_support_sha256": "aeb880fe7003a3a8bbb7cbf38281e8ebf47279cdf2f0b761a8b135c2b174fa03",
+          "polygon_pixels": 40687,
+          "edit_support_pixels": 43399,
+          "roi_box_xyxy": [
+            391,
+            0,
+            720,
+            395
+          ],
+          "canvas_transform": {
+            "native_width": 329,
+            "native_height": 395,
+            "canvas_size": 1024,
+            "scale": 2.5924050632911393,
+            "resized_width": 853,
+            "resized_height": 1024,
+            "pad_left": 85,
+            "pad_top": 0,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": true
+        }
+      ]
+    },
+    {
+      "source_id": "76",
+      "split": "train",
+      "image_path": "76.png",
+      "annotation_path": "76.json",
+      "image_sha256": "21806f10541a113a13c8852d487eb2a040c0db2101ace389deb92d85d5bbd530",
+      "annotation_sha256": "e57fff6b180cbb7c08577572bb061e01cceaf1e3eef2a9072523ea6ef307a4c8",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 2,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "NOT_RUN",
+      "rejection_reasons": [
+        "polygon_1: border distance -0.999px < 24px",
+        "polygon_1: context ROI clamped to native image edge"
+      ],
+      "geometry_eligible": false,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "Burn",
+          "points": [
+            [
+              225.0,
+              152.0
+            ],
+            [
+              222.0,
+              156.0
+            ],
+            [
+              209.0,
+              155.0
+            ],
+            [
+              180.0,
+              145.0
+            ],
+            [
+              172.0,
+              140.0
+            ],
+            [
+              145.0,
+              134.0
+            ],
+            [
+              143.0,
+              126.0
+            ],
+            [
+              139.0,
+              128.0
+            ],
+            [
+              138.0,
+              111.0
+            ],
+            [
+              144.0,
+              107.0
+            ],
+            [
+              145.0,
+              96.0
+            ],
+            [
+              174.0,
+              76.0
+            ],
+            [
+              202.0,
+              70.0
+            ],
+            [
+              218.0,
+              70.0
+            ],
+            [
+              221.0,
+              72.0
+            ],
+            [
+              226.0,
+              100.0
+            ],
+            [
+              224.0,
+              106.0
+            ],
+            [
+              220.0,
+              109.0
+            ],
+            [
+              225.0,
+              117.0
+            ],
+            [
+              223.0,
+              121.0
+            ]
+          ],
+          "edge_distance_px": 70.0,
+          "polygon_mask_sha256": "32c5a1196186cfb2d7a69728e8cb27fa7b8c885f87c9502d0b250059bee1396c",
+          "edit_support_sha256": "0736c4497a022f55df1550bf554a1e6441221d18688bed96aac3c32154d5c550",
+          "polygon_pixels": 5629,
+          "edit_support_pixels": 6379,
+          "roi_box_xyxy": [
+            122,
+            54,
+            243,
+            173
+          ],
+          "canvas_transform": {
+            "native_width": 121,
+            "native_height": 119,
+            "canvas_size": 1024,
+            "scale": 8.462809917355372,
+            "resized_width": 1024,
+            "resized_height": 1007,
+            "pad_left": 0,
+            "pad_top": 8,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "Burn",
+          "points": [
+            [
+              297.1031746031746,
+              32.69841269841269
+            ],
+            [
+              302.0079365079365,
+              56.36507936507935
+            ],
+            [
+              293.0079365079365,
+              77.36507936507935
+            ],
+            [
+              316.0079365079365,
+              88.36507936507935
+            ],
+            [
+              329.0079365079365,
+              103.36507936507935
+            ],
+            [
+              321.0079365079365,
+              122.36507936507935
+            ],
+            [
+              320.0079365079365,
+              145.36507936507937
+            ],
+            [
+              349.0079365079365,
+              156.36507936507937
+            ],
+            [
+              344.0079365079365,
+              174.36507936507937
+            ],
+            [
+              337.0079365079365,
+              185.36507936507937
+            ],
+            [
+              376.0079365079365,
+              189.36507936507937
+            ],
+            [
+              392.0079365079365,
+              207.36507936507937
+            ],
+            [
+              420.0079365079365,
+              222.36507936507937
+            ],
+            [
+              438.0079365079365,
+              253.36507936507937
+            ],
+            [
+              459.0079365079365,
+              260.36507936507934
+            ],
+            [
+              503.0079365079365,
+              271.36507936507934
+            ],
+            [
+              487.0079365079365,
+              286.36507936507934
+            ],
+            [
+              482.0079365079365,
+              302.36507936507934
+            ],
+            [
+              451.0079365079365,
+              328.36507936507934
+            ],
+            [
+              436.0079365079365,
+              362.36507936507934
+            ],
+            [
+              490.0079365079365,
+              366.36507936507934
+            ],
+            [
+              542.0079365079365,
+              373.36507936507934
+            ],
+            [
+              552.0079365079365,
+              391.36507936507934
+            ],
+            [
+              564.0079365079365,
+              409.36507936507934
+            ],
+            [
+              646.0079365079365,
+              399.36507936507934
+            ],
+            [
+              674.0079365079365,
+              422.36507936507934
+            ],
+            [
+              694.0079365079365,
+              454.36507936507934
+            ],
+            [
+              719.999,
+              460.36507936507934
+            ],
+            [
+              701.0079365079365,
+              425.36507936507934
+            ],
+            [
+              634.0079365079365,
+              363.36507936507934
+            ],
+            [
+              611.0079365079365,
+              330.36507936507934
+            ],
+            [
+              584.0079365079365,
+              273.36507936507934
+            ],
+            [
+              539.0079365079365,
+              239.36507936507937
+            ],
+            [
+              484.0079365079365,
+              196.36507936507937
+            ],
+            [
+              438.0079365079365,
+              177.36507936507937
+            ],
+            [
+              396.0079365079365,
+              136.36507936507937
+            ],
+            [
+              368.0079365079365,
+              108.36507936507935
+            ],
+            [
+              354.0079365079365,
+              81.36507936507935
+            ],
+            [
+              344.0079365079365,
+              46.36507936507935
+            ],
+            [
+              319.0079365079365,
+              33.36507936507935
+            ]
+          ],
+          "edge_distance_px": -0.9990000000000236,
+          "polygon_mask_sha256": "3ab9b7bd6da3e18228feebd9c89596eceac8c84c6608511db9d3e0cc99784f0b",
+          "edit_support_sha256": "8fcbbbf0b51012b6a46ccad7fe161f485ec79548c925e75c2e53ae6079e87703",
+          "polygon_pixels": 37515,
+          "edit_support_pixels": 41335,
+          "roi_box_xyxy": [
+            277,
+            16,
+            720,
+            478
+          ],
+          "canvas_transform": {
+            "native_width": 443,
+            "native_height": 462,
+            "canvas_size": 1024,
+            "scale": 2.2164502164502164,
+            "resized_width": 982,
+            "resized_height": 1024,
+            "pad_left": 21,
+            "pad_top": 0,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": true
+        }
+      ]
+    },
+    {
+      "source_id": "88",
+      "split": "train",
+      "image_path": "88.png",
+      "annotation_path": "88.json",
+      "image_sha256": "27bb7202016c248f0449935788901e1f4446b7a738846fbc1f376aefcae50aad",
+      "annotation_sha256": "c78409b9ec23c8eef0d1d56b327b5212f6fc98bb59ced712f8d2b8115a2b2ec5",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 1,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "NOT_RUN",
+      "rejection_reasons": [
+        "polygon_0: border distance 0.635px < 24px",
+        "polygon_0: context ROI clamped to native image edge",
+        "polygon_1: border distance 1.365px < 24px",
+        "polygon_1: context ROI clamped to native image edge",
+        "independent ROI groups=1; expected exactly 2"
+      ],
+      "geometry_eligible": false,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "Burn",
+          "points": [
+            [
+              201.8650793650794,
+              7.3015873015872925
+            ],
+            [
+              176.00793650793653,
+              98.36507936507935
+            ],
+            [
+              166.00793650793653,
+              170.36507936507937
+            ],
+            [
+              115.00793650793652,
+              395.36507936507934
+            ],
+            [
+              92.00793650793652,
+              528.3650793650794
+            ],
+            [
+              165.00793650793653,
+              538.3650793650794
+            ],
+            [
+              290.0079365079365,
+              535.3650793650794
+            ],
+            [
+              256.0079365079365,
+              468.36507936507934
+            ],
+            [
+              276.0079365079365,
+              426.36507936507934
+            ],
+            [
+              297.0079365079365,
+              368.36507936507934
+            ],
+            [
+              337.0079365079365,
+              305.36507936507934
+            ],
+            [
+              249.00793650793653,
+              266.36507936507934
+            ],
+            [
+              259.0079365079365,
+              178.36507936507937
+            ],
+            [
+              329.0079365079365,
+              139.36507936507937
+            ],
+            [
+              356.0079365079365,
+              115.36507936507935
+            ],
+            [
+              404.0079365079365,
+              117.36507936507935
+            ],
+            [
+              416.0079365079365,
+              75.36507936507935
+            ],
+            [
+              362.0079365079365,
+              43.36507936507935
+            ],
+            [
+              401.0079365079365,
+              2.365079365079356
+            ]
+          ],
+          "edge_distance_px": 0.6349206349206042,
+          "polygon_mask_sha256": "44d9bad4c63d3b56b9ae22ba4cdb000a7d5e2a0df4cde1b541d9c420d5dc16b3",
+          "edit_support_sha256": "02b67865c7074bce7fe9f290c41116dd6832356d58a29e8cd5124f23e9880fd4",
+          "polygon_pixels": 87600,
+          "edit_support_pixels": 91704,
+          "roi_box_xyxy": [
+            76,
+            0,
+            434,
+            540
+          ],
+          "canvas_transform": {
+            "native_width": 358,
+            "native_height": 540,
+            "canvas_size": 1024,
+            "scale": 1.8962962962962964,
+            "resized_width": 679,
+            "resized_height": 1024,
+            "pad_left": 172,
+            "pad_top": 0,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": true
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "Burn",
+          "points": [
+            [
+              500.2777777777778,
+              27.142857142857135
+            ],
+            [
+              497.0079365079365,
+              101.36507936507935
+            ],
+            [
+              439.0079365079365,
+              236.36507936507937
+            ],
+            [
+              398.0079365079365,
+              477.36507936507934
+            ],
+            [
+              394.0079365079365,
+              528.3650793650794
+            ],
+            [
+              590.0079365079365,
+              536.3650793650794
+            ],
+            [
+              590.0079365079365,
+              295.36507936507934
+            ],
+            [
+              651.0079365079365,
+              210.36507936507937
+            ],
+            [
+              646.0079365079365,
+              94.36507936507935
+            ],
+            [
+              660.0079365079365,
+              46.36507936507935
+            ],
+            [
+              633.0079365079365,
+              1.365079365079356
+            ],
+            [
+              498.0079365079365,
+              5.365079365079356
+            ]
+          ],
+          "edge_distance_px": 1.365079365079356,
+          "polygon_mask_sha256": "7ab6abad262a68ac119ed1883c8d5764751edcaec2ebb09bf17cfbe33e389acc",
+          "edit_support_sha256": "18a3c994c2fee6e2f7c0a38e2136c61be7bc44e98ffbc708e4b5eb7f57c379a0",
+          "polygon_pixels": 92827,
+          "edit_support_pixels": 96078,
+          "roi_box_xyxy": [
+            378,
+            0,
+            678,
+            540
+          ],
+          "canvas_transform": {
+            "native_width": 300,
+            "native_height": 540,
+            "canvas_size": 1024,
+            "scale": 1.8962962962962964,
+            "resized_width": 569,
+            "resized_height": 1024,
+            "pad_left": 227,
+            "pad_top": 0,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": true
+        }
+      ]
+    },
+    {
+      "source_id": "94",
+      "split": "train",
+      "image_path": "94.png",
+      "annotation_path": "94.json",
+      "image_sha256": "62932c569b360041ada6a588992b620c654825883c484c31d697abf426b84f6b",
+      "annotation_sha256": "a151f7a904ad6fe2a656eed6cc9f5b770635cc34a340e1e4e25d3e052ba5c4b7",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 1,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "NOT_RUN",
+      "rejection_reasons": [
+        "polygon_0: border distance 4.127px < 24px",
+        "polygon_0: context ROI clamped to native image edge",
+        "polygon_1: border distance 2.365px < 24px",
+        "polygon_1: context ROI clamped to native image edge",
+        "independent ROI groups=1; expected exactly 2"
+      ],
+      "geometry_eligible": false,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "Burn",
+          "points": [
+            [
+              492.73809523809524,
+              4.126984126984118
+            ],
+            [
+              466.0079365079365,
+              29.365079365079357
+            ],
+            [
+              499.0079365079365,
+              68.36507936507935
+            ],
+            [
+              514.0079365079365,
+              111.36507936507935
+            ],
+            [
+              478.0079365079365,
+              150.36507936507937
+            ],
+            [
+              486.0079365079365,
+              189.36507936507937
+            ],
+            [
+              429.0079365079365,
+              205.36507936507937
+            ],
+            [
+              417.0079365079365,
+              243.36507936507937
+            ],
+            [
+              417.0079365079365,
+              276.36507936507934
+            ],
+            [
+              418.0079365079365,
+              344.36507936507934
+            ],
+            [
+              437.0079365079365,
+              370.36507936507934
+            ],
+            [
+              431.0079365079365,
+              406.36507936507934
+            ],
+            [
+              417.0079365079365,
+              453.36507936507934
+            ],
+            [
+              342.0079365079365,
+              471.36507936507934
+            ],
+            [
+              317.0079365079365,
+              475.36507936507934
+            ],
+            [
+              292.0079365079365,
+              518.3650793650794
+            ],
+            [
+              247.00793650793653,
+              520.3650793650794
+            ],
+            [
+              232.00793650793653,
+              488.36507936507934
+            ],
+            [
+              251.00793650793653,
+              444.36507936507934
+            ],
+            [
+              261.0079365079365,
+              378.36507936507934
+            ],
+            [
+              287.0079365079365,
+              358.36507936507934
+            ],
+            [
+              302.0079365079365,
+              301.36507936507934
+            ],
+            [
+              323.0079365079365,
+              243.36507936507937
+            ],
+            [
+              359.0079365079365,
+              174.36507936507937
+            ],
+            [
+              368.0079365079365,
+              101.36507936507935
+            ],
+            [
+              371.0079365079365,
+              41.36507936507935
+            ],
+            [
+              383.0079365079365,
+              9.365079365079357
+            ]
+          ],
+          "edge_distance_px": 4.126984126984118,
+          "polygon_mask_sha256": "681ddfb585017bbb08b5dbe4f017814fe0c2cf9693ae4932cd524b3debfe55d1",
+          "edit_support_sha256": "da6c1511918c7869a25e1b58c7ef4029e9f1b34a2e98ec1e7f9ec76e2da5bd94",
+          "polygon_pixels": 63158,
+          "edit_support_pixels": 66589,
+          "roi_box_xyxy": [
+            216,
+            0,
+            532,
+            538
+          ],
+          "canvas_transform": {
+            "native_width": 316,
+            "native_height": 538,
+            "canvas_size": 1024,
+            "scale": 1.903345724907063,
+            "resized_width": 601,
+            "resized_height": 1024,
+            "pad_left": 211,
+            "pad_top": 0,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": true
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "corrosion",
+          "points": [
+            [
+              172.89682539682542,
+              433.49206349206344
+            ],
+            [
+              186.00793650793653,
+              407.36507936507934
+            ],
+            [
+              169.00793650793653,
+              359.36507936507934
+            ],
+            [
+              183.00793650793653,
+              312.36507936507934
+            ],
+            [
+              209.00793650793653,
+              275.36507936507934
+            ],
+            [
+              249.00793650793653,
+              174.36507936507937
+            ],
+            [
+              256.0079365079365,
+              129.36507936507937
+            ],
+            [
+              302.0079365079365,
+              84.36507936507935
+            ],
+            [
+              270.0079365079365,
+              47.36507936507935
+            ],
+            [
+              295.0079365079365,
+              3.365079365079356
+            ],
+            [
+              190.00793650793653,
+              2.365079365079356
+            ],
+            [
+              162.00793650793653,
+              70.36507936507935
+            ],
+            [
+              134.00793650793653,
+              144.36507936507937
+            ],
+            [
+              108.00793650793652,
+              211.36507936507937
+            ],
+            [
+              74.00793650793652,
+              316.36507936507934
+            ],
+            [
+              63.00793650793653,
+              370.36507936507934
+            ],
+            [
+              72.00793650793652,
+              395.36507936507934
+            ],
+            [
+              107.00793650793652,
+              409.36507936507934
+            ],
+            [
+              122.00793650793652,
+              415.36507936507934
+            ],
+            [
+              144.00793650793653,
+              415.36507936507934
+            ]
+          ],
+          "edge_distance_px": 2.365079365079356,
+          "polygon_mask_sha256": "508f32c7e4fe8c929abe29c7ab2f961bed03670bd1690da94f7c3d457d2d32b4",
+          "edit_support_sha256": "994535b4af7c0048a288b461a0a77f831bd40bb96580ced949fd1cbb725b765b",
+          "polygon_pixels": 48680,
+          "edit_support_pixels": 51548,
+          "roi_box_xyxy": [
+            47,
+            0,
+            320,
+            451
+          ],
+          "canvas_transform": {
+            "native_width": 273,
+            "native_height": 451,
+            "canvas_size": 1024,
+            "scale": 2.270509977827051,
+            "resized_width": 620,
+            "resized_height": 1024,
+            "pad_left": 202,
+            "pad_top": 0,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": true
+        }
+      ]
+    },
+    {
+      "source_id": "96",
+      "split": "train",
+      "image_path": "96.png",
+      "annotation_path": "96.json",
+      "image_sha256": "a1d9f49fed05c359ba7378cc7bc75b923c9945170bcbe54b7a4768f59d6dc427",
+      "annotation_sha256": "9b9e10a4f046b9f40c04e299d4ec55ffb7610488886e9ab15f1685f56297a389",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 2,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "NOT_RUN",
+      "rejection_reasons": [
+        "polygon_0: border distance 18.413px < 24px",
+        "polygon_1: border distance 0.635px < 24px",
+        "polygon_1: context ROI clamped to native image edge"
+      ],
+      "geometry_eligible": false,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "corrosion",
+          "points": [
+            [
+              399.08730158730157,
+              18.412698412698404
+            ],
+            [
+              394.0079365079365,
+              66.36507936507935
+            ],
+            [
+              395.0079365079365,
+              114.36507936507935
+            ],
+            [
+              411.0079365079365,
+              149.36507936507937
+            ],
+            [
+              409.0079365079365,
+              196.36507936507937
+            ],
+            [
+              397.0079365079365,
+              212.36507936507937
+            ],
+            [
+              412.0079365079365,
+              243.36507936507937
+            ],
+            [
+              427.0079365079365,
+              275.36507936507934
+            ],
+            [
+              406.0079365079365,
+              336.36507936507934
+            ],
+            [
+              393.0079365079365,
+              377.36507936507934
+            ],
+            [
+              399.0079365079365,
+              424.36507936507934
+            ],
+            [
+              401.0079365079365,
+              495.36507936507934
+            ],
+            [
+              401.0079365079365,
+              509.36507936507934
+            ],
+            [
+              482.0079365079365,
+              474.36507936507934
+            ],
+            [
+              514.0079365079365,
+              459.36507936507934
+            ],
+            [
+              475.0079365079365,
+              429.36507936507934
+            ],
+            [
+              523.0079365079365,
+              361.36507936507934
+            ],
+            [
+              543.0079365079365,
+              322.36507936507934
+            ],
+            [
+              549.0079365079365,
+              275.36507936507934
+            ],
+            [
+              552.0079365079365,
+              229.36507936507937
+            ],
+            [
+              519.0079365079365,
+              201.36507936507937
+            ],
+            [
+              499.0079365079365,
+              162.36507936507937
+            ],
+            [
+              503.0079365079365,
+              111.36507936507935
+            ],
+            [
+              503.0079365079365,
+              97.36507936507935
+            ],
+            [
+              482.0079365079365,
+              67.36507936507935
+            ],
+            [
+              446.0079365079365,
+              33.36507936507935
+            ]
+          ],
+          "edge_distance_px": 18.412698412698404,
+          "polygon_mask_sha256": "1167907ba0fb0c064e56d514a03ba994f731cfa1e09e6233858bed8449464215",
+          "edit_support_sha256": "1fcf777d2642e582109cf4f22666d596344396a51ade2f7771e07236faa0a1c6",
+          "polygon_pixels": 50106,
+          "edit_support_pixels": 53086,
+          "roi_box_xyxy": [
+            377,
+            2,
+            570,
+            527
+          ],
+          "canvas_transform": {
+            "native_width": 193,
+            "native_height": 525,
+            "canvas_size": 1024,
+            "scale": 1.9504761904761905,
+            "resized_width": 376,
+            "resized_height": 1024,
+            "pad_left": 324,
+            "pad_top": 0,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "corrosion",
+          "points": [
+            [
+              175.2777777777778,
+              8.88888888888888
+            ],
+            [
+              166.00793650793653,
+              53.36507936507935
+            ],
+            [
+              143.00793650793653,
+              124.36507936507935
+            ],
+            [
+              129.00793650793653,
+              268.36507936507934
+            ],
+            [
+              107.00793650793652,
+              351.36507936507934
+            ],
+            [
+              103.00793650793652,
+              453.36507936507934
+            ],
+            [
+              105.00793650793652,
+              500.36507936507934
+            ],
+            [
+              108.00793650793652,
+              537.3650793650794
+            ],
+            [
+              218.00793650793653,
+              538.3650793650794
+            ],
+            [
+              199.00793650793653,
+              515.3650793650794
+            ],
+            [
+              219.00793650793653,
+              480.36507936507934
+            ],
+            [
+              222.00793650793653,
+              460.36507936507934
+            ],
+            [
+              203.00793650793653,
+              427.36507936507934
+            ],
+            [
+              249.00793650793653,
+              405.36507936507934
+            ],
+            [
+              292.0079365079365,
+              396.36507936507934
+            ],
+            [
+              340.0079365079365,
+              343.36507936507934
+            ],
+            [
+              294.0079365079365,
+              332.36507936507934
+            ],
+            [
+              268.0079365079365,
+              304.36507936507934
+            ],
+            [
+              279.0079365079365,
+              273.36507936507934
+            ],
+            [
+              249.00793650793653,
+              257.36507936507934
+            ],
+            [
+              255.00793650793653,
+              243.36507936507937
+            ],
+            [
+              287.0079365079365,
+              229.36507936507937
+            ],
+            [
+              334.0079365079365,
+              220.36507936507937
+            ],
+            [
+              320.0079365079365,
+              202.36507936507937
+            ],
+            [
+              281.0079365079365,
+              193.36507936507937
+            ],
+            [
+              307.0079365079365,
+              167.36507936507937
+            ],
+            [
+              291.0079365079365,
+              151.36507936507937
+            ],
+            [
+              243.00793650793653,
+              145.36507936507937
+            ],
+            [
+              225.00793650793653,
+              128.36507936507937
+            ],
+            [
+              304.0079365079365,
+              122.36507936507935
+            ],
+            [
+              334.0079365079365,
+              96.36507936507935
+            ],
+            [
+              311.0079365079365,
+              73.36507936507935
+            ],
+            [
+              305.0079365079365,
+              44.36507936507935
+            ],
+            [
+              288.0079365079365,
+              22.365079365079357
+            ],
+            [
+              275.0079365079365,
+              4.365079365079356
+            ]
+          ],
+          "edge_distance_px": 0.6349206349206042,
+          "polygon_mask_sha256": "eafc5422599fbdec972f78aa94eee1c81213227f24963edfc4f9f555b99eb4b4",
+          "edit_support_sha256": "82e0194479e1229d87f22aad9c4319fd8efa6c813b1ba1589cde96469fb2e352",
+          "polygon_pixels": 78134,
+          "edit_support_pixels": 82290,
+          "roi_box_xyxy": [
+            87,
+            0,
+            358,
+            540
+          ],
+          "canvas_transform": {
+            "native_width": 271,
+            "native_height": 540,
+            "canvas_size": 1024,
+            "scale": 1.8962962962962964,
+            "resized_width": 514,
+            "resized_height": 1024,
+            "pad_left": 255,
+            "pad_top": 0,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": true
+        }
+      ]
+    },
+    {
+      "source_id": "106",
+      "split": "train",
+      "image_path": "106.png",
+      "annotation_path": "106.json",
+      "image_sha256": "71eab9144e71b0b9d3f7b74e1f16e1ca67ea08e6ef82e522ac52987c939ddeef",
+      "annotation_sha256": "eb6aa9fdaf1dd524705b6563da6cba64c28822fe336a340798f5f55e5b88d789",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 2,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "NOT_RUN",
+      "rejection_reasons": [
+        "polygon_0: border distance 0.365px < 24px",
+        "polygon_0: context ROI clamped to native image edge",
+        "polygon_1: border distance 0.635px < 24px",
+        "polygon_1: context ROI clamped to native image edge"
+      ],
+      "geometry_eligible": false,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "corrosion",
+          "points": [
+            [
+              296.3095238095238,
+              326.7460317460317
+            ],
+            [
+              459.0079365079365,
+              292.36507936507934
+            ],
+            [
+              442.0079365079365,
+              254.36507936507937
+            ],
+            [
+              547.0079365079365,
+              182.36507936507937
+            ],
+            [
+              620.0079365079365,
+              99.36507936507935
+            ],
+            [
+              661.0079365079365,
+              52.36507936507935
+            ],
+            [
+              668.0079365079365,
+              7.365079365079356
+            ],
+            [
+              577.0079365079365,
+              0.365079365079356
+            ],
+            [
+              500.0079365079365,
+              58.36507936507935
+            ],
+            [
+              414.0079365079365,
+              143.36507936507937
+            ],
+            [
+              368.0079365079365,
+              195.36507936507937
+            ],
+            [
+              325.0079365079365,
+              244.36507936507937
+            ],
+            [
+              282.0079365079365,
+              307.36507936507934
+            ],
+            [
+              271.0079365079365,
+              327.36507936507934
+            ]
+          ],
+          "edge_distance_px": 0.365079365079356,
+          "polygon_mask_sha256": "ee5e81c15e7d00693b62097ecec17d3688cd486378aa8e974699dc18250f21cf",
+          "edit_support_sha256": "b1aef2bc3f5d640977ead125fc7ae5528108686fdf6d971664dafd0ab8b80c86",
+          "polygon_pixels": 47027,
+          "edit_support_pixels": 49989,
+          "roi_box_xyxy": [
+            255,
+            0,
+            686,
+            345
+          ],
+          "canvas_transform": {
+            "native_width": 431,
+            "native_height": 345,
+            "canvas_size": 1024,
+            "scale": 2.3758700696055683,
+            "resized_width": 1024,
+            "resized_height": 820,
+            "pad_left": 0,
+            "pad_top": 102,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": true
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "corrosion",
+          "points": [
+            [
+              252.6587301587302,
+              366.8253968253968
+            ],
+            [
+              296.0079365079365,
+              386.36507936507934
+            ],
+            [
+              332.0079365079365,
+              453.36507936507934
+            ],
+            [
+              283.0079365079365,
+              517.3650793650794
+            ],
+            [
+              194.00793650793653,
+              537.3650793650794
+            ],
+            [
+              142.00793650793653,
+              538.3650793650794
+            ],
+            [
+              188.00793650793653,
+              463.36507936507934
+            ],
+            [
+              236.00793650793653,
+              373.36507936507934
+            ]
+          ],
+          "edge_distance_px": 0.6349206349206042,
+          "polygon_mask_sha256": "18a1804c0886a8b2797d0d7728297504fe578afbef752359e4312c3fa5113be0",
+          "edit_support_sha256": "c67e1fe4a30a09937cde29e7dea3c59609e4f50848830c367d27bf9326787c85",
+          "polygon_pixels": 18120,
+          "edit_support_pixels": 19583,
+          "roi_box_xyxy": [
+            126,
+            350,
+            350,
+            540
+          ],
+          "canvas_transform": {
+            "native_width": 224,
+            "native_height": 190,
+            "canvas_size": 1024,
+            "scale": 4.571428571428571,
+            "resized_width": 1024,
+            "resized_height": 869,
+            "pad_left": 0,
+            "pad_top": 77,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": true
+        }
+      ]
+    },
+    {
+      "source_id": "115",
+      "split": "train",
+      "image_path": "115.png",
+      "annotation_path": "115.json",
+      "image_sha256": "a9afb37981c4cc80a90339589856d45d0e1de25fbab44c7e379de571b29652fc",
+      "annotation_sha256": "fe60d03309c8f300c80273994f75553d25e102a51426c03a0b0221d236ee7e90",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 1,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "NOT_RUN",
+      "rejection_reasons": [
+        "polygon_1: border distance 4.300px < 24px",
+        "polygon_1: context ROI clamped to native image edge",
+        "independent ROI groups=1; expected exactly 2"
+      ],
+      "geometry_eligible": false,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "Burn",
+          "points": [
+            [
+              281.0648148148148,
+              391.2962962962963
+            ],
+            [
+              427.25,
+              444.1666666666667
+            ],
+            [
+              580.25,
+              409.1666666666667
+            ],
+            [
+              658.25,
+              321.1666666666667
+            ],
+            [
+              672.25,
+              245.16666666666669
+            ],
+            [
+              637.25,
+              160.16666666666669
+            ],
+            [
+              601.25,
+              133.16666666666669
+            ],
+            [
+              533.25,
+              104.16666666666669
+            ],
+            [
+              494.25,
+              93.16666666666669
+            ],
+            [
+              472.25,
+              93.16666666666669
+            ],
+            [
+              429.25,
+              89.16666666666669
+            ],
+            [
+              408.25,
+              90.16666666666669
+            ],
+            [
+              376.25,
+              102.16666666666669
+            ],
+            [
+              348.25,
+              114.16666666666669
+            ],
+            [
+              320.25,
+              123.16666666666669
+            ],
+            [
+              305.25,
+              136.16666666666669
+            ],
+            [
+              271.25,
+              160.16666666666669
+            ],
+            [
+              224.25,
+              233.16666666666669
+            ],
+            [
+              224.25,
+              239.16666666666669
+            ],
+            [
+              222.25,
+              262.1666666666667
+            ],
+            [
+              217.25,
+              285.1666666666667
+            ],
+            [
+              215.25,
+              293.1666666666667
+            ],
+            [
+              214.25,
+              307.1666666666667
+            ],
+            [
+              242.25,
+              350.1666666666667
+            ],
+            [
+              242.25,
+              353.1666666666667
+            ],
+            [
+              254.25,
+              353.1666666666667
+            ],
+            [
+              273.25,
+              346.1666666666667
+            ],
+            [
+              285.25,
+              342.1666666666667
+            ],
+            [
+              295.25,
+              330.1666666666667
+            ],
+            [
+              298.25,
+              322.1666666666667
+            ],
+            [
+              300.25,
+              312.1666666666667
+            ],
+            [
+              297.25,
+              297.1666666666667
+            ],
+            [
+              296.25,
+              290.1666666666667
+            ],
+            [
+              295.25,
+              281.1666666666667
+            ],
+            [
+              294.25,
+              269.1666666666667
+            ],
+            [
+              294.25,
+              259.1666666666667
+            ],
+            [
+              294.25,
+              240.16666666666669
+            ],
+            [
+              294.25,
+              230.16666666666669
+            ],
+            [
+              294.25,
+              220.16666666666669
+            ],
+            [
+              296.25,
+              211.16666666666669
+            ],
+            [
+              298.25,
+              205.16666666666669
+            ],
+            [
+              303.25,
+              196.16666666666669
+            ],
+            [
+              310.25,
+              179.16666666666669
+            ],
+            [
+              318.25,
+              166.16666666666669
+            ],
+            [
+              325.25,
+              160.16666666666669
+            ],
+            [
+              329.25,
+              155.16666666666669
+            ],
+            [
+              345.25,
+              149.16666666666669
+            ],
+            [
+              364.25,
+              143.16666666666669
+            ],
+            [
+              379.25,
+              140.16666666666669
+            ],
+            [
+              408.25,
+              137.16666666666669
+            ],
+            [
+              439.25,
+              136.16666666666669
+            ],
+            [
+              460.25,
+              135.16666666666669
+            ],
+            [
+              489.25,
+              135.16666666666669
+            ],
+            [
+              520.25,
+              143.16666666666669
+            ],
+            [
+              546.25,
+              154.16666666666669
+            ],
+            [
+              574.25,
+              176.16666666666669
+            ],
+            [
+              586.25,
+              201.16666666666669
+            ],
+            [
+              597.25,
+              229.16666666666669
+            ],
+            [
+              599.25,
+              262.1666666666667
+            ],
+            [
+              598.25,
+              288.1666666666667
+            ],
+            [
+              587.25,
+              307.1666666666667
+            ],
+            [
+              564.25,
+              322.1666666666667
+            ],
+            [
+              544.25,
+              332.1666666666667
+            ],
+            [
+              527.25,
+              343.1666666666667
+            ],
+            [
+              522.25,
+              346.1666666666667
+            ],
+            [
+              499.25,
+              355.1666666666667
+            ],
+            [
+              485.25,
+              358.1666666666667
+            ],
+            [
+              442.25,
+              361.1666666666667
+            ],
+            [
+              420.25,
+              359.1666666666667
+            ],
+            [
+              379.25,
+              350.1666666666667
+            ],
+            [
+              357.25,
+              345.1666666666667
+            ],
+            [
+              334.25,
+              337.1666666666667
+            ],
+            [
+              326.25,
+              337.1666666666667
+            ],
+            [
+              306.25,
+              345.1666666666667
+            ],
+            [
+              295.25,
+              353.1666666666667
+            ],
+            [
+              285.25,
+              369.1666666666667
+            ]
+          ],
+          "edge_distance_px": 46.75,
+          "polygon_mask_sha256": "fcca51e296526eb8d8f261fbcd9cf11750e09e8bae49c79ac278b5ed410f1838",
+          "edit_support_sha256": "f51f152b19b150d910797cc7ad692142fa2b5868a22e43966713826dbf0ae7df",
+          "polygon_pixels": 63037,
+          "edit_support_pixels": 68577,
+          "roi_box_xyxy": [
+            198,
+            73,
+            690,
+            462
+          ],
+          "canvas_transform": {
+            "native_width": 492,
+            "native_height": 389,
+            "canvas_size": 1024,
+            "scale": 2.0813008130081303,
+            "resized_width": 1024,
+            "resized_height": 810,
+            "pad_left": 0,
+            "pad_top": 107,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "Crack",
+          "points": [
+            [
+              229.46428571428572,
+              350.31875580507875
+            ],
+            [
+              202.17857142857144,
+              357.69970818603116
+            ],
+            [
+              185.17857142857144,
+              364.69970818603116
+            ],
+            [
+              174.17857142857144,
+              373.69970818603116
+            ],
+            [
+              168.17857142857144,
+              387.69970818603116
+            ],
+            [
+              190.17857142857144,
+              404.69970818603116
+            ],
+            [
+              196.17857142857144,
+              407.69970818603116
+            ],
+            [
+              202.17857142857144,
+              416.69970818603116
+            ],
+            [
+              215.17857142857144,
+              439.69970818603116
+            ],
+            [
+              227.17857142857144,
+              444.69970818603116
+            ],
+            [
+              242.17857142857144,
+              442.69970818603116
+            ],
+            [
+              253.17857142857144,
+              458.69970818603116
+            ],
+            [
+              255.17857142857144,
+              470.69970818603116
+            ],
+            [
+              255.17857142857144,
+              481.69970818603116
+            ],
+            [
+              251.17857142857144,
+              497.69970818603116
+            ],
+            [
+              260.17857142857144,
+              504.69970818603116
+            ],
+            [
+              282.17857142857144,
+              512.6997081860312
+            ],
+            [
+              291.17857142857144,
+              526.6997081860312
+            ],
+            [
+              297.17857142857144,
+              530.6997081860312
+            ],
+            [
+              325.17857142857144,
+              534.6997081860312
+            ],
+            [
+              337.17857142857144,
+              533.6997081860312
+            ],
+            [
+              347.17857142857144,
+              530.6997081860312
+            ],
+            [
+              352.17857142857144,
+              525.6997081860312
+            ],
+            [
+              363.17857142857144,
+              526.6997081860312
+            ],
+            [
+              387.17857142857144,
+              521.6997081860312
+            ],
+            [
+              392.17857142857144,
+              508.69970818603116
+            ],
+            [
+              406.17857142857144,
+              511.69970818603116
+            ],
+            [
+              417.17857142857144,
+              508.69970818603116
+            ],
+            [
+              423.17857142857144,
+              508.69970818603116
+            ],
+            [
+              437.17857142857144,
+              503.69970818603116
+            ],
+            [
+              434.17857142857144,
+              493.69970818603116
+            ],
+            [
+              413.17857142857144,
+              496.69970818603116
+            ],
+            [
+              388.17857142857144,
+              489.69970818603116
+            ],
+            [
+              380.17857142857144,
+              492.69970818603116
+            ],
+            [
+              369.17857142857144,
+              504.69970818603116
+            ],
+            [
+              358.17857142857144,
+              506.69970818603116
+            ],
+            [
+              337.17857142857144,
+              506.69970818603116
+            ],
+            [
+              318.17857142857144,
+              505.69970818603116
+            ],
+            [
+              295.17857142857144,
+              494.69970818603116
+            ],
+            [
+              286.17857142857144,
+              482.69970818603116
+            ],
+            [
+              286.17857142857144,
+              467.69970818603116
+            ],
+            [
+              308.17857142857144,
+              467.69970818603116
+            ],
+            [
+              303.17857142857144,
+              446.69970818603116
+            ],
+            [
+              289.17857142857144,
+              439.69970818603116
+            ],
+            [
+              279.17857142857144,
+              443.69970818603116
+            ],
+            [
+              272.17857142857144,
+              446.69970818603116
+            ],
+            [
+              261.17857142857144,
+              449.69970818603116
+            ],
+            [
+              260.17857142857144,
+              442.69970818603116
+            ],
+            [
+              262.17857142857144,
+              433.69970818603116
+            ],
+            [
+              254.17857142857144,
+              422.69970818603116
+            ],
+            [
+              238.17857142857144,
+              428.69970818603116
+            ],
+            [
+              229.17857142857144,
+              432.69970818603116
+            ],
+            [
+              226.17857142857144,
+              422.69970818603116
+            ],
+            [
+              223.17857142857144,
+              409.69970818603116
+            ],
+            [
+              216.17857142857144,
+              408.69970818603116
+            ],
+            [
+              212.17857142857144,
+              400.69970818603116
+            ],
+            [
+              202.17857142857144,
+              383.69970818603116
+            ],
+            [
+              198.17857142857144,
+              381.69970818603116
+            ],
+            [
+              187.17857142857144,
+              380.69970818603116
+            ],
+            [
+              195.17857142857144,
+              374.69970818603116
+            ],
+            [
+              209.17857142857144,
+              372.69970818603116
+            ],
+            [
+              215.17857142857144,
+              369.69970818603116
+            ]
+          ],
+          "edge_distance_px": 4.300291813968784,
+          "polygon_mask_sha256": "f996c063fd8b2d4cd94aede3f6b13c8a93cac6edaa72838fa11033e2785ed5fd",
+          "edit_support_sha256": "dce077de02ecb3fd4de8ff3908d5205cf80cbb531bd850745b78d91d9cab1677",
+          "polygon_pixels": 9112,
+          "edit_support_pixels": 11404,
+          "roi_box_xyxy": [
+            152,
+            334,
+            455,
+            540
+          ],
+          "canvas_transform": {
+            "native_width": 303,
+            "native_height": 206,
+            "canvas_size": 1024,
+            "scale": 3.3795379537953796,
+            "resized_width": 1024,
+            "resized_height": 696,
+            "pad_left": 0,
+            "pad_top": 164,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": true
+        }
+      ]
+    },
+    {
+      "source_id": "135",
+      "split": "train",
+      "image_path": "135.png",
+      "annotation_path": "135.json",
+      "image_sha256": "f1224401c172883b659bd0532f12af7212da9b74b1b01e30d6fb4c64d4abb86a",
+      "annotation_sha256": "984a2101c9ab57903d05669ca0ccb6a53bdb4de5edb8d15ae76f0c0a6700798b",
+      "native_size_wh": [
+        720,
+        540
+      ],
+      "polygon_count": 2,
+      "roi_group_count": 2,
+      "support_overlap_pixels": 0,
+      "native_roundtrip_mock": "NOT_RUN",
+      "rejection_reasons": [
+        "polygon_0: border distance 5.000px < 24px",
+        "polygon_0: context ROI clamped to native image edge"
+      ],
+      "geometry_eligible": false,
+      "rois": [
+        {
+          "roi_id": "roi_0",
+          "class_name": "corrosion",
+          "points": [
+            [
+              711.0,
+              395.0
+            ],
+            [
+              704.0,
+              395.0
+            ],
+            [
+              703.0,
+              394.0
+            ],
+            [
+              693.0,
+              393.0
+            ],
+            [
+              691.0,
+              392.0
+            ],
+            [
+              687.0,
+              384.0
+            ],
+            [
+              687.0,
+              379.0
+            ],
+            [
+              686.0,
+              378.0
+            ],
+            [
+              686.0,
+              373.0
+            ],
+            [
+              684.0,
+              369.0
+            ],
+            [
+              684.0,
+              364.0
+            ],
+            [
+              687.0,
+              357.0
+            ],
+            [
+              691.0,
+              353.0
+            ],
+            [
+              697.0,
+              350.0
+            ],
+            [
+              704.0,
+              350.0
+            ],
+            [
+              709.0,
+              353.0
+            ],
+            [
+              713.0,
+              354.0
+            ],
+            [
+              714.0,
+              356.0
+            ],
+            [
+              714.0,
+              391.0
+            ]
+          ],
+          "edge_distance_px": 5.0,
+          "polygon_mask_sha256": "1d5b3acfd63d2cccac6835cd88cf129249597ec752382381c3c7a8d55aede6c5",
+          "edit_support_sha256": "20a3e88589b6000d5f14f5922ee52e8b6b7252207937d44095994f60f8921209",
+          "polygon_pixels": 1193,
+          "edit_support_pixels": 1517,
+          "roi_box_xyxy": [
+            668,
+            334,
+            720,
+            412
+          ],
+          "canvas_transform": {
+            "native_width": 52,
+            "native_height": 78,
+            "canvas_size": 1024,
+            "scale": 13.128205128205128,
+            "resized_width": 683,
+            "resized_height": 1024,
+            "pad_left": 170,
+            "pad_top": 0,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": true
+        },
+        {
+          "roi_id": "roi_1",
+          "class_name": "Crack",
+          "points": [
+            [
+              649.1203703703703,
+              395.46296296296293
+            ],
+            [
+              640.25,
+              403.1666666666667
+            ],
+            [
+              635.25,
+              414.1666666666667
+            ],
+            [
+              631.25,
+              420.1666666666667
+            ],
+            [
+              631.25,
+              443.1666666666667
+            ],
+            [
+              638.25,
+              455.1666666666667
+            ],
+            [
+              649.25,
+              457.1666666666667
+            ],
+            [
+              650.25,
+              444.1666666666667
+            ],
+            [
+              645.25,
+              435.1666666666667
+            ],
+            [
+              647.25,
+              427.1666666666667
+            ],
+            [
+              650.25,
+              421.1666666666667
+            ],
+            [
+              659.25,
+              417.1666666666667
+            ]
+          ],
+          "edge_distance_px": 59.75,
+          "polygon_mask_sha256": "36865191916fbe1593851de2383ba294ab799149d64242d122436d1e3580b551",
+          "edit_support_sha256": "2133e7fe45d44b8d30d4caedd969577462f90bd3688e86a8938b426ae11f2245",
+          "polygon_pixels": 1014,
+          "edit_support_pixels": 1417,
+          "roi_box_xyxy": [
+            615,
+            379,
+            677,
+            475
+          ],
+          "canvas_transform": {
+            "native_width": 62,
+            "native_height": 96,
+            "canvas_size": 1024,
+            "scale": 10.666666666666666,
+            "resized_width": 661,
+            "resized_height": 1024,
+            "pad_left": 181,
+            "pad_top": 0,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false
+        }
+      ]
+    }
+  ],
+  "candidate_limit": 8,
+  "candidate_count": 8,
+  "selection": null,
+  "reason": "Visual original-RGB/FOV review is required before any source can be frozen or any model call can occur.",
+  "val_access": 0,
+  "test_access": 0,
+  "raw_dataset_write": 0,
+  "model_download": 0,
+  "model_load": 0,
+  "inference_calls": 0
+}
