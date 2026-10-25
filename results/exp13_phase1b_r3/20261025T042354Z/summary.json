@@ -1,0 +1,29 @@
+{
+  "experiment": "EXP13_PHASE1B_R3_OFFLINE_ARTIFACT_VERIFICATION",
+  "run_id": "20261025T042354Z",
+  "status": "EXP13_PHASE1B_R3_ARTIFACT_VERIFIED_PENDING_CHATGPT_GATE",
+  "gates": {
+    "R3-A_model_file_discovery": "PASS",
+    "R3-B_19_file_size_sha256": "PASS",
+    "R3-C_fp16_components_json_safetensors": "PASS",
+    "R3-D_offline_static_import_preflight": "PASS_STATIC_ONLY",
+    "R3-E_data_git_history_protection": "PASS"
+  },
+  "model_path": "/root/autodl-tmp/models_staging/exp13_phase1b_r3_20261025T042354Z/sdxl-inpainting-0.1",
+  "revision_reference": "115134f363124c53c7d878647567d04daf26e41e",
+  "revision_provenance_caveat": "User-supplied Windows API/download evidence; server artifact hashes match the supplied manifest, not a server-side official API query.",
+  "license_reference": "openrail++",
+  "license_provenance_caveat": "User-supplied Windows official API evidence; license text was not fetched from the server.",
+  "files_expected": 19,
+  "files_found": 19,
+  "files_verified": 19,
+  "size_mismatch": 0,
+  "sha256_mismatch": 0,
+  "missing_files": 0,
+  "unexpected_files": 0,
+  "total_verified_bytes": 6941223330,
+  "model_loaded": false,
+  "inference_calls": 0,
+  "visual_quality_assessed": false,
+  "next_step": "Stop and await ChatGPT Gate; no GPU Smoke, Pilot, or SSL is authorized by this artifact verification."
+}

@@ -169,3 +169,9 @@ AutoDL IPv4 TCP/HTTPS to Hugging Face failed and the Windows controlled host tim
 `NETWORK_HOLD` / `MODEL_ARTIFACT_HOLD`. [Review](exp13_phase1b_r2_review.md); [handoff](exp13_phase1b_r2_handoff.md); [evidence](../results/exp13_phase1b_r2/20261024T134647Z/summary.json).
 
 System DNS answers on Windows and AutoDL were inconsistent and could not be authenticated because Google/Cloudflare DoH were unreachable. Hugging Face metadata, fixed revision resolve and official LFS CDN were all unreachable. The supplied revision/license references remain unverified; no model artifact, transfer, load, inference, budget use, data access or configuration change occurred.
+
+## Exp13 Phase 1-B-R3 offline SDXL artifact verification (2026-10-25)
+
+`EXP13_PHASE1B_R3_ARTIFACT_VERIFIED_PENDING_CHATGPT_GATE`. [Review](exp13_phase1b_r3_artifact_review.md); [handoff](exp13_phase1b_r3_handoff.md); [evidence](../results/exp13_phase1b_r3/20261025T042354Z/summary.json).
+
+All 19 server-side files match the supplied Windows manifest by size and SHA256; static FP16 structure and offline dependency checks pass. The manifest's official origin is supported by user-provided Windows snapshot/API evidence, not a server-side Hugging Face query. No model load, inference, budget use, VAL/TEST access, or training occurred; GPU Smoke remains unauthorized pending ChatGPT Gate.

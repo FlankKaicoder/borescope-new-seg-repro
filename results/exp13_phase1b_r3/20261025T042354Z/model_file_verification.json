@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "manifest_path": "/root/autodl-tmp/sdxl_fp16_manifest.csv",
+  "manifest_sha256": "a1a0302f7f8f9a0e2bf21e9b47a7757fd4e1ba9f246bf0c59bfcef1d5eb9607e",
+  "model_root": "/root/autodl-tmp/models_staging/exp13_phase1b_r3_20261025T042354Z/sdxl-inpainting-0.1",
+  "manifest_errors": [],
+  "manifest_matches_registered_19_file_set": true,
+  "files_expected": 19,
+  "files_found": 19,
+  "files_verified": 19,
+  "size_mismatch": 0,
+  "sha256_mismatch": 0,
+  "missing_files": [],
+  "unexpected_files": [],
+  "unsafe_symlinks": [],
+  "total_verified_bytes": 6941223330
+}

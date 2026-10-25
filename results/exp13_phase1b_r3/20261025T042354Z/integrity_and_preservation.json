@@ -1,0 +1,20 @@
+{
+  "run_id": "20261025T042354Z",
+  "status": "PASS",
+  "branch": "exp13/vlm-semantic-audit",
+  "starting_head": "9c4f0601af10edbcab3ce3fc12ca24f2da91d0b6",
+  "frozen_train_manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "train_manifest_modified": false,
+  "val_test_paths_accessed": false,
+  "raw_dataset_accessed_or_written": false,
+  "old_partial_model_directory_modified": false,
+  "tar_preserved": true,
+  "preexisting_untracked_assets_preserved": true,
+  "model_weights_or_large_cache_in_git_index": false,
+  "network_or_remote_model_api_used": false,
+  "diffusion_calls": 0,
+  "gpu_model_load": 0,
+  "training": false,
+  "ssl": false,
+  "pilot": false
+}

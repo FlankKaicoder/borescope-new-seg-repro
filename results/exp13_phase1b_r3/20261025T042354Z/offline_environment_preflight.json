@@ -1,0 +1,20 @@
+{
+  "run_id": "20261025T042354Z",
+  "status": "STATIC_IMPORT_PASS",
+  "host": "borescope7",
+  "python_executable": "/root/miniconda3/bin/python",
+  "python": "3.12.3",
+  "torch": "2.8.0+cu128",
+  "cuda_runtime": "12.8",
+  "diffusers": "0.35.1",
+  "transformers": "4.55.4",
+  "accelerate": "1.10.1",
+  "safetensors": "0.6.2",
+  "gpu": {"name": "NVIDIA GeForce RTX 3080 Ti", "total_mib": 12288, "free_mib": 11912, "driver": "595.71.05"},
+  "imports_passed": ["AutoPipelineForInpainting", "EulerDiscreteScheduler", "UNet2DConditionModel", "AutoencoderKL", "CLIPTextModel", "CLIPTextModelWithProjection", "CLIPTokenizer"],
+  "offline_config_and_format_checks_passed": true,
+  "from_pretrained_called": false,
+  "gpu_model_load": false,
+  "inference_calls": 0,
+  "12_gib_smoke_feasibility": "NOT_ESTABLISHED; requires separately authorized real GPU Smoke"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "20261025T042354Z",
+  "status": "PASS_NO_CALLS",
+  "diffusion_inference": 0,
+  "gpu_model_load": 0,
+  "model_api_fallback": 0,
+  "smoke_reservations": 0,
+  "smoke_started": 0,
+  "val_access": 0,
+  "test_access": 0,
+  "raw_dataset_write": 0,
+  "ssl_training": 0,
+  "yolo_training": 0,
+  "budget_protocol_ledger_modified": false
+}

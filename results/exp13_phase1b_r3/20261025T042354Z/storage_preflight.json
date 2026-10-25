@@ -1,0 +1,13 @@
+{
+  "run_id": "20261025T042354Z",
+  "status": "PASS",
+  "filesystem": "/root/autodl-tmp",
+  "capacity_bytes": 53687091200,
+  "available_before_extraction_approx_gib": 24,
+  "tar_bytes": 6941242368,
+  "expanded_regular_file_bytes": 6941223330,
+  "available_after_extraction_bytes": 17858826240,
+  "no_existing_data_removed": true,
+  "no_existing_model_directory_overwritten": true,
+  "isolated_fresh_staging_directory": "/root/autodl-tmp/models_staging/exp13_phase1b_r3_20261025T042354Z"
+}

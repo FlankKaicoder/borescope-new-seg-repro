@@ -1,0 +1,269 @@
+{
+  "status": "PASS",
+  "required_file_set_complete": true,
+  "model_index_pipeline_class": "StableDiffusionXLInpaintPipeline",
+  "expected_pipeline_class": "StableDiffusionXLInpaintPipeline",
+  "model_index_components": {
+    "scheduler": {
+      "expected": [
+        "diffusers",
+        "EulerDiscreteScheduler"
+      ],
+      "actual": [
+        "diffusers",
+        "EulerDiscreteScheduler"
+      ],
+      "match": true
+    },
+    "text_encoder": {
+      "expected": [
+        "transformers",
+        "CLIPTextModel"
+      ],
+      "actual": [
+        "transformers",
+        "CLIPTextModel"
+      ],
+      "match": true
+    },
+    "text_encoder_2": {
+      "expected": [
+        "transformers",
+        "CLIPTextModelWithProjection"
+      ],
+      "actual": [
+        "transformers",
+        "CLIPTextModelWithProjection"
+      ],
+      "match": true
+    },
+    "tokenizer": {
+      "expected": [
+        "transformers",
+        "CLIPTokenizer"
+      ],
+      "actual": [
+        "transformers",
+        "CLIPTokenizer"
+      ],
+      "match": true
+    },
+    "tokenizer_2": {
+      "expected": [
+        "transformers",
+        "CLIPTokenizer"
+      ],
+      "actual": [
+        "transformers",
+        "CLIPTokenizer"
+      ],
+      "match": true
+    },
+    "unet": {
+      "expected": [
+        "diffusers",
+        "UNet2DConditionModel"
+      ],
+      "actual": [
+        "diffusers",
+        "UNet2DConditionModel"
+      ],
+      "match": true
+    },
+    "vae": {
+      "expected": [
+        "diffusers",
+        "AutoencoderKL"
+      ],
+      "actual": [
+        "diffusers",
+        "AutoencoderKL"
+      ],
+      "match": true
+    }
+  },
+  "json_configs": {
+    "model_index.json": {
+      "valid_json": true,
+      "class_name": "StableDiffusionXLInpaintPipeline",
+      "expected_class": "StableDiffusionXLInpaintPipeline",
+      "class_match": true,
+      "architectures": null,
+      "expected_architecture": null,
+      "architecture_match": true
+    },
+    "scheduler/scheduler_config.json": {
+      "valid_json": true,
+      "class_name": "EulerDiscreteScheduler",
+      "expected_class": "EulerDiscreteScheduler",
+      "class_match": true,
+      "architectures": null,
+      "expected_architecture": null,
+      "architecture_match": true
+    },
+    "text_encoder/config.json": {
+      "valid_json": true,
+      "class_name": null,
+      "expected_class": null,
+      "class_match": true,
+      "architectures": [
+        "CLIPTextModel"
+      ],
+      "expected_architecture": "CLIPTextModel",
+      "architecture_match": true
+    },
+    "text_encoder_2/config.json": {
+      "valid_json": true,
+      "class_name": null,
+      "expected_class": null,
+      "class_match": true,
+      "architectures": [
+        "CLIPTextModelWithProjection"
+      ],
+      "expected_architecture": "CLIPTextModelWithProjection",
+      "architecture_match": true
+    },
+    "tokenizer/special_tokens_map.json": {
+      "valid_json": true,
+      "class_name": null,
+      "expected_class": null,
+      "class_match": true,
+      "architectures": null,
+      "expected_architecture": null,
+      "architecture_match": true
+    },
+    "tokenizer/tokenizer_config.json": {
+      "valid_json": true,
+      "class_name": null,
+      "expected_class": null,
+      "class_match": true,
+      "architectures": null,
+      "expected_architecture": null,
+      "architecture_match": true
+    },
+    "tokenizer/vocab.json": {
+      "valid_json": true,
+      "class_name": null,
+      "expected_class": null,
+      "class_match": true,
+      "architectures": null,
+      "expected_architecture": null,
+      "architecture_match": true
+    },
+    "tokenizer_2/special_tokens_map.json": {
+      "valid_json": true,
+      "class_name": null,
+      "expected_class": null,
+      "class_match": true,
+      "architectures": null,
+      "expected_architecture": null,
+      "architecture_match": true
+    },
+    "tokenizer_2/tokenizer_config.json": {
+      "valid_json": true,
+      "class_name": null,
+      "expected_class": null,
+      "class_match": true,
+      "architectures": null,
+      "expected_architecture": null,
+      "architecture_match": true
+    },
+    "tokenizer_2/vocab.json": {
+      "valid_json": true,
+      "class_name": null,
+      "expected_class": null,
+      "class_match": true,
+      "architectures": null,
+      "expected_architecture": null,
+      "architecture_match": true
+    },
+    "unet/config.json": {
+      "valid_json": true,
+      "class_name": "UNet2DConditionModel",
+      "expected_class": "UNet2DConditionModel",
+      "class_match": true,
+      "architectures": null,
+      "expected_architecture": null,
+      "architecture_match": true
+    },
+    "vae/config.json": {
+      "valid_json": true,
+      "class_name": "AutoencoderKL",
+      "expected_class": "AutoencoderKL",
+      "class_match": true,
+      "architectures": null,
+      "expected_architecture": null,
+      "architecture_match": true
+    }
+  },
+  "safetensors": {
+    "text_encoder/model.fp16.safetensors": {
+      "path": "/root/autodl-tmp/models_staging/exp13_phase1b_r3_20261025T042354Z/sdxl-inpainting-0.1/text_encoder/model.fp16.safetensors",
+      "bytes": 246144867,
+      "header_bytes": 23283,
+      "tensor_count": 197,
+      "dtype_counts": {
+        "F16": 196,
+        "I64": 1
+      },
+      "metadata": {
+        "format": "pt"
+      },
+      "invalid_entries": [],
+      "git_lfs_pointer": false,
+      "valid": true
+    },
+    "text_encoder_2/model.fp16.safetensors": {
+      "path": "/root/autodl-tmp/models_staging/exp13_phase1b_r3_20261025T042354Z/sdxl-inpainting-0.1/text_encoder_2/model.fp16.safetensors",
+      "bytes": 1389382884,
+      "header_bytes": 62580,
+      "tensor_count": 518,
+      "dtype_counts": {
+        "F16": 517,
+        "I64": 1
+      },
+      "metadata": {
+        "format": "pt"
+      },
+      "invalid_entries": [],
+      "git_lfs_pointer": false,
+      "valid": true
+    },
+    "unet/diffusion_pytorch_model.fp16.safetensors": {
+      "path": "/root/autodl-tmp/models_staging/exp13_phase1b_r3_20261025T042354Z/sdxl-inpainting-0.1/unet/diffusion_pytorch_model.fp16.safetensors",
+      "bytes": 5135178560,
+      "header_bytes": 222384,
+      "tensor_count": 1680,
+      "dtype_counts": {
+        "F16": 1680
+      },
+      "metadata": {
+        "format": "pt"
+      },
+      "invalid_entries": [],
+      "git_lfs_pointer": false,
+      "valid": true
+    },
+    "vae/diffusion_pytorch_model.fp16.safetensors": {
+      "path": "/root/autodl-tmp/models_staging/exp13_phase1b_r3_20261025T042354Z/sdxl-inpainting-0.1/vae/diffusion_pytorch_model.fp16.safetensors",
+      "bytes": 167335338,
+      "header_bytes": 27604,
+      "tensor_count": 248,
+      "dtype_counts": {
+        "F16": 248
+      },
+      "metadata": {
+        "format": "pt"
+      },
+      "invalid_entries": [],
+      "git_lfs_pointer": false,
+      "valid": true
+    }
+  },
+  "json_errors": [],
+  "safetensors_errors": [],
+  "component_errors": [],
+  "from_pretrained_called": false,
+  "gpu_model_load": false,
+  "inference_calls": 0
+}

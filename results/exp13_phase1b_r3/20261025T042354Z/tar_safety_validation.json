@@ -1,0 +1,150 @@
+{
+  "tar_path": "/root/autodl-tmp/sdxl-inpainting-fp16.tar",
+  "tar_bytes": 6941242368,
+  "member_count": 27,
+  "file_count": 19,
+  "directory_count": 8,
+  "expanded_file_bytes": 6941223330,
+  "top_level_entries": [
+    "sdxl-inpainting-0.1"
+  ],
+  "unsafe_members": [],
+  "safe_to_extract": true,
+  "members": [
+    {
+      "name": "sdxl-inpainting-0.1",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "sdxl-inpainting-0.1/model_index.json",
+      "type": "file",
+      "bytes": 690
+    },
+    {
+      "name": "sdxl-inpainting-0.1/README.md",
+      "type": "file",
+      "bytes": 4861
+    },
+    {
+      "name": "sdxl-inpainting-0.1/scheduler",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "sdxl-inpainting-0.1/text_encoder",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "sdxl-inpainting-0.1/text_encoder_2",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "sdxl-inpainting-0.1/tokenizer",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "sdxl-inpainting-0.1/tokenizer_2",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "sdxl-inpainting-0.1/unet",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "sdxl-inpainting-0.1/vae",
+      "type": "directory",
+      "bytes": 0
+    },
+    {
+      "name": "sdxl-inpainting-0.1/vae/config.json",
+      "type": "file",
+      "bytes": 659
+    },
+    {
+      "name": "sdxl-inpainting-0.1/vae/diffusion_pytorch_model.fp16.safetensors",
+      "type": "file",
+      "bytes": 167335338
+    },
+    {
+      "name": "sdxl-inpainting-0.1/unet/config.json",
+      "type": "file",
+      "bytes": 1932
+    },
+    {
+      "name": "sdxl-inpainting-0.1/unet/diffusion_pytorch_model.fp16.safetensors",
+      "type": "file",
+      "bytes": 5135178560
+    },
+    {
+      "name": "sdxl-inpainting-0.1/tokenizer_2/merges.txt",
+      "type": "file",
+      "bytes": 524619
+    },
+    {
+      "name": "sdxl-inpainting-0.1/tokenizer_2/special_tokens_map.json",
+      "type": "file",
+      "bytes": 460
+    },
+    {
+      "name": "sdxl-inpainting-0.1/tokenizer_2/tokenizer_config.json",
+      "type": "file",
+      "bytes": 725
+    },
+    {
+      "name": "sdxl-inpainting-0.1/tokenizer_2/vocab.json",
+      "type": "file",
+      "bytes": 1059962
+    },
+    {
+      "name": "sdxl-inpainting-0.1/tokenizer/merges.txt",
+      "type": "file",
+      "bytes": 524619
+    },
+    {
+      "name": "sdxl-inpainting-0.1/tokenizer/special_tokens_map.json",
+      "type": "file",
+      "bytes": 472
+    },
+    {
+      "name": "sdxl-inpainting-0.1/tokenizer/tokenizer_config.json",
+      "type": "file",
+      "bytes": 737
+    },
+    {
+      "name": "sdxl-inpainting-0.1/tokenizer/vocab.json",
+      "type": "file",
+      "bytes": 1059962
+    },
+    {
+      "name": "sdxl-inpainting-0.1/text_encoder_2/config.json",
+      "type": "file",
+      "bytes": 758
+    },
+    {
+      "name": "sdxl-inpainting-0.1/text_encoder_2/model.fp16.safetensors",
+      "type": "file",
+      "bytes": 1389382884
+    },
+    {
+      "name": "sdxl-inpainting-0.1/text_encoder/config.json",
+      "type": "file",
+      "bytes": 746
+    },
+    {
+      "name": "sdxl-inpainting-0.1/text_encoder/model.fp16.safetensors",
+      "type": "file",
+      "bytes": 246144867
+    },
+    {
+      "name": "sdxl-inpainting-0.1/scheduler/scheduler_config.json",
+      "type": "file",
+      "bytes": 479
+    }
+  ]
+}

@@ -207,3 +207,11 @@ Prepared only historical TRAIN R1 Crack86/260 and corrosion2/8 v1/v2: 8 candidat
 - This run was read-only network validation only. Windows and AutoDL system DNS returned different unverified answers; Google DoH was unreachable and Cloudflare DoH was reset. Hugging Face root HTTPS, fixed-revision API/resolve, and official `cdn-lfs.huggingface.co` were unreachable within bounded timeouts.
 - The supplied reference revision `115134f363124c53c7d878647567d04daf26e41e` and `openrail++` label remain unverified references. No metadata, file list, weights, transfer, cache, model load, inference, or budget use occurred.
 - No DNS/hosts/proxy/TLS changes, third-party mirror, token, VAL/TEST access, raw-data write, Pilot, SSL, or training occurred. Evidence and handoff: `results/exp13_phase1b_r2/20261024T134647Z/`, `docs/exp13_phase1b_r2_review.md`, and `docs/exp13_phase1b_r2_handoff.md`.
+
+### Exp13 Phase 1-B-R3 offline SDXL artifact verification (2026-10-25)
+
+- Status: `EXP13_PHASE1B_R3_ARTIFACT_VERIFIED_PENDING_CHATGPT_GATE`.
+- User-provided Windows Hugging Face snapshot evidence identifies revision `115134f363124c53c7d878647567d04daf26e41e` and license label `openrail++`; AutoDL did not independently query Hugging Face. Server-side SHA256 verification matched all 19 files against the uploaded Windows manifest (0 size/hash mismatch; 6,941,223,330 verified bytes).
+- Archive path safety, isolated extraction, required FP16 component structure, JSON parsing, safetensors header/layout inspection, and offline dependency imports passed. The old partial model directory was left untouched. Model weights and TAR remain outside Git.
+- This was static-only: no `from_pretrained`, GPU model load, inference, Smoke budget reservation, VAL/TEST access, raw-data write, SSL, or YOLO training. Diffusers runtime load and 12 GiB Smoke feasibility remain unestablished.
+- Evidence: `results/exp13_phase1b_r3/20261025T042354Z/`; review and handoff: `docs/exp13_phase1b_r3_artifact_review.md` and `docs/exp13_phase1b_r3_handoff.md`. Stop for ChatGPT Gate; no Smoke/Pilot/SSL authorization is implied.

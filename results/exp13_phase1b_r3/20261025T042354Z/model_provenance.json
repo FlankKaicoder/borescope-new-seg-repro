@@ -1,0 +1,17 @@
+{
+  "run_id": "20261025T042354Z",
+  "model_id": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+  "claimed_revision": "115134f363124c53c7d878647567d04daf26e41e",
+  "revision_source": "User-provided Windows official snapshot_download/API execution evidence; no official network API call was made from AutoDL during R3.",
+  "claimed_license": "openrail++",
+  "license_source": "User-provided Windows official API evidence; license text/revision pairing was not independently fetched from AutoDL.",
+  "windows_model_directory": "E:\\models\\sdxl-inpainting-0.1",
+  "windows_manifest_path": "E:\\huggingface\\sdxl_fp16_manifest.csv",
+  "windows_manifest_sha256": "a1a0302f7f8f9a0e2bf21e9b47a7757fd4e1ba9f246bf0c59bfcef1d5eb9607e",
+  "server_manifest_path": "/root/autodl-tmp/sdxl_fp16_manifest.csv",
+  "server_manifest_sha256": "a1a0302f7f8f9a0e2bf21e9b47a7757fd4e1ba9f246bf0c59bfcef1d5eb9607e",
+  "windows_reported_snapshot_download_files": 19,
+  "server_files_independently_rehashed_against_manifest": 19,
+  "model_weight_git_commit": false,
+  "tar_git_commit": false
+}
