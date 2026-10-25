@@ -1,0 +1,49 @@
+{
+  "status": "EXP13_2_M0_R1_PREPARED_AWAITING_HUMAN_INPUT_REVIEW",
+  "plan": "PREFERRED_3_PLUS_3",
+  "final_source_ids": [
+    "469",
+    "260",
+    "470",
+    "8",
+    "1",
+    "2"
+  ],
+  "class_counts": {
+    "Crack": 3,
+    "corrosion": 3
+  },
+  "new_corrosion_sources": [
+    "1",
+    "2"
+  ],
+  "geometry_pass_count": 6,
+  "minimum_2_plus_2_met": true,
+  "preferred_3_plus_3_met": true,
+  "semantic_pending_count": 6,
+  "semantically_approved": 0,
+  "human_input_review_gate": "PENDING",
+  "proposed_future_calls": 12,
+  "executable_calls": 0,
+  "new_calls": 0,
+  "m0_defaults_preserved": [
+    "469",
+    "260",
+    "470",
+    "8"
+  ],
+  "m0_exclusions_preserved": [
+    "9",
+    "23"
+  ],
+  "review_zip": {
+    "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_protocol_review_package.zip",
+    "sha256": "6f683f6521737437ef37a5f24e24581865fd59467694dca779102c15a3bf53fc",
+    "bytes": 62181247,
+    "review_sheet_count": 16,
+    "source_count": 6,
+    "controlled_server_only": true
+  },
+  "recommend_or_authorize_m1": false,
+  "stop": "Await ChatGPT and user input protocol review; M1 needs separate authorization"
+}

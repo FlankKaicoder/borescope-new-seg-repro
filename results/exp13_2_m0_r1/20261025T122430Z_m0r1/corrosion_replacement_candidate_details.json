@@ -1,0 +1,562 @@
+{
+  "inspected_or_skipped": [
+    {
+      "source_id": "1",
+      "class": "corrosion",
+      "candidate_kind": "HISTORICAL_FIXED_ORDER",
+      "split": "train",
+      "group_id": "singleton_1",
+      "near_duplicate_group_id": "",
+      "source_path": "/root/autodl-tmp/损伤训练数据集/1.png",
+      "annotation_path": "/root/autodl-tmp/损伤训练数据集/1.json",
+      "source_sha256": "4cacb0d2c49d471fada2c05f0fc006d87367e0bdd6568c623e677ed0d382d904",
+      "annotation_sha256": "c655f3b1ac36c7eb19aea7aee9a1c823ed3ae50a7ae682e9c743e84daf052834",
+      "native_wh": [
+        720,
+        540
+      ],
+      "geometry_status": "PASS_GEOMETRY_ONLY",
+      "semantic_status": "PENDING_USER_REVIEW",
+      "input_semantic_eligibility": "PENDING_USER_REVIEW",
+      "restoration_eligible": false,
+      "polygon_count": 3,
+      "polygon_details": [
+        {
+          "polygon_id": 0,
+          "points_native_xy": [
+            [
+              409.0,
+              408.0
+            ],
+            [
+              409.0,
+              400.0
+            ],
+            [
+              414.0,
+              398.0
+            ],
+            [
+              414.0,
+              392.0
+            ],
+            [
+              420.0,
+              393.0
+            ],
+            [
+              423.0,
+              389.0
+            ],
+            [
+              428.0,
+              392.0
+            ],
+            [
+              448.0,
+              389.0
+            ],
+            [
+              453.0,
+              384.0
+            ],
+            [
+              469.0,
+              390.0
+            ],
+            [
+              509.0,
+              391.0
+            ],
+            [
+              528.0,
+              382.0
+            ],
+            [
+              570.0,
+              394.0
+            ],
+            [
+              570.0,
+              404.0
+            ],
+            [
+              567.0,
+              406.0
+            ],
+            [
+              563.0,
+              405.0
+            ],
+            [
+              561.0,
+              399.0
+            ],
+            [
+              556.0,
+              405.0
+            ],
+            [
+              529.0,
+              401.0
+            ],
+            [
+              526.0,
+              408.0
+            ],
+            [
+              520.0,
+              401.0
+            ],
+            [
+              506.0,
+              397.0
+            ],
+            [
+              496.0,
+              405.0
+            ],
+            [
+              485.0,
+              402.0
+            ],
+            [
+              470.0,
+              403.0
+            ],
+            [
+              463.0,
+              409.0
+            ],
+            [
+              458.0,
+              409.0
+            ],
+            [
+              435.0,
+              399.0
+            ],
+            [
+              422.0,
+              401.0
+            ],
+            [
+              420.0,
+              396.0
+            ],
+            [
+              418.0,
+              408.0
+            ]
+          ],
+          "raster_pixels": 2301,
+          "bbox_xyxy_half_open": [
+            409,
+            382,
+            571,
+            410
+          ],
+          "shoelace_area": 2227.0
+        },
+        {
+          "polygon_id": 1,
+          "points_native_xy": [
+            [
+              380.03968253968253,
+              262.85714285714283
+            ],
+            [
+              397.0079365079365,
+              271.36507936507934
+            ],
+            [
+              412.0079365079365,
+              272.36507936507934
+            ],
+            [
+              422.0079365079365,
+              283.36507936507934
+            ],
+            [
+              432.0079365079365,
+              278.36507936507934
+            ],
+            [
+              417.0079365079365,
+              268.36507936507934
+            ],
+            [
+              396.0079365079365,
+              259.36507936507934
+            ]
+          ],
+          "raster_pixels": 409,
+          "bbox_xyxy_half_open": [
+            380,
+            259,
+            433,
+            284
+          ],
+          "shoelace_area": 386.55555555555475
+        },
+        {
+          "polygon_id": 2,
+          "points_native_xy": [
+            [
+              86.3888888888889,
+              346.58730158730157
+            ],
+            [
+              84.00793650793652,
+              361.36507936507934
+            ],
+            [
+              101.00793650793652,
+              370.36507936507934
+            ],
+            [
+              105.00793650793652,
+              359.36507936507934
+            ],
+            [
+              100.00793650793652,
+              354.36507936507934
+            ],
+            [
+              107.00793650793652,
+              348.36507936507934
+            ]
+          ],
+          "raster_pixels": 364,
+          "bbox_xyxy_half_open": [
+            84,
+            347,
+            108,
+            371
+          ],
+          "shoelace_area": 346.9682539682526
+        }
+      ],
+      "polygon_union_bbox": [
+        84,
+        259,
+        571,
+        410
+      ],
+      "nonadjacent_edge_intersections": [],
+      "minimum_context_margin": 17,
+      "feasible_origin_intervals_xy": [
+        [
+          48,
+          67
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "crop_xyxy_half_open": [
+        67,
+        0,
+        607,
+        540
+      ],
+      "polygon_pixels_total": 3074,
+      "edit_support_pixels_total": 7281,
+      "padding_fraction": 0,
+      "input_content_fraction": 1,
+      "normal_context_proxy_warning": "Bounding-box margin and unmasked pixels do not establish normal metal",
+      "rejection_reason": null,
+      "default_geometry_checks": {
+        "in_bounds_square": true,
+        "actual_bbox_context_margins_ltrb": [
+          17,
+          259,
+          36,
+          130
+        ],
+        "context_margin_pass": true,
+        "per_polygon_retention": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "target_retention": 1.0,
+        "edit_support_retention": 1.0,
+        "polygon512_pixels_missing_from_effective_mask": 0,
+        "native_polygon_pixels_missing_after_effective_mask_roundtrip": 0,
+        "effective_edit_pixels_512": 4860,
+        "grayscale_edit_support_pixels_512": 6613,
+        "unmasked_fraction_512_NOT_normal_metal_fraction": 0.9747734069824219,
+        "mask_polarity": "white=edit/black=preserve; Diffusers >=0.5 (uint8 >=128)",
+        "sdxl_mask_2x_exact": true,
+        "pixel_center_native_to_512_matrix": [
+          [
+            0.9481481481481482,
+            0.0,
+            -63.55185185185186
+          ],
+          [
+            0.0,
+            0.9481481481481482,
+            -0.025925925925925908
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "pixel_center_inverse_matrix": [
+          [
+            1.0546875,
+            0.0,
+            67.02734375
+          ],
+          [
+            0.0,
+            1.0546875,
+            0.02734374999999998
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "coordinate_roundtrip_max_abs_error": 1.1368683772161603e-13,
+        "technical_pass": true
+      },
+      "raw_hashes_unchanged": true
+    },
+    {
+      "source_id": "2",
+      "class": "corrosion",
+      "candidate_kind": "HISTORICAL_FIXED_ORDER",
+      "split": "train",
+      "group_id": "singleton_2",
+      "near_duplicate_group_id": "",
+      "source_path": "/root/autodl-tmp/损伤训练数据集/2.png",
+      "annotation_path": "/root/autodl-tmp/损伤训练数据集/2.json",
+      "source_sha256": "514d07947ee5ff2d3ac8e160ac58a28bb159ed2549105e4998eaed4b0ba4bc03",
+      "annotation_sha256": "e4fa956d8ae736e4e851dde5fcf66e16faf2bf87deb284c81039da3e5621717a",
+      "native_wh": [
+        640,
+        480
+      ],
+      "geometry_status": "PASS_GEOMETRY_ONLY",
+      "semantic_status": "PENDING_USER_REVIEW",
+      "input_semantic_eligibility": "PENDING_USER_REVIEW",
+      "restoration_eligible": false,
+      "polygon_count": 1,
+      "polygon_details": [
+        {
+          "polygon_id": 0,
+          "points_native_xy": [
+            [
+              158.0,
+              112.0
+            ],
+            [
+              138.0,
+              110.0
+            ],
+            [
+              127.0,
+              112.0
+            ],
+            [
+              66.0,
+              111.0
+            ],
+            [
+              64.0,
+              107.0
+            ],
+            [
+              52.0,
+              100.0
+            ],
+            [
+              50.0,
+              82.0
+            ],
+            [
+              53.0,
+              77.0
+            ],
+            [
+              46.0,
+              69.0
+            ],
+            [
+              43.0,
+              71.0
+            ],
+            [
+              40.0,
+              64.0
+            ],
+            [
+              53.0,
+              64.0
+            ],
+            [
+              59.0,
+              68.0
+            ],
+            [
+              62.0,
+              74.0
+            ],
+            [
+              69.0,
+              78.0
+            ],
+            [
+              93.0,
+              78.0
+            ],
+            [
+              101.0,
+              83.0
+            ],
+            [
+              118.0,
+              101.0
+            ],
+            [
+              121.0,
+              99.0
+            ],
+            [
+              126.0,
+              104.0
+            ],
+            [
+              131.0,
+              101.0
+            ],
+            [
+              135.0,
+              102.0
+            ],
+            [
+              135.0,
+              106.0
+            ],
+            [
+              138.0,
+              109.0
+            ],
+            [
+              143.0,
+              106.0
+            ],
+            [
+              159.0,
+              109.0
+            ]
+          ],
+          "raster_pixels": 2394,
+          "bbox_xyxy_half_open": [
+            40,
+            64,
+            160,
+            113
+          ],
+          "shoelace_area": 2321.0
+        }
+      ],
+      "polygon_union_bbox": [
+        40,
+        64,
+        160,
+        113
+      ],
+      "nonadjacent_edge_intersections": [],
+      "minimum_context_margin": 16,
+      "feasible_origin_intervals_xy": [
+        [
+          0,
+          24
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "crop_xyxy_half_open": [
+        24,
+        0,
+        504,
+        480
+      ],
+      "polygon_pixels_total": 2394,
+      "edit_support_pixels_total": 4450,
+      "padding_fraction": 0,
+      "input_content_fraction": 1,
+      "normal_context_proxy_warning": "Bounding-box margin and unmasked pixels do not establish normal metal",
+      "rejection_reason": null,
+      "default_geometry_checks": {
+        "in_bounds_square": true,
+        "actual_bbox_context_margins_ltrb": [
+          16,
+          64,
+          344,
+          367
+        ],
+        "context_margin_pass": true,
+        "per_polygon_retention": [
+          1.0
+        ],
+        "target_retention": 1.0,
+        "edit_support_retention": 1.0,
+        "polygon512_pixels_missing_from_effective_mask": 0,
+        "native_polygon_pixels_missing_after_effective_mask_roundtrip": 0,
+        "effective_edit_pixels_512": 4005,
+        "grayscale_edit_support_pixels_512": 5069,
+        "unmasked_fraction_512_NOT_normal_metal_fraction": 0.9806632995605469,
+        "mask_polarity": "white=edit/black=preserve; Diffusers >=0.5 (uint8 >=128)",
+        "sdxl_mask_2x_exact": true,
+        "pixel_center_native_to_512_matrix": [
+          [
+            1.0666666666666667,
+            0.0,
+            -25.566666666666666
+          ],
+          [
+            0.0,
+            1.0666666666666667,
+            0.033333333333333326
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "pixel_center_inverse_matrix": [
+          [
+            0.9375,
+            0.0,
+            23.96875
+          ],
+          [
+            0.0,
+            0.9375,
+            -0.031249999999999993
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "coordinate_roundtrip_max_abs_error": 1.4210854715202004e-14,
+        "technical_pass": true
+      },
+      "raw_hashes_unchanged": true
+    }
+  ]
+}

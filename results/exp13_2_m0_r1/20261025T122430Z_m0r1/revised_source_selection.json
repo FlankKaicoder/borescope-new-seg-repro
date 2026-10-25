@@ -1,0 +1,57 @@
+{
+  "status": "EXP13_2_M0_R1_PREPARED_AWAITING_HUMAN_INPUT_REVIEW",
+  "plan": "PREFERRED_3_PLUS_3",
+  "final_source_ids": [
+    "469",
+    "260",
+    "470",
+    "8",
+    "1",
+    "2"
+  ],
+  "class_counts": {
+    "Crack": 3,
+    "corrosion": 3
+  },
+  "retained_m0": [
+    "469",
+    "260",
+    "470",
+    "8"
+  ],
+  "new_corrosion_geometry_candidates": [
+    "1",
+    "2"
+  ],
+  "selected_group_ids": [
+    "singleton_469",
+    "singleton_260",
+    "near_0007",
+    "singleton_8",
+    "singleton_1",
+    "singleton_2"
+  ],
+  "unique_group_and_image_hashes": true,
+  "physical_part_independence": "UNPROVEN; different TRAIN groups/files are not proven different physical parts",
+  "supplement_actual_inspections": 0,
+  "priority_raw_inspections": 2,
+  "all_semantic_eligibility": "PENDING_USER_REVIEW",
+  "semantic_approved_sources": [],
+  "fallback_2_plus_2": {
+    "Crack_keep": [
+      "469",
+      "260"
+    ],
+    "Crack_hold": [
+      "470"
+    ],
+    "corrosion_preference": [
+      "8",
+      "1",
+      "2"
+    ],
+    "condition": "Only after explicit human decisions leave >=2 acceptable corrosion and469/260 acceptable; otherwise HOLD"
+  },
+  "new_calls_authorized": 0,
+  "future_proposed_calls": 12
+}

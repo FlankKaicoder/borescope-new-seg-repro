@@ -1,0 +1,133 @@
+{
+  "status": "PASS_PACKAGE_TECHNICAL_ONLY",
+  "started_at": "2026-10-25T12:29:52.428227+00:00",
+  "finished_at": "2026-10-25T12:29:55.326107+00:00",
+  "script_sha256": "16aa8ff7a79c1a7eb7db76fb04a52bb4b31fb8942249fe457e2c2d7f36303a34",
+  "zip_sha256": "6f683f6521737437ef37a5f24e24581865fd59467694dca779102c15a3bf53fc",
+  "zip_entries": 230,
+  "source_count": 6,
+  "review_sheet_count": 16,
+  "source_crop_options": [
+    {
+      "source_id": "469",
+      "crop_id": "default",
+      "all_zip_and_disk_file_pixel_hashes_equal": true,
+      "effective_masks_exact": true
+    },
+    {
+      "source_id": "469",
+      "crop_id": "alt_1",
+      "all_zip_and_disk_file_pixel_hashes_equal": true,
+      "effective_masks_exact": true
+    },
+    {
+      "source_id": "469",
+      "crop_id": "alt_2",
+      "all_zip_and_disk_file_pixel_hashes_equal": true,
+      "effective_masks_exact": true
+    },
+    {
+      "source_id": "260",
+      "crop_id": "default",
+      "all_zip_and_disk_file_pixel_hashes_equal": true,
+      "effective_masks_exact": true
+    },
+    {
+      "source_id": "260",
+      "crop_id": "alt_1",
+      "all_zip_and_disk_file_pixel_hashes_equal": true,
+      "effective_masks_exact": true
+    },
+    {
+      "source_id": "260",
+      "crop_id": "alt_2",
+      "all_zip_and_disk_file_pixel_hashes_equal": true,
+      "effective_masks_exact": true
+    },
+    {
+      "source_id": "470",
+      "crop_id": "default",
+      "all_zip_and_disk_file_pixel_hashes_equal": true,
+      "effective_masks_exact": true
+    },
+    {
+      "source_id": "470",
+      "crop_id": "alt_1",
+      "all_zip_and_disk_file_pixel_hashes_equal": true,
+      "effective_masks_exact": true
+    },
+    {
+      "source_id": "470",
+      "crop_id": "alt_2",
+      "all_zip_and_disk_file_pixel_hashes_equal": true,
+      "effective_masks_exact": true
+    },
+    {
+      "source_id": "8",
+      "crop_id": "default",
+      "all_zip_and_disk_file_pixel_hashes_equal": true,
+      "effective_masks_exact": true
+    },
+    {
+      "source_id": "8",
+      "crop_id": "alt_1",
+      "all_zip_and_disk_file_pixel_hashes_equal": true,
+      "effective_masks_exact": true
+    },
+    {
+      "source_id": "8",
+      "crop_id": "alt_2",
+      "all_zip_and_disk_file_pixel_hashes_equal": true,
+      "effective_masks_exact": true
+    },
+    {
+      "source_id": "1",
+      "crop_id": "default",
+      "all_zip_and_disk_file_pixel_hashes_equal": true,
+      "effective_masks_exact": true
+    },
+    {
+      "source_id": "1",
+      "crop_id": "alt_1",
+      "all_zip_and_disk_file_pixel_hashes_equal": true,
+      "effective_masks_exact": true
+    },
+    {
+      "source_id": "2",
+      "crop_id": "default",
+      "all_zip_and_disk_file_pixel_hashes_equal": true,
+      "effective_masks_exact": true
+    },
+    {
+      "source_id": "2",
+      "crop_id": "alt_1",
+      "all_zip_and_disk_file_pixel_hashes_equal": true,
+      "effective_masks_exact": true
+    }
+  ],
+  "all_human_fields_pending": true,
+  "pending_human_cells": 48,
+  "future_planned_slots": 12,
+  "slots_executable_now": 0,
+  "authoritative_ledger_sha256_unchanged": "3af2d074b640023e5e2c66198ae3b1ee74cedb3d7829f802c6cf84a62fa1ca94",
+  "model_packages_imported": [],
+  "new_calls": 0,
+  "model_loads": 0,
+  "val_test_files_opened": 0,
+  "raw_files_written": 0,
+  "visual_layout_QA": {
+    "inspected_sheets": [
+      "1_default",
+      "2_default",
+      "260_alt_2"
+    ],
+    "scope": "Assistant layout/context-risk spot check only; not USER semantic approval",
+    "observations": {
+      "1_default": "UI crosshair overlay near one target and logo inside crop; multiple real structure edges require human review",
+      "2_default": "GE/UI overlays, dark cavity and real metal edge remain in whole crop; geometric retention is not eligibility",
+      "260_alt_2": "Alternate crop changes context and still includes a real dark-cavity/metal boundary; all decisions pending"
+    }
+  },
+  "semantic_approved_sources": 0,
+  "no_zip_or_historical_artifact_modified": true
+}

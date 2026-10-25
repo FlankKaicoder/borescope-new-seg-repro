@@ -1,0 +1,132 @@
+{
+  "changed": false,
+  "m0_protocol_sha256": "949c863df202ce15e39cc86495098727f669f4d3779110fcac7b8d61ea4de8e7",
+  "protocol": {
+    "study": "PAIRED_PRACTICAL_MODEL_ADAPTATION_STUDY",
+    "objective": "RESTORE_TO_PSEUDO_NORMAL_METAL",
+    "prompt": "restore a clean, uniform normal metallic borescope surface; preserve realistic metal texture and lighting",
+    "negative_prompt": null,
+    "steps": 20,
+    "guidance_scale": 7.5,
+    "strength": 0.8,
+    "seed": 130500,
+    "precision": "float16",
+    "execution": "single GPU sequential; no search/retry/download; no implicit crop; padding_mask_crop=None",
+    "resolution": {
+      "DreamShaper": 512,
+      "SDXL": 1024
+    },
+    "scheduler": {
+      "DreamShaper": "DEISMultistepScheduler",
+      "SDXL": "EulerDiscreteScheduler"
+    },
+    "assets": {
+      "DreamShaper": {
+        "fingerprint": "9598058d591b43726c5bf5c7db7f5183911415ca18e5c123c1a63bd3ee39d927",
+        "loader": {
+          "variant": null,
+          "use_safetensors": true,
+          "torch_dtype": "float16",
+          "safety_checker": null,
+          "local_files_only": true,
+          "enable_attention_slicing": true
+        }
+      },
+      "SDXL": {
+        "fingerprint": "d7fb8e6a3d8c4ac6538b13f2f2575a902662364c051716bd3961bf94a465fd14",
+        "loader": {
+          "variant": "fp16",
+          "use_safetensors": true,
+          "local_files_only": true,
+          "torch_dtype": "float16",
+          "cpu_offload": true,
+          "vae_tiling": true,
+          "vae_slicing": true
+        }
+      }
+    },
+    "residual_factors": [
+      "native model resolution",
+      "native scheduler and architecture/VAE",
+      "internal noise schedule differs despite equal numerical seed/strength/guidance"
+    ],
+    "authorization": "PROPOSED_M1_ONLY_SEPARATE_CHATGPT_GATE_REQUIRED",
+    "input_rules": {
+      "crop": "L=min(W,H); integer half-open box inside native; clamp center origin to feasible interval containing ALL target polygons plus margin",
+      "minimum_context_margin_native_px": "max(16,ceil(0.03*L))",
+      "margin_status": "PREREGISTERED_ENGINEERING_RULE_NOT_VALIDATED_SEMANTIC_SUFFICIENCY",
+      "tie_rule": "center origin=floor((dimension-L)/2); clamp independently on x/y",
+      "raster": "Pillow ImageDraw polygon round(x),round(y), union of ALL target-class polygons",
+      "native_edit_mask": "native polygon union -> MaxFilter(7) -> GaussianBlur(1.0)",
+      "common": "identical square crop; RGB LANCZOS->512; grayscale edit mask NEAREST->512",
+      "sdxl": "common RGB LANCZOS->1024; common mask NEAREST->1024; no padding",
+      "mask_polarity": "white=edit, black=preserve; gray=feather (pipeline mask binarization separately disclosed)",
+      "semantic_gate": "whole square UI/FOV/gray border; real normal-metal continuity; physical edge crossing; unannotated defects; all PENDING unless explicit new review",
+      "rejection": "pairwise exclusion, no replacement/target reduction/relaxation; >=4 sources and >=2 per class plus semantic review required"
+    }
+  },
+  "static_model_files": [
+    {
+      "model": "DreamShaper",
+      "files_rehashed": 19,
+      "bytes_rehashed": 8223354902,
+      "fingerprint": "9598058d591b43726c5bf5c7db7f5183911415ca18e5c123c1a63bd3ee39d927",
+      "all_file_hashes_equal_M0": true
+    },
+    {
+      "model": "SDXL",
+      "files_rehashed": 19,
+      "bytes_rehashed": 6941223330,
+      "fingerprint": "d7fb8e6a3d8c4ac6538b13f2f2575a902662364c051716bd3961bf94a465fd14",
+      "all_file_hashes_equal_M0": true
+    }
+  ],
+  "mask_threshold_source_verification": [
+    {
+      "path": "/root/miniconda3/lib/python3.12/site-packages/diffusers/image_processor.py",
+      "sha256": "eaaa29edf8a54c776adcbf991955a624c9f4fb4b38060ed6f8068014135d3b44",
+      "relevant_source_lines": [
+        {
+          "line": 540,
+          "text": "image[image < 0.5] = 0"
+        },
+        {
+          "line": 541,
+          "text": "image[image >= 0.5] = 1"
+        }
+      ]
+    },
+    {
+      "path": "/root/miniconda3/lib/python3.12/site-packages/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_inpaint.py",
+      "sha256": "84725e81bba64890f9f937f6d7774b70d172d1863a5132a8acbe58f03b8ca9b4",
+      "relevant_source_lines": [
+        {
+          "line": 274,
+          "text": "vae_scale_factor=self.vae_scale_factor, do_normalize=False, do_binarize=True, do_convert_grayscale=True"
+        },
+        {
+          "line": 889,
+          "text": "padding_mask_crop: Optional[int] = None,"
+        }
+      ]
+    },
+    {
+      "path": "/root/miniconda3/lib/python3.12/site-packages/diffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl_inpaint.py",
+      "sha256": "5ea094096a73cb6b44037ae92a344ad935e38422fcedc3b6dfe86a8934cf44ac",
+      "relevant_source_lines": [
+        {
+          "line": 327,
+          "text": "vae_scale_factor=self.vae_scale_factor, do_normalize=False, do_binarize=True, do_convert_grayscale=True"
+        },
+        {
+          "line": 1102,
+          "text": "padding_mask_crop: Optional[int] = None,"
+        }
+      ]
+    }
+  ],
+  "DreamShaper_provenance_limit": "ModelScope/master; immutable upstream revision not independently established",
+  "model_loads": 0,
+  "model_package_imports": 0,
+  "new_inference": 0
+}

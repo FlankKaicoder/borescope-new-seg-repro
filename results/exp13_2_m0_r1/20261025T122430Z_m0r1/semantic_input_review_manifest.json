@@ -1,0 +1,5598 @@
+{
+  "status": "PENDING_USER_REVIEW",
+  "selection": [
+    "469",
+    "260",
+    "470",
+    "8",
+    "1",
+    "2"
+  ],
+  "all_sources": [
+    {
+      "source_id": "469",
+      "class": "Crack",
+      "source_sha256": "203e6c3a4f48e37c7d0787a054fc8718dd007d2b4fe17af732f831e4a6d305c5",
+      "annotation_sha256": "37147881fe4daffee15ff8bbe6bca3722d644da5006a94e2feee79029ae41da9",
+      "group_id": "singleton_469",
+      "polygon_details": [
+        {
+          "polygon_id": 0,
+          "points_native_xy": [
+            [
+              414.6633416458853,
+              181.79551122194513
+            ],
+            [
+              419.90024937655863,
+              178.0548628428928
+            ],
+            [
+              423.8902743142145,
+              176.05985037406484
+            ],
+            [
+              422.64339152119703,
+              180.54862842892769
+            ],
+            [
+              422.14463840399003,
+              185.03740648379053
+            ],
+            [
+              423.142144638404,
+              190.02493765586036
+            ],
+            [
+              424.6384039900249,
+              194.5137157107232
+            ],
+            [
+              428.8778054862843,
+              199.25187032418953
+            ],
+            [
+              431.1221945137157,
+              202.74314214463843
+            ],
+            [
+              433.8653366583541,
+              204.98753117206985
+            ],
+            [
+              436.1097256857855,
+              210.47381546134665
+            ],
+            [
+              438.6034912718205,
+              215.71072319201997
+            ],
+            [
+              441.3466334164589,
+              219.95012468827932
+            ],
+            [
+              443.59102244389027,
+              223.6907730673317
+            ],
+            [
+              447.33167082294267,
+              225.18703241895264
+            ],
+            [
+              451.571072319202,
+              227.68079800498754
+            ],
+            [
+              454.5635910224439,
+              229.1770573566085
+            ],
+            [
+              457.8054862842893,
+              231.1720698254364
+            ],
+            [
+              460.79800498753116,
+              231.92019950124688
+            ],
+            [
+              462.2942643391521,
+              235.91022443890276
+            ],
+            [
+              465.785536159601,
+              240.1496259351621
+            ],
+            [
+              469.2768079800499,
+              242.64339152119703
+            ],
+            [
+              472.51870324189525,
+              245.13715710723193
+            ],
+            [
+              476.00997506234415,
+              247.63092269326685
+            ],
+            [
+              480.498753117207,
+              250.62344139650875
+            ],
+            [
+              483.99002493765585,
+              252.36907730673317
+            ],
+            [
+              487.23192019950125,
+              254.11471321695763
+            ],
+            [
+              492.2194513715711,
+              255.86034912718205
+            ],
+            [
+              496.45885286783044,
+              259.3516209476309
+            ],
+            [
+              501.69576059850374,
+              262.0947630922693
+            ],
+            [
+              505.43640897755614,
+              265.3366583541147
+            ],
+            [
+              509.426433915212,
+              267.8304239401496
+            ],
+            [
+              511.17206982543644,
+              272.069825436409
+            ],
+            [
+              513.9152119700748,
+              277.0573566084788
+            ],
+            [
+              517.6558603491272,
+              279.30174563591027
+            ],
+            [
+              519.9002493765586,
+              281.79551122194516
+            ],
+            [
+              522.14463840399,
+              284.03990024937656
+            ],
+            [
+              525.3865336658354,
+              285.5361596009975
+            ],
+            [
+              530.6234413965087,
+              288.2793017456359
+            ],
+            [
+              535.1122194513716,
+              289.0274314214464
+            ],
+            [
+              539.8503740648379,
+              290.77306733167086
+            ],
+            [
+              546.0847880299252,
+              291.5211970074813
+            ],
+            [
+              550.573566084788,
+              292.0199501246883
+            ],
+            [
+              557.5561097256858,
+              294.2643391521197
+            ],
+            [
+              562.0448877805486,
+              295.2618453865337
+            ],
+            [
+              562.64192139738,
+              299.30131004366814
+            ],
+            [
+              560.0218340611355,
+              300.8296943231441
+            ],
+            [
+              554.7816593886463,
+              299.95633187772927
+            ],
+            [
+              549.759825327511,
+              298.4279475982533
+            ],
+            [
+              545.6113537117905,
+              296.46288209606985
+            ],
+            [
+              539.2794759825327,
+              295.1528384279476
+            ],
+            [
+              532.9475982532751,
+              293.1877729257642
+            ],
+            [
+              525.3056768558952,
+              291.6593886462882
+            ],
+            [
+              518.7554585152839,
+              290.7860262008734
+            ],
+            [
+              514.3886462882097,
+              289.0393013100437
+            ],
+            [
+              511.11353711790395,
+              285.764192139738
+            ],
+            [
+              507.40174672489087,
+              281.6157205240175
+            ],
+            [
+              501.72489082969435,
+              277.46724890829694
+            ],
+            [
+              501.94323144104806,
+              272.882096069869
+            ],
+            [
+              497.79475982532756,
+              269.6069868995633
+            ],
+            [
+              493.646288209607,
+              265.2401746724891
+            ],
+            [
+              487.7510917030568,
+              262.4017467248908
+            ],
+            [
+              481.8558951965066,
+              259.7816593886463
+            ],
+            [
+              474.8689956331878,
+              256.72489082969435
+            ],
+            [
+              468.53711790393015,
+              252.13973799126634
+            ],
+            [
+              462.2052401746725,
+              247.3362445414847
+            ],
+            [
+              459.14847161572055,
+              242.53275109170303
+            ],
+            [
+              453.90829694323145,
+              237.51091703056767
+            ],
+            [
+              448.8864628820961,
+              234.01746724890828
+            ],
+            [
+              440.8078602620088,
+              230.7423580786026
+            ],
+            [
+              435.56768558951967,
+              226.15720524017465
+            ],
+            [
+              432.72925764192144,
+              218.29694323144102
+            ],
+            [
+              429.235807860262,
+              211.52838427947597
+            ],
+            [
+              423.55895196506555,
+              206.06986899563316
+            ],
+            [
+              418.9737991266376,
+              201.4847161572052
+            ],
+            [
+              415.6986899563319,
+              196.46288209606985
+            ],
+            [
+              415.0436681222708,
+              191.8777292576419
+            ],
+            [
+              415.6986899563319,
+              188.60262008733622
+            ],
+            [
+              415.4803493449782,
+              185.10917030567683
+            ]
+          ],
+          "raster_pixels": 1562,
+          "bbox_xyxy_half_open": [
+            415,
+            176,
+            564,
+            302
+          ],
+          "shoelace_area": 1460.1048614199026
+        }
+      ],
+      "geometry_status": "PASS_GEOMETRY_ONLY",
+      "options": [
+        {
+          "crop_id": "default",
+          "box_xyxy_half_open": [
+            120,
+            0,
+            840,
+            720
+          ],
+          "kind": "IMMUTABLE_M0_DEFAULT_REFERENCE",
+          "generation_rule": "M0 L=min(W,H); no padding; all polygons; edit=MaxFilter7/GaussianBlur1; RGB LANCZOS; mask NEAREST",
+          "files": {
+            "native_rgb": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/469/native_rgb.png",
+              "file_sha256": "6c66e1f9ec060ff783357de05288ccf6feda795658b6ed697265a21bd9df0149",
+              "pixel_sha256": "7d93095930760f95de83dfde21a915c338c8ae0a336fd2224a93c3b08e66ed72",
+              "mode": "RGB",
+              "shape": [
+                720,
+                960,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/469/native_polygon.png",
+              "file_sha256": "b92518a10beabf158759b9d4696a6d9d4205c7fd2b697ed9929a64b03ee8719a",
+              "pixel_sha256": "0b364e4fab73d34cad2e660cc5541e96268cd40cece1b2a3cd89b41545d673c3",
+              "mode": "L",
+              "shape": [
+                720,
+                960
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/469/native_edit_mask.png",
+              "file_sha256": "fa0b01b00b12774b8e84b8f211c074342797ce26dd41aed13c30a6d51c1b95ad",
+              "pixel_sha256": "e0681008069a072a5fe64fa2c58d0c22985dbd1719092f184e46f1af35436248",
+              "mode": "L",
+              "shape": [
+                720,
+                960
+              ],
+              "dtype": "uint8"
+            },
+            "common_rgb_512": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/469/common_rgb_512.png",
+              "file_sha256": "7f9596938cdc5f7d9843dfcf315fa13c91bab7285c70c7203f137a331b862989",
+              "pixel_sha256": "de6e31b7776e3afc175f23b60745f2741ff40fad59d993b7cccc2c2923520a7e",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "common_edit_mask_512": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/469/common_edit_mask_512.png",
+              "file_sha256": "02beef5a30c91299fb1d9488bb0862e1903eeb0721cf4703278645d6a3d98660",
+              "pixel_sha256": "6747e93608205addfd25429c894539d6debee3797847132c58723e51a8b1c724",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_rgb_1024": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/469/sdxl_rgb_1024.png",
+              "file_sha256": "b7122d034de26afa151f69f8477c4aa08891a77cb8bbcca810a2c0fc274c997a",
+              "pixel_sha256": "1c3c91a8eea334e2a327d7726e7ff7dcbf679db02d6649d7afe355f580ceef51",
+              "mode": "RGB",
+              "shape": [
+                1024,
+                1024,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_mask_1024": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/469/sdxl_mask_1024.png",
+              "file_sha256": "8242de89deca77f51a2a8da8fab7c16a49aae93a84870757cdf417861fdd0c18",
+              "pixel_sha256": "92ec6ae89a35a30f7400108d8b75b4cf7bb4f03b1e8d21d00c19e37baf5a78bc",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "native_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/default/native_crop.png",
+              "file_sha256": "14f2198a1cc22a44c6ccff268fbb07e98c7f216030a24dd2c1dc685c4bdd21bc",
+              "pixel_sha256": "1d3ec27936698aa87b7d97f2ce244991befceef3b2b3d7627ecbaf4071523901",
+              "mode": "RGB",
+              "shape": [
+                720,
+                720,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/default/native_polygon_crop.png",
+              "file_sha256": "95ef30c55e19d4c1e9631b0ffd1af690e6a74f3861c96fa73fec347119dff939",
+              "pixel_sha256": "cc49bcd4e028c0430d9b751d97bc27171442db517cba131832e93b8184cf8f47",
+              "mode": "L",
+              "shape": [
+                720,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/default/native_edit_mask_crop.png",
+              "file_sha256": "ac15f80e17138f395f1bd988039430bfd563bedb491d9a3a12354e7141432542",
+              "pixel_sha256": "8dc4890bd218b060c35b2de0998330888d80c3f1977dcf559eadd8d6bc80e054",
+              "mode": "L",
+              "shape": [
+                720,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/default/effective_edit_mask_512.png",
+              "file_sha256": "8dabc177a4654d813d38c2c7536aee6945ae652431a400eec9c0845bc8f25fc6",
+              "pixel_sha256": "86ee851d627f130b8819875ab84f77d600f762905733bcbcb6fd2dbd95845a46",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/default/effective_edit_mask_1024.png",
+              "file_sha256": "c3878cfed70a8dfa6ecfde53ff9ff3c58d7c32f8bb202b00583ce2805d528185",
+              "pixel_sha256": "be008f5dc3b6c73182923c477dfff44fc8d17adbe7bed42a845d1887526b8033",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "effective_mask_on_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/default/effective_mask_on_rgb_512.png",
+              "file_sha256": "05122804020b3db33bff87f5579dd50ac273d40878e0fa1266c8b75866dcba43",
+              "pixel_sha256": "136a9a9f5e40f6136e1ba09aaea877f9af46d3ab4b168fdd786de02c0f28d41d",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "geometry_checks": {
+            "in_bounds_square": true,
+            "actual_bbox_context_margins_ltrb": [
+              295,
+              176,
+              276,
+              418
+            ],
+            "context_margin_pass": true,
+            "per_polygon_retention": [
+              1.0
+            ],
+            "target_retention": 1.0,
+            "edit_support_retention": 1.0,
+            "polygon512_pixels_missing_from_effective_mask": 0,
+            "native_polygon_pixels_missing_after_effective_mask_roundtrip": 0,
+            "effective_edit_pixels_512": 1637,
+            "grayscale_edit_support_pixels_512": 2284,
+            "unmasked_fraction_512_NOT_normal_metal_fraction": 0.9912872314453125,
+            "mask_polarity": "white=edit/black=preserve; Diffusers >=0.5 (uint8 >=128)",
+            "sdxl_mask_2x_exact": true,
+            "pixel_center_native_to_512_matrix": [
+              [
+                0.7111111111111111,
+                0.0,
+                -85.47777777777777
+              ],
+              [
+                0.0,
+                0.7111111111111111,
+                -0.14444444444444443
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "pixel_center_inverse_matrix": [
+              [
+                1.40625,
+                0.0,
+                120.203125
+              ],
+              [
+                0.0,
+                1.40625,
+                0.20312499999999997
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "coordinate_roundtrip_max_abs_error": 1.1368683772161603e-13,
+            "technical_pass": true
+          },
+          "contact_sheet": {
+            "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_protocol_review_contact_sheets/469_default.png",
+            "file_sha256": "6aa83a39f70e8cf88e289377317b233bae3732d424cdfa0cbe17fb814c51c9fa",
+            "pixel_sha256": "f534e1fbef8c36323e8f1cdf23c72bb9b30fb5f17c4220cc77872ca17c01805c",
+            "mode": "RGB",
+            "shape": [
+              3080,
+              1536,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "human_decision": "PENDING",
+          "used_for_inference": false,
+          "cross_model_same_crop": true
+        },
+        {
+          "crop_id": "alt_1",
+          "box_xyxy_half_open": [
+            0,
+            0,
+            720,
+            720
+          ],
+          "kind": "HUMAN_COMPARISON_PROPOSAL_ONLY",
+          "generation_rule": "M0 L=min(W,H); no padding; all polygons; edit=MaxFilter7/GaussianBlur1; RGB LANCZOS; mask NEAREST",
+          "files": {
+            "native_rgb": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_1/native_rgb.png",
+              "file_sha256": "6c66e1f9ec060ff783357de05288ccf6feda795658b6ed697265a21bd9df0149",
+              "pixel_sha256": "7d93095930760f95de83dfde21a915c338c8ae0a336fd2224a93c3b08e66ed72",
+              "mode": "RGB",
+              "shape": [
+                720,
+                960,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_1/native_polygon.png",
+              "file_sha256": "b92518a10beabf158759b9d4696a6d9d4205c7fd2b697ed9929a64b03ee8719a",
+              "pixel_sha256": "0b364e4fab73d34cad2e660cc5541e96268cd40cece1b2a3cd89b41545d673c3",
+              "mode": "L",
+              "shape": [
+                720,
+                960
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_1/native_edit_mask.png",
+              "file_sha256": "fa0b01b00b12774b8e84b8f211c074342797ce26dd41aed13c30a6d51c1b95ad",
+              "pixel_sha256": "e0681008069a072a5fe64fa2c58d0c22985dbd1719092f184e46f1af35436248",
+              "mode": "L",
+              "shape": [
+                720,
+                960
+              ],
+              "dtype": "uint8"
+            },
+            "common_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_1/common_rgb_512.png",
+              "file_sha256": "dcba832d18b3c87b20f3cefdae26bdf44239d88bbedc7da1b7a29caa667ad6b6",
+              "pixel_sha256": "6c4314c55706f8c4c502be697790c48531ff65f75113fd860749ab81813d6dd1",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "common_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_1/common_edit_mask_512.png",
+              "file_sha256": "a77c98c03bfb2fbe218e0f27629879455d892207a87fac25aad1b5e5bb2f30a4",
+              "pixel_sha256": "9f1c63f7859f7c03188ab833195a79befff872ab39ee4a9f86b05be6bf2c1ade",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_rgb_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_1/sdxl_rgb_1024.png",
+              "file_sha256": "e66244e8ce17f0aafa847fc565ee743a3f568928f847ff674de219b6121ba74c",
+              "pixel_sha256": "5d2639a754c54bc36bfcfcda2a260c59189ae479056dd25b1bc2203070176491",
+              "mode": "RGB",
+              "shape": [
+                1024,
+                1024,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_1/sdxl_mask_1024.png",
+              "file_sha256": "a482aac1f8d91d6c1a19906af96434b786dac93a8dc524a0b2aa59ca81eb93e3",
+              "pixel_sha256": "6e1170745c6c1b19842298dfb110bd8bc15c798bd18618dfe7e3cd04161dbbe3",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "native_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_1/native_crop.png",
+              "file_sha256": "a9a910be416f2d45fa80dcb60a169ecc476669cc8c2be908c01f25ff37c6823f",
+              "pixel_sha256": "6eac8b5f757238d815b4b873fbf35e878b615023bd4f2a5d1ba3061f1b496c76",
+              "mode": "RGB",
+              "shape": [
+                720,
+                720,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_1/native_polygon_crop.png",
+              "file_sha256": "9e81beb90fbdc24ab4d604d68eb24dff9034f75b5409c9befe73a044ba3e87c5",
+              "pixel_sha256": "143cc61fe44d21bae46790e4a441f63ae9a4b2b03617590ebee35bb8c5d075c7",
+              "mode": "L",
+              "shape": [
+                720,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_1/native_edit_mask_crop.png",
+              "file_sha256": "9da669d09e1adf820af39552dbc68dcab99e45dfd636508b2b28ab3fdc5e54d5",
+              "pixel_sha256": "49828a77adfe0ced0918ecea58e0d49fa9aa3c04792e6b159d4baea1e1655598",
+              "mode": "L",
+              "shape": [
+                720,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_1/effective_edit_mask_512.png",
+              "file_sha256": "9dd08268a493c73eb1a3bc31042e07c671a1247201498429ccf7c2c7f6e83a4e",
+              "pixel_sha256": "db20bc43fb928764bc74ced986b7e7638eb3b1269ba4f7e3738a347744a3d08a",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_1/effective_edit_mask_1024.png",
+              "file_sha256": "d067f70081693a9d9d60d67b26cc4fdd68ed0f63cd0562161b404abc1010157d",
+              "pixel_sha256": "bb3c5121f2d878f2fcbcbabc8adb86e2f0a49ef209515cc7ee4dfc261f315ddd",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "effective_mask_on_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_1/effective_mask_on_rgb_512.png",
+              "file_sha256": "0c70beeea45fab7b177915f96dbb49b6ea7b5eb070963b7dcfca199f81952b5b",
+              "pixel_sha256": "e33d611ab056e1713165d0ccc26e4f9ce665fd0ee350c787884c889113ddeb6e",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "geometry_checks": {
+            "in_bounds_square": true,
+            "actual_bbox_context_margins_ltrb": [
+              415,
+              176,
+              156,
+              418
+            ],
+            "context_margin_pass": true,
+            "per_polygon_retention": [
+              1.0
+            ],
+            "target_retention": 1.0,
+            "edit_support_retention": 1.0,
+            "polygon512_pixels_missing_from_effective_mask": 0,
+            "native_polygon_pixels_missing_after_effective_mask_roundtrip": 0,
+            "effective_edit_pixels_512": 1641,
+            "grayscale_edit_support_pixels_512": 2286,
+            "unmasked_fraction_512_NOT_normal_metal_fraction": 0.9912796020507812,
+            "mask_polarity": "white=edit/black=preserve; Diffusers >=0.5 (uint8 >=128)",
+            "sdxl_mask_2x_exact": true,
+            "pixel_center_native_to_512_matrix": [
+              [
+                0.7111111111111111,
+                0.0,
+                -0.14444444444444443
+              ],
+              [
+                0.0,
+                0.7111111111111111,
+                -0.14444444444444443
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "pixel_center_inverse_matrix": [
+              [
+                1.40625,
+                0.0,
+                0.20312499999999997
+              ],
+              [
+                0.0,
+                1.40625,
+                0.20312499999999997
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "coordinate_roundtrip_max_abs_error": 5.684341886080802e-14,
+            "technical_pass": true
+          },
+          "contact_sheet": {
+            "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_protocol_review_contact_sheets/469_alt_1.png",
+            "file_sha256": "65fdb7fdacd5212c73c7abd95901ab69fc80006366fb11fb38ddd2a3796f522f",
+            "pixel_sha256": "1042e0d70d2d73360d89d82740ad6f65cc317d0bf40d28a907d10b6758b97a7b",
+            "mode": "RGB",
+            "shape": [
+              3080,
+              1536,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "human_decision": "PENDING",
+          "used_for_inference": false,
+          "cross_model_same_crop": true
+        },
+        {
+          "crop_id": "alt_2",
+          "box_xyxy_half_open": [
+            240,
+            0,
+            960,
+            720
+          ],
+          "kind": "HUMAN_COMPARISON_PROPOSAL_ONLY",
+          "generation_rule": "M0 L=min(W,H); no padding; all polygons; edit=MaxFilter7/GaussianBlur1; RGB LANCZOS; mask NEAREST",
+          "files": {
+            "native_rgb": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_2/native_rgb.png",
+              "file_sha256": "6c66e1f9ec060ff783357de05288ccf6feda795658b6ed697265a21bd9df0149",
+              "pixel_sha256": "7d93095930760f95de83dfde21a915c338c8ae0a336fd2224a93c3b08e66ed72",
+              "mode": "RGB",
+              "shape": [
+                720,
+                960,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_2/native_polygon.png",
+              "file_sha256": "b92518a10beabf158759b9d4696a6d9d4205c7fd2b697ed9929a64b03ee8719a",
+              "pixel_sha256": "0b364e4fab73d34cad2e660cc5541e96268cd40cece1b2a3cd89b41545d673c3",
+              "mode": "L",
+              "shape": [
+                720,
+                960
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_2/native_edit_mask.png",
+              "file_sha256": "fa0b01b00b12774b8e84b8f211c074342797ce26dd41aed13c30a6d51c1b95ad",
+              "pixel_sha256": "e0681008069a072a5fe64fa2c58d0c22985dbd1719092f184e46f1af35436248",
+              "mode": "L",
+              "shape": [
+                720,
+                960
+              ],
+              "dtype": "uint8"
+            },
+            "common_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_2/common_rgb_512.png",
+              "file_sha256": "698a484372619410d9f299f8019bb8c6da18028da1e6fe7c8dac5952457d84f4",
+              "pixel_sha256": "da1d3e9615c3111ca20e86aea53e33647cb44ee843df4d94f5922e95106f495c",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "common_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_2/common_edit_mask_512.png",
+              "file_sha256": "b1c91dffda2d3c805bc48a26fcc53aee870529f51e48b27d61cc71f30841c517",
+              "pixel_sha256": "288b02d154f9cb4cc0b36ec8c862477d557fdb6a09de60d45ea1477e45ef9033",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_rgb_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_2/sdxl_rgb_1024.png",
+              "file_sha256": "f4b2701d9418ce98083c13508bde7b72bcd835473882957afc00066344d3b639",
+              "pixel_sha256": "6a3fbda5f5610aa2cd02018ba39d11a66e7827e246463bea93ff7e68f947af28",
+              "mode": "RGB",
+              "shape": [
+                1024,
+                1024,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_2/sdxl_mask_1024.png",
+              "file_sha256": "1b9b726c999c51ae6e6478d32bf4bd350b6e110d14242543c3cf8497e35a3687",
+              "pixel_sha256": "b6c916ec841e28ecca905c65c572bed31e6da1b1d43a982925ee154109899c9f",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "native_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_2/native_crop.png",
+              "file_sha256": "f27e99867ccdb476c3a91e965c2dcdbc7f15d493072a0600e71d0c76e764f108",
+              "pixel_sha256": "597c522d123912318e3d1e71cff1b272cbb5fd418dd55ed5a20bb85f4c3e1482",
+              "mode": "RGB",
+              "shape": [
+                720,
+                720,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_2/native_polygon_crop.png",
+              "file_sha256": "37619f6b11d16b8864a8240eed8aff9322f90dd1de15e89f6299f5c5e72aaa29",
+              "pixel_sha256": "356fc346b6ab90a1fd469d80b0c417b7ddae8c5cfb2703f7125548b6bbac7e70",
+              "mode": "L",
+              "shape": [
+                720,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_2/native_edit_mask_crop.png",
+              "file_sha256": "b2389314047c39aacce095d93038794c776e0b9f1b01b08af4088ddfb38edeff",
+              "pixel_sha256": "65f21564618c81199ae90b03e8fb834bad7ad2a76f2ea5d13ff49476a8c5e30f",
+              "mode": "L",
+              "shape": [
+                720,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_2/effective_edit_mask_512.png",
+              "file_sha256": "63cd9c292ef354a9ac7f718dc8e3157517a61d14944950d281993a6137580fe2",
+              "pixel_sha256": "8b7585611139388b5a304456445f4c3af0fe664af2710c4c39eb3a820b5951f8",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_2/effective_edit_mask_1024.png",
+              "file_sha256": "ea75837c0d5a1df9a40d5dae61d7514dd2581422b7dd8e0efceaf605f3d8d71b",
+              "pixel_sha256": "d021c64da0146db1c1d8841de994350afc589b208f817527b4a799cb047ea52a",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "effective_mask_on_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/469/alt_2/effective_mask_on_rgb_512.png",
+              "file_sha256": "bd943eda1240bc7ce259d20e26d17806e5baf6b66393157d017f4b3c13481559",
+              "pixel_sha256": "671f94039667523589a1edcf73c2e8f07133db125012d78b99497fa1569f6a07",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "geometry_checks": {
+            "in_bounds_square": true,
+            "actual_bbox_context_margins_ltrb": [
+              175,
+              176,
+              396,
+              418
+            ],
+            "context_margin_pass": true,
+            "per_polygon_retention": [
+              1.0
+            ],
+            "target_retention": 1.0,
+            "edit_support_retention": 1.0,
+            "polygon512_pixels_missing_from_effective_mask": 0,
+            "native_polygon_pixels_missing_after_effective_mask_roundtrip": 0,
+            "effective_edit_pixels_512": 1654,
+            "grayscale_edit_support_pixels_512": 2299,
+            "unmasked_fraction_512_NOT_normal_metal_fraction": 0.9912300109863281,
+            "mask_polarity": "white=edit/black=preserve; Diffusers >=0.5 (uint8 >=128)",
+            "sdxl_mask_2x_exact": true,
+            "pixel_center_native_to_512_matrix": [
+              [
+                0.7111111111111111,
+                0.0,
+                -170.81111111111113
+              ],
+              [
+                0.0,
+                0.7111111111111111,
+                -0.14444444444444443
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "pixel_center_inverse_matrix": [
+              [
+                1.40625,
+                0.0,
+                240.20312500000003
+              ],
+              [
+                0.0,
+                1.40625,
+                0.20312499999999997
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "coordinate_roundtrip_max_abs_error": 5.684341886080802e-14,
+            "technical_pass": true
+          },
+          "contact_sheet": {
+            "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_protocol_review_contact_sheets/469_alt_2.png",
+            "file_sha256": "a43eecb4c7d3d23d21583bf44d7be3265aac7f6842bb167655a63955866c6552",
+            "pixel_sha256": "2bbdf28ef51e8feca8ab73e3179eaa2651de274fc058b19ec6222675ad62d8e7",
+            "mode": "RGB",
+            "shape": [
+              3080,
+              1536,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "human_decision": "PENDING",
+          "used_for_inference": false,
+          "cross_model_same_crop": true
+        }
+      ],
+      "selected_crop_id": "PENDING",
+      "input_semantic_eligibility": "PENDING_USER_REVIEW",
+      "context_and_fov_checks": {
+        "Whole ROI GE/UI/FOV contamination": "PENDING",
+        "Gray border / invalid area": "PENDING",
+        "Real metal seam, cavity or physical structure edge": "PENDING",
+        "Enough valid normal metal texture (unmasked does NOT mean normal)": "PENDING",
+        "Unannotated additional defects / plausible normal restoration target": "PENDING"
+      },
+      "reason": "Retained M0 default",
+      "technical_errors_not_overridable_by_human_pass": true
+    },
+    {
+      "source_id": "260",
+      "class": "Crack",
+      "source_sha256": "222419556d6bd4761d6ec6c66102b6bd4775a1989d517eb4cc93f91ecf3c2bd2",
+      "annotation_sha256": "cc1147fadda327791890229b515b5b8aa1456729ba3dd9b52c42dbe767474344",
+      "group_id": "singleton_260",
+      "polygon_details": [
+        {
+          "polygon_id": 0,
+          "points_native_xy": [
+            [
+              338.8321167883212,
+              233.50364963503648
+            ],
+            [
+              316.68613138686135,
+              243.68613138686135
+            ],
+            [
+              330.68613138686135,
+              261.68613138686135
+            ],
+            [
+              326.68613138686135,
+              296.68613138686135
+            ],
+            [
+              313.68613138686135,
+              325.68613138686135
+            ],
+            [
+              327.68613138686135,
+              358.68613138686135
+            ],
+            [
+              294.68613138686135,
+              373.68613138686135
+            ],
+            [
+              286.68613138686135,
+              397.68613138686135
+            ],
+            [
+              292.68613138686135,
+              420.68613138686135
+            ],
+            [
+              278.68613138686135,
+              442.68613138686135
+            ],
+            [
+              195.68613138686135,
+              455.68613138686135
+            ],
+            [
+              191.68613138686135,
+              473.68613138686135
+            ],
+            [
+              294.68613138686135,
+              446.68613138686135
+            ],
+            [
+              307.68613138686135,
+              414.68613138686135
+            ],
+            [
+              307.68613138686135,
+              406.68613138686135
+            ],
+            [
+              359.68613138686135,
+              372.68613138686135
+            ],
+            [
+              337.68613138686135,
+              351.68613138686135
+            ],
+            [
+              343.68613138686135,
+              321.68613138686135
+            ],
+            [
+              340.68613138686135,
+              304.68613138686135
+            ],
+            [
+              353.68613138686135,
+              282.68613138686135
+            ]
+          ],
+          "raster_pixels": 6575,
+          "bbox_xyxy_half_open": [
+            192,
+            234,
+            361,
+            475
+          ],
+          "shoelace_area": 6341.222627737217
+        }
+      ],
+      "geometry_status": "PASS_GEOMETRY_ONLY",
+      "options": [
+        {
+          "crop_id": "default",
+          "box_xyxy_half_open": [
+            90,
+            0,
+            630,
+            540
+          ],
+          "kind": "IMMUTABLE_M0_DEFAULT_REFERENCE",
+          "generation_rule": "M0 L=min(W,H); no padding; all polygons; edit=MaxFilter7/GaussianBlur1; RGB LANCZOS; mask NEAREST",
+          "files": {
+            "native_rgb": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/260/native_rgb.png",
+              "file_sha256": "2b68a2a80c0f6e6483a9a6a2d0ec5900e319edbe93441facdd3f830d587a0354",
+              "pixel_sha256": "8cf37118f81f5abb45ffc86fe3df065d93d7acd52ac55c2e0411c030ce303e3c",
+              "mode": "RGB",
+              "shape": [
+                540,
+                720,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/260/native_polygon.png",
+              "file_sha256": "c406fad5dfaf983b69872d1836032483184a2dbca3bc17ad156665f96f9e302e",
+              "pixel_sha256": "006ccaa1db440570d98cfc1d963d6e35af7d4a0f9c7378a143fe3acec9927bc0",
+              "mode": "L",
+              "shape": [
+                540,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/260/native_edit_mask.png",
+              "file_sha256": "34a461f8db28b2cc9a955a01682904f2061183b8d415990e24ca9cbda578a1c5",
+              "pixel_sha256": "5fdd1071fd54198d6c3c2a171ec8bc85681863796586d12d81dbc62507cd84f5",
+              "mode": "L",
+              "shape": [
+                540,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "common_rgb_512": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/260/common_rgb_512.png",
+              "file_sha256": "9fd07149fa2d2c3fe8b30806dd7180906fcb711463678842f961fac818ba42e2",
+              "pixel_sha256": "0b7d36965e7b2f8cdb48487eb3f68a34175c65a0040727ffb2417196ede7d657",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "common_edit_mask_512": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/260/common_edit_mask_512.png",
+              "file_sha256": "ae66f5a9abf1435e82451e4b0b4d086d163bc1cddfdccad90c5b88224e170713",
+              "pixel_sha256": "862fd09af676925a2843c5b8ff05f438e3bd2e048e5de0748450edcd7ed237d5",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_rgb_1024": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/260/sdxl_rgb_1024.png",
+              "file_sha256": "1bfd056398975b08b3ba9f616c4d08b5c7d26f1473ab2b5463a5a7a501588bb2",
+              "pixel_sha256": "67b5cfa0e1d6e533bffd8d85f330756761a4c895cde3f333c2d1292d8ec03680",
+              "mode": "RGB",
+              "shape": [
+                1024,
+                1024,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_mask_1024": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/260/sdxl_mask_1024.png",
+              "file_sha256": "5750afe6579a522d2863036b976b9070d476f5f1f8e2b79bfa2d51f9ed994a3a",
+              "pixel_sha256": "eaadb771c648808477b594e4cb8605f86340f8f2781cf9c0db8dd36e54701877",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "native_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/default/native_crop.png",
+              "file_sha256": "272e13f1ccb70ea8e7ccecb560b8f723ac46da3454e459af766f3fb3b0d99e01",
+              "pixel_sha256": "f0a57f2d6fe8f83ea2614ea333af959d601e0d73f46c4219b6325f2e87892afb",
+              "mode": "RGB",
+              "shape": [
+                540,
+                540,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/default/native_polygon_crop.png",
+              "file_sha256": "085891596cb20f6ccae83a87a29b728b8174a886603d8e35de1c951f834022d7",
+              "pixel_sha256": "29f0ba0b3423f82d1c01f770162ac78bd7fa84f3dcc3bb8174fd421b81e3004a",
+              "mode": "L",
+              "shape": [
+                540,
+                540
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/default/native_edit_mask_crop.png",
+              "file_sha256": "3f19bf70cc6f5872eb202bab3c0da6a8ac1ae7677811bfbb9f7575b09a421317",
+              "pixel_sha256": "f001f86b5968ee6198783841723cab7f64b62fa9f3555731768e93afe8906498",
+              "mode": "L",
+              "shape": [
+                540,
+                540
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/default/effective_edit_mask_512.png",
+              "file_sha256": "5d6b3f7abec8acf92411446e23255beb04d12f11042e10c34b7b6f7ee48ab630",
+              "pixel_sha256": "7a5a3d31bc8250427870d19506feadf6ec49e7821d8e63ff1d68c11b2178739f",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/default/effective_edit_mask_1024.png",
+              "file_sha256": "ad50a357e2292419e42b7428de47835be112292d431506b227676865444cea0a",
+              "pixel_sha256": "db44fdbec90a5c01b3cfe2d6baf1f60a2d2bb4374fe260805627214a1a4dbd0e",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "effective_mask_on_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/default/effective_mask_on_rgb_512.png",
+              "file_sha256": "54f4c4ea972b24e2084201369ef3386e2a4d739cb3f9c00aabad661dd4a5d84a",
+              "pixel_sha256": "ddb283af56d0df1aed543a1191d3f03c23bf792e426cf4b77b491a83c3f5f28d",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "geometry_checks": {
+            "in_bounds_square": true,
+            "actual_bbox_context_margins_ltrb": [
+              102,
+              234,
+              269,
+              65
+            ],
+            "context_margin_pass": true,
+            "per_polygon_retention": [
+              1.0
+            ],
+            "target_retention": 1.0,
+            "edit_support_retention": 1.0,
+            "polygon512_pixels_missing_from_effective_mask": 0,
+            "native_polygon_pixels_missing_after_effective_mask_roundtrip": 0,
+            "effective_edit_pixels_512": 8405,
+            "grayscale_edit_support_pixels_512": 10368,
+            "unmasked_fraction_512_NOT_normal_metal_fraction": 0.96044921875,
+            "mask_polarity": "white=edit/black=preserve; Diffusers >=0.5 (uint8 >=128)",
+            "sdxl_mask_2x_exact": true,
+            "pixel_center_native_to_512_matrix": [
+              [
+                0.9481481481481482,
+                0.0,
+                -85.35925925925926
+              ],
+              [
+                0.0,
+                0.9481481481481482,
+                -0.025925925925925908
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "pixel_center_inverse_matrix": [
+              [
+                1.0546875,
+                0.0,
+                90.02734375
+              ],
+              [
+                0.0,
+                1.0546875,
+                0.02734374999999998
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "coordinate_roundtrip_max_abs_error": 5.684341886080802e-14,
+            "technical_pass": true
+          },
+          "contact_sheet": {
+            "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_protocol_review_contact_sheets/260_default.png",
+            "file_sha256": "ee3a4c9bf93a57ac50716c7fa3e3af0a230833869cbf5e3edd8bd56f643e2b35",
+            "pixel_sha256": "579486141b79d4b85f80e1dc0ab43fcb4d9c33a247657087ec033e801cb9eaab",
+            "mode": "RGB",
+            "shape": [
+              3080,
+              1536,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "human_decision": "PENDING",
+          "used_for_inference": false,
+          "cross_model_same_crop": true
+        },
+        {
+          "crop_id": "alt_1",
+          "box_xyxy_half_open": [
+            0,
+            0,
+            540,
+            540
+          ],
+          "kind": "HUMAN_COMPARISON_PROPOSAL_ONLY",
+          "generation_rule": "M0 L=min(W,H); no padding; all polygons; edit=MaxFilter7/GaussianBlur1; RGB LANCZOS; mask NEAREST",
+          "files": {
+            "native_rgb": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_1/native_rgb.png",
+              "file_sha256": "2b68a2a80c0f6e6483a9a6a2d0ec5900e319edbe93441facdd3f830d587a0354",
+              "pixel_sha256": "8cf37118f81f5abb45ffc86fe3df065d93d7acd52ac55c2e0411c030ce303e3c",
+              "mode": "RGB",
+              "shape": [
+                540,
+                720,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_1/native_polygon.png",
+              "file_sha256": "c406fad5dfaf983b69872d1836032483184a2dbca3bc17ad156665f96f9e302e",
+              "pixel_sha256": "006ccaa1db440570d98cfc1d963d6e35af7d4a0f9c7378a143fe3acec9927bc0",
+              "mode": "L",
+              "shape": [
+                540,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_1/native_edit_mask.png",
+              "file_sha256": "34a461f8db28b2cc9a955a01682904f2061183b8d415990e24ca9cbda578a1c5",
+              "pixel_sha256": "5fdd1071fd54198d6c3c2a171ec8bc85681863796586d12d81dbc62507cd84f5",
+              "mode": "L",
+              "shape": [
+                540,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "common_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_1/common_rgb_512.png",
+              "file_sha256": "c9e8bb0a495429339c0a94ef2ea74037b51375ae7ea26b55dace458d5e40051f",
+              "pixel_sha256": "f7f42dabe1c28b3beaa5f5a353a705976db2df8cae6f95b85251ecdca9e7cd34",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "common_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_1/common_edit_mask_512.png",
+              "file_sha256": "8333a4bba50d9b0963f893f18c71c1c746e07ec9fa1dc9879ed8b0942d97ac72",
+              "pixel_sha256": "2d2414967b6be122038c812e63109d4cc2686afd20d2841933a5e5d3f9c82fbb",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_rgb_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_1/sdxl_rgb_1024.png",
+              "file_sha256": "266bff35a73e0b367b34cbc2aedf92c5888b7950d5314e0d10f13d0e43e608bc",
+              "pixel_sha256": "8be770b37f43b53361274b1157f6d2160e2bdb3939207fc8b3354b5c45a1146d",
+              "mode": "RGB",
+              "shape": [
+                1024,
+                1024,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_1/sdxl_mask_1024.png",
+              "file_sha256": "f7360906f68aca597ed4099cf55d4b754d1d35c6d4650f9e19ef2c1a29948a0b",
+              "pixel_sha256": "6b01bbd0fec8a108ff342d6d19f5f004327361aa767ac4d6532afbcc3d3ef6d3",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "native_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_1/native_crop.png",
+              "file_sha256": "00d5f071c8f1ed798d0bdf73ea2689f1d18daaa33cff9f467d16f70e71c14d07",
+              "pixel_sha256": "ee675095aaaab8303b4e59383db2bdaebc09d13a94dde2243aba6c1fdca8b60e",
+              "mode": "RGB",
+              "shape": [
+                540,
+                540,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_1/native_polygon_crop.png",
+              "file_sha256": "bf5f25766021c5fb1db2fb0476462716334febd8f4bb8e73f7003c89c8438a4f",
+              "pixel_sha256": "2e1c41e942066ce835be1bef1236041c1f24abd562dcf384b9bfbdf07450679d",
+              "mode": "L",
+              "shape": [
+                540,
+                540
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_1/native_edit_mask_crop.png",
+              "file_sha256": "91043137f5d9cbb44ec3576c4a4b5f835685679952effcc53fd3a5342d9f95c9",
+              "pixel_sha256": "4c5ad25ecc014b3aa2f87fbe2f6efbe8ac82eb260bad05a7574aa4f53b707ce7",
+              "mode": "L",
+              "shape": [
+                540,
+                540
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_1/effective_edit_mask_512.png",
+              "file_sha256": "adbb8f183ca59b1791f9e75eef6cbc7f89ebb70227e6f59718dffddf4a4e2cdf",
+              "pixel_sha256": "f7fa5d891c397fc360946a926e580a0a88aa44121c27077c039081edc6a57a6c",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_1/effective_edit_mask_1024.png",
+              "file_sha256": "cca1316636a7b22f8caf1e2c402ac27eecdc302b75b0985969937cee1e16b048",
+              "pixel_sha256": "6b28b16534f4dea88a7d14c104126ff94c6d7f0b484850dd9dd3c7207d53aaa0",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "effective_mask_on_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_1/effective_mask_on_rgb_512.png",
+              "file_sha256": "fbe70eb8afe62ceb2fc331c2ec6eef204960252f0c0e42293ee31d44ff00791f",
+              "pixel_sha256": "3d86f59564a6d0b611026c0080c41eb66cd5cbeff03bc8c043bea22655a33c6e",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "geometry_checks": {
+            "in_bounds_square": true,
+            "actual_bbox_context_margins_ltrb": [
+              192,
+              234,
+              179,
+              65
+            ],
+            "context_margin_pass": true,
+            "per_polygon_retention": [
+              1.0
+            ],
+            "target_retention": 1.0,
+            "edit_support_retention": 1.0,
+            "polygon512_pixels_missing_from_effective_mask": 0,
+            "native_polygon_pixels_missing_after_effective_mask_roundtrip": 0,
+            "effective_edit_pixels_512": 8403,
+            "grayscale_edit_support_pixels_512": 10375,
+            "unmasked_fraction_512_NOT_normal_metal_fraction": 0.9604225158691406,
+            "mask_polarity": "white=edit/black=preserve; Diffusers >=0.5 (uint8 >=128)",
+            "sdxl_mask_2x_exact": true,
+            "pixel_center_native_to_512_matrix": [
+              [
+                0.9481481481481482,
+                0.0,
+                -0.025925925925925908
+              ],
+              [
+                0.0,
+                0.9481481481481482,
+                -0.025925925925925908
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "pixel_center_inverse_matrix": [
+              [
+                1.0546875,
+                0.0,
+                0.02734374999999998
+              ],
+              [
+                0.0,
+                1.0546875,
+                0.02734374999999998
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "coordinate_roundtrip_max_abs_error": 5.684341886080802e-14,
+            "technical_pass": true
+          },
+          "contact_sheet": {
+            "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_protocol_review_contact_sheets/260_alt_1.png",
+            "file_sha256": "c87c8ecb07f0742283268c2e98dcb9cc9bfc38bd2e471b7ac70496c724c2d810",
+            "pixel_sha256": "c7848a3f34d583ba90ae08bf102a3f7578b9fd111a074e6024ea5f0aa30308af",
+            "mode": "RGB",
+            "shape": [
+              3080,
+              1536,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "human_decision": "PENDING",
+          "used_for_inference": false,
+          "cross_model_same_crop": true
+        },
+        {
+          "crop_id": "alt_2",
+          "box_xyxy_half_open": [
+            175,
+            0,
+            715,
+            540
+          ],
+          "kind": "HUMAN_COMPARISON_PROPOSAL_ONLY",
+          "generation_rule": "M0 L=min(W,H); no padding; all polygons; edit=MaxFilter7/GaussianBlur1; RGB LANCZOS; mask NEAREST",
+          "files": {
+            "native_rgb": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_2/native_rgb.png",
+              "file_sha256": "2b68a2a80c0f6e6483a9a6a2d0ec5900e319edbe93441facdd3f830d587a0354",
+              "pixel_sha256": "8cf37118f81f5abb45ffc86fe3df065d93d7acd52ac55c2e0411c030ce303e3c",
+              "mode": "RGB",
+              "shape": [
+                540,
+                720,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_2/native_polygon.png",
+              "file_sha256": "c406fad5dfaf983b69872d1836032483184a2dbca3bc17ad156665f96f9e302e",
+              "pixel_sha256": "006ccaa1db440570d98cfc1d963d6e35af7d4a0f9c7378a143fe3acec9927bc0",
+              "mode": "L",
+              "shape": [
+                540,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_2/native_edit_mask.png",
+              "file_sha256": "34a461f8db28b2cc9a955a01682904f2061183b8d415990e24ca9cbda578a1c5",
+              "pixel_sha256": "5fdd1071fd54198d6c3c2a171ec8bc85681863796586d12d81dbc62507cd84f5",
+              "mode": "L",
+              "shape": [
+                540,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "common_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_2/common_rgb_512.png",
+              "file_sha256": "6f960903552051449edcd4830b6db616a4dfd4830ff813ebb71efa735a53028c",
+              "pixel_sha256": "3b3af622f1c17ff5ae659973e9cc80b3d73ab295dd9c363aaaf52d73d30a19db",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "common_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_2/common_edit_mask_512.png",
+              "file_sha256": "8fe7ee93b4b8d2582478286649a7fe4b00c66764d35c1fc120906c9d3552c61e",
+              "pixel_sha256": "7c82f3d46a7cf9a23f629317745a837044270e6e914e0bc3cf64f6ba35efb4f9",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_rgb_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_2/sdxl_rgb_1024.png",
+              "file_sha256": "963807e89daa4fa3de580ae2294fec8de7da5a9df5af074a983ac74c2d185437",
+              "pixel_sha256": "1f3e1e9b8d870260e5dba7c4322570343cc067d98a8480d356e0ee340970c092",
+              "mode": "RGB",
+              "shape": [
+                1024,
+                1024,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_2/sdxl_mask_1024.png",
+              "file_sha256": "0a31b3ae2956c120428c81c04deb521ddabf5d2f5c2947166541a40dd13b649f",
+              "pixel_sha256": "fe9053d8c73d548758a9e088e0c8fa6663fbddadeb33dac10eb1ee1f14f64aae",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "native_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_2/native_crop.png",
+              "file_sha256": "eae55efc3477cd21c05373a9c26458d4b6a2a4c1334d8f9d3249302444d67843",
+              "pixel_sha256": "4b397fcb8c8403e8ad20fea2d90f0e37af383bb9457b60a1ae39545fbccd6459",
+              "mode": "RGB",
+              "shape": [
+                540,
+                540,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_2/native_polygon_crop.png",
+              "file_sha256": "eb9a461bdc94d036345956a88729677cd0d9117d62b2f6477ede7feb4f1bfc13",
+              "pixel_sha256": "66e2b56f6930c15d8f1f1b5dc8fd74d920a941bddd124d157cde589421813d04",
+              "mode": "L",
+              "shape": [
+                540,
+                540
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_2/native_edit_mask_crop.png",
+              "file_sha256": "85c24c616447e11aa1bef9a69d4f58ad53d4a038ff2cd45759eed61f662154e4",
+              "pixel_sha256": "c5151f5519dd1035915e1a5b28b210f74584d2da9bdecb9486cb4ad4ea4a99d4",
+              "mode": "L",
+              "shape": [
+                540,
+                540
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_2/effective_edit_mask_512.png",
+              "file_sha256": "94ef86b184d472d909b877786f9e63bb787674d8b4f9cc8c6368d27ea9131202",
+              "pixel_sha256": "0b1623be8004e8613b531dfd25b2caea1c573dd2050a8304bd7423f05f90f5a4",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_2/effective_edit_mask_1024.png",
+              "file_sha256": "52b95c050165b3087b089d7a4abb5f6a00b37105d2656ded015460e6c3576b46",
+              "pixel_sha256": "efdc5212b7c6043feb2bb069ff89ec37ff655cdf21e4221188296755c9f80852",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "effective_mask_on_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/260/alt_2/effective_mask_on_rgb_512.png",
+              "file_sha256": "ce676ecc1d81487b12e3cbb6a7699ec15319081353c22b69caa4e935b04c0e73",
+              "pixel_sha256": "cdeea5c45d052b7960cd529c89da2e25f9529e47e163fb888615837127d84a39",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "geometry_checks": {
+            "in_bounds_square": true,
+            "actual_bbox_context_margins_ltrb": [
+              17,
+              234,
+              354,
+              65
+            ],
+            "context_margin_pass": true,
+            "per_polygon_retention": [
+              1.0
+            ],
+            "target_retention": 1.0,
+            "edit_support_retention": 1.0,
+            "polygon512_pixels_missing_from_effective_mask": 0,
+            "native_polygon_pixels_missing_after_effective_mask_roundtrip": 0,
+            "effective_edit_pixels_512": 8417,
+            "grayscale_edit_support_pixels_512": 10379,
+            "unmasked_fraction_512_NOT_normal_metal_fraction": 0.9604072570800781,
+            "mask_polarity": "white=edit/black=preserve; Diffusers >=0.5 (uint8 >=128)",
+            "sdxl_mask_2x_exact": true,
+            "pixel_center_native_to_512_matrix": [
+              [
+                0.9481481481481482,
+                0.0,
+                -165.95185185185187
+              ],
+              [
+                0.0,
+                0.9481481481481482,
+                -0.025925925925925908
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "pixel_center_inverse_matrix": [
+              [
+                1.0546875,
+                0.0,
+                175.02734375000003
+              ],
+              [
+                0.0,
+                1.0546875,
+                0.02734374999999998
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "coordinate_roundtrip_max_abs_error": 5.684341886080802e-14,
+            "technical_pass": true
+          },
+          "contact_sheet": {
+            "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_protocol_review_contact_sheets/260_alt_2.png",
+            "file_sha256": "4d52f3ff879512baf9b028c1587f02e28bb57b8867114b40df2702a650136fd9",
+            "pixel_sha256": "85b91a13c24da0009eab725575eecde7847b25a65340bf4d6b8bb4609bf66f28",
+            "mode": "RGB",
+            "shape": [
+              3080,
+              1536,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "human_decision": "PENDING",
+          "used_for_inference": false,
+          "cross_model_same_crop": true
+        }
+      ],
+      "selected_crop_id": "PENDING",
+      "input_semantic_eligibility": "PENDING_USER_REVIEW",
+      "context_and_fov_checks": {
+        "Whole ROI GE/UI/FOV contamination": "PENDING",
+        "Gray border / invalid area": "PENDING",
+        "Real metal seam, cavity or physical structure edge": "PENDING",
+        "Enough valid normal metal texture (unmasked does NOT mean normal)": "PENDING",
+        "Unannotated additional defects / plausible normal restoration target": "PENDING"
+      },
+      "reason": "Retained M0 default",
+      "technical_errors_not_overridable_by_human_pass": true
+    },
+    {
+      "source_id": "470",
+      "class": "Crack",
+      "source_sha256": "6d1537bb91157f82a679581d82fa3e20d72dde3b29cc14d2f47974931c3d0ec1",
+      "annotation_sha256": "69b3741e1e0f626879d649881661cf4b0746208c3508b6204a236ba1e08551f4",
+      "group_id": "near_0007",
+      "polygon_details": [
+        {
+          "polygon_id": 0,
+          "points_native_xy": [
+            [
+              200.1995012468828,
+              122.19451371571073
+            ],
+            [
+              204.18952618453866,
+              117.2069825436409
+            ],
+            [
+              208.428927680798,
+              115.21197007481297
+            ],
+            [
+              214.1645885286783,
+              111.2219451371571
+            ],
+            [
+              218.15461346633415,
+              110.47381546134665
+            ],
+            [
+              215.16209476309226,
+              115.21197007481297
+            ],
+            [
+              213.6658354114713,
+              117.95511221945138
+            ],
+            [
+              212.91770573566086,
+              122.69326683291771
+            ],
+            [
+              212.41895261845386,
+              126.93266832917706
+            ],
+            [
+              213.41645885286783,
+              130.17456359102246
+            ],
+            [
+              215.16209476309226,
+              134.4139650872818
+            ],
+            [
+              216.6583541147132,
+              137.65586034912718
+            ],
+            [
+              218.90274314214463,
+              140.1496259351621
+            ],
+            [
+              219.9002493765586,
+              142.643391521197
+            ],
+            [
+              221.64588528678303,
+              146.1346633416459
+            ],
+            [
+              223.14214463840398,
+              149.37655860349128
+            ],
+            [
+              224.63840399002493,
+              152.86783042394015
+            ],
+            [
+              226.63341645885288,
+              156.10972568578555
+            ],
+            [
+              227.13216957605985,
+              158.85286783042395
+            ],
+            [
+              229.37655860349128,
+              162.09476309226935
+            ],
+            [
+              231.1221945137157,
+              164.83790523690774
+            ],
+            [
+              233.36658354114712,
+              166.3341645885287
+            ],
+            [
+              236.35910224438902,
+              168.32917705735662
+            ],
+            [
+              239.60099750623442,
+              170.07481296758107
+            ],
+            [
+              243.59102244389027,
+              171.8204488778055
+            ],
+            [
+              246.33416458852867,
+              173.31670822942644
+            ],
+            [
+              248.32917705735662,
+              174.8129675810474
+            ],
+            [
+              250.57356608478804,
+              178.80299251870326
+            ],
+            [
+              252.31920199501246,
+              182.5436408977556
+            ],
+            [
+              253.8154613466334,
+              185.5361596009975
+            ],
+            [
+              255.56109725685786,
+              188.5286783042394
+            ],
+            [
+              257.80548628428926,
+              190.02493765586036
+            ],
+            [
+              260.22408963585434,
+              192.84313725490196
+            ],
+            [
+              263.1652661064426,
+              194.80392156862746
+            ],
+            [
+              265.9663865546218,
+              196.76470588235296
+            ],
+            [
+              268.62745098039215,
+              198.30532212885154
+            ],
+            [
+              271.0084033613445,
+              199.84593837535016
+            ],
+            [
+              272.2689075630252,
+              201.66666666666669
+            ],
+            [
+              274.2296918767507,
+              203.62745098039215
+            ],
+            [
+              276.0504201680672,
+              204.46778711484595
+            ],
+            [
+              278.8515406162465,
+              204.7478991596639
+            ],
+            [
+              281.5126050420168,
+              206.84873949579833
+            ],
+            [
+              283.89355742296914,
+              209.50980392156865
+            ],
+            [
+              286.8347338935574,
+              210.91036414565826
+            ],
+            [
+              289.07563025210084,
+              213.29131652661064
+            ],
+            [
+              291.4565826330532,
+              214.83193277310926
+            ],
+            [
+              294.2577030812325,
+              215.67226890756302
+            ],
+            [
+              296.35854341736695,
+              216.79271708683473
+            ],
+            [
+              297.33893557422965,
+              218.8935574229692
+            ],
+            [
+              298.1792717086835,
+              220.71428571428572
+            ],
+            [
+              300.4201680672269,
+              222.81512605042016
+            ],
+            [
+              302.2408963585434,
+              224.07563025210084
+            ],
+            [
+              303.64145658263305,
+              226.1764705882353
+            ],
+            [
+              305.04201680672264,
+              229.6778711484594
+            ],
+            [
+              306.30252100840335,
+              232.3389355742297
+            ],
+            [
+              307.84313725490193,
+              234.57983193277312
+            ],
+            [
+              310.3641456582633,
+              236.82072829131653
+            ],
+            [
+              313.0252100840336,
+              239.48179271708685
+            ],
+            [
+              314.70588235294116,
+              242.56302521008405
+            ],
+            [
+              316.94677871148457,
+              244.94397759103643
+            ],
+            [
+              319.187675070028,
+              247.88515406162466
+            ],
+            [
+              320.4481792717087,
+              249.84593837535016
+            ],
+            [
+              322.6890756302521,
+              250.26610644257704
+            ],
+            [
+              325.07002801120444,
+              251.24649859943978
+            ],
+            [
+              328.8515406162465,
+              252.92717086834733
+            ],
+            [
+              333.47338935574226,
+              254.74789915966386
+            ],
+            [
+              336.83473389355737,
+              256.28851540616245
+            ],
+            [
+              340.75630252100837,
+              257.2689075630252
+            ],
+            [
+              342.7170868347339,
+              256.5686274509804
+            ],
+            [
+              345.93837535014,
+              258.8095238095238
+            ],
+            [
+              349.57983193277306,
+              261.19047619047615
+            ],
+            [
+              352.80112044817923,
+              261.61064425770303
+            ],
+            [
+              355.74229691876747,
+              262.5910364145658
+            ],
+            [
+              358.96358543417364,
+              263.99159663865544
+            ],
+            [
+              362.32492997198875,
+              265.2521008403361
+            ],
+            [
+              365.12605042016804,
+              267.49299719887955
+            ],
+            [
+              368.7675070028011,
+              269.03361344537814
+            ],
+            [
+              371.28851540616245,
+              270.2941176470588
+            ],
+            [
+              374.7899159663865,
+              271.1344537815126
+            ],
+            [
+              378.8515406162465,
+              271.69467787114843
+            ],
+            [
+              382.35294117647055,
+              273.235294117647
+            ],
+            [
+              385.2941176470588,
+              274.4957983193277
+            ],
+            [
+              388.51540616246496,
+              274.77591036414566
+            ],
+            [
+              393.41736694677866,
+              275.3361344537815
+            ],
+            [
+              396.4985994397759,
+              275.6162464985994
+            ],
+            [
+              400.4201680672269,
+              276.31652661064425
+            ],
+            [
+              403.781512605042,
+              276.87675070028007
+            ],
+            [
+              406.30252100840335,
+              277.01680672268907
+            ],
+            [
+              409.2436974789916,
+              277.85714285714283
+            ],
+            [
+              413.0252100840336,
+              279.3977591036414
+            ],
+            [
+              416.1064425770308,
+              280.93837535014
+            ],
+            [
+              419.3277310924369,
+              281.7787114845938
+            ],
+            [
+              423.38935574229686,
+              283.3193277310924
+            ],
+            [
+              428.0112044817927,
+              284.1596638655462
+            ],
+            [
+              431.5126050420168,
+              284.1596638655462
+            ],
+            [
+              435.01400560224084,
+              284.1596638655462
+            ],
+            [
+              439.0756302521008,
+              283.45938375350136
+            ],
+            [
+              441.7366946778711,
+              282.75910364145653
+            ],
+            [
+              444.53781512605036,
+              281.91876750700277
+            ],
+            [
+              448.59943977591035,
+              280.93837535014
+            ],
+            [
+              452.1008403361344,
+              280.79831932773106
+            ],
+            [
+              455.74229691876747,
+              281.63865546218483
+            ],
+            [
+              459.1036414565826,
+              282.1988795518207
+            ],
+            [
+              462.64150943396226,
+              286.28930817610063
+            ],
+            [
+              462.2998544395924,
+              292.5764192139738
+            ],
+            [
+              461.4264919941776,
+              294.9053857350801
+            ],
+            [
+              458.07860262008734,
+              295.63318777292574
+            ],
+            [
+              455.02183406113534,
+              295.1965065502183
+            ],
+            [
+              452.1106259097525,
+              294.6142649199418
+            ],
+            [
+              449.34497816593887,
+              293.15866084425033
+            ],
+            [
+              447.3071324599709,
+              291.55749636098983
+            ],
+            [
+              444.39592430858806,
+              291.1208151382824
+            ],
+            [
+              440.7569141193595,
+              291.26637554585153
+            ],
+            [
+              434.20669577874816,
+              292.8675400291121
+            ],
+            [
+              429.98544395924307,
+              292.8675400291121
+            ],
+            [
+              425.764192139738,
+              291.99417758369725
+            ],
+            [
+              419.7962154294032,
+              290.5385735080058
+            ],
+            [
+              415.5749636098981,
+              288.646288209607
+            ],
+            [
+              412.0815138282387,
+              287.04512372634645
+            ],
+            [
+              408.00582241630275,
+              284.8617176128093
+            ],
+            [
+              403.49344978165936,
+              283.8427947598253
+            ],
+            [
+              397.8165938864629,
+              282.53275109170306
+            ],
+            [
+              394.03202328966523,
+              281.51382823871904
+            ],
+            [
+              389.0829694323144,
+              280.2037845705968
+            ],
+            [
+              385.1528384279476,
+              279.33042212518194
+            ],
+            [
+              381.0771470160116,
+              278.7481804949054
+            ],
+            [
+              377.7292576419214,
+              278.0203784570597
+            ],
+            [
+              373.3624454148472,
+              277.7292576419214
+            ],
+            [
+              368.5589519650655,
+              277.14701601164484
+            ],
+            [
+              363.6098981077147,
+              275.10917030567686
+            ],
+            [
+              359.3886462882096,
+              273.3624454148472
+            ],
+            [
+              357.0596797671033,
+              270.59679767103347
+            ],
+            [
+              352.83842794759823,
+              268.8500727802038
+            ],
+            [
+              348.90829694323145,
+              268.5589519650655
+            ],
+            [
+              344.9781659388646,
+              267.1033478893741
+            ],
+            [
+              341.63027656477436,
+              265.50218340611355
+            ],
+            [
+              339.01018922852984,
+              264.0465793304221
+            ],
+            [
+              335.6622998544396,
+              262.44541484716154
+            ],
+            [
+              332.8966521106259,
+              261.28093158660846
+            ],
+            [
+              329.69432314410477,
+              259.6797671033479
+            ],
+            [
+              326.4919941775837,
+              257.78748180494904
+            ],
+            [
+              323.72634643377,
+              256.6229985443959
+            ],
+            [
+              320.08733624454146,
+              255.8951965065502
+            ],
+            [
+              316.8850072780204,
+              255.60407569141194
+            ],
+            [
+              313.391557496361,
+              254.29403202328967
+            ],
+            [
+              310.9170305676856,
+              251.09170305676855
+            ],
+            [
+              308.29694323144105,
+              248.18049490538573
+            ],
+            [
+              306.55021834061137,
+              245.41484716157206
+            ],
+            [
+              304.2212518195051,
+              243.8136826783115
+            ],
+            [
+              301.8922852983988,
+              241.92139737991266
+            ],
+            [
+              300.0,
+              240.3202328966521
+            ],
+            [
+              298.2532751091703,
+              237.99126637554585
+            ],
+            [
+              298.10771470160114,
+              236.09898107714702
+            ],
+            [
+              297.2343522561863,
+              233.1877729257642
+            ],
+            [
+              296.5065502183406,
+              230.7132459970888
+            ],
+            [
+              294.03202328966523,
+              227.65647743813682
+            ],
+            [
+              291.8486171761281,
+              225.18195050946142
+            ],
+            [
+              289.66521106259097,
+              223.14410480349343
+            ],
+            [
+              286.608442503639,
+              221.2518195050946
+            ],
+            [
+              282.82387190684136,
+              219.0684133915575
+            ],
+            [
+              279.1848617176128,
+              216.73944687045125
+            ],
+            [
+              275.9825327510917,
+              214.99272197962154
+            ],
+            [
+              273.216885007278,
+              213.53711790393012
+            ],
+            [
+              270.3056768558952,
+              211.93595342066956
+            ],
+            [
+              267.68558951965065,
+              210.33478893740903
+            ],
+            [
+              264.4832605531295,
+              207.71470160116448
+            ],
+            [
+              262.0087336244541,
+              205.82241630276565
+            ],
+            [
+              258.6608442503639,
+              203.63901018922851
+            ],
+            [
+              256.1863173216885,
+              200.87336244541484
+            ],
+            [
+              254.14847161572052,
+              199.27219796215428
+            ],
+            [
+              251.67394468704512,
+              197.37991266375545
+            ],
+            [
+              248.32605531295488,
+              194.75982532751092
+            ],
+            [
+              245.85152838427948,
+              191.99417758369722
+            ],
+            [
+              244.10480349344977,
+              189.3740902474527
+            ],
+            [
+              242.94032023289665,
+              186.75400291120815
+            ],
+            [
+              241.6302765647744,
+              184.27947598253274
+            ],
+            [
+              239.88355167394468,
+              182.24163027656476
+            ],
+            [
+              237.117903930131,
+              180.20378457059678
+            ],
+            [
+              234.6433770014556,
+              179.18486171761282
+            ],
+            [
+              230.56768558951964,
+              177.87481804949053
+            ],
+            [
+              227.51091703056767,
+              175.83697234352255
+            ],
+            [
+              225.0363901018923,
+              173.5080058224163
+            ],
+            [
+              223.87190684133915,
+              170.45123726346432
+            ],
+            [
+              222.12518195050947,
+              167.39446870451238
+            ],
+            [
+              220.81513828238718,
+              164.04657933042213
+            ],
+            [
+              219.7962154294032,
+              161.57205240174673
+            ],
+            [
+              218.48617176128093,
+              158.95196506550218
+            ],
+            [
+              216.73944687045125,
+              155.31295487627366
+            ],
+            [
+              215.28384279475983,
+              151.81950509461427
+            ],
+            [
+              213.68267831149927,
+              149.490538573508
+            ],
+            [
+              212.372634643377,
+              147.88937409024746
+            ],
+            [
+              210.04366812227073,
+              145.99708879184863
+            ],
+            [
+              209.1703056768559,
+              143.23144104803492
+            ],
+            [
+              208.1513828238719,
+              141.3391557496361
+            ],
+            [
+              206.25909752547307,
+              139.155749636099
+            ],
+            [
+              204.80349344978166,
+              136.8267831149927
+            ],
+            [
+              203.34788937409024,
+              133.33333333333334
+            ],
+            [
+              202.32896652110625,
+              129.6943231441048
+            ],
+            [
+              201.16448326055314,
+              126.92867540029111
+            ]
+          ],
+          "raster_pixels": 3134,
+          "bbox_xyxy_half_open": [
+            200,
+            110,
+            464,
+            297
+          ],
+          "shoelace_area": 2923.15766312672
+        }
+      ],
+      "geometry_status": "PASS_GEOMETRY_ONLY",
+      "options": [
+        {
+          "crop_id": "default",
+          "box_xyxy_half_open": [
+            120,
+            0,
+            840,
+            720
+          ],
+          "kind": "IMMUTABLE_M0_DEFAULT_REFERENCE",
+          "generation_rule": "M0 L=min(W,H); no padding; all polygons; edit=MaxFilter7/GaussianBlur1; RGB LANCZOS; mask NEAREST",
+          "files": {
+            "native_rgb": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/470/native_rgb.png",
+              "file_sha256": "d46521fcbc1c430df192d02ff731b24d8398cee9834279bcf1dc36ca0d967cf5",
+              "pixel_sha256": "9ca4cf623046db1a2d67b84192fa708bb76d86bc15f2b2bc19147698f557074c",
+              "mode": "RGB",
+              "shape": [
+                720,
+                960,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/470/native_polygon.png",
+              "file_sha256": "357c075fe563c4a9a24976ce355cf0a3538d24df95f5c9b52c8f2e61171d776f",
+              "pixel_sha256": "00622577877746f58c4139635fa5393ee1f1bed10c05b5f404f6daa5cd254d6e",
+              "mode": "L",
+              "shape": [
+                720,
+                960
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/470/native_edit_mask.png",
+              "file_sha256": "62e6e63f231260f3d05b67b1354218153f2441ed6ea992ecc922018658739f60",
+              "pixel_sha256": "eb5a896bb8d884ae2e58bd727f0f1466a216452e13b65ddba6db054228fd627f",
+              "mode": "L",
+              "shape": [
+                720,
+                960
+              ],
+              "dtype": "uint8"
+            },
+            "common_rgb_512": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/470/common_rgb_512.png",
+              "file_sha256": "a65ca91abccae50fd0803b6a1d782f9c500b8ac13783aadd8e0e3dacdb20cbe7",
+              "pixel_sha256": "2f709ba7013194b2b11c2537b1b08ab2e5a4c9368e1d08c57812e4521023ebd5",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "common_edit_mask_512": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/470/common_edit_mask_512.png",
+              "file_sha256": "f11f84da81945fd28a5703951a450a19e1b914facc8a870aea4f9a10e9128f81",
+              "pixel_sha256": "5b4109a0e6f44ccbbb9f59e15aa232c400c56a67e24c3294009bf443edca7e15",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_rgb_1024": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/470/sdxl_rgb_1024.png",
+              "file_sha256": "cbc14d1386c52e6864b56c0be025a547f51bc64b46c590a377dd9e6eb94cac82",
+              "pixel_sha256": "f80e3bc5aabce74f35375fd09a9d7a2b5283a7d32510f32ce9fe8bda09af1b0d",
+              "mode": "RGB",
+              "shape": [
+                1024,
+                1024,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_mask_1024": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/470/sdxl_mask_1024.png",
+              "file_sha256": "4595743546fc77002194194e4d6e08a334928d93398484c32b274e8051d7de94",
+              "pixel_sha256": "66b4b5133f11a080c1124832f96adc0b2baef4e03d672884611f885723d8f672",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "native_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/default/native_crop.png",
+              "file_sha256": "d6e0ae4d45893bbb5dd46cc9c9dd6fa6be628d3aa98a7c8f08b27cc5b2a7c082",
+              "pixel_sha256": "dd91837d2557ee67d883366fa4a94985ed7d40105a40bd0cd73072a62a01ef46",
+              "mode": "RGB",
+              "shape": [
+                720,
+                720,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/default/native_polygon_crop.png",
+              "file_sha256": "68428d3d562708e9efacb8cf4fd6143a003618d56ca043d0d2de68b98c04ef2c",
+              "pixel_sha256": "d9a9bda7e812c6d694bb7d4f219d4b50d065d2983ed9aa3cb4e0e5f95ab1e339",
+              "mode": "L",
+              "shape": [
+                720,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/default/native_edit_mask_crop.png",
+              "file_sha256": "34564402bcf18d7a2a11adda0d763938961a7f588c8371bb54e333fb2ebb132b",
+              "pixel_sha256": "2e30b198c91b1b6cc147ecf74900d4b7494ea64efd7afa4c37a77ff2e10a6df0",
+              "mode": "L",
+              "shape": [
+                720,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/default/effective_edit_mask_512.png",
+              "file_sha256": "8284637d4cc1ff822051094fe9f5cda8c743c192e5b241f1df1ac1814239f09b",
+              "pixel_sha256": "fe2ca016edd4d3b55f90784672802f139ac837c0e5325003cf5f1f530eaa99b1",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/default/effective_edit_mask_1024.png",
+              "file_sha256": "8720a3dbeed9175c5620cfab12cee2db937561930107623f745929f103e53cdf",
+              "pixel_sha256": "d72cd93abc5c0585c33f19446e7447d1d6558af76bc5b68e67dd20f0b1c41904",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "effective_mask_on_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/default/effective_mask_on_rgb_512.png",
+              "file_sha256": "83971479fa6394850793fa049c4405745f38b3906eea97f9715f5300c7ebd591",
+              "pixel_sha256": "998a9a285e49e46f8c9f9f3220e9722f98a045d67f77ddaa2c3e3271cf000521",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "geometry_checks": {
+            "in_bounds_square": true,
+            "actual_bbox_context_margins_ltrb": [
+              80,
+              110,
+              376,
+              423
+            ],
+            "context_margin_pass": true,
+            "per_polygon_retention": [
+              1.0
+            ],
+            "target_retention": 1.0,
+            "edit_support_retention": 1.0,
+            "polygon512_pixels_missing_from_effective_mask": 0,
+            "native_polygon_pixels_missing_after_effective_mask_roundtrip": 0,
+            "effective_edit_pixels_512": 2997,
+            "grayscale_edit_support_pixels_512": 4061,
+            "unmasked_fraction_512_NOT_normal_metal_fraction": 0.9845085144042969,
+            "mask_polarity": "white=edit/black=preserve; Diffusers >=0.5 (uint8 >=128)",
+            "sdxl_mask_2x_exact": true,
+            "pixel_center_native_to_512_matrix": [
+              [
+                0.7111111111111111,
+                0.0,
+                -85.47777777777777
+              ],
+              [
+                0.0,
+                0.7111111111111111,
+                -0.14444444444444443
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "pixel_center_inverse_matrix": [
+              [
+                1.40625,
+                0.0,
+                120.203125
+              ],
+              [
+                0.0,
+                1.40625,
+                0.20312499999999997
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "coordinate_roundtrip_max_abs_error": 5.684341886080802e-14,
+            "technical_pass": true
+          },
+          "contact_sheet": {
+            "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_protocol_review_contact_sheets/470_default.png",
+            "file_sha256": "fdbaf3dcaae09726c9c44bf00eb6c754fba540cf53b0aafcd9467a1e988d2f1d",
+            "pixel_sha256": "c9e2311672e56ceb0a396792f1e738a26c3b80d24bdf0fdde4ec6886f82f3cce",
+            "mode": "RGB",
+            "shape": [
+              3080,
+              1536,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "human_decision": "PENDING",
+          "used_for_inference": false,
+          "cross_model_same_crop": true
+        },
+        {
+          "crop_id": "alt_1",
+          "box_xyxy_half_open": [
+            0,
+            0,
+            720,
+            720
+          ],
+          "kind": "HUMAN_COMPARISON_PROPOSAL_ONLY",
+          "generation_rule": "M0 L=min(W,H); no padding; all polygons; edit=MaxFilter7/GaussianBlur1; RGB LANCZOS; mask NEAREST",
+          "files": {
+            "native_rgb": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_1/native_rgb.png",
+              "file_sha256": "d46521fcbc1c430df192d02ff731b24d8398cee9834279bcf1dc36ca0d967cf5",
+              "pixel_sha256": "9ca4cf623046db1a2d67b84192fa708bb76d86bc15f2b2bc19147698f557074c",
+              "mode": "RGB",
+              "shape": [
+                720,
+                960,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_1/native_polygon.png",
+              "file_sha256": "357c075fe563c4a9a24976ce355cf0a3538d24df95f5c9b52c8f2e61171d776f",
+              "pixel_sha256": "00622577877746f58c4139635fa5393ee1f1bed10c05b5f404f6daa5cd254d6e",
+              "mode": "L",
+              "shape": [
+                720,
+                960
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_1/native_edit_mask.png",
+              "file_sha256": "62e6e63f231260f3d05b67b1354218153f2441ed6ea992ecc922018658739f60",
+              "pixel_sha256": "eb5a896bb8d884ae2e58bd727f0f1466a216452e13b65ddba6db054228fd627f",
+              "mode": "L",
+              "shape": [
+                720,
+                960
+              ],
+              "dtype": "uint8"
+            },
+            "common_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_1/common_rgb_512.png",
+              "file_sha256": "c4699e9bff6682a6b5881275183af83ee32cad0e31c5bbaec7ed162fc83174f9",
+              "pixel_sha256": "023e92d71ad0276c32212216b950675d5764f6bb3de82588ea7e055aa4892896",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "common_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_1/common_edit_mask_512.png",
+              "file_sha256": "da9d43d107f671d6ad3d295cffbb07ceeeaf9f892f1544724a2b71f2eb3ab697",
+              "pixel_sha256": "113dc23eba5ed102f1230345f65cbdfed5d387e82dde329f5960ad15e0286f65",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_rgb_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_1/sdxl_rgb_1024.png",
+              "file_sha256": "c6892b7bab039a1ab2852077fd1c064a18a36c9f65aa460d3592a0f6fb207ca4",
+              "pixel_sha256": "ce9366ca5656ae6c5a84639d21130737f0a606bd09e64c08e1b34fcb8edbdfb9",
+              "mode": "RGB",
+              "shape": [
+                1024,
+                1024,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_1/sdxl_mask_1024.png",
+              "file_sha256": "92d776e40e095385bf52b3ba4cc98c3636e02e08f8fdce3d4dd232fe84b81a35",
+              "pixel_sha256": "36c6e761a14b4f5fa9712f3306592a8ae956f5171d43eac4883d696bd26ca9a1",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "native_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_1/native_crop.png",
+              "file_sha256": "55839e3acf2c396dd9839cd32f481b2b083c92fdf5360f398a960af18b2ec346",
+              "pixel_sha256": "d4432e32eb05ee33b5c6ae2193a8d9fe37f49913e800be04126ebdc035c23e37",
+              "mode": "RGB",
+              "shape": [
+                720,
+                720,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_1/native_polygon_crop.png",
+              "file_sha256": "a4226fcb7a19c1f249b56c8b2a02bf378890b36321dd885a9b5fc6d22a82bff9",
+              "pixel_sha256": "8592a2fc86b9ef198642ede80fbd7d13dba425617eeee86cc702770ad5289077",
+              "mode": "L",
+              "shape": [
+                720,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_1/native_edit_mask_crop.png",
+              "file_sha256": "11f7cf6e10528a636aa4048587bcc7e2c78ee4665ec43d36f8a405dadc171468",
+              "pixel_sha256": "e2a34ca977e5d04c00fcfa7e1d9193282c5406d17d9b2a4a7f32ae10005e1d57",
+              "mode": "L",
+              "shape": [
+                720,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_1/effective_edit_mask_512.png",
+              "file_sha256": "87dd6424d7e2cb7128b03948452961e6f9ed48c83513e4d657ab7fc5701f547f",
+              "pixel_sha256": "7e2f324ef271b5671c6ba2c7d7f762a256da7d39507e28d46e039b7024e0fc4c",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_1/effective_edit_mask_1024.png",
+              "file_sha256": "ef042307568a2efb18ea61b05202dabe4d908054877aad46843b0ac54819c990",
+              "pixel_sha256": "960f888435ff1ae7b3572e35c86c77419fe4805f2e14f0bc54a1580140b65f96",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "effective_mask_on_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_1/effective_mask_on_rgb_512.png",
+              "file_sha256": "759d5f1c59c23e59adba7d4c718500064b9cba896776ed8dcce16e8e69fdfda6",
+              "pixel_sha256": "a70ccbe640c3c5ef267850ed65da0faa564bf5fd01d5cbceddde5f7162dd0515",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "geometry_checks": {
+            "in_bounds_square": true,
+            "actual_bbox_context_margins_ltrb": [
+              200,
+              110,
+              256,
+              423
+            ],
+            "context_margin_pass": true,
+            "per_polygon_retention": [
+              1.0
+            ],
+            "target_retention": 1.0,
+            "edit_support_retention": 1.0,
+            "polygon512_pixels_missing_from_effective_mask": 0,
+            "native_polygon_pixels_missing_after_effective_mask_roundtrip": 0,
+            "effective_edit_pixels_512": 2994,
+            "grayscale_edit_support_pixels_512": 4062,
+            "unmasked_fraction_512_NOT_normal_metal_fraction": 0.9845046997070312,
+            "mask_polarity": "white=edit/black=preserve; Diffusers >=0.5 (uint8 >=128)",
+            "sdxl_mask_2x_exact": true,
+            "pixel_center_native_to_512_matrix": [
+              [
+                0.7111111111111111,
+                0.0,
+                -0.14444444444444443
+              ],
+              [
+                0.0,
+                0.7111111111111111,
+                -0.14444444444444443
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "pixel_center_inverse_matrix": [
+              [
+                1.40625,
+                0.0,
+                0.20312499999999997
+              ],
+              [
+                0.0,
+                1.40625,
+                0.20312499999999997
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "coordinate_roundtrip_max_abs_error": 5.684341886080802e-14,
+            "technical_pass": true
+          },
+          "contact_sheet": {
+            "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_protocol_review_contact_sheets/470_alt_1.png",
+            "file_sha256": "eaed1ae1195447f5672bd68989eb92e772f6b331967e0a0f1a3ad968ffe4059f",
+            "pixel_sha256": "dd8bda72e52a49835b375f68167c63d1d7fc35722a7cdee5abf4134e6a364056",
+            "mode": "RGB",
+            "shape": [
+              3080,
+              1536,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "human_decision": "PENDING",
+          "used_for_inference": false,
+          "cross_model_same_crop": true
+        },
+        {
+          "crop_id": "alt_2",
+          "box_xyxy_half_open": [
+            178,
+            0,
+            898,
+            720
+          ],
+          "kind": "HUMAN_COMPARISON_PROPOSAL_ONLY",
+          "generation_rule": "M0 L=min(W,H); no padding; all polygons; edit=MaxFilter7/GaussianBlur1; RGB LANCZOS; mask NEAREST",
+          "files": {
+            "native_rgb": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_2/native_rgb.png",
+              "file_sha256": "d46521fcbc1c430df192d02ff731b24d8398cee9834279bcf1dc36ca0d967cf5",
+              "pixel_sha256": "9ca4cf623046db1a2d67b84192fa708bb76d86bc15f2b2bc19147698f557074c",
+              "mode": "RGB",
+              "shape": [
+                720,
+                960,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_2/native_polygon.png",
+              "file_sha256": "357c075fe563c4a9a24976ce355cf0a3538d24df95f5c9b52c8f2e61171d776f",
+              "pixel_sha256": "00622577877746f58c4139635fa5393ee1f1bed10c05b5f404f6daa5cd254d6e",
+              "mode": "L",
+              "shape": [
+                720,
+                960
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_2/native_edit_mask.png",
+              "file_sha256": "62e6e63f231260f3d05b67b1354218153f2441ed6ea992ecc922018658739f60",
+              "pixel_sha256": "eb5a896bb8d884ae2e58bd727f0f1466a216452e13b65ddba6db054228fd627f",
+              "mode": "L",
+              "shape": [
+                720,
+                960
+              ],
+              "dtype": "uint8"
+            },
+            "common_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_2/common_rgb_512.png",
+              "file_sha256": "adac36b1c809f0f0719f15cac5145906097ce00562a646f6e8e5782ee756800d",
+              "pixel_sha256": "5ec6d984b44dc093ac6c21056e9977cf6e70511e8e85224daf9e687db0833508",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "common_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_2/common_edit_mask_512.png",
+              "file_sha256": "1a1f8feb5c5fde64b5450feb2f877a0c1d1187d8da81054708e3997f1263a5e7",
+              "pixel_sha256": "ef0584b8457e35a12c5b24c7e534cda25730c5e84a351d4e52358f9688a68918",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_rgb_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_2/sdxl_rgb_1024.png",
+              "file_sha256": "0fc497bc0ec3979c86db81025107222999831d9b5dc5784385899f9e172c5fb5",
+              "pixel_sha256": "ab62ce9d32d29005f9ecebf7d3c3447a16194898a396bc7da4ef972eb64b6283",
+              "mode": "RGB",
+              "shape": [
+                1024,
+                1024,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_2/sdxl_mask_1024.png",
+              "file_sha256": "9b119c612be4f02999df93b37b85842d2adb40123ae11ec05ca041644115df4e",
+              "pixel_sha256": "863d1e8290f5df2904b908a26731ea26d07fefd8d282fae3c1b7ef2bf71f139f",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "native_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_2/native_crop.png",
+              "file_sha256": "2b6a7554bfef18133cdfe58d0b6bc27918831f92e9df1d7bc9088c78c6c36653",
+              "pixel_sha256": "56bedf357cfcc39ab636d16d3bd16113a43400551af29ca7247034be8f909c87",
+              "mode": "RGB",
+              "shape": [
+                720,
+                720,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_2/native_polygon_crop.png",
+              "file_sha256": "64f0c6096bba64bbce04412d23e9f531cecb83a7a9eff28fb6c0ae9912f3052c",
+              "pixel_sha256": "2fbccd1d920777466d1f29d56b0e01503633f847c9aec8bbe5b81cf8c238d864",
+              "mode": "L",
+              "shape": [
+                720,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_2/native_edit_mask_crop.png",
+              "file_sha256": "1b6526e2459869f7287309dbc697de6a8c8a067b26711b2ac96568ff463f7fc2",
+              "pixel_sha256": "386bbb2921343e6e96c145732bb24186f4f4e7767e779e8ad84a496536110507",
+              "mode": "L",
+              "shape": [
+                720,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_2/effective_edit_mask_512.png",
+              "file_sha256": "e84c1858c932e09c2886d197472366da5a449a56430a72fbfd6f59e9314f5b5f",
+              "pixel_sha256": "bbc8fec65b030b3a66d905a2d5e60b413488e76c19183ffbc6948ea5743f50db",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_2/effective_edit_mask_1024.png",
+              "file_sha256": "d2081a6f0c60b03f123ac325505d88a866f666a58755d275035a432be553a672",
+              "pixel_sha256": "78373b6065f9a8032d50a90d40ceadf26c51094642a27a742458f38fd48f7fc2",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "effective_mask_on_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/470/alt_2/effective_mask_on_rgb_512.png",
+              "file_sha256": "8c89e75a1e226018dea7ca5c24984d4da24934ec3dde089ee5179938c3f8e560",
+              "pixel_sha256": "7010c6723cd2770a864423a08677e317441c486567534afaf2d8354196875a7a",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "geometry_checks": {
+            "in_bounds_square": true,
+            "actual_bbox_context_margins_ltrb": [
+              22,
+              110,
+              434,
+              423
+            ],
+            "context_margin_pass": true,
+            "per_polygon_retention": [
+              1.0
+            ],
+            "target_retention": 1.0,
+            "edit_support_retention": 1.0,
+            "polygon512_pixels_missing_from_effective_mask": 0,
+            "native_polygon_pixels_missing_after_effective_mask_roundtrip": 0,
+            "effective_edit_pixels_512": 3000,
+            "grayscale_edit_support_pixels_512": 4072,
+            "unmasked_fraction_512_NOT_normal_metal_fraction": 0.984466552734375,
+            "mask_polarity": "white=edit/black=preserve; Diffusers >=0.5 (uint8 >=128)",
+            "sdxl_mask_2x_exact": true,
+            "pixel_center_native_to_512_matrix": [
+              [
+                0.7111111111111111,
+                0.0,
+                -126.72222222222223
+              ],
+              [
+                0.0,
+                0.7111111111111111,
+                -0.14444444444444443
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "pixel_center_inverse_matrix": [
+              [
+                1.40625,
+                0.0,
+                178.203125
+              ],
+              [
+                0.0,
+                1.40625,
+                0.20312499999999997
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "coordinate_roundtrip_max_abs_error": 5.684341886080802e-14,
+            "technical_pass": true
+          },
+          "contact_sheet": {
+            "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_protocol_review_contact_sheets/470_alt_2.png",
+            "file_sha256": "45f2455d0ca9e785abebfd2939a61176f6a702d84a8c9616602521e6125fba97",
+            "pixel_sha256": "365096c9b61c07768918583069ea9f2833b2cbaa55f41561adc9ad578a03a379",
+            "mode": "RGB",
+            "shape": [
+              3080,
+              1536,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "human_decision": "PENDING",
+          "used_for_inference": false,
+          "cross_model_same_crop": true
+        }
+      ],
+      "selected_crop_id": "PENDING",
+      "input_semantic_eligibility": "PENDING_USER_REVIEW",
+      "context_and_fov_checks": {
+        "Whole ROI GE/UI/FOV contamination": "PENDING",
+        "Gray border / invalid area": "PENDING",
+        "Real metal seam, cavity or physical structure edge": "PENDING",
+        "Enough valid normal metal texture (unmasked does NOT mean normal)": "PENDING",
+        "Unannotated additional defects / plausible normal restoration target": "PENDING"
+      },
+      "reason": "Retained M0 default",
+      "technical_errors_not_overridable_by_human_pass": true
+    },
+    {
+      "source_id": "8",
+      "class": "corrosion",
+      "source_sha256": "57eac89a6d22aa47f47f8f019e25d90fb71c5bd2ddbdeec60cf379c61f30850d",
+      "annotation_sha256": "8f66a519a0d9a0697da95ff32349951becaa94649bef67ec08298fe0111fe317",
+      "group_id": "singleton_8",
+      "polygon_details": [
+        {
+          "polygon_id": 0,
+          "points_native_xy": [
+            [
+              349.0,
+              180.0
+            ],
+            [
+              346.0,
+              180.0
+            ],
+            [
+              345.0,
+              177.0
+            ],
+            [
+              342.0,
+              174.0
+            ],
+            [
+              344.0,
+              171.0
+            ],
+            [
+              343.0,
+              170.0
+            ],
+            [
+              346.0,
+              167.0
+            ],
+            [
+              341.0,
+              167.0
+            ],
+            [
+              335.0,
+              165.0
+            ],
+            [
+              333.0,
+              161.0
+            ],
+            [
+              333.0,
+              158.0
+            ],
+            [
+              329.0,
+              156.0
+            ],
+            [
+              328.0,
+              152.0
+            ],
+            [
+              332.0,
+              147.0
+            ],
+            [
+              331.0,
+              144.0
+            ],
+            [
+              333.0,
+              141.0
+            ],
+            [
+              341.0,
+              140.0
+            ],
+            [
+              349.0,
+              143.0
+            ],
+            [
+              352.0,
+              145.0
+            ],
+            [
+              353.0,
+              151.0
+            ],
+            [
+              355.0,
+              146.0
+            ],
+            [
+              357.0,
+              146.0
+            ],
+            [
+              358.0,
+              151.0
+            ],
+            [
+              361.0,
+              147.0
+            ],
+            [
+              364.0,
+              149.0
+            ],
+            [
+              364.0,
+              153.0
+            ],
+            [
+              366.0,
+              158.0
+            ],
+            [
+              365.0,
+              168.0
+            ],
+            [
+              353.0,
+              172.0
+            ],
+            [
+              352.0,
+              176.0
+            ]
+          ],
+          "raster_pixels": 951,
+          "bbox_xyxy_half_open": [
+            328,
+            140,
+            367,
+            181
+          ],
+          "shoelace_area": 902.0
+        }
+      ],
+      "geometry_status": "PASS_GEOMETRY_ONLY",
+      "options": [
+        {
+          "crop_id": "default",
+          "box_xyxy_half_open": [
+            90,
+            0,
+            630,
+            540
+          ],
+          "kind": "IMMUTABLE_M0_DEFAULT_REFERENCE",
+          "generation_rule": "M0 L=min(W,H); no padding; all polygons; edit=MaxFilter7/GaussianBlur1; RGB LANCZOS; mask NEAREST",
+          "files": {
+            "native_rgb": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/8/native_rgb.png",
+              "file_sha256": "474925f6baa2b849e163b0ff6167d0c2056688e4a8b674746f7adb927e57dcdc",
+              "pixel_sha256": "d8fc392e4912ae476c4240b10bbb6987f235e8b701ad4f68491ea51aa41d5082",
+              "mode": "RGB",
+              "shape": [
+                540,
+                720,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/8/native_polygon.png",
+              "file_sha256": "46c472c84490ad1f6970eb22657cc05fa87780e035510692247659f20cf455c5",
+              "pixel_sha256": "8e9f5f25191be34d20c62e4a9193bafea627059fd28ca593c9a2ca09c992d93d",
+              "mode": "L",
+              "shape": [
+                540,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/8/native_edit_mask.png",
+              "file_sha256": "046fe47681fa9cc7abd37466190e6d73039dd8f13313663accbf048ac8dca8b8",
+              "pixel_sha256": "6d46b4452089e699ec55bec82ec794d4c79941433d28f4860638fcc0f41b9002",
+              "mode": "L",
+              "shape": [
+                540,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "common_rgb_512": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/8/common_rgb_512.png",
+              "file_sha256": "610a61a0a42df3ea714c08c1c7ae24bc442b909518374831c3bc3c881ebdfc1e",
+              "pixel_sha256": "e9e32051445fef268f83000725dd59bfc579fbe656c4639c1fccccc278265b93",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "common_edit_mask_512": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/8/common_edit_mask_512.png",
+              "file_sha256": "9d1c19217e68ab87e749845a4a1460d7b500c5b1c5a24c93db4140093e291918",
+              "pixel_sha256": "885045fef8612a23ef6e23df4896220b55633a7b5f611e0446919f385fb5ab90",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_rgb_1024": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/8/sdxl_rgb_1024.png",
+              "file_sha256": "897da7abf865eedae2215e948c9de231ed42e90bab890ca11b0b7048a2cb22f3",
+              "pixel_sha256": "2ebfd929cedc461f7d9091f627c0854ce6962b1a7111f30ce12b6590e59b487d",
+              "mode": "RGB",
+              "shape": [
+                1024,
+                1024,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_mask_1024": {
+              "path": "results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/8/sdxl_mask_1024.png",
+              "file_sha256": "ee2207c78f354c072e8c435d1bddad3d055d194a898d5c5005d218958a5c0e12",
+              "pixel_sha256": "fa3b633e029ec00c1df5018effe81a0f3dee070f57c3d989cb5329911cc8fb24",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "native_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/default/native_crop.png",
+              "file_sha256": "8b502351bd49c15973dfe6c5448e76f211bd8e2f020ea14370215bb115447b75",
+              "pixel_sha256": "797dc2c6065fe3b80c40c814d949da80984f0f271a02e6984f8fd478b53b8b32",
+              "mode": "RGB",
+              "shape": [
+                540,
+                540,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/default/native_polygon_crop.png",
+              "file_sha256": "fab8805ce6ab24241873bb36b9c1367494b1f21fa6cb1a1f115f2a1ab50e675a",
+              "pixel_sha256": "f17cba344558d88a9ba674852b5f7fbc4dec020b79cb2f4da07162d8c9ec133a",
+              "mode": "L",
+              "shape": [
+                540,
+                540
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/default/native_edit_mask_crop.png",
+              "file_sha256": "a3ebdf0ea05c160abec80d442aadec323ae4dff42d60dba98f51f719bd5b6639",
+              "pixel_sha256": "e96c2c8a7282c15569fb88811becc4653265acba2370d83f8dcbab247e7cc8c3",
+              "mode": "L",
+              "shape": [
+                540,
+                540
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/default/effective_edit_mask_512.png",
+              "file_sha256": "c9478099e9a001fba7bd3ea881e7f44d4ddb4a94dacf128bd45a3465528fbc6f",
+              "pixel_sha256": "511f3731d6f5a9fb6335c4bd926511e78e0521c120194ab85f8645c2aa30a41a",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/default/effective_edit_mask_1024.png",
+              "file_sha256": "1cc9445936e9485c0d83d04f653ac8b7057729097d2571738ef69aa6299db695",
+              "pixel_sha256": "c27e7f64fd9508ff5c7292e15ea110456c8eb315894c419dd4f66d28c902b592",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "effective_mask_on_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/default/effective_mask_on_rgb_512.png",
+              "file_sha256": "ad179e17da02c30750188ad189805d8c9b3ddc0a4c6433bc0d6673b272b205eb",
+              "pixel_sha256": "3e69c45e97ca6719c4cf2a7ecadc3430ecd4bb1ae56059f5f43cdb1eb0773ff4",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "geometry_checks": {
+            "in_bounds_square": true,
+            "actual_bbox_context_margins_ltrb": [
+              238,
+              140,
+              263,
+              359
+            ],
+            "context_margin_pass": true,
+            "per_polygon_retention": [
+              1.0
+            ],
+            "target_retention": 1.0,
+            "edit_support_retention": 1.0,
+            "polygon512_pixels_missing_from_effective_mask": 0,
+            "native_polygon_pixels_missing_after_effective_mask_roundtrip": 0,
+            "effective_edit_pixels_512": 1323,
+            "grayscale_edit_support_pixels_512": 1730,
+            "unmasked_fraction_512_NOT_normal_metal_fraction": 0.9934005737304688,
+            "mask_polarity": "white=edit/black=preserve; Diffusers >=0.5 (uint8 >=128)",
+            "sdxl_mask_2x_exact": true,
+            "pixel_center_native_to_512_matrix": [
+              [
+                0.9481481481481482,
+                0.0,
+                -85.35925925925926
+              ],
+              [
+                0.0,
+                0.9481481481481482,
+                -0.025925925925925908
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "pixel_center_inverse_matrix": [
+              [
+                1.0546875,
+                0.0,
+                90.02734375
+              ],
+              [
+                0.0,
+                1.0546875,
+                0.02734374999999998
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "coordinate_roundtrip_max_abs_error": 5.684341886080802e-14,
+            "technical_pass": true
+          },
+          "contact_sheet": {
+            "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_protocol_review_contact_sheets/8_default.png",
+            "file_sha256": "52ab65eb164a1259e1e2236072c730e4aa93608a59b9ccc6e2031fc048bf50c7",
+            "pixel_sha256": "48bbe5edee6fb9d98dd1f420794010b7fd45cb1eca406d8887d2cc4e390a201e",
+            "mode": "RGB",
+            "shape": [
+              3080,
+              1536,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "human_decision": "PENDING",
+          "used_for_inference": false,
+          "cross_model_same_crop": true
+        },
+        {
+          "crop_id": "alt_1",
+          "box_xyxy_half_open": [
+            0,
+            0,
+            540,
+            540
+          ],
+          "kind": "HUMAN_COMPARISON_PROPOSAL_ONLY",
+          "generation_rule": "M0 L=min(W,H); no padding; all polygons; edit=MaxFilter7/GaussianBlur1; RGB LANCZOS; mask NEAREST",
+          "files": {
+            "native_rgb": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_1/native_rgb.png",
+              "file_sha256": "474925f6baa2b849e163b0ff6167d0c2056688e4a8b674746f7adb927e57dcdc",
+              "pixel_sha256": "d8fc392e4912ae476c4240b10bbb6987f235e8b701ad4f68491ea51aa41d5082",
+              "mode": "RGB",
+              "shape": [
+                540,
+                720,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_1/native_polygon.png",
+              "file_sha256": "46c472c84490ad1f6970eb22657cc05fa87780e035510692247659f20cf455c5",
+              "pixel_sha256": "8e9f5f25191be34d20c62e4a9193bafea627059fd28ca593c9a2ca09c992d93d",
+              "mode": "L",
+              "shape": [
+                540,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_1/native_edit_mask.png",
+              "file_sha256": "046fe47681fa9cc7abd37466190e6d73039dd8f13313663accbf048ac8dca8b8",
+              "pixel_sha256": "6d46b4452089e699ec55bec82ec794d4c79941433d28f4860638fcc0f41b9002",
+              "mode": "L",
+              "shape": [
+                540,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "common_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_1/common_rgb_512.png",
+              "file_sha256": "27d425b159003f0814cc3faae8950e6720d15b4881d6aa513675a5fd8d5ad288",
+              "pixel_sha256": "4b8537476ec1110c3f38f62669d55e641859a74e15198d1781eba128fecdb0c8",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "common_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_1/common_edit_mask_512.png",
+              "file_sha256": "02c697a0eaddfa63f10a369061d35ce540b109e3a42ed9747e05bfd913da7789",
+              "pixel_sha256": "001c519ef88f789dd9a08f05d900835f8977076d75cb343a17d1d8740d7ca28a",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_rgb_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_1/sdxl_rgb_1024.png",
+              "file_sha256": "e17eb7d73e126b243a1070c76777d619daaa862afbdcf890b246b801d024f5c0",
+              "pixel_sha256": "1c9dc3133c4cdd2bc565368f0bbca522e5269777e35ec463df6d7b74609c41f4",
+              "mode": "RGB",
+              "shape": [
+                1024,
+                1024,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_1/sdxl_mask_1024.png",
+              "file_sha256": "e678b370fadd69617d90d36fa681973fb0acb490e6b9536ee8f36f84e9727544",
+              "pixel_sha256": "9a331a177b8d8eb1da2354e03396c3d6dcc7a233fa97a0480e3f82ee050c8824",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "native_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_1/native_crop.png",
+              "file_sha256": "8f20fb1615603cdcd8ae0cb8532e7fcec0c18148c75a5b2d76d4c66605493b81",
+              "pixel_sha256": "2d4397844daf46796d3d3ff3731008127ed1adeb051c3ba16df4cddf98967023",
+              "mode": "RGB",
+              "shape": [
+                540,
+                540,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_1/native_polygon_crop.png",
+              "file_sha256": "38802658eb27b159f76c0f57fe39a530d7dbdff606558224433228561be226b2",
+              "pixel_sha256": "28e3475446b9574dd125095459700702a6ff475385c75bc7827f44d85e2ac639",
+              "mode": "L",
+              "shape": [
+                540,
+                540
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_1/native_edit_mask_crop.png",
+              "file_sha256": "d866ab2dd3cf34c4f8b6ab17bc56df81bbb6a7531770c210ddeab3a67f9d5bb0",
+              "pixel_sha256": "4e37eb4200a24cff2fa4473e3d36ea24a71bc91f3a424a0190f022db7693f64e",
+              "mode": "L",
+              "shape": [
+                540,
+                540
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_1/effective_edit_mask_512.png",
+              "file_sha256": "147221be1aada966df2b3b4ac60623aca867d5912afab28b67126231461427a1",
+              "pixel_sha256": "0998040c7d1d5804dd66e22292177f16785682461f70eb565747315ccfa9416d",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_1/effective_edit_mask_1024.png",
+              "file_sha256": "1da26d785e2071dd460768a35b87c98fa5c66df6769ce40252dfd20702fd22be",
+              "pixel_sha256": "92bf1838322e4b1336c1d3714c669b2c13304c28d6c7f1d22437fe6eb5664834",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "effective_mask_on_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_1/effective_mask_on_rgb_512.png",
+              "file_sha256": "187670ba35ff43eee7e94071bae77cf53073df2beaf0e904c6affe988bfdb1bf",
+              "pixel_sha256": "cd2b3d69802938abb94dd7430dcaf5eeed4e66cecdc7a34d9e0b0e385f285c03",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "geometry_checks": {
+            "in_bounds_square": true,
+            "actual_bbox_context_margins_ltrb": [
+              328,
+              140,
+              173,
+              359
+            ],
+            "context_margin_pass": true,
+            "per_polygon_retention": [
+              1.0
+            ],
+            "target_retention": 1.0,
+            "edit_support_retention": 1.0,
+            "polygon512_pixels_missing_from_effective_mask": 0,
+            "native_polygon_pixels_missing_after_effective_mask_roundtrip": 0,
+            "effective_edit_pixels_512": 1340,
+            "grayscale_edit_support_pixels_512": 1755,
+            "unmasked_fraction_512_NOT_normal_metal_fraction": 0.9933052062988281,
+            "mask_polarity": "white=edit/black=preserve; Diffusers >=0.5 (uint8 >=128)",
+            "sdxl_mask_2x_exact": true,
+            "pixel_center_native_to_512_matrix": [
+              [
+                0.9481481481481482,
+                0.0,
+                -0.025925925925925908
+              ],
+              [
+                0.0,
+                0.9481481481481482,
+                -0.025925925925925908
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "pixel_center_inverse_matrix": [
+              [
+                1.0546875,
+                0.0,
+                0.02734374999999998
+              ],
+              [
+                0.0,
+                1.0546875,
+                0.02734374999999998
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "coordinate_roundtrip_max_abs_error": 5.684341886080802e-14,
+            "technical_pass": true
+          },
+          "contact_sheet": {
+            "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_protocol_review_contact_sheets/8_alt_1.png",
+            "file_sha256": "1e3afc5a6cd591668ae1d933cf251a290424248c01278c4d026e2879595a7187",
+            "pixel_sha256": "1570f6bb1d1be637f774077db4ff3690261c9fdcbd9ec8aebd51c3b8ee82e9e0",
+            "mode": "RGB",
+            "shape": [
+              3080,
+              1536,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "human_decision": "PENDING",
+          "used_for_inference": false,
+          "cross_model_same_crop": true
+        },
+        {
+          "crop_id": "alt_2",
+          "box_xyxy_half_open": [
+            180,
+            0,
+            720,
+            540
+          ],
+          "kind": "HUMAN_COMPARISON_PROPOSAL_ONLY",
+          "generation_rule": "M0 L=min(W,H); no padding; all polygons; edit=MaxFilter7/GaussianBlur1; RGB LANCZOS; mask NEAREST",
+          "files": {
+            "native_rgb": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_2/native_rgb.png",
+              "file_sha256": "474925f6baa2b849e163b0ff6167d0c2056688e4a8b674746f7adb927e57dcdc",
+              "pixel_sha256": "d8fc392e4912ae476c4240b10bbb6987f235e8b701ad4f68491ea51aa41d5082",
+              "mode": "RGB",
+              "shape": [
+                540,
+                720,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_2/native_polygon.png",
+              "file_sha256": "46c472c84490ad1f6970eb22657cc05fa87780e035510692247659f20cf455c5",
+              "pixel_sha256": "8e9f5f25191be34d20c62e4a9193bafea627059fd28ca593c9a2ca09c992d93d",
+              "mode": "L",
+              "shape": [
+                540,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_2/native_edit_mask.png",
+              "file_sha256": "046fe47681fa9cc7abd37466190e6d73039dd8f13313663accbf048ac8dca8b8",
+              "pixel_sha256": "6d46b4452089e699ec55bec82ec794d4c79941433d28f4860638fcc0f41b9002",
+              "mode": "L",
+              "shape": [
+                540,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "common_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_2/common_rgb_512.png",
+              "file_sha256": "b3e61a44d50fe55c3f72ead98b62c56c9b90274c439144dcb2f6952de5fc57d2",
+              "pixel_sha256": "41c06fd75790c291a5fed1c0c64f37f75c42dd3ab6b34eaa8bab21ae62b8e684",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "common_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_2/common_edit_mask_512.png",
+              "file_sha256": "f30f2b53349dc7e6ec05fd316026462c3c08da08080702e021c67a7887d2244c",
+              "pixel_sha256": "4a0ef2458acddf7709a1dd12ff337bf857b146081f7566e1be03517cf62011c0",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_rgb_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_2/sdxl_rgb_1024.png",
+              "file_sha256": "ff69595cf3e342aa8d63da0ca017f735270117a21e3bff17558d8f744dec2370",
+              "pixel_sha256": "ca16939f391b05e713a2d30dd22c2825e86e990cb2708e425d9cce4d76ebb7d7",
+              "mode": "RGB",
+              "shape": [
+                1024,
+                1024,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_2/sdxl_mask_1024.png",
+              "file_sha256": "01bd7fedc6883e7f2ba7585fd877ae73261ffb66df527f5206a882f94d7a8355",
+              "pixel_sha256": "56fd0d3dd37aa20485833b1627f04f78bdeca87b71176d495fe3a98e610e76f5",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "native_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_2/native_crop.png",
+              "file_sha256": "338a075ea8d7dd282e021f1af97ad36422174ee800c6c63bfa36b0ae4e54d25a",
+              "pixel_sha256": "43e504e780b13eef4fcdb5459678581c84b0fbdd68b97514a4551034affbfb05",
+              "mode": "RGB",
+              "shape": [
+                540,
+                540,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_2/native_polygon_crop.png",
+              "file_sha256": "b65ca89c391db1ae1498c9ebeaf0f0453dcf3a8a830c875a754f0b5044758f49",
+              "pixel_sha256": "6e91819aa1cd717c33458ad1dfddca254daf306df7166d7f31d4f882c5859d43",
+              "mode": "L",
+              "shape": [
+                540,
+                540
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_2/native_edit_mask_crop.png",
+              "file_sha256": "39574beb9e9db7402483d012704a477d3949cc27f8d8c5b32578427406fcd79a",
+              "pixel_sha256": "1b9bf5b0567567c8e082fe5f9aed69ce4eb0209b9eaae2d4590b11267f3bb181",
+              "mode": "L",
+              "shape": [
+                540,
+                540
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_2/effective_edit_mask_512.png",
+              "file_sha256": "83499c10d69d69bdf7897b49f5453efad58ab9ed9183582bfce0bfafc6a633b2",
+              "pixel_sha256": "a64fe162ad041e6ff3b52769c7109f7426ead8645e87f10b4255eb39053ee786",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_2/effective_edit_mask_1024.png",
+              "file_sha256": "a00f8cdca9fc41fcd3981b81f2de2177d4536e4895fa839b37f060e9151c921e",
+              "pixel_sha256": "479080e783757b275a9521915cc48c48481d2563167bf56f804a25c397cdc418",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "effective_mask_on_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/8/alt_2/effective_mask_on_rgb_512.png",
+              "file_sha256": "69d2f6f04e8eac57c8f7676600d02696650f3683c65e936ae876161aa9f84262",
+              "pixel_sha256": "611f076884d914393de3fe68efa60b335e4a36e3f680dea9e65ff82f1192dd28",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "geometry_checks": {
+            "in_bounds_square": true,
+            "actual_bbox_context_margins_ltrb": [
+              148,
+              140,
+              353,
+              359
+            ],
+            "context_margin_pass": true,
+            "per_polygon_retention": [
+              1.0
+            ],
+            "target_retention": 1.0,
+            "edit_support_retention": 1.0,
+            "polygon512_pixels_missing_from_effective_mask": 0,
+            "native_polygon_pixels_missing_after_effective_mask_roundtrip": 0,
+            "effective_edit_pixels_512": 1331,
+            "grayscale_edit_support_pixels_512": 1741,
+            "unmasked_fraction_512_NOT_normal_metal_fraction": 0.9933586120605469,
+            "mask_polarity": "white=edit/black=preserve; Diffusers >=0.5 (uint8 >=128)",
+            "sdxl_mask_2x_exact": true,
+            "pixel_center_native_to_512_matrix": [
+              [
+                0.9481481481481482,
+                0.0,
+                -170.6925925925926
+              ],
+              [
+                0.0,
+                0.9481481481481482,
+                -0.025925925925925908
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "pixel_center_inverse_matrix": [
+              [
+                1.0546875,
+                0.0,
+                180.02734375
+              ],
+              [
+                0.0,
+                1.0546875,
+                0.02734374999999998
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "coordinate_roundtrip_max_abs_error": 2.842170943040401e-14,
+            "technical_pass": true
+          },
+          "contact_sheet": {
+            "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_protocol_review_contact_sheets/8_alt_2.png",
+            "file_sha256": "3972fab3a156a60aea30c04bf6815c0d228fce8bc170dc119cea1aadbc4221d0",
+            "pixel_sha256": "351b417e0445d92bb8d85ed6ae5a4221f1ba640a95feafb7ed9f0a2f80fa9199",
+            "mode": "RGB",
+            "shape": [
+              3080,
+              1536,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "human_decision": "PENDING",
+          "used_for_inference": false,
+          "cross_model_same_crop": true
+        }
+      ],
+      "selected_crop_id": "PENDING",
+      "input_semantic_eligibility": "PENDING_USER_REVIEW",
+      "context_and_fov_checks": {
+        "Whole ROI GE/UI/FOV contamination": "PENDING",
+        "Gray border / invalid area": "PENDING",
+        "Real metal seam, cavity or physical structure edge": "PENDING",
+        "Enough valid normal metal texture (unmasked does NOT mean normal)": "PENDING",
+        "Unannotated additional defects / plausible normal restoration target": "PENDING"
+      },
+      "reason": "Retained M0 default",
+      "technical_errors_not_overridable_by_human_pass": true
+    },
+    {
+      "source_id": "1",
+      "class": "corrosion",
+      "source_sha256": "4cacb0d2c49d471fada2c05f0fc006d87367e0bdd6568c623e677ed0d382d904",
+      "annotation_sha256": "c655f3b1ac36c7eb19aea7aee9a1c823ed3ae50a7ae682e9c743e84daf052834",
+      "group_id": "singleton_1",
+      "polygon_details": [
+        {
+          "polygon_id": 0,
+          "points_native_xy": [
+            [
+              409.0,
+              408.0
+            ],
+            [
+              409.0,
+              400.0
+            ],
+            [
+              414.0,
+              398.0
+            ],
+            [
+              414.0,
+              392.0
+            ],
+            [
+              420.0,
+              393.0
+            ],
+            [
+              423.0,
+              389.0
+            ],
+            [
+              428.0,
+              392.0
+            ],
+            [
+              448.0,
+              389.0
+            ],
+            [
+              453.0,
+              384.0
+            ],
+            [
+              469.0,
+              390.0
+            ],
+            [
+              509.0,
+              391.0
+            ],
+            [
+              528.0,
+              382.0
+            ],
+            [
+              570.0,
+              394.0
+            ],
+            [
+              570.0,
+              404.0
+            ],
+            [
+              567.0,
+              406.0
+            ],
+            [
+              563.0,
+              405.0
+            ],
+            [
+              561.0,
+              399.0
+            ],
+            [
+              556.0,
+              405.0
+            ],
+            [
+              529.0,
+              401.0
+            ],
+            [
+              526.0,
+              408.0
+            ],
+            [
+              520.0,
+              401.0
+            ],
+            [
+              506.0,
+              397.0
+            ],
+            [
+              496.0,
+              405.0
+            ],
+            [
+              485.0,
+              402.0
+            ],
+            [
+              470.0,
+              403.0
+            ],
+            [
+              463.0,
+              409.0
+            ],
+            [
+              458.0,
+              409.0
+            ],
+            [
+              435.0,
+              399.0
+            ],
+            [
+              422.0,
+              401.0
+            ],
+            [
+              420.0,
+              396.0
+            ],
+            [
+              418.0,
+              408.0
+            ]
+          ],
+          "raster_pixels": 2301,
+          "bbox_xyxy_half_open": [
+            409,
+            382,
+            571,
+            410
+          ],
+          "shoelace_area": 2227.0
+        },
+        {
+          "polygon_id": 1,
+          "points_native_xy": [
+            [
+              380.03968253968253,
+              262.85714285714283
+            ],
+            [
+              397.0079365079365,
+              271.36507936507934
+            ],
+            [
+              412.0079365079365,
+              272.36507936507934
+            ],
+            [
+              422.0079365079365,
+              283.36507936507934
+            ],
+            [
+              432.0079365079365,
+              278.36507936507934
+            ],
+            [
+              417.0079365079365,
+              268.36507936507934
+            ],
+            [
+              396.0079365079365,
+              259.36507936507934
+            ]
+          ],
+          "raster_pixels": 409,
+          "bbox_xyxy_half_open": [
+            380,
+            259,
+            433,
+            284
+          ],
+          "shoelace_area": 386.55555555555475
+        },
+        {
+          "polygon_id": 2,
+          "points_native_xy": [
+            [
+              86.3888888888889,
+              346.58730158730157
+            ],
+            [
+              84.00793650793652,
+              361.36507936507934
+            ],
+            [
+              101.00793650793652,
+              370.36507936507934
+            ],
+            [
+              105.00793650793652,
+              359.36507936507934
+            ],
+            [
+              100.00793650793652,
+              354.36507936507934
+            ],
+            [
+              107.00793650793652,
+              348.36507936507934
+            ]
+          ],
+          "raster_pixels": 364,
+          "bbox_xyxy_half_open": [
+            84,
+            347,
+            108,
+            371
+          ],
+          "shoelace_area": 346.9682539682526
+        }
+      ],
+      "geometry_status": "PASS_GEOMETRY_ONLY",
+      "options": [
+        {
+          "crop_id": "default",
+          "box_xyxy_half_open": [
+            67,
+            0,
+            607,
+            540
+          ],
+          "kind": "DETERMINISTIC_DEFAULT",
+          "generation_rule": "M0 L=min(W,H); no padding; all polygons; edit=MaxFilter7/GaussianBlur1; RGB LANCZOS; mask NEAREST",
+          "files": {
+            "native_rgb": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/default/native_rgb.png",
+              "file_sha256": "7335ea72e6e0ec41c5007e4b54a3fcc0a006b748ab164ff5d6059663e0ec3ed0",
+              "pixel_sha256": "f5afc01613f794395484601c34623ddab84152b0329700b2e7fdee7238cb2632",
+              "mode": "RGB",
+              "shape": [
+                540,
+                720,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/default/native_polygon.png",
+              "file_sha256": "71fe10b1ba9cfd666e177302a3715fac94092230112dc44c3d350e560093359c",
+              "pixel_sha256": "7e065b974c6225d758382fc16e13804261ccf071ff5ba21fa6210d5bfff64472",
+              "mode": "L",
+              "shape": [
+                540,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/default/native_edit_mask.png",
+              "file_sha256": "496457ce3793bdf0a7982be76b79f8f217d5f39fe11139ad57bfe6533c058bc5",
+              "pixel_sha256": "df2020b4daf517201890cc6ea4184843b65b658a82d01d74ea112b1410cf330f",
+              "mode": "L",
+              "shape": [
+                540,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "common_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/default/common_rgb_512.png",
+              "file_sha256": "637930c86bda4d8033604836184fbec7b75ea620e3d39c2dc42487f2081b1aa3",
+              "pixel_sha256": "c35d3f887ed9931dc690e75d3343064d0472e395bf2c4e6c1671949379f239b5",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "common_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/default/common_edit_mask_512.png",
+              "file_sha256": "8976b951969268ae57e9ba53019452d32530c9481c4d817a59f466544ae58d21",
+              "pixel_sha256": "d35102a5e01e13aebfcb6e9e79f116f8220f5c37d30ff2ad307cd3ed82a9a8dc",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_rgb_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/default/sdxl_rgb_1024.png",
+              "file_sha256": "8153ad689e1e22a6b6db2479b036c5e16e6bfaae1354367c484f5aa054a05262",
+              "pixel_sha256": "4fe2a74fc68be51ba577cff5b1ddd2c7c3c2854649c963c1b39e39b80337e104",
+              "mode": "RGB",
+              "shape": [
+                1024,
+                1024,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/default/sdxl_mask_1024.png",
+              "file_sha256": "fe29996dd0f77ac6cb4989c58a6924ccead75d9cfbf0cdb91c7583ba72422ee2",
+              "pixel_sha256": "f0f3c5299ac224b442fe57dae3009199ce45e43f97fd3bc4692bffef06ea7a6a",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "native_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/default/native_crop.png",
+              "file_sha256": "3625f31a058510a467867da13291dd4b7e3de0fd3ac653d6f0ca0db61a7cfe3f",
+              "pixel_sha256": "ddd7486bb0c6bebd825277466c92af8cbbabbad68c88637228ab8b0e5127ee89",
+              "mode": "RGB",
+              "shape": [
+                540,
+                540,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/default/native_polygon_crop.png",
+              "file_sha256": "de14b535bebc2a64fdd1809e48de19eea0de4c323bc5217b4f912ee49619484d",
+              "pixel_sha256": "97b11917c7b9f9ffe3ad28ef38bf99641a577914f37effa2de4ad07d3c605769",
+              "mode": "L",
+              "shape": [
+                540,
+                540
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/default/native_edit_mask_crop.png",
+              "file_sha256": "7e0b03137af0ae9cf2f096638f8b574ae30eaf513cdae9a798f331a847ea9906",
+              "pixel_sha256": "8f270ed62094396a6a9f66d98ae8f96dc77ac00968118a7b12519a3b07dbbdfc",
+              "mode": "L",
+              "shape": [
+                540,
+                540
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/default/effective_edit_mask_512.png",
+              "file_sha256": "f6c3a9e817348b3f12fd8606215768edd4cb9115b2af4ba220bc414b22e470ff",
+              "pixel_sha256": "003e70c792d1bf68cdfb0ab78694c76bd8c581a382dbdeedfb436b77f660a8ea",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/default/effective_edit_mask_1024.png",
+              "file_sha256": "0b8835331246510ca7ae675abbedf20a087c8a800b99f7578acfb95a129de93c",
+              "pixel_sha256": "d36bc8b18c7f3a9ffcf4384c67b2fcc3b24c3f88b39e5c33bad033d0b0137652",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "effective_mask_on_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/default/effective_mask_on_rgb_512.png",
+              "file_sha256": "0143b04269180c33611a3478ac6553c74b7d20f6ef2f22bc4c2a01269d773f9f",
+              "pixel_sha256": "e216c70611cdf8ec794a28229ec6d5de74e7409f4d9fbe78d0e4d082eb10fd9e",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "geometry_checks": {
+            "in_bounds_square": true,
+            "actual_bbox_context_margins_ltrb": [
+              17,
+              259,
+              36,
+              130
+            ],
+            "context_margin_pass": true,
+            "per_polygon_retention": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "target_retention": 1.0,
+            "edit_support_retention": 1.0,
+            "polygon512_pixels_missing_from_effective_mask": 0,
+            "native_polygon_pixels_missing_after_effective_mask_roundtrip": 0,
+            "effective_edit_pixels_512": 4860,
+            "grayscale_edit_support_pixels_512": 6613,
+            "unmasked_fraction_512_NOT_normal_metal_fraction": 0.9747734069824219,
+            "mask_polarity": "white=edit/black=preserve; Diffusers >=0.5 (uint8 >=128)",
+            "sdxl_mask_2x_exact": true,
+            "pixel_center_native_to_512_matrix": [
+              [
+                0.9481481481481482,
+                0.0,
+                -63.55185185185186
+              ],
+              [
+                0.0,
+                0.9481481481481482,
+                -0.025925925925925908
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "pixel_center_inverse_matrix": [
+              [
+                1.0546875,
+                0.0,
+                67.02734375
+              ],
+              [
+                0.0,
+                1.0546875,
+                0.02734374999999998
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "coordinate_roundtrip_max_abs_error": 1.1368683772161603e-13,
+            "technical_pass": true
+          },
+          "contact_sheet": {
+            "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_protocol_review_contact_sheets/1_default.png",
+            "file_sha256": "4e58665980457a2fd74edbba6bb52d63e1132902ea46230bcd36bb9be672ca0d",
+            "pixel_sha256": "2355434be270b82cd19470174958b26c8a919f77017c428d6fd30963f797f302",
+            "mode": "RGB",
+            "shape": [
+              3080,
+              1536,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "human_decision": "PENDING",
+          "used_for_inference": false,
+          "cross_model_same_crop": true
+        },
+        {
+          "crop_id": "alt_1",
+          "box_xyxy_half_open": [
+            48,
+            0,
+            588,
+            540
+          ],
+          "kind": "HUMAN_COMPARISON_PROPOSAL_ONLY",
+          "generation_rule": "M0 L=min(W,H); no padding; all polygons; edit=MaxFilter7/GaussianBlur1; RGB LANCZOS; mask NEAREST",
+          "files": {
+            "native_rgb": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/alt_1/native_rgb.png",
+              "file_sha256": "7335ea72e6e0ec41c5007e4b54a3fcc0a006b748ab164ff5d6059663e0ec3ed0",
+              "pixel_sha256": "f5afc01613f794395484601c34623ddab84152b0329700b2e7fdee7238cb2632",
+              "mode": "RGB",
+              "shape": [
+                540,
+                720,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/alt_1/native_polygon.png",
+              "file_sha256": "71fe10b1ba9cfd666e177302a3715fac94092230112dc44c3d350e560093359c",
+              "pixel_sha256": "7e065b974c6225d758382fc16e13804261ccf071ff5ba21fa6210d5bfff64472",
+              "mode": "L",
+              "shape": [
+                540,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/alt_1/native_edit_mask.png",
+              "file_sha256": "496457ce3793bdf0a7982be76b79f8f217d5f39fe11139ad57bfe6533c058bc5",
+              "pixel_sha256": "df2020b4daf517201890cc6ea4184843b65b658a82d01d74ea112b1410cf330f",
+              "mode": "L",
+              "shape": [
+                540,
+                720
+              ],
+              "dtype": "uint8"
+            },
+            "common_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/alt_1/common_rgb_512.png",
+              "file_sha256": "2cd60a33151d64463398c487e00132cc5a867f57aae791b1ebc225ffc417cd2c",
+              "pixel_sha256": "d72f5c53cd3ec1a7dd8a35d8d1ed79e9bd23b695e75d76f37b0008b218cab6e7",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "common_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/alt_1/common_edit_mask_512.png",
+              "file_sha256": "56ab09157a48fcbe2aa631e39dd3ac89f4b3b33ad8854d6ed1d26d5a1ef30a04",
+              "pixel_sha256": "87fd497025d6765ff93a96ded08fac9e2de949604d040fc98eac58fb92800071",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_rgb_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/alt_1/sdxl_rgb_1024.png",
+              "file_sha256": "992424bca0a999c95589d3ef4c0419aeaf86afab455a947ae97adf33bb969462",
+              "pixel_sha256": "fa6907619e6cc1d6f0a31493f85a669e7725706343448bb811b564407d131b7c",
+              "mode": "RGB",
+              "shape": [
+                1024,
+                1024,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/alt_1/sdxl_mask_1024.png",
+              "file_sha256": "55146bd4de6784bb160e5decee7f9d88e50d6e7f1723a3ba06c1d3c4f8821dc5",
+              "pixel_sha256": "4f621316ba17f1fab6d03e34620601ec0b8c8591722a8e4bf95dfa831a46b113",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "native_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/alt_1/native_crop.png",
+              "file_sha256": "3fadc0c1bfd42c34323d27c8d8e6e1db7eeca1e8609a4b0d6a784c920eb6b671",
+              "pixel_sha256": "49e7a89b9bd056251565eb25c0f8044f84a4f7f5f0487f7ff129a5edc073cadb",
+              "mode": "RGB",
+              "shape": [
+                540,
+                540,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/alt_1/native_polygon_crop.png",
+              "file_sha256": "4a2b4daf7827155a17a46c7268d122bcb20f8d284e33568911542a7b27337cdf",
+              "pixel_sha256": "4b08a0f8818fd759202fed41c58db9ddfba1696dcc495daf96e80ed276c19ad7",
+              "mode": "L",
+              "shape": [
+                540,
+                540
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/alt_1/native_edit_mask_crop.png",
+              "file_sha256": "414edb970d36d7ea37d95f40f8cde3b662a254ed3a0a90ebb8a27c9fe87a890e",
+              "pixel_sha256": "1712df64fcee8ad4fa7ee6c1162e267afed64956c838ce11e76ecdf347828bd2",
+              "mode": "L",
+              "shape": [
+                540,
+                540
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/alt_1/effective_edit_mask_512.png",
+              "file_sha256": "3a32dbed30da5d7da08cce62741126b9641311fcc30b294e55b6d72380cc3c70",
+              "pixel_sha256": "bfbcaa3e610b4980e6a156d5f426e982cf680cf202d7d13512ade2e9a5e06971",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/alt_1/effective_edit_mask_1024.png",
+              "file_sha256": "6ad86fe630907afe185aa27473e1ca4dd5ce6c7ecdbc0f30d7fe01682309e718",
+              "pixel_sha256": "3ec8bc6851bb3fa45d8006ee0ebe08f08e94b14de1c8671b5ec9e565ea1c0de7",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "effective_mask_on_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/1/alt_1/effective_mask_on_rgb_512.png",
+              "file_sha256": "5a301a92f4a94e147954e3dff0a16acc4a6aa337c2d39101e79d9d9e3be61811",
+              "pixel_sha256": "d791be5eae5e82e5c9eb1d01b14e9fd44c679176f1a8f6abce256cacba80b9f5",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "geometry_checks": {
+            "in_bounds_square": true,
+            "actual_bbox_context_margins_ltrb": [
+              36,
+              259,
+              17,
+              130
+            ],
+            "context_margin_pass": true,
+            "per_polygon_retention": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "target_retention": 1.0,
+            "edit_support_retention": 1.0,
+            "polygon512_pixels_missing_from_effective_mask": 0,
+            "native_polygon_pixels_missing_after_effective_mask_roundtrip": 0,
+            "effective_edit_pixels_512": 4862,
+            "grayscale_edit_support_pixels_512": 6614,
+            "unmasked_fraction_512_NOT_normal_metal_fraction": 0.9747695922851562,
+            "mask_polarity": "white=edit/black=preserve; Diffusers >=0.5 (uint8 >=128)",
+            "sdxl_mask_2x_exact": true,
+            "pixel_center_native_to_512_matrix": [
+              [
+                0.9481481481481482,
+                0.0,
+                -45.53703703703704
+              ],
+              [
+                0.0,
+                0.9481481481481482,
+                -0.025925925925925908
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "pixel_center_inverse_matrix": [
+              [
+                1.0546875,
+                0.0,
+                48.02734375
+              ],
+              [
+                0.0,
+                1.0546875,
+                0.02734374999999998
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "coordinate_roundtrip_max_abs_error": 5.684341886080802e-14,
+            "technical_pass": true
+          },
+          "contact_sheet": {
+            "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_protocol_review_contact_sheets/1_alt_1.png",
+            "file_sha256": "c0fbec54af3f63fd9ac7190a51c3d68658a236d050369a51f0cdcadf0fc6d434",
+            "pixel_sha256": "e2ef0e705059d82e5d8587e31fbee159283b7d08a4cdc0fba14b94d49584bd98",
+            "mode": "RGB",
+            "shape": [
+              3080,
+              1536,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "human_decision": "PENDING",
+          "used_for_inference": false,
+          "cross_model_same_crop": true
+        }
+      ],
+      "selected_crop_id": "PENDING",
+      "input_semantic_eligibility": "PENDING_USER_REVIEW",
+      "context_and_fov_checks": {
+        "Whole ROI GE/UI/FOV contamination": "PENDING",
+        "Gray border / invalid area": "PENDING",
+        "Real metal seam, cavity or physical structure edge": "PENDING",
+        "Enough valid normal metal texture (unmasked does NOT mean normal)": "PENDING",
+        "Unannotated additional defects / plausible normal restoration target": "PENDING"
+      },
+      "reason": "First fixed-order unique geometry pass",
+      "technical_errors_not_overridable_by_human_pass": true
+    },
+    {
+      "source_id": "2",
+      "class": "corrosion",
+      "source_sha256": "514d07947ee5ff2d3ac8e160ac58a28bb159ed2549105e4998eaed4b0ba4bc03",
+      "annotation_sha256": "e4fa956d8ae736e4e851dde5fcf66e16faf2bf87deb284c81039da3e5621717a",
+      "group_id": "singleton_2",
+      "polygon_details": [
+        {
+          "polygon_id": 0,
+          "points_native_xy": [
+            [
+              158.0,
+              112.0
+            ],
+            [
+              138.0,
+              110.0
+            ],
+            [
+              127.0,
+              112.0
+            ],
+            [
+              66.0,
+              111.0
+            ],
+            [
+              64.0,
+              107.0
+            ],
+            [
+              52.0,
+              100.0
+            ],
+            [
+              50.0,
+              82.0
+            ],
+            [
+              53.0,
+              77.0
+            ],
+            [
+              46.0,
+              69.0
+            ],
+            [
+              43.0,
+              71.0
+            ],
+            [
+              40.0,
+              64.0
+            ],
+            [
+              53.0,
+              64.0
+            ],
+            [
+              59.0,
+              68.0
+            ],
+            [
+              62.0,
+              74.0
+            ],
+            [
+              69.0,
+              78.0
+            ],
+            [
+              93.0,
+              78.0
+            ],
+            [
+              101.0,
+              83.0
+            ],
+            [
+              118.0,
+              101.0
+            ],
+            [
+              121.0,
+              99.0
+            ],
+            [
+              126.0,
+              104.0
+            ],
+            [
+              131.0,
+              101.0
+            ],
+            [
+              135.0,
+              102.0
+            ],
+            [
+              135.0,
+              106.0
+            ],
+            [
+              138.0,
+              109.0
+            ],
+            [
+              143.0,
+              106.0
+            ],
+            [
+              159.0,
+              109.0
+            ]
+          ],
+          "raster_pixels": 2394,
+          "bbox_xyxy_half_open": [
+            40,
+            64,
+            160,
+            113
+          ],
+          "shoelace_area": 2321.0
+        }
+      ],
+      "geometry_status": "PASS_GEOMETRY_ONLY",
+      "options": [
+        {
+          "crop_id": "default",
+          "box_xyxy_half_open": [
+            24,
+            0,
+            504,
+            480
+          ],
+          "kind": "DETERMINISTIC_DEFAULT",
+          "generation_rule": "M0 L=min(W,H); no padding; all polygons; edit=MaxFilter7/GaussianBlur1; RGB LANCZOS; mask NEAREST",
+          "files": {
+            "native_rgb": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/default/native_rgb.png",
+              "file_sha256": "49938e558719c54a839c37f5d29570f5e849aefa1eb292b86c5e45733ea44c44",
+              "pixel_sha256": "5a5663f7fd5db39fa0c92941658cecd4bc04564a42692b6a241ade88e979d900",
+              "mode": "RGB",
+              "shape": [
+                480,
+                640,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/default/native_polygon.png",
+              "file_sha256": "50b32cc4c054416228193c5290cd7389e7bf5dc3c768c0cc050d28eaba1276da",
+              "pixel_sha256": "9046495c5f9306106caad69c1854df6eafda91ad335a6c016833b39444d085af",
+              "mode": "L",
+              "shape": [
+                480,
+                640
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/default/native_edit_mask.png",
+              "file_sha256": "02d4c5fd5644b59516d8ce374d6e3c00613f869e96b7128ca89b82c8d64fdea0",
+              "pixel_sha256": "6150d716b427583a3b88da54d58dec0da53d3f066b945958242c7b1d95ff9bd8",
+              "mode": "L",
+              "shape": [
+                480,
+                640
+              ],
+              "dtype": "uint8"
+            },
+            "common_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/default/common_rgb_512.png",
+              "file_sha256": "2a71cf7ed0f711e895e6b83578ce6b7990b8701b1fd6bde1644918f6ab79ebbf",
+              "pixel_sha256": "49931f4894ad13e61414dadba272b9ef2dd90fa854717398efa3efa500b1a548",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "common_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/default/common_edit_mask_512.png",
+              "file_sha256": "6123e1c68bf37b67505635c7e9be93877519ad0f409ad3b939adead97ba75c4b",
+              "pixel_sha256": "72c4d72b60c8e4ae39fb6d0d332aff59b67fcbc46746920781fbbf9367dbc01f",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_rgb_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/default/sdxl_rgb_1024.png",
+              "file_sha256": "6540d4f5fce83e164d79604640b33743244d334856759b3c406a1d7e28a4338a",
+              "pixel_sha256": "dc14938b03831a71697e30ba5a063ce5653f0252c76cdcf4f76b40fd8927a3f6",
+              "mode": "RGB",
+              "shape": [
+                1024,
+                1024,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/default/sdxl_mask_1024.png",
+              "file_sha256": "f68a34c064a5402c5e5c7f275f0538af3e8f0e59c6119f48d36c199cc830d906",
+              "pixel_sha256": "d4b719bbb7681f4e562eb4e31b48350bcdb11b3dc2e287c725d61af9785d58d4",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "native_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/default/native_crop.png",
+              "file_sha256": "99325a7a583bad1e7b83f1f21cf860ecaf497ed214adc57b46353ce747190034",
+              "pixel_sha256": "28d250c969a698d01f0b955b49088a6c90cefe5a4a694d1738184eace6682974",
+              "mode": "RGB",
+              "shape": [
+                480,
+                480,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/default/native_polygon_crop.png",
+              "file_sha256": "69df98f4fad8c0dc9c177fed5e459a9cad42fa587d07e15db2065041616b509e",
+              "pixel_sha256": "84e93a833cfd8abd7eebc6d8377065973854e018cd7e624e3560e84a67e431d4",
+              "mode": "L",
+              "shape": [
+                480,
+                480
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/default/native_edit_mask_crop.png",
+              "file_sha256": "e443377d86c08fc482a7d1dbbe87fccab3ab54b913056ca31cb9fe79d8d2e7dd",
+              "pixel_sha256": "23c8f554ccd5e8837dc83faa227f05c35bd80a0c611234d0a435b9888a65fdfe",
+              "mode": "L",
+              "shape": [
+                480,
+                480
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/default/effective_edit_mask_512.png",
+              "file_sha256": "97dd5b70b615ee836560bf01f9de4f8019a701d28478525bd1f874d41ea35bcc",
+              "pixel_sha256": "00eafed4fe692ccc215c3c16d81006a5029fdc261fd89a939bd0bcae8f942860",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/default/effective_edit_mask_1024.png",
+              "file_sha256": "69254e64b2c6987641e30ae1b9d9e5eb84eed6d376672b12f625720543e2421c",
+              "pixel_sha256": "32e6ce6e57f8717e3eea03139271d799649d11ec4d4e5a429ad7bb3d71bda7d5",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "effective_mask_on_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/default/effective_mask_on_rgb_512.png",
+              "file_sha256": "ebce46a31c7f774d3c64eb36f830a802e213004297f241b456edae50ad2dac68",
+              "pixel_sha256": "abca820c57607180c5369f07f57090e285480c00a5f39cbcb80b7d3e6561a865",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "geometry_checks": {
+            "in_bounds_square": true,
+            "actual_bbox_context_margins_ltrb": [
+              16,
+              64,
+              344,
+              367
+            ],
+            "context_margin_pass": true,
+            "per_polygon_retention": [
+              1.0
+            ],
+            "target_retention": 1.0,
+            "edit_support_retention": 1.0,
+            "polygon512_pixels_missing_from_effective_mask": 0,
+            "native_polygon_pixels_missing_after_effective_mask_roundtrip": 0,
+            "effective_edit_pixels_512": 4005,
+            "grayscale_edit_support_pixels_512": 5069,
+            "unmasked_fraction_512_NOT_normal_metal_fraction": 0.9806632995605469,
+            "mask_polarity": "white=edit/black=preserve; Diffusers >=0.5 (uint8 >=128)",
+            "sdxl_mask_2x_exact": true,
+            "pixel_center_native_to_512_matrix": [
+              [
+                1.0666666666666667,
+                0.0,
+                -25.566666666666666
+              ],
+              [
+                0.0,
+                1.0666666666666667,
+                0.033333333333333326
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "pixel_center_inverse_matrix": [
+              [
+                0.9375,
+                0.0,
+                23.96875
+              ],
+              [
+                0.0,
+                0.9375,
+                -0.031249999999999993
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "coordinate_roundtrip_max_abs_error": 1.4210854715202004e-14,
+            "technical_pass": true
+          },
+          "contact_sheet": {
+            "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_protocol_review_contact_sheets/2_default.png",
+            "file_sha256": "7b8adb21d455d2aa7bab274d6b11a2195731a4a0a762d8c0b5aa2c539f17746f",
+            "pixel_sha256": "66afb723308fb35f433e2c48bc596130327846fd6674a6c9aeb13673a398c474",
+            "mode": "RGB",
+            "shape": [
+              3080,
+              1536,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "human_decision": "PENDING",
+          "used_for_inference": false,
+          "cross_model_same_crop": true
+        },
+        {
+          "crop_id": "alt_1",
+          "box_xyxy_half_open": [
+            0,
+            0,
+            480,
+            480
+          ],
+          "kind": "HUMAN_COMPARISON_PROPOSAL_ONLY",
+          "generation_rule": "M0 L=min(W,H); no padding; all polygons; edit=MaxFilter7/GaussianBlur1; RGB LANCZOS; mask NEAREST",
+          "files": {
+            "native_rgb": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/alt_1/native_rgb.png",
+              "file_sha256": "49938e558719c54a839c37f5d29570f5e849aefa1eb292b86c5e45733ea44c44",
+              "pixel_sha256": "5a5663f7fd5db39fa0c92941658cecd4bc04564a42692b6a241ade88e979d900",
+              "mode": "RGB",
+              "shape": [
+                480,
+                640,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/alt_1/native_polygon.png",
+              "file_sha256": "50b32cc4c054416228193c5290cd7389e7bf5dc3c768c0cc050d28eaba1276da",
+              "pixel_sha256": "9046495c5f9306106caad69c1854df6eafda91ad335a6c016833b39444d085af",
+              "mode": "L",
+              "shape": [
+                480,
+                640
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/alt_1/native_edit_mask.png",
+              "file_sha256": "02d4c5fd5644b59516d8ce374d6e3c00613f869e96b7128ca89b82c8d64fdea0",
+              "pixel_sha256": "6150d716b427583a3b88da54d58dec0da53d3f066b945958242c7b1d95ff9bd8",
+              "mode": "L",
+              "shape": [
+                480,
+                640
+              ],
+              "dtype": "uint8"
+            },
+            "common_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/alt_1/common_rgb_512.png",
+              "file_sha256": "3c6f9d36f874999d6ae54661a8c76b128c7db7f0863b06fc0397a88d03b4cd4c",
+              "pixel_sha256": "95630834487ff527ffa1e2414e99c55eac1d0ff47a92dc8af1de424eda1f4613",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "common_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/alt_1/common_edit_mask_512.png",
+              "file_sha256": "584b34276f07cd542ad18dec4abde6f05f130510d1d12af4ab700453fcca11f0",
+              "pixel_sha256": "6484b11c462bfb9c5a86bf63614c8fb2ff5168ee37b95fac19e3d46dee9a9f50",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_rgb_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/alt_1/sdxl_rgb_1024.png",
+              "file_sha256": "da54548da1500e95765023482a63e3de26bcf66f5e0fdf7e72fe6b74e3eb71d7",
+              "pixel_sha256": "d4675c861cb9f9720602bb505d4d5002829d75323163f72480ddb8f18540939f",
+              "mode": "RGB",
+              "shape": [
+                1024,
+                1024,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "sdxl_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/alt_1/sdxl_mask_1024.png",
+              "file_sha256": "1b5192c64477e9cec0cd40926e1e9af946138d8368abdcfc6bfad24b153253c3",
+              "pixel_sha256": "b22409b9b0ecc91814409f28f099babd3cc2581097ded2a4539161c1851ea4ab",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "native_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/alt_1/native_crop.png",
+              "file_sha256": "bc52f54b4af2e8ea92938126c481008487e5102b292a08e62b4ba8f805dae747",
+              "pixel_sha256": "528b014769716ea0c4f149f833f26a7c3a3625d15109ddb2422f879e6d6cf0c8",
+              "mode": "RGB",
+              "shape": [
+                480,
+                480,
+                3
+              ],
+              "dtype": "uint8"
+            },
+            "native_polygon_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/alt_1/native_polygon_crop.png",
+              "file_sha256": "f1b981e71a577e6261bfc1988587850732422e428199d9fc358722827606b158",
+              "pixel_sha256": "ec4142af0dc73b72330dad06681bf5f00a9957a264da9d6aa2c2801e2fa8cf4f",
+              "mode": "L",
+              "shape": [
+                480,
+                480
+              ],
+              "dtype": "uint8"
+            },
+            "native_edit_mask_crop": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/alt_1/native_edit_mask_crop.png",
+              "file_sha256": "030d2ea5ccb1241de2236c5c4680481077e580b9076ebd5e82a81b7bfc2af0e7",
+              "pixel_sha256": "dc7ca2fb6be03f8334a828b0b2a0574bdf5d8ce46ac38fd79231d527c679445a",
+              "mode": "L",
+              "shape": [
+                480,
+                480
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/alt_1/effective_edit_mask_512.png",
+              "file_sha256": "2aee6d7a130627a1cae17ad2ad6b93dd03caf087b2e32a7d0269d683e104c840",
+              "pixel_sha256": "27baa44cfc7ecf0a6625b206fb457c35374ca1b0d551208b3c9427035968b929",
+              "mode": "L",
+              "shape": [
+                512,
+                512
+              ],
+              "dtype": "uint8"
+            },
+            "effective_edit_mask_1024": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/alt_1/effective_edit_mask_1024.png",
+              "file_sha256": "3ad6504ae4ae426da0cf2cb061cd8062192639f2c90fe8ef7423a251313bfd4a",
+              "pixel_sha256": "6b337070230a2b999fc5a295ce500b853de2892b26c3ce8d1b21b28c9e6f3f42",
+              "mode": "L",
+              "shape": [
+                1024,
+                1024
+              ],
+              "dtype": "uint8"
+            },
+            "effective_mask_on_rgb_512": {
+              "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_assets/2/alt_1/effective_mask_on_rgb_512.png",
+              "file_sha256": "3cec8ecc1fb6dcb1e0326f32d12677286e83f5e5e520e059288b40048ee023ce",
+              "pixel_sha256": "83c2a5f8d4c45c4e79a70e1ed6f808c75dd069585dd5211a9712d2366f49669a",
+              "mode": "RGB",
+              "shape": [
+                512,
+                512,
+                3
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "geometry_checks": {
+            "in_bounds_square": true,
+            "actual_bbox_context_margins_ltrb": [
+              40,
+              64,
+              320,
+              367
+            ],
+            "context_margin_pass": true,
+            "per_polygon_retention": [
+              1.0
+            ],
+            "target_retention": 1.0,
+            "edit_support_retention": 1.0,
+            "polygon512_pixels_missing_from_effective_mask": 0,
+            "native_polygon_pixels_missing_after_effective_mask_roundtrip": 0,
+            "effective_edit_pixels_512": 4028,
+            "grayscale_edit_support_pixels_512": 5071,
+            "unmasked_fraction_512_NOT_normal_metal_fraction": 0.9806556701660156,
+            "mask_polarity": "white=edit/black=preserve; Diffusers >=0.5 (uint8 >=128)",
+            "sdxl_mask_2x_exact": true,
+            "pixel_center_native_to_512_matrix": [
+              [
+                1.0666666666666667,
+                0.0,
+                0.033333333333333326
+              ],
+              [
+                0.0,
+                1.0666666666666667,
+                0.033333333333333326
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "pixel_center_inverse_matrix": [
+              [
+                0.9375,
+                0.0,
+                -0.031249999999999993
+              ],
+              [
+                0.0,
+                0.9375,
+                -0.031249999999999993
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "coordinate_roundtrip_max_abs_error": 1.4210854715202004e-14,
+            "technical_pass": true
+          },
+          "contact_sheet": {
+            "path": "results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_protocol_review_contact_sheets/2_alt_1.png",
+            "file_sha256": "a0d541a2d47c69d2ee856b87cc3dcd0502b13eef44b39d9a294742fb00d1aad2",
+            "pixel_sha256": "f3154cbd059387da17633231978748bc8f1907bc2eec87772be39595d55618cc",
+            "mode": "RGB",
+            "shape": [
+              3080,
+              1536,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "human_decision": "PENDING",
+          "used_for_inference": false,
+          "cross_model_same_crop": true
+        }
+      ],
+      "selected_crop_id": "PENDING",
+      "input_semantic_eligibility": "PENDING_USER_REVIEW",
+      "context_and_fov_checks": {
+        "Whole ROI GE/UI/FOV contamination": "PENDING",
+        "Gray border / invalid area": "PENDING",
+        "Real metal seam, cavity or physical structure edge": "PENDING",
+        "Enough valid normal metal texture (unmasked does NOT mean normal)": "PENDING",
+        "Unannotated additional defects / plausible normal restoration target": "PENDING"
+      },
+      "reason": "First fixed-order unique geometry pass",
+      "technical_errors_not_overridable_by_human_pass": true
+    }
+  ],
+  "review_owner": "USER",
+  "approved_sources": [],
+  "executable_now": 0
+}

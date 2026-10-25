@@ -1,0 +1,16 @@
+{
+  "status": "PASS_HISTORY_PROTECTION",
+  "server_head": "787a3be0190dfa9b11c5416a5b686a6bae4598d9",
+  "historical_status_entries": 11754,
+  "m0_files_hash_verified": 68,
+  "ledger_sha256": "3af2d074b640023e5e2c66198ae3b1ee74cedb3d7829f802c6cf84a62fa1ca94",
+  "new_paths_only": [
+    "results/exp13_2_m0_r1/20261025T122430Z_m0r1/",
+    "tools/exp13_2_m0_r1_source_reselection.py",
+    "tools/exp13_2_m0_r1_validate_package.py"
+  ],
+  "no_server_sync": true,
+  "raw_writes": 0,
+  "new_inference": 0,
+  "model_loads": 0
+}

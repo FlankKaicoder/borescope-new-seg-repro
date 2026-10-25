@@ -1,5 +1,7 @@
 # Experiment index
 
+Latest extension: **Exp13.2-M0-R1 — `EXP13_2_M0_R1_PREPARED_AWAITING_HUMAN_INPUT_REVIEW`**. [Review](exp13_2_m0_r1_source_reselection_review.md); [handoff](exp13_2_m0_r1_handoff.md); `results/exp13_2_m0_r1/20261025T122430Z_m0r1/`. Retained469/260/470/8 defaults verified; new corrosion1/2 reach preferred3+3 geometry pool after two fixed-order inspections. All6 user input decisions pending. Controlled62,181,247-byte ZIP contains16 sheets/10 alternatives, exact512/1024/effective masks and pending template;230 entries verified. Proposed future calls12, executable0; S5 remains4/4 with0 Smoke, no model/inference/training. Exclusions9/23 and history intact; no M1 authorization.
+
 Latest extension: **Exp13.2-M0 — `EXP13_2_M0_SOURCE_OR_PROTOCOL_HOLD` / `SOURCE_SELECTION_HOLD`**. [Review](exp13_2_m0_matched_comparison_preflight.md); [handoff](exp13_2_m0_handoff.md); `results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/`. Six TRAIN sources audited CPU-only, four geometry-only candidates (Crack3/corrosion1), zero approved inputs. Shared512/1024 protocol, static local model hashes and future blind review preregistered; no model/inference/training or M1 authorization. S5 remains4/4.
 
 | Experiment | Final status | Primary evidence |

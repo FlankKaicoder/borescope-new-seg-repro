@@ -1,0 +1,20 @@
+{
+  "authoritative_ledger": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s5/20261025T230000Z_s5/budget_successor_ledger.json",
+  "sha256_before": "3af2d074b640023e5e2c66198ae3b1ee74cedb3d7829f802c6cf84a62fa1ca94",
+  "sha256_after": "3af2d074b640023e5e2c66198ae3b1ee74cedb3d7829f802c6cf84a62fa1ca94",
+  "occupied_calls": 4,
+  "actual_calls": 4,
+  "smoke_remaining": 0,
+  "aggregate_remaining": 116,
+  "all_local_remaining": 296,
+  "new_model_calls": 0,
+  "model_loads": 0,
+  "downloads": 0,
+  "gpt_fallback": 0,
+  "retry": 0,
+  "reservations_created": 0,
+  "new_successor_created": false,
+  "proposed_future_calls": 12,
+  "executable_now": 0,
+  "future_rule": "Separate M1 authorization only; single locked successor inherits complete S5 history; atomic two-call pair reserve; STARTED persisted before inference; failure charged; no retry/no replacement/no incomplete-pair win; Pilot/Revision not Smoke"
+}

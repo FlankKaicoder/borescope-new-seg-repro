@@ -1,0 +1,5 @@
+Verified all four immutable M0 defaults and original exclusions
+Rehashed local model bytes without importing model packages
+Corrosion candidate 1 PASS_GEOMETRY_ONLY None
+Corrosion candidate 2 PASS_GEOMETRY_ONLY None
+{"status": "EXP13_2_M0_R1_PREPARED_AWAITING_HUMAN_INPUT_REVIEW", "selected": ["469", "260", "470", "8", "1", "2"], "review_zip": {"path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_protocol_review_package.zip", "sha256": "6f683f6521737437ef37a5f24e24581865fd59467694dca779102c15a3bf53fc", "bytes": 62181247, "review_sheet_count": 16, "source_count": 6, "controlled_server_only": true}}

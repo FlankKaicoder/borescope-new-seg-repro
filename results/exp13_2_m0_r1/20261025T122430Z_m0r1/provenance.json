@@ -1,0 +1,45 @@
+{
+  "started_at": "2026-10-25T12:24:27.064807+00:00",
+  "finished_at": "2026-10-25T12:25:35.746206+00:00",
+  "report_start_head": "7e859bfc20e75f47e65fbfa22e25f017e3f8879f",
+  "execution_server_head": "787a3be0190dfa9b11c5416a5b686a6bae4598d9",
+  "script_sha256": "72a89e9cf136c8a3b2ea3b5210f8c601f415aa5993d93a088eada49c42a0b0ef",
+  "split_manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "packages": {
+    "numpy": "2.3.2",
+    "pillow": "11.3.0"
+  },
+  "python": "3.12.3",
+  "model_packages_imported": [],
+  "opened_train_source_ids": [
+    "469",
+    "260",
+    "470",
+    "8",
+    "1",
+    "2"
+  ],
+  "val_access": 0,
+  "test_access": 0,
+  "raw_write": 0,
+  "split_write": 0,
+  "model_load": 0,
+  "new_inference": 0,
+  "model_download": 0,
+  "ssl_training": 0,
+  "yolo_training": 0,
+  "trusted_pair_freeze": 0,
+  "historical_git_entries_unchanged": true,
+  "m0_hash_inventory_unchanged": true,
+  "disk_free_bytes_after": 17498406912,
+  "controlled_zip": {
+    "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_m0_r1/20261025T122430Z_m0r1/input_protocol_review_package.zip",
+    "sha256": "6f683f6521737437ef37a5f24e24581865fd59467694dca779102c15a3bf53fc",
+    "bytes": 62181247,
+    "review_sheet_count": 16,
+    "source_count": 6,
+    "controlled_server_only": true
+  },
+  "no_paper_repo_access": true,
+  "no_git_cleanup_or_server_sync": true
+}
