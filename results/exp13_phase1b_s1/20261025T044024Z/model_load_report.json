@@ -1,0 +1,11 @@
+{
+  "status": "NOT_ATTEMPTED_SOURCE_PREFLIGHT_HOLD",
+  "local_path": "/root/autodl-tmp/models_staging/exp13_phase1b_r3_20261025T042354Z/sdxl-inpainting-0.1",
+  "from_pretrained_called": false,
+  "gpu_model_load": false,
+  "inference_calls": 0,
+  "gpu_peak_memory": null,
+  "load_seconds": null,
+  "exception": null,
+  "reason": "Source 17 roi_1 polygon reaches x=718 in a 720-pixel-wide native image, clamps the ROI at x=720, and visually overlaps the bright right FOV/frame/overlay region; safe restoration support cannot be confirmed. S1 forbids substituting a different source or silently reducing source 17."
+}

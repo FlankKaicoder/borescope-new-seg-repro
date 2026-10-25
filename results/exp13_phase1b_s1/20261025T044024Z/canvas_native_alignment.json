@@ -1,0 +1,55 @@
+{
+  "status": "STATIC_GEOMETRY_ONLY; MODEL CANVAS NOT BUILT",
+  "canvas_size": 1024,
+  "source_roi_transforms": [
+    {
+      "2": [
+        {
+          "native_width": 152,
+          "native_height": 81,
+          "canvas_size": 1024,
+          "scale": 6.7368421052631575,
+          "resized_width": 1024,
+          "resized_height": 546,
+          "pad_left": 0,
+          "pad_top": 239,
+          "resize_interpolation": "lanczos_image_nearest_mask",
+          "mask_interpolation": "nearest",
+          "padding_mode": "reflect_or_constant_declared_by_runner"
+        }
+      ]
+    },
+    {
+      "17": [
+        {
+          "native_width": 114,
+          "native_height": 135,
+          "canvas_size": 1024,
+          "scale": 7.5851851851851855,
+          "resized_width": 865,
+          "resized_height": 1024,
+          "pad_left": 79,
+          "pad_top": 0,
+          "resize_interpolation": "lanczos_image_nearest_mask",
+          "mask_interpolation": "nearest",
+          "padding_mode": "reflect_or_constant_declared_by_runner"
+        },
+        {
+          "native_width": 301,
+          "native_height": 397,
+          "canvas_size": 1024,
+          "scale": 2.579345088161209,
+          "resized_width": 776,
+          "resized_height": 1024,
+          "pad_left": 124,
+          "pad_top": 0,
+          "resize_interpolation": "lanczos_image_nearest_mask",
+          "mask_interpolation": "nearest",
+          "padding_mode": "reflect_or_constant_declared_by_runner"
+        }
+      ]
+    }
+  ],
+  "native_roundtrip_tested": false,
+  "padding_submission_tested": false
+}

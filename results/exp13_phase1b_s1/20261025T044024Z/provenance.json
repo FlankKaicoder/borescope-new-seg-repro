@@ -1,0 +1,18 @@
+{
+  "run_id": "20261025T044024Z",
+  "created_utc": "2026-10-25T04:42:15.959134+00:00",
+  "git_branch": "exp13/vlm-semantic-audit",
+  "git_head": "e64436185f5d5b36aba79c7643aa1fc66f955af3",
+  "model_path": "/root/autodl-tmp/models_staging/exp13_phase1b_r3_20261025T042354Z/sdxl-inpainting-0.1",
+  "model_revision_reference": "115134f363124c53c7d878647567d04daf26e41e",
+  "model_revision_license_provenance": "user-provided Windows official snapshot/API evidence; no AutoDL network metadata query",
+  "source_ids": [
+    "2",
+    "17"
+  ],
+  "train_manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "actual_call_ids": [],
+  "actual_call_count": 0,
+  "budget_ledger_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s1/20261025T044024Z/call_ledger.json",
+  "stop_before_model_load": true
+}

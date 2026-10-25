@@ -1,0 +1,7 @@
+{
+  "status": "NO_GENERATED_OUTPUT; INPUT_GEOMETRY_REVIEW_ONLY",
+  "repair_quality_judged": false,
+  "source17_fov_finding": "ROI 1 intersects the image frame and annotation/bright boundary region; hold.",
+  "contact_sheet_server_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s1/20261025T044024Z/source_fov_review_contact.png",
+  "contact_sheet_sha256": "366d0921d87945b43eb8feaba1d302cbff62924e3339a824c27b3755ecf2bca9"
+}

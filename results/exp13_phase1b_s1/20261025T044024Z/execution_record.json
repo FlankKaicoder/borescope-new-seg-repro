@@ -1,0 +1,23 @@
+{
+  "run_id": "20261025T044024Z",
+  "successful_command": "cd /root/autodl-tmp/borescope-new-seg-repro && export PYTHONPATH=/root/autodl-tmp/borescope-new-seg-repro && set -o pipefail && /root/miniconda3/bin/python tools/exp13_restoration/audit_phase1b_s1_sources.py 2>&1 | tee /tmp/exp13_phase1b_s1_20261025T044024Z_stdout_stderr.log",
+  "successful_exit_code": 0,
+  "successful_stdout_stderr_server_path": "/tmp/exp13_phase1b_s1_20261025T044024Z_stdout_stderr.log",
+  "preparatory_attempts": [
+    {
+      "command": "cd /root/autodl-tmp/borescope-new-seg-repro && /root/miniconda3/bin/python tools/exp13_restoration/audit_phase1b_s1_sources.py",
+      "exit_code": 1,
+      "error": "ModuleNotFoundError: No module named 'tools'; no run result was created by this invocation."
+    },
+    {
+      "command": "cd /root/autodl-tmp/borescope-new-seg-repro && export PYTHONPATH=$PWD && /root/miniconda3/bin/python tools/exp13_restoration/audit_phase1b_s1_sources.py",
+      "exit_code": 1,
+      "error": "ModuleNotFoundError: No module named 'tools'; no run result was created by this invocation."
+    }
+  ],
+  "execution_scope": "TRAIN manifest source/geometry and model artifact hash preflight only",
+  "from_pretrained_called": false,
+  "gpu_model_load": false,
+  "inference_calls": 0,
+  "budget_reservations": 0
+}

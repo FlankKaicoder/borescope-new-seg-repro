@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "definition": "one LOCAL_MODEL_CALL = one ROI, one strength, one actual inference; every non-cancelled reservation occupies budget",
+  "planned_calls": 0,
+  "actual_calls": 0,
+  "occupied_calls": 0,
+  "retry_calls": 0,
+  "gpt_fallback_calls": 0,
+  "smoke_reserved": 0,
+  "staged_reserved": 0,
+  "caps": {
+    "smoke": 4,
+    "smoke_pilot_revision": 120,
+    "all_local": 300,
+    "unique_sources": 100,
+    "retry_sources": 10,
+    "gpt_fallback": 14
+  },
+  "production_sources": [],
+  "retry_sources": [],
+  "calls": {},
+  "history": [],
+  "remaining": {
+    "all_local": 300,
+    "smoke_pilot_revision": 120,
+    "smoke": 4,
+    "unique_sources": 100,
+    "retry_sources": 10
+  },
+  "execution_blocked_if_over_cap": true
+}

@@ -1,0 +1,22 @@
+{
+  "experiment": "EXP13_PHASE1B_S1_REAL_SDXL_ENGINEERING_SMOKE",
+  "run_id": "20261025T044024Z",
+  "status": "EXP13_PHASE1B_S1_HOLD",
+  "gates": {
+    "S1-A_model_artifact_hash_preflight": "PASS",
+    "S1-B_memory_runtime": "NOT_RUN",
+    "S1-C_mask_canvas_alignment": "NOT_RUN",
+    "S1-D_source2_inference": "NOT_RUN",
+    "S1-E_source17_inference": "HOLD",
+    "S1-F_visual_quality": "NOT_RUN",
+    "S1-G_budget_data_protection": "PASS_NO_CALLS"
+  },
+  "hold_reason": "Source 17 roi_1 polygon reaches x=718 in a 720-pixel-wide native image, clamps the ROI at x=720, and visually overlaps the bright right FOV/frame/overlay region; safe restoration support cannot be confirmed. S1 forbids substituting a different source or silently reducing source 17.",
+  "model_loaded": false,
+  "real_roi_calls": 0,
+  "source_plan": {
+    "source2_rois": 1,
+    "source17_rois": 2
+  },
+  "next_action": "Stop for ChatGPT Gate; do not substitute source or load model until FOV issue receives explicit resolution/authorization."
+}

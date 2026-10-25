@@ -1,0 +1,495 @@
+{
+  "status": "HOLD",
+  "train_manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "sources": [
+    {
+      "source_id": "2",
+      "split": "train",
+      "image_path": "2.png",
+      "annotation_path": "2.json",
+      "image_sha256": "514d07947ee5ff2d3ac8e160ac58a28bb159ed2549105e4998eaed4b0ba4bc03",
+      "annotation_sha256": "e4fa956d8ae736e4e851dde5fcf66e16faf2bf87deb284c81039da3e5621717a",
+      "native_shape_hwc": [
+        480,
+        640,
+        3
+      ],
+      "native_dtype": "uint8",
+      "polygon_count": 1,
+      "independent_roi_groups": [
+        [
+          "roi_0"
+        ]
+      ],
+      "roi_count": 1,
+      "rois": [
+        {
+          "source_id": "2",
+          "roi_id": "roi_0",
+          "class_name": "corrosion",
+          "polygon_points_xy": [
+            [
+              158.0,
+              112.0
+            ],
+            [
+              138.0,
+              110.0
+            ],
+            [
+              127.0,
+              112.0
+            ],
+            [
+              66.0,
+              111.0
+            ],
+            [
+              64.0,
+              107.0
+            ],
+            [
+              52.0,
+              100.0
+            ],
+            [
+              50.0,
+              82.0
+            ],
+            [
+              53.0,
+              77.0
+            ],
+            [
+              46.0,
+              69.0
+            ],
+            [
+              43.0,
+              71.0
+            ],
+            [
+              40.0,
+              64.0
+            ],
+            [
+              53.0,
+              64.0
+            ],
+            [
+              59.0,
+              68.0
+            ],
+            [
+              62.0,
+              74.0
+            ],
+            [
+              69.0,
+              78.0
+            ],
+            [
+              93.0,
+              78.0
+            ],
+            [
+              101.0,
+              83.0
+            ],
+            [
+              118.0,
+              101.0
+            ],
+            [
+              121.0,
+              99.0
+            ],
+            [
+              126.0,
+              104.0
+            ],
+            [
+              131.0,
+              101.0
+            ],
+            [
+              135.0,
+              102.0
+            ],
+            [
+              135.0,
+              106.0
+            ],
+            [
+              138.0,
+              109.0
+            ],
+            [
+              143.0,
+              106.0
+            ],
+            [
+              159.0,
+              109.0
+            ]
+          ],
+          "polygon_pixels": 2394,
+          "native_polygon_mask_sha256": "ff94041bce6b68941bb1ebc0cc6d36d243bb30cb1b6d2767b912f4edc519bdc2",
+          "native_edit_support_pixels": 3135,
+          "native_edit_support_sha256": "f78ce836654ba6e3d7ee0b3c9163deb00c4255238c324b6dad2bc175585af59f",
+          "roi_box_xyxy": [
+            24,
+            48,
+            176,
+            129
+          ],
+          "roi_shape_hw": [
+            81,
+            152
+          ],
+          "canvas_size": 1024,
+          "canvas_transform": {
+            "native_width": 152,
+            "native_height": 81,
+            "canvas_size": 1024,
+            "scale": 6.7368421052631575,
+            "resized_width": 1024,
+            "resized_height": 546,
+            "pad_left": 0,
+            "pad_top": 239,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false,
+          "geometry_fov_status": "UNASSESSED",
+          "minimum_polygon_distance_to_image_border_px": 40.0
+        }
+      ],
+      "edit_support_union_pixels": 3135,
+      "target_roi_plan_match": true,
+      "any_geometry_fov_uncertain": false
+    },
+    {
+      "source_id": "17",
+      "split": "train",
+      "image_path": "17.png",
+      "annotation_path": "17.json",
+      "image_sha256": "84faf142b5177e0f212c8e8d5ac0cccdd16153d1c667720b30cd49d2a5cd1dcc",
+      "annotation_sha256": "bb4b050090e51e40c029ac7bf2014953d44a3eb17f68323bfbca73c3e177396b",
+      "native_shape_hwc": [
+        540,
+        720,
+        3
+      ],
+      "native_dtype": "uint8",
+      "polygon_count": 2,
+      "independent_roi_groups": [
+        [
+          "roi_0"
+        ],
+        [
+          "roi_1"
+        ]
+      ],
+      "roi_count": 2,
+      "rois": [
+        {
+          "source_id": "17",
+          "roi_id": "roi_0",
+          "class_name": "Crack",
+          "polygon_points_xy": [
+            [
+              225.2777777777778,
+              367.6190476190476
+            ],
+            [
+              202.00793650793653,
+              394.36507936507934
+            ],
+            [
+              190.00793650793653,
+              420.36507936507934
+            ],
+            [
+              158.00793650793653,
+              461.36507936507934
+            ],
+            [
+              178.00793650793653,
+              463.36507936507934
+            ],
+            [
+              197.00793650793653,
+              418.36507936507934
+            ],
+            [
+              219.00793650793653,
+              400.36507936507934
+            ],
+            [
+              238.00793650793653,
+              362.36507936507934
+            ]
+          ],
+          "polygon_pixels": 1450,
+          "native_polygon_mask_sha256": "954b1f178eff5d930f544832d4f8acce07f5de421fab3f89bbd0696bbad436e5",
+          "native_edit_support_pixels": 2198,
+          "native_edit_support_sha256": "96d3660be7d7716e2fa427aeeae048a57fd3c673e14c6d1e8c7320b56c16b192",
+          "roi_box_xyxy": [
+            142,
+            346,
+            256,
+            481
+          ],
+          "roi_shape_hw": [
+            135,
+            114
+          ],
+          "canvas_size": 1024,
+          "canvas_transform": {
+            "native_width": 114,
+            "native_height": 135,
+            "canvas_size": 1024,
+            "scale": 7.5851851851851855,
+            "resized_width": 865,
+            "resized_height": 1024,
+            "pad_left": 79,
+            "pad_top": 0,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": false,
+          "geometry_fov_status": "UNASSESSED",
+          "minimum_polygon_distance_to_image_border_px": 75.63492063492066
+        },
+        {
+          "source_id": "17",
+          "roi_id": "roi_1",
+          "class_name": "corrosion",
+          "polygon_points_xy": [
+            [
+              448.2936507936508,
+              132.6984126984127
+            ],
+            [
+              480.0079365079365,
+              191.36507936507937
+            ],
+            [
+              517.0079365079365,
+              248.36507936507937
+            ],
+            [
+              536.0079365079365,
+              271.36507936507934
+            ],
+            [
+              544.0079365079365,
+              188.36507936507937
+            ],
+            [
+              584.0079365079365,
+              179.36507936507937
+            ],
+            [
+              614.0079365079365,
+              197.36507936507937
+            ],
+            [
+              622.0079365079365,
+              240.36507936507937
+            ],
+            [
+              616.0079365079365,
+              335.36507936507934
+            ],
+            [
+              611.0079365079365,
+              355.36507936507934
+            ],
+            [
+              648.0079365079365,
+              393.36507936507934
+            ],
+            [
+              687.0079365079365,
+              424.36507936507934
+            ],
+            [
+              717.0079365079365,
+              442.36507936507934
+            ],
+            [
+              718.0079365079365,
+              194.36507936507937
+            ],
+            [
+              717.0079365079365,
+              96.36507936507935
+            ],
+            [
+              705.0079365079365,
+              79.36507936507935
+            ],
+            [
+              611.0079365079365,
+              89.36507936507935
+            ],
+            [
+              538.0079365079365,
+              92.36507936507935
+            ],
+            [
+              496.0079365079365,
+              98.36507936507935
+            ],
+            [
+              452.0079365079365,
+              111.36507936507935
+            ],
+            [
+              435.0079365079365,
+              116.36507936507935
+            ]
+          ],
+          "polygon_pixels": 50283,
+          "native_polygon_mask_sha256": "4e37c30975dfea788befc16117f0207e8e8abe17e37ecc5ba0c156908fa88b15",
+          "native_edit_support_pixels": 53127,
+          "native_edit_support_sha256": "107a8ac2afb8eec0dc22a661083c4e4b33d77e63d6402a6bf0b9142335717c43",
+          "roi_box_xyxy": [
+            419,
+            63,
+            720,
+            460
+          ],
+          "roi_shape_hw": [
+            397,
+            301
+          ],
+          "canvas_size": 1024,
+          "canvas_transform": {
+            "native_width": 301,
+            "native_height": 397,
+            "canvas_size": 1024,
+            "scale": 2.579345088161209,
+            "resized_width": 776,
+            "resized_height": 1024,
+            "pad_left": 124,
+            "pad_top": 0,
+            "resize_interpolation": "lanczos_image_nearest_mask",
+            "mask_interpolation": "nearest",
+            "padding_mode": "reflect_or_constant_declared_by_runner"
+          },
+          "roi_clamped": true,
+          "geometry_fov_status": "FOV_UNCERTAIN",
+          "minimum_polygon_distance_to_image_border_px": 0.9920634920634939
+        }
+      ],
+      "edit_support_union_pixels": 55325,
+      "target_roi_plan_match": true,
+      "any_geometry_fov_uncertain": true
+    }
+  ],
+  "source17_roi1_fov_evidence": {
+    "roi_id": "roi_1",
+    "polygon_points_xy": [
+      [
+        448.2936507936508,
+        132.6984126984127
+      ],
+      [
+        480.0079365079365,
+        191.36507936507937
+      ],
+      [
+        517.0079365079365,
+        248.36507936507937
+      ],
+      [
+        536.0079365079365,
+        271.36507936507934
+      ],
+      [
+        544.0079365079365,
+        188.36507936507937
+      ],
+      [
+        584.0079365079365,
+        179.36507936507937
+      ],
+      [
+        614.0079365079365,
+        197.36507936507937
+      ],
+      [
+        622.0079365079365,
+        240.36507936507937
+      ],
+      [
+        616.0079365079365,
+        335.36507936507934
+      ],
+      [
+        611.0079365079365,
+        355.36507936507934
+      ],
+      [
+        648.0079365079365,
+        393.36507936507934
+      ],
+      [
+        687.0079365079365,
+        424.36507936507934
+      ],
+      [
+        717.0079365079365,
+        442.36507936507934
+      ],
+      [
+        718.0079365079365,
+        194.36507936507937
+      ],
+      [
+        717.0079365079365,
+        96.36507936507935
+      ],
+      [
+        705.0079365079365,
+        79.36507936507935
+      ],
+      [
+        611.0079365079365,
+        89.36507936507935
+      ],
+      [
+        538.0079365079365,
+        92.36507936507935
+      ],
+      [
+        496.0079365079365,
+        98.36507936507935
+      ],
+      [
+        452.0079365079365,
+        111.36507936507935
+      ],
+      [
+        435.0079365079365,
+        116.36507936507935
+      ]
+    ],
+    "roi_box_xyxy": [
+      419,
+      63,
+      720,
+      460
+    ],
+    "rightmost_polygon_x": 718.0079365079365,
+    "native_width": 720,
+    "visual_review_png": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s1/20261025T044024Z/source_fov_review_contact.png",
+    "finding": "FOV/frame/annotation-overlay risk unresolved; do not run this ROI"
+  },
+  "hold_reason": "Source 17 roi_1 polygon reaches x=718 in a 720-pixel-wide native image, clamps the ROI at x=720, and visually overlaps the bright right FOV/frame/overlay region; safe restoration support cannot be confirmed. S1 forbids substituting a different source or silently reducing source 17."
+}

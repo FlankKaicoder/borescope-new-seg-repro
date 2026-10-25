@@ -175,3 +175,9 @@ System DNS answers on Windows and AutoDL were inconsistent and could not be auth
 `EXP13_PHASE1B_R3_ARTIFACT_VERIFIED_PENDING_CHATGPT_GATE`. [Review](exp13_phase1b_r3_artifact_review.md); [handoff](exp13_phase1b_r3_handoff.md); [evidence](../results/exp13_phase1b_r3/20261025T042354Z/summary.json).
 
 All 19 server-side files match the supplied Windows manifest by size and SHA256; static FP16 structure and offline dependency checks pass. The manifest's official origin is supported by user-provided Windows snapshot/API evidence, not a server-side Hugging Face query. No model load, inference, budget use, VAL/TEST access, or training occurred; GPU Smoke remains unauthorized pending ChatGPT Gate.
+
+## Exp13 Phase 1-B-S1 authorized GPU Smoke preflight (2026-10-25)
+
+`EXP13_PHASE1B_S1_HOLD`. [Review](exp13_phase1b_s1_smoke_review.md); [handoff](exp13_phase1b_s1_handoff.md); [evidence](../results/exp13_phase1b_s1/20261025T044024Z/summary.json).
+
+Stopped before model load because source 17 ROI1 reaches the image's right edge and overlaps unresolved FOV/frame/overlay content. Both authorized sources are required, so source 2 was not run alone. Local model hashes pass the supplied R3 manifest; GPU model load/inference and budget reservations remain zero. The input-only contact sheet is retained on AutoDL, not in Git.

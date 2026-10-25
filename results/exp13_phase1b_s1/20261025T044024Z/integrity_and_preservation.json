@@ -1,0 +1,16 @@
+{
+  "status": "PASS_BOUNDED_HOLD",
+  "raw_dataset_write_count": 0,
+  "val_access": 0,
+  "test_access": 0,
+  "model_download": 0,
+  "model_load": 0,
+  "inference_calls": 0,
+  "smoke_reservations": 0,
+  "ssl_training": 0,
+  "yolo_training": 0,
+  "old_partial_model_directory_modified": false,
+  "model_files_modified": false,
+  "frozen_train_manifest_unchanged": true,
+  "history_untracked_assets_preserved": true
+}

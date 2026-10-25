@@ -215,3 +215,11 @@ Prepared only historical TRAIN R1 Crack86/260 and corrosion2/8 v1/v2: 8 candidat
 - Archive path safety, isolated extraction, required FP16 component structure, JSON parsing, safetensors header/layout inspection, and offline dependency imports passed. The old partial model directory was left untouched. Model weights and TAR remain outside Git.
 - This was static-only: no `from_pretrained`, GPU model load, inference, Smoke budget reservation, VAL/TEST access, raw-data write, SSL, or YOLO training. Diffusers runtime load and 12 GiB Smoke feasibility remain unestablished.
 - Evidence: `results/exp13_phase1b_r3/20261025T042354Z/`; review and handoff: `docs/exp13_phase1b_r3_artifact_review.md` and `docs/exp13_phase1b_r3_handoff.md`. Stop for ChatGPT Gate; no Smoke/Pilot/SSL authorization is implied.
+
+### Exp13 Phase 1-B-S1 authorized GPU Smoke preflight (2026-10-25)
+
+- Status: `EXP13_PHASE1B_S1_HOLD`; stopped before model load or inference.
+- Source 2 passed its one-ROI TRAIN geometry check. Source 17 has two independent ROIs, but `roi_1` reaches x=718.008 in a 720-pixel image, clamps at the right boundary and overlaps the bright frame/FOV/overlay region; safe support is unresolved. The exact two-source plan was not changed and source 2 was not run by itself.
+- R3 local model artifact recheck passed against the supplied manifest (19/19, 6,941,223,330 bytes). This did not invoke `from_pretrained` or GPU loading. Persistent ledger has zero reserved/started/actual calls; VAL/TEST and raw-data writes are zero.
+- Input-only source/FOV preview is retained on AutoDL at `results/exp13_phase1b_s1/20261025T044024Z/source_fov_review_contact.png` and not committed. Review/handoff: `docs/exp13_phase1b_s1_smoke_review.md`, `docs/exp13_phase1b_s1_handoff.md`.
+- Stop for ChatGPT Gate and explicit resolution of source eligibility; no substitution, Pilot, trusted-pair freeze, SSL, or downstream training is implied.
