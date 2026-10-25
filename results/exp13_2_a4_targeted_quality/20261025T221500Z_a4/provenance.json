@@ -1,0 +1,18 @@
+{
+  "run_id": "20261025T221500Z_a4",
+  "created_utc": "2026-10-25T10:49:52.622404+00:00",
+  "script": "tools/exp13_2_a4_targeted_quality.py",
+  "repo_head": "787a3be0190dfa9b11c5416a5b686a6bae4598d9",
+  "inputs": [
+    "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_a3_dreamshaper_review/20261025T203500Z_a3/historical_88_variant_inventory.csv",
+    "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_restoration_feasibility/a0_20261021_081812",
+    "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_restoration_feasibility/qa_20261023_batch01_user_review_overlay.csv",
+    "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_overlay.csv",
+    "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_a3_dreamshaper_review/20261025T203500Z_a3/historical_user_decisions_crosswalk.json"
+  ],
+  "source_scope": "TRAIN only",
+  "model_calls": 0,
+  "model_loads": 0,
+  "raw_data_write": 0,
+  "note": "Metadata generated on AutoDL; controlled industrial review images remain outside Git."
+}

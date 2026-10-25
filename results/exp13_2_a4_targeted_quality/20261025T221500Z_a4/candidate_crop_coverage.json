@@ -1,0 +1,55 @@
+{
+  "candidates": [
+    {
+      "variant_id": "crack_111_v2",
+      "native_source_size": "results/exp13_diffusion_pilot/run_20260921_124440/crack/inputs/vlm_02_111.png",
+      "native_crop_xyxy": "[90.0, 0.0, 630.0, 540.0]",
+      "scale": "0.9481481481481482",
+      "original_mask_retained_fraction_native_crop": "1.0",
+      "original_mask_retained_fraction_inventory": null,
+      "roi_bbox_xyxy": "[179, 282, 400, 372]",
+      "coverage_status": "PIXEL_COVERAGE_AUDIT_ONLY"
+    },
+    {
+      "variant_id": "crack_260_v1",
+      "native_source_size": "results/exp13_diffusion_pilot/run_20260921_124440/crack/inputs/vlm_04_260.png",
+      "native_crop_xyxy": "[90.0, 0.0, 630.0, 540.0]",
+      "scale": "0.9481481481481482",
+      "original_mask_retained_fraction_native_crop": "1.0",
+      "original_mask_retained_fraction_inventory": null,
+      "roi_bbox_xyxy": "[75, 200, 279, 472]",
+      "coverage_status": "PIXEL_COVERAGE_AUDIT_ONLY"
+    },
+    {
+      "variant_id": "crack_260_v2",
+      "native_source_size": "results/exp13_diffusion_pilot/run_20260921_124440/crack/inputs/vlm_04_260.png",
+      "native_crop_xyxy": "[90.0, 0.0, 630.0, 540.0]",
+      "scale": "0.9481481481481482",
+      "original_mask_retained_fraction_native_crop": "1.0",
+      "original_mask_retained_fraction_inventory": null,
+      "roi_bbox_xyxy": "[75, 200, 279, 472]",
+      "coverage_status": "PIXEL_COVERAGE_AUDIT_ONLY"
+    },
+    {
+      "variant_id": "crack_470_v1",
+      "native_source_size": "results/exp13_diffusion_pilot/run_20260921_124440/crack/inputs/vlm_10_470.jpg",
+      "native_crop_xyxy": "[120.0, 0.0, 840.0, 720.0]",
+      "scale": "0.7111111111111111",
+      "original_mask_retained_fraction_native_crop": "1.0",
+      "original_mask_retained_fraction_inventory": null,
+      "roi_bbox_xyxy": "[37, 58, 265, 231]",
+      "coverage_status": "PIXEL_COVERAGE_AUDIT_ONLY"
+    },
+    {
+      "variant_id": "crack_470_v2",
+      "native_source_size": "results/exp13_diffusion_pilot/run_20260921_124440/crack/inputs/vlm_10_470.jpg",
+      "native_crop_xyxy": "[120.0, 0.0, 840.0, 720.0]",
+      "scale": "0.7111111111111111",
+      "original_mask_retained_fraction_native_crop": "1.0",
+      "original_mask_retained_fraction_inventory": null,
+      "roi_bbox_xyxy": "[37, 58, 265, 231]",
+      "coverage_status": "PIXEL_COVERAGE_AUDIT_ONLY"
+    }
+  ],
+  "note": "A0 spatial coverage is deterministic crop evidence, not repair success."
+}

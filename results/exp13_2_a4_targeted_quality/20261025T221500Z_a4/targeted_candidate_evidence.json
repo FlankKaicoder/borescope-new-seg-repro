@@ -1,0 +1,304 @@
+{
+  "scope": "five preliminary shortlist variants; three source groups",
+  "review_source": "PROMPT_EXPLICIT_A3_REVIEW_SUMMARY",
+  "candidates": [
+    {
+      "variant_id": "crack_111_v2",
+      "source_group_id": "Crack:111",
+      "class": "Crack",
+      "source_id": "111",
+      "split": "train",
+      "source_path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/inputs/vlm_02_111.png",
+      "mask_path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_02_111_mask.png",
+      "output_path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_111_v2.png",
+      "source_sha256": "51d8286c2128485d42f8b9a9527504b7271f49e0ed30ae7aff9cae93e9513c1e",
+      "mask_sha256": "19525c11a0e770ff3556e6770d266e805e9dd0c569951a2e9ade10f886728ffd",
+      "output_sha256": "b41d358fb011f554df791bc670163e4cb40b4db87c8895e9e3b1b87c38a31cb9",
+      "source_native_size": [
+        720,
+        540
+      ],
+      "output_size": [
+        512,
+        512
+      ],
+      "analysis_canvas_size": [
+        512,
+        512
+      ],
+      "native_crop_xyxy": null,
+      "transform": "ImageOps.fit; masks=NEAREST",
+      "mask_pixels_fit": 4813,
+      "mask_fraction_fit": 0.018360137939453125,
+      "mask_bbox_fit": [
+        195,
+        298,
+        384,
+        356
+      ],
+      "mask_bbox_width_height_fit": [
+        189,
+        58
+      ],
+      "changed_pixels_gt5_all": 161645,
+      "changed_pixels_gt5_inside_mask": 3796,
+      "changed_pixels_gt5_outside_mask": 157849,
+      "changed_fraction_outside_mask": 0.6134084117343033,
+      "edit_mean_abs_diff": 20.49677955537087,
+      "outside_mean_abs_diff": 8.989091870004003,
+      "boundary_ring_4px_pixels": 2040,
+      "boundary_ring_mean_abs_diff": 10.434150326797385,
+      "boundary_ring_gt5_fraction": 0.6691176470588235,
+      "defect_removed_semantic": "PENDING_VISUAL_REVIEW",
+      "normal_surface_plausible": "PENDING_VISUAL_REVIEW",
+      "background_preserved_technical": "MEASURED_ONLY_NOT_SEMANTIC",
+      "geometry_preserved": "PENDING_VISUAL_REVIEW",
+      "p_region": "edit mask / candidate replacement region; semantic normality pending",
+      "n_region": "outside mask used as contextual reference only",
+      "i_region": "boundary ring and any crop/FOV/structure uncertainty",
+      "restoration_quality_status": "HOLD_CANDIDATE_EVIDENCE_ONLY",
+      "trusted_pair_frozen": false,
+      "a3_review_source": "PROMPT_EXPLICIT_A3_REVIEW_SUMMARY",
+      "a3_preliminary_note": "shortlist only; no Restoration Quality PASS; same-source variants are not independent samples"
+    },
+    {
+      "variant_id": "crack_260_v1",
+      "source_group_id": "Crack:260",
+      "class": "Crack",
+      "source_id": "260",
+      "split": "train",
+      "source_path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/inputs/vlm_04_260.png",
+      "mask_path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_04_260_mask.png",
+      "output_path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_260_v1.png",
+      "source_sha256": "222419556d6bd4761d6ec6c66102b6bd4775a1989d517eb4cc93f91ecf3c2bd2",
+      "mask_sha256": "34a461f8db28b2cc9a955a01682904f2061183b8d415990e24ca9cbda578a1c5",
+      "output_sha256": "55c2eb8579da6b01d684d8cfb31e01c91eff896e6426045c88ba29c9dd5737de",
+      "source_native_size": [
+        720,
+        540
+      ],
+      "output_size": [
+        512,
+        512
+      ],
+      "analysis_canvas_size": [
+        512,
+        512
+      ],
+      "native_crop_xyxy": null,
+      "transform": "ImageOps.fit; masks=NEAREST",
+      "mask_pixels_fit": 10368,
+      "mask_fraction_fit": 0.03955078125,
+      "mask_bbox_fit": [
+        91,
+        216,
+        263,
+        456
+      ],
+      "mask_bbox_width_height_fit": [
+        172,
+        240
+      ],
+      "changed_pixels_gt5_all": 88038,
+      "changed_pixels_gt5_inside_mask": 7533,
+      "changed_pixels_gt5_outside_mask": 80505,
+      "changed_fraction_outside_mask": 0.3197485066090493,
+      "edit_mean_abs_diff": 15.833912037037036,
+      "outside_mean_abs_diff": 5.131785131757329,
+      "boundary_ring_4px_pixels": 3667,
+      "boundary_ring_mean_abs_diff": 5.521498045632216,
+      "boundary_ring_gt5_fraction": 0.4251431688028361,
+      "defect_removed_semantic": "PENDING_VISUAL_REVIEW",
+      "normal_surface_plausible": "PENDING_VISUAL_REVIEW",
+      "background_preserved_technical": "MEASURED_ONLY_NOT_SEMANTIC",
+      "geometry_preserved": "PENDING_VISUAL_REVIEW",
+      "p_region": "edit mask / candidate replacement region; semantic normality pending",
+      "n_region": "outside mask used as contextual reference only",
+      "i_region": "boundary ring and any crop/FOV/structure uncertainty",
+      "restoration_quality_status": "HOLD_CANDIDATE_EVIDENCE_ONLY",
+      "trusted_pair_frozen": false,
+      "a3_review_source": "PROMPT_EXPLICIT_A3_REVIEW_SUMMARY",
+      "a3_preliminary_note": "shortlist only; no Restoration Quality PASS; same-source variants are not independent samples"
+    },
+    {
+      "variant_id": "crack_260_v2",
+      "source_group_id": "Crack:260",
+      "class": "Crack",
+      "source_id": "260",
+      "split": "train",
+      "source_path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/inputs/vlm_04_260.png",
+      "mask_path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_04_260_mask.png",
+      "output_path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_260_v2.png",
+      "source_sha256": "222419556d6bd4761d6ec6c66102b6bd4775a1989d517eb4cc93f91ecf3c2bd2",
+      "mask_sha256": "34a461f8db28b2cc9a955a01682904f2061183b8d415990e24ca9cbda578a1c5",
+      "output_sha256": "76edee5e890ca528b8c4296dfcb80f8f200f0156b63d264a255fb4711f25db5f",
+      "source_native_size": [
+        720,
+        540
+      ],
+      "output_size": [
+        512,
+        512
+      ],
+      "analysis_canvas_size": [
+        512,
+        512
+      ],
+      "native_crop_xyxy": null,
+      "transform": "ImageOps.fit; masks=NEAREST",
+      "mask_pixels_fit": 10368,
+      "mask_fraction_fit": 0.03955078125,
+      "mask_bbox_fit": [
+        91,
+        216,
+        263,
+        456
+      ],
+      "mask_bbox_width_height_fit": [
+        172,
+        240
+      ],
+      "changed_pixels_gt5_all": 87454,
+      "changed_pixels_gt5_inside_mask": 7268,
+      "changed_pixels_gt5_outside_mask": 80186,
+      "changed_fraction_outside_mask": 0.31848150737163194,
+      "edit_mean_abs_diff": 15.525720164609053,
+      "outside_mean_abs_diff": 5.119397136078631,
+      "boundary_ring_4px_pixels": 3667,
+      "boundary_ring_mean_abs_diff": 5.400418143805108,
+      "boundary_ring_gt5_fraction": 0.4275974911371693,
+      "defect_removed_semantic": "PENDING_VISUAL_REVIEW",
+      "normal_surface_plausible": "PENDING_VISUAL_REVIEW",
+      "background_preserved_technical": "MEASURED_ONLY_NOT_SEMANTIC",
+      "geometry_preserved": "PENDING_VISUAL_REVIEW",
+      "p_region": "edit mask / candidate replacement region; semantic normality pending",
+      "n_region": "outside mask used as contextual reference only",
+      "i_region": "boundary ring and any crop/FOV/structure uncertainty",
+      "restoration_quality_status": "HOLD_CANDIDATE_EVIDENCE_ONLY",
+      "trusted_pair_frozen": false,
+      "a3_review_source": "PROMPT_EXPLICIT_A3_REVIEW_SUMMARY",
+      "a3_preliminary_note": "shortlist only; no Restoration Quality PASS; same-source variants are not independent samples"
+    },
+    {
+      "variant_id": "crack_470_v1",
+      "source_group_id": "Crack:470",
+      "class": "Crack",
+      "source_id": "470",
+      "split": "train",
+      "source_path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/inputs/vlm_10_470.jpg",
+      "mask_path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_10_470_mask.png",
+      "output_path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_470_v1.png",
+      "source_sha256": "6d1537bb91157f82a679581d82fa3e20d72dde3b29cc14d2f47974931c3d0ec1",
+      "mask_sha256": "62e6e63f231260f3d05b67b1354218153f2441ed6ea992ecc922018658739f60",
+      "output_sha256": "7b563b50fc6ce16f7192e0246c83a953b75e2c0cc80bb86271f3fd01fcb1813b",
+      "source_native_size": [
+        960,
+        720
+      ],
+      "output_size": [
+        512,
+        512
+      ],
+      "analysis_canvas_size": [
+        512,
+        512
+      ],
+      "native_crop_xyxy": null,
+      "transform": "ImageOps.fit; masks=NEAREST",
+      "mask_pixels_fit": 4061,
+      "mask_fraction_fit": 0.015491485595703125,
+      "mask_bbox_fit": [
+        53,
+        74,
+        249,
+        215
+      ],
+      "mask_bbox_width_height_fit": [
+        196,
+        141
+      ],
+      "changed_pixels_gt5_all": 35569,
+      "changed_pixels_gt5_inside_mask": 3204,
+      "changed_pixels_gt5_outside_mask": 32365,
+      "changed_fraction_outside_mask": 0.12540539283873792,
+      "edit_mean_abs_diff": 31.670852827710743,
+      "outside_mean_abs_diff": 2.890945935997334,
+      "boundary_ring_4px_pixels": 2805,
+      "boundary_ring_mean_abs_diff": 8.609387997623292,
+      "boundary_ring_gt5_fraction": 0.538680926916221,
+      "defect_removed_semantic": "PENDING_VISUAL_REVIEW",
+      "normal_surface_plausible": "PENDING_VISUAL_REVIEW",
+      "background_preserved_technical": "MEASURED_ONLY_NOT_SEMANTIC",
+      "geometry_preserved": "PENDING_VISUAL_REVIEW",
+      "p_region": "edit mask / candidate replacement region; semantic normality pending",
+      "n_region": "outside mask used as contextual reference only",
+      "i_region": "boundary ring and any crop/FOV/structure uncertainty",
+      "restoration_quality_status": "HOLD_CANDIDATE_EVIDENCE_ONLY",
+      "trusted_pair_frozen": false,
+      "a3_review_source": "PROMPT_EXPLICIT_A3_REVIEW_SUMMARY",
+      "a3_preliminary_note": "shortlist only; no Restoration Quality PASS; same-source variants are not independent samples"
+    },
+    {
+      "variant_id": "crack_470_v2",
+      "source_group_id": "Crack:470",
+      "class": "Crack",
+      "source_id": "470",
+      "split": "train",
+      "source_path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/inputs/vlm_10_470.jpg",
+      "mask_path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_10_470_mask.png",
+      "output_path": "results/exp13_diffusion_pilot/run_20260921_124440/crack/outputs/crack_470_v2.png",
+      "source_sha256": "6d1537bb91157f82a679581d82fa3e20d72dde3b29cc14d2f47974931c3d0ec1",
+      "mask_sha256": "62e6e63f231260f3d05b67b1354218153f2441ed6ea992ecc922018658739f60",
+      "output_sha256": "692d3aa136c4dc6f5baa2743ea6a9cf820ed7ded75862073efc73dcfb912a33d",
+      "source_native_size": [
+        960,
+        720
+      ],
+      "output_size": [
+        512,
+        512
+      ],
+      "analysis_canvas_size": [
+        512,
+        512
+      ],
+      "native_crop_xyxy": null,
+      "transform": "ImageOps.fit; masks=NEAREST",
+      "mask_pixels_fit": 4061,
+      "mask_fraction_fit": 0.015491485595703125,
+      "mask_bbox_fit": [
+        53,
+        74,
+        249,
+        215
+      ],
+      "mask_bbox_width_height_fit": [
+        196,
+        141
+      ],
+      "changed_pixels_gt5_all": 35911,
+      "changed_pixels_gt5_inside_mask": 3304,
+      "changed_pixels_gt5_outside_mask": 32607,
+      "changed_fraction_outside_mask": 0.12634307567720462,
+      "edit_mean_abs_diff": 31.741525075925473,
+      "outside_mean_abs_diff": 2.9350351114434763,
+      "boundary_ring_4px_pixels": 2805,
+      "boundary_ring_mean_abs_diff": 8.767320261437908,
+      "boundary_ring_gt5_fraction": 0.550445632798574,
+      "defect_removed_semantic": "PENDING_VISUAL_REVIEW",
+      "normal_surface_plausible": "PENDING_VISUAL_REVIEW",
+      "background_preserved_technical": "MEASURED_ONLY_NOT_SEMANTIC",
+      "geometry_preserved": "PENDING_VISUAL_REVIEW",
+      "p_region": "edit mask / candidate replacement region; semantic normality pending",
+      "n_region": "outside mask used as contextual reference only",
+      "i_region": "boundary ring and any crop/FOV/structure uncertainty",
+      "restoration_quality_status": "HOLD_CANDIDATE_EVIDENCE_ONLY",
+      "trusted_pair_frozen": false,
+      "a3_review_source": "PROMPT_EXPLICIT_A3_REVIEW_SUMMARY",
+      "a3_preliminary_note": "shortlist only; no Restoration Quality PASS; same-source variants are not independent samples"
+    }
+  ],
+  "formal_restoration_quality_pass_count": 0,
+  "trusted_pair_count": 0,
+  "semantic_decisions": "PENDING_CHATGPT_OR_EXPERT_REVIEW"
+}

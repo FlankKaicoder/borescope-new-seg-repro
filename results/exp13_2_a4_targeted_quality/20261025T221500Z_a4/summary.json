@@ -1,0 +1,21 @@
+{
+  "status": "EXP13_2_A4_TARGETED_QUALITY_EVIDENCE_PREPARED_PENDING_CHATGPT_GATE",
+  "scope": "TRAIN-only CPU-only; zero model loading/inference/generation/training",
+  "target_variants": [
+    "crack_111_v2",
+    "crack_260_v1",
+    "crack_260_v2",
+    "crack_470_v1",
+    "crack_470_v2"
+  ],
+  "independent_source_groups": [
+    "Crack:111",
+    "Crack:260",
+    "Crack:470"
+  ],
+  "formal_quality_pass": 0,
+  "trusted_pair_frozen": 0,
+  "cross_protocol_label": "CROSS_PROTOCOL_CASE_STUDY_NOT_MODEL_RANKING",
+  "controlled_review_dir": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_a4_targeted_quality/20261025T221500Z_a4/controlled_review",
+  "no_auto_acceptance": true
+}

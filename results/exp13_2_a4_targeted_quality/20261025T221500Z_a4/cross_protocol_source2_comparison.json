@@ -1,0 +1,119 @@
+{
+  "label": "CROSS_PROTOCOL_CASE_STUDY_NOT_MODEL_RANKING",
+  "shared_source_sha_expected": "514d07947ee5ff2d3ac8e160ac58a28bb159ed2549105e4998eaed4b0ba4bc03",
+  "dreamshaper_variants": [
+    {
+      "variant_id": "corrosion_2_v1",
+      "source_sha256": "514d07947ee5ff2d3ac8e160ac58a28bb159ed2549105e4998eaed4b0ba4bc03",
+      "mask_sha256": "02d4c5fd5644b59516d8ce374d6e3c00613f869e96b7128ca89b82c8d64fdea0",
+      "output_sha256": "a72ef40f99372e60d805b43ca26bcb444f76905740480fc733a3baebc42d904f",
+      "native_crop_xyxy": null,
+      "transform": "ImageOps.fit; masks=NEAREST",
+      "mask_pixels_fit": 2880
+    },
+    {
+      "variant_id": "corrosion_2_v2",
+      "source_sha256": "514d07947ee5ff2d3ac8e160ac58a28bb159ed2549105e4998eaed4b0ba4bc03",
+      "mask_sha256": "02d4c5fd5644b59516d8ce374d6e3c00613f869e96b7128ca89b82c8d64fdea0",
+      "output_sha256": "4dfb9ec64d031dd11b23752892468fc79a4fb56896a561f2df4696d2891e1545",
+      "native_crop_xyxy": null,
+      "transform": "ImageOps.fit; masks=NEAREST",
+      "mask_pixels_fit": 2880
+    }
+  ],
+  "sdxl_files": [
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/corrosion/inputs/vlm_12_2.png",
+      "exists": true,
+      "sha256": "514d07947ee5ff2d3ac8e160ac58a28bb159ed2549105e4998eaed4b0ba4bc03",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "results/exp13_diffusion_pilot/run_20260921_124440/masks/inpaint/vlm_12_2_mask.png",
+      "exists": true,
+      "sha256": "02d4c5fd5644b59516d8ce374d6e3c00613f869e96b7128ca89b82c8d64fdea0",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "results/exp13_phase1b_s2/20261025T055350Z_smoke/source_2/original.png",
+      "exists": true,
+      "sha256": "49938e558719c54a839c37f5d29570f5e849aefa1eb292b86c5e45733ea44c44",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "results/exp13_phase1b_s2/20261025T055350Z_smoke/2_roi_0_native_roi.png",
+      "exists": true,
+      "sha256": "839e311de34eb972dfe2bb5e8738f12d81958b0377148e64ae9a4d274b4c5340",
+      "size": [
+        152,
+        81
+      ]
+    },
+    {
+      "path": "results/exp13_phase1b_s2/20261025T055350Z_smoke/2_roi_0_sdxl_canvas.png",
+      "exists": true,
+      "sha256": "ed7d07b2d9e9f65ed22fa67190bedc3b472e9adf0b1a210762999709ce26bc41",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "results/exp13_phase1b_s2/20261025T055350Z_smoke/source_2_restored.png",
+      "exists": true,
+      "sha256": "12b9a8d917d13a3728e54f0ab0ce01caba196ab9aac812dc4d9a20564f712a86",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "results/exp13_phase1b_s2/20261025T055350Z_smoke/source_2_difference.png",
+      "exists": true,
+      "sha256": "7aac9c94927b48e17a6fefe79988d62a510d482d09e6b669c4acc052f00c2ef2",
+      "size": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "results/exp13_phase1b_s2/20261025T055350Z_smoke/source_2/roi_0_mask_canvas.png",
+      "exists": true,
+      "sha256": "83424374ae33b533e9c0780bdfb5361473516b9666d17ef31069caa6fbcc22d8",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  ],
+  "sdxl_metrics": {
+    "source_sha256": "49938e558719c54a839c37f5d29570f5e849aefa1eb292b86c5e45733ea44c44",
+    "source_hash_matches_expected": false,
+    "source_hash_matches_dreamshaper": false,
+    "final_sha256": "12b9a8d917d13a3728e54f0ab0ce01caba196ab9aac812dc4d9a20564f712a86",
+    "difference_sha256": "7aac9c94927b48e17a6fefe79988d62a510d482d09e6b669c4acc052f00c2ef2",
+    "mask_sha256": "83424374ae33b533e9c0780bdfb5361473516b9666d17ef31069caa6fbcc22d8",
+    "source_size": [
+      640,
+      480
+    ],
+    "mask_size": [
+      1024,
+      1024
+    ],
+    "changed_gt5": 2018,
+    "changed_gt5_inside_mask": null,
+    "mask_comparison_status": "INCOMPARABLE_MASK_CANVAS_VS_NATIVE_OUTPUT"
+  },
+  "comparison_sheet": "results/exp13_2_a4_targeted_quality/20261025T221500Z_a4/cross_protocol_source2_comparison.png",
+  "interpretation": "Different crop, mask, canvas, model, prompt and postprocessing protocols make this a case study only; no statistical or model ranking claim."
+}
