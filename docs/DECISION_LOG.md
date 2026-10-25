@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp13.2-M0 matched model preflight (2026-10-25)
+
+Decision D043: `EXP13_2_M0_SOURCE_OR_PROTOCOL_HOLD` / `SOURCE_SELECTION_HOLD`. Freeze the common native-square/no-padding input rules and paired practical comparison protocol, but do not approve M1: fixed-source exclusions9 (all-target span643>540) and23 (target at x=0, no normal-context margin) leave Crack3/corrosion1, below the two-per-class minimum. Whole-context semantic eligibility remains pending. Record latest source-level DreamShaper and S5 Crack260 user visual acceptance in a new overlay without changing historical variants/scopes; pause A5 and Local Change training. Static local model verification is complete but DreamShaper's immutable upstream commit remains unknown. S5 ledger stays4/4, new calls/model loads/downloads/VAL/TEST/raw writes/training/trusted pairs0. See [M0 review](exp13_2_m0_matched_comparison_preflight.md) and [handoff](exp13_2_m0_handoff.md). Stop for ChatGPT Gate; no silent source replacement or M1 execution.
+
 | Date | Decision ID | Question | Decision | Reason | Affected experiments |
 |---|---|---|---|---|---|
 | 2026-08-12 | D001 | 是否复现旧 9 类实验？ | 不复现。 | 当前研究主线是新数据集的实例分割与历史四类任务的方法思想重建。 | All |

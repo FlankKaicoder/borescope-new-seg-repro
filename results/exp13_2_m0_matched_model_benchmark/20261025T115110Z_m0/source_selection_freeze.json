@@ -1,0 +1,67 @@
+{
+  "status": "SOURCE_SELECTION_HOLD",
+  "pool": [
+    [
+      "469",
+      "Crack"
+    ],
+    [
+      "260",
+      "Crack"
+    ],
+    [
+      "470",
+      "Crack"
+    ],
+    [
+      "9",
+      "corrosion"
+    ],
+    [
+      "23",
+      "corrosion"
+    ],
+    [
+      "8",
+      "corrosion"
+    ]
+  ],
+  "geometry_only_candidates": [
+    "469",
+    "260",
+    "470",
+    "8"
+  ],
+  "geometry_class_counts": {
+    "Crack": 3,
+    "corrosion": 1
+  },
+  "excluded": [
+    {
+      "source_id": "9",
+      "reason": "ALL_TARGET_SPAN_EXCEEDS_MAX_SQUARE"
+    },
+    {
+      "source_id": "23",
+      "reason": "NO_ALL_SIDES_NORMAL_CONTEXT_MARGIN"
+    }
+  ],
+  "approved_sources": [],
+  "executable_call_count": 0,
+  "physical_part_independence": "UNPROVEN",
+  "distinct_file_hashes": 6,
+  "distinct_train_groups": 6,
+  "rules": {
+    "crop": "L=min(W,H); integer half-open box inside native; clamp center origin to feasible interval containing ALL target polygons plus margin",
+    "minimum_context_margin_native_px": "max(16,ceil(0.03*L))",
+    "margin_status": "PREREGISTERED_ENGINEERING_RULE_NOT_VALIDATED_SEMANTIC_SUFFICIENCY",
+    "tie_rule": "center origin=floor((dimension-L)/2); clamp independently on x/y",
+    "raster": "Pillow ImageDraw polygon round(x),round(y), union of ALL target-class polygons",
+    "native_edit_mask": "native polygon union -> MaxFilter(7) -> GaussianBlur(1.0)",
+    "common": "identical square crop; RGB LANCZOS->512; grayscale edit mask NEAREST->512",
+    "sdxl": "common RGB LANCZOS->1024; common mask NEAREST->1024; no padding",
+    "mask_polarity": "white=edit, black=preserve; gray=feather (pipeline mask binarization separately disclosed)",
+    "semantic_gate": "whole square UI/FOV/gray border; real normal-metal continuity; physical edge crossing; unannotated defects; all PENDING unless explicit new review",
+    "rejection": "pairwise exclusion, no replacement/target reduction/relaxation; >=4 sources and >=2 per class plus semantic review required"
+  }
+}

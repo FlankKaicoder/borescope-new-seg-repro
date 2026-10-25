@@ -1,0 +1,21 @@
+{
+  "authoritative_ledger": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s5/20261025T230000Z_s5/budget_successor_ledger.json",
+  "sha256_before": "3af2d074b640023e5e2c66198ae3b1ee74cedb3d7829f802c6cf84a62fa1ca94",
+  "sha256_after": "3af2d074b640023e5e2c66198ae3b1ee74cedb3d7829f802c6cf84a62fa1ca94",
+  "occupied_calls": 4,
+  "actual_calls": 4,
+  "smoke_remaining": 0,
+  "aggregate_remaining": 116,
+  "all_local_remaining": 296,
+  "new_model_calls": 0,
+  "model_loads": 0,
+  "new_downloads": 0,
+  "gpt_fallback_calls": 0,
+  "retry_calls": 0,
+  "requested_future_ceiling": 12,
+  "geometry_conditional_future_max": 8,
+  "executable_now": 0,
+  "historical_DreamShaper": "88 outputs /20 source groups separate historical provenance, no recharge or S5 backfill",
+  "future_ledger": "After separate authorization only, one persistent locked successor inherits ALL S5 history/calls/counters, hashes parent, models share accounting; reserve complete two-call source pair atomically, persist STARTED before each call; failures occupy/charge; no auto retry; no incomplete-pair wins",
+  "implementation_reference": "tools/exp13_restoration/protocol.py BudgetProtocol; future pair-reservation integration must be checked before M1"
+}

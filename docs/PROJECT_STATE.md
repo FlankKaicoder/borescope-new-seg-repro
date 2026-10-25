@@ -1,5 +1,7 @@
 # Project state
 
+Latest independent extension update (2026-10-25): **Exp13.2-M0 `EXP13_2_M0_SOURCE_OR_PROTOCOL_HOLD` / `SOURCE_SELECTION_HOLD`**. Fixed pool469/260/470/9/23/8 has only four geometry candidates (Crack3/corrosion1);9 cannot fit all polygons in a native square and23 lacks border context. None is semantically approved. Shared input/protocol and static model hashes are prepared; M1 is not authorized or recommended with this pool. New user overlay accepts eight historical DreamShaper sources and S5 Crack260 visually while preserving scope/variant history; A5 and Local Change training are paused. S5 remains4/4 calls,0 Smoke remaining; new calls/loads/downloads/VAL/TEST/raw writes/training/pair freezes0. See [M0 review](exp13_2_m0_matched_comparison_preflight.md), [handoff](exp13_2_m0_handoff.md), and `results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/`. Historical closed-project facts below remain unchanged.
+
 | Field | Final fact |
 |---|---|
 | Current phase | `PROJECT_COMPLETE` |

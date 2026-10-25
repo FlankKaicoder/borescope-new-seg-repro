@@ -1,0 +1,24 @@
+{
+  "source": "USER_M0_PROMPT",
+  "recorded_at": "2026-10-25T11:54:50.050119+00:00",
+  "DreamShaper_source_visual_acceptance": {
+    "Crack": [
+      "86",
+      "111",
+      "146",
+      "260",
+      "470"
+    ],
+    "corrosion": [
+      "2",
+      "8",
+      "13"
+    ]
+  },
+  "scope": "source visual level only; preserve crop limitations and per-variant historical decisions; no all-variant quality inheritance",
+  "SDXL_S5_Crack260_visual_effect": "USER_ACCEPTED",
+  "SDXL_S2_compact_ROI_failures": "PRESERVED",
+  "A5_and_Local_Change_training": "PAUSED",
+  "trusted_pair_freeze": 0,
+  "historical_records_modified": false
+}

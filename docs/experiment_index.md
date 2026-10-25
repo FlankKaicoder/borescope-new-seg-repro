@@ -1,5 +1,7 @@
 # Experiment index
 
+Latest extension: **Exp13.2-M0 — `EXP13_2_M0_SOURCE_OR_PROTOCOL_HOLD` / `SOURCE_SELECTION_HOLD`**. [Review](exp13_2_m0_matched_comparison_preflight.md); [handoff](exp13_2_m0_handoff.md); `results/exp13_2_m0_matched_model_benchmark/20261025T115110Z_m0/`. Six TRAIN sources audited CPU-only, four geometry-only candidates (Crack3/corrosion1), zero approved inputs. Shared512/1024 protocol, static local model hashes and future blind review preregistered; no model/inference/training or M1 authorization. S5 remains4/4.
+
 | Experiment | Final status | Primary evidence |
 |---|---|---|
 | Exp00 | PASS / historical Gates retained | `docs/01_dataset_audit.md` |

@@ -1,0 +1,270 @@
+{
+  "rules": {
+    "crop": "L=min(W,H); integer half-open box inside native; clamp center origin to feasible interval containing ALL target polygons plus margin",
+    "minimum_context_margin_native_px": "max(16,ceil(0.03*L))",
+    "margin_status": "PREREGISTERED_ENGINEERING_RULE_NOT_VALIDATED_SEMANTIC_SUFFICIENCY",
+    "tie_rule": "center origin=floor((dimension-L)/2); clamp independently on x/y",
+    "raster": "Pillow ImageDraw polygon round(x),round(y), union of ALL target-class polygons",
+    "native_edit_mask": "native polygon union -> MaxFilter(7) -> GaussianBlur(1.0)",
+    "common": "identical square crop; RGB LANCZOS->512; grayscale edit mask NEAREST->512",
+    "sdxl": "common RGB LANCZOS->1024; common mask NEAREST->1024; no padding",
+    "mask_polarity": "white=edit, black=preserve; gray=feather (pipeline mask binarization separately disclosed)",
+    "semantic_gate": "whole square UI/FOV/gray border; real normal-metal continuity; physical edge crossing; unannotated defects; all PENDING unless explicit new review",
+    "rejection": "pairwise exclusion, no replacement/target reduction/relaxation; >=4 sources and >=2 per class plus semantic review required"
+  },
+  "candidates": [
+    {
+      "source_id": "469",
+      "target_retention": 1.0,
+      "edit_support_pixels_total": 4538,
+      "edit_support_pixels_retained": 4538,
+      "coordinate_roundtrip_max_abs_error": 1.1368683772161603e-13,
+      "mask_2x_exact_all_blocks": true,
+      "pixel_center_native_to_512_matrix": [
+        [
+          0.7111111111111111,
+          0,
+          -85.47777777777777
+        ],
+        [
+          0,
+          0.7111111111111111,
+          -0.14444444444444443
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "pixel_center_inverse_matrix": [
+        [
+          1.40625,
+          0.0,
+          120.203125
+        ],
+        [
+          0.0,
+          1.40625,
+          0.20312499999999997
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "source_id": "260",
+      "target_retention": 1.0,
+      "edit_support_pixels_total": 11534,
+      "edit_support_pixels_retained": 11534,
+      "coordinate_roundtrip_max_abs_error": 5.684341886080802e-14,
+      "mask_2x_exact_all_blocks": true,
+      "pixel_center_native_to_512_matrix": [
+        [
+          0.9481481481481482,
+          0,
+          -85.35925925925926
+        ],
+        [
+          0,
+          0.9481481481481482,
+          -0.025925925925925908
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "pixel_center_inverse_matrix": [
+        [
+          1.0546875,
+          0.0,
+          90.02734375
+        ],
+        [
+          0.0,
+          1.0546875,
+          0.02734374999999998
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "source_id": "470",
+      "target_retention": 1.0,
+      "edit_support_pixels_total": 8040,
+      "edit_support_pixels_retained": 8040,
+      "coordinate_roundtrip_max_abs_error": 5.684341886080802e-14,
+      "mask_2x_exact_all_blocks": true,
+      "pixel_center_native_to_512_matrix": [
+        [
+          0.7111111111111111,
+          0,
+          -85.47777777777777
+        ],
+        [
+          0,
+          0.7111111111111111,
+          -0.14444444444444443
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "pixel_center_inverse_matrix": [
+        [
+          1.40625,
+          0.0,
+          120.203125
+        ],
+        [
+          0.0,
+          1.40625,
+          0.20312499999999997
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "source_id": "9",
+      "target_retention": 0.9358380312508044,
+      "edit_support_pixels_total": 102828,
+      "edit_support_pixels_retained": 93807,
+      "coordinate_roundtrip_max_abs_error": 1.1368683772161603e-13,
+      "mask_2x_exact_all_blocks": true,
+      "pixel_center_native_to_512_matrix": [
+        [
+          0.9481481481481482,
+          0,
+          -85.35925925925926
+        ],
+        [
+          0,
+          0.9481481481481482,
+          -0.025925925925925908
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "pixel_center_inverse_matrix": [
+        [
+          1.0546875,
+          0.0,
+          90.02734375
+        ],
+        [
+          0.0,
+          1.0546875,
+          0.02734374999999998
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "source_id": "23",
+      "target_retention": 0.9093786440113276,
+      "edit_support_pixels_total": 46457,
+      "edit_support_pixels_retained": 41934,
+      "coordinate_roundtrip_max_abs_error": 5.684341886080802e-14,
+      "mask_2x_exact_all_blocks": true,
+      "pixel_center_native_to_512_matrix": [
+        [
+          1.0666666666666667,
+          0,
+          -85.3
+        ],
+        [
+          0,
+          1.0666666666666667,
+          0.033333333333333326
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "pixel_center_inverse_matrix": [
+        [
+          0.9375,
+          0.0,
+          79.96875
+        ],
+        [
+          0.0,
+          0.9375,
+          -0.031249999999999993
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "source_id": "8",
+      "target_retention": 1.0,
+      "edit_support_pixels_total": 1945,
+      "edit_support_pixels_retained": 1945,
+      "coordinate_roundtrip_max_abs_error": 5.684341886080802e-14,
+      "mask_2x_exact_all_blocks": true,
+      "pixel_center_native_to_512_matrix": [
+        [
+          0.9481481481481482,
+          0,
+          -85.35925925925926
+        ],
+        [
+          0,
+          0.9481481481481482,
+          -0.025925925925925908
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "pixel_center_inverse_matrix": [
+        [
+          1.0546875,
+          0.0,
+          90.02734375
+        ],
+        [
+          0.0,
+          1.0546875,
+          0.02734374999999998
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "resampling_limit": "512 rasterization may alter narrow-boundary sampling; nearest 2x is exact relative to frozen 512 baseline. Geometry is not semantic repair assurance."
+}

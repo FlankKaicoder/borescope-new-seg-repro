@@ -1,0 +1,8 @@
+TRAIN audit 469
+TRAIN audit 260
+TRAIN audit 470
+TRAIN audit 9
+TRAIN audit 23
+TRAIN audit 8
+Static model SHA256/header inspection; no tensor or pipeline load
+Completed CPU preflight: SOURCE_SELECTION_HOLD

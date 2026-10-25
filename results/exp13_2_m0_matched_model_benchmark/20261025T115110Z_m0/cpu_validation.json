@@ -1,0 +1,140 @@
+{
+  "timestamp": "2026-10-25T11:56:00.639518+00:00",
+  "new_inference": 0,
+  "model_load": 0,
+  "candidates": [
+    {
+      "source_id": "469",
+      "nonadjacent_edge_intersections": [],
+      "topology_status": "PASS_SIMPLE_POLYGON",
+      "polygon512_pixels_missing_from_pipeline_threshold128": 0,
+      "native_cropped_polygon_pixels_missing_after_mask_roundtrip": 0,
+      "scope": "All polygons",
+      "input_png_count": 8,
+      "review_png_wh": [
+        1024,
+        850
+      ]
+    },
+    {
+      "source_id": "260",
+      "nonadjacent_edge_intersections": [],
+      "topology_status": "PASS_SIMPLE_POLYGON",
+      "polygon512_pixels_missing_from_pipeline_threshold128": 0,
+      "native_cropped_polygon_pixels_missing_after_mask_roundtrip": 0,
+      "scope": "All polygons",
+      "input_png_count": 8,
+      "review_png_wh": [
+        1024,
+        850
+      ]
+    },
+    {
+      "source_id": "470",
+      "nonadjacent_edge_intersections": [],
+      "topology_status": "PASS_SIMPLE_POLYGON",
+      "polygon512_pixels_missing_from_pipeline_threshold128": 0,
+      "native_cropped_polygon_pixels_missing_after_mask_roundtrip": 0,
+      "scope": "All polygons",
+      "input_png_count": 8,
+      "review_png_wh": [
+        1024,
+        850
+      ]
+    },
+    {
+      "source_id": "9",
+      "nonadjacent_edge_intersections": [],
+      "topology_status": "PASS_SIMPLE_POLYGON",
+      "polygon512_pixels_missing_from_pipeline_threshold128": 0,
+      "native_cropped_polygon_pixels_missing_after_mask_roundtrip": 0,
+      "scope": "DIAGNOSTIC_CROP_ONLY_EXCLUDES_LOST_NATIVE_PIXELS",
+      "input_png_count": 8,
+      "review_png_wh": [
+        1024,
+        850
+      ]
+    },
+    {
+      "source_id": "23",
+      "nonadjacent_edge_intersections": [],
+      "topology_status": "PASS_SIMPLE_POLYGON",
+      "polygon512_pixels_missing_from_pipeline_threshold128": 0,
+      "native_cropped_polygon_pixels_missing_after_mask_roundtrip": 0,
+      "scope": "DIAGNOSTIC_CROP_ONLY_EXCLUDES_LOST_NATIVE_PIXELS",
+      "input_png_count": 8,
+      "review_png_wh": [
+        1024,
+        850
+      ]
+    },
+    {
+      "source_id": "8",
+      "nonadjacent_edge_intersections": [],
+      "topology_status": "PASS_SIMPLE_POLYGON",
+      "polygon512_pixels_missing_from_pipeline_threshold128": 0,
+      "native_cropped_polygon_pixels_missing_after_mask_roundtrip": 0,
+      "scope": "All polygons",
+      "input_png_count": 8,
+      "review_png_wh": [
+        1024,
+        850
+      ]
+    }
+  ],
+  "installed_diffusers_source": [
+    {
+      "path": "/root/miniconda3/lib/python3.12/site-packages/diffusers/image_processor.py",
+      "sha256": "eaaa29edf8a54c776adcbf991955a624c9f4fb4b38060ed6f8068014135d3b44",
+      "relevant_source_lines": [
+        {
+          "line": 540,
+          "text": "image[image < 0.5] = 0"
+        },
+        {
+          "line": 541,
+          "text": "image[image >= 0.5] = 1"
+        }
+      ]
+    },
+    {
+      "path": "/root/miniconda3/lib/python3.12/site-packages/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_inpaint.py",
+      "sha256": "84725e81bba64890f9f937f6d7774b70d172d1863a5132a8acbe58f03b8ca9b4",
+      "relevant_source_lines": [
+        {
+          "line": 274,
+          "text": "vae_scale_factor=self.vae_scale_factor, do_normalize=False, do_binarize=True, do_convert_grayscale=True"
+        },
+        {
+          "line": 889,
+          "text": "padding_mask_crop: Optional[int] = None,"
+        }
+      ]
+    },
+    {
+      "path": "/root/miniconda3/lib/python3.12/site-packages/diffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl_inpaint.py",
+      "sha256": "5ea094096a73cb6b44037ae92a344ad935e38422fcedc3b6dfe86a8934cf44ac",
+      "relevant_source_lines": [
+        {
+          "line": 327,
+          "text": "vae_scale_factor=self.vae_scale_factor, do_normalize=False, do_binarize=True, do_convert_grayscale=True"
+        },
+        {
+          "line": 1102,
+          "text": "padding_mask_crop: Optional[int] = None,"
+        }
+      ]
+    }
+  ],
+  "DreamShaper_local_model_card": {
+    "path": "/root/autodl-tmp/model_cache/exp13/dreamshaper-8-inpainting/README.md",
+    "sha256": "d01e452451b162542f248a6c43edfd9a8c698e3d84deb4f3de4ccb3442cceb79",
+    "metadata": [
+      "license: creativeml-openrail-m",
+      "duplicated_from: lykon-models/dreamshaper-8-inpainting"
+    ],
+    "scope": "Local model card evidence only, immutable upstream revision not proven"
+  },
+  "summary": "Both pipelines binarize masks; all retained targets covered at threshold128 before/after common-mask roundtrip. Excluded crop diagnostics are not full-target inputs.",
+  "script_sha256": "7f637c7cd192973aad06aebaa4864b2b2a839791b64b0b10fca1d52fff8549df"
+}

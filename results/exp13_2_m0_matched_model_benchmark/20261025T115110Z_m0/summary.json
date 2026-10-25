@@ -1,0 +1,22 @@
+{
+  "status": "EXP13_2_M0_SOURCE_OR_PROTOCOL_HOLD",
+  "reason": "SOURCE_SELECTION_HOLD",
+  "geometry_candidates": [
+    "469",
+    "260",
+    "470",
+    "8"
+  ],
+  "geometry_class_counts": {
+    "Crack": 3,
+    "corrosion": 1
+  },
+  "approved_sources": 0,
+  "recommend_M1": false,
+  "proposed_call_ceiling": 12,
+  "calls_authorized_now": 0,
+  "new_calls": 0,
+  "model_static_files": "COMPLETE; DreamShaper immutable upstream revision not established; runtime compatibility not tested",
+  "source_gate": "corrosion9 all-target span impossible; corrosion23 target reaches native border and lacks required context; only corrosion8 remains",
+  "stop": "Await ChatGPT Gate; no M1/Pilot/pair freeze/SSL/YOLO"
+}

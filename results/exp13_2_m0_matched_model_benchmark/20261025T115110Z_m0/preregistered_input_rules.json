@@ -1,0 +1,17 @@
+{
+  "frozen_at": "2026-10-25T11:54:01.267545+00:00",
+  "rules": {
+    "crop": "L=min(W,H); integer half-open box inside native; clamp center origin to feasible interval containing ALL target polygons plus margin",
+    "minimum_context_margin_native_px": "max(16,ceil(0.03*L))",
+    "margin_status": "PREREGISTERED_ENGINEERING_RULE_NOT_VALIDATED_SEMANTIC_SUFFICIENCY",
+    "tie_rule": "center origin=floor((dimension-L)/2); clamp independently on x/y",
+    "raster": "Pillow ImageDraw polygon round(x),round(y), union of ALL target-class polygons",
+    "native_edit_mask": "native polygon union -> MaxFilter(7) -> GaussianBlur(1.0)",
+    "common": "identical square crop; RGB LANCZOS->512; grayscale edit mask NEAREST->512",
+    "sdxl": "common RGB LANCZOS->1024; common mask NEAREST->1024; no padding",
+    "mask_polarity": "white=edit, black=preserve; gray=feather (pipeline mask binarization separately disclosed)",
+    "semantic_gate": "whole square UI/FOV/gray border; real normal-metal continuity; physical edge crossing; unannotated defects; all PENDING unless explicit new review",
+    "rejection": "pairwise exclusion, no replacement/target reduction/relaxation; >=4 sources and >=2 per class plus semantic review required"
+  },
+  "new_model_calls_authorized": 0
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PREREGISTERED_NOT_EXECUTED",
+  "raw_outputs": "immutable; compare outputs aligned to512 by same LANCZOS; additionally preserve native512/1024 outputs",
+  "protected_composite": "POSTPROCESS_COMPARISON_ONLY; base=common RGB512; alpha=common grayscale mask/255 clipped to support(mask>0); outside support exact original; no model-specific blend",
+  "differences": "max abs RGB channel >5 uint8; inside/outside mask>0 and >=128 separately; same native-pixel zoom and scale for both",
+  "review_panels": "same FOV original, polygon, mask, aligned raw output, protected composite, abs difference, target 1:1 and 4x NEAREST zoom; no model/runtime labels",
+  "blinding": "After future source approval and successful pair completion, secrets.SystemRandom shuffle balanced model A/B assignment across sources; save private key outside review package/Git, publish SHA256 commitment before review; fail or incomplete pairs excluded from wins",
+  "fields": [
+    "source_id",
+    "A_PASS_FAIL_UNCERTAIN",
+    "B_PASS_FAIL_UNCERTAIN",
+    "A_WIN_B_WIN_TIE",
+    "reason",
+    "severe_hallucination",
+    "structure_destruction",
+    "defect_removal",
+    "metal_texture",
+    "seam",
+    "raw_background_change",
+    "composite_acceptability"
+  ],
+  "runtime_metrics": "separate nonblinded audit: per call seconds, peak allocated/reserved memory, failure charged",
+  "decision_owner": "USER",
+  "statistical_scope": "source-level practical recommendation only; no pixel independence, no significance or seven-class superiority claim",
+  "key_created": false
+}
