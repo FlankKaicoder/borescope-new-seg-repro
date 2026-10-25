@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-10-25T09:45:38.509026+00:00",
+  "host": "autodl-container-60k2buuft5-380faf19",
+  "python": "3.12.3",
+  "pillow": "11.3.0",
+  "numpy": "2.3.2",
+  "git_head": "787a3be0190dfa9b11c5416a5b686a6bae4598d9",
+  "git_branch": "exp13/vlm-semantic-audit",
+  "inputs": {
+    "results/exp13_restoration_feasibility/a0_20261021_081812/source_variant_review_index.csv": "075d4600e2c4d497cf5d359cb32b71352835c0be94590e00ff4b22c1c48f64a6",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/file_integrity.csv": "9f7cf08e97ddd2ca084c55d5b5ade236aa9705e9bb8da5ec6a845e08b504845d",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/spatial_correspondence_report.csv": "968865549ba408e8306a91219a121572a9e4dedd95cbbac69ed5fce1b31b5f46",
+    "results/exp13_restoration_feasibility/a0_20261021_081812/quantitative_differences.csv": "2d56e5f7b95f412ddd875d3735d2586f464f507ccda2c1adfe32119a41f3084e",
+    "results/exp13_restoration_feasibility/qa_20261023_batch01_user_review_overlay.csv": "d40fd45af195574510daa29fb3338e3fb8ec8079a88c18a6caf5c232e4c3093e",
+    "results/exp13_restoration_feasibility/qa_20261023_batch02_user_review_overlay.csv": "3898311a275f89a53aeb15a6ac58ea1c34a86e2ab4f4d6c85469eb95be799781",
+    "results/exp13_phase1b_s2/20261025T055350Z_smoke/call_ledger.json": "0acecb19e0b050c7c2fb2b0c06aa4df5ffb4ec8a695863d01e830459130231bd"
+  },
+  "historical_directories_read_only": true,
+  "dataset_images_read": 0,
+  "val_test_access": 0,
+  "models_loaded": 0,
+  "inference_calls": 0,
+  "training_steps": 0,
+  "raw_data_writes": 0,
+  "output_directory": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_a3_dreamshaper_review/20261025T203500Z_a3"
+}

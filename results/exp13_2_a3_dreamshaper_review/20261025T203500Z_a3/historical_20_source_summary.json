@@ -1,0 +1,281 @@
+{
+  "sources_total": 20,
+  "sources_by_class": {
+    "Crack": 10,
+    "corrosion": 10
+  },
+  "r1_variants": 40,
+  "r2_diagnostic_variants": 48,
+  "a2_decision_variants": 16,
+  "independent_unit": "(class, source_id)",
+  "source_groups": [
+    {
+      "source_group_id": "Crack:111",
+      "candidate_count": 2,
+      "r1_count": 2,
+      "r2_count": 0,
+      "a2_decision_count": 2,
+      "variant_ids": [
+        "crack_111_v1",
+        "crack_111_v2"
+      ]
+    },
+    {
+      "source_group_id": "Crack:146",
+      "candidate_count": 2,
+      "r1_count": 2,
+      "r2_count": 0,
+      "a2_decision_count": 2,
+      "variant_ids": [
+        "crack_146_v1",
+        "crack_146_v2"
+      ]
+    },
+    {
+      "source_group_id": "Crack:260",
+      "candidate_count": 14,
+      "r1_count": 2,
+      "r2_count": 12,
+      "a2_decision_count": 2,
+      "variant_ids": [
+        "crack_260_v1",
+        "crack_260_v2",
+        "crack_260_mask_A_s055_v1",
+        "crack_260_mask_A_s055_v2",
+        "crack_260_mask_A_s075_v1",
+        "crack_260_mask_A_s075_v2",
+        "crack_260_mask_A_s095_v1",
+        "crack_260_mask_A_s095_v2",
+        "crack_260_mask_B_s055_v1",
+        "crack_260_mask_B_s055_v2",
+        "crack_260_mask_B_s075_v1",
+        "crack_260_mask_B_s075_v2",
+        "crack_260_mask_B_s095_v1",
+        "crack_260_mask_B_s095_v2"
+      ]
+    },
+    {
+      "source_group_id": "Crack:312",
+      "candidate_count": 2,
+      "r1_count": 2,
+      "r2_count": 0,
+      "a2_decision_count": 0,
+      "variant_ids": [
+        "crack_312_v1",
+        "crack_312_v2"
+      ]
+    },
+    {
+      "source_group_id": "Crack:354",
+      "candidate_count": 2,
+      "r1_count": 2,
+      "r2_count": 0,
+      "a2_decision_count": 0,
+      "variant_ids": [
+        "crack_354_v1",
+        "crack_354_v2"
+      ]
+    },
+    {
+      "source_group_id": "Crack:356",
+      "candidate_count": 2,
+      "r1_count": 2,
+      "r2_count": 0,
+      "a2_decision_count": 0,
+      "variant_ids": [
+        "crack_356_v1",
+        "crack_356_v2"
+      ]
+    },
+    {
+      "source_group_id": "Crack:468",
+      "candidate_count": 2,
+      "r1_count": 2,
+      "r2_count": 0,
+      "a2_decision_count": 0,
+      "variant_ids": [
+        "crack_468_v1",
+        "crack_468_v2"
+      ]
+    },
+    {
+      "source_group_id": "Crack:469",
+      "candidate_count": 14,
+      "r1_count": 2,
+      "r2_count": 12,
+      "a2_decision_count": 0,
+      "variant_ids": [
+        "crack_469_v1",
+        "crack_469_v2",
+        "crack_469_mask_A_s055_v1",
+        "crack_469_mask_A_s055_v2",
+        "crack_469_mask_A_s075_v1",
+        "crack_469_mask_A_s075_v2",
+        "crack_469_mask_A_s095_v1",
+        "crack_469_mask_A_s095_v2",
+        "crack_469_mask_B_s055_v1",
+        "crack_469_mask_B_s055_v2",
+        "crack_469_mask_B_s075_v1",
+        "crack_469_mask_B_s075_v2",
+        "crack_469_mask_B_s095_v1",
+        "crack_469_mask_B_s095_v2"
+      ]
+    },
+    {
+      "source_group_id": "Crack:470",
+      "candidate_count": 2,
+      "r1_count": 2,
+      "r2_count": 0,
+      "a2_decision_count": 2,
+      "variant_ids": [
+        "crack_470_v1",
+        "crack_470_v2"
+      ]
+    },
+    {
+      "source_group_id": "Crack:86",
+      "candidate_count": 2,
+      "r1_count": 2,
+      "r2_count": 0,
+      "a2_decision_count": 2,
+      "variant_ids": [
+        "crack_86_v1",
+        "crack_86_v2"
+      ]
+    },
+    {
+      "source_group_id": "corrosion:1",
+      "candidate_count": 2,
+      "r1_count": 2,
+      "r2_count": 0,
+      "a2_decision_count": 0,
+      "variant_ids": [
+        "corrosion_1_v1",
+        "corrosion_1_v2"
+      ]
+    },
+    {
+      "source_group_id": "corrosion:12",
+      "candidate_count": 2,
+      "r1_count": 2,
+      "r2_count": 0,
+      "a2_decision_count": 0,
+      "variant_ids": [
+        "corrosion_12_v1",
+        "corrosion_12_v2"
+      ]
+    },
+    {
+      "source_group_id": "corrosion:13",
+      "candidate_count": 2,
+      "r1_count": 2,
+      "r2_count": 0,
+      "a2_decision_count": 2,
+      "variant_ids": [
+        "corrosion_13_v1",
+        "corrosion_13_v2"
+      ]
+    },
+    {
+      "source_group_id": "corrosion:2",
+      "candidate_count": 2,
+      "r1_count": 2,
+      "r2_count": 0,
+      "a2_decision_count": 2,
+      "variant_ids": [
+        "corrosion_2_v1",
+        "corrosion_2_v2"
+      ]
+    },
+    {
+      "source_group_id": "corrosion:23",
+      "candidate_count": 14,
+      "r1_count": 2,
+      "r2_count": 12,
+      "a2_decision_count": 0,
+      "variant_ids": [
+        "corrosion_23_v1",
+        "corrosion_23_v2",
+        "corrosion_23_mask_A_s055_v1",
+        "corrosion_23_mask_A_s055_v2",
+        "corrosion_23_mask_A_s075_v1",
+        "corrosion_23_mask_A_s075_v2",
+        "corrosion_23_mask_A_s095_v1",
+        "corrosion_23_mask_A_s095_v2",
+        "corrosion_23_mask_B_s055_v1",
+        "corrosion_23_mask_B_s055_v2",
+        "corrosion_23_mask_B_s075_v1",
+        "corrosion_23_mask_B_s075_v2",
+        "corrosion_23_mask_B_s095_v1",
+        "corrosion_23_mask_B_s095_v2"
+      ]
+    },
+    {
+      "source_group_id": "corrosion:27",
+      "candidate_count": 2,
+      "r1_count": 2,
+      "r2_count": 0,
+      "a2_decision_count": 0,
+      "variant_ids": [
+        "corrosion_27_v1",
+        "corrosion_27_v2"
+      ]
+    },
+    {
+      "source_group_id": "corrosion:6",
+      "candidate_count": 2,
+      "r1_count": 2,
+      "r2_count": 0,
+      "a2_decision_count": 0,
+      "variant_ids": [
+        "corrosion_6_v1",
+        "corrosion_6_v2"
+      ]
+    },
+    {
+      "source_group_id": "corrosion:7",
+      "candidate_count": 2,
+      "r1_count": 2,
+      "r2_count": 0,
+      "a2_decision_count": 0,
+      "variant_ids": [
+        "corrosion_7_v1",
+        "corrosion_7_v2"
+      ]
+    },
+    {
+      "source_group_id": "corrosion:8",
+      "candidate_count": 2,
+      "r1_count": 2,
+      "r2_count": 0,
+      "a2_decision_count": 2,
+      "variant_ids": [
+        "corrosion_8_v1",
+        "corrosion_8_v2"
+      ]
+    },
+    {
+      "source_group_id": "corrosion:9",
+      "candidate_count": 14,
+      "r1_count": 2,
+      "r2_count": 12,
+      "a2_decision_count": 0,
+      "variant_ids": [
+        "corrosion_9_v1",
+        "corrosion_9_v2",
+        "corrosion_9_mask_A_s055_v1",
+        "corrosion_9_mask_A_s055_v2",
+        "corrosion_9_mask_A_s075_v1",
+        "corrosion_9_mask_A_s075_v2",
+        "corrosion_9_mask_A_s095_v1",
+        "corrosion_9_mask_A_s095_v2",
+        "corrosion_9_mask_B_s055_v1",
+        "corrosion_9_mask_B_s055_v2",
+        "corrosion_9_mask_B_s075_v1",
+        "corrosion_9_mask_B_s075_v2",
+        "corrosion_9_mask_B_s095_v1",
+        "corrosion_9_mask_B_s095_v2"
+      ]
+    }
+  ]
+}

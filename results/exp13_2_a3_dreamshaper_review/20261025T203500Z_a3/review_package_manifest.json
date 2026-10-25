@@ -1,0 +1,274 @@
+{
+  "source_sheets": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_restoration_feasibility/a0_20261021_081812/contact_sheets",
+  "source_sheet_hashes": {
+    "Crack:86": "77e3b54430ca6ea46bd99ed2d0b8cf5ec5a132457eb0b9a7eb2dcd8d888fad70",
+    "Crack:111": "d719f8ba2099374538d2853a1fa2e73fdb61f25b55a781a0298a3954fdbda1a0",
+    "Crack:146": "a6d742dab5af8fbda8db659a0861d2c8baf695d8fc2d5445f01885e0aba8bba6",
+    "Crack:260": "84c351053f4ec160c3e4ad35d033a67ba339a13d7718a5a07e7c02177ee423d3",
+    "Crack:470": "466e663b31bdfabd8704dea70dc0cd50ae859b5b1d23ed820f173563da2d9fbe",
+    "corrosion:2": "42085644e273d805fd93c152689bfb787fe9549fd909f2a0021adda3f9d7f203",
+    "corrosion:8": "554772b6503691f345d3f560911e53af957f23487ae33b66655947f42afb1118",
+    "corrosion:13": "d7ac698960e48cb10677f47750f8df5cf3af3b88ff50a9ac1c1d01a551b9b1fd"
+  },
+  "package": {
+    "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_a3_dreamshaper_review/20261025T203500Z_a3/dreamshaper_a3_review_package.zip",
+    "bytes": 14554299,
+    "sha256": "cb0160dba7bc957ff8ae8c48615c381fa2898febc32337b049db335bba895565",
+    "contents": [
+      "review_sheets/corrosion_13_a3_review.png",
+      "review_sheets/corrosion_2_a3_review.png",
+      "review_sheets/corrosion_8_a3_review.png",
+      "review_sheets/crack_111_a3_review.png",
+      "review_sheets/crack_146_a3_review.png",
+      "review_sheets/crack_260_a3_review.png",
+      "review_sheets/crack_470_a3_review.png",
+      "review_sheets/crack_86_a3_review.png",
+      "restoration_quality_review_template.csv",
+      "historical_user_decisions_crosswalk.json"
+    ],
+    "controlled_location": "AutoDL repository results; excluded from Git"
+  },
+  "source_level_pages": [
+    {
+      "class": "Crack",
+      "source_id": "86",
+      "independence_unit": "Crack:86",
+      "review_sheet": "review_sheets/crack_86_a3_review.png",
+      "review_sheet_sha256": "fb9d82136a487c53fb79aae43dc67a3343564af96962a14b17957779510830e6",
+      "variants": [
+        {
+          "variant_id": "crack_86_v1",
+          "stage": "R1",
+          "decision": "ACCEPT",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "crack_86_v2",
+          "stage": "R1",
+          "decision": "ACCEPT",
+          "formal_quality": "PENDING"
+        }
+      ]
+    },
+    {
+      "class": "Crack",
+      "source_id": "111",
+      "independence_unit": "Crack:111",
+      "review_sheet": "review_sheets/crack_111_a3_review.png",
+      "review_sheet_sha256": "87e1ce138f534497075fe15bcfe13bf58d69cb2aeb7cf5ddc2cb155153590f9f",
+      "variants": [
+        {
+          "variant_id": "crack_111_v1",
+          "stage": "R1",
+          "decision": "PENDING_USER_DECISION",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "crack_111_v2",
+          "stage": "R1",
+          "decision": "USER_ACCEPTED_VISUAL",
+          "formal_quality": "PENDING"
+        }
+      ]
+    },
+    {
+      "class": "Crack",
+      "source_id": "146",
+      "independence_unit": "Crack:146",
+      "review_sheet": "review_sheets/crack_146_a3_review.png",
+      "review_sheet_sha256": "3a15a85518a4e1c4a03c54d281979c463ec3e1d2a018de03dc1a04dd5ea033eb",
+      "variants": [
+        {
+          "variant_id": "crack_146_v1",
+          "stage": "R1",
+          "decision": "PENDING_USER_DECISION",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "crack_146_v2",
+          "stage": "R1",
+          "decision": "PENDING_USER_DECISION",
+          "formal_quality": "PENDING"
+        }
+      ]
+    },
+    {
+      "class": "Crack",
+      "source_id": "260",
+      "independence_unit": "Crack:260",
+      "review_sheet": "review_sheets/crack_260_a3_review.png",
+      "review_sheet_sha256": "07f918e95011e0a19de738dadf389c1681dc3b8d52ea07fbe24d04c4b57a4996",
+      "variants": [
+        {
+          "variant_id": "crack_260_v1",
+          "stage": "R1",
+          "decision": "ACCEPT",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "crack_260_v2",
+          "stage": "R1",
+          "decision": "ACCEPT",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "crack_260_mask_A_s055_v1",
+          "stage": "R2",
+          "decision": "NO_A2_DECISION_RECORD",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "crack_260_mask_A_s055_v2",
+          "stage": "R2",
+          "decision": "NO_A2_DECISION_RECORD",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "crack_260_mask_A_s075_v1",
+          "stage": "R2",
+          "decision": "NO_A2_DECISION_RECORD",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "crack_260_mask_A_s075_v2",
+          "stage": "R2",
+          "decision": "NO_A2_DECISION_RECORD",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "crack_260_mask_A_s095_v1",
+          "stage": "R2",
+          "decision": "NO_A2_DECISION_RECORD",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "crack_260_mask_A_s095_v2",
+          "stage": "R2",
+          "decision": "NO_A2_DECISION_RECORD",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "crack_260_mask_B_s055_v1",
+          "stage": "R2",
+          "decision": "NO_A2_DECISION_RECORD",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "crack_260_mask_B_s055_v2",
+          "stage": "R2",
+          "decision": "NO_A2_DECISION_RECORD",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "crack_260_mask_B_s075_v1",
+          "stage": "R2",
+          "decision": "NO_A2_DECISION_RECORD",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "crack_260_mask_B_s075_v2",
+          "stage": "R2",
+          "decision": "NO_A2_DECISION_RECORD",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "crack_260_mask_B_s095_v1",
+          "stage": "R2",
+          "decision": "NO_A2_DECISION_RECORD",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "crack_260_mask_B_s095_v2",
+          "stage": "R2",
+          "decision": "NO_A2_DECISION_RECORD",
+          "formal_quality": "PENDING"
+        }
+      ]
+    },
+    {
+      "class": "Crack",
+      "source_id": "470",
+      "independence_unit": "Crack:470",
+      "review_sheet": "review_sheets/crack_470_a3_review.png",
+      "review_sheet_sha256": "7956d3961fac704e35b15d56e1b538252ce497667e7bf5245b7ebc2edf1c6ee8",
+      "variants": [
+        {
+          "variant_id": "crack_470_v1",
+          "stage": "R1",
+          "decision": "USER_ACCEPTED_VISUAL_PENDING_SPATIAL_AUDIT",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "crack_470_v2",
+          "stage": "R1",
+          "decision": "USER_ACCEPTED_VISUAL_PENDING_SPATIAL_AUDIT",
+          "formal_quality": "PENDING"
+        }
+      ]
+    },
+    {
+      "class": "corrosion",
+      "source_id": "2",
+      "independence_unit": "corrosion:2",
+      "review_sheet": "review_sheets/corrosion_2_a3_review.png",
+      "review_sheet_sha256": "bccb1da27b8dcd8e66701243f2801a99747d775af8d8baab39fc0148ad6e9370",
+      "variants": [
+        {
+          "variant_id": "corrosion_2_v1",
+          "stage": "R1",
+          "decision": "ACCEPT_WITH_SCOPE_LIMITATION",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "corrosion_2_v2",
+          "stage": "R1",
+          "decision": "ACCEPT_WITH_SCOPE_LIMITATION",
+          "formal_quality": "PENDING"
+        }
+      ]
+    },
+    {
+      "class": "corrosion",
+      "source_id": "8",
+      "independence_unit": "corrosion:8",
+      "review_sheet": "review_sheets/corrosion_8_a3_review.png",
+      "review_sheet_sha256": "b23fe38cc52295449274f304a77034c0389631e0b5551c4d0668b392cccc5729",
+      "variants": [
+        {
+          "variant_id": "corrosion_8_v1",
+          "stage": "R1",
+          "decision": "REJECT",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "corrosion_8_v2",
+          "stage": "R1",
+          "decision": "ACCEPT_WITH_RESERVATION",
+          "formal_quality": "PENDING"
+        }
+      ]
+    },
+    {
+      "class": "corrosion",
+      "source_id": "13",
+      "independence_unit": "corrosion:13",
+      "review_sheet": "review_sheets/corrosion_13_a3_review.png",
+      "review_sheet_sha256": "dff5e0edd305943b82e77d7c0ef98e8efae12665bd4a0bb956c272974779f30f",
+      "variants": [
+        {
+          "variant_id": "corrosion_13_v1",
+          "stage": "R1",
+          "decision": "USER_ACCEPTED_VISUAL_CROP_SCOPED",
+          "formal_quality": "PENDING"
+        },
+        {
+          "variant_id": "corrosion_13_v2",
+          "stage": "R1",
+          "decision": "USER_ACCEPTED_VISUAL_CROP_SCOPED",
+          "formal_quality": "PENDING"
+        }
+      ]
+    }
+  ],
+  "human_review_note": "ChatGPT preliminary opinions are not user acceptance, expert confirmation, or formal rejection."
+}

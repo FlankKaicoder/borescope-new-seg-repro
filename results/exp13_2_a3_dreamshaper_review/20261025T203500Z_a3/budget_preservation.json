@@ -1,0 +1,15 @@
+{
+  "inherited_from": "results/exp13_phase1b_s2/20261025T055350Z_smoke/call_ledger.json",
+  "source_ledger_sha256": "0acecb19e0b050c7c2fb2b0c06aa4df5ffb4ec8a695863d01e830459130231bd",
+  "occupied_calls": 3,
+  "actual_calls": 3,
+  "remaining_smoke": 1,
+  "new_sdxl_calls": 0,
+  "new_dreamshaper_calls": 0,
+  "gpu_model_loads": 0,
+  "gpt_fallback_calls": 0,
+  "val_test_access": 0,
+  "raw_dataset_write": 0,
+  "ssl_yolo_training": 0,
+  "ledger_mutated": false
+}

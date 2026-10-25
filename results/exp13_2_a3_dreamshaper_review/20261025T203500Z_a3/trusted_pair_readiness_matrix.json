@@ -1,0 +1,25 @@
+{
+  "trusted_pair_count": 0,
+  "quality_gate_pass_count": 0,
+  "candidate_rows": 88,
+  "source_groups": 20,
+  "historical_user_decisions_are_admission": "false",
+  "proposed_a1_threshold": {
+    "total_independent_sources": 10,
+    "Crack": 5,
+    "corrosion": 5,
+    "status": "PROPOSED_NOT_FROZEN"
+  },
+  "gaps": [
+    "No complete multi-axis variant-level quality decision across defect removal, plausible metal, structure, background, crop scope and artifacts.",
+    "P/N/I regions and reviewer-confirmed repair/background support are not frozen.",
+    "Same-process normal pseudo-edits and non-Diffusion controls are absent.",
+    "Annotation-derived polygon supervision must be disclosed."
+  ],
+  "authorization": {
+    "formal_training": "NO",
+    "SSL": "NO",
+    "Exp13.2-B": "NO",
+    "new_generation": "NO"
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "source": "CHATGPT_PRELIMINARY_VISUAL_REVIEW plus explicit user decisions archived in A2 overlays",
+  "scope": "8 source groups / 16 R1 variants only; R2 outputs are diagnostic candidates without A2 decisions",
+  "counts": {
+    "ACCEPT": 4,
+    "PENDING_USER_DECISION": 3,
+    "USER_ACCEPTED_VISUAL": 1,
+    "USER_ACCEPTED_VISUAL_PENDING_SPATIAL_AUDIT": 2,
+    "ACCEPT_WITH_SCOPE_LIMITATION": 2,
+    "REJECT": 1,
+    "ACCEPT_WITH_RESERVATION": 1,
+    "USER_ACCEPTED_VISUAL_CROP_SCOPED": 2
+  },
+  "records": [
+    {
+      "variant_id": "crack_86_v1",
+      "source_group_id": "Crack:86",
+      "stage": "R1",
+      "user_decision": "ACCEPT",
+      "user_intent_summary": "",
+      "acceptance_scope": "",
+      "unresolved_technical_issues": "",
+      "record_source": "",
+      "recorded_utc": ""
+    },
+    {
+      "variant_id": "crack_86_v2",
+      "source_group_id": "Crack:86",
+      "stage": "R1",
+      "user_decision": "ACCEPT",
+      "user_intent_summary": "",
+      "acceptance_scope": "",
+      "unresolved_technical_issues": "",
+      "record_source": "",
+      "recorded_utc": ""
+    },
+    {
+      "variant_id": "crack_111_v1",
+      "source_group_id": "Crack:111",
+      "stage": "R1",
+      "user_decision": "PENDING_USER_DECISION",
+      "user_intent_summary": "本次没有新的最终接受或拒绝决定",
+      "acceptance_scope": "无新增最终接受范围",
+      "unresolved_technical_issues": "仍待用户明确决定及正式候选质量审查",
+      "record_source": "用户本次 Exp13.2-A2 Batch 01 Human Decision Registration & Spatial Audit 指令第2节",
+      "recorded_utc": "2026-10-23T07:04:53.701228+00:00"
+    },
+    {
+      "variant_id": "crack_111_v2",
+      "source_group_id": "Crack:111",
+      "stage": "R1",
+      "user_decision": "USER_ACCEPTED_VISUAL",
+      "user_intent_summary": "用户认为棕色不规则痕迹从全局观察更像原背景内容并接受该候选的视觉表现",
+      "acceptance_scope": "仅该历史候选已审核视野的用户视觉表现接受",
+      "unresolved_technical_issues": "不构成完整质量评分或可信配对冻结且其他技术条件未获整体认证",
+      "record_source": "用户本次 Exp13.2-A2 Batch 01 Human Decision Registration & Spatial Audit 指令第2节",
+      "recorded_utc": "2026-10-23T07:04:53.701228+00:00"
+    },
+    {
+      "variant_id": "crack_146_v1",
+      "source_group_id": "Crack:146",
+      "stage": "R1",
+      "user_decision": "PENDING_USER_DECISION",
+      "user_intent_summary": "用户说明绿色标记原本就在输入图像中且模糊源自原图并未最终接受或拒绝",
+      "acceptance_scope": "无新增最终接受范围",
+      "unresolved_technical_issues": "此前基于绿色标记和模糊感的否定理由已被用户解释不得直接认定为生成伪影且仍待最终决定与裁切范围审核",
+      "record_source": "用户本次 Exp13.2-A2 Batch 01 Human Decision Registration & Spatial Audit 指令第2节",
+      "recorded_utc": "2026-10-23T07:04:53.701228+00:00"
+    },
+    {
+      "variant_id": "crack_146_v2",
+      "source_group_id": "Crack:146",
+      "stage": "R1",
+      "user_decision": "PENDING_USER_DECISION",
+      "user_intent_summary": "用户说明绿色标记原本就在输入图像中且模糊源自原图并未最终接受或拒绝",
+      "acceptance_scope": "无新增最终接受范围",
+      "unresolved_technical_issues": "此前基于绿色标记和模糊感的否定理由已被用户解释不得直接认定为生成伪影且仍待最终决定与裁切范围审核",
+      "record_source": "用户本次 Exp13.2-A2 Batch 01 Human Decision Registration & Spatial Audit 指令第2节",
+      "recorded_utc": "2026-10-23T07:04:53.701228+00:00"
+    },
+    {
+      "variant_id": "crack_260_v1",
+      "source_group_id": "Crack:260",
+      "stage": "R1",
+      "user_decision": "ACCEPT",
+      "user_intent_summary": "",
+      "acceptance_scope": "",
+      "unresolved_technical_issues": "",
+      "record_source": "",
+      "recorded_utc": ""
+    },
+    {
+      "variant_id": "crack_260_v2",
+      "source_group_id": "Crack:260",
+      "stage": "R1",
+      "user_decision": "ACCEPT",
+      "user_intent_summary": "",
+      "acceptance_scope": "",
+      "unresolved_technical_issues": "",
+      "record_source": "",
+      "recorded_utc": ""
+    },
+    {
+      "variant_id": "crack_470_v1",
+      "source_group_id": "Crack:470",
+      "stage": "R1",
+      "user_decision": "USER_ACCEPTED_VISUAL_PENDING_SPATIAL_AUDIT",
+      "user_intent_summary": "用户接受视觉表现但未指定v1优于v2",
+      "acceptance_scope": "仅历史候选已审核视野的视觉表现且保留用户原始待空间审计状态",
+      "unresolved_technical_issues": "原mask像素全部保留但历史部分裁切文字矛盾仍保留待ChatGPT审计且不认证未标注缺陷或语义几何",
+      "record_source": "用户本次 Exp13.2-A2 Batch 01 Human Decision Registration & Spatial Audit 指令第2节",
+      "recorded_utc": "2026-10-23T07:04:53.701228+00:00"
+    },
+    {
+      "variant_id": "crack_470_v2",
+      "source_group_id": "Crack:470",
+      "stage": "R1",
+      "user_decision": "USER_ACCEPTED_VISUAL_PENDING_SPATIAL_AUDIT",
+      "user_intent_summary": "用户接受视觉表现但未指定v1优于v2",
+      "acceptance_scope": "仅历史候选已审核视野的视觉表现且保留用户原始待空间审计状态",
+      "unresolved_technical_issues": "原mask像素全部保留但历史部分裁切文字矛盾仍保留待ChatGPT审计且不认证未标注缺陷或语义几何",
+      "record_source": "用户本次 Exp13.2-A2 Batch 01 Human Decision Registration & Spatial Audit 指令第2节",
+      "recorded_utc": "2026-10-23T07:04:53.701228+00:00"
+    },
+    {
+      "variant_id": "corrosion_2_v1",
+      "source_group_id": "corrosion:2",
+      "stage": "R1",
+      "user_decision": "ACCEPT_WITH_SCOPE_LIMITATION",
+      "user_intent_summary": "",
+      "acceptance_scope": "",
+      "unresolved_technical_issues": "",
+      "record_source": "",
+      "recorded_utc": ""
+    },
+    {
+      "variant_id": "corrosion_2_v2",
+      "source_group_id": "corrosion:2",
+      "stage": "R1",
+      "user_decision": "ACCEPT_WITH_SCOPE_LIMITATION",
+      "user_intent_summary": "",
+      "acceptance_scope": "",
+      "unresolved_technical_issues": "",
+      "record_source": "",
+      "recorded_utc": ""
+    },
+    {
+      "variant_id": "corrosion_8_v1",
+      "source_group_id": "corrosion:8",
+      "stage": "R1",
+      "user_decision": "REJECT",
+      "user_intent_summary": "",
+      "acceptance_scope": "",
+      "unresolved_technical_issues": "",
+      "record_source": "",
+      "recorded_utc": ""
+    },
+    {
+      "variant_id": "corrosion_8_v2",
+      "source_group_id": "corrosion:8",
+      "stage": "R1",
+      "user_decision": "ACCEPT_WITH_RESERVATION",
+      "user_intent_summary": "",
+      "acceptance_scope": "",
+      "unresolved_technical_issues": "",
+      "record_source": "",
+      "recorded_utc": ""
+    },
+    {
+      "variant_id": "corrosion_13_v1",
+      "source_group_id": "corrosion:13",
+      "stage": "R1",
+      "user_decision": "USER_ACCEPTED_VISUAL_CROP_SCOPED",
+      "user_intent_summary": "用户接受历史512x512视野中的视觉表现",
+      "acceptance_scope": "仅已审核的历史512x512中心裁切视野",
+      "unresolved_technical_issues": "保留比例0.441285140562249且裁掉的原始缺陷不在接受范围内并保留历史source级风险不升级full-RAW",
+      "record_source": "用户本次 Exp13.2-A2 Batch 01 Human Decision Registration & Spatial Audit 指令第2节",
+      "recorded_utc": "2026-10-23T07:04:53.701228+00:00"
+    },
+    {
+      "variant_id": "corrosion_13_v2",
+      "source_group_id": "corrosion:13",
+      "stage": "R1",
+      "user_decision": "USER_ACCEPTED_VISUAL_CROP_SCOPED",
+      "user_intent_summary": "用户接受历史512x512视野中的视觉表现",
+      "acceptance_scope": "仅已审核的历史512x512中心裁切视野",
+      "unresolved_technical_issues": "保留比例0.441285140562249且裁掉的原始缺陷不在接受范围内并保留历史source级风险不升级full-RAW",
+      "record_source": "用户本次 Exp13.2-A2 Batch 01 Human Decision Registration & Spatial Audit 指令第2节",
+      "recorded_utc": "2026-10-23T07:04:53.701228+00:00"
+    }
+  ],
+  "constraints": [
+    "No historical decision is promoted to formal restoration-quality PASS.",
+    "Crop-only acceptance stays crop-only.",
+    "Corrosion 8 v1 rejection and v2 reservation remain separate.",
+    "Crack 470 historical warning/text conflict remains unresolved; no decision is rewritten."
+  ]
+}

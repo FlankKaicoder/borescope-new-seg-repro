@@ -1,0 +1,56 @@
+{
+  "status": "EXP13_2_A3_DREAMSHAPER_REVIEW_PREPARED_PENDING_CHATGPT_GATE",
+  "run_id": "20261025T203500Z_a3",
+  "inventory": {
+    "R1": 40,
+    "R2_diagnostic": 48,
+    "total": 88,
+    "source_groups": 20,
+    "A2_user_decisions": 16,
+    "reviewed_source_groups": 8
+  },
+  "trusted_pairs": 0,
+  "quality_gate_pass": 0,
+  "package": {
+    "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_a3_dreamshaper_review/20261025T203500Z_a3/dreamshaper_a3_review_package.zip",
+    "bytes": 14554299,
+    "sha256": "cb0160dba7bc957ff8ae8c48615c381fa2898febc32337b049db335bba895565",
+    "contents": [
+      "review_sheets/corrosion_13_a3_review.png",
+      "review_sheets/corrosion_2_a3_review.png",
+      "review_sheets/corrosion_8_a3_review.png",
+      "review_sheets/crack_111_a3_review.png",
+      "review_sheets/crack_146_a3_review.png",
+      "review_sheets/crack_260_a3_review.png",
+      "review_sheets/crack_470_a3_review.png",
+      "review_sheets/crack_86_a3_review.png",
+      "restoration_quality_review_template.csv",
+      "historical_user_decisions_crosswalk.json"
+    ],
+    "controlled_location": "AutoDL repository results; excluded from Git"
+  },
+  "budget": {
+    "inherited_from": "results/exp13_phase1b_s2/20261025T055350Z_smoke/call_ledger.json",
+    "source_ledger_sha256": "0acecb19e0b050c7c2fb2b0c06aa4df5ffb4ec8a695863d01e830459130231bd",
+    "occupied_calls": 3,
+    "actual_calls": 3,
+    "remaining_smoke": 1,
+    "new_sdxl_calls": 0,
+    "new_dreamshaper_calls": 0,
+    "gpu_model_loads": 0,
+    "gpt_fallback_calls": 0,
+    "val_test_access": 0,
+    "raw_dataset_write": 0,
+    "ssl_yolo_training": 0,
+    "ledger_mutated": false
+  },
+  "scope": {
+    "train_only": true,
+    "cpu_only": true,
+    "new_inference": 0,
+    "new_generation": 0,
+    "training": 0,
+    "val_test_access": 0,
+    "raw_dataset_write": 0
+  }
+}
