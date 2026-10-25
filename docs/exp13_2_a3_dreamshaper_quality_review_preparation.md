@@ -16,7 +16,7 @@ The joined inventory contains 88 traceable candidate rows: 40 R1 outputs and 48 
 
 Exactly 16 A2 user decisions map to R1 variants from eight source groups. These are not 16 independent samples. R2 outputs are diagnostic variants and have no inherited A2 decision. The crosswalk preserves decision source and scope, including pending decisions, crop-scoped acceptances, corrosion 8 v1 rejection / v2 reservation, and the unresolved Crack 470 text/spatial conflict. No decision was copied to a sibling variant or changed into a formal quality PASS.
 
-The 16 prior decisions identify candidates for focused follow-up, not approved pairs. Existing visual acceptances for Crack 86/260 and selected variants of Crack 111/146/470, plus crop-scoped corrosion 2/13 and reserved corrosion 8 v2, still require the full candidate-level review. Existing rejection and pending states remain intact. The review package does not newly score any pixels or claim that any defect was successfully removed.
+The 16 prior decisions identify candidates for focused follow-up, not approved pairs. Existing visual acceptances for Crack 86/260 and selected variants of Crack 111/470, plus crop-scoped corrosion 2/13 and reserved corrosion 8 v2, still require the full candidate-level review; Crack 146 remains pending. Existing rejection and pending states remain intact. The review package does not newly score any pixels or claim that any defect was successfully removed.
 
 ## Technical evidence and unresolved risks
 
