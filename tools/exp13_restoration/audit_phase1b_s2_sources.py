@@ -5,6 +5,7 @@ import csv
 import hashlib
 import json
 from pathlib import Path
+from datetime import datetime, timezone
 
 import numpy as np
 from PIL import Image, ImageDraw
@@ -13,7 +14,7 @@ from tools.exp13_restoration.geometry import Polygon, build_geometry, group_poly
 from tools.exp13_restoration.run_phase1a_r2 import MANIFEST, MANIFEST_SHA, RAW, sha256
 
 REPO = Path('/root/autodl-tmp/borescope-new-seg-repro')
-RUN_ID = '20261025T060000Z'
+RUN_ID = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
 OUT = REPO / 'results/exp13_phase1b_s2' / RUN_ID
 
 
@@ -54,7 +55,7 @@ def assess(row: dict, shapes: list[dict]) -> tuple[dict, list[np.ndarray], list]
             if not mask.any():
                 reasons.append(f'polygon_{i}: empty normative Pillow mask')
                 continue
-            geom = build_geometry(pts, w, h, context=32, halo_radius=2, roi_id=f'roi_{i}', source_id=str(row['stem']))
+            geom = build_geometry(pts, w, h, context=16, halo_radius=2, roi_id=f'roi_{i}', source_id=str(row['stem']))
             edge = min(min(x for x, _ in pts), min(y for _, y in pts), w - 1 - max(x for x, _ in pts), h - 1 - max(y for _, y in pts))
             if edge < 24:
                 reasons.append(f'polygon_{i}: border distance {edge:.3f}px < 24px')
