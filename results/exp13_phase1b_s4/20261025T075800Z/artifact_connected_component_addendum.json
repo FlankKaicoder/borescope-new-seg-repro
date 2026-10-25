@@ -1,0 +1,70 @@
+{
+  "status": "CPU_ONLY_ADDENDUM",
+  "records": [
+    {
+      "source_id": "2",
+      "roi_id": "roi_0",
+      "threshold": {
+        "output_luma_le": 25,
+        "input_luma_ge": 45
+      },
+      "threshold_pixel_count": 1172,
+      "threshold_bbox_xyxy": [
+        251,
+        453,
+        514,
+        685
+      ],
+      "connected_component_count": 9,
+      "largest_component": {
+        "area": 917,
+        "bbox_xyxy": [
+          477,
+          478,
+          514,
+          519
+        ]
+      },
+      "mapped_threshold_pixels_in_native_content": 1172,
+      "mapped_threshold_pixels_in_support": 1172,
+      "mapped_threshold_pixels_in_polygon": 1154,
+      "overlap_ratio_support": 1.0,
+      "overlap_ratio_polygon": 0.984641638225256,
+      "labeling": "scipy_8_connected",
+      "historical_s3_was_bbox_only": true
+    },
+    {
+      "source_id": "65",
+      "roi_id": "roi_1",
+      "threshold": {
+        "output_luma_le": 25,
+        "input_luma_ge": 45
+      },
+      "threshold_pixel_count": 810,
+      "threshold_bbox_xyxy": [
+        278,
+        533,
+        309,
+        569
+      ],
+      "connected_component_count": 1,
+      "largest_component": {
+        "area": 810,
+        "bbox_xyxy": [
+          278,
+          533,
+          309,
+          569
+        ]
+      },
+      "mapped_threshold_pixels_in_native_content": 810,
+      "mapped_threshold_pixels_in_support": 810,
+      "mapped_threshold_pixels_in_polygon": 240,
+      "overlap_ratio_support": 1.0,
+      "overlap_ratio_polygon": 0.2962962962962963,
+      "labeling": "scipy_8_connected",
+      "historical_s3_was_bbox_only": true
+    }
+  ],
+  "no_model_calls": 0
+}

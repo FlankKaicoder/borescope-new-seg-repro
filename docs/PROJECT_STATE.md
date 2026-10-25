@@ -241,3 +241,11 @@ Prepared only historical TRAIN R1 Crack86/260 and corrosion2/8 v1/v2: 8 candidat
   - Manual review confirms source 2's full context includes GE/UI, physical metal boundaries, dark background and defect; source 65 roi_0 has repeated reflect-padded metal edges; source 65 roi_1 is 66x63 native pixels enlarged 15.515x. These are eligibility risks beyond white-mask overlap.
   - S2 ledger remains authoritative at 3 occupied calls of 4, with one slot held. No output is approved as a pseudo-normal pair. Selection reconciliation and malformed exit-code evidence are preserved without rewriting history.
   - See [S3 review](exp13_phase1b_s3_root_cause_review.md), [handoff](exp13_phase1b_s3_handoff.md), and `results/exp13_phase1b_s3/20261025T141700Z/`. No Pilot, batch repair, trusted-pair freeze, SSL or training is authorized.
+
+### Exp13 Phase 1-B-S4 restoration eligibility feasibility (2026-10-25)
+
+  - Status: `RESTORATION_ELIGIBILITY_PREPARED_AWAITING_HUMAN_REVIEW`; TRAIN-only CPU scan, no model load/inference and no consumption of the remaining Smoke slot.
+  - Frozen TRAIN contains 668 images/1,266 polygons. 816 polygons from 530 sources pass geometry proxies; 20 human-review sheets cover all seven labels and 20 distinct sources. Automatic `RESTORATION_ELIGIBLE=0`; machine selection remains null.
+  - Exploratory sensitivity: `scale<=4x` plus valid Canvas content `>=75%` leaves 26 polygons/26 sources; `scale<=8x` plus content `>=75%` leaves 116/110. These are engineering filters, not validated science thresholds.
+  - Full-context UI/FOV, normal-metal continuity, physical-boundary and padding/mirror risks remain human review requirements. S2 connected components were added as a new CPU addendum without rewriting S3. Route B is suitable only as a separate deterministic CPU control; no pseudo-normal training data is approved.
+  - See [S4 review](exp13_phase1b_s4_eligibility_review.md), [handoff](exp13_phase1b_s4_handoff.md), and `results/exp13_phase1b_s4/20261025T075800Z/`. No fourth Smoke, Pilot, pair freeze, SSL or training is authorized.

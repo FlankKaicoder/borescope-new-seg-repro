@@ -1,0 +1,16 @@
+{
+  "status": "PREPARED_AWAITING_HUMAN_REVIEW",
+  "train_images": 668,
+  "train_polygons": 1266,
+  "geometry_eligible_polygons": 816,
+  "geometry_eligible_sources": 530,
+  "human_review_sheets": 20,
+  "restoration_eligible": 0,
+  "selection": null,
+  "model_load": 0,
+  "new_inference": 0,
+  "val_access": 0,
+  "test_access": 0,
+  "raw_dataset_write": 0,
+  "recommendation": "PREPARED_AWAITING_HUMAN_REVIEW"
+}

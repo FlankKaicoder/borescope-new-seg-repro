@@ -1,0 +1,21 @@
+{
+  "name": "RESTORATION_ELIGIBILITY_GATE",
+  "status": "PREPARED_AWAITING_HUMAN_REVIEW",
+  "checks": {
+    "REG-1": "UNKNOWN_HUMAN_REVIEW_REQUIRED for non-border UI/FOV/structure content; border/clamping auto-held",
+    "REG-2": "PROXY_ONLY_HUMAN_REVIEW_REQUIRED",
+    "REG-3": "UNKNOWN_HUMAN_REVIEW_REQUIRED",
+    "REG-4": "PASS_PROXY_RECORDED",
+    "REG-5": "PASS_PROXY_RECORDED_WITH_RISK_FLAGS",
+    "REG-6": "PASS_DETERMINISTIC_GEOMETRY",
+    "REG-7": "HOLD_SELECTION_NULL_UNTIL_HUMAN_REVIEW"
+  },
+  "candidate_count": 1266,
+  "geometry_eligible_count": 816,
+  "human_review_candidate_count": 20,
+  "restoration_eligible_count": 0,
+  "restoration_ineligible_count": 450,
+  "selection": null,
+  "automatic_restoration_passes": 0,
+  "reason": "Geometry and context proxies are insufficient for semantic restoration approval; human full-context review is mandatory."
+}

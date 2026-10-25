@@ -1,0 +1,228 @@
+{
+  "status": "PREPARED_AWAITING_HUMAN_REVIEW",
+  "candidate_count": 20,
+  "records": [
+    {
+      "review_index": 1,
+      "candidate_id": "624:roi_3",
+      "source_id": "624",
+      "roi_id": "roi_3",
+      "class_name": "Burn",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/01_624_roi_3.png",
+      "sheet_sha256": "932ab4065cd0768b4389763f23dffc0df06a66754c8eb209b3f6fdfda00a9998",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    },
+    {
+      "review_index": 2,
+      "candidate_id": "488:roi_0",
+      "source_id": "488",
+      "roi_id": "roi_0",
+      "class_name": "Crack",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/02_488_roi_0.png",
+      "sheet_sha256": "49484ff93a455f9ca5adb198f0feb8c24f9750cfefd87f98f7052628e419f664",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    },
+    {
+      "review_index": 3,
+      "candidate_id": "862:roi_0",
+      "source_id": "862",
+      "roi_id": "roi_0",
+      "class_name": "Dent",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/03_862_roi_0.png",
+      "sheet_sha256": "978899b633ade4f8df6d863b95cc3df6dfbec0c645fb62e1af463b27ef1d7b68",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    },
+    {
+      "review_index": 4,
+      "candidate_id": "316:roi_1",
+      "source_id": "316",
+      "roi_id": "roi_1",
+      "class_name": "Material missing",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/04_316_roi_1.png",
+      "sheet_sha256": "8a69be0ea5f9ef7fcf36ce4b7940ca8a6bb30272a3eed02853c836cb149e9338",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    },
+    {
+      "review_index": 5,
+      "candidate_id": "822:roi_0",
+      "source_id": "822",
+      "roi_id": "roi_0",
+      "class_name": "Tears",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/05_822_roi_0.png",
+      "sheet_sha256": "0551283a3aac94512aed7219c52446ebd90464eec70027ab3809e3ad84181c51",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    },
+    {
+      "review_index": 6,
+      "candidate_id": "459:roi_0",
+      "source_id": "459",
+      "roi_id": "roi_0",
+      "class_name": "Tip curl",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/06_459_roi_0.png",
+      "sheet_sha256": "ea7cf8543cb4cdcd9875631f98e22b8ef56553fc38c2bfe7b3756de3834207b9",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    },
+    {
+      "review_index": 7,
+      "candidate_id": "359:roi_3",
+      "source_id": "359",
+      "roi_id": "roi_3",
+      "class_name": "corrosion",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/07_359_roi_3.png",
+      "sheet_sha256": "c33a9339b9435a6e4c481828786cb4e6c4f782e5301ae57bac25c4aef6dcec3f",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    },
+    {
+      "review_index": 8,
+      "candidate_id": "584:roi_4",
+      "source_id": "584",
+      "roi_id": "roi_4",
+      "class_name": "Burn",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/08_584_roi_4.png",
+      "sheet_sha256": "1194cea7af61db9394c62b855e3e55a6707dc4877663d19d590d776cd38e3665",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    },
+    {
+      "review_index": 9,
+      "candidate_id": "470:roi_0",
+      "source_id": "470",
+      "roi_id": "roi_0",
+      "class_name": "Crack",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/09_470_roi_0.png",
+      "sheet_sha256": "3e5f156c68b135199b0a0c6820e704fb0f29906ee39fbadfdc088952269dde8e",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    },
+    {
+      "review_index": 10,
+      "candidate_id": "985:roi_0",
+      "source_id": "985",
+      "roi_id": "roi_0",
+      "class_name": "Dent",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/10_985_roi_0.png",
+      "sheet_sha256": "082954e6ed416bd34567aa9b508222ce53fc2351faba3cd016d7657b36444e01",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    },
+    {
+      "review_index": 11,
+      "candidate_id": "18:roi_0",
+      "source_id": "18",
+      "roi_id": "roi_0",
+      "class_name": "Material missing",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/11_18_roi_0.png",
+      "sheet_sha256": "2910eb9a949bbd5b5f1fbd89921c02535a4abe701051e2532b960c819d3abb43",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    },
+    {
+      "review_index": 12,
+      "candidate_id": "815:roi_0",
+      "source_id": "815",
+      "roi_id": "roi_0",
+      "class_name": "Tears",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/12_815_roi_0.png",
+      "sheet_sha256": "39dc1f4ae738d670ca7e99e47869404ee629b2ef92473feebd278f8da3b149f5",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    },
+    {
+      "review_index": 13,
+      "candidate_id": "465:roi_0",
+      "source_id": "465",
+      "roi_id": "roi_0",
+      "class_name": "Tip curl",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/13_465_roi_0.png",
+      "sheet_sha256": "f07a1817cd33892dd905050a044490d5efa96e859df6a255932e36ada43d9bef",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    },
+    {
+      "review_index": 14,
+      "candidate_id": "7:roi_8",
+      "source_id": "7",
+      "roi_id": "roi_8",
+      "class_name": "corrosion",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/14_7_roi_8.png",
+      "sheet_sha256": "854ee336322db3f386e52309daf5cba2f97655ca28cf9c44ced98e13367f8d92",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    },
+    {
+      "review_index": 15,
+      "candidate_id": "633:roi_5",
+      "source_id": "633",
+      "roi_id": "roi_5",
+      "class_name": "Burn",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/15_633_roi_5.png",
+      "sheet_sha256": "60eef9f61cdc114029678fea1a5b5919803ed785566afb6de815618a78dab85d",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    },
+    {
+      "review_index": 16,
+      "candidate_id": "101:roi_0",
+      "source_id": "101",
+      "roi_id": "roi_0",
+      "class_name": "Crack",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/16_101_roi_0.png",
+      "sheet_sha256": "91d517f426a7377020d5bc1cc4e2b87b84ef3b30ff1248c11ba67e1fab6659e1",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    },
+    {
+      "review_index": 17,
+      "candidate_id": "899:roi_0",
+      "source_id": "899",
+      "roi_id": "roi_0",
+      "class_name": "Dent",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/17_899_roi_0.png",
+      "sheet_sha256": "99ec9d59d3ab183284d812b9cb21928fef46e0640d2a2f5ebdf0ccc7b2feff64",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    },
+    {
+      "review_index": 18,
+      "candidate_id": "769:roi_0",
+      "source_id": "769",
+      "roi_id": "roi_0",
+      "class_name": "Material missing",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/18_769_roi_0.png",
+      "sheet_sha256": "ce9a8a97bec69495c39efbd5851e38514c32cdc7dc2c7410a00d3464d3b8f66c",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    },
+    {
+      "review_index": 19,
+      "candidate_id": "796:roi_0",
+      "source_id": "796",
+      "roi_id": "roi_0",
+      "class_name": "Tears",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/19_796_roi_0.png",
+      "sheet_sha256": "cc96282d4346000cbf8c4b6f5a5d1db50d4de7ced7ae963b516c646f2df27a3e",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    },
+    {
+      "review_index": 20,
+      "candidate_id": "448:roi_0",
+      "source_id": "448",
+      "roi_id": "roi_0",
+      "class_name": "Tip curl",
+      "sheet_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets/20_448_roi_0.png",
+      "sheet_sha256": "51569a92fe1e925303361b95588c82d0e6a3bf0b08cdebe0d732d88f935553f9",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "model_generated": false
+    }
+  ],
+  "selection": null,
+  "selection_reason": "No human review was executed in S4."
+}

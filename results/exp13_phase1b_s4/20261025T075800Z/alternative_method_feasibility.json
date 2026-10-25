@@ -1,0 +1,31 @@
+{
+  "status": "ANALYSIS_ONLY",
+  "route_a_sdxl_local_restoration": {
+    "strengths": [
+      "can model nontrivial texture and lighting",
+      "existing offline artifact and geometry pipeline"
+    ],
+    "risks": [
+      "raw Canvas artifacts in S2",
+      "UI/FOV/context contamination",
+      "semantic hallucination and non-deterministic texture"
+    ],
+    "reproducibility": "fixed seed/config is reproducible operationally but not semantically trustworthy",
+    "current_recommendation": "HOLD"
+  },
+  "route_b_classical_local_texture_control": {
+    "strengths": [
+      "deterministic, CPU-auditable, no model artifact or GPU budget",
+      "useful as a bounded engineering baseline"
+    ],
+    "risks": [
+      "cannot infer missing geometry or lighting",
+      "texture-copy seams and source contamination",
+      "may preserve or smear defects"
+    ],
+    "reproducibility": "high under fixed algorithm/mask/source region",
+    "current_recommendation": "WORTH_SEPARATE_CPU_CONTROL_ONLY"
+  },
+  "no_cpu_inpainting_executed": true,
+  "not_training_data": true
+}

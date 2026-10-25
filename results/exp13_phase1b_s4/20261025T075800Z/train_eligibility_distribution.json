@@ -1,0 +1,27 @@
+{
+  "status": "TRAIN_ONLY_CPU",
+  "manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "train_image_count": 668,
+  "train_polygon_count": 1266,
+  "geometry_eligible_polygon_count": 816,
+  "geometry_eligible_source_count": 530,
+  "class_counts": {
+    "corrosion": 500,
+    "Burn": 287,
+    "Material missing": 184,
+    "Crack": 95,
+    "Dent": 128,
+    "Tip curl": 27,
+    "Tears": 45
+  },
+  "geometry_eligible_class_counts": {
+    "corrosion": 309,
+    "Burn": 133,
+    "Material missing": 128,
+    "Crack": 78,
+    "Dent": 109,
+    "Tip curl": 25,
+    "Tears": 34
+  },
+  "context_proxy_is_not_semantic": true
+}

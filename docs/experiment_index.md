@@ -195,3 +195,11 @@ Three real TRAIN-only ROI calls ran for source 2 and dual-ROI source 65 using pi
 | Exp13 Phase 1-B-S3 | EXP13_PHASE1B_S3_DIAGNOSIS_COMPLETED_PENDING_CHATGPT_GATE | [Root-cause review](exp13_phase1b_s3_root_cause_review.md); [handoff](exp13_phase1b_s3_handoff.md); `results/exp13_phase1b_s3/20261025T141700Z/` |
 
 CPU-only comparisons of existing S2 source 2/65 Canvas, mask, inverse and paste stages localize the source-2 bar and source-65 roi_1 darkening to raw SDXL Canvas output. Manual review additionally records UI/FOV/structure contamination and reflect-padding risks. Mask padding leakage is zero, outside-support changes remain zero, and the S2 ledger stays at 3/4. The final Smoke slot is held; no output is an approved pseudo-normal pair.
+
+## Exp13 Phase 1-B-S4 restoration eligibility feasibility (2026-10-25)
+
+| Record | Status | Evidence |
+|---|---|---|
+| Exp13 Phase 1-B-S4 | RESTORATION_ELIGIBILITY_PREPARED_AWAITING_HUMAN_REVIEW | [Eligibility review](exp13_phase1b_s4_eligibility_review.md); [handoff](exp13_phase1b_s4_handoff.md); `results/exp13_phase1b_s4/20261025T075800Z/` |
+
+TRAIN-only CPU screening found 1,266 polygons/668 images, with 816 geometry-proxy polygons from 530 sources. Twenty contact sheets cover all seven labels and 20 distinct sources, but no candidate is restoration-eligible before full-context human review. At `scale<=4x` and Canvas content `>=75%`, 26 polygons/26 sources remain. S2 connected-component precision was added without rewriting S3. No model load, inference, fourth Smoke call, VAL/TEST access, raw write, Pilot or training occurred.

@@ -1,0 +1,230 @@
+{
+  "thresholds_are_exploratory_not_scientific": true,
+  "records": [
+    {
+      "max_scale": 2,
+      "min_content_fraction": 0.6,
+      "min_native_short_side": 16,
+      "polygon_count": 1,
+      "source_count": 1,
+      "class_counts": {
+        "Burn": 1
+      }
+    },
+    {
+      "max_scale": 2,
+      "min_content_fraction": 0.6,
+      "min_native_short_side": 32,
+      "polygon_count": 1,
+      "source_count": 1,
+      "class_counts": {
+        "Burn": 1
+      }
+    },
+    {
+      "max_scale": 2,
+      "min_content_fraction": 0.6,
+      "min_native_short_side": 64,
+      "polygon_count": 1,
+      "source_count": 1,
+      "class_counts": {
+        "Burn": 1
+      }
+    },
+    {
+      "max_scale": 2,
+      "min_content_fraction": 0.75,
+      "min_native_short_side": 16,
+      "polygon_count": 1,
+      "source_count": 1,
+      "class_counts": {
+        "Burn": 1
+      }
+    },
+    {
+      "max_scale": 2,
+      "min_content_fraction": 0.75,
+      "min_native_short_side": 32,
+      "polygon_count": 1,
+      "source_count": 1,
+      "class_counts": {
+        "Burn": 1
+      }
+    },
+    {
+      "max_scale": 2,
+      "min_content_fraction": 0.75,
+      "min_native_short_side": 64,
+      "polygon_count": 1,
+      "source_count": 1,
+      "class_counts": {
+        "Burn": 1
+      }
+    },
+    {
+      "max_scale": 4,
+      "min_content_fraction": 0.6,
+      "min_native_short_side": 16,
+      "polygon_count": 49,
+      "source_count": 48,
+      "class_counts": {
+        "corrosion": 7,
+        "Material missing": 22,
+        "Burn": 12,
+        "Crack": 8
+      }
+    },
+    {
+      "max_scale": 4,
+      "min_content_fraction": 0.6,
+      "min_native_short_side": 32,
+      "polygon_count": 49,
+      "source_count": 48,
+      "class_counts": {
+        "corrosion": 7,
+        "Material missing": 22,
+        "Burn": 12,
+        "Crack": 8
+      }
+    },
+    {
+      "max_scale": 4,
+      "min_content_fraction": 0.6,
+      "min_native_short_side": 64,
+      "polygon_count": 49,
+      "source_count": 48,
+      "class_counts": {
+        "corrosion": 7,
+        "Material missing": 22,
+        "Burn": 12,
+        "Crack": 8
+      }
+    },
+    {
+      "max_scale": 4,
+      "min_content_fraction": 0.75,
+      "min_native_short_side": 16,
+      "polygon_count": 26,
+      "source_count": 26,
+      "class_counts": {
+        "corrosion": 4,
+        "Material missing": 14,
+        "Burn": 8
+      }
+    },
+    {
+      "max_scale": 4,
+      "min_content_fraction": 0.75,
+      "min_native_short_side": 32,
+      "polygon_count": 26,
+      "source_count": 26,
+      "class_counts": {
+        "corrosion": 4,
+        "Material missing": 14,
+        "Burn": 8
+      }
+    },
+    {
+      "max_scale": 4,
+      "min_content_fraction": 0.75,
+      "min_native_short_side": 64,
+      "polygon_count": 26,
+      "source_count": 26,
+      "class_counts": {
+        "corrosion": 4,
+        "Material missing": 14,
+        "Burn": 8
+      }
+    },
+    {
+      "max_scale": 8,
+      "min_content_fraction": 0.6,
+      "min_native_short_side": 16,
+      "polygon_count": 182,
+      "source_count": 162,
+      "class_counts": {
+        "corrosion": 38,
+        "Burn": 49,
+        "Material missing": 63,
+        "Crack": 17,
+        "Tip curl": 9,
+        "Dent": 6
+      }
+    },
+    {
+      "max_scale": 8,
+      "min_content_fraction": 0.6,
+      "min_native_short_side": 32,
+      "polygon_count": 182,
+      "source_count": 162,
+      "class_counts": {
+        "corrosion": 38,
+        "Burn": 49,
+        "Material missing": 63,
+        "Crack": 17,
+        "Tip curl": 9,
+        "Dent": 6
+      }
+    },
+    {
+      "max_scale": 8,
+      "min_content_fraction": 0.6,
+      "min_native_short_side": 64,
+      "polygon_count": 182,
+      "source_count": 162,
+      "class_counts": {
+        "corrosion": 38,
+        "Burn": 49,
+        "Material missing": 63,
+        "Crack": 17,
+        "Tip curl": 9,
+        "Dent": 6
+      }
+    },
+    {
+      "max_scale": 8,
+      "min_content_fraction": 0.75,
+      "min_native_short_side": 16,
+      "polygon_count": 116,
+      "source_count": 110,
+      "class_counts": {
+        "corrosion": 23,
+        "Burn": 32,
+        "Material missing": 41,
+        "Crack": 5,
+        "Tip curl": 9,
+        "Dent": 6
+      }
+    },
+    {
+      "max_scale": 8,
+      "min_content_fraction": 0.75,
+      "min_native_short_side": 32,
+      "polygon_count": 116,
+      "source_count": 110,
+      "class_counts": {
+        "corrosion": 23,
+        "Burn": 32,
+        "Material missing": 41,
+        "Crack": 5,
+        "Tip curl": 9,
+        "Dent": 6
+      }
+    },
+    {
+      "max_scale": 8,
+      "min_content_fraction": 0.75,
+      "min_native_short_side": 64,
+      "polygon_count": 116,
+      "source_count": 110,
+      "class_counts": {
+        "corrosion": 23,
+        "Burn": 32,
+        "Material missing": 41,
+        "Crack": 5,
+        "Tip curl": 9,
+        "Dent": 6
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "script": "/tmp/exp13_phase1b_s4_eligibility.py",
+  "script_sha256": "64daa4186c646b3ba7ee8276b9a9062314a2474f67c2d2dd952278d7b3a10a9a",
+  "repo": "/root/autodl-tmp/borescope-new-seg-repro",
+  "raw_root": "/root/autodl-tmp/损伤训练数据集",
+  "manifest": "/root/autodl-tmp/borescope-new-seg-repro/results/dataset_build/exp01_1_split_20260812T122306Z/artifacts/split_manifest.csv",
+  "manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "train_only": true,
+  "val_access": 0,
+  "test_access": 0,
+  "raw_dataset_write": 0,
+  "model_load": 0,
+  "model_calls": 0,
+  "contact_sheet_dir": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s4/20261025T075800Z/candidate_contact_sheets",
+  "human_review": "not performed"
+}
