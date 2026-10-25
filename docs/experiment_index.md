@@ -187,3 +187,11 @@ Stopped before model load because source 17 ROI1 reaches the image's right edge 
 `EXP13_PHASE1B_S2_COMPLETED_PENDING_CHATGPT_GATE`. [Review](exp13_phase1b_s2_smoke_review.md); [handoff](exp13_phase1b_s2_handoff.md); [summary](../results/exp13_phase1b_s2/20261025T055350Z_smoke/summary.json); [ledger](../results/exp13_phase1b_s2/20261025T055350Z_smoke/call_ledger.json).
 
 Three real TRAIN-only ROI calls ran for source 2 and dual-ROI source 65 using pinned offline SDXL. Native geometry, paste-back, and immutable outside-support checks passed; 3/4 Smoke calls are occupied. Semantic quality failed: source 2 has a black rectangular artifact and source 65's small ROI is dark/implausible. Neither is an approved pseudo-normal sample. The candidate audit's null selection and malformed process exit-code capture remain explicit audit limitations. Stop for ChatGPT review; no Pilot or training is authorized.
+
+## Exp13 Phase 1-B-S3 zero-inference artifact root-cause audit (2026-10-25)
+
+| Record | Status | Evidence |
+|---|---|---|
+| Exp13 Phase 1-B-S3 | EXP13_PHASE1B_S3_DIAGNOSIS_COMPLETED_PENDING_CHATGPT_GATE | [Root-cause review](exp13_phase1b_s3_root_cause_review.md); [handoff](exp13_phase1b_s3_handoff.md); `results/exp13_phase1b_s3/20261025T141700Z/` |
+
+CPU-only comparisons of existing S2 source 2/65 Canvas, mask, inverse and paste stages localize the source-2 bar and source-65 roi_1 darkening to raw SDXL Canvas output. Manual review additionally records UI/FOV/structure contamination and reflect-padding risks. Mask padding leakage is zero, outside-support changes remain zero, and the S2 ledger stays at 3/4. The final Smoke slot is held; no output is an approved pseudo-normal pair.

@@ -1,0 +1,41 @@
+{
+  "status": "CPU_AUDIT_ONLY",
+  "model_load": 0,
+  "new_inference_calls": 0,
+  "val_access": 0,
+  "test_access": 0,
+  "raw_data_write": 0,
+  "postprocess_outputs": "POSTPROCESS_DIAGNOSTIC_ONLY",
+  "records": [
+    {
+      "source_id": "2",
+      "roi_id": "roi_0",
+      "dark_artifact_bbox": [
+        251,
+        453,
+        514,
+        685
+      ]
+    },
+    {
+      "source_id": "65",
+      "roi_id": "roi_0",
+      "dark_artifact_bbox": [
+        800,
+        546,
+        804,
+        549
+      ]
+    },
+    {
+      "source_id": "65",
+      "roi_id": "roi_1",
+      "dark_artifact_bbox": [
+        278,
+        533,
+        309,
+        569
+      ]
+    }
+  ]
+}

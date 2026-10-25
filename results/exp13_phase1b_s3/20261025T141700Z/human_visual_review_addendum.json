@@ -1,0 +1,35 @@
+{
+  "source": "user-provided manual visual review addendum",
+  "status": "INCORPORATED_INTO_S3_AUDIT",
+  "source_2_roi_0": {
+    "observations": [
+      "Black horizontal bar is already visible in the roi_0 SDXL Canvas.",
+      "Input Canvas includes a blue-white GE icon, physical metal structure boundaries, dark background and defect content in the same context crop.",
+      "UI/FOV/structure contamination must be assessed across the full ROI context, not only by testing whether UI pixels overlap the white edit mask."
+    ],
+    "root_cause_implication": "Input-context pollution is a confirmed eligibility risk and a plausible contributor, while raw SDXL output remains the first confirmed artifact stage."
+  },
+  "source_65_roi_0": {
+    "observations": [
+      "The input Canvas visibly contains repeated metal-edge structure caused by reflect padding.",
+      "The persisted geometry is 453x101 native ROI, resized to 1024x228 valid content with 398 top padding rows."
+    ],
+    "derived_content_fraction": 0.22265625,
+    "mirror_boundary": "valid content begins at Canvas y=398 and reflect-padded content occupies y=0..397 and y=626..1023; no mask enters padding",
+    "root_cause_implication": "Reflect-padding contamination is a real input risk, but cannot alone explain roi_1, whose padding fraction is only 4.59%."
+  },
+  "source_65_roi_1": {
+    "observations": [
+      "Original ROI is 66x63 native pixels.",
+      "The resize scale is approximately 15.515x, leaving limited independent normal-metal reference.",
+      "The localized darkening is already visible in the raw SDXL Canvas; global support mean is not a sufficient quality metric."
+    ],
+    "derived_content_fraction": 0.9541015625,
+    "root_cause_implication": "Low native information and limited context are confirmed eligibility risks; they are distinct from the raw-output first-stage finding."
+  },
+  "prohibitions": [
+    "Do not attribute the artifacts to FP16 VAE behavior without direct evidence.",
+    "Do not alter the S2 ledger or historical result files.",
+    "Do not start additional GPU inference, Pilot, SSL or training."
+  ]
+}

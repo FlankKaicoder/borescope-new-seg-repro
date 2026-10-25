@@ -1,0 +1,185 @@
+{
+  "source_root": "E:\\github_repositories\\borescope-new-seg-repro\\.r2tmp\\s3_inputs\\20261025T055350Z_smoke",
+  "files": [
+    {
+      "path": "2_roi_0_native_roi.png",
+      "bytes": 19720,
+      "sha256": "839e311de34eb972dfe2bb5e8738f12d81958b0377148e64ae9a4d274b4c5340"
+    },
+    {
+      "path": "2_roi_0_sdxl_canvas.png",
+      "bytes": 859461,
+      "sha256": "ed7d07b2d9e9f65ed22fa67190bedc3b472e9adf0b1a210762999709ce26bc41"
+    },
+    {
+      "path": "65_roi_0_native_roi.png",
+      "bytes": 63736,
+      "sha256": "45e6d6772b48b401870a3c24569c6f4eaac1085efb9a20ade6fed92e4758f246"
+    },
+    {
+      "path": "65_roi_0_sdxl_canvas.png",
+      "bytes": 1042785,
+      "sha256": "330e563592d51feff9892c69c1dfd425719ef610904ea7347f79be6ef1a0a5ea"
+    },
+    {
+      "path": "65_roi_1_native_roi.png",
+      "bytes": 6099,
+      "sha256": "703c429b81470fc01b3b11f9383f5e868be7c68f2fcaa96097f18ddca31f0e31"
+    },
+    {
+      "path": "65_roi_1_sdxl_canvas.png",
+      "bytes": 608245,
+      "sha256": "105726f041d9bf7d54c56911fda22d368d8f5ffb10b20455e20475e96bf60027"
+    },
+    {
+      "path": "call_ledger.json",
+      "bytes": 3594,
+      "sha256": "0acecb19e0b050c7c2fb2b0c06aa4df5ffb4ec8a695863d01e830459130231bd"
+    },
+    {
+      "path": "call_ledger.json.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "call_ledger_snapshot.json",
+      "bytes": 3594,
+      "sha256": "0acecb19e0b050c7c2fb2b0c06aa4df5ffb4ec8a695863d01e830459130231bd"
+    },
+    {
+      "path": "environment_preflight.json",
+      "bytes": 4856,
+      "sha256": "559540f2a48bbfe99c164714dfb29970ea3e5a4fd60de3e60f75cbfeb79a0938"
+    },
+    {
+      "path": "frozen_smoke_config.json",
+      "bytes": 1273,
+      "sha256": "05be28f4d8b195856aedbb323c9cd28a233524a2e656ff3f96630837dd3a4a42"
+    },
+    {
+      "path": "model_load_report.json",
+      "bytes": 281,
+      "sha256": "459c73acd0a8857d4e838f736e3ebab7363b8dc2cfcc7f25def12fba478c7748"
+    },
+    {
+      "path": "runtime_metrics.json",
+      "bytes": 3886,
+      "sha256": "01735fc57e006414d1ede9c1f2096c31635fbdcc66f501a15e4948e1f5cfa8a9"
+    },
+    {
+      "path": "smoke_source_manifest.json",
+      "bytes": 7716,
+      "sha256": "4b1eaa76c99038a4450db5da1848a623da8a815e81cec925ab812cb1881d4097"
+    },
+    {
+      "path": "source_2\\original.png",
+      "bytes": 413368,
+      "sha256": "49938e558719c54a839c37f5d29570f5e849aefa1eb292b86c5e45733ea44c44"
+    },
+    {
+      "path": "source_2\\polygon_overlay_review_only.png",
+      "bytes": 413688,
+      "sha256": "eadc17220e4e73275fd1109742a9445b9e49deae6cf3ac363272e2964652ca2b"
+    },
+    {
+      "path": "source_2\\roi_0_defect_zoom.png",
+      "bytes": 23387,
+      "sha256": "5c28370851f180749f2b90a07d7c23e4e788e205f4a9a64746adc3191ff4f34f"
+    },
+    {
+      "path": "source_2\\roi_0_input_canvas.png",
+      "bytes": 665152,
+      "sha256": "120b6fde564478402acdc16bdfd55b7be112271f2a10fcee2b94afd48515b0d1"
+    },
+    {
+      "path": "source_2\\roi_0_mask_canvas.png",
+      "bytes": 2203,
+      "sha256": "83424374ae33b533e9c0780bdfb5361473516b9666d17ef31069caa6fbcc22d8"
+    },
+    {
+      "path": "source_2_contact_sheet.png",
+      "bytes": 754299,
+      "sha256": "aa48d70aa03544abc254c2e7f6cfb89298eb41cf99a4476b2c3d9828b680a625"
+    },
+    {
+      "path": "source_2_difference.png",
+      "bytes": 2931,
+      "sha256": "7aac9c94927b48e17a6fefe79988d62a510d482d09e6b669c4acc052f00c2ef2"
+    },
+    {
+      "path": "source_2_geometry_validation.json",
+      "bytes": 278,
+      "sha256": "37af05cb67909dd6350fa1e7fd8a6659744cd1e34c0098c8584c6c1214708e13"
+    },
+    {
+      "path": "source_2_restored.png",
+      "bytes": 413638,
+      "sha256": "12b9a8d917d13a3728e54f0ab0ce01caba196ab9aac812dc4d9a20564f712a86"
+    },
+    {
+      "path": "source_65\\original.png",
+      "bytes": 542184,
+      "sha256": "789d4651b34616e3885bbd6ba7e52e8ed17cfce5d3ebe326672d0d34360c6f93"
+    },
+    {
+      "path": "source_65\\polygon_overlay_review_only.png",
+      "bytes": 543968,
+      "sha256": "5c95eb9ea68bbda03c20f768ced4a450ef1ac64334e5f8ac9ba1f15616037065"
+    },
+    {
+      "path": "source_65\\roi_0_defect_zoom.png",
+      "bytes": 84380,
+      "sha256": "fd422feedb63c96946430f4d254aac4f7d17f3fb02669f55760eb3089a639291"
+    },
+    {
+      "path": "source_65\\roi_0_input_canvas.png",
+      "bytes": 985210,
+      "sha256": "11c162970af6eef0410c0413e4d6d4ef4f38cd3073fbd82082bb73c0e13c3213"
+    },
+    {
+      "path": "source_65\\roi_0_mask_canvas.png",
+      "bytes": 1911,
+      "sha256": "42dff6331f5ac553080ed9e325ebfa247637403397c509e855f1f7916d4b15b0"
+    },
+    {
+      "path": "source_65\\roi_1_defect_zoom.png",
+      "bytes": 7609,
+      "sha256": "f616fb5601253e80eee3a50455995dd4f756e020d323eb9755c9c4198ab2b866"
+    },
+    {
+      "path": "source_65\\roi_1_input_canvas.png",
+      "bytes": 338028,
+      "sha256": "c6d212db12b92a28c4ce1effced07a2cac0ebc63c7d31f4af8b788dce40c0672"
+    },
+    {
+      "path": "source_65\\roi_1_mask_canvas.png",
+      "bytes": 2333,
+      "sha256": "766c8718f1986ec359bdd9d1e51637765e3b6553742bbf3eb2978f81085d9dd9"
+    },
+    {
+      "path": "source_65_contact_sheet.png",
+      "bytes": 1030579,
+      "sha256": "801bcd0a247c64c16cd69a251145e9841e2ed6f375e77371401e5cb4c78c3181"
+    },
+    {
+      "path": "source_65_difference.png",
+      "bytes": 6491,
+      "sha256": "2076d80f08a0cd236b5514e8c689191baf8bdabd2dd77a0d1fcf803a52949c92"
+    },
+    {
+      "path": "source_65_geometry_validation.json",
+      "bytes": 279,
+      "sha256": "175f6f26ce478b66d2115ae5d663e0fc8689c7a33a0c24d663bcf91f3101f9ae"
+    },
+    {
+      "path": "source_65_restored.png",
+      "bytes": 542395,
+      "sha256": "e4922e7d1c3e4f5109eb32054408c5b9273760a4c4ef456198ef51853db5072d"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 600,
+      "sha256": "8f82696887d783b0e0a3d2c162f253ba3d66b0f94636d88be87d5f061bad02c6"
+    }
+  ]
+}

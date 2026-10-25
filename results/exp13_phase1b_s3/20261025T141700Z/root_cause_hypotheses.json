@@ -1,0 +1,102 @@
+{
+  "status": "DIAGNOSIS_ONLY_NO_NEW_INFERENCE",
+  "human_visual_review_addendum": "human_visual_review_addendum.json",
+  "classification": {
+    "A_original_dark_or_overlay": {
+      "evidence": "Source 2 original crop contains dark native content but no matching rectangular region; the source-65 roi_1 native crop is dark before editing.",
+      "counterevidence": "Source 2 has 0 matching input-dark pixels at the detected rectangle coordinates; source-65 roi_1 has 810 output-dark pixels whose corresponding input pixels are above the threshold.",
+      "confidence": "LOW for source-2 rectangle; MEDIUM as a contributing baseline for source-65 roi_1",
+      "verifiable_from_existing_files": true,
+      "repair": "Do not treat dark source content as normal-metal evidence; improve source/context screening.",
+      "new_model_calls": 0
+    },
+    "B_crop_padding_scale_design": {
+      "evidence": "Reflect padding is part of the frozen runner. Canvas padding is 46.68% for source 2, 77.73% for source 65 roi_0, and 4.59% for roi_1. Manual review confirms repeated metal-edge structures in source 65 roi_0's padded input.",
+      "counterevidence": "The source-2 rectangle is inside the valid content and support, and source-65 roi_1 remains semantically poor despite only 4.59% padding.",
+      "confidence": "MEDIUM as a risk factor, LOW as the sole root cause",
+      "verifiable_from_existing_files": true,
+      "repair": "Use a context-balanced ROI/padding policy and explicitly record content fraction before any future run.",
+      "new_model_calls": 1,
+      "call_scope": "One same-source source-2 call with only the padding policy changed, all other frozen variables unchanged; requires a new Gate and is not executed here."
+    },
+    "C_raw_sdxl_output_artifact": {
+      "evidence": "The source-2 dark rectangle exists in the persisted raw SDXL output Canvas, has no matching dark input pixels, and maps entirely into native edit support (1172/1172; 1154/1172 in the polygon). Source-65 roi_1 also has 810 newly dark output Canvas pixels. Manual review independently confirms the black bar is visible at this stage.",
+      "counterevidence": "Existing files cannot identify whether the cause is latent conditioning, decoder behavior, or model semantics internally.",
+      "confidence": "HIGH that the first observed artifact stage is raw model output; LOW for the internal sub-cause",
+      "verifiable_from_existing_files": true,
+      "repair": "Reject the outputs as pseudo-normal data; isolate model/context/prompt factors in a separately authorized test.",
+      "new_model_calls": 0
+    },
+    "D_vae_fp16_numerical": {
+      "evidence": "All persisted outputs are finite, non-constant, and not black as reported by S2 runtime metrics.",
+      "counterevidence": "The raw output contains localized artifacts, which cannot be ruled out as a decoder interaction using post hoc PNGs alone.",
+      "confidence": "LOW / INCONCLUSIVE",
+      "verifiable_from_existing_files": false,
+      "repair": "Only an explicitly authorized instrumented comparison could test VAE precision; do not change precision in this audit.",
+      "new_model_calls": 1
+    },
+    "E_inverse_mapping": {
+      "evidence": "LANCZOS-to-native reconstruction and the persisted native ROI are byte-identical inside support; nearest-vs-LANCZOS differs mildly but cannot create a rectangle already present in the Canvas.",
+      "counterevidence": "The artifact is present before inverse mapping.",
+      "confidence": "HIGH that inverse mapping is not the first source of the black rectangle; MEDIUM that it contributes small boundary differences",
+      "verifiable_from_existing_files": true,
+      "repair": "Prefer a documented nearest/area policy for mask-aligned diagnostics; do not claim this removes model artifacts.",
+      "new_model_calls": 0
+    },
+    "F_native_mask_hard_paste": {
+      "evidence": "Outside-support changes are zero; saved native ROI equals the LANCZOS inverse inside support and equals the original crop outside support. Source-65 seam delta rises from 4.58 to 5.80 mean RGB units for roi_0 and 4.73 to 6.02 for roi_1.",
+      "counterevidence": "The black rectangle and roi_1 dark region are already in raw Canvas output and are not outside-support paste artifacts.",
+      "confidence": "HIGH that hard paste is not the primary artifact source; MEDIUM that it can expose seams",
+      "verifiable_from_existing_files": true,
+      "repair": "If later authorized, test a single feathered boundary policy as a postprocess control; never use it to hide semantic defects.",
+      "new_model_calls": 0
+    },
+    "G_multi_factor_inconclusive": {
+      "evidence": "Raw model output is the first observed stage, while extreme padding and narrow contexts plausibly affect conditioning and seam risk.",
+      "counterevidence": "A single S2 run per ROI cannot separate model, prompt, padding, and precision sub-causes.",
+      "confidence": "MEDIUM for the overall semantic failure being multi-factor; internal mechanism INCONCLUSIVE",
+      "verifiable_from_existing_files": false,
+      "repair": "Keep the final Smoke slot reserved until a new Gate defines one-factor attribution.",
+      "new_model_calls": 0
+    }
+  },
+  "repair_hypotheses_max_three": [
+    {
+      "id": "H1_padding_policy",
+      "observed_anomaly": "Source 2 has 46.68% padding and source 65 roi_0 has 77.73% padding.",
+      "mechanism": "Reflect-padded duplicate context may bias inpainting when valid content is a narrow band.",
+      "single_factor": "Change only the padding policy; preserve source, ROI, prompt, seed, strength, steps, model and mask.",
+      "expected_improvement": "Less duplicated-context conditioning and fewer edge-driven structures.",
+      "risk": "Source 65 roi_1 is poor with only 4.59% padding, so this cannot explain all failures.",
+      "new_model_calls": 1,
+      "recommendation": "CONDITIONAL_ONLY; not worth spending the last slot without a new Gate"
+    },
+    {
+      "id": "H2_context_balance",
+      "observed_anomaly": "The edited supports occupy long, thin or very small native ROI shapes.",
+      "mechanism": "Defect-to-normal-context ratio and aspect ratio may leave insufficient representative metal context.",
+      "single_factor": "Change only a pre-registered ROI context size/aspect rule; preserve the model and all inference parameters.",
+      "expected_improvement": "More stable local texture and less dark semantic collapse.",
+      "risk": "It changes the input geometry and may introduce FOV/UI content; it needs a new source safety review.",
+      "new_model_calls": 1,
+      "recommendation": "DEFER"
+    },
+    {
+      "id": "H3_boundary_blend",
+      "observed_anomaly": "Postprocess seam deltas increase for source 65 after support paste.",
+      "mechanism": "Binary support paste exposes a model/native transition at the halo boundary.",
+      "single_factor": "Change only the native boundary composition to a fixed feather rule; preserve raw model output and all model settings.",
+      "expected_improvement": "Lower visible seams at support boundaries.",
+      "risk": "It cannot remove a raw Canvas artifact inside the polygon and may alter labeled pixels outside the intended edit core.",
+      "new_model_calls": 0,
+      "recommendation": "CPU-only diagnostic is possible; do not call it a semantic repair"
+    }
+  ],
+  "last_smoke_slot": {
+    "smoke_occupied": 3,
+    "smoke_cap": 4,
+    "remaining": 1,
+    "recommendation": "HOLD_REMAINING_SLOT",
+    "reason": "The first-stage failure is raw SDXL output in two distinct ROIs, and one call cannot establish a general repair or distinguish the internal model/decoder cause."
+  }
+}

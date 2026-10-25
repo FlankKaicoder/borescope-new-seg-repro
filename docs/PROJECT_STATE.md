@@ -233,3 +233,11 @@ Prepared only historical TRAIN R1 Crack86/260 and corrosion2/8 v1/v2: 8 candidat
 - Audit traceability caveat: the safe-candidate JSON is still `VISUAL_REVIEW_REQUIRED` with null selection, while the frozen pre-inference config and source manifest identify sources 2 and 65 and include source/hash provenance. The malformed process exit-code capture is preserved and not interpreted as success; stdout and terminal ledger report completion.
 - TRAIN-only; VAL/TEST access 0/0, raw-data write 0, SSL/YOLO training 0. Generated images/contact sheets and all model files remain outside Git. See [S2 review](exp13_phase1b_s2_smoke_review.md), [handoff](exp13_phase1b_s2_handoff.md), and `results/exp13_phase1b_s2/`.
 - Stop for ChatGPT Gate. No Pilot, batch repair, trusted-pair freeze, SSL or downstream training is authorized.
+
+### Exp13 Phase 1-B-S3 zero-inference artifact root-cause audit (2026-10-25)
+
+  - Status: `EXP13_PHASE1B_S3_DIAGNOSIS_COMPLETED_PENDING_CHATGPT_GATE`; CPU-only audit of persisted S2 outputs, with zero new model loads and zero new inference calls.
+  - Source 2's black bar first appears in raw SDXL Canvas output: 1,172 new-dark pixels versus input, all inside edit support and 1,154 inside the original polygon. Source 65 roi_1 has 810 new-dark raw-output pixels. Inverse mapping and hard paste do not create these artifacts.
+  - Manual review confirms source 2's full context includes GE/UI, physical metal boundaries, dark background and defect; source 65 roi_0 has repeated reflect-padded metal edges; source 65 roi_1 is 66x63 native pixels enlarged 15.515x. These are eligibility risks beyond white-mask overlap.
+  - S2 ledger remains authoritative at 3 occupied calls of 4, with one slot held. No output is approved as a pseudo-normal pair. Selection reconciliation and malformed exit-code evidence are preserved without rewriting history.
+  - See [S3 review](exp13_phase1b_s3_root_cause_review.md), [handoff](exp13_phase1b_s3_handoff.md), and `results/exp13_phase1b_s3/20261025T141700Z/`. No Pilot, batch repair, trusted-pair freeze, SSL or training is authorized.

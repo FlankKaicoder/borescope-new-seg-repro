@@ -1,0 +1,20 @@
+{
+  "status": "CPU_AUDIT_ONLY",
+  "source_artifacts": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s2/20261025T055350Z_smoke/",
+  "local_input_mirror": ".r2tmp/s3_inputs/20261025T055350Z_smoke",
+  "audit_script": "tools/exp13_restoration/audit_phase1b_s3.py",
+  "source_ids": ["2", "65"],
+  "source_roi_calls": ["2/roi_0", "65/roi_0", "65/roi_1"],
+  "model_load": 0,
+  "inference_calls": 0,
+  "postprocess_outputs": "POSTPROCESS_DIAGNOSTIC_ONLY",
+  "generated_contact_sheet": "s3_cpu_stage_diagnostic_contact_sheet.png",
+  "controlled_server_contact_sheet": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s3/20261025T141700Z/s3_cpu_stage_diagnostic_contact_sheet.png",
+  "controlled_server_contact_sheet_sha256": "f11775ea9bdcd10bffe50333a0f8bdac463e3a7f44154745bfb5a72072ce7118",
+  "raw_images_committed": false,
+  "val_access": 0,
+  "test_access": 0,
+  "raw_data_write": 0,
+  "historical_s2_evidence_unchanged": true,
+  "historical_exit_code_file_preserved": true
+}

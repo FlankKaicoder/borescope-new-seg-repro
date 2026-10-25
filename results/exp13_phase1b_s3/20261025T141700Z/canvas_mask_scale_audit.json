@@ -1,0 +1,257 @@
+{
+  "calls": [
+    {
+      "source_id": "2",
+      "roi_id": "roi_0",
+      "canvas": {
+        "size": [
+          1024,
+          1024
+        ],
+        "content_pixels": 559104,
+        "padding_pixels": 489472,
+        "padding_ratio": 0.466796875,
+        "mask_white_pixels": 142196,
+        "mask_white_in_padding": 0,
+        "mask_bbox": [
+          98,
+          337,
+          933,
+          694
+        ]
+      },
+      "mapping": {
+        "lanczos_vs_nearest": {
+          "pixels_considered": 3135,
+          "changed_pixels": 2795,
+          "mae_rgb_sum": 0.877511961722488,
+          "threshold": 0
+        },
+        "saved_native_vs_lanczos_inside_support": {
+          "pixels_considered": 3135,
+          "changed_pixels": 0,
+          "mae_rgb_sum": 0.0,
+          "threshold": 0
+        },
+        "saved_native_outside_support_vs_original": {
+          "pixels_considered": 9177,
+          "changed_pixels": 0,
+          "mae_rgb_sum": 0.0,
+          "threshold": 0
+        },
+        "raw_model_changed_pixels": {
+          "pixels_considered": 1048576,
+          "changed_pixels": 1041976,
+          "mae_rgb_sum": 2.999866167704264,
+          "threshold": 0
+        },
+        "raw_model_changed_content": {
+          "pixels_considered": 559104,
+          "changed_pixels": 556834,
+          "mae_rgb_sum": 4.185337015415141,
+          "threshold": 0
+        },
+        "runtime_reported_raw_changed": 12260,
+        "runtime_reported_clipped_outside": 9126,
+        "runtime_clipped_fraction": 0.7443719412724307
+      },
+      "geometry": {
+        "native_shape": [
+          640,
+          480
+        ],
+        "roi_box_xyxy": [
+          24,
+          48,
+          176,
+          129
+        ],
+        "transform": {
+          "native_width": 152,
+          "native_height": 81,
+          "canvas_size": 1024,
+          "scale": 6.7368421052631575,
+          "resized_width": 1024,
+          "resized_height": 546,
+          "pad_left": 0,
+          "pad_top": 239,
+          "resize_interpolation": "lanczos_image_nearest_mask",
+          "mask_interpolation": "nearest",
+          "padding_mode": "reflect_or_constant_declared_by_runner"
+        },
+        "polygon_pixels": 2394,
+        "support_pixels": 3135,
+        "polygon_covered_by_support": true
+      }
+    },
+    {
+      "source_id": "65",
+      "roi_id": "roi_0",
+      "canvas": {
+        "size": [
+          1024,
+          1024
+        ],
+        "content_pixels": 233472,
+        "padding_pixels": 815104,
+        "padding_ratio": 0.77734375,
+        "mask_white_pixels": 42944,
+        "mask_white_in_padding": 0,
+        "mask_bbox": [
+          33,
+          431,
+          991,
+          594
+        ]
+      },
+      "mapping": {
+        "lanczos_vs_nearest": {
+          "pixels_considered": 8407,
+          "changed_pixels": 6991,
+          "mae_rgb_sum": 0.8296261052297689,
+          "threshold": 0
+        },
+        "saved_native_vs_lanczos_inside_support": {
+          "pixels_considered": 8407,
+          "changed_pixels": 0,
+          "mae_rgb_sum": 0.0,
+          "threshold": 0
+        },
+        "saved_native_outside_support_vs_original": {
+          "pixels_considered": 37346,
+          "changed_pixels": 0,
+          "mae_rgb_sum": 0.0,
+          "threshold": 0
+        },
+        "raw_model_changed_pixels": {
+          "pixels_considered": 1048576,
+          "changed_pixels": 1044406,
+          "mae_rgb_sum": 2.4217170079549155,
+          "threshold": 0
+        },
+        "raw_model_changed_content": {
+          "pixels_considered": 233472,
+          "changed_pixels": 232692,
+          "mae_rgb_sum": 2.8402235243055554,
+          "threshold": 0
+        },
+        "runtime_reported_raw_changed": 45603,
+        "runtime_reported_clipped_outside": 37205,
+        "runtime_clipped_fraction": 0.8158454487643357
+      },
+      "geometry": {
+        "native_shape": [
+          720,
+          540
+        ],
+        "roi_box_xyxy": [
+          139,
+          161,
+          592,
+          262
+        ],
+        "transform": {
+          "native_width": 453,
+          "native_height": 101,
+          "canvas_size": 1024,
+          "scale": 2.260485651214128,
+          "resized_width": 1024,
+          "resized_height": 228,
+          "pad_left": 0,
+          "pad_top": 398,
+          "resize_interpolation": "lanczos_image_nearest_mask",
+          "mask_interpolation": "nearest",
+          "padding_mode": "reflect_or_constant_declared_by_runner"
+        },
+        "polygon_pixels": 6427,
+        "support_pixels": 8407,
+        "polygon_covered_by_support": true
+      }
+    },
+    {
+      "source_id": "65",
+      "roi_id": "roi_1",
+      "canvas": {
+        "size": [
+          1024,
+          1024
+        ],
+        "content_pixels": 1000448,
+        "padding_pixels": 48128,
+        "padding_ratio": 0.0458984375,
+        "mask_white_pixels": 245962,
+        "mask_white_in_padding": 0,
+        "mask_bbox": [
+          225,
+          248,
+          799,
+          775
+        ]
+      },
+      "mapping": {
+        "lanczos_vs_nearest": {
+          "pixels_considered": 1021,
+          "changed_pixels": 725,
+          "mae_rgb_sum": 0.3774077701599739,
+          "threshold": 0
+        },
+        "saved_native_vs_lanczos_inside_support": {
+          "pixels_considered": 1021,
+          "changed_pixels": 0,
+          "mae_rgb_sum": 0.0,
+          "threshold": 0
+        },
+        "saved_native_outside_support_vs_original": {
+          "pixels_considered": 3137,
+          "changed_pixels": 0,
+          "mae_rgb_sum": 0.0,
+          "threshold": 0
+        },
+        "raw_model_changed_pixels": {
+          "pixels_considered": 1048576,
+          "changed_pixels": 1003586,
+          "mae_rgb_sum": 2.944763501485189,
+          "threshold": 0
+        },
+        "raw_model_changed_content": {
+          "pixels_considered": 1000448,
+          "changed_pixels": 959537,
+          "mae_rgb_sum": 3.015668980296827,
+          "threshold": 0
+        },
+        "runtime_reported_raw_changed": 3906,
+        "runtime_reported_clipped_outside": 2885,
+        "runtime_clipped_fraction": 0.7386072708653354
+      },
+      "geometry": {
+        "native_shape": [
+          720,
+          540
+        ],
+        "roi_box_xyxy": [
+          560,
+          199,
+          626,
+          262
+        ],
+        "transform": {
+          "native_width": 66,
+          "native_height": 63,
+          "canvas_size": 1024,
+          "scale": 15.515151515151516,
+          "resized_width": 1024,
+          "resized_height": 977,
+          "pad_left": 0,
+          "pad_top": 23,
+          "resize_interpolation": "lanczos_image_nearest_mask",
+          "mask_interpolation": "nearest",
+          "padding_mode": "reflect_or_constant_declared_by_runner"
+        },
+        "polygon_pixels": 753,
+        "support_pixels": 1021,
+        "polygon_covered_by_support": true
+      }
+    }
+  ],
+  "status": "PASS_WITH_DIAGNOSTIC_LIMITS"
+}

@@ -1,0 +1,590 @@
+{
+  "calls": [
+    {
+      "source_id": "65",
+      "roi_id": "roi_0",
+      "class_name": "corrosion",
+      "artifact_hashes": {
+        "original": "789d4651b34616e3885bbd6ba7e52e8ed17cfce5d3ebe326672d0d34360c6f93",
+        "input_canvas": "11c162970af6eef0410c0413e4d6d4ef4f38cd3073fbd82082bb73c0e13c3213",
+        "mask_canvas": "42dff6331f5ac553080ed9e325ebfa247637403397c509e855f1f7916d4b15b0",
+        "sdxl_canvas": "330e563592d51feff9892c69c1dfd425719ef610904ea7347f79be6ef1a0a5ea",
+        "native_roi": "45e6d6772b48b401870a3c24569c6f4eaac1085efb9a20ade6fed92e4758f246"
+      },
+      "geometry": {
+        "native_shape": [
+          720,
+          540
+        ],
+        "roi_box_xyxy": [
+          139,
+          161,
+          592,
+          262
+        ],
+        "transform": {
+          "native_width": 453,
+          "native_height": 101,
+          "canvas_size": 1024,
+          "scale": 2.260485651214128,
+          "resized_width": 1024,
+          "resized_height": 228,
+          "pad_left": 0,
+          "pad_top": 398,
+          "resize_interpolation": "lanczos_image_nearest_mask",
+          "mask_interpolation": "nearest",
+          "padding_mode": "reflect_or_constant_declared_by_runner"
+        },
+        "polygon_pixels": 6427,
+        "support_pixels": 8407,
+        "polygon_covered_by_support": true
+      },
+      "canvas": {
+        "size": [
+          1024,
+          1024
+        ],
+        "content_pixels": 233472,
+        "padding_pixels": 815104,
+        "padding_ratio": 0.77734375,
+        "mask_white_pixels": 42944,
+        "mask_white_in_padding": 0,
+        "mask_bbox": [
+          33,
+          431,
+          991,
+          594
+        ]
+      },
+      "stage_stats": {
+        "native_crop": {
+          "count": 45753,
+          "mean_luma": 110.36271555963543,
+          "std_luma": 48.612318144468,
+          "p01": 17.5038,
+          "p50": 105.5548,
+          "p99": 188.6992,
+          "min": 3.7834,
+          "max": 212.49059999999997
+        },
+        "input_canvas": {
+          "count": 1048576,
+          "mean_luma": 111.69966130332946,
+          "std_luma": 48.86006555191754,
+          "p01": 17.7164,
+          "p50": 109.32379999999999,
+          "p99": 189.6258,
+          "min": 0.0,
+          "max": 213.4906
+        },
+        "sdxl_output_canvas": {
+          "count": 1048576,
+          "mean_luma": 110.45622073841095,
+          "std_luma": 49.04126065095326,
+          "p01": 17.3634,
+          "p50": 107.7674,
+          "p99": 189.2006,
+          "min": 7.1404,
+          "max": 219.635
+        },
+        "sdxl_output_content": {
+          "count": 233472,
+          "mean_luma": 109.3620787691886,
+          "std_luma": 48.94345938302752,
+          "p01": 17.357,
+          "p50": 103.90379999999999,
+          "p99": 190.404,
+          "min": 7.1404,
+          "max": 219.635
+        },
+        "inverse_lanczos_native": {
+          "count": 45753,
+          "mean_luma": 109.3630330557559,
+          "std_luma": 48.942551558527256,
+          "p01": 17.359399999999997,
+          "p50": 103.90899999999999,
+          "p99": 190.40919999999997,
+          "min": 6.0682,
+          "max": 219.635
+        },
+        "saved_native_roi_after_support_clip": {
+          "count": 45753,
+          "mean_luma": 110.32276682184775,
+          "std_luma": 48.752929233888516,
+          "p01": 17.5038,
+          "p50": 105.1822,
+          "p99": 190.2018,
+          "min": 3.7834,
+          "max": 212.49059999999997
+        }
+      },
+      "dark_artifact": {
+        "thresholds": {
+          "output_luma_le": 25,
+          "input_luma_ge": 45
+        },
+        "new_dark_pixels": 9,
+        "bbox_xyxy_canvas": [
+          800,
+          546,
+          804,
+          549
+        ],
+        "row_span_peak": 4,
+        "column_span_peak": 3,
+        "matching_input_dark_pixels": 0,
+        "mapped_dark_pixels_in_native_support": 1,
+        "mapped_dark_pixels_in_native_polygon": 0,
+        "interpretation": "The connected dark rectangular region is present in persisted SDXL output Canvas and not in the corresponding input Canvas under this conservative threshold."
+      },
+      "mapping": {
+        "lanczos_vs_nearest": {
+          "pixels_considered": 8407,
+          "changed_pixels": 6991,
+          "mae_rgb_sum": 0.8296261052297689,
+          "threshold": 0
+        },
+        "saved_native_vs_lanczos_inside_support": {
+          "pixels_considered": 8407,
+          "changed_pixels": 0,
+          "mae_rgb_sum": 0.0,
+          "threshold": 0
+        },
+        "saved_native_outside_support_vs_original": {
+          "pixels_considered": 37346,
+          "changed_pixels": 0,
+          "mae_rgb_sum": 0.0,
+          "threshold": 0
+        },
+        "raw_model_changed_pixels": {
+          "pixels_considered": 1048576,
+          "changed_pixels": 1044406,
+          "mae_rgb_sum": 2.4217170079549155,
+          "threshold": 0
+        },
+        "raw_model_changed_content": {
+          "pixels_considered": 233472,
+          "changed_pixels": 232692,
+          "mae_rgb_sum": 2.8402235243055554,
+          "threshold": 0
+        },
+        "runtime_reported_raw_changed": 45603,
+        "runtime_reported_clipped_outside": 37205,
+        "runtime_clipped_fraction": 0.8158454487643357
+      },
+      "brightness": {
+        "input_support": {
+          "count": 8407,
+          "mean_luma": 136.28975967646008,
+          "std_luma": 36.9204464326803,
+          "p01": 63.4052,
+          "p50": 145.12040000000002,
+          "p99": 197.25959999999998,
+          "min": 51.684799999999996,
+          "max": 209.4878,
+          "mean_rgb": [
+            142.52230284286904,
+            136.02830974188177,
+            120.5272986796717
+          ]
+        },
+        "output_lanczos_support": {
+          "count": 8407,
+          "mean_luma": 136.0723486380397,
+          "std_luma": 38.06392374429228,
+          "p01": 59.8356,
+          "p50": 146.1204,
+          "p99": 198.9078,
+          "min": 31.4212,
+          "max": 211.83039999999997,
+          "mean_rgb": [
+            143.992506244796,
+            135.3888426311407,
+            119.52135125490662
+          ]
+        },
+        "saved_native_support": {
+          "count": 8407,
+          "mean_luma": 136.0723486380397,
+          "std_luma": 38.06392374429228,
+          "p01": 59.8356,
+          "p50": 146.1204,
+          "p99": 198.9078,
+          "min": 31.4212,
+          "max": 211.83039999999997,
+          "mean_rgb": [
+            143.992506244796,
+            135.3888426311407,
+            119.52135125490662
+          ]
+        },
+        "input_polygon": {
+          "count": 6427,
+          "mean_luma": 136.17653875836317,
+          "std_luma": 36.59232015458706,
+          "p01": 63.4184,
+          "p50": 144.26600000000002,
+          "p99": 196.9812,
+          "min": 51.684799999999996,
+          "max": 209.4878,
+          "mean_rgb": [
+            142.37435817644314,
+            135.9379181577719,
+            120.29018204449977
+          ]
+        },
+        "saved_polygon": {
+          "count": 6427,
+          "mean_luma": 136.26641487474714,
+          "std_luma": 37.55258639483197,
+          "p01": 61.1954,
+          "p50": 145.4722,
+          "p99": 199.11919999999998,
+          "min": 44.11,
+          "max": 211.83039999999997,
+          "mean_rgb": [
+            144.1619729267154,
+            135.59763497743893,
+            119.64197915045901
+          ]
+        },
+        "input_context": {
+          "count": 37346,
+          "mean_luma": 104.52624954211963,
+          "std_luma": 49.01928732664878,
+          "p01": 16.9972,
+          "p50": 95.2464,
+          "p99": 180.8344,
+          "min": 3.7834,
+          "max": 212.49059999999997,
+          "mean_rgb": [
+            110.0393616451561,
+            104.31580356664703,
+            90.37698816472982
+          ]
+        },
+        "saved_context": {
+          "count": 37346,
+          "mean_luma": 104.52624954211963,
+          "std_luma": 49.01928732664878,
+          "p01": 16.9972,
+          "p50": 95.2464,
+          "p99": 180.8344,
+          "min": 3.7834,
+          "max": 212.49059999999997,
+          "mean_rgb": [
+            110.0393616451561,
+            104.31580356664703,
+            90.37698816472982
+          ]
+        }
+      },
+      "seam": {
+        "before": {
+          "count": 862,
+          "mean_adjacent_rgb_delta": 4.5769528228924985,
+          "p95_adjacent_rgb_delta": 13.333333333333334
+        },
+        "after": {
+          "count": 862,
+          "mean_adjacent_rgb_delta": 5.80123743232792,
+          "p95_adjacent_rgb_delta": 14.0
+        }
+      },
+      "postprocess_diagnostic_only": true
+    },
+    {
+      "source_id": "65",
+      "roi_id": "roi_1",
+      "class_name": "Material missing",
+      "artifact_hashes": {
+        "original": "789d4651b34616e3885bbd6ba7e52e8ed17cfce5d3ebe326672d0d34360c6f93",
+        "input_canvas": "c6d212db12b92a28c4ce1effced07a2cac0ebc63c7d31f4af8b788dce40c0672",
+        "mask_canvas": "766c8718f1986ec359bdd9d1e51637765e3b6553742bbf3eb2978f81085d9dd9",
+        "sdxl_canvas": "105726f041d9bf7d54c56911fda22d368d8f5ffb10b20455e20475e96bf60027",
+        "native_roi": "703c429b81470fc01b3b11f9383f5e868be7c68f2fcaa96097f18ddca31f0e31"
+      },
+      "geometry": {
+        "native_shape": [
+          720,
+          540
+        ],
+        "roi_box_xyxy": [
+          560,
+          199,
+          626,
+          262
+        ],
+        "transform": {
+          "native_width": 66,
+          "native_height": 63,
+          "canvas_size": 1024,
+          "scale": 15.515151515151516,
+          "resized_width": 1024,
+          "resized_height": 977,
+          "pad_left": 0,
+          "pad_top": 23,
+          "resize_interpolation": "lanczos_image_nearest_mask",
+          "mask_interpolation": "nearest",
+          "padding_mode": "reflect_or_constant_declared_by_runner"
+        },
+        "polygon_pixels": 753,
+        "support_pixels": 1021,
+        "polygon_covered_by_support": true
+      },
+      "canvas": {
+        "size": [
+          1024,
+          1024
+        ],
+        "content_pixels": 1000448,
+        "padding_pixels": 48128,
+        "padding_ratio": 0.0458984375,
+        "mask_white_pixels": 245962,
+        "mask_white_in_padding": 0,
+        "mask_bbox": [
+          225,
+          248,
+          799,
+          775
+        ]
+      },
+      "stage_stats": {
+        "native_crop": {
+          "count": 4158,
+          "mean_luma": 60.54418191438191,
+          "std_luma": 20.69186668804264,
+          "p01": 18.0682,
+          "p50": 65.9812,
+          "p99": 93.12559999999999,
+          "min": 3.7834,
+          "max": 102.3382
+        },
+        "input_canvas": {
+          "count": 1048576,
+          "mean_luma": 60.22367941951752,
+          "std_luma": 20.943085562296993,
+          "p01": 18.417199999999998,
+          "p50": 65.8396,
+          "p99": 92.7738,
+          "min": 0.0,
+          "max": 102.70439999999999
+        },
+        "sdxl_output_canvas": {
+          "count": 1048576,
+          "mean_luma": 59.721760499763484,
+          "std_luma": 19.525400142636023,
+          "p01": 18.548399999999997,
+          "p50": 64.5484,
+          "p99": 90.55879999999999,
+          "min": 0.0722,
+          "max": 101.47859999999999
+        },
+        "sdxl_output_content": {
+          "count": 1000448,
+          "mean_luma": 60.08296318409352,
+          "std_luma": 19.236105040130024,
+          "p01": 18.548399999999997,
+          "p50": 64.5444,
+          "p99": 90.7674,
+          "min": 0.0722,
+          "max": 101.47859999999999
+        },
+        "inverse_lanczos_native": {
+          "count": 4158,
+          "mean_luma": 60.08573501683502,
+          "std_luma": 19.224881144082488,
+          "p01": 18.711199999999998,
+          "p50": 64.4734,
+          "p99": 90.6992,
+          "min": 4.1404,
+          "max": 99.4786
+        },
+        "saved_native_roi_after_support_clip": {
+          "count": 4158,
+          "mean_luma": 60.97818725348725,
+          "std_luma": 19.93387335538756,
+          "p01": 17.5772,
+          "p50": 65.266,
+          "p99": 92.69919999999999,
+          "min": 3.7834,
+          "max": 102.3382
+        }
+      },
+      "dark_artifact": {
+        "thresholds": {
+          "output_luma_le": 25,
+          "input_luma_ge": 45
+        },
+        "new_dark_pixels": 810,
+        "bbox_xyxy_canvas": [
+          278,
+          533,
+          309,
+          569
+        ],
+        "row_span_peak": 29,
+        "column_span_peak": 35,
+        "matching_input_dark_pixels": 0,
+        "mapped_dark_pixels_in_native_support": 810,
+        "mapped_dark_pixels_in_native_polygon": 240,
+        "interpretation": "The connected dark rectangular region is present in persisted SDXL output Canvas and not in the corresponding input Canvas under this conservative threshold."
+      },
+      "mapping": {
+        "lanczos_vs_nearest": {
+          "pixels_considered": 1021,
+          "changed_pixels": 725,
+          "mae_rgb_sum": 0.3774077701599739,
+          "threshold": 0
+        },
+        "saved_native_vs_lanczos_inside_support": {
+          "pixels_considered": 1021,
+          "changed_pixels": 0,
+          "mae_rgb_sum": 0.0,
+          "threshold": 0
+        },
+        "saved_native_outside_support_vs_original": {
+          "pixels_considered": 3137,
+          "changed_pixels": 0,
+          "mae_rgb_sum": 0.0,
+          "threshold": 0
+        },
+        "raw_model_changed_pixels": {
+          "pixels_considered": 1048576,
+          "changed_pixels": 1003586,
+          "mae_rgb_sum": 2.944763501485189,
+          "threshold": 0
+        },
+        "raw_model_changed_content": {
+          "pixels_considered": 1000448,
+          "changed_pixels": 959537,
+          "mae_rgb_sum": 3.015668980296827,
+          "threshold": 0
+        },
+        "runtime_reported_raw_changed": 3906,
+        "runtime_reported_clipped_outside": 2885,
+        "runtime_clipped_fraction": 0.7386072708653354
+      },
+      "brightness": {
+        "input_support": {
+          "count": 1021,
+          "mean_luma": 52.65929539666993,
+          "std_luma": 15.276781383007355,
+          "p01": 22.3438,
+          "p50": 51.846399999999996,
+          "p99": 88.1284,
+          "min": 6.8424,
+          "max": 94.27279999999999,
+          "mean_rgb": [
+            54.22526934378061,
+            53.28795298726738,
+            41.820763956905
+          ]
+        },
+        "output_lanczos_support": {
+          "count": 1021,
+          "mean_luma": 54.42677257590597,
+          "std_luma": 11.55369346571639,
+          "p01": 21.9014,
+          "p50": 54.846000000000004,
+          "p99": 76.615,
+          "min": 10.485399999999998,
+          "max": 86.2728,
+          "mean_rgb": [
+            57.856023506366306,
+            54.69441723800196,
+            41.67776689520078
+          ]
+        },
+        "saved_native_support": {
+          "count": 1021,
+          "mean_luma": 54.42677257590597,
+          "std_luma": 11.55369346571639,
+          "p01": 21.9014,
+          "p50": 54.846000000000004,
+          "p99": 76.615,
+          "min": 10.485399999999998,
+          "max": 86.2728,
+          "mean_rgb": [
+            57.856023506366306,
+            54.69441723800196,
+            41.67776689520078
+          ]
+        },
+        "input_polygon": {
+          "count": 753,
+          "mean_luma": 49.46686374501992,
+          "std_luma": 12.912618277253099,
+          "p01": 24.9222,
+          "p50": 47.8436,
+          "p99": 81.5628,
+          "min": 18.288400000000003,
+          "max": 89.2728,
+          "mean_rgb": [
+            50.07436918990704,
+            50.32669322709163,
+            39.16069057104914
+          ]
+        },
+        "saved_polygon": {
+          "count": 753,
+          "mean_luma": 53.0343176626826,
+          "std_luma": 9.863510887767818,
+          "p01": 27.363400000000002,
+          "p50": 53.0482,
+          "p99": 72.97200000000001,
+          "min": 18.833199999999998,
+          "max": 73.972,
+          "mean_rgb": [
+            55.601593625498005,
+            53.55776892430279,
+            40.289508632138116
+          ]
+        },
+        "input_context": {
+          "count": 3137,
+          "mean_luma": 63.11047746254383,
+          "std_luma": 21.557491228688495,
+          "p01": 17.276799999999998,
+          "p50": 72.3474,
+          "p99": 93.84079999999999,
+          "min": 3.7834,
+          "max": 102.3382,
+          "mean_rgb": [
+            66.47688874721071,
+            63.41504622250558,
+            50.18074593560727
+          ]
+        },
+        "saved_context": {
+          "count": 3137,
+          "mean_luma": 63.11047746254383,
+          "std_luma": 21.557491228688495,
+          "p01": 17.276799999999998,
+          "p50": 72.3474,
+          "p99": 93.84079999999999,
+          "min": 3.7834,
+          "max": 102.3382,
+          "mean_rgb": [
+            66.47688874721071,
+            63.41504622250558,
+            50.18074593560727
+          ]
+        }
+      },
+      "seam": {
+        "before": {
+          "count": 116,
+          "mean_adjacent_rgb_delta": 4.729885057471264,
+          "p95_adjacent_rgb_delta": 13.0
+        },
+        "after": {
+          "count": 116,
+          "mean_adjacent_rgb_delta": 6.022988505747126,
+          "p95_adjacent_rgb_delta": 12.333333333333334
+        }
+      },
+      "postprocess_diagnostic_only": true
+    }
+  ]
+}

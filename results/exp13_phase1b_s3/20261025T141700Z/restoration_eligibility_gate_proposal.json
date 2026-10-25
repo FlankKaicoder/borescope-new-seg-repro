@@ -1,0 +1,64 @@
+{
+  "name": "RESTORATION_ELIGIBILITY_GATE",
+  "status": "PROPOSAL_ONLY_NOT_EXECUTED",
+  "purpose": "Reject unsafe or semantically underdetermined ROIs before any future restoration inference reservation.",
+  "decision_rule": "All mandatory checks must be PASS; UNKNOWN or FAIL is HOLD and consumes no model budget.",
+  "checks": [
+    {
+      "id": "REG-1",
+      "name": "full_context_ui_fov_screen",
+      "requirement": "Review the entire native ROI and the full Canvas input for UI glyphs, logos, overlays, bright frame, gray fill, invalid FOV and dark-camera regions; checking only white-mask overlap is insufficient.",
+      "evidence": "original RGB, input Canvas, overlay-free contact sheet, explicit contamination polygons or exclusion mask",
+      "threshold": "No unresolved UI/FOV/overlay pixels within ROI context or required normal-metal reference; otherwise HOLD"
+    },
+    {
+      "id": "REG-2",
+      "name": "normal_metal_context",
+      "requirement": "Quantify independent, visually continuous normal-metal context on all four sides and inside the context crop, excluding the defect support, UI and boundaries.",
+      "evidence": "context mask, connected-region statistics, local luminance/texture summary and manual visual PASS",
+      "threshold": "Context must be sufficient for the intended edit and cannot be inferred from global image mean"
+    },
+    {
+      "id": "REG-3",
+      "name": "true_structure_boundary",
+      "requirement": "Determine whether the target crosses a physical seam, hole, edge, dark void, weld, repeated frame or other real structure boundary.",
+      "evidence": "boundary annotation and independent visual disposition",
+      "threshold": "Target crossing an unresolved real boundary is HOLD; do not ask inpainting to invent geometry"
+    },
+    {
+      "id": "REG-4",
+      "name": "native_information_and_scale",
+      "requirement": "Record native ROI dimensions, resize scale, effective content fraction and number of independent native pixels supporting the defect and context.",
+      "evidence": "frozen geometry transform and native/context pixel counts",
+      "threshold": "Extreme upscaling or tiny native information requires HOLD unless separately justified"
+    },
+    {
+      "id": "REG-5",
+      "name": "padding_and_mirror_risk",
+      "requirement": "Record padding mode, each side's padding width, valid-content fraction and whether reflected structures enter the model context.",
+      "evidence": "Canvas transform, padding overlay and mirror-boundary coordinates",
+      "threshold": "High padding fraction or visible repeated-edge structure is HOLD; no automatic acceptance"
+    },
+    {
+      "id": "REG-6",
+      "name": "mask_geometry_and_support",
+      "requirement": "Verify polygon/support hashes, full polygon coverage, white=redraw polarity, no mask in padding, no support overlap conflict and native round-trip identity.",
+      "evidence": "geometry validation JSON and deterministic mock",
+      "threshold": "Any mismatch is HOLD before model load"
+    },
+    {
+      "id": "REG-7",
+      "name": "pre_inference_machine_selection",
+      "requirement": "Persist selected source/ROI IDs, visual decision, all hashes and reviewer disposition before budget reservation.",
+      "evidence": "non-null machine-readable selection record with timestamp and provenance",
+      "threshold": "selection=null or post-output selection is FAIL"
+    }
+  ],
+  "sample_assessment": {
+    "source_2_roi_0": "HOLD: full context contains GE/UI icon and physical/dark structure boundary despite mask not overlapping UI",
+    "source_65_roi_0": "HOLD: 77.73% padding and repeated reflected metal edges; context contamination unresolved",
+    "source_65_roi_1": "HOLD: 66x63 native ROI, 15.515x resize, limited independent normal-metal context, localized dark output"
+  },
+  "authorization_boundary": "This proposal does not authorize a new model call or any training.",
+  "required_future_gate": "ChatGPT/user approval of this protocol plus a fresh bounded run plan"
+}
