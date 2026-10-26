@@ -1,0 +1,15 @@
+{
+  "started_at": "2026-10-26T06:42:59.931298+00:00",
+  "finished_at": "2026-10-26T06:44:26.603741+00:00",
+  "exit_code": 0,
+  "command": [
+    "/root/miniconda3/bin/python",
+    "/root/autodl-tmp/exp13_m1_workspace/20261026T064000Z_m1/code/tools/exp13_2_m1_matched_restoration.py",
+    "--run-dir",
+    "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_m1_matched_restoration_benchmark/20261026T064000Z_m1",
+    "--mode",
+    "worker"
+  ],
+  "stdout_sha256": "80c30917d667bb962f09af9bc07ca4251a48d3f35d2872a655a1ecb3bb4ffa42",
+  "stderr_sha256": "7c41cb329f6ff370755c05af7abcf34968ad5164e5faae2c641524d1d21fda5f"
+}

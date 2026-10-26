@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-10-26T06:42:17.930831+00:00",
+  "sha256": "cd7b165539c9446e904ee259b74df71d32484389cb86afe492658dd8e0f32a5d",
+  "private_key_location": "controlled server private directory; excluded from public Git and blind ZIP",
+  "committed_before_model_load_and_inference": true
+}

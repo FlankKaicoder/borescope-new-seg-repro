@@ -1,0 +1,12 @@
+{
+  "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_m1_matched_restoration_benchmark/20261026T064000Z_m1/anonymous_blind_review_package.zip",
+  "sha256": "773e9a8942e336b6d96c10d253177f1639dff0dac9b2c4a3564a81f4f8841399",
+  "bytes": 33967690,
+  "sheet_count": 6,
+  "source_count": 6,
+  "zip_entries": 69,
+  "mapping_commitment_sha256": "cd7b165539c9446e904ee259b74df71d32484389cb86afe492658dd8e0f32a5d",
+  "mapping_excluded_from_zip_and_public_git": true,
+  "human_fields_pending": true,
+  "both_slots_same_512_dimensions": true
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS_CPU_SIMULATION_ONLY",
+  "script": "tools/exp13_2_m1_budget_check.py",
+  "atomic_competing_pair_cap_race": [["ok", "simulation_b", 2], ["blocked", "simulation_a", 0]],
+  "history_inherited": true,
+  "started_durable": true,
+  "failure_charged": true,
+  "terminal_restart_blocked": true,
+  "authoritative_ledgers_modified": false,
+  "new_model_inference": 0,
+  "note": "Recorded successful CPU subprocess simulation stdout; temporary ledger inherited S5 and was removed by TemporaryDirectory. This file is not a budget authority."
+}

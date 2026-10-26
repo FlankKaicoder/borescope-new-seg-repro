@@ -1,0 +1,95 @@
+{
+  "source": "USER_EXPLICIT_M1_PROMPT",
+  "recorded_at": "2026-10-26T06:42:17.926485+00:00",
+  "input_gate": "PASS / BOUNDED",
+  "authorization": "YES / BOUNDED",
+  "scope": "INPUT_ONLY_NOT_GENERATED_QUALITY",
+  "decisions": [
+    {
+      "source_id": "469",
+      "class": "Crack",
+      "crop_id": "alt_2",
+      "crop_xyxy_half_open": [
+        240,
+        0,
+        960,
+        720
+      ],
+      "decision": "PASS",
+      "decision_source": "USER_EXPLICIT_M1_PROMPT",
+      "risk": "USER_ACCEPTED"
+    },
+    {
+      "source_id": "260",
+      "class": "Crack",
+      "crop_id": "default",
+      "crop_xyxy_half_open": [
+        90,
+        0,
+        630,
+        540
+      ],
+      "decision": "PASS",
+      "decision_source": "USER_EXPLICIT_M1_PROMPT",
+      "risk": "USER_ACCEPTED"
+    },
+    {
+      "source_id": "470",
+      "class": "Crack",
+      "crop_id": "default",
+      "crop_xyxy_half_open": [
+        120,
+        0,
+        840,
+        720
+      ],
+      "decision": "PASS",
+      "decision_source": "USER_EXPLICIT_M1_PROMPT",
+      "risk": "USER_ACCEPTED"
+    },
+    {
+      "source_id": "8",
+      "class": "corrosion",
+      "crop_id": "default",
+      "crop_xyxy_half_open": [
+        90,
+        0,
+        630,
+        540
+      ],
+      "decision": "PASS",
+      "decision_source": "USER_EXPLICIT_M1_PROMPT",
+      "risk": "USER_ACCEPTED"
+    },
+    {
+      "source_id": "1",
+      "class": "corrosion",
+      "crop_id": "alt_1",
+      "crop_xyxy_half_open": [
+        48,
+        0,
+        588,
+        540
+      ],
+      "decision": "PASS",
+      "decision_source": "USER_EXPLICIT_M1_PROMPT",
+      "risk": "HIGH_RISK_BUT_USER_ACCEPTED"
+    },
+    {
+      "source_id": "2",
+      "class": "corrosion",
+      "crop_id": "alt_1",
+      "crop_xyxy_half_open": [
+        0,
+        0,
+        480,
+        480
+      ],
+      "decision": "PASS",
+      "decision_source": "USER_EXPLICIT_M1_PROMPT",
+      "risk": "HIGH_RISK_BUT_USER_ACCEPTED"
+    }
+  ],
+  "pending_history_preserved": true,
+  "objective_technical_errors_not_waived": true
+}

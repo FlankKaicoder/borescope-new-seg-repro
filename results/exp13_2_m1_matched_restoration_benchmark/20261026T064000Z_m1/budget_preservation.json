@@ -1,0 +1,23 @@
+{
+  "smoke_occupied": 4,
+  "smoke_remaining": 0,
+  "new_occupied": 12,
+  "new_actual": 12,
+  "cumulative_occupied": 16,
+  "cumulative_actual": 16,
+  "aggregate_remaining": 104,
+  "all_local_remaining": 284,
+  "retry": 0,
+  "gpt": 0,
+  "val_access": 0,
+  "test_access": 0,
+  "raw_data_write": 0,
+  "split_write": 0,
+  "ssl_yolo_training": 0,
+  "trusted_pair_frozen": 0,
+  "historical_ledger_sha256": "3af2d074b640023e5e2c66198ae3b1ee74cedb3d7829f802c6cf84a62fa1ca94",
+  "historical_files_unchanged": 293,
+  "historical_git_entries_preserved": 11974,
+  "server_head_unchanged": "787a3be0190dfa9b11c5416a5b686a6bae4598d9",
+  "disk_free_bytes": 17307291648
+}

@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-26T06:42:17.822084+00:00",
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "components": {
+    "torch": "2.8.0+cu128",
+    "diffusers": "0.35.1",
+    "transformers": "4.55.4",
+    "accelerate": "1.10.1",
+    "numpy": "2.3.2",
+    "Pillow": "11.3.0"
+  },
+  "disk_free_bytes": 17487650816,
+  "nvidia_smi": "NVIDIA GeForce RTX 3080 Ti, 12288 MiB, 11912 MiB",
+  "available_ram_bytes": 204706721792,
+  "model_loads": 0,
+  "real_calls": 0,
+  "network_downloads": 0
+}

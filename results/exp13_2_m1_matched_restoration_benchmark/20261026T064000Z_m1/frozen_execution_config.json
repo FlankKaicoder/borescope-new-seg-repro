@@ -1,0 +1,73 @@
+{
+  "m0_protocol": {
+    "study": "PAIRED_PRACTICAL_MODEL_ADAPTATION_STUDY",
+    "objective": "RESTORE_TO_PSEUDO_NORMAL_METAL",
+    "prompt": "restore a clean, uniform normal metallic borescope surface; preserve realistic metal texture and lighting",
+    "negative_prompt": null,
+    "steps": 20,
+    "guidance_scale": 7.5,
+    "strength": 0.8,
+    "seed": 130500,
+    "precision": "float16",
+    "execution": "single GPU sequential; no search/retry/download; no implicit crop; padding_mask_crop=None",
+    "resolution": {
+      "DreamShaper": 512,
+      "SDXL": 1024
+    },
+    "scheduler": {
+      "DreamShaper": "DEISMultistepScheduler",
+      "SDXL": "EulerDiscreteScheduler"
+    },
+    "assets": {
+      "DreamShaper": {
+        "fingerprint": "9598058d591b43726c5bf5c7db7f5183911415ca18e5c123c1a63bd3ee39d927",
+        "loader": {
+          "variant": null,
+          "use_safetensors": true,
+          "torch_dtype": "float16",
+          "safety_checker": null,
+          "local_files_only": true,
+          "enable_attention_slicing": true
+        }
+      },
+      "SDXL": {
+        "fingerprint": "d7fb8e6a3d8c4ac6538b13f2f2575a902662364c051716bd3961bf94a465fd14",
+        "loader": {
+          "variant": "fp16",
+          "use_safetensors": true,
+          "local_files_only": true,
+          "torch_dtype": "float16",
+          "cpu_offload": true,
+          "vae_tiling": true,
+          "vae_slicing": true
+        }
+      }
+    },
+    "residual_factors": [
+      "native model resolution",
+      "native scheduler and architecture/VAE",
+      "internal noise schedule differs despite equal numerical seed/strength/guidance"
+    ],
+    "authorization": "PROPOSED_M1_ONLY_SEPARATE_CHATGPT_GATE_REQUIRED",
+    "input_rules": {
+      "crop": "L=min(W,H); integer half-open box inside native; clamp center origin to feasible interval containing ALL target polygons plus margin",
+      "minimum_context_margin_native_px": "max(16,ceil(0.03*L))",
+      "margin_status": "PREREGISTERED_ENGINEERING_RULE_NOT_VALIDATED_SEMANTIC_SUFFICIENCY",
+      "tie_rule": "center origin=floor((dimension-L)/2); clamp independently on x/y",
+      "raster": "Pillow ImageDraw polygon round(x),round(y), union of ALL target-class polygons",
+      "native_edit_mask": "native polygon union -> MaxFilter(7) -> GaussianBlur(1.0)",
+      "common": "identical square crop; RGB LANCZOS->512; grayscale edit mask NEAREST->512",
+      "sdxl": "common RGB LANCZOS->1024; common mask NEAREST->1024; no padding",
+      "mask_polarity": "white=edit, black=preserve; gray=feather (pipeline mask binarization separately disclosed)",
+      "semantic_gate": "whole square UI/FOV/gray border; real normal-metal continuity; physical edge crossing; unannotated defects; all PENDING unless explicit new review",
+      "rejection": "pairwise exclusion, no replacement/target reduction/relaxation; >=4 sources and >=2 per class plus semantic review required"
+    }
+  },
+  "m1_authority": "USER_M1_PROMPT_12_CALLS_NO_RETRY",
+  "execution_order": "DreamShaper six sources in frozen order; unload; SDXL six same sources",
+  "pair_reservation": "atomic both models before first model call for each source",
+  "output_type": "np, finite floating decode inspected before standard rounded uint8 PNG conversion",
+  "stop_on_inference_failure": true,
+  "config_sha_binding": "this file SHA256 used in every call record",
+  "practical_comparison_not_pure_weight_single_variable": true
+}

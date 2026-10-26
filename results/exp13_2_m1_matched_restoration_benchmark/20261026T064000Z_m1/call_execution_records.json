@@ -1,0 +1,446 @@
+[
+  {
+    "call_id": "469:m1_DreamShaper_alt_2:s0.8",
+    "source_id": "469",
+    "model": "DreamShaper",
+    "crop_id": "alt_2",
+    "status": "SUCCEEDED",
+    "input_wh": [
+      512,
+      512
+    ],
+    "input_rgb_sha256": "698a484372619410d9f299f8019bb8c6da18028da1e6fe7c8dac5952457d84f4",
+    "input_mask_sha256": "b1c91dffda2d3c805bc48a26fcc53aee870529f51e48b27d61cc71f30841c517",
+    "mask_effective_pixels": 1654,
+    "started_at": "2026-10-26T06:43:09.859785+00:00",
+    "seconds": 1.713921313174069,
+    "output_float_shape": [
+      512,
+      512,
+      3
+    ],
+    "output_float_dtype": "float32",
+    "finite": true,
+    "peak_allocated_bytes": 2805598720,
+    "peak_reserved_bytes": 3103784960,
+    "output_wh": [
+      512,
+      512
+    ],
+    "output_uint8_shape": [
+      512,
+      512,
+      3
+    ],
+    "output_uint8_dtype": "uint8",
+    "finished_at": "2026-10-26T06:43:11.946531+00:00",
+    "semantic_quality": "PENDING_USER_BLIND_REVIEW"
+  },
+  {
+    "call_id": "260:m1_DreamShaper_default:s0.8",
+    "source_id": "260",
+    "model": "DreamShaper",
+    "crop_id": "default",
+    "status": "SUCCEEDED",
+    "input_wh": [
+      512,
+      512
+    ],
+    "input_rgb_sha256": "9fd07149fa2d2c3fe8b30806dd7180906fcb711463678842f961fac818ba42e2",
+    "input_mask_sha256": "ae66f5a9abf1435e82451e4b0b4d086d163bc1cddfdccad90c5b88224e170713",
+    "mask_effective_pixels": 8405,
+    "started_at": "2026-10-26T06:43:11.978487+00:00",
+    "seconds": 1.133862417889759,
+    "output_float_shape": [
+      512,
+      512,
+      3
+    ],
+    "output_float_dtype": "float32",
+    "finite": true,
+    "peak_allocated_bytes": 2805598720,
+    "peak_reserved_bytes": 3103784960,
+    "output_wh": [
+      512,
+      512
+    ],
+    "output_uint8_shape": [
+      512,
+      512,
+      3
+    ],
+    "output_uint8_dtype": "uint8",
+    "finished_at": "2026-10-26T06:43:13.660865+00:00",
+    "semantic_quality": "PENDING_USER_BLIND_REVIEW"
+  },
+  {
+    "call_id": "470:m1_DreamShaper_default:s0.8",
+    "source_id": "470",
+    "model": "DreamShaper",
+    "crop_id": "default",
+    "status": "SUCCEEDED",
+    "input_wh": [
+      512,
+      512
+    ],
+    "input_rgb_sha256": "a65ca91abccae50fd0803b6a1d782f9c500b8ac13783aadd8e0e3dacdb20cbe7",
+    "input_mask_sha256": "f11f84da81945fd28a5703951a450a19e1b914facc8a870aea4f9a10e9128f81",
+    "mask_effective_pixels": 2997,
+    "started_at": "2026-10-26T06:43:13.688048+00:00",
+    "seconds": 1.139708525966853,
+    "output_float_shape": [
+      512,
+      512,
+      3
+    ],
+    "output_float_dtype": "float32",
+    "finite": true,
+    "peak_allocated_bytes": 2805598720,
+    "peak_reserved_bytes": 3103784960,
+    "output_wh": [
+      512,
+      512
+    ],
+    "output_uint8_shape": [
+      512,
+      512,
+      3
+    ],
+    "output_uint8_dtype": "uint8",
+    "finished_at": "2026-10-26T06:43:15.245810+00:00",
+    "semantic_quality": "PENDING_USER_BLIND_REVIEW"
+  },
+  {
+    "call_id": "8:m1_DreamShaper_default:s0.8",
+    "source_id": "8",
+    "model": "DreamShaper",
+    "crop_id": "default",
+    "status": "SUCCEEDED",
+    "input_wh": [
+      512,
+      512
+    ],
+    "input_rgb_sha256": "610a61a0a42df3ea714c08c1c7ae24bc442b909518374831c3bc3c881ebdfc1e",
+    "input_mask_sha256": "9d1c19217e68ab87e749845a4a1460d7b500c5b1c5a24c93db4140093e291918",
+    "mask_effective_pixels": 1323,
+    "started_at": "2026-10-26T06:43:15.281259+00:00",
+    "seconds": 1.1355540729127824,
+    "output_float_shape": [
+      512,
+      512,
+      3
+    ],
+    "output_float_dtype": "float32",
+    "finite": true,
+    "peak_allocated_bytes": 2805598720,
+    "peak_reserved_bytes": 3103784960,
+    "output_wh": [
+      512,
+      512
+    ],
+    "output_uint8_shape": [
+      512,
+      512,
+      3
+    ],
+    "output_uint8_dtype": "uint8",
+    "finished_at": "2026-10-26T06:43:16.895085+00:00",
+    "semantic_quality": "PENDING_USER_BLIND_REVIEW"
+  },
+  {
+    "call_id": "1:m1_DreamShaper_alt_1:s0.8",
+    "source_id": "1",
+    "model": "DreamShaper",
+    "crop_id": "alt_1",
+    "status": "SUCCEEDED",
+    "input_wh": [
+      512,
+      512
+    ],
+    "input_rgb_sha256": "2cd60a33151d64463398c487e00132cc5a867f57aae791b1ebc225ffc417cd2c",
+    "input_mask_sha256": "56ab09157a48fcbe2aa631e39dd3ac89f4b3b33ad8854d6ed1d26d5a1ef30a04",
+    "mask_effective_pixels": 4862,
+    "started_at": "2026-10-26T06:43:16.928771+00:00",
+    "seconds": 1.1345232499297708,
+    "output_float_shape": [
+      512,
+      512,
+      3
+    ],
+    "output_float_dtype": "float32",
+    "finite": true,
+    "peak_allocated_bytes": 2805598720,
+    "peak_reserved_bytes": 3103784960,
+    "output_wh": [
+      512,
+      512
+    ],
+    "output_uint8_shape": [
+      512,
+      512,
+      3
+    ],
+    "output_uint8_dtype": "uint8",
+    "finished_at": "2026-10-26T06:43:18.576050+00:00",
+    "semantic_quality": "PENDING_USER_BLIND_REVIEW"
+  },
+  {
+    "call_id": "2:m1_DreamShaper_alt_1:s0.8",
+    "source_id": "2",
+    "model": "DreamShaper",
+    "crop_id": "alt_1",
+    "status": "SUCCEEDED",
+    "input_wh": [
+      512,
+      512
+    ],
+    "input_rgb_sha256": "3c6f9d36f874999d6ae54661a8c76b128c7db7f0863b06fc0397a88d03b4cd4c",
+    "input_mask_sha256": "584b34276f07cd542ad18dec4abde6f05f130510d1d12af4ab700453fcca11f0",
+    "mask_effective_pixels": 4028,
+    "started_at": "2026-10-26T06:43:18.609887+00:00",
+    "seconds": 1.1337779818568379,
+    "output_float_shape": [
+      512,
+      512,
+      3
+    ],
+    "output_float_dtype": "float32",
+    "finite": true,
+    "peak_allocated_bytes": 2805598720,
+    "peak_reserved_bytes": 3103784960,
+    "output_wh": [
+      512,
+      512
+    ],
+    "output_uint8_shape": [
+      512,
+      512,
+      3
+    ],
+    "output_uint8_dtype": "uint8",
+    "finished_at": "2026-10-26T06:43:20.255482+00:00",
+    "semantic_quality": "PENDING_USER_BLIND_REVIEW"
+  },
+  {
+    "call_id": "469:m1_SDXL_alt_2:s0.8",
+    "source_id": "469",
+    "model": "SDXL",
+    "crop_id": "alt_2",
+    "status": "SUCCEEDED",
+    "input_wh": [
+      1024,
+      1024
+    ],
+    "input_rgb_sha256": "f4b2701d9418ce98083c13508bde7b72bcd835473882957afc00066344d3b639",
+    "input_mask_sha256": "1b9b726c999c51ae6e6478d32bf4bd350b6e110d14242543c3cf8497e35a3687",
+    "mask_effective_pixels": 6616,
+    "started_at": "2026-10-26T06:43:21.306427+00:00",
+    "seconds": 12.488041031872854,
+    "output_float_shape": [
+      1024,
+      1024,
+      3
+    ],
+    "output_float_dtype": "float32",
+    "finite": true,
+    "peak_allocated_bytes": 5764813824,
+    "peak_reserved_bytes": 6247415808,
+    "output_wh": [
+      1024,
+      1024
+    ],
+    "output_uint8_shape": [
+      1024,
+      1024,
+      3
+    ],
+    "output_uint8_dtype": "uint8",
+    "finished_at": "2026-10-26T06:43:34.533412+00:00",
+    "semantic_quality": "PENDING_USER_BLIND_REVIEW"
+  },
+  {
+    "call_id": "260:m1_SDXL_default:s0.8",
+    "source_id": "260",
+    "model": "SDXL",
+    "crop_id": "default",
+    "status": "SUCCEEDED",
+    "input_wh": [
+      1024,
+      1024
+    ],
+    "input_rgb_sha256": "1bfd056398975b08b3ba9f616c4d08b5c7d26f1473ab2b5463a5a7a501588bb2",
+    "input_mask_sha256": "5750afe6579a522d2863036b976b9070d476f5f1f8e2b79bfa2d51f9ed994a3a",
+    "mask_effective_pixels": 33620,
+    "started_at": "2026-10-26T06:43:34.641830+00:00",
+    "seconds": 9.088122132001445,
+    "output_float_shape": [
+      1024,
+      1024,
+      3
+    ],
+    "output_float_dtype": "float32",
+    "finite": true,
+    "peak_allocated_bytes": 5764813824,
+    "peak_reserved_bytes": 6247415808,
+    "output_wh": [
+      1024,
+      1024
+    ],
+    "output_uint8_shape": [
+      1024,
+      1024,
+      3
+    ],
+    "output_uint8_dtype": "uint8",
+    "finished_at": "2026-10-26T06:43:44.781037+00:00",
+    "semantic_quality": "PENDING_USER_BLIND_REVIEW"
+  },
+  {
+    "call_id": "470:m1_SDXL_default:s0.8",
+    "source_id": "470",
+    "model": "SDXL",
+    "crop_id": "default",
+    "status": "SUCCEEDED",
+    "input_wh": [
+      1024,
+      1024
+    ],
+    "input_rgb_sha256": "cbc14d1386c52e6864b56c0be025a547f51bc64b46c590a377dd9e6eb94cac82",
+    "input_mask_sha256": "4595743546fc77002194194e4d6e08a334928d93398484c32b274e8051d7de94",
+    "mask_effective_pixels": 11988,
+    "started_at": "2026-10-26T06:43:44.865395+00:00",
+    "seconds": 9.309682447928935,
+    "output_float_shape": [
+      1024,
+      1024,
+      3
+    ],
+    "output_float_dtype": "float32",
+    "finite": true,
+    "peak_allocated_bytes": 5764813824,
+    "peak_reserved_bytes": 6247415808,
+    "output_wh": [
+      1024,
+      1024
+    ],
+    "output_uint8_shape": [
+      1024,
+      1024,
+      3
+    ],
+    "output_uint8_dtype": "uint8",
+    "finished_at": "2026-10-26T06:43:54.973812+00:00",
+    "semantic_quality": "PENDING_USER_BLIND_REVIEW"
+  },
+  {
+    "call_id": "8:m1_SDXL_default:s0.8",
+    "source_id": "8",
+    "model": "SDXL",
+    "crop_id": "default",
+    "status": "SUCCEEDED",
+    "input_wh": [
+      1024,
+      1024
+    ],
+    "input_rgb_sha256": "897da7abf865eedae2215e948c9de231ed42e90bab890ca11b0b7048a2cb22f3",
+    "input_mask_sha256": "ee2207c78f354c072e8c435d1bddad3d055d194a898d5c5005d218958a5c0e12",
+    "mask_effective_pixels": 5292,
+    "started_at": "2026-10-26T06:43:55.088356+00:00",
+    "seconds": 9.051088223000988,
+    "output_float_shape": [
+      1024,
+      1024,
+      3
+    ],
+    "output_float_dtype": "float32",
+    "finite": true,
+    "peak_allocated_bytes": 5764813824,
+    "peak_reserved_bytes": 6247415808,
+    "output_wh": [
+      1024,
+      1024
+    ],
+    "output_uint8_shape": [
+      1024,
+      1024,
+      3
+    ],
+    "output_uint8_dtype": "uint8",
+    "finished_at": "2026-10-26T06:44:05.236578+00:00",
+    "semantic_quality": "PENDING_USER_BLIND_REVIEW"
+  },
+  {
+    "call_id": "1:m1_SDXL_alt_1:s0.8",
+    "source_id": "1",
+    "model": "SDXL",
+    "crop_id": "alt_1",
+    "status": "SUCCEEDED",
+    "input_wh": [
+      1024,
+      1024
+    ],
+    "input_rgb_sha256": "992424bca0a999c95589d3ef4c0419aeaf86afab455a947ae97adf33bb969462",
+    "input_mask_sha256": "55146bd4de6784bb160e5decee7f9d88e50d6e7f1723a3ba06c1d3c4f8821dc5",
+    "mask_effective_pixels": 19448,
+    "started_at": "2026-10-26T06:44:05.355311+00:00",
+    "seconds": 8.849816405912861,
+    "output_float_shape": [
+      1024,
+      1024,
+      3
+    ],
+    "output_float_dtype": "float32",
+    "finite": true,
+    "peak_allocated_bytes": 5764813824,
+    "peak_reserved_bytes": 6247415808,
+    "output_wh": [
+      1024,
+      1024
+    ],
+    "output_uint8_shape": [
+      1024,
+      1024,
+      3
+    ],
+    "output_uint8_dtype": "uint8",
+    "finished_at": "2026-10-26T06:44:15.308234+00:00",
+    "semantic_quality": "PENDING_USER_BLIND_REVIEW"
+  },
+  {
+    "call_id": "2:m1_SDXL_alt_1:s0.8",
+    "source_id": "2",
+    "model": "SDXL",
+    "crop_id": "alt_1",
+    "status": "SUCCEEDED",
+    "input_wh": [
+      1024,
+      1024
+    ],
+    "input_rgb_sha256": "da54548da1500e95765023482a63e3de26bcf66f5e0fdf7e72fe6b74e3eb71d7",
+    "input_mask_sha256": "1b5192c64477e9cec0cd40926e1e9af946138d8368abdcfc6bfad24b153253c3",
+    "mask_effective_pixels": 16112,
+    "started_at": "2026-10-26T06:44:15.413648+00:00",
+    "seconds": 8.639463196042925,
+    "output_float_shape": [
+      1024,
+      1024,
+      3
+    ],
+    "output_float_dtype": "float32",
+    "finite": true,
+    "peak_allocated_bytes": 5764813824,
+    "peak_reserved_bytes": 6247415808,
+    "output_wh": [
+      1024,
+      1024
+    ],
+    "output_uint8_shape": [
+      1024,
+      1024,
+      3
+    ],
+    "output_uint8_dtype": "uint8",
+    "finished_at": "2026-10-26T06:44:25.069945+00:00",
+    "semantic_quality": "PENDING_USER_BLIND_REVIEW"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "phase": "Exp13.2-M1",
+  "report_start_head": "01b730cd0471f982d5d17263cc254b04bb937da8",
+  "execution_snapshot": {
+    "head": "01b730cd0471f982d5d17263cc254b04bb937da8",
+    "remote_head": "01b730cd0471f982d5d17263cc254b04bb937da8",
+    "branch": "exp13/vlm-semantic-audit",
+    "isolation": "Minimal execution snapshot of verified baseline protocol plus new M1 script; original server checkout and results never synchronized",
+    "server_code_directory": "/root/autodl-tmp/exp13_m1_workspace/20261026T064000Z_m1/code",
+    "files": {
+      "tools/exp13_2_m1_matched_restoration.py": "92a79029e4e5086cf1fc6c3c2e7ce0119e70a6fc58b58ae95c2ff0b8c81fee1d",
+      "tools/exp13_restoration/protocol.py": "d8cd3b4e978f69e7f179dc8766d547fe119e43343ab64e6f88c054a0bd27f4cd",
+      "tools/exp13_restoration/__init__.py": "249c85bdb5178d6c23c1a56a2fe04b22d227ce1f26af4aec95155abedb6c0419"
+    }
+  },
+  "execution_script_sha256": "92a79029e4e5086cf1fc6c3c2e7ce0119e70a6fc58b58ae95c2ff0b8c81fee1d",
+  "server_historical_head": "787a3be0190dfa9b11c5416a5b686a6bae4598d9",
+  "successor_ledger": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_m1_matched_restoration_benchmark/20261026T064000Z_m1/budget_successor_ledger.json",
+  "s5_ledger_sha256": "3af2d074b640023e5e2c66198ae3b1ee74cedb3d7829f802c6cf84a62fa1ca94",
+  "config_sha256": "a3fb76cd12797a012c3e7149571a1e50e6e4dd992fa72dd663c181c1610ff81e",
+  "input_manifest_sha256": "c5d44a226a5bba6b7222fa7dcba406b8def6eda31b537ceac409af55b8958ec0",
+  "sources": "six frozen TRAIN sources only",
+  "limitations": [
+    "distinct image/group IDs do not establish physical independence",
+    "architecture/scheduler/native resolution differ",
+    "DreamShaper immutable upstream revision unknown; local fingerprint reused as explicitly authorized",
+    "input PASS is not generated-quality PASS",
+    "no automatic model selection or pair freeze"
+  ],
+  "stopped_for_chatgpt_and_user_blind_gate": true
+}

@@ -1,0 +1,561 @@
+{
+  "schema_version": 2,
+  "definition": "one LOCAL_MODEL_CALL = one ROI, one strength, one actual inference; every non-cancelled reservation occupies budget",
+  "planned_calls": 16,
+  "actual_calls": 16,
+  "occupied_calls": 16,
+  "retry_calls": 0,
+  "gpt_fallback_calls": 0,
+  "smoke_reserved": 4,
+  "staged_reserved": 16,
+  "caps": {
+    "smoke": 4,
+    "smoke_pilot_revision": 120,
+    "all_local": 300,
+    "unique_sources": 100,
+    "retry_sources": 10,
+    "gpt_fallback": 14
+  },
+  "production_sources": [
+    "1",
+    "2",
+    "260",
+    "469",
+    "470",
+    "65",
+    "8"
+  ],
+  "retry_sources": [],
+  "calls": {
+    "2:roi_0:s0.8": {
+      "call_id": "2:roi_0:s0.8",
+      "source_id": "2",
+      "roi_id": "roi_0",
+      "stage": "smoke",
+      "strength": 0.8,
+      "model_config_id": "exp13_phase1b_s2_sdxl_fp16_1024_s130500",
+      "retry": false,
+      "status": "SUCCEEDED",
+      "real_model_call": true,
+      "reserved_at": "2026-10-25T05:54:12.642744+00:00",
+      "started_at": "2026-10-25T05:54:12.661905+00:00",
+      "finished_at": "2026-10-25T05:54:26.186876+00:00"
+    },
+    "65:roi_0:s0.8": {
+      "call_id": "65:roi_0:s0.8",
+      "source_id": "65",
+      "roi_id": "roi_0",
+      "stage": "smoke",
+      "strength": 0.8,
+      "model_config_id": "exp13_phase1b_s2_sdxl_fp16_1024_s130500",
+      "retry": false,
+      "status": "SUCCEEDED",
+      "real_model_call": true,
+      "reserved_at": "2026-10-25T05:54:27.495962+00:00",
+      "started_at": "2026-10-25T05:54:27.509604+00:00",
+      "finished_at": "2026-10-25T05:54:39.018759+00:00"
+    },
+    "65:roi_1:s0.8": {
+      "call_id": "65:roi_1:s0.8",
+      "source_id": "65",
+      "roi_id": "roi_1",
+      "stage": "smoke",
+      "strength": 0.8,
+      "model_config_id": "exp13_phase1b_s2_sdxl_fp16_1024_s130500",
+      "retry": false,
+      "status": "SUCCEEDED",
+      "real_model_call": true,
+      "reserved_at": "2026-10-25T05:54:27.495992+00:00",
+      "started_at": "2026-10-25T05:54:39.578533+00:00",
+      "finished_at": "2026-10-25T05:54:50.021333+00:00"
+    },
+    "260:matched_center512:s0.8": {
+      "call_id": "260:matched_center512:s0.8",
+      "source_id": "260",
+      "roi_id": "matched_center512",
+      "stage": "smoke",
+      "strength": 0.8,
+      "model_config_id": "exp13_phase1b_s5_sdxl_matched512_1024_s130500",
+      "retry": false,
+      "status": "SUCCEEDED",
+      "real_model_call": true,
+      "reserved_at": "2026-10-25T11:10:59.185462+00:00",
+      "started_at": "2026-10-25T11:11:00.092442+00:00",
+      "finished_at": "2026-10-25T11:11:12.851739+00:00"
+    },
+    "469:m1_DreamShaper_alt_2:s0.8": {
+      "call_id": "469:m1_DreamShaper_alt_2:s0.8",
+      "source_id": "469",
+      "roi_id": "m1_DreamShaper_alt_2",
+      "stage": "pilot",
+      "strength": 0.8,
+      "model_config_id": "exp13_2_m1_a3fb76cd12797a012c3e7149571a1e50e6e4dd992fa72dd663c181c1610ff81e",
+      "retry": false,
+      "status": "SUCCEEDED",
+      "real_model_call": true,
+      "reserved_at": "2026-10-26T06:43:09.858076+00:00",
+      "started_at": "2026-10-26T06:43:09.860200+00:00",
+      "finished_at": "2026-10-26T06:43:11.947030+00:00"
+    },
+    "469:m1_SDXL_alt_2:s0.8": {
+      "call_id": "469:m1_SDXL_alt_2:s0.8",
+      "source_id": "469",
+      "roi_id": "m1_SDXL_alt_2",
+      "stage": "pilot",
+      "strength": 0.8,
+      "model_config_id": "exp13_2_m1_a3fb76cd12797a012c3e7149571a1e50e6e4dd992fa72dd663c181c1610ff81e",
+      "retry": false,
+      "status": "SUCCEEDED",
+      "real_model_call": true,
+      "reserved_at": "2026-10-26T06:43:09.858099+00:00",
+      "started_at": "2026-10-26T06:43:21.307200+00:00",
+      "finished_at": "2026-10-26T06:43:34.534289+00:00"
+    },
+    "260:m1_DreamShaper_default:s0.8": {
+      "call_id": "260:m1_DreamShaper_default:s0.8",
+      "source_id": "260",
+      "roi_id": "m1_DreamShaper_default",
+      "stage": "pilot",
+      "strength": 0.8,
+      "model_config_id": "exp13_2_m1_a3fb76cd12797a012c3e7149571a1e50e6e4dd992fa72dd663c181c1610ff81e",
+      "retry": false,
+      "status": "SUCCEEDED",
+      "real_model_call": true,
+      "reserved_at": "2026-10-26T06:43:11.976477+00:00",
+      "started_at": "2026-10-26T06:43:11.979000+00:00",
+      "finished_at": "2026-10-26T06:43:13.661391+00:00"
+    },
+    "260:m1_SDXL_default:s0.8": {
+      "call_id": "260:m1_SDXL_default:s0.8",
+      "source_id": "260",
+      "roi_id": "m1_SDXL_default",
+      "stage": "pilot",
+      "strength": 0.8,
+      "model_config_id": "exp13_2_m1_a3fb76cd12797a012c3e7149571a1e50e6e4dd992fa72dd663c181c1610ff81e",
+      "retry": false,
+      "status": "SUCCEEDED",
+      "real_model_call": true,
+      "reserved_at": "2026-10-26T06:43:11.976497+00:00",
+      "started_at": "2026-10-26T06:43:34.642647+00:00",
+      "finished_at": "2026-10-26T06:43:44.781768+00:00"
+    },
+    "470:m1_DreamShaper_default:s0.8": {
+      "call_id": "470:m1_DreamShaper_default:s0.8",
+      "source_id": "470",
+      "roi_id": "m1_DreamShaper_default",
+      "stage": "pilot",
+      "strength": 0.8,
+      "model_config_id": "exp13_2_m1_a3fb76cd12797a012c3e7149571a1e50e6e4dd992fa72dd663c181c1610ff81e",
+      "retry": false,
+      "status": "SUCCEEDED",
+      "real_model_call": true,
+      "reserved_at": "2026-10-26T06:43:13.685871+00:00",
+      "started_at": "2026-10-26T06:43:13.688636+00:00",
+      "finished_at": "2026-10-26T06:43:15.246710+00:00"
+    },
+    "470:m1_SDXL_default:s0.8": {
+      "call_id": "470:m1_SDXL_default:s0.8",
+      "source_id": "470",
+      "roi_id": "m1_SDXL_default",
+      "stage": "pilot",
+      "strength": 0.8,
+      "model_config_id": "exp13_2_m1_a3fb76cd12797a012c3e7149571a1e50e6e4dd992fa72dd663c181c1610ff81e",
+      "retry": false,
+      "status": "SUCCEEDED",
+      "real_model_call": true,
+      "reserved_at": "2026-10-26T06:43:13.685891+00:00",
+      "started_at": "2026-10-26T06:43:44.866185+00:00",
+      "finished_at": "2026-10-26T06:43:54.974552+00:00"
+    },
+    "8:m1_DreamShaper_default:s0.8": {
+      "call_id": "8:m1_DreamShaper_default:s0.8",
+      "source_id": "8",
+      "roi_id": "m1_DreamShaper_default",
+      "stage": "pilot",
+      "strength": 0.8,
+      "model_config_id": "exp13_2_m1_a3fb76cd12797a012c3e7149571a1e50e6e4dd992fa72dd663c181c1610ff81e",
+      "retry": false,
+      "status": "SUCCEEDED",
+      "real_model_call": true,
+      "reserved_at": "2026-10-26T06:43:15.278884+00:00",
+      "started_at": "2026-10-26T06:43:15.281855+00:00",
+      "finished_at": "2026-10-26T06:43:16.895697+00:00"
+    },
+    "8:m1_SDXL_default:s0.8": {
+      "call_id": "8:m1_SDXL_default:s0.8",
+      "source_id": "8",
+      "roi_id": "m1_SDXL_default",
+      "stage": "pilot",
+      "strength": 0.8,
+      "model_config_id": "exp13_2_m1_a3fb76cd12797a012c3e7149571a1e50e6e4dd992fa72dd663c181c1610ff81e",
+      "retry": false,
+      "status": "SUCCEEDED",
+      "real_model_call": true,
+      "reserved_at": "2026-10-26T06:43:15.278905+00:00",
+      "started_at": "2026-10-26T06:43:55.089017+00:00",
+      "finished_at": "2026-10-26T06:44:05.237343+00:00"
+    },
+    "1:m1_DreamShaper_alt_1:s0.8": {
+      "call_id": "1:m1_DreamShaper_alt_1:s0.8",
+      "source_id": "1",
+      "roi_id": "m1_DreamShaper_alt_1",
+      "stage": "pilot",
+      "strength": 0.8,
+      "model_config_id": "exp13_2_m1_a3fb76cd12797a012c3e7149571a1e50e6e4dd992fa72dd663c181c1610ff81e",
+      "retry": false,
+      "status": "SUCCEEDED",
+      "real_model_call": true,
+      "reserved_at": "2026-10-26T06:43:16.926238+00:00",
+      "started_at": "2026-10-26T06:43:16.929427+00:00",
+      "finished_at": "2026-10-26T06:43:18.576692+00:00"
+    },
+    "1:m1_SDXL_alt_1:s0.8": {
+      "call_id": "1:m1_SDXL_alt_1:s0.8",
+      "source_id": "1",
+      "roi_id": "m1_SDXL_alt_1",
+      "stage": "pilot",
+      "strength": 0.8,
+      "model_config_id": "exp13_2_m1_a3fb76cd12797a012c3e7149571a1e50e6e4dd992fa72dd663c181c1610ff81e",
+      "retry": false,
+      "status": "SUCCEEDED",
+      "real_model_call": true,
+      "reserved_at": "2026-10-26T06:43:16.926260+00:00",
+      "started_at": "2026-10-26T06:44:05.355992+00:00",
+      "finished_at": "2026-10-26T06:44:15.309136+00:00"
+    },
+    "2:m1_DreamShaper_alt_1:s0.8": {
+      "call_id": "2:m1_DreamShaper_alt_1:s0.8",
+      "source_id": "2",
+      "roi_id": "m1_DreamShaper_alt_1",
+      "stage": "pilot",
+      "strength": 0.8,
+      "model_config_id": "exp13_2_m1_a3fb76cd12797a012c3e7149571a1e50e6e4dd992fa72dd663c181c1610ff81e",
+      "retry": false,
+      "status": "SUCCEEDED",
+      "real_model_call": true,
+      "reserved_at": "2026-10-26T06:43:18.607182+00:00",
+      "started_at": "2026-10-26T06:43:18.610533+00:00",
+      "finished_at": "2026-10-26T06:43:20.256173+00:00"
+    },
+    "2:m1_SDXL_alt_1:s0.8": {
+      "call_id": "2:m1_SDXL_alt_1:s0.8",
+      "source_id": "2",
+      "roi_id": "m1_SDXL_alt_1",
+      "stage": "pilot",
+      "strength": 0.8,
+      "model_config_id": "exp13_2_m1_a3fb76cd12797a012c3e7149571a1e50e6e4dd992fa72dd663c181c1610ff81e",
+      "retry": false,
+      "status": "SUCCEEDED",
+      "real_model_call": true,
+      "reserved_at": "2026-10-26T06:43:18.607204+00:00",
+      "started_at": "2026-10-26T06:44:15.414508+00:00",
+      "finished_at": "2026-10-26T06:44:25.070707+00:00"
+    }
+  },
+  "history": [
+    {
+      "event": "MIGRATED_FROM_S1_ZERO_OCCUPANCY",
+      "source_ledger": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s1/20261025T044024Z/call_ledger.json",
+      "verified_actual_calls": 0,
+      "verified_occupied_calls": 0,
+      "timestamp": "2026-10-25T05:54:11.631237+00:00"
+    },
+    {
+      "event": "RESERVED",
+      "call_id": "2:roi_0:s0.8",
+      "status": "RESERVED",
+      "occupied_calls_after": 1
+    },
+    {
+      "event": "STARTED",
+      "call_id": "2:roi_0:s0.8",
+      "status": "STARTED"
+    },
+    {
+      "event": "SUCCEEDED",
+      "call_id": "2:roi_0:s0.8",
+      "status": "SUCCEEDED",
+      "error": null
+    },
+    {
+      "event": "RESERVED",
+      "call_id": "65:roi_0:s0.8",
+      "status": "RESERVED",
+      "occupied_calls_after": 2
+    },
+    {
+      "event": "RESERVED",
+      "call_id": "65:roi_1:s0.8",
+      "status": "RESERVED",
+      "occupied_calls_after": 3
+    },
+    {
+      "event": "STARTED",
+      "call_id": "65:roi_0:s0.8",
+      "status": "STARTED"
+    },
+    {
+      "event": "SUCCEEDED",
+      "call_id": "65:roi_0:s0.8",
+      "status": "SUCCEEDED",
+      "error": null
+    },
+    {
+      "event": "STARTED",
+      "call_id": "65:roi_1:s0.8",
+      "status": "STARTED"
+    },
+    {
+      "event": "SUCCEEDED",
+      "call_id": "65:roi_1:s0.8",
+      "status": "SUCCEEDED",
+      "error": null
+    },
+    {
+      "event": "SUCCESSOR_CREATED_FOR_S5",
+      "source_ledger": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s2/20261025T055350Z_smoke/call_ledger.json",
+      "source_ledger_sha256": "0acecb19e0b050c7c2fb2b0c06aa4df5ffb4ec8a695863d01e830459130231bd",
+      "verified_occupied_calls": 3,
+      "verified_actual_calls": 3,
+      "authorized_new_calls": 1,
+      "timestamp": "2026-10-25T11:10:59.184484+00:00"
+    },
+    {
+      "event": "RESERVED",
+      "call_id": "260:matched_center512:s0.8",
+      "status": "RESERVED",
+      "occupied_calls_after": 4
+    },
+    {
+      "event": "STARTED",
+      "call_id": "260:matched_center512:s0.8",
+      "status": "STARTED"
+    },
+    {
+      "event": "SUCCEEDED",
+      "call_id": "260:matched_center512:s0.8",
+      "status": "SUCCEEDED",
+      "error": null
+    },
+    {
+      "event": "M1_SUCCESSOR_INHERITS_S5",
+      "timestamp": "2026-10-26T06:43:02.201982+00:00",
+      "source_sha256": "3af2d074b640023e5e2c66198ae3b1ee74cedb3d7829f802c6cf84a62fa1ca94",
+      "source_ledger": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_phase1b_s5/20261025T230000Z_s5/budget_successor_ledger.json",
+      "new_call_authorization": 12,
+      "stage": "pilot"
+    },
+    {
+      "event": "RESERVED",
+      "call_id": "469:m1_DreamShaper_alt_2:s0.8",
+      "status": "RESERVED",
+      "occupied_calls_after": 5
+    },
+    {
+      "event": "RESERVED",
+      "call_id": "469:m1_SDXL_alt_2:s0.8",
+      "status": "RESERVED",
+      "occupied_calls_after": 6
+    },
+    {
+      "event": "STARTED",
+      "call_id": "469:m1_DreamShaper_alt_2:s0.8",
+      "status": "STARTED"
+    },
+    {
+      "event": "SUCCEEDED",
+      "call_id": "469:m1_DreamShaper_alt_2:s0.8",
+      "status": "SUCCEEDED",
+      "error": null
+    },
+    {
+      "event": "RESERVED",
+      "call_id": "260:m1_DreamShaper_default:s0.8",
+      "status": "RESERVED",
+      "occupied_calls_after": 7
+    },
+    {
+      "event": "RESERVED",
+      "call_id": "260:m1_SDXL_default:s0.8",
+      "status": "RESERVED",
+      "occupied_calls_after": 8
+    },
+    {
+      "event": "STARTED",
+      "call_id": "260:m1_DreamShaper_default:s0.8",
+      "status": "STARTED"
+    },
+    {
+      "event": "SUCCEEDED",
+      "call_id": "260:m1_DreamShaper_default:s0.8",
+      "status": "SUCCEEDED",
+      "error": null
+    },
+    {
+      "event": "RESERVED",
+      "call_id": "470:m1_DreamShaper_default:s0.8",
+      "status": "RESERVED",
+      "occupied_calls_after": 9
+    },
+    {
+      "event": "RESERVED",
+      "call_id": "470:m1_SDXL_default:s0.8",
+      "status": "RESERVED",
+      "occupied_calls_after": 10
+    },
+    {
+      "event": "STARTED",
+      "call_id": "470:m1_DreamShaper_default:s0.8",
+      "status": "STARTED"
+    },
+    {
+      "event": "SUCCEEDED",
+      "call_id": "470:m1_DreamShaper_default:s0.8",
+      "status": "SUCCEEDED",
+      "error": null
+    },
+    {
+      "event": "RESERVED",
+      "call_id": "8:m1_DreamShaper_default:s0.8",
+      "status": "RESERVED",
+      "occupied_calls_after": 11
+    },
+    {
+      "event": "RESERVED",
+      "call_id": "8:m1_SDXL_default:s0.8",
+      "status": "RESERVED",
+      "occupied_calls_after": 12
+    },
+    {
+      "event": "STARTED",
+      "call_id": "8:m1_DreamShaper_default:s0.8",
+      "status": "STARTED"
+    },
+    {
+      "event": "SUCCEEDED",
+      "call_id": "8:m1_DreamShaper_default:s0.8",
+      "status": "SUCCEEDED",
+      "error": null
+    },
+    {
+      "event": "RESERVED",
+      "call_id": "1:m1_DreamShaper_alt_1:s0.8",
+      "status": "RESERVED",
+      "occupied_calls_after": 13
+    },
+    {
+      "event": "RESERVED",
+      "call_id": "1:m1_SDXL_alt_1:s0.8",
+      "status": "RESERVED",
+      "occupied_calls_after": 14
+    },
+    {
+      "event": "STARTED",
+      "call_id": "1:m1_DreamShaper_alt_1:s0.8",
+      "status": "STARTED"
+    },
+    {
+      "event": "SUCCEEDED",
+      "call_id": "1:m1_DreamShaper_alt_1:s0.8",
+      "status": "SUCCEEDED",
+      "error": null
+    },
+    {
+      "event": "RESERVED",
+      "call_id": "2:m1_DreamShaper_alt_1:s0.8",
+      "status": "RESERVED",
+      "occupied_calls_after": 15
+    },
+    {
+      "event": "RESERVED",
+      "call_id": "2:m1_SDXL_alt_1:s0.8",
+      "status": "RESERVED",
+      "occupied_calls_after": 16
+    },
+    {
+      "event": "STARTED",
+      "call_id": "2:m1_DreamShaper_alt_1:s0.8",
+      "status": "STARTED"
+    },
+    {
+      "event": "SUCCEEDED",
+      "call_id": "2:m1_DreamShaper_alt_1:s0.8",
+      "status": "SUCCEEDED",
+      "error": null
+    },
+    {
+      "event": "STARTED",
+      "call_id": "469:m1_SDXL_alt_2:s0.8",
+      "status": "STARTED"
+    },
+    {
+      "event": "SUCCEEDED",
+      "call_id": "469:m1_SDXL_alt_2:s0.8",
+      "status": "SUCCEEDED",
+      "error": null
+    },
+    {
+      "event": "STARTED",
+      "call_id": "260:m1_SDXL_default:s0.8",
+      "status": "STARTED"
+    },
+    {
+      "event": "SUCCEEDED",
+      "call_id": "260:m1_SDXL_default:s0.8",
+      "status": "SUCCEEDED",
+      "error": null
+    },
+    {
+      "event": "STARTED",
+      "call_id": "470:m1_SDXL_default:s0.8",
+      "status": "STARTED"
+    },
+    {
+      "event": "SUCCEEDED",
+      "call_id": "470:m1_SDXL_default:s0.8",
+      "status": "SUCCEEDED",
+      "error": null
+    },
+    {
+      "event": "STARTED",
+      "call_id": "8:m1_SDXL_default:s0.8",
+      "status": "STARTED"
+    },
+    {
+      "event": "SUCCEEDED",
+      "call_id": "8:m1_SDXL_default:s0.8",
+      "status": "SUCCEEDED",
+      "error": null
+    },
+    {
+      "event": "STARTED",
+      "call_id": "1:m1_SDXL_alt_1:s0.8",
+      "status": "STARTED"
+    },
+    {
+      "event": "SUCCEEDED",
+      "call_id": "1:m1_SDXL_alt_1:s0.8",
+      "status": "SUCCEEDED",
+      "error": null
+    },
+    {
+      "event": "STARTED",
+      "call_id": "2:m1_SDXL_alt_1:s0.8",
+      "status": "STARTED"
+    },
+    {
+      "event": "SUCCEEDED",
+      "call_id": "2:m1_SDXL_alt_1:s0.8",
+      "status": "SUCCEEDED",
+      "error": null
+    }
+  ],
+  "remaining": {
+    "all_local": 284,
+    "smoke_pilot_revision": 104,
+    "smoke": 0,
+    "unique_sources": 93,
+    "retry_sources": 10
+  },
+  "execution_blocked_if_over_cap": true
+}
