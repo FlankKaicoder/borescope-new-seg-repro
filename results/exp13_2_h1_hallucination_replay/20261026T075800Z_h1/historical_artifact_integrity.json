@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "artifacts": {
+    "source_image_path": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_diagnosis/r2_20260921_135903/corrosion/inputs/corrosion_23.png",
+      "bytes": 472458,
+      "sha256": "c57384471d743fc179add88589fa0d7c8d59e59d14c6947ab9f6d4fd692dbddb",
+      "mode": "RGB",
+      "size_wh": [
+        640,
+        480
+      ],
+      "pixel_sha256": "cfd620a95105e77c3e8dbb34dcc3c1224f13b7bbc1af931591a1a1a3cf720e09"
+    },
+    "original_mask_path": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_diagnosis/r2_20260921_135903/masks/original/corrosion_23_mask.png",
+      "bytes": 2280,
+      "sha256": "b1f0ac36de213d5c12e94d269e7dea036b9899493ceb9d26fb6965a5cc6829e1",
+      "mode": "L",
+      "size_wh": [
+        640,
+        480
+      ],
+      "pixel_sha256": "1d896d1cad23025d647e714262d3a569a270dd2d752ee538933043c1d063c643"
+    },
+    "inpaint_mask_path": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_diagnosis/r2_20260921_135903/masks/inpaint_A/corrosion_23_mask.png",
+      "bytes": 4971,
+      "sha256": "e3029973c79c1e6e2ecf0647124096c3537c2e5572d4b006b005faa30a609eb8",
+      "mode": "L",
+      "size_wh": [
+        640,
+        480
+      ],
+      "pixel_sha256": "37c76de841e89b58da58c276bb1330790f13700f3789e1e4f765c05c34758d4c"
+    },
+    "output_path": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_diagnosis/r2_20260921_135903/corrosion/outputs/corrosion_23_mask_A_s055_v2.png",
+      "bytes": 364603,
+      "sha256": "a2cbbc62211fd725404704f32fff002c421243159d16cc3cbbbd66f823c9f5c9",
+      "mode": "RGB",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "60bfaa4a6ac1a35fa4e61467d65931be783bd905d018293854dd9d9e068df9dd"
+    }
+  },
+  "historical_manifest_row": {
+    "diag_id": "corrosion_23_mask_A_s055_v2",
+    "class": "corrosion",
+    "source_id": "23",
+    "source_image_path": "results/exp13_diffusion_diagnosis/r2_20260921_135903/corrosion/inputs/corrosion_23.png",
+    "original_mask_path": "results/exp13_diffusion_diagnosis/r2_20260921_135903/masks/original/corrosion_23_mask.png",
+    "mask_strategy": "mask_A",
+    "inpaint_mask_path": "results/exp13_diffusion_diagnosis/r2_20260921_135903/masks/inpaint_A/corrosion_23_mask.png",
+    "mask_dilation_px": "3 (R1)",
+    "prompt_id": "corrosion_prompt_v2",
+    "prompt_text": "Generate a clearly visible realistic corrosion region on the metallic engine interior surface. Keep it as corrosion, not a clean repaired area, hole, fastener, or seam. Use an irregular rough oxidized patch with natural uneven boundaries while preserving the surrounding geometry and borescope illumination.",
+    "strength": "0.55",
+    "seed": "17001",
+    "model_name": "aiplayground/dreamshaper-8-inpainting",
+    "model_revision": "master",
+    "inference_width": "512",
+    "inference_height": "512",
+    "num_inference_steps": "20",
+    "guidance_scale": "7.5",
+    "output_path": "results/exp13_diffusion_diagnosis/r2_20260921_135903/corrosion/outputs/corrosion_23_mask_A_s055_v2.png",
+    "status": "SUCCESS",
+    "failure_reason": "",
+    "parent_quality_failed_run": "run_20260921_124440"
+  },
+  "a0_independent_hash_match": true,
+  "protected_file_sha256_before": {
+    "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_diagnosis/r2_20260921_135903/manifests/diagnosis_manifest.csv": "06b3007fa9ff057ddabccd5c640133078b06d6da69ab8a4930ca2ce11600fb2c",
+    "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_diagnosis/r2_20260921_135903/prompts/prompt_variants.json": "e3ff3ca5541c6aa8f74cb4cb263500ad746a943fdb007f443c74f35a92dda7ae",
+    "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_restoration_feasibility/a0_20261021_081812/file_integrity.csv": "9f7cf08e97ddd2ca084c55d5b5ade236aa9705e9bb8da5ec6a845e08b504845d",
+    "/root/autodl-tmp/borescope-new-seg-repro/results/dataset_build/exp01_1_split_20260812T122306Z/artifacts/split_manifest.csv": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+    "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_m1_matched_restoration_benchmark/20261026T064000Z_m1/budget_successor_ledger.json": "2bf8eed12906bf061fcb2a460f8e26dbdb66e03abcd1cb3dc0385781fdd91778",
+    "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_diagnosis/r2_20260921_135903/corrosion/inputs/corrosion_23.png": "c57384471d743fc179add88589fa0d7c8d59e59d14c6947ab9f6d4fd692dbddb",
+    "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_diagnosis/r2_20260921_135903/masks/original/corrosion_23_mask.png": "b1f0ac36de213d5c12e94d269e7dea036b9899493ceb9d26fb6965a5cc6829e1",
+    "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_diagnosis/r2_20260921_135903/masks/inpaint_A/corrosion_23_mask.png": "e3029973c79c1e6e2ecf0647124096c3537c2e5572d4b006b005faa30a609eb8",
+    "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_diagnosis/r2_20260921_135903/corrosion/outputs/corrosion_23_mask_A_s055_v2.png": "a2cbbc62211fd725404704f32fff002c421243159d16cc3cbbbd66f823c9f5c9",
+    "/root/autodl-tmp/损伤训练数据集/23.png": "c57384471d743fc179add88589fa0d7c8d59e59d14c6947ab9f6d4fd692dbddb",
+    "/root/autodl-tmp/损伤训练数据集/23.json": "2cb23a813ddd4bf2f90a59a688ad22f6c9c5f1e27351f74d06875cb945e5e4df"
+  },
+  "train_provenance": {
+    "source_id": "23",
+    "split": "train",
+    "raw_sha256": "c57384471d743fc179add88589fa0d7c8d59e59d14c6947ab9f6d4fd692dbddb",
+    "annotation_sha256": "2cb23a813ddd4bf2f90a59a688ad22f6c9c5f1e27351f74d06875cb945e5e4df",
+    "split_manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+    "val_test_images_opened": 0
+  }
+}

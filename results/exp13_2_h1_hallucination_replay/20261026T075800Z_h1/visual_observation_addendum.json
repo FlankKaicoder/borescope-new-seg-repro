@@ -1,0 +1,39 @@
+{
+  "source": "H1_CODEX_DIRECT_VISUAL_INSPECTION_OF_EXISTING_RAW_OUTPUTS",
+  "user_or_domain_expert_acceptance": "PENDING",
+  "source_id": "23",
+  "historical_variant_id": "corrosion_23_mask_A_s055_v2",
+  "coordinate_space": "exact 512x512 comparison canvas, half-open xyxy boxes",
+  "input_context": {
+    "observation": "Preexisting broad damaged/coating-like band meets a genuine diagonal structural boundary; upper bright surface and UI text remain in view.",
+    "production_eligibility": "CASE_STUDY_ONLY / NOT_PRODUCTION_ELIGIBLE"
+  },
+  "historical_dreamshaper": {
+    "observed": "New cyan rectangular display/panel-like patch and circular wheel/lens-like components, absent from input.",
+    "region_xyxy": [55, 135, 415, 255],
+    "confidence_in_visible_difference": "HIGH",
+    "historic_source_level_review": "Source23 documented as seams/grooves/other invented structures; no retroactive variant-level user rating is created."
+  },
+  "new_sdxl": {
+    "observed": "Upper edit band changes into dark cavity-like openings, scalloped/arched cut edges and small regular protrusion-like forms. Surface continuity and the damaged-band geometry change.",
+    "region_xyxy": [35, 130, 405, 260],
+    "suspected_mechanical_or_structural_hallucination": "YES_SUSPECTED_PENDING_HUMAN_REVIEW",
+    "confidence_in_visible_difference": "HIGH",
+    "confidence_in_mechanical_semantic_classification": "MODERATE",
+    "same_specific_invented_device_as_dreamshaper": "NO_OBVIOUS_MATCH",
+    "same_broad_error_family": "POSSIBLE_STRUCTURAL_INVENTION; not independently domain-validated",
+    "defect_restored_to_normal_metal": "NOT_ESTABLISHED; discontinuities and abnormal openings remain",
+    "natural_texture_and_geometry_preservation": "CONCERNS; no semantic PASS"
+  },
+  "interpretation_limits": [
+    "One deliberately selected historical failure, one new SDXL sample and one seed only.",
+    "Old prompt explicitly asks to generate corrosion rather than restore normal metal; preserving it follows exact historical-condition priority.",
+    "Not evidence for pseudo-normal restoration efficacy or model ranking.",
+    "SDXL ran at512 for identical input pixels; architecture, scheduler and historical runtime differ.",
+    "Input has real structural boundaries and truncated polygon coverage; intended anatomy is not independently known.",
+    "No model-internal mechanism or VAE numerical cause can be inferred from these images."
+  ],
+  "semantic_quality_gate": "PENDING_CHATGPT_AND_USER_REVIEW",
+  "trusted_pairs": 0,
+  "new_calls_for_this_addendum": 0
+}

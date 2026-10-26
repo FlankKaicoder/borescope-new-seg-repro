@@ -1,0 +1,10 @@
+{
+  "head": "88cf8da39862d49bbf4c301b796a2c9fdebb9cae",
+  "remote_head": "88cf8da39862d49bbf4c301b796a2c9fdebb9cae",
+  "description": "Isolated H1 script snapshot; historical server checkout untouched. New script is uncommitted at execution and bound by SHA256.",
+  "files": {
+    "tools/exp13_2_h1_hallucination_replay.py": "8d9e474d48cd7fcef594bfeec9b71dfd898ca0c08fa165dacd7f704d39e49646",
+    "tools/exp13_restoration/protocol.py": "d8cd3b4e978f69e7f179dc8766d547fe119e43343ab64e6f88c054a0bd27f4cd",
+    "tools/exp13_diffusion_diagnosis.py": "9227c9295dfca4ad1aa4798a47e936fdff9554264bf2ffca005460e2a175346b"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "status": "VERIFIABLY_IDENTICAL_TO_SAVED_HISTORICAL_ALGORITHM",
+  "historical_512_tensor_not_saved": true,
+  "historical_native_assets_hash_verified": true,
+  "operation": "ImageOps.fit center(.5,.5), RGB LANCZOS / mask NEAREST, 512x512",
+  "independent_resize_box_pixel_equal": true,
+  "crop_xyxy_half_open": [
+    80,
+    0,
+    560,
+    480
+  ],
+  "padding": 0,
+  "crop_then_resize_not_equivalent": "Rejected during initial CPU preflight; original ImageOps.fit retained unchanged.",
+  "crop_target_native_pixels": 32754,
+  "total_target_native_pixels": 36018,
+  "target_retention": 0.9093786440113276,
+  "polygon_complete": false,
+  "production_eligibility": "CASE_STUDY_ONLY / NOT_PRODUCTION_ELIGIBLE",
+  "inputs": {
+    "exact_historical_rgb_512.png": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/inputs/exact_historical_rgb_512.png",
+      "bytes": 382921,
+      "sha256": "963d4745aaa3e9bf66dfe6cce49b4a69e36a64a1986399ce9ebe8fcbec3155f3",
+      "mode": "RGB",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "c9020ebe944600d37d0109b00b7f8aedd4581e9d9e1669634049abee55445ca1"
+    },
+    "exact_historical_edit_mask_512.png": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/inputs/exact_historical_edit_mask_512.png",
+      "bytes": 5356,
+      "sha256": "d62705dcb3ef86bef8028dae765213981d9fa72efca7a40aff7f90ad2f0282d8",
+      "mode": "L",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "e44d52f01a0b9d375d0aeff18df8c57f848837b308bd0c9c2a236c51d1754ec2"
+    },
+    "historical_polygon_512.png": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/inputs/historical_polygon_512.png",
+      "bytes": 2006,
+      "sha256": "030e12776ed01a6e97a3cfb82a79063491a25084d62f193e28b7b1807335b225",
+      "mode": "L",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "680354a46dca76eb285a54ed20d50d0d61c6dbae73ba20f8dbd5ac87fa3053b6"
+    },
+    "effective_mask_512.png": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/inputs/effective_mask_512.png",
+      "bytes": 2012,
+      "sha256": "634c6f9aece25a757a433487f1a5d93e1686a852927fbbfb0253269df1203276",
+      "mode": "L",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "7a859e3608cc8e6c4b806214ba1b42c3e60b7901cc8574c134ad2da2b15e92dd"
+    }
+  },
+  "approximate_reconstruction": false,
+  "dependencies_current": {
+    "Pillow": "11.3.0"
+  },
+  "limitation": "Historical tensor dump/runtime lock unavailable; identity is verified against saved assets and exact archived transform, not an unavailable serialized tensor."
+}

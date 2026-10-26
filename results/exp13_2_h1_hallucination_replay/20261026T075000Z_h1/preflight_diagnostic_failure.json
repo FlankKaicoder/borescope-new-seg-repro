@@ -1,0 +1,13 @@
+{
+  "stage": "CPU_PREFLIGHT_ONLY",
+  "model_loads": 0,
+  "new_model_calls": 0,
+  "budget_reservations": 0,
+  "failure": "Independent check used native.crop(box).resize and disagreed with ImageOps.fit boundary pixels.",
+  "historical_transform_changed": false,
+  "resolution": "Correct independent equivalence check to native.resize(size, method, box=box); ImageOps.fit itself already used the correct historical implementation.",
+  "preserved_server_directory": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075000Z_h1",
+  "preserved_code_snapshot": "/root/autodl-tmp/exp13_h1_workspace/20261026T075000Z_h1/code",
+  "successor_preflight_run": "20261026T075800Z_h1",
+  "earlier_shell_diagnostic": "Bare python was not on noninteractive SSH PATH; that command never started Python. Subsequent commands use /root/miniconda3/bin/python explicitly."
+}

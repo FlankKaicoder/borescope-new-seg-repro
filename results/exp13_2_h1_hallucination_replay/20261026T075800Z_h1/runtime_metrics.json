@@ -1,0 +1,30 @@
+{
+  "inference_seconds": 9.329013270093128,
+  "peak_allocated_bytes": 5528461312,
+  "peak_reserved_bytes": 5886705664,
+  "input_wh": [
+    512,
+    512
+  ],
+  "mask_wh": [
+    512,
+    512
+  ],
+  "output_float_shape": [
+    512,
+    512,
+    3
+  ],
+  "output_float_dtype": "float32",
+  "finite": true,
+  "mask_polarity": "white>=128 means edit; checked against actual Diffusers mask_processor",
+  "vae_dtype_after": "torch.float16",
+  "float_min": 0.0,
+  "float_max": 1.0,
+  "float_mean": 0.3415389955043793,
+  "output_uint8_dtype": "uint8",
+  "output_wh": [
+    512,
+    512
+  ]
+}

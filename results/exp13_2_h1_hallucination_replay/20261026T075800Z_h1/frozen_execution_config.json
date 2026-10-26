@@ -1,0 +1,88 @@
+{
+  "source_id": "23",
+  "variant_id": "corrosion_23_mask_A_s055_v2",
+  "requested_research_goal": "RESTORE_TO_PSEUDO_NORMAL_METAL",
+  "executed_condition": "EXACT_HISTORICAL_DEFECT_GENERATION_PROMPT_REPLAY_FOR_HALLUCINATION_ENDPOINT",
+  "task_mismatch_disclosed": true,
+  "restoration_effectiveness_not_tested": true,
+  "prompt": "Generate a clearly visible realistic corrosion region on the metallic engine interior surface. Keep it as corrosion, not a clean repaired area, hole, fastener, or seam. Use an irregular rough oxidized patch with natural uneven boundaries while preserving the surrounding geometry and borescope illumination.",
+  "negative_prompt": "scratch, paint mark, stain, hole, fastener, seam, text, watermark, changed geometry, smooth clean surface, cartoon, blurry",
+  "seed": 17001,
+  "steps": 20,
+  "guidance_scale": 7.5,
+  "strength": 0.55,
+  "precision": "float16",
+  "height": 512,
+  "width": 512,
+  "sdxl_resolution_reason": "Exact same 512 input pixels prioritized over SDXL native1024; no upscale, padding, prompt or mask adaptation.",
+  "model_id": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+  "revision": "115134f363124c53c7d878647567d04daf26e41e",
+  "model_fingerprint": "d7fb8e6a3d8c4ac6538b13f2f2575a902662364c051716bd3961bf94a465fd14",
+  "scheduler": "EulerDiscreteScheduler",
+  "cpu_offload": true,
+  "vae_tiling": true,
+  "vae_slicing": true,
+  "vae_dtype_policy": "Unmodified model force_upcast policy; no fp16 VAE hypothesis tested.",
+  "target_new_calls": 1,
+  "max_authorized_new_calls": 2,
+  "executable_new_calls": 1,
+  "dreamshaper_replay": false,
+  "replay_not_needed": "Original output, input, mask, manifest and independent A0 hashes all exist.",
+  "retry": false,
+  "parameter_search": false,
+  "production_eligible": false,
+  "limitations": [
+    "single case",
+    "historical failure selected deliberately",
+    "defect-generation prompt conflicts with normal-metal goal",
+    "SDXL512 below native1024",
+    "architecture/runtime/scheduler differ",
+    "historical DreamShaper immutable upstream revision unknown"
+  ],
+  "inputs": {
+    "exact_historical_rgb_512.png": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/inputs/exact_historical_rgb_512.png",
+      "bytes": 382921,
+      "sha256": "963d4745aaa3e9bf66dfe6cce49b4a69e36a64a1986399ce9ebe8fcbec3155f3",
+      "mode": "RGB",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "c9020ebe944600d37d0109b00b7f8aedd4581e9d9e1669634049abee55445ca1"
+    },
+    "exact_historical_edit_mask_512.png": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/inputs/exact_historical_edit_mask_512.png",
+      "bytes": 5356,
+      "sha256": "d62705dcb3ef86bef8028dae765213981d9fa72efca7a40aff7f90ad2f0282d8",
+      "mode": "L",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "e44d52f01a0b9d375d0aeff18df8c57f848837b308bd0c9c2a236c51d1754ec2"
+    },
+    "historical_polygon_512.png": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/inputs/historical_polygon_512.png",
+      "bytes": 2006,
+      "sha256": "030e12776ed01a6e97a3cfb82a79063491a25084d62f193e28b7b1807335b225",
+      "mode": "L",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "680354a46dca76eb285a54ed20d50d0d61c6dbae73ba20f8dbd5ac87fa3053b6"
+    },
+    "effective_mask_512.png": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/inputs/effective_mask_512.png",
+      "bytes": 2012,
+      "sha256": "634c6f9aece25a757a433487f1a5d93e1686a852927fbbfb0253269df1203276",
+      "mode": "L",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "7a859e3608cc8e6c4b806214ba1b42c3e60b7901cc8574c134ad2da2b15e92dd"
+    }
+  }
+}

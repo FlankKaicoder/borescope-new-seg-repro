@@ -1,0 +1,19 @@
+{
+  "status": "PASS_TECHNICAL_ONLY",
+  "checks": [
+    "historical protected hashes",
+    "exact archived transform",
+    "frozen configuration",
+    "single real call with zero exit",
+    "inherited ledger unchanged",
+    "RESERVED STARTED SUCCEEDED order",
+    "float output finite and PNG exact",
+    "mask-outside measurements",
+    "postprocess-only protection",
+    "ZIP CRC and member hashes"
+  ],
+  "model_imports": 0,
+  "new_calls": 0,
+  "reviewer_semantic_pass": false,
+  "validator_sha256": "111c6f5ec8cfaf37313ded753fd9e46687536c063c511685fa4469de9481ad17"
+}

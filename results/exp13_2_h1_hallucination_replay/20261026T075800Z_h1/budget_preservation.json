@@ -1,0 +1,23 @@
+{
+  "parent_unchanged": true,
+  "inherited_calls_preserved": 16,
+  "h1_new_actual_calls": 1,
+  "new_dreamshaper_calls": 0,
+  "new_sdxl_calls": 1,
+  "new_failures": 0,
+  "new_retries": 0,
+  "smoke_occupied": 4,
+  "smoke_remaining": 0,
+  "cumulative_occupied": 17,
+  "cumulative_actual": 17,
+  "remaining": {
+    "all_local": 283,
+    "smoke_pilot_revision": 103,
+    "smoke": 0,
+    "unique_sources": 92,
+    "retry_sources": 10
+  },
+  "gpt_fallback": 0,
+  "ledger_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/budget_successor_ledger.json",
+  "ledger_sha256": "43cf0b9f9517399efa8f802ab75e4e7e0f118d5368439ff3d653cce8ff5697b1"
+}

@@ -1,0 +1,22 @@
+{
+  "source_id": "23",
+  "variant_id": "corrosion_23_mask_A_s055_v2",
+  "historical_run": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_diagnosis/r2_20260921_135903",
+  "historical_stage": "R2",
+  "selection_source": "H1_CODEX_DIRECT_ARTIFACT_INSPECTION_WITH_ARCHIVED_SOURCE_LEVEL_REVIEW",
+  "historical_source_level_evidence": [
+    "docs/exp13_1_r2_final_quality_gate_review.md",
+    "docs/exp13_2_a0_source_visual_screening_review.md"
+  ],
+  "not_a_preexisting_variant_level_user_rating": true,
+  "reason": "Visible invented cyan rectangular panel and circular wheel/lens-like mechanical components on the upper target band, absent in input; priority source23 yields a uniquely frozen exact manifest variant.",
+  "historical_output_sha256": "a2cbbc62211fd725404704f32fff002c421243159d16cc3cbbbd66f823c9f5c9",
+  "observed_suspected_mechanical_bbox_canvas_xyxy": [
+    55,
+    135,
+    415,
+    255
+  ],
+  "not_claimed_unique_hallucination_among_all_history": true,
+  "second_case_allowed": false
+}

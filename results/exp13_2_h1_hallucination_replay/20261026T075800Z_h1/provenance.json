@@ -1,0 +1,74 @@
+{
+  "report_start_head": "88cf8da39862d49bbf4c301b796a2c9fdebb9cae",
+  "server_execution_checkout_head": "787a3be0190dfa9b11c5416a5b686a6bae4598d9",
+  "execution_snapshot": {
+    "head": "88cf8da39862d49bbf4c301b796a2c9fdebb9cae",
+    "remote_head": "88cf8da39862d49bbf4c301b796a2c9fdebb9cae",
+    "description": "H1 corrected CPU equivalence check; original failed preflight preserved, no prior model load/call/reservation.",
+    "files": {
+      "tools/exp13_2_h1_hallucination_replay.py": "21cd34e9aecc3f9e85137533dcb85ab0809658efe22d6c9516f72d42c3c397d4",
+      "tools/exp13_restoration/protocol.py": "d8cd3b4e978f69e7f179dc8766d547fe119e43343ab64e6f88c054a0bd27f4cd",
+      "tools/exp13_diffusion_diagnosis.py": "9227c9295dfca4ad1aa4798a47e936fdff9554264bf2ffca005460e2a175346b"
+    }
+  },
+  "script_sha256": "21cd34e9aecc3f9e85137533dcb85ab0809658efe22d6c9516f72d42c3c397d4",
+  "protocol_sha256": "d8cd3b4e978f69e7f179dc8766d547fe119e43343ab64e6f88c054a0bd27f4cd",
+  "historical_artifacts": {
+    "source_image_path": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_diagnosis/r2_20260921_135903/corrosion/inputs/corrosion_23.png",
+      "bytes": 472458,
+      "sha256": "c57384471d743fc179add88589fa0d7c8d59e59d14c6947ab9f6d4fd692dbddb",
+      "mode": "RGB",
+      "size_wh": [
+        640,
+        480
+      ],
+      "pixel_sha256": "cfd620a95105e77c3e8dbb34dcc3c1224f13b7bbc1af931591a1a1a3cf720e09"
+    },
+    "original_mask_path": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_diagnosis/r2_20260921_135903/masks/original/corrosion_23_mask.png",
+      "bytes": 2280,
+      "sha256": "b1f0ac36de213d5c12e94d269e7dea036b9899493ceb9d26fb6965a5cc6829e1",
+      "mode": "L",
+      "size_wh": [
+        640,
+        480
+      ],
+      "pixel_sha256": "1d896d1cad23025d647e714262d3a569a270dd2d752ee538933043c1d063c643"
+    },
+    "inpaint_mask_path": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_diagnosis/r2_20260921_135903/masks/inpaint_A/corrosion_23_mask.png",
+      "bytes": 4971,
+      "sha256": "e3029973c79c1e6e2ecf0647124096c3537c2e5572d4b006b005faa30a609eb8",
+      "mode": "L",
+      "size_wh": [
+        640,
+        480
+      ],
+      "pixel_sha256": "37c76de841e89b58da58c276bb1330790f13700f3789e1e4f765c05c34758d4c"
+    },
+    "output_path": {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_diffusion_diagnosis/r2_20260921_135903/corrosion/outputs/corrosion_23_mask_A_s055_v2.png",
+      "bytes": 364603,
+      "sha256": "a2cbbc62211fd725404704f32fff002c421243159d16cc3cbbbd66f823c9f5c9",
+      "mode": "RGB",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "60bfaa4a6ac1a35fa4e61467d65931be783bd905d018293854dd9d9e068df9dd"
+    }
+  },
+  "source_case": "corrosion_23_mask_A_s055_v2",
+  "frozen_config_sha256": "71ed9c2a370c1e5fe4c6d4e12dbc1437f90ce9a07fb510d2003cb88655e1cb57",
+  "authoritative_ledger": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/budget_successor_ledger.json",
+  "parent_ledger": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_m1_matched_restoration_benchmark/20261026T064000Z_m1/budget_successor_ledger.json",
+  "model_id": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+  "model_revision": "115134f363124c53c7d878647567d04daf26e41e",
+  "model_fingerprint": "d7fb8e6a3d8c4ac6538b13f2f2575a902662364c051716bd3961bf94a465fd14",
+  "stdout_stderr_exit_capture": "separate supervisor subprocess files; no pipe exit-code ambiguity",
+  "train_only": true,
+  "new_calls": 1,
+  "maximum_executable_calls": 1,
+  "post_run_next_stage_authorized": false
+}

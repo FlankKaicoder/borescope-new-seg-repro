@@ -1,0 +1,207 @@
+{
+  "zip_path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/H1_hallucination_case_review.zip",
+  "zip_bytes": 7170070,
+  "zip_sha256": "9b7251f3470ceef431287d0878d2ec9fb04fa52c3c852268ad1a36194c2bf9e8",
+  "image_count": 17,
+  "contact_sheet_count": 1,
+  "files": [
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/DreamShaper_absolute_difference_x4.png",
+      "bytes": 137311,
+      "sha256": "8ea85a48cbff504792a3ea2217e92c5b5136b9e5a83e0608b488c07443e92097",
+      "mode": "L",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "d2be1d3f56929d4148cd748c97f546d73d3d704027e3c7bcec088381c4f3debc"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/DreamShaper_annotation.png",
+      "bytes": 362892,
+      "sha256": "ee76800a08bbfd3ee61b7873dee8809e7dbccff1a821413798f2bdc0bba755d4",
+      "mode": "RGB",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "e41d8ea43238f567f972d8540bea7a11123486571e3ad11fb5fd4655af9e30bd"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/DreamShaper_mechanical_region_zoom_NEAREST.png",
+      "bytes": 108902,
+      "sha256": "196788adb5ce94c9f4ad800e2fff362045430014b6dbac89fdf7696a58d1c011",
+      "mode": "RGB",
+      "size_wh": [
+        1440,
+        480
+      ],
+      "pixel_sha256": "4e64a754fced793994ae4a386677572022759099bc258061eea29e59b45d7ffb"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/DreamShaper_protected_POSTPROCESS_ONLY.png",
+      "bytes": 384534,
+      "sha256": "1165a9ee77db9b17a710f261853e7e46daf06c8072e8b0c5a4c733038c83fb46",
+      "mode": "RGB",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "3ccac0f6805ac82dea20a588b5009a4ed3ffcc3d1a47ff115ac6c38a785b7394"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/H1_comparison_contact_sheet.png",
+      "bytes": 3202061,
+      "sha256": "b64e3912523d47e44a22954ecce42a7277c32cabfc0fb695c5648cbd3cb8e409",
+      "mode": "RGB",
+      "size_wh": [
+        1536,
+        2250
+      ],
+      "pixel_sha256": "c940678d97e944159687fa53384c18b1a67de4737193c63c723d08f6cc110fe8"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/Input_annotation.png",
+      "bytes": 381013,
+      "sha256": "cdad60b9eb1f1b817bf5740738ae4ca83eff5499e4ba259f7864ac4d94c5de34",
+      "mode": "RGB",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "3c19daa504967472c2398d5cbbb7e6f0779c56d7d690d1849fb81f2714612a29"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/Input_mechanical_region_zoom_NEAREST.png",
+      "bytes": 105041,
+      "sha256": "629e442e6cb052565cdf4105c21f27f6726ebcd09abf54e0d7d664e204306265",
+      "mode": "RGB",
+      "size_wh": [
+        1440,
+        480
+      ],
+      "pixel_sha256": "299b31b9a313caae136642f11d408fe15b2cda3ab360977c8af1ed2f83bb5d58"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/SDXL_absolute_difference_x4.png",
+      "bytes": 135615,
+      "sha256": "dbca2ea4327146f729d50012b7d72d7105c2b7611f5b89354fe718d164077efb",
+      "mode": "L",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "84bc834bac9dc4cd7e67d07f2caf45b28d7b85625c0570004784621d8b7f2732"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/SDXL_annotation.png",
+      "bytes": 355933,
+      "sha256": "76de6c4a0a14707c9c5feb73a7d6a97284dec68d1e1d5ec7eb70ef92b8e19a27",
+      "mode": "RGB",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "37bd200f464d5fe2e64221a5bee980bed6ddebc798644f6bbb3bcda30e9864c6"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/SDXL_mechanical_region_zoom_NEAREST.png",
+      "bytes": 105063,
+      "sha256": "3389f619c4d2ae8ae60a483e51c22d0ffd61fb21408b943f65b54210fecb1670",
+      "mode": "RGB",
+      "size_wh": [
+        1440,
+        480
+      ],
+      "pixel_sha256": "cc8d64945018dd9c7a42f377343a3ef4c3bf5abc4f22104f2ee9393a47c60233"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/SDXL_protected_POSTPROCESS_ONLY.png",
+      "bytes": 382495,
+      "sha256": "ac62db69b7e51bbd91f2a3799787274b4ba7ed795933d4935c2d489ec8088dc5",
+      "mode": "RGB",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "827dfb105b6e53d205ea055ecabb36b964ee56d7b21cbdd98233449991abb20a"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/case_and_protocol.json",
+      "bytes": 5470,
+      "sha256": "129da6d3b5f046a0bae19e3cf016f14c1b0ca3784a5960bf2ba289da0f314d82"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/effective_mask_512.png",
+      "bytes": 2012,
+      "sha256": "634c6f9aece25a757a433487f1a5d93e1686a852927fbbfb0253269df1203276",
+      "mode": "L",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "7a859e3608cc8e6c4b806214ba1b42c3e60b7901cc8574c134ad2da2b15e92dd"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/exact_input_512.png",
+      "bytes": 382921,
+      "sha256": "963d4745aaa3e9bf66dfe6cce49b4a69e36a64a1986399ce9ebe8fcbec3155f3",
+      "mode": "RGB",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "c9020ebe944600d37d0109b00b7f8aedd4581e9d9e1669634049abee55445ca1"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/historical_DreamShaper.png",
+      "bytes": 364603,
+      "sha256": "a2cbbc62211fd725404704f32fff002c421243159d16cc3cbbbd66f823c9f5c9",
+      "mode": "RGB",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "60bfaa4a6ac1a35fa4e61467d65931be783bd905d018293854dd9d9e068df9dd"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/historical_edit_mask_512.png",
+      "bytes": 5356,
+      "sha256": "d62705dcb3ef86bef8028dae765213981d9fa72efca7a40aff7f90ad2f0282d8",
+      "mode": "L",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "e44d52f01a0b9d375d0aeff18df8c57f848837b308bd0c9c2a236c51d1754ec2"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/human_review_template.csv",
+      "bytes": 236,
+      "sha256": "8e4f2786d6560ba5fbf82cd2608c23b3cdfde1dd16fefc828311dfdb214d5e23"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/new_SDXL.png",
+      "bytes": 357702,
+      "sha256": "d753ed9e4113318e93fcf3764e707c86372c89c676c44c790b35c6e34285bfba",
+      "mode": "RGB",
+      "size_wh": [
+        512,
+        512
+      ],
+      "pixel_sha256": "df4af4db475fb892f9043af4eecfe9eb716c85dacb9b8aed33503bb6dd11bebc"
+    },
+    {
+      "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/source_native.png",
+      "bytes": 425482,
+      "sha256": "270e01368c494d4c10fb89cfc376cd39b96efb98ac5b686f2d9fceff4c7d4cae",
+      "mode": "RGB",
+      "size_wh": [
+        640,
+        480
+      ],
+      "pixel_sha256": "cfd620a95105e77c3e8dbb34dcc3c1224f13b7bbc1af931591a1a1a3cf720e09"
+    }
+  ],
+  "controlled_server_only": true
+}

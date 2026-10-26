@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-26T08:00:41.323205+00:00",
+  "call": {
+    "call_id": "h1_corrosion_23_mask_A_s055_v2_SDXL_71ed9c2a370c1e5f",
+    "source_id": "23",
+    "roi_id": "h1_exact_historical_512",
+    "stage": "revision",
+    "strength": 0.55,
+    "model_config_id": "h1_71ed9c2a370c1e5fe4c6d4e12dbc1437f90ce9a07fb510d2003cb88655e1cb57",
+    "retry": false,
+    "status": "STARTED",
+    "real_model_call": true,
+    "reserved_at": "2026-10-26T08:00:41.317057+00:00",
+    "started_at": "2026-10-26T08:00:41.321394+00:00"
+  }
+}

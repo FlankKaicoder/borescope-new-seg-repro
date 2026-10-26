@@ -1,0 +1,11 @@
+{
+  "case": "corrosion_23_mask_A_s055_v2",
+  "source_id": "23",
+  "new_sdxl_calls": 1,
+  "new_dreamshaper_calls": 0,
+  "status": "SUCCEEDED",
+  "started_at": "2026-10-26T08:00:17.175997+00:00",
+  "call_id": "h1_corrosion_23_mask_A_s055_v2_SDXL_71ed9c2a370c1e5f",
+  "started_persisted_before_inference": true,
+  "finished_at": "2026-10-26T08:00:50.857051+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "case": "corrosion_23_mask_A_s055_v2",
+  "source_id": "23",
+  "status": "PENDING_HUMAN_REVIEW",
+  "primary_endpoint": "SDXL suspected newly invented mechanical structures of the same kind as historical DreamShaper",
+  "automatic_semantic_verdict": "NOT_ASSIGNED",
+  "measurements": {
+    "DreamShaper": {
+      "changed_outside_effective_mask_pixels": 218825,
+      "changed_gt5_outside_effective_mask_pixels": 152596,
+      "outside_effective_mask_mean_abs_channel_delta": 6.603892781772171,
+      "inside_effective_mask_mean_abs_channel_delta": 23.84709819707275,
+      "max_channel_delta_outside_effective_mask": 234,
+      "protected_outside_effective_mask_changes": 0,
+      "raw_output": {
+        "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/historical_DreamShaper.png",
+        "bytes": 364603,
+        "sha256": "a2cbbc62211fd725404704f32fff002c421243159d16cc3cbbbd66f823c9f5c9",
+        "mode": "RGB",
+        "size_wh": [
+          512,
+          512
+        ],
+        "pixel_sha256": "60bfaa4a6ac1a35fa4e61467d65931be783bd905d018293854dd9d9e068df9dd"
+      }
+    },
+    "SDXL": {
+      "changed_outside_effective_mask_pixels": 218391,
+      "changed_gt5_outside_effective_mask_pixels": 134501,
+      "outside_effective_mask_mean_abs_channel_delta": 5.494083020430786,
+      "inside_effective_mask_mean_abs_channel_delta": 19.06144450099477,
+      "max_channel_delta_outside_effective_mask": 253,
+      "protected_outside_effective_mask_changes": 0,
+      "raw_output": {
+        "path": "/root/autodl-tmp/borescope-new-seg-repro/results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/review_package/new_SDXL.png",
+        "bytes": 357702,
+        "sha256": "d753ed9e4113318e93fcf3764e707c86372c89c676c44c790b35c6e34285bfba",
+        "mode": "RGB",
+        "size_wh": [
+          512,
+          512
+        ],
+        "pixel_sha256": "df4af4db475fb892f9043af4eecfe9eb716c85dacb9b8aed33503bb6dd11bebc"
+      }
+    }
+  },
+  "bbox_canvas_xyxy": [
+    55,
+    135,
+    415,
+    255
+  ],
+  "conclusion_scope": "one selected historical failure at seed17001; not general model comparison or pseudo-normal efficacy",
+  "task_mismatch_disclosed": true,
+  "native_inverse_mapping": "NOT_PERFORMED; compare exact512 canvases only",
+  "protected_composites": "POSTPROCESS_DIAGNOSTIC_ONLY; no trusted-pair admission"
+}
