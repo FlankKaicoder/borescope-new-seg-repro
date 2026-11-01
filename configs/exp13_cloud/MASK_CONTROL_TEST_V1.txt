@@ -1,0 +1,17 @@
+Edit the provided test image.
+
+The image contains two identical blue rectangles on a light gray background.
+
+Recolor only the blue rectangle located within the transparent region of the supplied mask from blue to bright red.
+
+Keep the other blue rectangle unchanged.
+
+Preserve the background, geometry, rectangle positions, rectangle dimensions, and all other image content.
+
+The mask is the only indication of which rectangle should be edited.
+
+Do not recolor both rectangles.
+
+Do not add new shapes, text, labels, arrows, borders, or annotations.
+
+Return one edited image only.

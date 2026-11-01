@@ -1,0 +1,5 @@
+# Preserve exact historical-code and frozen-prompt bytes for SHA256 provenance.
+# -text disables newline conversion; it does not suppress readable text diffs.
+/tools/exp13_cloud/** -text
+/configs/exp13_cloud/** -text
+/docs/exp13_cloud/** -text

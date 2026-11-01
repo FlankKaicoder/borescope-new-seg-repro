@@ -241,3 +241,9 @@ CPU-only evidence covers five shortlist variants from three source groups; no se
 `EXP13_PHASE1B_S5_COMPLETED_PENDING_CHATGPT_GATE`. [Review](exp13_phase1b_s5_matched_input_review.md); [handoff](exp13_phase1b_s5_handoff.md); evidence `results/exp13_phase1b_s5/20261025T230000Z_s5/`.
 
 One TRAIN source (`Crack:260`) used the historical DreamShaper center crop and reconstructed mask as a fixed 1024 SDXL input, with no reflect padding. The one authorized call succeeded under the inherited successor ledger (4/4 occupied, 0 remaining). The raw aligned output has 66,735 >5 changes outside the mask; semantic quality and training-pair admission remain pending/zero. This is a bounded input-protocol study and not model ranking; controlled review images remain on AutoDL and are excluded from Git.
+
+## Exp13 cloud image restoration G1B–G1F (historical registration, 2026-11-01)
+
+[Unified cloud index](exp13_cloud/EXP13_CLOUD_INDEX.md) records all eight stages, code entries, fixed prompts, private asset IDs/hashes and historical POST counts. [Sanitized registry](exp13_cloud/experiment_registry.csv) and [handoff](exp13_cloud/GITHUB_AUDIT_HANDOFF.md) separate preparation from actual generation.
+
+G1B: one raw corrosion23 result; G1C/G1D: `FAIL_PAIR_FIDELITY / HOLD_EXPANSION`; G1E-0: prepared; G1E-1: two successful synthetic calls with `MASK_CONDITIONED_SPATIAL_RESPONSE_OBSERVED`; G1F-0/0B: corrosion2 ROI preparation, B4:3 selected; G1F-1A: `PREFLIGHT_PASS`; G1F-1: `LIVE_NOT_STARTED`. No trusted Pair, batch or training authorization follows. The Git sync adds zero API calls or scientific runs and preserves Exp11/Exp12.

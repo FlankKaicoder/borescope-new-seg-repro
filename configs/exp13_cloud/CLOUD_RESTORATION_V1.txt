@@ -1,0 +1,19 @@
+Edit the provided industrial borescope photograph of aircraft engine components.
+
+The transparent regions of the supplied mask indicate damaged metallic surface areas that require restoration.
+
+Restore only these damaged regions to a plausible intact metallic surface, preserving the original component geometry, blade curvature, edge contours, lighting, camera viewpoint, surface aging, and fine manufacturing texture.
+
+The engine component is not perfectly smooth. Preserve realistic small surface pits, dimples, grain, machining marks, and natural unevenness consistent with the adjacent undamaged surfaces and neighboring blades.
+
+Remove the target corrosion damage, but do not polish the metal into an unnaturally smooth surface.
+
+Do not invent or add holes, cavities, bolts, panels, seams, slots, additional blades, mechanical parts, or regular geometric structures.
+
+Preserve all existing non-target mechanical structures and inspection-camera interface overlays.
+
+Avoid changes outside the specified repair region.
+
+This is a conservative industrial defect restoration task, not image beautification or scene redesign.
+
+Return one realistic restored image of the same camera view without labels, diagrams, comparisons, or explanatory text.
