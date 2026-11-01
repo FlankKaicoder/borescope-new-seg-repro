@@ -251,3 +251,7 @@ G1B: one raw corrosion23 result; G1C/G1D: `FAIL_PAIR_FIDELITY / HOLD_EXPANSION`;
 ## Exp13-G1F-1 single cloud repair saved-result audit (2026-11-01)
 
 `G1F_1_RAW_AUDIT_PREPARED / PENDING_CHATGPT_VISUAL_GATE`. [Result](exp13_cloud/reports/G1F_1_summary.md); [updated cloud index](exp13_cloud/EXP13_CLOUD_INDEX.md); [handoff](exp13_cloud/GITHUB_AUDIT_HANDOFF.md). The user subsequently executed one authorized corrosion2 call, HTTP 200; the raw output is 1024x1024 PNG/RGB versus the 320x240 input. One occupied terminal budget, no retry. The earlier LIVE_NOT_STARTED text above is the preserved preflight/sync snapshot. Cloud historical generation total is now four; the present CPU audit/sync adds zero. Geometry/appearance diagnostics and private review sheets prepare all four pending visual Gates, without Pair/G2/training authority.
+
+## Exp13-G1F-2 fixed offline geometric correspondence (2026-11-01)
+
+`GEOMETRY_CANDIDATE` / `G1F_2_ALIGNMENT_AUDIT_COMPLETE / PENDING_CHATGPT_AND_USER_PAIR_GATE`. [Report](exp13_cloud/reports/G1F_2_summary.md), [source/protocol](../tools/exp13_cloud/g1f2/). Native SIFT/Lowe .75, 3px RANSAC, full/UI-excluded comparisons and two fixed linear models. Both non-UI models have 85/85 dispersed inliers with <0.26px median error; valid masks and physical-edge/cavity views are private. A documented JSON-only bug correction used a new directory with identical scientific parameters; no search. User appearance acceptance does not grant strict pixel Pair or training eligibility. Added API POST/GPU/VAL/TEST/training=0; no G2.

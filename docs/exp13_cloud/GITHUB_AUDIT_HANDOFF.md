@@ -75,3 +75,33 @@ request and executed it locally. Current state supersedes the prior live HOLD:
 
 Next: inspect private native-aspect original/output and review sheet, then record
 the four human Gates. No G2, retry, additional source, batch or training. STOP.
+
+## Subsequent G1F-2 geometric correspondence handoff (2026-11-01)
+
+Current: **GEOMETRY_CANDIDATE** /
+`G1F_2_ALIGNMENT_AUDIT_COMPLETE / PENDING_CHATGPT_AND_USER_PAIR_GATE`.
+Starting audited commit was `974b4a1d07ef0612f0b03adf6767380e03143db4`.
+The user accepts restored appearance; a human Pair Gate remains distinct.
+
+- [Report](reports/G1F_2_summary.md), [source and prewritten protocol](../../tools/exp13_cloud/g1f2/).
+  Non-UI 85/85 inliers in both fixed models, median 0.256/0.239 ROI px;
+  four spatial cells and 34.86% below-UI hull support prevent UI-only approval.
+- Both candidates map original ROI to approximately the top 1024x768 portion
+  of square raw. No anisotropic forcing or nonrigid registration was used.
+- Most repaired-target pixels are outside the normal-inlier convex hull.
+  Broad cavity/normal-metal boundaries have candidate correspondence; local
+  repaired metal/void boundary and Pair usability need user/ChatGPT review.
+- Private completed asset ID: `cloud_pilot_g1f2_alignment_serialization_fix`;
+  `alignment_review_sheet.png` and `feature_review_sheet.png`. Full transforms,
+  coordinate CSVs, RGBA warps, validity masks and close-ups remain private.
+- Explicit implementation exception: initial `cloud_pilot_g1f2_alignment`
+  completed computation but failed NumPy boolean JSON serialization. Only JSON
+  output conversion was fixed; same parameters rerun in a new directory.
+  Both attempts retained; 33 shared images/CSVs byte-identical. No tuning.
+- Frozen input hashes and prior files unchanged. Cloud generation total stays
+  four; this CPU audit adds API POST/GPU/training/VAL/TEST=0. No credentials,
+  approvals, industrial images or private maps are staged.
+
+Review the three before/mapped groups (corrosion, metal edge, black cavity),
+checking validity masks. GEOMETRY_CANDIDATE is not TRAIN_PAIR_ELIGIBLE or
+pixel-perfect proof. No automatic G2, training, new request or further search.

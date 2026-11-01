@@ -1,5 +1,17 @@
 # Exp13 cloud restoration experiment index
 
+## Current update: G1F-2 correspondence candidate (2026-11-01)
+
+**GEOMETRY_CANDIDATE** / `G1F_2_ALIGNMENT_AUDIT_COMPLETE / PENDING_CHATGPT_AND_USER_PAIR_GATE`.
+[Fixed offline report](reports/G1F_2_summary.md), [code/protocol](../../tools/exp13_cloud/g1f2/).
+The user accepts G1F-1 pseudo-normal appearance; this is distinct from Pair
+eligibility. Non-UI SIFT supports both Similarity and Affine candidates with
+85/85 distinct inliers, median errors 0.256/0.239 ROI px, and broad spatial
+coverage. Defect-local boundary correctness remains pending human review.
+This fixed CPU stage adds no generation POST; cloud total remains four.
+The following G1F-1 and initial-sync sections are preserved stage snapshots.
+No G2, additional request, parameter search or training is authorized.
+
 ## Current update: G1F-1 saved result (2026-11-01)
 
 `G1F_1_RAW_AUDIT_PREPARED / PENDING_CHATGPT_VISUAL_GATE`. One separately
@@ -39,6 +51,7 @@ historical image-generation POSTs in total; this sync adds **0**.
 | G1F-0B | B4:3 ROI/Mask and CurrentUser DPAPI loader prepared; DPAPI_LOADER_DRY_RUN_PASS | [ROI correction](../../tools/exp13_cloud/g1f0b/prepare_roi_4x3.py), [loader](../../tools/exp13_cloud/g1f0b/Start-BorescopeRoiDryRun.ps1) | CLOUD_RESTORATION_V1 inherited, no call | cloud_pilot_g1f_roi_prepare/g1f_0b_4x3 | g1f.B4x3.roi / g1f.B4x3.api_mask | 0 | Subsequent user gate G1F_0B_PREPARATION_PASS / ROI_B4X3_SELECTED |
 | G1F-1A | G1F_1A_PREFLIGHT_PASS / LIVE_NOT_STARTED / STOP | [protocol](../../tools/exp13_cloud/g1f1a/protocol.py), [executor](../../tools/exp13_cloud/g1f1a/single_repair.py), [DPAPI launcher](../../tools/exp13_cloud/g1f1a/Start-Corrosion2Repair.ps1), [audit](../../tools/exp13_cloud/g1f1a/audit_saved_output.py) | CORROSION2_ROI_REPAIR_V1, user exact text | cloud_pilot_g1f_1a_preflight | g1f.B4x3 inputs + prompt | 0 | G1F-1 LIVE HOLD; independent ChatGPT GitHub audit and separate explicit paid-call approval required |
 | G1F-1 | Single authorized corrosion2 result; G1F_1_RAW_AUDIT_PREPARED / PENDING_CHATGPT_VISUAL_GATE | Same frozen [executor](../../tools/exp13_cloud/g1f1a/single_repair.py) and [offline audit](../../tools/exp13_cloud/g1f1a/audit_saved_output.py); [result](reports/G1F_1_summary.md) | CORROSION2_ROI_REPAIR_V1 | cloud_pilot_g1f_1a_preflight/live_result; cloud_pilot_g1f1_result_audit_20261101T180149 | g1f1.corrosion2.raw | 1 | Terminal budget occupied; four visual Gates pending; NO further requests/G2/training |
+| G1F-2 | GEOMETRY_CANDIDATE; fixed CPU correspondence audit | [SIFT/RANSAC](../../tools/exp13_cloud/g1f2/audit_alignment.py), [protocol](../../tools/exp13_cloud/g1f2/fixed_protocol.json), [report](reports/G1F_2_summary.md) | No prompt/call; inherited G1F-1 saved raw | cloud_pilot_g1f2_alignment_serialization_fix (initial attempt retained separately) | Same frozen ROI/mask/raw hashes; private result manifest | 0 | PENDING_CHATGPT_AND_USER_PAIR_GATE; human review only; no training/G2 |
 
 No Preflight PASS is a successful real corrosion2 repair. No stage admits a
 trusted training pair, authorizes batch generation, or demonstrates long-run stability.

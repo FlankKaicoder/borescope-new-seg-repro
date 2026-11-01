@@ -1,0 +1,40 @@
+{
+  "experiment": "Exp13-G1F-2",
+  "question": "Can saved corrosion2 pseudo-normal raw output be mapped reliably to the frozen defect ROI?",
+  "input_sha256": {
+    "roi.png": "887a206bb4c550f9b8ba006684a93d1089619f06bec57c3d1e6e16648dabd74a",
+    "mask_rgba.png": "da23f8bb1533a83f107bf8b2ef5d5d3f072bc0a9f5ba827393b60af107845dfc",
+    "raw_output.png": "5554bfd54f54709fd20f325c1914b8582b083fce860c70567d26ce7ff85d4a1a"
+  },
+  "image_processing": "Native-resolution grayscale SIFT; no input resize, equalization, aspect normalization or algorithm fallback",
+  "sift": {"nfeatures": 0, "nOctaveLayers": 3, "contrastThreshold": 0.04, "edgeThreshold": 10, "sigma": 1.6},
+  "matching": {"norm": "L2", "knn_k": 2, "lowe_ratio": 0.75, "spatial_deduplication_bin_pixels_native": 2},
+  "exclusion": {
+    "roi_ui_bottom_exclusive": 64,
+    "defect_dilation_roi_pixels": 8,
+    "defect_dilation_shape": "17x17 ellipse",
+    "raw_exclusion_prior": "Nearest-neighbor stretch of excluded source bands/polygon to raw dimensions; exclusion prior only, not a correspondence claim",
+    "keypoint_support_clearance": "distance from excluded pixels > max(2,1.5*keypoint.size); approximate support guard, not a proof of complete descriptor independence"
+  },
+  "diagnostic_sets": ["full_image_defect_excluded_ui_allowed", "mechanical_only_ui_and_defect_excluded"],
+  "estimators_per_set": ["similarity_estimateAffinePartial2D", "affine_estimateAffine2D"],
+  "ransac": {"threshold_roi_pixels": 3.0, "maxIters": 2000, "confidence": 0.99, "refineIters": 10, "seed_each_fit": 20261101},
+  "screening": {
+    "only_mechanical_set_can_support_candidate": true,
+    "minimum_distinct_inliers": 12,
+    "maximum_median_reprojection_roi_pixels": 3.0,
+    "maximum_p90_reprojection_roi_pixels": 3.0,
+    "grid_columns": 3,
+    "grid_rows_below_ui": 2,
+    "minimum_inliers_per_supported_cell": 3,
+    "minimum_supported_cell_centroid_separation_roi_pixels": 60.0,
+    "minimum_inlier_convex_hull_fraction_of_below_ui_roi": 0.05,
+    "minimum_span_xy_roi_pixels": [80.0, 48.0],
+    "minimum_valid_roi_overlap_fraction": 0.5,
+    "positive_determinant_required": true,
+    "all_numeric_pass_is_only": "GEOMETRY_CANDIDATE; physical edge/cavity and Pair Gate remain human"
+  },
+  "warp": "Only mechanical fits passing the fixed numeric screen; raw-to-ROI matrix, linear resampling, independent conservative validity mask, no inpainting or filling",
+  "execution": {"opencv_threads": 1, "opencl": false, "algorithm_search": false, "parameter_search": false, "nonrigid_transform": false, "api_posts": 0, "gpu": 0, "training": 0, "val_test_access": 0},
+  "single_run": "Exclusive output directory and persistent alignment marker before extraction; no rerun or reuse. Explicit script bugs may be corrected with a recorded reason, not scientific retuning."
+}
