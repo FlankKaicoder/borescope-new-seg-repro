@@ -47,3 +47,31 @@ scientific outputs are not edited.
 After GitHub audit, a separate user authorization is still needed before a
 single G1F-1 paid request. Do not proceed to other Pilot sources, batch
 generation, Local Change, SSL or downstream training automatically.
+
+## Subsequent G1F-1 result handoff (2026-11-01)
+
+The preceding sections describe the initial sync at `8e269a38e869bd8bf1d841f75009a3661b93005e`.
+The user reported independent GitHub code audit PASS, separately approved one
+request and executed it locally. Current state supersedes the prior live HOLD:
+`G1F_1_RAW_AUDIT_PREPARED / PENDING_CHATGPT_VISUAL_GATE`.
+
+- [Result summary](reports/G1F_1_summary.md): one generation POST, HTTP 200,
+  SINGLE_LIVE_TERMINAL; permanent budget occupied, no further request authorized.
+- Raw private asset `g1f1.corrosion2.raw`, SHA256
+  `5554bfd54f54709fd20f325c1914b8582b083fce860c70567d26ce7ff85d4a1a`,
+  PNG/RGB 1024x1024. Input is 320x240; diagnostic resize is not registration.
+- The registry has nine stages and four historical generation POSTs. G1F-1A's
+  old preflight wording, frozen config and initial allowlist/audit remain
+  historical snapshots, not current live-state or current-publication checks.
+- Private review asset: `cloud_pilot_g1f1_result_audit_20261101T180149`,
+  `review_sheet.png`. Original preflight tree's 69 files remain unchanged.
+- CORROSION_REMOVAL, MECHANICAL_GEOMETRY, OUTSIDE_MASK_FIDELITY and
+  PAIR_USABILITY are all PENDING_HUMAN_REVIEW. Raw visual quality, raw geometry
+  and any postprocessed Pair usability must be judged separately. Outside-mask
+  pixel changes alone are not an automatic rejection or structural diagnosis.
+- This audit/sync adds zero API POSTs, image downloads, generation, GPU,
+  training or TEST operations. Only reviewed sanitized text is staged; no
+  private image, authorization, marker, signed URL or raw log is published.
+
+Next: inspect private native-aspect original/output and review sheet, then record
+the four human Gates. No G2, retry, additional source, batch or training. STOP.

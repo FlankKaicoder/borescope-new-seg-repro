@@ -1,5 +1,18 @@
 # Exp13 cloud restoration experiment index
 
+## Current update: G1F-1 saved result (2026-11-01)
+
+`G1F_1_RAW_AUDIT_PREPARED / PENDING_CHATGPT_VISUAL_GATE`. One separately
+authorized corrosion2 call is now terminal: HTTP 200, PNG/RGB 1024x1024,
+SHA256 `5554bfd54f54709fd20f325c1914b8582b083fce860c70567d26ce7ff85d4a1a`.
+See [G1F-1 result and diagnostic limitations](reports/G1F_1_summary.md).
+Current cumulative cloud generation POSTs are **4**; this offline audit adds **0**.
+The eight-stage/three-call registration below is retained as the earlier sync
+snapshot. G1F-1A remains a historical preflight record; its LIVE_NOT_STARTED
+wording and frozen protocol summary do not describe the later live terminal.
+All four visual Gates are PENDING_HUMAN_REVIEW, with no Pair admission,
+additional request, G2 Pilot or training authority.
+
 This is an independent post-project extension. Exp11's final frozen TEST and
 Exp12's conclusions stay frozen. This Git synchronization runs no experiment,
 image generation, image reconstruction, API probe, training, GPU or TEST evaluation.
@@ -25,6 +38,7 @@ historical image-generation POSTs in total; this sync adds **0**.
 | G1F-0 | Frozen TRAIN corrosion2 ROI A/B prepared; PENDING_REVIEW historical snapshot | [ROI preparation](../../tools/exp13_cloud/g1f0/prepare_g1f0.py) | CLOUD_RESTORATION_V1 | cloud_pilot_g1f_roi_prepare | g1f.A.roi / g1f.B.roi | 0 | Original A/B unchanged; later B4:3 selected by user |
 | G1F-0B | B4:3 ROI/Mask and CurrentUser DPAPI loader prepared; DPAPI_LOADER_DRY_RUN_PASS | [ROI correction](../../tools/exp13_cloud/g1f0b/prepare_roi_4x3.py), [loader](../../tools/exp13_cloud/g1f0b/Start-BorescopeRoiDryRun.ps1) | CLOUD_RESTORATION_V1 inherited, no call | cloud_pilot_g1f_roi_prepare/g1f_0b_4x3 | g1f.B4x3.roi / g1f.B4x3.api_mask | 0 | Subsequent user gate G1F_0B_PREPARATION_PASS / ROI_B4X3_SELECTED |
 | G1F-1A | G1F_1A_PREFLIGHT_PASS / LIVE_NOT_STARTED / STOP | [protocol](../../tools/exp13_cloud/g1f1a/protocol.py), [executor](../../tools/exp13_cloud/g1f1a/single_repair.py), [DPAPI launcher](../../tools/exp13_cloud/g1f1a/Start-Corrosion2Repair.ps1), [audit](../../tools/exp13_cloud/g1f1a/audit_saved_output.py) | CORROSION2_ROI_REPAIR_V1, user exact text | cloud_pilot_g1f_1a_preflight | g1f.B4x3 inputs + prompt | 0 | G1F-1 LIVE HOLD; independent ChatGPT GitHub audit and separate explicit paid-call approval required |
+| G1F-1 | Single authorized corrosion2 result; G1F_1_RAW_AUDIT_PREPARED / PENDING_CHATGPT_VISUAL_GATE | Same frozen [executor](../../tools/exp13_cloud/g1f1a/single_repair.py) and [offline audit](../../tools/exp13_cloud/g1f1a/audit_saved_output.py); [result](reports/G1F_1_summary.md) | CORROSION2_ROI_REPAIR_V1 | cloud_pilot_g1f_1a_preflight/live_result; cloud_pilot_g1f1_result_audit_20261101T180149 | g1f1.corrosion2.raw | 1 | Terminal budget occupied; four visual Gates pending; NO further requests/G2/training |
 
 No Preflight PASS is a successful real corrosion2 repair. No stage admits a
 trusted training pair, authorizes batch generation, or demonstrates long-run stability.
@@ -39,6 +53,7 @@ trusted training pair, authorizes batch generation, or demonstrates long-run sta
 | g1f.B4x3.roi | `887a206bb4c550f9b8ba006684a93d1089619f06bec57c3d1e6e16648dabd74a` |
 | g1f.B4x3.api_mask | `da23f8bb1533a83f107bf8b2ef5d5d3f072bc0a9f5ba827393b60af107845dfc` |
 | CORROSION2_ROI_REPAIR_V1 file/request text | `9ee1b2971ced4ccc81d21bbbe0cb433c8d5b57007d9159d70e559842f259476c` |
+| g1f1.corrosion2.raw (PNG/RGB 1024x1024) | `5554bfd54f54709fd20f325c1914b8582b083fce860c70567d26ce7ff85d4a1a` |
 
 B4:3 is `[0,0,320,240)`, 320×240. The exact original polygon has 2394
 transparent pixels (3.1171875%), alpha 0 inside and 255 outside. UI cropping
