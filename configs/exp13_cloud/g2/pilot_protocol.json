@@ -1,0 +1,53 @@
+{
+  "record_type": "G2_THREE_SOURCE_PREPARATION_NOT_AUTHORIZATION",
+  "scope": "2 frozen TRAIN Crack sources + 1 frozen TRAIN corrosion source; exclude corrosion2",
+  "sources": ["260", "470", "23"],
+  "source_order": ["260", "470", "23"],
+  "selection_basis": "Complete original image and professional polygon JSON, byte-verified against the existing Pilot-4 package manifest and its verified frozen TRAIN split rows; never substitute after generation.",
+  "roi_policy": "Use the entire native original image [0,0,width,height); no crop, resize, padding or coordinate transform. This preserves all available scene/context and excludes synthetic padding.",
+  "polygon_policy": "Use every original professional JSON polygon for the selected class; no manual edits and no derived mask substitution.",
+  "mask_encoding": "RGBA PNG, white RGB; polygon alpha 0 transparent, outside alpha 255 opaque.",
+  "api": {
+    "model": "gpt-image-2.5-sunburst",
+    "endpoint": "/v1/images/edits",
+    "multipart_fields": ["model", "prompt", "n", "image[]", "mask"],
+    "n_per_source": 1,
+    "max_generation_posts_total": 3,
+    "max_generation_posts_per_source": 1,
+    "automatic_retries": 0,
+    "fallbacks": 0,
+    "prompt_search": 0,
+    "concurrency": 0,
+    "redirects": false,
+    "credential_loader": "Existing G1F DPAPI launcher pattern; not invoked by this preparation stage"
+  },
+  "prompts": {
+    "Crack": {"id": "CRACK_RESTORATION_V1", "path": "configs/exp13_cloud/g2/CRACK_RESTORATION_V1.txt"},
+    "corrosion": {"id": "CORROSION_RESTORATION_V1", "path": "configs/exp13_cloud/g2/CORROSION_RESTORATION_V1.txt"}
+  },
+  "budget_state": {
+    "g2_generation_posts_used": 0,
+    "g2_generation_posts_reserved": 0,
+    "generation_authorized": false,
+    "per_source_started_markers_created": false,
+    "paid_authorization_files_created": false,
+    "post_authorized_by_this_protocol": false
+  },
+  "historical_context": {
+    "g1f_corrosion2_is_not_a_g2_sample_or_success_denominator": true,
+    "corrosion23_prior_g1b_g1c_g1d_exposure": true,
+    "corrosion23_prior_result_is_not_counted_as_a_g2_call": true
+  },
+  "g2_exploratory_gate": {
+    "sample_count": 3,
+    "trusted_candidate_minimum": 2,
+    "both_classes_must_have_at_least_one_trusted_candidate": true,
+    "statistical_significance_claim": false,
+    "training_authorized": false,
+    "requires_chatgpt_and_user_gate": true
+  },
+  "g1f2_alignment_protocol_reference": "tools/exp13_cloud/g1f2/fixed_protocol.json",
+  "generation_authorized": false,
+  "api_posts_this_stage": 0,
+  "gpu_training_val_test": 0
+}

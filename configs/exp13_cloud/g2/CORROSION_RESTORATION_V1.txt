@@ -1,0 +1,7 @@
+Edit the provided original industrial borescope photograph containing corroded metallic aircraft-engine components.
+
+The transparent regions of the supplied mask identify the original corrosion polygon or polygons. Remove only the masked corrosion damage and reconstruct a plausible intact metal surface consistent with the immediately surrounding material.
+
+Preserve the original component geometry, blade curvature, physical edges, mechanical gaps, lighting, camera viewpoint, surface aging, machining marks, and fine texture. Keep realistic small pits, grain, and natural unevenness; do not polish the component smooth.
+
+Preserve every existing open cavity and dark gap. Do not fill cavities or add, remove, bridge, or reshape mechanical parts, holes, seams, slots, blades, indicators, logos, or inspection-camera overlays. Avoid changes outside the transparent mask. Return one realistic image of the same view without labels or explanatory text.

@@ -105,3 +105,33 @@ The user accepts restored appearance; a human Pair Gate remains distinct.
 Review the three before/mapped groups (corrosion, metal edge, black cavity),
 checking validity masks. GEOMETRY_CANDIDATE is not TRAIN_PAIR_ELIGIBLE or
 pixel-perfect proof. No automatic G2, training, new request or further search.
+
+## G2 three-source input preparation handoff (2026-11-02)
+
+Current: **G2_THREE_SOURCE_PREPARATION_COMPLETE / PENDING_CHATGPT_GATE**.
+The revised scope is exactly two new Crack sources and one new corrosion
+source; the former 4/6 release rule is cancelled. [Sanitized manifest](g2/G2_THREE_SOURCE_MANIFEST.json),
+[preparation report](reports/G2_three_source_preparation.md),
+[fixed protocol/prompts](../../configs/exp13_cloud/g2/), and
+[offline source preparer](../../tools/exp13_cloud/g2/prepare_three_source_pilot.py)
+are recorded in the current branch.
+
+- Frozen cohort: TRAIN Crack260 (`singleton_260`), Crack470 (`near_0007`),
+  corrosion23 (`singleton_23`). Pilot-4 ZIP SHA256 and frozen Split SHA256
+  match expected values; package integrity and per-file image/JSON/Mask hashes
+  pass. Full native frames are the fixed ROIs; original professional JSON is
+  the only Polygon source.
+- corrosion23's prior G1B/G1C/G1D exposure is disclosed and is not a G2 result.
+  The already completed G1F corrosion2 is excluded from the cohort and every
+  G2 denominator. No M1 private map was opened.
+- The frozen ceiling is 3 first-generation POSTs total, 1 per source. Retries,
+  fallback, prompt search and concurrency are zero. This commit grants no paid
+  authority. All three new outcomes must be recorded, with at least one
+  credible candidate in both classes; no significance or training claim.
+- Preparation/Git sync API POST=0; AutoDL/GPU/training/VAL/TEST=0. Industrial
+  images, JSON, masks, overlays and outputs remain in the private asset ID
+  `cloud_pilot_g2_three_source_20261101_retry1` and are not staged.
+
+Next: independent ChatGPT Gate over source identity, input hashes and protocol.
+Wait for a separate explicit user authorization before any live generation.
+Do not replace sources, use retries, or start downstream training.

@@ -1,0 +1,7 @@
+Edit the provided original industrial borescope photograph containing a cracked metallic aircraft-engine component.
+
+The transparent regions of the supplied mask identify the original crack polygon or polygons. Repair only the masked crack damage to a plausible intact metal surface consistent with the immediately surrounding material.
+
+Preserve the original component geometry, blade curvature, physical edges, mechanical gaps, lighting, camera viewpoint, surface aging, machining marks, and fine texture. Keep realistic grain and natural unevenness; do not polish the component smooth.
+
+Do not add, remove, bridge, or reshape mechanical parts, cavities, holes, seams, slots, blades, indicators, logos, or inspection-camera overlays. Avoid changes outside the transparent mask. Return one realistic image of the same view without labels or explanatory text.

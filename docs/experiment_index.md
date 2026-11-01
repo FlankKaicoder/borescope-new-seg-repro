@@ -255,3 +255,9 @@ G1B: one raw corrosion23 result; G1C/G1D: `FAIL_PAIR_FIDELITY / HOLD_EXPANSION`;
 ## Exp13-G1F-2 fixed offline geometric correspondence (2026-11-01)
 
 `GEOMETRY_CANDIDATE` / `G1F_2_ALIGNMENT_AUDIT_COMPLETE / PENDING_CHATGPT_AND_USER_PAIR_GATE`. [Report](exp13_cloud/reports/G1F_2_summary.md), [source/protocol](../tools/exp13_cloud/g1f2/). Native SIFT/Lowe .75, 3px RANSAC, full/UI-excluded comparisons and two fixed linear models. Both non-UI models have 85/85 dispersed inliers with <0.26px median error; valid masks and physical-edge/cavity views are private. A documented JSON-only bug correction used a new directory with identical scientific parameters; no search. User appearance acceptance does not grant strict pixel Pair or training eligibility. Added API POST/GPU/VAL/TEST/training=0; no G2.
+
+## Exp13 G2 three-source cloud Pilot preparation (2026-11-02)
+
+`G2_THREE_SOURCE_PREPARATION_COMPLETE / PENDING_CHATGPT_GATE`. [Sanitized frozen manifest](exp13_cloud/g2/G2_THREE_SOURCE_MANIFEST.json); [preparation report](exp13_cloud/reports/G2_three_source_preparation.md); [offline preparation code](../tools/exp13_cloud/g2/prepare_three_source_pilot.py).
+
+Frozen TRAIN sources are Crack260 (`singleton_260`), Crack470 (`near_0007`) and corrosion23 (`singleton_23`), with full-frame native ROIs and professional original JSON Polygons. Pilot-4 ZIP SHA256 `d9f049bd…04f18` and frozen Split Manifest SHA256 `35d577c1…9634d` matched. corrosion23's G1B/G1C/G1D history is disclosed but does not count as a G2 result; G1F corrosion2 is excluded from the cohort and denominator. The exploratory Gate requires records for all three sources and at least one credible candidate per class; it makes no significance claim and does not authorize training. The ceiling is three first-call POSTs total, one per source; this stage used 0 and authorizes none. Private industrial assets remain local.
