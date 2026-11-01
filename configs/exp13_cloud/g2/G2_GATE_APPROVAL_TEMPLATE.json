@@ -1,0 +1,14 @@
+{
+  "record_type": "TEMPLATE_ONLY_NOT_AN_APPROVAL",
+  "status": "NOT_APPROVED",
+  "independent_gate_pass": false,
+  "user_approved": false,
+  "source_id": "FILL_ONE_FIXED_SOURCE_ID",
+  "source_role": "MUST_MATCH_EXECUTION_BUNDLE",
+  "model": "gpt-image-2.5-sunburst",
+  "max_posts": 1,
+  "execution_bundle_sha256": "",
+  "approval_reference": "",
+  "issued_utc": "",
+  "note": "Template only. Copy locally and fill only after independent ChatGPT Gate and explicit user paid-request authorization. Never commit a completed receipt."
+}

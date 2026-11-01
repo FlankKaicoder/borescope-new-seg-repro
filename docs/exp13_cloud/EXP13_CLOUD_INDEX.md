@@ -2,12 +2,16 @@
 
 ## Current update: G2 three-source preparation (2026-11-02)
 
-`G2_THREE_SOURCE_PREPARATION_COMPLETE / PENDING_CHATGPT_GATE`. Three frozen
-TRAIN inputs (Crack260, Crack470, corrosion23), original-JSON Polygon masks,
-full-frame ROIs and two class-level prompts are hash-recorded in the manifest
-below. This is preparation only: generation POST=0 and paid authorization=false.
-The preceding G1F-2 result remains recorded as a geometry candidate, not a
-training pair.
+`G2_PROTOCOL_CORRECTED / THREE_SOURCE_EXECUTOR_PREPARED / PENDING_CHATGPT_CODE_GATE_AND_USER_PAID_AUTHORIZATION`.
+G2 now distinguishes two `NEW_CLOUD_SOURCE` Crack outcomes from one
+`HISTORICAL_FAILURE_TARGETED_RETEST` (corrosion23). The version-1 input
+manifest remains unchanged. The three source-specific executors passed offline
+and DPAPI Dry Runs against execution bundle SHA256
+`cee4f8efacab9027dcbcfa8b97e17d1edfb5ed72947bb3fc459fcd317ddfa115`.
+Preparation POSTs=0; no production lock or approval was created. See the
+[evaluation revision](g2/G2_EVALUATION_REVISION_2.json),
+[execution report](reports/G2_protocol_executor_preparation.md), and
+[result audit protocol](g2/G2_RESULT_AUDIT_PROTOCOL.md).
 
 **GEOMETRY_CANDIDATE** / `G1F_2_ALIGNMENT_AUDIT_COMPLETE / PENDING_CHATGPT_AND_USER_PAIR_GATE`.
 [Fixed offline report](reports/G1F_2_summary.md), [code/protocol](../../tools/exp13_cloud/g1f2/).
@@ -61,6 +65,7 @@ historical image-generation POSTs in total; this sync adds **0**.
 | G1F-1 | Single authorized corrosion2 result; G1F_1_RAW_AUDIT_PREPARED / PENDING_CHATGPT_VISUAL_GATE | Same frozen [executor](../../tools/exp13_cloud/g1f1a/single_repair.py) and [offline audit](../../tools/exp13_cloud/g1f1a/audit_saved_output.py); [result](reports/G1F_1_summary.md) | CORROSION2_ROI_REPAIR_V1 | cloud_pilot_g1f_1a_preflight/live_result; cloud_pilot_g1f1_result_audit_20261101T180149 | g1f1.corrosion2.raw | 1 | Terminal budget occupied; four visual Gates pending; NO further requests/G2/training |
 | G1F-2 | GEOMETRY_CANDIDATE; fixed CPU correspondence audit | [SIFT/RANSAC](../../tools/exp13_cloud/g1f2/audit_alignment.py), [protocol](../../tools/exp13_cloud/g1f2/fixed_protocol.json), [report](reports/G1F_2_summary.md) | No prompt/call; inherited G1F-1 saved raw | cloud_pilot_g1f2_alignment_serialization_fix (initial attempt retained separately) | Same frozen ROI/mask/raw hashes; private result manifest | 0 | PENDING_CHATGPT_AND_USER_PAIR_GATE; human review only; no training/G2 |
 | G2 preparation | Freeze 2 Crack + 1 corrosion TRAIN source; `G2_THREE_SOURCE_PREPARATION_COMPLETE / PENDING_CHATGPT_GATE` | [offline preparer](../../tools/exp13_cloud/g2/prepare_three_source_pilot.py), [protocol](../../configs/exp13_cloud/g2/pilot_protocol.json), [manifest](g2/G2_THREE_SOURCE_MANIFEST.json), [report](reports/G2_three_source_preparation.md) | `CRACK_RESTORATION_V1`, `CORROSION_RESTORATION_V1` | `cloud_pilot_g2_three_source_20261101_retry1` | Pilot-4 ZIP `d9f049bd…04f18`; frozen Split `35d577c1…9634d`; per-file hashes in manifest | 0 | Three first-call slots planned only; no paid authorization; wait for ChatGPT/user Gate |
+| G2 protocol/executors | Correct source grouping; three fixed single-source executors; `G2_PROTOCOL_CORRECTED / THREE_SOURCE_EXECUTOR_PREPARED` | [revision](g2/G2_EVALUATION_REVISION_2.json), [executor entry](../../tools/exp13_cloud/g2/Start-G2Source.ps1), [three wrappers](../../tools/exp13_cloud/g2/), [audit protocol](g2/G2_RESULT_AUDIT_PROTOCOL.md), [report](reports/G2_protocol_executor_preparation.md) | Frozen class prompts; no changes | `cloud_pilot_g2_execution_20261102` | Execution bundle `6b6fdefd…278cd6`; Prompt file and wire hashes in report | 0 | Await independent ChatGPT code Gate and explicit user paid authorization |
 
 No Preflight PASS is a successful real corrosion2 repair. No stage admits a
 trusted training pair, authorizes batch generation, or demonstrates long-run stability.
@@ -96,6 +101,7 @@ wording; the table above records later user selections separately.
 - [GitHub audit handoff](GITHUB_AUDIT_HANDOFF.md).
 - [Sanitized registry](experiment_registry.csv), also registered in the repository-wide registry.
 - [G2 three-source manifest](g2/G2_THREE_SOURCE_MANIFEST.json) and [preparation report](reports/G2_three_source_preparation.md); private image assets remain local.
+- [G2 evaluation revision 2](g2/G2_EVALUATION_REVISION_2.json), [single-source execution report](reports/G2_protocol_executor_preparation.md), and [result audit protocol](g2/G2_RESULT_AUDIT_PROTOCOL.md).
 
 This initial synchronization is one historical-registration commit, not a
 scientific-stage completion or authority grant. Future complete G1F, G2 Pilot,

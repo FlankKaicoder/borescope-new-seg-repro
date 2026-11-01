@@ -135,3 +135,35 @@ are recorded in the current branch.
 Next: independent ChatGPT Gate over source identity, input hashes and protocol.
 Wait for a separate explicit user authorization before any live generation.
 Do not replace sources, use retries, or start downstream training.
+
+## G2 evaluation revision and executor handoff (2026-11-02)
+
+Current: **G2_PROTOCOL_CORRECTED / THREE_SOURCE_EXECUTOR_PREPARED /
+PENDING_CHATGPT_CODE_GATE_AND_USER_PAID_AUTHORIZATION**. The original G2 v1
+manifest and assets are preserved. [Revision 2](g2/G2_EVALUATION_REVISION_2.json)
+classifies Crack260/470 as `NEW_CLOUD_SOURCE` (n=2) and corrosion23 as
+`HISTORICAL_FAILURE_TARGETED_RETEST` (n=1), reflecting its G1B/G1C/G1D Pair
+Fidelity failure. The former G1B output is not a G2 result; G1F corrosion2
+is excluded. Track request/usage/cost outcomes for all three potential calls
+separately. No claim of three independent new-source generalization is valid.
+
+- The final execution bundle is SHA256
+  `cee4f8efacab9027dcbcfa8b97e17d1edfb5ed72947bb3fc459fcd317ddfa115`. It locks
+  the executor source, DPAPI launcher/wrappers, v2 protocol, exact prompt and
+  transmitted-string hashes, original manifest and per-source image/JSON/ROI/
+  mask hashes.
+- Three wrappers completed offline multipart validation and DPAPI CurrentUser
+  Dry Run. The decrypted credential was confined to the Python child, removed
+  there, not logged, and the encrypted file remained unchanged. This is not a
+  relay-authentication check. API POST=0, network=0.
+- No gate receipt, `STARTED.json`, live output, or lock directory was created.
+  Future Live calls require a separate source-specific receipt binding the
+  bundle SHA, explicit matching confirmation, and a vacant source slot. The
+  permanent exclusive lock is separate from outputs and is created before POST.
+- The future command forms and local Dry Run report paths are in
+  [G2 preparation report](reports/G2_protocol_executor_preparation.md). The
+  fixed result review process is [here](g2/G2_RESULT_AUDIT_PROTOCOL.md).
+
+Next: independent ChatGPT code Gate and later explicit user paid-call
+authorization. Do not execute the listed Live commands before both gates.
+No training or Pair admission is authorized.

@@ -1,0 +1,66 @@
+{
+  "record_type": "G2_EXECUTION_PROTOCOL_V2_NOT_AUTHORIZATION",
+  "supersedes_for_evaluation_only": "pilot_protocol.json",
+  "source_order": ["260", "470", "23"],
+  "source_roles": {
+    "260": "NEW_CLOUD_SOURCE",
+    "470": "NEW_CLOUD_SOURCE",
+    "23": "HISTORICAL_FAILURE_TARGETED_RETEST"
+  },
+  "evaluation_denominators": {
+    "new_crack_source_results": ["260", "470"],
+    "historical_corrosion_targeted_retest_results": ["23"],
+    "g2_new_api_request_execution_and_cost_records": ["260", "470", "23"],
+    "g1b_corrosion23_result_is_new_g2_result": false,
+    "g1f_corrosion2_included": false,
+    "claim_three_independent_new_source_generalization": false
+  },
+  "input_manifest": "../g2/G2_THREE_SOURCE_MANIFEST.json",
+  "private_asset_id": "cloud_pilot_g2_three_source_20261101_retry1",
+  "fixed_inputs": {
+    "roi": "full native image [0,0,width,height); no crop, resize or padding",
+    "annotation": "original professional Polygon JSON only",
+    "mask": "RGBA PNG; target alpha 0; outside alpha 255",
+    "prompts": {
+      "Crack": {"id": "CRACK_RESTORATION_V1", "path": "CRACK_RESTORATION_V1.txt"},
+      "corrosion": {"id": "CORROSION_RESTORATION_V1", "path": "CORROSION_RESTORATION_V1.txt"}
+    },
+    "request_prompt_rule": "Decode UTF-8 bytes and remove exactly one terminal LF byte; do not trim, normalize, append or rewrite."
+  },
+  "request": {
+    "base_url": "https://direct-api.ccccapi.cc",
+    "model": "gpt-image-2.5-sunburst",
+    "endpoint": "/v1/images/edits",
+    "method": "POST",
+    "multipart_fields": ["model", "prompt", "n", "image[]", "mask"],
+    "n": 1,
+    "redirects": false,
+    "automatic_retries": 0,
+    "fallbacks": 0,
+    "prompt_search": 0,
+    "concurrency": 0,
+    "max_posts_per_source": 1,
+    "max_new_g2_posts_total": 3
+  },
+  "per_source_quality_gates": ["DEFECT_REMOVAL", "MECHANICAL_GEOMETRY", "ALIGNMENT", "PAIR_USABILITY"],
+  "alignment_protocol": "tools/exp13_cloud/g1f2/fixed_protocol.json; fixed SIFT/Lowe 0.75 and Similarity/Affine RANSAC at 3 ROI pixels; no per-image parameter search",
+  "authorization": {
+    "generation_authorized": false,
+    "real_gate_receipts_created": false,
+    "production_started_markers_created": false,
+    "g2_paid_request_budget_used": 0,
+    "g1b_g1e_g1f_historical_requests_replayed": false
+  },
+  "claims": {
+    "new_source_generalization_n": 2,
+    "historical_targeted_retest_n": 1,
+    "all_three_new_g2_call_outcomes_must_be_separately_recorded": true,
+    "new_crack_group_requires_at_least_one_credible_candidate": true,
+    "historical_corrosion_retest_must_be_credible_for_mixed_class_gate": true,
+    "gate_requires_credible_candidates_in_both_classes": true,
+    "no_statistical_significance_claim": true,
+    "training_pair_auto_admission": false,
+    "training_authorized": false,
+    "user_visual_quality_decision_is_final": true
+  }
+}

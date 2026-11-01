@@ -1,0 +1,42 @@
+{
+  "record_type": "G2_EVALUATION_SCOPE_CORRECTION",
+  "revision": 2,
+  "supersedes": "G2_THREE_SOURCE_MANIFEST.json evaluation interpretation only; original manifest and inputs are preserved unchanged",
+  "status": "G2_PROTOCOL_CORRECTED / THREE_SOURCE_EXECUTOR_PREPARED / PENDING_CHATGPT_CODE_GATE_AND_USER_PAID_AUTHORIZATION",
+  "frozen_sources_unchanged": ["Crack260", "Crack470", "corrosion23"],
+  "evaluation_groups": {
+    "new_cloud_source": ["Crack260", "Crack470"],
+    "historical_failure_targeted_retest": ["corrosion23"],
+    "new_source_generalization_denominator_n": 2,
+    "historical_targeted_retest_denominator_n": 1,
+    "total_new_g2_request_execution_and_cost_records_n": 3,
+    "g1b_historical_corrosion23_output_counted_as_g2_outcome": false,
+    "g1f_corrosion2_counted_as_g2_source_or_outcome": false,
+    "claim_three_independent_new_source_generalization": false
+  },
+  "selection_and_input_changes": false,
+  "prompt_changes": false,
+  "exploratory_gate": {
+    "all_three_new_g2_requests_and_outcomes_must_be_recorded": true,
+    "new_crack_group_requires_at_least_one_credible_candidate": true,
+    "historical_corrosion_retest_reported_separately": true,
+    "corrosion23_retest_must_be_credible_for_mixed_class_gate": true,
+    "both_classes_must_have_a_credible_candidate": true,
+    "statistical_significance_claim": false,
+    "automatic_training_pair_admission": false,
+    "training_authorized": false
+  },
+  "authorization_and_execution": {
+    "api_post_count_in_this_preparation": 0,
+    "real_authorization_receipts_created": false,
+    "production_started_markers_created": false,
+    "future_total_new_posts_max": 3,
+    "future_per_source_posts_max": 1,
+    "retry_fallback_prompt_search_concurrency": 0
+  },
+  "evidence": {
+    "previous_manifest_preserved": "docs/exp13_cloud/g2/G2_THREE_SOURCE_MANIFEST.json",
+    "revised_protocol": "configs/exp13_cloud/g2/pilot_protocol_v2.json",
+    "execution_bundle": "configs/exp13_cloud/g2/execution_bundle.json"
+  }
+}

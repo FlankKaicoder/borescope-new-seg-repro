@@ -1,0 +1,112 @@
+{
+  "record_type": "G2_FROZEN_EXECUTION_BUNDLE_NOT_AUTHORIZATION",
+  "bundle_version": 2,
+  "private_asset_id": "cloud_pilot_g2_three_source_20261101_retry1",
+  "pilot4_zip_sha256": "d9f049bda223f6485644da71839aed670a78b169b7411f722593c32fabe04f18",
+  "frozen_split_manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "base_url": "https://direct-api.ccccapi.cc",
+  "model": "gpt-image-2.5-sunburst",
+  "endpoint_path": "/v1/images/edits",
+  "source_order": ["260", "470", "23"],
+  "max_new_g2_posts_total": 3,
+  "max_posts_per_source": 1,
+  "evaluation_denominators": {
+    "new_cloud_source_results": ["260", "470"],
+    "historical_corrosion_targeted_retest_results": ["23"],
+    "g2_execution_and_cost_records": ["260", "470", "23"],
+    "corrosion23_g1b_is_new_g2_outcome": false,
+    "g1f_corrosion2_included": false,
+    "three_independent_new_source_generalization_claim": false,
+    "all_three_call_outcomes_required": true,
+    "new_crack_group_minimum_credible_candidates": 1,
+    "corrosion23_retest_credible_for_mixed_class_gate": true,
+    "no_significance_or_training_claim": true
+  },
+  "private_manifest": {
+    "file": "private_three_source_manifest.json",
+    "sha256": "bfb30d717d72b16710a4dc3f7aacc8ee6fbea1f960ef4247dd80cf8756b15244"
+  },
+  "files": [
+    {"path": "configs/exp13_cloud/g2/CRACK_RESTORATION_V1.txt", "sha256": "f00610b50a4bebb1f0dcee08eabe116420658b968daf0e791897cf40e7cedcbc"},
+    {"path": "configs/exp13_cloud/g2/CORROSION_RESTORATION_V1.txt", "sha256": "d08632c7d3ba2eb9c4b70a745521d39a6de50be0537d684f7e5dab8c0e802013"},
+    {"path": "configs/exp13_cloud/g2/pilot_protocol_v2.json", "sha256": "77ec2f0d45800eb3da97f449feae8383a48f6a70b8c3847115372380479c905d"},
+    {"path": "configs/exp13_cloud/g2/G2_GATE_APPROVAL_TEMPLATE.json", "sha256": "9ef04c7bedf00da5890fcf26ae757fa35e146aaecb1000c61cb98fb6deea17ad"},
+    {"path": "docs/exp13_cloud/g2/G2_THREE_SOURCE_MANIFEST.json", "sha256": "717ac12ca3567f95d2ee10de6ced1b6caa10c44d71c6fd78b3fc6354b4625413"},
+    {"path": "docs/exp13_cloud/g2/G2_EVALUATION_REVISION_2.json", "sha256": "f0fecad6e2e4a3dae9cb0d99662d5d9c6ca0e80fc43ff2f7a734f3dd2f826c89"},
+    {"path": "docs/exp13_cloud/g2/G2_RESULT_AUDIT_PROTOCOL.md", "sha256": "623f898acd0e960e7e1a69e6ff37b7ceb2581381a16c96a2f53772281c35d4f0"},
+    {"path": "tools/exp13_cloud/g1f2/fixed_protocol.json", "sha256": "9fa776f50353dbb126f25959963f058916bf187b46e132e7f88f65db776020d5"},
+    {"path": "tools/exp13_cloud/g2/g2_single_executor.py", "sha256": "ae38f66ca2d629983d86b6666c204d1c5bc5aa642ca52842db754370c4758fce"},
+    {"path": "tools/exp13_cloud/g2/offline_executor_tests.py", "sha256": "6141715b1f0e7193b130f570bded0c3f232ac6c2207865a4a2b816413e3cc9ef"},
+    {"path": "tools/exp13_cloud/g2/Start-G2Source.ps1", "sha256": "669b4f28cee58f2c588b6afced71316cc7e577c74ba1116917781034418f4956"},
+    {"path": "tools/exp13_cloud/g2/Start-G2Crack260.ps1", "sha256": "d1746262bd7fa8058bce11d3aa88681bb033829bf7c49d127b113dbb2cebfa30"},
+    {"path": "tools/exp13_cloud/g2/Start-G2Crack470.ps1", "sha256": "7710356350396199e148f5a0f0c99c4cb5a6cfc89d1ab881119b478587ae7ba2"},
+    {"path": "tools/exp13_cloud/g2/Start-G2Corrosion23.ps1", "sha256": "b26c338feb7d4068b0712a28cbf891b2d0dbb22d56405f3bf716e702a317c35d"}
+  ],
+  "sources": {
+    "260": {
+      "source_id": "260", "class": "Crack", "source_role": "NEW_CLOUD_SOURCE",
+      "train_group_id": "singleton_260", "annotation_image_basename": "260.png",
+      "image_size_wh": [720, 540], "roi_xyxy_half_open": [0, 0, 720, 540],
+      "polygon_count": 1, "polygon_point_counts": [20], "mask_target_pixels": 6575,
+      "prompt_id": "CRACK_RESTORATION_V1", "prompt_file_sha256": "f00610b50a4bebb1f0dcee08eabe116420658b968daf0e791897cf40e7cedcbc",
+      "prompt_transport_sha256": "61f1964b74f55673263d9629aac193e457fe057d2366c79649e3cb0c583dae0a",
+      "sha256": {
+        "original_image": "222419556d6bd4761d6ec6c66102b6bd4775a1989d517eb4cc93f91ecf3c2bd2",
+        "original_professional_json": "cc1147fadda327791890229b515b5b8aa1456729ba3dd9b52c42dbe767474344",
+        "roi": "222419556d6bd4761d6ec6c66102b6bd4775a1989d517eb4cc93f91ecf3c2bd2",
+        "polygon_mask": "8c0c48e0acd7f6c4f41d8a3d8f777e355ab02275c779e3703f7d7635f4186d42",
+        "api_rgba_mask": "0015bb114886c6c7f9bf3f0b78bbfd6452e788547b76695cad200ebd77294348",
+        "polygon_overlay_private": "9fc0596771be6a11d9f23499ad4c61340698e0abaf1740d1f1f1d557c8866271"
+      }
+    },
+    "470": {
+      "source_id": "470", "class": "Crack", "source_role": "NEW_CLOUD_SOURCE",
+      "train_group_id": "near_0007", "annotation_image_basename": "470.jpg",
+      "image_size_wh": [960, 720], "roi_xyxy_half_open": [0, 0, 960, 720],
+      "polygon_count": 1, "polygon_point_counts": [199], "mask_target_pixels": 3112,
+      "prompt_id": "CRACK_RESTORATION_V1", "prompt_file_sha256": "f00610b50a4bebb1f0dcee08eabe116420658b968daf0e791897cf40e7cedcbc",
+      "prompt_transport_sha256": "61f1964b74f55673263d9629aac193e457fe057d2366c79649e3cb0c583dae0a",
+      "sha256": {
+        "original_image": "6d1537bb91157f82a679581d82fa3e20d72dde3b29cc14d2f47974931c3d0ec1",
+        "original_professional_json": "69b3741e1e0f626879d649881661cf4b0746208c3508b6204a236ba1e08551f4",
+        "roi": "6d1537bb91157f82a679581d82fa3e20d72dde3b29cc14d2f47974931c3d0ec1",
+        "polygon_mask": "d51a45189731762fbb4831801474beb1489bbc5d7bcbfe1c17c1c3434234ba4a",
+        "api_rgba_mask": "43d80782e541d9e0c0687dd5440ffe0d6df2774be3c6cecfc3557eeb175eaab3",
+        "polygon_overlay_private": "ce548739847ba09e4a2b0c447893eee687c7f5fc576ce85ec02435c62726e699"
+      }
+    },
+    "23": {
+      "source_id": "23", "class": "corrosion", "source_role": "HISTORICAL_FAILURE_TARGETED_RETEST",
+      "train_group_id": "singleton_23", "annotation_image_basename": "23.png",
+      "image_size_wh": [640, 480], "roi_xyxy_half_open": [0, 0, 640, 480],
+      "polygon_count": 2, "polygon_point_counts": [18, 22], "mask_target_pixels": 35994,
+      "prompt_id": "CORROSION_RESTORATION_V1", "prompt_file_sha256": "d08632c7d3ba2eb9c4b70a745521d39a6de50be0537d684f7e5dab8c0e802013",
+      "prompt_transport_sha256": "3d9bc700f3dadcbcd2ca21c5378050bd86ebbdb48e6c485e4f9195d4d519c3cb",
+      "sha256": {
+        "original_image": "c57384471d743fc179add88589fa0d7c8d59e59d14c6947ab9f6d4fd692dbddb",
+        "original_professional_json": "2cb23a813ddd4bf2f90a59a688ad22f6c9c5f1e27351f74d06875cb945e5e4df",
+        "roi": "c57384471d743fc179add88589fa0d7c8d59e59d14c6947ab9f6d4fd692dbddb",
+        "polygon_mask": "5b3a42a570a600b21a4e1d882baef262c031d91f11f7a7269e2fc7184cfbf1ff",
+        "api_rgba_mask": "14ed941a17735e1247abb7c478597a92712f03cabea4797dbe2b6c0bddce2984",
+        "polygon_overlay_private": "c73a25cf3f143665524a0b6962c510fdc25f422fe30a10d1763681dce76ca9d9"
+      }
+    }
+  },
+  "prompt_transmission": {
+    "encoding": "UTF-8 without BOM",
+    "file_ends_with_exactly_one_lf": true,
+    "wire_rule": "Remove exactly the terminal LF byte; do not trim or normalize any other byte.",
+    "additional_or_rewritten_prompt_text": false
+  },
+  "execution_safety": {
+    "default_mode": "DRY_RUN",
+    "live_requires_explicit_switch_confirmation_and_source_gate_receipt": true,
+    "receipt_path_pattern": "authorizations/<source_id>/gate_approval.json",
+    "permanent_lock_path_pattern": "locks/<source_id>/STARTED.json",
+    "lock_creation": "Exclusive CreateNew before POST; never remove/rewrite; any uncertain delivery consumes the source slot.",
+    "cross_process_live_concurrency": 0,
+    "automatic_retries": 0,
+    "automatic_model_fallback": 0,
+    "api_post_count_at_bundle_preparation": 0
+  }
+}
