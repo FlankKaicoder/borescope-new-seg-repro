@@ -214,6 +214,17 @@ class G3FormalPipelineTest(unittest.TestCase):
         self.assertIn('id="reviewCounts"', page)
         self.assertIn('id="backup"', page)
         self.assertIn("c==='\\n'", page)
+        repaired_again = repair_html_document(page, 668)
+        self.assertIn("window.setTimeout", repaired_again)
+
+    def test_download_uses_mounted_temporary_link_and_delayed_release(self):
+        script = render_script(668)
+        download = script.split("function download(", 1)[1].split("document.querySelector('#download')", 1)[0]
+        self.assertIn("document.body.appendChild(a)", download)
+        self.assertIn("a.click()", download)
+        self.assertIn("window.setTimeout", download)
+        self.assertIn("a.remove();URL.revokeObjectURL(url)", download)
+        self.assertNotIn("a.click();URL.revokeObjectURL", download)
 
     def test_atlas_rejects_failed_or_missing_gate(self):
         export = self.root / "export"; self.run_export(export)
