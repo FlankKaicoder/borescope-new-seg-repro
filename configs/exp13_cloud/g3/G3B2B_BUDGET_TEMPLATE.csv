@@ -1,0 +1,2 @@
+provider,model,endpoint,request_count_cap,output_images_per_request,currency,unit_price_cap,total_spend_cap,price_evidence_reference,price_evidence_sha256,provider_hard_limit_evidence,supported_input_resolutions
+,,,,,,,,,,,

@@ -1,5 +1,15 @@
 # Experiment index
 
+## Exp13-G3-B2-B batch executor preparation (2026-11-08)
+
+`G3B2B_EXECUTOR_READY_FOR_HUMAN_REVIEW`. Expanded the private initial
+proposal to 36 distinct TRAIN sources, six per class across Burn, Crack, Dent,
+Material missing, Tears and corrosion. All review rows remain PENDING with no
+paid authorization. The G3-specific Manifest-driven executor passed 9/9
+synthetic Mock tests and a 36-source private Dry-run with zero POSTs. Provider
+identity, resolution support and price are not independently established;
+cost remains unknown. See [handoff](exp13_cloud/G3_B2_B_EXECUTOR_PREPARATION.md).
+
 ## Exp13-G3-B1 review export correction and emergency backup restore (2026-11-07)
 
 `G3B1_REVIEW_EXPORT_FIX_READY`. SELECT requires explicit Polygon targets;

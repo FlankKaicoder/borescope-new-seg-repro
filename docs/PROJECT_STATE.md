@@ -355,3 +355,4 @@ API POST=0 for this local work, GPU training=0, TEST image access=0. See
 [G3-A handoff](exp13_cloud/G3_A_PREPARATION_HANDOFF.md),
 [G2 closeout](exp13_cloud/reports/G2_closeout_20261107.md) and
 [G3-B reuse plan](exp13_cloud/G3_B_REUSE_PLAN.md).
+# Latest local engineering state (2026-11-08): **`G3B2B_EXECUTOR_READY_FOR_HUMAN_REVIEW`**. The private expanded proposal contains 36 distinct TRAIN sources (Burn/Crack/Dent/Material missing/Tears/corrosion=6 each), retaining the prior 30 and adding six corrosion sources (10 selected Polygons); all review rows are PENDING and manual approval/paid authorization=0. Expanded Manifest SHA256 `2f9d0ca453bd277a61f5b8a3a4dd6e721b9218f98ef8334a00ff952b63720faa`. G3 executor dry-run prepared 36 requests with API POST=0. Mock regression tests 9/9 PASS. Provider legal identity, resolution compatibility and price remain unverified/COST_UNKNOWN; no Trusted Pairs. See [G3-B2-B handoff](exp13_cloud/G3_B2_B_EXECUTOR_PREPARATION.md).
