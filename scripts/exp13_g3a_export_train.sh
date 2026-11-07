@@ -12,6 +12,9 @@ CLASS_MAPPING="${CLASS_MAPPING:-}"
 
 args=("$ROOT/tools/exp13_cloud/g3/verify_train_export.py" --mode export
   --manifest "$MANIFEST" --source-root "$SOURCE_ROOT" --output "$OUTPUT")
+if [[ -z "$CLASS_MAPPING" ]]; then
+  CLASS_MAPPING="$(dirname "$MANIFEST")/class_mapping.yaml"
+fi
 if [[ -n "$CLASS_MAPPING" ]]; then
   args+=(--class-mapping "$CLASS_MAPPING")
 fi

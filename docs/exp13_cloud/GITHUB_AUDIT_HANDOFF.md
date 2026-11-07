@@ -168,6 +168,16 @@ Next: independent ChatGPT code Gate and later explicit user paid-call
 authorization. Do not execute the listed Live commands before both gates.
 No training or Pair admission is authorized.
 
+## G3-A export and audit fixes (2026-11-07)
+
+Commit `970085a9aea4ee5a2f406cc92b8f99bc6a9c003f` received an independent
+review identifying three engineering defects. The targeted repair is documented
+in [G3_A_EXPORT_FIX_REVIEW.md](G3_A_EXPORT_FIX_REVIEW.md). It changes only the
+TRAIN export/verification flow, G2 issue aggregation, atlas precondition, tests,
+and handoff. The frozen manifest schema remains unchanged. AutoDL Startup,
+API POST, GPU training, and TEST image access remain zero until the requested
+independent audit of the repair passes.
+
 ## G2 closeout and G3-A preparation handoff (2026-11-07)
 
 The three saved G2 results are closed at the execution-evidence layer in

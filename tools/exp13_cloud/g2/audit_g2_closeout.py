@@ -176,12 +176,13 @@ def audit_execution(source_id: str, bundle: dict[str, Any], execution_root: Path
         issue(issues, f"{source_id}: raw output format/mode/size mismatch")
     usage = response.get("usage")
     cost_status = response.get("cost_status", "UNKNOWN")
-    evidence_state = "EXECUTION_VERIFIED" if all(checks.values()) else "EVIDENCE_INCOMPLETE"
-    if cost_status in ("NOT_RETURNED", "UNKNOWN", None):
-        evidence_state = "EVIDENCE_INCOMPLETE"
+    execution_state = "EXECUTION_VERIFIED" if all(checks.values()) else "EVIDENCE_INCOMPLETE"
+    billing_state = "COST_REPORTED" if response.get("reported_cost") is not None else "COST_UNKNOWN"
+    upstream_state = "IDENTITY_VERIFIED" if response.get("upstream_identity") not in (None, "UNKNOWN", "UNVERIFIED") else "UPSTREAM_IDENTITY_UNKNOWN"
     return {
-        "source_id": source_id, "role": source["source_role"], "execution_state": "EXECUTION_VERIFIED" if all(checks.values()) else "EVIDENCE_INCOMPLETE",
-        "evidence_state": evidence_state, "checks": checks, "http_status": http.get("http_status"), "post_count": http.get("post_request_invocations"),
+        "source_id": source_id, "role": source["source_role"], "execution_state": execution_state,
+        "evidence_state": execution_state, "checks": checks, "billing_state": billing_state, "upstream_identity_state": upstream_state,
+        "http_status": http.get("http_status"), "post_count": http.get("post_request_invocations"),
         "response_format": response.get("response_format"), "output": output_meta, "usage": usage, "reported_cost": response.get("reported_cost"), "cost_status": cost_status,
         "upstream_identity": response.get("upstream_identity"), "elapsed_seconds": response.get("elapsed_seconds"), "prompt_id": fields.get("prompt", {}).get("prompt_id"),
         "request_manifest_sha256": sha256_file(request_path), "lock_sha256": sha256_file(lock_path), "approval_sha256": sha256_file(auth_path),
@@ -296,6 +297,24 @@ def geometry_audit(source_id: str, asset_root: Path, execution_root: Path, cpu_d
     return results
 
 
+def summarize_sources(sources: dict[str, dict[str, Any]]) -> dict[str, Any]:
+    source_errors = {source_id: item.get("issues", []) for source_id, item in sources.items() if item.get("issues")}
+    execution_ok = all(item.get("execution_state") == "EXECUTION_VERIFIED" for item in sources.values())
+    costs_unknown = [source_id for source_id, item in sources.items() if item.get("execution", {}).get("billing_state") != "COST_REPORTED"]
+    identity_unknown = [source_id for source_id, item in sources.items() if item.get("execution", {}).get("upstream_identity_state") != "IDENTITY_VERIFIED"]
+    return {
+        "status": "FAIL" if source_errors or not execution_ok else ("PASS_WITH_LIMITATIONS" if costs_unknown or identity_unknown else "PASS"),
+        "source_errors": source_errors,
+        "visual": "VISUAL_ACCEPTED",
+        "execution": "EXECUTION_VERIFIED" if execution_ok else "EVIDENCE_INCOMPLETE",
+        "billing": {"state": "COST_UNKNOWN" if costs_unknown else "COST_REPORTED", "sources": costs_unknown},
+        "upstream_identity": {"state": "UPSTREAM_IDENTITY_UNKNOWN" if identity_unknown else "IDENTITY_VERIFIED", "sources": identity_unknown},
+        "geometry": {source_id: item.get("geometry_state", "GEOMETRY_UNVERIFIED") for source_id, item in sources.items()},
+        "pair": "PAIR_USABILITY_PENDING",
+        "trusted_pair_pass": False,
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--asset-root", type=Path, required=True)
@@ -337,7 +356,10 @@ def main() -> None:
             "issues": source_issues,
         }
         write_json(args.output / f"source_{source_id}_audit.json", result["sources"][source_id])
-    result["overall"] = {"visual": "VISUAL_ACCEPTED", "execution": "EXECUTION_VERIFIED" if all(item["execution_state"] == "EXECUTION_VERIFIED" for item in result["sources"].values()) else "EVIDENCE_INCOMPLETE", "geometry": {source_id: item["geometry_state"] for source_id, item in result["sources"].items()}, "pair": "PAIR_USABILITY_PENDING", "trusted_pair_pass": False}
+    result["top_level_issues"] = {source_id: item["issues"] for source_id, item in result["sources"].items() if item["issues"]}
+    result["overall"] = summarize_sources(result["sources"])
+    if result["top_level_issues"]:
+        result["overall"]["status"] = "FAIL"
     write_json(args.output / "audit_report.json", result)
     with (args.output / "execution_ledger.csv").open("w", encoding="utf-8-sig", newline="") as handle:
         fields = ["source_id", "class", "role", "visual_status", "execution_state", "evidence_state", "http_status", "post_count", "response_format", "output_size", "raw_output_sha256", "usage_total_tokens", "reported_cost", "cost_status", "geometry_state", "pair_status"]
@@ -350,7 +372,7 @@ def main() -> None:
         lines.append(f"| {source_id} | {item['role']} | {item['visual_status']} | {item['execution_state']} | {item['evidence_state']} | {item['geometry_state']} | {item['pair_status']} |")
     lines += ["", "Fixed protocol: native grayscale SIFT, BF/L2 k=2, Lowe 0.75, 2-pixel spatial deduplication, Similarity/Affine RANSAC at 3 ROI pixels, seed 20261101. No parameter search or nonrigid fit.", "", "Cost fields are NOT_RETURNED in all three response manifests, so evidence is incomplete for billing reconciliation even where request/response/lock execution checks pass. UI exclusion is fixed only for source 260; sources 470 and 23 are therefore GEOMETRY_UNVERIFIED despite full-frame diagnostics. All Pair usability and trusted-pair decisions remain pending human review.", "", "API POSTs added by this audit: 0; GPU: 0; training: 0; VAL/TEST image access: 0."]
     (args.output / "G2_CLOSEOUT_AUDIT.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print(json.dumps({"status": "PASS" if not issues else "PASS_WITH_RECORDED_LIMITATIONS", "output": str(args.output), "sources": result["overall"]}, ensure_ascii=False, indent=2))
+    print(json.dumps({"status": result["overall"]["status"], "output": str(args.output), "sources": result["overall"]}, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":

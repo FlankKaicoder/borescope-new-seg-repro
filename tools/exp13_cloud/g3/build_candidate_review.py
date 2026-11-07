@@ -10,6 +10,13 @@ from collections import Counter
 from pathlib import Path
 from typing import Any
 
+from tools.exp13_cloud.g3.verify_train_export import (
+    EXPECTED_MANIFEST_SHA256,
+    EXPECTED_TRAIN_IMAGES,
+    EXPECTED_TRAIN_INSTANCES,
+    validate_export_data,
+)
+
 CLASSES = ["Burn", "Crack", "Dent", "Material missing", "Tears", "Tip curl", "corrosion"]
 # These are public-record call histories, not quality decisions.
 HISTORY = {
@@ -83,32 +90,54 @@ def candidate_record(row: dict[str, str], shape_index: int, shape: dict[str, Any
 def build(args: argparse.Namespace) -> dict[str, Any]:
     if args.output.exists():
         raise FileExistsError(f"refusing to overwrite existing atlas directory: {args.output}")
-    rows = [row for row in read_rows(args.manifest) if row.get("split") == "train"]
-    if len(rows) != args.expected_count:
-        raise RuntimeError(f"expected {args.expected_count} TRAIN rows, got {len(rows)}")
+    if not args.verification_report.is_file():
+        raise RuntimeError("formal candidate atlas requires a completed TRAIN integrity report")
+    gate = json.loads(args.verification_report.read_text(encoding="utf-8-sig"))
+    if gate.get("status") != "PASS":
+        raise RuntimeError("TRAIN integrity report did not PASS")
+    if gate.get("frozen_manifest_sha256") != args.expected_manifest_sha256:
+        raise RuntimeError("verification report frozen Manifest SHA256 mismatch")
+    if gate.get("export_manifest_sha256") != __import__("hashlib").sha256(args.export_manifest.read_bytes()).hexdigest():
+        raise RuntimeError("verification report export Manifest SHA256 mismatch")
+    if gate.get("checked_train_images") != args.expected_count or gate.get("checked_train_instances") != args.expected_instances:
+        raise RuntimeError("verification report TRAIN image/instance counts mismatch")
+    recomputed = validate_export_data(args.manifest, args.export_manifest, args.data_root, args.class_mapping,
+                                      args.expected_manifest_sha256, args.expected_count, args.expected_instances)
+    if recomputed.get("status") != "PASS":
+        raise RuntimeError("revalidated TRAIN export failed: " + json.dumps(recomputed.get("issues", []), ensure_ascii=False))
+    if recomputed.get("export_manifest_sha256") != gate.get("export_manifest_sha256"):
+        raise RuntimeError("verification report does not match current export Manifest")
+    rows = read_rows(args.export_manifest)
     from PIL import Image
 
     args.output.mkdir(parents=True)
-    image_dir, crop_dir = args.output / "images", args.output / "crops"
+    image_dir, crop_dir, preview_dir = args.output / "images", args.output / "crops", args.output / "previews"
     image_dir.mkdir()
     crop_dir.mkdir()
+    preview_dir.mkdir()
     records: list[dict[str, Any]] = []
     for row in rows:
-        image_value = row.get("export_image_path") or row.get("image_path", "")
-        json_value = row.get("export_json_path") or row.get("json_path", "")
+        image_value = row.get("export_image_path", "")
+        json_value = row.get("export_json_path", "")
         image_path, json_path = resolve(args.data_root, image_value), resolve(args.data_root, json_value)
         if not image_path.is_file() or not json_path.is_file():
             raise FileNotFoundError(f"missing TRAIN image/JSON pair: {image_path} / {json_path}")
         with Image.open(image_path) as handle:
             image = handle.convert("RGB")
         payload = json.loads(json_path.read_text(encoding="utf-8-sig"))
+        candidate_row = {
+            **row,
+            "stem": row["source_id"],
+            "image_path": row["source_image_path"],
+            "json_path": row["source_json_path"],
+        }
         for shape_index, shape in enumerate(payload.get("shapes", [])):
             label = str(shape.get("label", ""))
             if label not in CLASSES:
                 raise ValueError(f"unknown class {label!r} in {json_path}")
             if shape.get("shape_type") != "polygon":
                 raise ValueError(f"non-polygon annotation in {json_path}: shape {shape_index}")
-            record, points = candidate_record(row, shape_index, shape, image.width, image.height)
+            record, points = candidate_record(candidate_row, shape_index, shape, image.width, image.height)
             stem = record["candidate_id"]
             overlay_path = image_dir / f"{stem}_overlay.png"
             crop_path = crop_dir / f"{stem}_defect.png"
@@ -117,12 +146,18 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
             make_overlay(image.crop(box), [(x - box[0], y - box[1]) for x, y in points]).save(crop_path, format="PNG")
             record["overlay_path"] = str(overlay_path.relative_to(args.output)).replace("\\", "/")
             record["crop_path"] = str(crop_path.relative_to(args.output)).replace("\\", "/")
+            for key, source_path in (("overlay_preview_path", overlay_path), ("crop_preview_path", crop_path)):
+                with Image.open(source_path) as preview:
+                    preview.thumbnail((640, 480))
+                    preview_path = preview_dir / source_path.name
+                    preview.save(preview_path, format="JPEG", quality=82, optimize=True)
+                record[key] = str(preview_path.relative_to(args.output)).replace("\\", "/")
             records.append(record)
     fields = [
         "candidate_id", "source_id", "class", "split", "group_id", "near_duplicate_group_id", "polygon_index",
         "polygon_point_count", "area_polygon_px", "area_fraction_polygon", "bbox_xyxy", "centroid_xy", "padding_px",
         "padding_crop_xyxy", "padding_clipped", "padding_risk", "ui_risk", "historical_g1_g2_calls", "overlay_path",
-        "crop_path", "image_width", "image_height", "review_status", "review_notes",
+        "crop_path", "overlay_preview_path", "crop_preview_path", "image_width", "image_height", "review_status", "review_notes",
     ]
     with (args.output / "review.csv").open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields)
@@ -138,14 +173,14 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
             '<article class="candidate" data-class="{cls}" data-source="{source}" data-status="UNREVIEWED">'
             '<h2>{cid} <span>{cls}</span></h2><p>source_id={source} | group_id={group} | near_duplicate={near} | '
             'history={history}</p><p>area={area} px ({fraction:.4%}) | bbox={bbox} | padding={padding} ({risk}) | UI={ui}</p>'
-            '<div class="images"><figure><img src="{overlay}"><figcaption>Original + polygon overlay</figcaption></figure>'
-            '<figure><img src="{crop}"><figcaption>Defect crop</figcaption></figure></div></article>'
+            '<div class="images"><figure><img loading="lazy" src="{overlay}"><figcaption>Original + polygon overlay</figcaption></figure>'
+            '<figure><img loading="lazy" src="{crop}"><figcaption>Defect crop</figcaption></figure></div></article>'
         ).format(
             cls=html.escape(record["class"]), source=html.escape(record["source_id"]), cid=html.escape(record["candidate_id"]),
             group=html.escape(record["group_id"]), near=html.escape(record["near_duplicate_group_id"]), history=html.escape(record["historical_g1_g2_calls"]),
             area=record["area_polygon_px"], fraction=record["area_fraction_polygon"], bbox=html.escape(str(record["bbox_xyxy"])),
             padding=record["padding_px"], risk=html.escape(record["padding_risk"]), ui=html.escape(record["ui_risk"]),
-            overlay=html.escape(record["overlay_path"]), crop=html.escape(record["crop_path"]),
+            overlay=html.escape(record["overlay_preview_path"]), crop=html.escape(record["crop_preview_path"]),
         )
         cards.append(card)
     options = "".join(f'<option value="{html.escape(label)}">{html.escape(label)}</option>' for label in CLASSES)
@@ -161,7 +196,10 @@ function filter(){const c=cls.value.toLowerCase(),s=source.value.toLowerCase();l
     summary = {
         "status": "READY_FOR_HUMAN_SELECTION",
         "train_images": len(rows),
+        "train_instances": sum(int(row["instance_count"]) for row in rows),
         "candidate_polygons": len(records),
+        "independent_source_count": len({row["source_id"] for row in rows}),
+        "class_source_counts": {label: len({row["source_id"] for row in rows if label in row["labels_present"].split("|")}) for label in CLASSES},
         "class_candidate_counts": dict(Counter(record["class"] for record in records)),
         "review_csv": str(args.output / "review.csv"),
         "index_html": str(args.output / "index.html"),
@@ -178,8 +216,13 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--data-root", type=Path, required=True)
     parser.add_argument("--manifest", type=Path, required=True)
+    parser.add_argument("--export-manifest", type=Path, required=True)
+    parser.add_argument("--verification-report", type=Path, required=True)
+    parser.add_argument("--class-mapping", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
-    parser.add_argument("--expected-count", type=int, default=668)
+    parser.add_argument("--expected-manifest-sha256", default=EXPECTED_MANIFEST_SHA256)
+    parser.add_argument("--expected-count", type=int, default=EXPECTED_TRAIN_IMAGES)
+    parser.add_argument("--expected-instances", type=int, default=EXPECTED_TRAIN_INSTANCES)
     args = parser.parse_args()
     result = build(args)
     print(json.dumps(result, ensure_ascii=False, indent=2))

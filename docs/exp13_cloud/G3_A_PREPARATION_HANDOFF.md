@@ -5,8 +5,8 @@
 ## Git and scope
 
 - Starting branch: `phase/exp13-cloud-repair`.
-- Starting HEAD: `914f10c32fd327a7e771db3f98bd6274d8589a4f`.
-- Ending state: the same branch, pushed and clean after the authorized commit; exact final HEAD is recorded by the final verification command in this handoff.
+- Starting HEAD: `970085a9aea4ee5a2f406cc92b8f99bc6a9c003f`.
+- Ending HEAD: to be recorded after the targeted fix commit and remote verification.
 - The old main worktree was not accessed or modified.
 - Protected untracked file `tools/exp13_cloud/g2/audit_single_result.py` was read only, not modified, staged, or deleted.
 
@@ -16,8 +16,9 @@ The three-source execution ledger is [G2_CLOSEOUT_LEDGER.json](g2/G2_CLOSEOUT_LE
 with the narrative report in [G2_closeout_20261107.md](reports/G2_closeout_20261107.md).
 Crack260 and Crack470 are the two `NEW_CLOUD_SOURCE` records; corrosion23 is a
 separate `HISTORICAL_FAILURE_TARGETED_RETEST`. All three execution records are
-verified at one POST/HTTP 200, but billing is incomplete because reported cost
-was not returned. User visual acceptance is recorded separately. Crack260 is a
+verified at one POST/HTTP 200, and all source identity/input/output/lock checks
+pass. Billing and upstream identity are separately `COST_UNKNOWN` and
+`UPSTREAM_IDENTITY_UNKNOWN`. User visual acceptance is recorded separately. Crack260 is a
 `GEOMETRY_CANDIDATE`; Crack470 and corrosion23 are `GEOMETRY_UNVERIFIED`.
 All three remain `PAIR_USABILITY_PENDING`, `train_pair_eligible=false`, and no
 `TRUSTED_PAIR_PASS` is declared.
@@ -30,13 +31,28 @@ paths are also unavailable from this Windows session. No image, JSON, Polygon,
 or TEST file was copied or guessed. The final full TRAIN integrity check and
 candidate atlas therefore wait for the one-time AutoDL no-GPU export.
 
-Once exported, the Windows verification command is:
+The frozen Manifest is retained byte-for-byte as `frozen_split_manifest.csv`;
+TRAIN-only associations and hashes are in `export_manifest.csv`. The AutoDL
+ZIP contains actual copied TRAIN image/JSON files and verification records, plus
+a `.sha256` sidecar. After verifying the ZIP digest, unpack to a new directory:
+
+```powershell
+$zip = 'E:\borescope_review_assets\g3a_train_export\train_export.zip'
+$expected = (Get-Content "$zip.sha256").Split()[0]
+$actual = (Get-FileHash $zip -Algorithm SHA256).Hash.ToLowerInvariant()
+if ($actual -ne $expected) { throw 'TRAIN export archive SHA256 mismatch' }
+Expand-Archive -LiteralPath $zip -DestinationPath E:\borescope_review_assets\g3a_train_export_unpacked
+```
+
+Then verify both Manifest layers and all 668 image/JSON pairs:
 
 ```powershell
 py -3 tools/exp13_cloud/g3/verify_train_export.py --mode verify `
-  --manifest E:\borescope_review_assets\g3a_train_export\split_manifest.csv `
-  --source-root E:\borescope_review_assets\g3a_train_export `
-  --class-mapping E:\borescope_review_assets\g3a_train_export\class_mapping.json `
+  --manifest E:\borescope_review_assets\g3a_train_export_unpacked\frozen_split_manifest.csv `
+  --export-manifest E:\borescope_review_assets\g3a_train_export_unpacked\export_manifest.csv `
+  --source-root E:\borescope_review_assets\g3a_train_export_unpacked `
+  --class-mapping E:\borescope_review_assets\g3a_train_export_unpacked\class_mapping.json `
+  --archive E:\borescope_review_assets\g3a_train_export\train_export.zip `
   --output E:\borescope_review_assets\g3a_train_verify_YYYYMMDD\verify.json
 ```
 
@@ -51,8 +67,11 @@ After verification passes, build the private atlas:
 
 ```powershell
 py -3 tools/exp13_cloud/g3/build_candidate_review.py `
-  --data-root E:\borescope_review_assets\g3a_train_export `
-  --manifest E:\borescope_review_assets\g3a_train_export\split_manifest.csv `
+  --data-root E:\borescope_review_assets\g3a_train_export_unpacked `
+  --manifest E:\borescope_review_assets\g3a_train_export_unpacked\frozen_split_manifest.csv `
+  --export-manifest E:\borescope_review_assets\g3a_train_export_unpacked\export_manifest.csv `
+  --verification-report E:\borescope_review_assets\g3a_train_verify_YYYYMMDD\verify.json `
+  --class-mapping E:\borescope_review_assets\g3a_train_export_unpacked\class_mapping.json `
   --output E:\borescope_review_assets\g3a_candidate_review_YYYYMMDD
 ```
 

@@ -1,5 +1,18 @@
 # Experiment index
 
+## Exp13-G3-A export integrity and G2 aggregation fix (2026-11-07)
+
+Targeted fix prepared at the current Exp13 branch; awaiting independent GitHub
+audit before any AutoDL export. Frozen Manifest SHA is verified independently;
+the TRAIN-only Export Manifest records a one-to-one source association and
+source/export hashes. ZIP contains copied files, both manifests, class mapping,
+and verification records. Windows exact-set/hash/JSON/668-image/1,266-instance
+verification gates the formal private atlas. G2 source issues now force a
+top-level failure; cost and upstream identity unknowns remain separate from
+execution integrity. Synthetic regression suite 10/10 PASS; private G2 CPU
+re-audit `PASS_WITH_LIMITATIONS` with zero source issues. See
+[fix review](exp13_cloud/G3_A_EXPORT_FIX_REVIEW.md).
+
 Latest extension: **Exp13.2-H1 — `EXP13_2_H1_COMPLETED_PENDING_CHATGPT_GATE`**. [Review](exp13_2_h1_hallucination_replay_review.md); [handoff](exp13_2_h1_handoff.md); `results/exp13_2_h1_hallucination_replay/20261026T075800Z_h1/`. One exact source23/R2 failure, existing DS reused, one SDXL512 success/0retry. Old generation prompt retained: no pseudo-normal efficacy or model-ranking claim. Structural hallucination suspected, human decision pending; production/trusted pairs0. Successor cumulative17, Smoke4/4 remaining0, aggregate103/all-local283. Controlled17PNG ZIP7170070bytes SHA2569b7251f3470ceef431287d0878d2ec9fb04fa52c3c852268ad1a36194c2bf9e8; CPU validation PASS technical only; no VAL/TEST/raw writes/training. Stop for Gate.
 
 Latest extension: **Exp13.2-M1 — `EXP13_2_M1_COMPLETED_PENDING_CHATGPT_GATE`**. [Review](exp13_2_m1_execution_review.md); [handoff](exp13_2_m1_handoff.md); `results/exp13_2_m1_matched_restoration_benchmark/20261026T064000Z_m1/`. User input PASS and12-call authorization recorded in a new overlay;12success/0failure/0retry,6complete pairs. CPU integrity/budget/blind-package checks PASS technical only. Six-sheet anonymous ZIP is controlled; semantic quality and winner PENDING. Smoke4/4 remaining0; aggregate104/all-local284; no trusted pair, VAL/TEST, raw writes or training. Await ChatGPT/user review; no automatic continuation.
