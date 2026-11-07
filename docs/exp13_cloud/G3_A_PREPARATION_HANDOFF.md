@@ -6,7 +6,7 @@
 
 - Starting branch: `phase/exp13-cloud-repair`.
 - Starting HEAD: `970085a9aea4ee5a2f406cc92b8f99bc6a9c003f`.
-- Ending HEAD: to be recorded after the targeted fix commit and remote verification.
+- Ending code HEAD: `2f3f25ed40d89341da8e3aa79aaa1495c78809ba` (the handoff metadata commit follows this tested repair).
 - The old main worktree was not accessed or modified.
 - Protected untracked file `tools/exp13_cloud/g2/audit_single_result.py` was read only, not modified, staged, or deleted.
 

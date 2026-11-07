@@ -4,7 +4,8 @@
 
 - Starting HEAD: `970085a9aea4ee5a2f406cc92b8f99bc6a9c003f`.
 - Branch: `phase/exp13-cloud-repair`.
-- Final HEAD: filled after the targeted fix commit and remote verification.
+- Targeted repair commit: `2f3f25ed40d89341da8e3aa79aaa1495c78809ba`.
+- Final branch tip: recorded in the completion report after the handoff metadata commit and remote verification.
 - Protected `tools/exp13_cloud/g2/audit_single_result.py` remained unmodified, unstaged, and untracked.
 - Old main worktree and thesis repository were not accessed.
 
@@ -132,11 +133,12 @@ It also requires the historical exact `public_allowlist.txt`, which does not
 contain these G3-A files. This was a scoped auditor rejection, not a content
 leak finding. Historical data/results were not rewritten to satisfy it.
 
-The replacement check is limited to this commit's actual staged blobs: exact
-allowlisted new/modified paths, no media/locks/receipts/secrets, UTF-8 source
-and documentation, syntax checks, historical-prefix preservation, and staged
-diff review. This does not claim a full historical publication audit and does
-not rescan previously published assets.
+The replacement check passed over exactly 11 staged paths: no media, locks,
+receipts, credential-pattern hits, or protected untracked script; staged diff
+check passed, and Python compilation plus regression tests passed. This
+staged-only scan is limited to this change. It does not check the historical
+provenance catalog, rescan previously published assets, or claim a full
+historical publication audit.
 
 ## Current Gate
 
