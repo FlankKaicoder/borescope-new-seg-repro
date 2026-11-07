@@ -21,6 +21,7 @@ from tools.exp13_cloud.g3.verify_train_export import (
     sha256_file,
     validate_export_data,
 )
+from tools.exp13_cloud.g3.source_review_ui import repair_html_document
 
 CLASS_COLORS = {
     "Burn": (235, 72, 52),
@@ -293,6 +294,7 @@ document.querySelector('#upload').onchange=async e=>{{const file=e.target.files[
 document.querySelector('#download').onclick=()=>{{const rows=[];for(const card of cards){{const source=card.dataset.source,base=window.__rows.find(x=>x.source_id===source),state=values(card);if(state.user_decision!=='UNREVIEWED'&&state.selected_polygon_ids.length===0){{message.textContent=`Select at least one Polygon ID for source ${{source}} before exporting a decision`;card.scrollIntoView();return}}rows.push({{...base,selected_polygon_ids:state.selected_polygon_ids.join('|'),repair_priority:state.repair_priority,user_decision:state.user_decision,user_notes:state.user_notes}})}}const fields={json.dumps(CSV_FIELDS)},quote=v=>'"'+String(v??'').replaceAll('"','""')+'"',csv=String.fromCharCode(0xfeff)+[fields.join(','),...rows.map(r=>fields.map(f=>quote(r[f])).join(','))].join('\\r\\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{{type:'text/csv;charset=utf-8'}}));a.download='source_review_decisions.csv';a.click();URL.revokeObjectURL(a.href);message.textContent='CSV downloaded; original baseline CSV was not changed';}};
 window.__rows={json.dumps([{k:v for k,v in r.items() if k in CSV_FIELDS} for r in records],ensure_ascii=False)};
 </script>'''
+    page = repair_html_document(page, len(source_records))
     (output / "index.html").write_text(page, encoding="utf-8")
     summary = {
         "status": "READY_FOR_HUMAN_SOURCE_REVIEW",

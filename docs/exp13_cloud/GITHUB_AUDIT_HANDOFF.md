@@ -168,6 +168,19 @@ Next: independent ChatGPT code Gate and later explicit user paid-call
 authorization. Do not execute the listed Live commands before both gates.
 No training or Pair admission is authorized.
 
+# Exp13-G3-B1 review export correction and recovery (2026-11-07)
+
+Fixed export semantics: SELECT requires one or more explicit target Polygons;
+MAYBE may have none; REJECT clears target IDs; UNREVIEWED has no targets and
+does not count as reviewed. The page reports decision totals, supports CSV
+import/export, and downloads an emergency JSON backup. A user backup was
+validated against all 668 sources and each selected Polygon ID, then converted
+to a new private CSV. The original baseline CSV and original HTML remain
+unchanged; a separately named repaired page is provided for explicit CSV
+restore. Synthetic tests 15/15 PASS and Node VM workflow smoke passed. No
+private review asset is staged; API/GPU/TEST/AutoDL/thesis activity=0. See
+[G3-B1 export-fix handoff](G3B1_REVIEW_EXPORT_FIX_HANDOFF.md).
+
 # Exp13-G3-B1 source-level human review preparation (2026-11-07)
 
 The G3-A data Gate was rechecked: frozen Manifest SHA matched, the Windows

@@ -1,5 +1,13 @@
 # Experiment index
 
+## Exp13-G3-B1 review export correction and emergency backup restore (2026-11-07)
+
+`G3B1_REVIEW_EXPORT_FIX_READY`. SELECT requires explicit Polygon targets;
+MAYBE allows none; REJECT exports no targets. A 668-row emergency JSON was
+validated and restored to a new private CSV without overwriting the baseline.
+The original HTML remains byte-identical and a separately named repaired page
+is available. See [review export fix handoff](exp13_cloud/G3B1_REVIEW_EXPORT_FIX_HANDOFF.md).
+
 ## Exp13-G3-B1 complete TRAIN source-level human review preparation (2026-11-07)
 
 `G3B1_HUMAN_SOURCE_REVIEW_READY`. The private offline source atlas contains one

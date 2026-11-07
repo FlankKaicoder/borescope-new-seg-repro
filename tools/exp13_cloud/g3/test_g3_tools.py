@@ -12,6 +12,8 @@ from PIL import Image
 
 from tools.exp13_cloud.g2.audit_g2_closeout import summarize_sources
 from tools.exp13_cloud.g3 import build_candidate_review, build_source_review, verify_train_export
+from tools.exp13_cloud.g3.review_decisions import normalize_decision, restore_backup_rows
+from tools.exp13_cloud.g3.source_review_ui import repair_html_document, render_script
 
 
 def args(**values):
@@ -165,6 +167,53 @@ class G3FormalPipelineTest(unittest.TestCase):
         self.assertIn("Polygon ID", page)
         self.assertIn("Trusted Training Pair: PENDING_SEPARATE_GATE", page)
         self.assertTrue((instance_atlas / "review.csv").is_file())
+
+    def test_review_decision_export_rules(self):
+        ids = {"1_000", "1_001"}
+        selected = normalize_decision({"user_decision": "SELECT", "selected_polygon_ids": ["1_000"]}, ids)
+        self.assertEqual(selected["selected_polygon_ids"], "1_000")
+        with self.assertRaisesRegex(ValueError, "SELECT requires"):
+            normalize_decision({"user_decision": "SELECT", "selected_polygon_ids": []}, ids)
+        self.assertEqual(normalize_decision({"user_decision": "MAYBE"}, ids)["selected_polygon_ids"], "")
+        self.assertEqual(normalize_decision({"user_decision": "REJECT"}, ids)["selected_polygon_ids"], "")
+        self.assertEqual(normalize_decision({"user_decision": "REJECT", "selected_polygon_ids": ["1_001"]}, ids)["selected_polygon_ids"], "")
+        self.assertEqual(normalize_decision({"user_decision": "UNREVIEWED"}, ids)["selected_polygon_ids"], "")
+
+    def test_emergency_backup_restore_is_exact_and_validated(self):
+        baseline = [
+            {"source_id": "1", "polygon_ids": "1_000|1_001", "user_decision": "UNREVIEWED", "selected_polygon_ids": "", "repair_priority": "", "user_notes": ""},
+            {"source_id": "2", "polygon_ids": "2_000", "user_decision": "UNREVIEWED", "selected_polygon_ids": "", "repair_priority": "", "user_notes": ""},
+            {"source_id": "3", "polygon_ids": "3_000", "user_decision": "UNREVIEWED", "selected_polygon_ids": "", "repair_priority": "", "user_notes": ""},
+        ]
+        backup = [
+            {"source_id": "1", "repair_priority": "A", "user_decision": "SELECT", "selected_polygon_ids": ["1_001"], "user_notes": "keep selected target"},
+            {"source_id": "2", "repair_priority": "B", "user_decision": "MAYBE", "selected_polygon_ids": [], "user_notes": "maybe later"},
+            {"source_id": "3", "repair_priority": "C", "user_decision": "REJECT", "selected_polygon_ids": ["3_000"], "user_notes": "not suitable"},
+        ]
+        restored = restore_backup_rows(backup, baseline)
+        self.assertEqual(len(restored), 3)
+        self.assertEqual(restored[0]["selected_polygon_ids"], "1_001")
+        self.assertEqual(restored[1]["user_decision"], "MAYBE")
+        self.assertEqual(restored[1]["user_notes"], "maybe later")
+        self.assertEqual(restored[2]["user_decision"], "REJECT")
+        self.assertEqual(restored[2]["selected_polygon_ids"], "")
+        self.assertTrue(all(row["user_decision"] != "SELECT" or row["selected_polygon_ids"] for row in restored))
+        with self.assertRaisesRegex(ValueError, "unique"):
+            restore_backup_rows(backup + [backup[0]], baseline)
+        invalid = [dict(backup[0], selected_polygon_ids=["999_999"]), *backup[1:]]
+        with self.assertRaisesRegex(ValueError, "do not belong"):
+            restore_backup_rows(invalid, baseline)
+
+    def test_repaired_ui_has_counts_backup_and_correct_csv_rules(self):
+        script = render_script(668)
+        page = repair_html_document('<span id="count"></span><button id="download">Download review CSV</button><label>Import reviewed CSV</label><script>old()</script>', 668)
+        self.assertIn("Reviewed", script)
+        self.assertIn("SELECT requires at least one checked Polygon", script)
+        self.assertIn("state.user_decision==='REJECT'", script)
+        self.assertIn("g3b1_review_emergency_backup.json", script)
+        self.assertIn('id="reviewCounts"', page)
+        self.assertIn('id="backup"', page)
+        self.assertIn("c==='\\n'", page)
 
     def test_atlas_rejects_failed_or_missing_gate(self):
         export = self.root / "export"; self.run_export(export)
