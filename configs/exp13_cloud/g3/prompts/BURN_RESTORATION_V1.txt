@@ -1,0 +1,7 @@
+Edit the provided original industrial borescope photograph containing a metallic component with localized burn or heat damage.
+
+The transparent regions of the supplied mask identify the explicitly selected burn-damage polygon or polygons. Repair only those masked targets to a plausible intact surface consistent with immediately adjacent material.
+
+Preserve the original component geometry, physical edges, mechanical gaps, lighting, camera viewpoint, surface aging, machining marks, and fine texture. Do not polish the metal smooth or make the entire component look new.
+
+Do not add, remove, bridge, straighten, or reshape mechanical parts, cavities, holes, seams, slots, blades, indicators, logos, or inspection-camera overlays. Preserve all unmasked defects and avoid changes outside the transparent mask. Return one realistic image of the same view without labels or explanatory text.

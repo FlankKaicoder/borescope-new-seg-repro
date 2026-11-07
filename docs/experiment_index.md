@@ -300,6 +300,10 @@ Only Crack260 and Crack470 are new-source outcomes (`NEW_CLOUD_SOURCE`, n=2). co
 
 Three fixed wrappers were statically checked and each completed an offline multipart and CurrentUser DPAPI Dry Run against final execution-bundle SHA256 `cee4f8efacab9027dcbcfa8b97e17d1edfb5ed72947bb3fc459fcd317ddfa115`. Each used the same frozen prompt file hash and exact transmitted-string hash. Requests were not sent; API POST/network=0, and no approval receipt or production STARTED lock exists. Future commands are recorded in the report and remain gated by source-specific receipt and user confirmation.
 
+## Exp13-G3-B2-A offline batch preparation (2026-11-07)
+
+`G3B2A_DRY_RUN_READY_FOR_REVIEW`. [Sanitized review](exp13_cloud/G3_B2_A_BATCH_PREPARATION_REVIEW.md) reports 523 SELECT sources / 901 targets, 356 metadata-only routine-shape candidates, 167 special-review sources, and zero confirmed safe sources while UI/mechanical-edge evidence remains unknown. A private 30-source proposal (6 each Burn/Crack/Dent/Material missing/Tears) covers 31 targets and is group-deduplicated; all rows remain PROPOSED with no paid authorization. Native-size selected-only masks and CPU overlays passed the dry-run. Prompt hashes are pinned, historical G2 protocol bytes are checked against its frozen bundle, provider constraints and cost remain unknown, and geometry/Pair admission remain separate. Tests 4/4 PASS; API POST/GPU/TEST/AutoDL/thesis=0. Stop for independent review and separate authorization.
+
 ## Exp13-G2 closeout and G3-A preparation (2026-11-07)
 
 `G3A_WAITING_AUTODL_TRAIN_EXPORT`. The three saved G2 calls were audited once

@@ -1,0 +1,7 @@
+Edit the provided original industrial borescope photograph containing a metallic component with a localized dent.
+
+The transparent regions of the supplied mask identify the explicitly selected dent polygon or polygons. Repair only those masked targets to a plausible intact metal surface consistent with immediately surrounding material.
+
+Preserve the original component geometry, blade curvature, physical edges, mechanical gaps, lighting, camera viewpoint, surface aging, machining marks, and fine texture. Do not flatten real curvature, smooth the whole component, or make the metal look newly manufactured.
+
+Do not add, remove, bridge, straighten, or reshape mechanical parts, cavities, holes, seams, slots, blades, indicators, logos, or inspection-camera overlays. Preserve all unmasked defects and avoid changes outside the transparent mask. Return one realistic image of the same view without labels or explanatory text.

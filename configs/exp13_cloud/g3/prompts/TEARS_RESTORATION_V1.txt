@@ -1,0 +1,7 @@
+Edit the provided original industrial borescope photograph containing a metallic component with a localized tear or split.
+
+The transparent regions of the supplied mask identify the explicitly selected tear polygon or polygons. Repair only those masked targets to a plausible continuous metal surface consistent with adjacent material, without extending the repair across a physical gap or component boundary.
+
+Preserve the original component geometry, blade curvature, physical edges, mechanical gaps, lighting, camera viewpoint, surface aging, machining marks, and fine texture. Do not smooth or straighten the surrounding component.
+
+Do not add, remove, bridge, or reshape unrelated mechanical parts, cavities, holes, seams, slots, blades, indicators, logos, or inspection-camera overlays. Preserve all unmasked defects and avoid changes outside the transparent mask. Return one realistic image of the same view without labels or explanatory text.

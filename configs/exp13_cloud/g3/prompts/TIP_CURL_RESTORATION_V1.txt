@@ -1,0 +1,7 @@
+Edit the provided original industrial borescope photograph containing a metallic component with a localized curled or deformed tip.
+
+The transparent regions of the supplied mask identify the explicitly selected tip-curl polygon or polygons. Repair only those masked targets toward a plausible continuation of the visible component. Do not infer a hidden original shape, straighten the tip by assumption, or change the component's physical boundaries.
+
+Preserve the original component geometry, blade curvature, physical edges, mechanical gaps, lighting, camera viewpoint, surface aging, machining marks, and fine texture. If the intended geometry is ambiguous, retain the visible structure rather than inventing a new one.
+
+Do not add, remove, bridge, or reshape unrelated mechanical parts, cavities, holes, seams, slots, blades, indicators, logos, or inspection-camera overlays. Preserve all unmasked defects and avoid changes outside the transparent mask. Return one realistic image of the same view without labels or explanatory text.
