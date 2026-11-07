@@ -11,7 +11,7 @@ from pathlib import Path
 from PIL import Image
 
 from tools.exp13_cloud.g2.audit_g2_closeout import summarize_sources
-from tools.exp13_cloud.g3 import build_candidate_review, verify_train_export
+from tools.exp13_cloud.g3 import build_candidate_review, build_source_review, verify_train_export
 
 
 def args(**values):
@@ -137,6 +137,34 @@ class G3FormalPipelineTest(unittest.TestCase):
         report = {"export_manifest": str(unpacked / "export_manifest.csv")}
         issues = verify_train_export.verify_archive(replacement, report, unpacked)
         self.assertEqual(issues[0]["type"], "archive_content")
+
+    def test_source_review_groups_all_polygons_and_exports_editable_decisions(self):
+        export = self.root / "export"
+        self.run_export(export)
+        report_path = self.root / "verification.json"
+        report = verify_train_export.verify(args(manifest=export / "frozen_split_manifest.csv", export_manifest=export / "export_manifest.csv", source_root=export, class_mapping=export / "class_mapping.json", output=report_path, archive=export / "train_export.zip", expected_manifest_sha256=self.expected_hash, expected_count=self.train_count, expected_instances=self.train_instances))
+        self.assertEqual(report["status"], "PASS", report["issues"])
+        instance_atlas = self.root / "instance_atlas"
+        build_candidate_review.build(args(data_root=export, manifest=export / "frozen_split_manifest.csv", export_manifest=export / "export_manifest.csv", verification_report=report_path, class_mapping=export / "class_mapping.json", output=instance_atlas, expected_manifest_sha256=self.expected_hash, expected_count=self.train_count, expected_instances=self.train_instances))
+        source_atlas = self.root / "source_atlas"
+        result = build_source_review.build(args(data_root=export, manifest=export / "frozen_split_manifest.csv", export_manifest=export / "export_manifest.csv", verification_report=report_path, class_mapping=export / "class_mapping.json", instance_review_csv=instance_atlas / "review.csv", instance_atlas_root=instance_atlas, output=source_atlas, expected_manifest_sha256=self.expected_hash, expected_count=self.train_count, expected_instances=self.train_instances))
+        with (source_atlas / "source_review.csv").open(encoding="utf-8-sig", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        self.assertEqual(len(rows), 3)
+        self.assertEqual(sum(len(row["polygon_ids"].split("|")) for row in rows), 5)
+        self.assertTrue(all(row["user_decision"] == "UNREVIEWED" and not row["selected_polygon_ids"] for row in rows))
+        self.assertTrue(all(row["trusted_training_pair_status"] == "PENDING_SEPARATE_GATE" for row in rows))
+        self.assertEqual(result["train_sources"], 3)
+        self.assertEqual(result["train_instances"], 5)
+        self.assertTrue((source_atlas / "overlays/1_all_polygons.jpg").is_file())
+        page = (source_atlas / "index.html").read_text(encoding="utf-8")
+        self.assertEqual(page.count('<article class="source"'), 3)
+        self.assertIn("localStorage", page)
+        self.assertIn("Import reviewed CSV", page)
+        self.assertIn("Download review CSV", page)
+        self.assertIn("Polygon ID", page)
+        self.assertIn("Trusted Training Pair: PENDING_SEPARATE_GATE", page)
+        self.assertTrue((instance_atlas / "review.csv").is_file())
 
     def test_atlas_rejects_failed_or_missing_gate(self):
         export = self.root / "export"; self.run_export(export)

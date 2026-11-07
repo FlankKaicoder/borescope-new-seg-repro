@@ -168,6 +168,25 @@ Next: independent ChatGPT code Gate and later explicit user paid-call
 authorization. Do not execute the listed Live commands before both gates.
 No training or Pair admission is authorized.
 
+# Exp13-G3-B1 source-level human review preparation (2026-11-07)
+
+The G3-A data Gate was rechecked: frozen Manifest SHA matched, the Windows
+verification report was PASS with 668 images, 1,266 instances, and zero issues.
+A new private offline source-level atlas covers each source once and maps every
+Polygon ID to its preserved instance-level record. Its controls support class
+filtering, Source ID search, explicit Polygon target selection, A/B/C priority,
+SELECT/MAYBE/REJECT decisions, notes, local browser persistence, CSV export and
+CSV import. All choices begin `UNREVIEWED`; Trusted Training Pair state remains
+independently `PENDING_SEPARATE_GATE`. No private image, JSON, or review file is
+staged. Tests: 12/12 PASS. API POST/GPU/TEST/AutoDL/thesis access=0. See
+[G3-B1 handoff](G3_B1_HUMAN_SOURCE_REVIEW_HANDOFF.md).
+
+The legacy publication auditor is pinned to precommit HEAD
+`3def6f8f3b0d7ccaa7c5001a0e5ee623b265b71a` and stops at that check on this
+branch. A staged-only review of the seven explicit code/test/documentation
+paths passed with no credential-pattern hits or private media/assets. This is
+not a full historical publication audit.
+
 ## G3-A export and audit fixes (2026-11-07)
 
 Commit `970085a9aea4ee5a2f406cc92b8f99bc6a9c003f` received an independent

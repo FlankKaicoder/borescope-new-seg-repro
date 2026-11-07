@@ -1,5 +1,14 @@
 # Experiment index
 
+## Exp13-G3-B1 complete TRAIN source-level human review preparation (2026-11-07)
+
+`G3B1_HUMAN_SOURCE_REVIEW_READY`. The private offline source atlas contains one
+card per 668 TRAIN sources and links all 1,266 Polygon targets to the preserved
+instance-level atlas. Per-class source counts are Burn 141, Crack 80, Dent 120,
+Material missing 154, Tears 45, Tip curl 27, and corrosion 195. Decisions start
+`UNREVIEWED`; selected Polygon IDs are explicit and do not imply a Trusted
+Training Pair. See [G3-B1 handoff](exp13_cloud/G3_B1_HUMAN_SOURCE_REVIEW_HANDOFF.md).
+
 ## Exp13-G3-A export integrity and G2 aggregation fix (2026-11-07)
 
 Targeted fix prepared at the current Exp13 branch; awaiting independent GitHub
