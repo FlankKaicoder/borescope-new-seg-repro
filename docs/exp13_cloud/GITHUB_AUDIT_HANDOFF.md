@@ -167,3 +167,23 @@ separately. No claim of three independent new-source generalization is valid.
 Next: independent ChatGPT code Gate and later explicit user paid-call
 authorization. Do not execute the listed Live commands before both gates.
 No training or Pair admission is authorized.
+
+## G2 closeout and G3-A preparation handoff (2026-11-07)
+
+The three saved G2 results are closed at the execution-evidence layer in
+[G2 closeout](reports/G2_closeout_20261107.md) and the
+[sanitized ledger](g2/G2_CLOSEOUT_LEDGER.json). Crack260/470 remain the two
+`NEW_CLOUD_SOURCE` records; corrosion23 is the separate historical targeted
+retest. Each has one POST and HTTP 200 with matching request, input, Prompt,
+raw-output and permanent-lock evidence. Reported cost is `NOT_RETURNED`, so the
+billing portion is `EVIDENCE_INCOMPLETE`. Visual acceptance does not freeze a
+Pair: Crack260 is `GEOMETRY_CANDIDATE`, Crack470 and corrosion23 are
+`GEOMETRY_UNVERIFIED`, and all three are `PAIR_USABILITY_PENDING`.
+
+G3-A is `G3A_WAITING_AUTODL_TRAIN_EXPORT`. The complete 668-image Windows
+TRAIN image/professional-JSON export was not present. Export/verify and private
+seven-class candidate-atlas tools are prepared and fixture-tested; no full
+atlas or review CSV was generated. The detailed next commands are in
+[G3-A handoff](G3_A_PREPARATION_HANDOFF.md), and the G3-B reuse design is in
+[G3_B_REUSE_PLAN.md](G3_B_REUSE_PLAN.md). This local work added API POST=0,
+GPU training=0, TEST image access=0, and did not access the thesis repository.

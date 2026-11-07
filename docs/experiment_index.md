@@ -269,3 +269,19 @@ Frozen TRAIN sources are Crack260 (`singleton_260`), Crack470 (`near_0007`) and 
 Only Crack260 and Crack470 are new-source outcomes (`NEW_CLOUD_SOURCE`, n=2). corrosion23 is a historical failure targeted retest, reported separately (n=1); its G1B failure is not counted again. G1F corrosion2 is excluded. All three newly authorized calls, if later approved, have separate request/usage/cost records. The mixed-class exploratory Gate requires all three outcomes, at least one credible Crack candidate, and a credible corrosion23 retest. It does not claim significance or authorize training.
 
 Three fixed wrappers were statically checked and each completed an offline multipart and CurrentUser DPAPI Dry Run against final execution-bundle SHA256 `cee4f8efacab9027dcbcfa8b97e17d1edfb5ed72947bb3fc459fcd317ddfa115`. Each used the same frozen prompt file hash and exact transmitted-string hash. Requests were not sent; API POST/network=0, and no approval receipt or production STARTED lock exists. Future commands are recorded in the report and remain gated by source-specific receipt and user confirmation.
+
+## Exp13-G2 closeout and G3-A preparation (2026-11-07)
+
+`G3A_WAITING_AUTODL_TRAIN_EXPORT`. The three saved G2 calls were audited once
+with fixed CPU evidence checks and G1F-2 geometry rules. Execution is verified
+at one POST/HTTP 200 per source; cost fields remain `NOT_RETURNED`. User visual
+acceptance is separate from Pair usability. Crack260 is `GEOMETRY_CANDIDATE`;
+Crack470 and corrosion23 are `GEOMETRY_UNVERIFIED`; all Pair/training states
+remain pending/false. Windows lacks the complete 668-image TRAIN image/JSON
+export, so the full private atlas is waiting for AutoDL no-GPU export. See
+[G2 closeout](exp13_cloud/reports/G2_closeout_20261107.md),
+[sanitized ledger](exp13_cloud/g2/G2_CLOSEOUT_LEDGER.json),
+[G3-A handoff](exp13_cloud/G3_A_PREPARATION_HANDOFF.md),
+[G3-B reuse plan](exp13_cloud/G3_B_REUSE_PLAN.md), and the new tools under
+`tools/exp13_cloud/g3/`. API POST/GPU training/TEST image access remain 0 for
+this local work.

@@ -330,3 +330,20 @@ Prepared only historical TRAIN R1 Crack86/260 and corrosion2/8 v1/v2: 8 candidat
 - The final execution bundle SHA256 is `cee4f8efacab9027dcbcfa8b97e17d1edfb5ed72947bb3fc459fcd317ddfa115`. After correcting an undefined source-lock path found in static review and refreshing the executor hash, all three dedicated source wrappers passed offline multipart validation and a DPAPI CurrentUser Dry Run against this final bundle; each verified frozen source/Polygon/mask hashes, prompt file and transmitted-text hashes, and request structure. Child credentials were present only in the Python process environment and removed there; DPAPI ciphertext was unchanged.
 - Per-source permanent locks are created exclusively outside the result directory immediately before a future single POST. Matching source receipt, exact source confirmation, bundle SHA and empty source slot are mandatory. Global live concurrency is zero; each source has one slot and the G2 maximum is three. No real receipt or production STARTED marker was created. Actual API POST=0, network requests=0, GPU/training/VAL/TEST/AutoDL=0. See [executor preparation report](exp13_cloud/reports/G2_protocol_executor_preparation.md) and [result audit protocol](exp13_cloud/g2/G2_RESULT_AUDIT_PROTOCOL.md).
 - The DPAPI check only confirms that the configured ciphertext decrypts and the child receives/removes a nonempty value; it does not validate relay authentication or establish API compatibility. Exp11 final TEST and Exp12 conclusions remain frozen.
+
+### Exp13 G2 closeout and G3-A preparation (2026-11-07)
+
+Status: `G3A_WAITING_AUTODL_TRAIN_EXPORT`. G2 three-source execution closeout
+completed with one fixed CPU audit over Crack260, Crack470 and corrosion23.
+User visual acceptance is recorded separately; execution checks are verified at
+one POST/HTTP 200 each, while billing evidence remains incomplete because
+reported cost was not returned. Geometry states are Crack260
+`GEOMETRY_CANDIDATE`, Crack470 and corrosion23 `GEOMETRY_UNVERIFIED`; all three
+remain `PAIR_USABILITY_PENDING`, with trusted pairs and training authorization
+at zero. Windows does not contain the complete frozen 668-image TRAIN
+image/professional-JSON export, so no full atlas was generated. Export,
+verification and seven-class private atlas tools are prepared and fixture-tested.
+API POST=0 for this local work, GPU training=0, TEST image access=0. See
+[G3-A handoff](exp13_cloud/G3_A_PREPARATION_HANDOFF.md),
+[G2 closeout](exp13_cloud/reports/G2_closeout_20261107.md) and
+[G3-B reuse plan](exp13_cloud/G3_B_REUSE_PLAN.md).
