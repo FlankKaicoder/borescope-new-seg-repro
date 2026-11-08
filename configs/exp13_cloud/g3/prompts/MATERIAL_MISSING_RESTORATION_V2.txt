@@ -1,0 +1,5 @@
+Edit only the explicitly selected material-loss target in this industrial borescope photograph. Restore missing metal where the image shows a damaged, broken component edge. A smooth damaged notch is still a defect: do not merely polish or smooth the existing missing-material contour.
+
+Use nearby intact portions of the same component to continue its visible edge, thickness, curvature, surface texture, lighting, and color through the damaged region. Preserve normal mechanical structure and every clearly visible open gap, cavity, hole, or clearance. Do not bridge a real opening or invent a hidden component. Keep all unrelated structure and all non-target defects unchanged.
+
+If the exact hidden physical shape cannot be inferred from visible context, make only the smallest plausible continuation supported by adjacent edges; do not add decorative or unsupported geometry. Keep the repair localized and natural. Return one realistic image of the same view without labels or explanatory text. Any reconstructed hidden surface remains a low-confidence visual hypothesis, not verified physical ground truth.

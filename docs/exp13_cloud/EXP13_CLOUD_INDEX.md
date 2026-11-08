@@ -1,5 +1,14 @@
 # Exp13 cloud restoration experiment index
 
+## Current update: G3-C2 Prompt V2 preparation (2026-11-09)
+
+`G3C2_V2_LIVE_READY`; four retry sources are prepared for a maximum of four
+requests, while the corrosion/UI-mask-overlap case is held. Prompt V2 and the
+private attempt Manifest are pinned. Four offline Dry-run requests passed;
+POST=0 and cost is `COST_UNKNOWN`. Wait for the independent Gate and separate
+batch-level paid authorization. See the
+[preparation review](G3_C2_V2_PREPARATION_REVIEW.md).
+
 ## Current update: G2 three-source preparation (2026-11-02)
 
 `G2_PROTOCOL_CORRECTED / THREE_SOURCE_EXECUTOR_PREPARED / PENDING_CHATGPT_CODE_GATE_AND_USER_PAID_AUTHORIZATION`.

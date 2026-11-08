@@ -1,5 +1,16 @@
 # Project state
 
+Latest local engineering state (2026-11-09): **`G3C2_V2_LIVE_READY`**. Five
+frozen retry cases were diagnosed; four TRAIN sources are bound to a new
+Prompt V2 request Manifest (SHA256
+`2689a94ead5f8e395c20a0c38d807acec0af958d65d9001b2598f2e3cc5c0f52`), one
+corrosion/UI-overlap source is HOLD, and the batch maximum is four POSTs.
+Existing selected Polygon masks were copied unchanged because no supported
+physical boundary justified expansion. Dry-run constructed four requests,
+with no authorization and POST=0. Price remains `COST_UNKNOWN`; no V2 output,
+alignment, composite, or Trusted Pair exists. See
+[G3-C2 preparation](exp13_cloud/G3_C2_V2_PREPARATION_REVIEW.md). API/GPU/TEST=0.
+
 Latest local engineering state (2026-11-08): **`G3C1_VISUAL_REVIEW_CLOSEOUT_READY`**. The SHA-pinned recovered review covers the exact 36-source set: 31 `VISUAL_PASS`, 5 `NEEDS_RETRY`, 0 unreviewed. Geometry cross-counts are PASS/CANDIDATE=24, PASS/UNVERIFIED=7, RETRY/CANDIDATE=4, RETRY/UNVERIFIED=1; Trusted Pair PASS remains 0. Five retry records concern changed boundary, three material-completion failures and one corrosion/UI-mask concern. One recorded visual pass has notes rejecting Pair use; it remains unchanged for clarification. Twenty-three unambiguous PASS/CANDIDATE sources are proposed for bounded Pair-fidelity review. No second-batch paid generation is authorized. See [G3-C1 closeout](exp13_cloud/G3_C1_VISUAL_REVIEW_CLOSEOUT.md). API/GPU/TEST=0.
 
 Latest local engineering state (2026-11-08): **`G3C0_REVIEW_UI_RECOVERY_PASS`**. The recovered private four-field review CSV has 36 exact unique sources and 36 completed decisions (31 `VISUAL_PASS`, 5 `NEEDS_RETRY`); all six nonempty notes were preserved. Geometry values match the frozen 28/8 diagnostics. A new private review page restores these decisions, adds transactional CSV import, UTF-8-BOM export, clipboard fallback, read-only Geometry, and guarded local autosave. Node UI tests 10/10 and Python builder tests 3/3 pass. Original review assets are unchanged. See [review recovery handoff](exp13_cloud/G3_C0_REVIEW_UI_RECOVERY_HANDOFF.md). API/GPU/TEST/AutoDL=0.

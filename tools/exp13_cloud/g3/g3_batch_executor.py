@@ -494,7 +494,10 @@ def run_batch(manifest_path: Path, review_path: Path, batch_root: Path, executio
         "protocol_sha256": protocol_sha, "prompt_manifest_sha256": prompt_manifest_sha,
         "selected_source_count": len(target_ids), "api_post_count": sent_count,
         "authorization_present": bool(auth),
-        "cost_status": "COST_UNKNOWN" if unknown_cost_ids else ("PROVIDER_REPORTED_NO_SPEND_CAP" if auth and auth["cost_unknown_authorized"] else "COST_REPORTED_OR_CAPPED"),
+        "cost_status": ("NOT_APPLICABLE_NO_POST" if not live else
+                        "COST_UNKNOWN" if unknown_cost_ids else
+                        "PROVIDER_REPORTED_NO_SPEND_CAP" if auth and auth["cost_unknown_authorized"] else
+                        "COST_REPORTED_OR_CAPPED"),
         "provider_reported_cost_sum": round(cumulative_spend, 8),
         "provider_reported_cost_sum_is_complete": not unknown_cost_ids,
         "cost_unknown_source_ids": unknown_cost_ids,

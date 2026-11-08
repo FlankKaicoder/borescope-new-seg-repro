@@ -1,5 +1,16 @@
 # Experiment index
 
+## Exp13-G3-C2 Prompt V2 preparation (2026-11-09)
+
+`G3C2_V2_LIVE_READY`. The five frozen retry cases were diagnosed separately.
+Four sources are proposed for at most four serial requests; the corrosion case
+whose Polygon overlaps green UI is HOLD. Category Prompt V2 files and a new
+attempt manifest are hash-pinned. Repair Masks are private byte-identical
+copies of selected V1 Polygon masks because the evidence did not support a
+safe expansion. Executor Dry-run: 4/4, POST=0, no authorization. Cost remains
+`COST_UNKNOWN`; no V2 images, aligned outputs, composites, or Trusted Pairs
+exist. See [preparation review](exp13_cloud/G3_C2_V2_PREPARATION_REVIEW.md).
+
 ## Exp13-G3-C1 human review closeout (2026-11-08)
 
 `G3C1_VISUAL_REVIEW_CLOSEOUT_READY`. The recovered exact-set contains 31

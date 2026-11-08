@@ -1,0 +1,5 @@
+Edit only the explicitly selected corrosion-damage region in this industrial borescope photograph. Remove corrosion and abnormal corrosion texture within the target and reconstruct a plausible metal surface consistent with nearby intact material. Retain realistic fine grain, small natural pits, surface age, lighting, and color; do not polish the component smooth.
+
+Preserve visible mechanical boundaries, blade curvature, gaps, cavities, holes, seams, slots, and all unrelated defects. Do not change image-wide style or modify anything outside the selected target. Preserve every inspection-camera graphic, timestamp, status character, and other user-interface element exactly as visible; never erase or repaint UI as if it were metal. If corrosion and UI cannot be separated inside the supplied edit mask, do not attempt a repair. Return one realistic image of the same view without adding labels or explanatory text.
+
+This image edit does not establish physical truth or pixel-level registration.

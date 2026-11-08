@@ -145,6 +145,7 @@ class G3B2BExecutorTest(unittest.TestCase):
         fake = MockTransport([])
         summary = self.execute(False, fake)
         self.assertEqual(summary["api_post_count"], 0)
+        self.assertEqual(summary["cost_status"], "NOT_APPLICABLE_NO_POST")
         self.assertEqual(len(fake.post_calls), 0)
         self.assertEqual(len(list((self.exec_root / "dry_run").glob("*/request_preview.json"))), 2)
 

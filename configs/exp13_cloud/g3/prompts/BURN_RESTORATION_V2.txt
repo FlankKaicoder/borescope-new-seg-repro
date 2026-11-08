@@ -1,0 +1,5 @@
+Edit only the explicitly selected burn-damage region in this industrial borescope photograph. Remove the burn discoloration and abnormal burn texture, then restore a plausible metallic surface using nearby undamaged material as evidence.
+
+Continue visible mechanical edges from the adjacent intact portions of the same component. Treat the burn-distorted contour as damage, not as a reliable normal boundary. Do not assume every edge is straight: follow the local geometry that is actually visible on both sides of the target. Do not create a new arc, notch, depression, blade, cavity, seam, or other mechanical feature. Preserve real gaps and all non-target defects.
+
+Keep the camera view, lighting, material color, machining marks, fine texture, and all unmasked pixels visually consistent with the input. Do not polish the component or restyle the image. Return one realistic image of the same view without labels or explanatory text. Reconstructed geometry is a plausible image completion, not verified physical ground truth.
