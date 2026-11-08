@@ -1,5 +1,15 @@
 # Experiment index
 
+## Exp13-G3-C0 batch alignment (2026-11-08)
+
+`G3C0_BATCH_ALIGNMENT_READY_FOR_VISUAL_REVIEW`. A fixed CPU SIFT/RANSAC pass
+processed all 36 saved G3-B2 TRAIN outputs after source/JSON/Mask/output
+identity checks. 28 mappings passed the bounded geometry screen (4
+SIFT-validated proportional resize, 5 Similarity RANSAC, 19 Affine RANSAC); 8
+remain `ALIGNMENT_UNVERIFIED`. Native-size composites change only valid pixels
+inside selected target masks. Visual decisions remain `UNREVIEWED`, and
+Trusted Pair PASS=0. See [handoff](exp13_cloud/G3_C0_ALIGNMENT_HANDOFF.md).
+
 ## Exp13-G3-B2 first authorized batch generation (2026-11-08)
 
 `G3B2_BATCH_GENERATION_COMPLETE_PENDING_VISUAL_REVIEW`. The user-authorized
