@@ -256,7 +256,10 @@ def validate_authorization(auth_path: Path, auth: dict[str, Any], manifest_sha: 
                            approved: list[str], rows_by_id: dict[str, dict[str, str]]) -> dict[str, Any]:
     request = protocol["request"]
     require(auth.get("record_type") == "G3B2B_LIVE_AUTHORIZATION" and auth.get("status") == "G3B2B_BATCH_LIVE_APPROVED", "Live authorization record missing or wrong status")
-    require(auth.get("independent_gate_pass") is True and auth.get("user_approved") is True, "Independent and user approval are required")
+    user_direct = auth.get("authorization_basis") == "DIRECT_USER_BATCH_AUTHORIZATION_NO_PRICE_CAP"
+    require(auth.get("user_approved") is True, "User batch authorization is required")
+    if not user_direct:
+        require(auth.get("independent_gate_pass") is True, "Independent Gate approval is required")
     for key, expected in (("batch_manifest_sha256", manifest_sha), ("review_csv_sha256", review_sha),
                           ("prompt_manifest_sha256", prompt_manifest_sha), ("protocol_sha256", protocol_sha)):
         require(auth.get(key) == expected, f"Authorization {key} mismatch")
@@ -266,19 +269,27 @@ def validate_authorization(auth_path: Path, auth: dict[str, Any], manifest_sha: 
     require(auth.get("request_count_cap") == len(approved_ids) and len(approved_ids) <= len(rows_by_id), "Request count cap must equal the authorized exact source set")
     require(auth.get("provider") == request["base_url"] and auth.get("model") == request["model"] and auth.get("endpoint") == request["endpoint"], "Authorization provider/model/endpoint mismatch")
     require(auth.get("n") == 1, "Only one output image per source is supported")
-    missing = MAX_COST_FIELDS - set(auth)
-    require(not missing, "Authorization missing price evidence/cost caps")
-    require(auth.get("currency") and re.fullmatch(r"[A-Z]{3}", str(auth["currency"])), "Currency must be an ISO 4217 code")
-    require(re.fullmatch(r"[0-9a-f]{64}", str(auth.get("price_evidence_sha256", ""))) is not None, "Price evidence SHA256 missing")
-    require(isinstance(auth.get("provider_hard_limit_evidence"), str) and auth["provider_hard_limit_evidence"].strip(), "Provider-enforced cap evidence is required")
-    unit_cap, total_cap = float(auth["unit_price_cap"]), float(auth["total_spend_cap"])
-    require(unit_cap > 0 and total_cap >= unit_cap * len(approved_ids), "Cost caps are invalid or below the authorized request envelope")
-    supported = {tuple(value) for value in auth.get("supported_input_resolutions", []) if isinstance(value, list) and len(value) == 2}
-    require(all((int(rows_by_id[source_id]["image_width"]), int(rows_by_id[source_id]["image_height"])) in supported for source_id in approved_ids), "Provider resolution evidence does not cover every approved source")
+    if user_direct:
+        require(auth.get("cost_status") == "COST_UNKNOWN_USER_AUTHORIZED_WITHOUT_SPEND_CAP", "Direct authorization cost state must remain explicitly unknown")
+        require(auth.get("user_authorization_text") == "直接调用即可，不需要计算费用区间；授权操作", "Direct user authorization text mismatch")
+        require(auth.get("max_posts") == len(approved_ids), "Direct authorization POST maximum must equal its exact source set")
+    else:
+        missing = MAX_COST_FIELDS - set(auth)
+        require(not missing, "Authorization missing price evidence/cost caps")
+        require(auth.get("currency") and re.fullmatch(r"[A-Z]{3}", str(auth["currency"])), "Currency must be an ISO 4217 code")
+        require(re.fullmatch(r"[0-9a-f]{64}", str(auth.get("price_evidence_sha256", ""))) is not None, "Price evidence SHA256 missing")
+        require(isinstance(auth.get("provider_hard_limit_evidence"), str) and auth["provider_hard_limit_evidence"].strip(), "Provider-enforced cap evidence is required")
+        unit_cap, total_cap = float(auth["unit_price_cap"]), float(auth["total_spend_cap"])
+        require(unit_cap > 0 and total_cap >= unit_cap * len(approved_ids), "Cost caps are invalid or below the authorized request envelope")
+        supported = {tuple(value) for value in auth.get("supported_input_resolutions", []) if isinstance(value, list) and len(value) == 2}
+        require(all((int(rows_by_id[source_id]["image_width"]), int(rows_by_id[source_id]["image_height"])) in supported for source_id in approved_ids), "Provider resolution evidence does not cover every approved source")
     reference = auth.get("approval_reference")
     require(isinstance(reference, str) and reference.strip(), "Approval reference is required")
+    if user_direct:
+        return {"sha256": sha256_file(auth_path), "unit_price_cap": None, "total_spend_cap": None,
+                "currency": None, "cost_unknown_authorized": True, "approved_ids": approved_ids}
     return {"sha256": sha256_file(auth_path), "unit_price_cap": unit_cap, "total_spend_cap": total_cap,
-            "currency": auth["currency"], "approved_ids": approved_ids}
+            "currency": auth["currency"], "cost_unknown_authorized": False, "approved_ids": approved_ids}
 
 
 def terminal_state(lock_path: Path, source_dir: Path) -> str:
@@ -328,6 +339,10 @@ def run_batch(manifest_path: Path, review_path: Path, batch_root: Path, executio
         if auth_path is None or not auth_path.is_file():
             raise ValueError("Live mode requires a separate private authorization record")
         auth_value = json.loads(auth_path.read_text(encoding="utf-8-sig"))
+        if auth_value.get("authorization_basis") == "DIRECT_USER_BATCH_AUTHORIZATION_NO_PRICE_CAP":
+            approved = auth_value.get("approved_source_ids", [])
+            require(all(review_by_id.get(source_id, {}).get("review_status") in {"PENDING", "APPROVE"} for source_id in approved),
+                    "Direct batch authorization includes a held or rejected source")
         auth = validate_authorization(auth_path, auth_value, manifest_sha, review_sha, prompt_manifest_sha,
                                       protocol_sha, protocol, approved, rows_by_id)
         transport = transport or HttpTransport()
@@ -349,13 +364,14 @@ def run_batch(manifest_path: Path, review_path: Path, batch_root: Path, executio
     locks = execution_root / "locks"
     results = []
     cumulative_spend = 0.0
+    unknown_cost_ids: list[str] = []
     sent_count = 0
     by_id = {row["source_id"]: row for row in rows}
     for sid in target_ids:
         row = by_id[sid]
         inp = inputs[sid]
         review = review_by_id[sid]
-        if live and review["review_status"] != "APPROVE":
+        if live and review["review_status"] not in ({"PENDING", "APPROVE"} if auth["cost_unknown_authorized"] else {"APPROVE"}):
             raise RuntimeError("Source review changed after authorization; stop")
         source_dir = run_root / sid
         lock_path = locks / f"{sid}.json"
@@ -398,6 +414,9 @@ def run_batch(manifest_path: Path, review_path: Path, batch_root: Path, executio
         reserve_lock(lock_path, lock_payload)
         posted = False
         start = time.monotonic()
+        response_status: int | None = None
+        response_headers: dict[str, str] = {}
+        response_body = b""
         try:
             endpoint = request_record["endpoint"]
             posted = True
@@ -407,6 +426,8 @@ def run_batch(manifest_path: Path, review_path: Path, batch_root: Path, executio
             }, body)
             safe_headers = safe_header_summary(response_headers)
             raw_output, response_record = parse_output(response_status, response_headers, response_body, transport)
+            if response_record.get("response_model") not in (None, request_record["model"]):
+                raise RuntimeError("Response model identity differs from authorized model")
             write_json_exclusive(source_dir / "http_response.json", {
                 "http_status": response_status, "headers": safe_headers,
                 "response_body_sha256": digest(response_body), "response_body_bytes": len(response_body),
@@ -425,27 +446,39 @@ def run_batch(manifest_path: Path, review_path: Path, batch_root: Path, executio
             write_json_exclusive(source_dir / "response_manifest.json", response_record)
             cost = response_record.get("reported_cost")
             if cost is None:
-                cumulative_spend += auth["unit_price_cap"]
-                cost_state = "ACTUAL_COST_UNKNOWN_RESERVED_AT_UNIT_CAP"
+                if auth["cost_unknown_authorized"]:
+                    cost_state = "COST_UNKNOWN_NO_PROVIDER_AMOUNT_RETURNED"
+                    unknown_cost_ids.append(sid)
+                else:
+                    cumulative_spend += auth["unit_price_cap"]
+                    cost_state = "ACTUAL_COST_UNKNOWN_RESERVED_AT_UNIT_CAP"
             else:
                 cost_number = float(cost)
-                if cost_number < 0 or cost_number > auth["unit_price_cap"]:
+                if cost_number < 0 or (auth["unit_price_cap"] is not None and cost_number > auth["unit_price_cap"]):
                     raise RuntimeError("Reported per-request cost exceeds authorization unit cap")
                 cumulative_spend += cost_number
                 cost_state = "PROVIDER_REPORTED"
-            if cumulative_spend > auth["total_spend_cap"]:
+            if auth["total_spend_cap"] is not None and cumulative_spend > auth["total_spend_cap"]:
                 raise RuntimeError("Cumulative cost cap exceeded; stop batch")
             terminal = {"status": "SUCCEEDED", "finished_utc": datetime.now(timezone.utc).isoformat(),
                         "post_invocations": 1, "actual_cost_state": cost_state,
-                        "cumulative_reported_or_reserved_cost": round(cumulative_spend, 8), "currency": auth["currency"],
-                        "continue_allowed": cost is not None}
+                        "cumulative_reported_or_reserved_cost": round(cumulative_spend, 8) if not auth["cost_unknown_authorized"] else None,
+                        "currency": auth["currency"], "continue_allowed": cost is not None or auth["cost_unknown_authorized"]}
             write_json_exclusive(source_dir / "TERMINAL.json", terminal)
             sent_count += 1
             results.append({"source_id": sid, "status": "SUCCEEDED", "post_count": 1,
-                            "cost_state": cost_state, "cumulative_cost": round(cumulative_spend, 8)})
-            if cost is None:
+                            "cost_state": cost_state,
+                            "cumulative_cost": round(cumulative_spend, 8) if not auth["cost_unknown_authorized"] else None})
+            if cost is None and not auth["cost_unknown_authorized"]:
                 raise RuntimeError("Provider omitted per-call cost; stop after this call to preserve total-spend accounting")
         except Exception as error:
+            if response_status is not None and not (source_dir / "http_response.json").exists():
+                write_json_exclusive(source_dir / "http_response.json", {
+                    "http_status": response_status, "headers": safe_header_summary(response_headers),
+                    "response_body_sha256": digest(response_body), "response_body_bytes": len(response_body),
+                    "post_invocations": 1, "redirect_followed": False,
+                    "usage": None, "reported_cost": None, "cost_status": "NOT_RETURNED_OR_UNPARSEABLE",
+                })
             if not (source_dir / "TERMINAL.json").exists():
                 write_json_exclusive(source_dir / "TERMINAL.json", {
                     "status": "FAILED_NO_RETRY", "finished_utc": datetime.now(timezone.utc).isoformat(),
@@ -460,7 +493,12 @@ def run_batch(manifest_path: Path, review_path: Path, batch_root: Path, executio
         "manifest_sha256": manifest_sha, "review_csv_sha256": review_sha,
         "protocol_sha256": protocol_sha, "prompt_manifest_sha256": prompt_manifest_sha,
         "selected_source_count": len(target_ids), "api_post_count": sent_count,
-        "authorization_present": bool(auth), "results": results,
+        "authorization_present": bool(auth),
+        "cost_status": "COST_UNKNOWN" if unknown_cost_ids else ("PROVIDER_REPORTED_NO_SPEND_CAP" if auth and auth["cost_unknown_authorized"] else "COST_REPORTED_OR_CAPPED"),
+        "provider_reported_cost_sum": round(cumulative_spend, 8),
+        "provider_reported_cost_sum_is_complete": not unknown_cost_ids,
+        "cost_unknown_source_ids": unknown_cost_ids,
+        "results": results,
     }
     write_json_exclusive(run_root / f"run_summary_{time.time_ns()}.json", summary)
     return summary

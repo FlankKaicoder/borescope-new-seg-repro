@@ -130,7 +130,7 @@ class G3B2BExecutorTest(unittest.TestCase):
         output_image.save(output_bytes, format="PNG")
         self.output_bytes = output_bytes.getvalue()
         self.success = (200, {"content-type": "application/json", "x-request-id": "mock"}, json.dumps({
-            "model": "mock-model", "data": [{"b64_json": base64.b64encode(self.output_bytes).decode()}],
+            "model": "gpt-image-2.5-sunburst", "data": [{"b64_json": base64.b64encode(self.output_bytes).decode()}],
             "usage": {"cost": 0.25, "total_tokens": 2},
         }).encode())
 
@@ -178,6 +178,9 @@ class G3B2BExecutorTest(unittest.TestCase):
         self.assertEqual(len(fake.post_calls), 1)
         self.assertTrue((self.exec_root / "locks/source_a.json").is_file())
         self.assertFalse((self.exec_root / "locks/source_b.json").exists())
+        failed_response = json.loads((self.exec_root / "live/source_a/http_response.json").read_text())
+        self.assertEqual(failed_response["http_status"], 503)
+        self.assertEqual(failed_response["post_invocations"], 1)
         with self.assertRaisesRegex(RuntimeError, "non-successfully"):
             self.execute(True, fake)
         self.assertEqual(len(fake.post_calls), 1)
@@ -226,6 +229,39 @@ class G3B2BExecutorTest(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError, "cost/evidence is incomplete"):
             self.execute(True, fake)
         self.assertEqual(len(fake.post_calls), 1)
+
+    def test_explicit_user_batch_authorization_allows_pending_exact_set_with_cost_unknown(self):
+        self.review_rows = [{**row, "review_status": "PENDING"} for row in self.review_rows]
+        review_fields = ["source_id", "source_image_sha256", "prompt_id", "prompt_file_sha256", "review_status", "review_notes"]
+        write_csv(self.review, self.review_rows, review_fields)
+        direct_auth = {
+            "record_type": "G3B2B_LIVE_AUTHORIZATION", "status": "G3B2B_BATCH_LIVE_APPROVED",
+            "authorization_basis": "DIRECT_USER_BATCH_AUTHORIZATION_NO_PRICE_CAP", "user_approved": True,
+            "user_authorization_text": "直接调用即可，不需要计算费用区间；授权操作",
+            "batch_manifest_sha256": sha(self.manifest.read_bytes()), "review_csv_sha256": sha(self.review.read_bytes()),
+            "prompt_manifest_sha256": sha((self.batch / "prompt_manifest.json").read_bytes()),
+            "protocol_sha256": load_protocol(REPO)[1], "approved_source_ids": ["source_a", "source_b"],
+            "request_count_cap": 2, "max_posts": 2,
+            "provider": "https://direct-api.ccccapi.cc", "model": "gpt-image-2.5-sunburst",
+            "endpoint": "/v1/images/edits", "n": 1,
+            "cost_status": "COST_UNKNOWN_USER_AUTHORIZED_WITHOUT_SPEND_CAP",
+            "approval_reference": "User explicitly authorized the exact batch without a price-range calculation",
+        }
+        direct_path = self.private / "direct_batch_authorization.json"
+        direct_path.write_text(json.dumps(direct_auth, ensure_ascii=False), encoding="utf-8")
+        no_cost = (200, {"content-type": "application/json"}, json.dumps({
+            "data": [{"b64_json": base64.b64encode(self.output_bytes).decode()}],
+            "usage": {"total_tokens": 1},
+        }).encode())
+        fake = MockTransport([no_cost, no_cost])
+        result = self.execute(True, fake, direct_path)
+        self.assertEqual(result["api_post_count"], 2)
+        self.assertEqual(result["cost_status"], "COST_UNKNOWN")
+        self.assertEqual(len(fake.post_calls), 2)
+        for sid in ("source_a", "source_b"):
+            terminal = json.loads((self.exec_root / "live" / sid / "TERMINAL.json").read_text())
+            self.assertTrue(terminal["continue_allowed"])
+            self.assertEqual(terminal["actual_cost_state"], "COST_UNKNOWN_NO_PROVIDER_AMOUNT_RETURNED")
 
     def test_review_atlas_exposes_batch_approve_and_mask_views(self):
         atlas = self.private / "atlas"
