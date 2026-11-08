@@ -1,5 +1,14 @@
 # Experiment index
 
+## Exp13-G3-C0 review UI recovery (2026-11-08)
+
+`G3C0_REVIEW_UI_RECOVERY_PASS`. Restored the user's private 36-row review CSV
+into a new offline page: 31 `VISUAL_PASS`, 5 `NEEDS_RETRY`, all six nonempty
+notes preserved, and Geometry remains equal to frozen 28/8 diagnostics. Added
+transactional CSV import, robust UTF-8-BOM export, delayed Blob URL release,
+copy fallback, and guarded local autosave. Tests: Node 10/10 and Python 3/3.
+See [handoff](exp13_cloud/G3_C0_REVIEW_UI_RECOVERY_HANDOFF.md).
+
 ## Exp13-G3-C0 batch alignment (2026-11-08)
 
 `G3C0_BATCH_ALIGNMENT_READY_FOR_VISUAL_REVIEW`. A fixed CPU SIFT/RANSAC pass
