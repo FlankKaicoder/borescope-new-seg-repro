@@ -37,17 +37,20 @@ if (Test-Path -LiteralPath $execution) { throw 'Execution root already exists; p
 $auth = Get-Content -LiteralPath $authorizationPath -Raw | ConvertFrom-Json
 $ids = @($auth.approved_source_ids | ForEach-Object { [string]$_ })
 $expected = @('556', '640', '645')
+$idsKey = (@($ids | Sort-Object) -join ',')
+$expectedKey = (@($expected | Sort-Object) -join ',')
 if ($auth.record_type -cne 'G3C2_V2_BATCH_AUTHORIZATION' -or
     $auth.status -cne 'G3C2_V2_BATCH_AUTHORIZED' -or
     $auth.authorization_basis -cne 'EXPLICIT_USER_AUTHORIZATION_IN_CURRENT_TURN' -or
     $auth.gate_status -cne 'G3C2_FINAL_PREFLIGHT_PASS / BOUNDED' -or
     $auth.max_posts -ne 3 -or $auth.request_count_cap -ne 3 -or
-    $ids.Count -ne 3 -or @($ids | Sort-Object) -join ',' -cne @($expected | Sort-Object) -join ',') {
+    $ids.Count -ne 3 -or $idsKey -cne $expectedKey) {
     throw 'G3-C2 authorization must bind exactly the three approved sources and a three-POST maximum.'
 }
 $rows = @(Import-Csv -LiteralPath $manifestPath)
 $manifestIds = @($rows | ForEach-Object { [string]$_.source_id })
-if ($manifestIds.Count -ne 3 -or @($manifestIds | Sort-Object) -join ',' -cne @($expected | Sort-Object) -join ',') {
+$manifestKey = (@($manifestIds | Sort-Object) -join ',')
+if ($manifestIds.Count -ne 3 -or $manifestKey -cne $expectedKey) {
     throw 'G3-C2 request Manifest is not the exact authorized three-source set.'
 }
 $baseUrl = [Environment]::GetEnvironmentVariable('BORESCOPE_IMAGE_BASE_URL', 'User')
