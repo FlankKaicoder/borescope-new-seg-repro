@@ -1,6 +1,8 @@
 # Project state
 
-Latest local engineering state (2026-11-09): **`G3C2_V2_LIVE_READY`**. Five
+Latest local engineering state (2026-11-09): **`G3D1_METHOD_STUDY_COMPLETE_PENDING_CHATGPT_AUDIT_GATE`**. CPU-only G3-D0/D1 compared the frozen 36 G3-C0 pairs and three G3-C2 V2 pairs with deterministic spatially held-out SIFT and ORB Similarity/Affine fits. On C0, SIFT holdout yielded 16 PASS / 17 FAIL / 3 insufficient and ORB 16 / 19 / 1; these diagnostics do not retroactively alter C0 geometry. C2 645 passes both held-out checks and remains a geometry candidate; 556 is insufficient/ORB-tail-fail; 640 fails both on P90. A synthetic known-affine control recovers 0.078 px median corner error. Local target-neighborhood footprint coverage is available for 28 existing C0 masks only and is not evidence of mechanical correspondence. `TRUSTED_PAIR_PASS=0`; six-class 60-source repair batch is not ready. See [G3-D0/D1 research](exp13_cloud/G3_D0_D1_ALIGNMENT_PAIR_QUALITY_RESEARCH.md) and [handoff](exp13_cloud/G3_D0_D1_HANDOFF.md). Private JSON and atlases remain under `E:\borescope_review_assets`; API POST/GPU/training/TEST=0.
+
+Latest preceding state (2026-11-09): **`G3C2_V2_LIVE_READY`**. Five
 frozen retry cases were diagnosed; four TRAIN sources are bound to a new
 Prompt V2 request Manifest (SHA256
 `2689a94ead5f8e395c20a0c38d807acec0af958d65d9001b2598f2e3cc5c0f52`), one

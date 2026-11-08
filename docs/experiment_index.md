@@ -1,5 +1,19 @@
 # Experiment index
 
+## Exp13-G3-D0/D1 geometry registration and Local Change Pair quality (2026-11-09)
+
+`G3D1_METHOD_STUDY_COMPLETE_PENDING_CHATGPT_AUDIT_GATE`. Independent spatial
+holdout evaluated 36 frozen C0 and 3 C2 V2 pairs with SIFT and ORB under fixed
+Similarity/Affine RANSAC. C0 holdout: SIFT 16 PASS / 17 FAIL / 3 insufficient;
+ORB 16 / 19 / 1. C2 645 passes both checks; 556 remains insufficient and
+640 fails both on held-out tails. These do not change historical geometry
+labels. Synthetic known-transform control error=0.078 px; Trusted Pair PASS=0.
+Keep mature SIFT/resize/Similarity/Affine C0 as baseline and use holdout plus
+manual mechanical/local review as additional Gate evidence. The 60-source
+repair batch is not ready. See [research report](exp13_cloud/G3_D0_D1_ALIGNMENT_PAIR_QUALITY_RESEARCH.md),
+[handoff](exp13_cloud/G3_D0_D1_HANDOFF.md), and private
+`E:\borescope_review_assets\g3d1_alignment_method_study_20261109\alignment_validation.json`.
+
 ## Exp13-G3-C2 Prompt V2 preparation (2026-11-09)
 
 `G3C2_V2_LIVE_READY`. The five frozen retry cases were diagnosed separately.
