@@ -264,6 +264,38 @@ class G3B2BExecutorTest(unittest.TestCase):
             self.assertTrue(terminal["continue_allowed"])
             self.assertEqual(terminal["actual_cost_state"], "COST_UNKNOWN_NO_PROVIDER_AMOUNT_RETURNED")
 
+    def test_g3c2_authorization_uses_its_own_exact_set_and_cost_unknown_record(self):
+        self.review_rows = [{**row, "review_status": "PENDING"} for row in self.review_rows]
+        review_fields = ["source_id", "source_image_sha256", "prompt_id", "prompt_file_sha256", "review_status", "review_notes"]
+        write_csv(self.review, self.review_rows, review_fields)
+        protocol, protocol_sha = load_protocol(REPO)
+        record = {
+            "record_type": "G3C2_V2_BATCH_AUTHORIZATION", "status": "G3C2_V2_BATCH_AUTHORIZED",
+            "authorization_basis": "EXPLICIT_USER_AUTHORIZATION_IN_CURRENT_TURN",
+            "gate_status": "G3C2_FINAL_PREFLIGHT_PASS / BOUNDED", "scope": "EXACT_SOURCE_SET_ONLY",
+            "user_approved": True, "approved_source_ids": ["source_a", "source_b"],
+            "request_count_cap": 2, "max_posts": 2, "n": 1,
+            "batch_manifest_sha256": sha(self.manifest.read_bytes()),
+            "review_csv_sha256": sha(self.review.read_bytes()),
+            "prompt_manifest_sha256": sha((self.batch / "prompt_manifest.json").read_bytes()),
+            "protocol_sha256": protocol_sha, "provider": protocol["request"]["base_url"],
+            "model": protocol["request"]["model"], "endpoint": protocol["request"]["endpoint"],
+            "cost_status": "COST_UNKNOWN_ACCEPTED", "cost_unknown_acknowledged": True,
+            "authorization_reference": "Current Exp13-G3-C2 user authorization; exact two-source synthetic fixture",
+        }
+        path = self.private / "g3c2_authorization_fixture.json"
+        path.write_text(json.dumps(record, ensure_ascii=False), encoding="utf-8")
+        no_cost = (200, {"content-type": "application/json"}, json.dumps({
+            "data": [{"b64_json": base64.b64encode(self.output_bytes).decode()}], "usage": {"total_tokens": 1},
+        }).encode())
+        fake = MockTransport([no_cost, no_cost])
+        result = self.execute(True, fake, path)
+        self.assertEqual(result["api_post_count"], 2)
+        self.assertEqual(result["cost_status"], "COST_UNKNOWN")
+        self.assertEqual(len(fake.post_calls), 2)
+        stored = json.loads((self.exec_root / "live/source_a/request_manifest.json").read_text())
+        self.assertNotIn("user_authorization_text", stored)
+
     def test_review_atlas_exposes_batch_approve_and_mask_views(self):
         atlas = self.private / "atlas"
         atlas.mkdir()

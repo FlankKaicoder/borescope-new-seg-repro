@@ -255,10 +255,23 @@ def validate_authorization(auth_path: Path, auth: dict[str, Any], manifest_sha: 
                            prompt_manifest_sha: str, protocol_sha: str, protocol: dict[str, Any],
                            approved: list[str], rows_by_id: dict[str, dict[str, str]]) -> dict[str, Any]:
     request = protocol["request"]
-    require(auth.get("record_type") == "G3B2B_LIVE_AUTHORIZATION" and auth.get("status") == "G3B2B_BATCH_LIVE_APPROVED", "Live authorization record missing or wrong status")
+    g3c2 = auth.get("record_type") == "G3C2_V2_BATCH_AUTHORIZATION"
+    if g3c2:
+        require(auth.get("status") == "G3C2_V2_BATCH_AUTHORIZED", "G3-C2 batch authorization status is missing")
+        require(auth.get("authorization_basis") == "EXPLICIT_USER_AUTHORIZATION_IN_CURRENT_TURN",
+                "G3-C2 authorization basis mismatch")
+        require(auth.get("gate_status") == "G3C2_FINAL_PREFLIGHT_PASS / BOUNDED",
+                "G3-C2 bounded preflight Gate is missing")
+        require(auth.get("scope") == "EXACT_SOURCE_SET_ONLY" and auth.get("cost_unknown_acknowledged") is True,
+                "G3-C2 scope or COST_UNKNOWN acceptance is missing")
+        require(auth.get("cost_status") == "COST_UNKNOWN_ACCEPTED", "G3-C2 cost state must remain unknown")
+    else:
+        require(auth.get("record_type") == "G3B2B_LIVE_AUTHORIZATION" and
+                auth.get("status") == "G3B2B_BATCH_LIVE_APPROVED",
+                "Live authorization record missing or wrong status")
     user_direct = auth.get("authorization_basis") == "DIRECT_USER_BATCH_AUTHORIZATION_NO_PRICE_CAP"
     require(auth.get("user_approved") is True, "User batch authorization is required")
-    if not user_direct:
+    if not user_direct and not g3c2:
         require(auth.get("independent_gate_pass") is True, "Independent Gate approval is required")
     for key, expected in (("batch_manifest_sha256", manifest_sha), ("review_csv_sha256", review_sha),
                           ("prompt_manifest_sha256", prompt_manifest_sha), ("protocol_sha256", protocol_sha)):
@@ -273,6 +286,8 @@ def validate_authorization(auth_path: Path, auth: dict[str, Any], manifest_sha: 
         require(auth.get("cost_status") == "COST_UNKNOWN_USER_AUTHORIZED_WITHOUT_SPEND_CAP", "Direct authorization cost state must remain explicitly unknown")
         require(auth.get("user_authorization_text") == "直接调用即可，不需要计算费用区间；授权操作", "Direct user authorization text mismatch")
         require(auth.get("max_posts") == len(approved_ids), "Direct authorization POST maximum must equal its exact source set")
+    elif g3c2:
+        require(auth.get("max_posts") == len(approved_ids), "G3-C2 POST maximum must equal its authorized exact source set")
     else:
         missing = MAX_COST_FIELDS - set(auth)
         require(not missing, "Authorization missing price evidence/cost caps")
@@ -283,9 +298,9 @@ def validate_authorization(auth_path: Path, auth: dict[str, Any], manifest_sha: 
         require(unit_cap > 0 and total_cap >= unit_cap * len(approved_ids), "Cost caps are invalid or below the authorized request envelope")
         supported = {tuple(value) for value in auth.get("supported_input_resolutions", []) if isinstance(value, list) and len(value) == 2}
         require(all((int(rows_by_id[source_id]["image_width"]), int(rows_by_id[source_id]["image_height"])) in supported for source_id in approved_ids), "Provider resolution evidence does not cover every approved source")
-    reference = auth.get("approval_reference")
+    reference = auth.get("authorization_reference") if g3c2 else auth.get("approval_reference")
     require(isinstance(reference, str) and reference.strip(), "Approval reference is required")
-    if user_direct:
+    if user_direct or g3c2:
         return {"sha256": sha256_file(auth_path), "unit_price_cap": None, "total_spend_cap": None,
                 "currency": None, "cost_unknown_authorized": True, "approved_ids": approved_ids}
     return {"sha256": sha256_file(auth_path), "unit_price_cap": unit_cap, "total_spend_cap": total_cap,
@@ -339,7 +354,11 @@ def run_batch(manifest_path: Path, review_path: Path, batch_root: Path, executio
         if auth_path is None or not auth_path.is_file():
             raise ValueError("Live mode requires a separate private authorization record")
         auth_value = json.loads(auth_path.read_text(encoding="utf-8-sig"))
-        if auth_value.get("authorization_basis") == "DIRECT_USER_BATCH_AUTHORIZATION_NO_PRICE_CAP":
+        if auth_value.get("record_type") == "G3C2_V2_BATCH_AUTHORIZATION":
+            approved = auth_value.get("approved_source_ids", [])
+            require(all(review_by_id.get(source_id, {}).get("review_status") in {"PENDING", "APPROVE"} for source_id in approved),
+                    "G3-C2 authorization includes a held or rejected source")
+        elif auth_value.get("authorization_basis") == "DIRECT_USER_BATCH_AUTHORIZATION_NO_PRICE_CAP":
             approved = auth_value.get("approved_source_ids", [])
             require(all(review_by_id.get(source_id, {}).get("review_status") in {"PENDING", "APPROVE"} for source_id in approved),
                     "Direct batch authorization includes a held or rejected source")
