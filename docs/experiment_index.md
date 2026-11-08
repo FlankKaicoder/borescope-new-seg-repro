@@ -1,5 +1,15 @@
 # Experiment index
 
+## Exp13-G3-C1 human review closeout (2026-11-08)
+
+`G3C1_VISUAL_REVIEW_CLOSEOUT_READY`. The recovered exact-set contains 31
+visual passes and 5 retries. Of 31 passes, 24 have a geometry candidate and 7
+remain alignment-unverified. One pass note rejects Pair use, leaving 23
+unambiguous cases proposed for bounded Pair-fidelity review; Trusted Pair
+PASS remains zero. A visual decision/notes discrepancy and raw-output UI
+removal are disclosed without changing the CSV. See
+[closeout](exp13_cloud/G3_C1_VISUAL_REVIEW_CLOSEOUT.md).
+
 ## Exp13-G3-C0 review UI recovery (2026-11-08)
 
 `G3C0_REVIEW_UI_RECOVERY_PASS`. Restored the user's private 36-row review CSV
