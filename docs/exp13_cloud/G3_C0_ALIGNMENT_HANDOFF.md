@@ -52,8 +52,8 @@ fidelity.
 ## Private assets
 
 The complete run is under the user's private asset root in the new
-`g3c0_alignment_20261108_final_verified` directory. Open its `index.html` in a
-local browser. Use `review.csv` to record `VISUAL_PASS`, `VISUAL_FAIL`, or
+`g3c0_alignment_20261108_release` directory. Open its `index.html` in a local
+browser. Use `review.csv` to record `VISUAL_PASS`, `VISUAL_FAIL`, or
 `NEEDS_RETRY`; the initial state is `UNREVIEWED`. Do not treat a visual pass or
 geometry candidate as a Trusted Pair decision.
 
