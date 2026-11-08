@@ -1,5 +1,14 @@
 # Experiment index
 
+## Exp13-G3-B2 first authorized batch generation (2026-11-08)
+
+`G3B2_BATCH_GENERATION_COMPLETE_PENDING_VISUAL_REVIEW`. The user-authorized
+36-source batch returned 36/36 HTTP 200 outputs with no retries, failures or
+skips. Usage totaled 12,161 tokens; response cost was absent for all calls and
+remains unknown. Provider output dimensions differ from native source sizes,
+so no alignment or Trusted Pair claim is made. All private visual decisions
+start `UNREVIEWED`. See [generation review](exp13_cloud/G3_B2_BATCH_GENERATION_REVIEW.md).
+
 ## Exp13-G3-B2-B batch executor preparation (2026-11-08)
 
 `G3B2B_EXECUTOR_READY_FOR_HUMAN_REVIEW`. Expanded the private initial
