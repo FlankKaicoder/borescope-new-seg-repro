@@ -1,0 +1,66 @@
+/* Browser integration against a private build; all clicks are QA only, never human evidence.
+ * node test_g3d2_browser.cjs PRIVATE_BUILD PLAYWRIGHT_CORE_DIRECTORY PRIVATE_QA_OUTPUT
+ */
+const {chromium}=require(process.argv[3]);
+const fs=require('node:fs/promises'),path=require('node:path'),assert=require('node:assert/strict');
+const {pathToFileURL}=require('node:url');
+(async()=>{
+ const [build,qa]=[process.argv[2],process.argv[4]];
+ await fs.mkdir(qa,{recursive:false});
+ const browser=await chromium.launch({channel:'chrome',headless:true});
+ const context=await browser.newContext({viewport:{width:1440,height:1000},acceptDownloads:true});
+ const page=await context.newPage(), errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto(pathToFileURL(path.join(build,'index.html')).href);
+ await page.waitForFunction(()=>document.querySelector('#source').width>0&&document.querySelector('#source').getBoundingClientRect().height>0&&document.querySelector('#source').style.width!=='');
+ const tests=[];const ok=name=>tests.push(name);
+ assert.equal(await page.locator('#pair option').count(),18);ok('18 stratified variants render');
+ await page.locator('#reviewer').fill('BROWSER_QA_SYNTHETIC_NOT_HUMAN');await page.locator('#reviewer').blur();
+ await page.locator('#zoom').selectOption('0.5');
+ await page.locator('#source').scrollIntoViewIfNeeded();
+ await page.waitForTimeout(150);
+ const box=await page.locator('#source').boundingBox();
+ const native=await page.locator('#source').evaluate(c=>[c.width,c.height]);
+ await page.locator('#source').evaluate(c=>c.addEventListener('click',e=>{
+   const rect=c.getBoundingClientRect();window.qaNativeClick=[(e.clientX-rect.left)/rect.width*c.width,(e.clientY-rect.top)/rect.height*c.height].map(v=>Math.round(v*100)/100);
+ },{once:true}));
+ await page.locator('#source').click({position:{x:35,y:25}});
+ const clicked=JSON.parse((await page.locator('#coordinates').innerText()).match(/源坐标 (\[[^\]]+\])/)[1]);
+ const wanted=await page.evaluate(()=>window.qaNativeClick);assert.deepEqual(clicked,wanted);ok('zoomed click maps actual pointer event to exact native source coordinates');
+ await page.locator('#output').click({position:{x:40,y:30}});
+ await page.locator('#label').fill('QA 点位, "备份"\n');await page.locator('#label').blur();
+ await page.locator('#uncertainty').fill('1');await page.locator('#uncertainty').blur();
+ await page.locator('#pointStatus').selectOption('CONFIRMED');
+ assert.equal(await page.locator('#pointStatus').inputValue(),'CONFIRMED');ok('point identity confirmation accepts complete fields');
+ await page.locator('#notes').fill('QA ONLY：恢复状态和中文,逗号"引号"');await page.locator('#notes').blur();
+ await page.locator('details.backup summary').click();
+ await page.locator('#backup').click();const snapshot=await page.locator('#backupText').inputValue();
+ assert.equal(JSON.parse(snapshot).records[0].points[0].status,'CONFIRMED');
+ await page.reload();await page.waitForSelector('#label');assert.equal(await page.locator('#pointStatus').inputValue(),'CONFIRMED');ok('local autosave survives page reload');
+ const downloadPromise=page.waitForEvent('download');await page.locator('#export').click();const download=await downloadPromise;
+ await download.saveAs(path.join(qa,'QA_ONLY_export.json'));
+ const exported=JSON.parse(await fs.readFile(path.join(qa,'QA_ONLY_export.json'),'utf8'));assert.equal(exported.records[0].reviewer,'BROWSER_QA_SYNTHETIC_NOT_HUMAN');ok('download carries complete review identity');
+ await page.locator('#next').click();await page.locator('#prev').click();assert.equal(await page.locator('#pointStatus').inputValue(),'CONFIRMED');ok('pair navigation retains point state');
+ const invalid=structuredClone(exported);invalid.bundle_id='wrong';
+ await page.locator('#file').setInputFiles({name:'wrong.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(invalid))});
+ assert.match(await page.locator('#notice').innerText(),/导入失败/);assert.equal(await page.locator('#pointStatus').inputValue(),'CONFIRMED');ok('wrong bundle import rejected atomically');
+ const pristine=await fs.readFile(path.join(build,'review_initial.json'));
+ await page.locator('#file').setInputFiles({name:'initial.json',mimeType:'application/json',buffer:pristine});
+ assert.equal(await page.locator('#pointStatus').inputValue(),'PENDING');ok('JSON file import restores initial pending review');
+ await page.locator('details.backup summary').click();
+ await page.locator('#backupText').fill(JSON.stringify(exported));await page.locator('#restoreText').click();assert.equal(await page.locator('#pointStatus').inputValue(),'CONFIRMED');ok('text fallback restore works');
+ await page.evaluate(()=>{Storage.prototype.setItem=function(){throw new Error('QA storage quota');};});
+ await page.locator('#notes').fill('QA quota fallback');await page.locator('#notes').blur();assert.match(await page.locator('#status').innerText(),/自动保存失败/);ok('autosave failure visible');
+ await page.locator('#pair').selectOption('16');await page.locator('#evidence').click();
+ assert.match(await page.locator('#gallery').innerText(),/无历史有效变换/);ok('unregistered control has no synthetic aligned composite');
+ await page.locator('#pair').selectOption('0');await page.locator('#evidence').click();
+ await page.locator('#gallery img').first().waitFor();
+ const broken=await page.evaluate(()=>[...document.querySelectorAll('#gallery img')].filter(i=>i.complete&&i.naturalWidth===0).length);assert.equal(broken,0);ok('existing evidence gallery links decode');
+ await page.screenshot({path:path.join(qa,'desktop.png')});
+ await page.setViewportSize({width:390,height:844});await page.waitForTimeout(100);
+ assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+ await page.screenshot({path:path.join(qa,'mobile.png')});ok('mobile layout has no page overflow');
+ assert.deepEqual(errors,[]);ok('no browser runtime errors');
+ await fs.writeFile(path.join(qa,'browser_qa.json'),JSON.stringify({qa_only:true,tests,passed:tests.length,errors},null,2),{flag:'wx'});
+ console.log(JSON.stringify({passed:tests.length,errors,qa_output:qa},null,2));
+ await browser.close();
+})().catch(e=>{console.error(e);process.exit(1);});

@@ -2,6 +2,13 @@
 
 Status: `G3D1_METHOD_STUDY_COMPLETE_PENDING_CHATGPT_AUDIT_GATE`.
 
+G3-D2 correction: the holdout diagnostics below concern newly fitted D1 fold
+models, not the saved C0/C2 transforms. D1 persisted full-match refit matrices,
+not those fold matrices. The 15/12/1 cross-count is not C0 true correctness.
+Full cohort=39 variants/17 passes per feature family; C0-only=36/16 passes.
+Coverage used clipped valid-target masks; full masks remain in the frozen
+batch package. See the corrected D1 report and G3-D2 independent benchmark.
+
 The frozen G3-C0 and G3-C2 outputs were compared CPU-only with an independent
 spatially held-out correspondence evaluation. The D1 diagnostic retains the
 existing C0 alignment and composite implementation as the production baseline
@@ -24,7 +31,8 @@ Review existing private atlases at
 `E:\borescope_review_assets\g3c2_v2_alignment_20261109_retry2\v1_v2_comparison.html`.
 The sanitized method report is [G3-D0/D1 research](G3_D0_D1_ALIGNMENT_PAIR_QUALITY_RESEARCH.md).
 
-Validation: 6/6 D1 + G3-C0 synthetic tests; 39/39 private pair variants
+Validation: 6/6 D1 + G3-C0 synthetic tests (1 + 5); the final 9/9 command also
+included 3 G3-C1 closeout tests. 39/39 private pair variants
 processed. API POST=0, GPU/training=0, TEST access=0, raw source/mask writes=0,
 Trusted Pair PASS=0. The protected untracked G2 audit script was not modified.
 

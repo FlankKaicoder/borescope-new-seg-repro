@@ -1,0 +1,22 @@
+{
+  "experiment_id": "Exp13-G3-D2",
+  "status": "G3D2_BENCHMARK_READY_PENDING_HUMAN_REVIEW_AND_CHATGPT_GATE",
+  "starting_head": "cb5030f84149148aa5d5564e41382bf02c58336c",
+  "bundle_id": "87112e0ea76b8f997f9be43b0e03480cedf4e8af45c38268174d9a566d7f7c69",
+  "pair_variants": 18,
+  "unique_train_sources": 17,
+  "point_slots": 120,
+  "human_confirmed_points": 0,
+  "pending_pair_reviews": 18,
+  "saved_transform_exact_render_reproductions": 16,
+  "trusted_pair_pass": 0,
+  "class_pair_counts": {"Burn": 3, "Crack": 2, "Dent": 2, "Material missing": 5, "Tears": 2, "corrosion": 4},
+  "full_mask_audit": {"old_c0_candidate_masks_checked": 28, "sources_with_clipped_target": 1, "omitted_pixels": 441},
+  "tests_passed": {"d2_python": 8, "d2_js_contracts": 10, "d2_chrome_workflows": 14, "existing_python_d1_c0_c1": 9, "existing_c0_js_ui": 10},
+  "model_fitting_calls": 0,
+  "cloud_posts": 0,
+  "gpu_training": 0,
+  "test_image_access": 0,
+  "thesis_access": 0,
+  "expansion_60_source_ready": false
+}

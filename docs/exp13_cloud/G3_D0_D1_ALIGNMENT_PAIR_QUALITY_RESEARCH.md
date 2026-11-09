@@ -2,6 +2,14 @@
 
 Status: `G3D1_METHOD_STUDY_COMPLETE_PENDING_CHATGPT_AUDIT_GATE`.
 
+Interpretation correction (G3-D2, 2026-11-09): D1 fitted new models. Its
+spatial holdout is a diagnostic of automatic correspondences and the newly
+fitted fold model, **not a measurement of the saved C0 transform**. The matrix
+persisted by D1 is a further full-match refit; the fold matrix used to compute
+holdout error was not saved. D2 freezes these distinct model families for
+evaluation against human landmarks. No D1 holdout outcome proves true
+mechanical correspondence or retroactively invalidates a saved C0 transform.
+
 ## Question and scope
 
 This CPU-only study asks whether the frozen G3-C0 feature-screen candidates
@@ -38,25 +46,31 @@ aspect ratios, so a photometric optimizer can converge to content similarity
 rather than mechanical correspondence. It remains a separately testable
 candidate if a valid ROI/photo-robust initialization is established.
 
-The saved C0 polygons/masks are not available alongside every private review
-render. The validator therefore reports target-neighborhood coverage only for
-the 28 C0 records with persisted valid target masks. That statistic measures
-geometric footprint coverage, not local structural alignment. UI/Logo masks
-and expert mechanical landmarks were not available to this computation.
+D1 read `valid_target_mask.png` for the 28 C0 candidates. This is the original
+target intersected with historical valid support, not the full Repair Mask.
+Its neighborhood metric can therefore hide omitted target portions. The full
+frozen masks do exist in the private batch package; the eight unverified
+records simply had no valid-target render in the C0 atlas. D2 retrieves all
+selected full masks and reports coverage from the full target. These metrics
+measure footprint coverage, not structural alignment. UI/Logo masks and
+expert mechanical landmarks were not available to the D1 computation.
 
 ## Results
 
 The synthetic control passed. On the 36 C0 variants, the spatial holdout
 classified SIFT Affine as 16 PASS, 17 FAIL, and 3 insufficient; ORB Affine as
-16 PASS, 19 FAIL, and 1 insufficient. Thus the independent test exposes many
-feature-screen candidates whose in-sample fit did not generalize. Among the
+16 PASS, 19 FAIL, and 1 insufficient. These results describe the D1 newly
+fitted models and their automatic match set. They do not measure the saved
+C0 mapping's true error. Cross-tabulating original C0 labels with D1 SIFT
+Affine diagnostics, among the
 28 original `GEOMETRY_CANDIDATE` records, SIFT holdout produced 15 PASS, 12
 FAIL, and 1 insufficient. Of the original 8 `ALIGNMENT_UNVERIFIED` records,
 one unexpectedly passes SIFT holdout, five fail, and two remain insufficient.
 That one diagnostic pass is not a promotion: the test uses full-frame
 appearance features and still lacks independent target/UI/mechanical review.
 
-Across all C0 variants, SIFT and ORB each have 17 held-out passes. Their
+Across all **39 variants** (36 C0 V1 plus 3 C2 V2), SIFT and ORB each have
+17 held-out passes; the C0-only totals are 16 each. Their
 failure patterns and tail errors differ by source; ORB does not produce a
 consistent gain and should remain a diagnostic cross-check, not replace SIFT.
 The accepted C0 baseline methods (proportional resize, Similarity, Affine)
@@ -73,18 +87,20 @@ For the three C2 V2 variants:
 | 640 | `ALIGNMENT_UNVERIFIED`, 11 original matches | median 1.05 px, P90 316.14 px; fail | median 1.22 px, P90 24.48 px; fail | Large outlier tail and no method agreement. Keep unregistered. |
 | 645 | `GEOMETRY_CANDIDATE`, 76/77 original inliers | median 1.04 px, P90 2.08 px; pass | median 0.85 px, P90 7.44 px; pass | Independent SIFT/ORB evidence supports a geometry candidate. |
 
-Source 645 is the only C2 pair with convergent held-out evidence. This supports
-its geometric mapping, not semantic repair, defect-edge fidelity, composite
-quality, or training eligibility. The existing private V2 comparison album
+Source 645 is the only C2 pair with convergent held-out automatic diagnostics.
+This motivates independent evaluation of the saved C2 and new D1 transforms;
+it does not establish their true mechanical accuracy, semantic repair,
+defect-edge fidelity, composite quality, or training eligibility. The existing private V2 comparison album
 remains the human visual review artifact.
 
-For C0 target-neighborhood coverage, both SIFT and ORB affine transforms had
+For C0 target-neighborhood coverage **using already clipped targets**, both SIFT and ORB affine transforms had
 median valid footprint 1.00 across the 28 available masks (minimum 0.844 and
 0.830 respectively; 27/28 at least 0.98). These high values show that the
 projected raw canvas reaches the polygon neighborhood. They do not establish
 that the corresponding metal edge or component is correct. The remaining
-eight sources lack a persisted target mask in the review renders, so this
-local metric is unavailable for them.
+eight sources lack a persisted valid-target mask in the review renders, so
+D1 did not compute this local metric for them. The numbers above are retained
+as historical diagnostics and must not be cited as full-target coverage.
 
 ## Pair quality and failure interpretation
 
@@ -119,7 +135,10 @@ C2 V1/V2 comparison at
 
 The D1 tool is a diagnostic around the mature C0 alignment/composite path; it
 does not replace that path or rewrite prior results. Tests: D1 known-transform
-control plus G3-C0 synthetic suite, 6/6 PASS. Full private run: 39/39 pairs.
+control plus G3-C0 synthetic suite, 6/6 PASS (1 D1 + 5 C0 tests). The final
+9/9 invocation added 3 G3-C1 closeout tests; it was not nine geometry tests.
+Full private run: 39/39 pairs. D1 `variant` repeats the source ID; D2 resolves
+V1/V2 by frozen cohort position and verifies both rendered-image hashes.
 
 ## Production recommendation and Gate
 

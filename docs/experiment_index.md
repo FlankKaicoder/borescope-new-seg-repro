@@ -1,5 +1,19 @@
 # Experiment index
 
+## Exp13-G3-D2 independent mechanical benchmark and Pair quality (2026-11-09)
+
+`G3D2_BENCHMARK_READY_PENDING_HUMAN_REVIEW_AND_CHATGPT_GATE`. Eighteen variants
+from17 TRAIN sources cover six classes, holdout disagreements, UI/multi-Polygon
+risks and C2 556/640/645. Offline native-coordinate landmark review has120
+empty slots with JSON recovery. Saved C0/C2 and D1 refits are frozen separately;
+the evaluator never fits manual points. Actual human TRE and18 fresh Pair
+reviews remain PENDING, Trusted Pair PASS=0. D1 interpretation/test-count
+errata are corrected; full-mask audit finds914 omitted441 pixels. D2 tests:
+Python8/JS10/Chrome14 PASS; existing Python9/UI10 PASS. See [report](exp13_cloud/G3_D2_MECHANICAL_BENCHMARK_REVIEW.md),
+[handoff](exp13_cloud/G3_D2_HANDOFF.md), [sanitized result](../results/exp13_g3d2/sanitized_summary.json).
+Private atlas: `E:\borescope_review_assets\g3d2_mechanical_benchmark_20261109_release_verified\index.html`.
+Stop for ChatGPT audit/human review; no60-source generation or training.
+
 ## Exp13-G3-D0/D1 geometry registration and Local Change Pair quality (2026-11-09)
 
 `G3D1_METHOD_STUDY_COMPLETE_PENDING_CHATGPT_AUDIT_GATE`. Independent spatial

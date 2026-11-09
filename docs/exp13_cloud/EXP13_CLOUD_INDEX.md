@@ -1,5 +1,15 @@
 # Exp13 cloud restoration experiment index
 
+## Current update: G3-D2 mechanical benchmark (2026-11-09)
+
+`G3D2_BENCHMARK_READY_PENDING_HUMAN_REVIEW_AND_CHATGPT_GATE`:18 variants from17
+TRAIN sources; six classes;120 empty independent landmark slots and recoverable
+offline quality review. Saved C0/C2 transforms and D1 refits remain distinct;
+actual human TRE/Pair quality is PENDING, Trusted Pair PASS=0. Full-mask audit
+finds914 omitted441 pixels; no historical images or masks changed. See
+[D2 research](G3_D2_MECHANICAL_BENCHMARK_REVIEW.md), [handoff](G3_D2_HANDOFF.md).
+API/GPU/training/TEST/thesis=0. Stop for ChatGPT/human audit; no batch expansion.
+
 ## Current update: G3-C2 Prompt V2 preparation (2026-11-09)
 
 `G3C2_V2_LIVE_READY`; four retry sources are prepared for a maximum of four

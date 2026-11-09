@@ -1,5 +1,17 @@
 # GitHub audit handoff: Exp13 cloud repair
 
+## Current G3-D2 handoff (2026-11-09)
+
+`G3D2_BENCHMARK_READY_PENDING_HUMAN_REVIEW_AND_CHATGPT_GATE`. [D2 research](G3_D2_MECHANICAL_BENCHMARK_REVIEW.md)
+and [review instructions](G3_D2_HANDOFF.md) supersede older stage pointers below.
+The independent benchmark contains18 pair variants/17 TRAIN sources across six
+classes,120 empty landmark slots, frozen saved C0/C2 and D1 refit transforms,
+and separate quality reviews. Human points=0; all actual TRE/Pair decisions
+PENDING; Trusted Pair PASS=0. D1 explanation errata and full-mask clipping
+evidence are included. Public files contain only general tools/tests and
+sanitized reports; all industrial assets/manual review data stay private.
+Stop for ChatGPT audit and real human review; no new generation or training.
+
 Expected handoff: `EXP13_CLOUD_GIT_SYNC_PASS / NEW_BRANCH_PUSHED /
 READY_FOR_CHATGPT_GITHUB_AUDIT` after staged checks and remote HEAD verification.
 The final delivery message supplies the actual commit SHA; this document does
