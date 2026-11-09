@@ -1,5 +1,15 @@
 # Exp13 cloud restoration experiment index
 
+## Current update: G3-D2 closed with partial evidence (2026-11-09)
+
+`G3D2_CLOSED_BOUNDED_PARTIAL_HUMAN_EVIDENCE`. User-ended annotation:120 planned,
+22 confirmed,15 rule-valid,7 NEAR exclusions,0 complete evaluable Pairs.
+Mechanical identity lacks independent expert verification. Exploratory TRE
+does not establish a formal Gate; `FORMAL_TRE_GATE=NOT_ESTABLISHED` and
+`TRUSTED_PAIR_PASS=0`. Retain existing SIFT/proportional/Similarity/Affine;
+no automatic batch generation or training. [Final report](G3_D2_FINAL_CLOSEOUT.md),
+[handoff](G3_D2_HANDOFF.md). Stop for ChatGPT research-route decision.
+
 ## Current update: G3-D2 mechanical benchmark (2026-11-09)
 
 `G3D2_BENCHMARK_READY_PENDING_HUMAN_REVIEW_AND_CHATGPT_GATE`:18 variants from17

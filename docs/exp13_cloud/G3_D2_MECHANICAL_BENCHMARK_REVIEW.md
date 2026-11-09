@@ -1,5 +1,11 @@
 # Exp13-G3-D2 independent mechanical landmarks and Pair quality
 
+Historical preparation report. Superseded by the [final bounded closeout](G3_D2_FINAL_CLOSEOUT.md):
+annotation ended by user decision, with120 preset/22 confirmed/15 rule-valid
+points and0 complete evaluable Pairs. `FORMAL_TRE_GATE=NOT_ESTABLISHED`;
+`TRUSTED_PAIR_PASS=0`. Empty-review statements below describe the original
+preparation snapshot and do not request further annotation.
+
 Status: `G3D2_BENCHMARK_READY_PENDING_HUMAN_REVIEW_AND_CHATGPT_GATE`.
 Starting local/remote HEAD: `cb5030f84149148aa5d5564e41382bf02c58336c`.
 

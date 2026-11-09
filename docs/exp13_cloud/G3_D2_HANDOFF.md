@@ -1,44 +1,37 @@
-# G3-D2 handoff
+# G3-D2 final handoff
 
-State: `G3D2_BENCHMARK_READY_PENDING_HUMAN_REVIEW_AND_CHATGPT_GATE`.
+Final state: `G3D2_CLOSED_BOUNDED_PARTIAL_HUMAN_EVIDENCE`.
+`FORMAL_TRE_GATE=NOT_ESTABLISHED`; `TRUSTED_PAIR_PASS=0`.
 
-Open the private atlas:
-`E:\borescope_review_assets\g3d2_mechanical_benchmark_20261109_release_verified\index.html`.
-It contains 18 variants / 17 TRAIN sources across six classes, including
-original candidates with failed D1 diagnostics, UI/multi-Polygon risks and
-C2 556/640/645. Current human landmarks=0/120; all fresh quality reviews and
-true mechanical TRE comparisons remain PENDING; `TRUSTED_PAIR_PASS=0`.
+The user ended manual mechanical-landmark collection. No completion of the
+120 planned slots is requested. Read-only local verification matches the
+independent audit:18 Pair variants,120 slots,22 confirmed,98 pending,
+15 rule-valid points,7 NEAR-region exclusions,0 complete evaluable Pairs.
+Valid/confirmed:558_V1=5/6;570_V1=4/9;483_V1=1/1 confirmed (five other slots
+pending);861_V1=5/6. Mechanical identities lack independent expert verification.
 
-1. Mark the same unique normal mechanical structure in source/raw images;
-   choose near/far slots and use inability/changed-structure states when needed.
-   Confirm identity, reviewer and source-pixel click uncertainty. Do not fit
-   evaluated transforms with these points.
-2. Inspect the collapsed full Mask/aligned/Hard/Feather panels; record visual,
-   geometry, composite and training suitability separately. D1/C1 statuses
-   are historical references, never auto-filled current decisions.
-3. Export full JSON for recovery. Import or backup text restores the exact
-   bundle; CSV is an optional point audit, not the recovery authority.
-4. Run the existing CPU virtual environment's Python on
-   `tools/exp13_cloud/g3/g3d2_benchmark.py evaluate --benchmark PRIVATE/benchmark.json
-   --review PRIVATE/exported_review.json --output PRIVATE/new_results.json`.
-   The same accepted independent points evaluate saved C0/C2 and D1 refit
-   matrices, with per-Polygon and near/far median/P90/max. Missing originals
-   remain unverified; no automatic Trusted Pair admission follows.
+Exploratory fixed-transform TRE on these partial points is recorded in the
+[final report](G3_D2_FINAL_CLOSEOUT.md) and
+[sanitized summary](../../results/exp13_g3d2/closeout_partial_summary.json).
+No full-review/Pair-quality JSON, extra points, expert decisions or Trusted
+Pair PASS were fabricated. No evaluated transform was refitted.
 
-D1 errata are documented: saved C0, D1 fold fit, and D1 full refit are distinct;
-15/12/1 is only a cross-count; C0 passes=16 versus full-cohort=17; 6 tests
-versus 9 have different scope. D1 used clipped Mask support. Full-mask audit
-finds 914 omitted 441 pixels (saved full-target coverage 94.077%). Assistant
-inspection flags retained notch/seam in 645 V2 composites despite improved
-raw appearance; expert confirmation remains pending.
+Private input:
+`E:\borescope_review_assets\g3d2_mechanical_benchmark_20261109_release_verified\g3d2_landmarks.csv`.
+SHA256:`70cbb9ea26d026de6e37c8497b0a1982ba642bdc87d2f4235709d5659c62a5b6`.
+Private archive/audit:
+`E:\borescope_review_assets\g3d2_closeout_20261109_partial`.
+The source CSV is unchanged and its archival copy is byte-identical. Neither
+CSV nor private coordinates/labels/reviewer identities is committed.
 
-Bundle hash: `87112e0ea76b8f997f9be43b0e03480cedf4e8af45c38268174d9a566d7f7c69`.
-Tests: D2 Python 8, D2 JS contracts 10, Chrome workflow 14, existing Python 9,
-existing C0 UI 10, all PASS. QA coordinates/exports live separately and are
-never scientific human annotations. See [report](G3_D2_MECHANICAL_BENCHMARK_REVIEW.md).
+Keep the existing SIFT + proportional mapping/Similarity/Affine and current
+compositing baselines. Reopen targeted alignment repair only for an explicit
+failure case and scientific necessity. Historical results, source-group
+independence roles, images, masks, professional annotations and permanent API
+locks remain unchanged. The protected untracked G2 script is preserved.
 
-No new generation, GPU, training, TEST/thesis access, original annotation
-edits, historical overwrites or Pair promotion. Protected untracked G2 script
-is retained. Stop for ChatGPT audit and real human review; do not start the
-60-source batch or Local Change training. Final commit/remote HEAD is supplied
-in the completion message.
+Checks:4 synthetic CSV/audit tests plus8 existing D2 benchmark tests PASS.
+No cloud POST, GPU training, TEST/thesis access or destructive Git action.
+No six-class60-source generation or formal Local Change training follows.
+Stop at ChatGPT Gate, awaiting the next research-route decision. Final local
+and verified remote HEAD are reported in the completion message.

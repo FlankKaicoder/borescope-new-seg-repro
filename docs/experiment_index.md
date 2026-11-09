@@ -1,5 +1,17 @@
 # Experiment index
 
+## Exp13-G3-D2 final bounded closeout (2026-11-09)
+
+`G3D2_CLOSED_BOUNDED_PARTIAL_HUMAN_EVIDENCE`. Annotation ended by user choice:
+120 preset slots,22 confirmed,15 rule-valid,7 NEAR-region exclusions,
+98 pending,0 complete evaluable Pairs. Partial-point fixed-transform TRE is
+exploratory; mechanical identity lacks independent expert verification.
+`FORMAL_TRE_GATE=NOT_ESTABLISHED`; `TRUSTED_PAIR_PASS=0`. Retain the SIFT +
+proportional mapping/Similarity/Affine baseline; no further point completion,
+60-source generation or formal Local Change training follows. [Final report](exp13_cloud/G3_D2_FINAL_CLOSEOUT.md),
+[handoff](exp13_cloud/G3_D2_HANDOFF.md), [sanitized metrics](../results/exp13_g3d2/closeout_partial_summary.json).
+Stop for ChatGPT Gate and research-route decision. Earlier entries are historical snapshots.
+
 ## Exp13-G3-D2 independent mechanical benchmark and Pair quality (2026-11-09)
 
 `G3D2_BENCHMARK_READY_PENDING_HUMAN_REVIEW_AND_CHATGPT_GATE`. Eighteen variants

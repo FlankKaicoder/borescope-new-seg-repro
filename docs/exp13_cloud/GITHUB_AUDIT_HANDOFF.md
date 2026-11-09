@@ -1,5 +1,16 @@
 # GitHub audit handoff: Exp13 cloud repair
 
+## Current final G3-D2 closeout (2026-11-09)
+
+`G3D2_CLOSED_BOUNDED_PARTIAL_HUMAN_EVIDENCE`: the user ended manual collection.
+Read-only CSV verification:120 slots/22 confirmed/15 rule-valid/7 NEAR exclusions/
+0 complete evaluable Pairs. Mechanical identity is not independently expert
+verified; partial-point TRE is exploratory only. `FORMAL_TRE_GATE=NOT_ESTABLISHED`;
+`TRUSTED_PAIR_PASS=0`. [Final report](G3_D2_FINAL_CLOSEOUT.md), [current handoff](G3_D2_HANDOFF.md).
+CSV/private clicks are excluded from Git. No further point collection,
+generation or training; retain SIFT/proportional/Similarity/Affine baseline.
+Stop at ChatGPT Gate for next-route decision. Earlier handoffs below are historical.
+
 ## Current G3-D2 handoff (2026-11-09)
 
 `G3D2_BENCHMARK_READY_PENDING_HUMAN_REVIEW_AND_CHATGPT_GATE`. [D2 research](G3_D2_MECHANICAL_BENCHMARK_REVIEW.md)

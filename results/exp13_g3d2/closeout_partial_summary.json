@@ -1,0 +1,731 @@
+{
+  "status": "G3D2_CLOSED_BOUNDED_PARTIAL_HUMAN_EVIDENCE",
+  "formal_tre_gate": "NOT_ESTABLISHED",
+  "trusted_pair_pass": 0,
+  "mechanical_identity": "NOT_INDEPENDENTLY_EXPERT_VERIFIED",
+  "bundle_id": "87112e0ea76b8f997f9be43b0e03480cedf4e8af45c38268174d9a566d7f7c69",
+  "csv_sha256": "70cbb9ea26d026de6e37c8497b0a1982ba642bdc87d2f4235709d5659c62a5b6",
+  "csv_bundle_hash_embedded": false,
+  "csv_binding_evidence": "EXACT_SLOT_REGION_SET_AND_COORDINATE_BOUNDS_ONLY",
+  "pair_count": 18,
+  "planned_slots": 120,
+  "status_counts": {
+    "CONFIRMED": 22,
+    "PENDING": 98
+  },
+  "confirmed_points": 22,
+  "rule_valid_points": 15,
+  "confirmed_excluded": 7,
+  "complete_evaluable_pairs": 0,
+  "pair_quality_decisions": "NOT_AVAILABLE_IN_CSV_NOT_RECONSTRUCTED",
+  "results": [
+    {
+      "pair_id": "558_V1",
+      "planned_slots": 6,
+      "confirmed": 6,
+      "rule_valid": 5,
+      "pending": 0,
+      "valid_near_per_polygon": {
+        "558_000": 2
+      },
+      "valid_far": 3,
+      "complete_point_coverage": false,
+      "methods": {
+        "SAVED_C0": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 5,
+            "median_px": 2.2373646784952244,
+            "p90_px": 3.5794857335973824,
+            "max_px": 3.9858780737615382
+          },
+          "groups": {
+            "NEAR": {
+              "n": 2,
+              "median_px": 2.2092251246847114,
+              "p90_px": 2.817762803617861,
+              "max_px": 2.9698972233511483
+            },
+            "FAR": {
+              "n": 3,
+              "median_px": 2.2373646784952244,
+              "p90_px": 3.6361753947082756,
+              "max_px": 3.9858780737615382
+            }
+          },
+          "per_polygon": {
+            "558_000": {
+              "n": 2,
+              "median_px": 2.2092251246847114,
+              "p90_px": 2.817762803617861,
+              "max_px": 2.9698972233511483
+            }
+          }
+        },
+        "D1_SIFT_SIMILARITY": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 5,
+            "median_px": 13.577931455447384,
+            "p90_px": 17.132299393802583,
+            "max_px": 18.980576686987465
+          },
+          "groups": {
+            "NEAR": {
+              "n": 2,
+              "median_px": 14.932247881897354,
+              "p90_px": 18.170910925969444,
+              "max_px": 18.980576686987465
+            },
+            "FAR": {
+              "n": 3,
+              "median_px": 13.577931455447384,
+              "p90_px": 14.203493054309686,
+              "max_px": 14.359883454025262
+            }
+          },
+          "per_polygon": {
+            "558_000": {
+              "n": 2,
+              "median_px": 14.932247881897354,
+              "p90_px": 18.170910925969444,
+              "max_px": 18.980576686987465
+            }
+          }
+        },
+        "D1_SIFT_AFFINE": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 5,
+            "median_px": 2.3516785182733333,
+            "p90_px": 3.935894685385514,
+            "max_px": 4.220515134770663
+          },
+          "groups": {
+            "NEAR": {
+              "n": 2,
+              "median_px": 2.4609506814494426,
+              "p90_px": 3.299361345336121,
+              "max_px": 3.5089640113077905
+            },
+            "FAR": {
+              "n": 3,
+              "median_px": 2.3516785182733333,
+              "p90_px": 3.846747811471197,
+              "max_px": 4.220515134770663
+            }
+          },
+          "per_polygon": {
+            "558_000": {
+              "n": 2,
+              "median_px": 2.4609506814494426,
+              "p90_px": 3.299361345336121,
+              "max_px": 3.5089640113077905
+            }
+          }
+        },
+        "D1_ORB_SIMILARITY": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 5,
+            "median_px": 13.582928534536448,
+            "p90_px": 17.71264703327627,
+            "max_px": 20.132517274332404
+          },
+          "groups": {
+            "NEAR": {
+              "n": 2,
+              "median_px": 14.997813835560692,
+              "p90_px": 19.10557658657806,
+              "max_px": 20.132517274332404
+            },
+            "FAR": {
+              "n": 3,
+              "median_px": 13.582928534536448,
+              "p90_px": 13.982859044260943,
+              "max_px": 14.082841671692067
+            }
+          },
+          "per_polygon": {
+            "558_000": {
+              "n": 2,
+              "median_px": 14.997813835560692,
+              "p90_px": 19.10557658657806,
+              "max_px": 20.132517274332404
+            }
+          }
+        },
+        "D1_ORB_AFFINE": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 5,
+            "median_px": 2.6890814171203132,
+            "p90_px": 3.7582925680822195,
+            "max_px": 4.288034224677685
+          },
+          "groups": {
+            "NEAR": {
+              "n": 2,
+              "median_px": 2.6592049206378423,
+              "p90_px": 2.683106117823819,
+              "max_px": 2.6890814171203132
+            },
+            "FAR": {
+              "n": 3,
+              "median_px": 2.963680083189021,
+              "p90_px": 4.023163396379952,
+              "max_px": 4.288034224677685
+            }
+          },
+          "per_polygon": {
+            "558_000": {
+              "n": 2,
+              "median_px": 2.6592049206378423,
+              "p90_px": 2.683106117823819,
+              "max_px": 2.6890814171203132
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "570_V1",
+      "planned_slots": 9,
+      "confirmed": 9,
+      "rule_valid": 4,
+      "pending": 0,
+      "valid_near_per_polygon": {
+        "570_000": 0,
+        "570_001": 1
+      },
+      "valid_far": 3,
+      "complete_point_coverage": false,
+      "methods": {
+        "SAVED_C0": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 4,
+            "median_px": 1.322800531601295,
+            "p90_px": 2.675032491919874,
+            "max_px": 2.96396364776644
+          },
+          "groups": {
+            "NEAR": {
+              "n": 1,
+              "median_px": 2.96396364776644,
+              "p90_px": 2.96396364776644,
+              "max_px": 2.96396364776644
+            },
+            "FAR": {
+              "n": 3,
+              "median_px": 0.644741268258038,
+              "p90_px": 1.7296360896072493,
+              "max_px": 2.000859794944552
+            }
+          },
+          "per_polygon": {
+            "570_000": {
+              "n": 0,
+              "median_px": null,
+              "p90_px": null,
+              "max_px": null
+            },
+            "570_001": {
+              "n": 1,
+              "median_px": 2.96396364776644,
+              "p90_px": 2.96396364776644,
+              "max_px": 2.96396364776644
+            }
+          }
+        },
+        "D1_SIFT_SIMILARITY": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 4,
+            "median_px": 6.748673251794782,
+            "p90_px": 21.979750467337688,
+            "max_px": 28.17238528090843
+          },
+          "groups": {
+            "NEAR": {
+              "n": 1,
+              "median_px": 28.17238528090843,
+              "p90_px": 28.17238528090843,
+              "max_px": 28.17238528090843
+            },
+            "FAR": {
+              "n": 3,
+              "median_px": 5.967077267916953,
+              "p90_px": 7.217630842121479,
+              "max_px": 7.53026923567261
+            }
+          },
+          "per_polygon": {
+            "570_000": {
+              "n": 0,
+              "median_px": null,
+              "p90_px": null,
+              "max_px": null
+            },
+            "570_001": {
+              "n": 1,
+              "median_px": 28.17238528090843,
+              "p90_px": 28.17238528090843,
+              "max_px": 28.17238528090843
+            }
+          }
+        },
+        "D1_SIFT_AFFINE": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 4,
+            "median_px": 1.0563748821413952,
+            "p90_px": 1.790142896312687,
+            "max_px": 1.9044063911298754
+          },
+          "groups": {
+            "NEAR": {
+              "n": 1,
+              "median_px": 1.523528075072581,
+              "p90_px": 1.523528075072581,
+              "max_px": 1.523528075072581
+            },
+            "FAR": {
+              "n": 3,
+              "median_px": 0.5892216892102095,
+              "p90_px": 1.6413694507459424,
+              "max_px": 1.9044063911298754
+            }
+          },
+          "per_polygon": {
+            "570_000": {
+              "n": 0,
+              "median_px": null,
+              "p90_px": null,
+              "max_px": null
+            },
+            "570_001": {
+              "n": 1,
+              "median_px": 1.523528075072581,
+              "p90_px": 1.523528075072581,
+              "max_px": 1.523528075072581
+            }
+          }
+        },
+        "D1_ORB_SIMILARITY": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 4,
+            "median_px": 3.521634539896577,
+            "p90_px": 20.57230809399637,
+            "max_px": 27.64013085580907
+          },
+          "groups": {
+            "NEAR": {
+              "n": 1,
+              "median_px": 27.64013085580907,
+              "p90_px": 27.64013085580907,
+              "max_px": 27.64013085580907
+            },
+            "FAR": {
+              "n": 3,
+              "median_px": 2.9625474300264343,
+              "p90_px": 3.857086805818663,
+              "max_px": 4.08072164976672
+            }
+          },
+          "per_polygon": {
+            "570_000": {
+              "n": 0,
+              "median_px": null,
+              "p90_px": null,
+              "max_px": null
+            },
+            "570_001": {
+              "n": 1,
+              "median_px": 27.64013085580907,
+              "p90_px": 27.64013085580907,
+              "max_px": 27.64013085580907
+            }
+          }
+        },
+        "D1_ORB_AFFINE": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 4,
+            "median_px": 0.9339744116120929,
+            "p90_px": 1.5273447375135483,
+            "max_px": 1.5911018629798672
+          },
+          "groups": {
+            "NEAR": {
+              "n": 1,
+              "median_px": 1.3785781114254703,
+              "p90_px": 1.3785781114254703,
+              "max_px": 1.3785781114254703
+            },
+            "FAR": {
+              "n": 3,
+              "median_px": 0.4893707117987157,
+              "p90_px": 1.370755632743637,
+              "max_px": 1.5911018629798672
+            }
+          },
+          "per_polygon": {
+            "570_000": {
+              "n": 0,
+              "median_px": null,
+              "p90_px": null,
+              "max_px": null
+            },
+            "570_001": {
+              "n": 1,
+              "median_px": 1.3785781114254703,
+              "p90_px": 1.3785781114254703,
+              "max_px": 1.3785781114254703
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "483_V1",
+      "planned_slots": 6,
+      "confirmed": 1,
+      "rule_valid": 1,
+      "pending": 5,
+      "valid_near_per_polygon": {
+        "483_000": 1
+      },
+      "valid_far": 0,
+      "complete_point_coverage": false,
+      "methods": {
+        "SAVED_C0": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 1,
+            "median_px": 1.8611667302327768,
+            "p90_px": 1.8611667302327768,
+            "max_px": 1.8611667302327768
+          },
+          "groups": {
+            "NEAR": {
+              "n": 1,
+              "median_px": 1.8611667302327768,
+              "p90_px": 1.8611667302327768,
+              "max_px": 1.8611667302327768
+            },
+            "FAR": {
+              "n": 0,
+              "median_px": null,
+              "p90_px": null,
+              "max_px": null
+            }
+          },
+          "per_polygon": {
+            "483_000": {
+              "n": 1,
+              "median_px": 1.8611667302327768,
+              "p90_px": 1.8611667302327768,
+              "max_px": 1.8611667302327768
+            }
+          }
+        },
+        "D1_SIFT_SIMILARITY": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 1,
+            "median_px": 8.113129929337687,
+            "p90_px": 8.113129929337687,
+            "max_px": 8.113129929337687
+          },
+          "groups": {
+            "NEAR": {
+              "n": 1,
+              "median_px": 8.113129929337687,
+              "p90_px": 8.113129929337687,
+              "max_px": 8.113129929337687
+            },
+            "FAR": {
+              "n": 0,
+              "median_px": null,
+              "p90_px": null,
+              "max_px": null
+            }
+          },
+          "per_polygon": {
+            "483_000": {
+              "n": 1,
+              "median_px": 8.113129929337687,
+              "p90_px": 8.113129929337687,
+              "max_px": 8.113129929337687
+            }
+          }
+        },
+        "D1_SIFT_AFFINE": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 1,
+            "median_px": 2.0476924586288727,
+            "p90_px": 2.0476924586288727,
+            "max_px": 2.0476924586288727
+          },
+          "groups": {
+            "NEAR": {
+              "n": 1,
+              "median_px": 2.0476924586288727,
+              "p90_px": 2.0476924586288727,
+              "max_px": 2.0476924586288727
+            },
+            "FAR": {
+              "n": 0,
+              "median_px": null,
+              "p90_px": null,
+              "max_px": null
+            }
+          },
+          "per_polygon": {
+            "483_000": {
+              "n": 1,
+              "median_px": 2.0476924586288727,
+              "p90_px": 2.0476924586288727,
+              "max_px": 2.0476924586288727
+            }
+          }
+        },
+        "D1_ORB_SIMILARITY": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 1,
+            "median_px": 15.510380287925956,
+            "p90_px": 15.510380287925956,
+            "max_px": 15.510380287925956
+          },
+          "groups": {
+            "NEAR": {
+              "n": 1,
+              "median_px": 15.510380287925956,
+              "p90_px": 15.510380287925956,
+              "max_px": 15.510380287925956
+            },
+            "FAR": {
+              "n": 0,
+              "median_px": null,
+              "p90_px": null,
+              "max_px": null
+            }
+          },
+          "per_polygon": {
+            "483_000": {
+              "n": 1,
+              "median_px": 15.510380287925956,
+              "p90_px": 15.510380287925956,
+              "max_px": 15.510380287925956
+            }
+          }
+        },
+        "D1_ORB_AFFINE": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 1,
+            "median_px": 2.243856935563684,
+            "p90_px": 2.243856935563684,
+            "max_px": 2.243856935563684
+          },
+          "groups": {
+            "NEAR": {
+              "n": 1,
+              "median_px": 2.243856935563684,
+              "p90_px": 2.243856935563684,
+              "max_px": 2.243856935563684
+            },
+            "FAR": {
+              "n": 0,
+              "median_px": null,
+              "p90_px": null,
+              "max_px": null
+            }
+          },
+          "per_polygon": {
+            "483_000": {
+              "n": 1,
+              "median_px": 2.243856935563684,
+              "p90_px": 2.243856935563684,
+              "max_px": 2.243856935563684
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "861_V1",
+      "planned_slots": 6,
+      "confirmed": 6,
+      "rule_valid": 5,
+      "pending": 0,
+      "valid_near_per_polygon": {
+        "861_000": 2
+      },
+      "valid_far": 3,
+      "complete_point_coverage": false,
+      "methods": {
+        "SAVED_C0": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 5,
+            "median_px": 1.389589149693132,
+            "p90_px": 3.920805221622163,
+            "max_px": 4.526827622645092
+          },
+          "groups": {
+            "NEAR": {
+              "n": 2,
+              "median_px": 2.200680384890451,
+              "p90_px": 2.849553373048306,
+              "max_px": 3.0117716200877696
+            },
+            "FAR": {
+              "n": 3,
+              "median_px": 1.2591319117346613,
+              "p90_px": 3.873288480463006,
+              "max_px": 4.526827622645092
+            }
+          },
+          "per_polygon": {
+            "861_000": {
+              "n": 2,
+              "median_px": 2.200680384890451,
+              "p90_px": 2.849553373048306,
+              "max_px": 3.0117716200877696
+            }
+          }
+        },
+        "D1_SIFT_SIMILARITY": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 5,
+            "median_px": 0.47786940577345977,
+            "p90_px": 2.967538567745396,
+            "max_px": 3.445874653412033
+          },
+          "groups": {
+            "NEAR": {
+              "n": 2,
+              "median_px": 1.3137917396338252,
+              "p90_px": 2.0627858993231167,
+              "max_px": 2.2500344392454394
+            },
+            "FAR": {
+              "n": 3,
+              "median_px": 0.47786940577345977,
+              "p90_px": 2.8522736038843184,
+              "max_px": 3.445874653412033
+            }
+          },
+          "per_polygon": {
+            "861_000": {
+              "n": 2,
+              "median_px": 1.3137917396338252,
+              "p90_px": 2.0627858993231167,
+              "max_px": 2.2500344392454394
+            }
+          }
+        },
+        "D1_SIFT_AFFINE": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 5,
+            "median_px": 1.0700383719481574,
+            "p90_px": 2.363004089031983,
+            "max_px": 3.06508735697665
+          },
+          "groups": {
+            "NEAR": {
+              "n": 2,
+              "median_px": 1.1899587795315694,
+              "p90_px": 1.2858951055982992,
+              "max_px": 1.3098791871149815
+            },
+            "FAR": {
+              "n": 3,
+              "median_px": 0.972676562100616,
+              "p90_px": 2.6466051980014433,
+              "max_px": 3.06508735697665
+            }
+          },
+          "per_polygon": {
+            "861_000": {
+              "n": 2,
+              "median_px": 1.1899587795315694,
+              "p90_px": 1.2858951055982992,
+              "max_px": 1.3098791871149815
+            }
+          }
+        },
+        "D1_ORB_SIMILARITY": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 5,
+            "median_px": 0.9325204748532259,
+            "p90_px": 3.4205585230762137,
+            "max_px": 3.974679309541738
+          },
+          "groups": {
+            "NEAR": {
+              "n": 2,
+              "median_px": 1.760948909115576,
+              "p90_px": 2.4236916565254565,
+              "max_px": 2.5893773433779264
+            },
+            "FAR": {
+              "n": 3,
+              "median_px": 0.7861644395238352,
+              "p90_px": 3.3369763355381576,
+              "max_px": 3.974679309541738
+            }
+          },
+          "per_polygon": {
+            "861_000": {
+              "n": 2,
+              "median_px": 1.760948909115576,
+              "p90_px": 2.4236916565254565,
+              "max_px": 2.5893773433779264
+            }
+          }
+        },
+        "D1_ORB_AFFINE": {
+          "status": "EXPLORATORY_PARTIAL_POINTS_ONLY",
+          "global": {
+            "n": 5,
+            "median_px": 1.3378910111491327,
+            "p90_px": 3.2238475423863675,
+            "max_px": 3.8197330275584784
+          },
+          "groups": {
+            "NEAR": {
+              "n": 2,
+              "median_px": 1.8339551628886668,
+              "p90_px": 2.230806484280294,
+              "max_px": 2.330019314628201
+            },
+            "FAR": {
+              "n": 3,
+              "median_px": 0.9838161881711739,
+              "p90_px": 3.2525496596810175,
+              "max_px": 3.8197330275584784
+            }
+          },
+          "per_polygon": {
+            "861_000": {
+              "n": 2,
+              "median_px": 1.8339551628886668,
+              "p90_px": 2.230806484280294,
+              "max_px": 2.330019314628201
+            }
+          }
+        }
+      }
+    }
+  ],
+  "pair_variants_without_confirmed_points": 14
+}
