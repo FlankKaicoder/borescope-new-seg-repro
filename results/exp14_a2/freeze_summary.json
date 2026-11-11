@@ -1,0 +1,55 @@
+{
+  "stage": "Exp14-A2",
+  "status": "FROZEN_DATA_PENDING_CHATGPT_SMOKE_GATE",
+  "core_sources_screened": 21,
+  "core_groups_screened": 21,
+  "retained_sources": 16,
+  "training_holds": 5,
+  "retained_by_class": {
+    "Burn": 1,
+    "Crack": 3,
+    "Dent": 1,
+    "Material missing": 2,
+    "Tears": 6,
+    "Tip curl": 0,
+    "corrosion": 3
+  },
+  "valid_frame_fraction_all_min_max": [
+    0.7400656960227273,
+    1.0
+  ],
+  "valid_frame_fraction_retained_min_max": [
+    0.9842018821022728,
+    1.0
+  ],
+  "target_regions_with_full_support": 24,
+  "ui_removal_flags_inside_valid_area": 3,
+  "b_original_regions_preserved": 24,
+  "b_regions_on_retained_sources": 18,
+  "baseline_images": 668,
+  "baseline_instances": 1266,
+  "derived_aligned_images": 16,
+  "explicit_empty_labels": 16,
+  "parser": {
+    "ultralytics": "8.4.117",
+    "wheel_sha256": "859a16eebc707f8b1b6e259d01f70040287f2e97c12c9ee0c5e6309484db3a2f",
+    "numpy": "2.3.5",
+    "pillow": "12.3.0",
+    "scope": "PINNED_PARSER_FUNCTIONS_CPU_NUMPY_PIL",
+    "positive_labels": 668,
+    "segmentation_instances": 1266,
+    "empty_labels": 16
+  },
+  "schedule": {
+    "epochs": 100,
+    "batch": 32,
+    "tail_batch": 12,
+    "steps_each_epoch": 22,
+    "optimizer_updates_each_arm": 2200,
+    "base_slots_each_epoch": 668,
+    "extra_slots_each_epoch": 16,
+    "total_draws_each_arm": 68400,
+    "cross_sample_augmentation": "DISABLED"
+  },
+  "historical_trusted_pair_pass": 0
+}

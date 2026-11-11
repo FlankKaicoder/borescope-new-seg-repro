@@ -2,6 +2,10 @@
 
 ## Current extension (2026-11-11)
 
+Exp14-A2 verified 21 A/B-common sources, retained 16 and placed 5 on full-frame support HOLD. Frozen baseline=668 images/1,266 instances; aligned=16 explicit empty labels. E0/E1=684 draws per epoch and 2,200 planned updates each. 38 CPU tests passed. FROZEN_DATA_PENDING_CHATGPT_SMOKE_GATE. [Handoff](exp14/EXP14_A2_HANDOFF.md).
+
+## Current extension (2026-11-11)
+
 Exp14-A1 imported 24 human-reviewed TRAIN variants and verified 22 A candidates and 21 B Pair candidates. All selected final images are aligned. Fifteen variants remain outside priority review. CANDIDATES_VERIFIED_PENDING_CHATGPT_DATA_GATE. No training dataset released. Twenty-seven CPU tests passed. [Handoff](exp14/EXP14_A1_HANDOFF.md).
 
 ## Current extension (2026-11-11)
