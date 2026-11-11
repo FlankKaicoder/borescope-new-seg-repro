@@ -8,7 +8,7 @@ from collections import Counter
 from pathlib import Path
 
 from tools.exp14.audit_admission import read_rows, require, sha256_file
-from tools.exp14.formal_e0_e1 import BASE_GIT, BATCHES, BATCHES_PER_EPOCH, EPOCHS, GATE, validate_checkpoint
+from tools.exp14.formal_e0_e1 import BASE_GIT, BATCHES, BATCHES_PER_EPOCH, EPOCHS, RUN_IDENTITIES, validate_checkpoint
 from tools.exp14.revised_amp_smoke import FROZEN_PAYLOAD_MANIFEST_SHA256, FROZEN_PROTOCOL_SHA256
 from tools.exp14.smoke_trainer import verify_payload, write_json
 
@@ -35,7 +35,7 @@ def expected_lr(position, protocol):
     return [base * t, base * t, protocol["warmup_bias_lr"] + (base - protocol["warmup_bias_lr"]) * t]
 
 
-def audit_arm(root, arm, slots, plan, protocol, exposure):
+def audit_arm(root, arm, slots, plan, protocol, exposure, base_git=BASE_GIT):
     folder = root / f"train_{arm}"
     if not folder.is_dir():
         return {"status": "NOT_STARTED"}, {}
@@ -44,7 +44,7 @@ def audit_arm(root, arm, slots, plan, protocol, exposure):
         return {"status": "NO_FINAL_SUMMARY", "has_events": (folder / "events.jsonl").is_file()}, {}
     summary = json.loads(summary_file.read_text())
     env = json.loads((folder / "environment.json").read_text())
-    require(env["git_head"] == BASE_GIT and env["protocol_sha256"] == FROZEN_PROTOCOL_SHA256
+    require(env["git_head"] == base_git and env["protocol_sha256"] == FROZEN_PROTOCOL_SHA256
             and env["payload_manifest_sha256"] == FROZEN_PAYLOAD_MANIFEST_SHA256,
             "Formal runtime identity differs")
     traces = {kind: [] for kind in EVENTS}
@@ -162,10 +162,32 @@ def audit_arm(root, arm, slots, plan, protocol, exposure):
                           for i in range(1994, min(2005, len(steps)))],
     }
     require(len(anomalies) == len(summary["anomalies"]), "Anomaly summary differs")
+    if base_git != BASE_GIT:
+        strides = ("8", "16", "32")
+        expected_points = [actual_point(b) for b, fraction in zip(backwards, zero, strict=True)
+                           if fraction >= env["numerical_policy"]["zero_diagnostics_fraction"] or b["native_overflow"]]
+        require(env["numerical_policy"]["zero_fraction_action"] == "observe"
+                and [actual_point(row) for row in anomalies] == expected_points
+                and all(set(row["foreground"]) == set(strides)
+                        and all(type(n) is int and n >= 0 for n in row["foreground"].values()) for row in anomalies),
+                "R1 foreground evidence does not cover all flagged batches")
+        result["foreground_at_flagged_batches"] = {
+            stride: {"zero": sum(row["foreground"][stride] == 0 for row in anomalies),
+                     "positive": sum(row["foreground"][stride] > 0 for row in anomalies)}
+            for stride in strides
+        }
+        result["flagged_empty_supervised_branches"] = {
+            f"{head}.{i}": sum(row["foreground"][stride] > 0 and (
+                f"model.23.{head}.{i}" not in row["layers"] or
+                row["layers"][f"model.23.{head}.{i}"]["zero"] == row["layers"][f"model.23.{head}.{i}"]["elements"]
+            ) for row in anomalies)
+            for head in ("cv2", "cv4") for i, stride in enumerate(strides)
+        }
     return result, probes
 
 
-def run(runtime, payload):
+def run(runtime, payload, revision="a4"):
+    base_git, gate = RUN_IDENTITIES[revision]
     require(sha256_file(payload / "transport_manifest.json") == FROZEN_PAYLOAD_MANIFEST_SHA256
             and sha256_file(payload / "training_protocol.json") == FROZEN_PROTOCOL_SHA256, "Frozen inputs differ")
     verify_payload(payload)
@@ -176,7 +198,7 @@ def run(runtime, payload):
     exposures = Counter()
     arms, probes = {}, {}
     for arm in ("e0", "e1"):
-        arms[arm], probes[arm] = audit_arm(runtime, arm, slots, plan, protocol, exposures)
+        arms[arm], probes[arm] = audit_arm(runtime, arm, slots, plan, protocol, exposures, base_git)
     passed = all(row["status"] == "PASS_FORMAL_ARM" for row in arms.values())
     compared, equal, different_inputs = 0, 0, 0
     if passed:
@@ -185,6 +207,9 @@ def run(runtime, payload):
                 and all(e0["environment"][k] == e1["environment"][k] for k in
                         ("weight_sha256", "trainer_sha256", "protocol_sha256", "payload_manifest_sha256")),
                 "Paired training identity differs")
+        if revision == "r1":
+            require(all(e0["environment"][k] == e1["environment"][k] for k in
+                        ("diagnosis_sha256", "foreground_audit_sha256")), "Paired foreground audit identity differs")
         require(probes["e0"].keys() == probes["e1"].keys(), "Probe positions differ")
         for point, left in probes["e0"].items():
             right = probes["e1"][point]
@@ -200,7 +225,7 @@ def run(runtime, payload):
         writer.writerow(("arm", "epoch", "source_id", "group_id", "image_kind", "draws"))
         writer.writerows((*key, count) for key, count in sorted(exposures.items()))
     result = {"status": "PASS_PAIRED_FORMAL_BUDGET" if passed else "STOP_FORMAL_PAIR",
-              "gate": GATE, "base_git": BASE_GIT, "arms": arms,
+              "gate": gate, "base_git": base_git, "arms": arms,
               "augmentation_probe": {"positions": "first and tail batch of each epoch",
                                      "same_input_pairs": compared, "identical_image_tensor_pairs": equal,
                                      "different_input_pairs": different_inputs, "labels_compared": False}}
@@ -213,5 +238,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--runtime", type=Path, required=True)
     parser.add_argument("--payload", type=Path, required=True)
+    parser.add_argument("--revision", choices=RUN_IDENTITIES, default="a4")
     args = parser.parse_args()
-    run(args.runtime.resolve(strict=True), args.payload.resolve(strict=True))
+    run(args.runtime.resolve(strict=True), args.payload.resolve(strict=True), args.revision)

@@ -2,6 +2,14 @@
 
 ## Current extension (2026-11-11)
 
+Exp14-A4-R1 completed both seed42 arms with 100 epochs and 2,200 effective updates each, zero scaler skips, and finite strictly reloaded final checkpoints. Both arms passed the scale 1→2 transition at update 2,000. Frozen VAL Mask mAP50–95 E0=0.266034 and E1=0.248838, delta −0.017197. At conf=0.25 mask FP fell by 1 and FN rose by 11. EXP14_A4_R1_PENDING_CHATGPT_RESULT_GATE. [Handoff](exp14/EXP14_A4_R1_FORMAL_E0_E1_REVIEW.md).
+
+## Current extension (2026-11-11)
+
+Exp14-A4-D1 paired AMP/FP32 diagnostics on six reconstructed TRAIN batches found all gradients finite. Both precisions produced entirely zero stride-32 box and mask branch gradients in the two batches with zero stride-32 foreground. The four foreground-positive cases retained gradients in both branches. PASS_CONDITIONAL_RESTART. [Handoff](exp14/EXP14_A4_D1_ZERO_GRADIENT_REVIEW.md).
+
+## Current extension (2026-11-11)
+
 Exp14-A4 formal E0 stopped at epoch 43 batch 2 on the predeclared three-batch zero-gradient rule. 42 complete epochs, 926 effective updates, zero native skips, finite checkpoint. E1 and VAL not started. EXP14_A4_PENDING_CHATGPT_RESULT_GATE. [Handoff](exp14/EXP14_A4_FORMAL_E0_E1_REVIEW.md).
 
 ## Current extension (2026-11-11)

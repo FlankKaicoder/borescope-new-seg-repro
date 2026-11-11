@@ -16,10 +16,12 @@ import torch
 import torchvision
 import ultralytics
 from ultralytics.models.yolo.segment.train import SegmentationTrainer
+from ultralytics.nn.tasks import SegmentationModel
 
 from tools.exp14.audit_admission import require, sha256_file
 from tools.exp14.diagnose_amp_first_batch import parameters_sha, tensor_digest
 from tools.exp14.freeze_core import COCO_SHA256
+from tools.exp14.foreground_audit import ForegroundAudit
 from tools.exp14.revised_amp_smoke import (
     FROZEN_PAYLOAD_MANIFEST_SHA256, FROZEN_PROTOCOL_SHA256, RevisedAmpSmokeTrainer,
 )
@@ -29,6 +31,9 @@ from tools.exp14.smoke_trainer import MatchedLoader, finite, verify_payload, wri
 BASE_GIT = "a4f5a05053508a3b24f93a316a345e1a0ba6cdca"
 INITIAL_STATE_SHA = "3daf5178f32613771ad13076d6519646ff0261d5bde740d703da24074ec061e5"
 GATE = "EXP14_A4_PENDING_CHATGPT_RESULT_GATE"
+R1_BASE_GIT = "eb3159e02de35cdc53056a68982eca40417962eb"
+R1_GATE = "EXP14_A4_R1_PENDING_CHATGPT_RESULT_GATE"
+RUN_IDENTITIES = {"a4": (BASE_GIT, GATE), "r1": (R1_BASE_GIT, R1_GATE)}
 EPOCHS, BATCHES_PER_EPOCH, BATCHES = 100, 22, 2200
 LOG_ZERO_AT, STOP_ZERO_AT, STOP_ZERO_CONSECUTIVE = 0.01, 0.05, 3
 
@@ -42,13 +47,16 @@ class FormalMatchedLoader(MatchedLoader):
         yield from self.loader
 
 
-def layer_gradient_statistics(model):
+def layer_gradient_statistics(model, by_scale=False):
     groups = {}
     for name, param in model.named_parameters():
         if param.grad is None:
             continue
         keys = name.split(".")
-        group = ".".join(keys[:3] if keys[:2] == ["model", "23"] else keys[:2])
+        depth = 2
+        if keys[:2] == ["model", "23"]:
+            depth = 4 if by_scale and keys[2] in {"cv2", "cv3", "cv4"} else 3
+        group = ".".join(keys[:depth])
         groups.setdefault(group, []).append(param.grad.detach().flatten())
     report = {}
     for name, gradients in groups.items():
@@ -65,6 +73,8 @@ def layer_gradient_statistics(model):
 
 
 class FormalTrainer(RevisedAmpSmokeTrainer):
+    zero_streak_limit = STOP_ZERO_CONSECUTIVE
+
     def __init__(self, payload, weight, run, arm):
         self.zero_streak = 0
         self.anomalies = []
@@ -135,18 +145,34 @@ class FormalTrainer(RevisedAmpSmokeTrainer):
                 "zero_fraction": fraction, "overflow": values["native_overflow"],
                 "raw_positive_images": sum(r["raw_instances"] > 0 for r in self.current_event["slots"]),
                 "raw_instances": sum(r["raw_instances"] for r in self.current_event["slots"]),
-                "layers": layer_gradient_statistics(self.model),
+                **self.gradient_details(),
             }
             self.anomalies.append({k: v for k, v in evidence.items() if k != "layers"})
             super().event("gradient_anomaly", **evidence)
 
+    def gradient_details(self):
+        return {"layers": layer_gradient_statistics(self.model)}
+
     def optimizer_step(self):
         super().optimizer_step()
-        require(self.zero_streak < STOP_ZERO_CONSECUTIVE, "Persistent zero-gradient anomaly")
+        if self.zero_streak_limit is not None:
+            require(self.zero_streak < self.zero_streak_limit, "Persistent zero-gradient anomaly")
 
     def save_model(self):
         # The formal entry writes the raw final state after it checks the budget.
         return False
+
+
+class FormalR1Trainer(FormalTrainer):
+    zero_streak_limit = None
+
+    def _setup_train(self):
+        super()._setup_train()
+        self.foreground = ForegroundAudit(self.model)
+
+    def gradient_details(self):
+        return {"layers": layer_gradient_statistics(self.model, by_scale=True),
+                "foreground": self.foreground.read()}
 
 
 def cpu_state(value):
@@ -203,11 +229,24 @@ def validate_checkpoint(path, arm):
             "Final checkpoint budget or scaler identity differs")
     require(ckpt["model_state_sha256"] == hash_state(ckpt["model_state"])
             and finite(ckpt["model_state"]) and finite(ckpt["optimizer"]), "Reloaded checkpoint is invalid")
+    with torch.random.fork_rng(devices=[]):
+        model = SegmentationModel(ckpt["model_config"], ch=3, nc=7, verbose=False)
+        model.load_state_dict(ckpt["model_state"], strict=True)
+    require(parameters_sha(model) == ckpt["parameter_sha256"], "Strictly loaded parameter identity differs")
     return ckpt
 
 
 def run(args):
     payload, output = args.payload.resolve(strict=True), args.output.resolve(strict=True)
+    base_git, gate = RUN_IDENTITIES[args.revision]
+    trainer_class = FormalR1Trainer if args.revision == "r1" else FormalTrainer
+    diagnosis_sha = None
+    if args.revision == "r1":
+        require(args.diagnosis is not None, "R1 requires completed D1 evidence")
+        diagnosis = json.loads(args.diagnosis.read_text())
+        require(diagnosis["decision"] == "PASS_CONDITIONAL_RESTART" and not diagnosis["problems"]
+                and not diagnosis["optimizer_updates"], "D1 did not authorize the conditional restart")
+        diagnosis_sha = sha256_file(args.diagnosis)
     require(ultralytics.__version__ == "8.4.117" and torch.__version__ == "2.8.0+cu128"
             and torch.cuda.is_available(), "Frozen training environment unavailable")
     require(sha256_file(args.weight) == COCO_SHA256
@@ -215,10 +254,13 @@ def run(args):
             and sha256_file(payload / "transport_manifest.json") == FROZEN_PAYLOAD_MANIFEST_SHA256,
             "Frozen training identity differs")
     git_head = subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip()
-    require(git_head == BASE_GIT, "Server checkout does not match authorized HEAD")
+    require(git_head == base_git, "Server checkout does not match authorized HEAD")
     manifest = verify_payload(payload)
     if args.arm == "e1":
         prior = json.loads((output / "train_e0/summary.json").read_text())
+        prior_env = json.loads((output / "train_e0/environment.json").read_text())
+        require(prior_env["git_head"] == base_git and prior_env["trainer_sha256"] == sha256_file(Path(__file__))
+                and prior_env.get("diagnosis_sha256") == diagnosis_sha, "E0 training identity differs")
         checkpoint = output / "train_e0/last.pt"
         require(prior["status"] == "PASS_FORMAL_ARM" and sha256_file(checkpoint) == prior["checkpoint"]["sha256"],
                 "E0 has no verified final checkpoint")
@@ -227,6 +269,8 @@ def run(args):
     folder.mkdir()
     identity = {
         "git_head": git_head, "trainer_sha256": sha256_file(Path(__file__)),
+        "foreground_audit_sha256": sha256_file(Path(__file__).with_name("foreground_audit.py")),
+        "diagnosis_sha256": diagnosis_sha,
         "weight_sha256": COCO_SHA256, "payload_manifest_sha256": FROZEN_PAYLOAD_MANIFEST_SHA256,
         "protocol_sha256": FROZEN_PROTOCOL_SHA256, "payload_files": len(manifest["files"]),
         "ui_risk_flags_retained": len(manifest["ui_risks"]), "python": sys.version.split()[0],
@@ -237,13 +281,15 @@ def run(args):
             ["nvidia-smi", "--query-gpu=name,memory.total,memory.free,driver_version", "--format=csv,noheader"],
             text=True).strip(),
         "numerical_policy": {"init_scale": 1, "zero_diagnostics_fraction": LOG_ZERO_AT,
-                             "persistent_zero_fraction": STOP_ZERO_AT, "persistent_batches": STOP_ZERO_CONSECUTIVE},
+                             "zero_fraction_action": "observe" if args.revision == "r1" else "stop_after_streak",
+                             "persistent_zero_fraction": STOP_ZERO_AT if args.revision == "a4" else None,
+                             "persistent_batches": trainer_class.zero_streak_limit},
     }
     write_json(folder / "environment.json", identity)
     trainer, checkpoint, error, failure_error = None, None, None, None
     start = time.monotonic()
     try:
-        trainer = FormalTrainer(payload, args.weight, folder, args.arm)
+        trainer = trainer_class(payload, args.weight, folder, args.arm)
         trainer.expected_init_sha = INITIAL_STATE_SHA
         # All callbacks are supplied by the paired trainer and the formal runtime.
         trainer.train()
@@ -261,7 +307,7 @@ def run(args):
                 failure_error = f"{type(failure).__name__}: {failure}"
     observed = trainer.observed if trainer else []
     result = {
-        "status": "STOP_FORMAL_ARM" if error else "PASS_FORMAL_ARM", "gate": GATE, "arm": args.arm,
+        "status": "STOP_FORMAL_ARM" if error else "PASS_FORMAL_ARM", "gate": gate, "arm": args.arm,
         "reason": error, "failure_checkpoint_error": failure_error, "checkpoint": checkpoint,
         "completed_epochs": getattr(trainer, "completed_epochs", 0), "batches": len(observed),
         "samples": sum(e["samples"] for e in observed), "optimizer_attempts": getattr(trainer, "optimizer_calls", 0),
@@ -285,4 +331,6 @@ if __name__ == "__main__":
     parser.add_argument("--weight", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--arm", choices=("e0", "e1"), required=True)
+    parser.add_argument("--revision", choices=RUN_IDENTITIES, default="a4")
+    parser.add_argument("--diagnosis", type=Path)
     run(parser.parse_args())

@@ -1,5 +1,13 @@
 # Experiment index
 
+## Exp14-A4-R1 complete matched E0/E1 run (2026-11-11)
+
+Both seed42 arms passed 100 epochs and 2,200 effective updates with zero skips and verified final checkpoints. Frozen VAL Mask mAP50–95 delta E1−E0 was −0.017197. No TEST evaluation. EXP14_A4_R1_PENDING_CHATGPT_RESULT_GATE. [Handoff](exp14/EXP14_A4_R1_FORMAL_E0_E1_REVIEW.md).
+
+## Exp14-A4-D1 zero-gradient audit (2026-11-11)
+
+Six reconstructed TRAIN batches compared under AMP Scale=1 and true FP32 at the A4 stopped model state. The stride-32 box and mask branches were zero in both precisions for the two foreground-empty cases and active for the other four. Zero parameter updates in diagnosis. PASS_CONDITIONAL_RESTART. [Handoff](exp14/EXP14_A4_D1_ZERO_GRADIENT_REVIEW.md).
+
 ## Exp14-A4 first formal paired run (2026-11-11)
 
 Exp14-A4 formal E0 stopped at epoch 43 batch 2 on the predeclared three-batch zero-gradient rule. 42 complete epochs, 926 effective updates, zero native skips, finite checkpoint. E1 and VAL not started. EXP14_A4_PENDING_CHATGPT_RESULT_GATE. [Handoff](exp14/EXP14_A4_FORMAL_E0_E1_REVIEW.md).

@@ -12,7 +12,7 @@ from ultralytics.models.yolo.segment.val import SegmentationValidator
 from ultralytics.nn.tasks import SegmentationModel
 
 from tools.exp14.audit_admission import EXPECTED_MANIFEST_SHA256, read_rows, require, sha256_file
-from tools.exp14.formal_e0_e1 import BASE_GIT, validate_checkpoint
+from tools.exp14.formal_e0_e1 import RUN_IDENTITIES, validate_checkpoint
 from tools.exp14.label_plan import CLASSES
 from tools.exp14.smoke_trainer import write_json
 
@@ -22,7 +22,21 @@ FIXED_CONF = 0.25
 NMS_IOU = 0.70
 
 
-def copy_frozen_val(data, payload, output):
+def verified_val_source(data, relative, expected_sha256, raw_image_root=None):
+    relative = Path(relative)
+    path = data / relative
+    require(relative.parts[:2] in {("images", "val"), ("labels", "val")}
+            and len(relative.parts) == 3 and path.parent.resolve(strict=True) == path.parent,
+            "Expected a direct frozen VAL entry")
+    source = path.resolve(strict=True)
+    raw_image = (raw_image_root is not None and relative.parts[0] == "images"
+                 and path.is_symlink() and source == raw_image_root / relative.name)
+    require((source == path or raw_image) and sha256_file(source) == expected_sha256,
+            "Frozen VAL file identity differs")
+    return source
+
+
+def copy_frozen_val(data, payload, output, raw_image_root=None):
     manifest = data / "split_manifest.csv"
     require(sha256_file(manifest) == EXPECTED_MANIFEST_SHA256, "Frozen split manifest differs")
     rows = [r for r in read_rows(manifest) if r["split"] == "val"]
@@ -38,10 +52,9 @@ def copy_frozen_val(data, payload, output):
         require(Path(stem).name == stem and row["image_suffix"] in {".jpg", ".jpeg", ".png"}, "Invalid VAL path")
         image = f"images/val/{stem}{row['image_suffix']}"
         label = f"labels/val/{stem}.txt"
+        require(Path(row["image_path"]).name == Path(image).name, "Frozen VAL image filename differs")
         for relative, sha in ((image, row["sha256"]), (label, row["label_sha256"])):
-            source = (data / relative).resolve(strict=True)
-            require(source.is_relative_to(data) and source.parent.name == "val"
-                    and sha256_file(source) == sha, "Frozen VAL file identity differs")
+            source = verified_val_source(data, relative, sha, raw_image_root)
             with source.open("rb") as source_file, (val / relative).open("xb") as destination:
                 shutil.copyfileobj(source_file, destination)
             require(sha256_file(val / relative) == sha, "VAL copied file differs")
@@ -151,7 +164,7 @@ def run(args):
     payload = args.payload.resolve(strict=True)
     require(ultralytics.__version__ == "8.4.117", "Evaluator version differs")
     audit = json.loads((runtime / "training_audit.json").read_text())
-    require(audit["status"] == "PASS_PAIRED_FORMAL_BUDGET" and audit["base_git"] == BASE_GIT,
+    require(audit["status"] == "PASS_PAIRED_FORMAL_BUDGET" and audit["base_git"] == RUN_IDENTITIES[args.revision][0],
             "Both arms must pass paired budget and checkpoint audit before VAL")
     checkpoint_meta = {}
     for arm in ("e0", "e1"):
@@ -163,9 +176,12 @@ def run(args):
                 "Checkpoint identity differs")
         validate_checkpoint(path, arm)
         checkpoint_meta[arm] = sha
-    output = runtime / "val_evaluation"
+    require(Path(args.evaluation_name).name == args.evaluation_name and args.evaluation_name not in {"", ".", ".."},
+            "Invalid evaluation directory name")
+    output = runtime / args.evaluation_name
     output.mkdir()
-    config, val_dir, val_hash = copy_frozen_val(args.val_root.resolve(strict=True), payload, output)
+    raw_image_root = args.raw_image_root.resolve(strict=True) if args.raw_image_root else None
+    config, val_dir, val_hash = copy_frozen_val(args.val_root.resolve(strict=True), payload, output, raw_image_root)
     write_json(output / "evaluation_protocol.json", {
         "val_files_sha256": val_hash, "val_images": 154, "instances": 296, "split": "val",
         "evaluator_sha256": sha256_file(Path(__file__)), "ultralytics": ultralytics.__version__,
@@ -202,4 +218,7 @@ if __name__ == "__main__":
     parser.add_argument("--runtime", type=Path, required=True)
     parser.add_argument("--payload", type=Path, required=True)
     parser.add_argument("--val-root", type=Path, required=True)
+    parser.add_argument("--raw-image-root", type=Path)
+    parser.add_argument("--evaluation-name", default="val_evaluation")
+    parser.add_argument("--revision", choices=RUN_IDENTITIES, default="a4")
     run(parser.parse_args())

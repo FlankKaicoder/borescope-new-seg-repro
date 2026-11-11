@@ -1,0 +1,962 @@
+{
+  "decision": "PASS_CONDITIONAL_RESTART",
+  "stride32_zero_both": 2,
+  "stride32_positive_both": 4,
+  "problems": [],
+  "historical_replay": false,
+  "optimizer_updates": 0,
+  "thresholds": {
+    "loss_rtol": 0.1,
+    "gradient_cosine_min": 0.9
+  },
+  "checkpoint_sha256": "a8eee8628a1ec66f8205f6f1babd88d64ad996c17c770eb970bcc142fdd019c8",
+  "base_git": "eb3159e02de35cdc53056a68982eca40417962eb",
+  "diagnosis_sha256": "cedeb3569a1e943341545f2294231407382fdb54dd786503096e11aa50242b71",
+  "diagnostic_code_sha256": "d8bbec7d643657707592641cc652f10401304974ab5d76e1113ba5b28ce52d81",
+  "historical_stop": {
+    "batches": 926,
+    "effective_updates": 926,
+    "scale": 1,
+    "scaler_skips": 0,
+    "terminal_gradient_zero_fraction": [
+      0.09863194134088525,
+      0.09846281079495928,
+      0.09832251331507473
+    ],
+    "stride32_cv2_parameters": 188736,
+    "stride32_cv4_parameters": 84128,
+    "foreground_logged": false
+  },
+  "batches": [
+    {
+      "arm": "e0",
+      "epoch": 42,
+      "batch": 22,
+      "seed": 988,
+      "amp": {
+        "loss": 116.54600524902344,
+        "components": {
+          "box_loss": 1.9236185550689697,
+          "seg_loss": 3.1629981994628906,
+          "cls_loss": 2.605888843536377,
+          "dfl_loss": 2.0196614265441895,
+          "sem_loss": 0.0
+        },
+        "foreground": {
+          "8": 100,
+          "16": 42,
+          "32": 2
+        },
+        "gradient_population": {
+          "tensors": 290,
+          "elements": 2843957,
+          "nonfinite": 0,
+          "zero": 2831
+        },
+        "gradient_norm": 44.892215728759766,
+        "amp_scale": 1
+      },
+      "fp32": {
+        "loss": 116.45353698730469,
+        "components": {
+          "box_loss": 1.9235444068908691,
+          "seg_loss": 3.156473159790039,
+          "cls_loss": 2.6051101684570312,
+          "dfl_loss": 2.0193331241607666,
+          "sem_loss": 0.0
+        },
+        "foreground": {
+          "8": 100,
+          "16": 43,
+          "32": 2
+        },
+        "gradient_population": {
+          "tensors": 290,
+          "elements": 2843957,
+          "nonfinite": 0,
+          "zero": 29
+        },
+        "gradient_norm": 45.18973159790039,
+        "amp_scale": null
+      },
+      "gradients": {
+        "cv2.0": {
+          "elements": 78144,
+          "amp_nonzero": 78143,
+          "fp32_nonzero": 78144,
+          "amp_norm": 20.835596084594727,
+          "fp32_norm": 20.871450424194336,
+          "amp_zero_fp32_nonzero": 1,
+          "amp_zero_fp32_norm_fraction": 1.7463689562848504e-05,
+          "cosine": 0.9999874830245972
+        },
+        "cv2.1": {
+          "elements": 115008,
+          "amp_nonzero": 115002,
+          "fp32_nonzero": 115008,
+          "amp_norm": 8.13611888885498,
+          "fp32_norm": 8.117341041564941,
+          "amp_zero_fp32_nonzero": 6,
+          "amp_zero_fp32_norm_fraction": 4.985809217265665e-06,
+          "cosine": 0.999985933303833
+        },
+        "cv2.2": {
+          "elements": 188736,
+          "amp_nonzero": 188130,
+          "fp32_nonzero": 188736,
+          "amp_norm": 0.21467331051826477,
+          "fp32_norm": 0.21527475118637085,
+          "amp_zero_fp32_nonzero": 606,
+          "amp_zero_fp32_norm_fraction": 0.0005736376006889463,
+          "cosine": 0.9997121691703796
+        },
+        "cv3.0": {
+          "elements": 10311,
+          "amp_nonzero": 10311,
+          "fp32_nonzero": 10311,
+          "amp_norm": 12.923168182373047,
+          "fp32_norm": 12.9100980758667,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.9999867677688599
+        },
+        "cv3.1": {
+          "elements": 15111,
+          "amp_nonzero": 15111,
+          "fp32_nonzero": 15111,
+          "amp_norm": 4.591236591339111,
+          "fp32_norm": 4.562880516052246,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.9999815821647644
+        },
+        "cv3.2": {
+          "elements": 24711,
+          "amp_nonzero": 24620,
+          "fp32_nonzero": 24711,
+          "amp_norm": 1.4397403001785278,
+          "fp32_norm": 1.438625693321228,
+          "amp_zero_fp32_nonzero": 91,
+          "amp_zero_fp32_norm_fraction": 1.738397330656548e-05,
+          "cosine": 0.999999463558197
+        },
+        "cv4.0": {
+          "elements": 28832,
+          "amp_nonzero": 28832,
+          "fp32_nonzero": 28832,
+          "amp_norm": 6.4169135093688965,
+          "fp32_norm": 6.372738361358643,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.9999942183494568
+        },
+        "cv4.1": {
+          "elements": 47264,
+          "amp_nonzero": 47262,
+          "fp32_nonzero": 47264,
+          "amp_norm": 4.050197124481201,
+          "fp32_norm": 4.001836776733398,
+          "amp_zero_fp32_nonzero": 2,
+          "amp_zero_fp32_norm_fraction": 3.079156673817927e-05,
+          "cosine": 0.9978717565536499
+        },
+        "cv4.2": {
+          "elements": 84128,
+          "amp_nonzero": 84039,
+          "fp32_nonzero": 84128,
+          "amp_norm": 0.37598639726638794,
+          "fp32_norm": 0.37337526679039,
+          "amp_zero_fp32_nonzero": 89,
+          "amp_zero_fp32_norm_fraction": 0.00014133449144423528,
+          "cosine": 0.9999604225158691
+        },
+        "all": {
+          "elements": 2843957,
+          "amp_nonzero": 2841126,
+          "fp32_nonzero": 2843928,
+          "amp_norm": 44.892215728759766,
+          "fp32_norm": 45.18973159790039,
+          "amp_zero_fp32_nonzero": 2830,
+          "amp_zero_fp32_norm_fraction": 1.0600368415196782e-05,
+          "cosine": 0.9989580512046814
+        }
+      }
+    },
+    {
+      "arm": "e0",
+      "epoch": 43,
+      "batch": 1,
+      "seed": 989,
+      "amp": {
+        "loss": 303.906005859375,
+        "components": {
+          "box_loss": 2.006385326385498,
+          "seg_loss": 3.0247716903686523,
+          "cls_loss": 2.4723756313323975,
+          "dfl_loss": 1.9935296773910522,
+          "sem_loss": 0.0
+        },
+        "foreground": {
+          "8": 587,
+          "16": 93,
+          "32": 13
+        },
+        "gradient_population": {
+          "tensors": 290,
+          "elements": 2843957,
+          "nonfinite": 0,
+          "zero": 832
+        },
+        "gradient_norm": 75.04718017578125,
+        "amp_scale": 1
+      },
+      "fp32": {
+        "loss": 303.994140625,
+        "components": {
+          "box_loss": 2.0064034461975098,
+          "seg_loss": 3.0274882316589355,
+          "cls_loss": 2.472748279571533,
+          "dfl_loss": 1.9931766986846924,
+          "sem_loss": 0.0
+        },
+        "foreground": {
+          "8": 587,
+          "16": 94,
+          "32": 13
+        },
+        "gradient_population": {
+          "tensors": 290,
+          "elements": 2843957,
+          "nonfinite": 0,
+          "zero": 23
+        },
+        "gradient_norm": 75.16691589355469,
+        "amp_scale": null
+      },
+      "gradients": {
+        "cv2.0": {
+          "elements": 78144,
+          "amp_nonzero": 78144,
+          "fp32_nonzero": 78144,
+          "amp_norm": 36.97565841674805,
+          "fp32_norm": 36.97551345825195,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.9997668862342834
+        },
+        "cv2.1": {
+          "elements": 115008,
+          "amp_nonzero": 115004,
+          "fp32_nonzero": 115008,
+          "amp_norm": 6.302004337310791,
+          "fp32_norm": 6.301048755645752,
+          "amp_zero_fp32_nonzero": 4,
+          "amp_zero_fp32_norm_fraction": 1.2054121157384218e-05,
+          "cosine": 0.999968409538269
+        },
+        "cv2.2": {
+          "elements": 188736,
+          "amp_nonzero": 188619,
+          "fp32_nonzero": 188736,
+          "amp_norm": 0.8008775115013123,
+          "fp32_norm": 0.8011702299118042,
+          "amp_zero_fp32_nonzero": 117,
+          "amp_zero_fp32_norm_fraction": 0.00022068957472366543,
+          "cosine": 0.9998453855514526
+        },
+        "cv3.0": {
+          "elements": 10311,
+          "amp_nonzero": 10311,
+          "fp32_nonzero": 10311,
+          "amp_norm": 34.6015510559082,
+          "fp32_norm": 34.702816009521484,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.9999977350234985
+        },
+        "cv3.1": {
+          "elements": 15111,
+          "amp_nonzero": 15109,
+          "fp32_nonzero": 15111,
+          "amp_norm": 4.933934211730957,
+          "fp32_norm": 4.930201530456543,
+          "amp_zero_fp32_nonzero": 2,
+          "amp_zero_fp32_norm_fraction": 1.631245223832799e-05,
+          "cosine": 0.9999932646751404
+        },
+        "cv3.2": {
+          "elements": 24711,
+          "amp_nonzero": 24679,
+          "fp32_nonzero": 24711,
+          "amp_norm": 2.0321574211120605,
+          "fp32_norm": 2.0295586585998535,
+          "amp_zero_fp32_nonzero": 32,
+          "amp_zero_fp32_norm_fraction": 7.787856687108653e-06,
+          "cosine": 0.9999971985816956
+        },
+        "cv4.0": {
+          "elements": 28832,
+          "amp_nonzero": 28832,
+          "fp32_nonzero": 28832,
+          "amp_norm": 10.073680877685547,
+          "fp32_norm": 10.050485610961914,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.9999847412109375
+        },
+        "cv4.1": {
+          "elements": 47264,
+          "amp_nonzero": 47263,
+          "fp32_nonzero": 47264,
+          "amp_norm": 2.87616229057312,
+          "fp32_norm": 2.920612335205078,
+          "amp_zero_fp32_nonzero": 1,
+          "amp_zero_fp32_norm_fraction": 1.2928954116465001e-05,
+          "cosine": 0.9995161890983582
+        },
+        "cv4.2": {
+          "elements": 84128,
+          "amp_nonzero": 84070,
+          "fp32_nonzero": 84128,
+          "amp_norm": 0.6690729856491089,
+          "fp32_norm": 0.6682789921760559,
+          "amp_zero_fp32_nonzero": 58,
+          "amp_zero_fp32_norm_fraction": 9.671709826846542e-05,
+          "cosine": 0.9999064803123474
+        },
+        "all": {
+          "elements": 2843957,
+          "amp_nonzero": 2843125,
+          "fp32_nonzero": 2843934,
+          "amp_norm": 75.04718017578125,
+          "fp32_norm": 75.16691589355469,
+          "amp_zero_fp32_nonzero": 832,
+          "amp_zero_fp32_norm_fraction": 4.233153720935465e-06,
+          "cosine": 0.999614417552948
+        }
+      }
+    },
+    {
+      "arm": "e0",
+      "epoch": 43,
+      "batch": 2,
+      "seed": 990,
+      "amp": {
+        "loss": 302.45599365234375,
+        "components": {
+          "box_loss": 1.988086223602295,
+          "seg_loss": 3.242514133453369,
+          "cls_loss": 2.317880868911743,
+          "dfl_loss": 1.9032679796218872,
+          "sem_loss": 0.0
+        },
+        "foreground": {
+          "8": 388,
+          "16": 64,
+          "32": 20
+        },
+        "gradient_population": {
+          "tensors": 290,
+          "elements": 2843957,
+          "nonfinite": 0,
+          "zero": 702
+        },
+        "gradient_norm": 92.28883361816406,
+        "amp_scale": 1
+      },
+      "fp32": {
+        "loss": 302.674072265625,
+        "components": {
+          "box_loss": 1.987446665763855,
+          "seg_loss": 3.2502646446228027,
+          "cls_loss": 2.3177599906921387,
+          "dfl_loss": 1.9030930995941162,
+          "sem_loss": 0.0
+        },
+        "foreground": {
+          "8": 388,
+          "16": 67,
+          "32": 20
+        },
+        "gradient_population": {
+          "tensors": 290,
+          "elements": 2843957,
+          "nonfinite": 0,
+          "zero": 22
+        },
+        "gradient_norm": 95.04025268554688,
+        "amp_scale": null
+      },
+      "gradients": {
+        "cv2.0": {
+          "elements": 78144,
+          "amp_nonzero": 78143,
+          "fp32_nonzero": 78144,
+          "amp_norm": 31.90139389038086,
+          "fp32_norm": 31.90989875793457,
+          "amp_zero_fp32_nonzero": 1,
+          "amp_zero_fp32_norm_fraction": 8.827991389080081e-06,
+          "cosine": 0.9999861717224121
+        },
+        "cv2.1": {
+          "elements": 115008,
+          "amp_nonzero": 115006,
+          "fp32_nonzero": 115008,
+          "amp_norm": 11.80630874633789,
+          "fp32_norm": 11.796908378601074,
+          "amp_zero_fp32_nonzero": 2,
+          "amp_zero_fp32_norm_fraction": 2.966368726179683e-06,
+          "cosine": 0.9999949336051941
+        },
+        "cv2.2": {
+          "elements": 188736,
+          "amp_nonzero": 188608,
+          "fp32_nonzero": 188736,
+          "amp_norm": 1.4091356992721558,
+          "fp32_norm": 1.4073385000228882,
+          "amp_zero_fp32_nonzero": 128,
+          "amp_zero_fp32_norm_fraction": 0.00015543800735210253,
+          "cosine": 0.9999570250511169
+        },
+        "cv3.0": {
+          "elements": 10311,
+          "amp_nonzero": 10311,
+          "fp32_nonzero": 10311,
+          "amp_norm": 24.8948917388916,
+          "fp32_norm": 24.93802833557129,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.9999872446060181
+        },
+        "cv3.1": {
+          "elements": 15111,
+          "amp_nonzero": 15110,
+          "fp32_nonzero": 15111,
+          "amp_norm": 10.510848999023438,
+          "fp32_norm": 10.503355979919434,
+          "amp_zero_fp32_nonzero": 1,
+          "amp_zero_fp32_norm_fraction": 2.3257614176423268e-07,
+          "cosine": 0.9999985694885254
+        },
+        "cv3.2": {
+          "elements": 24711,
+          "amp_nonzero": 24696,
+          "fp32_nonzero": 24711,
+          "amp_norm": 3.38615083694458,
+          "fp32_norm": 3.3782689571380615,
+          "amp_zero_fp32_nonzero": 15,
+          "amp_zero_fp32_norm_fraction": 1.0631344754679213e-05,
+          "cosine": 0.9999990463256836
+        },
+        "cv4.0": {
+          "elements": 28832,
+          "amp_nonzero": 28832,
+          "fp32_nonzero": 28832,
+          "amp_norm": 9.473163604736328,
+          "fp32_norm": 9.416593551635742,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.9999945163726807
+        },
+        "cv4.1": {
+          "elements": 47264,
+          "amp_nonzero": 47258,
+          "fp32_nonzero": 47264,
+          "amp_norm": 3.3441712856292725,
+          "fp32_norm": 3.9485416412353516,
+          "amp_zero_fp32_nonzero": 6,
+          "amp_zero_fp32_norm_fraction": 0.00026059152711248345,
+          "cosine": 0.9534227848052979
+        },
+        "cv4.2": {
+          "elements": 84128,
+          "amp_nonzero": 84090,
+          "fp32_nonzero": 84128,
+          "amp_norm": 0.8775138258934021,
+          "fp32_norm": 0.8714050650596619,
+          "amp_zero_fp32_nonzero": 38,
+          "amp_zero_fp32_norm_fraction": 0.0001922818516518339,
+          "cosine": 0.9999508857727051
+        },
+        "all": {
+          "elements": 2843957,
+          "amp_nonzero": 2843255,
+          "fp32_nonzero": 2843935,
+          "amp_norm": 92.28883361816406,
+          "fp32_norm": 95.04025268554688,
+          "amp_zero_fp32_nonzero": 702,
+          "amp_zero_fp32_norm_fraction": 1.2205192911926806e-05,
+          "cosine": 0.997999906539917
+        }
+      }
+    },
+    {
+      "arm": "e0",
+      "epoch": 4,
+      "batch": 19,
+      "seed": 149,
+      "amp": {
+        "loss": 339.0145568847656,
+        "components": {
+          "box_loss": 2.0937843322753906,
+          "seg_loss": 3.622056245803833,
+          "cls_loss": 2.7431392669677734,
+          "dfl_loss": 2.135225296020508,
+          "sem_loss": 0.0
+        },
+        "foreground": {
+          "8": 543,
+          "16": 56,
+          "32": 0
+        },
+        "gradient_population": {
+          "tensors": 290,
+          "elements": 2843957,
+          "nonfinite": 0,
+          "zero": 279818
+        },
+        "gradient_norm": 74.40260314941406,
+        "amp_scale": 1
+      },
+      "fp32": {
+        "loss": 339.0615234375,
+        "components": {
+          "box_loss": 2.0940206050872803,
+          "seg_loss": 3.624284505844116,
+          "cls_loss": 2.7420480251312256,
+          "dfl_loss": 2.1353201866149902,
+          "sem_loss": 0.0
+        },
+        "foreground": {
+          "8": 544,
+          "16": 57,
+          "32": 0
+        },
+        "gradient_population": {
+          "tensors": 290,
+          "elements": 2843957,
+          "nonfinite": 0,
+          "zero": 272913
+        },
+        "gradient_norm": 74.08142852783203,
+        "amp_scale": null
+      },
+      "gradients": {
+        "cv2.0": {
+          "elements": 78144,
+          "amp_nonzero": 78144,
+          "fp32_nonzero": 78144,
+          "amp_norm": 28.17706298828125,
+          "fp32_norm": 28.21787452697754,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.9999434947967529
+        },
+        "cv2.1": {
+          "elements": 115008,
+          "amp_nonzero": 115003,
+          "fp32_nonzero": 115008,
+          "amp_norm": 4.176851272583008,
+          "fp32_norm": 4.1804046630859375,
+          "amp_zero_fp32_nonzero": 5,
+          "amp_zero_fp32_norm_fraction": 3.38080011442075e-05,
+          "cosine": 0.9999369382858276
+        },
+        "cv2.2": {
+          "elements": 188736,
+          "amp_nonzero": 0,
+          "fp32_nonzero": 0,
+          "amp_norm": 0.0,
+          "fp32_norm": 0.0,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": null,
+          "cosine": null
+        },
+        "cv3.0": {
+          "elements": 10311,
+          "amp_nonzero": 10311,
+          "fp32_nonzero": 10311,
+          "amp_norm": 19.47627830505371,
+          "fp32_norm": 19.443565368652344,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.9999629855155945
+        },
+        "cv3.1": {
+          "elements": 15111,
+          "amp_nonzero": 15110,
+          "fp32_nonzero": 15111,
+          "amp_norm": 9.991497993469238,
+          "fp32_norm": 9.988269805908203,
+          "amp_zero_fp32_nonzero": 1,
+          "amp_zero_fp32_norm_fraction": 3.632810523277408e-07,
+          "cosine": 0.9999988079071045
+        },
+        "cv3.2": {
+          "elements": 24711,
+          "amp_nonzero": 24684,
+          "fp32_nonzero": 24711,
+          "amp_norm": 2.536888599395752,
+          "fp32_norm": 2.536032199859619,
+          "amp_zero_fp32_nonzero": 27,
+          "amp_zero_fp32_norm_fraction": 7.81621298649382e-06,
+          "cosine": 0.9999991059303284
+        },
+        "cv4.0": {
+          "elements": 28832,
+          "amp_nonzero": 28832,
+          "fp32_nonzero": 28832,
+          "amp_norm": 9.517020225524902,
+          "fp32_norm": 9.579015731811523,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.99836266040802
+        },
+        "cv4.1": {
+          "elements": 47264,
+          "amp_nonzero": 47262,
+          "fp32_nonzero": 47264,
+          "amp_norm": 2.0583555698394775,
+          "fp32_norm": 2.0586276054382324,
+          "amp_zero_fp32_nonzero": 2,
+          "amp_zero_fp32_norm_fraction": 2.3880656709534075e-05,
+          "cosine": 0.9987746477127075
+        },
+        "cv4.2": {
+          "elements": 84128,
+          "amp_nonzero": 0,
+          "fp32_nonzero": 0,
+          "amp_norm": 0.0,
+          "fp32_norm": 0.0,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": null,
+          "cosine": null
+        },
+        "all": {
+          "elements": 2843957,
+          "amp_nonzero": 2564139,
+          "fp32_nonzero": 2571044,
+          "amp_norm": 74.40260314941406,
+          "fp32_norm": 74.08142852783203,
+          "amp_zero_fp32_nonzero": 6954,
+          "amp_zero_fp32_norm_fraction": 4.288789835857968e-06,
+          "cosine": 0.9993411898612976
+        }
+      }
+    },
+    {
+      "arm": "e0",
+      "epoch": 1,
+      "batch": 1,
+      "seed": 65,
+      "amp": {
+        "loss": 360.5758361816406,
+        "components": {
+          "box_loss": 2.133268117904663,
+          "seg_loss": 3.8998653888702393,
+          "cls_loss": 2.8784966468811035,
+          "dfl_loss": 2.3563647270202637,
+          "sem_loss": 0.0
+        },
+        "foreground": {
+          "8": 312,
+          "16": 164,
+          "32": 13
+        },
+        "gradient_population": {
+          "tensors": 290,
+          "elements": 2843957,
+          "nonfinite": 0,
+          "zero": 622
+        },
+        "gradient_norm": 91.81739044189453,
+        "amp_scale": 1
+      },
+      "fp32": {
+        "loss": 360.59326171875,
+        "components": {
+          "box_loss": 2.1340699195861816,
+          "seg_loss": 3.8987960815429688,
+          "cls_loss": 2.878899097442627,
+          "dfl_loss": 2.356773614883423,
+          "sem_loss": 0.0
+        },
+        "foreground": {
+          "8": 313,
+          "16": 165,
+          "32": 13
+        },
+        "gradient_population": {
+          "tensors": 290,
+          "elements": 2843957,
+          "nonfinite": 0,
+          "zero": 80
+        },
+        "gradient_norm": 92.48564147949219,
+        "amp_scale": null
+      },
+      "gradients": {
+        "cv2.0": {
+          "elements": 78144,
+          "amp_nonzero": 78144,
+          "fp32_nonzero": 78144,
+          "amp_norm": 26.473100662231445,
+          "fp32_norm": 26.505207061767578,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.999300479888916
+        },
+        "cv2.1": {
+          "elements": 115008,
+          "amp_nonzero": 115006,
+          "fp32_nonzero": 115008,
+          "amp_norm": 9.477587699890137,
+          "fp32_norm": 9.476903915405273,
+          "amp_zero_fp32_nonzero": 2,
+          "amp_zero_fp32_norm_fraction": 1.6142169675792062e-06,
+          "cosine": 0.9999880790710449
+        },
+        "cv2.2": {
+          "elements": 188736,
+          "amp_nonzero": 188688,
+          "fp32_nonzero": 188736,
+          "amp_norm": 1.4342042207717896,
+          "fp32_norm": 1.4335471391677856,
+          "amp_zero_fp32_nonzero": 48,
+          "amp_zero_fp32_norm_fraction": 7.307142763359358e-05,
+          "cosine": 0.9999554753303528
+        },
+        "cv3.0": {
+          "elements": 10311,
+          "amp_nonzero": 10311,
+          "fp32_nonzero": 10311,
+          "amp_norm": 21.182893753051758,
+          "fp32_norm": 21.16463851928711,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.9999863505363464
+        },
+        "cv3.1": {
+          "elements": 15111,
+          "amp_nonzero": 15111,
+          "fp32_nonzero": 15111,
+          "amp_norm": 8.180192947387695,
+          "fp32_norm": 8.176362991333008,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.9999945163726807
+        },
+        "cv3.2": {
+          "elements": 24711,
+          "amp_nonzero": 24687,
+          "fp32_nonzero": 24711,
+          "amp_norm": 1.9221361875534058,
+          "fp32_norm": 1.9187126159667969,
+          "amp_zero_fp32_nonzero": 24,
+          "amp_zero_fp32_norm_fraction": 7.208091786790552e-06,
+          "cosine": 0.9999899864196777
+        },
+        "cv4.0": {
+          "elements": 28832,
+          "amp_nonzero": 28832,
+          "fp32_nonzero": 28832,
+          "amp_norm": 11.657533645629883,
+          "fp32_norm": 11.58288860321045,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.9995663166046143
+        },
+        "cv4.1": {
+          "elements": 47264,
+          "amp_nonzero": 47264,
+          "fp32_nonzero": 47264,
+          "amp_norm": 9.598630905151367,
+          "fp32_norm": 9.54687786102295,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.9996445775032043
+        },
+        "cv4.2": {
+          "elements": 84128,
+          "amp_nonzero": 84065,
+          "fp32_nonzero": 84128,
+          "amp_norm": 0.4609241783618927,
+          "fp32_norm": 0.4591713845729828,
+          "amp_zero_fp32_nonzero": 63,
+          "amp_zero_fp32_norm_fraction": 0.0002069224004684325,
+          "cosine": 0.9997891783714294
+        },
+        "all": {
+          "elements": 2843957,
+          "amp_nonzero": 2843335,
+          "fp32_nonzero": 2843877,
+          "amp_norm": 91.81739044189453,
+          "fp32_norm": 92.48564147949219,
+          "amp_zero_fp32_nonzero": 621,
+          "amp_zero_fp32_norm_fraction": 4.538599559289013e-06,
+          "cosine": 0.9991507530212402
+        }
+      }
+    },
+    {
+      "arm": "e1",
+      "epoch": 2,
+      "batch": 13,
+      "seed": 99,
+      "amp": {
+        "loss": 332.5664978027344,
+        "components": {
+          "box_loss": 2.23838210105896,
+          "seg_loss": 3.4122354984283447,
+          "cls_loss": 2.6438724994659424,
+          "dfl_loss": 2.098212718963623,
+          "sem_loss": 0.0
+        },
+        "foreground": {
+          "8": 382,
+          "16": 117,
+          "32": 0
+        },
+        "gradient_population": {
+          "tensors": 290,
+          "elements": 2843957,
+          "nonfinite": 0,
+          "zero": 280040
+        },
+        "gradient_norm": 127.2523193359375,
+        "amp_scale": 1
+      },
+      "fp32": {
+        "loss": 332.91497802734375,
+        "components": {
+          "box_loss": 2.2389650344848633,
+          "seg_loss": 3.421597719192505,
+          "cls_loss": 2.644637107849121,
+          "dfl_loss": 2.098393440246582,
+          "sem_loss": 0.0
+        },
+        "foreground": {
+          "8": 384,
+          "16": 117,
+          "32": 0
+        },
+        "gradient_population": {
+          "tensors": 290,
+          "elements": 2843957,
+          "nonfinite": 0,
+          "zero": 272914
+        },
+        "gradient_norm": 128.41140747070312,
+        "amp_scale": null
+      },
+      "gradients": {
+        "cv2.0": {
+          "elements": 78144,
+          "amp_nonzero": 78144,
+          "fp32_nonzero": 78144,
+          "amp_norm": 26.3675479888916,
+          "fp32_norm": 26.67794418334961,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.9903931021690369
+        },
+        "cv2.1": {
+          "elements": 115008,
+          "amp_nonzero": 115001,
+          "fp32_nonzero": 115008,
+          "amp_norm": 6.736490726470947,
+          "fp32_norm": 6.7330546379089355,
+          "amp_zero_fp32_nonzero": 7,
+          "amp_zero_fp32_norm_fraction": 1.64729207316384e-05,
+          "cosine": 0.9999759793281555
+        },
+        "cv2.2": {
+          "elements": 188736,
+          "amp_nonzero": 0,
+          "fp32_nonzero": 0,
+          "amp_norm": 0.0,
+          "fp32_norm": 0.0,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": null,
+          "cosine": null
+        },
+        "cv3.0": {
+          "elements": 10311,
+          "amp_nonzero": 10311,
+          "fp32_nonzero": 10311,
+          "amp_norm": 19.16712760925293,
+          "fp32_norm": 19.210153579711914,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.9999805688858032
+        },
+        "cv3.1": {
+          "elements": 15111,
+          "amp_nonzero": 15111,
+          "fp32_nonzero": 15111,
+          "amp_norm": 4.405513286590576,
+          "fp32_norm": 4.407376766204834,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.9999935626983643
+        },
+        "cv3.2": {
+          "elements": 24711,
+          "amp_nonzero": 24679,
+          "fp32_nonzero": 24711,
+          "amp_norm": 2.906825542449951,
+          "fp32_norm": 2.9035181999206543,
+          "amp_zero_fp32_nonzero": 32,
+          "amp_zero_fp32_norm_fraction": 7.2059933366290605e-06,
+          "cosine": 0.9999992847442627
+        },
+        "cv4.0": {
+          "elements": 28832,
+          "amp_nonzero": 28832,
+          "fp32_nonzero": 28832,
+          "amp_norm": 11.097787857055664,
+          "fp32_norm": 10.978900909423828,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": 0.0,
+          "cosine": 0.9997803568840027
+        },
+        "cv4.1": {
+          "elements": 47264,
+          "amp_nonzero": 47260,
+          "fp32_nonzero": 47264,
+          "amp_norm": 3.4184625148773193,
+          "fp32_norm": 3.4030373096466064,
+          "amp_zero_fp32_nonzero": 4,
+          "amp_zero_fp32_norm_fraction": 1.9355795680185625e-05,
+          "cosine": 0.9999808073043823
+        },
+        "cv4.2": {
+          "elements": 84128,
+          "amp_nonzero": 0,
+          "fp32_nonzero": 0,
+          "amp_norm": 0.0,
+          "fp32_norm": 0.0,
+          "amp_zero_fp32_nonzero": 0,
+          "amp_zero_fp32_norm_fraction": null,
+          "cosine": null
+        },
+        "all": {
+          "elements": 2843957,
+          "amp_nonzero": 2563917,
+          "fp32_nonzero": 2571043,
+          "amp_norm": 127.2523193359375,
+          "fp32_norm": 128.41140747070312,
+          "amp_zero_fp32_nonzero": 7176,
+          "amp_zero_fp32_norm_fraction": 1.9529682340409095e-05,
+          "cosine": 0.9992174506187439
+        }
+      }
+    }
+  ],
+  "summary": {
+    "minimum_global_cosine": 0.997999906539917,
+    "minimum_stride32_active_branch_cosine": 0.9997121691703796,
+    "max_relative_loss_difference": 0.0010467544196246792,
+    "max_fp32_global_gradient_norm_fraction_on_amp_zero_entries": 1.9529682340409095e-05
+  }
+}
