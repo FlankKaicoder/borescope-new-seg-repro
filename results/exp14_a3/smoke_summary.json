@@ -1,0 +1,177 @@
+{
+  "stage": "Exp14-A3",
+  "diagnostic_only": true,
+  "status": "SMOKE_STOP_PENDING_CHATGPT_REVIEW",
+  "base_git_sha": "c7c961009947416a0271cede852f38a2bbec39f8",
+  "environment": {
+    "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "ultralytics": "8.4.117",
+    "numpy": "2.3.2",
+    "pillow": "11.3.0",
+    "gpu": "NVIDIA GeForce RTX 3080 Ti",
+    "cuda_runtime": "12.8",
+    "driver_gpu": "NVIDIA GeForce RTX 3080 Ti, 12288 MiB, 11909 MiB, 595.71.05",
+    "disk_free_gib_at_audit": 14.63
+  },
+  "payload_files_verified": 1373,
+  "weight_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+  "ui_risk_flags_retained": 3,
+  "preflight_initial_state_match": true,
+  "runs": {
+    "preflight_e0": {
+      "status": "PASS_DIAGNOSTIC_ONLY",
+      "epoch_details": {
+        "1": {
+          "batches": 22,
+          "samples": 684,
+          "full_batches": 21,
+          "tail_batches": 1,
+          "empty_samples": 0,
+          "updates": 0
+        }
+      },
+      "classes_seen": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "forward_checks": 2,
+      "optimizer_calls": 0,
+      "effective_updates": 0,
+      "amp": true,
+      "master_dtype": "float32",
+      "peak_memory_allocated_bytes": 841930752,
+      "peak_memory_reserved_bytes": 1207959552,
+      "suppressed_validation_events": 0,
+      "learning_rates_first": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "learning_rates_last": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "no_secondary_reads": true,
+      "worker_epochs_disjoint": false,
+      "stop_reason": null,
+      "first_finite_loss": 390.69805908203125
+    },
+    "preflight_e1": {
+      "status": "PASS_DIAGNOSTIC_ONLY",
+      "epoch_details": {
+        "1": {
+          "batches": 22,
+          "samples": 684,
+          "full_batches": 21,
+          "tail_batches": 1,
+          "empty_samples": 16,
+          "updates": 0
+        }
+      },
+      "classes_seen": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "forward_checks": 2,
+      "optimizer_calls": 0,
+      "effective_updates": 0,
+      "amp": true,
+      "master_dtype": "float32",
+      "peak_memory_allocated_bytes": 841930752,
+      "peak_memory_reserved_bytes": 1207959552,
+      "suppressed_validation_events": 0,
+      "learning_rates_first": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "learning_rates_last": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "no_secondary_reads": true,
+      "worker_epochs_disjoint": false,
+      "stop_reason": null,
+      "first_finite_loss": 390.69805908203125
+    },
+    "train_e0": {
+      "status": "STOP_DIAGNOSTIC_ONLY",
+      "epoch_details": {
+        "1": {
+          "batches": 1,
+          "samples": 32,
+          "full_batches": 1,
+          "tail_batches": 0,
+          "empty_samples": 0,
+          "updates": 0
+        }
+      },
+      "classes_seen": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "forward_checks": 1,
+      "optimizer_calls": 1,
+      "effective_updates": 0,
+      "amp": true,
+      "master_dtype": "float32",
+      "peak_memory_allocated_bytes": null,
+      "peak_memory_reserved_bytes": null,
+      "suppressed_validation_events": 0,
+      "learning_rates_first": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "learning_rates_last": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "no_secondary_reads": true,
+      "worker_epochs_disjoint": false,
+      "stop_reason": "Non-finite scaled gradient before optimizer step",
+      "first_finite_loss": 390.69805908203125
+    },
+    "train_e1": {
+      "status": "NOT_STARTED",
+      "epoch_details": {},
+      "classes_seen": [],
+      "forward_checks": 0,
+      "optimizer_calls": 0,
+      "effective_updates": 0,
+      "amp": null,
+      "master_dtype": null,
+      "peak_memory_allocated_bytes": null,
+      "peak_memory_reserved_bytes": null,
+      "suppressed_validation_events": 0,
+      "learning_rates_first": [],
+      "learning_rates_last": [],
+      "no_secondary_reads": false,
+      "worker_epochs_disjoint": false,
+      "stop_reason": null,
+      "first_finite_loss": null
+    }
+  },
+  "actual_validation_runs": 0,
+  "formal_training_started": false
+}

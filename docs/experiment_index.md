@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp14-A3 bounded AutoDL Smoke (2026-11-11)
+
+Exp14-A3 AutoDL TRAIN-only preflight passed in both arms (684 samples, 22 batches, tail 12). E0 stopped at the first training batch on a non-finite AMP-scaled gradient before AdamW. Effective updates=0; E1 update phase not started; no VAL/TEST. SMOKE_STOP_PENDING_CHATGPT_REVIEW. [Handoff](exp14/EXP14_A3_SMOKE_HANDOFF.md).
+
 ## Exp14-A2 matched data freeze (2026-11-11)
 
 Exp14-A2 verified 21 A/B-common sources, retained 16 and placed 5 on full-frame support HOLD. Frozen baseline=668 images/1,266 instances; aligned=16 explicit empty labels. E0/E1=684 draws per epoch and 2,200 planned updates each. 38 CPU tests passed. FROZEN_DATA_PENDING_CHATGPT_SMOKE_GATE. [Handoff](exp14/EXP14_A2_HANDOFF.md).
