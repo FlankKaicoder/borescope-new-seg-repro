@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp14-A0 pseudo-normal data admission audit (2026-11-11)
+
+Exp14-A0 completed the offline file audit for 36 frozen TRAIN sources and 39 repair variants. Geometry candidates=29; A/B human pending=39 each; A/B approved=0; label plans on HOLD=44. TRAINING_DATA_NOT_YET_APPROVED. Eleven CPU synthetic tests passed. Stop for ChatGPT data Gate and human review. [Handoff](exp14/EXP14_A0_HANDOFF.md).
+
 ## Exp13-G3-D2 final bounded closeout (2026-11-09)
 
 `G3D2_CLOSED_BOUNDED_PARTIAL_HUMAN_EVIDENCE`. Annotation ended by user choice:

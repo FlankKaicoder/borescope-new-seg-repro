@@ -1,0 +1,94 @@
+{
+  "experiment": "Exp14-A0",
+  "data_gate": "TRAINING_DATA_NOT_YET_APPROVED",
+  "automatic_file_integrity": "PASS",
+  "train_export_images_verified": 668,
+  "train_export_instances_verified": 1266,
+  "frozen_split_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "sources": 36,
+  "groups": 36,
+  "variants": 39,
+  "v1": 36,
+  "v2": 3,
+  "class_counts": {
+    "Burn": {
+      "sources": 6,
+      "v1": 6,
+      "v2": 1
+    },
+    "Crack": {
+      "sources": 6,
+      "v1": 6,
+      "v2": 0
+    },
+    "Dent": {
+      "sources": 6,
+      "v1": 6,
+      "v2": 0
+    },
+    "Material missing": {
+      "sources": 6,
+      "v1": 6,
+      "v2": 2
+    },
+    "Tears": {
+      "sources": 6,
+      "v1": 6,
+      "v2": 0
+    },
+    "Tip curl": {
+      "sources": 0,
+      "v1": 0,
+      "v2": 0
+    },
+    "corrosion": {
+      "sources": 6,
+      "v1": 6,
+      "v2": 0
+    }
+  },
+  "geometry_counts": {
+    "GEOMETRY_CANDIDATE": 29,
+    "ALIGNMENT_UNVERIFIED": 10
+  },
+  "historical_visual_counts": {
+    "NEEDS_RETRY": 5,
+    "VISUAL_PASS": 31,
+    "UNREVIEWED": 3
+  },
+  "priority_flag_counts": {
+    "C1_NEEDS_RETRY": 5,
+    "C1_VISUAL_GEOMETRY_SHORTLIST": 23,
+    "ALIGNMENT_UNVERIFIED": 10,
+    "FULL_TARGET_COVERAGE_INCOMPLETE": 1,
+    "MATERIAL_RECONSTRUCTION_INCOMPLETE": 3,
+    "C1_STATUS_NOTE_CONFLICT": 1,
+    "POLYGON_UI_OVERLAP": 1,
+    "V2_UNREVIEWED": 3,
+    "V2_BOUNDARY_AND_SEAM_REVIEW": 1
+  },
+  "a_technical_counts": {
+    "SOURCE_GRID_COMPOSITE_AVAILABLE": 29,
+    "RAW_ONLY": 10
+  },
+  "b_technical_counts": {
+    "REGION_EVIDENCE_AVAILABLE": 29,
+    "REGION_ALIGNMENT_UNVERIFIED": 10
+  },
+  "a_human_pending": 39,
+  "b_human_pending": 39,
+  "a_eligible_sources": 0,
+  "b_eligible_sources": 0,
+  "a_eligible_variants": 0,
+  "b_eligible_variants": 0,
+  "pending_samples_blocked_from_training": {
+    "A": 39,
+    "B": 39
+  },
+  "label_plan_rows_on_hold": 44,
+  "multi_target_variants": 4,
+  "partial_target_variants": 0,
+  "approved_empty_labels": 0,
+  "historical_formal_tre_gate": "NOT_ESTABLISHED",
+  "historical_trusted_pair_pass": 0
+}
