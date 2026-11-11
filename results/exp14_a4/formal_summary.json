@@ -1,0 +1,274 @@
+{
+  "status": "STOP_FORMAL_PAIR",
+  "gate": "EXP14_A4_PENDING_CHATGPT_RESULT_GATE",
+  "base_git": "a4f5a05053508a3b24f93a316a345e1a0ba6cdca",
+  "environment": {
+    "git_head": "a4f5a05053508a3b24f93a316a345e1a0ba6cdca",
+    "trainer_sha256": "ee09ac0e867ab455de7ff2167d7d1beab1ecb3820a240740cdf817bc7a6459df",
+    "weight_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+    "payload_manifest_sha256": "c6eba4d4d81b059f6ae72bc4059c327da2ce9ede5c731fbe792a78de53ec94e4",
+    "protocol_sha256": "fc280bf2afa0c1e9cd04c1cff193c67fcf7cb298570dee8633ec11c9d669ffca",
+    "payload_files": 1373,
+    "ui_risk_flags_retained": 3,
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "ultralytics": "8.4.117",
+    "numpy": "2.3.2",
+    "pillow": "11.3.0",
+    "cuda_runtime": "12.8",
+    "gpu": "NVIDIA GeForce RTX 3080 Ti",
+    "disk_free_gib": 12.93,
+    "driver_gpu": "NVIDIA GeForce RTX 3080 Ti, 12288 MiB, 11909 MiB, 595.71.05",
+    "numerical_policy": {
+      "init_scale": 1,
+      "zero_diagnostics_fraction": 0.01,
+      "persistent_zero_fraction": 0.05,
+      "persistent_batches": 3
+    }
+  },
+  "arms": {
+    "e0": {
+      "status": "STOP_FORMAL_ARM",
+      "reason": "ValueError: Persistent zero-gradient anomaly",
+      "checkpoint": {
+        "filename": "stopped.pt",
+        "sha256": "a8eee8628a1ec66f8205f6f1babd88d64ad996c17c770eb970bcc142fdd019c8",
+        "model_state_sha256": "af455225a13b54257f6e0df306e6a72dfb4fd90e0aa10bcb34d16dd13afd028a",
+        "parameters_sha256": "a79fae7379ae137d7863f64cf026b5b06fc741c4920be60cef2f190c2eee9ffc"
+      },
+      "completed_epochs": 42,
+      "batches": 926,
+      "samples": 28792,
+      "optimizer_attempts": 926,
+      "native_step_calls": 926,
+      "effective_updates": 926,
+      "scaler_skips": 0,
+      "forward_checks": 926,
+      "initial_state_sha256": "3daf5178f32613771ad13076d6519646ff0261d5bde740d703da24074ec061e5",
+      "scaler_state": {
+        "scale": 1.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000,
+        "_growth_tracker": 926
+      },
+      "elapsed_seconds": 293.75298262014985,
+      "peak_memory_allocated": 5198520320,
+      "peak_memory_reserved": 5565841408,
+      "events_sha256": "15ad86e5541ce257c2bc4f990400a09064347f53c529ebca8210507ae430f1ef",
+      "batch_sequence_verified": true,
+      "native_warmup_and_lr_verified": true,
+      "original_draws": 28792,
+      "aligned_draws": 0,
+      "raw_instances": 54063,
+      "explicit_empty_draws": 0,
+      "training_epoch_seconds_total": 285.1386886634864,
+      "batches_with_zero_fraction_ge_1pct": 119,
+      "highest_zero_fractions": [
+        {
+          "epoch": 32,
+          "batch": 22,
+          "fraction": 0.13725629466268302
+        },
+        {
+          "epoch": 37,
+          "batch": 22,
+          "fraction": 0.09903419777443892
+        },
+        {
+          "epoch": 39,
+          "batch": 11,
+          "fraction": 0.09890972331860151
+        },
+        {
+          "epoch": 11,
+          "batch": 22,
+          "fraction": 0.0987848972400075
+        },
+        {
+          "epoch": 39,
+          "batch": 7,
+          "fraction": 0.09875852553326228
+        }
+      ]
+    },
+    "e1": {
+      "status": "NOT_STARTED",
+      "completed_epochs": 0,
+      "batches": 0,
+      "effective_updates": 0
+    }
+  },
+  "zero_gradient_stop_analysis": {
+    "checkpoint_reloaded": true,
+    "checkpoint_finite": true,
+    "optimizer_finite": true,
+    "stopped_checkpoint_sha256": "a8eee8628a1ec66f8205f6f1babd88d64ad996c17c770eb970bcc142fdd019c8",
+    "checkpoint_reload_allowlisted_builtin_type": "torch.torch_version.TorchVersion",
+    "anomaly_batches": 119,
+    "peak_zero_fraction": 0.13725629466268302,
+    "first": {
+      "epoch": 4,
+      "batch": 19,
+      "zero_fraction": 0.0665868014178836
+    },
+    "modules_with_half_zero_counts": {
+      "model.23.cv4": 101,
+      "model.23.cv2": 1
+    },
+    "stop_sequence": [
+      {
+        "epoch": 42,
+        "batch": 22,
+        "zero_fraction": 0.09863194134088525,
+        "scale": 1.0,
+        "raw_instances": 15,
+        "gradient_norm": 59.43598556518555,
+        "loss": 126.88087463378906,
+        "loss_components": {
+          "box_loss": 2.138836622238159,
+          "seg_loss": 3.628591537475586,
+          "cls_loss": 2.7577860355377197,
+          "dfl_loss": 2.048192262649536,
+          "sem_loss": 0.0
+        },
+        "changed_by_active_group": {
+          "weight": 2827446,
+          "bn": 8039,
+          "bias": 8413
+        },
+        "zero_heavy_modules": {
+          "model.23.cv2": {
+            "zero": 188739,
+            "elements": 381888,
+            "fraction": 0.4942260558069382,
+            "finite_norm": 23.581613540649414
+          },
+          "model.23.cv4": {
+            "zero": 84130,
+            "elements": 160224,
+            "fraction": 0.5250773916516877,
+            "finite_norm": 9.726882934570312
+          }
+        }
+      },
+      {
+        "epoch": 43,
+        "batch": 1,
+        "zero_fraction": 0.09846281079495928,
+        "scale": 1.0,
+        "raw_instances": 85,
+        "gradient_norm": 114.58930206298828,
+        "loss": 309.0037536621094,
+        "loss_components": {
+          "box_loss": 2.056764602661133,
+          "seg_loss": 3.2823703289031982,
+          "cls_loss": 2.417019844055176,
+          "dfl_loss": 1.9002124071121216,
+          "sem_loss": 0.0
+        },
+        "changed_by_active_group": {
+          "weight": 2827456,
+          "bn": 8039,
+          "bias": 8412
+        },
+        "zero_heavy_modules": {
+          "model.23.cv2": {
+            "zero": 188739,
+            "elements": 381888,
+            "fraction": 0.4942260558069382,
+            "finite_norm": 43.5668830871582
+          },
+          "model.23.cv4": {
+            "zero": 84132,
+            "elements": 160224,
+            "fraction": 0.5250898741761534,
+            "finite_norm": 9.500338554382324
+          }
+        }
+      },
+      {
+        "epoch": 43,
+        "batch": 2,
+        "zero_fraction": 0.09832251331507473,
+        "scale": 1.0,
+        "raw_instances": 50,
+        "gradient_norm": 85.91596221923828,
+        "loss": 310.22784423828125,
+        "loss_components": {
+          "box_loss": 2.0783560276031494,
+          "seg_loss": 3.0823655128479004,
+          "cls_loss": 2.571124315261841,
+          "dfl_loss": 1.9627735614776611,
+          "sem_loss": 0.0
+        },
+        "changed_by_active_group": {
+          "weight": 2827454,
+          "bn": 8039,
+          "bias": 8413
+        },
+        "zero_heavy_modules": {
+          "model.23.cv2": {
+            "zero": 188739,
+            "elements": 381888,
+            "fraction": 0.4942260558069382,
+            "finite_norm": 33.32655715942383
+          },
+          "model.23.cv4": {
+            "zero": 84130,
+            "elements": 160224,
+            "fraction": 0.5250773916516877,
+            "finite_norm": 11.435005187988281
+          }
+        }
+      }
+    ],
+    "loss_range": [
+      108.16958618164062,
+      503.9229736328125
+    ],
+    "unscaled_gradient_norm_range": [
+      33.43980026245117,
+      6267.15234375
+    ]
+  },
+  "stop_branch_identity": {
+    "strict_model_reload": true,
+    "branch_parameter_counts": {
+      "model.23.cv2.0": 78144,
+      "model.23.cv2.1": 115008,
+      "model.23.cv2.2": 188736,
+      "model.23.cv4.0": 28832,
+      "model.23.cv4.1": 47264,
+      "model.23.cv4.2": 84128
+    },
+    "head_roles": {
+      "model.23.cv2": "box regression",
+      "model.23.cv4": "segmentation mask coefficients"
+    }
+  },
+  "augmentation_probe": {
+    "positions": "first and tail batch of each epoch",
+    "same_input_pairs": 0,
+    "identical_image_tensor_pairs": 0,
+    "different_input_pairs": 0,
+    "labels_compared": false
+  },
+  "cpu_tests": {
+    "server": 21,
+    "prior_local": 38
+  },
+  "checkpoint_serialization_postcheck": {
+    "metadata_normalized_in_public_source": true,
+    "executed_trainer_sha256": "ee09ac0e867ab455de7ff2167d7d1beab1ecb3820a240740cdf817bc7a6459df",
+    "published_trainer_sha256": "15a6d8294e79c9254a0a17876ebae1b57c3f337069c441ea6f9e105f4f4a06af"
+  },
+  "validation": {
+    "status": "NOT_RUN_REQUIRED_PAIRED_BUDGET_NOT_MET",
+    "images_evaluated": 0,
+    "mask_map50_95_e1_minus_e0": null,
+    "test_reads": 0
+  },
+  "single_seed_signal": "UNDETERMINED"
+}

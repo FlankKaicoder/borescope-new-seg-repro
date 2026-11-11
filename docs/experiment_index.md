@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp14-A4 first formal paired run (2026-11-11)
+
+Exp14-A4 formal E0 stopped at epoch 43 batch 2 on the predeclared three-batch zero-gradient rule. 42 complete epochs, 926 effective updates, zero native skips, finite checkpoint. E1 and VAL not started. EXP14_A4_PENDING_CHATGPT_RESULT_GATE. [Handoff](exp14/EXP14_A4_FORMAL_E0_E1_REVIEW.md).
+
 ## Exp14-A3-D2 revised AMP Smoke (2026-11-11)
 
 Exp14-A3-D2 bounded Smoke passed both arms with native AMP init_scale=1. 2 epochs/44 batches/44 effective updates each, zero skips, matched slot and LR trajectories. One isolated E1 zero-gradient proportion spike is recorded. EXP14_A3_D2_PENDING_CHATGPT_FORMAL_TRAIN_GATE. No formal training or VAL/TEST. [Handoff](exp14/EXP14_A3_D2_SMOKE_REVIEW.md).
