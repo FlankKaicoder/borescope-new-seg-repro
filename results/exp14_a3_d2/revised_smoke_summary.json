@@ -1,0 +1,789 @@
+{
+  "stage": "Exp14-A3-D2",
+  "gate": "EXP14_A3_D2_PENDING_CHATGPT_FORMAL_TRAIN_GATE",
+  "diagnostic_only": true,
+  "status": "PASS_BOUNDED_SMOKE",
+  "paired_effective_updates_match": true,
+  "paired_slots_and_lr_match": true,
+  "paired_initial_state_matches_d1": true,
+  "d1_first_loss_and_parts_exactly_match": true,
+  "payload_files_verified": 1373,
+  "ui_risk_flags_retained": 3,
+  "environment": {
+    "e0": {
+      "diagnostic_only": true,
+      "git_head": "78ff69dfe03adb3111f5e67505cc95cc6c081336",
+      "a2_source_git": "c7c961009947416a0271cede852f38a2bbec39f8",
+      "d2_adapter_sha256": "06da6e9cd967bf7db735f1b13332b6212921a378a5e489927a3e1a8d3c4974c5",
+      "python": "3.12.3",
+      "torch": "2.8.0+cu128",
+      "torchvision": "0.23.0+cu128",
+      "ultralytics": "8.4.117",
+      "numpy": "2.3.2",
+      "pillow": "11.3.0",
+      "cuda_runtime": "12.8",
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "disk_free_gib": 13.44,
+      "driver_gpu": "NVIDIA GeForce RTX 3080 Ti, 12288 MiB, 11909 MiB, 595.71.05",
+      "weight_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+      "payload_files": 1373,
+      "payload_manifest_sha256": "c6eba4d4d81b059f6ae72bc4059c327da2ce9ede5c731fbe792a78de53ec94e4",
+      "protocol_sha256": "fc280bf2afa0c1e9cd04c1cff193c67fcf7cb298570dee8633ec11c9d669ffca"
+    },
+    "e1": {
+      "diagnostic_only": true,
+      "git_head": "78ff69dfe03adb3111f5e67505cc95cc6c081336",
+      "a2_source_git": "c7c961009947416a0271cede852f38a2bbec39f8",
+      "d2_adapter_sha256": "06da6e9cd967bf7db735f1b13332b6212921a378a5e489927a3e1a8d3c4974c5",
+      "python": "3.12.3",
+      "torch": "2.8.0+cu128",
+      "torchvision": "0.23.0+cu128",
+      "ultralytics": "8.4.117",
+      "numpy": "2.3.2",
+      "pillow": "11.3.0",
+      "cuda_runtime": "12.8",
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "disk_free_gib": 13.44,
+      "driver_gpu": "NVIDIA GeForce RTX 3080 Ti, 12288 MiB, 11909 MiB, 595.71.05",
+      "weight_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+      "payload_files": 1373,
+      "payload_manifest_sha256": "c6eba4d4d81b059f6ae72bc4059c327da2ce9ede5c731fbe792a78de53ec94e4",
+      "protocol_sha256": "fc280bf2afa0c1e9cd04c1cff193c67fcf7cb298570dee8633ec11c9d669ffca"
+    }
+  },
+  "runs": {
+    "e0": {
+      "status": "PASS_DIAGNOSTIC_ONLY",
+      "epoch_details": {
+        "1": {
+          "batches": 22,
+          "samples": 684,
+          "full_batches": 21,
+          "tail_batches": 1,
+          "empty_samples": 0,
+          "updates": 22
+        },
+        "2": {
+          "batches": 22,
+          "samples": 684,
+          "full_batches": 21,
+          "tail_batches": 1,
+          "empty_samples": 0,
+          "updates": 22
+        }
+      },
+      "classes_seen": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "forward_checks": 44,
+      "optimizer_calls": 44,
+      "effective_updates": 44,
+      "amp": true,
+      "master_dtype": "float32",
+      "peak_memory_allocated_bytes": 5154439680,
+      "peak_memory_reserved_bytes": 5563744256,
+      "suppressed_validation_events": 2,
+      "learning_rates_first": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "learning_rates_last": [
+        0.006450651515151515,
+        0.006450651515151515,
+        0.041299136363636364
+      ],
+      "no_secondary_reads": true,
+      "worker_epochs_disjoint": true,
+      "stop_reason": null,
+      "first_finite_loss": 390.69805908203125,
+      "numerics": {
+        "completed_epochs": 2,
+        "backwards": 44,
+        "optimizer_attempts": 44,
+        "native_step_calls": 44,
+        "scaler_skips": 0,
+        "effective_updates": 44,
+        "scaler_initial_state": {
+          "scale": 1.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 0
+        },
+        "scale_history": [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        "scaled_nonfinite_batches": 0,
+        "unscaled_nonfinite_batches": 0,
+        "unscaled_zero_fraction_range": [
+          0.0,
+          3.1646048094257406e-05
+        ],
+        "unscaled_gradient_norm_before_clipping_range": [
+          261.085205078125,
+          5351.99560546875
+        ],
+        "loss_range": [
+          183.20526123046875,
+          503.9229736328125
+        ],
+        "active_parameter_groups": {
+          "bias": {
+            "observed_steps": 44,
+            "steps_with_changes": 44,
+            "max_abs_delta": 0.09999996423721313
+          },
+          "weight": {
+            "observed_steps": 43,
+            "steps_with_changes": 43,
+            "max_abs_delta": 0.006511777639389038
+          },
+          "bn": {
+            "observed_steps": 43,
+            "steps_with_changes": 43,
+            "max_abs_delta": 0.005647540092468262
+          }
+        },
+        "first_batch_unscaled_gradients": {
+          "tensors": 290,
+          "elements": 2843957,
+          "nonfinite": 0,
+          "zero": 1
+        },
+        "first_forward_loss_components": {
+          "box_loss": 1.6022652387619019,
+          "seg_loss": 4.104664325714111,
+          "cls_loss": 4.860323905944824,
+          "dfl_loss": 1.6420612335205078,
+          "sem_loss": 0.0
+        },
+        "effective_config": {
+          "seed": 42,
+          "task": "segment",
+          "imgsz": 640,
+          "epochs": 100,
+          "optimizer": "AdamW",
+          "batch": 32,
+          "nbs": 32,
+          "deterministic": true,
+          "amp": true,
+          "lr0": 0.01,
+          "lrf": 0.01,
+          "cos_lr": false,
+          "warmup_epochs": 3.0,
+          "warmup_momentum": 0.8,
+          "warmup_bias_lr": 0.1,
+          "momentum": 0.937,
+          "weight_decay": 0.0005,
+          "mosaic": 0.0,
+          "close_mosaic": 0,
+          "mixup": 0.0,
+          "cutmix": 0.0,
+          "copy_paste": 0.0,
+          "rect": false,
+          "multi_scale": 0.0,
+          "degrees": 0.0,
+          "translate": 0.1,
+          "scale": 0.5,
+          "shear": 0.0,
+          "perspective": 0.0,
+          "flipud": 0.0,
+          "fliplr": 0.5,
+          "hsv_h": 0.015,
+          "hsv_s": 0.7,
+          "hsv_v": 0.4,
+          "bgr": 0.0
+        }
+      }
+    },
+    "e1": {
+      "status": "PASS_DIAGNOSTIC_ONLY",
+      "epoch_details": {
+        "1": {
+          "batches": 22,
+          "samples": 684,
+          "full_batches": 21,
+          "tail_batches": 1,
+          "empty_samples": 16,
+          "updates": 22
+        },
+        "2": {
+          "batches": 22,
+          "samples": 684,
+          "full_batches": 21,
+          "tail_batches": 1,
+          "empty_samples": 16,
+          "updates": 22
+        }
+      },
+      "classes_seen": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "forward_checks": 44,
+      "optimizer_calls": 44,
+      "effective_updates": 44,
+      "amp": true,
+      "master_dtype": "float32",
+      "peak_memory_allocated_bytes": 5197719552,
+      "peak_memory_reserved_bytes": 5561647104,
+      "suppressed_validation_events": 2,
+      "learning_rates_first": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "learning_rates_last": [
+        0.006450651515151515,
+        0.006450651515151515,
+        0.041299136363636364
+      ],
+      "no_secondary_reads": true,
+      "worker_epochs_disjoint": true,
+      "stop_reason": null,
+      "first_finite_loss": 390.69805908203125,
+      "numerics": {
+        "completed_epochs": 2,
+        "backwards": 44,
+        "optimizer_attempts": 44,
+        "native_step_calls": 44,
+        "scaler_skips": 0,
+        "effective_updates": 44,
+        "scaler_initial_state": {
+          "scale": 1.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 0
+        },
+        "scale_history": [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        "scaled_nonfinite_batches": 0,
+        "unscaled_nonfinite_batches": 0,
+        "unscaled_zero_fraction_range": [
+          0.0,
+          0.09597437654648083
+        ],
+        "unscaled_gradient_norm_before_clipping_range": [
+          141.89781188964844,
+          19921.724609375
+        ],
+        "loss_range": [
+          173.30926513671875,
+          502.36041259765625
+        ],
+        "active_parameter_groups": {
+          "bias": {
+            "observed_steps": 44,
+            "steps_with_changes": 44,
+            "max_abs_delta": 0.09999996423721313
+          },
+          "weight": {
+            "observed_steps": 43,
+            "steps_with_changes": 43,
+            "max_abs_delta": 0.00632283091545105
+          },
+          "bn": {
+            "observed_steps": 43,
+            "steps_with_changes": 43,
+            "max_abs_delta": 0.005837798118591309
+          }
+        },
+        "first_batch_unscaled_gradients": {
+          "tensors": 290,
+          "elements": 2843957,
+          "nonfinite": 0,
+          "zero": 1
+        },
+        "first_forward_loss_components": {
+          "box_loss": 1.6022652387619019,
+          "seg_loss": 4.104664325714111,
+          "cls_loss": 4.860323905944824,
+          "dfl_loss": 1.6420612335205078,
+          "sem_loss": 0.0
+        },
+        "effective_config": {
+          "seed": 42,
+          "task": "segment",
+          "imgsz": 640,
+          "epochs": 100,
+          "optimizer": "AdamW",
+          "batch": 32,
+          "nbs": 32,
+          "deterministic": true,
+          "amp": true,
+          "lr0": 0.01,
+          "lrf": 0.01,
+          "cos_lr": false,
+          "warmup_epochs": 3.0,
+          "warmup_momentum": 0.8,
+          "warmup_bias_lr": 0.1,
+          "momentum": 0.937,
+          "weight_decay": 0.0005,
+          "mosaic": 0.0,
+          "close_mosaic": 0,
+          "mixup": 0.0,
+          "cutmix": 0.0,
+          "copy_paste": 0.0,
+          "rect": false,
+          "multi_scale": 0.0,
+          "degrees": 0.0,
+          "translate": 0.1,
+          "scale": 0.5,
+          "shear": 0.0,
+          "perspective": 0.0,
+          "flipud": 0.0,
+          "fliplr": 0.5,
+          "hsv_h": 0.015,
+          "hsv_s": 0.7,
+          "hsv_v": 0.4,
+          "bgr": 0.0
+        }
+      }
+    }
+  },
+  "actual_validation_runs": 0,
+  "formal_training_started": false,
+  "zero_gradient_observations": {
+    "e0": {
+      "median_zero_fraction": 1.58230240471287e-06,
+      "batches_over_1pct": 0,
+      "largest_observations": [
+        {
+          "fraction": 3.1646048094257406e-05,
+          "epoch": 2,
+          "batch": 22
+        },
+        {
+          "fraction": 2.63717067452145e-05,
+          "epoch": 2,
+          "batch": 13
+        },
+        {
+          "fraction": 2.4261970205597343e-05,
+          "epoch": 2,
+          "batch": 16
+        },
+        {
+          "fraction": 1.969087436976016e-05,
+          "epoch": 2,
+          "batch": 17
+        },
+        {
+          "fraction": 1.7581137830143e-05,
+          "epoch": 2,
+          "batch": 12
+        }
+      ]
+    },
+    "e1": {
+      "median_zero_fraction": 1.7581137830143001e-06,
+      "batches_over_1pct": 1,
+      "largest_observations": [
+        {
+          "fraction": 0.09597437654648083,
+          "epoch": 2,
+          "batch": 13
+        },
+        {
+          "fraction": 1.8987628856554442e-05,
+          "epoch": 2,
+          "batch": 21
+        },
+        {
+          "fraction": 1.4768155777320122e-05,
+          "epoch": 2,
+          "batch": 22
+        },
+        {
+          "fraction": 1.265841923770296e-05,
+          "epoch": 2,
+          "batch": 12
+        },
+        {
+          "fraction": 1.1603550967894381e-05,
+          "epoch": 2,
+          "batch": 16
+        }
+      ]
+    }
+  },
+  "cpu_tests": {
+    "d2": 5,
+    "a3_d1": 9,
+    "earlier": 38
+  },
+  "growth_boundary_no_skip_projection": {
+    "effective_update": 2000,
+    "epoch": 91,
+    "batch": 20,
+    "scale_before": 1,
+    "scale_after": 2,
+    "remaining_batches": 200,
+    "observed_on_frozen_model": false
+  },
+  "warmup_lr_schedule_verified_for_all_88_batches": true
+}
