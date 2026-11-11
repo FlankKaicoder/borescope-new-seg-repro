@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp14-A3-D1 first-batch numerical diagnosis (2026-11-11)
+
+Exp14-A3-D1 replayed the A3 first batch, matched its loss exactly and completed five backwards with zero updates. Scale 65536/4096/256 had nonfinite gradients; AMP scale 1 and FP32 were finite. Native GradScaler probe skipped the underlying optimizer and backed off 65536 to 32768. AMP_SCALE_OVERFLOW_LIKELY. Formal training remains stopped. [Handoff](exp14/EXP14_A3_D1_NUMERICAL_REVIEW.md).
+
 ## Exp14-A3 bounded AutoDL Smoke (2026-11-11)
 
 Exp14-A3 AutoDL TRAIN-only preflight passed in both arms (684 samples, 22 batches, tail 12). E0 stopped at the first training batch on a non-finite AMP-scaled gradient before AdamW. Effective updates=0; E1 update phase not started; no VAL/TEST. SMOKE_STOP_PENDING_CHATGPT_REVIEW. [Handoff](exp14/EXP14_A3_SMOKE_HANDOFF.md).

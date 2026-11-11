@@ -1,0 +1,345 @@
+{
+  "stage": "Exp14-A3-D1",
+  "diagnostic_only": true,
+  "base_git": "7fb106581f01b0b34f593eda18fadae49582c5ad",
+  "classification": "AMP_SCALE_OVERFLOW_LIKELY",
+  "completed_cases": 5,
+  "backward_attempts": 5,
+  "model_optimizer_updates": 0,
+  "val_test_runs": 0,
+  "a3_events_unchanged": true,
+  "installed_grad_scaler_source_sha256": "53bdb300c5030c5ead29c8a60a578dcff309777e00cd1b97420530918f6ce5bd",
+  "error": null,
+  "cases": [
+    {
+      "case": "R0",
+      "autocast": true,
+      "scale": 65536.0,
+      "prediction": [
+        {
+          "finite": true,
+          "dtypes": [
+            "torch.float16"
+          ]
+        }
+      ],
+      "loss": 390.69805908203125,
+      "components": {
+        "box_loss": 1.6022652387619019,
+        "seg_loss": 4.104664325714111,
+        "cls_loss": 4.860323905944824,
+        "dfl_loss": 1.6420612335205078,
+        "sem_loss": 0.0
+      },
+      "loss_finite": true,
+      "peak_allocated_bytes": 5113189888,
+      "status": "COMPLETE",
+      "scaled_or_fp32_gradients": {
+        "gradient_tensors": 290,
+        "nonfinite_tensors": 252,
+        "nonfinite_elements": 2758518,
+        "all_finite": false
+      },
+      "unscaled_gradients": {
+        "gradient_tensors": 290,
+        "nonfinite_tensors": 252,
+        "nonfinite_elements": 2758518,
+        "all_finite": false
+      },
+      "scaler_probe": {
+        "state_before": {
+          "scale": 65536.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 0
+        },
+        "found_inf": 1.0,
+        "native_skip_probed": true,
+        "state_after": {
+          "scale": 32768.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 0
+        },
+        "guard_step_calls": 0
+      },
+      "first_local_operator": {
+        "operator": "MvBackward0",
+        "associated_output_modules": [],
+        "nonfinite_grad_inputs": [
+          {
+            "index": 0,
+            "shape": [
+              1075200,
+              16
+            ],
+            "dtype": "torch.float16",
+            "elements": 17203200,
+            "nonfinite": 5271,
+            "nan": 0,
+            "posinf": 2743,
+            "neginf": 2528,
+            "finite_min": -65472.0,
+            "finite_max": 65504.0,
+            "finite_abs_mean": 28.672863503188637
+          }
+        ],
+        "nonfinite_grad_outputs": [],
+        "grad_output_dtypes": [
+          "torch.float16"
+        ]
+      }
+    },
+    {
+      "case": "R1",
+      "autocast": true,
+      "scale": 4096,
+      "prediction": [
+        {
+          "finite": true,
+          "dtypes": [
+            "torch.float16"
+          ]
+        }
+      ],
+      "loss": 390.69805908203125,
+      "components": {
+        "box_loss": 1.6022652387619019,
+        "seg_loss": 4.104664325714111,
+        "cls_loss": 4.860323905944824,
+        "dfl_loss": 1.6420612335205078,
+        "sem_loss": 0.0
+      },
+      "loss_finite": true,
+      "peak_allocated_bytes": 4923110400,
+      "status": "COMPLETE",
+      "scaled_or_fp32_gradients": {
+        "gradient_tensors": 290,
+        "nonfinite_tensors": 178,
+        "nonfinite_elements": 1838618,
+        "all_finite": false
+      },
+      "unscaled_gradients": {
+        "gradient_tensors": 290,
+        "nonfinite_tensors": 178,
+        "nonfinite_elements": 1838618,
+        "all_finite": false
+      },
+      "scaler_probe": {
+        "state_before": {
+          "scale": 4096.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 0
+        },
+        "found_inf": 1.0,
+        "native_skip_probed": false,
+        "state_after": {
+          "scale": 4096.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 0
+        },
+        "guard_step_calls": 0
+      },
+      "first_local_operator": null
+    },
+    {
+      "case": "R2",
+      "autocast": true,
+      "scale": 256,
+      "prediction": [
+        {
+          "finite": true,
+          "dtypes": [
+            "torch.float16"
+          ]
+        }
+      ],
+      "loss": 390.69805908203125,
+      "components": {
+        "box_loss": 1.6022652387619019,
+        "seg_loss": 4.104664325714111,
+        "cls_loss": 4.860323905944824,
+        "dfl_loss": 1.6420612335205078,
+        "sem_loss": 0.0
+      },
+      "loss_finite": true,
+      "peak_allocated_bytes": 4923110400,
+      "status": "COMPLETE",
+      "scaled_or_fp32_gradients": {
+        "gradient_tensors": 290,
+        "nonfinite_tensors": 1,
+        "nonfinite_elements": 44,
+        "all_finite": false
+      },
+      "unscaled_gradients": {
+        "gradient_tensors": 290,
+        "nonfinite_tensors": 1,
+        "nonfinite_elements": 44,
+        "all_finite": false
+      },
+      "scaler_probe": {
+        "state_before": {
+          "scale": 256.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 0
+        },
+        "found_inf": 1.0,
+        "native_skip_probed": false,
+        "state_after": {
+          "scale": 256.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 0
+        },
+        "guard_step_calls": 0
+      },
+      "first_local_operator": null
+    },
+    {
+      "case": "R3",
+      "autocast": true,
+      "scale": 1,
+      "prediction": [
+        {
+          "finite": true,
+          "dtypes": [
+            "torch.float16"
+          ]
+        }
+      ],
+      "loss": 390.69805908203125,
+      "components": {
+        "box_loss": 1.6022652387619019,
+        "seg_loss": 4.104664325714111,
+        "cls_loss": 4.860323905944824,
+        "dfl_loss": 1.6420612335205078,
+        "sem_loss": 0.0
+      },
+      "loss_finite": true,
+      "peak_allocated_bytes": 4923110400,
+      "status": "COMPLETE",
+      "scaled_or_fp32_gradients": {
+        "gradient_tensors": 290,
+        "nonfinite_tensors": 0,
+        "nonfinite_elements": 0,
+        "all_finite": true
+      },
+      "unscaled_gradients": {
+        "gradient_tensors": 290,
+        "nonfinite_tensors": 0,
+        "nonfinite_elements": 0,
+        "all_finite": true
+      },
+      "scaler_probe": {
+        "state_before": {
+          "scale": 1.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 0
+        },
+        "found_inf": 0.0,
+        "native_skip_probed": false,
+        "state_after": {
+          "scale": 1.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 0
+        },
+        "guard_step_calls": 0
+      },
+      "first_local_operator": null
+    },
+    {
+      "case": "R4",
+      "autocast": false,
+      "scale": null,
+      "prediction": [
+        {
+          "finite": true,
+          "dtypes": [
+            "torch.float32"
+          ]
+        }
+      ],
+      "loss": 390.72247314453125,
+      "components": {
+        "box_loss": 1.603857159614563,
+        "seg_loss": 4.106873512268066,
+        "cls_loss": 4.858297824859619,
+        "dfl_loss": 1.6410484313964844,
+        "sem_loss": 0.0
+      },
+      "loss_finite": true,
+      "peak_allocated_bytes": 9220163072,
+      "status": "COMPLETE",
+      "scaled_or_fp32_gradients": {
+        "gradient_tensors": 290,
+        "nonfinite_tensors": 0,
+        "nonfinite_elements": 0,
+        "all_finite": true
+      },
+      "unscaled_gradients": {},
+      "scaler_probe": null,
+      "first_local_operator": null
+    }
+  ],
+  "reproduction": {
+    "slots_matched": 32,
+    "raw_instances": 57,
+    "historical_loss_exact": true,
+    "historical_preprocessed_tensor_hash_available": false,
+    "initial_model_identity_match": true
+  },
+  "r0_first_affected_parameter": {
+    "parameter": "model.23.proto.cv3.conv.weight",
+    "shape": [
+      32,
+      64,
+      1,
+      1
+    ],
+    "dtype": "torch.float32",
+    "elements": 2048,
+    "nonfinite": 1742,
+    "nan": 1228,
+    "posinf": 201,
+    "neginf": 313,
+    "finite_min": -65088.0,
+    "finite_max": 65280.0,
+    "finite_abs_mean": 25636.85794526144
+  },
+  "r2_only_affected_parameter": {
+    "parameter": "model.0.conv.weight",
+    "shape": [
+      16,
+      3,
+      3,
+      3
+    ],
+    "dtype": "torch.float32",
+    "elements": 432,
+    "nonfinite": 44,
+    "nan": 0,
+    "posinf": 0,
+    "neginf": 44,
+    "finite_min": -65088.0,
+    "finite_max": 62944.0,
+    "finite_abs_mean": 21559.728092783505
+  },
+  "cpu_tests": {
+    "d1": 5,
+    "a3": 4,
+    "earlier": 38
+  }
+}
