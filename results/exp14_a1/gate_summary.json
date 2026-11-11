@@ -1,0 +1,148 @@
+{
+  "experiment": "Exp14-A1",
+  "gate": "CANDIDATES_VERIFIED_PENDING_CHATGPT_DATA_GATE",
+  "training_data_released": false,
+  "historical_trusted_pair_pass": 0,
+  "coverage": {
+    "a0_variants": 39,
+    "priority_variants": 24,
+    "priority_sources": 24,
+    "outside_priority_pending": 15,
+    "polygon_decisions_verified": 27,
+    "final_images_verified": 24
+  },
+  "A": {
+    "human": {
+      "PASS": 23,
+      "HOLD": 0,
+      "REJECT": 0,
+      "PENDING_HUMAN_REVIEW": 1
+    },
+    "verified": {
+      "VERIFIED_CANDIDATE": 22,
+      "HOLD": 1,
+      "REJECT": 0,
+      "PENDING_HUMAN_REVIEW": 1
+    },
+    "pending_including_outside_priority": 16,
+    "image_use": {
+      "aligned_output": 22,
+      "hard_composite": 0,
+      "feather_composite": 0,
+      "raw_output": 0
+    },
+    "independent_sources": 22,
+    "source_groups": 22,
+    "by_class": {
+      "Burn": {
+        "sources": 3,
+        "variants": 3
+      },
+      "Crack": {
+        "sources": 4,
+        "variants": 4
+      },
+      "Dent": {
+        "sources": 2,
+        "variants": 2
+      },
+      "Material missing": {
+        "sources": 4,
+        "variants": 4
+      },
+      "Tears": {
+        "sources": 6,
+        "variants": 6
+      },
+      "Tip curl": {
+        "sources": 0,
+        "variants": 0
+      },
+      "corrosion": {
+        "sources": 3,
+        "variants": 3
+      }
+    },
+    "reason_counts": {
+      "NO_CONFIRMED_REMOVAL": 1
+    }
+  },
+  "B": {
+    "human": {
+      "PASS": 24,
+      "HOLD": 0,
+      "REJECT": 0,
+      "PENDING_HUMAN_REVIEW": 0
+    },
+    "verified": {
+      "VERIFIED_CANDIDATE": 21,
+      "HOLD": 3,
+      "REJECT": 0,
+      "PENDING_HUMAN_REVIEW": 0
+    },
+    "pending_including_outside_priority": 15,
+    "image_use": {
+      "aligned_output": 21,
+      "hard_composite": 0,
+      "feather_composite": 0,
+      "raw_output": 0
+    },
+    "independent_sources": 21,
+    "source_groups": 21,
+    "by_class": {
+      "Burn": {
+        "sources": 3,
+        "variants": 3
+      },
+      "Crack": {
+        "sources": 4,
+        "variants": 4
+      },
+      "Dent": {
+        "sources": 1,
+        "variants": 1
+      },
+      "Material missing": {
+        "sources": 4,
+        "variants": 4
+      },
+      "Tears": {
+        "sources": 6,
+        "variants": 6
+      },
+      "Tip curl": {
+        "sources": 0,
+        "variants": 0
+      },
+      "corrosion": {
+        "sources": 3,
+        "variants": 3
+      }
+    },
+    "reason_counts": {
+      "A_NOT_VERIFIED": 2,
+      "REMOVED_POLYGON_VALID_SUPPORT_INCOMPLETE": 1
+    }
+  },
+  "submitted_image_choices": {
+    "aligned_output": 24,
+    "hard_composite": 0,
+    "feather_composite": 0,
+    "raw_output": 0
+  },
+  "submitted_polygon_decisions": {
+    "DELETE": 25,
+    "KEEP": 2,
+    "HOLD": 0,
+    "PENDING_HUMAN_REVIEW": 0
+  },
+  "a_candidate_deleted_polygons": 25,
+  "a_candidate_kept_polygons": 0,
+  "a_empty_targets": 22,
+  "a_partial_repairs": 0,
+  "b_pair_candidates": 21,
+  "b_removed_region_candidates": 24,
+  "a_verified_b_not_verified": 1,
+  "identity_conflict_variants": 0,
+  "priority_variants_needing_followup": 3
+}

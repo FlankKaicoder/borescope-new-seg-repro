@@ -2,6 +2,10 @@
 
 ## Current extension (2026-11-11)
 
+Exp14-A1 imported 24 human-reviewed TRAIN variants and verified 22 A candidates and 21 B Pair candidates. All selected final images are aligned. Fifteen variants remain outside priority review. CANDIDATES_VERIFIED_PENDING_CHATGPT_DATA_GATE. No training dataset released. Twenty-seven CPU tests passed. [Handoff](exp14/EXP14_A1_HANDOFF.md).
+
+## Current extension (2026-11-11)
+
 Exp14-A0 completed the offline file audit for 36 frozen TRAIN sources and 39 repair variants. Geometry candidates=29; A/B human pending=39 each; A/B approved=0; label plans on HOLD=44. TRAINING_DATA_NOT_YET_APPROVED. Eleven CPU synthetic tests passed. Stop for ChatGPT data Gate and human review. [Handoff](exp14/EXP14_A0_HANDOFF.md).
 
 Current frozen state (2026-11-09): **`G3D2_CLOSED_BOUNDED_PARTIAL_HUMAN_EVIDENCE`**. The user ended D2 manual landmark collection; no completion of the120 slots is required. The read-only private CSV audit verifies18 Pair variants/120 preset slots:22 CONFIRMED across4 pairs,98 PENDING,15 rule-valid points,7 NEAR-region exclusions and0 complete evaluable Pairs. Valid/confirmed:558_V1=5/6;570_V1=4/9;483_V1=1/1 confirmed (5 other slots PENDING);861_V1=5/6. Mechanical identities are not independently expert-verified. Fixed-transform partial-point TRE is exploratory only; **FORMAL_TRE_GATE=NOT_ESTABLISHED; TRUSTED_PAIR_PASS=0**. No Pair-quality JSON or judgment was reconstructed. Retain SIFT + proportional mapping/Similarity/Affine; future targeted registration repairs require an explicit failure case and scientific necessity. No60-source generation or Local Change formal training. See [final closeout](exp13_cloud/G3_D2_FINAL_CLOSEOUT.md), [handoff](exp13_cloud/G3_D2_HANDOFF.md). CSV/coordinates remain private; historical results, masks, images, permanent locks and protected script unchanged. Stop at ChatGPT Gate for research-route decision.

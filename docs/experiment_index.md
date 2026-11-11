@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp14-A1 human-review import (2026-11-11)
+
+Exp14-A1 imported 24 human-reviewed TRAIN variants and verified 22 A candidates and 21 B Pair candidates. All selected final images are aligned. Fifteen variants remain outside priority review. CANDIDATES_VERIFIED_PENDING_CHATGPT_DATA_GATE. No training dataset released. Twenty-seven CPU tests passed. [Handoff](exp14/EXP14_A1_HANDOFF.md).
+
 ## Exp14-A0 pseudo-normal data admission audit (2026-11-11)
 
 Exp14-A0 completed the offline file audit for 36 frozen TRAIN sources and 39 repair variants. Geometry candidates=29; A/B human pending=39 each; A/B approved=0; label plans on HOLD=44. TRAINING_DATA_NOT_YET_APPROVED. Eleven CPU synthetic tests passed. Stop for ChatGPT data Gate and human review. [Handoff](exp14/EXP14_A0_HANDOFF.md).
