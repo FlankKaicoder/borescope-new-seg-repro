@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp14-A5 Pilot40 evidence export (2026-11-12)
+
+Decision D060. Freeze the user-specified 40 repair variants for independent AI visual review. Bind every case to the published review ID and byte-verified imagery. Assign case IDs independently of historical decisions. Keep human notes and reference groups in the private control file. The two previously discussed examples are excluded from independent agreement, and historical HOLD retains its original support or review scope. The first stage delivers imagery and blank AI suggestion templates. User review governs subsequent acceptance. [Handoff](exp14/EXP14_A5_PILOT40_VISUAL_EVIDENCE_HANDOFF.md).
+
 ## Exp14 large-scale TRAIN repair (2026-11-12)
 
 Decision D059. The user authorized one paid native-frame V1 request for each

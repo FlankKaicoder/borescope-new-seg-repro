@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp14-A5 Pilot40 visual evidence (2026-11-12)
+
+EXP14_A5_PILOT40_VISUAL_EVIDENCE_READY. Forty fixed variants from 39 TRAIN sources, 31 Aligned, 9 alignment-unverified and 66 selected Polygons. Two 20-case evidence ZIPs verified with blank AI suggestions and private historical controls. [Handoff](exp14/EXP14_A5_PILOT40_VISUAL_EVIDENCE_HANDOFF.md) · [Sanitized summary](../results/exp14_a5_pilot40/summary.json).
+
 ## Exp14 large-scale TRAIN repair and review (2026-11-12)
 
 EXP14_LARGE_SCALE_REPAIR_COMPLETED_PENDING_HUMAN_REVIEW. Native-frame Raw coverage is 523 of 523 SELECT sources after 485 authorized POSTs and verified historical reuse. The offline bundle has 530 review entries and 379 Aligned candidates from 374 sources. New human approvals and Trusted Pairs are zero. [Handoff](exp14/EXP14_LARGE_SCALE_REPAIR_HANDOFF.md) · [Sanitized summary](../results/exp14_large_scale_repair/summary.json).

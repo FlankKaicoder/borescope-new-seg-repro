@@ -1,0 +1,56 @@
+{
+  "ai_suggestions_written": 0,
+  "aligned": 31,
+  "alignment_unverified": 9,
+  "api_post": 0,
+  "archive_counts": [
+    {
+      "aligned": 15,
+      "alignment_unverified": 5,
+      "bytes": 56358342,
+      "images": 140,
+      "records": 20
+    },
+    {
+      "aligned": 16,
+      "alignment_unverified": 4,
+      "bytes": 59295254,
+      "images": 140,
+      "records": 20
+    }
+  ],
+  "archive_image_decode_and_sha256": 280,
+  "archive_manifest_and_template_crosscheck": "PASS",
+  "batch_id": "EXP14_A5_PILOT40",
+  "class_aligned_records": {
+    "Burn": 5,
+    "Crack": 6,
+    "Dent": 5,
+    "Material missing": 7,
+    "Tears": 4,
+    "Tip curl": 0,
+    "corrosion": 6
+  },
+  "class_records": {
+    "Burn": 6,
+    "Crack": 8,
+    "Dent": 6,
+    "Material missing": 9,
+    "Tears": 5,
+    "Tip curl": 0,
+    "corrosion": 8
+  },
+  "crop_coordinate_and_pixel_checks": 120,
+  "gpu_training": 0,
+  "identity_checks": 40,
+  "multi_class_records": 1,
+  "multi_polygon_records": 8,
+  "new_alignment": 0,
+  "polygon_count": 66,
+  "private_controls_excluded": true,
+  "records": 40,
+  "representative_visual_readability": "PASS",
+  "review_changes": 0,
+  "sources": 39,
+  "status": "EXP14_A5_PILOT40_VISUAL_EVIDENCE_READY"
+}

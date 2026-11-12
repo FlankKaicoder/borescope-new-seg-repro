@@ -1,5 +1,9 @@
 # Project state
 
+## Exp14-A5 Pilot40 visual evidence (2026-11-12)
+
+EXP14_A5_PILOT40_VISUAL_EVIDENCE_READY. The fixed 40 variants from 39 TRAIN sources reconcile with the published repair bundle. Two blinded archives contain 20 cases each, with 31 Aligned, 9 alignment-unverified and 66 selected Polygons overall. All 280 archived images pass SHA256 and decode checks. The 120 original and Aligned crops match the frozen coordinates and pixels. Historical controls are private and both AI templates are blank. API POST, new registration, GPU training and review changes are all zero. [Handoff](exp14/EXP14_A5_PILOT40_VISUAL_EVIDENCE_HANDOFF.md).
+
 ## Exp14 large-scale repair (2026-11-12)
 
 EXP14_LARGE_SCALE_REPAIR_COMPLETED_PENDING_HUMAN_REVIEW. The 523 audited TRAIN SELECT sources and 901 target Polygons are frozen. All 485 authorized POSTs have verified terminal evidence and at least one image, producing 488 new Raw images. Historical reuse brings native-frame Raw coverage to 523 sources. The private offline bundle has 530 review entries, 379 Aligned candidates across 374 sources and 151 alignment-unverified entries. Six requests needed response recovery with zero repeat POSTs. No new human approvals or Trusted Pairs. Human review and the A/B data Gate determine admission. [Handoff](exp14/EXP14_LARGE_SCALE_REPAIR_HANDOFF.md).
