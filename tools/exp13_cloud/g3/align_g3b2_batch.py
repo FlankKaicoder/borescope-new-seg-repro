@@ -134,9 +134,8 @@ def evaluate_matrix(matrix, inliers, pairs, output_size, source_size, method):
     median = float(np.median(errors[keep])) if count else None
     p90 = float(np.percentile(errors[keep], 90)) if count else None
     threshold = max(2.0, 0.005 * math.hypot(sw, sh))
-    inverse = cv2.invertAffineTransform(matrix)
     corners = np.float64([[0, 0], [ow, 0], [ow, oh], [0, oh]])
-    mapped = project(inverse, corners)
+    mapped = project(matrix, corners)
     homography = cv2.convexHull(mapped.astype(np.float32))
     overlap = cv2.intersectConvexConvex(homography, np.float32([[0, 0], [sw, 0], [sw, sh], [0, sh]]))[0]
     overlap_fraction = float(overlap / (sw * sh))
@@ -295,6 +294,26 @@ const cards=[...document.querySelectorAll('article')], classes=[...new Set(cards
     (out / "index.html").write_text(page, encoding="utf-8", newline="\n")
 
 
+def registration_candidates(original, raw, target):
+    source_size = (original.shape[1], original.shape[0])
+    output_size = (raw.shape[1], raw.shape[0])
+    aspect_delta = abs((source_size[0] / source_size[1]) / (output_size[0] / output_size[1]) - 1)
+    original_allowed = support_mask(original, target)
+    raw_target_prior = cv2.resize(target, output_size, interpolation=cv2.INTER_NEAREST)
+    raw_allowed = support_mask(raw, raw_target_prior)
+    keys_a, desc_a = extract_features(original, original_allowed)
+    keys_b, desc_b = extract_features(raw, raw_allowed)
+    pairs = collect_matches(keys_a, desc_a, keys_b, desc_b, source_size, output_size)
+    candidates = []
+    if aspect_delta <= 0.005:
+        candidates.append(validate_resize_candidate(pairs, resize_candidate(source_size, output_size),
+                                                    source_size, output_size))
+    candidates.extend(fit for fit, _ in fit_models(pairs, output_size, source_size))
+    passes = [candidate for candidate in candidates if candidate["status"] == "GEOMETRY_CANDIDATE"]
+    selected = min(passes, key=lambda candidate: candidate["median_reprojection_error_source_px"]) if passes else None
+    return candidates, selected, len(pairs), aspect_delta
+
+
 def process_row(row, expected_raw_sha256, train_root, atlas_root, generation_root, out):
     source_id = str(row["source_id"])
     image_path = train_root / row["image_path"]
@@ -325,20 +344,7 @@ def process_row(row, expected_raw_sha256, train_root, atlas_root, generation_roo
     polygon_ids = json_polygon_ids(json_path, source_id)
     if set(row["selected_polygon_ids"].split("|")) - set(polygon_ids):
         raise ValueError(f"Selected Polygon ID mismatch: {source_id}")
-    aspect_delta = abs((source_size[0] / source_size[1]) / (output_size[0] / output_size[1]) - 1)
-    original_allowed = support_mask(original, target)
-    raw_target_prior = cv2.resize(target, output_size, interpolation=cv2.INTER_NEAREST)
-    raw_allowed = support_mask(raw, raw_target_prior)
-    keys_a, desc_a = extract_features(original, original_allowed)
-    keys_b, desc_b = extract_features(raw, raw_allowed)
-    pairs = collect_matches(keys_a, desc_a, keys_b, desc_b, source_size, output_size)
-    candidates = []
-    if aspect_delta <= 0.005:
-        resize_fit = validate_resize_candidate(pairs, resize_candidate(source_size, output_size), source_size, output_size)
-        candidates.append(resize_fit)
-    candidates.extend(fit for fit, _ in fit_models(pairs, output_size, source_size))
-    passes = [x for x in candidates if x["status"] == "GEOMETRY_CANDIDATE"]
-    selected = min(passes, key=lambda x: x.get("median_reprojection_error_source_px") or 0) if passes else None
+    candidates, selected, match_count, aspect_delta = registration_candidates(original, raw, target)
     folder = out / source_id
     folder.mkdir(exist_ok=False)
     write_rgb(folder / "original.png", original)
@@ -351,7 +357,7 @@ def process_row(row, expected_raw_sha256, train_root, atlas_root, generation_roo
               "polygon_ids": row["selected_polygon_ids"], "source_size": list(source_size),
               "output_size": list(output_size), "aspect_ratio_difference": aspect_delta,
               "mapping_method": selected["method"] if selected else "NONE",
-              "match_count": len(pairs), "geometry_status": "GEOMETRY_CANDIDATE" if selected else "ALIGNMENT_UNVERIFIED",
+              "match_count": match_count, "geometry_status": "GEOMETRY_CANDIDATE" if selected else "ALIGNMENT_UNVERIFIED",
               "valid_pixel_coverage": 0.0, "nondefect_alignment": "UNVERIFIED",
               "defect_edge_risk": "PENDING_VISUAL_REVIEW",
               "trusted_training_pair_status": "NOT_GRANTED", "visual_review_status": "UNREVIEWED",

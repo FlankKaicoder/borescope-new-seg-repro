@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Exp14 孔探修复审核</title>
+<style>
+:root{color-scheme:light;--ink:#162936;--muted:#516370;--line:#ccd7dc;--panel:#fff;--bg:#edf2f4;--accent:#075963}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "Inter","Microsoft YaHei UI",system-ui,sans-serif}
+header{background:#15333e;color:#fff;padding:15px clamp(14px,3vw,40px)}
+header h1{margin:0;font-size:24px}
+header p{margin:4px 0 0;color:#d1e5ea}
+main{max-width:1540px;margin:auto;padding:14px clamp(12px,2vw,28px) 32px}
+section,details.panel{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px;margin-bottom:12px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+label.control{display:grid;gap:3px}
+input,select,button,textarea{font:inherit;border:1px solid #9eb2bd;border-radius:5px;padding:6px 9px;background:#fff;color:var(--ink)}
+button{cursor:pointer}
+button.primary{background:var(--accent);color:white;border-color:var(--accent)}
+button:disabled{opacity:.5;cursor:default}
+textarea{display:block;width:100%;min-height:72px;resize:vertical}
+h2{margin:0 0 4px;font-size:20px}
+h3{margin:8px 0 4px;font-size:16px}
+.meta{color:var(--muted);margin:4px 0 8px}
+.gallery{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(min(245px,100%),1fr))}
+.gallery.two{grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr))}
+figure{margin:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;min-width:0}
+figure a{display:block;background:#131b20}
+figure img{display:block;width:100%;height:auto;max-height:52vh;object-fit:contain}
+figcaption{padding:5px 8px}
+summary{cursor:pointer;font-weight:600}
+progress{width:min(180px,100%);height:12px;accent-color:var(--accent)}
+#notice[data-error=true]{color:#a12625;font-weight:600}
+#notice{margin:8px 0 0;min-height:1.5em}
+#item{scroll-margin-top:12px}
+#controls{margin:8px 0}
+#polygon-notes{margin:8px 0}
+#fallback textarea{min-height:105px}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<header><h1>Exp14 孔探修复审核</h1><p>点击图像可查看原始尺寸。红线为所选目标，蓝线为保留目标。</p></header>
+<main>
+<section aria-label="筛选与导出">
+  <div class="row">
+    <label class="control">类别 <select id="class"><option value="">全部类别</option></select></label>
+    <label class="control">来源 ID <input id="source" type="search" placeholder="例如 650"></label>
+    <label class="control">审核状态 <select id="status-filter"><option value="">全部状态</option></select></label>
+    <button id="csv" class="primary" type="button">导出 CSV</button>
+    <button id="json" type="button">备份 JSON</button>
+    <button id="import" type="button">导入 CSV / JSON</button>
+    <input id="file" type="file" accept=".csv,.json" hidden>
+  </div>
+  <div class="row" id="controls">
+    <button id="prev" type="button">上一张</button><button id="next" type="button">下一张</button>
+    <span id="position"></span><progress id="progress"></progress><span id="count"></span>
+  </div>
+  <p id="notice" role="status">保存审核时请导出 CSV 或 JSON。</p>
+  <details id="fallback" hidden><summary>下载失败时复制导出内容</summary><textarea id="copy" readonly aria-label="导出文本"></textarea></details>
+</section>
+<p id="empty" hidden>当前筛选下没有记录。</p>
+<section id="item" aria-label="当前修复">
+  <h2 id="title"></h2>
+  <p class="meta" id="geometry"></p>
+  <div class="gallery" id="images"></div>
+  <h3>目标局部对比</h3>
+  <div class="row">
+    <label>Polygon <select id="polygon"></select></label><span id="target-support" class="meta"></span>
+  </div>
+  <div class="gallery two" id="crops"></div>
+</section>
+<section id="form" aria-label="人工审核">
+  <div class="row">
+    <label class="control">决定 <select id="decision"></select></label>
+    <label class="control">原因 <select id="reason"></select></label>
+    <label><input type="checkbox" id="whole"> 已确认整图无七类缺陷</label>
+    <label><input type="checkbox" id="region"> 已确认通过区域可用于同源区域学习</label>
+  </div>
+  <label class="control">备注 <textarea id="notes" placeholder="可记录失败位置或需复核的结构"></textarea></label>
+  <details id="polygon-notes">
+    <summary>逐 Polygon 决定</summary>
+    <div class="row" id="polygon-decisions"></div>
+  </details>
+</section>
+<details class="panel" id="diagnostics">
+  <summary>Raw、Hard、Feather 与有效区域</summary>
+  <p id="risk" class="meta"></p>
+  <div class="gallery" id="diagnostic-images"></div>
+  <a id="geometry-file" target="_blank" rel="noopener">几何诊断 JSON</a>
+</details>
+</main>
+<script id="bundle" type="application/json">__BUNDLE_JSON__</script>
+<script>__REVIEW_SCRIPT__</script>
+</body>
+</html>

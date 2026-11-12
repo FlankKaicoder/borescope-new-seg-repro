@@ -3,3 +3,4 @@
 /tools/exp13_cloud/** -text
 /configs/exp13_cloud/** -text
 /docs/exp13_cloud/** -text
+/configs/exp14/repair/*.txt -text
