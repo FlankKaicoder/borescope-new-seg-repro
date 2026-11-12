@@ -196,7 +196,7 @@ def summarize(root):
     records = {key: record for key, record in finished_candidates(root).items() if key in variants}
     stops = sorted((root / "logs").glob("stop_*.json"))
     starts = sorted((root / "logs").glob("start_*.json"))
-    execution_terminal = bool(stops and starts and stops[-1].stat().st_mtime >= starts[-1].stat().st_mtime)
+    execution_terminal = bool(starts and len(stops) == len(starts))
     stop_reason = load_json(stops[-1])["stop_reason"] if execution_terminal else None
     lock_ids = {path.stem for path in (root / "locks").glob("*.json")}
     request_ids = {row["request_id"] for row in scope["requests"]}
@@ -207,7 +207,7 @@ def summarize(root):
     request_counts, failures, usage, costs, model_metadata = (
         Counter(), Counter(), Counter(), Counter(), Counter()
     )
-    confirmed_http = 0
+    http_statuses = Counter()
     per_source = defaultdict(list)
     for variant, entry in variants.items():
         per_source[entry["source_id"]].append(variant)
@@ -222,7 +222,9 @@ def summarize(root):
         started = (directory / "POST_STARTED.json").is_file()
         request_counts["permanent_locks"] += int(locked)
         request_counts["post_invocations_recorded"] += int(started)
-        confirmed_http += int((directory / "http_response.json").is_file())
+        http_path = directory / "http_response.json"
+        if http_path.is_file():
+            http_statuses[str(load_json(http_path)["http_status"])] += 1
         status = "NOT_STARTED"
         if terminal.is_file():
             result = load_json(terminal)
@@ -246,6 +248,8 @@ def summarize(root):
                     request_counts["images_recovered_without_post"] += len(outputs)
             if status != "RETURNED_IMAGE":
                 code = str(result["http_status"] or result.get("error_type") or "UNKNOWN")
+                if code == "200":
+                    code = "HTTP_200_NO_USABLE_IMAGE_" + result.get("error_type", "UNKNOWN")
                 failures[code] += 1
             else:
                 response = load_json(directory / "response_manifest.json")
@@ -269,7 +273,7 @@ def summarize(root):
     new_entries = [entry for entry in variants.values() if entry["origin"] == "EXP14"]
     new_requests_with_images = {entry["request_id"]: entry["version"] for entry in new_entries}
     new_records = [record for record in records.values() if record["origin"] == "EXP14"]
-    geometry = Counter(record["geometry_status"] for record in records.values())
+    geometry_counts = Counter(record["geometry_status"] for record in records.values())
     aligned = [record for record in records.values() if record["aligned_sha256"]]
     preexisting = [record for record in aligned if historical.get(record["variant_id"], {}).get("derived", {}).get("aligned_output")]
     unverified = Counter(record["geometry_reason"] or "HISTORICAL_GEOMETRY_UNVERIFIED" for record in records.values()
@@ -296,10 +300,35 @@ def summarize(root):
     ]
     for row in source_rows:
         row["new_request_status"] = request_states.get(row["new_request"], "")
+    sources_with_raw = sum(row["has_native_raw"] for row in source_rows)
+    variant_rows = []
+    for variant, entry in variants.items():
+        record = records.get(variant, {})
+        geometry = record.get("geometry_status", "POSTPROCESS_PENDING")
+        if entry.get("a2_status") == "CORE_SOURCE_SCREEN_PASS":
+            state = "HISTORICAL_CORE_REUSED"
+        elif sources[entry["source_id"]].get("hold") or entry.get("response_hold") or entry.get("a2_status") == "TRAINING_HOLD":
+            state = "HOLD"
+        elif entry.get("historical_visual") == "NEEDS_RETRY":
+            state = "HISTORICAL_REPAIR_FAILURE"
+        elif geometry == "ALIGNMENT_UNVERIFIED":
+            state = "ALIGNMENT_UNVERIFIED"
+        else:
+            state = "HUMAN_REVIEW_PENDING"
+        variant_rows.append({
+            "source_id": entry["source_id"], "variant_id": variant, "version": entry["version"],
+            "origin": entry["origin"], "state": state, "historical_visual": entry.get("historical_visual", ""),
+            "geometry_status": geometry, "geometry_reason": record.get("geometry_reason", ""),
+            "raw_sha256": entry["raw_sha256"], "aligned_sha256": record.get("aligned_sha256", ""),
+            "request_sha256": entry["request_sha256"], "mask_sha256": entry["mask_sha256"],
+            "asset_directory": record.get("asset_directory", ""),
+        })
     summary = {
         "phase": "EXP14_LARGE_SCALE_REPAIR_EXECUTION",
         "status": "EXP14_LARGE_SCALE_REPAIR_COMPLETED_PENDING_HUMAN_REVIEW" if execution_terminal else
                   "EXP14_LARGE_SCALE_REPAIR_IN_PROGRESS",
+        "first_dispatch_run_started_utc": load_json(starts[0])["started_utc"] if starts else None,
+        "dispatch_finished_utc": load_json(stops[-1])["finished_utc"] if execution_terminal else None,
         "relay_stop_reason": stop_reason,
         "selected_sources": len(sources), "class_counts": class_counts,
         "selected_polygons": sum(v["polygons"] for v in class_counts.values()),
@@ -309,7 +338,8 @@ def summarize(root):
         "historical_native_variants_by_version": dict(version_history),
         "earlier_roi_exposure_sources": sum(bool(s.get("prior_roi")) for s in sources.values()),
         "planned_request_versions": dict(Counter(r["version"] for r in scope["requests"])),
-        "request_counts": dict(request_counts), "http_responses_confirmed": confirmed_http,
+        "request_counts": dict(request_counts), "http_responses_confirmed": sum(http_statuses.values()),
+        "http_status_counts": dict(http_statuses),
         "terminal_post_receipts_verified": len(dispatched),
         "request_failure_categories": dict(failures), "reported_usage_totals": dict(usage),
         "returned_image_cost_states": dict(costs), "response_model_metadata": dict(model_metadata),
@@ -317,10 +347,10 @@ def summarize(root):
         "new_returned_sources": len({entry["source_id"] for entry in new_entries}),
         "new_request_variants_with_images_by_version": dict(Counter(new_requests_with_images.values())),
         "new_returned_images_by_version": dict(Counter(entry["version"] for entry in new_entries)),
-        "total_sources_with_native_raw": sum(bool(items) for items in per_source.values()),
-        "sources_without_native_raw": len(sources) - len(per_source),
+        "total_sources_with_native_raw": sources_with_raw,
+        "sources_without_native_raw": len(sources) - sources_with_raw,
         "hold_reasons": dict(Counter(s["hold"] for s in sources.values() if s.get("hold"))),
-        "review_variants": len(records), "geometry_status_counts": dict(geometry),
+        "review_variants": len(records), "geometry_status_counts": dict(geometry_counts),
         "alignment_unverified_reasons": dict(unverified),
         "raw_variants_missing_postprocess": len(variants) - len(records),
         "aligned_sources": len({r["source_id"] for r in aligned}), "aligned_variants": len(aligned),
@@ -338,7 +368,7 @@ def summarize(root):
     }
     if not execution_terminal and (root / "locks").exists():
         summary["status"] = "EXP14_LARGE_SCALE_REPAIR_IN_PROGRESS"
-    return summary, source_rows
+    return summary, source_rows, variant_rows
 
 
 def main():
@@ -356,10 +386,12 @@ def main():
         operation = import_review if args.action == "import" else reprocess_alignment
         operation(root, args.review_export)
     else:
-        summary, rows = summarize(root)
+        summary, sources, variants = summarize(root)
         tag = str(time.time_ns())
         g3.write_json_exclusive(root / "logs" / f"summary_{tag}.json", summary)
-        g3.write_exclusive(root / "logs" / f"source_status_{tag}.csv", _csv_bytes(rows, list(rows[0])))
+        g3.write_exclusive(root / "logs" / f"source_status_{tag}.csv", _csv_bytes(sources, list(sources[0])))
+        if variants:
+            g3.write_exclusive(root / "logs" / f"variant_status_{tag}.csv", _csv_bytes(variants, list(variants[0])))
         print(json.dumps(summary, ensure_ascii=True, indent=2))
 
 

@@ -28,6 +28,7 @@ def frozen_plan(root):
     auth = load_json(auth_path)
     g3.require(auth["record_type"] == "EXP14_LARGE_SCALE_REPAIR_EXPLICIT_USER_AUTHORIZATION" and
                auth["source_csv_sha256"] == FINAL_SHA and auth["n"] == 1, "Wrong Exp14 authorization")
+    hash_file(root / "authorization_task.txt", auth["authorization_attachment_sha256"])
     hash_file(root / "scope.json", auth["scope_sha256"])
     hash_file(root / "request_manifest.csv", auth["request_manifest_sha256"])
     protocol, protocol_sha = g3.load_protocol(REPO)
@@ -161,7 +162,7 @@ def recover_responses(root, scope=None, inspected=None):
         else:
             original_json = json.loads(original)
             items = original_json.get("data")
-            if not isinstance(items, list) or len(items) != 2:
+            if not isinstance(items, list) or not 2 <= len(items) <= 8:
                 continue
             payloads = [json.dumps({**original_json, "data": [item]}).encode("utf-8") for item in items]
         outputs = []

@@ -1,5 +1,9 @@
 # Project state
 
+## Exp14 large-scale repair (2026-11-12)
+
+EXP14_LARGE_SCALE_REPAIR_COMPLETED_PENDING_HUMAN_REVIEW. The 523 audited TRAIN SELECT sources and 901 target Polygons are frozen. All 485 authorized POSTs have verified terminal evidence and at least one image, producing 488 new Raw images. Historical reuse brings native-frame Raw coverage to 523 sources. The private offline bundle has 530 review entries, 379 Aligned candidates across 374 sources and 151 alignment-unverified entries. Six requests needed response recovery with zero repeat POSTs. No new human approvals or Trusted Pairs. Human review and the A/B data Gate determine admission. [Handoff](exp14/EXP14_LARGE_SCALE_REPAIR_HANDOFF.md).
+
 ## Current extension (2026-11-11)
 
 Exp14-A4-R1 completed both seed42 arms with 100 epochs and 2,200 effective updates each, zero scaler skips, and finite strictly reloaded final checkpoints. Both arms passed the scale 1→2 transition at update 2,000. Frozen VAL Mask mAP50–95 E0=0.266034 and E1=0.248838, delta −0.017197. At conf=0.25 mask FP fell by 1 and FN rose by 11. EXP14_A4_R1_PENDING_CHATGPT_RESULT_GATE. [Handoff](exp14/EXP14_A4_R1_FORMAL_E0_E1_REVIEW.md).

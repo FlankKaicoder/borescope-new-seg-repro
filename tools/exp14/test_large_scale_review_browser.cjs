@@ -37,8 +37,10 @@ async function test() {
       assert.fail('Requested variant unavailable after filtering');
     };
     await show(page, item.source_id);
-    await page.waitForFunction(() => [...document.querySelectorAll('#images img, #crops img')]
-      .every(img => img.complete && img.naturalWidth > 0));
+    await page.waitForFunction(() => {
+      const images = [...document.querySelectorAll('#images img, #crops img')];
+      return images.length === 5 && images.every(img => img.complete && img.naturalWidth > 0);
+    });
     assert.equal(await page.locator('img').count(), 5, 'Only current variant images loaded');
     assert.equal(await page.locator('#whole').isDisabled(), true);
     await page.locator('#decision').selectOption('PASS');
@@ -55,8 +57,10 @@ async function test() {
     await show(page, item.source_id);
     assert.equal(await page.locator('#notes').inputValue(), notes);
     await page.locator('#diagnostics summary').click();
-    await page.waitForFunction(() => [...document.querySelectorAll('#diagnostic-images img')]
-      .every(img => img.complete && img.naturalWidth > 0));
+    await page.waitForFunction(() => {
+      const images = [...document.querySelectorAll('#diagnostic-images img')];
+      return images.length === 5 && images.every(img => img.complete && img.naturalWidth > 0);
+    });
     assert.equal(await page.locator('#diagnostic-images img').count(), 5);
     const save = async (selector, name) => {
       const pending = page.waitForEvent('download');

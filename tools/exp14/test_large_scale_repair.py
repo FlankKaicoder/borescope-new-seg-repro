@@ -4,6 +4,7 @@ import io
 import json
 import tempfile
 import unittest
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from unittest.mock import Mock, patch
 
@@ -35,6 +36,17 @@ class RequestSafety(unittest.TestCase):
             self.assertTrue(first["delivery_uncertain"])
             self.assertEqual(second["status"], "LOCKED_NO_POST")
             self.assertEqual(len(list((Path(temp) / "locks").glob("*.json"))), 1)
+            transport.post.assert_called_once()
+
+    def test_parallel_dispatchers_share_the_same_permanent_slot(self):
+        transport = Mock()
+        transport.post.side_effect = TimeoutError("timeout")
+        with tempfile.TemporaryDirectory() as temp, patch.object(runner, "input_for_row", return_value=self.input):
+            args = (Path(temp), self.row, {}, "test-key", transport, "auth", "protocol")
+            with ThreadPoolExecutor(max_workers=2) as workers:
+                jobs = [workers.submit(runner.run_one, *args) for _ in range(2)]
+                statuses = {job.result()["status"] for job in jobs}
+            self.assertEqual(statuses, {"FAILED_NO_RETRY", "LOCKED_NO_POST"})
             transport.post.assert_called_once()
 
     def test_returned_alias_preserves_one_image_and_metadata(self):

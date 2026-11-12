@@ -1,5 +1,22 @@
 # Decision log
 
+## Exp14 large-scale TRAIN repair (2026-11-12)
+
+Decision D059. The user authorized one paid native-frame V1 request for each
+uncovered source in the audited final G3-B1 SELECT set and the independently
+identified, unexecuted V2 for a documented repair failure. The frozen scope is
+523 TRAIN sources and 901 selected Polygons. Reuse hash-verified full-frame
+results from G3 and G2. Preserve the earlier crop-only exposure and the
+UI-overlap HOLD. The exact request plan permits 484 V1 POSTs and one V2 POST.
+Permanent locks cover every dispatch, including uncertain outcomes. Reuse the
+fixed CPU registration methods with the corrected Raw-to-Source overlap
+calculation. Preserve separate records for gateway output, alignment, repair
+quality, whole-image confirmation and local-region eligibility. Further paid
+versions require human failure evidence and distinct request identities. A/B
+admission awaits review and a data Gate. The next supervised comparison is
+668 original images versus 668+N reviewed augmentations with independent
+initialization from the same COCO weights. [Handoff](exp14/EXP14_LARGE_SCALE_REPAIR_HANDOFF.md).
+
 ## Exp13-G3-D2 final bounded closeout (2026-11-09)
 
 Decision D058: at the user's explicit direction, end D2 landmark collection without filling the120 planned slots. Independently read-only verify the supplied private CSV:18 Pair variants;22 confirmed/98 pending;15 rule-valid/7 NEAR-region exclusions;0 complete evaluable Pairs. Preserve this as `G3D2_CLOSED_BOUNDED_PARTIAL_HUMAN_EVIDENCE`, `FORMAL_TRE_GATE=NOT_ESTABLISHED`, `TRUSTED_PAIR_PASS=0`. Rule-valid points do not establish expert-verified mechanical identity. Compute exploratory TRE only from the existing fixed C0 and D1 transforms on identical retained points; do not fit, change thresholds, invent quality JSON/expert judgments or promote Pairs. Keep SIFT + proportional mapping/Similarity/Affine as current baseline; reopen targeted repair only for explicit failures and scientific necessity. Existing evidence and source-group evaluation roles remain frozen. CSV stays private; historical data/outputs/locks/protected script unchanged. No60-source generation or formal Local Change training. Stop for ChatGPT Gate and next-route decision. See [final report](exp13_cloud/G3_D2_FINAL_CLOSEOUT.md).

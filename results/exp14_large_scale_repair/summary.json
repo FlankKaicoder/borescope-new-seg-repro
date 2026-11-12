@@ -1,0 +1,163 @@
+{
+  "aligned_historical_exact_reuse": 29,
+  "aligned_historical_raw_reprocessed": 2,
+  "aligned_sources": 374,
+  "aligned_variants": 379,
+  "aligned_with_invalid_frame_pixels": 282,
+  "aligned_with_unsupported_target_pixels": 14,
+  "aligned_with_unsupported_visible_original_pixels": 251,
+  "alignment_unverified_reasons": {
+    "FEWER_THAN_12_MATCHES": 96,
+    "SIFT_GEOMETRY_SCREEN_FAILED": 55
+  },
+  "automatic_retry_posts": 0,
+  "class_counts": {
+    "Burn": {
+      "polygons": 126,
+      "sources_with_class_present": 66,
+      "sources_with_selected_targets": 66
+    },
+    "Crack": {
+      "polygons": 77,
+      "sources_with_class_present": 67,
+      "sources_with_selected_targets": 67
+    },
+    "Dent": {
+      "polygons": 126,
+      "sources_with_class_present": 119,
+      "sources_with_selected_targets": 119
+    },
+    "Material missing": {
+      "polygons": 125,
+      "sources_with_class_present": 118,
+      "sources_with_selected_targets": 118
+    },
+    "Tears": {
+      "polygons": 45,
+      "sources_with_class_present": 45,
+      "sources_with_selected_targets": 45
+    },
+    "Tip curl": {
+      "polygons": 0,
+      "sources_with_class_present": 0,
+      "sources_with_selected_targets": 0
+    },
+    "corrosion": {
+      "polygons": 402,
+      "sources_with_class_present": 143,
+      "sources_with_selected_targets": 142
+    }
+  },
+  "dispatch_finished_utc": "2026-11-12T08:24:36.254585+00:00",
+  "earlier_roi_exposure_sources": 1,
+  "first_dispatch_run_started_utc": "2026-11-12T06:54:10.692722+00:00",
+  "frozen_decision_counts": {
+    "MAYBE": 23,
+    "REJECT": 122,
+    "SELECT": 523
+  },
+  "frozen_split_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "geometry_status_counts": {
+    "ALIGNMENT_UNVERIFIED": 151,
+    "GEOMETRY_CANDIDATE": 379
+  },
+  "historical_a2_core_pass": 16,
+  "historical_a2_support_hold": 5,
+  "historical_native_sources": 39,
+  "historical_native_variants_by_version": {
+    "V1": 39,
+    "V2": 3
+  },
+  "hold_reasons": {
+    "HOLD_MASK_OVERLAPS_GREEN_CAMERA_UI": 1
+  },
+  "http_responses_confirmed": 485,
+  "http_status_counts": {
+    "200": 485
+  },
+  "maximum_concurrent_requests": 6,
+  "new_aligned_sources": 345,
+  "new_aligned_variants": 348,
+  "new_human_approvals": 0,
+  "new_request_variants_with_images_by_version": {
+    "V1": 484,
+    "V2": 1
+  },
+  "new_returned_images_by_version": {
+    "V1": 487,
+    "V2": 1
+  },
+  "new_returned_sources": 485,
+  "new_trusted_pair_pass": 0,
+  "phase": "EXP14_LARGE_SCALE_REPAIR_EXECUTION",
+  "planned_request_versions": {
+    "V1": 484,
+    "V2": 1
+  },
+  "raw_variants_missing_postprocess": 0,
+  "relay_stop_reason": null,
+  "reported_usage_totals": {
+    "input_tokens": 100680,
+    "output_tokens": 197853,
+    "total_tokens": 298533
+  },
+  "request_counts": {
+    "FAILED_NO_RETRY": 0,
+    "NOT_STARTED": 0,
+    "RETURNED_IMAGE": 485,
+    "images_recovered_without_post": 9,
+    "multi_image_responses": 2,
+    "permanent_locks": 485,
+    "post_invocations_recorded": 485,
+    "uncertain_delivery": 0,
+    "usage_returned": 485
+  },
+  "request_failure_categories": {},
+  "response_audit": {
+    "distinct_post_bodies": 485,
+    "requests_reconciled_by_response_recovery": 6,
+    "response_bodies_sha256_verified": 485
+  },
+  "response_model_metadata": {
+    "DIFFERENT": 11,
+    "MATCH": 7,
+    "UNREPORTED": 467
+  },
+  "returned_image_cost_states": {
+    "COST_UNKNOWN": 485
+  },
+  "review_browser_qa": {
+    "browser": "Chrome",
+    "chinese_multiline_exact": true,
+    "csv_and_json_download_restore_in_fresh_contexts": true,
+    "file_protocol": true,
+    "filters_and_navigation": true,
+    "image_load": true,
+    "polygon_decision_exact": true,
+    "remote_requests": 0,
+    "stale_identity_rejected": true,
+    "status": "PASS"
+  },
+  "review_variants": 530,
+  "saved_matrix_overlap_audit": {
+    "corrected_below_half": 0,
+    "max_raster_difference": 0.0014421674940321427,
+    "old_inverse_below_half": 0,
+    "saved_proportional_mappings": 4,
+    "saved_selected_affines": 25
+  },
+  "select_earlier_backup_decisions": {
+    "MAYBE": 1,
+    "SELECT": 53,
+    "UNREVIEWED": 469
+  },
+  "selected_polygons": 901,
+  "selected_sources": 523,
+  "sources_without_aligned": 149,
+  "sources_without_native_raw": 0,
+  "status": "EXP14_LARGE_SCALE_REPAIR_COMPLETED_PENDING_HUMAN_REVIEW",
+  "terminal_post_receipts_verified": 485,
+  "total_sources_with_native_raw": 523,
+  "training_runs": 0,
+  "val_test_image_access": 0
+}

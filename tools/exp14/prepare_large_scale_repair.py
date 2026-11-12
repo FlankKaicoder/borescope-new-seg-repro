@@ -397,10 +397,12 @@ def prepare(private, root, authorization_task):
         "all_polygon_ids", "image_sha256", "annotation_sha256", "source_note", "hold"]))
     g3.write_json_exclusive(root / "historical_reuse.json", variants)
     g3.write_exclusive(root / "request_manifest.csv", _csv_bytes(rows, list(rows[0])))
+    task_copy = root / "authorization_task.txt"
+    g3.write_exclusive(task_copy, authorization_task.read_bytes())
     auth = {
         "record_type": "EXP14_LARGE_SCALE_REPAIR_EXPLICIT_USER_AUTHORIZATION",
         "authorization_basis": "User task attachment sections 0, 3, 4, 5 and 6",
-        "authorization_attachment_sha256": hash_file(authorization_task),
+        "authorization_attachment_sha256": hash_file(task_copy),
         "cost_status": "COST_UNKNOWN_USER_AUTHORIZED_WITHOUT_SPEND_CAP",
         "scope_sha256": hash_file(root / "scope.json"),
         "request_manifest_sha256": hash_file(root / "request_manifest.csv"),

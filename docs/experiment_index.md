@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp14 large-scale TRAIN repair and review (2026-11-12)
+
+EXP14_LARGE_SCALE_REPAIR_COMPLETED_PENDING_HUMAN_REVIEW. Native-frame Raw coverage is 523 of 523 SELECT sources after 485 authorized POSTs and verified historical reuse. The offline bundle has 530 review entries and 379 Aligned candidates from 374 sources. New human approvals and Trusted Pairs are zero. [Handoff](exp14/EXP14_LARGE_SCALE_REPAIR_HANDOFF.md) · [Sanitized summary](../results/exp14_large_scale_repair/summary.json).
+
 ## Exp14-A4-R1 complete matched E0/E1 run (2026-11-11)
 
 Both seed42 arms passed 100 epochs and 2,200 effective updates with zero skips and verified final checkpoints. Frozen VAL Mask mAP50–95 delta E1−E0 was −0.017197. No TEST evaluation. EXP14_A4_R1_PENDING_CHATGPT_RESULT_GATE. [Handoff](exp14/EXP14_A4_R1_FORMAL_E0_E1_REVIEW.md).

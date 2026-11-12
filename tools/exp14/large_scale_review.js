@@ -158,7 +158,7 @@
     const complete = [...decisions.values()].filter(row => row.decision !== 'UNREVIEWED').length;
     $('progress').max = decisions.size;
     $('progress').value = complete;
-    $('count').textContent = complete + ' / ' + decisions.size + ' 已有决定';
+    $('count').textContent = complete + ' / ' + decisions.size + ' 已有状态（含历史决定与 HOLD）';
   }
 
   function activeRow() { return decisions.get(current.initial.review_id); }
@@ -216,7 +216,8 @@
     }
     $('title').textContent = current.source_id + ' · ' + current.classes.join(' / ') + ' · ' + current.variant_id;
     const historical = [current.historical_visual, current.a2_status].filter(Boolean).join(' / ');
-    $('geometry').textContent = [current.geometry_status, current.mapping_method, historical, current.geometry_reason]
+    $('geometry').textContent = [current.geometry_status, current.mapping_method,
+      historical && '历史 ' + historical, current.geometry_reason, current.source_hold && 'HOLD · ' + current.source_hold]
       .filter(Boolean).join(' · ');
     if (current.aligned) $('geometry').textContent +=
       ' · 有效覆盖 ' + (current.valid_coverage * 100).toFixed(1) + '%';

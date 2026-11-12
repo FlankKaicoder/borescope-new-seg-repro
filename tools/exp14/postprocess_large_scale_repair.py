@@ -255,7 +255,7 @@ def process(root, follow):
                                         {"variant_id": variant, "error": str(error), "type": type(error).__name__})
         launches = sorted((root / "logs").glob("start_*.json"))
         stops = sorted((root / "logs").glob("stop_*.json"))
-        if not follow or (launches and stops and stops[-1].stat().st_mtime >= launches[-1].stat().st_mtime):
+        if not follow or (launches and len(stops) == len(launches)):
             if not candidates(root, scope, done | failed):
                 break
         time.sleep(8)
