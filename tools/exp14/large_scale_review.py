@@ -128,7 +128,7 @@ def validate_review(root, path):
             if record["version"] == "V1" and label in PROMPTS
         }
         next_steps = []
-        if "RETRY_ALIGNMENT" in routes:
+        if row["decision"] == "RETRY_ALIGNMENT" or "RETRY_ALIGNMENT" in routes:
             next_steps.append("REPROCESS_EXISTING_RAW")
         if "RETRY_REPAIR" in routes:
             next_steps.append("PROPOSE_INDEPENDENT_PROMPT_VERSION_FROM_HUMAN_EVIDENCE")

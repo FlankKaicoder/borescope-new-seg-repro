@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp14-A5 full AI visual review (2026-11-12)
+
+EXP14_A5_AI_REVIEW_COMPLETE_PENDING_HUMAN_CONFIRMATION. Image-based suggestions cover 530/530 variants from 523 TRAIN sources, including 911 per-variant Polygon decisions. The offline assisted page separates AI drafts from formal human decisions. [Handoff](exp14/EXP14_A5_FULL_AI_VISUAL_REVIEW_HANDOFF.md) · [Sanitized summary](../results/exp14_a5_ai_review/summary.json).
+
 ## Exp14-A5 Pilot40 visual evidence (2026-11-12)
 
 EXP14_A5_PILOT40_VISUAL_EVIDENCE_READY. Forty fixed variants from 39 TRAIN sources, 31 Aligned, 9 alignment-unverified and 66 selected Polygons. Two 20-case evidence ZIPs verified with blank AI suggestions and private historical controls. [Handoff](exp14/EXP14_A5_PILOT40_VISUAL_EVIDENCE_HANDOFF.md) · [Sanitized summary](../results/exp14_a5_pilot40/summary.json).

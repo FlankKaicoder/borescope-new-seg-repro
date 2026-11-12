@@ -1,0 +1,152 @@
+{
+  "a_and_b_candidate_sources": 101,
+  "a_candidate_sources": 101,
+  "ai_decisions": {
+    "HOLD": 45,
+    "PASS": 177,
+    "RETRY_ALIGNMENT": 100,
+    "RETRY_REPAIR": 208
+  },
+  "api_post": 0,
+  "b_candidate_sources": 222,
+  "class_counts": {
+    "Burn": {
+      "ai_decisions": {
+        "HOLD": 4,
+        "PASS": 20,
+        "RETRY_ALIGNMENT": 11,
+        "RETRY_REPAIR": 32
+      },
+      "records": 67,
+      "reviewed_records": 67,
+      "reviewed_sources": 66
+    },
+    "Crack": {
+      "ai_decisions": {
+        "HOLD": 4,
+        "PASS": 38,
+        "RETRY_ALIGNMENT": 16,
+        "RETRY_REPAIR": 9
+      },
+      "records": 67,
+      "reviewed_records": 67,
+      "reviewed_sources": 67
+    },
+    "Dent": {
+      "ai_decisions": {
+        "PASS": 34,
+        "RETRY_ALIGNMENT": 30,
+        "RETRY_REPAIR": 55
+      },
+      "records": 119,
+      "reviewed_records": 119,
+      "reviewed_sources": 119
+    },
+    "Material missing": {
+      "ai_decisions": {
+        "HOLD": 15,
+        "PASS": 36,
+        "RETRY_ALIGNMENT": 16,
+        "RETRY_REPAIR": 57
+      },
+      "records": 124,
+      "reviewed_records": 124,
+      "reviewed_sources": 118
+    },
+    "Tears": {
+      "ai_decisions": {
+        "HOLD": 4,
+        "PASS": 20,
+        "RETRY_ALIGNMENT": 15,
+        "RETRY_REPAIR": 6
+      },
+      "records": 45,
+      "reviewed_records": 45,
+      "reviewed_sources": 45
+    },
+    "Tip curl": {
+      "ai_decisions": {},
+      "records": 0,
+      "reviewed_records": 0,
+      "reviewed_sources": 0
+    },
+    "corrosion": {
+      "ai_decisions": {
+        "HOLD": 20,
+        "PASS": 32,
+        "RETRY_ALIGNMENT": 14,
+        "RETRY_REPAIR": 77
+      },
+      "records": 143,
+      "reviewed_records": 143,
+      "reviewed_sources": 142
+    }
+  },
+  "failure_reasons": {
+    "其他": 18,
+    "新增异常内容": 2,
+    "机械结构错误": 22,
+    "相机 UI 变化": 2,
+    "缺材未补全": 58,
+    "缺陷残留": 151,
+    "配准错位": 95,
+    "黑边截断": 5
+  },
+  "gpu_training": 0,
+  "historical_comparison": {
+    "comparisons": 16,
+    "different": 4,
+    "exact_agreement": 12
+  },
+  "human_approvals_written": 0,
+  "human_priority_sources": 336,
+  "new_alignment": 0,
+  "not_reviewed": 0,
+  "records": 530,
+  "reviewed": 530,
+  "reviewed_geometry": {
+    "ALIGNMENT_UNVERIFIED": 151,
+    "GEOMETRY_CANDIDATE": 379
+  },
+  "reviewed_polygons": 911,
+  "reviewed_sources": 523,
+  "sources": 523,
+  "status": "EXP14_A5_AI_REVIEW_COMPLETE_PENDING_HUMAN_CONFIRMATION",
+  "selected_unique_polygons": 901,
+  "polygon_decisions": {
+    "RETRY_REPAIR": 347,
+    "HOLD": 124,
+    "PASS": 313,
+    "RETRY_ALIGNMENT": 127
+  },
+  "confidence": {
+    "HIGH": 398,
+    "MEDIUM": 125,
+    "LOW": 7
+  },
+  "follow_up_candidates": {
+    "ALIGNMENT_REPAIR": {
+      "variants": 108,
+      "sources": 108
+    },
+    "HUMAN_REVIEW_PRIORITY": {
+      "variants": 342,
+      "sources": 336
+    },
+    "V2_REPAIR": {
+      "variants": 208,
+      "sources": 205
+    }
+  },
+  "qa": {
+    "verified_review_ids": 530,
+    "verified_evidence_file_entries": 3559,
+    "evidence_sheets": 143,
+    "observation_batches": 49,
+    "csv_json_html_crosswalk": "PASS",
+    "assisted_chrome_round_trip": "PASS",
+    "original_chrome_round_trip": "PASS",
+    "official_csv_json_validation": "PASS",
+    "whole_image_alignment_retry_with_local_pass": "PASS"
+  }
+}

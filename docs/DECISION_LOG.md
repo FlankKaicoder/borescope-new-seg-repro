@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp14-A5 full AI visual review (2026-11-12)
+
+Decision D061. Keep the 530 image-based AI suggestions in the private assisted review bundle as drafts. Preserve the frozen human decisions and allow the user to restore additional decisions from an earlier CSV or JSON export. Retain individual Polygon outcomes when a repair succeeds only in part. A full-image registration retry can coexist with a visibly successful local repair. Use the AI queues for human prioritization and require human confirmation followed by the data Gate for A/B admission. [Handoff](exp14/EXP14_A5_FULL_AI_VISUAL_REVIEW_HANDOFF.md).
+
 ## Exp14-A5 Pilot40 evidence export (2026-11-12)
 
 Decision D060. Freeze the user-specified 40 repair variants for independent AI visual review. Bind every case to the published review ID and byte-verified imagery. Assign case IDs independently of historical decisions. Keep human notes and reference groups in the private control file. The two previously discussed examples are excluded from independent agreement, and historical HOLD retains its original support or review scope. The first stage delivers imagery and blank AI suggestion templates. User review governs subsequent acceptance. [Handoff](exp14/EXP14_A5_PILOT40_VISUAL_EVIDENCE_HANDOFF.md).

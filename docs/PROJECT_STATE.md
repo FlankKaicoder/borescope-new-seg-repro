@@ -1,5 +1,9 @@
 # Project state
 
+## Exp14-A5 full AI visual review (2026-11-12)
+
+EXP14_A5_AI_REVIEW_COMPLETE_PENDING_HUMAN_CONFIRMATION. Codex viewed 530 variants from 523 TRAIN sources and recorded 911 per-variant Polygon decisions. AI PASS 177, RETRY_REPAIR 208, RETRY_ALIGNMENT 100 and HOLD 45. Whole-image A has 101 candidate sources and local B has 222. The private assisted page and original offline page passed Chrome checks. AI suggestions await explicit human confirmation and a separate A/B data Gate. New human approvals, API POSTs, registration and training are zero. [Handoff](exp14/EXP14_A5_FULL_AI_VISUAL_REVIEW_HANDOFF.md).
+
 ## Exp14-A5 Pilot40 visual evidence (2026-11-12)
 
 EXP14_A5_PILOT40_VISUAL_EVIDENCE_READY. The fixed 40 variants from 39 TRAIN sources reconcile with the published repair bundle. Two blinded archives contain 20 cases each, with 31 Aligned, 9 alignment-unverified and 66 selected Polygons overall. All 280 archived images pass SHA256 and decode checks. The 120 original and Aligned crops match the frozen coordinates and pixels. Historical controls are private and both AI templates are blank. API POST, new registration, GPU training and review changes are all zero. [Handoff](exp14/EXP14_A5_PILOT40_VISUAL_EVIDENCE_HANDOFF.md).

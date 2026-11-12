@@ -4,12 +4,16 @@
   const $ = id => document.getElementById(id);
   const bundle = JSON.parse($('bundle').textContent);
   const byId = new Map(bundle.records.map(record => [record.initial.review_id, record]));
-  const storageKey = bundle.phase + ':review:v1';
+  const assisted = Boolean(bundle.ai_review);
+  const storageKey = bundle.phase + (assisted ? ':ai-assisted:v1' : ':review:v1');
   const labels = {
     UNREVIEWED: '待审核', PASS: 'PASS · 修复成功', RETRY_REPAIR: 'RETRY_REPAIR · 重修',
     RETRY_ALIGNMENT: 'RETRY_ALIGNMENT · 重新配准', HOLD: 'HOLD · 暂缓',
   };
   const decisions = new Map(bundle.records.map(record => [record.initial.review_id, {...record.initial}]));
+  const drafts = new Map();
+  const confirmations = new Map();
+  const priorities = new Set();
   let filtered = [];
   let index = 0;
   let current = null;
@@ -22,7 +26,11 @@
     $('notice').dataset.error = String(error);
   }
   function snapshot() {
-    return {phase: bundle.phase, records: [...decisions.values()]};
+    const payload = {phase: bundle.phase, records: [...decisions.values()]};
+    if (assisted) payload.ai_workspace = {
+      drafts: [...drafts.values()], confirmations: [...confirmations], priorities: [...priorities],
+    };
+    return payload;
   }
 
   function validate(rows) {
@@ -60,7 +68,34 @@
   function restore(payload) {
     if (payload.phase !== bundle.phase) throw new Error('审核文件属于其他阶段。');
     const staged = validate(payload.records);
-    for (const [id, row] of staged) decisions.set(id, row);
+    const workspace = assisted ? payload.ai_workspace : null;
+    const stagedDrafts = workspace?.drafts?.length ? validate(workspace.drafts) : new Map();
+    const stagedConfirmations = new Map(workspace?.confirmations || []);
+    const stagedPriorities = new Set(workspace?.priorities || []);
+    for (const [id, state] of stagedConfirmations) {
+      if (!staged.has(id) || !['HUMAN_CONFIRMED', 'HUMAN_OVERRIDDEN', 'IMPORTED'].includes(state)) {
+        throw new Error('人工确认记录无效。');
+      }
+    }
+    if ([...stagedPriorities, ...stagedDrafts.keys()].some(id => !byId.has(id))) throw new Error('草稿身份无效。');
+    const same = (a, b) => bundle.fields.every(key => a[key] === b[key]);
+    if (assisted) for (const [id, row] of staged) {
+      const existing = decisions.get(id);
+      const baseline = byId.get(id).initial;
+      if (!same(existing, baseline) && !same(row, baseline) && !same(existing, row)) {
+        throw new Error('导入决定与当前人工决定冲突。请保留原文件并逐条处理。');
+      }
+    }
+    for (const [id, row] of staged) {
+      const baseline = byId.get(id).initial;
+      if (assisted && same(row, baseline) && !same(decisions.get(id), baseline)) continue;
+      decisions.set(id, row);
+      if (assisted && (stagedConfirmations.has(id) || !same(row, baseline))) {
+        confirmations.set(id, stagedConfirmations.get(id) || 'IMPORTED');
+      }
+    }
+    for (const [id, row] of stagedDrafts) drafts.set(id, row);
+    for (const id of stagedPriorities) priorities.add(id);
     return staged.size;
   }
 
@@ -125,7 +160,8 @@
       const url = URL.createObjectURL(new Blob([text], {type}));
       const link = document.createElement('a');
       link.href = url;
-      link.download = 'Exp14_review_' + new Date().toISOString().replace(/[:.]/g, '-') + '.' + extension;
+      link.download = (assisted ? 'Exp14_review_AI_assisted_' : 'Exp14_review_') +
+        new Date().toISOString().replace(/[:.]/g, '-') + '.' + extension;
       link.hidden = true;
       document.body.appendChild(link);
       link.click();
@@ -159,9 +195,14 @@
     $('progress').max = decisions.size;
     $('progress').value = complete;
     $('count').textContent = complete + ' / ' + decisions.size + ' 已有状态（含历史决定与 HOLD）';
+    if (assisted) $('count').textContent = 'AI 已初审 ' + bundle.ai_review.completed + ' / ' + decisions.size +
+      ' · 本页人工确认或导入 ' + confirmations.size;
   }
 
-  function activeRow() { return decisions.get(current.initial.review_id); }
+  function activeRow() {
+    const id = current.initial.review_id;
+    return assisted ? drafts.get(id) || {...decisions.get(id)} : decisions.get(id);
+  }
 
   function updateConfirmation() {
     const row = activeRow();
@@ -177,7 +218,56 @@
   function saveChange() {
     updateConfirmation();
     updateProgress();
-    if (saveLocal()) notice('已在浏览器暂存。请定期导出。');
+    renderAI();
+    if (saveLocal()) notice(assisted ? '人工草稿已暂存。点击「确认人工决定」后才计入正式导出。' :
+      '已在浏览器暂存。请定期导出。');
+  }
+
+  function editableRow() {
+    const row = activeRow();
+    if (assisted) drafts.set(row.review_id, row);
+    return row;
+  }
+
+  function renderAI() {
+    if (!assisted) return;
+    $('ai-panel').hidden = !current;
+    if (!current) return;
+    const id = current.initial.review_id;
+    const ai = current.ai;
+    $('ai-state').textContent = ai ? 'AI_DRAFT · ' + labels[ai.ai_decision] : 'AI 尚未查看';
+    $('ai-use').textContent = ai ? [ai.ai_reason, '把握程度 ' + ai.ai_confidence,
+      'A 候选 ' + ai.ai_a_candidate, 'B 候选 ' + ai.ai_b_candidate,
+      ai.needs_human_attention ? '重点复核' : ''].filter(Boolean).join(' · ') : '';
+    $('ai-notes').textContent = ai?.ai_notes || '';
+    $('ai-polygons').textContent = ai ? Object.entries(ai.ai_polygon_decisions)
+      .map(([polygon, state]) => polygon + ' ' + state).join(' · ') : '';
+    $('ai-evidence').hidden = !ai;
+    if (ai) $('ai-evidence').href = ai.sheet_url;
+    const existing = decisions.get(id);
+    $('adopt-ai').disabled = !ai || existing.decision !== 'UNREVIEWED' || confirmations.has(id) || drafts.has(id);
+    $('edit-ai').disabled = !ai || drafts.has(id);
+    $('discard-draft').disabled = !drafts.has(id);
+    $('manual-priority').checked = priorities.has(id);
+    $('human-state').textContent = [
+      confirmations.get(id) || (existing.decision !== 'UNREVIEWED' ? '原审核状态已保留' : '人工待确认'),
+      labels[existing.decision], drafts.has(id) ? '有未确认草稿' : '',
+    ].filter(Boolean).join(' · ');
+  }
+
+  function adoptAI(confirm) {
+    const id = current.initial.review_id;
+    const ai = current.ai;
+    const row = {...decisions.get(id), decision: ai.ai_decision, reason: ai.ai_reason, notes: ai.ai_notes,
+      whole_image_normal: '', b_region_review: '', polygon_decisions: JSON.stringify(ai.ai_polygon_decisions)};
+    validate([row]);
+    if (confirm) {
+      decisions.set(id, row);
+      confirmations.set(id, 'HUMAN_CONFIRMED');
+      drafts.delete(id);
+    } else drafts.set(id, row);
+    render();
+    if (saveLocal()) notice(confirm ? '已记录用户采纳。整图和区域确认可另行填写。' : '已载入人工草稿，可修改后确认。');
   }
 
   function renderPolygon() {
@@ -210,6 +300,7 @@
     $('prev').disabled = index === 0;
     $('next').disabled = index + 1 >= filtered.length;
     updateProgress();
+    renderAI();
     if (!current) {
       for (const id of ['images', 'crops', 'diagnostic-images']) $(id).replaceChildren();
       return;
@@ -252,10 +343,11 @@
       for (const [value, name] of Object.entries(labels)) if (value !== 'UNREVIEWED') option(select, value, name);
       select.value = existing[target.polygon_id] || '';
       select.addEventListener('change', () => {
-        const states = JSON.parse(activeRow().polygon_decisions);
+        const row = editableRow();
+        const states = JSON.parse(row.polygon_decisions);
         if (select.value) states[target.polygon_id] = select.value;
         else delete states[target.polygon_id];
-        activeRow().polygon_decisions = JSON.stringify(states);
+        row.polygon_decisions = JSON.stringify(states);
         saveChange();
       });
       label.append(select);
@@ -269,9 +361,16 @@
     const category = $('class').value;
     const source = $('source').value.trim();
     const status = $('status-filter').value;
+    const ai = assisted ? $('ai-filter').value : '';
+    const confidence = assisted ? $('confidence-filter').value : '';
+    const confirmation = assisted ? $('confirmation-filter').value : '';
     return bundle.records.filter(record => (!category || record.classes.includes(category)) &&
       (!source || record.source_id.includes(source)) &&
-      (!status || decisions.get(record.initial.review_id).decision === status));
+      (!status || decisions.get(record.initial.review_id).decision === status) &&
+      (!ai || (record.ai?.ai_decision || 'NOT_REVIEWED') === ai) &&
+      (!confidence || record.ai?.ai_confidence === confidence) &&
+      (!confirmation || (confirmation === 'confirmed') === (confirmations.has(record.initial.review_id) ||
+        decisions.get(record.initial.review_id).decision !== 'UNREVIEWED')));
   }
 
   function applyFilter(reset = true) {
@@ -289,6 +388,48 @@
   }
   for (const reason of bundle.reasons) option($('reason'), reason, reason || '未选择');
   for (const id of ['class', 'source', 'status-filter']) $(id).addEventListener('input', () => applyFilter());
+  if (assisted) {
+    for (const id of ['ai-filters', 'ai-actions', 'human-state']) $(id).hidden = false;
+    for (const value of ['PASS', 'RETRY_REPAIR', 'RETRY_ALIGNMENT', 'HOLD', 'NOT_REVIEWED']) {
+      option($('ai-filter'), value, labels[value] || 'AI 尚未查看');
+    }
+    for (const value of ['HIGH', 'MEDIUM', 'LOW']) option($('confidence-filter'), value);
+    for (const id of ['ai-filter', 'confidence-filter', 'confirmation-filter']) {
+      $(id).addEventListener('input', () => applyFilter());
+    }
+    $('next-priority').addEventListener('click', () => {
+      const other = filtered.slice(index + 1).concat(filtered.slice(0, index));
+      const match = other.find(r => (r.ai?.needs_human_attention || priorities.has(r.initial.review_id)) &&
+        !confirmations.has(r.initial.review_id));
+      if (match) { index = filtered.indexOf(match); render(); }
+      else notice('当前筛选下没有其他待处理的重点记录。');
+    });
+    $('adopt-ai').addEventListener('click', () => adoptAI(true));
+    $('edit-ai').addEventListener('click', () => adoptAI(false));
+    $('confirm-human').addEventListener('click', () => {
+      const row = activeRow();
+      try {
+        if (row.decision === 'UNREVIEWED') throw new Error('请先选择人工决定。');
+        validate([row]);
+        decisions.set(row.review_id, {...row});
+        confirmations.set(row.review_id, 'HUMAN_OVERRIDDEN');
+        drafts.delete(row.review_id);
+        render();
+        if (saveLocal()) notice('已确认人工决定。');
+      } catch (error) { notice(error.message, true); }
+    });
+    $('discard-draft').addEventListener('click', () => {
+      drafts.delete(current.initial.review_id);
+      render();
+      saveLocal();
+    });
+    $('manual-priority').addEventListener('change', () => {
+      const id = current.initial.review_id;
+      if ($('manual-priority').checked) priorities.add(id);
+      else priorities.delete(id);
+      saveLocal();
+    });
+  }
   for (const [id, delta] of [['prev', -1], ['next', 1]]) $(id).addEventListener('click', () => {
     const visible = current?.initial.review_id;
     filtered = matchingRecords();
@@ -300,15 +441,15 @@
   $('polygon').addEventListener('change', renderPolygon);
   $('diagnostics').addEventListener('toggle', renderDiagnostics);
   for (const id of ['decision', 'reason', 'notes']) $(id).addEventListener('input', () => {
-    activeRow()[id] = $(id).value;
+    editableRow()[id] = $(id).value;
     saveChange();
   });
   $('whole').addEventListener('change', () => {
-    activeRow().whole_image_normal = $('whole').checked ? 'YES' : '';
+    editableRow().whole_image_normal = $('whole').checked ? 'YES' : '';
     saveChange();
   });
   $('region').addEventListener('change', () => {
-    activeRow().b_region_review = $('region').checked ? 'CONFIRMED' : '';
+    editableRow().b_region_review = $('region').checked ? 'CONFIRMED' : '';
     saveChange();
   });
   $('csv').addEventListener('click', () => download(csvText(), 'csv', 'text/csv;charset=utf-8'));

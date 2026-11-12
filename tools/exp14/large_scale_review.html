@@ -53,6 +53,12 @@ progress{width:min(180px,100%);height:12px;accent-color:var(--accent)}
     <button id="import" type="button">导入 CSV / JSON</button>
     <input id="file" type="file" accept=".csv,.json" hidden>
   </div>
+  <div class="row" id="ai-filters" hidden>
+    <label class="control">AI 建议 <select id="ai-filter"><option value="">全部</option></select></label>
+    <label class="control">把握程度 <select id="confidence-filter"><option value="">全部</option></select></label>
+    <label class="control">人工复核 <select id="confirmation-filter"><option value="">全部</option><option value="pending">尚未确认</option><option value="confirmed">已有人工记录</option></select></label>
+    <button id="next-priority" type="button">下一条重点复核</button>
+  </div>
   <div class="row" id="controls">
     <button id="prev" type="button">上一张</button><button id="next" type="button">下一张</button>
     <span id="position"></span><progress id="progress"></progress><span id="count"></span>
@@ -71,7 +77,19 @@ progress{width:min(180px,100%);height:12px;accent-color:var(--accent)}
   </div>
   <div class="gallery two" id="crops"></div>
 </section>
+<section id="ai-panel" aria-label="AI 初审建议" hidden>
+  <h2 id="ai-state"></h2>
+  <p id="ai-use" class="meta"></p>
+  <p id="ai-notes" style="white-space:pre-wrap"></p>
+  <p id="ai-polygons" class="meta"></p>
+  <div class="row">
+    <a id="ai-evidence" target="_blank" rel="noopener">查看 AI 观察用对比图</a>
+    <button id="adopt-ai" class="primary" type="button">采纳 AI 建议</button>
+    <button id="edit-ai" type="button">载入建议后修改</button>
+  </div>
+</section>
 <section id="form" aria-label="人工审核">
+  <p id="human-state" class="meta" hidden></p>
   <div class="row">
     <label class="control">决定 <select id="decision"></select></label>
     <label class="control">原因 <select id="reason"></select></label>
@@ -83,6 +101,11 @@ progress{width:min(180px,100%);height:12px;accent-color:var(--accent)}
     <summary>逐 Polygon 决定</summary>
     <div class="row" id="polygon-decisions"></div>
   </details>
+  <div class="row" id="ai-actions" hidden>
+    <button id="confirm-human" class="primary" type="button">确认人工决定</button>
+    <button id="discard-draft" type="button">撤销未确认修改</button>
+    <label><input type="checkbox" id="manual-priority"> 重点复核</label>
+  </div>
 </section>
 <details class="panel" id="diagnostics">
   <summary>Raw、Hard、Feather 与有效区域</summary>
