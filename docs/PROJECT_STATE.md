@@ -1,5 +1,9 @@
 # Project state
 
+## Exp14-A8 final V4 repair and registration (2026-11-13)
+
+EXP14_A8_FINAL_V4_COMPLETE_PENDING_HUMAN_REVIEW. Four pinned human exports cover 523 frozen TRAIN sources and 901 targets. Final scope was 31 V4 requests across 46 Polygons. All 31 POSTs returned one Raw each, with 31 Aligned and Bounded outputs. Nine historical Raw rescue attempts produced no replacement alignment. Codex reviewed all 31 results with 18 PASS, 7 RETRY_REPAIR and 6 HOLD. The offline page and cross-version registry await human decisions and the independent data Gate. V5 and GPU training are zero. [Handoff](exp14/EXP14_A8_FINAL_V4_REPAIR_HANDOFF.md).
+
 ## Exp14-A7B third-round completion (2026-11-13)
 
 EXP14_A7B_V3_COMPLETION_PENDING_HUMAN_REVIEW. All 82 remaining A7 request IDs were sent once, reaching 94/94 cumulative dispatch. All 82 new requests delivered images, including one response with three outputs recovered without another POST. Five prior delivery failures remain locked. The 84 new Raw, Aligned and Bounded outputs passed identity and pixel checks. Codex reviewed all 84, with 23 PASS, 42 RETRY_REPAIR and 19 HOLD. The Chrome-tested supplemental page keeps the prior 23 human-reviewed identities separate. V4 and training runs are zero. [Handoff](exp14/EXP14_A7B_V3_COMPLETION_HANDOFF.md).

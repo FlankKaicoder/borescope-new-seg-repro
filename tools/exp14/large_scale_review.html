@@ -88,6 +88,7 @@ progress{width:min(180px,100%);height:12px;accent-color:var(--accent)}
   <p id="ai-use" class="meta"></p>
   <p id="ai-notes" style="white-space:pre-wrap"></p>
   <p id="ai-polygons" class="meta"></p>
+  <p id="final-suggestion" class="meta" hidden></p>
   <div class="row">
     <a id="ai-evidence" target="_blank" rel="noopener">查看 AI 观察用对比图</a>
     <button id="adopt-ai" class="primary" type="button">采纳 AI 建议</button>
@@ -103,6 +104,7 @@ progress{width:min(180px,100%);height:12px;accent-color:var(--accent)}
     <label><input type="checkbox" id="region"> 已确认通过区域可用于同源区域学习</label>
   </div>
   <label class="control">备注 <textarea id="notes" placeholder="可记录失败位置或需复核的结构"></textarea></label>
+  <label class="control" id="final-version-control" hidden>最终保留版本 <select id="final-version"></select></label>
   <details id="polygon-notes">
     <summary>逐 Polygon 决定</summary>
     <div class="row" id="polygon-decisions"></div>

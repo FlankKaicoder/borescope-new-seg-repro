@@ -171,7 +171,7 @@ def prepare(root, limit, *, plan_loader=frozen_plan, build_context=None, render=
 
 
 def publish(root, *, phase=PHASE, name="review_v2_ai_assisted", title="Exp14-A6 定向修复复核", history=None,
-            records=None, wave_dir=None, results_dir=None, empty_message=""):
+            records=None, wave_dir=None, results_dir=None, empty_message="", export_prefix=None, final_choices=None):
     prepared, observed = waves(root, wave_dir)
     records = reviewable(root) if records is None else records
     g3.require(set(prepared) == set(observed) == set(records) and (records or empty_message),
@@ -184,6 +184,10 @@ def publish(root, *, phase=PHASE, name="review_v2_ai_assisted", title="Exp14-A6 
             "ai_review": {"completed": len(observed)}}
     if results_dir is not None:
         data.update(show_review_id=True, export_prefix="Exp14_A7B_CSV-B", empty_message=empty_message)
+    if export_prefix:
+        data.update(show_review_id=True, export_prefix=export_prefix, empty_message=empty_message)
+    fields = (*FIELDS, "final_version_choice") if final_choices is not None else FIELDS
+    data["fields"] = fields
     results = []
     for variant, record in sorted(records.items(), key=lambda row: (int(row[1]["source_id"]), row[0])):
         item = prepared[variant]
@@ -206,18 +210,21 @@ def publish(root, *, phase=PHASE, name="review_v2_ai_assisted", title="Exp14-A6 
         results.append(ai)
         row = initial_row(record)
         row.update(decision="UNREVIEWED", whole_image_normal="", b_region_review="")
+        final = final_choices.get(variant, {}) if final_choices is not None else {}
+        if final_choices is not None:
+            row["final_version_choice"] = ""
         data["records"].append({**record, "assets": "../" + record["asset_directory"] + "/",
                                 "aligned": bool(record["aligned_sha256"]), "initial": row, "prior": prior,
                                 "comparison": comparison, "input_mode": item.get("input_mode", ""),
                                 "rescue": item["rescue"], "bounded": "bounded.png" in record["file_sha256"],
-                                "ai": {**ai, "sheet_url": "../" + ai["visual_evidence_paths"]["sheet"]}})
+                                "ai": {**ai, "sheet_url": "../" + ai["visual_evidence_paths"]["sheet"]}, **final})
     script_root = REPO / "tools" / "exp14"
     template = (script_root / "large_scale_review.html").read_text(encoding="utf-8")
     script = (script_root / "large_scale_review.js").read_text(encoding="utf-8")
     page = template.replace("__BUNDLE_JSON__", json.dumps(data, ensure_ascii=False).replace("<", "\\u003c"))
     g3.write_exclusive(destination / "index.html", page.replace("__REVIEW_SCRIPT__", script).encode("utf-8"))
     initial = [row["initial"] for row in data["records"]]
-    g3.write_exclusive(destination / "review_template.csv", _csv_bytes(initial, FIELDS))
+    g3.write_exclusive(destination / "review_template.csv", _csv_bytes(initial, fields))
     g3.write_json_exclusive(destination / "review_template.json", {"phase": phase, "records": initial})
     instructions = ("双击上一级 index.html。可以采纳 AI 建议，也可以载入后修改并确认人工决定。\n"
                     "保存请导出 CSV，并备份 JSON。重新打开页面后可以导入恢复。\n"

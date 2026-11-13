@@ -39,7 +39,8 @@ def enhanced_matches(original, raw, target):
     return fits, len(pairs)
 
 
-def fit_variant(original, raw, target, folder, prefer_support=False, *, old=None, old_sha=None, supplemental=None):
+def fit_variant(original, raw, target, folder, prefer_support=False, *, old=None, old_sha=None, supplemental=None,
+                require_target_support=False):
     fits, selected, matches, aspect = alignment.registration_candidates(original, raw, target)
     extra_matches = 0
     if selected is None or old is not None:
@@ -65,6 +66,8 @@ def fit_variant(original, raw, target, folder, prefer_support=False, *, old=None
         # Retain the old registration unless a validated map improves its usable support.
         eligible = [fit for fit in eligible if (fit["unsupported_target_pixels"], fit["unsupported_bright_pixels"])
                     < prior_support]
+    if require_target_support:
+        eligible = [fit for fit in eligible if fit["unsupported_target_pixels"] == 0]
     picked = min(eligible, key=lambda fit: (fit["unsupported_target_pixels"], fit["unsupported_bright_pixels"],
                                             fit["median_reprojection_error_source_px"])) if eligible else None
     diagnostics = {"geometry_status": "GEOMETRY_CANDIDATE" if picked else "ALIGNMENT_UNVERIFIED",

@@ -190,10 +190,11 @@ def choose_routes(grouped, sources, a6, delivery):
     return routes
 
 
-def prepare_request(root, source, route, libraries, protocol, occupied):
+def prepare_request(root, source, route, libraries, protocol, occupied, *, final_phase=None, strategy=None):
     sid = source["source_id"]
-    version = f"V{max(occupied[sid], default=0) + 1}"
-    g3.require(version in {"V2", "V3"}, "A7 version is outside the authorized range")
+    version = "V4" if final_phase else f"V{max(occupied[sid], default=0) + 1}"
+    g3.require((final_phase and max(occupied[sid]) < 4) or version in {"V2", "V3"},
+               "Version is outside the authorized range")
     variant = f"{sid}_{version}"
     original = Path(source["image"])
     hash_file(original, source["image_sha256"])
@@ -236,11 +237,15 @@ def prepare_request(root, source, route, libraries, protocol, occupied):
     prompt = root / "prompts" / (variant + ".txt")
     labels = source["polygon_labels"]
     sections = ["Only repair the listed defects inside transparent mask pixels. Keep actual cooling holes, slots, seams, camera markings and all other structures in place. Match the surrounding gradient and texture across the mask boundary."]
+    if final_phase:
+        sections.append("This final pass has polygon-specific geometry and texture constraints. Keep unchanged pixels as reference for lighting, grain and contour. Do not use global smoothing, restyle the metal, or replace a defect with a same-shaped fill patch.")
     for pid in route["repair_targets"]:
         label = labels[pid]
         bounds = target_raster(source, shapes, [pid])[0].getbbox()
         sections.append(f"Target {pid}, {label}, native pixel box {bounds}. {CLASS_GUIDANCE[label]}")
-        for round_no in (1, 2):
+        if strategy:
+            sections.append(strategy[pid])
+        for round_no in ((1, 2, 3) if final_phase else (1, 2)):
             historical = [e["row"] for e in route["human_evidence"] if e["round"] == round_no and e["targets"][pid] == REPAIR]
             cues = [name for name, words in VISUAL_CUES.items() if any(word in row["notes"]
                     for word in words.split() for row in historical)]
@@ -256,7 +261,7 @@ def prepare_request(root, source, route, libraries, protocol, occupied):
         g3.write_exclusive(path, contents)
     versions = sorted({entry["version"] for entry in entries})
     row = {
-        "source_id": sid, "version": version, "variant_id": variant, "execution_phase": A7,
+        "source_id": sid, "version": version, "variant_id": variant, "execution_phase": final_phase or A7,
         "split": "train", "decision": "SELECT", "status": "PROPOSED", "manually_approved": "NO",
         "authorized_for_paid_post": "NO", "request_count_proposed": "1", "n": "1", "roi_policy": NATIVE,
         "batch_image_path": image.relative_to(root).as_posix(), "source_image_sha256": g3.digest(base),
@@ -266,7 +271,8 @@ def prepare_request(root, source, route, libraries, protocol, occupied):
         "pixel_sources": entries, "input_mode": "Original" + "".join(f" + {v} PASS" for v in versions),
         "mask_path": mask.relative_to(root).as_posix(), "mask_sha256": g3.digest(edit_bytes),
         "target_alpha_sha256": g3.digest(selected.tobytes()), "prompt_file": prompt.relative_to(root).as_posix(),
-        "prompt_id": "EXP14_A7_TARGETED", "prompt_file_sha256": g3.digest(prompt_bytes),
+        "prompt_id": "EXP14_A8_FINAL_TARGETED" if final_phase else "EXP14_A7_TARGETED",
+        "prompt_file_sha256": g3.digest(prompt_bytes),
         "prompt_wire_sha256": g3.digest(prompt_bytes[:-1]), "model": protocol["model"],
         "endpoint": protocol["base_url"] + protocol["endpoint"],
     }

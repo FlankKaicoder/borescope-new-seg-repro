@@ -83,24 +83,30 @@ def publish(root, name):
     print(f"OFFLINE_REVIEW_READY {len(records)} variants from {len({r['source_id'] for r in records})} sources")
 
 
-def validate_review(root, path, *, phase=PHASE, records=None):
+def validate_review(root, path, *, phase=PHASE, records=None, final_versions=None):
     if records is None:
         records = finished_candidates(root).values()
     current = {record["review_id"]: record for record in records}
+    fields = (*FIELDS, "final_version_choice") if final_versions is not None else FIELDS
     if path.suffix.lower() == ".json":
         data = load_json(path)
         g3.require(data["phase"] == phase, "Review JSON belongs to a different phase")
         rows = data["records"]
     else:
         header, rows = g3.read_csv(path)
-        g3.require(tuple(header) == FIELDS, "Unexpected review CSV schema")
+        g3.require(tuple(header) == fields, "Unexpected review CSV schema")
     seen = set()
     accepted = []
     for row in rows:
-        g3.require(set(row) == set(FIELDS) and all(isinstance(value, str) for value in row.values()),
+        g3.require(set(row) == set(fields) and all(isinstance(value, str) for value in row.values()),
                    "Invalid review row schema")
         record = current.get(row["review_id"])
         g3.require(record is not None and row["review_id"] not in seen, "Unknown, stale or duplicate review identity")
+        if final_versions is not None:
+            g3.require(row["final_version_choice"] in {"", "EXCLUDE", *final_versions[row["review_id"]]} and
+                       (not row["final_version_choice"] or row["decision"] != "UNREVIEWED") and
+                       (row["final_version_choice"] != row["variant_id"] or row["decision"] == "PASS"),
+                       "Invalid human final version choice")
         seen.add(row["review_id"])
         g3.require(all(row[key] == (record[key] or "") for key in IDENTITY), "Review file identity mismatch")
         g3.require(row["decision"] in STATES and row["reason"] in REASONS, "Invalid decision or reason")

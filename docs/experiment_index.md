@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp14-A8 final V4 repair and registration (2026-11-13)
+
+EXP14_A8_FINAL_V4_COMPLETE_PENDING_HUMAN_REVIEW. 31 unique V4 POSTs, 31 Raw/Aligned/Bounded images, 31 visual reviews and a cross-version ledger for 523 sources and 901 Polygons. The private final reviewer supports historical version retention. [Handoff](exp14/EXP14_A8_FINAL_V4_REPAIR_HANDOFF.md) · [Sanitized summary](../results/exp14_a8_final_v4/summary.json).
+
 ## Exp14-A7B third-round completion (2026-11-13)
 
 EXP14_A7B_V3_COMPLETION_PENDING_HUMAN_REVIEW. A7 dispatch reached 94/94 with 82 new POSTs, 84 new Raw/Aligned/Bounded images and 84 AI visual reviews. Five original delivery failures remain locked. The supplemental Chrome-tested page has zero review IDs in common with the first batch. [Handoff](exp14/EXP14_A7B_V3_COMPLETION_HANDOFF.md) · [Sanitized summary](../results/exp14_a7b_v3_completion/summary.json).

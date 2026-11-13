@@ -8,7 +8,8 @@ const {pathToFileURL} = require('node:url');
 async function test() {
   const [, , directory, , qa, mode, previousCsv, previousDirectory] = process.argv;
   const supplemental = mode === 'a7b';
-  const targeted = mode === 'a6' || mode === 'a7' || supplemental;
+  const finalRound = mode === 'a8';
+  const targeted = mode === 'a6' || mode === 'a7' || supplemental || finalRound;
   await fs.mkdir(qa);
   const browser = await chromium.launch({channel: 'chrome', headless: true});
   const errors = [];
@@ -39,7 +40,7 @@ async function test() {
         await tab.locator('#next').click();
       }
     };
-    if (mode === 'a7' || supplemental) {
+    if (mode === 'a7' || supplemental || finalRound) {
       const records = await page.evaluate(() => JSON.parse(document.querySelector('#bundle').textContent).records);
       const loadedImages = async () => page.waitForFunction(() => {
         const images = [...document.querySelectorAll('#images img, #crops img, #diagnostic-images img')];
@@ -63,6 +64,7 @@ async function test() {
       await page.locator(id).click();
       const receipt = await pending;
       if (supplemental) assert.match(receipt.suggestedFilename(), /^Exp14_A7B_CSV-B_/);
+      if (finalRound) assert.match(receipt.suggestedFilename(), /^Exp14_A8_FINAL_V4_/);
       const file = path.join(qa, name);
       await receipt.saveAs(file);
       return file;
@@ -109,6 +111,12 @@ async function test() {
     await page.locator('#notes').fill(note);
     await page.locator('#polygon-notes summary').click();
     await page.locator('#polygon-decisions select').first().selectOption('HOLD');
+    const olderChoice = finalRound ? selection.partial.final_versions.find(v => v !== selection.partial.variant_id) : '';
+    if (finalRound) {
+      assert.ok(olderChoice);
+      assert.match(await page.locator('#final-suggestion').innerText(), /最终版本建议/);
+      await page.locator('#final-version').selectOption(olderChoice);
+    }
     const before = JSON.parse(await fs.readFile(await save('#json', 'QA_ONLY_before_confirmation.json'), 'utf8'));
     const id = selection.partial.initial.review_id;
     assert.deepEqual(before.records.find(row => row.review_id === id), selection.partial.initial);
@@ -121,11 +129,12 @@ async function test() {
     const csv = await save('#csv', 'QA_ONLY_review.csv');
     const json = await save('#json', 'QA_ONLY_review.json');
     const final = JSON.parse(await fs.readFile(json, 'utf8'));
+    if (finalRound) assert.equal(final.records.find(row => row.review_id === id).final_version_choice, olderChoice);
     assert.equal(final.records.find(row => row.review_id === id).notes, note);
     assert.equal(JSON.parse(final.records.find(row => row.review_id === id).polygon_decisions)
       [selection.partial.polygons[0].polygon_id], 'HOLD');
     if (targeted) {
-      const phases = {a6: 'exp14_a6_targeted_v2', a7: 'exp14_a7_targeted_v3', a7b: 'exp14_a7b_v3_completion'};
+      const phases = {a6: 'exp14_a6_targeted_v2', a7: 'exp14_a7_targeted_v3', a7b: 'exp14_a7b_v3_completion', a8: 'exp14_a8_final_v4'};
       assert.equal(final.phase, phases[mode]);
       assert.ok(!final.records.some(row => row.review_id === pass.prior.review_id));
     } else {
@@ -165,10 +174,11 @@ async function test() {
       await fresh.page.waitForFunction(() => document.querySelector('#notice').textContent.includes('已恢复'));
       await show(fresh.page, selection.partial);
       assert.equal(await fresh.page.locator('#notes').inputValue(), note);
+      if (finalRound) assert.equal(await fresh.page.locator('#final-version').inputValue(), olderChoice);
       await fresh.page.locator('#ai-filter').selectOption('RETRY_REPAIR');
       await fresh.page.locator('#confidence-filter').selectOption(selection.partial.ai.ai_confidence);
       assert.equal(await fresh.page.locator('#item').isVisible(), true);
-      if (supplemental) {
+      if (supplemental || finalRound) {
         await fresh.page.locator('#class').selectOption(selection.partial.classes[0]);
         await fresh.page.locator('#status-filter').selectOption(selection.partial.ai.ai_decision);
         assert.equal(await fresh.page.locator('#item').isVisible(), true);

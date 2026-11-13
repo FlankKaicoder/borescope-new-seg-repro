@@ -64,7 +64,7 @@ def historical_mask(root, scope, parent, old_scopes):
         prefix = generation.split("_OUT", 1)[0]
         for row in plan["requests"]:
             if row["variant_id"] == prefix and row["mask_sha256"] == parent["mask_sha256"]:
-                ids = row["selected_polygon_ids"].split("|") if folder == A6 else None
+                ids = row["selected_polygon_ids"].split("|") if folder != PHASE else None
                 return root.parent / folder / row["mask_path"], ids
     raise ValueError("Historical Raw mask identity not found")
 
@@ -99,13 +99,13 @@ def process(root, follow, rescue_only, *, plan_loader=frozen_plan, log_dir=None,
         time.sleep(5)
 
 
-def rescue_old_raw(root, scope):
-    old_scopes = {name: load_json(root.parent / name / "scope.json") for name in (PHASE, A6)}
+def rescue_old_raw(root, scope, *, history_dirs=(PHASE, A6), suffix="_A7ALIGN", fit_options=None):
+    old_scopes = {name: load_json(root.parent / name / "scope.json") for name in history_dirs}
     for route in scope["routes"]:
         source = scope["sources"][route["source_id"]]
         for job in route["alignments"]:
             parent_variant = job["parent_variant"]
-            variant = parent_variant + "_A7ALIGN"
+            variant = parent_variant + suffix
             if (root / "postprocess_receipts" / f"{variant}.json").is_file():
                 continue
             folder, parent = historical_record(root, scope, parent_variant)
@@ -120,7 +120,8 @@ def rescue_old_raw(root, scope):
                 raster, _ = target_raster(source, shapes, ids)
             entry = {**parent, "raw": str(folder / parent["raw"]), "mask": str(mask_path), "derived": {},
                      "a2_status": "", "historical_visual": ""}
-            fit = partial(fit_variant, old=old, old_sha=old_sha, supplemental=normalized_matches)
+            fit = partial(fit_variant, old=old, old_sha=old_sha, supplemental=normalized_matches,
+                          **(fit_options or {}))
             complete_attempt(root, variant, entry, source, parent=parent, fit=fit, repair_target=raster)
 
 

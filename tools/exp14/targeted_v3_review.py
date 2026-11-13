@@ -25,7 +25,7 @@ def history_for_page(scope):
     return notes
 
 
-def context(root, scope, route, record, notes):
+def context(root, scope, route, record, notes, *, versions=("V1", "V2"), alignment_suffix="_A7ALIGN"):
     def previous(variant):
         folder, item = historical_record(root, scope, variant)
         return review.prior_context(root, folder.parents[2], item, notes)
@@ -33,12 +33,12 @@ def context(root, scope, route, record, notes):
     parents = route["prior_variants"]
     if record.get("alignment_parent_review_id"):
         variant = next(job["parent_variant"] for job in route["alignments"]
-                       if job["parent_variant"] + "_A7ALIGN" == record["variant_id"])
+                       if job["parent_variant"] + alignment_suffix == record["variant_id"])
         prior = previous(variant)
         comparison = [prior]
     else:
         comparison = []
-        for version in ("V1", "V2"):
+        for version in versions:
             if parents[version]:
                 comparison.append(previous(parents[version][0]))
             else:
@@ -55,7 +55,8 @@ def render(root, item):
     aligned = bool(item["identity"]["aligned_sha256"])
     bounded = "bounded.png" in item["file_sha256"]
     rescue = item["rescue"]
-    step, top, crop_height = 264, 176, 105
+    final = len(item["comparison"]) == 3
+    step, top, crop_height = (218 if final else 264), 176, 105
     canvas = Image.new("RGB", (review.WIDTH, 62 + top + len(item["polygons"]) * crop_height), "#18232a")
     draw = ImageDraw.Draw(canvas)
     heading, small = ImageFont.load_default(size=20), ImageFont.load_default(size=13)
@@ -90,14 +91,17 @@ def render(root, item):
         paths.append(folder / p["after"] if aligned else None)
         for col, path in enumerate(paths):
             if path:
-                label = (f"{pid} {p['class']} {action}", "V1 crop", "Previous crop", "New crop")[col]
+                labels = (f"{pid} {p['class']} {action}", "V1 crop", "V2 crop", "V3 crop", "New crop") if final else (
+                    f"{pid} {p['class']} {action}", "V1 crop", "Previous crop", "New crop")
+                label = labels[col]
                 draw.text((7 + col * step, y), label, fill="#f0d5a0", font=small)
                 review.add_image(canvas, path, 7 + col * step, y + 17, step - 8, crop_height - 19)
         if bounded:
-            draw.text((7 + 4 * step, y), "Bounded crop", fill="#f0d5a0", font=small)
+            bounded_col = len(paths)
+            draw.text((7 + bounded_col * step, y), "Bounded crop", fill="#f0d5a0", font=small)
             with Image.open(folder / "bounded.png") as image:
                 crop = ImageOps.contain(image.crop(p["box"]).convert("RGB"), (step - 8, crop_height - 19))
-            canvas.paste(crop, (7 + 4 * step + (step - 8 - crop.width) // 2, y + 17))
+            canvas.paste(crop, (7 + bounded_col * step + (step - 8 - crop.width) // 2, y + 17))
     return canvas
 
 

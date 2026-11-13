@@ -51,6 +51,11 @@
       if (!bundle.states.includes(row.decision) || !bundle.reasons.includes(row.reason) ||
           !['', 'YES'].includes(row.whole_image_normal) ||
           !['', 'CONFIRMED'].includes(row.b_region_review)) throw new Error('审核决定或确认字段无效。');
+      if (record.final_versions && (!['', 'EXCLUDE', ...record.final_versions].includes(row.final_version_choice) ||
+          (row.final_version_choice && row.decision === 'UNREVIEWED') ||
+          (row.final_version_choice === row.variant_id && row.decision !== 'PASS'))) {
+        throw new Error('最终保留版本与人工决定不一致。');
+      }
       const polygon = JSON.parse(row.polygon_decisions);
       if (!polygon || typeof polygon !== 'object' || Array.isArray(polygon) ||
           !Object.entries(polygon).every(([id, state]) =>
@@ -247,6 +252,9 @@
     $('ai-notes').textContent = ai?.ai_notes || '';
     $('ai-polygons').textContent = ai ? Object.entries(ai.ai_polygon_decisions)
       .map(([polygon, state]) => polygon + ' ' + state).join(' · ') : '';
+    $('final-suggestion').hidden = !current.final_suggestion;
+    $('final-suggestion').textContent = current.final_suggestion ?
+      '最终版本建议 · ' + current.final_suggestion + (current.preferred_older ? ' · 旧版 ' + current.preferred_older : '') : '';
     $('ai-evidence').hidden = !ai;
     if (ai) $('ai-evidence').href = ai.sheet_url;
     const existing = decisions.get(id);
@@ -374,6 +382,14 @@
     $('decision').value = row.decision;
     $('reason').value = row.reason;
     $('notes').value = row.notes;
+    $('final-version-control').hidden = !current.final_versions;
+    if (current.final_versions) {
+      $('final-version').replaceChildren();
+      option($('final-version'), '', '尚未选择');
+      for (const variant of current.final_versions) option($('final-version'), variant);
+      option($('final-version'), 'EXCLUDE', '最终剔除');
+      $('final-version').value = row.final_version_choice;
+    }
     $('polygon').replaceChildren();
     $('polygon-decisions').replaceChildren();
     $('polygon-notes').open = false;
@@ -491,6 +507,10 @@
   $('diagnostics').addEventListener('toggle', renderDiagnostics);
   for (const id of ['decision', 'reason', 'notes']) $(id).addEventListener('input', () => {
     editableRow()[id] = $(id).value;
+    saveChange();
+  });
+  $('final-version').addEventListener('change', () => {
+    editableRow().final_version_choice = $('final-version').value;
     saveChange();
   });
   $('whole').addEventListener('change', () => {

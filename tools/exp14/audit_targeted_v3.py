@@ -117,10 +117,10 @@ def audit_requests(root, scope, auth_sha, protocol_sha):
             "usage": dict(usage), "cost": dict(cost), "stop_reasons": stop_reasons, "repeat_posts": 0}
 
 
-def audit_candidates(root, scope):
+def audit_candidates(root, scope, *, alignment_suffix="_A7ALIGN"):
     generated = candidates(root, {**scope, "historical_variants": {}})
     requests = {item["variant_id"]: item for item in scope["requests"]}
-    rescues = {job["parent_variant"] + "_A7ALIGN": job for route in scope["routes"] for job in route["alignments"]}
+    rescues = {job["parent_variant"] + alignment_suffix: job for route in scope["routes"] for job in route["alignments"]}
     receipts = {p.stem: load_json(p) for p in (root / "postprocess_receipts").glob("*.json")}
     g3.require(receipts.keys() == generated.keys() | rescues.keys(), "Postprocess receipt set differs")
     for item in generated.values():

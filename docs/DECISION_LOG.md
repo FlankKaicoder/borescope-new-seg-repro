@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp14-A8 final V4 repair and registration (2026-11-13)
+
+Decision D065. Arbitrate four human exports at source, version and Polygon level. Freeze V4 only for explicit eligible targets without a historical pass and retain unresolved structures. Complete the final registration check with existing Raw and unchanged geometric screens. Keep human version choice, historical A/B evidence, new AI suggestions and independent data admission separate. [Handoff](exp14/EXP14_A8_FINAL_V4_REPAIR_HANDOFF.md).
+
 ## Exp14-A7B third-round completion (2026-11-13)
 
 Decision D064. Continue the unconsumed A7 request IDs with the original authorization, version, inputs and permanent locks. Check one real request serially before raising concurrency. Keep all recovered outputs under their original POST identity. Publish only the new review IDs in an independently stored offline batch. Record dispatch completion, cumulative image delivery and human review independently. [Handoff](exp14/EXP14_A7B_V3_COMPLETION_HANDOFF.md).

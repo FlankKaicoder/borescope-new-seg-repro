@@ -1,0 +1,98 @@
+{
+  "a7_delivery_unresolved": 5,
+  "ai_decisions": {
+    "HOLD": 6,
+    "PASS": 18,
+    "RETRY_ALIGNMENT": 0,
+    "RETRY_REPAIR": 7
+  },
+  "ai_polygon_decisions": {
+    "HOLD": 11,
+    "PASS": 60,
+    "RETRY_REPAIR": 10
+  },
+  "dispatch": {
+    "attempted": 31,
+    "attempted_polygons": 46,
+    "cost": {
+      "COST_UNKNOWN": 31
+    },
+    "http": {
+      "200": 31
+    },
+    "repeat_posts": 0,
+    "stop_reasons": [
+      null
+    ],
+    "terminal_statuses": {
+      "RETURNED_IMAGE": 31
+    },
+    "unattempted": 0,
+    "usage": {
+      "input_tokens": 34710,
+      "output_tokens": 34411,
+      "requests_with_usage": 31,
+      "total_tokens": 69121
+    }
+  },
+  "experiment": "EXP14_A8_FINAL_V4_REPAIR_AND_ALIGNMENT",
+  "gpu_training_runs": 0,
+  "historical_locks_verified": 764,
+  "images": {
+    "bounded_pixel_checks": 31,
+    "local_errors": 0,
+    "old_raw_alignment_attempts": 9,
+    "raw_aligned": 31,
+    "raw_by_version": {
+      "V4": 31
+    },
+    "raw_count": 31,
+    "rescues": {
+      "REGISTRATION_NOT_RESCUED": 1,
+      "UNCHANGED": 8
+    },
+    "sources_returned_images": 31
+  },
+  "independent_gate_admissions": 0,
+  "input_review_sha256": {
+    "Exp14_A7B_CSV-B_2026-11-13T14-02-32-268Z.csv": "45abd54863404bdc58e72dc5b4933a2921ca3bf52cbf8f2b748a4887c1773fcb",
+    "Exp14_review_AI_assisted_2026-11-13T07-37-09-066Z.csv": "b1dddcf664a8e69fb53062bf0a36b54e4fd372a92e643d9db5db7ddc81c5ff49",
+    "Exp14_review_AI_assisted_2026-11-13T10-50-40-611Z.csv": "be536dc39a7cb8e3fb3671180e55699b8cdff4a909eb28ead5dd6d8694d58d38",
+    "Exp14_review_AI_assisted_2026-11-13T12-04-02-854Z.csv": "ae2465227161dc9c78cbfa8b4a1a74c254c5fa2edd0395683de4a929abfe5225"
+  },
+  "new_human_approvals": 0,
+  "planned_polygons": 46,
+  "planned_requests": 31,
+  "protected_composite_inputs": 11,
+  "registry": {
+    "human_confirmed_a_sources": 368,
+    "human_confirmed_b_polygons": 566,
+    "human_confirmed_b_sources": 368,
+    "new_ai_a_sources": 7,
+    "new_ai_b_edited_polygons": 35,
+    "new_ai_b_polygons": 60,
+    "new_ai_b_polygons_increment": 60,
+    "new_ai_b_sources": 29,
+    "remaining_alignment_risk_sources": 9,
+    "remaining_structure_or_authorization_risk_sources": 110,
+    "sources_without_candidate_for_some_target_or_delivery": 127,
+    "unresolved_polygons": 248,
+    "unresolved_sources": 147
+  },
+  "source_actions": {
+    "ALREADY_COMPLETE": 368,
+    "DELIVERY_UNRESOLVED": 5,
+    "FINAL_ALIGNMENT_RESCUE": 9,
+    "FINAL_HOLD": 102,
+    "FINAL_V4_REPAIR": 31,
+    "PRESERVE_APPROVED_POLYGON": 2,
+    "PRESERVE_APPROVED_VERSION": 6
+  },
+  "started_utc": "2026-11-13T14:24:34.005542+00:00",
+  "status": "EXP14_A8_FINAL_V4_COMPLETE_PENDING_HUMAN_REVIEW",
+  "train_polygons": 901,
+  "train_sources": 523,
+  "v3_sources_with_repair_signal": 44,
+  "v5_posts": 0,
+  "visual_reviewed": 31
+}
