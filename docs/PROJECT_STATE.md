@@ -1,5 +1,9 @@
 # Project state
 
+## Exp14-A7B third-round completion (2026-11-13)
+
+EXP14_A7B_V3_COMPLETION_PENDING_HUMAN_REVIEW. All 82 remaining A7 request IDs were sent once, reaching 94/94 cumulative dispatch. All 82 new requests delivered images, including one response with three outputs recovered without another POST. Five prior delivery failures remain locked. The 84 new Raw, Aligned and Bounded outputs passed identity and pixel checks. Codex reviewed all 84, with 23 PASS, 42 RETRY_REPAIR and 19 HOLD. The Chrome-tested supplemental page keeps the prior 23 human-reviewed identities separate. V4 and training runs are zero. [Handoff](exp14/EXP14_A7B_V3_COMPLETION_HANDOFF.md).
+
 ## Exp14-A7 targeted repair and registration (2026-11-13)
 
 EXP14_A7_V3_REPAIR_PARTIAL_PENDING_HUMAN_REVIEW. Two pinned human exports cover 523 frozen TRAIN sources and 901 selected Polygons. The combined plan authorized 94 requests for 147 Polygons. The relay stop rule ended dispatch at 12 unique POSTs, with 7 returned images and 82 requests unsent. All 7 new Raw images aligned. The 29 old Raw attempts added 16 Aligned candidates. Codex reviewed all 23 available new or changed candidates, with 13 PASS, 5 RETRY_REPAIR, 1 RETRY_ALIGNMENT and 4 HOLD. The offline reviewer passed Chrome and CSV/JSON validation. New human confirmations and training runs are zero. [Handoff](exp14/EXP14_A7_TARGETED_V3_REPAIR_HANDOFF.md).

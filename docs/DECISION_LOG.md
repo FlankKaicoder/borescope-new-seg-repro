@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp14-A7B third-round completion (2026-11-13)
+
+Decision D064. Continue the unconsumed A7 request IDs with the original authorization, version, inputs and permanent locks. Check one real request serially before raising concurrency. Keep all recovered outputs under their original POST identity. Publish only the new review IDs in an independently stored offline batch. Record dispatch completion, cumulative image delivery and human review independently. [Handoff](exp14/EXP14_A7B_V3_COMPLETION_HANDOFF.md).
+
 ## Exp14-A7 targeted repair and registration (2026-11-13)
 
 Decision D063. Merge both pinned human reviews at source, version and Polygon level, preserve existing passes, and reuse Raw for registration. Freeze one new request per authorized source with separate version identity. Consecutive relay or transport failures stopped dispatch with 82 requests unsent. Retain every terminal receipt and the completed offline review. Keep A/B candidate counts separate from human confirmation and stop for the independent data Gate. [Handoff](exp14/EXP14_A7_TARGETED_V3_REPAIR_HANDOFF.md).

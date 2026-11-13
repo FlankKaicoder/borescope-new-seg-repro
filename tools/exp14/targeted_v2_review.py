@@ -33,9 +33,10 @@ def reviewable(root):
     return records
 
 
-def waves(root):
+def waves(root, wave_dir=None):
     prepared, observations = {}, {}
-    for path in sorted((root / "visual_waves").glob(f"*/{MANIFEST}")):
+    directory = wave_dir if wave_dir is not None else root / "visual_waves"
+    for path in sorted(directory.glob(f"*/{MANIFEST}")):
         manifest = load_json(path)
         for item in manifest["records"]:
             key = item["variant_id"]
@@ -117,7 +118,8 @@ def render_case(root, item):
     return canvas
 
 
-def prepare(root, limit, *, plan_loader=frozen_plan, build_context=None, render=render_case):
+def prepare(root, limit, *, plan_loader=frozen_plan, build_context=None, render=render_case,
+            records=None, wave_dir=None):
     scope, _, _ = plan_loader(root)
     if build_context is None:
         parents = finished_candidates(Path(scope["parent_root"]))
@@ -130,13 +132,14 @@ def prepare(root, limit, *, plan_loader=frozen_plan, build_context=None, render=
                 **{key: row[key] for key in ("variant_id", "decision", "reason", "notes")},
                 "targets": evidence["targets"],
             })
-    prepared, _ = waves(root)
-    records = [r for key, r in reviewable(root).items() if key not in prepared]
+    prepared, _ = waves(root, wave_dir)
+    selected = reviewable(root) if records is None else records
+    records = [r for key, r in selected.items() if key not in prepared]
     if not records:
         print("NO_NEW_EVIDENCE")
         return
     records.sort(key=lambda r: (not bool(r.get("alignment_parent_review_id")), int(r["source_id"]), r["variant_id"]))
-    root_waves = root / "visual_waves"
+    root_waves = wave_dir if wave_dir is not None else root / "visual_waves"
     output = root_waves / f"wave_{len(list(root_waves.glob('*/' + MANIFEST))) + 1:03}"
     output.mkdir(parents=True, exist_ok=False)
     (output / "logs").mkdir()
@@ -167,10 +170,11 @@ def prepare(root, limit, *, plan_loader=frozen_plan, build_context=None, render=
     print(output, len(items), len(sheets))
 
 
-def publish(root, *, phase=PHASE, name="review_v2_ai_assisted", title="Exp14-A6 定向修复复核", history=None):
-    prepared, observed = waves(root)
-    records = reviewable(root)
-    g3.require(set(prepared) == set(observed) == set(records) and records,
+def publish(root, *, phase=PHASE, name="review_v2_ai_assisted", title="Exp14-A6 定向修复复核", history=None,
+            records=None, wave_dir=None, results_dir=None, empty_message=""):
+    prepared, observed = waves(root, wave_dir)
+    records = reviewable(root) if records is None else records
+    g3.require(set(prepared) == set(observed) == set(records) and (records or empty_message),
                "Finish viewing every reviewable result before publishing")
     destination = root / name
     destination.mkdir()
@@ -178,6 +182,8 @@ def publish(root, *, phase=PHASE, name="review_v2_ai_assisted", title="Exp14-A6 
     data = {"phase": phase, "title": title, "class_names": CLASSES, "identity": IDENTITY,
             "fields": FIELDS, "states": sorted(STATES), "reasons": sorted(REASONS), "records": [],
             "ai_review": {"completed": len(observed)}}
+    if results_dir is not None:
+        data.update(show_review_id=True, export_prefix="Exp14_A7B_CSV-B", empty_message=empty_message)
     results = []
     for variant, record in sorted(records.items(), key=lambda row: (int(row[1]["source_id"]), row[0])):
         item = prepared[variant]
@@ -217,10 +223,11 @@ def publish(root, *, phase=PHASE, name="review_v2_ai_assisted", title="Exp14-A6 
                     "保存请导出 CSV，并备份 JSON。重新打开页面后可以导入恢复。\n"
                     "浏览器通常将文件下载到 Downloads，请复制到本 exports 目录。\n")
     g3.write_exclusive(destination / "exports" / "保存与恢复.txt", instructions.encode("utf-8"))
-    g3.write_json_exclusive(root / "ai_review_results.json", {"phase": phase, "records": results})
+    results_dir = results_dir if results_dir is not None else root
+    g3.write_json_exclusive(results_dir / "ai_review_results.json", {"phase": phase, "records": results})
     csv_rows = [{key: json.dumps(value, ensure_ascii=False) if isinstance(value, (list, dict)) else value
                  for key, value in row.items()} for row in results]
-    g3.write_exclusive(root / "ai_review_results.csv", _csv_bytes(csv_rows, RESULT_FIELDS))
+    g3.write_exclusive(results_dir / "ai_review_results.csv", _csv_bytes(csv_rows, RESULT_FIELDS))
     print(destination, len(records), dict(Counter(row["ai_decision"] for row in results)))
 
 

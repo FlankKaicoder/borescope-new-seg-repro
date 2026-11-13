@@ -164,7 +164,8 @@
       const url = URL.createObjectURL(new Blob([text], {type}));
       const link = document.createElement('a');
       link.href = url;
-      link.download = (assisted ? 'Exp14_review_AI_assisted_' : 'Exp14_review_') +
+      const prefix = bundle.export_prefix || (assisted ? 'Exp14_review_AI_assisted' : 'Exp14_review');
+      link.download = prefix + '_' +
         new Date().toISOString().replace(/[:.]/g, '-') + '.' + extension;
       link.hidden = true;
       document.body.appendChild(link);
@@ -315,6 +316,10 @@
       return;
     }
     $('title').textContent = current.source_id + ' · ' + current.classes.join(' / ') + ' · ' + current.variant_id;
+    if (bundle.show_review_id) {
+      $('review-id').hidden = false;
+      $('review-id').textContent = 'Review ID · ' + current.initial.review_id;
+    }
     const historical = [current.historical_visual, current.a2_status].filter(Boolean).join(' / ');
     $('geometry').textContent = [current.geometry_status, current.mapping_method,
       historical && '历史 ' + historical, current.geometry_reason, current.source_hold && 'HOLD · ' + current.source_hold]
@@ -427,6 +432,10 @@
     option($('status-filter'), value, label);
   }
   for (const reason of bundle.reasons) option($('reason'), reason, reason || '未选择');
+  if (!bundle.records.length && bundle.empty_message) {
+    $('empty').textContent = bundle.empty_message;
+    for (const id of ['csv', 'json', 'import', 'class', 'source', 'status-filter']) $(id).disabled = true;
+  }
   for (const id of ['class', 'source', 'status-filter']) $(id).addEventListener('input', () => applyFilter());
   if (assisted) {
     for (const id of ['ai-filters', 'ai-actions', 'human-state']) $(id).hidden = false;

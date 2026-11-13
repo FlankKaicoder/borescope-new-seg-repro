@@ -190,13 +190,14 @@ def recover_responses(root, scope=None, inspected=None):
 
 
 def execute(root, credential, workers, transport=None, *, plan_loader=frozen_plan,
-            input_validator=input_for_row, historical_locks=None):
+            input_validator=input_for_row, historical_locks=None, log_dir=None, require_first_image=False):
     scope, auth_sha, protocol_sha = plan_loader(root)
     g3.require(bool(credential.strip()), "Missing Exp14 image API credential")
     transport = transport or g3.HttpTransport()
     rows = scope["requests"]
     pending = iter(rows)
-    g3.write_json_exclusive(root / "logs" / f"start_{time.time_ns()}.json",
+    logs = log_dir if log_dir is not None else root / "logs"
+    g3.write_json_exclusive(logs / f"start_{time.time_ns()}.json",
                            {"started_utc": now(), "authorized_requests": len(rows), "max_in_flight": workers})
     counts = Counter()
     transient = 0
@@ -209,7 +210,7 @@ def execute(root, credential, workers, transport=None, *, plan_loader=frozen_pla
         except Exception as error:
             # A local write failure can leave a lock with ambiguous delivery.
             stop_reason = stop_reason or "LOCAL_IO_OR_INPUT_ERROR"
-            g3.write_json_exclusive(root / "logs" / f"error_{time.time_ns()}.json",
+            g3.write_json_exclusive(logs / f"error_{time.time_ns()}.json",
                                     {"variant_id": row["variant_id"], "error_type": type(error).__name__,
                                      "error": str(error).replace(credential, "[REDACTED]")[:300]})
             counts["LOCAL_IO_OR_INPUT_ERROR"] += 1
@@ -245,11 +246,12 @@ def execute(root, credential, workers, transport=None, *, plan_loader=frozen_pla
             for future in done:
                 handle(future, active.pop(future))
             if not stop_reason:
-                for _ in range(workers - len(active)):
+                concurrency = 1 if require_first_image and not counts["RETURNED_IMAGE"] else workers
+                for _ in range(concurrency - len(active)):
                     submit()
 
     receipt = {"finished_utc": now(), "counts_this_process": dict(counts), "stop_reason": stop_reason}
-    g3.write_json_exclusive(root / "logs" / f"stop_{time.time_ns()}.json", receipt)
+    g3.write_json_exclusive(logs / f"stop_{time.time_ns()}.json", receipt)
     print(json.dumps(receipt), flush=True)
 
 

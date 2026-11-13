@@ -6,8 +6,9 @@ const path = require('node:path');
 const {pathToFileURL} = require('node:url');
 
 async function test() {
-  const [, , directory, , qa, mode, previousCsv] = process.argv;
-  const targeted = mode === 'a6' || mode === 'a7';
+  const [, , directory, , qa, mode, previousCsv, previousDirectory] = process.argv;
+  const supplemental = mode === 'a7b';
+  const targeted = mode === 'a6' || mode === 'a7' || supplemental;
   await fs.mkdir(qa);
   const browser = await chromium.launch({channel: 'chrome', headless: true});
   const errors = [];
@@ -38,7 +39,7 @@ async function test() {
         await tab.locator('#next').click();
       }
     };
-    if (mode === 'a7') {
+    if (mode === 'a7' || supplemental) {
       const records = await page.evaluate(() => JSON.parse(document.querySelector('#bundle').textContent).records);
       const loadedImages = async () => page.waitForFunction(() => {
         const images = [...document.querySelectorAll('#images img, #crops img, #diagnostic-images img')];
@@ -55,12 +56,13 @@ async function test() {
         assert.ok(evidence);
         await fs.access(path.resolve(directory, evidence));
       }
-      console.log('Chrome loaded the comparison and diagnostic images for', records.length, 'A7 records');
+      console.log('Chrome loaded the comparison and diagnostic images for', records.length, mode, 'records');
     }
     const save = async (id, name) => {
       const pending = page.waitForEvent('download');
       await page.locator(id).click();
       const receipt = await pending;
+      if (supplemental) assert.match(receipt.suggestedFilename(), /^Exp14_A7B_CSV-B_/);
       const file = path.join(qa, name);
       await receipt.saveAs(file);
       return file;
@@ -85,6 +87,9 @@ async function test() {
     }, expected);
     if (targeted) {
       assert.match(await page.locator('#prior-notes').innerText(), /原人工/);
+      if (supplemental) {
+        assert.match(await page.locator('#review-id').innerText(), new RegExp(pass.initial.review_id + '$'));
+      }
       assert.equal(await page.locator('#whole').isChecked(), false);
       if (previousCsv) {
         await page.locator('#file').setInputFiles(previousCsv);
@@ -120,11 +125,37 @@ async function test() {
     assert.equal(JSON.parse(final.records.find(row => row.review_id === id).polygon_decisions)
       [selection.partial.polygons[0].polygon_id], 'HOLD');
     if (targeted) {
-      assert.equal(final.phase, mode === 'a7' ? 'exp14_a7_targeted_v3' : 'exp14_a6_targeted_v2');
+      const phases = {a6: 'exp14_a6_targeted_v2', a7: 'exp14_a7_targeted_v3', a7b: 'exp14_a7b_v3_completion'};
+      assert.equal(final.phase, phases[mode]);
       assert.ok(!final.records.some(row => row.review_id === pass.prior.review_id));
     } else {
       assert.deepEqual(final.records.find(row => row.review_id === selection.historical.initial.review_id),
         selection.historical.initial);
+    }
+    if (supplemental) {
+      const old = await context.newPage();
+      old.on('pageerror', error => errors.push(error.message));
+      await old.goto(pathToFileURL(path.join(previousDirectory, 'index.html')).href);
+      const historical = await old.evaluate(() => JSON.parse(document.querySelector('#bundle').textContent));
+      assert.equal(historical.records.length, 23);
+      const ids = new Set(historical.records.map(record => record.initial.review_id));
+      assert.ok(final.records.every(row => !ids.has(row.review_id)));
+      await old.locator('#file').setInputFiles(previousCsv);
+      await old.waitForFunction(() => document.querySelector('#notice').textContent.includes('已恢复 23 条'));
+      const storage = (tab, phase) => tab.evaluate(name => localStorage.getItem(name + ':ai-assisted:v1'), phase);
+      const before = await storage(old, historical.phase);
+      for (const file of [csv, json]) {
+        await old.locator('#file').setInputFiles(file);
+        await old.waitForFunction(() => document.querySelector('#notice').dataset.error === 'true');
+        assert.equal(await storage(old, historical.phase), before);
+      }
+      await old.reload();
+      await old.waitForFunction(() => document.querySelector('#notice').textContent.includes('已从本地缓存恢复 23 条'));
+      assert.equal(await storage(old, historical.phase), before);
+      const preserved = JSON.parse(before);
+      assert.equal(preserved.phase, historical.phase);
+      assert.equal(preserved.records.length, 23);
+      assert.equal(JSON.parse(await storage(page, final.phase)).phase, final.phase);
     }
     await context.close();
 
@@ -137,6 +168,11 @@ async function test() {
       await fresh.page.locator('#ai-filter').selectOption('RETRY_REPAIR');
       await fresh.page.locator('#confidence-filter').selectOption(selection.partial.ai.ai_confidence);
       assert.equal(await fresh.page.locator('#item').isVisible(), true);
+      if (supplemental) {
+        await fresh.page.locator('#class').selectOption(selection.partial.classes[0]);
+        await fresh.page.locator('#status-filter').selectOption(selection.partial.ai.ai_decision);
+        assert.equal(await fresh.page.locator('#item').isVisible(), true);
+      }
       await fresh.context.close();
     }
     assert.deepEqual(errors, []);

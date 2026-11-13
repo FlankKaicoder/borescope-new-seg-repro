@@ -69,13 +69,39 @@ def historical_mask(root, scope, parent, old_scopes):
     raise ValueError("Historical Raw mask identity not found")
 
 
-def process(root, follow, rescue_only):
+def process(root, follow, rescue_only, *, plan_loader=frozen_plan, log_dir=None, rescue=True):
     cv2.setNumThreads(2)
-    scope, _, _ = frozen_plan(root)
-    old_scopes = {name: load_json(root.parent / name / "scope.json") for name in (PHASE, A6)}
-    routes = {item["source_id"]: item for item in scope["routes"]}
+    scope, _, _ = plan_loader(root)
+    if rescue:
+        rescue_old_raw(root, scope)
+    if rescue_only:
+        return
+    logs = log_dir if log_dir is not None else root / "logs"
     requests = {item["variant_id"]: item for item in scope["requests"]}
-    for route in routes.values():
+    inspected = set()
+    while True:
+        launched = list(logs.glob("start_*.json"))
+        stopped = list(logs.glob("stop_*.json"))
+        ended = not follow or (launched and len(launched) == len(stopped))
+        recover_responses(root, scope, inspected)
+        done = {p.stem for p in (root / "postprocess_receipts").glob("*.json")}
+        for variant, entry in candidates(root, {**scope, "historical_variants": {}}, done, running=not ended).items():
+            request = requests[variant.split("_OUT", 1)[0]]
+            source = scope["sources"][entry["source_id"]]
+            repair, _ = target_raster(source, load_json(Path(source["annotation"]))["shapes"],
+                                      request["selected_polygon_ids"].split("|"))
+            base = g3.safe_file(root, request["batch_image_path"])
+            hash_file(base, request["source_image_sha256"])
+            fit = partial(fit_variant, supplemental=normalized_matches)
+            complete_attempt(root, variant, entry, source, fit=fit, repair_target=repair, base_path=base)
+        if ended:
+            break
+        time.sleep(5)
+
+
+def rescue_old_raw(root, scope):
+    old_scopes = {name: load_json(root.parent / name / "scope.json") for name in (PHASE, A6)}
+    for route in scope["routes"]:
         source = scope["sources"][route["source_id"]]
         for job in route["alignments"]:
             parent_variant = job["parent_variant"]
@@ -96,28 +122,6 @@ def process(root, follow, rescue_only):
                      "a2_status": "", "historical_visual": ""}
             fit = partial(fit_variant, old=old, old_sha=old_sha, supplemental=normalized_matches)
             complete_attempt(root, variant, entry, source, parent=parent, fit=fit, repair_target=raster)
-    if rescue_only:
-        return
-    inspected = set()
-    while True:
-        recover_responses(root, scope, inspected)
-        done = {p.stem for p in (root / "postprocess_receipts").glob("*.json")}
-        for variant, entry in candidates(root, {**scope, "historical_variants": {}}, done, running=follow).items():
-            request = requests[variant.split("_OUT", 1)[0]]
-            source = scope["sources"][entry["source_id"]]
-            repair, _ = target_raster(source, load_json(Path(source["annotation"]))["shapes"],
-                                      request["selected_polygon_ids"].split("|"))
-            base = g3.safe_file(root, request["batch_image_path"])
-            hash_file(base, request["source_image_sha256"])
-            fit = partial(fit_variant, supplemental=normalized_matches)
-            complete_attempt(root, variant, entry, source, fit=fit, repair_target=repair, base_path=base)
-        launched = list((root / "logs").glob("start_*.json"))
-        stopped = list((root / "logs").glob("stop_*.json"))
-        if not follow or (launched and len(launched) == len(stopped)):
-            done = {p.stem for p in (root / "postprocess_receipts").glob("*.json")}
-            if not candidates(root, {**scope, "historical_variants": {}}, done):
-                break
-        time.sleep(5)
 
 
 def main():

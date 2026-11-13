@@ -1,0 +1,48 @@
+{
+  "ai_decisions": {
+    "HOLD": 19,
+    "PASS": 23,
+    "RETRY_ALIGNMENT": 0,
+    "RETRY_REPAIR": 42
+  },
+  "ai_polygon_decisions": {
+    "HOLD": 32,
+    "PASS": 66,
+    "RETRY_REPAIR": 57
+  },
+  "available_at_start": 82,
+  "cumulative_failed_delivery": 5,
+  "cumulative_posts": 94,
+  "delivery": "IMAGE_DELIVERY_PARTIAL",
+  "dispatch": "DISPATCH_COMPLETE",
+  "experiment": "EXP14_A7B_V3_COMPLETION",
+  "first_human_csv_sha256": "ae2465227161dc9c78cbfa8b4a1a74c254c5fa2edd0395683de4a929abfe5225",
+  "first_human_records": 23,
+  "first_review_id_intersection": 0,
+  "gpu_training_runs": 0,
+  "new_aligned": 84,
+  "new_bounded": 84,
+  "new_delivering_requests": 82,
+  "new_failed_delivery": 0,
+  "new_http": {
+    "200": 82
+  },
+  "new_human_approvals": 0,
+  "new_posts": 82,
+  "new_posts_by_version": {
+    "V2": 1,
+    "V3": 81
+  },
+  "new_raw": 84,
+  "new_review_ids": 84,
+  "original_a7_posts": 12,
+  "original_frozen_requests": 94,
+  "previous_posts": 12,
+  "repeat_posts": 0,
+  "review": "HUMAN_REVIEW_PENDING",
+  "started_utc": "2026-11-13T12:36:38.165905+00:00",
+  "status": "EXP14_A7B_V3_COMPLETION_PENDING_HUMAN_REVIEW",
+  "still_unsent": 0,
+  "stop_reason": null,
+  "v4_requests": 0
+}

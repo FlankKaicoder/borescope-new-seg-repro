@@ -3,7 +3,7 @@ param(
     [Parameter(Mandatory = $true)][string] $Python,
     [Parameter(Mandatory = $true)][string] $RunRoot,
     [ValidateRange(1,8)][int] $Workers = 4,
-    [ValidateSet('A6','A7')][string] $Phase = 'A6'
+    [ValidateSet('A6','A7','A7B')][string] $Phase = 'A6'
 )
 
 $ErrorActionPreference = 'Stop'
@@ -28,7 +28,11 @@ try {
     $startInfo.UseShellExecute = $false
     $startInfo.CreateNoWindow = $true
     $runPath = (Resolve-Path -LiteralPath $RunRoot).Path
-    $module = if ($Phase -eq 'A7') { 'tools.exp14.targeted_v3' } else { 'tools.exp14.targeted_v2' }
+    $module = switch ($Phase) {
+        'A7B' { 'tools.exp14.targeted_v3_remaining' }
+        'A7' { 'tools.exp14.targeted_v3' }
+        'A6' { 'tools.exp14.targeted_v2' }
+    }
     foreach ($argument in @('-u', '-X', 'utf8', '-m', $module, 'live',
                             '--root', $runPath, '--workers', "$Workers")) {
         $startInfo.ArgumentList.Add($argument)
