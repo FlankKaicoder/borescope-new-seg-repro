@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp14-A7 targeted repair and registration (2026-11-13)
+
+Decision D063. Merge both pinned human reviews at source, version and Polygon level, preserve existing passes, and reuse Raw for registration. Freeze one new request per authorized source with separate version identity. Consecutive relay or transport failures stopped dispatch with 82 requests unsent. Retain every terminal receipt and the completed offline review. Keep A/B candidate counts separate from human confirmation and stop for the independent data Gate. [Handoff](exp14/EXP14_A7_TARGETED_V3_REPAIR_HANDOFF.md).
+
 ## Exp14-A6 targeted repair and registration (2026-11-13)
 
 Decision D062. Use the pinned final human export for source-level arbitration. Combine confirmed repair Polygons in one V2 request per source, preserve approved regions through verified input pixels, and reuse existing Raw when registration is requested. Hold uncertain mechanical structure and UI overlap. Record provider response, geometry and image-based review independently. Require explicit human confirmation and a separate data Gate for A/B admission. [Handoff](exp14/EXP14_A6_TARGETED_V2_REPAIR_HANDOFF.md).

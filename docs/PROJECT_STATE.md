@@ -1,5 +1,9 @@
 # Project state
 
+## Exp14-A7 targeted repair and registration (2026-11-13)
+
+EXP14_A7_V3_REPAIR_PARTIAL_PENDING_HUMAN_REVIEW. Two pinned human exports cover 523 frozen TRAIN sources and 901 selected Polygons. The combined plan authorized 94 requests for 147 Polygons. The relay stop rule ended dispatch at 12 unique POSTs, with 7 returned images and 82 requests unsent. All 7 new Raw images aligned. The 29 old Raw attempts added 16 Aligned candidates. Codex reviewed all 23 available new or changed candidates, with 13 PASS, 5 RETRY_REPAIR, 1 RETRY_ALIGNMENT and 4 HOLD. The offline reviewer passed Chrome and CSV/JSON validation. New human confirmations and training runs are zero. [Handoff](exp14/EXP14_A7_TARGETED_V3_REPAIR_HANDOFF.md).
+
 ## Exp14-A6 targeted repair and registration (2026-11-13)
 
 EXP14_A6_V2_REPAIR_COMPLETE_PENDING_HUMAN_REVIEW. The pinned human export supports 185 distinct TRAIN V2 requests covering 315 Polygons. All 185 POSTs have terminal receipts with zero repeats. The gateway returned 200 Raw images from 181 sources. CPU processing produced 194 Aligned from new Raw and 88 new Aligned from existing Raw. Codex reviewed all 288 new or changed candidates and 598 Polygon decisions. The private comparison page passed Chrome testing and awaits explicit human confirmation. New human approvals and training runs are zero. [Handoff](exp14/EXP14_A6_TARGETED_V2_REPAIR_HANDOFF.md).

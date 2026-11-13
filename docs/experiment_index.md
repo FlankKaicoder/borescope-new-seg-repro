@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp14-A7 targeted repair and registration (2026-11-13)
+
+EXP14_A7_V3_REPAIR_PARTIAL_PENDING_HUMAN_REVIEW. 12 unique POSTs, 7 new Raw images, 23 new Aligned candidates including 16 old Raw rescues, and 23 AI visual reviews. The relay stop rule left 82 frozen requests unsent. The private offline reviewer passed Chrome verification. [Handoff](exp14/EXP14_A7_TARGETED_V3_REPAIR_HANDOFF.md) · [Sanitized summary](../results/exp14_a7_targeted_v3/summary.json).
+
 ## Exp14-A6 targeted repair and registration (2026-11-13)
 
 EXP14_A6_V2_REPAIR_COMPLETE_PENDING_HUMAN_REVIEW. 185 unique POSTs, 200 new Raw images, 194 newly generated and 88 rescued Aligned candidates. The private comparison page holds all 288 AI visual reviews. [Handoff](exp14/EXP14_A6_TARGETED_V2_REPAIR_HANDOFF.md) · [Sanitized summary](../results/exp14_a6_targeted_v2/summary.json).

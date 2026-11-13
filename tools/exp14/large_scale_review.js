@@ -278,7 +278,10 @@
     $('crops').replaceChildren();
     const selected = current.polygons[Number($('polygon').value)];
     picture($('crops'), selected.before, '原图局部 · ' + selected.class);
-    if (current.prior) picture($('crops'), current.prior.crops[selected.polygon_id], '旧 Aligned 同位置局部', current.prior.assets);
+    const earlier = current.comparison?.length ? current.comparison : current.prior ? [current.prior] : [];
+    for (const version of earlier) {
+      picture($('crops'), version.crops?.[selected.polygon_id], version.variant_id + ' 同位置局部', version.assets);
+    }
     picture($('crops'), selected.after, 'Aligned 同位置局部');
     const missing = selected.unsupported_target_pixels;
     $('target-support').textContent = missing === null ? '配准未验证，暂无同源局部' : '无效目标像素 ' + missing;
@@ -320,21 +323,37 @@
       ' · 有效覆盖 ' + (current.valid_coverage * 100).toFixed(1) + '%';
     $('images').replaceChildren();
     const prior = current.prior;
+    const comparison = current.comparison || [];
     if (!prior) picture($('images'), current.original, 'Original 原图');
     picture($('images'), 'polygon_overlay.png', 'Original + Polygon');
-    if (prior) {
+    if (comparison.length) {
+      for (const previous of comparison.filter(item => item.assets)) {
+        if (current.rescue) {
+          picture($('images'), previous.raw, previous.variant_id + ' · 配准前 Raw', previous.assets);
+          if (!previous.aligned) continue;
+        }
+        picture($('images'), previous.image, previous.variant_id + (previous.aligned ? ' · 旧 Aligned' : ' · 旧 Raw'), previous.assets);
+      }
+    } else if (prior) {
       const priorRaw = current.rescue || !prior.aligned;
       picture($('images'), priorRaw ? prior.raw : prior.image,
         prior.variant_id + (priorRaw ? ' · 旧 Raw' : ' · 旧 Aligned'), prior.assets);
     }
     picture($('images'), current.aligned ? 'aligned.png' : current.raw,
       current.aligned ? 'Aligned 修复图' : 'Raw · 未配准');
-    if (current.bounded) picture($('images'), 'bounded.png', 'V2 · 限定编辑');
+    if (current.bounded) picture($('images'), 'bounded.png', 'Bounded · 限定编辑');
+    if (current.rescue && comparison.length && current.aligned) picture($('images'), 'valid.png', 'Valid Mask · 白色有效');
+    const missing = comparison.filter(item => item.missing).map(item => item.missing);
+    $('missing-comparison').hidden = missing.length === 0;
+    $('missing-comparison').textContent = missing.join(' · ');
+    $('input-mode').hidden = !current.input_mode;
+    $('input-mode').textContent = current.input_mode ?
+      '底图 ' + current.input_mode + '。Raw 为网关回图，Aligned 为原图坐标配准，Bounded 为在底图上仅替换授权区域的本地合成。' : '';
     $('original-link-row').hidden = !prior;
     if (prior) $('original-link').href = current.assets + current.original;
     $('prior-notes').hidden = !prior;
     $('prior-notes').textContent = prior ? prior.notes.map(row => [
-      row.variant_id, '原人工 ' + labels[row.decision], row.reason, row.notes,
+      row.variant_id, (row.round ? '第 ' + row.round + ' 轮原人工 ' : '原人工 ') + labels[row.decision], row.reason, row.notes,
       Object.entries(row.targets).map(([id, state]) => id + ' ' + labels[state]).join(' · '),
     ].filter(Boolean).join(' · ')).join('\n') : '';
     $('risk').textContent = [

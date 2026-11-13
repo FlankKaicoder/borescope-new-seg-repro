@@ -47,6 +47,8 @@ def waves(root):
             hash_file(sheet, evidence["sheet_sha256"])
             evidence["sheet"] = sheet.relative_to(root).as_posix()
             evidence["prior_assets"] = prepared[key]["prior"]
+            if prepared[key].get("comparison"):
+                evidence["comparison_assets"] = prepared[key]["comparison"]
             observations[key] = result
     return prepared, observations
 
@@ -115,9 +117,10 @@ def render_case(root, item):
     return canvas
 
 
-def prepare(root, limit):
-    scope, _, _ = frozen_plan(root)
-    parents = finished_candidates(Path(scope["parent_root"]))
+def prepare(root, limit, *, plan_loader=frozen_plan, build_context=None, render=render_case):
+    scope, _, _ = plan_loader(root)
+    if build_context is None:
+        parents = finished_candidates(Path(scope["parent_root"]))
     routes = {item["source_id"]: item for item in scope["routes"]}
     human = defaultdict(list)
     for route in scope["routes"]:
@@ -142,15 +145,16 @@ def prepare(root, limit):
         sid = record["source_id"]
         route = routes[sid]
         files = verified_files(root / record["asset_directory"], record)
-        prior = prior_context(root, Path(scope["parent_root"]), parents[route["parent_variant"]], human[sid])
+        context = (build_context(root, scope, route, record, human[sid]) if build_context else
+                   {"prior": prior_context(root, Path(scope["parent_root"]), parents[route["parent_variant"]], human[sid])})
         targets = {pid: label for label, ids in (("keep", route["preserve_targets"]), ("align", route["alignment_targets"]),
                                                ("repair", route["repair_targets"])) for pid in ids}
         item = {"variant_id": record["variant_id"], "identity": {key: record[key] or "" for key in IDENTITY},
                 "class_names": record["classes"], "geometry_status": record["geometry_status"],
                 "polygons": record["polygons"], "asset_directory": record["asset_directory"],
                 "raw": record["raw"], "original": record["original"], "file_sha256": files,
-                "prior": prior, "rescue": bool(record.get("alignment_parent_review_id")), "targets": targets}
-        tile = render_case(root, item)
+                **context, "rescue": bool(record.get("alignment_parent_review_id")), "targets": targets}
+        tile = render(root, item)
         if tiles and (len(tiles) == 3 or sum(im.height + 6 for _, im in tiles) + tile.height > 1770):
             sheets.append(save_sheet(output, len(sheets) + 1, tiles))
             tiles = []
@@ -163,32 +167,42 @@ def prepare(root, limit):
     print(output, len(items), len(sheets))
 
 
-def publish(root):
+def publish(root, *, phase=PHASE, name="review_v2_ai_assisted", title="Exp14-A6 定向修复复核", history=None):
     prepared, observed = waves(root)
     records = reviewable(root)
     g3.require(set(prepared) == set(observed) == set(records) and records,
-               "Finish viewing every reviewable A6 result before publishing")
-    destination = root / "review_v2_ai_assisted"
+               "Finish viewing every reviewable result before publishing")
+    destination = root / name
     destination.mkdir()
     (destination / "exports").mkdir()
-    data = {"phase": PHASE, "title": "Exp14-A6 定向修复复核", "class_names": CLASSES, "identity": IDENTITY,
+    data = {"phase": phase, "title": title, "class_names": CLASSES, "identity": IDENTITY,
             "fields": FIELDS, "states": sorted(STATES), "reasons": sorted(REASONS), "records": [],
             "ai_review": {"completed": len(observed)}}
     results = []
     for variant, record in sorted(records.items(), key=lambda row: (int(row[1]["source_id"]), row[0])):
         item = prepared[variant]
         g3.require(all(item["identity"][key] == (record[key] or "") for key in IDENTITY),
-                   "A6 evidence identity mismatch")
+                   "Evidence identity mismatch")
         verified_files(root / record["asset_directory"], record)
         prior = {**item["prior"], "assets": "../" + item["prior"]["assets"] + "/"}
+        if history is not None:
+            prior["notes"] = history[record["source_id"]]
         for name, sha in prior["sha256"].items():
             hash_file(g3.safe_file(root / item["prior"]["assets"], name), sha)
+        comparison = []
+        for earlier in item.get("comparison", []):
+            if earlier.get("assets"):
+                for name, sha in earlier["sha256"].items():
+                    hash_file(g3.safe_file(root / earlier["assets"], name), sha)
+                earlier = {**earlier, "assets": "../" + earlier["assets"] + "/"}
+            comparison.append(earlier)
         ai = observed[variant]
         results.append(ai)
         row = initial_row(record)
         row.update(decision="UNREVIEWED", whole_image_normal="", b_region_review="")
         data["records"].append({**record, "assets": "../" + record["asset_directory"] + "/",
                                 "aligned": bool(record["aligned_sha256"]), "initial": row, "prior": prior,
+                                "comparison": comparison, "input_mode": item.get("input_mode", ""),
                                 "rescue": item["rescue"], "bounded": "bounded.png" in record["file_sha256"],
                                 "ai": {**ai, "sheet_url": "../" + ai["visual_evidence_paths"]["sheet"]}})
     script_root = REPO / "tools" / "exp14"
@@ -198,12 +212,12 @@ def publish(root):
     g3.write_exclusive(destination / "index.html", page.replace("__REVIEW_SCRIPT__", script).encode("utf-8"))
     initial = [row["initial"] for row in data["records"]]
     g3.write_exclusive(destination / "review_template.csv", _csv_bytes(initial, FIELDS))
-    g3.write_json_exclusive(destination / "review_template.json", {"phase": PHASE, "records": initial})
+    g3.write_json_exclusive(destination / "review_template.json", {"phase": phase, "records": initial})
     instructions = ("双击上一级 index.html。可以采纳 AI 建议，也可以载入后修改并确认人工决定。\n"
                     "保存请导出 CSV，并备份 JSON。重新打开页面后可以导入恢复。\n"
                     "浏览器通常将文件下载到 Downloads，请复制到本 exports 目录。\n")
     g3.write_exclusive(destination / "exports" / "保存与恢复.txt", instructions.encode("utf-8"))
-    g3.write_json_exclusive(root / "ai_review_results.json", {"phase": PHASE, "records": results})
+    g3.write_json_exclusive(root / "ai_review_results.json", {"phase": phase, "records": results})
     csv_rows = [{key: json.dumps(value, ensure_ascii=False) if isinstance(value, (list, dict)) else value
                  for key, value in row.items()} for row in results]
     g3.write_exclusive(root / "ai_review_results.csv", _csv_bytes(csv_rows, RESULT_FIELDS))

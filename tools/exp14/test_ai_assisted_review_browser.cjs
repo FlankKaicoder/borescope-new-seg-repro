@@ -7,7 +7,7 @@ const {pathToFileURL} = require('node:url');
 
 async function test() {
   const [, , directory, , qa, mode, previousCsv] = process.argv;
-  const a6 = mode === 'a6';
+  const targeted = mode === 'a6' || mode === 'a7';
   await fs.mkdir(qa);
   const browser = await chromium.launch({channel: 'chrome', headless: true});
   const errors = [];
@@ -30,7 +30,7 @@ async function test() {
         partial: records.find(r => r.initial.decision === 'UNREVIEWED' && r.ai?.ai_decision === 'RETRY_REPAIR' && r.polygons.length > 1),
       };
     });
-    assert(selection.pass && selection.partial && (a6 || selection.historical));
+    assert(selection.pass && selection.partial && (targeted || selection.historical));
     const show = async (tab, item) => {
       await tab.locator('#source').fill(item.source_id);
       while (!(await tab.locator('#title').innerText()).endsWith(' · ' + item.variant_id)) {
@@ -38,6 +38,25 @@ async function test() {
         await tab.locator('#next').click();
       }
     };
+    if (mode === 'a7') {
+      const records = await page.evaluate(() => JSON.parse(document.querySelector('#bundle').textContent).records);
+      const loadedImages = async () => page.waitForFunction(() => {
+        const images = [...document.querySelectorAll('#images img, #crops img, #diagnostic-images img')];
+        return images.length > 0 && images.every(img => img.complete && img.naturalWidth > 0);
+      });
+      for (const record of records) {
+        await show(page, record);
+        await page.locator('#diagnostics summary').click();
+        for (const index of record.polygons.keys()) {
+          await page.locator('#polygon').selectOption(String(index));
+          await loadedImages();
+        }
+        const evidence = await page.locator('#ai-evidence').getAttribute('href');
+        assert.ok(evidence);
+        await fs.access(path.resolve(directory, evidence));
+      }
+      console.log('Chrome loaded the comparison and diagnostic images for', records.length, 'A7 records');
+    }
     const save = async (id, name) => {
       const pending = page.waitForEvent('download');
       await page.locator(id).click();
@@ -46,7 +65,7 @@ async function test() {
       await receipt.saveAs(file);
       return file;
     };
-    if (!a6) {
+    if (!targeted) {
       await show(page, selection.historical);
       assert.equal(await page.locator('#adopt-ai').isDisabled(), true);
       assert.equal(await page.locator('#decision').inputValue(), 'PASS');
@@ -54,13 +73,17 @@ async function test() {
     await show(page, selection.pass);
     const pass = selection.pass;
     const firstPolygon = pass.polygons[0];
-    const expected = a6 ? 2 + Number(pass.bounded) + 1 + 1 + Number(!!firstPolygon.after) +
-      Number(!!pass.prior.crops[firstPolygon.polygon_id]) : 5;
+    const previous = pass.comparison?.length ? pass.comparison.filter(item => item.assets) : [pass.prior];
+    const earlierImages = previous.reduce((count, item) => count +
+      (pass.rescue && pass.comparison?.length && item.aligned ? 2 : 1), 0);
+    const expected = targeted ? 3 + Number(pass.bounded) + earlierImages +
+      Number(!!firstPolygon.after) + previous.filter(item => item.crops[firstPolygon.polygon_id]).length +
+      Number(!!(pass.rescue && pass.comparison?.length && pass.aligned)) : 5;
     await page.waitForFunction(count => {
       const images = [...document.querySelectorAll('#images img, #crops img')];
       return images.length === count && images.every(img => img.complete && img.naturalWidth > 0);
     }, expected);
-    if (a6) {
+    if (targeted) {
       assert.match(await page.locator('#prior-notes').innerText(), /原人工/);
       assert.equal(await page.locator('#whole').isChecked(), false);
       if (previousCsv) {
@@ -96,8 +119,8 @@ async function test() {
     assert.equal(final.records.find(row => row.review_id === id).notes, note);
     assert.equal(JSON.parse(final.records.find(row => row.review_id === id).polygon_decisions)
       [selection.partial.polygons[0].polygon_id], 'HOLD');
-    if (a6) {
-      assert.equal(final.phase, 'exp14_a6_targeted_v2');
+    if (targeted) {
+      assert.equal(final.phase, mode === 'a7' ? 'exp14_a7_targeted_v3' : 'exp14_a6_targeted_v2');
       assert.ok(!final.records.some(row => row.review_id === pass.prior.review_id));
     } else {
       assert.deepEqual(final.records.find(row => row.review_id === selection.historical.initial.review_id),

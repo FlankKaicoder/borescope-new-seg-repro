@@ -2,7 +2,8 @@
 param(
     [Parameter(Mandatory = $true)][string] $Python,
     [Parameter(Mandatory = $true)][string] $RunRoot,
-    [ValidateRange(1,8)][int] $Workers = 4
+    [ValidateRange(1,8)][int] $Workers = 4,
+    [ValidateSet('A6','A7')][string] $Phase = 'A6'
 )
 
 $ErrorActionPreference = 'Stop'
@@ -27,7 +28,8 @@ try {
     $startInfo.UseShellExecute = $false
     $startInfo.CreateNoWindow = $true
     $runPath = (Resolve-Path -LiteralPath $RunRoot).Path
-    foreach ($argument in @('-u', '-X', 'utf8', '-m', 'tools.exp14.targeted_v2', 'live',
+    $module = if ($Phase -eq 'A7') { 'tools.exp14.targeted_v3' } else { 'tools.exp14.targeted_v2' }
+    foreach ($argument in @('-u', '-X', 'utf8', '-m', $module, 'live',
                             '--root', $runPath, '--workers', "$Workers")) {
         $startInfo.ArgumentList.Add($argument)
     }
@@ -40,7 +42,7 @@ try {
         $bstr = [IntPtr]::Zero
     }
     $process.WaitForExit()
-    if ($process.ExitCode -ne 0) { throw 'A6 runner stopped. Inspect private logs and retain request locks.' }
+    if ($process.ExitCode -ne 0) { throw "$Phase runner stopped. Inspect private logs and retain request locks." }
     if ((Get-FileHash -LiteralPath $keyFile -Algorithm SHA256).Hash -cne $keyHash) {
         throw 'DPAPI file changed during execution.'
     }

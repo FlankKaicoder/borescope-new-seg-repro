@@ -1,0 +1,199 @@
+{
+  "ai_decisions": {
+    "HOLD": 4,
+    "PASS": 13,
+    "RETRY_ALIGNMENT": 1,
+    "RETRY_REPAIR": 5
+  },
+  "ai_decisions_by_kind": {
+    "A7ALIGN": {
+      "HOLD": 2,
+      "PASS": 13,
+      "RETRY_ALIGNMENT": 1
+    },
+    "V3": {
+      "HOLD": 2,
+      "RETRY_REPAIR": 5
+    }
+  },
+  "ai_polygons": {
+    "HOLD": 7,
+    "PASS": 26,
+    "RETRY_ALIGNMENT": 1,
+    "RETRY_REPAIR": 7
+  },
+  "deferred_targets": {
+    "CONFIRM_REAL_HOLE": 1,
+    "CONFIRM_RING_STRUCTURE": 1,
+    "CONFIRM_SEAM_AFTER_ALIGNMENT": 1,
+    "CONFIRM_STEP_DESIGN": 1,
+    "CONFIRM_STRUCTURAL_SLOT": 1,
+    "HOLD_MASK_OVERLAPS_GREEN_CAMERA_UI": 1,
+    "PROTECTED_POLYGON_OVERLAP": 5,
+    "PROVIDER_REVIEW_OR_FAILURE": 2,
+    "REPAIR_AND_HOLD_ACROSS_OUTPUTS": 4,
+    "UNCERTAIN_DELIVERY": 2
+  },
+  "dispatch": {
+    "attempted": 12,
+    "attempted_polygons": 39,
+    "cost": {
+      "COST_UNKNOWN": 12
+    },
+    "http": {
+      "200": 7,
+      "408": 2,
+      "504": 2,
+      "None": 1
+    },
+    "repeat_posts": 0,
+    "stop_reasons": [
+      "THREE_CONSECUTIVE_RELAY_OR_TRANSPORT_FAILURES"
+    ],
+    "terminal_statuses": {
+      "FAILED_NO_RETRY": 5,
+      "RETURNED_IMAGE": 7
+    },
+    "unattempted": 82,
+    "usage": {
+      "input_tokens": 6897,
+      "output_tokens": 9540,
+      "requests_with_usage": 7,
+      "total_tokens": 16437
+    }
+  },
+  "frozen_split_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "images": {
+    "bounded_pixel_checks": 7,
+    "local_errors": 0,
+    "old_raw_alignment_attempts": 29,
+    "raw_aligned": 7,
+    "raw_by_version": {
+      "V3": 7
+    },
+    "raw_count": 7,
+    "rescues": {
+      "GEOMETRY_CANDIDATE": 16,
+      "REGISTRATION_NOT_RESCUED": 4,
+      "UNCHANGED": 9
+    },
+    "sources_returned_images": 7
+  },
+  "input_review_sha256": [
+    "b1dddcf664a8e69fb53062bf0a36b54e4fd372a92e643d9db5db7ddc81c5ff49",
+    "be536dc39a7cb8e3fb3671180e55699b8cdff4a909eb28ead5dd6d8694d58d38"
+  ],
+  "new_human_approvals": 0,
+  "overview": {
+    "a_human_confirmed_by_version": {
+      "V1": 264,
+      "V2": 61
+    },
+    "a_human_confirmed_sources": 325,
+    "a_new_ai_by_version": {
+      "V1": 10,
+      "V2": 2
+    },
+    "a_new_ai_candidate_sources": 12,
+    "a_union_candidate_sources": 337,
+    "b_human_confirmed_by_version": {
+      "V1": 263,
+      "V2": 63
+    },
+    "b_human_confirmed_polygons": 504,
+    "b_human_confirmed_sources": 324,
+    "b_new_ai_by_version": {
+      "V1": 12,
+      "V2": 2,
+      "V3": 4
+    },
+    "b_new_ai_candidate_sources": 18,
+    "b_new_ai_pass_polygons_increment": 26,
+    "b_union_candidate_polygons": 530,
+    "b_union_candidate_sources": 342,
+    "historical_pass_sources_by_version": {
+      "V1": 277,
+      "V2": 65
+    },
+    "historical_pass_unique_sources": 338,
+    "new_ai_pass_sources": 13,
+    "new_ai_pass_sources_by_version": {
+      "V1": 11,
+      "V2": 2
+    },
+    "planned_follow_up_polygons": {
+      "HOLD": 19,
+      "RETRY_ALIGNMENT": 39,
+      "RETRY_REPAIR": 147
+    },
+    "planned_follow_up_sources": {
+      "HOLD": 62,
+      "RETRY_ALIGNMENT": 29,
+      "RETRY_REPAIR": 94
+    },
+    "remaining_polygons": {
+      "HOLD": 131,
+      "RETRY_ALIGNMENT": 23,
+      "RETRY_REPAIR": 140
+    },
+    "remaining_polygons_by_version": {
+      "HOLD": {
+        "V1": 67,
+        "V2": 65,
+        "V3": 4
+      },
+      "RETRY_ALIGNMENT": {
+        "V1": 15,
+        "V2": 3
+      },
+      "RETRY_REPAIR": {
+        "V1": 4,
+        "V2": 139,
+        "V3": 7
+      }
+    },
+    "remaining_sources": {
+      "HOLD": 89,
+      "RETRY_ALIGNMENT": 16,
+      "RETRY_REPAIR": 92
+    },
+    "remaining_sources_by_version": {
+      "HOLD": {
+        "V1": 48,
+        "V2": 40,
+        "V3": 3
+      },
+      "RETRY_ALIGNMENT": {
+        "V1": 9,
+        "V2": 2
+      },
+      "RETRY_REPAIR": {
+        "V1": 3,
+        "V2": 91,
+        "V3": 5
+      }
+    },
+    "remaining_unique_sources": 181
+  },
+  "phase": "exp14_a7_targeted_v3",
+  "protected_inputs": 26,
+  "repair_targets": 147,
+  "request_versions": {
+    "V2": 1,
+    "V3": 93
+  },
+  "routes": {
+    "ACCEPTED_VERSION_PRESERVE": 329,
+    "ALIGNMENT_ONLY": 29,
+    "DELIVERY_RECOVERY": 4,
+    "HOLD_FOR_CLARIFICATION": 59,
+    "PARTIAL_SUCCESS_PRESERVE": 9,
+    "V3_TARGETED_REPAIR": 93
+  },
+  "started_utc": "2026-11-13T11:16:44.606763+00:00",
+  "status": "EXP14_A7_V3_REPAIR_PARTIAL_PENDING_HUMAN_REVIEW",
+  "train_sources": 523,
+  "train_target_polygons": 901,
+  "training_runs": 0,
+  "visual_reviewed": 23
+}

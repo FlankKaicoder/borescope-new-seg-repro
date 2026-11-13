@@ -39,11 +39,15 @@ def enhanced_matches(original, raw, target):
     return fits, len(pairs)
 
 
-def fit_variant(original, raw, target, folder, prefer_support=False, *, old=None, old_sha=None):
+def fit_variant(original, raw, target, folder, prefer_support=False, *, old=None, old_sha=None, supplemental=None):
     fits, selected, matches, aspect = alignment.registration_candidates(original, raw, target)
     extra_matches = 0
     if selected is None or old is not None:
         extra, extra_matches = enhanced_matches(original, raw, target)
+        fits += extra
+    supplemental_matches = None
+    if supplemental is not None and (old is not None or not any(f["status"] == "GEOMETRY_CANDIDATE" for f in fits)):
+        extra, supplemental_matches = supplemental(original, raw, target)
         fits += extra
     source_size, raw_size = original.shape[1::-1], raw.shape[1::-1]
     bright = cv2.cvtColor(original, cv2.COLOR_RGB2GRAY) > 12
@@ -68,6 +72,8 @@ def fit_variant(original, raw, target, folder, prefer_support=False, *, old=None
                    "enhanced_match_count": extra_matches, "aspect_ratio_difference": aspect,
                    "candidate_diagnostics": fits, "selected_fit": picked,
                    "parent_geometry_sha256": old_sha, "parent_geometry": old}
+    if supplemental_matches is not None:
+        diagnostics["scale_normalized_match_count"] = supplemental_matches
     if picked is None:
         diagnostics["reason"] = "NO_VERIFIED_SUPPORT_IMPROVEMENT" if old and old.get("selected_fit") else "GEOMETRY_SCREEN_FAILED"
         return None, None, diagnostics
