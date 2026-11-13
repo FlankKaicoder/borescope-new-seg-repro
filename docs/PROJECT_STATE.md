@@ -1,5 +1,9 @@
 # Project state
 
+## Exp14-A6 targeted repair and registration (2026-11-13)
+
+EXP14_A6_V2_REPAIR_COMPLETE_PENDING_HUMAN_REVIEW. The pinned human export supports 185 distinct TRAIN V2 requests covering 315 Polygons. All 185 POSTs have terminal receipts with zero repeats. The gateway returned 200 Raw images from 181 sources. CPU processing produced 194 Aligned from new Raw and 88 new Aligned from existing Raw. Codex reviewed all 288 new or changed candidates and 598 Polygon decisions. The private comparison page passed Chrome testing and awaits explicit human confirmation. New human approvals and training runs are zero. [Handoff](exp14/EXP14_A6_TARGETED_V2_REPAIR_HANDOFF.md).
+
 ## Exp14-A5 full AI visual review (2026-11-12)
 
 EXP14_A5_AI_REVIEW_COMPLETE_PENDING_HUMAN_CONFIRMATION. Codex viewed 530 variants from 523 TRAIN sources and recorded 911 per-variant Polygon decisions. AI PASS 177, RETRY_REPAIR 208, RETRY_ALIGNMENT 100 and HOLD 45. Whole-image A has 101 candidate sources and local B has 222. The private assisted page and original offline page passed Chrome checks. AI suggestions await explicit human confirmation and a separate A/B data Gate. New human approvals, API POSTs, registration and training are zero. [Handoff](exp14/EXP14_A5_FULL_AI_VISUAL_REVIEW_HANDOFF.md).

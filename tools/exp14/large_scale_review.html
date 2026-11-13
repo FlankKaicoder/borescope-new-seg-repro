@@ -36,6 +36,7 @@ progress{width:min(180px,100%);height:12px;accent-color:var(--accent)}
 #item{scroll-margin-top:12px}
 #controls{margin:8px 0}
 #polygon-notes{margin:8px 0}
+#prior-notes{white-space:pre-wrap}
 #fallback textarea{min-height:105px}
 [hidden]{display:none!important}
 </style>
@@ -71,6 +72,8 @@ progress{width:min(180px,100%);height:12px;accent-color:var(--accent)}
   <h2 id="title"></h2>
   <p class="meta" id="geometry"></p>
   <div class="gallery" id="images"></div>
+  <p class="meta" id="original-link-row" hidden><a id="original-link" target="_blank" rel="noopener">查看无标记原图</a></p>
+  <p class="meta" id="prior-notes" hidden></p>
   <h3>目标局部对比</h3>
   <div class="row">
     <label>Polygon <select id="polygon"></select></label><span id="target-support" class="meta"></span>

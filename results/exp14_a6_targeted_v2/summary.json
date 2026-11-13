@@ -1,0 +1,93 @@
+{
+  "ai_decisions": {
+    "HOLD": 31,
+    "PASS": 113,
+    "RETRY_ALIGNMENT": 8,
+    "RETRY_REPAIR": 136
+  },
+  "ai_decisions_by_origin": {
+    "generation": {
+      "HOLD": 22,
+      "PASS": 42,
+      "RETRY_ALIGNMENT": 4,
+      "RETRY_REPAIR": 132
+    },
+    "prior_raw_alignment": {
+      "HOLD": 9,
+      "PASS": 71,
+      "RETRY_ALIGNMENT": 4,
+      "RETRY_REPAIR": 4
+    }
+  },
+  "ai_polygons": {
+    "HOLD": 89,
+    "PASS": 287,
+    "RETRY_ALIGNMENT": 4,
+    "RETRY_REPAIR": 218
+  },
+  "bounded_aligned_verified": 194,
+  "chrome_offline_round_trip": "PASS",
+  "cost": {
+    "COST_UNKNOWN": 185
+  },
+  "deferred_repair_polygons": {
+    "CONFIRM_MATERIAL_BOUNDARY": 1,
+    "CONFIRM_REAL_HOLE": 1,
+    "CONFIRM_RING_STRUCTURE": 1,
+    "CONFIRM_SEAM_AFTER_ALIGNMENT": 1,
+    "CONFIRM_STEP_DESIGN": 1,
+    "CONFIRM_STRUCTURAL_SLOT": 1,
+    "HOLD_MASK_OVERLAPS_GREEN_CAMERA_UI": 1
+  },
+  "http": {
+    "200": 182,
+    "477": 2,
+    "504": 1
+  },
+  "human_approvals": 0,
+  "image_response_missing_sources": 4,
+  "image_response_sources": 181,
+  "input_csv_sha256": "b1dddcf664a8e69fb53062bf0a36b54e4fd372a92e643d9db5db7ddc81c5ff49",
+  "input_human_polygon_decisions": 911,
+  "input_human_sources": 523,
+  "input_human_variants": 530,
+  "live_finished_utc": "2026-11-13T09:27:53.851293+00:00",
+  "local_processing_errors": 0,
+  "new_aligned_total": 282,
+  "new_raw": 200,
+  "new_raw_aligned": 194,
+  "new_raw_sha256_unique": 200,
+  "paid_posts_verified": 185,
+  "paid_sources": 185,
+  "paid_targets": 315,
+  "phase": "EXP14_A6_TARGETED_V2_REPAIR_AND_ALIGNMENT",
+  "prior_raw_alignment_attempts": 109,
+  "prior_raw_alignment_outcomes": {
+    "GEOMETRY_CANDIDATE": 88,
+    "UNCHANGED": 21
+  },
+  "prior_v2_reused": 4,
+  "protected_request_inputs_verified": 27,
+  "python_review_export_validation": "PASS",
+  "repeat_posts": 0,
+  "review_sources": 264,
+  "reviewable": 288,
+  "routes": {
+    "ALIGNMENT_ONLY": 104,
+    "ALREADY_ACCEPTED": 196,
+    "HOLD_FOR_CLARIFICATION": 38,
+    "MIXED_ACTION": 5,
+    "V2_REPAIR": 180
+  },
+  "started_utc": "2026-11-13T08:52:52.588290+00:00",
+  "status": "EXP14_A6_V2_REPAIR_COMPLETE_PENDING_HUMAN_REVIEW",
+  "training_runs": 0,
+  "trusted_pair_admissions": 0,
+  "usage": {
+    "input_tokens": 110667,
+    "output_tokens": 228715,
+    "requests_with_usage": 181,
+    "total_tokens": 339382
+  },
+  "visual_reviewed": 288
+}

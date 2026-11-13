@@ -77,15 +77,16 @@ def save_returned_image(folder, raw, response, requested_model, elapsed, status,
     g3.write_exclusive(folder / "response_manifest.json", data.replace(secret, b"[REDACTED]") if secret else data)
 
 
-def run_one(root, row, source, credential, transport, authorization_sha, protocol_sha):
+def run_one(root, row, source, credential, transport, authorization_sha, protocol_sha,
+            input_validator=None, historical_locks=None):
     request_id = row["request_id"]
     folder = root / "live" / row["variant_id"]
     lock = root / "locks" / f"{request_id}.json"
-    if lock.exists() or folder.exists():
+    if lock.exists() or folder.exists() or (historical_locks and (historical_locks / lock.name).exists()):
         terminal = folder / "TERMINAL.json"
         return {"status": "LOCKED_NO_POST", "terminal": load_json(terminal)["status"] if terminal.is_file() else None}
 
-    inp = input_for_row(root, row, source)
+    inp = (input_validator or input_for_row)(root, row, source)
     body, content_type = g3.encode_multipart(
         row["source_id"], row["model"], inp["prompt_wire"], inp["image_path"].name,
         inp["image_bytes"], inp["image_format"], inp["mask_bytes"],
@@ -188,8 +189,9 @@ def recover_responses(root, scope=None, inspected=None):
         print(f"{row['variant_id']} recovered {len(outputs)}/{len(payloads)} images from persisted relay response", flush=True)
 
 
-def execute(root, credential, workers, transport=None):
-    scope, auth_sha, protocol_sha = frozen_plan(root)
+def execute(root, credential, workers, transport=None, *, plan_loader=frozen_plan,
+            input_validator=input_for_row, historical_locks=None):
+    scope, auth_sha, protocol_sha = plan_loader(root)
     g3.require(bool(credential.strip()), "Missing Exp14 image API credential")
     transport = transport or g3.HttpTransport()
     rows = scope["requests"]
@@ -232,7 +234,8 @@ def execute(root, credential, workers, transport=None):
             row = next(pending, None)
             if row is not None:
                 source = scope["sources"][row["source_id"]]
-                future = pool.submit(run_one, root, row, source, credential, transport, auth_sha, protocol_sha)
+                future = pool.submit(run_one, root, row, source, credential, transport, auth_sha, protocol_sha,
+                                     input_validator, historical_locks)
                 active[future] = row
 
         # Check one real request before raising concurrency. It counts in the frozen plan.

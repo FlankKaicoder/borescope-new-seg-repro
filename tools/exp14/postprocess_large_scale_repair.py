@@ -130,7 +130,8 @@ def fit_variant(original, raw, target, folder, prefer_support=False):
     return aligned, valid, diagnostics
 
 
-def build_candidate(root, variant, entry, source, parent=None):
+def build_candidate(root, variant, entry, source, parent=None, *, fit=fit_variant, repair_target=None,
+                    base_path=None):
     variant_root = root / "derived" / variant
     variant_root.mkdir(parents=True, exist_ok=True)
     folder = variant_root / str(time.time_ns())
@@ -141,7 +142,7 @@ def build_candidate(root, variant, entry, source, parent=None):
     hash_file(Path(entry["raw"]), entry["raw_sha256"])
     shapes = load_json(annotation_path)["shapes"]
     target_image = target_mask(source, shapes)
-    verify_mask(Path(entry["mask"]), target_image, entry["mask_sha256"])
+    verify_mask(Path(entry["mask"]), repair_target if repair_target is not None else target_image, entry["mask_sha256"])
     target = np.asarray(target_image)
     original, raw = alignment.read_rgb(image_path), alignment.read_rgb(entry["raw"])
     g3.require(list(original.shape[1::-1]) == source["size"], "Source image size changed")
@@ -165,7 +166,20 @@ def build_candidate(root, variant, entry, source, parent=None):
         diagnostics = load_json(Path(saved["path"]))
         diagnostics["reused_exact_aligned_sha256"] = preserved["aligned_output"]["sha256"]
     else:
-        aligned, valid, diagnostics = fit_variant(original, raw, target, folder, prefer_support=parent is not None)
+        aligned, valid, diagnostics = fit(original, raw, target, folder, prefer_support=parent is not None)
+    if base_path is not None and aligned is not None:
+        # Bound the delivered source-grid edit to the pixels the human selected.
+        base = alignment.read_rgb(base_path)
+        edited = (np.asarray(repair_target) > 0) & (valid > 0)
+        bounded = base.copy()
+        bounded[edited] = aligned[edited]
+        write_image(folder / "bounded.png", bounded)
+        diagnostics["bounded_image"] = {
+            "filename": "bounded.png", "base_sha256": hash_file(base_path),
+            "edited_pixels": int(np.count_nonzero(edited)),
+            "changed_outside_edit_mask": int(np.count_nonzero(np.any(bounded != base, axis=2) &
+                                                             (np.asarray(repair_target) == 0))),
+        }
 
     polygons = []
     for pid, index in zip(source["selected_polygon_ids"], source["indexes"]):
@@ -190,6 +204,7 @@ def build_candidate(root, variant, entry, source, parent=None):
     if valid is not None:
         grayscale = cv2.cvtColor(original, cv2.COLOR_RGB2GRAY)
         unsupported_bright = int(np.count_nonzero((valid == 0) & (grayscale > 12)))
+    g3.write_json_exclusive(folder / "geometry.json", diagnostics)
     hashes = {path.name: hash_file(path) for path in sorted(folder.iterdir()) if path.is_file()}
     record = {
         "variant_id": variant, "source_id": source["source_id"], "version": entry["version"],
@@ -216,7 +231,6 @@ def build_candidate(root, variant, entry, source, parent=None):
         "variant_id", "source_sha256", "annotation_sha256", "mask_sha256", "request_sha256",
         "raw_sha256", "aligned_sha256",
     )})
-    g3.write_json_exclusive(folder / "geometry.json", diagnostics)
     if parent:
         record["alignment_parent_review_id"] = parent["review_id"]
         record["generation_variant_id"] = parent.get("generation_variant_id", parent["variant_id"])

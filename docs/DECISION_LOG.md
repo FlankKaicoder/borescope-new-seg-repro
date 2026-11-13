@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp14-A6 targeted repair and registration (2026-11-13)
+
+Decision D062. Use the pinned final human export for source-level arbitration. Combine confirmed repair Polygons in one V2 request per source, preserve approved regions through verified input pixels, and reuse existing Raw when registration is requested. Hold uncertain mechanical structure and UI overlap. Record provider response, geometry and image-based review independently. Require explicit human confirmation and a separate data Gate for A/B admission. [Handoff](exp14/EXP14_A6_TARGETED_V2_REPAIR_HANDOFF.md).
+
 ## Exp14-A5 full AI visual review (2026-11-12)
 
 Decision D061. Keep the 530 image-based AI suggestions in the private assisted review bundle as drafts. Preserve the frozen human decisions and allow the user to restore additional decisions from an earlier CSV or JSON export. Retain individual Polygon outcomes when a repair succeeds only in part. A full-image registration retry can coexist with a visibly successful local repair. Use the AI queues for human prioritization and require human confirmation followed by the data Gate for A/B admission. [Handoff](exp14/EXP14_A5_FULL_AI_VISUAL_REVIEW_HANDOFF.md).

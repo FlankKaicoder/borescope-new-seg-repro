@@ -6,6 +6,10 @@
   const byId = new Map(bundle.records.map(record => [record.initial.review_id, record]));
   const assisted = Boolean(bundle.ai_review);
   const storageKey = bundle.phase + (assisted ? ':ai-assisted:v1' : ':review:v1');
+  if (bundle.title) {
+    document.title = bundle.title;
+    document.querySelector('h1').textContent = bundle.title;
+  }
   const labels = {
     UNREVIEWED: '待审核', PASS: 'PASS · 修复成功', RETRY_REPAIR: 'RETRY_REPAIR · 重修',
     RETRY_ALIGNMENT: 'RETRY_ALIGNMENT · 重新配准', HOLD: 'HOLD · 暂缓',
@@ -173,11 +177,11 @@
     }
   }
 
-  function picture(container, filename, caption) {
+  function picture(container, filename, caption, assets = current.assets) {
     if (!filename) return;
     const figure = document.createElement('figure');
     const link = document.createElement('a');
-    link.href = current.assets + filename;
+    link.href = assets + filename;
     link.target = '_blank';
     link.rel = 'noopener';
     const image = document.createElement('img');
@@ -274,6 +278,7 @@
     $('crops').replaceChildren();
     const selected = current.polygons[Number($('polygon').value)];
     picture($('crops'), selected.before, '原图局部 · ' + selected.class);
+    if (current.prior) picture($('crops'), current.prior.crops[selected.polygon_id], '旧 Aligned 同位置局部', current.prior.assets);
     picture($('crops'), selected.after, 'Aligned 同位置局部');
     const missing = selected.unsupported_target_pixels;
     $('target-support').textContent = missing === null ? '配准未验证，暂无同源局部' : '无效目标像素 ' + missing;
@@ -289,6 +294,7 @@
       picture(gallery, 'feather.png', 'Feather · 诊断');
       picture(gallery, 'valid.png', 'Valid Mask · 白色有效');
       picture(gallery, 'valid_target.png', '有效目标区域');
+      if (current.bounded) picture(gallery, 'bounded.png', '限于待修 Mask 的源坐标输出');
     }
   }
 
@@ -313,9 +319,24 @@
     if (current.aligned) $('geometry').textContent +=
       ' · 有效覆盖 ' + (current.valid_coverage * 100).toFixed(1) + '%';
     $('images').replaceChildren();
-    picture($('images'), current.original, 'Original 原图');
+    const prior = current.prior;
+    if (!prior) picture($('images'), current.original, 'Original 原图');
     picture($('images'), 'polygon_overlay.png', 'Original + Polygon');
-    picture($('images'), current.aligned ? 'aligned.png' : current.raw, current.aligned ? 'Aligned 修复图' : 'Raw · 未配准');
+    if (prior) {
+      const priorRaw = current.rescue || !prior.aligned;
+      picture($('images'), priorRaw ? prior.raw : prior.image,
+        prior.variant_id + (priorRaw ? ' · 旧 Raw' : ' · 旧 Aligned'), prior.assets);
+    }
+    picture($('images'), current.aligned ? 'aligned.png' : current.raw,
+      current.aligned ? 'Aligned 修复图' : 'Raw · 未配准');
+    if (current.bounded) picture($('images'), 'bounded.png', 'V2 · 限定编辑');
+    $('original-link-row').hidden = !prior;
+    if (prior) $('original-link').href = current.assets + current.original;
+    $('prior-notes').hidden = !prior;
+    $('prior-notes').textContent = prior ? prior.notes.map(row => [
+      row.variant_id, '原人工 ' + labels[row.decision], row.reason, row.notes,
+      Object.entries(row.targets).map(([id, state]) => id + ' ' + labels[state]).join(' · '),
+    ].filter(Boolean).join(' · ')).join('\n') : '';
     $('risk').textContent = [
       '相机 UI ' + current.ui,
       current.unsupported_bright_original_pixels > 0 ? '无效区覆盖原图可见像素，请检查机械体和边缘' : '',

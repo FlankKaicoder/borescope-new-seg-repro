@@ -6,7 +6,8 @@ const path = require('node:path');
 const {pathToFileURL} = require('node:url');
 
 async function test() {
-  const [, , directory, , qa] = process.argv;
+  const [, , directory, , qa, mode, previousCsv] = process.argv;
+  const a6 = mode === 'a6';
   await fs.mkdir(qa);
   const browser = await chromium.launch({channel: 'chrome', headless: true});
   const errors = [];
@@ -29,7 +30,7 @@ async function test() {
         partial: records.find(r => r.initial.decision === 'UNREVIEWED' && r.ai?.ai_decision === 'RETRY_REPAIR' && r.polygons.length > 1),
       };
     });
-    assert(selection.pass && selection.historical && selection.partial);
+    assert(selection.pass && selection.partial && (a6 || selection.historical));
     const show = async (tab, item) => {
       await tab.locator('#source').fill(item.source_id);
       while (!(await tab.locator('#title').innerText()).endsWith(' · ' + item.variant_id)) {
@@ -45,14 +46,29 @@ async function test() {
       await receipt.saveAs(file);
       return file;
     };
-    await show(page, selection.historical);
-    assert.equal(await page.locator('#adopt-ai').isDisabled(), true);
-    assert.equal(await page.locator('#decision').inputValue(), 'PASS');
+    if (!a6) {
+      await show(page, selection.historical);
+      assert.equal(await page.locator('#adopt-ai').isDisabled(), true);
+      assert.equal(await page.locator('#decision').inputValue(), 'PASS');
+    }
     await show(page, selection.pass);
-    await page.waitForFunction(() => {
+    const pass = selection.pass;
+    const firstPolygon = pass.polygons[0];
+    const expected = a6 ? 2 + Number(pass.bounded) + 1 + 1 + Number(!!firstPolygon.after) +
+      Number(!!pass.prior.crops[firstPolygon.polygon_id]) : 5;
+    await page.waitForFunction(count => {
       const images = [...document.querySelectorAll('#images img, #crops img')];
-      return images.length === 5 && images.every(img => img.complete && img.naturalWidth > 0);
-    });
+      return images.length === count && images.every(img => img.complete && img.naturalWidth > 0);
+    }, expected);
+    if (a6) {
+      assert.match(await page.locator('#prior-notes').innerText(), /原人工/);
+      assert.equal(await page.locator('#whole').isChecked(), false);
+      if (previousCsv) {
+        await page.locator('#file').setInputFiles(previousCsv);
+        await page.waitForFunction(() => document.querySelector('#notice').dataset.error === 'true');
+        assert.equal(await page.locator('#decision').inputValue(), 'UNREVIEWED');
+      }
+    }
     assert.match(await page.locator('#ai-state').innerText(), /AI_DRAFT/);
     assert.equal(await page.locator('#decision').inputValue(), 'UNREVIEWED');
     await page.locator('#adopt-ai').click();
@@ -80,8 +96,13 @@ async function test() {
     assert.equal(final.records.find(row => row.review_id === id).notes, note);
     assert.equal(JSON.parse(final.records.find(row => row.review_id === id).polygon_decisions)
       [selection.partial.polygons[0].polygon_id], 'HOLD');
-    assert.deepEqual(final.records.find(row => row.review_id === selection.historical.initial.review_id),
-      selection.historical.initial);
+    if (a6) {
+      assert.equal(final.phase, 'exp14_a6_targeted_v2');
+      assert.ok(!final.records.some(row => row.review_id === pass.prior.review_id));
+    } else {
+      assert.deepEqual(final.records.find(row => row.review_id === selection.historical.initial.review_id),
+        selection.historical.initial);
+    }
     await context.close();
 
     for (const file of [csv, json]) {

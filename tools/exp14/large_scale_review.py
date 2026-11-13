@@ -83,11 +83,13 @@ def publish(root, name):
     print(f"OFFLINE_REVIEW_READY {len(records)} variants from {len({r['source_id'] for r in records})} sources")
 
 
-def validate_review(root, path):
-    current = {record["review_id"]: record for record in finished_candidates(root).values()}
+def validate_review(root, path, *, phase=PHASE, records=None):
+    if records is None:
+        records = finished_candidates(root).values()
+    current = {record["review_id"]: record for record in records}
     if path.suffix.lower() == ".json":
         data = load_json(path)
-        g3.require(data["phase"] == PHASE, "Review JSON belongs to a different phase")
+        g3.require(data["phase"] == phase, "Review JSON belongs to a different phase")
         rows = data["records"]
     else:
         header, rows = g3.read_csv(path)

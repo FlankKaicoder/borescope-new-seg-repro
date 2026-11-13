@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp14-A6 targeted repair and registration (2026-11-13)
+
+EXP14_A6_V2_REPAIR_COMPLETE_PENDING_HUMAN_REVIEW. 185 unique POSTs, 200 new Raw images, 194 newly generated and 88 rescued Aligned candidates. The private comparison page holds all 288 AI visual reviews. [Handoff](exp14/EXP14_A6_TARGETED_V2_REPAIR_HANDOFF.md) · [Sanitized summary](../results/exp14_a6_targeted_v2/summary.json).
+
 ## Exp14-A5 full AI visual review (2026-11-12)
 
 EXP14_A5_AI_REVIEW_COMPLETE_PENDING_HUMAN_CONFIRMATION. Image-based suggestions cover 530/530 variants from 523 TRAIN sources, including 911 per-variant Polygon decisions. The offline assisted page separates AI drafts from formal human decisions. [Handoff](exp14/EXP14_A5_FULL_AI_VISUAL_REVIEW_HANDOFF.md) · [Sanitized summary](../results/exp14_a5_ai_review/summary.json).
