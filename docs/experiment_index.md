@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp14-A9D1 full 392-source recovery (2026-11-14)
+
+EXP14_A9D1_FULL392_RECOVERY_COMPLETE_PENDING_HUMAN_CONFIRMATION. 138 historical pixel bindings, 166 proposed recoveries, 79 user decisions and 9 proposed whole-image exclusions. The private Chrome-tested review page covers all 392 sources and binds user choices to exact pixels. [Handoff](exp14/EXP14_A9D1_FULL392_RECOVERY_HANDOFF.md) · [Sanitized summary](../results/exp14_a9d1_full392_recovery/summary.json).
+
 ## Exp14-A9-D0 admission diagnosis (2026-11-14)
 
 EXP14_A9D0_DIAGNOSIS_PENDING_CHATGPT_GATE. A0 reproduced 392 → 200 with 192 attributable holds. A visual evidence covers 36 cases. B ROI support was screened on 545 archived candidates and visually checked in a 36-case regional G1 pilot. Formal admissions and Trusted Pairs remain zero. [Handoff](exp14/EXP14_A9_D0_ADMISSION_ROOT_CAUSE_REVIEW.md) · [Sanitized summary](../results/exp14_a9d0_admission_diagnosis/summary.json).

@@ -1,0 +1,89 @@
+{
+  "derived_candidate_crop_count": 3,
+  "dispositions": {
+    "HUMAN_REVIEWED_ASSET_REUSABLE": 138,
+    "NEEDS_USER_DECISION": 79,
+    "NOT_RECOVERABLE_AS_WHOLE_NORMAL_PROPOSED": 9,
+    "RECOVERY_PROPOSED_PENDING_HUMAN": 166
+  },
+  "distinct_frozen_source_groups": 372,
+  "formal_admissions": 0,
+  "historical_human_asset_reused": 138,
+  "historical_whole_pass_review_rows": 393,
+  "image_review_notes_completed": 254,
+  "image_review_required": 254,
+  "new_ai_asset_recommendations": 166,
+  "new_api_calls": 0,
+  "new_api_generated_images": 0,
+  "new_b_pilots": 0,
+  "new_human_confirmation": 0,
+  "new_registration": 0,
+  "new_training": 0,
+  "observed_distinct_review_ids": 331,
+  "original_a9_hold_reason_counts": {
+    "ALIGNMENT_UNVERIFIED": 1,
+    "CAMERA_UI_CHANGED": 28,
+    "HUMAN_AI_WHOLE_DECISION_CONFLICT": 55,
+    "MASK_SUPPORT_INSUFFICIENT": 6,
+    "MECHANICAL_STRUCTURE_CONFLICT": 16,
+    "MECHANICAL_STRUCTURE_OR_OCCLUSION": 2,
+    "NONFULL_FRAME_VALID_MASK": 151,
+    "RESIDUAL_MARKS_NEED_SEVEN_CLASS_REVIEW": 3,
+    "UNSELECTED_ANNOTATED_DEFECT": 1,
+    "VISIBLE_RESIDUAL_OR_GEOMETRY_EVIDENCE": 6,
+    "VISIBLE_SOURCE_PIXELS_UNSUPPORTED": 122,
+    "WHOLE_IMAGE_REVIEW_REQUESTED_IN_NOTES": 3
+  },
+  "outstanding_visual_reviews": 0,
+  "recommended_asset_type_counts": {
+    "HUMAN_REVIEWED_ASSET_REUSABLE": {
+      "ALIGNED": 138
+    },
+    "NEEDS_USER_DECISION": {
+      "ALIGNED": 54
+    },
+    "RECOVERY_PROPOSED_PENDING_HUMAN": {
+      "ALIGNED": 133,
+      "BOUNDED": 1,
+      "CROP": 3,
+      "RAW": 29
+    }
+  },
+  "source_count": 392,
+  "starting_groups_to_disposition": {
+    "A9_BOUND": {
+      "HUMAN_REVIEWED_ASSET_REUSABLE": 138
+    },
+    "A9_PENDING": {
+      "NEEDS_USER_DECISION": 16,
+      "RECOVERY_PROPOSED_PENDING_HUMAN": 46
+    },
+    "HOLD_OTHER": {
+      "NEEDS_USER_DECISION": 35,
+      "NOT_RECOVERABLE_AS_WHOLE_NORMAL_PROPOSED": 9,
+      "RECOVERY_PROPOSED_PENDING_HUMAN": 29
+    },
+    "HOLD_SHORTLIST": {
+      "NEEDS_USER_DECISION": 28,
+      "RECOVERY_PROPOSED_PENDING_HUMAN": 91
+    }
+  },
+  "status": "EXP14_A9D1_FULL392_RECOVERY_COMPLETE_PENDING_HUMAN_CONFIRMATION",
+  "verification": {
+    "browser": {
+      "browser": "Chrome",
+      "csv_roundtrip": true,
+      "decoded_primary_or_reference_images": 1431,
+      "exact_batch_scope": true,
+      "image_panels": true,
+      "json_roundtrip": true,
+      "offline": true,
+      "refresh": true,
+      "sources": 392,
+      "tampered_hash_rejected": true
+    },
+    "independent_cli_replay": true,
+    "related_unit_tests_passed": 43
+  },
+  "verified_view_asset_file_count": 4080
+}

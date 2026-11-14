@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp14-A9D1 full 392-source recovery (2026-11-14)
+
+Decision D068. Reuse historically bound exact pixels and review the remaining 254 sources, including all A9 HOLD outside the D0 shortlist. Use existing whole-image assets and limited verified crop previews for explicit human confirmation. Preserve frozen labels, historical decisions and B candidates. Defer final data admission and model work. [Handoff](exp14/EXP14_A9D1_FULL392_RECOVERY_HANDOFF.md).
+
 ## Exp14-A9-D0 admission diagnosis (2026-11-14)
 
 Decision D067. Keep A9 frozen, explain A holds at the original human review identity, and evaluate edge handling, Raw, Bounded and human arbitration as counterfactuals. Study region-level geometric eligibility independently of Formal TRE and dense change-mask objectives. Keep A9B paused and wait for the independent Gate. [Handoff](exp14/EXP14_A9_D0_ADMISSION_ROOT_CAUSE_REVIEW.md).

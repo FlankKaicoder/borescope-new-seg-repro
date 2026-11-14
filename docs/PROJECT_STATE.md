@@ -1,5 +1,9 @@
 # Project state
 
+## Exp14-A9D1 full 392-source recovery (2026-11-14)
+
+EXP14_A9D1_FULL392_RECOVERY_COMPLETE_PENDING_HUMAN_CONFIRMATION. All 392 human whole-image positive sources have one disposition. Historical aligned assets are reusable for 138; 166 recovery suggestions await confirmation; 79 sources require a decision; 9 have evidence for proposed whole-image exclusion. No new human confirmations or formal admissions. A9B remains paused. [Handoff](exp14/EXP14_A9D1_FULL392_RECOVERY_HANDOFF.md).
+
 ## Exp14-A9-D0 admission diagnosis (2026-11-14)
 
 EXP14_A9D0_DIAGNOSIS_PENDING_CHATGPT_GATE. A9 still has 200 A suggestions from 392 whole-image human-confirmed sources. Read-only diagnostics explain 192 holds and yield 119 deduplicated counterfactual follow-up hypotheses with zero new approvals. A separate regional G1 pilot viewed 36 cases, with six feasibility cases pending independent review. Formal Trusted Pair remains zero. A9B remains paused. [Handoff](exp14/EXP14_A9_D0_ADMISSION_ROOT_CAUSE_REVIEW.md).

@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' file: data:; script-src 'unsafe-inline'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Exp14-A9D1 整图恢复确认</title>
+<style>
+  :root{color-scheme:light;--text:#17242a;--muted:#51636b;--line:#cdd8db;--accent:#125c58;--surface:#fff;--background:#f2f5f5}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--background);color:var(--text);font:16px/1.5 "Inter","Microsoft YaHei",sans-serif}
+  main{width:min(1460px,100%);margin:auto;padding:22px}
+  header{margin-bottom:16px}
+  h1{font-size:26px;margin:0 0 4px}
+  h2{font-size:20px;margin:0 0 8px}
+  p{margin:6px 0;overflow-wrap:anywhere}
+  section,nav{margin:12px 0;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:8px}
+  .row{display:flex;align-items:center;flex-wrap:wrap;gap:10px}
+  .spread{justify-content:space-between}
+  label{display:inline-flex;align-items:center;gap:6px}
+  details{margin:10px 0}
+  summary{font-weight:600;cursor:pointer}
+  select,input,textarea,button,.button{padding:7px 9px;border:1px solid #8da0a6;border-radius:5px;background:#fff;color:inherit;font:inherit;min-width:0}
+  button,.button{cursor:pointer;text-decoration:none}
+  button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  button:disabled{opacity:.42;cursor:default}
+  :focus-visible{outline:3px solid #1d8580;outline-offset:2px}
+  .decision-fields{display:grid;gap:9px;margin:10px 0}
+  .decision-fields label{align-items:start;flex-direction:column}
+  .decision-fields input,.decision-fields textarea{width:100%}
+  #asset{max-width:min(100%,58em)}
+  .muted{color:var(--muted)}
+  .hash{color:var(--muted);font:12px Consolas,monospace;overflow-wrap:anywhere}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(350px,100%),1fr));gap:12px;margin:8px 0}
+  figure{margin:0;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+  figure a{display:block;background:#152127}
+  img{display:block;width:100%;height:clamp(225px,33vw,460px);object-fit:contain;color:#fff}
+  #crops img,#diagnostic-gallery img{height:clamp(190px,24vw,320px)}
+  figcaption{padding:6px 8px}
+  #notice.error{color:#963322}
+  #notice{min-height:1.5em}
+  #batch-dialog{width:min(680px,calc(100% - 24px));border:1px solid var(--line);border-radius:8px;padding:18px}
+  #batch-dialog ul{max-height:50vh;overflow:auto;padding-left:24px}
+  #batch-dialog::backdrop{background:#13242abd}
+  [hidden]{display:none!important}
+</style>
+</head>
+<body><main>
+<header>
+  <h1>Exp14-A9D1 整图恢复确认</h1>
+  <p id="progress"></p>
+</header>
+<nav aria-label="来源筛选">
+  <div class="row">
+    <label>状态 <select id="filter"></select></label>
+    <label>来源 <input id="search" type="search" placeholder="来源或组 ID"></label>
+    <button id="prev" type="button">上一条</button><button id="next" type="button">下一条</button>
+    <span id="position" aria-live="polite"></span>
+  </div>
+  <div class="row" style="margin-top:10px">
+    <button id="export-csv" type="button">导出 CSV</button>
+    <button id="backup-json" type="button">备份 JSON</button>
+    <button id="open-import" type="button">导入 CSV / JSON</button>
+    <input id="import-file" type="file" accept=".csv,.json,text/csv,application/json" hidden>
+    <button id="batch-open" type="button" disabled>核对批量确认</button>
+  </div>
+  <p id="notice" aria-live="polite" role="status"></p>
+</nav>
+<p id="empty" hidden>当前筛选没有来源。</p>
+<section id="detail" aria-label="来源证据" hidden>
+  <h2 id="source"></h2>
+  <p id="disposition" class="muted"></p>
+  <p id="origin-summary" class="muted" hidden></p>
+  <p id="summary"></p>
+  <div class="row">
+    <label>查看资产 <select id="asset"></select></label>
+  </div>
+  <p id="asset-note" class="muted" hidden></p>
+  <div id="whole" class="gallery"></div>
+  <div id="crop-controls" class="row" hidden><label>缺陷局部 <select id="crop"></select></label></div>
+  <div id="crops" class="gallery"></div>
+  <details id="diagnostics">
+    <summary>诊断资产、旧版本与阻断记录</summary>
+    <p id="reasons" class="muted"></p>
+    <div id="diagnostic-gallery" class="gallery"></div>
+  </details>
+  <section id="controls" aria-label="确认操作">
+    <p id="recorded"></p>
+    <div class="decision-fields">
+      <label>复核原因 <input id="reason" maxlength="500"></label>
+      <label>备注 <textarea id="notes" rows="3" maxlength="4000"></textarea></label>
+    </div>
+    <div class="row">
+      <button id="accept" type="button" class="primary">接受推荐文件</button>
+      <button id="alternate" type="button" class="primary">选择当前备选</button>
+      <button id="local" type="button">仅保留局部用途</button>
+      <button id="uncertain" type="button">暂不能确定</button>
+      <button id="exclude" type="button">剔除本次伪正常用途</button>
+      <button id="withdraw" type="button" hidden>撤销本轮选择</button>
+    </div>
+    <label id="batch-label" style="margin-top:8px"><input id="batch-check" type="checkbox">我已查看推荐文件，将此来源加入本次批量确认</label>
+  </section>
+</section>
+<dialog id="batch-dialog">
+  <h2>确认下列来源的推荐文件</h2>
+  <ul id="batch-scope"></ul>
+  <div class="row">
+    <button id="batch-confirm" type="button" class="primary">接受列出的推荐文件</button>
+    <button id="batch-cancel" type="button">返回</button>
+  </div>
+</dialog>
+</main>
+<script id="bundle" type="application/json">__BUNDLE__</script>
+<script>
+(() => {
+  'use strict';
+  const byId = name => document.getElementById(name);
+  const bundle = JSON.parse(byId('bundle').textContent);
+  const batchId = bundle.batch_id;
+  const exactSet = bundle.exact_set_sha256;
+  const storageKey = ['exp14-a9d1-full392', batchId, exactSet, 'v1'].join(':');
+  const bySource = new Map(bundle.rows.map(row => [row.source_id, row]));
+  const reusable = 'HUMAN_REVIEWED_ASSET_REUSABLE';
+  const proposed = 'RECOVERY_PROPOSED_PENDING_HUMAN';
+  const labels = {
+    [reusable]: '历史人工确认已绑定',
+    [proposed]: '恢复方案待人工确认',
+    NEEDS_USER_DECISION: '待用户选择',
+    NOT_RECOVERABLE_AS_WHOLE_NORMAL_PROPOSED: '建议不作整图正常样本'
+  };
+  const originalReasons = {
+    ALIGNED_AND_BOUNDED_SHOWN_NO_ASSET_CHOICE: '旧页同时展示 Aligned 和 Bounded，未记录像素选择',
+    ALIGNMENT_UNVERIFIED: '旧配准未验证',
+    CAMERA_UI_CHANGED: '相机叠层变化',
+    HUMAN_AI_WHOLE_DECISION_CONFLICT: '历史人工与 AI 整图意见不同',
+    MASK_SUPPORT_INSUFFICIENT: '原标注的有效像素不足',
+    MECHANICAL_STRUCTURE_CONFLICT: '机械结构存在分歧',
+    MECHANICAL_STRUCTURE_OR_OCCLUSION: '结构或遮挡疑问',
+    NONFULL_FRAME_VALID_MASK: '整帧有效区不完整',
+    RESIDUAL_MARKS_NEED_SEVEN_CLASS_REVIEW: '残留纹理需核对',
+    UNSELECTED_ANNOTATED_DEFECT: '存在未选入修复的原标注',
+    VISIBLE_RESIDUAL_OR_GEOMETRY_EVIDENCE: '残留或几何风险',
+    VISIBLE_SOURCE_PIXELS_UNSUPPORTED: '有可见源像素超出有效区',
+    WHOLE_IMAGE_REVIEW_REQUESTED_IN_NOTES: '历史备注要求整图复核'
+  };
+  const actions = {
+    ACCEPT_RECOMMENDED: '接受推荐文件',
+    CHOOSE_ALTERNATE: '选择备选文件',
+    LOCAL_ONLY: '仅保留局部用途',
+    UNCERTAIN: '暂不能确定',
+    EXCLUDE_WHOLE_NORMAL: '剔除本次伪正常用途'
+  };
+  const fields = ['batch_id','exact_set_sha256','source_id','action','asset_id','review_id','variant_id',
+    'asset_type','asset_sha256','reason','notes','recorded_utc','operation_id','batch_scope'];
+  const actionButtons = {accept:'ACCEPT_RECOMMENDED', alternate:'CHOOSE_ALTERNATE', local:'LOCAL_ONLY',
+    uncertain:'UNCERTAIN', exclude:'EXCLUDE_WHOLE_NORMAL'};
+  let records = Object.create(null);
+  const queue = new Map();
+  let shown = [];
+  let row;
+  let index = 0;
+
+  function notice(message, error = false) {
+    const element = byId('notice');
+    element.textContent = message;
+    element.classList.toggle('error', error);
+  }
+
+  function assetFor(item, id) {
+    return (item.assets || []).find(asset => asset.asset_id === id);
+  }
+
+  function currentAsset() {
+    return assetFor(row, byId('asset').value);
+  }
+
+  function validate(record) {
+    if (!record || fields.some(name => typeof record[name] !== 'string')) throw Error('确认记录字段不完整');
+    if (record.batch_id !== batchId || record.exact_set_sha256 !== exactSet) throw Error('文件属于其他批次或来源集合');
+    const origin = bySource.get(record.source_id);
+    if (!origin || !Object.hasOwn(actions, record.action)) throw Error('来源或操作无法识别');
+    const asset = assetFor(origin, record.asset_id);
+    const identity = [record.asset_id, record.review_id, record.variant_id, record.asset_type, record.asset_sha256];
+    if (asset) {
+      const expected = [asset.asset_id, asset.review_id || '', asset.variant_id || '', asset.asset_type, asset.sha256];
+      if (identity.some((value, index) => value !== expected[index])) throw Error('资产标识、类型或哈希与本批证据不同');
+    } else if (identity.some(Boolean)) {
+      throw Error('资产不存在');
+    }
+    if (record.action === 'ACCEPT_RECOMMENDED' && (!asset || origin.recommended_asset_id !== asset.asset_id)) {
+      throw Error('确认记录须绑定本批推荐文件');
+    }
+    if (record.action === 'CHOOSE_ALTERNATE' && (!asset || origin.recommended_asset_id === asset.asset_id)) {
+      throw Error('确认记录须绑定本批备选文件');
+    }
+    if (!Number.isFinite(Date.parse(record.recorded_utc))) throw Error('确认时间无效');
+    if (record.operation_id || record.batch_scope) {
+      const scope = record.batch_scope.split('|');
+      if (!record.operation_id || record.action !== 'ACCEPT_RECOMMENDED' || scope.length < 1
+        || !scope.includes(record.source_id) || new Set(scope).size !== scope.length
+        || scope.some(id => bySource.get(id)?.disposition !== proposed)) throw Error('批量确认范围无效');
+    }
+    return record;
+  }
+
+  function readRecords(values) {
+    if (!Array.isArray(values)) throw Error('缺少确认记录');
+    const result = Object.create(null);
+    for (const value of values) {
+      const record = validate(value);
+      if (Object.hasOwn(result, record.source_id)) throw Error('文件含重复来源');
+      result[record.source_id] = record;
+    }
+    return result;
+  }
+
+  function backup(values) {
+    return {version:1, batch_id:batchId, exact_set_sha256:exactSet, records:Object.values(values)};
+  }
+
+  function fromBackup(data) {
+    if (data?.version !== 1 || data.batch_id !== batchId || data.exact_set_sha256 !== exactSet) {
+      throw Error('备份版本或批次不同');
+    }
+    return readRecords(data.records);
+  }
+
+  function persist(values) {
+    records = values;
+    try {
+      localStorage.setItem(storageKey, JSON.stringify(backup(values)));
+      return true;
+    } catch {
+      notice('浏览器无法持久保存，请立即导出 CSV 或备份 JSON。', true);
+      return false;
+    }
+  }
+
+  function option(value, label) {
+    return new Option(label, value);
+  }
+
+  function makeGallery(id, entries) {
+    const container = byId(id);
+    container.replaceChildren();
+    for (const [title, asset] of entries) {
+      if (!asset?.url) continue;
+      const url = new URL(asset.url, document.baseURI);
+      if (url.protocol !== 'file:' && !(url.protocol.match(/^https?:$/) && url.origin === location.origin)) continue;
+      const figure = document.createElement('figure');
+      const link = document.createElement('a');
+      const img = document.createElement('img');
+      const caption = document.createElement('figcaption');
+      const hash = document.createElement('div');
+      link.href = url.href;
+      link.target = '_blank';
+      link.rel = 'noopener';
+      img.src = url.href;
+      img.alt = title;
+      caption.textContent = title;
+      hash.className = 'hash';
+      hash.textContent = asset.sha256 || '';
+      caption.append(hash);
+      link.append(img);
+      figure.append(link, caption);
+      container.append(figure);
+    }
+  }
+
+  function renderCrops() {
+    const shownCrop = row.crops?.[Number(byId('crop').value)];
+    const selected = currentAsset();
+    const after = shownCrop?.assets?.[selected?.asset_id]
+      || (selected?.asset_id === row.recommended_asset_id ? shownCrop?.after : null);
+    makeGallery('crops', [['修复前', shownCrop?.before], ['当前资产局部', after]]);
+  }
+
+  function renderAsset() {
+    const selected = currentAsset();
+    const historical = assetFor(row, row.historical_asset_id) || row.historical;
+    const selectionTitle = selected?.asset_id === row.recommended_asset_id ? '本次推荐文件' : '当前备选文件';
+    const samePixels = Boolean(selected && historical && selected.sha256 === historical.sha256);
+    const originalTitle = row.polygon ? 'Original 与全部标注' : 'Original';
+    const historicalTitle = row.historical_asset_ambiguous ? '历史整图审核的对照视图 · 旧记录未单独选定像素'
+      : samePixels ? '历史审核与当前选中像素相同' : '历史人工整图审核文件';
+    makeGallery('whole', [
+      [originalTitle, row.polygon || row.original],
+      [historicalTitle, historical],
+      [selectionTitle, samePixels ? null : selected]
+    ]);
+    byId('asset-note').hidden = selected?.asset_type !== 'RAW';
+    byId('asset-note').textContent = 'Raw 为独立整图。原图 Polygon 仅用于定位原始缺陷。';
+    renderCrops();
+    const recorded = records[row.source_id];
+    const canQueue = row.disposition === proposed && selected && selected.asset_id === row.recommended_asset_id && !recorded;
+    byId('accept').disabled = !selected || selected.asset_id !== row.recommended_asset_id;
+    byId('alternate').disabled = !selected || selected.asset_id === row.recommended_asset_id;
+    byId('batch-label').hidden = !canQueue;
+    byId('batch-check').checked = queue.has(row.source_id);
+    byId('recorded').textContent = recorded
+      ? `本轮选择 · ${actions[recorded.action]} ${recorded.asset_type} ${recorded.asset_sha256}`
+      : row.disposition === reusable ? '历史人工确认已保留。此来源无需重新确认。' : '本轮尚未选择。';
+    byId('withdraw').hidden = !recorded;
+    renderProgress();
+  }
+
+  function renderProgress() {
+    const historical = bundle.rows.filter(item => item.disposition === reusable).length;
+    const current = Object.keys(records).length;
+    byId('progress').textContent = `${bundle.rows.length} 个来源 · ${historical} 个已绑定历史确认 · 本轮已处理 ${current} 个`;
+    byId('batch-open').disabled = queue.size === 0;
+    byId('batch-open').textContent = queue.size ? `核对批量确认（${queue.size}）` : '核对批量确认';
+  }
+
+  function render() {
+    row = shown[index];
+    byId('detail').hidden = !row;
+    byId('empty').hidden = Boolean(row);
+    byId('position').textContent = row ? `${index + 1} / ${shown.length}` : '0 / 0';
+    byId('prev').disabled = index <= 0;
+    byId('next').disabled = index + 1 >= shown.length;
+    if (!row) {
+      renderProgress();
+      return;
+    }
+    byId('source').textContent = row.source_id;
+    byId('disposition').textContent = [labels[row.disposition] || row.disposition, row.group_id].filter(Boolean).join(' · ');
+    const originalFlags = (row.original_reasons || []).map(reason => originalReasons[reason] || reason);
+    byId('origin-summary').hidden = !originalFlags.length;
+    byId('origin-summary').textContent = originalFlags.length ? `历史待核原因 · ${originalFlags.join('、')}` : '';
+    byId('summary').textContent = row.summary || '';
+    byId('reasons').textContent = (row.original_reasons || []).join(' · ');
+    const saved = records[row.source_id];
+    byId('asset').replaceChildren(option('', '未选择像素文件'));
+    for (const asset of row.assets || []) {
+      byId('asset').append(option(asset.asset_id,
+        [asset.label || asset.asset_type, asset.variant_id, asset.sha256.slice(0,12)].filter(Boolean).join(' · ')));
+    }
+    byId('asset').value = saved ? saved.asset_id : row.recommended_asset_id || '';
+    byId('reason').value = saved?.reason || '';
+    byId('notes').value = saved?.notes || '';
+    byId('crop').replaceChildren(...(row.crops || []).map((crop, position) => option(String(position), crop.label)));
+    byId('crop-controls').hidden = !row.crops?.length;
+    byId('diagnostics').open = false;
+    byId('diagnostic-gallery').replaceChildren();
+    renderAsset();
+  }
+
+  function refilter(keep) {
+    const mode = byId('filter').value;
+    const search = byId('search').value.trim().toLowerCase();
+    const exact = bySource.get(search);
+    const matches = item => exact ? item === exact
+      : [item.source_id, item.group_id || ''].some(value => value.toLowerCase().includes(search));
+    shown = bundle.rows.filter(item => matches(item) && (
+      mode === 'all' || mode === 'reviewed' && Object.hasOwn(records, item.source_id)
+      || mode === 'waiting' && item.disposition !== reusable && !Object.hasOwn(records, item.source_id)
+      || mode === item.disposition));
+    index = Math.max(0, shown.findIndex(item => item.source_id === keep));
+    render();
+  }
+
+  function makeRecord(item, asset, action, reason, notes, operation = '', scope = '') {
+    return validate({
+      batch_id:batchId, exact_set_sha256:exactSet, source_id:item.source_id, action, asset_id:asset?.asset_id || '',
+      review_id:asset?.review_id || '', variant_id:asset?.variant_id || '', asset_type:asset?.asset_type || '',
+      asset_sha256:asset?.sha256 || '', reason, notes, recorded_utc:new Date().toISOString(),
+      operation_id:operation, batch_scope:scope
+    });
+  }
+
+  function save(action) {
+    const key = row.source_id;
+    const record = makeRecord(row, currentAsset(), action, byId('reason').value, byId('notes').value);
+    queue.delete(key);
+    if (persist({...records, [key]:record})) notice(`已保存 ${key} 的选择。`);
+    const next = shown[index + 1]?.source_id || shown[index - 1]?.source_id;
+    refilter(byId('filter').value === 'waiting' ? next : key);
+  }
+
+  function download(name, body, mime) {
+    const url = URL.createObjectURL(new Blob([body], {type:mime}));
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = name;
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+
+  const spreadsheetPrefix = /^['=@+\-\t\r\n]/;
+  function csvField(value) {
+    const safe = spreadsheetPrefix.test(value) ? "'" + value : value;
+    return '"' + safe.replaceAll('"','""') + '"';
+  }
+
+  function writeCsv(values) {
+    return '\uFEFF' + [fields, ...values.map(record => fields.map(field => record[field]))]
+      .map(items => items.map(csvField).join(',')).join('\r\n') + '\r\n';
+  }
+
+  function parseCsv(text) {
+    const result = [];
+    let inQuotes = false;
+    let afterQuote = false;
+    let items = [];
+    let field = '';
+    const addField = () => {
+      items.push(field[0] === "'" && spreadsheetPrefix.test(field.slice(1)) ? field.slice(1) : field);
+      field = '';
+      afterQuote = false;
+    };
+    const addRow = () => {
+      addField();
+      if (items.length !== 1 || items[0] !== '') result.push(items);
+      items = [];
+    };
+    for (let i = 0; i < text.length; i++) {
+      const ch = text[i];
+      if (inQuotes) {
+        if (ch !== '"') field += ch;
+        else if (text[i+1] === '"') {
+          field += '"';
+          i++;
+        } else {
+          inQuotes = false;
+          afterQuote = true;
+        }
+      } else if (ch === ',') addField();
+      else if (ch === '\r' || ch === '\n') {
+        addRow();
+        if (ch === '\r' && text[i+1] === '\n') i++;
+      } else if (ch === '"' && field === '' && !afterQuote) inQuotes = true;
+      else if (afterQuote || ch === '"') throw Error('CSV 引号格式无效');
+      else field += ch;
+    }
+    if (inQuotes) throw Error('CSV 引号未闭合');
+    if (field || afterQuote || items.length) addRow();
+    const header = result.shift();
+    if (!header || header.length !== fields.length || fields.some((name,i) => header[i] !== name)) throw Error('CSV 列与本批不符');
+    return result.map(values => {
+      if (values.length !== fields.length) throw Error('CSV 行缺少字段');
+      return Object.fromEntries(fields.map((key,i) => [key,values[i]]));
+    });
+  }
+
+  byId('filter').replaceChildren(option('waiting','待新增确认'), option('reviewed','本轮已处理'), option('all','全部来源'),
+    ...Object.entries(labels).map(([key,label]) => option(key,label)));
+  byId('filter').addEventListener('change', () => refilter(row?.source_id));
+  byId('search').addEventListener('input', () => refilter());
+  byId('prev').addEventListener('click', () => { index--; render(); });
+  byId('next').addEventListener('click', () => { index++; render(); });
+  byId('asset').addEventListener('change', renderAsset);
+  byId('crop').addEventListener('change', renderCrops);
+  byId('diagnostics').addEventListener('toggle', () => {
+    if (byId('diagnostics').open) {
+      const extras = [...(row.assets || []), ...(row.diagnostics || []), ...(row.original && row.polygon ? [{...row.original,label:'Original'}] : [])];
+      makeGallery('diagnostic-gallery', extras.map(asset => [asset.label || asset.asset_type, asset]));
+    }
+  });
+  for (const [id,action] of Object.entries(actionButtons)) byId(id).addEventListener('click', () => save(action));
+  byId('withdraw').addEventListener('click', () => {
+    const next = {...records};
+    const key = row.source_id;
+    delete next[key];
+    if (persist(next)) notice(`已撤销 ${key} 的本轮选择。`);
+    byId('filter').value = row.disposition === reusable ? 'all' : 'waiting';
+    refilter(key);
+  });
+  byId('batch-check').addEventListener('change', event => {
+    if (event.target.checked) queue.set(row.source_id, {
+      reason:byId('reason').value, notes:byId('notes').value
+    });
+    else queue.delete(row.source_id);
+    renderProgress();
+  });
+  byId('batch-open').addEventListener('click', () => {
+    const scope = byId('batch-scope');
+    scope.replaceChildren();
+    for (const key of queue.keys()) {
+      const item = bySource.get(key);
+      const asset = assetFor(item,item.recommended_asset_id);
+      const element = document.createElement('li');
+      element.textContent = `${key} · ${asset.asset_type} · ${asset.sha256}`;
+      scope.append(element);
+    }
+    byId('batch-dialog').showModal();
+  });
+  byId('batch-cancel').addEventListener('click', () => byId('batch-dialog').close());
+  byId('batch-confirm').addEventListener('click', () => {
+    const scope = [...queue.keys()].sort().join('|');
+    const operation = crypto.randomUUID();
+    const next = {...records};
+    for (const [key, values] of queue) {
+      const item = bySource.get(key);
+      next[key] = makeRecord(item,assetFor(item,item.recommended_asset_id),'ACCEPT_RECOMMENDED',
+        values.reason, values.notes, operation, scope);
+    }
+    const count = queue.size;
+    queue.clear();
+    byId('batch-dialog').close();
+    if (persist(next)) notice(`已批量确认 ${count} 个来源。`);
+    refilter(row?.source_id);
+  });
+  byId('export-csv').addEventListener('click', () => download(`${batchId}.csv`,writeCsv(Object.values(records)),'text/csv;charset=utf-8'));
+  byId('backup-json').addEventListener('click', () => download(`${batchId}.json`,JSON.stringify(backup(records),null,2)+'\n','application/json'));
+  byId('open-import').addEventListener('click', () => byId('import-file').click());
+  byId('import-file').addEventListener('change', async event => {
+    const file = event.target.files[0];
+    if (!file) return;
+    try {
+      const text = (await file.text()).replace(/^\uFEFF/,'');
+      const imported = file.name.toLowerCase().endsWith('.json') ? fromBackup(JSON.parse(text)) : readRecords(parseCsv(text));
+      const next = {...records};
+      let skipped = 0;
+      for (const [key,record] of Object.entries(imported)) {
+        if (Object.hasOwn(next,key) && Date.parse(next[key].recorded_utc) > Date.parse(record.recorded_utc)) {
+          skipped++;
+          continue;
+        }
+        next[key] = record;
+        queue.delete(key);
+      }
+      if (persist(next)) notice(`已导入 ${Object.keys(imported).length - skipped} 个来源，保留 ${skipped} 个较新的本地选择。`);
+      byId('filter').value = 'reviewed';
+      byId('search').value = '';
+      refilter(row?.source_id);
+    } catch (error) {
+      notice(`导入失败 · ${error.message}`, true);
+    } finally {
+      event.target.value = '';
+    }
+  });
+  try {
+    const saved = localStorage.getItem(storageKey);
+    if (saved) records = fromBackup(JSON.parse(saved));
+  } catch {
+    notice('浏览器确认记录无法读回，可导入本批 CSV 或 JSON 备份。', true);
+  }
+  refilter();
+})();
+</script>
+</body></html>
