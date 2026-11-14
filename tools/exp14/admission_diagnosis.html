@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exp14-A9-D0 准入诊断证据</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#141d24;color:#e6eef4;font:16px "Inter","Microsoft YaHei",sans-serif}
+main{max-width:1440px;padding:24px;margin:auto}h1{margin:0;font-size:26px}h2{font-size:20px;margin-top:12px}
+p{line-height:1.55;margin:8px 0}a{color:#9dd7fa}section,nav{background:#202e37;border:1px solid #455865;padding:16px;border-radius:8px;margin:14px 0}
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}label{display:flex;align-items:center;gap:7px}
+select,input,button{background:#132027;color:inherit;border:1px solid #637c8a;border-radius:5px;padding:8px;font:inherit}
+button:disabled{opacity:.4}.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(210px,100%),1fr));gap:8px}
+figure{margin:0;padding:6px;background:#0f171e;border-radius:3px}img{display:block;width:100%;height:200px;object-fit:contain}
+figcaption{padding:6px}.hash{color:#afc5d3;font:12px Consolas,monospace;overflow-wrap:anywhere}.muted{color:#b7cfda}
+pre{font:13px Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere}
+</style></head><body><main>
+<h1>Exp14-A9-D0 准入诊断证据</h1>
+<p class="muted">反事实研究与 G1 试验样本 · 待独立数据 Gate</p>
+<nav><div class="row">
+<label>证据 <select id="route"><option value="a">A 整图诊断</option><option value="b">B 粗配准试验</option></select></label>
+<label>来源 <input id="search" type="search" inputmode="numeric"></label>
+<label>类别或归因 <select id="group"></select></label>
+<button id="prev" type="button">上一条</button><button id="next" type="button">下一条</button><span id="position" aria-live="polite"></span>
+</div><p class="row"><a href="../a_392_to_200_loss_waterfall.csv">A 数量归因</a>
+<a href="../a_policy_counterfactual_comparison.csv">A 策略对比</a><a href="../a_recoverable_candidate_queue.csv">A 待确认</a>
+<a href="../b_g1_pilot_manifest.csv">B 试验清单</a><a href="../b_coarse_geometry_gate_proposal.md">G1 标准</a></p></nav>
+<p id="empty" hidden>当前筛选没有匹配案例。</p>
+<section id="detail"><h2 id="title"></h2><p id="review" class="hash"></p>
+<p id="decision"></p><p id="notes"></p><p id="reasons" class="muted"></p>
+<div class="gallery" id="whole"></div>
+<h2>目标 Polygon</h2><label><select id="polygon" aria-label="Polygon"></select></label>
+<div class="gallery" id="crops"></div>
+<details><summary>像素支持、边界读数与策略</summary><pre id="metrics"></pre></details></section>
+</main><script id="bundle" type="application/json">__BUNDLE__</script><script>
+(() => {
+  const byId = id => document.getElementById(id);
+  const data = JSON.parse(byId('bundle').textContent);
+  let available = [], index = 0, current;
+  function gallery(id, assets) {
+    const container = byId(id);
+    container.replaceChildren();
+    for (const [label, asset] of Object.entries(assets)) {
+      const figure = document.createElement('figure'), link = document.createElement('a');
+      const img = document.createElement('img'), caption = document.createElement('figcaption');
+      const hash = document.createElement('div');
+      link.href = asset.url; link.target = '_blank'; link.rel = 'noopener';
+      img.src = asset.url; img.alt = label;
+      caption.textContent = label; hash.className = 'hash'; hash.textContent = asset.sha256;
+      caption.append(hash); link.append(img); figure.append(link, caption); container.append(figure);
+    }
+  }
+  function polygon() {
+    gallery('crops', current.polygons[byId('polygon').value] || {});
+  }
+  function render() {
+    current = available[index];
+    byId('empty').hidden = Boolean(current); byId('detail').hidden = !current;
+    byId('position').textContent = (current ? index + 1 : 0) + ' / ' + available.length;
+    byId('prev').disabled = index === 0; byId('next').disabled = index + 1 >= available.length;
+    if (!current) return;
+    byId('title').textContent = [current.id, current.variant, current.group].join(' · ');
+    byId('review').textContent = current.review;
+    byId('decision').textContent = [current.decision, current.human && '人工 ' + current.human,
+      current.ai && '历史 AI ' + current.ai].filter(Boolean).join(' · ');
+    byId('notes').textContent = current.notes;
+    byId('reasons').textContent = current.reasons.join(' · ');
+    byId('metrics').textContent = JSON.stringify({metrics:current.metrics,policies:current.policies,
+      original_sha256:current.original_sha256,aligned_sha256:current.aligned_sha256}, null, 2);
+    byId('polygon').replaceChildren(...Object.keys(current.polygons).map(p => new Option(p,p)));
+    byId('polygon').disabled = Object.keys(current.polygons).length === 0;
+    gallery('whole', current.whole); polygon();
+  }
+  function filter(reset = false) {
+    const rows = data[byId('route').value];
+    if (reset) {
+      byId('search').value = '';
+      const groups = [...new Set(rows.map(row => row.group))].sort();
+      byId('group').replaceChildren(new Option('全部', ''), ...groups.map(g => new Option(g,g)));
+    }
+    const id = byId('search').value.trim(), group = byId('group').value;
+    available = rows.filter(row => (!id || row.id === id) && (!group || row.group === group));
+    index = 0; render();
+  }
+  byId('route').onchange = () => filter(true); byId('group').onchange = () => filter();
+  byId('search').oninput = () => filter(); byId('polygon').onchange = polygon;
+  byId('prev').onclick = () => {index -= 1; render()}; byId('next').onclick = () => {index += 1; render()};
+  filter(true);
+})();
+</script></body></html>

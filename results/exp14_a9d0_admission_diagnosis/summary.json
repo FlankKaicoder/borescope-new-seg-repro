@@ -1,0 +1,419 @@
+{
+  "a": {
+    "a0_asset_selection_required": 62,
+    "a0_bound_aligned_candidates": 138,
+    "a0_current_candidates": 200,
+    "a0_hold_sources": 192,
+    "a0_hold_version_rows": 193,
+    "counterfactual_union_potential_increment": 119,
+    "hold_sources_with_multiple_union_flags": 150,
+    "hold_sources_with_other_full_a_eligible_variant": 0,
+    "hold_sources_with_other_human_overall_pass_variant": 7,
+    "hold_sources_with_single_rule_fix": 42,
+    "human_whole_image_confirmed": 392,
+    "human_whole_image_confirmed_version_rows": 393,
+    "rule_category_incidence_nonexclusive": {
+      "AI_HUMAN_DECISION_CONFLICT": 55,
+      "LABEL_COMPLETENESS": 1,
+      "REGISTRATION_EDGE_OR_PIXEL_SUPPORT": 152,
+      "VISUAL_OR_MECHANICAL_QUALITY": 56
+    },
+    "rules": [
+      {
+        "category": "REGISTRATION_EDGE_OR_PIXEL_SUPPORT",
+        "first_block_sources": 1,
+        "recoverable_if_only_this_rule_removed": 0,
+        "rule": "ALIGNMENT_UNVERIFIED",
+        "source_count_any_version": 1,
+        "source_only_cause_union_count": 0,
+        "sources_lost_when_rule_used_alone": 1
+      },
+      {
+        "category": "VISUAL_OR_MECHANICAL_QUALITY",
+        "first_block_sources": 5,
+        "recoverable_if_only_this_rule_removed": 5,
+        "rule": "CAMERA_UI_CHANGED",
+        "source_count_any_version": 28,
+        "source_only_cause_union_count": 5,
+        "sources_lost_when_rule_used_alone": 28
+      },
+      {
+        "category": "AI_HUMAN_DECISION_CONFLICT",
+        "first_block_sources": 0,
+        "recoverable_if_only_this_rule_removed": 0,
+        "rule": "HUMAN_AI_POLYGON_DECISION_CONFLICT",
+        "source_count_any_version": 0,
+        "source_only_cause_union_count": 0,
+        "sources_lost_when_rule_used_alone": 0
+      },
+      {
+        "category": "AI_HUMAN_DECISION_CONFLICT",
+        "first_block_sources": 31,
+        "recoverable_if_only_this_rule_removed": 16,
+        "rule": "HUMAN_AI_WHOLE_DECISION_CONFLICT",
+        "source_count_any_version": 55,
+        "source_only_cause_union_count": 16,
+        "sources_lost_when_rule_used_alone": 55
+      },
+      {
+        "category": "IDENTITY",
+        "first_block_sources": 0,
+        "recoverable_if_only_this_rule_removed": 0,
+        "rule": "IDENTITY_QUARANTINE",
+        "source_count_any_version": 0,
+        "source_only_cause_union_count": 0,
+        "sources_lost_when_rule_used_alone": 0
+      },
+      {
+        "category": "REGISTRATION_EDGE_OR_PIXEL_SUPPORT",
+        "first_block_sources": 0,
+        "recoverable_if_only_this_rule_removed": 0,
+        "rule": "MASK_SUPPORT_INSUFFICIENT",
+        "source_count_any_version": 6,
+        "source_only_cause_union_count": 0,
+        "sources_lost_when_rule_used_alone": 6
+      },
+      {
+        "category": "VISUAL_OR_MECHANICAL_QUALITY",
+        "first_block_sources": 0,
+        "recoverable_if_only_this_rule_removed": 0,
+        "rule": "MECHANICAL_STRUCTURE_CONFLICT",
+        "source_count_any_version": 16,
+        "source_only_cause_union_count": 0,
+        "sources_lost_when_rule_used_alone": 16
+      },
+      {
+        "category": "VISUAL_OR_MECHANICAL_QUALITY",
+        "first_block_sources": 0,
+        "recoverable_if_only_this_rule_removed": 0,
+        "rule": "MECHANICAL_STRUCTURE_ERROR",
+        "source_count_any_version": 0,
+        "source_only_cause_union_count": 0,
+        "sources_lost_when_rule_used_alone": 0
+      },
+      {
+        "category": "VISUAL_OR_MECHANICAL_QUALITY",
+        "first_block_sources": 0,
+        "recoverable_if_only_this_rule_removed": 0,
+        "rule": "MECHANICAL_STRUCTURE_OR_OCCLUSION",
+        "source_count_any_version": 2,
+        "source_only_cause_union_count": 0,
+        "sources_lost_when_rule_used_alone": 2
+      },
+      {
+        "category": "VISUAL_OR_MECHANICAL_QUALITY",
+        "first_block_sources": 0,
+        "recoverable_if_only_this_rule_removed": 0,
+        "rule": "NEW_VISUAL_ARTIFACT",
+        "source_count_any_version": 0,
+        "source_only_cause_union_count": 0,
+        "sources_lost_when_rule_used_alone": 0
+      },
+      {
+        "category": "REGISTRATION_EDGE_OR_PIXEL_SUPPORT",
+        "first_block_sources": 29,
+        "recoverable_if_only_this_rule_removed": 18,
+        "rule": "NONFULL_FRAME_VALID_MASK",
+        "source_count_any_version": 151,
+        "source_only_cause_union_count": 18,
+        "sources_lost_when_rule_used_alone": 151
+      },
+      {
+        "category": "LABEL_COMPLETENESS",
+        "first_block_sources": 0,
+        "recoverable_if_only_this_rule_removed": 0,
+        "rule": "POLYGON_PASS_INCOMPLETE",
+        "source_count_any_version": 0,
+        "source_only_cause_union_count": 0,
+        "sources_lost_when_rule_used_alone": 0
+      },
+      {
+        "category": "VISUAL_OR_MECHANICAL_QUALITY",
+        "first_block_sources": 3,
+        "recoverable_if_only_this_rule_removed": 2,
+        "rule": "RESIDUAL_MARKS_NEED_SEVEN_CLASS_REVIEW",
+        "source_count_any_version": 3,
+        "source_only_cause_union_count": 2,
+        "sources_lost_when_rule_used_alone": 3
+      },
+      {
+        "category": "REGISTRATION_EDGE_OR_PIXEL_SUPPORT",
+        "first_block_sources": 0,
+        "recoverable_if_only_this_rule_removed": 0,
+        "rule": "STORED_MATRIX_UNAVAILABLE",
+        "source_count_any_version": 0,
+        "source_only_cause_union_count": 0,
+        "sources_lost_when_rule_used_alone": 0
+      },
+      {
+        "category": "LABEL_COMPLETENESS",
+        "first_block_sources": 0,
+        "recoverable_if_only_this_rule_removed": 0,
+        "rule": "UNSELECTED_ANNOTATED_DEFECT",
+        "source_count_any_version": 1,
+        "source_only_cause_union_count": 0,
+        "sources_lost_when_rule_used_alone": 1
+      },
+      {
+        "category": "VISUAL_OR_MECHANICAL_QUALITY",
+        "first_block_sources": 0,
+        "recoverable_if_only_this_rule_removed": 0,
+        "rule": "VISIBLE_RESIDUAL_OR_GEOMETRY_EVIDENCE",
+        "source_count_any_version": 6,
+        "source_only_cause_union_count": 0,
+        "sources_lost_when_rule_used_alone": 6
+      },
+      {
+        "category": "REGISTRATION_EDGE_OR_PIXEL_SUPPORT",
+        "first_block_sources": 122,
+        "recoverable_if_only_this_rule_removed": 0,
+        "rule": "VISIBLE_SOURCE_PIXELS_UNSUPPORTED",
+        "source_count_any_version": 122,
+        "source_only_cause_union_count": 0,
+        "sources_lost_when_rule_used_alone": 122
+      },
+      {
+        "category": "VISUAL_OR_MECHANICAL_QUALITY",
+        "first_block_sources": 1,
+        "recoverable_if_only_this_rule_removed": 1,
+        "rule": "WHOLE_IMAGE_REVIEW_REQUESTED_IN_NOTES",
+        "source_count_any_version": 3,
+        "source_only_cause_union_count": 1,
+        "sources_lost_when_rule_used_alone": 3
+      }
+    ],
+    "safe_increment_verified_for_admission": 0
+  },
+  "a9_base_commit": "78c5f2c8e81134a9cc270ef2262f1a202e961bc5",
+  "a_visual_cases": 36,
+  "a_visual_dispositions": {
+    "ALIGNED_PLAUSIBLE_HUD_RETAINED": 1,
+    "ALIGNED_PLAUSIBLE_HUMAN_CONFIRMATION": 1,
+    "ALIGNED_PLAUSIBLE_RAW_UI_RISK": 5,
+    "BOUNDED_NOTCH_REVIEW": 1,
+    "BOUNDED_SEAM_AND_RAW_FRAMING_REVIEW": 1,
+    "BOUNDED_SEAM_AND_RAW_UI_RISK": 1,
+    "BOUNDED_SEAM_AND_RESIDUE": 5,
+    "BOUNDED_SEAM_REVIEW": 3,
+    "EDGE_AND_RAW_FRAMING_REVIEW": 1,
+    "FRAME_EDGE_AND_RESIDUE": 1,
+    "FRAME_EDGE_TARGET_SUPPORT": 1,
+    "FRAME_EDGE_TARGET_SUPPORT_AND_UI": 1,
+    "HUMAN_AI_ARBITRATION_BOUNDED_SEAMS": 1,
+    "HUMAN_AI_ARBITRATION_RESIDUE": 1,
+    "HUMAN_AI_ARBITRATION_UI_AND_BOUNDED_RESIDUE": 1,
+    "HUMAN_AI_ARBITRATION_UI_AND_RESIDUE": 2,
+    "MECHANICAL_CONTEXT_AND_OVERSMOOTHING": 1,
+    "MECHANICAL_CONTEXT_REVIEW": 2,
+    "MECHANICAL_EDGE_AND_RESIDUE_REVIEW": 1,
+    "RAW_FRAMING_AND_UI_SHORTCUT": 1,
+    "REPAIR_PLAUSIBLE_RAW_UI_RISK": 1,
+    "RESIDUAL_DEFECT_RISK": 2,
+    "UNSELECTED_GT_VISIBLE_RESIDUE": 1
+  },
+  "b_adaptive_roi_support": {
+    "Burn": {
+      "complete_roi": 55,
+      "complete_target": 67,
+      "frame_edge_roi": 25,
+      "geometry_link_omitted_in_a9": 35,
+      "numeric_screen_pass": 66,
+      "polygons": 67
+    },
+    "Crack": {
+      "complete_roi": 62,
+      "complete_target": 63,
+      "frame_edge_roi": 8,
+      "geometry_link_omitted_in_a9": 44,
+      "numeric_screen_pass": 63,
+      "polygons": 63
+    },
+    "Dent": {
+      "complete_roi": 99,
+      "complete_target": 100,
+      "frame_edge_roi": 9,
+      "geometry_link_omitted_in_a9": 36,
+      "numeric_screen_pass": 100,
+      "polygons": 100
+    },
+    "Material missing": {
+      "complete_roi": 71,
+      "complete_target": 71,
+      "frame_edge_roi": 9,
+      "geometry_link_omitted_in_a9": 36,
+      "numeric_screen_pass": 71,
+      "polygons": 71
+    },
+    "Tears": {
+      "complete_roi": 40,
+      "complete_target": 40,
+      "frame_edge_roi": 10,
+      "geometry_link_omitted_in_a9": 20,
+      "numeric_screen_pass": 40,
+      "polygons": 40
+    },
+    "all": {
+      "complete_roi": 519,
+      "complete_target": 545,
+      "frame_edge_roi": 124,
+      "geometry_link_omitted_in_a9": 246,
+      "numeric_screen_pass": 541,
+      "polygons": 545
+    },
+    "corrosion": {
+      "complete_roi": 192,
+      "complete_target": 204,
+      "frame_edge_roi": 63,
+      "geometry_link_omitted_in_a9": 75,
+      "numeric_screen_pass": 201,
+      "polygons": 204
+    }
+  },
+  "b_pilot": {
+    "b_population": 545,
+    "by_class": {
+      "Burn": {
+        "G1_HOLD_INDEPENDENT_BOUNDARY_EVIDENCE": 1,
+        "G1_HOLD_VISUAL_AMBIGUITY": 4,
+        "G1_PILOT_FEASIBLE_PENDING_INDEPENDENT_REVIEW": 1
+      },
+      "Crack": {
+        "G1_HOLD_INDEPENDENT_BOUNDARY_EVIDENCE": 3,
+        "G1_HOLD_VISUAL_AMBIGUITY": 2,
+        "G1_PILOT_FEASIBLE_PENDING_INDEPENDENT_REVIEW": 1
+      },
+      "Dent": {
+        "G1_HOLD_INDEPENDENT_BOUNDARY_EVIDENCE": 1,
+        "G1_HOLD_VISUAL_AMBIGUITY": 2,
+        "G1_PILOT_FAIL": 1,
+        "G1_PILOT_FEASIBLE_PENDING_INDEPENDENT_REVIEW": 2
+      },
+      "Material missing": {
+        "G1_HOLD_INDEPENDENT_BOUNDARY_EVIDENCE": 1,
+        "G1_HOLD_VISUAL_AMBIGUITY": 3,
+        "G1_PILOT_FAIL": 1,
+        "G1_PILOT_FEASIBLE_PENDING_INDEPENDENT_REVIEW": 1
+      },
+      "Tears": {
+        "G1_HOLD_INDEPENDENT_BOUNDARY_EVIDENCE": 5,
+        "G1_PILOT_FEASIBLE_PENDING_INDEPENDENT_REVIEW": 1
+      },
+      "corrosion": {
+        "G1_HOLD_INDEPENDENT_BOUNDARY_EVIDENCE": 4,
+        "G1_PILOT_FAIL": 2
+      }
+    },
+    "distinct_source_count": 36,
+    "formal_trusted_pair_count": 0,
+    "g1_result": {
+      "G1_HOLD_INDEPENDENT_BOUNDARY_EVIDENCE": 15,
+      "G1_HOLD_VISUAL_AMBIGUITY": 11,
+      "G1_PILOT_FAIL": 4,
+      "G1_PILOT_FEASIBLE_PENDING_INDEPENDENT_REVIEW": 6
+    },
+    "geometry_link_provenance": {
+      "A9_PAIR_MANIFEST": 17,
+      "RECORD_DIRECTORY_AND_A9_PINNED_MATRIX": 19
+    },
+    "new_alignment": 0,
+    "new_api": 0,
+    "new_training": 0,
+    "numeric_integrity_screen_pass": 36,
+    "sample_count": 36,
+    "status": "COUNTERFACTUAL_G1_PILOT_PENDING_CHATGPT_GATE",
+    "with_independent_visual_stations": 10
+  },
+  "b_pilot_display_cases": 36,
+  "counterfactual_shortlist_cases_visually_sampled": {
+    "A1": 8,
+    "A2": 16,
+    "A3": 9,
+    "A4": 5
+  },
+  "formal_training_admissions": 0,
+  "formal_trusted_pairs": 0,
+  "new_api_posts": 0,
+  "new_generated_images": 0,
+  "new_registrations": 0,
+  "new_training_runs": 0,
+  "policy_counts": [
+    {
+      "existing_a9_candidate_sources": 200,
+      "exploratory_hold_source_pool": 0,
+      "formal_admission_count": 0,
+      "increment_requiring_human_asset_or_conflict_confirmation": 0,
+      "new_safely_confirmed_candidates": 0,
+      "policy": "A0",
+      "rule_only_increment_upper_bound": 0,
+      "status": "COUNTERFACTUAL_NOT_ADMITTED",
+      "technically_screened_increment_pending_review": 0,
+      "total_potential_candidates_including_unchanged_a0": 200,
+      "total_requiring_confirmation_including_a0_asset_selection": 62
+    },
+    {
+      "existing_a9_candidate_sources": 200,
+      "exploratory_hold_source_pool": 101,
+      "formal_admission_count": 0,
+      "increment_requiring_human_asset_or_conflict_confirmation": 16,
+      "new_safely_confirmed_candidates": 0,
+      "policy": "A1",
+      "rule_only_increment_upper_bound": 101,
+      "status": "COUNTERFACTUAL_NOT_ADMITTED",
+      "technically_screened_increment_pending_review": 16,
+      "total_potential_candidates_including_unchanged_a0": 216,
+      "total_requiring_confirmation_including_a0_asset_selection": 78
+    },
+    {
+      "existing_a9_candidate_sources": 200,
+      "exploratory_hold_source_pool": 192,
+      "formal_admission_count": 0,
+      "increment_requiring_human_asset_or_conflict_confirmation": 103,
+      "new_safely_confirmed_candidates": 0,
+      "policy": "A2",
+      "rule_only_increment_upper_bound": 103,
+      "status": "COUNTERFACTUAL_NOT_ADMITTED",
+      "technically_screened_increment_pending_review": 103,
+      "total_potential_candidates_including_unchanged_a0": 303,
+      "total_requiring_confirmation_including_a0_asset_selection": 165
+    },
+    {
+      "existing_a9_candidate_sources": 200,
+      "exploratory_hold_source_pool": 51,
+      "formal_admission_count": 0,
+      "increment_requiring_human_asset_or_conflict_confirmation": 13,
+      "new_safely_confirmed_candidates": 0,
+      "policy": "A3",
+      "rule_only_increment_upper_bound": 13,
+      "status": "COUNTERFACTUAL_NOT_ADMITTED",
+      "technically_screened_increment_pending_review": 13,
+      "total_potential_candidates_including_unchanged_a0": 213,
+      "total_requiring_confirmation_including_a0_asset_selection": 75
+    },
+    {
+      "existing_a9_candidate_sources": 200,
+      "exploratory_hold_source_pool": 55,
+      "formal_admission_count": 0,
+      "increment_requiring_human_asset_or_conflict_confirmation": 16,
+      "new_safely_confirmed_candidates": 0,
+      "policy": "A4",
+      "rule_only_increment_upper_bound": 16,
+      "status": "COUNTERFACTUAL_NOT_ADMITTED",
+      "technically_screened_increment_pending_review": 16,
+      "total_potential_candidates_including_unchanged_a0": 216,
+      "total_requiring_confirmation_including_a0_asset_selection": 78
+    }
+  ],
+  "quality_checks": {
+    "chrome": {
+      "a_cases": 36,
+      "b_cases": 36,
+      "browser": "Chrome",
+      "offline": true,
+      "polygon_selections": 133
+    },
+    "other_test_modules_missing_pytorch": 5,
+    "related_unit_tests_passed": 38
+  },
+  "started_utc": "2026-11-14T08:41:31.2869417Z",
+  "status": "EXP14_A9D0_DIAGNOSIS_PENDING_CHATGPT_GATE"
+}

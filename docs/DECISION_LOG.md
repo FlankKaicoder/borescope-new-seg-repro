@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp14-A9-D0 admission diagnosis (2026-11-14)
+
+Decision D067. Keep A9 frozen, explain A holds at the original human review identity, and evaluate edge handling, Raw, Bounded and human arbitration as counterfactuals. Study region-level geometric eligibility independently of Formal TRE and dense change-mask objectives. Keep A9B paused and wait for the independent Gate. [Handoff](exp14/EXP14_A9_D0_ADMISSION_ROOT_CAUSE_REVIEW.md).
+
 ## Exp14-A9 final candidate consolidation (2026-11-14)
 
 Decision D066. Preserve all five human exports by review ID and keep unresolved V4 choices explicit. Require full original GT coverage and source-frame pixel support for A label proposals. Require same-version regional confirmation and target coverage for B proposals, with formal correspondence adjudicated at the independent data Gate. Deliver private manifests and a read-only audit page. [Handoff](exp14/EXP14_A9_FINAL_DATASET_CONSOLIDATION_HANDOFF.md).

@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp14-A9-D0 admission diagnosis (2026-11-14)
+
+EXP14_A9D0_DIAGNOSIS_PENDING_CHATGPT_GATE. A0 reproduced 392 → 200 with 192 attributable holds. A visual evidence covers 36 cases. B ROI support was screened on 545 archived candidates and visually checked in a 36-case regional G1 pilot. Formal admissions and Trusted Pairs remain zero. [Handoff](exp14/EXP14_A9_D0_ADMISSION_ROOT_CAUSE_REVIEW.md) · [Sanitized summary](../results/exp14_a9d0_admission_diagnosis/summary.json).
+
 ## Exp14-A9 final candidate consolidation (2026-11-14)
 
 EXP14_A9_FINAL_DATASET_CONSOLIDATED_PENDING_CHATGPT_DATA_GATE. 523 TRAIN sources, 901 Polygons and 956 human review identities. The independently audited package contains 200 A suggestions and 545 B Polygon proposals across 376 sources. [Handoff](exp14/EXP14_A9_FINAL_DATASET_CONSOLIDATION_HANDOFF.md) · [Sanitized summary](../results/exp14_a9_final_dataset/summary.json).
