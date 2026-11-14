@@ -1,5 +1,9 @@
 # Project state
 
+## Exp14-A11-1 bounded GPU Smoke (2026-11-14)
+
+EXP14_A11_1_BOUNDED_SMOKE_COMPLETE_PENDING_CHATGPT_GATE. E0 and E1 each completed 50 effective native AdamW updates on the A10-frozen runtime. E1 consumed 575 repaired-image exposures, and separate mixed and all-empty backward probes passed. AMP skips were zero, engineering checkpoints reloaded strictly, and the frozen deployment passed before-and-after verification. Formal training awaits its own Gate. [Handoff](exp14/EXP14_A11_1_BOUNDED_GPU_SMOKE_HANDOFF.md).
+
 ## Exp14-A11-0 AutoDL preflight (2026-11-14)
 
 EXP14_A11_0_COMPLETE_PENDING_CHATGPT_GATE. The A10 runtime release is deployed and byte-verified on the current AutoDL RTX 3080 Ti instance. Frozen VAL and TEST membership and file hashes passed. Ultralytics 8.4.117 read all 215 native TRAIN batches, including mixed and empty-label collations. The initialization checkpoint was hash-verified and loaded on CPU. No training or held-out inference. [Handoff](exp14/EXP14_A11_0_AUTODL_PREFLIGHT_HANDOFF.md).

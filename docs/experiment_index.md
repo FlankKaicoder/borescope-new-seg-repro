@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp14-A11-1 bounded GPU Smoke (2026-11-14)
+
+EXP14_A11_1_BOUNDED_SMOKE_COMPLETE_PENDING_CHATGPT_GATE. 50 effective updates in each arm, zero AMP skips, strict engineering-checkpoint reload and unchanged data bytes. [Handoff](exp14/EXP14_A11_1_BOUNDED_GPU_SMOKE_HANDOFF.md) · [Sanitized summary](../results/exp14_a11_1_bounded_gpu_smoke/summary.json).
+
 ## Exp14-A11-0 AutoDL preflight (2026-11-14)
 
 EXP14_A11_0_COMPLETE_PENDING_CHATGPT_GATE. Verified 2,101 deployed files, frozen evaluation bytes, the pinned CPU checkpoint, and 215 native TRAIN batches. [Handoff](exp14/EXP14_A11_0_AUTODL_PREFLIGHT_HANDOFF.md) · [Sanitized summary](../results/exp14_a11_0_autodl_preflight/summary.json).

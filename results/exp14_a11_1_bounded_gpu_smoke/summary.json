@@ -1,0 +1,285 @@
+{
+  "arm_update_bound": 50,
+  "autodl_focused_tests": 7,
+  "base_commit": "8a9dd864bb39a1177b30f4240922b8d1941def39",
+  "baseline_and_augmented_smoke": {
+    "e0": {
+      "amp_initial_scale": 1.0,
+      "amp_skips": 0,
+      "arm": "e0",
+      "batch_size": 32,
+      "checkpoint": {
+        "adam_step_counts": {
+          "50": 290
+        },
+        "engineering_only": true,
+        "initial_parameters_sha256": "5d2cb582056c31c4c28c4edba2979e5191adff5f9a956bc3b909867f8ba1d4b1",
+        "initial_state_sha256": "8e0479ecdae6dc60558ed44d5d62c01f8b61075514bc34c109295950603fc886",
+        "model_state_sha256": "a3081dc5c0bb0b3d6cd3ba3fd032a25cd88783083944091a48050acc71e8ec28",
+        "parameters_sha256": "9ff5cbb2d3debdca1d019f41865e429bb3ea1d42d45f9adf18a3fc0bfbe83021",
+        "sha256": "f190c238f508f0844d951e4b40c740cc11fca9967623bd306c125826e0e7b4c9",
+        "strict_model_reload": true,
+        "strict_optimizer_reload": true,
+        "strict_scaler_reload": true
+      },
+      "counts": {
+        "all_original": 50,
+        "augmented_instances": 2937,
+        "backwards": 50,
+        "batches_read": 50,
+        "complete_epochs": 2,
+        "completed_backwards": 50,
+        "finite_forwards": 50,
+        "forwards": 50,
+        "original_exposures": 1592,
+        "raw_instance_exposures": 3016,
+        "repair_exposures": 0
+      },
+      "cuda_peak_allocated_bytes": 4989423104,
+      "cuda_peak_reserved_bytes": 5507121152,
+      "effective_updates": 50,
+      "environment": {
+        "gpu": "NVIDIA GeForce RTX 3080 Ti",
+        "python": "3.12.3",
+        "torch": "2.8.0+cu128",
+        "torch_cuda": "12.8",
+        "torchvision": "0.23.0+cu128",
+        "ultralytics": "8.4.117"
+      },
+      "epoch_image_exposures": {
+        "1": 668,
+        "2": 668,
+        "3": 256
+      },
+      "error": null,
+      "final_scaler_state": {
+        "_growth_tracker": 50,
+        "backoff_factor": 0.5,
+        "growth_factor": 2.0,
+        "growth_interval": 2000,
+        "scale": 1.0
+      },
+      "imgsz": 640,
+      "initial_parameters_sha256": "5d2cb582056c31c4c28c4edba2979e5191adff5f9a956bc3b909867f8ba1d4b1",
+      "initial_state_sha256": "8e0479ecdae6dc60558ed44d5d62c01f8b61075514bc34c109295950603fc886",
+      "native_steps": 50,
+      "numeric_evidence": {
+        "foreground_minimum": {
+          "16": 81,
+          "32": 1,
+          "8": 121
+        },
+        "loss_range": [
+          386.376220703125,
+          484.9748229980469
+        ],
+        "maximum_zero_gradient_fraction": 0.0001504945398260241,
+        "min_parameter_elements_changed": 8413,
+        "native_overflow_batches": 0,
+        "nonfinite_gradient_batches": 0,
+        "nonfinite_loss_batches": 0,
+        "nonfinite_model_or_optimizer_steps": 0,
+        "preclip_gradient_l2_range": [
+          241.01275634765625,
+          3413.212890625
+        ]
+      },
+      "optimizer": "AdamW",
+      "optimizer_attempts": 50,
+      "remaining_disk_bytes": 11264618496,
+      "run_seconds": 32.58841606695205,
+      "status": "PASS_BOUNDED_SMOKE_ARM",
+      "test_model_inference_runs": 0,
+      "val_model_inference_runs": 0,
+      "warmup": {
+        "batches_per_complete_epoch": 21,
+        "schedule_horizon_epochs": 100,
+        "warmup_iterations": 63
+      },
+      "weight_transfer": {
+        "exactly_transferred_state_entries": 510,
+        "source_classes": 80,
+        "source_weight_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+        "target_classes": 7,
+        "target_state_entries": 561
+      }
+    },
+    "e1": {
+      "amp_initial_scale": 1.0,
+      "amp_skips": 0,
+      "arm": "e1",
+      "batch_size": 32,
+      "checkpoint": {
+        "adam_step_counts": {
+          "50": 290
+        },
+        "engineering_only": true,
+        "initial_parameters_sha256": "5d2cb582056c31c4c28c4edba2979e5191adff5f9a956bc3b909867f8ba1d4b1",
+        "initial_state_sha256": "8e0479ecdae6dc60558ed44d5d62c01f8b61075514bc34c109295950603fc886",
+        "model_state_sha256": "d75e6dd4ac1393567e90485dca4b3b64b4d6f419ccef49a842da18b70e15f2fc",
+        "parameters_sha256": "ad085401518b1096d2c6bff41385de2bae6c1b408185810811264a61b8998184",
+        "sha256": "c7867de783c40e4fb32a87cba2c30bbcdcaa8a9a78b2db1df28cc1ad9be9a612",
+        "strict_model_reload": true,
+        "strict_optimizer_reload": true,
+        "strict_scaler_reload": true
+      },
+      "counts": {
+        "augmented_instances": 1880,
+        "backwards": 50,
+        "batches_read": 50,
+        "complete_epochs": 1,
+        "completed_backwards": 50,
+        "finite_forwards": 50,
+        "forwards": 50,
+        "original_exposures": 1016,
+        "original_repair_mixed": 50,
+        "raw_instance_exposures": 1942,
+        "repair_exposures": 575
+      },
+      "cuda_peak_allocated_bytes": 5005345280,
+      "cuda_peak_reserved_bytes": 5372903424,
+      "effective_updates": 50,
+      "environment": {
+        "gpu": "NVIDIA GeForce RTX 3080 Ti",
+        "python": "3.12.3",
+        "torch": "2.8.0+cu128",
+        "torch_cuda": "12.8",
+        "torchvision": "0.23.0+cu128",
+        "ultralytics": "8.4.117"
+      },
+      "epoch_image_exposures": {
+        "1": 1047,
+        "2": 544
+      },
+      "error": null,
+      "final_scaler_state": {
+        "_growth_tracker": 50,
+        "backoff_factor": 0.5,
+        "growth_factor": 2.0,
+        "growth_interval": 2000,
+        "scale": 1.0
+      },
+      "imgsz": 640,
+      "initial_parameters_sha256": "5d2cb582056c31c4c28c4edba2979e5191adff5f9a956bc3b909867f8ba1d4b1",
+      "initial_state_sha256": "8e0479ecdae6dc60558ed44d5d62c01f8b61075514bc34c109295950603fc886",
+      "native_steps": 50,
+      "numeric_evidence": {
+        "foreground_minimum": {
+          "16": 30,
+          "32": 10,
+          "8": 82
+        },
+        "loss_range": [
+          345.6976013183594,
+          557.6441650390625
+        ],
+        "maximum_zero_gradient_fraction": 6.610507824133769e-05,
+        "min_parameter_elements_changed": 8413,
+        "native_overflow_batches": 0,
+        "nonfinite_gradient_batches": 0,
+        "nonfinite_loss_batches": 0,
+        "nonfinite_model_or_optimizer_steps": 0,
+        "preclip_gradient_l2_range": [
+          236.47335815429688,
+          4188.60986328125
+        ]
+      },
+      "optimizer": "AdamW",
+      "optimizer_attempts": 50,
+      "remaining_disk_bytes": 11229122560,
+      "run_seconds": 33.96286712307483,
+      "status": "PASS_BOUNDED_SMOKE_ARM",
+      "test_model_inference_runs": 0,
+      "val_model_inference_runs": 0,
+      "warmup": {
+        "batches_per_complete_epoch": 33,
+        "schedule_horizon_epochs": 100,
+        "warmup_iterations": 99
+      },
+      "weight_transfer": {
+        "exactly_transferred_state_entries": 510,
+        "source_classes": 80,
+        "source_weight_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+        "target_classes": 7,
+        "target_state_entries": 561
+      }
+    }
+  },
+  "dataset_content_sha256": "6c899ab76fab35832ae38cf8fd67bd0a8a5439ee5bafd48670ce2c37df3321f9",
+  "dataset_files_before_after_equal": true,
+  "deployment_manifest_sha256": "219a018ecb6b0c21a75b1e869dba172371a91b429ec3b7246ae40cf87af6bb57",
+  "formal_training_performed": false,
+  "isolated_backward_diagnostics": {
+    "all_background": {
+      "backward_calls": 1,
+      "explicit_empty_labels": 32,
+      "foreground_by_stride": {
+        "16": 0,
+        "32": 0,
+        "8": 0
+      },
+      "forward_calls": 1,
+      "instances_after_augmentation": 0,
+      "loss_components": {
+        "box_loss": 0.0,
+        "cls_loss": 250.84539794921875,
+        "dfl_loss": 0.0,
+        "seg_loss": 0.0,
+        "sem_loss": 0.0
+      },
+      "optimizer_step_attempts": 0,
+      "optimizer_updates": 0,
+      "original_images": 0,
+      "parameters_unchanged": true,
+      "peak_allocated_bytes": 4862221312,
+      "peak_reserved_bytes": 5089787904,
+      "preclip_gradient_l2": 4113.93359375,
+      "raw_instances": 0,
+      "repair_images": 32,
+      "zero_gradient_fraction": 0.10266730948645225
+    },
+    "original_repair_mixed": {
+      "backward_calls": 1,
+      "explicit_empty_labels": 16,
+      "foreground_by_stride": {
+        "16": 77,
+        "32": 70,
+        "8": 103
+      },
+      "forward_calls": 1,
+      "instances_after_augmentation": 26,
+      "loss_components": {
+        "box_loss": 1.9369690418243408,
+        "cls_loss": 6.759523868560791,
+        "dfl_loss": 1.7597662210464478,
+        "seg_loss": 4.530251502990723,
+        "sem_loss": 0.0
+      },
+      "optimizer_step_attempts": 0,
+      "optimizer_updates": 0,
+      "original_images": 16,
+      "parameters_unchanged": true,
+      "peak_allocated_bytes": 4913003008,
+      "peak_reserved_bytes": 5339348992,
+      "preclip_gradient_l2": 5292.7255859375,
+      "raw_instances": 27,
+      "repair_images": 16,
+      "zero_gradient_fraction": 3.5162275660286004e-07
+    }
+  },
+  "local_related_tests": 62,
+  "runtime_code_sha256": {
+    "tools/exp14/a11_smoke_diagnostics.py": "e619cc7758ef76768ce50832ce1e0921dda379b48f9e913fc8ae91b734b67a81",
+    "tools/exp14/a11_smoke_numerics.py": "16664b0f7594c043ebd1cd5d90712d64079baee6ad54856b5ad27c763c4c1c66",
+    "tools/exp14/a11_smoke_train.py": "345a86f660061a72a6498949b4cb0290c551f3f68e5cd0ed3de9f3348e4c5b5a"
+  },
+  "runtime_file_count": 2101,
+  "split_manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "stage": "EXP14_A11_1_BOUNDED_GPU_TRAINING_SMOKE",
+  "status": "EXP14_A11_1_BOUNDED_SMOKE_COMPLETE_PENDING_CHATGPT_GATE",
+  "test_hash_reads": 0,
+  "train_image_label_files": 2094,
+  "training_smoke_performed": true,
+  "val_hash_reads": 0,
+  "validation_or_test_model_inference_runs": 0
+}

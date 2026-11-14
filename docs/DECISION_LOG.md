@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp14-A11-1 bounded GPU Smoke (2026-11-14)
+
+Decision D071. Bound both A10 TRAIN arms to 50 effective updates with single-image augmentation, batch 32 and native AMP at initial scale 1. Isolate mixed and all-background backward checks from optimizer updates. Preserve engineering checkpoints and data hashes. Submit the validated initial configuration and untested later schedule segments for the formal experiment Gate. [Handoff](exp14/EXP14_A11_1_BOUNDED_GPU_SMOKE_HANDOFF.md).
+
 ## Exp14-A11-0 AutoDL preflight (2026-11-14)
 
 Decision D070. Deploy the A10 runtime subset to an independent path and reuse immutable v1 originals after byte verification. Verify held-out identities and native TRAIN reading on the current environment with isolated caches. Submit these checks for the A11-1 smoke Gate. [Handoff](exp14/EXP14_A11_0_AUTODL_PREFLIGHT_HANDOFF.md).
