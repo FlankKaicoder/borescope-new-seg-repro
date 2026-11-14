@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp14-A9 final candidate consolidation (2026-11-14)
+
+EXP14_A9_FINAL_DATASET_CONSOLIDATED_PENDING_CHATGPT_DATA_GATE. 523 TRAIN sources, 901 Polygons and 956 human review identities. The independently audited package contains 200 A suggestions and 545 B Polygon proposals across 376 sources. [Handoff](exp14/EXP14_A9_FINAL_DATASET_CONSOLIDATION_HANDOFF.md) · [Sanitized summary](../results/exp14_a9_final_dataset/summary.json).
+
 ## Exp14-A8 final V4 repair and registration (2026-11-13)
 
 EXP14_A8_FINAL_V4_COMPLETE_PENDING_HUMAN_REVIEW. 31 unique V4 POSTs, 31 Raw/Aligned/Bounded images, 31 visual reviews and a cross-version ledger for 523 sources and 901 Polygons. The private final reviewer supports historical version retention. [Handoff](exp14/EXP14_A8_FINAL_V4_REPAIR_HANDOFF.md) · [Sanitized summary](../results/exp14_a8_final_v4/summary.json).

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Exp14 最终候选审计</title>
+<style>
+:root{color-scheme:dark;font-family:Arial,"Microsoft YaHei",sans-serif;background:#151d23;color:#e4eaee}
+body{margin:0}main{max-width:1380px;margin:auto;padding:20px}
+h1{font-size:25px;margin:0 0 10px}h2{margin:10px 0;font-size:20px}h3{font-size:16px;margin:12px 0 7px}
+nav,section{background:#202c34;border:1px solid #40525f;border-radius:8px;padding:14px;margin-bottom:12px}
+.row,.links{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.row label{display:flex;align-items:center;gap:6px}
+input,select,button{font:inherit;background:#111b22;color:inherit;padding:7px;border:1px solid #658193;border-radius:4px}
+button:disabled{opacity:.45}a{color:#9bd8ff}p{margin:9px 0;line-height:1.55}
+.data{color:#b4c8d5}.code{font:13px Consolas,monospace;overflow-wrap:anywhere}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(270px,100%),1fr));gap:9px}
+figure{margin:0;background:#11191f;padding:6px}figure img{display:block;width:100%;height:230px;object-fit:contain}
+figcaption{line-height:1.45;overflow-wrap:anywhere}ul{padding-left:22px}li{margin:7px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>Exp14 最终候选审计</h1>
+<p class="data">候选待数据 Gate · CANDIDATE_ONLY_NOT_TRAINING_APPROVED</p>
+<nav aria-label="筛选与清单">
+<div class="row">
+<label>来源 ID <input id="source" type="search"></label>
+<label>筛选 <select id="filter">
+<option value="all">全部来源</option><option value="a">A 候选</option><option value="b">B 候选</option>
+<option value="both">A/B 共用</option><option value="excluded">暂无 A/B 候选</option>
+<option value="choice">待版本或资产确认</option><option value="conflict">版本选择冲突</option>
+<option value="label">标签计划 HOLD</option><option value="geometry">几何配准风险</option>
+</select></label>
+<button id="prev" type="button">上一条</button><button id="next" type="button">下一条</button>
+<span id="position" aria-live="polite"></span>
+</div>
+<p class="links"><a href="../registry/final_version_selection_queue.csv">人工重点确认队列 CSV</a>
+<a href="../registry/a_candidate_manifest.csv">A 候选清单</a><a href="../registry/b_pair_candidate_manifest.csv">B 候选清单</a>
+<a href="../registry/unresolved_and_excluded.csv">未解决与排除清单</a></p>
+</nav>
+<p id="empty" hidden>没有符合筛选条件的来源。</p>
+<section id="detail">
+<h2 id="heading"></h2><p id="recommendation"></p><p id="risk" class="data"></p>
+<div class="row"><label>图像版本 <select id="version"></select></label>
+<label>关键 Polygon <select id="polygon"></select></label></div>
+<p id="version-state" class="data"></p><p id="notes"></p>
+<div id="images" class="gallery"></div>
+<p class="code" id="a-hash"></p>
+<h3>B 局部候选</h3><ul id="regions"></ul>
+</section>
+</main>
+<script type="application/json" id="bundle">__DATA__</script>
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const {records} = JSON.parse($('bundle').textContent);
+  const filters = {
+    all: () => true, a: row => Boolean(row.a), b: row => row.b.length > 0,
+    both: row => row.a && row.b.length, excluded: row => row.source.ab_status === 'NEITHER',
+    choice: row => row.source.version_selection_pending, conflict: row => row.source.version_conflict,
+    label: row => row.source.a_label_hold, geometry: row => row.source.b_geometry_risk,
+  };
+  const caption = {
+    A_AND_B:'A 和 B 有候选', A_ONLY:'仅 A 有候选', B_ONLY:'仅 B 有候选', NEITHER:'暂无 A/B 候选',
+    ALIGNED_REVIEW_ID_BOUND:'已绑定人工审核的 Aligned 哈希',
+    NEEDS_HUMAN_ASSET_CONFIRMATION:'待选择最终像素文件',
+  };
+  let current, filtered = [], index = 0;
+  function option(select, label, value) { select.add(new Option(label, value)); }
+  function figure(label, file) {
+    const f = document.createElement('figure'), a = document.createElement('a'), img = document.createElement('img');
+    const text = document.createElement('figcaption');
+    a.href = file.url;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    img.src = file.url;
+    img.alt = label;
+    text.textContent = label + (file.sha256 ? ' · ' + file.sha256 : '');
+    a.append(img);
+    f.append(a, text);
+    $('images').append(f);
+  }
+  function showVersion() {
+    const item = current.variants[Number($('version').value)];
+    const polygon = $('polygon').value;
+    $('version-state').textContent = [item.variant, item.human, item.geometry,
+      polygon && item.polygons[polygon] && polygon + ' ' + item.polygons[polygon]].filter(Boolean).join(' · ');
+    $('notes').textContent = item.notes;
+    $('images').replaceChildren();
+    const crop = item.polygon_files[polygon];
+    if (crop) {
+      for (const [name, file] of Object.entries(crop)) figure(name, file);
+    } else {
+      if (current.original_url) figure('源图', {url:current.original_url,sha256:current.source.original_sha256});
+      for (const [name, file] of Object.entries(item.files)) figure(name, file);
+    }
+  }
+  function show() {
+    current = filtered[index];
+    $('position').textContent = filtered.length ? (index + 1) + ' / ' + filtered.length : '0 / 0';
+    $('detail').hidden = !current;
+    $('empty').hidden = Boolean(current);
+    $('prev').disabled = index === 0;
+    $('next').disabled = index + 1 >= filtered.length;
+    if (!current) return;
+    $('heading').textContent = current.id + ' · ' + current.source.classes.join(' / ');
+    $('recommendation').textContent = [caption[current.source.ab_status],
+      current.a && 'A 建议 ' + current.a.variant_id + ' · ' + caption[current.a.pixel_asset_state],
+      'B ' + current.b.length + ' 个 Polygon'].filter(Boolean).join(' · ');
+    $('risk').textContent = current.source.risk_reasons.join(' · ');
+    $('version').replaceChildren();
+    current.variants.forEach((v, i) => option($('version'), v.variant + ' · ' + v.human, String(i)));
+    const selected = current.variants.findIndex(v => v.variant === (current.a?.variant_id || current.b[0]?.variant));
+    $('version').selectedIndex = Math.max(selected, 0);
+    $('polygon').replaceChildren();
+    option($('polygon'), '全部目标', '');
+    current.source.selected_polygon_ids.forEach(pid => option($('polygon'), pid, pid));
+    $('a-hash').textContent = current.a?.asset ? 'A 建议 Aligned SHA256 · ' + current.a.asset.sha256 : '';
+    $('regions').replaceChildren();
+    for (const r of current.b) {
+      const li = document.createElement('li');
+      li.textContent = [r.id, r.class, r.variant, r.sha256, 'PAIR_GEOMETRY_PENDING_GATE', ...r.risks].join(' · ');
+      $('regions').append(li);
+    }
+    showVersion();
+  }
+  function update() {
+    const id = $('source').value.trim();
+    filtered = records.filter(row => (!id || row.id === id) && filters[$('filter').value](row));
+    index = 0;
+    show();
+  }
+  $('filter').addEventListener('change', update);
+  $('source').addEventListener('input', update);
+  $('version').addEventListener('change', showVersion);
+  $('polygon').addEventListener('change', showVersion);
+  $('prev').addEventListener('click', () => { index -= 1; show(); });
+  $('next').addEventListener('click', () => { index += 1; show(); });
+  update();
+})();
+</script>
+</body>
+</html>

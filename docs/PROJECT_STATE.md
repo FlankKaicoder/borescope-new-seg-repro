@@ -1,5 +1,9 @@
 # Project state
 
+## Exp14-A9 final candidate consolidation (2026-11-14)
+
+EXP14_A9_FINAL_DATASET_CONSOLIDATED_PENDING_CHATGPT_DATA_GATE. Five pinned reviews reconcile 956 identities across 523 TRAIN sources and 901 Polygons. The independent candidate package contains 200 A suggestions, with 138 bound empty-label proposals and 62 awaiting pixel asset choice, and 545 B Polygon proposals across 376 sources. All B geometry remains pending the independent Gate. Identity quarantine and formal admissions are zero. New API calls, registration, generation and training are zero. [Handoff](exp14/EXP14_A9_FINAL_DATASET_CONSOLIDATION_HANDOFF.md).
+
 ## Exp14-A8 final V4 repair and registration (2026-11-13)
 
 EXP14_A8_FINAL_V4_COMPLETE_PENDING_HUMAN_REVIEW. Four pinned human exports cover 523 frozen TRAIN sources and 901 targets. Final scope was 31 V4 requests across 46 Polygons. All 31 POSTs returned one Raw each, with 31 Aligned and Bounded outputs. Nine historical Raw rescue attempts produced no replacement alignment. Codex reviewed all 31 results with 18 PASS, 7 RETRY_REPAIR and 6 HOLD. The offline page and cross-version registry await human decisions and the independent data Gate. V5 and GPU training are zero. [Handoff](exp14/EXP14_A8_FINAL_V4_REPAIR_HANDOFF.md).

@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp14-A9 final candidate consolidation (2026-11-14)
+
+Decision D066. Preserve all five human exports by review ID and keep unresolved V4 choices explicit. Require full original GT coverage and source-frame pixel support for A label proposals. Require same-version regional confirmation and target coverage for B proposals, with formal correspondence adjudicated at the independent data Gate. Deliver private manifests and a read-only audit page. [Handoff](exp14/EXP14_A9_FINAL_DATASET_CONSOLIDATION_HANDOFF.md).
+
 ## Exp14-A8 final V4 repair and registration (2026-11-13)
 
 Decision D065. Arbitrate four human exports at source, version and Polygon level. Freeze V4 only for explicit eligible targets without a historical pass and retain unresolved structures. Complete the final registration check with existing Raw and unchanged geometric screens. Keep human version choice, historical A/B evidence, new AI suggestions and independent data admission separate. [Handoff](exp14/EXP14_A8_FINAL_V4_REPAIR_HANDOFF.md).

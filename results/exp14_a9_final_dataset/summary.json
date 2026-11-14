@@ -1,0 +1,183 @@
+{
+  "a_original_class_coverage": {
+    "Burn": 10,
+    "Crack": 16,
+    "Dent": 78,
+    "Material missing": 37,
+    "Tears": 40,
+    "Tip curl": 0,
+    "corrosion": 22
+  },
+  "audit_verified_assets": 11980,
+  "b_polygon_class_coverage": {
+    "Burn": 67,
+    "Crack": 63,
+    "Dent": 100,
+    "Material missing": 71,
+    "Tears": 40,
+    "Tip curl": 0,
+    "corrosion": 204
+  },
+  "candidate_distribution_by_actual_version": {
+    "V1": {
+      "a_selected_proposals": 134,
+      "b_selected_polygons": 361,
+      "b_selected_sources": 270,
+      "human_pass_sources": 288,
+      "review_rows": 626,
+      "unique_sources": 523
+    },
+    "V2": {
+      "a_selected_proposals": 38,
+      "b_selected_polygons": 104,
+      "b_selected_sources": 59,
+      "human_pass_sources": 68,
+      "review_rows": 209,
+      "unique_sources": 186
+    },
+    "V3": {
+      "a_selected_proposals": 14,
+      "b_selected_polygons": 37,
+      "b_selected_sources": 24,
+      "human_pass_sources": 35,
+      "review_rows": 90,
+      "unique_sources": 88
+    },
+    "V4": {
+      "a_selected_proposals": 14,
+      "b_selected_polygons": 43,
+      "b_selected_sources": 24,
+      "human_pass_sources": 24,
+      "review_rows": 31,
+      "unique_sources": 31
+    }
+  },
+  "counts": {
+    "A_AND_B": 200,
+    "A_ONLY": 0,
+    "B_ONLY": 176,
+    "NEITHER": 147,
+    "a_candidate_sources": 200,
+    "a_empty_label_plan_conditional_on_asset": 62,
+    "a_empty_label_plan_eligible": 138,
+    "a_known_pixel_file_sources": 138,
+    "a_label_hold_sources": 192,
+    "a_pending_asset_choice_sources": 62,
+    "b_candidate_polygons": 545,
+    "b_candidate_sources": 376,
+    "b_geometry_gate_pending_polygons": 545,
+    "b_pending_asset_choice_polygons": 180,
+    "b_polygons_full_valid_support": 616,
+    "consistent_candidate_sources": 376,
+    "human_semantic_b_polygons": 623,
+    "human_semantic_b_version_pairs": 639,
+    "identity_quarantined_sources": 0,
+    "known_human_a_sources": 392,
+    "known_human_b_sources": 402,
+    "unusable_b_polygons": 356,
+    "unusable_b_version_pairs": 84,
+    "v4_unselected_sources": 31,
+    "version_conflict_sources": 55,
+    "version_selection_queue": 266
+  },
+  "distinct_generation_identities": 852,
+  "experiment": "EXP14_A9_FINAL_DATASET_CONSOLIDATION",
+  "formal_training_admissions": 0,
+  "formal_tre": "NOT_ESTABLISHED",
+  "frozen_split_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "human_confirmed_variant_rows": 954,
+  "human_decisions": {
+    "HOLD": 79,
+    "PASS": 418,
+    "RETRY_ALIGNMENT": 111,
+    "RETRY_REPAIR": 346,
+    "UNREVIEWED": 2
+  },
+  "identity_issue_count": 0,
+  "input_review_sha256": {
+    "Exp14_A7B_CSV-B_2026-11-13T14-02-32-268Z.csv": "45abd54863404bdc58e72dc5b4933a2921ca3bf52cbf8f2b748a4887c1773fcb",
+    "Exp14_A8_FINAL_V4_2026-11-14T06-51-11-506Z.csv": "57e94943882de94d0332a7714b5a732fbf5faafe07ee264263b244f00d73c7e8",
+    "Exp14_review_AI_assisted_2026-11-13T07-37-09-066Z.csv": "b1dddcf664a8e69fb53062bf0a36b54e4fd372a92e643d9db5db7ddc81c5ff49",
+    "Exp14_review_AI_assisted_2026-11-13T10-50-40-611Z.csv": "be536dc39a7cb8e3fb3671180e55699b8cdff4a909eb28ead5dd6d8694d58d38",
+    "Exp14_review_AI_assisted_2026-11-13T12-04-02-854Z.csv": "ae2465227161dc9c78cbfa8b4a1a74c254c5fa2edd0395683de4a929abfe5225"
+  },
+  "new_alignments": 0,
+  "new_api_posts": 0,
+  "new_generated_images": 0,
+  "new_training_runs": 0,
+  "polygons": 901,
+  "quality_checks": {
+    "chrome": {
+      "all_image_paths_accessible": 7678,
+      "browser": "Chrome",
+      "filters": {
+        "a": 200,
+        "b": 376,
+        "both": 200,
+        "choice": 266,
+        "conflict": 55,
+        "excluded": 147,
+        "geometry": 411,
+        "label": 192
+      },
+      "offline": true,
+      "read_only": true,
+      "review_rows": 956,
+      "samples": 9,
+      "sources": 523
+    },
+    "cpu_tests": 30,
+    "csv_roundtrip": "PASS",
+    "formal_gate": "PENDING",
+    "matrix_boundary_only_differences": 10,
+    "matrix_exact_support_matches": 789,
+    "matrix_masks_checked": 799
+  },
+  "sources": 523,
+  "split_totals": {
+    "test": 147,
+    "train": 668,
+    "val": 154
+  },
+  "started_utc": "2026-11-14T07:51:20.276539+00:00",
+  "status": "EXP14_A9_FINAL_DATASET_CONSOLIDATED_PENDING_CHATGPT_DATA_GATE",
+  "trusted_training_pairs": 0,
+  "unique_source_counts_by_risk": {
+    "ALIGNMENT_UNVERIFIED": 1,
+    "A_LABEL_PLAN_HOLD": 192,
+    "CAMERA_UI_CHANGED": 28,
+    "FINAL_ALIGNMENT_UNRESOLVED": 9,
+    "FINAL_VERSION_CONFLICT": 55,
+    "HISTORICAL_API_UNDELIVERED": 5,
+    "HOLD_MASK_OVERLAPS_GREEN_CAMERA_UI": 1,
+    "HUMAN_AI_POLYGON_DECISION_CONFLICT": 53,
+    "HUMAN_AI_WHOLE_DECISION_CONFLICT": 55,
+    "HUMAN_HOLD": 73,
+    "HUMAN_REVIEW_HOLD_OR_FAILURE": 16,
+    "HUMAN_UNREVIEWED": 2,
+    "MASK_SUPPORT_INSUFFICIENT": 6,
+    "MATERIAL_MISSING_NOT_RESTORED": 52,
+    "MECHANICAL_STRUCTURE_CONFLICT": 16,
+    "MECHANICAL_STRUCTURE_ERROR": 31,
+    "MECHANICAL_STRUCTURE_OR_OCCLUSION": 2,
+    "NEW_VISUAL_ARTIFACT": 3,
+    "NONFULL_FRAME_VALID_MASK": 151,
+    "NO_GATE_REVIEWABLE_A_OR_B_PROPOSAL": 147,
+    "REGISTRATION_UNRELIABLE": 106,
+    "REPAIR_UNRESOLVED": 9,
+    "RESIDUAL_DEFECT": 141,
+    "RESIDUAL_MARKS_NEED_SEVEN_CLASS_REVIEW": 3,
+    "UNSELECTED_ANNOTATED_DEFECT": 1,
+    "VISIBLE_EDGE_TRUNCATION": 4,
+    "VISIBLE_RESIDUAL_OR_GEOMETRY_EVIDENCE": 6,
+    "VISIBLE_SOURCE_PIXELS_UNSUPPORTED": 122,
+    "WHOLE_IMAGE_REVIEW_REQUESTED_IN_NOTES": 3
+  },
+  "unreviewed_variant_rows": 2,
+  "v4_human_decisions": {
+    "HOLD": 5,
+    "PASS": 24,
+    "UNREVIEWED": 2
+  },
+  "variant_review_rows": 956
+}
