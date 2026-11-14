@@ -1,5 +1,9 @@
 # Project state
 
+## Exp14-A11-0 AutoDL preflight (2026-11-14)
+
+EXP14_A11_0_COMPLETE_PENDING_CHATGPT_GATE. The A10 runtime release is deployed and byte-verified on the current AutoDL RTX 3080 Ti instance. Frozen VAL and TEST membership and file hashes passed. Ultralytics 8.4.117 read all 215 native TRAIN batches, including mixed and empty-label collations. The initialization checkpoint was hash-verified and loaded on CPU. No training or held-out inference. [Handoff](exp14/EXP14_A11_0_AUTODL_PREFLIGHT_HANDOFF.md).
+
 ## Exp14-A10 A dataset freeze (2026-11-14)
 
 EXP14_A10_A_DATASET_FROZEN_WITH_EXCEPTIONS. Closed repair workflow. Imported 254 final selections and joined 138 historical human bindings. Exact selected-image evidence isolated 13 empty-label conflicts. Frozen A contains 379 images from 359 source groups. E0/E1 contain 668/1,047 TRAIN images with identical original labels and frozen holdouts. B evidence stays independent. Training awaits the separate experiment Gate. [Handoff](exp14/EXP14_A10_A_DATASET_FREEZE_HANDOFF.md).

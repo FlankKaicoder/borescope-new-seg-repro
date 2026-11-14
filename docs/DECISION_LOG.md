@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp14-A11-0 AutoDL preflight (2026-11-14)
+
+Decision D070. Deploy the A10 runtime subset to an independent path and reuse immutable v1 originals after byte verification. Verify held-out identities and native TRAIN reading on the current environment with isolated caches. Submit these checks for the A11-1 smoke Gate. [Handoff](exp14/EXP14_A11_0_AUTODL_PREFLIGHT_HANDOFF.md).
+
 ## Exp14-A10 A dataset freeze (2026-11-14)
 
 Decision D069. Import final exact-asset human decisions and preserve earlier reviews. Isolate the 13 same-selected-image conflicts documented against professional targets. Release the other 379 A images with explicit zero-instance labels and preserve the pure 668 baseline. Keep B separate and defer all training to the experiment Gate. [Handoff](exp14/EXP14_A10_A_DATASET_FREEZE_HANDOFF.md).

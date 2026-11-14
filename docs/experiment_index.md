@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp14-A11-0 AutoDL preflight (2026-11-14)
+
+EXP14_A11_0_COMPLETE_PENDING_CHATGPT_GATE. Verified 2,101 deployed files, frozen evaluation bytes, the pinned CPU checkpoint, and 215 native TRAIN batches. [Handoff](exp14/EXP14_A11_0_AUTODL_PREFLIGHT_HANDOFF.md) · [Sanitized summary](../results/exp14_a11_0_autodl_preflight/summary.json).
+
 ## Exp14-A10 A dataset freeze (2026-11-14)
 
 EXP14_A10_A_DATASET_FROZEN_WITH_EXCEPTIONS. 392 final pixel identities audited, 379 A images and labels frozen, 13 same-asset exceptions isolated. Fixed CPU parsing verified the 668-image baseline and 1,047-image augmentation arm. [Handoff](exp14/EXP14_A10_A_DATASET_FREEZE_HANDOFF.md) · [Sanitized summary](../results/exp14_a10_a_dataset_freeze/summary.json).

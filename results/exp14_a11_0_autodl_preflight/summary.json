@@ -1,0 +1,268 @@
+{
+  "backward_called": false,
+  "baseline_idempotence": {
+    "already_verified_files": 1336,
+    "copied_bytes": 0,
+    "copied_files": 0
+  },
+  "baseline_reuse": {
+    "already_verified_files": 0,
+    "copied_bytes": 194358276,
+    "copied_files": 1336
+  },
+  "data_unchanged_after_loader": true,
+  "deployment": {
+    "arms": {
+      "e0": {
+        "explicit_empty_labels": 0,
+        "original_images": 668,
+        "segmentation_instances": 1266,
+        "train_images": 668,
+        "train_labels": 668
+      },
+      "e1": {
+        "explicit_empty_labels": 379,
+        "original_images": 668,
+        "segmentation_instances": 1266,
+        "train_images": 1047,
+        "train_labels": 1047
+      }
+    },
+    "dataset_content_sha256": "6c899ab76fab35832ae38cf8fd67bd0a8a5439ee5bafd48670ce2c37df3321f9",
+    "dataset_file_count": 2094,
+    "deployment_file_bytes": 443235851,
+    "deployment_file_count": 2101,
+    "deployment_manifest_sha256": "219a018ecb6b0c21a75b1e869dba172371a91b429ec3b7246ae40cf87af6bb57",
+    "derived_source_groups": 359,
+    "held_out": {
+      "test": {
+        "basis": "HASH_PINNED_SPLIT_MANIFEST",
+        "file_hashes_verified_this_run": 294,
+        "image_bytes": 30192027,
+        "image_hashes_verified_this_run": 147,
+        "images": 147,
+        "images_decoded_this_run": 0,
+        "instances": 285,
+        "label_bytes": 241434,
+        "label_hashes_verified_this_run": 147,
+        "labels": 147
+      },
+      "val": {
+        "basis": "HASH_PINNED_SPLIT_MANIFEST",
+        "file_hashes_verified_this_run": 308,
+        "image_bytes": 28826121,
+        "image_hashes_verified_this_run": 154,
+        "images": 154,
+        "images_decoded_this_run": 0,
+        "instances": 296,
+        "label_bytes": 267872,
+        "label_hashes_verified_this_run": 154,
+        "labels": 154
+      }
+    },
+    "multiple_hardlink_files": 0,
+    "quarantined_originals_retained": 13,
+    "quarantined_repairs_included": 0,
+    "readonly_files": 2101
+  },
+  "environment": {
+    "architecture": "x86_64",
+    "cuda_available": true,
+    "data_mount_available_bytes": 11306721280,
+    "data_mount_size_bytes": 53687091200,
+    "driver": "595.71.05",
+    "gpu_count": 1,
+    "gpu_free_mib": 11909,
+    "gpu_name": "NVIDIA GeForce RTX 3080 Ti",
+    "gpu_vram_mib": 12288,
+    "kernel": "5.15.0-78-generic",
+    "numpy": "2.3.2",
+    "os": "Linux",
+    "pillow": "11.3.0",
+    "python": "3.12.3",
+    "source_wheel_sha256": "859a16eebc707f8b1b6e259d01f70040287f2e97c12c9ee0c5e6309484db3a2f",
+    "torch": "2.8.0+cu128",
+    "torch_cuda": "12.8",
+    "torchvision": "0.23.0+cu128",
+    "ultralytics": "8.4.117",
+    "ultralytics_key_files_equal_pinned_wheel": 5,
+    "weights": {
+      "bytes": 6182636,
+      "coco_class_count": 80,
+      "cpu_checkpoint_load": true,
+      "model_class": "SegmentationModel",
+      "model_forward_calls": 0,
+      "sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152"
+    }
+  },
+  "loader": {
+    "arms": {
+      "e0": {
+        "batch_types": {
+          "all_original": 84
+        },
+        "batches": 84,
+        "examples": {
+          "all_original": {
+            "background_images": 0,
+            "batch_number": 1,
+            "cuda_tensor_roundtrip": true,
+            "image_tensor_shape": [
+              8,
+              3,
+              640,
+              640
+            ],
+            "images": 8,
+            "instances": 13,
+            "mask_tensor_shape": [
+              8,
+              160,
+              160
+            ],
+            "original_images": 8,
+            "semantic_mask_tensor_shape": [
+              8,
+              160,
+              160
+            ]
+          }
+        },
+        "explicit_empty_labels": 0,
+        "images": 668,
+        "instances": 1266,
+        "last_batch_images": 4
+      },
+      "e1": {
+        "batch_types": {
+          "all_background": 47,
+          "all_original": 83,
+          "original_repair_mixed": 1
+        },
+        "batches": 131,
+        "examples": {
+          "all_background": {
+            "background_images": 8,
+            "batch_number": 1,
+            "cuda_tensor_roundtrip": true,
+            "image_tensor_shape": [
+              8,
+              3,
+              640,
+              640
+            ],
+            "images": 8,
+            "instances": 0,
+            "mask_tensor_shape": [
+              8,
+              160,
+              160
+            ],
+            "original_images": 0,
+            "semantic_mask_tensor_shape": [
+              8,
+              160,
+              160
+            ]
+          },
+          "all_original": {
+            "background_images": 0,
+            "batch_number": 49,
+            "cuda_tensor_roundtrip": true,
+            "image_tensor_shape": [
+              8,
+              3,
+              640,
+              640
+            ],
+            "images": 8,
+            "instances": 18,
+            "mask_tensor_shape": [
+              8,
+              160,
+              160
+            ],
+            "original_images": 8,
+            "semantic_mask_tensor_shape": [
+              8,
+              160,
+              160
+            ]
+          },
+          "original_repair_mixed": {
+            "background_images": 3,
+            "batch_number": 48,
+            "cuda_tensor_roundtrip": true,
+            "image_tensor_shape": [
+              8,
+              3,
+              640,
+              640
+            ],
+            "images": 8,
+            "instances": 8,
+            "mask_tensor_shape": [
+              8,
+              160,
+              160
+            ],
+            "original_images": 5,
+            "semantic_mask_tensor_shape": [
+              8,
+              160,
+              160
+            ]
+          }
+        },
+        "explicit_empty_labels": 379,
+        "images": 1047,
+        "instances": 1266,
+        "last_batch_images": 7
+      }
+    },
+    "backward_called": false,
+    "batch_size": 8,
+    "classes": [
+      "Burn",
+      "Crack",
+      "Dent",
+      "Material missing",
+      "Tears",
+      "Tip curl",
+      "corrosion"
+    ],
+    "cuda_tensor_roundtrip": true,
+    "image_size": 640,
+    "isolated_caches": true,
+    "optimizer_updates": 0,
+    "status": "PASS_NATIVE_READ_ONLY_ULTRALYTICS_DATALOADER",
+    "test_model_inference_runs": 0,
+    "torch": "2.8.0+cu128",
+    "training_performed": false,
+    "ultralytics": "8.4.117",
+    "val_model_inference_runs": 0
+  },
+  "local_related_tests_passed": 60,
+  "optimizer_updates": 0,
+  "preflight_code_base_commit": "e5337cf1d26990913d5fd00aede69d7ec5d0163f",
+  "ready_for_bounded_smoke_review": true,
+  "runtime_file_sha256": {
+    "base_archive": "019320f233507fd3bc66bb2bd8d21a391d50284265958eb667b1ca3334cb3996",
+    "tools/exp14/a10_dataset_entries.py_archived_bytes": "436a4767d7a9bc47ea15ee63451eac60d68331de97bf7824d3e41f848eeed6d2",
+    "tools/exp14/a11_loader.py": "82e826d165e83c64cfc172e4c7303cb190e68f516e8750e542e84ad4358c6962",
+    "tools/exp14/a11_release_audit.py": "39b53a0453d6721cc0ce1604246295f6966548b4ada212130962aace1d4fb49e"
+  },
+  "split_manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "stage": "EXP14_A11_0_AUTODL_DEPLOYMENT_PREFLIGHT",
+  "status": "EXP14_A11_0_COMPLETE_PENDING_CHATGPT_GATE",
+  "test_model_inference_runs": 0,
+  "training_performed": false,
+  "training_smoke_performed": false,
+  "transfer": {
+    "archive_bytes": 249374720,
+    "archive_sha256": "d7d6bdf6c777359abfacb6f041f4bbc622715910f73f02c6c93f80d07d6bfdfb",
+    "extracted_bytes": 248877575,
+    "extracted_members": 765
+  },
+  "val_model_inference_runs": 0
+}
