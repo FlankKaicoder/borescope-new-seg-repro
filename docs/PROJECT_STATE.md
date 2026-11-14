@@ -1,5 +1,9 @@
 # Project state
 
+## Exp14-A10 A dataset freeze (2026-11-14)
+
+EXP14_A10_A_DATASET_FROZEN_WITH_EXCEPTIONS. Closed repair workflow. Imported 254 final selections and joined 138 historical human bindings. Exact selected-image evidence isolated 13 empty-label conflicts. Frozen A contains 379 images from 359 source groups. E0/E1 contain 668/1,047 TRAIN images with identical original labels and frozen holdouts. B evidence stays independent. Training awaits the separate experiment Gate. [Handoff](exp14/EXP14_A10_A_DATASET_FREEZE_HANDOFF.md).
+
 ## Exp14-A9D1 full 392-source recovery (2026-11-14)
 
 EXP14_A9D1_FULL392_RECOVERY_COMPLETE_PENDING_HUMAN_CONFIRMATION. All 392 human whole-image positive sources have one disposition. Historical aligned assets are reusable for 138; 166 recovery suggestions await confirmation; 79 sources require a decision; 9 have evidence for proposed whole-image exclusion. No new human confirmations or formal admissions. A9B remains paused. [Handoff](exp14/EXP14_A9D1_FULL392_RECOVERY_HANDOFF.md).

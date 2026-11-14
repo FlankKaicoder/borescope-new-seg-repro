@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp14-A10 A dataset freeze (2026-11-14)
+
+Decision D069. Import final exact-asset human decisions and preserve earlier reviews. Isolate the 13 same-selected-image conflicts documented against professional targets. Release the other 379 A images with explicit zero-instance labels and preserve the pure 668 baseline. Keep B separate and defer all training to the experiment Gate. [Handoff](exp14/EXP14_A10_A_DATASET_FREEZE_HANDOFF.md).
+
 ## Exp14-A9D1 full 392-source recovery (2026-11-14)
 
 Decision D068. Reuse historically bound exact pixels and review the remaining 254 sources, including all A9 HOLD outside the D0 shortlist. Use existing whole-image assets and limited verified crop previews for explicit human confirmation. Preserve frozen labels, historical decisions and B candidates. Defer final data admission and model work. [Handoff](exp14/EXP14_A9D1_FULL392_RECOVERY_HANDOFF.md).

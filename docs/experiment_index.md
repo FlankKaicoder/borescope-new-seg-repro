@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp14-A10 A dataset freeze (2026-11-14)
+
+EXP14_A10_A_DATASET_FROZEN_WITH_EXCEPTIONS. 392 final pixel identities audited, 379 A images and labels frozen, 13 same-asset exceptions isolated. Fixed CPU parsing verified the 668-image baseline and 1,047-image augmentation arm. [Handoff](exp14/EXP14_A10_A_DATASET_FREEZE_HANDOFF.md) · [Sanitized summary](../results/exp14_a10_a_dataset_freeze/summary.json).
+
 ## Exp14-A9D1 full 392-source recovery (2026-11-14)
 
 EXP14_A9D1_FULL392_RECOVERY_COMPLETE_PENDING_HUMAN_CONFIRMATION. 138 historical pixel bindings, 166 proposed recoveries, 79 user decisions and 9 proposed whole-image exclusions. The private Chrome-tested review page covers all 392 sources and binds user choices to exact pixels. [Handoff](exp14/EXP14_A9D1_FULL392_RECOVERY_HANDOFF.md) · [Sanitized summary](../results/exp14_a9d1_full392_recovery/summary.json).

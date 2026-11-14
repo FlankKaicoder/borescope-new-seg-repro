@@ -1,0 +1,167 @@
+{
+  "data_entries": {
+    "arms": {
+      "e0": {
+        "explicit_empty_labels": 0,
+        "original_images": 668,
+        "segmentation_instances": 1266,
+        "train_images": 668,
+        "train_labels": 668
+      },
+      "e1": {
+        "explicit_empty_labels": 379,
+        "original_images": 668,
+        "segmentation_instances": 1266,
+        "train_images": 1047,
+        "train_labels": 1047
+      }
+    },
+    "class_names": [
+      "Burn",
+      "Crack",
+      "Dent",
+      "Material missing",
+      "Tears",
+      "Tip curl",
+      "corrosion"
+    ],
+    "evaluation_references": {
+      "test": {
+        "basis": "HASH_PINNED_SPLIT_MANIFEST",
+        "file_hashes_verified_this_run": 0,
+        "images": 147,
+        "images_decoded_this_run": 0,
+        "instances": 285,
+        "labels": 147
+      },
+      "val": {
+        "basis": "HASH_PINNED_SPLIT_MANIFEST",
+        "file_hashes_verified_this_run": 0,
+        "images": 154,
+        "images_decoded_this_run": 0,
+        "instances": 296,
+        "labels": 154
+      }
+    },
+    "frozen_split_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+    "held_out_inference_runs": 0,
+    "optimizer_updates": 0,
+    "parser": {
+      "empty_labels": 379,
+      "method": "PINNED_ULTRALYTICS_CPU_NUMPY_PIL",
+      "numpy": "2.5.4",
+      "pillow": "13.0.0",
+      "positive_labels": 668,
+      "segmentation_instances": 1266,
+      "version": "8.4.117",
+      "wheel_sha256": "859a16eebc707f8b1b6e259d01f70040287f2e97c12c9ee0c5e6309484db3a2f"
+    },
+    "status": "PASS_TRAIN_DATA_READ_ONLY_CHECK",
+    "torch_dataloader_executed": false,
+    "train_group_count": 632
+  },
+  "dataset_content_sha256": "6c899ab76fab35832ae38cf8fd67bd0a8a5439ee5bafd48670ce2c37df3321f9",
+  "exception_count": 13,
+  "frozen_asset_types": {
+    "ALIGNED": 346,
+    "BOUNDED": 1,
+    "CROP": 3,
+    "RAW": 29
+  },
+  "frozen_decision_origins": {
+    "A10_FINAL_HUMAN_ASSET_SELECTION": 241,
+    "HISTORICAL_ALIGNED_HUMAN_ASSET_BINDING": 138
+  },
+  "frozen_groups": 359,
+  "historical_risk_counts_nonexclusive": {
+    "ALIGNMENT_UNVERIFIED": 1,
+    "CAMERA_UI_CHANGED": 27,
+    "HUMAN_AI_WHOLE_DECISION_CONFLICT": 43,
+    "MASK_SUPPORT_INSUFFICIENT": 6,
+    "MECHANICAL_STRUCTURE_CONFLICT": 15,
+    "MECHANICAL_STRUCTURE_OR_OCCLUSION": 2,
+    "NONFULL_FRAME_VALID_MASK": 142,
+    "RESIDUAL_MARKS_NEED_SEVEN_CLASS_REVIEW": 3,
+    "VISIBLE_RESIDUAL_OR_GEOMETRY_EVIDENCE": 4,
+    "VISIBLE_SOURCE_PIXELS_UNSUPPORTED": 119,
+    "WHOLE_IMAGE_REVIEW_REQUESTED_IN_NOTES": 3
+  },
+  "identity": {
+    "a9_verified_commit": "78c5f2c8e81134a9cc270ef2262f1a202e961bc5",
+    "d1_verified_commit": "f91d3071e83c31c594a8a44a6bfc637e7c4a0f49",
+    "former_exclusion_overrides": 9,
+    "historical_rows": 138,
+    "identity_exception_count": 0,
+    "input_csv_bytes": 116965,
+    "matched_distinct_asset_hashes": 392,
+    "matched_selections": 392,
+    "matched_type_counts": {
+      "ALIGNED": 359,
+      "BOUNDED": 1,
+      "CROP": 3,
+      "RAW": 29
+    },
+    "new_action_counts": {
+      "ACCEPT_RECOMMENDED": 220,
+      "CHOOSE_ALTERNATE": 34
+    },
+    "new_nonblank_optional_fields": {
+      "batch_scope": 0,
+      "notes": 0,
+      "operation_id": 0,
+      "reason": 0
+    },
+    "new_rows": 254,
+    "new_type_counts": {
+      "ALIGNED": 221,
+      "BOUNDED": 1,
+      "CROP": 3,
+      "RAW": 29
+    },
+    "source_count": 392,
+    "source_groups": 372
+  },
+  "independent_parser_replay": true,
+  "label_exception_counts": {
+    "RESIDUAL_ANNOTATED_DEFECT_EXACT_ASSET": 11,
+    "UNEDITED_ANNOTATED_DEFECT_EXACT_ASSET": 1,
+    "VISIBLE_DEFECT_LIKE_STRUCTURE_AT_ANNOTATED_SITE": 1
+  },
+  "labels": {
+    "class_names": [
+      "Burn",
+      "Crack",
+      "Dent",
+      "Material missing",
+      "Tears",
+      "Tip curl",
+      "corrosion"
+    ],
+    "empty_label_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "existing_b_candidates": 545,
+    "explicit_empty_labels": 379,
+    "isolated_no_empty_label": 13,
+    "label_policy": "EMPTY_SEVEN_CLASS_INSTANCES_FROM_PIXEL_SPECIFIC_WHOLE_IMAGE_HUMAN_DECISION",
+    "new_b_trusted_pairs": 0,
+    "original_train_labels_preserved": 668,
+    "polygons_copied_to_repairs": 0
+  },
+  "n_frozen": 379,
+  "new_crop_assets": 0,
+  "new_generated_images": 0,
+  "new_registrations": 0,
+  "optimizer_updates": 0,
+  "original_source_class_coverage": {
+    "Burn": 40,
+    "Crack": 56,
+    "Dent": 94,
+    "Material missing": 81,
+    "Tears": 40,
+    "corrosion": 84
+  },
+  "related_cpu_tests_passed": 54,
+  "released_image_label_files": 2094,
+  "repair_api_calls": 0,
+  "stage": "EXP14_A10_HUMAN_SELECTION_AND_A_DATASET_FREEZE",
+  "status": "EXP14_A10_A_DATASET_FROZEN_WITH_EXCEPTIONS"
+}
