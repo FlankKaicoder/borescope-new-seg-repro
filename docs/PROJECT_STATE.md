@@ -1,5 +1,9 @@
 # Project state
 
+## Exp14 E0/E1-FULL seed 42 frozen VAL (2026-11-15)
+
+EXP14_E0_E1_FULL_SEED42_VAL_COMPLETE_PENDING_CHATGPT_RESULT_GATE. The single authorized paired evaluation completed on frozen VAL, with 154 images and 296 instances in each pass. Mask mAP50–95 was 24.95% for E0 and 23.04% for E1-FULL. Fixed-confidence Mask FP rose from 57 to 66 and FN from 201 to 219. TEST inference remains zero. [Handoff](exp14/EXP14_E0_E1_FULL_SEED42_VAL_HANDOFF.md).
+
 ## Exp14 E0/E1-FULL seed 42 formal training (2026-11-15)
 
 EXP14_E0_E1_FULL_TRAIN_COMPLETE_PENDING_VAL_GATE. E0/E1-FULL each completed 100 epochs with 2,100/3,300 effective optimizer updates and 66,800 original exposures per arm. Both epoch-100 FP32 master checkpoints and strict CPU reload passed. Frozen TRAIN data verified unchanged. VAL and TEST inference remain zero. [Handoff](exp14/EXP14_E0_E1_FULL_SEED42_TRAIN_HANDOFF.md).

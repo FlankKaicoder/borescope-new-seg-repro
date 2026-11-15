@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp14 E0/E1-FULL seed 42 frozen VAL (2026-11-15)
+
+Decision D074. Record the authorized frozen VAL pair from the two epoch-100 FP32 master checkpoints. Treat the observed primary metric decline and rise in fixed-confidence FP and FN as descriptive seed 42 results. Submit the pair for independent result review before any follow-up experiments. [Handoff](exp14/EXP14_E0_E1_FULL_SEED42_VAL_HANDOFF.md).
+
 ## Exp14 E0/E1-FULL seed 42 formal training (2026-11-15)
 
 Decision D073. Accept the two frozen seed 42 training trajectories after independent budget, numeric, and checkpoint verification. Retain the wrapper tail failure separately from both successful training exits. Keep the two epoch-100 master checkpoints as the only VAL inputs and await the separate evaluation Gate. [Handoff](exp14/EXP14_E0_E1_FULL_SEED42_TRAIN_HANDOFF.md).
