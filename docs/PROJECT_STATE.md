@@ -1,5 +1,9 @@
 # Project state
 
+## Exp15 J-B TRAIN-only SupCon strength calibration (2026-11-15)
+
+EXP15_JB_PASS_READY_FOR_FORMAL_GATE. Eight frozen TRAIN batches at each of three snapshots support fixed J1 lambda 8. Lambda 10 remained a zero-update calibration candidate and exceeded the prespecified snapshot-median screen. J1 lambda 8 completed 70 of 80 allowed attempts, all effective with seven after warmup, zero AMP skips, matched native TRAIN tensors and strict reloading. Formal protocol is bound to calibrated evidence and awaits separate authorization. VAL/TEST inference and J2 updates were zero. [Handoff](exp15/EXP15_JB_HANDOFF.md).
+
 ## Exp15 J-A shared-backbone region SupCon (2026-11-15)
 
 READY_FOR_J0_J1_FORMAL_REVIEW. The TRAIN-only J0/J1 prototype reuses the native fused P3 features and weights them by the augmented Polygon raster. Both arms completed 70 effective GPU updates with matching augmented tensors and native schedules, seven post-warmup updates, zero AMP skips and strict engineering-checkpoint reload. Independent auxiliary gradients reached all 120 backbone trainable tensors. Formal auxiliary strength and the matched 100-epoch comparison await independent review and authorization. VAL/TEST inference and J2 updates were zero. [Handoff](exp15/EXP15_JA_HANDOFF.md).

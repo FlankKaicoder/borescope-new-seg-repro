@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp15 J-B strength and formal protocol (2026-11-15)
+
+Decision D076. Select fixed lambda 8 after the lambda 10 late-snapshot median exceeded the prespecified engineering screen. Retain both TRAIN-only probes and the independent J1 budget. Bind the formal matched pair to frozen E0 settings, fresh COCO starts and the epoch-100 FP32 master. Start only after independent approval of the exact protocol. [Handoff](exp15/EXP15_JB_HANDOFF.md).
+
 ## Exp15 J-A engineering mechanism (2026-11-15)
 
 Decision D075. Use the one-forward fused P3 Polygon pool and current-batch cross-group SupCon for the bounded prototype. Preserve the original E0 sampler, augmentation and native optimizer schedule. Record a conservative training-only weight for Smoke, strict checkpoint and independent gradient proofs, and limit the recommendation to formal review. Keep J2 Pair admission and all performance conclusions under independent Gates. [Handoff](exp15/EXP15_JA_HANDOFF.md).

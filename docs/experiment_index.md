@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp15 J-B TRAIN-only SupCon strength calibration (2026-11-15)
+
+EXP15_JB_PASS_READY_FOR_FORMAL_GATE. Lambda 8 selected using 24 zero-update gradient probes. Independent J1 smoke verified effective updates 70/70, zero AMP skips, matched augmented TRAIN, overlap/class binding, and strict checkpoint reload. [Handoff](exp15/EXP15_JB_HANDOFF.md) · [Sanitized summary](../results/exp15_jb/summary.json) · [Formal protocol](../results/exp15_jb/formal_protocol.json).
+
 ## Exp15 J-A shared-backbone region SupCon (2026-11-15)
 
 READY_FOR_J0_J1_FORMAL_REVIEW. CPU checks and TRAIN-only AutoDL J0/J1 Smoke complete. Both arms achieved 70 effective updates with seven post-warmup, zero AMP skips, strict reload and matched augmented input tensors. [Handoff](exp15/EXP15_JA_HANDOFF.md) · [Sanitized summary](../results/exp15_ja/summary.json).

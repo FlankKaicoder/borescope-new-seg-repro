@@ -1,0 +1,4709 @@
+{
+  "lambda_s": 8.0,
+  "probes": [
+    {
+      "auxiliary_loss": 4.050049304962158,
+      "backbone": {
+        "auxiliary_norm": 7.157968124011568,
+        "cosine": -0.08575028394224907,
+        "joint_norm": 3339.349594725301,
+        "native_joint_cosine": 0.999854100481981,
+        "native_norm": 3344.026857294503,
+        "weighted_ratio": 0.017124188122825658
+      },
+      "batch": 1,
+      "clip_coef": {
+        "joint": 0.002783629134640923,
+        "native": 0.0027802680240039397
+      },
+      "global": {
+        "joint": 3592.432581183747,
+        "native": 3596.7755305901983
+      },
+      "joint_loss": 467.27301025390625,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 3.1215580592476133,
+          "cosine": -0.4252309881264826,
+          "joint_norm": 991.3955794980792,
+          "native_joint_cosine": 0.9997422423128505,
+          "native_norm": 1002.1695822845642,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.024918401950549344
+        },
+        "1": {
+          "auxiliary_norm": 1.774798224315117,
+          "cosine": -0.18982794441717474,
+          "joint_norm": 879.561208528454,
+          "native_joint_cosine": 0.9998822004667304,
+          "native_norm": 882.2784266520086,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.016092862939423445
+        },
+        "10": {
+          "auxiliary_norm": 2.3338562336147963,
+          "cosine": -0.0043029658946574815,
+          "joint_norm": 1063.8150725774983,
+          "native_joint_cosine": 0.9998458675748387,
+          "native_norm": 1063.7618742204438,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.017551719347528714
+        },
+        "13": {
+          "auxiliary_norm": 2.1381052124232562,
+          "cosine": -0.021971322232415463,
+          "joint_norm": 673.9530104350789,
+          "native_joint_cosine": 0.9996777825365378,
+          "native_norm": 674.1168825826865,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.025373703197958387
+        },
+        "16": {
+          "auxiliary_norm": 2.284554356109145,
+          "cosine": -0.007453707690840034,
+          "joint_norm": 434.86864998707915,
+          "native_joint_cosine": 0.9991176494593462,
+          "native_norm": 434.62497950903,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.042051045638285586
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 209.017898308807,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 209.017898308807,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 480.74759844915593,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 480.74759844915593,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 1.9339919847510196,
+          "cosine": 0.057784018211788926,
+          "joint_norm": 1112.165597673942,
+          "native_joint_cosine": 0.9999027748741599,
+          "native_norm": 1111.1553244124643,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.013924188219310485
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 197.54161399685583,
+          "native_joint_cosine": 1.0,
+          "native_norm": 197.54161399685583,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 520.1328969648662,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 520.1328969648662,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 725.657285469953,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 725.657285469953,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 1.5078900046608184,
+          "cosine": -0.023334051915596885,
+          "joint_norm": 764.58072318509,
+          "native_joint_cosine": 0.9998730794145432,
+          "native_norm": 764.8118290070196,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.015772664045937277
+        },
+        "4": {
+          "auxiliary_norm": 2.100548769546336,
+          "cosine": -0.029099012433715658,
+          "joint_norm": 1047.9788346683106,
+          "native_joint_cosine": 0.9998709607889559,
+          "native_norm": 1048.3458422518477,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.01602943368409307
+        },
+        "5": {
+          "auxiliary_norm": 1.8342162146067602,
+          "cosine": -0.052778960671598235,
+          "joint_norm": 878.6152973624335,
+          "native_joint_cosine": 0.9998605823608935,
+          "native_norm": 879.2508145421572,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.016688900907638027
+        },
+        "6": {
+          "auxiliary_norm": 2.4608023576909877,
+          "cosine": -0.02958445847903103,
+          "joint_norm": 1186.1532698784122,
+          "native_joint_cosine": 0.9998626002499307,
+          "native_norm": 1186.6294312858,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.016590199385326406
+        },
+        "7": {
+          "auxiliary_norm": 1.6194353941852375,
+          "cosine": -0.017618566074836684,
+          "joint_norm": 820.7019125556251,
+          "native_joint_cosine": 0.9998751950194349,
+          "native_norm": 820.8752761127024,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.015782523277876347
+        },
+        "8": {
+          "auxiliary_norm": 2.7805452014266727,
+          "cosine": -0.05538684487991257,
+          "joint_norm": 1342.2296033466496,
+          "native_joint_cosine": 0.9998630329376632,
+          "native_norm": 1343.358319834045,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.016558770123343853
+        },
+        "9": {
+          "auxiliary_norm": 1.6417450824524282,
+          "cosine": -0.03354159385905266,
+          "joint_norm": 830.2096710765791,
+          "native_joint_cosine": 0.9998744385804973,
+          "native_norm": 830.6116500970044,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.015812396392568723
+        },
+        "projection": {
+          "auxiliary_norm": 0.8531247085048541,
+          "cosine": null,
+          "joint_norm": 6.824997668038833,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 434.87261962890625,
+      "snapshot": "coco_init"
+    },
+    {
+      "auxiliary_loss": 4.107522964477539,
+      "backbone": {
+        "auxiliary_norm": 2.291315305612654,
+        "cosine": 0.7203856723732593,
+        "joint_norm": 170.6514608776955,
+        "native_joint_cosine": 0.9982630995189269,
+        "native_norm": 159.00474846888537,
+        "weighted_ratio": 0.11528286181018181
+      },
+      "batch": 1,
+      "clip_coef": {
+        "joint": 0.0519075133121994,
+        "native": 0.05482941668880373
+      },
+      "global": {
+        "joint": 192.65033730179226,
+        "native": 182.38384701277704
+      },
+      "joint_loss": 494.15252685546875,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 1.9377911826124752,
+          "cosine": 0.9174820160373958,
+          "joint_norm": 134.23085471337194,
+          "native_joint_cosine": 0.9997249398681199,
+          "native_norm": 121.83094194352051,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.12724459988240516
+        },
+        "1": {
+          "auxiliary_norm": 0.7945929026728763,
+          "cosine": 0.7073335176066393,
+          "joint_norm": 58.24543337101908,
+          "native_joint_cosine": 0.9982005987936622,
+          "native_norm": 54.490362009488095,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.11665812057325196
+        },
+        "10": {
+          "auxiliary_norm": 0.01929877936237677,
+          "cosine": 0.28329614159459415,
+          "joint_norm": 3.932320763384088,
+          "native_joint_cosine": 0.999640038983865,
+          "native_norm": 3.8894436420128384,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.03969468363838155
+        },
+        "13": {
+          "auxiliary_norm": 0.09469303691408064,
+          "cosine": -0.07232295258446525,
+          "joint_norm": 12.741119255495667,
+          "native_joint_cosine": 0.9984596371356469,
+          "native_norm": 12.77768173888857,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.05928652088798527
+        },
+        "16": {
+          "auxiliary_norm": 0.5877308560845876,
+          "cosine": -0.10051240905984088,
+          "joint_norm": 46.660678699326134,
+          "native_joint_cosine": 0.9950698733002028,
+          "native_norm": 46.88832487975101,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.10027756079439767
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 4.686482106793824,
+          "native_joint_cosine": 0.9999999999999999,
+          "native_norm": 4.686482106793824,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 12.054160051092515,
+          "native_joint_cosine": 1.0,
+          "native_norm": 12.054160051092515,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 0.8049812302952387,
+          "cosine": 0.3240094334259807,
+          "joint_norm": 74.28874552281323,
+          "native_joint_cosine": 0.9976520285407241,
+          "native_norm": 72.31879813772328,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.08904807613226531
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 0.3188698162677956,
+          "native_joint_cosine": 1.0,
+          "native_norm": 0.3188698162677956,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 1.0416865058891631,
+          "native_joint_cosine": 1.0,
+          "native_norm": 1.0416865058891631,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 73.83170577107246,
+          "native_joint_cosine": 1.0,
+          "native_norm": 73.83170577107246,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 0.17644228739128004,
+          "cosine": -0.10073492178234718,
+          "joint_norm": 17.103465136925813,
+          "native_joint_cosine": 0.9968916301361943,
+          "native_norm": 17.187239291207867,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.08212711042269091
+        },
+        "4": {
+          "auxiliary_norm": 0.421734382160144,
+          "cosine": -0.1963663318944913,
+          "joint_norm": 41.97641553130656,
+          "native_joint_cosine": 0.9971891278938037,
+          "native_norm": 42.54806630396182,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.07929561435714405
+        },
+        "5": {
+          "auxiliary_norm": 0.023904156678110158,
+          "cosine": 0.03661635267528318,
+          "joint_norm": 3.432116898805891,
+          "native_joint_cosine": 0.9987148155750385,
+          "native_norm": 3.424086326529452,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.05584942527389763
+        },
+        "6": {
+          "auxiliary_norm": 0.07404407457836622,
+          "cosine": 0.21909066147999945,
+          "joint_norm": 10.304646580234277,
+          "native_joint_cosine": 0.9988249866678729,
+          "native_norm": 10.169490531008378,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.0582480110307152
+        },
+        "7": {
+          "auxiliary_norm": 0.007988879671973847,
+          "cosine": 0.33555338496450043,
+          "joint_norm": 1.0394944145573102,
+          "native_joint_cosine": 0.9985628466362383,
+          "native_norm": 1.0159315800793178,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.06290880077849434
+        },
+        "8": {
+          "auxiliary_norm": 0.008092711809335353,
+          "cosine": 0.33885272722375814,
+          "joint_norm": 1.3161775310577553,
+          "native_joint_cosine": 0.9992385292975638,
+          "native_norm": 1.2899361259177933,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.05018984519765963
+        },
+        "9": {
+          "auxiliary_norm": 0.013078210434433761,
+          "cosine": 0.09560906704442658,
+          "joint_norm": 1.364315236041539,
+          "native_joint_cosine": 0.9992983385344907,
+          "native_norm": 1.348197047207363,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.07760414821571543
+        },
+        "projection": {
+          "auxiliary_norm": 0.7191884680083463,
+          "cosine": null,
+          "joint_norm": 5.753507744066771,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 461.2923583984375,
+      "snapshot": "ja_j0_step70_initial_projection"
+    },
+    {
+      "auxiliary_loss": 4.034832954406738,
+      "backbone": {
+        "auxiliary_norm": 1.032826733466419,
+        "cosine": 0.01292524375356535,
+        "joint_norm": 70.54208333767653,
+        "native_joint_cosine": 0.9963987523973747,
+        "native_norm": 70.30439403823688,
+        "weighted_ratio": 0.11752627955569198
+      },
+      "batch": 1,
+      "clip_coef": {
+        "joint": 0.07393989034948391,
+        "native": 0.07398922806846528
+      },
+      "global": {
+        "joint": 135.24499263921223,
+        "native": 135.15480816690453
+      },
+      "joint_loss": 524.3524169921875,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 0.689108912312795,
+          "cosine": 0.23923879875446588,
+          "joint_norm": 36.1304806541433,
+          "native_joint_cosine": 0.9936036196031223,
+          "native_norm": 35.20721519470412,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.15658356584054986
+        },
+        "1": {
+          "auxiliary_norm": 0.37725503913657177,
+          "cosine": -0.11553137838606085,
+          "joint_norm": 28.088705977450836,
+          "native_joint_cosine": 0.9984347164090166,
+          "native_norm": 28.226394669714573,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.10692262856831558
+        },
+        "10": {
+          "auxiliary_norm": 0.0023205196907860014,
+          "cosine": -0.09167477690970519,
+          "joint_norm": 0.8462058595290798,
+          "native_joint_cosine": 0.9998314525533297,
+          "native_norm": 0.8502181246159184,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.02183458219580331
+        },
+        "13": {
+          "auxiliary_norm": 0.019248391937219323,
+          "cosine": -0.19068787062909592,
+          "joint_norm": 3.657065139834962,
+          "native_joint_cosine": 0.9995325344722698,
+          "native_norm": 3.6991300580986417,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.041627932264945613
+        },
+        "16": {
+          "auxiliary_norm": 0.45585315443078783,
+          "cosine": -0.0527477500553556,
+          "joint_norm": 59.25459243384142,
+          "native_joint_cosine": 0.9981901016712464,
+          "native_norm": 59.33623980406849,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.06146033600188214
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 5.78838454329542,
+          "native_joint_cosine": 1.0,
+          "native_norm": 5.78838454329542,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 22.97266662819908,
+          "native_joint_cosine": 1.0,
+          "native_norm": 22.97266662819908,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 0.5778060412593959,
+          "cosine": -0.06607346659669437,
+          "joint_norm": 39.09199685763405,
+          "native_joint_cosine": 0.9967760455122935,
+          "native_norm": 39.0954930898762,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.11823481339520829
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 1.3519284744779152,
+          "native_joint_cosine": 1.0,
+          "native_norm": 1.3519284744779152,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 3.2339531955554417,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 3.2339531955554417,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 96.00055448159584,
+          "native_joint_cosine": 1.0,
+          "native_norm": 96.00055448159584,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 0.14003238096958792,
+          "cosine": -0.18255755752104774,
+          "joint_norm": 15.128180004036427,
+          "native_joint_cosine": 0.9978385603557812,
+          "native_norm": 15.24935130005968,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.07346273462480461
+        },
+        "4": {
+          "auxiliary_norm": 0.3097010087320084,
+          "cosine": -0.1684471912025255,
+          "joint_norm": 33.293548979061946,
+          "native_joint_cosine": 0.9976838750048024,
+          "native_norm": 33.602967032245104,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.07373182455818787
+        },
+        "5": {
+          "auxiliary_norm": 0.004290298128205076,
+          "cosine": -0.06940495744168942,
+          "joint_norm": 1.1374440984102765,
+          "native_joint_cosine": 0.9996930436328847,
+          "native_norm": 1.1393142985063396,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.03012547553439629
+        },
+        "6": {
+          "auxiliary_norm": 0.010928678160048111,
+          "cosine": -0.027586952527879918,
+          "joint_norm": 3.0303251815637635,
+          "native_joint_cosine": 0.9997624844843164,
+          "native_norm": 3.025323982083692,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.028899194201398512
+        },
+        "7": {
+          "auxiliary_norm": 0.0005053103487235408,
+          "cosine": 0.2464823650215994,
+          "joint_norm": 0.7511152175418897,
+          "native_joint_cosine": 0.9999884589698953,
+          "native_norm": 0.7494849501560734,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.0053936810725105505
+        },
+        "8": {
+          "auxiliary_norm": 0.0019903922129605647,
+          "cosine": 0.3382758539748001,
+          "joint_norm": 2.005658247362606,
+          "native_joint_cosine": 0.9999851330065804,
+          "native_norm": 2.0049507857163484,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.007941909505771406
+        },
+        "9": {
+          "auxiliary_norm": 0.0027487194951459812,
+          "cosine": -0.0705766151056313,
+          "joint_norm": 0.7158773949739607,
+          "native_joint_cosine": 0.9999587918407341,
+          "native_norm": 0.7181409424388621,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.030620390318492275
+        },
+        "projection": {
+          "auxiliary_norm": 0.11860057353785039,
+          "cosine": null,
+          "joint_norm": 0.9488045883028031,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 492.07373046875,
+      "snapshot": "ja_j1_step70"
+    },
+    {
+      "auxiliary_loss": 4.107105731964111,
+      "backbone": {
+        "auxiliary_norm": 5.548195959865233,
+        "cosine": -0.08298597935056536,
+        "joint_norm": 3070.7445109809732,
+        "native_joint_cosine": 0.9998955398299945,
+        "native_norm": 3074.121577625249,
+        "weighted_ratio": 0.014438455525630058
+      },
+      "batch": 7,
+      "clip_coef": {
+        "joint": 0.003044629065982513,
+        "native": 0.003041728972502015
+      },
+      "global": {
+        "joint": 3284.4723545094103,
+        "native": 3287.603888236182
+      },
+      "joint_loss": 452.73175048828125,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 1.7461154688490736,
+          "cosine": -0.4190668883631873,
+          "joint_norm": 729.0604906377397,
+          "native_joint_cosine": 0.9998408414306836,
+          "native_norm": 735.2703832364602,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.01899834954497308
+        },
+        "1": {
+          "auxiliary_norm": 1.4089190407251344,
+          "cosine": 0.09631773328207172,
+          "joint_norm": 878.7525237740405,
+          "native_joint_cosine": 0.9999194664024836,
+          "native_norm": 877.5542441488418,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.012844051978500082
+        },
+        "10": {
+          "auxiliary_norm": 2.195517292710287,
+          "cosine": -0.051349856701195136,
+          "joint_norm": 989.7172804889185,
+          "native_joint_cosine": 0.9998427139851123,
+          "native_norm": 990.417454155393,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.017734075937363824
+        },
+        "13": {
+          "auxiliary_norm": 1.6240685330743116,
+          "cosine": 0.0012949576770678256,
+          "joint_norm": 615.3997201210404,
+          "native_joint_cosine": 0.9997766879783037,
+          "native_norm": 615.2217373899683,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.02111848050056618
+        },
+        "16": {
+          "auxiliary_norm": 1.885250826002634,
+          "cosine": -0.027399204827229698,
+          "joint_norm": 382.37175207513866,
+          "native_joint_cosine": 0.9992236038230482,
+          "native_norm": 382.4809572877575,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.039432045754566034
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 185.37460218555364,
+          "native_joint_cosine": 1.0,
+          "native_norm": 185.37460218555364,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 399.84941173866525,
+          "native_joint_cosine": 1.0,
+          "native_norm": 399.84941173866525,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 1.425608412977145,
+          "cosine": -0.14083797654564237,
+          "joint_norm": 926.0042602384933,
+          "native_joint_cosine": 0.9999289147354306,
+          "native_norm": 927.3792550701111,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.012297953875359155
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 180.80225178842824,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 180.80225178842824,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 434.6947862721999,
+          "native_joint_cosine": 1.0,
+          "native_norm": 434.6947862721999,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 646.0913839484417,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 646.0913839484417,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 1.0994657074632614,
+          "cosine": -0.0820301756551518,
+          "joint_norm": 701.8559061824677,
+          "native_joint_cosine": 0.9999217109508424,
+          "native_norm": 702.4876399897573,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.01252082621672082
+        },
+        "4": {
+          "auxiliary_norm": 1.5318122444298117,
+          "cosine": -0.06127152318323277,
+          "joint_norm": 898.1901777027264,
+          "native_joint_cosine": 0.9999067444188209,
+          "native_norm": 898.8560744526421,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.013633437325214565
+        },
+        "5": {
+          "auxiliary_norm": 1.3764293845027749,
+          "cosine": -0.07130782985044001,
+          "joint_norm": 821.2135092607515,
+          "native_joint_cosine": 0.9999096727454977,
+          "native_norm": 821.9283354489561,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.013397074417695432
+        },
+        "6": {
+          "auxiliary_norm": 1.9960629807223897,
+          "cosine": -0.05069773438907469,
+          "joint_norm": 1129.9571015320323,
+          "native_joint_cosine": 0.9998990670426963,
+          "native_norm": 1130.6634584416765,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.014123127201605612
+        },
+        "7": {
+          "auxiliary_norm": 1.3759248923615146,
+          "cosine": -0.09951517423425993,
+          "joint_norm": 798.0164004483375,
+          "native_joint_cosine": 0.999905506084866,
+          "native_norm": 799.030258235982,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.013775947813532289
+        },
+        "8": {
+          "auxiliary_norm": 2.3086782740227627,
+          "cosine": -0.0613506824991253,
+          "joint_norm": 1347.2058406116296,
+          "native_joint_cosine": 0.9999062246076599,
+          "native_norm": 1348.2188548791921,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.013699130616176603
+        },
+        "9": {
+          "auxiliary_norm": 1.4961909087684397,
+          "cosine": -0.048344850656099836,
+          "joint_norm": 765.7523944271163,
+          "native_joint_cosine": 0.9998780782533241,
+          "native_norm": 766.1591635465646,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.015622768531202263
+        },
+        "projection": {
+          "auxiliary_norm": 0.7441482875209193,
+          "cosine": null,
+          "joint_norm": 5.953186300167355,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 419.8749084472656,
+      "snapshot": "coco_init"
+    },
+    {
+      "auxiliary_loss": 4.137964725494385,
+      "backbone": {
+        "auxiliary_norm": 1.3140375904928274,
+        "cosine": 0.780772489393524,
+        "joint_norm": 226.32249401473408,
+        "native_joint_cosine": 0.9998078284853239,
+        "native_norm": 221.67116820369242,
+        "weighted_ratio": 0.047422949989973096
+      },
+      "batch": 7,
+      "clip_coef": {
+        "joint": 0.04028222830759017,
+        "native": 0.04099617117698668
+      },
+      "global": {
+        "joint": 248.2484306319649,
+        "native": 243.9252172070488
+      },
+      "joint_loss": 490.12591552734375,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 1.0444670692817148,
+          "cosine": 0.9591828906346328,
+          "joint_norm": 202.94950617010952,
+          "native_joint_cosine": 0.9999653818364157,
+          "native_norm": 198.4270397805493,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.0421098685113418
+        },
+        "1": {
+          "auxiliary_norm": 0.4787682009756999,
+          "cosine": 0.6351122602799785,
+          "joint_norm": 65.09694585907563,
+          "native_joint_cosine": 0.9996380465245585,
+          "native_norm": 63.87171405278487,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.05996622549756986
+        },
+        "10": {
+          "auxiliary_norm": 0.027212137248429927,
+          "cosine": 0.12762814527891816,
+          "joint_norm": 4.754089046342578,
+          "native_joint_cosine": 0.9993065271850773,
+          "native_norm": 4.7161808480104215,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.046159616224063504
+        },
+        "13": {
+          "auxiliary_norm": 0.06282281247573919,
+          "cosine": 0.2072208115534343,
+          "joint_norm": 11.624304201660763,
+          "native_joint_cosine": 0.9993194268896327,
+          "native_norm": 11.505655838443879,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.04368134305970054
+        },
+        "16": {
+          "auxiliary_norm": 0.4238610816237271,
+          "cosine": 0.027191467535942117,
+          "joint_norm": 56.914816117909965,
+          "native_joint_cosine": 0.9983521547529395,
+          "native_norm": 56.759082540018944,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.059741780544092016
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 6.800109201231131,
+          "native_joint_cosine": 0.9999999999999999,
+          "native_norm": 6.800109201231131,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 14.147181971286575,
+          "native_joint_cosine": 0.9999999999999999,
+          "native_norm": 14.147181971286575,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 0.5502565848416149,
+          "cosine": 0.22923535953585383,
+          "joint_norm": 64.2060116454673,
+          "native_joint_cosine": 0.9990632092277575,
+          "native_norm": 63.516534967226725,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.06930561752155232
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 0.6001805255246414,
+          "native_joint_cosine": 0.9999999999999999,
+          "native_norm": 0.6001805255246414,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 1.4256823720447909,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 1.4256823720447909,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 82.21103441687313,
+          "native_joint_cosine": 1.0,
+          "native_norm": 82.21103441687313,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 0.13038523418511622,
+          "cosine": 0.09906807115032837,
+          "joint_norm": 14.588730171326763,
+          "native_joint_cosine": 0.9984286156266854,
+          "native_norm": 14.468293127175377,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.07209432821911378
+        },
+        "4": {
+          "auxiliary_norm": 0.2814363165197868,
+          "cosine": 0.10045664887322954,
+          "joint_norm": 36.19059241481724,
+          "native_joint_cosine": 0.998482242293429,
+          "native_norm": 35.92804184492,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.06266666415822605
+        },
+        "5": {
+          "auxiliary_norm": 0.0297613384577873,
+          "cosine": -0.11950368002829763,
+          "joint_norm": 3.5782736191431463,
+          "native_joint_cosine": 0.9981875862937749,
+          "native_norm": 3.6049440488767233,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.06604560415756963
+        },
+        "6": {
+          "auxiliary_norm": 0.07230433665519843,
+          "cosine": -0.004920985381578765,
+          "joint_norm": 10.408463009762052,
+          "native_joint_cosine": 0.9988126503985839,
+          "native_norm": 10.417178528236075,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.05552700202590585
+        },
+        "7": {
+          "auxiliary_norm": 0.008199897422544261,
+          "cosine": -0.12469325737369903,
+          "joint_norm": 1.090836842444979,
+          "native_joint_cosine": 0.9985694605657962,
+          "native_norm": 1.0969007200111773,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.059804117349549775
+        },
+        "8": {
+          "auxiliary_norm": 0.011064033910445551,
+          "cosine": -0.10365180248093095,
+          "joint_norm": 1.4353837529233138,
+          "native_joint_cosine": 0.9986550558189841,
+          "native_norm": 1.4434726199244223,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.061318981781724936
+        },
+        "9": {
+          "auxiliary_norm": 0.023054619792487775,
+          "cosine": 0.054852297343530934,
+          "joint_norm": 1.939887857306273,
+          "native_joint_cosine": 0.9989312599369543,
+          "native_norm": 1.9163854884402538,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.09624209714195626
+        },
+        "projection": {
+          "auxiliary_norm": 0.6067338612535298,
+          "cosine": null,
+          "joint_norm": 4.853870890028238,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 457.0221862792969,
+      "snapshot": "ja_j0_step70_initial_projection"
+    },
+    {
+      "auxiliary_loss": 4.178492546081543,
+      "backbone": {
+        "auxiliary_norm": 1.0339184539690842,
+        "cosine": 0.00934595110407653,
+        "joint_norm": 91.10222070222339,
+        "native_joint_cosine": 0.9973810209237066,
+        "native_norm": 90.6628762220027,
+        "weighted_ratio": 0.09123191295518734
+      },
+      "batch": 7,
+      "clip_coef": {
+        "joint": 0.07201896882110297,
+        "native": 0.07239794414492125
+      },
+      "global": {
+        "joint": 138.8523064363959,
+        "native": 138.12546814291773
+      },
+      "joint_loss": 522.6959838867188,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 0.6532333028684807,
+          "cosine": -0.09451285961598513,
+          "joint_norm": 37.789258529347066,
+          "native_joint_cosine": 0.9934362961869201,
+          "native_norm": 38.524515073856996,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.1356504141046062
+        },
+        "1": {
+          "auxiliary_norm": 0.37886729382972195,
+          "cosine": -0.0814301427475413,
+          "joint_norm": 33.297125395178384,
+          "native_joint_cosine": 0.997906113767628,
+          "native_norm": 33.21658159097505,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.09124775053497021
+        },
+        "10": {
+          "auxiliary_norm": 0.006427214561322164,
+          "cosine": 0.02174964957516283,
+          "joint_norm": 0.9223992075178882,
+          "native_joint_cosine": 0.999410569772621,
+          "native_norm": 0.9214671279173988,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.05579983803305726
+        },
+        "13": {
+          "auxiliary_norm": 0.024960420352325815,
+          "cosine": 0.18777318208793492,
+          "joint_norm": 3.3879590860830047,
+          "native_joint_cosine": 0.9991243843477672,
+          "native_norm": 3.345948909903856,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.05967914280685903
+        },
+        "16": {
+          "auxiliary_norm": 0.5228254922454376,
+          "cosine": 0.18430806840491779,
+          "joint_norm": 67.18571118657107,
+          "native_joint_cosine": 0.998314498194293,
+          "native_norm": 66.30952144732295,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.06307697366337064
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 6.588032212871956,
+          "native_joint_cosine": 1.0,
+          "native_norm": 6.588032212871956,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 20.89452474454592,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 20.89452474454592,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 0.6108084307644256,
+          "cosine": 0.03201968413588073,
+          "joint_norm": 58.172887884754104,
+          "native_joint_cosine": 0.9981058756291794,
+          "native_norm": 57.580913933454696,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.08486262395492045
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 0.2788891999897005,
+          "native_joint_cosine": 0.9999999999999998,
+          "native_norm": 0.2788891999897005,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 0.7173676053218584,
+          "native_joint_cosine": 0.9999999999999998,
+          "native_norm": 0.7173676053218584,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 77.26683692223986,
+          "native_joint_cosine": 1.0,
+          "native_norm": 77.26683692223986,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 0.14455442604225133,
+          "cosine": 0.02845962305540477,
+          "joint_norm": 20.336482822933835,
+          "native_joint_cosine": 0.9990053346072872,
+          "native_norm": 20.253573570351772,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.05709784519364328
+        },
+        "4": {
+          "auxiliary_norm": 0.31989516967498244,
+          "cosine": 0.21986136687244942,
+          "joint_norm": 44.178378561514194,
+          "native_joint_cosine": 0.9987596775298482,
+          "native_norm": 43.511478294641705,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.058815775921706885
+        },
+        "5": {
+          "auxiliary_norm": 0.009993552046771296,
+          "cosine": 0.32990770441944395,
+          "joint_norm": 1.0509345065175486,
+          "native_joint_cosine": 0.9980853792292865,
+          "native_norm": 1.029886397435637,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.07762838364817491
+        },
+        "6": {
+          "auxiliary_norm": 0.04059905358442597,
+          "cosine": 0.1272024424776427,
+          "joint_norm": 2.2491606094436953,
+          "native_joint_cosine": 0.9950656911493467,
+          "native_norm": 2.179857584874902,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.14899708629086747
+        },
+        "7": {
+          "auxiliary_norm": 0.0075126302538691065,
+          "cosine": 0.035275484914540696,
+          "joint_norm": 0.8621098348441754,
+          "native_joint_cosine": 0.9991350236644269,
+          "native_norm": 0.8535973405566105,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.07040912521091314
+        },
+        "8": {
+          "auxiliary_norm": 0.021706792711990452,
+          "cosine": -0.0753050784516468,
+          "joint_norm": 2.2178650891907954,
+          "native_joint_cosine": 0.9974313583437602,
+          "native_norm": 2.2399046511437812,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.07752755975896074
+        },
+        "9": {
+          "auxiliary_norm": 0.01001332113520927,
+          "cosine": -0.19460897276439237,
+          "joint_norm": 0.9084493982422313,
+          "native_joint_cosine": 0.9994230303692551,
+          "native_norm": 0.9233565930805676,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.08675583158443365
+        },
+        "projection": {
+          "auxiliary_norm": 0.2564942507437917,
+          "cosine": null,
+          "joint_norm": 2.0519540059503334,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 489.26806640625,
+      "snapshot": "ja_j1_step70"
+    },
+    {
+      "auxiliary_loss": 3.9537930488586426,
+      "backbone": {
+        "auxiliary_norm": 6.494650275220109,
+        "cosine": -0.07767210564339776,
+        "joint_norm": 2688.652166148019,
+        "native_joint_cosine": 0.9998156202089002,
+        "native_norm": 2691.899282821611,
+        "weighted_ratio": 0.019301317301626552
+      },
+      "batch": 11,
+      "clip_coef": {
+        "joint": 0.003417437036657437,
+        "native": 0.003414019241033514
+      },
+      "global": {
+        "joint": 2926.169491732164,
+        "native": 2929.0988979777153
+      },
+      "joint_loss": 432.9136962890625,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 1.9437107199402135,
+          "cosine": -0.2831239082156161,
+          "joint_norm": 840.9028405527929,
+          "native_joint_cosine": 0.9998477147902763,
+          "native_norm": 844.0310342820835,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.018423120866341094
+        },
+        "1": {
+          "auxiliary_norm": 1.848028400025474,
+          "cosine": -0.24262312021958815,
+          "joint_norm": 899.7689228701935,
+          "native_joint_cosine": 0.9998811380352634,
+          "native_norm": 903.2942406314604,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.016367011473325317
+        },
+        "10": {
+          "auxiliary_norm": 1.9361039801521136,
+          "cosine": -0.03824808320192886,
+          "joint_norm": 877.284787565383,
+          "native_joint_cosine": 0.9998443108535521,
+          "native_norm": 877.73686982849,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.01764632701853282
+        },
+        "13": {
+          "auxiliary_norm": 1.630221375152302,
+          "cosine": 0.0002335931446567588,
+          "joint_norm": 568.9252982060566,
+          "native_joint_cosine": 0.9997372295300305,
+          "native_norm": 568.7806328834652,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.022929351400560932
+        },
+        "16": {
+          "auxiliary_norm": 1.8847385467357767,
+          "cosine": -0.0069065368292991975,
+          "joint_norm": 398.20906893563864,
+          "native_joint_cosine": 0.9992825242169685,
+          "native_norm": 398.0502121972826,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.037879412978213074
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 171.89543172181962,
+          "native_joint_cosine": 1.0,
+          "native_norm": 171.89543172181962,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 384.79842259201206,
+          "native_joint_cosine": 1.0,
+          "native_norm": 384.79842259201206,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 2.263621379351423,
+          "cosine": 0.013276280126235935,
+          "joint_norm": 765.0387213973881,
+          "native_joint_cosine": 0.9997220104904073,
+          "native_norm": 764.7376930516039,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.023679977068410834
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 163.54492020725726,
+          "native_joint_cosine": 1.0,
+          "native_norm": 163.54492020725726,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 454.9134114945924,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 454.9134114945924,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 663.3492346764027,
+          "native_joint_cosine": 0.9999999999999999,
+          "native_norm": 663.3492346764027,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 1.6044956091403464,
+          "cosine": -0.07238008509588027,
+          "joint_norm": 578.7868312444865,
+          "native_joint_cosine": 0.9997549165990597,
+          "native_norm": 579.6049738573806,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.022146057145950627
+        },
+        "4": {
+          "auxiliary_norm": 2.044134906573011,
+          "cosine": -0.032539639380574116,
+          "joint_norm": 763.8802237715191,
+          "native_joint_cosine": 0.9997692287755833,
+          "native_norm": 764.2761516794835,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.021396820006287624
+        },
+        "5": {
+          "auxiliary_norm": 1.747052865343736,
+          "cosine": -0.074076646956558,
+          "joint_norm": 707.7560629792146,
+          "native_joint_cosine": 0.9998041310571006,
+          "native_norm": 708.6811418941983,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.019721736753701403
+        },
+        "6": {
+          "auxiliary_norm": 2.45410158030075,
+          "cosine": -0.0382528705691373,
+          "joint_norm": 987.7394656448956,
+          "native_joint_cosine": 0.9998006565552096,
+          "native_norm": 988.3084434829377,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.019865066186439947
+        },
+        "7": {
+          "auxiliary_norm": 1.4944912948620594,
+          "cosine": -0.038274833584191564,
+          "joint_norm": 669.6429427397173,
+          "native_joint_cosine": 0.9998397213809084,
+          "native_norm": 669.9736349014137,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.017845374408883695
+        },
+        "8": {
+          "auxiliary_norm": 2.488675125622003,
+          "cosine": -0.02202317413992848,
+          "joint_norm": 1069.02053556922,
+          "native_joint_cosine": 0.9998261579365382,
+          "native_norm": 1069.2244597434035,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.01862041297648013
+        },
+        "9": {
+          "auxiliary_norm": 1.363844356302526,
+          "cosine": -0.056364039995266214,
+          "joint_norm": 609.0601446419961,
+          "native_joint_cosine": 0.9998393353659897,
+          "native_norm": 609.5892110078028,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.01789853667584112
+        },
+        "projection": {
+          "auxiliary_norm": 0.6583690199013098,
+          "cosine": null,
+          "joint_norm": 5.266952159210478,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 401.2833557128906,
+      "snapshot": "coco_init"
+    },
+    {
+      "auxiliary_loss": 3.9644346237182617,
+      "backbone": {
+        "auxiliary_norm": 1.9533580868946432,
+        "cosine": 0.8157957162785415,
+        "joint_norm": 246.42669266339513,
+        "native_joint_cosine": 0.9996259642294373,
+        "native_norm": 237.41161394343752,
+        "weighted_ratio": 0.06582182074243509
+      },
+      "batch": 11,
+      "clip_coef": {
+        "joint": 0.038063923918997794,
+        "native": 0.0393445277070565
+      },
+      "global": {
+        "joint": 262.7159507573798,
+        "native": 254.1649510984461
+      },
+      "joint_loss": 494.1183166503906,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 1.6156034513894133,
+          "cosine": 0.931518732316252,
+          "joint_norm": 206.1094029970015,
+          "native_joint_cosine": 0.9998535642042767,
+          "native_norm": 197.8961863751717,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.06531115049691968
+        },
+        "1": {
+          "auxiliary_norm": 0.6975102158047378,
+          "cosine": 0.7774482118813214,
+          "joint_norm": 82.28305319039177,
+          "native_joint_cosine": 0.9996761004405881,
+          "native_norm": 79.31501659574637,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.07035340804224405
+        },
+        "10": {
+          "auxiliary_norm": 0.04287553777825612,
+          "cosine": 0.0008867580368478275,
+          "joint_norm": 13.817743726842307,
+          "native_joint_cosine": 0.9997220912112871,
+          "native_norm": 13.81343535792166,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.024831209133602275
+        },
+        "13": {
+          "auxiliary_norm": 0.07453858232761242,
+          "cosine": 0.3180102969218409,
+          "joint_norm": 14.604545524038082,
+          "native_joint_cosine": 0.999389343008177,
+          "native_norm": 14.404501839036193,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.041397381546712235
+        },
+        "16": {
+          "auxiliary_norm": 0.5726598631382599,
+          "cosine": -0.000499759842626128,
+          "joint_norm": 47.64894500214469,
+          "native_joint_cosine": 0.9955931521845347,
+          "native_norm": 47.43598356072253,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.09657813670589564
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 6.316755555260549,
+          "native_joint_cosine": 1.0,
+          "native_norm": 6.316755555260549,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 15.316691910250118,
+          "native_joint_cosine": 0.9999999999999999,
+          "native_norm": 15.316691910250118,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 0.7486791335341055,
+          "cosine": 0.497741582907835,
+          "joint_norm": 92.994881453035,
+          "native_joint_cosine": 0.9990528071667406,
+          "native_norm": 90.32963847769888,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.06630639919755188
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 1.0274323363602227,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 1.0274323363602227,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 2.5556245350549918,
+          "native_joint_cosine": 0.9999999999999999,
+          "native_norm": 2.5556245350549918,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 74.1336390328664,
+          "native_joint_cosine": 1.0,
+          "native_norm": 74.1336390328664,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 0.16508588994181067,
+          "cosine": 0.2559276797992461,
+          "joint_norm": 17.663086018488762,
+          "native_joint_cosine": 0.9974448494788345,
+          "native_norm": 17.258823888386644,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.07652242864724795
+        },
+        "4": {
+          "auxiliary_norm": 0.3517753779931972,
+          "cosine": 0.18546967178398935,
+          "joint_norm": 43.895855001959625,
+          "native_joint_cosine": 0.9981415748707353,
+          "native_norm": 43.255040776316534,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.06506069520309966
+        },
+        "5": {
+          "auxiliary_norm": 0.02463234244881919,
+          "cosine": 0.15797099340316662,
+          "joint_norm": 5.962910867975925,
+          "native_joint_cosine": 0.9994811072104297,
+          "native_norm": 5.926737535925672,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.03324910853501728
+        },
+        "6": {
+          "auxiliary_norm": 0.06451112573070339,
+          "cosine": 0.21903240913122293,
+          "joint_norm": 15.050841067690246,
+          "native_joint_cosine": 0.9995558480602744,
+          "native_norm": 14.911847125411379,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.03460932783881323
+        },
+        "7": {
+          "auxiliary_norm": 0.009105899362768845,
+          "cosine": 0.08436111285456938,
+          "joint_norm": 3.083455114628433,
+          "native_joint_cosine": 0.9997932877663578,
+          "native_norm": 3.0736891297582134,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.023700248081978664
+        },
+        "8": {
+          "auxiliary_norm": 0.01303943451061295,
+          "cosine": 0.2829218246402702,
+          "joint_norm": 6.913491118596911,
+          "native_joint_cosine": 0.9999365964722051,
+          "native_norm": 6.892328948510137,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.01513501123701484
+        },
+        "9": {
+          "auxiliary_norm": 0.023095369686025144,
+          "cosine": 0.06399890183477694,
+          "joint_norm": 8.793811513600424,
+          "native_joint_cosine": 0.9998835739068973,
+          "native_norm": 8.771584328097688,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.021063806785321194
+        },
+        "projection": {
+          "auxiliary_norm": 0.7066148781975564,
+          "cosine": null,
+          "joint_norm": 5.652919025580451,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 462.40283203125,
+      "snapshot": "ja_j0_step70_initial_projection"
+    },
+    {
+      "auxiliary_loss": 4.040820598602295,
+      "backbone": {
+        "auxiliary_norm": 1.6582161249216212,
+        "cosine": 0.5396231555734928,
+        "joint_norm": 165.83591343765713,
+        "native_joint_cosine": 0.9987596094360142,
+        "native_norm": 159.1811742923839,
+        "weighted_ratio": 0.08333729825994678
+      },
+      "batch": 11,
+      "clip_coef": {
+        "joint": 0.05011876982016173,
+        "native": 0.05166345522777008
+      },
+      "global": {
+        "joint": 199.5260455466814,
+        "native": 193.5604172088234
+      },
+      "joint_loss": 518.2264404296875,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 1.254027797197938,
+          "cosine": 0.701423764560097,
+          "joint_norm": 86.29389238702898,
+          "native_joint_cosine": 0.9982451482528983,
+          "native_norm": 80.54474414038154,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.12455464952621031
+        },
+        "1": {
+          "auxiliary_norm": 0.5875194637848736,
+          "cosine": 0.5611430907926243,
+          "joint_norm": 81.41279465182608,
+          "native_joint_cosine": 0.9996104856398195,
+          "native_norm": 78.94346797813613,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.05953824718697088
+        },
+        "10": {
+          "auxiliary_norm": 0.0075743737750255564,
+          "cosine": 0.4586185109211734,
+          "joint_norm": 1.2282823716956455,
+          "native_joint_cosine": 0.9994814408361835,
+          "native_norm": 1.199575166001749,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.05051370845077673
+        },
+        "13": {
+          "auxiliary_norm": 0.02479271713166989,
+          "cosine": 0.19795034788561422,
+          "joint_norm": 3.6590360243782976,
+          "native_joint_cosine": 0.9991964273647592,
+          "native_norm": 3.6056519494882022,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.05500856428516689
+        },
+        "16": {
+          "auxiliary_norm": 0.7366500285417822,
+          "cosine": 0.19504467957246557,
+          "joint_norm": 64.62479780043766,
+          "native_joint_cosine": 0.9961203068510003,
+          "native_norm": 63.25082759730382,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.09317190702790845
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 6.390114836160906,
+          "native_joint_cosine": 1.0,
+          "native_norm": 6.390114836160906,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 23.574955713024693,
+          "native_joint_cosine": 1.0,
+          "native_norm": 23.574955713024693,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 0.7150308358064968,
+          "cosine": 0.46277487504673737,
+          "joint_norm": 98.61525633283352,
+          "native_joint_cosine": 0.9992448615859509,
+          "native_norm": 95.75282947689766,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.059739714405328374
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 0.8073506009713689,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 0.8073506009713689,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 2.0558625010991585,
+          "native_joint_cosine": 0.9999999999999998,
+          "native_norm": 2.0558625010991585,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 86.67081661736006,
+          "native_joint_cosine": 0.9999999999999999,
+          "native_norm": 86.67081661736006,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 0.20790272423266243,
+          "cosine": 0.41528971246186797,
+          "joint_norm": 28.310552904826455,
+          "native_joint_cosine": 0.9988998581915911,
+          "native_norm": 27.471541678400765,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.060543445771337676
+        },
+        "4": {
+          "auxiliary_norm": 0.5242234403798842,
+          "cosine": 0.4273068617376194,
+          "joint_norm": 53.12705608876975,
+          "native_joint_cosine": 0.9977144130102853,
+          "native_norm": 51.17108851869447,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.08195619136589104
+        },
+        "5": {
+          "auxiliary_norm": 0.011288496390982034,
+          "cosine": 0.09156035582187452,
+          "joint_norm": 2.6374913884989555,
+          "native_joint_cosine": 0.9997279378411873,
+          "native_norm": 2.6375936935605764,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.03423877276789607
+        },
+        "6": {
+          "auxiliary_norm": 0.039160885220385085,
+          "cosine": -0.10799662424420277,
+          "joint_norm": 6.659100130741294,
+          "native_joint_cosine": 0.9994183457565795,
+          "native_norm": 6.700698090714952,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.04675439447080857
+        },
+        "7": {
+          "auxiliary_norm": 0.007809618567764869,
+          "cosine": 0.1541542621132959,
+          "joint_norm": 1.542852571193826,
+          "native_joint_cosine": 0.9996749591646104,
+          "native_norm": 1.5344733085332327,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.04071556552641454
+        },
+        "8": {
+          "auxiliary_norm": 0.02516314211139261,
+          "cosine": 0.4782046747765203,
+          "joint_norm": 4.456484846567259,
+          "native_joint_cosine": 0.9993913905890078,
+          "native_norm": 4.357888390609605,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.046193275010189334
+        },
+        "9": {
+          "auxiliary_norm": 0.014158956687828668,
+          "cosine": 0.49975061505696344,
+          "joint_norm": 1.6975303079647794,
+          "native_joint_cosine": 0.9996970061327631,
+          "native_norm": 1.6456042373664201,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.06883286450690367
+        },
+        "projection": {
+          "auxiliary_norm": 0.30666266055794683,
+          "cosine": null,
+          "joint_norm": 2.4533012844635746,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 485.89990234375,
+      "snapshot": "ja_j1_step70"
+    },
+    {
+      "auxiliary_loss": 3.6873250007629395,
+      "backbone": {
+        "auxiliary_norm": 8.74412886885793,
+        "cosine": 0.06250184487704151,
+        "joint_norm": 2545.992569914054,
+        "native_joint_cosine": 0.9996226638131256,
+        "native_norm": 2540.831316982874,
+        "weighted_ratio": 0.0275315525604941
+      },
+      "batch": 21,
+      "clip_coef": {
+        "joint": 0.0035389697630250037,
+        "native": 0.0035455423784491436
+      },
+      "global": {
+        "joint": 2825.6811066713763,
+        "native": 2820.4429475268494
+      },
+      "joint_loss": 432.2780456542969,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 3.9742112321275593,
+          "cosine": 0.2407060410712957,
+          "joint_norm": 499.0359215831559,
+          "native_joint_cosine": 0.998033407068229,
+          "native_norm": 490.44688160375784,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.06482595985329814
+        },
+        "1": {
+          "auxiliary_norm": 2.4786359644317595,
+          "cosine": -0.057583558047651605,
+          "joint_norm": 683.2903453906324,
+          "native_joint_cosine": 0.9995875117283181,
+          "native_norm": 684.1946270551358,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.028981647810946854
+        },
+        "10": {
+          "auxiliary_norm": 2.620484920869283,
+          "cosine": 0.05458662289791784,
+          "joint_norm": 836.0052899531375,
+          "native_joint_cosine": 0.9996859490519163,
+          "native_norm": 834.597330259227,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.0251185555080111
+        },
+        "13": {
+          "auxiliary_norm": 2.148180089420667,
+          "cosine": 0.06445834428551746,
+          "joint_norm": 589.6503732287238,
+          "native_joint_cosine": 0.9995763825855782,
+          "native_norm": 588.2755528812211,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.029213249864277896
+        },
+        "16": {
+          "auxiliary_norm": 2.42055319801828,
+          "cosine": 0.06711281143325692,
+          "joint_norm": 484.2832071107604,
+          "native_joint_cosine": 0.9992039170148144,
+          "native_norm": 482.59887230967024,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.04012530218205862
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 147.33736923171838,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 147.33736923171838,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 335.6360478182983,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 335.6360478182983,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 2.6173324708972876,
+          "cosine": 0.06075739220133712,
+          "joint_norm": 857.5127099796825,
+          "native_joint_cosine": 0.9997088307970986,
+          "native_norm": 856.1111480799799,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.02445787537533872
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 120.78624503403458,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 120.78624503403458,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 318.68391497456247,
+          "native_joint_cosine": 1.0,
+          "native_norm": 318.68391497456247,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 818.2885979900967,
+          "native_joint_cosine": 1.0,
+          "native_norm": 818.2885979900967,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 1.9425892258125952,
+          "cosine": 0.08258362772869333,
+          "joint_norm": 677.398443852212,
+          "native_joint_cosine": 0.9997388468920003,
+          "native_norm": 676.0180959705974,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.022988606220944546
+        },
+        "4": {
+          "auxiliary_norm": 2.5422530903692233,
+          "cosine": 0.09720586989237061,
+          "joint_norm": 850.9781061352766,
+          "native_joint_cosine": 0.999717671942089,
+          "native_norm": 848.9256153523147,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.023957369591814298
+        },
+        "5": {
+          "auxiliary_norm": 2.1665162397686557,
+          "cosine": 0.0461937379722222,
+          "joint_norm": 714.9565300164986,
+          "native_joint_cosine": 0.9997052938333436,
+          "native_norm": 713.9986711163804,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.024274736941806076
+        },
+        "6": {
+          "auxiliary_norm": 2.8440112896617684,
+          "cosine": 0.05065611543629743,
+          "joint_norm": 899.4488075922759,
+          "native_joint_cosine": 0.9996797149571516,
+          "native_norm": 898.0774471813279,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.025334218545074262
+        },
+        "7": {
+          "auxiliary_norm": 2.085662878091841,
+          "cosine": 0.024501127883858373,
+          "joint_norm": 659.4044617059675,
+          "native_joint_cosine": 0.9996786999451868,
+          "native_norm": 658.7648503868156,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.02532816226448239
+        },
+        "8": {
+          "auxiliary_norm": 3.203346897929936,
+          "cosine": 0.050309920607193484,
+          "joint_norm": 1018.8347351142943,
+          "native_joint_cosine": 0.999683650891647,
+          "native_norm": 1017.2276248401178,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.02519276370170085
+        },
+        "9": {
+          "auxiliary_norm": 1.7816033597765282,
+          "cosine": 0.04230791130948208,
+          "joint_norm": 596.5575232752583,
+          "native_joint_cosine": 0.999714205903792,
+          "native_norm": 595.7758048432071,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.02392313813744619
+        },
+        "projection": {
+          "auxiliary_norm": 1.0674296156803527,
+          "cosine": null,
+          "joint_norm": 8.539436925442821,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 402.7794494628906,
+      "snapshot": "coco_init"
+    },
+    {
+      "auxiliary_loss": 3.6635849475860596,
+      "backbone": {
+        "auxiliary_norm": 2.20470352501094,
+        "cosine": 0.5993708679330628,
+        "joint_norm": 147.82498075820033,
+        "native_joint_cosine": 0.9976289461486726,
+        "native_norm": 139.94267892082917,
+        "weighted_ratio": 0.12603466173507932
+      },
+      "batch": 21,
+      "clip_coef": {
+        "joint": 0.05106495887507998,
+        "native": 0.052846397169078047
+      },
+      "global": {
+        "joint": 195.829002298778,
+        "native": 189.22765756687934
+      },
+      "joint_loss": 430.1719055175781,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 1.7811081440708827,
+          "cosine": 0.78515348152126,
+          "joint_norm": 115.3025340164704,
+          "native_joint_cosine": 0.9986786462080854,
+          "native_norm": 107.27825062595595,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.13282156513017887
+        },
+        "1": {
+          "auxiliary_norm": 0.9211388949676481,
+          "cosine": 0.5264909643440027,
+          "joint_norm": 46.33501427842932,
+          "native_joint_cosine": 0.9954740265781094,
+          "native_norm": 43.346233543609365,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.17000580113442473
+        },
+        "10": {
+          "auxiliary_norm": 0.03406672202659992,
+          "cosine": 0.43642411566611305,
+          "joint_norm": 5.330428168885836,
+          "native_joint_cosine": 0.9991513995182695,
+          "native_norm": 5.203473510591202,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.052375355742290484
+        },
+        "13": {
+          "auxiliary_norm": 0.0848702952707174,
+          "cosine": 0.3439758664500312,
+          "joint_norm": 16.220667000856086,
+          "native_joint_cosine": 0.9992939149978389,
+          "native_norm": 15.974234630817305,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.04250359268267495
+        },
+        "16": {
+          "auxiliary_norm": 0.5465072741079027,
+          "cosine": 0.3525637533041755,
+          "joint_norm": 73.31997447070576,
+          "native_joint_cosine": 0.9984981371239858,
+          "native_norm": 71.68019924344944,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.060993945873591665
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 6.052513967897353,
+          "native_joint_cosine": 1.0,
+          "native_norm": 6.052513967897353,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 21.17560285884699,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 21.17560285884699,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 0.8366364915281537,
+          "cosine": 0.24127096082696273,
+          "joint_norm": 60.967164515752955,
+          "native_joint_cosine": 0.9963840162883655,
+          "native_norm": 59.516626680972706,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.11245751490759458
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 0.05884601988345807,
+          "native_joint_cosine": 1.0,
+          "native_norm": 0.05884601988345807,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 0.2572601736565325,
+          "native_joint_cosine": 0.9999999999999998,
+          "native_norm": 0.2572601736565325,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 101.70947419818198,
+          "native_joint_cosine": 1.0,
+          "native_norm": 101.70947419818198,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 0.14024828927759653,
+          "cosine": 0.11096386088821533,
+          "joint_norm": 16.613895750217985,
+          "native_joint_cosine": 0.9982880125537492,
+          "native_norm": 16.457216094722178,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.06817594833555067
+        },
+        "4": {
+          "auxiliary_norm": 0.32846329154231285,
+          "cosine": 0.06165400782970402,
+          "joint_norm": 46.33936091607772,
+          "native_joint_cosine": 0.9985992561949668,
+          "native_norm": 46.09257633913313,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.05700931779132402
+        },
+        "5": {
+          "auxiliary_norm": 0.032337631987219846,
+          "cosine": 0.3989047787336223,
+          "joint_norm": 5.19319447674877,
+          "native_joint_cosine": 0.999024850643137,
+          "native_norm": 5.084325682958328,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.05088207798427911
+        },
+        "6": {
+          "auxiliary_norm": 0.09579529042376962,
+          "cosine": 0.39010275012449014,
+          "joint_norm": 14.398155591510108,
+          "native_joint_cosine": 0.9989248300019364,
+          "native_norm": 14.088123056340605,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.05439775904322771
+        },
+        "7": {
+          "auxiliary_norm": 0.012610343583553991,
+          "cosine": -0.2156192630797702,
+          "joint_norm": 1.0106674245006513,
+          "native_joint_cosine": 0.9955421026731448,
+          "native_norm": 1.025329809656034,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.09839053514134631
+        },
+        "8": {
+          "auxiliary_norm": 0.012720715854568129,
+          "cosine": -0.06442754615102665,
+          "joint_norm": 1.332759556790422,
+          "native_joint_cosine": 0.99783649222217,
+          "native_norm": 1.3325692133458815,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.0763680608987105
+        },
+        "9": {
+          "auxiliary_norm": 0.025541612487821896,
+          "cosine": 0.21991618266499524,
+          "joint_norm": 2.1855598154099067,
+          "native_joint_cosine": 0.9988099352247146,
+          "native_norm": 2.1473704158662628,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.09515493852053745
+        },
+        "projection": {
+          "auxiliary_norm": 0.6604761746512435,
+          "cosine": null,
+          "joint_norm": 5.283809397209948,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 400.86322021484375,
+      "snapshot": "ja_j0_step70_initial_projection"
+    },
+    {
+      "auxiliary_loss": 3.7265145778656006,
+      "backbone": {
+        "auxiliary_norm": 1.0192536466650983,
+        "cosine": 0.29336215951088035,
+        "joint_norm": 90.934006523337,
+        "native_joint_cosine": 0.998206000220959,
+        "native_norm": 89.56753204889698,
+        "weighted_ratio": 0.09103777883339818
+      },
+      "batch": 21,
+      "clip_coef": {
+        "joint": 0.06675705339376463,
+        "native": 0.06728163283952013
+      },
+      "global": {
+        "joint": 149.79690422011626,
+        "native": 148.62897213821083
+      },
+      "joint_loss": 444.4414367675781,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 0.6398041039226077,
+          "cosine": 0.8568581448760254,
+          "joint_norm": 39.980864588013006,
+          "native_joint_cosine": 0.9993141616254492,
+          "native_norm": 38.188283827958294,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.13403149653018892
+        },
+        "1": {
+          "auxiliary_norm": 0.412001268428355,
+          "cosine": 0.09680826535020831,
+          "joint_norm": 36.74777832500817,
+          "native_joint_cosine": 0.9983901264171645,
+          "native_norm": 36.23212556161074,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.09096927371324534
+        },
+        "10": {
+          "auxiliary_norm": 0.005139438957464184,
+          "cosine": -0.06390265322916797,
+          "joint_norm": 0.3738324751718116,
+          "native_joint_cosine": 0.9968195324483041,
+          "native_norm": 0.3707920743910329,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.1108856270114165
+        },
+        "13": {
+          "auxiliary_norm": 0.02632075110675658,
+          "cosine": 0.4044778952468392,
+          "joint_norm": 3.6882605020855954,
+          "native_joint_cosine": 0.9992261494753518,
+          "native_norm": 3.5979261850057673,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.058524271490498936
+        },
+        "16": {
+          "auxiliary_norm": 0.6256553754189593,
+          "cosine": 0.11895809992820112,
+          "joint_norm": 62.8992186282117,
+          "native_joint_cosine": 0.9969177804088323,
+          "native_norm": 62.101199191373595,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.08059816989889862
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 5.297095958073342,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 5.297095958073342,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 12.877186485963685,
+          "native_joint_cosine": 1.0,
+          "native_norm": 12.877186485963685,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 0.5675985876136974,
+          "cosine": 0.08551938701028759,
+          "joint_norm": 61.08779392770814,
+          "native_joint_cosine": 0.9982265307187711,
+          "native_norm": 60.751394585753914,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.07474377719016817
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 0.14625351466202274,
+          "native_joint_cosine": 1.0,
+          "native_norm": 0.14625351466202274,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 0.6533492287852108,
+          "native_joint_cosine": 1.0,
+          "native_norm": 0.6533492287852108,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 100.02197326089313,
+          "native_joint_cosine": 1.0,
+          "native_norm": 100.02197326089313,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 0.14962736917875027,
+          "cosine": 0.1855041176250752,
+          "joint_norm": 19.06712395603439,
+          "native_joint_cosine": 0.9983602909076273,
+          "native_norm": 18.85535454582115,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.06348429834724553
+        },
+        "4": {
+          "auxiliary_norm": 0.3372697334868105,
+          "cosine": 0.07792670697112052,
+          "joint_norm": 34.90272427881398,
+          "native_joint_cosine": 0.9972556905798036,
+          "native_norm": 34.62070386620365,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.07793480682316214
+        },
+        "5": {
+          "auxiliary_norm": 0.011347095829456937,
+          "cosine": 0.2545298112295927,
+          "joint_norm": 0.8839810289369334,
+          "native_joint_cosine": 0.9986362771710348,
+          "native_norm": 0.871610798080533,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.10414828136086048
+        },
+        "6": {
+          "auxiliary_norm": 0.032681554891566565,
+          "cosine": 0.22972098224573054,
+          "joint_norm": 2.1716864125721935,
+          "native_joint_cosine": 0.9990797315639709,
+          "native_norm": 2.1306445738337043,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.12271048974728656
+        },
+        "7": {
+          "auxiliary_norm": 0.005225503746415828,
+          "cosine": 0.09568000459184615,
+          "joint_norm": 0.25260649258768236,
+          "native_joint_cosine": 0.9986736061169298,
+          "native_norm": 0.24213442027285814,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.17264802717522854
+        },
+        "8": {
+          "auxiliary_norm": 0.010001180411610265,
+          "cosine": 0.044287419020683186,
+          "joint_norm": 0.9076872907551323,
+          "native_joint_cosine": 0.9983137060144806,
+          "native_norm": 0.8769855029215952,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.09123234423640772
+        },
+        "9": {
+          "auxiliary_norm": 0.011211436879992636,
+          "cosine": -0.05583874142691153,
+          "joint_norm": 0.3546139507099102,
+          "native_joint_cosine": 0.9973552023083037,
+          "native_norm": 0.34176957679017,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.2624326479913902
+        },
+        "projection": {
+          "auxiliary_norm": 0.15204102458908092,
+          "cosine": null,
+          "joint_norm": 1.2163281967126474,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 414.62933349609375,
+      "snapshot": "ja_j1_step70"
+    },
+    {
+      "auxiliary_loss": 3.9954590797424316,
+      "backbone": {
+        "auxiliary_norm": 10.583496681791136,
+        "cosine": -0.01634610457918613,
+        "joint_norm": 3296.9861025620003,
+        "native_joint_cosine": 0.9996659705268298,
+        "native_norm": 3297.354186136867,
+        "weighted_ratio": 0.025677548930078654
+      },
+      "batch": 32,
+      "clip_coef": {
+        "joint": 0.0028021570740079924,
+        "native": 0.0028018794860073717
+      },
+      "global": {
+        "joint": 3568.679318498946,
+        "native": 3569.0328749463606
+      },
+      "joint_loss": 452.2559814453125,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 4.818811858150351,
+          "cosine": 0.29933732012666187,
+          "joint_norm": 839.5439170241036,
+          "native_joint_cosine": 0.9990063381459361,
+          "native_norm": 826.1350557382221,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.04666367151162064
+        },
+        "1": {
+          "auxiliary_norm": 3.2870131914182514,
+          "cosine": 0.002579259395697222,
+          "joint_norm": 910.9506199452345,
+          "native_joint_cosine": 0.9995773128978185,
+          "native_norm": 910.7735202180542,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.028872277188131568
+        },
+        "10": {
+          "auxiliary_norm": 3.4128304752281733,
+          "cosine": -0.0025293312332500296,
+          "joint_norm": 1018.2406764196062,
+          "native_joint_cosine": 0.9996403022451635,
+          "native_norm": 1017.9792508841285,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.026820432516785266
+        },
+        "13": {
+          "auxiliary_norm": 2.664897062685277,
+          "cosine": -0.023815378000125512,
+          "joint_norm": 729.6454788897117,
+          "native_joint_cosine": 0.9995735315491132,
+          "native_norm": 729.8393973983308,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.029210777847124992
+        },
+        "16": {
+          "auxiliary_norm": 2.785955637298609,
+          "cosine": -0.016022370267887536,
+          "joint_norm": 518.0598300078533,
+          "native_joint_cosine": 0.9990742338730272,
+          "native_norm": 517.9364407762035,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.043031621920611676
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 196.00565251403205,
+          "native_joint_cosine": 1.0,
+          "native_norm": 196.00565251403205,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 455.07535826848067,
+          "native_joint_cosine": 1.0,
+          "native_norm": 455.07535826848067,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 2.8174931985257303,
+          "cosine": -0.03913441089459262,
+          "joint_norm": 1004.1551528709557,
+          "native_joint_cosine": 0.9997509274462207,
+          "native_norm": 1005.1070568037761,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.022425417706132218
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 198.83137240173008,
+          "native_joint_cosine": 1.0,
+          "native_norm": 198.83137240173008,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 475.444582452387,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 475.444582452387,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 743.9314940098753,
+          "native_joint_cosine": 1.0,
+          "native_norm": 743.9314940098753,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 1.82815857576497,
+          "cosine": -0.06459479287488769,
+          "joint_norm": 787.966319085675,
+          "native_joint_cosine": 0.9998278011881032,
+          "native_norm": 788.9241077876317,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.018538245265610133
+        },
+        "4": {
+          "auxiliary_norm": 2.703370118182984,
+          "cosine": -0.1242113646895608,
+          "joint_norm": 1081.618694664852,
+          "native_joint_cosine": 0.9998028147409862,
+          "native_norm": 1084.2648869750906,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.019946196916695615
+        },
+        "5": {
+          "auxiliary_norm": 2.3735008713028036,
+          "cosine": -0.06958507947903679,
+          "joint_norm": 922.3109067399162,
+          "native_joint_cosine": 0.9997878309460828,
+          "native_norm": 923.5017498931251,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.020560878171178205
+        },
+        "6": {
+          "auxiliary_norm": 3.3552555145722263,
+          "cosine": -0.09892580983732373,
+          "joint_norm": 1292.3825019547112,
+          "native_joint_cosine": 0.9997854463835176,
+          "native_norm": 1294.8258499812148,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.02073023497095554
+        },
+        "7": {
+          "auxiliary_norm": 2.4464666872201306,
+          "cosine": -0.06523385963908424,
+          "joint_norm": 853.9785777672648,
+          "native_joint_cosine": 0.9997374348129209,
+          "native_norm": 855.0550383582487,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.022889442924445915
+        },
+        "8": {
+          "auxiliary_norm": 4.388560256810257,
+          "cosine": -0.08112900714464011,
+          "joint_norm": 1295.1631605489745,
+          "native_joint_cosine": 0.9996335219627707,
+          "native_norm": 1297.5551327623066,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.027057410639454826
+        },
+        "9": {
+          "auxiliary_norm": 2.36918523648711,
+          "cosine": -0.006816670679784942,
+          "joint_norm": 756.2299976216078,
+          "native_joint_cosine": 0.999684949770059,
+          "native_norm": 756.1650907880439,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.025065269638597502
+        },
+        "projection": {
+          "auxiliary_norm": 0.9591217360237149,
+          "cosine": null,
+          "joint_norm": 7.672973888189719,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 420.29229736328125,
+      "snapshot": "coco_init"
+    },
+    {
+      "auxiliary_loss": 4.048259735107422,
+      "backbone": {
+        "auxiliary_norm": 1.281628735372995,
+        "cosine": -0.40405429810527516,
+        "joint_norm": 211.27685717456006,
+        "native_joint_cosine": 0.9993666635036528,
+        "native_norm": 215.3026589730062,
+        "weighted_ratio": 0.0476214735660531
+      },
+      "batch": 32,
+      "clip_coef": {
+        "joint": 0.04031168801264262,
+        "native": 0.03979284261136411
+      },
+      "global": {
+        "joint": 248.06701114952304,
+        "native": 251.3014729274792
+      },
+      "joint_loss": 492.0390319824219,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 0.7724199549040041,
+          "cosine": -0.6588925600335789,
+          "joint_norm": 174.1157497759663,
+          "native_joint_cosine": 0.9997710576687519,
+          "native_norm": 178.2010400057263,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.034676338808311474
+        },
+        "1": {
+          "auxiliary_norm": 0.5100905287740048,
+          "cosine": -0.31533217045706036,
+          "joint_norm": 63.90574714490786,
+          "native_joint_cosine": 0.9993290564597385,
+          "native_norm": 64.91133749422436,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.06286612458963939
+        },
+        "10": {
+          "auxiliary_norm": 0.03160333682267507,
+          "cosine": -0.13190408881048682,
+          "joint_norm": 5.461451539553815,
+          "native_joint_cosine": 0.9990722025960375,
+          "native_norm": 5.490389164548657,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.04604895700543377
+        },
+        "13": {
+          "auxiliary_norm": 0.08855380550091939,
+          "cosine": -0.2871412026832069,
+          "joint_norm": 14.913518378037026,
+          "native_joint_cosine": 0.9990741329676203,
+          "native_norm": 15.090371618757425,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.04694585805473284
+        },
+        "16": {
+          "auxiliary_norm": 0.7459180881100201,
+          "cosine": 0.03908874503826079,
+          "joint_norm": 65.27299649485118,
+          "native_joint_cosine": 0.9958758975770161,
+          "native_norm": 64.77222269225976,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.09212814470226996
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 5.399195936615981,
+          "native_joint_cosine": 1.0,
+          "native_norm": 5.399195936615981,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 21.768701038687496,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 21.768701038687496,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 0.7234308884365062,
+          "cosine": -0.16469385105811415,
+          "joint_norm": 81.51977859898977,
+          "native_joint_cosine": 0.9984459798643931,
+          "native_norm": 82.48080468620886,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.0701671998655917
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 0.9020105465089499,
+          "native_joint_cosine": 1.0,
+          "native_norm": 0.9020105465089499,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 2.092923604467762,
+          "native_joint_cosine": 0.9999999999999998,
+          "native_norm": 2.092923604467762,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 108.93031521423316,
+          "native_joint_cosine": 1.0,
+          "native_norm": 108.93031521423316,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 0.20811528367218318,
+          "cosine": -0.0631175782052889,
+          "joint_norm": 21.25600346582393,
+          "native_joint_cosine": 0.9973519853733909,
+          "native_norm": 21.305887432599913,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.07814376540964849
+        },
+        "4": {
+          "auxiliary_norm": 0.45665973961958867,
+          "cosine": -0.0009734310989025327,
+          "joint_norm": 54.56219090459388,
+          "native_joint_cosine": 0.9980578873067901,
+          "native_norm": 54.432218936275035,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.06711609389346557
+        },
+        "5": {
+          "auxiliary_norm": 0.029910243241672244,
+          "cosine": -0.08307763107233608,
+          "joint_norm": 4.033354681090865,
+          "native_joint_cosine": 0.9985927162562375,
+          "native_norm": 4.0436322579974515,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.05917500174753249
+        },
+        "6": {
+          "auxiliary_norm": 0.08872848976483459,
+          "cosine": -0.19645945233990664,
+          "joint_norm": 10.340154685237783,
+          "native_joint_cosine": 0.9979933459186054,
+          "native_norm": 10.450879051958088,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.06792040311534202
+        },
+        "7": {
+          "auxiliary_norm": 0.009153638159099071,
+          "cosine": -0.24518533209884127,
+          "joint_norm": 1.4859481059725284,
+          "native_joint_cosine": 0.9989599132715382,
+          "native_norm": 1.5036962921486245,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.04869939871179429
+        },
+        "8": {
+          "auxiliary_norm": 0.012007742297789805,
+          "cosine": -0.23899903438487288,
+          "joint_norm": 1.7043226548003259,
+          "native_joint_cosine": 0.9988433560132752,
+          "native_norm": 1.7267348712310946,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.05563212973965715
+        },
+        "9": {
+          "auxiliary_norm": 0.023469729692276016,
+          "cosine": -0.08349546269527915,
+          "joint_norm": 2.284713895557145,
+          "native_joint_cosine": 0.9985156986994049,
+          "native_norm": 2.300696265045681,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.0816091373688913
+        },
+        "projection": {
+          "auxiliary_norm": 0.8131665985051201,
+          "cosine": null,
+          "joint_norm": 6.505332788040961,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 459.6529541015625,
+      "snapshot": "ja_j0_step70_initial_projection"
+    },
+    {
+      "auxiliary_loss": 4.157486915588379,
+      "backbone": {
+        "auxiliary_norm": 1.905554011387494,
+        "cosine": -0.005753556356434248,
+        "joint_norm": 118.67182257065863,
+        "native_joint_cosine": 0.9940476489665667,
+        "native_norm": 118.5732834830714,
+        "weighted_ratio": 0.12856548830644793
+      },
+      "batch": 32,
+      "clip_coef": {
+        "joint": 0.055527962881635945,
+        "native": 0.055670438080650565
+      },
+      "global": {
+        "joint": 180.08944368782542,
+        "native": 179.6285477373542
+      },
+      "joint_loss": 517.2206420898438,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 0.9839619595933964,
+          "cosine": 0.07552208160097407,
+          "joint_norm": 81.43848834825,
+          "native_joint_cosine": 0.9953017310821263,
+          "native_norm": 81.84791005833073,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.0961746692265842
+        },
+        "1": {
+          "auxiliary_norm": 0.9647547294104535,
+          "cosine": -0.16497001128148261,
+          "joint_norm": 41.7512666108967,
+          "native_joint_cosine": 0.9941951461756573,
+          "native_norm": 41.6206405142385,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.18543774771181795
+        },
+        "10": {
+          "auxiliary_norm": 0.0025819946135263888,
+          "cosine": -0.12823043052757252,
+          "joint_norm": 1.84621475469847,
+          "native_joint_cosine": 0.9999807961874135,
+          "native_norm": 1.8484037617651987,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.011175024275261684
+        },
+        "13": {
+          "auxiliary_norm": 0.030484745968127454,
+          "cosine": 0.04890877475298383,
+          "joint_norm": 3.1285113684946424,
+          "native_joint_cosine": 0.9979911690999044,
+          "native_norm": 3.095835028396946,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.07877615102485033
+        },
+        "16": {
+          "auxiliary_norm": 0.7219123482436438,
+          "cosine": 0.10460337439233816,
+          "joint_norm": 84.29302374780845,
+          "native_joint_cosine": 0.9977475241485443,
+          "native_norm": 83.4883872054562,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.06917487544389549
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 4.068796048328622,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 4.068796048328622,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 11.86242560402521,
+          "native_joint_cosine": 1.0,
+          "native_norm": 11.86242560402521,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 1.1881642798716157,
+          "cosine": -0.02474609576430308,
+          "joint_norm": 57.61814130569044,
+          "native_joint_cosine": 0.9901011515930085,
+          "native_norm": 57.23114919827524,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.16608637729852513
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 1.950301127363945,
+          "native_joint_cosine": 1.0,
+          "native_norm": 1.950301127363945,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 5.769942722036958,
+          "native_joint_cosine": 1.0,
+          "native_norm": 5.769942722036958,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 105.03584368007897,
+          "native_joint_cosine": 0.9999999999999999,
+          "native_norm": 105.03584368007897,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 0.29301853020261787,
+          "cosine": 0.11949221184842733,
+          "joint_norm": 20.950888938981244,
+          "native_joint_cosine": 0.9940446325168358,
+          "native_norm": 20.54030246408846,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.11412432926532233
+        },
+        "4": {
+          "auxiliary_norm": 0.4835458671782824,
+          "cosine": 0.011137372186591128,
+          "joint_norm": 43.1400012990513,
+          "native_joint_cosine": 0.99629292434796,
+          "native_norm": 42.93932142794907,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.09008914926420686
+        },
+        "5": {
+          "auxiliary_norm": 0.008244900517887436,
+          "cosine": -0.1933726751793233,
+          "joint_norm": 2.959886579545512,
+          "native_joint_cosine": 0.9998141924228469,
+          "native_norm": 2.937585514934129,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.02245354349950848
+        },
+        "6": {
+          "auxiliary_norm": 0.02667033620861026,
+          "cosine": -0.11624703128883819,
+          "joint_norm": 6.317442407078535,
+          "native_joint_cosine": 0.9996943493707796,
+          "native_norm": 6.289232403512258,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.033925076381297097
+        },
+        "7": {
+          "auxiliary_norm": 0.0006281032911389015,
+          "cosine": 0.17384060317169592,
+          "joint_norm": 1.745413573061157,
+          "native_joint_cosine": 0.9999855625783325,
+          "native_norm": 1.7415514531188199,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.002885258612435831
+        },
+        "8": {
+          "auxiliary_norm": 0.001674289211492259,
+          "cosine": -0.12549359600086968,
+          "joint_norm": 5.403871598524436,
+          "native_joint_cosine": 0.9999875709436554,
+          "native_norm": 5.395896514348361,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.002482314784266326
+        },
+        "9": {
+          "auxiliary_norm": 0.0018149726713960902,
+          "cosine": 0.0017067401293575839,
+          "joint_norm": 1.8515788927591808,
+          "native_joint_cosine": 0.9999887160101018,
+          "native_norm": 1.8500053117974145,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.0078485079359376
+        },
+        "projection": {
+          "auxiliary_norm": 0.3356012802201413,
+          "cosine": null,
+          "joint_norm": 2.6848102417611304,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 483.96075439453125,
+      "snapshot": "ja_j1_step70"
+    },
+    {
+      "auxiliary_loss": 3.5789012908935547,
+      "backbone": {
+        "auxiliary_norm": 4.106891750192969,
+        "cosine": 0.06407069706944792,
+        "joint_norm": 2976.5921661639686,
+        "native_joint_cosine": 0.9999387349703915,
+        "native_norm": 2974.522221559803,
+        "weighted_ratio": 0.011045516407107197
+      },
+      "batch": 42,
+      "clip_coef": {
+        "joint": 0.003055290332024102,
+        "native": 0.0030571676120703527
+      },
+      "global": {
+        "joint": 3273.0113705167264,
+        "native": 3271.0015497549725
+      },
+      "joint_loss": 406.3822021484375,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 1.0045215366378675,
+          "cosine": 0.02959799450225495,
+          "joint_norm": 930.4883547858236,
+          "native_joint_cosine": 0.9999621015505716,
+          "native_norm": 930.5249149834398,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.008636171008108855
+        },
+        "1": {
+          "auxiliary_norm": 1.1439928841926665,
+          "cosine": 0.24623559578951207,
+          "joint_norm": 768.7518665049154,
+          "native_joint_cosine": 0.9999319135318878,
+          "native_norm": 766.598829570666,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.011938373397552514
+        },
+        "10": {
+          "auxiliary_norm": 1.4697711426237379,
+          "cosine": 0.05495826798754831,
+          "joint_norm": 988.1327836557626,
+          "native_joint_cosine": 0.9999291076115314,
+          "native_norm": 987.4018488814658,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.011908190322217465
+        },
+        "13": {
+          "auxiliary_norm": 1.1268152742198563,
+          "cosine": 0.04357434755529826,
+          "joint_norm": 658.7303836876858,
+          "native_joint_cosine": 0.9999062799565986,
+          "native_norm": 658.2818613646679,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.01369401577474893
+        },
+        "16": {
+          "auxiliary_norm": 1.1552490935578235,
+          "cosine": 0.016300256350379662,
+          "joint_norm": 451.3551486120482,
+          "native_joint_cosine": 0.9997904640167048,
+          "native_norm": 451.09900487647525,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.02048772586185006
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 185.99318911146975,
+          "native_joint_cosine": 1.0,
+          "native_norm": 185.99318911146975,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 459.40198715087007,
+          "native_joint_cosine": 1.0,
+          "native_norm": 459.40198715087007,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 1.2802571888534635,
+          "cosine": 0.09096410430722264,
+          "joint_norm": 924.3091432563466,
+          "native_joint_cosine": 0.9999395151180093,
+          "native_norm": 923.4569065106093,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.011090996708799903
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 212.98642132464286,
+          "native_joint_cosine": 1.0,
+          "native_norm": 212.98642132464286,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 524.8308930206352,
+          "native_joint_cosine": 1.0,
+          "native_norm": 524.8308930206352,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 805.2260779511238,
+          "native_joint_cosine": 1.0,
+          "native_norm": 805.2260779511238,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 0.9184769810660127,
+          "cosine": 0.04001451461027978,
+          "joint_norm": 653.4009936752213,
+          "native_joint_cosine": 0.9999360961326719,
+          "native_norm": 653.0757368252056,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.011251092996117125
+        },
+        "4": {
+          "auxiliary_norm": 1.2122194985267274,
+          "cosine": 0.07573902661279269,
+          "joint_norm": 909.8185157333288,
+          "native_joint_cosine": 0.9999427316103249,
+          "native_norm": 908.9998375836889,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.010668600353100697
+        },
+        "5": {
+          "auxiliary_norm": 1.0199719196947652,
+          "cosine": 0.03224590599977335,
+          "joint_norm": 798.8033655048928,
+          "native_joint_cosine": 0.9999469089075808,
+          "native_norm": 798.5316616557843,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.01021847441920904
+        },
+        "6": {
+          "auxiliary_norm": 1.4539239185101942,
+          "cosine": 0.006550234952752844,
+          "joint_norm": 1084.238896125068,
+          "native_joint_cosine": 0.9999416956811347,
+          "native_norm": 1084.1768323558556,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.010728315714704206
+        },
+        "7": {
+          "auxiliary_norm": 1.0674047941449034,
+          "cosine": 0.054226858457876906,
+          "joint_norm": 738.5274119419653,
+          "native_joint_cosine": 0.9999323544171408,
+          "native_norm": 738.0298841416718,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.011570315154772297
+        },
+        "8": {
+          "auxiliary_norm": 1.7427799970130344,
+          "cosine": 0.06395874479936342,
+          "joint_norm": 1203.1388332051254,
+          "native_joint_cosine": 0.9999327808077283,
+          "native_norm": 1202.2027021857446,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.011597245581594235
+        },
+        "9": {
+          "auxiliary_norm": 1.0514476982518832,
+          "cosine": 0.041266702120190873,
+          "joint_norm": 715.0034557287242,
+          "native_joint_cosine": 0.9999301491728947,
+          "native_norm": 714.5884871886564,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.011771224609436437
+        },
+        "projection": {
+          "auxiliary_norm": 0.4320833805181978,
+          "cosine": null,
+          "joint_norm": 3.4566670441455822,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 377.7509765625,
+      "snapshot": "coco_init"
+    },
+    {
+      "auxiliary_loss": 3.475338935852051,
+      "backbone": {
+        "auxiliary_norm": 1.1012480500494983,
+        "cosine": 0.47236511322578645,
+        "joint_norm": 269.18402653187377,
+        "native_joint_cosine": 0.9998351514327922,
+        "native_norm": 265.83084886321006,
+        "weighted_ratio": 0.0331413168865491
+      },
+      "batch": 42,
+      "clip_coef": {
+        "joint": 0.033351990310775605,
+        "native": 0.03372117025374261
+      },
+      "global": {
+        "joint": 299.8321801328041,
+        "native": 296.5496123364509
+      },
+      "joint_loss": 433.4062194824219,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 0.861650422272294,
+          "cosine": 0.5275376807747881,
+          "joint_norm": 210.548428677575,
+          "native_joint_cosine": 0.9998610577537945,
+          "native_norm": 207.7706310205314,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.03317698629647605
+        },
+        "1": {
+          "auxiliary_norm": 0.40656663470891496,
+          "cosine": 0.44462993521710464,
+          "joint_norm": 91.63317151145262,
+          "native_joint_cosine": 0.9998709504854194,
+          "native_norm": 90.2712316628994,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.036030671319709925
+        },
+        "10": {
+          "auxiliary_norm": 0.026464712019066323,
+          "cosine": -0.2141482845780041,
+          "joint_norm": 6.074066868502001,
+          "native_joint_cosine": 0.9996561835388311,
+          "native_norm": 6.116316718070626,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.03461522774434027
+        },
+        "13": {
+          "auxiliary_norm": 0.07214929808435985,
+          "cosine": 0.138981230804236,
+          "joint_norm": 19.742279801834137,
+          "native_joint_cosine": 0.9996667413987359,
+          "native_norm": 19.6440048704778,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.029382724575797752
+        },
+        "16": {
+          "auxiliary_norm": 0.4064812108070905,
+          "cosine": 0.2670411834551937,
+          "joint_norm": 79.45951138151376,
+          "native_joint_cosine": 0.9992667073243416,
+          "native_norm": 78.539353994999,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.04140407987903472
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 7.134862887108289,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 7.134862887108289,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 16.37845658399909,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 16.37845658399909,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 0.45610482120593304,
+          "cosine": 0.3538909587831124,
+          "joint_norm": 112.9197029542504,
+          "native_joint_cosine": 0.9998110017155835,
+          "native_norm": 111.93833701461364,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.03259686240622912
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 0.05476911583843447,
+          "native_joint_cosine": 1.0,
+          "native_norm": 0.05476911583843447,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 0.23165189126026506,
+          "native_joint_cosine": 1.0,
+          "native_norm": 0.23165189126026506,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 101.99067871876711,
+          "native_joint_cosine": 1.0,
+          "native_norm": 101.99067871876711,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 0.09146762524852059,
+          "cosine": 0.3186134874219706,
+          "joint_norm": 29.18076428899522,
+          "native_joint_cosine": 0.9997783868241233,
+          "native_norm": 28.923591245471677,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.0252991060403928
+        },
+        "4": {
+          "auxiliary_norm": 0.28888704012678446,
+          "cosine": 0.3943872727645759,
+          "joint_norm": 75.75870237765074,
+          "native_joint_cosine": 0.9996794914954534,
+          "native_norm": 74.78472738095697,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.030903319460421925
+        },
+        "5": {
+          "auxiliary_norm": 0.02173005356608997,
+          "cosine": 0.06645533187516461,
+          "joint_norm": 6.293875100370835,
+          "native_joint_cosine": 0.9996936269167068,
+          "native_norm": 6.285237541170906,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.027658529592556054
+        },
+        "6": {
+          "auxiliary_norm": 0.05698158854278961,
+          "cosine": 0.16134534929517166,
+          "joint_norm": 17.096879727661424,
+          "native_joint_cosine": 0.9997620660520278,
+          "native_norm": 17.01060675603748,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.02679814511498972
+        },
+        "7": {
+          "auxiliary_norm": 0.006338154528728022,
+          "cosine": -0.24408155255711833,
+          "joint_norm": 2.1933748673760642,
+          "native_joint_cosine": 0.9997820767324265,
+          "native_norm": 2.2049397465482343,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.022996200376541657
+        },
+        "8": {
+          "auxiliary_norm": 0.009540515220595243,
+          "cosine": -0.40961864397178616,
+          "joint_norm": 2.3851290252530273,
+          "native_joint_cosine": 0.9997496378226894,
+          "native_norm": 2.4122221527265806,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.03164058570579469
+        },
+        "9": {
+          "auxiliary_norm": 0.024597996901202988,
+          "cosine": -0.32673576533072135,
+          "joint_norm": 3.4196070033961425,
+          "native_joint_cosine": 0.9997277859640905,
+          "native_norm": 3.4690192848311385,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.05672611163336406
+        },
+        "projection": {
+          "auxiliary_norm": 0.474493582899652,
+          "cosine": null,
+          "joint_norm": 3.795948663197216,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 405.603515625,
+      "snapshot": "ja_j0_step70_initial_projection"
+    },
+    {
+      "auxiliary_loss": 3.5672435760498047,
+      "backbone": {
+        "auxiliary_norm": 0.9358824515608944,
+        "cosine": -0.08166743249820199,
+        "joint_norm": 122.62010138858473,
+        "native_joint_cosine": 0.99938712979558,
+        "native_norm": 122.25139412156854,
+        "weighted_ratio": 0.06124314300286765
+      },
+      "batch": 42,
+      "clip_coef": {
+        "joint": 0.06043107203743158,
+        "native": 0.06056862447773173
+      },
+      "global": {
+        "joint": 165.47778489474476,
+        "native": 165.1019818537882
+      },
+      "joint_loss": 453.7310791015625,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 0.6760932947175609,
+          "cosine": -0.03853638743057365,
+          "joint_norm": 93.85549312519315,
+          "native_joint_cosine": 0.9994839135421804,
+          "native_norm": 93.30706683398041,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.05796716734611508
+        },
+        "1": {
+          "auxiliary_norm": 0.3837196478673762,
+          "cosine": -0.2846357298484563,
+          "joint_norm": 38.833392373522436,
+          "native_joint_cosine": 0.9994446973670242,
+          "native_norm": 39.16496896826675,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.0783801765661111
+        },
+        "10": {
+          "auxiliary_norm": 0.0027457753096944383,
+          "cosine": 0.07598379809394527,
+          "joint_norm": 0.7077139147035215,
+          "native_joint_cosine": 0.999776677135249,
+          "native_norm": 0.7042264216223956,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.03119196014678036
+        },
+        "13": {
+          "auxiliary_norm": 0.016115189649333072,
+          "cosine": 0.16762499433455375,
+          "joint_norm": 3.0810893804195976,
+          "native_joint_cosine": 0.9997572182106369,
+          "native_norm": 3.043322411053373,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.04236209634786657
+        },
+        "16": {
+          "auxiliary_norm": 0.3591835046819815,
+          "cosine": 0.0780090416685603,
+          "joint_norm": 61.68732664167013,
+          "native_joint_cosine": 0.999030056259705,
+          "native_norm": 61.428387842228766,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.0467775264562697
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 5.849423832569805,
+          "native_joint_cosine": 1.0,
+          "native_norm": 5.849423832569805,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 21.787556557231753,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 21.787556557231753,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 0.4688578063556581,
+          "cosine": -0.08834384745646882,
+          "joint_norm": 55.78203324962131,
+          "native_joint_cosine": 0.9992116177161445,
+          "native_norm": 55.667462958755785,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.06737979874571061
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 0.837514252942263,
+          "native_joint_cosine": 1.0,
+          "native_norm": 0.837514252942263,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 2.5287467051211556,
+          "native_joint_cosine": 0.9999999999999999,
+          "native_norm": 2.5287467051211556,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 89.5239802134516,
+          "native_joint_cosine": 1.0,
+          "native_norm": 89.5239802134516,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 0.09344104678076745,
+          "cosine": -0.0025168651578916235,
+          "joint_norm": 15.848445444858188,
+          "native_joint_cosine": 0.9993072480201034,
+          "native_norm": 15.776447819439085,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.047382552954985606
+        },
+        "4": {
+          "auxiliary_norm": 0.20660817633012035,
+          "cosine": -0.043310824933391355,
+          "joint_norm": 36.67363115143902,
+          "native_joint_cosine": 0.9992176879081033,
+          "native_norm": 36.69577689036373,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.04504238772704669
+        },
+        "5": {
+          "auxiliary_norm": 0.0038565752427312063,
+          "cosine": -0.20771772597300367,
+          "joint_norm": 1.1173530852709739,
+          "native_joint_cosine": 0.9998460251992621,
+          "native_norm": 1.116965005800374,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.027621816065528274
+        },
+        "6": {
+          "auxiliary_norm": 0.013265024005251246,
+          "cosine": -0.0006455893985851031,
+          "joint_norm": 2.4839674485578502,
+          "native_joint_cosine": 0.9998076970587874,
+          "native_norm": 2.4748217240278594,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.04287993394097722
+        },
+        "7": {
+          "auxiliary_norm": 0.0026172529277054177,
+          "cosine": 0.023371304036693047,
+          "joint_norm": 0.4296450809380508,
+          "native_joint_cosine": 0.9998271912809562,
+          "native_norm": 0.4267912361665268,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.0490591690909831
+        },
+        "8": {
+          "auxiliary_norm": 0.00715831209951773,
+          "cosine": 0.2887857691276594,
+          "joint_norm": 1.6341974347402206,
+          "native_joint_cosine": 0.9998344561456145,
+          "native_norm": 1.6249963714758866,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.035240999796282695
+        },
+        "9": {
+          "auxiliary_norm": 0.005547677533980432,
+          "cosine": 0.030438558633786826,
+          "joint_norm": 0.5147872243536974,
+          "native_joint_cosine": 0.999583091495109,
+          "native_norm": 0.5157687080656914,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.08604907505592753
+        },
+        "projection": {
+          "auxiliary_norm": 0.16938519202512126,
+          "cosine": null,
+          "joint_norm": 1.35508153620097,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 425.193115234375,
+      "snapshot": "ja_j1_step70"
+    },
+    {
+      "auxiliary_loss": 3.847952365875244,
+      "backbone": {
+        "auxiliary_norm": 9.733855126114845,
+        "cosine": -0.012774418532442154,
+        "joint_norm": 3076.2053189671237,
+        "native_joint_cosine": 0.9996803358419617,
+        "native_norm": 3076.1749410465873,
+        "weighted_ratio": 0.02531417832251935
+      },
+      "batch": 56,
+      "clip_coef": {
+        "joint": 0.0029476542092001876,
+        "native": 0.0029473333674616205
+      },
+      "global": {
+        "joint": 3392.5281893108254,
+        "native": 3392.8974942068153
+      },
+      "joint_loss": 468.68115234375,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 3.392193715076284,
+          "cosine": 0.2200729453223539,
+          "joint_norm": 1081.499643466836,
+          "native_joint_cosine": 0.9997071774094156,
+          "native_norm": 1074.815604365407,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.02524856320506515
+        },
+        "1": {
+          "auxiliary_norm": 2.8012705611052424,
+          "cosine": -0.07640392928242233,
+          "joint_norm": 818.510330717575,
+          "native_joint_cosine": 0.999636876158907,
+          "native_norm": 820.0372224244772,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.027328228373079543
+        },
+        "10": {
+          "auxiliary_norm": 2.6644695094347717,
+          "cosine": -0.05144843497789414,
+          "joint_norm": 1024.7055109318887,
+          "native_joint_cosine": 0.9997834341693853,
+          "native_norm": 1025.5874520566326,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.020783947807408554
+        },
+        "13": {
+          "auxiliary_norm": 2.167082902938824,
+          "cosine": -0.09775217340912354,
+          "joint_norm": 671.2305928633901,
+          "native_joint_cosine": 0.9996693132695055,
+          "native_norm": 672.7102168074446,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.025771368994196513
+        },
+        "16": {
+          "auxiliary_norm": 2.453127046156367,
+          "cosine": -0.059464495564079414,
+          "joint_norm": 489.31574819638803,
+          "native_joint_cosine": 0.999198459436568,
+          "native_norm": 490.0809120161003,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.04004444141380109
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 188.11026100135717,
+          "native_joint_cosine": 1.0,
+          "native_norm": 188.11026100135717,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 477.49853677625305,
+          "native_joint_cosine": 1.0,
+          "native_norm": 477.49853677625305,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 3.1802665644745964,
+          "cosine": -0.0314120418501834,
+          "joint_norm": 911.9475601124539,
+          "native_joint_cosine": 0.9996169645101726,
+          "native_norm": 912.4117832950882,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.027884484814427686
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 248.99141641456552,
+          "native_joint_cosine": 0.9999999999999999,
+          "native_norm": 248.99141641456552,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 574.9733942830762,
+          "native_joint_cosine": 1.0,
+          "native_norm": 574.9733942830762,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 836.7803473153905,
+          "native_joint_cosine": 0.9999999999999999,
+          "native_norm": 836.7803473153905,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 2.5038598108792596,
+          "cosine": -0.06866964555684353,
+          "joint_norm": 642.7789078765815,
+          "native_joint_cosine": 0.9995125342608501,
+          "native_norm": 643.8354622001452,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.03111179744368787
+        },
+        "4": {
+          "auxiliary_norm": 3.1795265139024065,
+          "cosine": -0.07190086694715295,
+          "joint_norm": 867.8867594139141,
+          "native_joint_cosine": 0.9995696397197774,
+          "native_norm": 869.3443179839524,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.029259076737519773
+        },
+        "5": {
+          "auxiliary_norm": 2.979639857991469,
+          "cosine": -0.08807095249529523,
+          "joint_norm": 774.8261003666088,
+          "native_joint_cosine": 0.9995280926707046,
+          "native_norm": 776.6386618131686,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.03069267606158153
+        },
+        "6": {
+          "auxiliary_norm": 3.597950302009938,
+          "cosine": -0.04016448749216011,
+          "joint_norm": 1087.7328388617805,
+          "native_joint_cosine": 0.9996493294720856,
+          "native_norm": 1088.550897117332,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.02644212823883879
+        },
+        "7": {
+          "auxiliary_norm": 2.1669201218283707,
+          "cosine": 0.007526438301382827,
+          "joint_norm": 788.55586924278,
+          "native_joint_cosine": 0.9997569828662393,
+          "native_norm": 788.2643885728406,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.021991810395003107
+        },
+        "8": {
+          "auxiliary_norm": 3.3519519948657828,
+          "cosine": -0.009611498443913074,
+          "joint_norm": 1269.0032033370705,
+          "native_joint_cosine": 0.9997762760721898,
+          "native_norm": 1269.030218311516,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.021130793870775804
+        },
+        "9": {
+          "auxiliary_norm": 2.011720561303872,
+          "cosine": -0.052482682263734516,
+          "joint_norm": 748.1102408605848,
+          "native_joint_cosine": 0.9997684169886439,
+          "native_norm": 748.7623125845511,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.021493822832614386
+        },
+        "projection": {
+          "auxiliary_norm": 0.8398143951697405,
+          "cosine": null,
+          "joint_norm": 6.718515161357924,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 437.89752197265625,
+      "snapshot": "coco_init"
+    },
+    {
+      "auxiliary_loss": 3.890451669692993,
+      "backbone": {
+        "auxiliary_norm": 0.8958067025081273,
+        "cosine": 0.28388786981384356,
+        "joint_norm": 301.6797829407156,
+        "native_joint_cosine": 0.9998509585699046,
+        "native_norm": 300.68041347642685,
+        "weighted_ratio": 0.023834121874476085
+      },
+      "batch": 56,
+      "clip_coef": {
+        "joint": 0.02931754197060153,
+        "native": 0.029398658768419142
+      },
+      "global": {
+        "joint": 341.092714413441,
+        "native": 340.1515711779212
+      },
+      "joint_loss": 490.0876770019531,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 0.5497691081126633,
+          "cosine": 0.43286244330980883,
+          "joint_norm": 260.77135312709544,
+          "native_joint_cosine": 0.9999179296224987,
+          "native_norm": 260.0633880849433,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.016911849442893354
+        },
+        "1": {
+          "auxiliary_norm": 0.34443291035997353,
+          "cosine": 0.12144630012499041,
+          "joint_norm": 85.07644406909627,
+          "native_joint_cosine": 0.9998359981985615,
+          "native_norm": 84.80578755245539,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.0324914532652083
+        },
+        "10": {
+          "auxiliary_norm": 0.029021208234122766,
+          "cosine": 0.2957754603479134,
+          "joint_norm": 6.2421958975486636,
+          "native_joint_cosine": 0.9996185485513774,
+          "native_norm": 6.167109661571718,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.03764643059935674
+        },
+        "13": {
+          "auxiliary_norm": 0.08388562384490794,
+          "cosine": 0.2550129225712784,
+          "joint_norm": 15.883173009427761,
+          "native_joint_cosine": 0.9992632979476106,
+          "native_norm": 15.707107527157962,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.04272492498055047
+        },
+        "16": {
+          "auxiliary_norm": 0.6222389402618255,
+          "cosine": -0.07575440666118428,
+          "joint_norm": 106.4586768528621,
+          "native_joint_cosine": 0.9989403954969086,
+          "native_norm": 106.70392902052915,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.04665162349492197
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 4.762202112388358,
+          "native_joint_cosine": 1.0,
+          "native_norm": 4.762202112388358,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 12.517299084284483,
+          "native_joint_cosine": 1.0,
+          "native_norm": 12.517299084284483,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 0.5339465381210283,
+          "cosine": 0.14171031066793602,
+          "joint_norm": 97.73394885987979,
+          "native_joint_cosine": 0.9995527703235052,
+          "native_norm": 97.06359276675308,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.04400797645346749
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 0.24473435605306101,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 0.24473435605306101,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 0.9600555274289455,
+          "native_joint_cosine": 1.0,
+          "native_norm": 0.9600555274289455,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 116.1102738103744,
+          "native_joint_cosine": 0.9999999999999999,
+          "native_norm": 116.1102738103744,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 0.11639188408537278,
+          "cosine": 0.1394629885433002,
+          "joint_norm": 25.44305289955009,
+          "native_joint_cosine": 0.999506127518449,
+          "native_norm": 25.32318018958308,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.03677006859770374
+        },
+        "4": {
+          "auxiliary_norm": 0.2761969726805124,
+          "cosine": 0.15497584347642593,
+          "joint_norm": 72.67530255527821,
+          "native_joint_cosine": 0.9996250275165851,
+          "native_norm": 72.35092940968477,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.03053970141741302
+        },
+        "5": {
+          "auxiliary_norm": 0.022895740890580087,
+          "cosine": 0.1127057228982944,
+          "joint_norm": 5.2694461821298955,
+          "native_joint_cosine": 0.9994768758246649,
+          "native_norm": 5.2468466239801455,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.034909716302264415
+        },
+        "6": {
+          "auxiliary_norm": 0.06440689272138407,
+          "cosine": 0.11445996253982599,
+          "joint_norm": 14.567609028834845,
+          "native_joint_cosine": 0.9994435836263922,
+          "native_norm": 14.489403650612745,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.03556082459951917
+        },
+        "7": {
+          "auxiliary_norm": 0.008027957163879126,
+          "cosine": -0.21970153140995424,
+          "joint_norm": 1.933186647156475,
+          "native_joint_cosine": 0.9996038747091796,
+          "native_norm": 1.945594706565648,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.03300978209608733
+        },
+        "8": {
+          "auxiliary_norm": 0.013145365632472194,
+          "cosine": 0.041762182550807346,
+          "joint_norm": 1.6411069795607733,
+          "native_joint_cosine": 0.9987483131109781,
+          "native_norm": 1.63817933494707,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.06419500161938949
+        },
+        "9": {
+          "auxiliary_norm": 0.030114120808003207,
+          "cosine": 0.10450595781860914,
+          "joint_norm": 2.1541675062395678,
+          "native_joint_cosine": 0.9984045544423324,
+          "native_norm": 2.1184220717645648,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.1137228362917095
+        },
+        "projection": {
+          "auxiliary_norm": 1.158424964505221,
+          "cosine": null,
+          "joint_norm": 9.267399716041767,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 458.96405029296875,
+      "snapshot": "ja_j0_step70_initial_projection"
+    },
+    {
+      "auxiliary_loss": 3.7996463775634766,
+      "backbone": {
+        "auxiliary_norm": 0.9838711563562396,
+        "cosine": 0.12158715824895261,
+        "joint_norm": 119.55314861175306,
+        "native_joint_cosine": 0.9992602211071439,
+        "native_norm": 119.04453529662702,
+        "weighted_ratio": 0.06611785439153149
+      },
+      "batch": 56,
+      "clip_coef": {
+        "joint": 0.05416858009107446,
+        "native": 0.054443277842009655
+      },
+      "global": {
+        "joint": 184.60886235190708,
+        "native": 183.6774041154535
+      },
+      "joint_loss": 507.66326904296875,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 0.6412661447634718,
+          "cosine": 0.5315246133745088,
+          "joint_norm": 58.77199787657052,
+          "native_joint_cosine": 0.9993324769915566,
+          "native_norm": 57.42368237096863,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.08933821284685471
+        },
+        "1": {
+          "auxiliary_norm": 0.4172973404881612,
+          "cosine": -0.07657792849526616,
+          "joint_norm": 41.5055304269176,
+          "native_joint_cosine": 0.9990426974628499,
+          "native_norm": 41.507729948662856,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.08042788001257181
+        },
+        "10": {
+          "auxiliary_norm": 0.002209213153006168,
+          "cosine": -0.2020436876928942,
+          "joint_norm": 1.6508990409224105,
+          "native_joint_cosine": 0.9999526468999476,
+          "native_norm": 1.6572948432858043,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.010664188871190177
+        },
+        "13": {
+          "auxiliary_norm": 0.027740696649161286,
+          "cosine": -0.11766777709136203,
+          "joint_norm": 4.716465919063806,
+          "native_joint_cosine": 0.9993873864707,
+          "native_norm": 4.744512903029178,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.04677520700841595
+        },
+        "16": {
+          "auxiliary_norm": 0.6211521612227011,
+          "cosine": 0.21146763682588787,
+          "joint_norm": 93.34957966257807,
+          "native_joint_cosine": 0.9986809279343449,
+          "native_norm": 92.16968137617519,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.053913794813942956
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 8.975323091007088,
+          "native_joint_cosine": 0.9999999999999998,
+          "native_norm": 8.975323091007088,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 30.02731356415187,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 30.02731356415187,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 0.5267633212050654,
+          "cosine": -0.05729909092111558,
+          "joint_norm": 72.71375632629521,
+          "native_joint_cosine": 0.999371113953701,
+          "native_norm": 72.83174796342166,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.0578608462309181
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 0.5823993736300446,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 0.5823993736300446,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 1.730461661967924,
+          "native_joint_cosine": 1.0,
+          "native_norm": 1.730461661967924,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 100.31199908219982,
+          "native_joint_cosine": 1.0,
+          "native_norm": 100.31199908219982,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 0.12986510826572067,
+          "cosine": -0.09150280371792767,
+          "joint_norm": 25.52987106876413,
+          "native_joint_cosine": 0.9993979209241418,
+          "native_norm": 25.595469592854542,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.04059002951115223
+        },
+        "4": {
+          "auxiliary_norm": 0.2967309238223674,
+          "cosine": -0.09172993615451279,
+          "joint_norm": 55.6280632922176,
+          "native_joint_cosine": 0.9993232718390807,
+          "native_norm": 55.76747998353323,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.042566875736179545
+        },
+        "5": {
+          "auxiliary_norm": 0.005042980600939954,
+          "cosine": 0.011685355010889678,
+          "joint_norm": 2.8149097966903254,
+          "native_joint_cosine": 0.999947880380764,
+          "native_norm": 2.80108981647344,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.014402910099581296
+        },
+        "6": {
+          "auxiliary_norm": 0.014135669471523265,
+          "cosine": 0.15878577768210472,
+          "joint_norm": 7.356697812890749,
+          "native_joint_cosine": 0.9999547200192863,
+          "native_norm": 7.3124965299947435,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.015464671375682335
+        },
+        "7": {
+          "auxiliary_norm": 0.0009823763266150437,
+          "cosine": 0.03020708126780236,
+          "joint_norm": 1.470997399706458,
+          "native_joint_cosine": 0.9999737128539352,
+          "native_norm": 1.458432665845078,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.0053886688065688
+        },
+        "8": {
+          "auxiliary_norm": 0.0023546306423514354,
+          "cosine": 0.027369669535532173,
+          "joint_norm": 3.714228128495372,
+          "native_joint_cosine": 0.9999812931139908,
+          "native_norm": 3.6898731440636703,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.005105065785016712
+        },
+        "9": {
+          "auxiliary_norm": 0.0035623967939706212,
+          "cosine": -0.26787794556528305,
+          "joint_norm": 1.35016280223209,
+          "native_joint_cosine": 0.9999710965562714,
+          "native_norm": 1.348894783947566,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.021127796393697662
+        },
+        "projection": {
+          "auxiliary_norm": 0.21868967049140428,
+          "cosine": null,
+          "joint_norm": 1.7495173639312342,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 477.26611328125,
+      "snapshot": "ja_j1_step70"
+    },
+    {
+      "auxiliary_loss": 4.123382091522217,
+      "backbone": {
+        "auxiliary_norm": 5.2839154868039175,
+        "cosine": 0.07353533533865075,
+        "joint_norm": 2703.2445111000525,
+        "native_joint_cosine": 0.9998774985903254,
+        "native_norm": 2700.0755789664545,
+        "weighted_ratio": 0.01565560765177252
+      },
+      "batch": 70,
+      "clip_coef": {
+        "joint": 0.0033517814680791356,
+        "native": 0.0033552284831188796
+      },
+      "global": {
+        "joint": 2983.488062060053,
+        "native": 2980.422956873921
+      },
+      "joint_loss": 471.98040771484375,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 1.209912485341119,
+          "cosine": -0.020657165617624155,
+          "joint_norm": 1077.7427363813472,
+          "native_joint_cosine": 0.999957298561547,
+          "native_norm": 1078.524785053685,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.008974573432957456
+        },
+        "1": {
+          "auxiliary_norm": 1.6862103231863987,
+          "cosine": 0.006608958113725292,
+          "joint_norm": 715.9921338805397,
+          "native_joint_cosine": 0.9998210629312412,
+          "native_norm": 715.8910167601517,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.0188432069542377
+        },
+        "10": {
+          "auxiliary_norm": 1.808386927445519,
+          "cosine": 0.07649680033221286,
+          "joint_norm": 935.3864734089349,
+          "native_joint_cosine": 0.9998808468367035,
+          "native_norm": 934.1675585434779,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.015486617242543462
+        },
+        "13": {
+          "auxiliary_norm": 1.4274824548849283,
+          "cosine": 0.049682800261707585,
+          "joint_norm": 613.4741566662523,
+          "native_joint_cosine": 0.9998270023093527,
+          "native_norm": 612.7841527332097,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.01863602312191539
+        },
+        "16": {
+          "auxiliary_norm": 1.5500738199145017,
+          "cosine": 0.013349636601853062,
+          "joint_norm": 393.7844127869796,
+          "native_joint_cosine": 0.9995052674389197,
+          "native_norm": 393.41628050541095,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.03152027807132262
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 188.50665003078097,
+          "native_joint_cosine": 0.9999999999999998,
+          "native_norm": 188.50665003078097,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 469.46953452790706,
+          "native_joint_cosine": 0.9999999999999999,
+          "native_norm": 469.46953452790706,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 1.530622272151725,
+          "cosine": 0.12551732173327404,
+          "joint_norm": 783.6118716985347,
+          "native_joint_cosine": 0.9998808174751476,
+          "native_norm": 782.0665849865397,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.015657206703729134
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 199.50973759037709,
+          "native_joint_cosine": 0.9999999999999998,
+          "native_norm": 199.50973759037709,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 546.6709918285339,
+          "native_joint_cosine": 0.9999999999999998,
+          "native_norm": 546.6709918285339,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 683.8438216921543,
+          "native_joint_cosine": 1.0,
+          "native_norm": 683.8438216921543,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 1.1579907592342367,
+          "cosine": 0.10342505085745644,
+          "joint_norm": 597.0992375486684,
+          "native_joint_cosine": 0.999880276932762,
+          "native_norm": 596.0790749135593,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.015541438147643928
+        },
+        "4": {
+          "auxiliary_norm": 1.5906168067836373,
+          "cosine": 0.10263163764178806,
+          "joint_norm": 780.4343180893625,
+          "native_joint_cosine": 0.9998678067843988,
+          "native_norm": 779.0240803254404,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.01633445586040576
+        },
+        "5": {
+          "auxiliary_norm": 1.3646205705865524,
+          "cosine": 0.08624165795875717,
+          "joint_norm": 686.1220221139505,
+          "native_joint_cosine": 0.9998735911426478,
+          "native_norm": 685.063387534457,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.015935699912357854
+        },
+        "6": {
+          "auxiliary_norm": 1.947710451067803,
+          "cosine": 0.0417715251334936,
+          "joint_norm": 931.2102788007771,
+          "native_joint_cosine": 0.9998599602870921,
+          "native_norm": 930.3644030138026,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.016747936139933396
+        },
+        "7": {
+          "auxiliary_norm": 1.3745261497739412,
+          "cosine": 0.11589920680826842,
+          "joint_norm": 640.4023033753525,
+          "native_joint_cosine": 0.9998539458604927,
+          "native_norm": 639.011569293004,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.017208153539939233
+        },
+        "8": {
+          "auxiliary_norm": 2.219871650388008,
+          "cosine": 0.10655583554515415,
+          "joint_norm": 1021.8513359085264,
+          "native_joint_cosine": 0.9998499319669947,
+          "native_norm": 1019.7831904930842,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.017414459630892002
+        },
+        "9": {
+          "auxiliary_norm": 1.2866932688674892,
+          "cosine": 0.11363652309381944,
+          "joint_norm": 621.7272917561613,
+          "native_joint_cosine": 0.9998646021768948,
+          "native_norm": 620.5023864384262,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.016589051671538357
+        },
+        "projection": {
+          "auxiliary_norm": 0.5774795525190998,
+          "cosine": null,
+          "joint_norm": 4.619836420152798,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 438.99334716796875,
+      "snapshot": "coco_init"
+    },
+    {
+      "auxiliary_loss": 4.247354030609131,
+      "backbone": {
+        "auxiliary_norm": 1.3739688721248882,
+        "cosine": -0.0026127429267180182,
+        "joint_norm": 73.36907409031944,
+        "native_joint_cosine": 0.9934862220117181,
+        "native_norm": 72.92476219852709,
+        "weighted_ratio": 0.15072727898756333
+      },
+      "batch": 70,
+      "clip_coef": {
+        "joint": 0.0870050721745449,
+        "native": 0.08738230949116063
+      },
+      "global": {
+        "joint": 114.93582687838551,
+        "native": 114.43963853609597
+      },
+      "joint_loss": 483.06793212890625,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 1.148093344879244,
+          "cosine": 0.11267848353523638,
+          "joint_norm": 40.09402290007555,
+          "native_joint_cosine": 0.984727862257978,
+          "native_norm": 38.65522507254766,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.23760686276683504
+        },
+        "1": {
+          "auxiliary_norm": 0.4289058213532272,
+          "cosine": -0.14934959737942435,
+          "joint_norm": 26.8908801612518,
+          "native_joint_cosine": 0.9957989388744241,
+          "native_norm": 27.156092014445807,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.12635273768407287
+        },
+        "10": {
+          "auxiliary_norm": 0.04659407752883743,
+          "cosine": -0.03912335732342363,
+          "joint_norm": 3.8649337270253525,
+          "native_joint_cosine": 0.9957732899328313,
+          "native_norm": 3.8556617142967013,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.09667669205743379
+        },
+        "13": {
+          "auxiliary_norm": 0.07530652444630385,
+          "cosine": -0.018739257774372752,
+          "joint_norm": 10.18964424506122,
+          "native_joint_cosine": 0.9983701976312102,
+          "native_norm": 10.174710154769292,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.05921074766813259
+        },
+        "16": {
+          "auxiliary_norm": 0.49465126573133245,
+          "cosine": -0.03127958000613607,
+          "joint_norm": 44.61348952710802,
+          "native_joint_cosine": 0.9962444238459225,
+          "native_norm": 44.57335158743077,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.0887797301508409
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 6.562748850918003,
+          "native_joint_cosine": 1.0,
+          "native_norm": 6.562748850918003,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 15.03412476319269,
+          "native_joint_cosine": 1.0,
+          "native_norm": 15.03412476319269,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 0.5439649453518709,
+          "cosine": -0.15950497788287438,
+          "joint_norm": 42.84687510562686,
+          "native_joint_cosine": 0.9975077753878225,
+          "native_norm": 43.378342536018465,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.10032009773544462
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 0.3033334332749069,
+          "native_joint_cosine": 1.0,
+          "native_norm": 0.3033334332749069,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 1.2652301211458603,
+          "native_joint_cosine": 1.0,
+          "native_norm": 1.2652301211458603,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 73.60240573366897,
+          "native_joint_cosine": 0.9999999999999998,
+          "native_norm": 73.60240573366897,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 0.10470643049588592,
+          "cosine": -0.07813378479743552,
+          "joint_norm": 13.045776873762554,
+          "native_joint_cosine": 0.9981490735630909,
+          "native_norm": 13.067029074292714,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.06410419990685047
+        },
+        "4": {
+          "auxiliary_norm": 0.2652136431265914,
+          "cosine": 0.05239667455478999,
+          "joint_norm": 30.238625718995515,
+          "native_joint_cosine": 0.9980264774388418,
+          "native_norm": 30.024740845469434,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.07066536080803126
+        },
+        "5": {
+          "auxiliary_norm": 0.022349972354787903,
+          "cosine": -0.06155429398683665,
+          "joint_norm": 3.661690822333667,
+          "native_joint_cosine": 0.9989120977786161,
+          "native_norm": 3.671787097568635,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.048695573595947304
+        },
+        "6": {
+          "auxiliary_norm": 0.06661811823594349,
+          "cosine": -0.07728002748009842,
+          "joint_norm": 9.97741265925449,
+          "native_joint_cosine": 0.99875667458537,
+          "native_norm": 9.998922315121218,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.05330023867488033
+        },
+        "7": {
+          "auxiliary_norm": 0.010338532081494782,
+          "cosine": -0.3001124090755561,
+          "joint_norm": 0.77067533682573,
+          "native_joint_cosine": 0.9950763677706757,
+          "native_norm": 0.7935881791668707,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.1042206257895468
+        },
+        "8": {
+          "auxiliary_norm": 0.015947993836323667,
+          "cosine": 0.07372206659467524,
+          "joint_norm": 1.1862503944082219,
+          "native_joint_cosine": 0.9933593927800706,
+          "native_norm": 1.1642746994603614,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.10958234405482159
+        },
+        "9": {
+          "auxiliary_norm": 0.03228974770391599,
+          "cosine": -0.10334080347476547,
+          "joint_norm": 1.4331268411333529,
+          "native_joint_cosine": 0.9884707942761195,
+          "native_norm": 1.4547704232934096,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.17756614892302378
+        },
+        "projection": {
+          "auxiliary_norm": 0.8378678448788208,
+          "cosine": null,
+          "joint_norm": 6.702942759030567,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 449.089111328125,
+      "snapshot": "ja_j0_step70_initial_projection"
+    },
+    {
+      "auxiliary_loss": 4.168042182922363,
+      "backbone": {
+        "auxiliary_norm": 1.0068240605270473,
+        "cosine": 0.1355420400970935,
+        "joint_norm": 96.16437486787447,
+        "native_joint_cosine": 0.9986025501055616,
+        "native_norm": 95.59834857677376,
+        "weighted_ratio": 0.08425451489622587
+      },
+      "batch": 70,
+      "clip_coef": {
+        "joint": 0.07965854816705296,
+        "native": 0.0800998481320127
+      },
+      "global": {
+        "joint": 125.53580438561751,
+        "native": 124.84418077071925
+      },
+      "joint_loss": 507.63653564453125,
+      "layers": {
+        "0": {
+          "auxiliary_norm": 0.7282372386732877,
+          "cosine": 0.15117905491551173,
+          "joint_norm": 72.14876504523212,
+          "native_joint_cosine": 0.998899277305815,
+          "native_norm": 72.01618129973059,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.0808970679122651
+        },
+        "1": {
+          "auxiliary_norm": 0.36456504462072675,
+          "cosine": 0.22395777831433006,
+          "joint_norm": 34.46379204055183,
+          "native_joint_cosine": 0.9992235770370502,
+          "native_norm": 34.09354569892266,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.08554464773835403
+        },
+        "10": {
+          "auxiliary_norm": 0.0024267836761433046,
+          "cosine": -0.038109394016897224,
+          "joint_norm": 0.33227278213868094,
+          "native_joint_cosine": 0.9992711343200138,
+          "native_norm": 0.3315410060213945,
+          "nonzero_auxiliary_tensors": 21,
+          "weighted_ratio": 0.058557671770754126
+        },
+        "13": {
+          "auxiliary_norm": 0.018792758454465916,
+          "cosine": 0.10453572143659494,
+          "joint_norm": 2.0435483513728805,
+          "native_joint_cosine": 0.9986218642502632,
+          "native_norm": 2.0126673247434566,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.07469792239752816
+        },
+        "16": {
+          "auxiliary_norm": 0.49004269954963325,
+          "cosine": 0.13419901927630176,
+          "joint_norm": 47.062386667132856,
+          "native_joint_cosine": 0.9966915445444174,
+          "native_norm": 46.385223025330326,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.08451703669197023
+        },
+        "17": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 3.5099682624710318,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 3.5099682624710318,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "19": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 14.263152354491124,
+          "native_joint_cosine": 1.0,
+          "native_norm": 14.263152354491124,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "2": {
+          "auxiliary_norm": 0.4805124850944629,
+          "cosine": 0.08362340873589294,
+          "joint_norm": 44.42548218350316,
+          "native_joint_cosine": 0.9986031097963652,
+          "native_norm": 43.879127287428936,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.08760657101439233
+        },
+        "20": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 0.18151743213656632,
+          "native_joint_cosine": 1.0,
+          "native_norm": 0.18151743213656632,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "22": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 0.7301126105911238,
+          "native_joint_cosine": 1.0000000000000002,
+          "native_norm": 0.7301126105911238,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "23": {
+          "auxiliary_norm": 0.0,
+          "cosine": null,
+          "joint_norm": 63.8362128540115,
+          "native_joint_cosine": 1.0,
+          "native_norm": 63.8362128540115,
+          "nonzero_auxiliary_tensors": 0,
+          "weighted_ratio": 0.0
+        },
+        "3": {
+          "auxiliary_norm": 0.14106028650795344,
+          "cosine": -0.04993510394967324,
+          "joint_norm": 14.000680498205856,
+          "native_joint_cosine": 0.9976440629230683,
+          "native_norm": 14.013678297513227,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.08052720121767605
+        },
+        "4": {
+          "auxiliary_norm": 0.314801107031308,
+          "cosine": 0.083265620601991,
+          "joint_norm": 26.08415898900515,
+          "native_joint_cosine": 0.9956731141329243,
+          "native_norm": 25.773325153798606,
+          "nonzero_auxiliary_tensors": 12,
+          "weighted_ratio": 0.097713773493417
+        },
+        "5": {
+          "auxiliary_norm": 0.005636547352352195,
+          "cosine": -0.15452670086889955,
+          "joint_norm": 0.7502256227287845,
+          "native_joint_cosine": 0.9992760641753946,
+          "native_norm": 0.747009028464244,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.06036390070347848
+        },
+        "6": {
+          "auxiliary_norm": 0.02274770238481469,
+          "cosine": -0.16588992199404326,
+          "joint_norm": 1.6839966708760552,
+          "native_joint_cosine": 0.9979232221944897,
+          "native_norm": 1.6781049317118566,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.10844471977856338
+        },
+        "7": {
+          "auxiliary_norm": 0.000892596482473047,
+          "cosine": 0.15054221833998513,
+          "joint_norm": 0.24332594509880753,
+          "native_joint_cosine": 0.9999348155464287,
+          "native_norm": 0.23971802426744773,
+          "nonzero_auxiliary_tensors": 3,
+          "weighted_ratio": 0.02978821422212952
+        },
+        "8": {
+          "auxiliary_norm": 0.0028183488152805267,
+          "cosine": 0.3687526826096082,
+          "joint_norm": 0.8109811253163599,
+          "native_joint_cosine": 0.9998768844067107,
+          "native_norm": 0.8002091298187621,
+          "nonzero_auxiliary_tensors": 27,
+          "weighted_ratio": 0.028176122568547544
+        },
+        "9": {
+          "auxiliary_norm": 0.0019219337878688758,
+          "cosine": -0.07911765635390372,
+          "joint_norm": 0.37131681059397464,
+          "native_joint_cosine": 0.9998151814400131,
+          "native_norm": 0.37008836568736714,
+          "nonzero_auxiliary_tensors": 6,
+          "weighted_ratio": 0.04154540301312651
+        },
+        "projection": {
+          "auxiliary_norm": 0.13814527610557434,
+          "cosine": null,
+          "joint_norm": 1.1051622088445947,
+          "native_joint_cosine": null,
+          "native_norm": 0.0,
+          "nonzero_auxiliary_tensors": 4,
+          "weighted_ratio": null
+        }
+      },
+      "native_loss": 474.2922058105469,
+      "snapshot": "ja_j1_step70"
+    }
+  ]
+}

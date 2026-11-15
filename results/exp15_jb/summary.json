@@ -1,0 +1,803 @@
+{
+  "calibration": {
+    "binding": {
+      "checked_tag_high_overlap": 2,
+      "checked_tag_mixed_class": 2,
+      "checked_tag_small_polygon": 1,
+      "checked_tag_thin_crack": 1,
+      "high_box_iou_different_class_pairs": 3,
+      "high_box_iou_pairs": 6,
+      "images": 2228,
+      "multi_instance_images": 762,
+      "multiclass_images": 253,
+      "small_p3_instances": 250,
+      "targets": 4093,
+      "thin_crack_instances": 80
+    },
+    "coverage": {
+      "batches": 70,
+      "batches_with_anchors_by_class": [
+        70,
+        64,
+        69,
+        70,
+        42,
+        21,
+        69
+      ],
+      "eligible_anchors_by_class": [
+        942,
+        305,
+        414,
+        590,
+        124,
+        59,
+        1601
+      ],
+      "median_batch_box_fill": 0.5779265873015873,
+      "median_eligible_anchors": 56.0,
+      "median_positive_pairs": 336.0,
+      "min_eligible_anchors": 37,
+      "min_negative_pairs": 582,
+      "min_positive_pairs": 104,
+      "missing_native_raster": 0,
+      "p3_cells_1": 23,
+      "p3_cells_2_to_4": 227,
+      "p3_cells_over_4": 3843,
+      "raster_missing_by_class": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "targets": 4093,
+      "targets_by_class": [
+        942,
+        309,
+        415,
+        590,
+        143,
+        92,
+        1602
+      ],
+      "zero_eligible_batches": 0
+    },
+    "featured_binding_cases": [
+      "high_overlap",
+      "mixed_class",
+      "small_polygon",
+      "thin_crack"
+    ],
+    "identity": {
+      "coco_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+      "files": {
+        "ja.py": "a792247e86243c712ded8f0552e4209c23b8b3a26b1b9952377c0677d7deb44b",
+        "jb.py": "c74d82c19534c72d57734dcdb0f9b272a480f0c5699a2f505fcb9d1caf125a8d",
+        "jb_binding.py": "28a89345b56d544f12a7bc4bce984d783c7ab34de7e901c1381244d501784b4c",
+        "regions.py": "a3c9f78e855348327b8a707afc879056f2d9ae89666481b59f5b72af865b687e"
+      },
+      "frozen_split_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+      "ja_audited_summary_sha256": "23390948561afc8231ada4d71e0f4526a8c38cbe2a7eb618ba3bd4b9d865b304"
+    },
+    "native_initial_sha256": "8e0479ecdae6dc60558ed44d5d62c01f8b61075514bc34c109295950603fc886",
+    "optimizer_attempts": 0,
+    "prespecified_screen": {
+      "max_backbone_ratio": 0.2,
+      "min_native_joint_cosine": 0.98,
+      "snapshot_median_range": [
+        0.01,
+        0.1
+      ]
+    },
+    "runtime": {
+      "cuda": "12.8",
+      "cuda_devices": 1,
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "python": "3.12.3",
+      "torch": "2.8.0+cu128",
+      "torchvision": "0.23.0+cu128",
+      "ultralytics": "8.4.117"
+    },
+    "training_batches": 70
+  },
+  "formal_updates": 0,
+  "heldout_inference": {
+    "test": 0,
+    "val": 0
+  },
+  "j2_updates": 0,
+  "lambda_s": 8.0,
+  "layer_metrics": {
+    "0": {
+      "cosine": [
+        -0.6588925600335789,
+        0.2296558720384099,
+        0.9591828906346328
+      ],
+      "native_joint_cosine": [
+        0.984727862257978,
+        0.999595545475798,
+        0.9999653818364157
+      ],
+      "nonzero_auxiliary_tensors": [
+        3,
+        3.0,
+        3
+      ],
+      "weighted_ratio": [
+        0.008636171008108855,
+        0.06139656359970661,
+        0.23760686276683504
+      ]
+    },
+    "1": {
+      "cosine": [
+        -0.31533217045706036,
+        0.0045941087547112566,
+        0.7774482118813214
+      ],
+      "native_joint_cosine": [
+        0.9941951461756573,
+        0.9995824123130683,
+        0.9999319135318878
+      ],
+      "nonzero_auxiliary_tensors": [
+        3,
+        3.0,
+        3
+      ],
+      "weighted_ratio": [
+        0.011938373397552514,
+        0.06141617504360462,
+        0.18543774771181795
+      ]
+    },
+    "10": {
+      "cosine": [
+        -0.2141482845780041,
+        -0.0034161485639537556,
+        0.4586185109211734
+      ],
+      "native_joint_cosine": [
+        0.9957732899328313,
+        0.9996710662953737,
+        0.9999807961874135
+      ],
+      "nonzero_auxiliary_tensors": [
+        21,
+        21.0,
+        21
+      ],
+      "weighted_ratio": [
+        0.010664188871190177,
+        0.029006196331782814,
+        0.1108856270114165
+      ]
+    },
+    "13": {
+      "cosine": [
+        -0.2871412026832069,
+        0.04929578750734571,
+        0.4044778952468392
+      ],
+      "native_joint_cosine": [
+        0.9979911690999044,
+        0.9993883647394385,
+        0.9999062799565986
+      ],
+      "nonzero_auxiliary_tensors": [
+        12,
+        12.0,
+        12
+      ],
+      "weighted_ratio": [
+        0.01369401577474893,
+        0.04243284451527076,
+        0.07877615102485033
+      ]
+    },
+    "16": {
+      "cosine": [
+        -0.10051240905984088,
+        0.021745861943160888,
+        0.3525637533041755
+      ],
+      "native_joint_cosine": [
+        0.9950698733002028,
+        0.9985895325291654,
+        0.9997904640167048
+      ],
+      "nonzero_auxiliary_tensors": [
+        12,
+        12.0,
+        12
+      ],
+      "weighted_ratio": [
+        0.02048772586185006,
+        0.056827787679017486,
+        0.10027756079439767
+      ]
+    },
+    "17": {
+      "cosine": null,
+      "native_joint_cosine": [
+        0.9999999999999998,
+        1.0,
+        1.0000000000000002
+      ],
+      "nonzero_auxiliary_tensors": [
+        0,
+        0.0,
+        0
+      ],
+      "weighted_ratio": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "19": {
+      "cosine": null,
+      "native_joint_cosine": [
+        0.9999999999999999,
+        1.0,
+        1.0000000000000002
+      ],
+      "nonzero_auxiliary_tensors": [
+        0,
+        0.0,
+        0
+      ],
+      "weighted_ratio": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "2": {
+      "cosine": [
+        -0.16469385105811415,
+        0.059270705206563024,
+        0.497741582907835
+      ],
+      "native_joint_cosine": [
+        0.9901011515930085,
+        0.9992282396510477,
+        0.9999395151180093
+      ],
+      "nonzero_auxiliary_tensors": [
+        12,
+        12.0,
+        12
+      ],
+      "weighted_ratio": [
+        0.011090996708799903,
+        0.06302305680144013,
+        0.16608637729852513
+      ]
+    },
+    "20": {
+      "cosine": null,
+      "native_joint_cosine": [
+        0.9999999999999998,
+        1.0,
+        1.0000000000000002
+      ],
+      "nonzero_auxiliary_tensors": [
+        0,
+        0.0,
+        0
+      ],
+      "weighted_ratio": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "22": {
+      "cosine": null,
+      "native_joint_cosine": [
+        0.9999999999999998,
+        1.0,
+        1.0000000000000002
+      ],
+      "nonzero_auxiliary_tensors": [
+        0,
+        0.0,
+        0
+      ],
+      "weighted_ratio": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "23": {
+      "cosine": null,
+      "native_joint_cosine": [
+        0.9999999999999998,
+        1.0,
+        1.0000000000000002
+      ],
+      "nonzero_auxiliary_tensors": [
+        0,
+        0.0,
+        0
+      ],
+      "weighted_ratio": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "3": {
+      "cosine": [
+        -0.18255755752104774,
+        0.012971378948756574,
+        0.41528971246186797
+      ],
+      "native_joint_cosine": [
+        0.9940446325168358,
+        0.9991562913136953,
+        0.9999360961326719
+      ],
+      "nonzero_auxiliary_tensors": [
+        3,
+        3.0,
+        3
+      ],
+      "weighted_ratio": [
+        0.011251092996117125,
+        0.052240199074314445,
+        0.11412432926532233
+      ]
+    },
+    "4": {
+      "cosine": [
+        -0.1963663318944913,
+        0.057025341192247,
+        0.4273068617376194
+      ],
+      "native_joint_cosine": [
+        0.9956731141329243,
+        0.9989886827189758,
+        0.9999427316103249
+      ],
+      "nonzero_auxiliary_tensors": [
+        12,
+        12.0,
+        12
+      ],
+      "weighted_ratio": [
+        0.010668600353100697,
+        0.05102585275918535,
+        0.097713773493417
+      ]
+    },
+    "5": {
+      "cosine": [
+        -0.20771772597300367,
+        -0.020546802830354278,
+        0.3989047787336223
+      ],
+      "native_joint_cosine": [
+        0.9980853792292865,
+        0.9996933352747958,
+        0.999947880380764
+      ],
+      "nonzero_auxiliary_tensors": [
+        3,
+        3.0,
+        3
+      ],
+      "weighted_ratio": [
+        0.01021847441920904,
+        0.030409075797988912,
+        0.10414828136086048
+      ]
+    },
+    "6": {
+      "cosine": [
+        -0.19645945233990664,
+        -0.0027832873900819344,
+        0.39010275012449014
+      ],
+      "native_joint_cosine": [
+        0.9950656911493467,
+        0.9996645222146185,
+        0.9999547200192863
+      ],
+      "nonzero_auxiliary_tensors": [
+        27,
+        27.0,
+        27
+      ],
+      "weighted_ratio": [
+        0.010728315714704206,
+        0.03426720211005516,
+        0.14899708629086747
+      ]
+    },
+    "7": {
+      "cosine": [
+        -0.3001124090755561,
+        0.02393621596027571,
+        0.33555338496450043
+      ],
+      "native_joint_cosine": [
+        0.9950763677706757,
+        0.9997695297993329,
+        0.9999884589698953
+      ],
+      "nonzero_auxiliary_tensors": [
+        3,
+        3.0,
+        3
+      ],
+      "weighted_ratio": [
+        0.002885258612435831,
+        0.024514205173230524,
+        0.17264802717522854
+      ]
+    },
+    "8": {
+      "cosine": [
+        -0.40961864397178616,
+        0.034565926043169756,
+        0.4782046747765203
+      ],
+      "native_joint_cosine": [
+        0.9933593927800706,
+        0.9997629569474396,
+        0.9999875709436554
+      ],
+      "nonzero_auxiliary_tensors": [
+        27,
+        27.0,
+        27
+      ],
+      "weighted_ratio": [
+        0.002482314784266326,
+        0.027616766604001183,
+        0.10958234405482159
+      ]
+    },
+    "9": {
+      "cosine": [
+        -0.32673576533072135,
+        -0.0201791322694188,
+        0.49975061505696344
+      ],
+      "native_joint_cosine": [
+        0.9884707942761195,
+        0.9997209959339413,
+        0.9999887160101018
+      ],
+      "nonzero_auxiliary_tensors": [
+        6,
+        6.0,
+        6
+      ],
+      "weighted_ratio": [
+        0.0078485079359376,
+        0.03608289666580939,
+        0.2624326479913902
+      ]
+    },
+    "projection": {
+      "cosine": null,
+      "native_joint_cosine": null,
+      "nonzero_auxiliary_tensors": [
+        4,
+        4.0,
+        4
+      ],
+      "weighted_ratio": null
+    }
+  },
+  "loss_equation_verified_steps": 70,
+  "metric_triplets": "min/median/max",
+  "native_equivalent_train_batches": 70,
+  "rejected_lambda_10": {
+    "max_backbone_ratio": 0.18840909873445416,
+    "min_native_joint_cosine": 0.9899042082910953,
+    "optimizer_attempts": 0,
+    "runtime_source_identity": {
+      "coco_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+      "files": {
+        "ja.py": "a792247e86243c712ded8f0552e4209c23b8b3a26b1b9952377c0677d7deb44b",
+        "jb.py": "d3d825a7f64bb07a178df832602c2a453d715ff0a7b5bc28261eb68cc3951913",
+        "jb_binding.py": "28a89345b56d544f12a7bc4bce984d783c7ab34de7e901c1381244d501784b4c",
+        "regions.py": "a3c9f78e855348327b8a707afc879056f2d9ae89666481b59f5b72af865b687e"
+      },
+      "frozen_split_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+      "ja_audited_summary_sha256": "23390948561afc8231ada4d71e0f4526a8c38cbe2a7eb618ba3bd4b9d865b304"
+    },
+    "snapshot_medians": {
+      "coco_init": 0.02276594089028263,
+      "ja_j0_step70_initial_projection": 0.0709020589428051,
+      "ja_j1_step70": 0.10955768358101503
+    }
+  },
+  "smoke": {
+    "amp_skips": 0,
+    "backbone_after": "2a09c866be2825912218f0362a270038adb1a583a3f2bf7a9b0b651c92d835c6",
+    "backbone_before": "8925c9a340e410d6640f43f3431d8a5257b5b3f58534e9e742b0e98dd76d5c49",
+    "checkpoints": {
+      "1": {
+        "native_state_sha256": "1bf48c02877d5a8c46c59cde5ac26b168c11c924891bc8f9b829abe7c011a159",
+        "sha256": "9e7e08b957f99bf9852f1ce08487935ccd6c6a8b99b31376f888ed30ab39e622",
+        "state_sha256": "402ff0e0f769618c716bc984e3f1ec052b3b2fc4cd800c996ddaa517c6f9df02",
+        "strict_reload": true,
+        "stripped_native_forward": true
+      },
+      "70": {
+        "native_state_sha256": "cae81a2dd33f22cffb428b9b8221e35b94d29255c649393c95b5af9617cc7694",
+        "sha256": "77dbde86a73387916e785d24dccb259c44fd03f1108a10eacfa739dc9c9a9206",
+        "state_sha256": "70d21e00e1aa9bcaf9b7728f808e03e12115e48cc674bcd21c15749a0b16d612",
+        "strict_reload": true,
+        "stripped_native_forward": true
+      }
+    },
+    "counts": {
+      "all_original": 70,
+      "augmented_instances": 4093,
+      "batches_read": 70,
+      "original_exposures": 2228,
+      "raw_instance_exposures": 4232,
+      "repair_exposures": 0
+    },
+    "coverage": {
+      "batches": 70,
+      "batches_with_anchors_by_class": [
+        70,
+        64,
+        69,
+        70,
+        42,
+        21,
+        69
+      ],
+      "eligible_anchors_by_class": [
+        942,
+        305,
+        414,
+        590,
+        124,
+        59,
+        1601
+      ],
+      "median_batch_box_fill": 0.5779265873015873,
+      "median_eligible_anchors": 56.0,
+      "median_positive_pairs": 336.0,
+      "min_eligible_anchors": 37,
+      "min_negative_pairs": 582,
+      "min_positive_pairs": 104,
+      "missing_native_raster": 0,
+      "p3_cells_1": 23,
+      "p3_cells_2_to_4": 227,
+      "p3_cells_over_4": 3843,
+      "raster_missing_by_class": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "targets": 4093,
+      "targets_by_class": [
+        942,
+        309,
+        415,
+        590,
+        143,
+        92,
+        1602
+      ],
+      "zero_eligible_batches": 0
+    },
+    "effective_updates": 70,
+    "elapsed_seconds": 52.17900658771396,
+    "native_optimizer_calls": 70,
+    "optimizer_attempts": 70,
+    "peak_allocated_bytes": 5037467136,
+    "peak_reserved_bytes": 5351931904,
+    "post_warmup_steps": 7,
+    "projection_after": "e42f73e50fa0ff1453f8d43a5e953fbc7db11e5c2e291ec2e71bb74c004f4540",
+    "projection_before": "83664f93724017b43a2861826141fc41074a0ae58729d170829f787395d1fc6e"
+  },
+  "smoke_budget_cap": 80,
+  "smoke_budget_consumed": 70,
+  "smoke_joint_clip_coef": [
+    0.002783629106743087,
+    0.02630059568696578,
+    0.05686098620820516
+  ],
+  "smoke_joint_gradient_norm": [
+    175.8675079345703,
+    380.7353210449219,
+    3592.4326171875
+  ],
+  "smoke_joint_loss": [
+    423.4005432128906,
+    497.7033386230469,
+    536.799072265625
+  ],
+  "smoke_median_postwarmup_audited_seconds": 0.23488440923392773,
+  "smoke_native_bn_only_checked_steps": [
+    1,
+    64,
+    70
+  ],
+  "smoke_native_clip_coef": [
+    0.0027802681321955065,
+    0.024146840699280393,
+    0.07172659263214642
+  ],
+  "smoke_native_gradient_norm": [
+    139.41830444335938,
+    414.1434631347656,
+    3596.775390625
+  ],
+  "smoke_native_loss": [
+    393.53619384765625,
+    466.58033752441406,
+    507.3217468261719
+  ],
+  "smoke_steps_clipped_j0_reference": 70,
+  "smoke_steps_clipped_j1": 70,
+  "smoke_supcon_loss": [
+    3.5436339378356934,
+    3.9648793935775757,
+    4.503134250640869
+  ],
+  "snapshot_metrics": {
+    "coco_init": {
+      "auxiliary_loss": [
+        3.5789012908935547,
+        3.974626064300537,
+        4.123382091522217
+      ],
+      "backbone_cosine": [
+        -0.08575028394224907,
+        -0.014560261555814143,
+        0.07353533533865075
+      ],
+      "backbone_weighted_ratio": [
+        0.011045516407107197,
+        0.018212752712226103,
+        0.0275315525604941
+      ],
+      "clip_coefficient_joint": [
+        0.002783629134640923,
+        0.003049959699003307,
+        0.0035389697630250037
+      ],
+      "clip_coefficient_native": [
+        0.0027802680240039397,
+        0.0030494482922861837,
+        0.0035455423784491436
+      ],
+      "clip_coefficient_relative_joint_vs_native": [
+        0.9981462313173606,
+        1.0001039651915664,
+        1.001208916049807
+      ],
+      "joint_loss": [
+        406.3822021484375,
+        452.4938659667969,
+        471.98040771484375
+      ],
+      "native_joint_cosine": [
+        0.9996226638131256,
+        0.9998348603454406,
+        0.9999387349703915
+      ],
+      "native_loss": [
+        377.7509765625,
+        420.08360290527344,
+        438.99334716796875
+      ]
+    },
+    "ja_j0_step70_initial_projection": {
+      "auxiliary_loss": [
+        3.475338935852051,
+        4.006347179412842,
+        4.247354030609131
+      ],
+      "backbone_cosine": [
+        -0.40405429810527516,
+        0.5358679905794246,
+        0.8157957162785415
+      ],
+      "backbone_weighted_ratio": [
+        0.023834121874476085,
+        0.05672164715424409,
+        0.15072727898756333
+      ],
+      "clip_coefficient_joint": [
+        0.02931754197060153,
+        0.0402969581601164,
+        0.0870050721745449
+      ],
+      "clip_coefficient_native": [
+        0.029398658768419142,
+        0.0403945068941754,
+        0.08738230949116063
+      ],
+      "clip_coefficient_relative_joint_vs_native": [
+        0.9467092018653376,
+        0.9858185580228325,
+        1.0130386614081786
+      ],
+      "joint_loss": [
+        430.1719055175781,
+        490.10679626464844,
+        494.15252685546875
+      ],
+      "native_joint_cosine": [
+        0.9934862220117181,
+        0.999496313866545,
+        0.9998509585699046
+      ],
+      "native_loss": [
+        400.86322021484375,
+        457.9931182861328,
+        462.40283203125
+      ]
+    },
+    "ja_j1_step70": {
+      "auxiliary_loss": [
+        3.5672435760498047,
+        4.037826776504517,
+        4.178492546081543
+      ],
+      "backbone_cosine": [
+        -0.08166743249820199,
+        0.06725620100125898,
+        0.5396231555734928
+      ],
+      "backbone_weighted_ratio": [
+        0.06124314300286765,
+        0.08764614686481204,
+        0.12856548830644793
+      ],
+      "clip_coefficient_joint": [
+        0.05011876982016173,
+        0.0635940627155981,
+        0.07965854816705296
+      ],
+      "clip_coefficient_native": [
+        0.05166345522777008,
+        0.06392512865862593,
+        0.0800998481320127
+      ],
+      "clip_coefficient_relative_joint_vs_native": [
+        0.9701010046502262,
+        0.9948599042760591,
+        0.9993331770006343
+      ],
+      "joint_loss": [
+        444.4414367675781,
+        512.4419555664062,
+        524.3524169921875
+      ],
+      "native_joint_cosine": [
+        0.9940476489665667,
+        0.9984042751632602,
+        0.99938712979558
+      ],
+      "native_loss": [
+        414.62933349609375,
+        480.6134338378906,
+        492.07373046875
+      ]
+    }
+  },
+  "status": "EXP15_JB_PASS_READY_FOR_FORMAL_GATE"
+}
