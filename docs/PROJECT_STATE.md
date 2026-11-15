@@ -1,5 +1,9 @@
 # Project state
 
+## Exp14 E0/E1-FULL seed 42 formal training (2026-11-15)
+
+EXP14_E0_E1_FULL_TRAIN_COMPLETE_PENDING_VAL_GATE. E0/E1-FULL each completed 100 epochs with 2,100/3,300 effective optimizer updates and 66,800 original exposures per arm. Both epoch-100 FP32 master checkpoints and strict CPU reload passed. Frozen TRAIN data verified unchanged. VAL and TEST inference remain zero. [Handoff](exp14/EXP14_E0_E1_FULL_SEED42_TRAIN_HANDOFF.md).
+
 ## Exp14 E0/E1-FULL protocol freeze (2026-11-15)
 
 EXP14_FORMAL_PROTOCOL_READY_PENDING_CHATGPT_GATE. Equal-epoch E0/E1-FULL is preregistered with 2,100/3,300 planned updates and 66,800 original-image exposures per arm. AutoDL verified the formal inputs, native loader with repeatable epoch augmentation, equal COCO initialization, and zero optimizer updates. The fixed epoch-100 master and separate VAL evaluator await authorized execution. [Handoff](exp14/EXP14_E0_E1_FULL_PROTOCOL_HANDOFF.md).

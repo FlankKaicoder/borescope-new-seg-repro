@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp14 E0/E1-FULL seed 42 formal training (2026-11-15)
+
+EXP14_E0_E1_FULL_TRAIN_COMPLETE_PENDING_VAL_GATE. Both 100-epoch jobs completed the preregistered budgets. Independent checks verified zero AMP skips, 40 retained checkpoint identities, strict terminal reload and frozen training data. [Handoff](exp14/EXP14_E0_E1_FULL_SEED42_TRAIN_HANDOFF.md) · [Sanitized summary](../results/exp14_e0_e1_full_seed42_train/summary.json).
+
 ## Exp14 E0/E1-FULL protocol freeze (2026-11-15)
 
 EXP14_FORMAL_PROTOCOL_READY_PENDING_CHATGPT_GATE. Formal entry points, equal-epoch budgets, identities and paired VAL protocol frozen. Actual inputs and native epoch loading verified on AutoDL with zero optimizer updates or held-out inference. [Handoff](exp14/EXP14_E0_E1_FULL_PROTOCOL_HANDOFF.md) · [Sanitized summary](../results/exp14_e0_e1_full_protocol/summary.json).
