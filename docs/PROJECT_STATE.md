@@ -1,5 +1,9 @@
 # Project state
 
+## Exp14 E0/E1-FULL protocol freeze (2026-11-15)
+
+EXP14_FORMAL_PROTOCOL_READY_PENDING_CHATGPT_GATE. Equal-epoch E0/E1-FULL is preregistered with 2,100/3,300 planned updates and 66,800 original-image exposures per arm. AutoDL verified the formal inputs, native loader with repeatable epoch augmentation, equal COCO initialization, and zero optimizer updates. The fixed epoch-100 master and separate VAL evaluator await authorized execution. [Handoff](exp14/EXP14_E0_E1_FULL_PROTOCOL_HANDOFF.md).
+
 ## Exp14-A11-1 bounded GPU Smoke (2026-11-14)
 
 EXP14_A11_1_BOUNDED_SMOKE_COMPLETE_PENDING_CHATGPT_GATE. E0 and E1 each completed 50 effective native AdamW updates on the A10-frozen runtime. E1 consumed 575 repaired-image exposures, and separate mixed and all-empty backward probes passed. AMP skips were zero, engineering checkpoints reloaded strictly, and the frozen deployment passed before-and-after verification. Formal training awaits its own Gate. [Handoff](exp14/EXP14_A11_1_BOUNDED_GPU_SMOKE_HANDOFF.md).

@@ -1,0 +1,27 @@
+{
+  "files": {
+    "tools/exp13_cloud/g3/g3_batch_executor.py": "4a3ad30bfc862702780bce0b15ac65218f75d87d004ede5917b0035b475f9317",
+    "tools/exp13_cloud/g3/verify_train_export.py": "d00e685c27fb8cd9269c4b3b1c94bd45203375f0b9b63cfdf66ca1f28b18c002",
+    "tools/exp14/a10_dataset_entries.py": "31355dd8d2857a4783d81074d8322a41959830573794eb45547a9a8f3a8a15e1",
+    "tools/exp14/a11_full_eval.py": "7a6fc016ac69e8ea0293403c77f5f62df7229f630d9657c4b2e247a2b9dddc46",
+    "tools/exp14/a11_full_numerics.py": "4295cac91c03d2f2cb59d700a38ea9229bf75b39e5af9f3f90b706125e59b3b8",
+    "tools/exp14/a11_full_protocol.py": "faece4870df0580ea089c65d05cd2341f385173779c885bf06eb6de3c2a403a8",
+    "tools/exp14/a11_full_train.py": "d555b91193105b04e46952753c5c1db60143d4dcaac7547014a8c462702390f6",
+    "tools/exp14/a11_loader.py": "82e826d165e83c64cfc172e4c7303cb190e68f516e8750e542e84ad4358c6962",
+    "tools/exp14/a11_release_audit.py": "39b53a0453d6721cc0ce1604246295f6966548b4ada212130962aace1d4fb49e",
+    "tools/exp14/a11_smoke_numerics.py": "3dcbc77cdeb5960e2fb00b8a9646f8f903dc89f658316b7434d9c545e33712e9",
+    "tools/exp14/a11_smoke_train.py": "345a86f660061a72a6498949b4cb0290c551f3f68e5cd0ed3de9f3348e4c5b5a",
+    "tools/exp14/audit_admission.py": "7d2024dd61997f77d7f5f8dff84fd96b8171c4e526c5769442d23f49aad52bb8",
+    "tools/exp14/diagnose_amp_first_batch.py": "64ffd956e2c90ec17e812a59564c88d42c8da7628626a0883fea3f5773368be0",
+    "tools/exp14/evaluate_formal_e0_e1.py": "618a039f150e8a63c99ed76a96e80eb09212bcab90499b996ee2f1e58e430238",
+    "tools/exp14/foreground_audit.py": "4841acf0a8c424b8544cb11b956a3575550f5532d5f539688890c14fe5e0dfa6",
+    "tools/exp14/formal_e0_e1.py": "0bb40328f21a0da26af97827d41c2316851a294a623741dfa5f35f1f3d9aeb52",
+    "tools/exp14/freeze_core.py": "bd27faae7f9147855586f445f118e19c3e4d19de5864609bdd3dcf15d162edc1",
+    "tools/exp14/label_plan.py": "e4c99d290fa255a07ad8f53f2e5854e840ab5d7192c91f3076d2ec597fccd68e",
+    "tools/exp14/revised_amp_smoke.py": "cd73844eaf29fbf5f697247c6f05dfcd49b71759a978256398b35825c984889a",
+    "tools/exp14/smoke_trainer.py": "03cf1f46b31a3c1888931d2350f75fea3444797df9118689e5c6abc146265763"
+  },
+  "protocol_file_sha256": "a9f3235d4afae4e91b8bde5148b55f27cd2e477372bc759f5fe263f7f35895b4",
+  "schema": "exp14_full_execution_identity_v1",
+  "source_encoding": "SHA256_WITH_CRLF_NORMALIZED_TO_LF"
+}

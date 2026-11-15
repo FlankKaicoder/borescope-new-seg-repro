@@ -69,9 +69,11 @@ def finite_number(value):
 
 
 class NumericalAudit:
-    def __init__(self, trainer):
+    def __init__(self, trainer, update_limit=MAX_UPDATES):
+        require(type(update_limit) is int and update_limit > 0, "Invalid audited update limit")
         self.trainer = trainer
         self.model, self.optimizer, self.scaler = trainer.model, trainer.optimizer, trainer.scaler
+        self.update_limit = update_limit
         state = self.scaler.state_dict()
         require(self.scaler.is_enabled() and state == {"scale": 1.0, "_growth_tracker": 0, **NATIVE_DEFAULTS},
                 "Smoke requires enabled native GradScaler with initial scale 1 and standard growth/backoff")
@@ -119,6 +121,10 @@ class NumericalAudit:
         stats = report["unscaled_gradients"] = gradient_report(self.model)
         if stats["zero_fraction"] >= ZERO_DETAIL_AT or report["overflow"]:
             report["layer_gradients"] = layer_gradient_statistics(self.model, by_scale=True)
+            for layer in report["layer_gradients"].values():
+                for metric in ("finite_norm", "finite_max_abs"):
+                    if layer[metric] is not None:
+                        layer[metric] = finite_number(layer[metric])
         if not report["overflow"] and (report["scaled_gradients"]["nonfinite"] or stats["nonfinite"]
                                       or stats["zero"] == stats["elements"] or not stats["master_dtype_fp32"]):
             raise NumericalFailure("Backward yielded no finite, nonzero FP32 gradient signal", report)
@@ -142,8 +148,8 @@ class NumericalAudit:
             raise NumericalFailure("Global gradient norm is non-finite or zero", report)
 
     def optimizer_step(self):
-        require(self.optimizer_attempts < MAX_UPDATES and self.effective_updates < MAX_UPDATES,
-                "Bounded Smoke update budget exhausted")
+        require(self.optimizer_attempts < self.update_limit and self.effective_updates < self.update_limit,
+                "Audited optimizer update budget exhausted")
         report = self.inspect_backward()
         snapshots = []
         if not report["overflow"]:

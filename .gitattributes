@@ -4,3 +4,5 @@
 /configs/exp13_cloud/** -text
 /docs/exp13_cloud/** -text
 /configs/exp14/repair/*.txt -text
+/results/exp14_e0_e1_full_protocol/protocol.json text eol=lf
+/results/exp14_e0_e1_full_protocol/execution_identity.json text eol=lf

@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp14 E0/E1-FULL protocol freeze (2026-11-15)
+
+Decision D072. Preserve equal original TRAIN epoch exposure as the primary comparison. Lock native AdamW, batch 32, AMP Scale 1, fixed epoch-100 FP32 master and the paired VAL protocol. Keep update-matched E0 and additional paired seeds as later controls. Freeze the execution identity after zero-update preparation and stop at formal authorization. [Protocol](exp14/EXP14_E0_E1_FULL_FORMAL_PROTOCOL.md).
+
 ## Exp14-A11-1 bounded GPU Smoke (2026-11-14)
 
 Decision D071. Bound both A10 TRAIN arms to 50 effective updates with single-image augmentation, batch 32 and native AMP at initial scale 1. Isolate mixed and all-background backward checks from optimizer updates. Preserve engineering checkpoints and data hashes. Submit the validated initial configuration and untested later schedule segments for the formal experiment Gate. [Handoff](exp14/EXP14_A11_1_BOUNDED_GPU_SMOKE_HANDOFF.md).

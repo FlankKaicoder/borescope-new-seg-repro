@@ -1,0 +1,126 @@
+{
+  "autodl_cpu_tests": 17,
+  "backward_called": false,
+  "base_commit": "5442a0cb28548b76a64dcdc568476e3660ce91c5",
+  "e0_update_performed": false,
+  "execution_identity_sha256": "2a59fb5e8ea55e8b699b1a45fdf2f6b64f22a44abb1570c3f8b1ce42d19a3d02",
+  "formal_native_zero_update_check": {
+    "e0": {
+      "actual_warmup_iterations": 63,
+      "backward_called": false,
+      "epoch0": {
+        "batches": 21,
+        "images": 668,
+        "seed": 11239984525932145783,
+        "tail": 28,
+        "tensor_and_order_sha256": "fda4acc3569acebe2caf605f19252d28d2e26258bb255c3ec3adc724be0bb958"
+      },
+      "epoch1": {
+        "batches": 21,
+        "images": 668,
+        "seed": 1006996774486806803,
+        "tail": 28,
+        "tensor_and_order_sha256": "8f1ce00ddffc1bca4a222c904e60a7f9892e07ac864f0e1436179ec96c50a6bc"
+      },
+      "held_out_model_inference": 0,
+      "initial_model_state_sha256": "8e0479ecdae6dc60558ed44d5d62c01f8b61075514bc34c109295950603fc886",
+      "initial_parameter_sha256": "5d2cb582056c31c4c28c4edba2979e5191adff5f9a956bc3b909867f8ba1d4b1",
+      "inputs_and_augmented_tensors_replay": true,
+      "optimizer_updates": 0,
+      "runtime": {
+        "cuda": "12.8",
+        "cuda_devices": 1,
+        "gpu": "NVIDIA GeForce RTX 3080 Ti",
+        "python": "3.12.3",
+        "torch": "2.8.0+cu128",
+        "torchvision": "0.23.0+cu128",
+        "ultralytics": "8.4.117"
+      },
+      "status": "PASS_FORMAL_NATIVE_SETUP_ZERO_UPDATES"
+    },
+    "e1": {
+      "actual_warmup_iterations": 99,
+      "backward_called": false,
+      "epoch0": {
+        "batches": 33,
+        "images": 1047,
+        "seed": 11239984525932145783,
+        "tail": 23,
+        "tensor_and_order_sha256": "f560d5a730aa5876baecd7016688f3fbf97c4954d9ed00c7d7642998f917069f"
+      },
+      "epoch1": {
+        "batches": 33,
+        "images": 1047,
+        "seed": 1006996774486806803,
+        "tail": 23,
+        "tensor_and_order_sha256": "9ab636a3507bf7bf588e8b01b33f76837907eb140ca16f73a9d03b9ced7be785"
+      },
+      "held_out_model_inference": 0,
+      "initial_model_state_sha256": "8e0479ecdae6dc60558ed44d5d62c01f8b61075514bc34c109295950603fc886",
+      "initial_parameter_sha256": "5d2cb582056c31c4c28c4edba2979e5191adff5f9a956bc3b909867f8ba1d4b1",
+      "inputs_and_augmented_tensors_replay": true,
+      "optimizer_updates": 0,
+      "runtime": {
+        "cuda": "12.8",
+        "cuda_devices": 1,
+        "gpu": "NVIDIA GeForce RTX 3080 Ti",
+        "python": "3.12.3",
+        "torch": "2.8.0+cu128",
+        "torchvision": "0.23.0+cu128",
+        "ultralytics": "8.4.117"
+      },
+      "status": "PASS_FORMAL_NATIVE_SETUP_ZERO_UPDATES"
+    }
+  },
+  "formal_training_authorization_created": false,
+  "formal_training_started": false,
+  "input_identities": {
+    "coco_weight_name": "yolo11n-seg.pt",
+    "coco_weight_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+    "dataset_content_sha256": "6c899ab76fab35832ae38cf8fd67bd0a8a5439ee5bafd48670ce2c37df3321f9",
+    "deployment_manifest_sha256": "219a018ecb6b0c21a75b1e869dba172371a91b429ec3b7246ae40cf87af6bb57",
+    "frozen_split_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+    "runtime_release_files": 2101,
+    "train_image_label_files": 2094
+  },
+  "native_read_only_replay_batches": 215,
+  "optimizer_updates": 0,
+  "planned_arms": {
+    "e0": {
+      "batches_per_epoch": 21,
+      "effective_updates": 2100,
+      "images": 668,
+      "original_exposures": 66800,
+      "original_images": 668,
+      "raw_instance_exposures": 126600,
+      "raw_instances": 1266,
+      "repair_exposures": 0,
+      "repair_images": 0,
+      "tail_batch": 28,
+      "warmup_iterations": 63
+    },
+    "e1": {
+      "batches_per_epoch": 33,
+      "effective_updates": 3300,
+      "images": 1047,
+      "original_exposures": 66800,
+      "original_images": 668,
+      "raw_instance_exposures": 126600,
+      "raw_instances": 1266,
+      "repair_exposures": 37900,
+      "repair_images": 379,
+      "tail_batch": 23,
+      "warmup_iterations": 99
+    }
+  },
+  "protocol_prep_arm_count": 2,
+  "protocol_sha256": "a9f3235d4afae4e91b8bde5148b55f27cd2e477372bc759f5fe263f7f35895b4",
+  "server_free_bytes_at_preparation": 11229155328,
+  "stage": "EXP14_E0_E1_FULL_PROTOCOL_FREEZE",
+  "status": "EXP14_FORMAL_PROTOCOL_READY_PENDING_CHATGPT_GATE",
+  "test_model_inference_runs": 0,
+  "train_release_unchanged": true,
+  "val_model_inference_runs": 0,
+  "val_test_file_bytes_read": false,
+  "windows_cpu_tests": 31
+}

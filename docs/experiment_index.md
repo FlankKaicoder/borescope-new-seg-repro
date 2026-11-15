@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp14 E0/E1-FULL protocol freeze (2026-11-15)
+
+EXP14_FORMAL_PROTOCOL_READY_PENDING_CHATGPT_GATE. Formal entry points, equal-epoch budgets, identities and paired VAL protocol frozen. Actual inputs and native epoch loading verified on AutoDL with zero optimizer updates or held-out inference. [Handoff](exp14/EXP14_E0_E1_FULL_PROTOCOL_HANDOFF.md) · [Sanitized summary](../results/exp14_e0_e1_full_protocol/summary.json).
+
 ## Exp14-A11-1 bounded GPU Smoke (2026-11-14)
 
 EXP14_A11_1_BOUNDED_SMOKE_COMPLETE_PENDING_CHATGPT_GATE. 50 effective updates in each arm, zero AMP skips, strict engineering-checkpoint reload and unchanged data bytes. [Handoff](exp14/EXP14_A11_1_BOUNDED_GPU_SMOKE_HANDOFF.md) · [Sanitized summary](../results/exp14_a11_1_bounded_gpu_smoke/summary.json).
