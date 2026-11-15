@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp15 J-A engineering mechanism (2026-11-15)
+
+Decision D075. Use the one-forward fused P3 Polygon pool and current-batch cross-group SupCon for the bounded prototype. Preserve the original E0 sampler, augmentation and native optimizer schedule. Record a conservative training-only weight for Smoke, strict checkpoint and independent gradient proofs, and limit the recommendation to formal review. Keep J2 Pair admission and all performance conclusions under independent Gates. [Handoff](exp15/EXP15_JA_HANDOFF.md).
+
 ## Exp14 E0/E1-FULL seed 42 frozen VAL (2026-11-15)
 
 Decision D074. Record the authorized frozen VAL pair from the two epoch-100 FP32 master checkpoints. Treat the observed primary metric decline and rise in fixed-confidence FP and FN as descriptive seed 42 results. Submit the pair for independent result review before any follow-up experiments. [Handoff](exp14/EXP14_E0_E1_FULL_SEED42_VAL_HANDOFF.md).

@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp15 J-A shared-backbone region SupCon (2026-11-15)
+
+READY_FOR_J0_J1_FORMAL_REVIEW. CPU checks and TRAIN-only AutoDL J0/J1 Smoke complete. Both arms achieved 70 effective updates with seven post-warmup, zero AMP skips, strict reload and matched augmented input tensors. [Handoff](exp15/EXP15_JA_HANDOFF.md) · [Sanitized summary](../results/exp15_ja/summary.json).
+
 ## Exp14 E0/E1-FULL seed 42 frozen VAL (2026-11-15)
 
 EXP14_E0_E1_FULL_SEED42_VAL_COMPLETE_PENDING_CHATGPT_RESULT_GATE. Four preregistered VAL passes covered the same 154 images and 296 instances. Both checkpoint hashes, the frozen VAL bytes and aggregate counts reconciled. E1-FULL Mask mAP50–95 declined by 1.912 percentage points. [Handoff](exp14/EXP14_E0_E1_FULL_SEED42_VAL_HANDOFF.md) · [Sanitized summary](../results/exp14_e0_e1_full_seed42_val/summary.json).

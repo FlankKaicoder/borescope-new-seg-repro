@@ -1,5 +1,9 @@
 # Project state
 
+## Exp15 J-A shared-backbone region SupCon (2026-11-15)
+
+READY_FOR_J0_J1_FORMAL_REVIEW. The TRAIN-only J0/J1 prototype reuses the native fused P3 features and weights them by the augmented Polygon raster. Both arms completed 70 effective GPU updates with matching augmented tensors and native schedules, seven post-warmup updates, zero AMP skips and strict engineering-checkpoint reload. Independent auxiliary gradients reached all 120 backbone trainable tensors. Formal auxiliary strength and the matched 100-epoch comparison await independent review and authorization. VAL/TEST inference and J2 updates were zero. [Handoff](exp15/EXP15_JA_HANDOFF.md).
+
 ## Exp14 E0/E1-FULL seed 42 frozen VAL (2026-11-15)
 
 EXP14_E0_E1_FULL_SEED42_VAL_COMPLETE_PENDING_CHATGPT_RESULT_GATE. The single authorized paired evaluation completed on frozen VAL, with 154 images and 296 instances in each pass. Mask mAP50–95 was 24.95% for E0 and 23.04% for E1-FULL. Fixed-confidence Mask FP rose from 57 to 66 and FN from 201 to 219. TEST inference remains zero. [Handoff](exp14/EXP14_E0_E1_FULL_SEED42_VAL_HANDOFF.md).
