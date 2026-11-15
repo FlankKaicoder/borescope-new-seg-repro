@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp15 J-D seed42 frozen VAL result (2026-11-15)
+
+Decision D078. Record the separately authorized four-pass native VAL comparison for the exact J-C epoch-100 FP32 masters. Require actual J0 consistency with the historical E0 receipts before J1. Preserve the positive seed42 primary metric change together with fixed-threshold and class-specific trade-offs. Stop at independent result review. [Handoff](exp15/EXP15_JD_HANDOFF.md).
+
 ## Exp15 J-C formal J0/J1 execution (2026-11-15)
 
 Decision D077. Execute the authorized seed42 formal pair under the exact J-B protocol, accept J0 independently before launching J1, and retain both epoch-100 FP32 master states as the sole inputs for any separately authorized frozen VAL evaluation. Preserve the matched TRAIN evidence and the isolated TRAIN-only gradient replay. [Handoff](exp15/EXP15_JC_HANDOFF.md).

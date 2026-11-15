@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp15 J-D J0/J1 seed42 frozen VAL (2026-11-15)
+
+EXP15_JD_FROZEN_VAL_COMPLETE_PENDING_RESULT_GATE. The primary Mask mAP50–95 increased by 2.323 percentage points. Four VAL receipts passed, both checkpoint and frozen VAL hashes were rechecked, and actual J0 exactly matched historical E0. [Handoff](exp15/EXP15_JD_HANDOFF.md) · [Sanitized summary](../results/exp15_jd_val_seed42/summary.json).
+
 ## Exp15 J-C J0/J1 seed42 formal TRAIN (2026-11-15)
 
 EXP15_J0_J1_FORMAL_TRAIN_COMPLETE_PENDING_VAL_GATE. Both runs independently completed 100 epochs and 2,100 effective updates, accepted all 42 checkpoint identities, and matched all 2,100 augmented TRAIN batches. [Handoff](exp15/EXP15_JC_HANDOFF.md) · [Paired audit](../results/exp15_jc_formal_seed42/pair_summary.json).
