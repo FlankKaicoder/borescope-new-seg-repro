@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp15 J-E0 preregistered multi-seed verification (2026-11-15)
+
+Decision D079. Record EXP15_JD_PASS_SINGLE_SEED_POSITIVE and keep seed42 as the completed discovery pair. Add matched seed142 and seed242 pairs with fixed lambda 8, temperature 0.10, epoch-100 FP32 endpoints and frozen VAL scoring. Preregister unrounded paired effects, sample standard deviation and sign-based interpretation. Stop after TRAIN-only adapter preflight and one-step smoke pending independent formal approval. [Handoff](exp15/EXP15_JE0_HANDOFF.md).
+
 ## Exp15 J-D seed42 frozen VAL result (2026-11-15)
 
 Decision D078. Record the separately authorized four-pass native VAL comparison for the exact J-C epoch-100 FP32 masters. Require actual J0 consistency with the historical E0 receipts before J1. Preserve the positive seed42 primary metric change together with fixed-threshold and class-specific trade-offs. Stop at independent result review. [Handoff](exp15/EXP15_JD_HANDOFF.md).

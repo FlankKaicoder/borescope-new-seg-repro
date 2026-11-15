@@ -1,0 +1,206 @@
+{
+  "arms": {
+    "j0": {
+      "lambda_s": 0.0
+    },
+    "j1": {
+      "lambda_s": 8.0,
+      "temperature": 0.1
+    }
+  },
+  "audited_base_head": "bca1d48f2a3004fe843db4a259f52e3ee360d0ff",
+  "authorization": "PENDING_INDEPENDENT_FORMAL_GATE",
+  "budget": {
+    "batches_per_epoch": 21,
+    "effective_updates": 2100,
+    "epochs": 100,
+    "original_image_exposures_per_arm": 66800,
+    "original_train_images": 668,
+    "raw_instance_exposures_per_arm": 126600,
+    "raw_instances": 1266,
+    "warmup_iterations": 63
+  },
+  "checkpoint": "FP32_MASTER_LAST_AT_EPOCH100",
+  "evaluation": {
+    "batch": 32,
+    "checkpoint": "epoch100_last_master_fp32",
+    "conf": 0.001,
+    "fixed_conf": 0.25,
+    "gt_size_definition": "native_rasterized_polygon_area_over_full_image_area",
+    "imgsz": 640,
+    "independent_val_gate_required": true,
+    "match_iou": 0.5,
+    "matching": "NATIVE_ULTRALYTICS_CLASS_AWARE_IOU_GREEDY_ONE_TO_ONE",
+    "max_det": 300,
+    "nms_iou": 0.7,
+    "passes_per_pair": [
+      "j0_standard",
+      "j0_fixed",
+      "j1_standard",
+      "j1_fixed"
+    ],
+    "precision": "CUDA_FP32_TF32_DISABLED",
+    "size_thresholds": [
+      0.0020196759259259256,
+      0.007364969135802469,
+      0.029209280303030303
+    ],
+    "split": "val",
+    "test_model_inference": false,
+    "val_files_sha256": "50e4561534750edc5f1d739c4c8c24591edb6e75a9d70f8d1a640e2bd139c467",
+    "val_images": 154,
+    "val_instances": 296
+  },
+  "hard_stop": "STOP_PRESERVE_EVIDENCE_NO_AUTOMATIC_RETRY_OR_HYPERPARAMETER_CHANGE",
+  "identity": {
+    "coco_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+    "files": {
+      "ja.py": "a792247e86243c712ded8f0552e4209c23b8b3a26b1b9952377c0677d7deb44b",
+      "jb.py": "c74d82c19534c72d57734dcdb0f9b272a480f0c5699a2f505fcb9d1caf125a8d",
+      "jb_binding.py": "28a89345b56d544f12a7bc4bce984d783c7ab34de7e901c1381244d501784b4c",
+      "regions.py": "a3c9f78e855348327b8a707afc879056f2d9ae89666481b59f5b72af865b687e"
+    },
+    "frozen_split_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+    "ja_audited_summary_sha256": "23390948561afc8231ada4d71e0f4526a8c38cbe2a7eb618ba3bd4b9d865b304"
+  },
+  "jb_protocol_sha256": "b638850fc21fc26dc0075282340a40ecc25e5bda891a3dbf9327dc415681b0ca",
+  "jc_seed42_pair_sha256": "b181be9779e45724d575d118917dbec1d46b8dd918cdbca7d4cd74fa4466a832",
+  "jd_seed42_summary_sha256": "c1489223acc25caddd2d14ed60f504ffb5a6db6fb7d08117ca3c3cebed5f186c",
+  "new_seeds": [
+    142,
+    242
+  ],
+  "preflight": {
+    "additional_replay_epoch": 100,
+    "hard_smoke_cap_per_seed_arm": 5,
+    "replay_first_batches": 70,
+    "smoke_attempts_per_seed_arm": 1
+  },
+  "reporting": {
+    "aggregate": "unweighted_mean_and_sample_SD_of_three_paired_deltas_ddof_1",
+    "by_positive_count": {
+      "0": "no_stable_gain_claim",
+      "1": "no_stable_gain_claim",
+      "2": "mixed_evidence",
+      "3": "stronger_preliminary_stability"
+    },
+    "incomplete_pair": "HOLD_NO_THREE_SEED_CONCLUSION",
+    "individual_delta": "unrounded_J1_minus_J0",
+    "positive_rule": "strictly_greater_than_zero",
+    "primary": "Mask mAP50-95",
+    "secondary": [
+      "Mask Precision and Recall",
+      "fixed Mask/Box FP/FN",
+      "per-class Mask AP",
+      "size Recall",
+      "Tears AP50-95",
+      "Dent Tiny Mask Recall",
+      "Crack fixed Mask FP",
+      "Burn/corrosion AP and fixed counts"
+    ]
+  },
+  "run_order": [
+    [
+      142,
+      "j0"
+    ],
+    [
+      142,
+      "j1"
+    ],
+    [
+      242,
+      "j0"
+    ],
+    [
+      242,
+      "j1"
+    ]
+  ],
+  "runtime": {
+    "cuda": "12.8",
+    "cuda_devices": 1,
+    "gpu": "NVIDIA GeForce RTX 3080 Ti",
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "ultralytics": "8.4.117"
+  },
+  "schema": "exp15_je0_multiseed_v1",
+  "seed42_primary": {
+    "j0": 0.24951245667305366,
+    "j1": 0.2727438798549706,
+    "j1_minus_j0": 0.023231423181916955,
+    "metric": "metrics/mAP50-95(M)"
+  },
+  "seed42_role": "ALREADY_COMPLETED_DISCOVERY_PAIR",
+  "seeds": [
+    42,
+    142,
+    242
+  ],
+  "source_sha256_lf": {
+    "tools/exp14/a11_full_eval.py": "7a6fc016ac69e8ea0293403c77f5f62df7229f630d9657c4b2e247a2b9dddc46",
+    "tools/exp14/a11_full_numerics.py": "4295cac91c03d2f2cb59d700a38ea9229bf75b39e5af9f3f90b706125e59b3b8",
+    "tools/exp14/a11_full_train.py": "d555b91193105b04e46952753c5c1db60143d4dcaac7547014a8c462702390f6",
+    "tools/exp14/a11_smoke_numerics.py": "3dcbc77cdeb5960e2fb00b8a9646f8f903dc89f658316b7434d9c545e33712e9",
+    "tools/exp14/a11_smoke_train.py": "345a86f660061a72a6498949b4cb0290c551f3f68e5cd0ed3de9f3348e4c5b5a",
+    "tools/exp15/audit_jc.py": "189f54af0786162d4ff52ff3ea03da4e138619d596a1598bb3acdbc2010b50a3",
+    "tools/exp15/ja.py": "a792247e86243c712ded8f0552e4209c23b8b3a26b1b9952377c0677d7deb44b",
+    "tools/exp15/jb.py": "c74d82c19534c72d57734dcdb0f9b272a480f0c5699a2f505fcb9d1caf125a8d",
+    "tools/exp15/je0.py": "d3e71fbe85ad49687680e343e68d1fa810569cd746c24ca9d45b89004b1f4cea",
+    "tools/exp15/regions.py": "a3c9f78e855348327b8a707afc879056f2d9ae89666481b59f5b72af865b687e"
+  },
+  "train_common": {
+    "accumulate": 1,
+    "amp": true,
+    "amp_backoff_factor": 0.5,
+    "amp_growth_factor": 2.0,
+    "amp_growth_interval": 2000,
+    "amp_initial_scale": 1.0,
+    "augmentation": {
+      "bgr": 0.0,
+      "close_mosaic": 0,
+      "copy_paste": 0.0,
+      "cutmix": 0.0,
+      "degrees": 0.0,
+      "fliplr": 0.5,
+      "flipud": 0.0,
+      "hsv_h": 0.015,
+      "hsv_s": 0.7,
+      "hsv_v": 0.4,
+      "mixup": 0.0,
+      "mosaic": 0.0,
+      "multi_scale": 0.0,
+      "perspective": 0.0,
+      "rect": false,
+      "scale": 0.5,
+      "shear": 0.0,
+      "translate": 0.1
+    },
+    "batch": 32,
+    "checkpoint_interval_epochs": 5,
+    "compile": false,
+    "cos_lr": false,
+    "deterministic": true,
+    "drop_last": false,
+    "epochs": 100,
+    "gradient_clip_l2_max": 10.0,
+    "imgsz": 640,
+    "lr0": 0.01,
+    "lr_schedule": "NATIVE_LINEAR_PER_EPOCH_WITH_NATIVE_ITERATION_WARMUP",
+    "lrf": 0.01,
+    "momentum": 0.937,
+    "nbs": 32,
+    "optimizer": "AdamW",
+    "patience": 0,
+    "sampling": "SEEDED_NATIVE_RANDOM_SAMPLER_WITHOUT_REPLACEMENT_PER_EPOCH",
+    "skip_policy": "STOP_ON_FIRST_NONFINITE_OR_NATIVE_SKIP",
+    "validation_during_training": false,
+    "warmup_bias_lr": 0.1,
+    "warmup_epochs": 3.0,
+    "warmup_momentum": 0.8,
+    "weight_decay": 0.0005,
+    "workers": 2
+  }
+}

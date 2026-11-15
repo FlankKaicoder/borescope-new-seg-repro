@@ -1,0 +1,141 @@
+{
+  "estimated_four_arm_checkpoint_bytes": 3902081316,
+  "formal_updates": 0,
+  "framework_sha256": {
+    "ultralytics/data/augment.py": "d30f823e330ea4d8f165eda6f16e81a8d41acf22918a9c1c97d022b7bfc9dc5a",
+    "ultralytics/data/base.py": "41bb1349e4baa74b94728d2c323fbdd7fd318b1f82b951880b292fb34840dac3",
+    "ultralytics/data/build.py": "2f14a4860a3f18c07ceb14272f0c4b5b482fd4e779ebdd37fa258aefeb80452a",
+    "ultralytics/data/dataset.py": "36aa66daa0949747745b8e1986a812b152dffc7ec050d78e25e37c16285b11c5",
+    "ultralytics/data/utils.py": "3896dc106c2a68425ab0b7b2695e2f6609c98d5ed11c9750be6301e5c8a42173",
+    "ultralytics/engine/trainer.py": "77023dbf526a1b9b6925f1e665fe2c215c913cd65e2c1cf4438301479961d025",
+    "ultralytics/nn/tasks.py": "2c78d12335ea68411146698ddff9f056e24b3fc1f30ce00efca54837a22ca68f",
+    "ultralytics/utils/loss.py": "dbda30466bcef7f2513699c7a187c4210eb1961d33e3072e3b83ed7206b1d349",
+    "ultralytics/utils/torch_utils.py": "357b4eb93788e0e3a93846a4a511d0940ffc089d8e57563df09ec0f78e719336"
+  },
+  "free_disk_bytes_after_smoke": 6790447104,
+  "preflight_sha256": "ebe00b9c0c2a4150837110f737a1a7afeffe3886a391bca6ded59fcd184d1e02",
+  "protocol_sha256": "1e114398c58a87337a1addbc4392b4485e651f928e95ca9d8c189af52972a305",
+  "runtime": {
+    "cuda": "12.8",
+    "cuda_devices": 1,
+    "gpu": "NVIDIA GeForce RTX 3080 Ti",
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "ultralytics": "8.4.117"
+  },
+  "seed42_updates": 0,
+  "seed_results": {
+    "142": {
+      "final_epoch_first_order_sha256": "dea361a4d2c8b09e136dd3453335cdb2beae1145a9836e96c2e19e9b02298ce9",
+      "first_augmented_sha256": "f75a853fa27746b5ff932ccba1a735684ded5f2f376bc939df4e5d4d49c88e00",
+      "first_order_sha256": "d537371378432dc13e2e3a3bfa1333918505d85af190c223aef6dcf5595c5306",
+      "initial_bn_sha256": "dc932431670c6b914da72dc9cb4e45343fc01f33d28344b171a6fd5c472b9835",
+      "max_analytic_lr_error_first_70": 1.3877787807814457e-17,
+      "min_active_anchors_first_70": 36,
+      "native_initial_sha256": "3b7779eb31537a8b402b500741d0187a7efcfce5c66b0ec5482c10e96d6514bc",
+      "native_optimizer_groups_sha256": "f562ba4702d0afa533d90adc8cd8c9f9de9804662db5dbd5823890283dfb6053",
+      "paired_batches_epoch100": 21,
+      "paired_batches_first": 70,
+      "smoke": {
+        "j0": {
+          "amp_skips": 0,
+          "checkpoint": {
+            "native_state_sha256": "890b95007514a011cca7edf536535a53db30d5ffceb0999818692477edf16a22",
+            "sha256": "5ce95e59ae456548edbe4a556d82181dc13952a82ebaf468aaa7c75c517f40a2",
+            "state_sha256": "890b95007514a011cca7edf536535a53db30d5ffceb0999818692477edf16a22",
+            "strict_reload": true,
+            "stripped_native_forward": true
+          },
+          "checkpoint_bytes": 46251663,
+          "effective_updates": 1,
+          "gradient_norm": 2579.8544921875,
+          "lambda_s": 0.0,
+          "native_loss": 405.61224365234375,
+          "optimizer_attempts": 1,
+          "peak_allocated_bytes": 4914963968,
+          "peak_reserved_bytes": 5312086016,
+          "supcon_loss": null
+        },
+        "j1": {
+          "amp_skips": 0,
+          "checkpoint": {
+            "native_state_sha256": "0afe2825dba25d132a75d314d581a0376b1b7d1a9efa2283178b191856e97989",
+            "sha256": "ea76f7aaadf947bd90542da879412dad2e072a66393a9f115bb054b5c04d257e",
+            "state_sha256": "c6609d88aae33841a61298afaea1aba736c2c374733fffc88899faca5a4eef7c",
+            "strict_reload": true,
+            "stripped_native_forward": true
+          },
+          "checkpoint_bytes": 46655035,
+          "effective_updates": 1,
+          "gradient_norm": 2604.513671875,
+          "lambda_s": 8.0,
+          "native_loss": 405.61224365234375,
+          "optimizer_attempts": 1,
+          "peak_allocated_bytes": 4941871616,
+          "peak_reserved_bytes": 5379194880,
+          "supcon_loss": 4.435329437255859
+        }
+      }
+    },
+    "242": {
+      "final_epoch_first_order_sha256": "14a39d6cbb864cdbf0cc0e5c452882b4bf647ad16add5d4446b07bf3192e9c9b",
+      "first_augmented_sha256": "00376142995fc28f68e79a52ba511ca3d0bb38865a66fcffefb2e1fa6fddbddb",
+      "first_order_sha256": "3ae7167f2828f9d252a81fddddd51168be009e5a5cfb5c426875ef3634d8ef19",
+      "initial_bn_sha256": "dc932431670c6b914da72dc9cb4e45343fc01f33d28344b171a6fd5c472b9835",
+      "max_analytic_lr_error_first_70": 1.3877787807814457e-17,
+      "min_active_anchors_first_70": 38,
+      "native_initial_sha256": "de598e518c76707b3c0c30f15d28cfb912fadb3db1c58a6b767358c6b8a05b01",
+      "native_optimizer_groups_sha256": "f562ba4702d0afa533d90adc8cd8c9f9de9804662db5dbd5823890283dfb6053",
+      "paired_batches_epoch100": 21,
+      "paired_batches_first": 70,
+      "smoke": {
+        "j0": {
+          "amp_skips": 0,
+          "checkpoint": {
+            "native_state_sha256": "454763f65138de1f93d7dd44860b804d8bf58059034ab90d2fa4cff15d440ccd",
+            "sha256": "bb2182f79596d24cd53eea9e6ce25e45f7f601916387cb6226ca8d89dbbd64f2",
+            "state_sha256": "454763f65138de1f93d7dd44860b804d8bf58059034ab90d2fa4cff15d440ccd",
+            "strict_reload": true,
+            "stripped_native_forward": true
+          },
+          "checkpoint_bytes": 46251663,
+          "effective_updates": 1,
+          "gradient_norm": 3669.317138671875,
+          "lambda_s": 0.0,
+          "native_loss": 412.7623596191406,
+          "optimizer_attempts": 1,
+          "peak_allocated_bytes": 4898559488,
+          "peak_reserved_bytes": 5234491392,
+          "supcon_loss": null
+        },
+        "j1": {
+          "amp_skips": 0,
+          "checkpoint": {
+            "native_state_sha256": "061e6b13dfe6b9467104b1689018bb08e93755629d8d17ef98d41743439e0c62",
+            "sha256": "0ecfb9a894457b835901320228303e7d67fbaf3f400953b5258e2470bd3e797c",
+            "state_sha256": "abf3f9bcf9ecc3f35212521ca2d43c2028b3b1859ff3bef133568349d59e0d01",
+            "strict_reload": true,
+            "stripped_native_forward": true
+          },
+          "checkpoint_bytes": 46655035,
+          "effective_updates": 1,
+          "gradient_norm": 3668.7158203125,
+          "lambda_s": 8.0,
+          "native_loss": 412.7623596191406,
+          "optimizer_attempts": 1,
+          "peak_allocated_bytes": 4923722240,
+          "peak_reserved_bytes": 5286920192,
+          "supcon_loss": 3.9621758460998535
+        }
+      }
+    }
+  },
+  "status": "EXP15_JE0_MULTISEED_READY_FOR_FORMAL_GATE",
+  "test_inference": 0,
+  "total_gpu_smoke_attempts": 4,
+  "train_groups": 632,
+  "train_images": 668,
+  "train_images_labels_sha_verified": 1336,
+  "val_inference": 0
+}

@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp15 J-E0 multi-seed verification preparation (2026-11-15)
+
+EXP15_JE0_MULTISEED_READY_FOR_FORMAL_GATE. Paired startup and data replay passed for seed142 and seed242, 91 matching batch positions per seed. All four one-step GPU smoke arms completed with zero AMP skips and strict checkpoint reload. [Handoff](exp15/EXP15_JE0_HANDOFF.md) · [Machine protocol](../results/exp15_je0_multiseed/formal_protocol.json) · [Summary](../results/exp15_je0_multiseed/summary.json).
+
 ## Exp15 J-D J0/J1 seed42 frozen VAL (2026-11-15)
 
 EXP15_JD_FROZEN_VAL_COMPLETE_PENDING_RESULT_GATE. The primary Mask mAP50–95 increased by 2.323 percentage points. Four VAL receipts passed, both checkpoint and frozen VAL hashes were rechecked, and actual J0 exactly matched historical E0. [Handoff](exp15/EXP15_JD_HANDOFF.md) · [Sanitized summary](../results/exp15_jd_val_seed42/summary.json).

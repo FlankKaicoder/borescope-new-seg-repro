@@ -1,5 +1,9 @@
 # Project state
 
+## Exp15 J-E0 paired multiseed preparation (2026-11-15)
+
+EXP15_JE0_MULTISEED_READY_FOR_FORMAL_GATE. Preserve the accepted seed42 discovery pair and preregister matched seed142 and seed242 pairs. Each new seed matched all 70 initial augmented batches and 21 final-epoch replay batches between J0 and J1. Four one-attempt TRAIN-only GPU smoke arms all updated and strictly reloaded. Formal updates and VAL/TEST inference were zero. A separate formal authorization binds the machine protocol and preflight receipts. [Handoff](exp15/EXP15_JE0_HANDOFF.md).
+
 ## Exp15 J-D J0/J1 seed42 frozen VAL pair (2026-11-15)
 
 EXP15_JD_FROZEN_VAL_COMPLETE_PENDING_RESULT_GATE. Four authorized native passes evaluated both epoch-100 FP32 masters on the same 154 frozen VAL images and 296 instances. Actual J0 reproduced historical E0 exactly. J1 Mask mAP50–95 was 0.272744 vs J0 0.249512, a seed42 gain of 2.323 percentage points. At conf 0.25, Mask TP/FP/FN changed from 95/57/201 to 98/56/198. Training updates and TEST inference were zero. [Handoff](exp15/EXP15_JD_HANDOFF.md).
