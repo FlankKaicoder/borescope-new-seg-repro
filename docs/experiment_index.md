@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp15 J-C J0/J1 seed42 formal TRAIN (2026-11-15)
+
+EXP15_J0_J1_FORMAL_TRAIN_COMPLETE_PENDING_VAL_GATE. Both runs independently completed 100 epochs and 2,100 effective updates, accepted all 42 checkpoint identities, and matched all 2,100 augmented TRAIN batches. [Handoff](exp15/EXP15_JC_HANDOFF.md) · [Paired audit](../results/exp15_jc_formal_seed42/pair_summary.json).
+
 ## Exp15 J-B TRAIN-only SupCon strength calibration (2026-11-15)
 
 EXP15_JB_PASS_READY_FOR_FORMAL_GATE. Lambda 8 selected using 24 zero-update gradient probes. Independent J1 smoke verified effective updates 70/70, zero AMP skips, matched augmented TRAIN, overlap/class binding, and strict checkpoint reload. [Handoff](exp15/EXP15_JB_HANDOFF.md) · [Sanitized summary](../results/exp15_jb/summary.json) · [Formal protocol](../results/exp15_jb/formal_protocol.json).

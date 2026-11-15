@@ -1,0 +1,85 @@
+{
+  "approved_head": "2aba71a929d2cb593d0e32377ee24811e0e4dc8d",
+  "identity": {
+    "coco_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+    "files": {
+      "ja.py": "a792247e86243c712ded8f0552e4209c23b8b3a26b1b9952377c0677d7deb44b",
+      "jb.py": "c74d82c19534c72d57734dcdb0f9b272a480f0c5699a2f505fcb9d1caf125a8d",
+      "jb_binding.py": "28a89345b56d544f12a7bc4bce984d783c7ab34de7e901c1381244d501784b4c",
+      "regions.py": "a3c9f78e855348327b8a707afc879056f2d9ae89666481b59f5b72af865b687e"
+    },
+    "frozen_split_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+    "ja_audited_summary_sha256": "23390948561afc8231ada4d71e0f4526a8c38cbe2a7eb618ba3bd4b9d865b304"
+  },
+  "input_preflight": {
+    "approved_head": "2aba71a929d2cb593d0e32377ee24811e0e4dc8d",
+    "authorization_sha256": "913f2364a469abad5a91be4440486f6804f077d869c85f2ae449a503080cb797",
+    "calibration_report_sha256": "2f42f3edb215500653c68177521bbad7f741f95162b1686a2f39bce2d5a87f81",
+    "code_archive_sha256": "2b373dca90f7a05c38e74874af03e8ef0bb4de20929efd8fa6668fa65f114140",
+    "framework_source_sha256": {
+      "ultralytics/data/augment.py": "d30f823e330ea4d8f165eda6f16e81a8d41acf22918a9c1c97d022b7bfc9dc5a",
+      "ultralytics/data/base.py": "41bb1349e4baa74b94728d2c323fbdd7fd318b1f82b951880b292fb34840dac3",
+      "ultralytics/data/build.py": "2f14a4860a3f18c07ceb14272f0c4b5b482fd4e779ebdd37fa258aefeb80452a",
+      "ultralytics/data/dataset.py": "36aa66daa0949747745b8e1986a812b152dffc7ec050d78e25e37c16285b11c5",
+      "ultralytics/data/utils.py": "3896dc106c2a68425ab0b7b2695e2f6609c98d5ed11c9750be6301e5c8a42173",
+      "ultralytics/engine/trainer.py": "77023dbf526a1b9b6925f1e665fe2c215c913cd65e2c1cf4438301479961d025",
+      "ultralytics/nn/tasks.py": "2c78d12335ea68411146698ddff9f056e24b3fc1f30ce00efca54837a22ca68f",
+      "ultralytics/utils/loss.py": "dbda30466bcef7f2513699c7a187c4210eb1961d33e3072e3b83ed7206b1d349",
+      "ultralytics/utils/torch_utils.py": "357b4eb93788e0e3a93846a4a511d0940ffc089d8e57563df09ec0f78e719336"
+    },
+    "identity": {
+      "coco_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+      "files": {
+        "ja.py": "a792247e86243c712ded8f0552e4209c23b8b3a26b1b9952377c0677d7deb44b",
+        "jb.py": "c74d82c19534c72d57734dcdb0f9b272a480f0c5699a2f505fcb9d1caf125a8d",
+        "jb_binding.py": "28a89345b56d544f12a7bc4bce984d783c7ab34de7e901c1381244d501784b4c",
+        "regions.py": "a3c9f78e855348327b8a707afc879056f2d9ae89666481b59f5b72af865b687e"
+      },
+      "frozen_split_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+      "ja_audited_summary_sha256": "23390948561afc8231ada4d71e0f4526a8c38cbe2a7eb618ba3bd4b9d865b304"
+    },
+    "native_initial_sha256": "8e0479ecdae6dc60558ed44d5d62c01f8b61075514bc34c109295950603fc886",
+    "protocol_sha256": "b638850fc21fc26dc0075282340a40ecc25e5bda891a3dbf9327dc415681b0ca",
+    "runtime": {
+      "cuda": "12.8",
+      "cuda_devices": 1,
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "python": "3.12.3",
+      "torch": "2.8.0+cu128",
+      "torchvision": "0.23.0+cu128",
+      "ultralytics": "8.4.117"
+    },
+    "smoke_report_sha256": "5237274890dd974955b61cd0621f4bcd0925414d02aa21324f4a2b9be752c98e",
+    "status": "PASS_JC_ZERO_UPDATE_PREFLIGHT",
+    "test_inference": 0,
+    "train_groups": 632,
+    "train_images": 668,
+    "train_images_labels_hash_verified": 1336,
+    "updates": 0,
+    "val_inference": 0,
+    "working_disk_available_bytes": 8999370752
+  },
+  "j0_acceptance_before_j1_sha256": "218f77424a1faed34f0ccf777b8720bf68b401451a09a1de5ff17eb9f68a52b5",
+  "j2_updates": 0,
+  "matched_amp_schedule": true,
+  "matched_batch_ledger_sha256": "ea5ad87365d10cd80895a19ce9252bb63073394023dec13442f59253a3260b16",
+  "matched_batches": 2100,
+  "matched_epochs": 100,
+  "matched_initial_native_and_optimizer_groups": true,
+  "matched_train_members_order_augmentation_exposure_and_lr": true,
+  "protocol_sha256": "b638850fc21fc26dc0075282340a40ecc25e5bda891a3dbf9327dc415681b0ca",
+  "runtime": {
+    "cuda": "12.8",
+    "cuda_devices": 1,
+    "gpu": "NVIDIA GeForce RTX 3080 Ti",
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "ultralytics": "8.4.117"
+  },
+  "status": "EXP15_J0_J1_FORMAL_TRAIN_COMPLETE_PENDING_VAL_GATE",
+  "synthetic_native_model_reload_only": true,
+  "test_model_inference": 0,
+  "train_files_hash_verified_pre_and_post": 1336,
+  "val_model_inference": 0
+}

@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp15 J-C formal J0/J1 execution (2026-11-15)
+
+Decision D077. Execute the authorized seed42 formal pair under the exact J-B protocol, accept J0 independently before launching J1, and retain both epoch-100 FP32 master states as the sole inputs for any separately authorized frozen VAL evaluation. Preserve the matched TRAIN evidence and the isolated TRAIN-only gradient replay. [Handoff](exp15/EXP15_JC_HANDOFF.md).
+
 ## Exp15 J-B strength and formal protocol (2026-11-15)
 
 Decision D076. Select fixed lambda 8 after the lambda 10 late-snapshot median exceeded the prespecified engineering screen. Retain both TRAIN-only probes and the independent J1 budget. Bind the formal matched pair to frozen E0 settings, fresh COCO starts and the epoch-100 FP32 master. Start only after independent approval of the exact protocol. [Handoff](exp15/EXP15_JB_HANDOFF.md).

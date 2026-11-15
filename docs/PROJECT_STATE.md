@@ -1,5 +1,9 @@
 # Project state
 
+## Exp15 J-C J0/J1 seed42 formal TRAIN (2026-11-15)
+
+EXP15_J0_J1_FORMAL_TRAIN_COMPLETE_PENDING_VAL_GATE. Both arms completed 100 epochs and 2,100 effective optimizer updates each, with zero AMP skips. All TRAIN epochs, ordered sources, augmented tensors, exposure, native optimizer groups and learning rates matched. Epoch-100 FP32 master and EMA identities, optimizer state and strict native reload passed. J1 used fixed lambda 8. VAL and TEST inference, J2 updates and additional seeds were zero. [Handoff](exp15/EXP15_JC_HANDOFF.md).
+
 ## Exp15 J-B TRAIN-only SupCon strength calibration (2026-11-15)
 
 EXP15_JB_PASS_READY_FOR_FORMAL_GATE. Eight frozen TRAIN batches at each of three snapshots support fixed J1 lambda 8. Lambda 10 remained a zero-update calibration candidate and exceeded the prespecified snapshot-median screen. J1 lambda 8 completed 70 of 80 allowed attempts, all effective with seven after warmup, zero AMP skips, matched native TRAIN tensors and strict reloading. Formal protocol is bound to calibrated evidence and awaits separate authorization. VAL/TEST inference and J2 updates were zero. [Handoff](exp15/EXP15_JB_HANDOFF.md).
