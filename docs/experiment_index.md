@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp15 J-E1 matched seed142 and seed242 formal TRAIN (2026-11-16)
+
+EXP15_JE1_MULTISEED_FORMAL_TRAIN_COMPLETE_PENDING_VAL_GATE. Both new TRAIN pairs passed full pairing and checkpoint audits. [Handoff](exp15/EXP15_JE1_HANDOFF.md) · [Summary](../results/exp15_je1_formal_seed142_242/summary.json) · [Endpoints](../results/exp15_je1_formal_seed142_242/epoch100_endpoints.json).
+
 ## Exp15 J-E0 multi-seed verification preparation (2026-11-15)
 
 EXP15_JE0_MULTISEED_READY_FOR_FORMAL_GATE. Paired startup and data replay passed for seed142 and seed242, 91 matching batch positions per seed. All four one-step GPU smoke arms completed with zero AMP skips and strict checkpoint reload. [Handoff](exp15/EXP15_JE0_HANDOFF.md) · [Machine protocol](../results/exp15_je0_multiseed/formal_protocol.json) · [Summary](../results/exp15_je0_multiseed/summary.json).

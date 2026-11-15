@@ -1,0 +1,59 @@
+{
+  "endpoints": [
+    {
+      "arm": "j0",
+      "ema_state_sha256": "975e3fea29a1800952ef184fe921475ba31993e8aecc3a999c59fa7799c52e7a",
+      "epoch": 100,
+      "file_name": "last.pt",
+      "file_sha256": "462d40d5b7710f234cc8190c13d6dd7bba11fb6612e968b1f4e5174544997b45",
+      "fp32_full_state_sha256": "69491c7d55d99dca6a3aaf90bfff710792dfa92796dbcdd3947d0da471446b8b",
+      "fp32_native_state_sha256": "69491c7d55d99dca6a3aaf90bfff710792dfa92796dbcdd3947d0da471446b8b",
+      "seed": 142,
+      "strict_native_cpu_reload_passed": true,
+      "strip_region_projection": false,
+      "updates": 2100
+    },
+    {
+      "arm": "j1",
+      "ema_state_sha256": "fb018affd939a9b37395e01157812be0e51a8b327a3c10a5199d179c5c0d4eb0",
+      "epoch": 100,
+      "file_name": "last.pt",
+      "file_sha256": "0c9db72f4947958a2483bd45e1afbc9704e8cf1a037e64c30ea986a15fc9e77d",
+      "fp32_full_state_sha256": "59184bd2ec37882904e4d4f70eb7c6dd5b9c8699656938170299b627bcdf858b",
+      "fp32_native_state_sha256": "4ff031db0828392904d500e672a453ff99177a87ddaba575e9567daf5b2b08cf",
+      "seed": 142,
+      "strict_native_cpu_reload_passed": true,
+      "strip_region_projection": true,
+      "updates": 2100
+    },
+    {
+      "arm": "j0",
+      "ema_state_sha256": "265d137205ea7e81f46adf5a2bbbc21225d21a75f100296583f06068fe50e0bd",
+      "epoch": 100,
+      "file_name": "last.pt",
+      "file_sha256": "90019223c591a7eb36769c45d68a3661a4abe6dbd75982ddb2b0139ef2cac9c0",
+      "fp32_full_state_sha256": "26a44603a484e44dbed28c99b2e46607a3ff8ca4e19135deeb1f0fb2bef736dc",
+      "fp32_native_state_sha256": "26a44603a484e44dbed28c99b2e46607a3ff8ca4e19135deeb1f0fb2bef736dc",
+      "seed": 242,
+      "strict_native_cpu_reload_passed": true,
+      "strip_region_projection": false,
+      "updates": 2100
+    },
+    {
+      "arm": "j1",
+      "ema_state_sha256": "32a16f3d5227bd0d18c12baa8f3d740a16f409fb8d2eac6eddc4381f3ebf7b11",
+      "epoch": 100,
+      "file_name": "last.pt",
+      "file_sha256": "45315a6491cf3e157760495f166a09d3e4597cb51c096f847941a0ae3019b3dd",
+      "fp32_full_state_sha256": "9d2703c0bb5a87f44febdcfe6997d7dbf2669f32c634ee6ff07dc02905efc9ba",
+      "fp32_native_state_sha256": "6abe39c56e5668233c15f5a8066631213e39bbc92b82a88b9dbc0616bc54f2e1",
+      "seed": 242,
+      "strict_native_cpu_reload_passed": true,
+      "strip_region_projection": true,
+      "updates": 2100
+    }
+  ],
+  "protocol_sha256": "1e114398c58a87337a1addbc4392b4485e651f928e95ca9d8c189af52972a305",
+  "required_gate": "INDEPENDENT_FROZEN_VAL_AUTHORIZATION",
+  "selection": "EPOCH100_FP32_MASTER_NATIVE_ONLY"
+}

@@ -1,5 +1,9 @@
 # Project state
 
+## Exp15 J-E1 matched seed142 and seed242 formal TRAIN (2026-11-16)
+
+EXP15_JE1_MULTISEED_FORMAL_TRAIN_COMPLETE_PENDING_VAL_GATE. Four authorized arms passed 100 epochs and 2,100 updates each with zero AMP skips. Both seeds matched all 2,100 native TRAIN batches and accepted the epoch-100 FP32 endpoints. Frozen VAL awaits independent authorization. [Handoff](exp15/EXP15_JE1_HANDOFF.md).
+
 ## Exp15 J-E0 paired multiseed preparation (2026-11-15)
 
 EXP15_JE0_MULTISEED_READY_FOR_FORMAL_GATE. Preserve the accepted seed42 discovery pair and preregister matched seed142 and seed242 pairs. Each new seed matched all 70 initial augmented batches and 21 final-epoch replay batches between J0 and J1. Four one-attempt TRAIN-only GPU smoke arms all updated and strictly reloaded. Formal updates and VAL/TEST inference were zero. A separate formal authorization binds the machine protocol and preflight receipts. [Handoff](exp15/EXP15_JE0_HANDOFF.md).
