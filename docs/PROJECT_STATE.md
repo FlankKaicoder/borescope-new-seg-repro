@@ -1,5 +1,9 @@
 # Project state
 
+## Exp15 J-E2 frozen VAL across three seeds (2026-11-22)
+
+EXP15_JE2_MULTISEED_VAL_COMPLETE_PENDING_RESULT_GATE. Both new validation pairs completed eight native passes. All three Mask mAP50–95 paired effects were positive, mean +0.0123911540 and sample SD 0.0104685932. Tears AP and Dent Tiny Recall improved across seeds. Class and size trade-offs remain. Independent Result Gate pending. [Handoff](exp15/EXP15_JE2_HANDOFF.md).
+
 ## Exp15 J-E1 matched seed142 and seed242 formal TRAIN (2026-11-16)
 
 EXP15_JE1_MULTISEED_FORMAL_TRAIN_COMPLETE_PENDING_VAL_GATE. Four authorized arms passed 100 epochs and 2,100 updates each with zero AMP skips. Both seeds matched all 2,100 native TRAIN batches and accepted the epoch-100 FP32 endpoints. Frozen VAL awaits independent authorization. [Handoff](exp15/EXP15_JE1_HANDOFF.md).

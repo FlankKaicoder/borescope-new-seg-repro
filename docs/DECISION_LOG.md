@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp15 J-E2 frozen VAL across three seeds (2026-11-22)
+
+Decision D081. Retain all three preregistered seeds and unrounded paired effects. Apply the fixed 3/3 positive interpretation as preliminary stability on frozen VAL, alongside class and size trade-offs. Preserve the report-only CRLF identity stop and canonical-source correction. Wait for independent Result Gate. [Handoff](exp15/EXP15_JE2_HANDOFF.md).
+
 ## Exp15 J-E1 matched seed142 and seed242 formal TRAIN (2026-11-16)
 
 Decision D080. Accept seed142 and seed242 only after complete per-arm numerical and checkpoint audits and full matched TRAIN audits. Freeze the four epoch-100 FP32 masters as the sole new inputs for an independently authorized VAL run. [Handoff](exp15/EXP15_JE1_HANDOFF.md).

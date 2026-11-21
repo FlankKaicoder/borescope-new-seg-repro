@@ -1,0 +1,95 @@
+{
+  "adapter_archive_sha256": "677ba826c1d94fbc2928048a13ded10e847dbaa0bf12e82eb29b7ad491c74184",
+  "adapter_commit": "2f904ec816d09224d24b594c880bfbd2c0cb8dbe",
+  "attempts_sha256": "a313976b913466d9789e26d68d4945315b7b1b51bf5460a34408b7cf4422260c",
+  "audited_training_head": "5fbf3679afc7f4e93afd1c7d77a37a64c14d9414",
+  "authorization_sha256": "b2fb189f2f38af196e69f1470ea4e35f70ea73e779e67e91ea94caf93a44c2c6",
+  "checkpoint_bytes_rechecked": true,
+  "checkpoint_spec": {
+    "142/j0": {
+      "file_sha256": "462d40d5b7710f234cc8190c13d6dd7bba11fb6612e968b1f4e5174544997b45",
+      "native_master_sha256": "69491c7d55d99dca6a3aaf90bfff710792dfa92796dbcdd3947d0da471446b8b"
+    },
+    "142/j1": {
+      "file_sha256": "0c9db72f4947958a2483bd45e1afbc9704e8cf1a037e64c30ea986a15fc9e77d",
+      "native_master_sha256": "4ff031db0828392904d500e672a453ff99177a87ddaba575e9567daf5b2b08cf"
+    },
+    "242/j0": {
+      "file_sha256": "90019223c591a7eb36769c45d68a3661a4abe6dbd75982ddb2b0139ef2cac9c0",
+      "native_master_sha256": "26a44603a484e44dbed28c99b2e46607a3ff8ca4e19135deeb1f0fb2bef736dc"
+    },
+    "242/j1": {
+      "file_sha256": "45315a6491cf3e157760495f166a09d3e4597cb51c096f847941a0ae3019b3dd",
+      "native_master_sha256": "6abe39c56e5668233c15f5a8066631213e39bbc92b82a88b9dbc0616bc54f2e1"
+    }
+  },
+  "cpu_unit_tests": 3,
+  "diagnostic_definitions": {
+    "box_match_quality": "mask IoU on the same pair selected by native fixed class-aware box matching",
+    "fixed_mask_fn_priority": [
+      "same_class_mask_edge_lost_one_to_one",
+      "wrong_class_mask_overlap",
+      "same_class_box_good_mask_below_50",
+      "same_class_overlap_below_50",
+      "no_same_class_overlap"
+    ],
+    "low_conf_band": "0.001 <= score < 0.25 from standard pass post-NMS predictions",
+    "low_conf_candidate_gt": "GT unmatched by native mask matching on the >=0.25 subset of the standard pass, with >=1 same-class mask IoU >=0.50 candidate in the low band",
+    "mask_overlap_cutoff": 0.5,
+    "nonzero_overlap_criterion": "box IoU or mask IoU strictly above zero"
+  },
+  "engineering_events": [
+    {
+      "phase": "report_schema_predeployment",
+      "resolution": "Aligned summary preflight key to val_model_forward_calls"
+    },
+    {
+      "evaluation_passes_repeated": 0,
+      "first_attempt": "STOPPED_AT_HISTORICAL_RAW_SHA_CHECK",
+      "original_history_modified": false,
+      "phase": "post_evaluation_summary",
+      "reason": "Windows Git archive exported new historical copies with CRLF",
+      "resolution": "Separate reporting snapshot built from exact Git blob bytes"
+    }
+  ],
+  "evaluation_protocol": {
+    "batch": 32,
+    "checkpoint": "epoch100_last_master_fp32",
+    "conf": 0.001,
+    "fixed_conf": 0.25,
+    "gt_size_definition": "native_rasterized_polygon_area_over_full_image_area",
+    "imgsz": 640,
+    "match_iou": 0.5,
+    "matching": "NATIVE_ULTRALYTICS_CLASS_AWARE_IOU_GREEDY_ONE_TO_ONE",
+    "max_det": 300,
+    "nms_iou": 0.7,
+    "precision": "CUDA_FP32_TF32_DISABLED",
+    "size_thresholds": [
+      0.0020196759259259256,
+      0.007364969135802469,
+      0.029209280303030303
+    ],
+    "split": "val",
+    "test_model_inference": false
+  },
+  "evaluation_receipt_sha256": "2bba543a3915369962bc35a3a447b58bd06cbc48a8570cc4a84569b98b4000dc",
+  "evaluation_retries": 0,
+  "independent_identity_sha256": "17cb892c5ac2b4e8785fa219190cb1ed03c2e0e2e2b251b369ed7d189fa63e26",
+  "optimizer_updates": 0,
+  "preflight_sha256": "d881d60fbb65e0106dab15e170432453d141f472c4e74f95113446bb50a84897",
+  "private_evidence_archive_sha256": "ca9819b135d950e67919b1898d67febd740a1aec015d5637eb10ad893c5d5c84",
+  "protocol_sha256": "1e114398c58a87337a1addbc4392b4485e651f928e95ca9d8c189af52972a305",
+  "report_source_archive_sha256": "716ba9bd17606f5c2d3f6b117021a6e7c5b33df9612565b1a0c32561679103cc",
+  "report_source_commit": "2f904ec816d09224d24b594c880bfbd2c0cb8dbe",
+  "run_exit": 0,
+  "run_finished": "2026-11-22T00:59:24.702922+08:00",
+  "run_started": "2026-11-22T00:58:54.735642+08:00",
+  "seed42_val_passes_added": 0,
+  "snapshot_note": "XFS mount device changed from historical /dev/sdb to /dev/nvme0n1; frozen content and runtime reverified",
+  "status": "EXP15_JE2_MULTISEED_VAL_COMPLETE_PENDING_RESULT_GATE",
+  "test_inference": 0,
+  "unit_log_sha256": "89ee935615668bbb001469fc7561638524092cd8018906d46df409426bad5c21",
+  "val_bytes_rechecked": true,
+  "val_files_sha256": "50e4561534750edc5f1d739c4c8c24591edb6e75a9d70f8d1a640e2bd139c467",
+  "val_passes": 8
+}

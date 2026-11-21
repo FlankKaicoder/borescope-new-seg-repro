@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp15 J-E2 frozen VAL across three seeds (2026-11-22)
+
+EXP15_JE2_MULTISEED_VAL_COMPLETE_PENDING_RESULT_GATE. Seed142 delta +0.0116032831 and seed242 +0.0023387558. [Handoff](exp15/EXP15_JE2_HANDOFF.md) · [Summary](../results/exp15_je2_multiseed_val/summary.json).
+
 ## Exp15 J-E1 matched seed142 and seed242 formal TRAIN (2026-11-16)
 
 EXP15_JE1_MULTISEED_FORMAL_TRAIN_COMPLETE_PENDING_VAL_GATE. Both new TRAIN pairs passed full pairing and checkpoint audits. [Handoff](exp15/EXP15_JE1_HANDOFF.md) · [Summary](../results/exp15_je1_formal_seed142_242/summary.json) · [Endpoints](../results/exp15_je1_formal_seed142_242/epoch100_endpoints.json).
