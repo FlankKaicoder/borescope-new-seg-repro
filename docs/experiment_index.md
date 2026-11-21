@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp16 J3 CE three-seed ablation (2026-11-22)
+
+EXP16_J3_THREE_SEED_TRAIN_VAL_COMPLETE_PENDING_CHATGPT_RESULT_GATE. [Handoff](exp16/EXP16_J3_HANDOFF.md) · [Summary](../results/exp16_j3_region_ce/summary.json). 6,300 matched updates; six VAL passes; negative CE result retained.
+
 ## Exp15 J-E2 frozen VAL across three seeds (2026-11-22)
 
 EXP15_JE2_MULTISEED_VAL_COMPLETE_PENDING_RESULT_GATE. Seed142 delta +0.0116032831 and seed242 +0.0023387558. [Handoff](exp15/EXP15_JE2_HANDOFF.md) · [Summary](../results/exp15_je2_multiseed_val/summary.json).

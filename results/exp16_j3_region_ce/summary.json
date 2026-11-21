@@ -1,0 +1,109 @@
+{
+  "execution_audit_sha256": "2aeb5458b04259f1458604dfdfd7e23155e9d4a02628a02340a6f486fb0672cc",
+  "interpretation": {
+    "J1_exceeds_this_J3_all_seeds": true,
+    "J3_improves_J0_in_this_setting": false,
+    "limitation": "Later CE gradient strength, classifier and valid-region supervision differ; not a best-possible CE comparison.",
+    "scope": "Three fixed seeds on one frozen VAL; no significance or TEST claim",
+    "unique_causal_SupCon_relation_contribution_established": false
+  },
+  "lambda_ce": 160,
+  "method": "YOLO11n_seg_PLUS_ALL_VALID_POLYGON_REGION_CE",
+  "next_stage": "Separate Gate for TRAIN-only strength trajectory or schedule calibration; J2 remains HOLD with zero Trusted Pairs.",
+  "primary": [
+    {
+      "j0": 0.24951245667305366,
+      "j1": 0.2727438798549706,
+      "j1_minus_j0": 0.023231423181916955,
+      "j1_minus_j3": 0.06789211894738187,
+      "j3": 0.20485176090758875,
+      "j3_minus_j0": -0.044660695765464914,
+      "j3_minus_j1": -0.06789211894738187,
+      "metric": "metrics/mAP50-95(M)",
+      "seed": 42
+    },
+    {
+      "j0": 0.270781917379614,
+      "j1": 0.2823852005242762,
+      "j1_minus_j0": 0.011603283144662191,
+      "j1_minus_j3": 0.0847381602902165,
+      "j3": 0.19764704023405968,
+      "j3_minus_j0": -0.0731348771455543,
+      "j3_minus_j1": -0.0847381602902165,
+      "metric": "metrics/mAP50-95(M)",
+      "seed": 142
+    },
+    {
+      "j0": 0.2568702965649325,
+      "j1": 0.25920905235058367,
+      "j1_minus_j0": 0.002338755785651181,
+      "j1_minus_j3": 0.056782702069209545,
+      "j3": 0.20242635028137412,
+      "j3_minus_j0": -0.054443946283558364,
+      "j3_minus_j1": -0.056782702069209545,
+      "metric": "metrics/mAP50-95(M)",
+      "seed": 242
+    }
+  ],
+  "primary_distributions": {
+    "j0": {
+      "mean": 0.2590548902058667,
+      "n": 3,
+      "negative_seeds": 0,
+      "positive_seeds": 3,
+      "sample_sd": 0.010801704806139914
+    },
+    "j1": {
+      "mean": 0.27144604424327684,
+      "n": 3,
+      "negative_seeds": 0,
+      "positive_seeds": 3,
+      "sample_sd": 0.011642454380347519
+    },
+    "j1_minus_j0": {
+      "mean": 0.01239115403741011,
+      "n": 3,
+      "negative_seeds": 0,
+      "positive_seeds": 3,
+      "sample_sd": 0.010468593178669055
+    },
+    "j1_minus_j3": {
+      "mean": 0.0698043271022693,
+      "n": 3,
+      "negative_seeds": 0,
+      "positive_seeds": 3,
+      "sample_sd": 0.01407548635420211
+    },
+    "j3": {
+      "mean": 0.2016417171410075,
+      "n": 3,
+      "negative_seeds": 0,
+      "positive_seeds": 3,
+      "sample_sd": 0.0036658882783870326
+    },
+    "j3_minus_j0": {
+      "mean": -0.05741317306485919,
+      "n": 3,
+      "negative_seeds": 3,
+      "positive_seeds": 0,
+      "sample_sd": 0.014467445596084089
+    },
+    "j3_minus_j1": {
+      "mean": -0.0698043271022693,
+      "n": 3,
+      "negative_seeds": 3,
+      "positive_seeds": 0,
+      "sample_sd": 0.01407548635420211
+    }
+  },
+  "protocol_sha256": "ebbbe80571554dd0dc3f1158c9a95363804e2c1c7238956ed10a554b65abf6ca",
+  "sample_sd_ddof": 1,
+  "seeds": [
+    42,
+    142,
+    242
+  ],
+  "status": "EXP16_J3_THREE_SEED_TRAIN_VAL_COMPLETE_PENDING_CHATGPT_RESULT_GATE",
+  "training_summary_sha256": "094e767df8d0cfb017547b50464cea39e1cfd90bb78246b3709235daf675a018",
+  "val_summary_sha256": "74fbe6579fabea01077c91d3ee6c95b8d4394ff1d030fb3c100bd03f0df9706d"
+}

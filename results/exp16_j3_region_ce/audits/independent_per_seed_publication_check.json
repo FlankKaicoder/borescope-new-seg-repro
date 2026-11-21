@@ -1,0 +1,19 @@
+{
+  "fixed_count_and_size_population_checks": true,
+  "historical_canonical_sha256": {
+    "class_metrics_by_seed.csv": "8ea6fa301ba5e59bccf55531468a22770957a226d452ccf80475fd9d0c3d7bbc",
+    "diagnostics_by_seed.csv": "6720a4f85b76120be53fe07089c39925792e27e951ddb63f32924b238f9aee34",
+    "evaluation_receipt.json": "2bba543a3915369962bc35a3a447b58bd06cbc48a8570cc4a84569b98b4000dc",
+    "fixed_counts_by_seed.csv": "ccb4bea9ef383d786517a8e41d8fa607704ea30f2722734fdc099eed4cbfcda5",
+    "overall_metrics_by_seed.csv": "d15a721621b374e26e1ae8d548737d6ebbbbd1233faab88e17e6d0b1e3373b05",
+    "size_recall_by_seed.csv": "fdd5657386879ce877a67ca3160e740eda9a466283488d2cc11ae3d249f02808",
+    "summary.json": "d270e73503b7c667504c54c99786bcfe381f5e854738ebcee883458471f58dde"
+  },
+  "model_calls": 0,
+  "optimizer_updates": 0,
+  "per_seed_csv_files_verified": 15,
+  "per_seed_receipts_verified": 3,
+  "prior_audit": "independent_result_audit_v2.json",
+  "scope": "INDEPENDENT_READ_ONLY_HISTORY_AND_PER_SEED_EXPORT_SUPPLEMENT",
+  "status": "PASS"
+}

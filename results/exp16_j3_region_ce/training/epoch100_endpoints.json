@@ -1,0 +1,49 @@
+{
+  "endpoints": [
+    {
+      "acceptance_file": "42/accepted.json",
+      "acceptance_sha256": "3cc1f69e1a966ee3acb69ef5d33936a42f0410947d5ce4b5588b87cf1fea5598",
+      "arm": "j3",
+      "ema_state_sha256": "92ff4fa9c01e4c912afb177586130a4bde80bf167b2faa637ee100e6e926b6b6",
+      "epoch": 100,
+      "file": "42/j3/last.pt",
+      "file_sha256": "220cf7fb9c8814da0934c5ae6056f018fad663d698852477535c97e80123ec9d",
+      "full_master_sha256": "8c028f32db5a2462b9e27d6c9980778d4345faaadd436e51d09c36254a1d2523",
+      "matched_native_batches": 2100,
+      "native_master_sha256": "3c1800a2e61475a81e02359358569e026db2f0f58f87ed98d6795e4b742aba82",
+      "seed": 42,
+      "updates": 2100
+    },
+    {
+      "acceptance_file": "142/accepted.json",
+      "acceptance_sha256": "22d08a6a37a04fd86249198a32c541d052798b819663ee0e4a73213603ad9274",
+      "arm": "j3",
+      "ema_state_sha256": "90241846b89791c19f9cf75d0613dce7166bdba1f19a47c9cb16967a3f415b11",
+      "epoch": 100,
+      "file": "142/j3/last.pt",
+      "file_sha256": "77f9f95b4945c157bc49669f667c52eeec07fbad1ed131b4b9a689a69bc8eda7",
+      "full_master_sha256": "5f968365a7aead6ce264463ae1d143538e062b7fe7efb64fd3f627e4ccd37954",
+      "matched_native_batches": 2100,
+      "native_master_sha256": "670339c201e0f462c94223703c03ea6b8c1266f2b43c977f1ffb20a63a1a170a",
+      "seed": 142,
+      "updates": 2100
+    },
+    {
+      "acceptance_file": "242/accepted.json",
+      "acceptance_sha256": "7a88367e10604ffb3a70bc3dcc342b64f8b531cbe335a76be0faee70de159b23",
+      "arm": "j3",
+      "ema_state_sha256": "6e0476adc7ac3c43d2365806f3d9bb4739ed7065eabb442a2d2d56c349cee3f2",
+      "epoch": 100,
+      "file": "242/j3/last.pt",
+      "file_sha256": "3f032e3af4059e75636f0ecf7df67e1df6411633e617f25c2bd71b273a4c8ca6",
+      "full_master_sha256": "edf61fad3d0394c82e4caa2f74d7c57dcdaf0819e9507a1a1115789f26e3d24c",
+      "matched_native_batches": 2100,
+      "native_master_sha256": "260909566e8cf846e45615eff1e1194e0c86f0567bffbfe3c5f4f54aa1a0aec3",
+      "seed": 242,
+      "updates": 2100
+    }
+  ],
+  "independent_training_audit_sha256": "6c34eb61e52154c86b4a1b9847d59b0ce8fa82c1b41f9c2408cf8f81a0b45356",
+  "protocol_sha256": "ebbbe80571554dd0dc3f1158c9a95363804e2c1c7238956ed10a554b65abf6ca",
+  "status": "PASS_J3_THREE_SEED_TRAIN"
+}

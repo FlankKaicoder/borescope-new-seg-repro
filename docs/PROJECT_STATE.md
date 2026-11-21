@@ -1,5 +1,9 @@
 # Project state
 
+## Exp16 J3 three-seed region CE (2026-11-22)
+
+EXP16_J3_THREE_SEED_TRAIN_VAL_COMPLETE_PENDING_CHATGPT_RESULT_GATE. Three arms passed 6,300 matched updates and six VAL passes. J3−J0 mean −0.0574131731, J3−J1 −0.0698043271; both 0/3 positive. Strong later CE intervention limits unique-objective attribution. [Handoff](exp16/EXP16_J3_HANDOFF.md).
+
 ## Exp15 J-E2 frozen VAL across three seeds (2026-11-22)
 
 EXP15_JE2_MULTISEED_VAL_COMPLETE_PENDING_RESULT_GATE. Both new validation pairs completed eight native passes. All three Mask mAP50–95 paired effects were positive, mean +0.0123911540 and sample SD 0.0104685932. Tears AP and Dent Tiny Recall improved across seeds. Class and size trade-offs remain. Independent Result Gate pending. [Handoff](exp15/EXP15_JE2_HANDOFF.md).

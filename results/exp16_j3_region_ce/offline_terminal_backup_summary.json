@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "bytes": 46671729,
+      "native_master_sha256": "3c1800a2e61475a81e02359358569e026db2f0f58f87ed98d6795e4b742aba82",
+      "seed": 42,
+      "sha256": "220cf7fb9c8814da0934c5ae6056f018fad663d698852477535c97e80123ec9d",
+      "verified": true
+    },
+    {
+      "bytes": 46671729,
+      "native_master_sha256": "670339c201e0f462c94223703c03ea6b8c1266f2b43c977f1ffb20a63a1a170a",
+      "seed": 142,
+      "sha256": "77f9f95b4945c157bc49669f667c52eeec07fbad1ed131b4b9a689a69bc8eda7",
+      "verified": true
+    },
+    {
+      "bytes": 46671729,
+      "native_master_sha256": "260909566e8cf846e45615eff1e1194e0c86f0567bffbfe3c5f4f54aa1a0aec3",
+      "seed": 242,
+      "sha256": "3f032e3af4059e75636f0ecf7df67e1df6411633e617f25c2bd71b273a4c8ca6",
+      "verified": true
+    }
+  ],
+  "scope": "FULL_EPOCH100_FILES_ONLY_PERIODIC_CHECKPOINTS_REMAIN_ON_SERVER",
+  "total_bytes": 140015187,
+  "verified_terminal_copies": 3
+}

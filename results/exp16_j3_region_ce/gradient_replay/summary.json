@@ -1,0 +1,3855 @@
+{
+  "status": "PASS_POST_TRAIN_GRADIENT_REPLAY",
+  "plan_sha256": "ea477e24922c7c3f1a609bae0024a4c57fa5882c30f29446676e5b2d004aa90c",
+  "script_sha256": "7718fcc89c98aa15a2bbccc5dbfec3d39c0a44ed80ec2253fb2faab0c8880ab9",
+  "protocol_sha256": "ebbbe80571554dd0dc3f1158c9a95363804e2c1c7238956ed10a554b65abf6ca",
+  "lambda_ce": 160.0,
+  "optimizer_attempts": 0,
+  "optimizer_updates": 0,
+  "val_inference": 0,
+  "test_inference": 0,
+  "probe_count": 12,
+  "gradient_definition": "actual_joint_minus_native_ratio = norm(g_YOLO_PLUS_160CE - g_YOLO) / norm(g_YOLO); AMP-rounded difference, not pure unweighted CE derivative",
+  "probes": [
+    {
+      "seed": 42,
+      "epoch": 25,
+      "checkpoint_step": 525,
+      "train_epoch": 0,
+      "batch": 1,
+      "batch_sha256": "cd68f03b38dd29874322e54a22052ff78401dc042f66fd0313dd4dd03443b63a",
+      "lambda_ce": 160.0,
+      "native_loss": 418.1855773925781,
+      "ce_loss": 0.8376028537750244,
+      "total_loss": 552.2020263671875,
+      "ce_coverage": {
+        "valid_regions": 62,
+        "ce_regions_by_class": [
+          28,
+          1,
+          5,
+          7,
+          2,
+          4,
+          15
+        ],
+        "ce_groups_by_class": [
+          9,
+          1,
+          5,
+          6,
+          2,
+          4,
+          9
+        ]
+      },
+      "j1_geometry_coverage": {
+        "targets": 62,
+        "missing_native_raster": 0,
+        "p3_cells_1": 0,
+        "p3_cells_2_to_4": 1,
+        "p3_cells_over_4": 61,
+        "positives": 458,
+        "negatives": 1323,
+        "eligible_anchors": 61,
+        "box_fraction_q10_q50_q90": [
+          0.3122366248552207,
+          0.5009803921568627,
+          0.7142857142857143
+        ],
+        "targets_by_class": [
+          28,
+          1,
+          5,
+          7,
+          2,
+          4,
+          15
+        ],
+        "raster_missing_by_class": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "eligible_anchors_by_class": [
+          28,
+          0,
+          5,
+          7,
+          2,
+          4,
+          15
+        ],
+        "eligible_groups_by_class": [
+          9,
+          0,
+          5,
+          6,
+          2,
+          4,
+          9
+        ]
+      },
+      "gradient_definition": "actual_joint_minus_native_ratio = norm(g_YOLO_PLUS_160CE - g_YOLO) / norm(g_YOLO); AMP-rounded difference, not pure unweighted CE derivative",
+      "clip_definition": "Actual clipping is global; per-layer coefficients are hypothetical scope-only values and are not applied",
+      "metrics": {
+        "backbone": {
+          "native_norm": 42.169420897038876,
+          "joint_norm": 152.94871124263503,
+          "actual_joint_minus_native_norm": 150.12545634908335,
+          "actual_joint_minus_native_ratio": 3.5600549676892794,
+          "native_joint_cosine": 0.20418708282449297,
+          "native_clip_coef": 0.23713865521837277,
+          "joint_clip_coef": 0.06538139388932013,
+          "joint_nonzero_tensors": 120
+        },
+        "global": {
+          "native_norm": 59.63443077749308,
+          "joint_norm": 204.9917446322854,
+          "actual_joint_minus_native_norm": 199.13324347834114,
+          "actual_joint_minus_native_ratio": 3.3392327365602523,
+          "native_joint_cosine": 0.2422920793975741,
+          "native_clip_coef": 0.1676883589217689,
+          "joint_clip_coef": 0.04878245204047396,
+          "joint_nonzero_tensors": 296
+        },
+        "layers": {
+          "0": {
+            "native_norm": 34.70610835190563,
+            "joint_norm": 90.28919332649436,
+            "actual_joint_minus_native_norm": 95.31452288372685,
+            "actual_joint_minus_native_ratio": 2.7463327756969145,
+            "native_joint_cosine": 0.0433678579069525,
+            "native_clip_coef": 0.2881337086391369,
+            "joint_clip_coef": 0.11075522463783478,
+            "joint_nonzero_tensors": 3
+          },
+          "1": {
+            "native_norm": 11.459311944685599,
+            "joint_norm": 43.85418460087474,
+            "actual_joint_minus_native_norm": 38.7723769888961,
+            "actual_joint_minus_native_ratio": 3.3834821127177084,
+            "native_joint_cosine": 0.5484234333547736,
+            "native_clip_coef": 0.8726526667235863,
+            "joint_clip_coef": 0.22802840511078915,
+            "joint_nonzero_tensors": 3
+          },
+          "2": {
+            "native_norm": 17.326986564086933,
+            "joint_norm": 88.8235373984013,
+            "actual_joint_minus_native_norm": 83.43057934441273,
+            "actual_joint_minus_native_ratio": 4.815065737820592,
+            "native_joint_cosine": 0.3993332955597542,
+            "native_clip_coef": 0.5771343670106086,
+            "joint_clip_coef": 0.11258277006649835,
+            "joint_nonzero_tensors": 12
+          },
+          "3": {
+            "native_norm": 4.846892377378301,
+            "joint_norm": 28.043596625455947,
+            "actual_joint_minus_native_norm": 26.9844029552887,
+            "actual_joint_minus_native_ratio": 5.567361693697158,
+            "native_joint_cosine": 0.30082061380180036,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.3565876295030964,
+            "joint_nonzero_tensors": 3
+          },
+          "4": {
+            "native_norm": 10.825695442343601,
+            "joint_norm": 67.67186036480798,
+            "actual_joint_minus_native_norm": 64.88214148278364,
+            "actual_joint_minus_native_ratio": 5.9933462776907405,
+            "native_joint_cosine": 0.3323691645955984,
+            "native_clip_coef": 0.9237280994584354,
+            "joint_clip_coef": 0.1477719069391579,
+            "joint_nonzero_tensors": 12
+          },
+          "5": {
+            "native_norm": 0.47917985601042046,
+            "joint_norm": 3.1690986419872296,
+            "actual_joint_minus_native_norm": 2.772377991115773,
+            "actual_joint_minus_native_ratio": 5.785673075237711,
+            "native_joint_cosine": 0.8516968990704757,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "6": {
+            "native_norm": 0.936625755422732,
+            "joint_norm": 4.4997228968605505,
+            "actual_joint_minus_native_norm": 3.8754997436786005,
+            "actual_joint_minus_native_ratio": 4.137724935750301,
+            "native_joint_cosine": 0.7243082151437419,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "7": {
+            "native_norm": 0.10347094898794842,
+            "joint_norm": 0.7858306778043401,
+            "actual_joint_minus_native_norm": 0.7195085586134252,
+            "actual_joint_minus_native_ratio": 6.953725327262907,
+            "native_joint_cosine": 0.6797601202145049,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "8": {
+            "native_norm": 0.40046880836040194,
+            "joint_norm": 2.096432354466675,
+            "actual_joint_minus_native_norm": 1.7395451675869587,
+            "actual_joint_minus_native_ratio": 4.343771927479193,
+            "native_joint_cosine": 0.9108307751436876,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "9": {
+            "native_norm": 0.26191431213523697,
+            "joint_norm": 1.973854139001278,
+            "actual_joint_minus_native_norm": 1.8216872487072249,
+            "actual_joint_minus_native_ratio": 6.9552795105240905,
+            "native_joint_cosine": 0.624931343213877,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 6
+          },
+          "10": {
+            "native_norm": 0.4137619372207171,
+            "joint_norm": 4.8203929664988205,
+            "actual_joint_minus_native_norm": 4.627900791103397,
+            "actual_joint_minus_native_ratio": 11.184936009797081,
+            "native_joint_cosine": 0.4988534802130984,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 21
+          },
+          "13": {
+            "native_norm": 2.1335687776771226,
+            "joint_norm": 15.22031650470712,
+            "actual_joint_minus_native_norm": 14.299874979044525,
+            "actual_joint_minus_native_ratio": 6.702326697250045,
+            "native_joint_cosine": 0.48845412646204417,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.6570165173563131,
+            "joint_nonzero_tensors": 12
+          },
+          "16": {
+            "native_norm": 16.24052497388151,
+            "joint_norm": 106.4248592197454,
+            "actual_joint_minus_native_norm": 106.5420559958181,
+            "actual_joint_minus_native_ratio": 6.560259361514617,
+            "native_joint_cosine": 0.0690801114064631,
+            "native_clip_coef": 0.6157436043686204,
+            "joint_clip_coef": 0.09396300807303914,
+            "joint_nonzero_tensors": 12
+          },
+          "17": {
+            "native_norm": 2.1161953195401346,
+            "joint_norm": 2.1161953195401346,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0000000000000002,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "19": {
+            "native_norm": 8.28426710085139,
+            "joint_norm": 8.28426710085139,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 0.9999999999999998,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 12
+          },
+          "20": {
+            "native_norm": 0.12880834843078603,
+            "joint_norm": 0.12880834843078603,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "22": {
+            "native_norm": 0.36514566380575386,
+            "joint_norm": 0.36514566380575386,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "23": {
+            "native_norm": 37.90041188737312,
+            "joint_norm": 37.90041188737312,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 0.9999999999999999,
+            "native_clip_coef": 0.26384936833581557,
+            "joint_clip_coef": 0.26384936833581557,
+            "joint_nonzero_tensors": 101
+          },
+          "projection": {
+            "native_norm": 0.0,
+            "joint_norm": 74.5701005360152,
+            "actual_joint_minus_native_norm": 74.5701005360152,
+            "actual_joint_minus_native_ratio": null,
+            "native_joint_cosine": null,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.1341020032696387,
+            "joint_nonzero_tensors": 6
+          }
+        }
+      },
+      "checkpoint_sha256": "1615d663884cfb458dddbe6a9d935f354d83b3f3f5df7e62f65c202df9526dcb",
+      "native_master_sha256": "cd159251bbdaf76ce62b2632fef7837fd184011edcd2827b118aea59a5fbc3b3",
+      "strict_checkpoint": {
+        "sha256": "1615d663884cfb458dddbe6a9d935f354d83b3f3f5df7e62f65c202df9526dcb",
+        "strict_reload": true,
+        "stripped_native_forward": true,
+        "state_sha256": "f8c48344c0a4d6b0ecfb404fe8eb043a5cb2d84e4a06e777ff1d3f78f5695860",
+        "native_state_sha256": "cd159251bbdaf76ce62b2632fef7837fd184011edcd2827b118aea59a5fbc3b3",
+        "ema_state_sha256": "8f57fc289d4b03575c3dbd203068ecae02c3f158d0bc76c6ecebc1256928d0b3",
+        "adam_slots": 296,
+        "head_tensors_removed": 6
+      },
+      "state_before_sha256": "f8c48344c0a4d6b0ecfb404fe8eb043a5cb2d84e4a06e777ff1d3f78f5695860",
+      "bn_before_sha256": "39a701afe684c8252b09a870af0dfc3019a2bf4b0c3670d555dfd96b4d8a00d5",
+      "optimizer_attempts": 0,
+      "effective_updates": 0,
+      "state_after_sha256": "f8c48344c0a4d6b0ecfb404fe8eb043a5cb2d84e4a06e777ff1d3f78f5695860",
+      "bn_after_sha256": "39a701afe684c8252b09a870af0dfc3019a2bf4b0c3670d555dfd96b4d8a00d5",
+      "rng_restored_exact": true,
+      "checkpoint_after_sha256": "1615d663884cfb458dddbe6a9d935f354d83b3f3f5df7e62f65c202df9526dcb"
+    },
+    {
+      "seed": 42,
+      "epoch": 25,
+      "checkpoint_step": 525,
+      "train_epoch": 0,
+      "batch": 21,
+      "batch_sha256": "c4e9cdbbe0a16a25441f449f87edb0623fab2d0881d8950706274d5ec9d20e82",
+      "lambda_ce": 160.0,
+      "native_loss": 343.33917236328125,
+      "ce_loss": 1.0220979452133179,
+      "total_loss": 506.8748474121094,
+      "ce_coverage": {
+        "valid_regions": 47,
+        "ce_regions_by_class": [
+          5,
+          2,
+          8,
+          7,
+          2,
+          0,
+          23
+        ],
+        "ce_groups_by_class": [
+          4,
+          2,
+          7,
+          6,
+          2,
+          0,
+          10
+        ]
+      },
+      "j1_geometry_coverage": {
+        "targets": 47,
+        "missing_native_raster": 0,
+        "p3_cells_1": 0,
+        "p3_cells_2_to_4": 6,
+        "p3_cells_over_4": 41,
+        "positives": 269,
+        "negatives": 759,
+        "eligible_anchors": 47,
+        "box_fraction_q10_q50_q90": [
+          0.4114885114885115,
+          0.65,
+          0.8256410256410256
+        ],
+        "targets_by_class": [
+          5,
+          2,
+          8,
+          7,
+          2,
+          0,
+          23
+        ],
+        "raster_missing_by_class": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "eligible_anchors_by_class": [
+          5,
+          2,
+          8,
+          7,
+          2,
+          0,
+          23
+        ],
+        "eligible_groups_by_class": [
+          4,
+          2,
+          7,
+          6,
+          2,
+          0,
+          10
+        ]
+      },
+      "gradient_definition": "actual_joint_minus_native_ratio = norm(g_YOLO_PLUS_160CE - g_YOLO) / norm(g_YOLO); AMP-rounded difference, not pure unweighted CE derivative",
+      "clip_definition": "Actual clipping is global; per-layer coefficients are hypothetical scope-only values and are not applied",
+      "metrics": {
+        "backbone": {
+          "native_norm": 38.91640157043905,
+          "joint_norm": 79.49942863424678,
+          "actual_joint_minus_native_norm": 78.07259522475671,
+          "actual_joint_minus_native_ratio": 2.006161722929202,
+          "native_joint_cosine": 0.28109407004202364,
+          "native_clip_coef": 0.25696105856392837,
+          "joint_clip_coef": 0.1257870659702469,
+          "joint_nonzero_tensors": 120
+        },
+        "global": {
+          "native_norm": 70.95101712750946,
+          "joint_norm": 140.1625805688927,
+          "actual_joint_minus_native_norm": 125.08432582787387,
+          "actual_joint_minus_native_ratio": 1.762967338481968,
+          "native_joint_cosine": 0.4541880453704331,
+          "native_clip_coef": 0.14094230447868308,
+          "joint_clip_coef": 0.07134571786611107,
+          "joint_nonzero_tensors": 288
+        },
+        "layers": {
+          "0": {
+            "native_norm": 24.38364629594071,
+            "joint_norm": 41.74586497176583,
+            "actual_joint_minus_native_norm": 52.492825426601875,
+            "actual_joint_minus_native_ratio": 2.1527881757102367,
+            "native_joint_cosine": -0.20542804269377557,
+            "native_clip_coef": 0.41011091895447316,
+            "joint_clip_coef": 0.23954467747209615,
+            "joint_nonzero_tensors": 3
+          },
+          "1": {
+            "native_norm": 13.19232442482736,
+            "joint_norm": 25.839020998680905,
+            "actual_joint_minus_native_norm": 22.59461712920978,
+            "actual_joint_minus_native_ratio": 1.7127093301835217,
+            "native_joint_cosine": 0.48577045587652073,
+            "native_clip_coef": 0.7580164738189715,
+            "joint_clip_coef": 0.38701155177276075,
+            "joint_nonzero_tensors": 3
+          },
+          "2": {
+            "native_norm": 22.098406851598284,
+            "joint_norm": 45.783149907655776,
+            "actual_joint_minus_native_norm": 38.84047968778407,
+            "actual_joint_minus_native_ratio": 1.7576144718765054,
+            "native_joint_cosine": 0.5316875918261983,
+            "native_clip_coef": 0.45252128873514036,
+            "joint_clip_coef": 0.21842096495651675,
+            "joint_nonzero_tensors": 12
+          },
+          "3": {
+            "native_norm": 5.441822175768139,
+            "joint_norm": 14.691077328331527,
+            "actual_joint_minus_native_norm": 12.877732996076022,
+            "actual_joint_minus_native_ratio": 2.3664376710836326,
+            "native_joint_cosine": 0.497867019473924,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.6806852278988363,
+            "joint_nonzero_tensors": 3
+          },
+          "4": {
+            "native_norm": 15.033994705633155,
+            "joint_norm": 39.70789736935051,
+            "actual_joint_minus_native_norm": 33.75127971483553,
+            "actual_joint_minus_native_ratio": 2.24499744583448,
+            "native_joint_cosine": 0.5557993731875928,
+            "native_clip_coef": 0.6651591629930462,
+            "joint_clip_coef": 0.25183906503897824,
+            "joint_nonzero_tensors": 12
+          },
+          "5": {
+            "native_norm": 0.4337005902447262,
+            "joint_norm": 1.566474396990282,
+            "actual_joint_minus_native_norm": 1.336049956334614,
+            "actual_joint_minus_native_ratio": 3.080581365085796,
+            "native_joint_cosine": 0.6306542176915174,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "6": {
+            "native_norm": 1.1610324909453356,
+            "joint_norm": 2.5253060677691983,
+            "actual_joint_minus_native_norm": 1.9568073009596234,
+            "actual_joint_minus_native_ratio": 1.6854027051097875,
+            "native_joint_cosine": 0.6644137336213223,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "7": {
+            "native_norm": 0.10968597237050134,
+            "joint_norm": 0.5456498905405069,
+            "actual_joint_minus_native_norm": 0.47672069280816776,
+            "actual_joint_minus_native_ratio": 4.346232088802412,
+            "native_joint_cosine": 0.6892400000231436,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "8": {
+            "native_norm": 0.2056333636775155,
+            "joint_norm": 0.7737381550940315,
+            "actual_joint_minus_native_norm": 0.673892492659571,
+            "actual_joint_minus_native_ratio": 3.2771554217067753,
+            "native_joint_cosine": 0.5871063056881334,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "9": {
+            "native_norm": 0.1483102735308844,
+            "joint_norm": 0.9815599992425349,
+            "actual_joint_minus_native_norm": 0.8870744956529538,
+            "actual_joint_minus_native_ratio": 5.981207333342472,
+            "native_joint_cosine": 0.6819654131434921,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 6
+          },
+          "10": {
+            "native_norm": 0.5479647057443883,
+            "joint_norm": 3.2333180158473227,
+            "actual_joint_minus_native_norm": 2.9438936106117954,
+            "actual_joint_minus_native_ratio": 5.372414645962705,
+            "native_joint_cosine": 0.5892785649685207,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 21
+          },
+          "13": {
+            "native_norm": 1.8300397758475981,
+            "joint_norm": 9.623818479046093,
+            "actual_joint_minus_native_norm": 8.95423215491484,
+            "actual_joint_minus_native_ratio": 4.892916685795866,
+            "native_joint_cosine": 0.44823646213246066,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 12
+          },
+          "16": {
+            "native_norm": 19.300594789846947,
+            "joint_norm": 72.62718859869426,
+            "actual_joint_minus_native_norm": 68.23646570509501,
+            "actual_joint_minus_native_ratio": 3.535459215018115,
+            "native_joint_cosine": 0.3534894598306001,
+            "native_clip_coef": 0.518118720731952,
+            "joint_clip_coef": 0.13768948041712173,
+            "joint_nonzero_tensors": 12
+          },
+          "17": {
+            "native_norm": 1.9664002239209224,
+            "joint_norm": 1.9664002239209224,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 0.9999999999999999,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "19": {
+            "native_norm": 6.282029496168849,
+            "joint_norm": 6.282029496168849,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 0.9999999999999998,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 12
+          },
+          "20": {
+            "native_norm": 0.048839502648145475,
+            "joint_norm": 0.048839502648145475,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "22": {
+            "native_norm": 0.2909885452658909,
+            "joint_norm": 0.2909885452658909,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 0.9999999999999999,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "23": {
+            "native_norm": 55.680165511172405,
+            "joint_norm": 55.680165511172405,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 0.1795971640636791,
+            "joint_clip_coef": 0.1795971640636791,
+            "joint_nonzero_tensors": 93
+          },
+          "projection": {
+            "native_norm": 0.0,
+            "joint_norm": 69.38562471635093,
+            "actual_joint_minus_native_norm": 69.38562471635093,
+            "actual_joint_minus_native_ratio": null,
+            "native_joint_cosine": null,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.14412206990652635,
+            "joint_nonzero_tensors": 6
+          }
+        }
+      },
+      "checkpoint_sha256": "1615d663884cfb458dddbe6a9d935f354d83b3f3f5df7e62f65c202df9526dcb",
+      "native_master_sha256": "cd159251bbdaf76ce62b2632fef7837fd184011edcd2827b118aea59a5fbc3b3",
+      "strict_checkpoint": {
+        "sha256": "1615d663884cfb458dddbe6a9d935f354d83b3f3f5df7e62f65c202df9526dcb",
+        "strict_reload": true,
+        "stripped_native_forward": true,
+        "state_sha256": "f8c48344c0a4d6b0ecfb404fe8eb043a5cb2d84e4a06e777ff1d3f78f5695860",
+        "native_state_sha256": "cd159251bbdaf76ce62b2632fef7837fd184011edcd2827b118aea59a5fbc3b3",
+        "ema_state_sha256": "8f57fc289d4b03575c3dbd203068ecae02c3f158d0bc76c6ecebc1256928d0b3",
+        "adam_slots": 296,
+        "head_tensors_removed": 6
+      },
+      "state_before_sha256": "f8c48344c0a4d6b0ecfb404fe8eb043a5cb2d84e4a06e777ff1d3f78f5695860",
+      "bn_before_sha256": "39a701afe684c8252b09a870af0dfc3019a2bf4b0c3670d555dfd96b4d8a00d5",
+      "optimizer_attempts": 0,
+      "effective_updates": 0,
+      "state_after_sha256": "f8c48344c0a4d6b0ecfb404fe8eb043a5cb2d84e4a06e777ff1d3f78f5695860",
+      "bn_after_sha256": "39a701afe684c8252b09a870af0dfc3019a2bf4b0c3670d555dfd96b4d8a00d5",
+      "rng_restored_exact": true,
+      "checkpoint_after_sha256": "1615d663884cfb458dddbe6a9d935f354d83b3f3f5df7e62f65c202df9526dcb"
+    },
+    {
+      "seed": 42,
+      "epoch": 100,
+      "checkpoint_step": 2100,
+      "train_epoch": 0,
+      "batch": 1,
+      "batch_sha256": "cd68f03b38dd29874322e54a22052ff78401dc042f66fd0313dd4dd03443b63a",
+      "lambda_ce": 160.0,
+      "native_loss": 309.28271484375,
+      "ce_loss": 0.1930379867553711,
+      "total_loss": 340.1687927246094,
+      "ce_coverage": {
+        "valid_regions": 62,
+        "ce_regions_by_class": [
+          28,
+          1,
+          5,
+          7,
+          2,
+          4,
+          15
+        ],
+        "ce_groups_by_class": [
+          9,
+          1,
+          5,
+          6,
+          2,
+          4,
+          9
+        ]
+      },
+      "j1_geometry_coverage": {
+        "targets": 62,
+        "missing_native_raster": 0,
+        "p3_cells_1": 0,
+        "p3_cells_2_to_4": 1,
+        "p3_cells_over_4": 61,
+        "positives": 458,
+        "negatives": 1323,
+        "eligible_anchors": 61,
+        "box_fraction_q10_q50_q90": [
+          0.3122366248552207,
+          0.5009803921568627,
+          0.7142857142857143
+        ],
+        "targets_by_class": [
+          28,
+          1,
+          5,
+          7,
+          2,
+          4,
+          15
+        ],
+        "raster_missing_by_class": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "eligible_anchors_by_class": [
+          28,
+          0,
+          5,
+          7,
+          2,
+          4,
+          15
+        ],
+        "eligible_groups_by_class": [
+          9,
+          0,
+          5,
+          6,
+          2,
+          4,
+          9
+        ]
+      },
+      "gradient_definition": "actual_joint_minus_native_ratio = norm(g_YOLO_PLUS_160CE - g_YOLO) / norm(g_YOLO); AMP-rounded difference, not pure unweighted CE derivative",
+      "clip_definition": "Actual clipping is global; per-layer coefficients are hypothetical scope-only values and are not applied",
+      "metrics": {
+        "backbone": {
+          "native_norm": 41.50948094001898,
+          "joint_norm": 60.984707119318976,
+          "actual_joint_minus_native_norm": 40.804682029161775,
+          "actual_joint_minus_native_ratio": 0.983020772727184,
+          "native_joint_cosine": 0.7460465720688397,
+          "native_clip_coef": 0.2409088124600051,
+          "joint_clip_coef": 0.1639755326931238,
+          "joint_nonzero_tensors": 120
+        },
+        "global": {
+          "native_norm": 59.47750560446405,
+          "joint_norm": 82.23733887843579,
+          "actual_joint_minus_native_norm": 52.92914426050359,
+          "actual_joint_minus_native_ratio": 0.8899018834530785,
+          "native_joint_cosine": 0.7665756194636584,
+          "native_clip_coef": 0.16813078709741097,
+          "joint_clip_coef": 0.12159926396916679,
+          "joint_nonzero_tensors": 296
+        },
+        "layers": {
+          "0": {
+            "native_norm": 34.78325378767282,
+            "joint_norm": 51.71877729755154,
+            "actual_joint_minus_native_norm": 32.552552732007904,
+            "actual_joint_minus_native_ratio": 0.9358685340571711,
+            "native_joint_cosine": 0.7851919878962482,
+            "native_clip_coef": 0.2874946597448379,
+            "joint_clip_coef": 0.19335336852830143,
+            "joint_nonzero_tensors": 3
+          },
+          "1": {
+            "native_norm": 7.737933820235818,
+            "joint_norm": 11.779910279553256,
+            "actual_joint_minus_native_norm": 8.45568227338853,
+            "actual_joint_minus_native_ratio": 1.092757119642933,
+            "native_joint_cosine": 0.6974236400592632,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.8489028281017107,
+            "joint_nonzero_tensors": 3
+          },
+          "2": {
+            "native_norm": 15.882873338018968,
+            "joint_norm": 22.918836253737027,
+            "actual_joint_minus_native_norm": 17.10023111033317,
+            "actual_joint_minus_native_ratio": 1.0766459409709075,
+            "native_joint_cosine": 0.666343666062123,
+            "native_clip_coef": 0.6296089603921954,
+            "joint_clip_coef": 0.43632230942996253,
+            "joint_nonzero_tensors": 12
+          },
+          "3": {
+            "native_norm": 4.900172971085885,
+            "joint_norm": 7.011270951872078,
+            "actual_joint_minus_native_norm": 5.226759070105512,
+            "actual_joint_minus_native_ratio": 1.0666478716050825,
+            "native_joint_cosine": 0.6672782098711899,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "4": {
+            "native_norm": 12.854522818645012,
+            "joint_norm": 17.398861583993487,
+            "actual_joint_minus_native_norm": 14.225930308289527,
+            "actual_joint_minus_native_ratio": 1.1066867676842378,
+            "native_joint_cosine": 0.5937339842577419,
+            "native_clip_coef": 0.7779362457203876,
+            "joint_clip_coef": 0.574750214373194,
+            "joint_nonzero_tensors": 12
+          },
+          "5": {
+            "native_norm": 0.9691075734134244,
+            "joint_norm": 1.507969512077584,
+            "actual_joint_minus_native_norm": 1.2558047340573275,
+            "actual_joint_minus_native_ratio": 1.2958362606063314,
+            "native_joint_cosine": 0.5597759807203647,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "6": {
+            "native_norm": 3.049586164424761,
+            "joint_norm": 4.724270646244093,
+            "actual_joint_minus_native_norm": 2.8835559053737083,
+            "actual_joint_minus_native_ratio": 0.9455564623856526,
+            "native_joint_cosine": 0.8087631104598193,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "7": {
+            "native_norm": 0.13794001551741336,
+            "joint_norm": 0.2734907766789817,
+            "actual_joint_minus_native_norm": 0.2298093541880967,
+            "actual_joint_minus_native_ratio": 1.666009339828484,
+            "native_joint_cosine": 0.5435647886080908,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "8": {
+            "native_norm": 0.5485495633875438,
+            "joint_norm": 0.9062545666725382,
+            "actual_joint_minus_native_norm": 0.590700435601098,
+            "actual_joint_minus_native_ratio": 1.0768405902162301,
+            "native_joint_cosine": 0.7777481515485225,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "9": {
+            "native_norm": 0.6085632995194824,
+            "joint_norm": 0.8962897731842233,
+            "actual_joint_minus_native_norm": 0.6895163236106625,
+            "actual_joint_minus_native_ratio": 1.133023177958809,
+            "native_joint_cosine": 0.6400706448685423,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 6
+          },
+          "10": {
+            "native_norm": 0.9171139016614179,
+            "joint_norm": 1.4466499181006898,
+            "actual_joint_minus_native_norm": 0.985750266743503,
+            "actual_joint_minus_native_ratio": 1.0748395209774328,
+            "native_joint_cosine": 0.7394765357843326,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 21
+          },
+          "13": {
+            "native_norm": 5.510852050091739,
+            "joint_norm": 9.169272477593022,
+            "actual_joint_minus_native_norm": 6.012165175699401,
+            "actual_joint_minus_native_ratio": 1.0909683513639814,
+            "native_joint_cosine": 0.7747688145435147,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 12
+          },
+          "16": {
+            "native_norm": 19.05410193888252,
+            "joint_norm": 34.620905465362206,
+            "actual_joint_minus_native_norm": 27.573025408622737,
+            "actual_joint_minus_native_ratio": 1.4470913138318096,
+            "native_joint_cosine": 0.6074202741146278,
+            "native_clip_coef": 0.524821348560767,
+            "joint_clip_coef": 0.2888428126515081,
+            "joint_nonzero_tensors": 12
+          },
+          "17": {
+            "native_norm": 3.63507435434004,
+            "joint_norm": 3.63507435434004,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "19": {
+            "native_norm": 13.134846865037591,
+            "joint_norm": 13.134846865037591,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 0.9999999999999999,
+            "native_clip_coef": 0.7613335230640969,
+            "joint_clip_coef": 0.7613335230640969,
+            "joint_nonzero_tensors": 12
+          },
+          "20": {
+            "native_norm": 0.34883914179348097,
+            "joint_norm": 0.34883914179348097,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "22": {
+            "native_norm": 0.8923332434310145,
+            "joint_norm": 0.8923332434310145,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "23": {
+            "native_norm": 35.13477563483476,
+            "joint_norm": 35.13477563483476,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 0.2846182887095799,
+            "joint_clip_coef": 0.2846182887095799,
+            "joint_nonzero_tensors": 101
+          },
+          "projection": {
+            "native_norm": 0.0,
+            "joint_norm": 18.440563341822134,
+            "actual_joint_minus_native_norm": 18.440563341822134,
+            "actual_joint_minus_native_ratio": null,
+            "native_joint_cosine": null,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.5422827530999459,
+            "joint_nonzero_tensors": 6
+          }
+        }
+      },
+      "checkpoint_sha256": "220cf7fb9c8814da0934c5ae6056f018fad663d698852477535c97e80123ec9d",
+      "native_master_sha256": "3c1800a2e61475a81e02359358569e026db2f0f58f87ed98d6795e4b742aba82",
+      "strict_checkpoint": {
+        "sha256": "220cf7fb9c8814da0934c5ae6056f018fad663d698852477535c97e80123ec9d",
+        "strict_reload": true,
+        "stripped_native_forward": true,
+        "state_sha256": "8c028f32db5a2462b9e27d6c9980778d4345faaadd436e51d09c36254a1d2523",
+        "native_state_sha256": "3c1800a2e61475a81e02359358569e026db2f0f58f87ed98d6795e4b742aba82",
+        "ema_state_sha256": "92ff4fa9c01e4c912afb177586130a4bde80bf167b2faa637ee100e6e926b6b6",
+        "adam_slots": 296,
+        "head_tensors_removed": 6
+      },
+      "state_before_sha256": "8c028f32db5a2462b9e27d6c9980778d4345faaadd436e51d09c36254a1d2523",
+      "bn_before_sha256": "050249f5a4bb84e3732ff5470d260044eb5dbfe0dbee16009bad983c291c2f81",
+      "optimizer_attempts": 0,
+      "effective_updates": 0,
+      "state_after_sha256": "8c028f32db5a2462b9e27d6c9980778d4345faaadd436e51d09c36254a1d2523",
+      "bn_after_sha256": "050249f5a4bb84e3732ff5470d260044eb5dbfe0dbee16009bad983c291c2f81",
+      "rng_restored_exact": true,
+      "checkpoint_after_sha256": "220cf7fb9c8814da0934c5ae6056f018fad663d698852477535c97e80123ec9d"
+    },
+    {
+      "seed": 42,
+      "epoch": 100,
+      "checkpoint_step": 2100,
+      "train_epoch": 0,
+      "batch": 21,
+      "batch_sha256": "c4e9cdbbe0a16a25441f449f87edb0623fab2d0881d8950706274d5ec9d20e82",
+      "lambda_ce": 160.0,
+      "native_loss": 258.2450256347656,
+      "ce_loss": 0.5009260177612305,
+      "total_loss": 338.3931884765625,
+      "ce_coverage": {
+        "valid_regions": 47,
+        "ce_regions_by_class": [
+          5,
+          2,
+          8,
+          7,
+          2,
+          0,
+          23
+        ],
+        "ce_groups_by_class": [
+          4,
+          2,
+          7,
+          6,
+          2,
+          0,
+          10
+        ]
+      },
+      "j1_geometry_coverage": {
+        "targets": 47,
+        "missing_native_raster": 0,
+        "p3_cells_1": 0,
+        "p3_cells_2_to_4": 6,
+        "p3_cells_over_4": 41,
+        "positives": 269,
+        "negatives": 759,
+        "eligible_anchors": 47,
+        "box_fraction_q10_q50_q90": [
+          0.4114885114885115,
+          0.65,
+          0.8256410256410256
+        ],
+        "targets_by_class": [
+          5,
+          2,
+          8,
+          7,
+          2,
+          0,
+          23
+        ],
+        "raster_missing_by_class": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "eligible_anchors_by_class": [
+          5,
+          2,
+          8,
+          7,
+          2,
+          0,
+          23
+        ],
+        "eligible_groups_by_class": [
+          4,
+          2,
+          7,
+          6,
+          2,
+          0,
+          10
+        ]
+      },
+      "gradient_definition": "actual_joint_minus_native_ratio = norm(g_YOLO_PLUS_160CE - g_YOLO) / norm(g_YOLO); AMP-rounded difference, not pure unweighted CE derivative",
+      "clip_definition": "Actual clipping is global; per-layer coefficients are hypothetical scope-only values and are not applied",
+      "metrics": {
+        "backbone": {
+          "native_norm": 45.39813958209026,
+          "joint_norm": 158.81092632295667,
+          "actual_joint_minus_native_norm": 163.47607245360837,
+          "actual_joint_minus_native_ratio": 3.6009421081673643,
+          "native_joint_cosine": 0.038661387999732844,
+          "native_clip_coef": 0.22027333877073016,
+          "joint_clip_coef": 0.06296795924920252,
+          "joint_nonzero_tensors": 120
+        },
+        "global": {
+          "native_norm": 72.6377086517203,
+          "joint_norm": 296.72458333665645,
+          "actual_joint_minus_native_norm": 290.5394409617054,
+          "actual_joint_minus_native_ratio": 3.9998431442099798,
+          "native_joint_cosine": 0.2066623218849085,
+          "native_clip_coef": 0.13766953897565748,
+          "joint_clip_coef": 0.03370128573052189,
+          "joint_nonzero_tensors": 280
+        },
+        "layers": {
+          "0": {
+            "native_norm": 31.310602170571645,
+            "joint_norm": 98.1359294538777,
+            "actual_joint_minus_native_norm": 108.88023583953859,
+            "actual_joint_minus_native_ratio": 3.4774238849316492,
+            "native_joint_cosine": -0.20241039137639613,
+            "native_clip_coef": 0.3193806246887906,
+            "joint_clip_coef": 0.10189947712066418,
+            "joint_nonzero_tensors": 3
+          },
+          "1": {
+            "native_norm": 12.490209679359198,
+            "joint_norm": 39.58262548449533,
+            "actual_joint_minus_native_norm": 37.09887820550307,
+            "actual_joint_minus_native_ratio": 2.9702366219528833,
+            "native_joint_cosine": 0.3503904254841819,
+            "native_clip_coef": 0.8006270075592546,
+            "joint_clip_coef": 0.2526360903291003,
+            "joint_nonzero_tensors": 3
+          },
+          "2": {
+            "native_norm": 23.720563736274794,
+            "joint_norm": 71.05815063056558,
+            "actual_joint_minus_native_norm": 69.5509384809097,
+            "actual_joint_minus_native_ratio": 2.9320946691730003,
+            "native_joint_cosine": 0.22977594021616393,
+            "native_clip_coef": 0.42157512315494955,
+            "joint_clip_coef": 0.14072980749612565,
+            "joint_nonzero_tensors": 12
+          },
+          "3": {
+            "native_norm": 6.706376040963832,
+            "joint_norm": 28.40420682670265,
+            "actual_joint_minus_native_norm": 28.074645406873437,
+            "actual_joint_minus_native_ratio": 4.186261735904476,
+            "native_joint_cosine": 0.16690898783899033,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.3520605137453983,
+            "joint_nonzero_tensors": 3
+          },
+          "4": {
+            "native_norm": 17.597930638484737,
+            "joint_norm": 89.31030987242552,
+            "actual_joint_minus_native_norm": 87.70707596144142,
+            "actual_joint_minus_native_ratio": 4.983942587524223,
+            "native_joint_cosine": 0.1888071412691837,
+            "native_clip_coef": 0.5682485990643981,
+            "joint_clip_coef": 0.11196915453899166,
+            "joint_nonzero_tensors": 12
+          },
+          "5": {
+            "native_norm": 0.933211467796644,
+            "joint_norm": 4.570172521289705,
+            "actual_joint_minus_native_norm": 4.50961651066107,
+            "actual_joint_minus_native_ratio": 4.8323629383900375,
+            "native_joint_cosine": 0.16655801971412848,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "6": {
+            "native_norm": 2.2393679702995066,
+            "joint_norm": 11.420499000887116,
+            "actual_joint_minus_native_norm": 10.985840564420705,
+            "actual_joint_minus_native_ratio": 4.905777304187928,
+            "native_joint_cosine": 0.2884466896383717,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.8756184054308678,
+            "joint_nonzero_tensors": 27
+          },
+          "7": {
+            "native_norm": 0.1339974351313477,
+            "joint_norm": 0.6357824844562586,
+            "actual_joint_minus_native_norm": 0.6198228873609251,
+            "actual_joint_minus_native_ratio": 4.625632473885481,
+            "native_joint_cosine": 0.2229887455439786,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "8": {
+            "native_norm": 0.4381461562616856,
+            "joint_norm": 1.920679324597719,
+            "actual_joint_minus_native_norm": 1.8931324161478382,
+            "actual_joint_minus_native_ratio": 4.320778327260168,
+            "native_joint_cosine": 0.17648084216508697,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "9": {
+            "native_norm": 0.6426306165072457,
+            "joint_norm": 2.9246358422594003,
+            "actual_joint_minus_native_norm": 2.567552553381786,
+            "actual_joint_minus_native_ratio": 3.9953785073868113,
+            "native_joint_cosine": 0.6316022156590216,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 6
+          },
+          "10": {
+            "native_norm": 0.891959104559253,
+            "joint_norm": 5.207038120223289,
+            "actual_joint_minus_native_norm": 4.8536606208980615,
+            "actual_joint_minus_native_ratio": 5.441573045320748,
+            "native_joint_cosine": 0.4683872604318313,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 21
+          },
+          "13": {
+            "native_norm": 5.87868981961029,
+            "joint_norm": 32.3620959012472,
+            "actual_joint_minus_native_norm": 31.185117634387318,
+            "actual_joint_minus_native_ratio": 5.304773442946279,
+            "native_joint_cosine": 0.28739703730171584,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.3090034626160028,
+            "joint_nonzero_tensors": 12
+          },
+          "16": {
+            "native_norm": 27.409795560036102,
+            "joint_norm": 206.66804062581443,
+            "actual_joint_minus_native_norm": 200.19998729298004,
+            "actual_joint_minus_native_ratio": 7.303957698424963,
+            "native_joint_cosine": 0.29859691203946354,
+            "native_clip_coef": 0.36483306171561125,
+            "joint_clip_coef": 0.048386774855619104,
+            "joint_nonzero_tensors": 12
+          },
+          "17": {
+            "native_norm": 4.612118063209578,
+            "joint_norm": 4.612118063209578,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0000000000000002,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "19": {
+            "native_norm": 15.492038543339026,
+            "joint_norm": 15.492038543339026,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0000000000000002,
+            "native_clip_coef": 0.6454928011269898,
+            "joint_clip_coef": 0.6454928011269898,
+            "joint_nonzero_tensors": 12
+          },
+          "20": {
+            "native_norm": 0.1429635180821461,
+            "joint_norm": 0.1429635180821461,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0000000000000002,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "22": {
+            "native_norm": 0.4395678435283375,
+            "joint_norm": 0.4395678435283375,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "23": {
+            "native_norm": 46.56072598559042,
+            "joint_norm": 46.56072598559042,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 0.21477327884280656,
+            "joint_clip_coef": 0.21477327884280656,
+            "joint_nonzero_tensors": 85
+          },
+          "projection": {
+            "native_norm": 0.0,
+            "joint_norm": 128.9813708079695,
+            "actual_joint_minus_native_norm": 128.9813708079695,
+            "actual_joint_minus_native_ratio": null,
+            "native_joint_cosine": null,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.07753057561589773,
+            "joint_nonzero_tensors": 6
+          }
+        }
+      },
+      "checkpoint_sha256": "220cf7fb9c8814da0934c5ae6056f018fad663d698852477535c97e80123ec9d",
+      "native_master_sha256": "3c1800a2e61475a81e02359358569e026db2f0f58f87ed98d6795e4b742aba82",
+      "strict_checkpoint": {
+        "sha256": "220cf7fb9c8814da0934c5ae6056f018fad663d698852477535c97e80123ec9d",
+        "strict_reload": true,
+        "stripped_native_forward": true,
+        "state_sha256": "8c028f32db5a2462b9e27d6c9980778d4345faaadd436e51d09c36254a1d2523",
+        "native_state_sha256": "3c1800a2e61475a81e02359358569e026db2f0f58f87ed98d6795e4b742aba82",
+        "ema_state_sha256": "92ff4fa9c01e4c912afb177586130a4bde80bf167b2faa637ee100e6e926b6b6",
+        "adam_slots": 296,
+        "head_tensors_removed": 6
+      },
+      "state_before_sha256": "8c028f32db5a2462b9e27d6c9980778d4345faaadd436e51d09c36254a1d2523",
+      "bn_before_sha256": "050249f5a4bb84e3732ff5470d260044eb5dbfe0dbee16009bad983c291c2f81",
+      "optimizer_attempts": 0,
+      "effective_updates": 0,
+      "state_after_sha256": "8c028f32db5a2462b9e27d6c9980778d4345faaadd436e51d09c36254a1d2523",
+      "bn_after_sha256": "050249f5a4bb84e3732ff5470d260044eb5dbfe0dbee16009bad983c291c2f81",
+      "rng_restored_exact": true,
+      "checkpoint_after_sha256": "220cf7fb9c8814da0934c5ae6056f018fad663d698852477535c97e80123ec9d"
+    },
+    {
+      "seed": 142,
+      "epoch": 25,
+      "checkpoint_step": 525,
+      "train_epoch": 0,
+      "batch": 1,
+      "batch_sha256": "f75a853fa27746b5ff932ccba1a735684ded5f2f376bc939df4e5d4d49c88e00",
+      "lambda_ce": 160.0,
+      "native_loss": 414.81231689453125,
+      "ce_loss": 0.6956636905670166,
+      "total_loss": 526.1185302734375,
+      "ce_coverage": {
+        "valid_regions": 79,
+        "ce_regions_by_class": [
+          24,
+          2,
+          5,
+          8,
+          1,
+          0,
+          39
+        ],
+        "ce_groups_by_class": [
+          10,
+          2,
+          5,
+          8,
+          1,
+          0,
+          12
+        ]
+      },
+      "j1_geometry_coverage": {
+        "targets": 79,
+        "missing_native_raster": 0,
+        "p3_cells_1": 0,
+        "p3_cells_2_to_4": 6,
+        "p3_cells_over_4": 73,
+        "positives": 927,
+        "negatives": 1999,
+        "eligible_anchors": 78,
+        "box_fraction_q10_q50_q90": [
+          0.2988241278028512,
+          0.6111111111111112,
+          0.8134920634920635
+        ],
+        "targets_by_class": [
+          24,
+          2,
+          5,
+          8,
+          1,
+          0,
+          39
+        ],
+        "raster_missing_by_class": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "eligible_anchors_by_class": [
+          24,
+          2,
+          5,
+          8,
+          0,
+          0,
+          39
+        ],
+        "eligible_groups_by_class": [
+          10,
+          2,
+          5,
+          8,
+          0,
+          0,
+          12
+        ]
+      },
+      "gradient_definition": "actual_joint_minus_native_ratio = norm(g_YOLO_PLUS_160CE - g_YOLO) / norm(g_YOLO); AMP-rounded difference, not pure unweighted CE derivative",
+      "clip_definition": "Actual clipping is global; per-layer coefficients are hypothetical scope-only values and are not applied",
+      "metrics": {
+        "backbone": {
+          "native_norm": 62.4491088257823,
+          "joint_norm": 112.20728235298968,
+          "actual_joint_minus_native_norm": 73.36001696915687,
+          "actual_joint_minus_native_ratio": 1.1747167949796262,
+          "native_joint_cosine": 0.7926562223757223,
+          "native_clip_coef": 0.16013038501105217,
+          "joint_clip_coef": 0.08912077452709809,
+          "joint_nonzero_tensors": 120
+        },
+        "global": {
+          "native_norm": 73.61148146353405,
+          "joint_norm": 137.98957638007542,
+          "actual_joint_minus_native_norm": 100.48245402657899,
+          "actual_joint_minus_native_ratio": 1.365037790692426,
+          "native_joint_cosine": 0.707008770993858,
+          "native_clip_coef": 0.13584837127759028,
+          "joint_clip_coef": 0.07246924144463623,
+          "joint_nonzero_tensors": 296
+        },
+        "layers": {
+          "0": {
+            "native_norm": 58.350832463809056,
+            "joint_norm": 92.38232177604043,
+            "actual_joint_minus_native_norm": 46.553392433555274,
+            "actual_joint_minus_native_ratio": 0.7978188222495213,
+            "native_joint_cosine": 0.9064037587477307,
+            "native_clip_coef": 0.17137715789787822,
+            "joint_clip_coef": 0.10824581694316875,
+            "joint_nonzero_tensors": 3
+          },
+          "1": {
+            "native_norm": 9.363024231841,
+            "joint_norm": 28.803602737764148,
+            "actual_joint_minus_native_norm": 27.02176535142869,
+            "actual_joint_minus_native_ratio": 2.8860082685181245,
+            "native_joint_cosine": 0.3469514740523062,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.34717877981667583,
+            "joint_nonzero_tensors": 3
+          },
+          "2": {
+            "native_norm": 16.71817826781924,
+            "joint_norm": 42.800405269669355,
+            "actual_joint_minus_native_norm": 38.111269451380245,
+            "actual_joint_minus_native_ratio": 2.2796305219893775,
+            "native_joint_cosine": 0.46042078330991915,
+            "native_clip_coef": 0.5981512603617645,
+            "joint_clip_coef": 0.23364264201124027,
+            "joint_nonzero_tensors": 12
+          },
+          "3": {
+            "native_norm": 3.899743963970426,
+            "joint_norm": 12.964777767867464,
+            "actual_joint_minus_native_norm": 11.465082179746966,
+            "actual_joint_minus_native_ratio": 2.939957670470777,
+            "native_joint_cosine": 0.5127182469662197,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.7713205276425145,
+            "joint_nonzero_tensors": 3
+          },
+          "4": {
+            "native_norm": 10.549539095349685,
+            "joint_norm": 34.837780489851475,
+            "actual_joint_minus_native_norm": 29.840169330313355,
+            "actual_joint_minus_native_ratio": 2.828575643031374,
+            "native_joint_cosine": 0.5911583579640379,
+            "native_clip_coef": 0.9479086206239525,
+            "joint_clip_coef": 0.28704468460234994,
+            "joint_nonzero_tensors": 12
+          },
+          "5": {
+            "native_norm": 0.40294569579344613,
+            "joint_norm": 0.9430974039776574,
+            "actual_joint_minus_native_norm": 0.7609488313093647,
+            "actual_joint_minus_native_ratio": 1.888464969978075,
+            "native_joint_cosine": 0.6220178701871004,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "6": {
+            "native_norm": 0.6886067694905336,
+            "joint_norm": 1.2689232573629492,
+            "actual_joint_minus_native_norm": 0.8860678474080897,
+            "actual_joint_minus_native_ratio": 1.2867544826253277,
+            "native_joint_cosine": 0.7434455501058276,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "7": {
+            "native_norm": 0.24246552970947635,
+            "joint_norm": 0.8418642800377136,
+            "actual_joint_minus_native_norm": 0.7315684152561174,
+            "actual_joint_minus_native_ratio": 3.0172058524470966,
+            "native_joint_cosine": 0.5690995054520409,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "8": {
+            "native_norm": 0.7312179781679625,
+            "joint_norm": 1.9608606835586144,
+            "actual_joint_minus_native_norm": 1.6342883765467542,
+            "actual_joint_minus_native_ratio": 2.2350221484452537,
+            "native_joint_cosine": 0.5958767014165918,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "9": {
+            "native_norm": 0.24414814890049427,
+            "joint_norm": 1.4617777554695668,
+            "actual_joint_minus_native_norm": 1.436084731607754,
+            "actual_joint_minus_native_ratio": 5.882021789127096,
+            "native_joint_cosine": 0.18782143496810097,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 6
+          },
+          "10": {
+            "native_norm": 0.34268986762847453,
+            "joint_norm": 1.8740595295655758,
+            "actual_joint_minus_native_norm": 1.820075859551221,
+            "actual_joint_minus_native_ratio": 5.311145824493553,
+            "native_joint_cosine": 0.24669023601474704,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 21
+          },
+          "13": {
+            "native_norm": 1.5434588185209204,
+            "joint_norm": 5.56633552840966,
+            "actual_joint_minus_native_norm": 4.362419792144327,
+            "actual_joint_minus_native_ratio": 2.8263920875613553,
+            "native_joint_cosine": 0.8343014104798887,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 12
+          },
+          "16": {
+            "native_norm": 18.36030347708336,
+            "joint_norm": 64.18259645952186,
+            "actual_joint_minus_native_norm": 59.791450687067105,
+            "actual_joint_minus_native_ratio": 3.256561132646666,
+            "native_joint_cosine": 0.3740155598284175,
+            "native_clip_coef": 0.5446532769912189,
+            "joint_clip_coef": 0.15580547369256464,
+            "joint_nonzero_tensors": 12
+          },
+          "17": {
+            "native_norm": 2.401152037623465,
+            "joint_norm": 2.401152037623465,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "19": {
+            "native_norm": 8.48735960605855,
+            "joint_norm": 8.48735960605855,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 0.9999999999999998,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 12
+          },
+          "20": {
+            "native_norm": 0.17235485762458347,
+            "joint_norm": 0.17235485762458347,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0000000000000002,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "22": {
+            "native_norm": 0.36367548731665955,
+            "joint_norm": 0.36367548731665955,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 0.9999999999999998,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "23": {
+            "native_norm": 33.1860397001418,
+            "joint_norm": 33.1860397001418,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 0.9999999999999998,
+            "native_clip_coef": 0.30133151737975394,
+            "joint_clip_coef": 0.30133151737975394,
+            "joint_nonzero_tensors": 101
+          },
+          "projection": {
+            "native_norm": 0.0,
+            "joint_norm": 33.481087135601015,
+            "actual_joint_minus_native_norm": 33.481087135601015,
+            "actual_joint_minus_native_ratio": null,
+            "native_joint_cosine": null,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.2986760752667064,
+            "joint_nonzero_tensors": 6
+          }
+        }
+      },
+      "checkpoint_sha256": "d52c4b2805f87abbdd833be4145efff74f68b44bebc047f3cbde0fe61979819a",
+      "native_master_sha256": "887418f0e434f970bcbb6b43e991f9ae5f225b1e4d90e96ff5715f999dc21720",
+      "strict_checkpoint": {
+        "sha256": "d52c4b2805f87abbdd833be4145efff74f68b44bebc047f3cbde0fe61979819a",
+        "strict_reload": true,
+        "stripped_native_forward": true,
+        "state_sha256": "324de71742dff8cc81b902a2c3106d087bbb64a2323131d3c577187b138d2819",
+        "native_state_sha256": "887418f0e434f970bcbb6b43e991f9ae5f225b1e4d90e96ff5715f999dc21720",
+        "ema_state_sha256": "b19b981d8a43c5db462940f2043614e761261ae087198e290f2ce6517df83d87",
+        "adam_slots": 296,
+        "head_tensors_removed": 6
+      },
+      "state_before_sha256": "324de71742dff8cc81b902a2c3106d087bbb64a2323131d3c577187b138d2819",
+      "bn_before_sha256": "5b3f2407f8f4d6b734b77920c6dfa2d1373fce42a7b56145e4803576b8ad8c8e",
+      "optimizer_attempts": 0,
+      "effective_updates": 0,
+      "state_after_sha256": "324de71742dff8cc81b902a2c3106d087bbb64a2323131d3c577187b138d2819",
+      "bn_after_sha256": "5b3f2407f8f4d6b734b77920c6dfa2d1373fce42a7b56145e4803576b8ad8c8e",
+      "rng_restored_exact": true,
+      "checkpoint_after_sha256": "d52c4b2805f87abbdd833be4145efff74f68b44bebc047f3cbde0fe61979819a"
+    },
+    {
+      "seed": 142,
+      "epoch": 25,
+      "checkpoint_step": 525,
+      "train_epoch": 0,
+      "batch": 21,
+      "batch_sha256": "cf0a2843b828a0e5bf94636ca85c4ad24a16075c1d491df2ab383c82992102b4",
+      "lambda_ce": 160.0,
+      "native_loss": 347.689697265625,
+      "ce_loss": 0.7918959856033325,
+      "total_loss": 474.39306640625,
+      "ce_coverage": {
+        "valid_regions": 48,
+        "ce_regions_by_class": [
+          8,
+          4,
+          3,
+          4,
+          4,
+          2,
+          23
+        ],
+        "ce_groups_by_class": [
+          5,
+          4,
+          3,
+          4,
+          4,
+          2,
+          7
+        ]
+      },
+      "j1_geometry_coverage": {
+        "targets": 48,
+        "missing_native_raster": 0,
+        "p3_cells_1": 0,
+        "p3_cells_2_to_4": 2,
+        "p3_cells_over_4": 46,
+        "positives": 227,
+        "negatives": 824,
+        "eligible_anchors": 48,
+        "box_fraction_q10_q50_q90": [
+          0.2702020202020202,
+          0.5698863636363636,
+          0.7714285714285715
+        ],
+        "targets_by_class": [
+          8,
+          4,
+          3,
+          4,
+          4,
+          2,
+          23
+        ],
+        "raster_missing_by_class": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "eligible_anchors_by_class": [
+          8,
+          4,
+          3,
+          4,
+          4,
+          2,
+          23
+        ],
+        "eligible_groups_by_class": [
+          5,
+          4,
+          3,
+          4,
+          4,
+          2,
+          7
+        ]
+      },
+      "gradient_definition": "actual_joint_minus_native_ratio = norm(g_YOLO_PLUS_160CE - g_YOLO) / norm(g_YOLO); AMP-rounded difference, not pure unweighted CE derivative",
+      "clip_definition": "Actual clipping is global; per-layer coefficients are hypothetical scope-only values and are not applied",
+      "metrics": {
+        "backbone": {
+          "native_norm": 45.22507820287979,
+          "joint_norm": 108.87718951170444,
+          "actual_joint_minus_native_norm": 80.88318444550123,
+          "actual_joint_minus_native_ratio": 1.7884586972444603,
+          "native_joint_cosine": 0.7471050901626894,
+          "native_clip_coef": 0.22111625178454594,
+          "joint_clip_coef": 0.09184660214873001,
+          "joint_nonzero_tensors": 120
+        },
+        "global": {
+          "native_norm": 62.71255818641167,
+          "joint_norm": 152.00105336710146,
+          "actual_joint_minus_native_norm": 123.06937343383099,
+          "actual_joint_minus_native_ratio": 1.962435866003266,
+          "native_joint_cosine": 0.623722536465566,
+          "native_clip_coef": 0.15945769284068326,
+          "joint_clip_coef": 0.06578901733042428,
+          "joint_nonzero_tensors": 296
+        },
+        "layers": {
+          "0": {
+            "native_norm": 39.68663088455135,
+            "joint_norm": 94.68688253069188,
+            "actual_joint_minus_native_norm": 64.63647010327982,
+            "actual_joint_minus_native_ratio": 1.628671133392696,
+            "native_joint_cosine": 0.8466064023282942,
+            "native_clip_coef": 0.2519740155599513,
+            "joint_clip_coef": 0.10561124864521064,
+            "joint_nonzero_tensors": 3
+          },
+          "1": {
+            "native_norm": 11.683650393844523,
+            "joint_norm": 20.581675415090746,
+            "actual_joint_minus_native_norm": 17.348091941194824,
+            "actual_joint_minus_native_ratio": 1.484817788654014,
+            "native_joint_cosine": 0.5388566662703492,
+            "native_clip_coef": 0.8558968136680672,
+            "joint_clip_coef": 0.4858690710280467,
+            "joint_nonzero_tensors": 3
+          },
+          "2": {
+            "native_norm": 14.636452441596337,
+            "joint_norm": 37.238612781850755,
+            "actual_joint_minus_native_norm": 33.64728069686167,
+            "actual_joint_minus_native_ratio": 2.2988685838405187,
+            "native_joint_cosine": 0.4300596804946735,
+            "native_clip_coef": 0.6832256215553091,
+            "joint_clip_coef": 0.2685384600667861,
+            "joint_nonzero_tensors": 12
+          },
+          "3": {
+            "native_norm": 3.6295357641656523,
+            "joint_norm": 12.824133880548205,
+            "actual_joint_minus_native_norm": 12.009069234274412,
+            "actual_joint_minus_native_ratio": 3.3087066816753143,
+            "native_joint_cosine": 0.3589400105797186,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.7797796961078532,
+            "joint_nonzero_tensors": 3
+          },
+          "4": {
+            "native_norm": 10.237196808471937,
+            "joint_norm": 29.617536962847854,
+            "actual_joint_minus_native_norm": 27.55889442977332,
+            "actual_joint_minus_native_ratio": 2.692035226573603,
+            "native_joint_cosine": 0.36692881758941986,
+            "native_clip_coef": 0.9768298109590459,
+            "joint_clip_coef": 0.3376377878723062,
+            "joint_nonzero_tensors": 12
+          },
+          "5": {
+            "native_norm": 0.4368525321693928,
+            "joint_norm": 2.1855193196895644,
+            "actual_joint_minus_native_norm": 1.7894341861477927,
+            "actual_joint_minus_native_ratio": 4.096197353513167,
+            "native_joint_cosine": 0.9244621472133765,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "6": {
+            "native_norm": 0.557816722620919,
+            "joint_norm": 2.229853962714614,
+            "actual_joint_minus_native_norm": 1.830066633035736,
+            "actual_joint_minus_native_ratio": 3.280766887799835,
+            "native_joint_cosine": 0.7775312890782481,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "7": {
+            "native_norm": 0.18827433991414777,
+            "joint_norm": 0.9733850054723283,
+            "actual_joint_minus_native_norm": 0.8717799477566629,
+            "actual_joint_minus_native_ratio": 4.630370491030219,
+            "native_joint_cosine": 0.6082100304672851,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "8": {
+            "native_norm": 0.6047100208205326,
+            "joint_norm": 3.347130414317687,
+            "actual_joint_minus_native_norm": 2.9258778356449153,
+            "actual_joint_minus_native_ratio": 4.838480817094422,
+            "native_joint_cosine": 0.7431153102562759,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "9": {
+            "native_norm": 0.40157480484226404,
+            "joint_norm": 3.0313039159242168,
+            "actual_joint_minus_native_norm": 2.7200555047999506,
+            "actual_joint_minus_native_ratio": 6.773471522617985,
+            "native_joint_cosine": 0.8015163787946262,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 6
+          },
+          "10": {
+            "native_norm": 0.712382719747216,
+            "joint_norm": 2.3604692423568943,
+            "actual_joint_minus_native_norm": 2.03454622722714,
+            "actual_joint_minus_native_ratio": 2.8559735810956846,
+            "native_joint_cosine": 0.5768240638736039,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 21
+          },
+          "13": {
+            "native_norm": 1.5024587035461925,
+            "joint_norm": 5.0760459061411725,
+            "actual_joint_minus_native_norm": 3.7620533521283557,
+            "actual_joint_minus_native_ratio": 2.5039312849324467,
+            "native_joint_cosine": 0.9093613639791522,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 12
+          },
+          "16": {
+            "native_norm": 23.25962191595069,
+            "joint_norm": 83.4342211932762,
+            "actual_joint_minus_native_norm": 75.30654451874767,
+            "actual_joint_minus_native_ratio": 3.2376512735619705,
+            "native_joint_cosine": 0.47180200296175573,
+            "native_clip_coef": 0.4299295838172134,
+            "joint_clip_coef": 0.11985489571455345,
+            "joint_nonzero_tensors": 12
+          },
+          "17": {
+            "native_norm": 2.5141335547264725,
+            "joint_norm": 2.5141335547264725,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 0.9999999999999999,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "19": {
+            "native_norm": 8.218496980507354,
+            "joint_norm": 8.218496980507354,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 0.9999999999999998,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 12
+          },
+          "20": {
+            "native_norm": 0.6136220263128657,
+            "joint_norm": 0.6136220263128657,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "22": {
+            "native_norm": 0.8577917338239153,
+            "joint_norm": 0.8577917338239153,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "23": {
+            "native_norm": 35.62741869963691,
+            "joint_norm": 35.62741869963691,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 0.2806826900265784,
+            "joint_clip_coef": 0.2806826900265784,
+            "joint_nonzero_tensors": 101
+          },
+          "projection": {
+            "native_norm": 0.0,
+            "joint_norm": 54.0254797162634,
+            "actual_joint_minus_native_norm": 54.0254797162634,
+            "actual_joint_minus_native_ratio": null,
+            "native_joint_cosine": null,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.1850978439695712,
+            "joint_nonzero_tensors": 6
+          }
+        }
+      },
+      "checkpoint_sha256": "d52c4b2805f87abbdd833be4145efff74f68b44bebc047f3cbde0fe61979819a",
+      "native_master_sha256": "887418f0e434f970bcbb6b43e991f9ae5f225b1e4d90e96ff5715f999dc21720",
+      "strict_checkpoint": {
+        "sha256": "d52c4b2805f87abbdd833be4145efff74f68b44bebc047f3cbde0fe61979819a",
+        "strict_reload": true,
+        "stripped_native_forward": true,
+        "state_sha256": "324de71742dff8cc81b902a2c3106d087bbb64a2323131d3c577187b138d2819",
+        "native_state_sha256": "887418f0e434f970bcbb6b43e991f9ae5f225b1e4d90e96ff5715f999dc21720",
+        "ema_state_sha256": "b19b981d8a43c5db462940f2043614e761261ae087198e290f2ce6517df83d87",
+        "adam_slots": 296,
+        "head_tensors_removed": 6
+      },
+      "state_before_sha256": "324de71742dff8cc81b902a2c3106d087bbb64a2323131d3c577187b138d2819",
+      "bn_before_sha256": "5b3f2407f8f4d6b734b77920c6dfa2d1373fce42a7b56145e4803576b8ad8c8e",
+      "optimizer_attempts": 0,
+      "effective_updates": 0,
+      "state_after_sha256": "324de71742dff8cc81b902a2c3106d087bbb64a2323131d3c577187b138d2819",
+      "bn_after_sha256": "5b3f2407f8f4d6b734b77920c6dfa2d1373fce42a7b56145e4803576b8ad8c8e",
+      "rng_restored_exact": true,
+      "checkpoint_after_sha256": "d52c4b2805f87abbdd833be4145efff74f68b44bebc047f3cbde0fe61979819a"
+    },
+    {
+      "seed": 142,
+      "epoch": 100,
+      "checkpoint_step": 2100,
+      "train_epoch": 0,
+      "batch": 1,
+      "batch_sha256": "f75a853fa27746b5ff932ccba1a735684ded5f2f376bc939df4e5d4d49c88e00",
+      "lambda_ce": 160.0,
+      "native_loss": 320.3834533691406,
+      "ce_loss": 0.21194088459014893,
+      "total_loss": 354.29400634765625,
+      "ce_coverage": {
+        "valid_regions": 79,
+        "ce_regions_by_class": [
+          24,
+          2,
+          5,
+          8,
+          1,
+          0,
+          39
+        ],
+        "ce_groups_by_class": [
+          10,
+          2,
+          5,
+          8,
+          1,
+          0,
+          12
+        ]
+      },
+      "j1_geometry_coverage": {
+        "targets": 79,
+        "missing_native_raster": 0,
+        "p3_cells_1": 0,
+        "p3_cells_2_to_4": 6,
+        "p3_cells_over_4": 73,
+        "positives": 927,
+        "negatives": 1999,
+        "eligible_anchors": 78,
+        "box_fraction_q10_q50_q90": [
+          0.2988241278028512,
+          0.6111111111111112,
+          0.8134920634920635
+        ],
+        "targets_by_class": [
+          24,
+          2,
+          5,
+          8,
+          1,
+          0,
+          39
+        ],
+        "raster_missing_by_class": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "eligible_anchors_by_class": [
+          24,
+          2,
+          5,
+          8,
+          0,
+          0,
+          39
+        ],
+        "eligible_groups_by_class": [
+          10,
+          2,
+          5,
+          8,
+          0,
+          0,
+          12
+        ]
+      },
+      "gradient_definition": "actual_joint_minus_native_ratio = norm(g_YOLO_PLUS_160CE - g_YOLO) / norm(g_YOLO); AMP-rounded difference, not pure unweighted CE derivative",
+      "clip_definition": "Actual clipping is global; per-layer coefficients are hypothetical scope-only values and are not applied",
+      "metrics": {
+        "backbone": {
+          "native_norm": 47.70570188126633,
+          "joint_norm": 75.37245558605153,
+          "actual_joint_minus_native_norm": 74.32566045811595,
+          "actual_joint_minus_native_ratio": 1.5580037087202583,
+          "native_joint_cosine": 0.33825681473640457,
+          "native_clip_coef": 0.20961854445135794,
+          "joint_clip_coef": 0.1326744603127425,
+          "joint_nonzero_tensors": 120
+        },
+        "global": {
+          "native_norm": 62.39682706076006,
+          "joint_norm": 130.27990635299673,
+          "actual_joint_minus_native_norm": 120.97311200566065,
+          "actual_joint_minus_native_ratio": 1.9387702500939807,
+          "native_joint_cosine": 0.38329952063799294,
+          "native_clip_coef": 0.16026455688199914,
+          "joint_clip_coef": 0.07675780711836665,
+          "joint_nonzero_tensors": 296
+        },
+        "layers": {
+          "0": {
+            "native_norm": 42.337289845953336,
+            "joint_norm": 53.31733493469851,
+            "actual_joint_minus_native_norm": 54.47883136444286,
+            "actual_joint_minus_native_ratio": 1.2867812645227699,
+            "native_joint_cosine": 0.3692980070173302,
+            "native_clip_coef": 0.2361983915405824,
+            "joint_clip_coef": 0.1875562577291503,
+            "joint_nonzero_tensors": 3
+          },
+          "1": {
+            "native_norm": 9.142895967450846,
+            "joint_norm": 20.54753966616227,
+            "actual_joint_minus_native_norm": 19.39601009758187,
+            "actual_joint_minus_native_ratio": 2.121429595899659,
+            "native_joint_cosine": 0.34490039671339817,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.48667624814428617,
+            "joint_nonzero_tensors": 3
+          },
+          "2": {
+            "native_norm": 17.4823607860389,
+            "joint_norm": 35.53469921554927,
+            "actual_joint_minus_native_norm": 33.77968966191463,
+            "actual_joint_minus_native_ratio": 1.9322155671841807,
+            "native_joint_cosine": 0.3438984598480138,
+            "native_clip_coef": 0.5720050941850329,
+            "joint_clip_coef": 0.2814150658185151,
+            "joint_nonzero_tensors": 12
+          },
+          "3": {
+            "native_norm": 4.004835409885241,
+            "joint_norm": 11.400317679546482,
+            "actual_joint_minus_native_norm": 10.75234567201078,
+            "actual_joint_minus_native_ratio": 2.684840841516353,
+            "native_joint_cosine": 0.33284510445048027,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.8771684617852992,
+            "joint_nonzero_tensors": 3
+          },
+          "4": {
+            "native_norm": 8.694814881980477,
+            "joint_norm": 31.841746648152053,
+            "actual_joint_minus_native_norm": 30.309581820624707,
+            "actual_joint_minus_native_ratio": 3.485937565322942,
+            "native_joint_cosine": 0.30850798663297263,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.31405311387110224,
+            "joint_nonzero_tensors": 12
+          },
+          "5": {
+            "native_norm": 0.48394942430681104,
+            "joint_norm": 0.9446989188291259,
+            "actual_joint_minus_native_norm": 0.8584198173316784,
+            "actual_joint_minus_native_ratio": 1.7737800154659613,
+            "native_joint_cosine": 0.42627956689287666,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "6": {
+            "native_norm": 0.749753293537189,
+            "joint_norm": 1.7053736034378504,
+            "actual_joint_minus_native_norm": 1.2930881756371335,
+            "actual_joint_minus_native_ratio": 1.7246848887273267,
+            "native_joint_cosine": 0.7032452773560722,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "7": {
+            "native_norm": 0.281164738361013,
+            "joint_norm": 0.4503119228711424,
+            "actual_joint_minus_native_norm": 0.19940512601647434,
+            "actual_joint_minus_native_ratio": 0.709211002698496,
+            "native_joint_cosine": 0.9559613934178307,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "8": {
+            "native_norm": 0.7550283865180117,
+            "joint_norm": 1.4394716809072552,
+            "actual_joint_minus_native_norm": 1.0959944819246765,
+            "actual_joint_minus_native_ratio": 1.451593743354616,
+            "native_joint_cosine": 0.6629034913169755,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "9": {
+            "native_norm": 0.5207941695994441,
+            "joint_norm": 1.0105678751226912,
+            "actual_joint_minus_native_norm": 0.59028557907355,
+            "actual_joint_minus_native_ratio": 1.1334335396411088,
+            "native_joint_cosine": 0.8968656000650085,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 6
+          },
+          "10": {
+            "native_norm": 0.8984417504011022,
+            "joint_norm": 1.5465079721597204,
+            "actual_joint_minus_native_norm": 0.8977982853134127,
+            "actual_joint_minus_native_ratio": 0.9992837987689216,
+            "native_joint_cosine": 0.8610771788493277,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 21
+          },
+          "13": {
+            "native_norm": 2.466140708503447,
+            "joint_norm": 5.245597840060095,
+            "actual_joint_minus_native_norm": 4.672330138034815,
+            "actual_joint_minus_native_ratio": 1.8945918705791012,
+            "native_joint_cosine": 0.4548210506246205,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 12
+          },
+          "16": {
+            "native_norm": 20.59680853491344,
+            "joint_norm": 91.8981677888653,
+            "actual_joint_minus_native_norm": 86.35115298421962,
+            "actual_joint_minus_native_ratio": 4.19245306076651,
+            "native_joint_cosine": 0.37324949614081626,
+            "native_clip_coef": 0.48551208783326866,
+            "joint_clip_coef": 0.10881609646624031,
+            "joint_nonzero_tensors": 12
+          },
+          "17": {
+            "native_norm": 3.465615462899737,
+            "joint_norm": 3.465615462899737,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "19": {
+            "native_norm": 14.417171411783336,
+            "joint_norm": 14.417171411783336,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 0.693617285996169,
+            "joint_clip_coef": 0.693617285996169,
+            "joint_nonzero_tensors": 12
+          },
+          "20": {
+            "native_norm": 0.4179856656787098,
+            "joint_norm": 0.4179856656787098,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "22": {
+            "native_norm": 0.8682182739375468,
+            "joint_norm": 0.8682182739375468,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "23": {
+            "native_norm": 31.08739015110107,
+            "joint_norm": 31.08739015110107,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 0.3216738243294441,
+            "joint_clip_coef": 0.3216738243294441,
+            "joint_nonzero_tensors": 101
+          },
+          "projection": {
+            "native_norm": 0.0,
+            "joint_norm": 40.39601137706651,
+            "actual_joint_minus_native_norm": 40.39601137706651,
+            "actual_joint_minus_native_ratio": null,
+            "native_joint_cosine": null,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.2475491864557693,
+            "joint_nonzero_tensors": 6
+          }
+        }
+      },
+      "checkpoint_sha256": "77f9f95b4945c157bc49669f667c52eeec07fbad1ed131b4b9a689a69bc8eda7",
+      "native_master_sha256": "670339c201e0f462c94223703c03ea6b8c1266f2b43c977f1ffb20a63a1a170a",
+      "strict_checkpoint": {
+        "sha256": "77f9f95b4945c157bc49669f667c52eeec07fbad1ed131b4b9a689a69bc8eda7",
+        "strict_reload": true,
+        "stripped_native_forward": true,
+        "state_sha256": "5f968365a7aead6ce264463ae1d143538e062b7fe7efb64fd3f627e4ccd37954",
+        "native_state_sha256": "670339c201e0f462c94223703c03ea6b8c1266f2b43c977f1ffb20a63a1a170a",
+        "ema_state_sha256": "90241846b89791c19f9cf75d0613dce7166bdba1f19a47c9cb16967a3f415b11",
+        "adam_slots": 296,
+        "head_tensors_removed": 6
+      },
+      "state_before_sha256": "5f968365a7aead6ce264463ae1d143538e062b7fe7efb64fd3f627e4ccd37954",
+      "bn_before_sha256": "4dc3f7e95d31012a3d8f5cce54109725d235476a592dd882b0454aab07e7c7d5",
+      "optimizer_attempts": 0,
+      "effective_updates": 0,
+      "state_after_sha256": "5f968365a7aead6ce264463ae1d143538e062b7fe7efb64fd3f627e4ccd37954",
+      "bn_after_sha256": "4dc3f7e95d31012a3d8f5cce54109725d235476a592dd882b0454aab07e7c7d5",
+      "rng_restored_exact": true,
+      "checkpoint_after_sha256": "77f9f95b4945c157bc49669f667c52eeec07fbad1ed131b4b9a689a69bc8eda7"
+    },
+    {
+      "seed": 142,
+      "epoch": 100,
+      "checkpoint_step": 2100,
+      "train_epoch": 0,
+      "batch": 21,
+      "batch_sha256": "cf0a2843b828a0e5bf94636ca85c4ad24a16075c1d491df2ab383c82992102b4",
+      "lambda_ce": 160.0,
+      "native_loss": 255.09243774414062,
+      "ce_loss": 0.215429425239563,
+      "total_loss": 289.5611572265625,
+      "ce_coverage": {
+        "valid_regions": 48,
+        "ce_regions_by_class": [
+          8,
+          4,
+          3,
+          4,
+          4,
+          2,
+          23
+        ],
+        "ce_groups_by_class": [
+          5,
+          4,
+          3,
+          4,
+          4,
+          2,
+          7
+        ]
+      },
+      "j1_geometry_coverage": {
+        "targets": 48,
+        "missing_native_raster": 0,
+        "p3_cells_1": 0,
+        "p3_cells_2_to_4": 2,
+        "p3_cells_over_4": 46,
+        "positives": 227,
+        "negatives": 824,
+        "eligible_anchors": 48,
+        "box_fraction_q10_q50_q90": [
+          0.2702020202020202,
+          0.5698863636363636,
+          0.7714285714285715
+        ],
+        "targets_by_class": [
+          8,
+          4,
+          3,
+          4,
+          4,
+          2,
+          23
+        ],
+        "raster_missing_by_class": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "eligible_anchors_by_class": [
+          8,
+          4,
+          3,
+          4,
+          4,
+          2,
+          23
+        ],
+        "eligible_groups_by_class": [
+          5,
+          4,
+          3,
+          4,
+          4,
+          2,
+          7
+        ]
+      },
+      "gradient_definition": "actual_joint_minus_native_ratio = norm(g_YOLO_PLUS_160CE - g_YOLO) / norm(g_YOLO); AMP-rounded difference, not pure unweighted CE derivative",
+      "clip_definition": "Actual clipping is global; per-layer coefficients are hypothetical scope-only values and are not applied",
+      "metrics": {
+        "backbone": {
+          "native_norm": 38.403211640782544,
+          "joint_norm": 266.1682054346585,
+          "actual_joint_minus_native_norm": 251.149236186432,
+          "actual_joint_minus_native_ratio": 6.539797726701649,
+          "native_joint_cosine": 0.45219346719335757,
+          "native_clip_coef": 0.26039488137459715,
+          "joint_clip_coef": 0.03757022724070125,
+          "joint_nonzero_tensors": 120
+        },
+        "global": {
+          "native_norm": 59.61479155666198,
+          "joint_norm": 291.0155153502047,
+          "actual_joint_minus_native_norm": 273.4618129083693,
+          "actual_joint_minus_native_ratio": 4.587147011131499,
+          "native_joint_cosine": 0.3879971822266057,
+          "native_clip_coef": 0.1677436013971753,
+          "joint_clip_coef": 0.03436242893649051,
+          "joint_nonzero_tensors": 296
+        },
+        "layers": {
+          "0": {
+            "native_norm": 31.188373045082585,
+            "joint_norm": 252.7982663253598,
+            "actual_joint_minus_native_norm": 238.50734075809308,
+            "actual_joint_minus_native_ratio": 7.6473158895891205,
+            "native_joint_cosine": 0.5069481098994194,
+            "native_clip_coef": 0.32063229668674187,
+            "joint_clip_coef": 0.03955723314800123,
+            "joint_nonzero_tensors": 3
+          },
+          "1": {
+            "native_norm": 11.44637591723909,
+            "joint_norm": 34.85436646076831,
+            "actual_joint_minus_native_norm": 32.74699013106694,
+            "actual_joint_minus_native_ratio": 2.860904653825631,
+            "native_joint_cosine": 0.34274560773784846,
+            "native_clip_coef": 0.8736388878597263,
+            "joint_clip_coef": 0.28690809010537605,
+            "joint_nonzero_tensors": 3
+          },
+          "2": {
+            "native_norm": 15.385299157120253,
+            "joint_norm": 54.45010919169178,
+            "actual_joint_minus_native_norm": 51.985741981429214,
+            "actual_joint_minus_native_ratio": 3.3789230518387696,
+            "native_joint_cosine": 0.2978309186880187,
+            "native_clip_coef": 0.6499710696493655,
+            "joint_clip_coef": 0.18365435744381362,
+            "joint_nonzero_tensors": 12
+          },
+          "3": {
+            "native_norm": 4.678397483254498,
+            "joint_norm": 16.945658756304507,
+            "actual_joint_minus_native_norm": 15.912723325733953,
+            "actual_joint_minus_native_ratio": 3.401319230076271,
+            "native_joint_cosine": 0.3521003902383619,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.5901216089435275,
+            "joint_nonzero_tensors": 3
+          },
+          "4": {
+            "native_norm": 10.551901823135246,
+            "joint_norm": 49.35440327770261,
+            "actual_joint_minus_native_norm": 46.153116418131404,
+            "actual_joint_minus_native_ratio": 4.3739145029704325,
+            "native_joint_cosine": 0.40044489718044324,
+            "native_clip_coef": 0.9476963698030664,
+            "joint_clip_coef": 0.2026161625562931,
+            "joint_nonzero_tensors": 12
+          },
+          "5": {
+            "native_norm": 0.5077870518470138,
+            "joint_norm": 3.1554404438559738,
+            "actual_joint_minus_native_norm": 2.7741761097146185,
+            "actual_joint_minus_native_ratio": 5.463266736762762,
+            "native_joint_cosine": 0.7859364165077899,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "6": {
+            "native_norm": 0.5490519219363855,
+            "joint_norm": 3.6035544795198815,
+            "actual_joint_minus_native_norm": 3.3946463676161476,
+            "actual_joint_minus_native_ratio": 6.182741981202753,
+            "native_joint_cosine": 0.44564186754226803,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "7": {
+            "native_norm": 0.1001431242673452,
+            "joint_norm": 0.40061673897328476,
+            "actual_joint_minus_native_norm": 0.35895055086433936,
+            "actual_joint_minus_native_ratio": 3.584375397616653,
+            "native_joint_cosine": 0.51941615724757,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "8": {
+            "native_norm": 0.5803509664480758,
+            "joint_norm": 1.479463935631879,
+            "actual_joint_minus_native_norm": 1.520380539475555,
+            "actual_joint_minus_native_ratio": 2.6197605024779156,
+            "native_joint_cosine": 0.12465741305415658,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "9": {
+            "native_norm": 0.237473345418371,
+            "joint_norm": 1.9478718252956453,
+            "actual_joint_minus_native_norm": 1.9382811412686753,
+            "actual_joint_minus_native_ratio": 8.162099783678414,
+            "native_joint_cosine": 0.10124399271844944,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 6
+          },
+          "10": {
+            "native_norm": 0.41536617083475913,
+            "joint_norm": 2.6096896385115276,
+            "actual_joint_minus_native_norm": 2.561752811248693,
+            "actual_joint_minus_native_ratio": 6.167456550687198,
+            "native_joint_cosine": 0.19393016038861774,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 21
+          },
+          "13": {
+            "native_norm": 1.8340246681859156,
+            "joint_norm": 12.158322321908804,
+            "actual_joint_minus_native_norm": 11.788327285815253,
+            "actual_joint_minus_native_ratio": 6.427572916712954,
+            "native_joint_cosine": 0.27409229668324286,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.8224818287222555,
+            "joint_nonzero_tensors": 12
+          },
+          "16": {
+            "native_norm": 22.43715584313018,
+            "joint_norm": 101.43026115268776,
+            "actual_joint_minus_native_norm": 98.64173969501245,
+            "actual_joint_minus_native_ratio": 4.396356667693006,
+            "native_joint_cosine": 0.23317694584343723,
+            "native_clip_coef": 0.4456892675803443,
+            "joint_clip_coef": 0.0985899058896893,
+            "joint_nonzero_tensors": 12
+          },
+          "17": {
+            "native_norm": 3.3560764530712426,
+            "joint_norm": 3.3560764530712426,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "19": {
+            "native_norm": 11.855996955027315,
+            "joint_norm": 11.855996955027315,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 0.8434549363058625,
+            "joint_clip_coef": 0.8434549363058625,
+            "joint_nonzero_tensors": 12
+          },
+          "20": {
+            "native_norm": 0.2649978345073142,
+            "joint_norm": 0.2649978345073142,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "22": {
+            "native_norm": 1.0625899443603892,
+            "joint_norm": 1.0625899443603892,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "23": {
+            "native_norm": 37.67359639066158,
+            "joint_norm": 37.67359639066158,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 0.2654378846889406,
+            "joint_clip_coef": 0.2654378846889406,
+            "joint_nonzero_tensors": 101
+          },
+          "projection": {
+            "native_norm": 0.0,
+            "joint_norm": 42.851683885790145,
+            "actual_joint_minus_native_norm": 42.851683885790145,
+            "actual_joint_minus_native_ratio": null,
+            "native_joint_cosine": null,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.2333630527399882,
+            "joint_nonzero_tensors": 6
+          }
+        }
+      },
+      "checkpoint_sha256": "77f9f95b4945c157bc49669f667c52eeec07fbad1ed131b4b9a689a69bc8eda7",
+      "native_master_sha256": "670339c201e0f462c94223703c03ea6b8c1266f2b43c977f1ffb20a63a1a170a",
+      "strict_checkpoint": {
+        "sha256": "77f9f95b4945c157bc49669f667c52eeec07fbad1ed131b4b9a689a69bc8eda7",
+        "strict_reload": true,
+        "stripped_native_forward": true,
+        "state_sha256": "5f968365a7aead6ce264463ae1d143538e062b7fe7efb64fd3f627e4ccd37954",
+        "native_state_sha256": "670339c201e0f462c94223703c03ea6b8c1266f2b43c977f1ffb20a63a1a170a",
+        "ema_state_sha256": "90241846b89791c19f9cf75d0613dce7166bdba1f19a47c9cb16967a3f415b11",
+        "adam_slots": 296,
+        "head_tensors_removed": 6
+      },
+      "state_before_sha256": "5f968365a7aead6ce264463ae1d143538e062b7fe7efb64fd3f627e4ccd37954",
+      "bn_before_sha256": "4dc3f7e95d31012a3d8f5cce54109725d235476a592dd882b0454aab07e7c7d5",
+      "optimizer_attempts": 0,
+      "effective_updates": 0,
+      "state_after_sha256": "5f968365a7aead6ce264463ae1d143538e062b7fe7efb64fd3f627e4ccd37954",
+      "bn_after_sha256": "4dc3f7e95d31012a3d8f5cce54109725d235476a592dd882b0454aab07e7c7d5",
+      "rng_restored_exact": true,
+      "checkpoint_after_sha256": "77f9f95b4945c157bc49669f667c52eeec07fbad1ed131b4b9a689a69bc8eda7"
+    },
+    {
+      "seed": 242,
+      "epoch": 25,
+      "checkpoint_step": 525,
+      "train_epoch": 0,
+      "batch": 1,
+      "batch_sha256": "00376142995fc28f68e79a52ba511ca3d0bb38865a66fcffefb2e1fa6fddbddb",
+      "lambda_ce": 160.0,
+      "native_loss": 407.5460205078125,
+      "ce_loss": 0.6412068605422974,
+      "total_loss": 510.13909912109375,
+      "ce_coverage": {
+        "valid_regions": 57,
+        "ce_regions_by_class": [
+          19,
+          2,
+          8,
+          10,
+          0,
+          0,
+          18
+        ],
+        "ce_groups_by_class": [
+          10,
+          2,
+          7,
+          9,
+          0,
+          0,
+          10
+        ]
+      },
+      "j1_geometry_coverage": {
+        "targets": 57,
+        "missing_native_raster": 0,
+        "p3_cells_1": 0,
+        "p3_cells_2_to_4": 2,
+        "p3_cells_over_4": 55,
+        "positives": 369,
+        "negatives": 1169,
+        "eligible_anchors": 57,
+        "box_fraction_q10_q50_q90": [
+          0.27332507739938083,
+          0.5615982241953386,
+          0.7672463768115942
+        ],
+        "targets_by_class": [
+          19,
+          2,
+          8,
+          10,
+          0,
+          0,
+          18
+        ],
+        "raster_missing_by_class": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "eligible_anchors_by_class": [
+          19,
+          2,
+          8,
+          10,
+          0,
+          0,
+          18
+        ],
+        "eligible_groups_by_class": [
+          10,
+          2,
+          7,
+          9,
+          0,
+          0,
+          10
+        ]
+      },
+      "gradient_definition": "actual_joint_minus_native_ratio = norm(g_YOLO_PLUS_160CE - g_YOLO) / norm(g_YOLO); AMP-rounded difference, not pure unweighted CE derivative",
+      "clip_definition": "Actual clipping is global; per-layer coefficients are hypothetical scope-only values and are not applied",
+      "metrics": {
+        "backbone": {
+          "native_norm": 60.87125252233365,
+          "joint_norm": 81.71429938013138,
+          "actual_joint_minus_native_norm": 46.27607555794025,
+          "actual_joint_minus_native_ratio": 0.7602287391895143,
+          "native_joint_cosine": 0.8284051769232169,
+          "native_clip_coef": 0.16428115771151325,
+          "joint_clip_coef": 0.12237760041364161,
+          "joint_nonzero_tensors": 120
+        },
+        "global": {
+          "native_norm": 72.40220793910116,
+          "joint_norm": 119.44617733493534,
+          "actual_joint_minus_native_norm": 87.4014901379518,
+          "actual_joint_minus_native_ratio": 1.20716608824232,
+          "native_joint_cosine": 0.6862985019099532,
+          "native_clip_coef": 0.13811733297268852,
+          "joint_clip_coef": 0.08371971493268968,
+          "joint_nonzero_tensors": 296
+        },
+        "layers": {
+          "0": {
+            "native_norm": 55.93522076105594,
+            "joint_norm": 69.22915404169743,
+            "actual_joint_minus_native_norm": 33.5002586004254,
+            "actual_joint_minus_native_ratio": 0.5989117079475166,
+            "native_joint_cosine": 0.8779113926505843,
+            "native_clip_coef": 0.17877823105302054,
+            "joint_clip_coef": 0.14444781239893653,
+            "joint_nonzero_tensors": 3
+          },
+          "1": {
+            "native_norm": 9.448672032398566,
+            "joint_norm": 15.774950473544427,
+            "actual_joint_minus_native_norm": 11.154871078030052,
+            "actual_joint_minus_native_ratio": 1.18057553905788,
+            "native_joint_cosine": 0.7168465746768858,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.6339163715825448,
+            "joint_nonzero_tensors": 3
+          },
+          "2": {
+            "native_norm": 18.155942294620587,
+            "joint_norm": 30.494306838625207,
+            "actual_joint_minus_native_norm": 22.964569727350778,
+            "actual_joint_minus_native_ratio": 1.2648514384271279,
+            "native_joint_cosine": 0.6612171213949312,
+            "native_clip_coef": 0.5507838308221029,
+            "joint_clip_coef": 0.32793005346832743,
+            "joint_nonzero_tensors": 12
+          },
+          "3": {
+            "native_norm": 4.602854173388618,
+            "joint_norm": 8.887398320299141,
+            "actual_joint_minus_native_norm": 6.566129116947753,
+            "actual_joint_minus_native_ratio": 1.4265342480128527,
+            "native_joint_cosine": 0.6974052396408315,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "4": {
+            "native_norm": 11.647431824610099,
+            "joint_norm": 24.990382344865115,
+            "actual_joint_minus_native_norm": 17.969388230640572,
+            "actual_joint_minus_native_ratio": 1.5427768542652194,
+            "native_joint_cosine": 0.7511548734025311,
+            "native_clip_coef": 0.8585582892455749,
+            "joint_clip_coef": 0.40015392569217006,
+            "joint_nonzero_tensors": 12
+          },
+          "5": {
+            "native_norm": 0.3278266399628862,
+            "joint_norm": 0.5507321822007554,
+            "actual_joint_minus_native_norm": 0.4072406906997839,
+            "actual_joint_minus_native_ratio": 1.2422440432110347,
+            "native_joint_cosine": 0.6783121096873843,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "6": {
+            "native_norm": 0.6139994055026932,
+            "joint_norm": 1.0654040794767403,
+            "actual_joint_minus_native_norm": 0.9775605018725205,
+            "actual_joint_minus_native_ratio": 1.5921196227741832,
+            "native_joint_cosine": 0.4253230857052143,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "7": {
+            "native_norm": 0.04257161232536336,
+            "joint_norm": 0.11166595947973536,
+            "actual_joint_minus_native_norm": 0.09081011648908872,
+            "actual_joint_minus_native_ratio": 2.1331143343844126,
+            "native_joint_cosine": 0.6347712880818758,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "8": {
+            "native_norm": 0.110833434475054,
+            "joint_norm": 0.30036214129864675,
+            "actual_joint_minus_native_norm": 0.23167680932247808,
+            "actual_joint_minus_native_ratio": 2.090315169062302,
+            "native_joint_cosine": 0.7333595877264638,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "9": {
+            "native_norm": 0.3017260899133388,
+            "joint_norm": 0.47685760454306225,
+            "actual_joint_minus_native_norm": 0.20577577669787442,
+            "actual_joint_minus_native_ratio": 0.6819953049369278,
+            "native_joint_cosine": 0.9594363782172859,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 6
+          },
+          "10": {
+            "native_norm": 0.4541839013746993,
+            "joint_norm": 0.72499071231509,
+            "actual_joint_minus_native_norm": 0.4080838744502804,
+            "actual_joint_minus_native_ratio": 0.8984992053111398,
+            "native_joint_cosine": 0.8584846013562958,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 21
+          },
+          "13": {
+            "native_norm": 2.4276072661820915,
+            "joint_norm": 3.8282359583986465,
+            "actual_joint_minus_native_norm": 2.919287037811541,
+            "actual_joint_minus_native_ratio": 1.2025367852859974,
+            "native_joint_cosine": 0.6470377431549195,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 12
+          },
+          "16": {
+            "native_norm": 17.647821693433553,
+            "joint_norm": 66.55286671592445,
+            "actual_joint_minus_native_norm": 59.684431953868376,
+            "actual_joint_minus_native_ratio": 3.381971610472238,
+            "native_joint_cosine": 0.5016965262192479,
+            "native_clip_coef": 0.5666421390170032,
+            "joint_clip_coef": 0.15025648545580625,
+            "joint_nonzero_tensors": 12
+          },
+          "17": {
+            "native_norm": 2.544574315658585,
+            "joint_norm": 2.544574315658585,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 0.9999999999999999,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "19": {
+            "native_norm": 7.407233990720219,
+            "joint_norm": 7.407233990720219,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 0.9999999999999999,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 12
+          },
+          "20": {
+            "native_norm": 0.5702941235103038,
+            "joint_norm": 0.5702941235103038,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "22": {
+            "native_norm": 1.1409910174017377,
+            "joint_norm": 1.1409910174017377,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "23": {
+            "native_norm": 34.00679893090198,
+            "joint_norm": 34.00679893090198,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 0.2940588358892599,
+            "joint_clip_coef": 0.2940588358892599,
+            "joint_nonzero_tensors": 101
+          },
+          "projection": {
+            "native_norm": 0.0,
+            "joint_norm": 43.89523498997597,
+            "actual_joint_minus_native_norm": 43.89523498997597,
+            "actual_joint_minus_native_ratio": null,
+            "native_joint_cosine": null,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.22781515520918094,
+            "joint_nonzero_tensors": 6
+          }
+        }
+      },
+      "checkpoint_sha256": "514ed1bd70298af2afe19b55ac75edbdf8196dc951e92f6b4e0e735a48402440",
+      "native_master_sha256": "c70d7b6b307a89212427f9eb14a9b9cfe56e681498f867966fe79f47bf599650",
+      "strict_checkpoint": {
+        "sha256": "514ed1bd70298af2afe19b55ac75edbdf8196dc951e92f6b4e0e735a48402440",
+        "strict_reload": true,
+        "stripped_native_forward": true,
+        "state_sha256": "2f535fead11e2399d12c10e4f82b2d19a6311a709eff0a6cfcc7a2b7a0efa354",
+        "native_state_sha256": "c70d7b6b307a89212427f9eb14a9b9cfe56e681498f867966fe79f47bf599650",
+        "ema_state_sha256": "245b3051ea7005e3eb929df6e6d9556b3f783a8e2fc7faa59d8312674881ec0c",
+        "adam_slots": 296,
+        "head_tensors_removed": 6
+      },
+      "state_before_sha256": "2f535fead11e2399d12c10e4f82b2d19a6311a709eff0a6cfcc7a2b7a0efa354",
+      "bn_before_sha256": "fae86639626d7a26ebdbd7c63341956bfd450c7477d37efe428e5afcbba0f9ae",
+      "optimizer_attempts": 0,
+      "effective_updates": 0,
+      "state_after_sha256": "2f535fead11e2399d12c10e4f82b2d19a6311a709eff0a6cfcc7a2b7a0efa354",
+      "bn_after_sha256": "fae86639626d7a26ebdbd7c63341956bfd450c7477d37efe428e5afcbba0f9ae",
+      "rng_restored_exact": true,
+      "checkpoint_after_sha256": "514ed1bd70298af2afe19b55ac75edbdf8196dc951e92f6b4e0e735a48402440"
+    },
+    {
+      "seed": 242,
+      "epoch": 25,
+      "checkpoint_step": 525,
+      "train_epoch": 0,
+      "batch": 21,
+      "batch_sha256": "167d80308f6035da93ad45653ccf6080bbae38ac00f349c2adbd04fb0bf134a5",
+      "lambda_ce": 160.0,
+      "native_loss": 357.1991271972656,
+      "ce_loss": 0.5114941596984863,
+      "total_loss": 439.0382080078125,
+      "ce_coverage": {
+        "valid_regions": 59,
+        "ce_regions_by_class": [
+          19,
+          3,
+          7,
+          4,
+          1,
+          2,
+          23
+        ],
+        "ce_groups_by_class": [
+          6,
+          3,
+          6,
+          2,
+          1,
+          1,
+          10
+        ]
+      },
+      "j1_geometry_coverage": {
+        "targets": 59,
+        "missing_native_raster": 0,
+        "p3_cells_1": 3,
+        "p3_cells_2_to_4": 4,
+        "p3_cells_over_4": 52,
+        "positives": 352,
+        "negatives": 1245,
+        "eligible_anchors": 56,
+        "box_fraction_q10_q50_q90": [
+          0.32071009949570667,
+          0.5768500948766604,
+          0.8
+        ],
+        "targets_by_class": [
+          19,
+          3,
+          7,
+          4,
+          1,
+          2,
+          23
+        ],
+        "raster_missing_by_class": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "eligible_anchors_by_class": [
+          19,
+          3,
+          7,
+          4,
+          0,
+          0,
+          23
+        ],
+        "eligible_groups_by_class": [
+          6,
+          3,
+          6,
+          2,
+          0,
+          0,
+          10
+        ]
+      },
+      "gradient_definition": "actual_joint_minus_native_ratio = norm(g_YOLO_PLUS_160CE - g_YOLO) / norm(g_YOLO); AMP-rounded difference, not pure unweighted CE derivative",
+      "clip_definition": "Actual clipping is global; per-layer coefficients are hypothetical scope-only values and are not applied",
+      "metrics": {
+        "backbone": {
+          "native_norm": 33.7329107067996,
+          "joint_norm": 78.3748417482069,
+          "actual_joint_minus_native_norm": 72.32200690922127,
+          "actual_joint_minus_native_ratio": 2.143959871646748,
+          "native_joint_cosine": 0.38770776805310964,
+          "native_clip_coef": 0.2964463929742621,
+          "joint_clip_coef": 0.12759196253990296,
+          "joint_nonzero_tensors": 120
+        },
+        "global": {
+          "native_norm": 50.3816406767295,
+          "joint_norm": 101.91612783728755,
+          "actual_joint_minus_native_norm": 88.54694226974225,
+          "actual_joint_minus_native_ratio": 1.7575239924776944,
+          "native_joint_cosine": 0.49512573954645117,
+          "native_clip_coef": 0.1984849970583401,
+          "joint_clip_coef": 0.09811989637052766,
+          "joint_nonzero_tensors": 296
+        },
+        "layers": {
+          "0": {
+            "native_norm": 24.515051827133778,
+            "joint_norm": 62.737290569502335,
+            "actual_joint_minus_native_norm": 63.98663102156257,
+            "actual_joint_minus_native_ratio": 2.6100956862241187,
+            "native_joint_cosine": 0.1439090453033058,
+            "native_clip_coef": 0.407912643326299,
+            "joint_clip_coef": 0.15939483120532366,
+            "joint_nonzero_tensors": 3
+          },
+          "1": {
+            "native_norm": 9.708383967133852,
+            "joint_norm": 19.02025540818922,
+            "actual_joint_minus_native_norm": 13.979432152057251,
+            "actual_joint_minus_native_ratio": 1.4399339992507854,
+            "native_joint_cosine": 0.7056321576507204,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.5257552677204957,
+            "joint_nonzero_tensors": 3
+          },
+          "2": {
+            "native_norm": 18.405033873276473,
+            "joint_norm": 36.75343823568248,
+            "actual_joint_minus_native_norm": 26.17988783629653,
+            "actual_joint_minus_native_ratio": 1.4224308423745364,
+            "native_joint_cosine": 0.7422400589597503,
+            "native_clip_coef": 0.5433295871946259,
+            "joint_clip_coef": 0.2720833807109782,
+            "joint_nonzero_tensors": 12
+          },
+          "3": {
+            "native_norm": 3.7457424870267824,
+            "joint_norm": 8.742637929485568,
+            "actual_joint_minus_native_norm": 6.362119864928687,
+            "actual_joint_minus_native_ratio": 1.698493659658563,
+            "native_joint_cosine": 0.7632258827053504,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "4": {
+            "native_norm": 9.42208064663029,
+            "joint_norm": 20.314927877433792,
+            "actual_joint_minus_native_norm": 14.547520157124344,
+            "actual_joint_minus_native_ratio": 1.543981706665514,
+            "native_joint_cosine": 0.7571266771612444,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.4922488314053705,
+            "joint_nonzero_tensors": 12
+          },
+          "5": {
+            "native_norm": 0.4930142165556126,
+            "joint_norm": 1.0286102710282534,
+            "actual_joint_minus_native_norm": 0.8545577977740996,
+            "actual_joint_minus_native_ratio": 1.7333329731227018,
+            "native_joint_cosine": 0.5628191712093192,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "6": {
+            "native_norm": 0.6243138418369962,
+            "joint_norm": 1.3043117775713056,
+            "actual_joint_minus_native_norm": 1.082645271307873,
+            "actual_joint_minus_native_ratio": 1.7341362608944744,
+            "native_joint_cosine": 0.5642123960486033,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "7": {
+            "native_norm": 0.0920046303113275,
+            "joint_norm": 0.6889233311380918,
+            "actual_joint_minus_native_norm": 0.7097999528466714,
+            "actual_joint_minus_native_ratio": 7.714828595526477,
+            "native_joint_cosine": -0.16357217301381705,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "8": {
+            "native_norm": 0.09236451981428154,
+            "joint_norm": 0.3516805882837096,
+            "actual_joint_minus_native_norm": 0.36144713006622947,
+            "actual_joint_minus_native_ratio": 3.913268111965456,
+            "native_joint_cosine": 0.024111541021502345,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "9": {
+            "native_norm": 0.29188253352240673,
+            "joint_norm": 0.597195398143765,
+            "actual_joint_minus_native_norm": 0.3925683785454107,
+            "actual_joint_minus_native_ratio": 1.3449533064138444,
+            "native_joint_cosine": 0.825329364137535,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 6
+          },
+          "10": {
+            "native_norm": 0.6182999148077738,
+            "joint_norm": 1.1039181343344577,
+            "actual_joint_minus_native_norm": 0.7581634581071063,
+            "actual_joint_minus_native_ratio": 1.2262066352424055,
+            "native_joint_cosine": 0.7516771589584801,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 21
+          },
+          "13": {
+            "native_norm": 1.5224261980332574,
+            "joint_norm": 3.1065113920434695,
+            "actual_joint_minus_native_norm": 2.3593604836585778,
+            "actual_joint_minus_native_ratio": 1.5497371804994633,
+            "native_joint_cosine": 0.6767841398965022,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 12
+          },
+          "16": {
+            "native_norm": 15.68145514666094,
+            "joint_norm": 42.237425250495,
+            "actual_joint_minus_native_norm": 36.13952913449381,
+            "actual_joint_minus_native_ratio": 2.3046030356557194,
+            "native_joint_cosine": 0.5464247004500867,
+            "native_clip_coef": 0.6376958814586428,
+            "joint_clip_coef": 0.2367568502089496,
+            "joint_nonzero_tensors": 12
+          },
+          "17": {
+            "native_norm": 2.776764118428639,
+            "joint_norm": 2.776764118428639,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "19": {
+            "native_norm": 9.381588381942535,
+            "joint_norm": 9.381588381942535,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 12
+          },
+          "20": {
+            "native_norm": 0.4395288092289996,
+            "joint_norm": 0.4395288092289996,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "22": {
+            "native_norm": 1.0504507466839352,
+            "joint_norm": 1.0504507466839352,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "23": {
+            "native_norm": 32.48312459721247,
+            "joint_norm": 32.48312459721247,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 0.30785214834308144,
+            "joint_clip_coef": 0.30785214834308144,
+            "joint_nonzero_tensors": 101
+          },
+          "projection": {
+            "native_norm": 0.0,
+            "joint_norm": 36.034097102450595,
+            "actual_joint_minus_native_norm": 36.034097102450595,
+            "actual_joint_minus_native_ratio": null,
+            "native_joint_cosine": null,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.2775149241023997,
+            "joint_nonzero_tensors": 6
+          }
+        }
+      },
+      "checkpoint_sha256": "514ed1bd70298af2afe19b55ac75edbdf8196dc951e92f6b4e0e735a48402440",
+      "native_master_sha256": "c70d7b6b307a89212427f9eb14a9b9cfe56e681498f867966fe79f47bf599650",
+      "strict_checkpoint": {
+        "sha256": "514ed1bd70298af2afe19b55ac75edbdf8196dc951e92f6b4e0e735a48402440",
+        "strict_reload": true,
+        "stripped_native_forward": true,
+        "state_sha256": "2f535fead11e2399d12c10e4f82b2d19a6311a709eff0a6cfcc7a2b7a0efa354",
+        "native_state_sha256": "c70d7b6b307a89212427f9eb14a9b9cfe56e681498f867966fe79f47bf599650",
+        "ema_state_sha256": "245b3051ea7005e3eb929df6e6d9556b3f783a8e2fc7faa59d8312674881ec0c",
+        "adam_slots": 296,
+        "head_tensors_removed": 6
+      },
+      "state_before_sha256": "2f535fead11e2399d12c10e4f82b2d19a6311a709eff0a6cfcc7a2b7a0efa354",
+      "bn_before_sha256": "fae86639626d7a26ebdbd7c63341956bfd450c7477d37efe428e5afcbba0f9ae",
+      "optimizer_attempts": 0,
+      "effective_updates": 0,
+      "state_after_sha256": "2f535fead11e2399d12c10e4f82b2d19a6311a709eff0a6cfcc7a2b7a0efa354",
+      "bn_after_sha256": "fae86639626d7a26ebdbd7c63341956bfd450c7477d37efe428e5afcbba0f9ae",
+      "rng_restored_exact": true,
+      "checkpoint_after_sha256": "514ed1bd70298af2afe19b55ac75edbdf8196dc951e92f6b4e0e735a48402440"
+    },
+    {
+      "seed": 242,
+      "epoch": 100,
+      "checkpoint_step": 2100,
+      "train_epoch": 0,
+      "batch": 1,
+      "batch_sha256": "00376142995fc28f68e79a52ba511ca3d0bb38865a66fcffefb2e1fa6fddbddb",
+      "lambda_ce": 160.0,
+      "native_loss": 306.97418212890625,
+      "ce_loss": 0.24177497625350952,
+      "total_loss": 345.6581726074219,
+      "ce_coverage": {
+        "valid_regions": 57,
+        "ce_regions_by_class": [
+          19,
+          2,
+          8,
+          10,
+          0,
+          0,
+          18
+        ],
+        "ce_groups_by_class": [
+          10,
+          2,
+          7,
+          9,
+          0,
+          0,
+          10
+        ]
+      },
+      "j1_geometry_coverage": {
+        "targets": 57,
+        "missing_native_raster": 0,
+        "p3_cells_1": 0,
+        "p3_cells_2_to_4": 2,
+        "p3_cells_over_4": 55,
+        "positives": 369,
+        "negatives": 1169,
+        "eligible_anchors": 57,
+        "box_fraction_q10_q50_q90": [
+          0.27332507739938083,
+          0.5615982241953386,
+          0.7672463768115942
+        ],
+        "targets_by_class": [
+          19,
+          2,
+          8,
+          10,
+          0,
+          0,
+          18
+        ],
+        "raster_missing_by_class": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "eligible_anchors_by_class": [
+          19,
+          2,
+          8,
+          10,
+          0,
+          0,
+          18
+        ],
+        "eligible_groups_by_class": [
+          10,
+          2,
+          7,
+          9,
+          0,
+          0,
+          10
+        ]
+      },
+      "gradient_definition": "actual_joint_minus_native_ratio = norm(g_YOLO_PLUS_160CE - g_YOLO) / norm(g_YOLO); AMP-rounded difference, not pure unweighted CE derivative",
+      "clip_definition": "Actual clipping is global; per-layer coefficients are hypothetical scope-only values and are not applied",
+      "metrics": {
+        "backbone": {
+          "native_norm": 47.11067989027121,
+          "joint_norm": 73.64236353500665,
+          "actual_joint_minus_native_norm": 69.17257521298801,
+          "actual_joint_minus_native_ratio": 1.4682992343583814,
+          "native_joint_cosine": 0.4118603713378234,
+          "native_clip_coef": 0.2122660893671162,
+          "joint_clip_coef": 0.13579140299394377,
+          "joint_nonzero_tensors": 120
+        },
+        "global": {
+          "native_norm": 66.35667159151524,
+          "joint_norm": 110.16322785904813,
+          "actual_joint_minus_native_norm": 96.01595577951511,
+          "actual_joint_minus_native_ratio": 1.4469676292774198,
+          "native_joint_cosine": 0.5006850714177321,
+          "native_clip_coef": 0.15070074507139558,
+          "joint_clip_coef": 0.09077439090674094,
+          "joint_nonzero_tensors": 296
+        },
+        "layers": {
+          "0": {
+            "native_norm": 39.04188032135912,
+            "joint_norm": 55.71022361262672,
+            "actual_joint_minus_native_norm": 56.06879113748292,
+            "actual_joint_minus_native_ratio": 1.436119128381444,
+            "native_joint_cosine": 0.3411876919785793,
+            "native_clip_coef": 0.25613519793497186,
+            "joint_clip_coef": 0.17950026354288834,
+            "joint_nonzero_tensors": 3
+          },
+          "1": {
+            "native_norm": 9.728020080064335,
+            "joint_norm": 16.059898915441828,
+            "actual_joint_minus_native_norm": 15.239522297185706,
+            "actual_joint_minus_native_ratio": 1.5665595025257104,
+            "native_joint_cosine": 0.3850441754595564,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.6226688866463517,
+            "joint_nonzero_tensors": 3
+          },
+          "2": {
+            "native_norm": 20.772202936754326,
+            "joint_norm": 35.51047702439896,
+            "actual_joint_minus_native_norm": 29.563446470315935,
+            "actual_joint_minus_native_ratio": 1.423221531213061,
+            "native_joint_cosine": 0.5548039563011656,
+            "native_clip_coef": 0.4814125660641144,
+            "joint_clip_coef": 0.281607022950496,
+            "joint_nonzero_tensors": 12
+          },
+          "3": {
+            "native_norm": 5.298327064094463,
+            "joint_norm": 10.637229657800269,
+            "actual_joint_minus_native_norm": 8.556636584780987,
+            "actual_joint_minus_native_ratio": 1.61496949532756,
+            "native_joint_cosine": 0.6033310412771341,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.9400943085376279,
+            "joint_nonzero_tensors": 3
+          },
+          "4": {
+            "native_norm": 11.672592691266722,
+            "joint_norm": 25.603637913851212,
+            "actual_joint_minus_native_norm": 20.825273992606718,
+            "actual_joint_minus_native_ratio": 1.7841172517043202,
+            "native_joint_cosine": 0.5991143942323713,
+            "native_clip_coef": 0.856707623386383,
+            "joint_clip_coef": 0.39056948247267065,
+            "joint_nonzero_tensors": 12
+          },
+          "5": {
+            "native_norm": 1.0738810650045127,
+            "joint_norm": 2.584498624600904,
+            "actual_joint_minus_native_norm": 2.1749847844567225,
+            "actual_joint_minus_native_ratio": 2.025349785311265,
+            "native_joint_cosine": 0.5588826685487993,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "6": {
+            "native_norm": 1.7054853657864963,
+            "joint_norm": 4.276551826262595,
+            "actual_joint_minus_native_norm": 3.8968138868247313,
+            "actual_joint_minus_native_ratio": 2.284870902441129,
+            "native_joint_cosine": 0.4121709715994245,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "7": {
+            "native_norm": 0.10772502184029742,
+            "joint_norm": 0.5707961658229184,
+            "actual_joint_minus_native_norm": 0.5864345278313959,
+            "actual_joint_minus_native_ratio": 5.443809783587572,
+            "native_joint_cosine": -0.052794135983245796,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "8": {
+            "native_norm": 0.15889598244819395,
+            "joint_norm": 0.7621314986928724,
+            "actual_joint_minus_native_norm": 0.7398575602208822,
+            "actual_joint_minus_native_ratio": 4.656238306478916,
+            "native_joint_cosine": 0.24237545019403367,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "9": {
+            "native_norm": 0.31564431570949236,
+            "joint_norm": 0.8952306958943635,
+            "actual_joint_minus_native_norm": 0.9635371886861079,
+            "actual_joint_minus_native_ratio": 3.0526042787126024,
+            "native_joint_cosine": -0.04836705866862399,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 6
+          },
+          "10": {
+            "native_norm": 0.7133558269271265,
+            "joint_norm": 2.298001700582717,
+            "actual_joint_minus_native_norm": 2.500386481524571,
+            "actual_joint_minus_native_ratio": 3.5051041670120124,
+            "native_joint_cosine": -0.14098889941457238,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 21
+          },
+          "13": {
+            "native_norm": 3.847901391677334,
+            "joint_norm": 7.935885914820597,
+            "actual_joint_minus_native_norm": 7.429556314972888,
+            "actual_joint_minus_native_ratio": 1.9308073567171842,
+            "native_joint_cosine": 0.369824932742831,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 12
+          },
+          "16": {
+            "native_norm": 26.3282052420913,
+            "joint_norm": 57.74726743962674,
+            "actual_joint_minus_native_norm": 50.396600886420416,
+            "actual_joint_minus_native_ratio": 1.914167730880896,
+            "native_joint_cosine": 0.4893848974204368,
+            "native_clip_coef": 0.3798207864238335,
+            "joint_clip_coef": 0.17316836397992988,
+            "joint_nonzero_tensors": 12
+          },
+          "17": {
+            "native_norm": 3.8063240526383906,
+            "joint_norm": 3.8063240526383906,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0000000000000002,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "19": {
+            "native_norm": 12.692690158852376,
+            "joint_norm": 12.692690158852376,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 0.7878549847977363,
+            "joint_clip_coef": 0.7878549847977363,
+            "joint_nonzero_tensors": 12
+          },
+          "20": {
+            "native_norm": 0.6299731027222482,
+            "joint_norm": 0.6299731027222482,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0000000000000002,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "22": {
+            "native_norm": 1.6297504239762972,
+            "joint_norm": 1.6297504239762972,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "23": {
+            "native_norm": 36.01618427559921,
+            "joint_norm": 36.01618427559921,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0000000000000002,
+            "native_clip_coef": 0.27765294751454295,
+            "joint_clip_coef": 0.27765294751454295,
+            "joint_nonzero_tensors": 101
+          },
+          "projection": {
+            "native_norm": 0.0,
+            "joint_norm": 42.885929099353945,
+            "actual_joint_minus_native_norm": 42.885929099353945,
+            "actual_joint_minus_native_ratio": null,
+            "native_joint_cosine": null,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.23317670799800716,
+            "joint_nonzero_tensors": 6
+          }
+        }
+      },
+      "checkpoint_sha256": "3f032e3af4059e75636f0ecf7df67e1df6411633e617f25c2bd71b273a4c8ca6",
+      "native_master_sha256": "260909566e8cf846e45615eff1e1194e0c86f0567bffbfe3c5f4f54aa1a0aec3",
+      "strict_checkpoint": {
+        "sha256": "3f032e3af4059e75636f0ecf7df67e1df6411633e617f25c2bd71b273a4c8ca6",
+        "strict_reload": true,
+        "stripped_native_forward": true,
+        "state_sha256": "edf61fad3d0394c82e4caa2f74d7c57dcdaf0819e9507a1a1115789f26e3d24c",
+        "native_state_sha256": "260909566e8cf846e45615eff1e1194e0c86f0567bffbfe3c5f4f54aa1a0aec3",
+        "ema_state_sha256": "6e0476adc7ac3c43d2365806f3d9bb4739ed7065eabb442a2d2d56c349cee3f2",
+        "adam_slots": 296,
+        "head_tensors_removed": 6
+      },
+      "state_before_sha256": "edf61fad3d0394c82e4caa2f74d7c57dcdaf0819e9507a1a1115789f26e3d24c",
+      "bn_before_sha256": "361b8aac08f7d0d9325ffafc103430c7aa284d7ff7a28a06c933b0d632c2b274",
+      "optimizer_attempts": 0,
+      "effective_updates": 0,
+      "state_after_sha256": "edf61fad3d0394c82e4caa2f74d7c57dcdaf0819e9507a1a1115789f26e3d24c",
+      "bn_after_sha256": "361b8aac08f7d0d9325ffafc103430c7aa284d7ff7a28a06c933b0d632c2b274",
+      "rng_restored_exact": true,
+      "checkpoint_after_sha256": "3f032e3af4059e75636f0ecf7df67e1df6411633e617f25c2bd71b273a4c8ca6"
+    },
+    {
+      "seed": 242,
+      "epoch": 100,
+      "checkpoint_step": 2100,
+      "train_epoch": 0,
+      "batch": 21,
+      "batch_sha256": "167d80308f6035da93ad45653ccf6080bbae38ac00f349c2adbd04fb0bf134a5",
+      "lambda_ce": 160.0,
+      "native_loss": 284.3403015136719,
+      "ce_loss": 0.20606526732444763,
+      "total_loss": 317.31072998046875,
+      "ce_coverage": {
+        "valid_regions": 59,
+        "ce_regions_by_class": [
+          19,
+          3,
+          7,
+          4,
+          1,
+          2,
+          23
+        ],
+        "ce_groups_by_class": [
+          6,
+          3,
+          6,
+          2,
+          1,
+          1,
+          10
+        ]
+      },
+      "j1_geometry_coverage": {
+        "targets": 59,
+        "missing_native_raster": 0,
+        "p3_cells_1": 3,
+        "p3_cells_2_to_4": 4,
+        "p3_cells_over_4": 52,
+        "positives": 352,
+        "negatives": 1245,
+        "eligible_anchors": 56,
+        "box_fraction_q10_q50_q90": [
+          0.32071009949570667,
+          0.5768500948766604,
+          0.8
+        ],
+        "targets_by_class": [
+          19,
+          3,
+          7,
+          4,
+          1,
+          2,
+          23
+        ],
+        "raster_missing_by_class": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "eligible_anchors_by_class": [
+          19,
+          3,
+          7,
+          4,
+          0,
+          0,
+          23
+        ],
+        "eligible_groups_by_class": [
+          6,
+          3,
+          6,
+          2,
+          0,
+          0,
+          10
+        ]
+      },
+      "gradient_definition": "actual_joint_minus_native_ratio = norm(g_YOLO_PLUS_160CE - g_YOLO) / norm(g_YOLO); AMP-rounded difference, not pure unweighted CE derivative",
+      "clip_definition": "Actual clipping is global; per-layer coefficients are hypothetical scope-only values and are not applied",
+      "metrics": {
+        "backbone": {
+          "native_norm": 46.43006742554325,
+          "joint_norm": 135.19495082892215,
+          "actual_joint_minus_native_norm": 116.30097275864031,
+          "actual_joint_minus_native_ratio": 2.5048633182612603,
+          "native_joint_cosine": 0.5502141507562374,
+          "native_clip_coef": 0.21537767095985055,
+          "joint_clip_coef": 0.07396725887113123,
+          "joint_nonzero_tensors": 120
+        },
+        "global": {
+          "native_norm": 64.27614967466636,
+          "joint_norm": 177.18380829527857,
+          "actual_joint_minus_native_norm": 157.23919022135746,
+          "actual_joint_minus_native_ratio": 2.446306927487465,
+          "native_joint_cosine": 0.47421435405001283,
+          "native_clip_coef": 0.15557870057612794,
+          "joint_clip_coef": 0.05643856535071386,
+          "joint_nonzero_tensors": 296
+        },
+        "layers": {
+          "0": {
+            "native_norm": 38.89400026633825,
+            "joint_norm": 126.42922099676284,
+            "actual_joint_minus_native_norm": 107.73515931660704,
+            "actual_joint_minus_native_ratio": 2.769968596155151,
+            "native_joint_cosine": 0.5989243745651478,
+            "native_clip_coef": 0.25710905729451755,
+            "joint_clip_coef": 0.07909563819237965,
+            "joint_nonzero_tensors": 3
+          },
+          "1": {
+            "native_norm": 10.953379172343178,
+            "joint_norm": 16.67397511240836,
+            "actual_joint_minus_native_norm": 15.142570715048384,
+            "actual_joint_minus_native_ratio": 1.3824565439387635,
+            "native_joint_cosine": 0.46184803319416967,
+            "native_clip_coef": 0.9129601860482829,
+            "joint_clip_coef": 0.5997369753071823,
+            "joint_nonzero_tensors": 3
+          },
+          "2": {
+            "native_norm": 19.20069075808054,
+            "joint_norm": 31.68986036606195,
+            "actual_joint_minus_native_norm": 27.51625408913491,
+            "actual_joint_minus_native_ratio": 1.4330866756736236,
+            "native_joint_cosine": 0.506000537020049,
+            "native_clip_coef": 0.5208145688704958,
+            "joint_clip_coef": 0.31555833850095144,
+            "joint_nonzero_tensors": 12
+          },
+          "3": {
+            "native_norm": 4.92461558744254,
+            "joint_norm": 9.66495010876199,
+            "actual_joint_minus_native_norm": 8.81409239754613,
+            "actual_joint_minus_native_ratio": 1.7898031310345341,
+            "native_joint_cosine": 0.4199379512425099,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "4": {
+            "native_norm": 11.05921471569349,
+            "joint_norm": 29.140433080209974,
+            "actual_joint_minus_native_norm": 28.256760868482342,
+            "actual_joint_minus_native_ratio": 2.5550422516333655,
+            "native_joint_cosine": 0.26844934840666357,
+            "native_clip_coef": 0.9042232520891679,
+            "joint_clip_coef": 0.3431657871833577,
+            "joint_nonzero_tensors": 12
+          },
+          "5": {
+            "native_norm": 1.2562188128021057,
+            "joint_norm": 3.26492192489019,
+            "actual_joint_minus_native_norm": 3.05795312557134,
+            "actual_joint_minus_native_ratio": 2.4342519745826037,
+            "native_joint_cosine": 0.3519144658870278,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "6": {
+            "native_norm": 2.346300728607338,
+            "joint_norm": 7.441234430947718,
+            "actual_joint_minus_native_norm": 6.748161962220584,
+            "actual_joint_minus_native_ratio": 2.876085695215208,
+            "native_joint_cosine": 0.4392886409873092,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "7": {
+            "native_norm": 0.3362473257120336,
+            "joint_norm": 0.6072294951718082,
+            "actual_joint_minus_native_norm": 0.34276128608814294,
+            "actual_joint_minus_native_ratio": 1.0193725269407437,
+            "native_joint_cosine": 0.8921194746340306,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "8": {
+            "native_norm": 0.4920944372905253,
+            "joint_norm": 0.763612206859404,
+            "actual_joint_minus_native_norm": 0.37348110207641133,
+            "actual_joint_minus_native_ratio": 0.7589622514995299,
+            "native_joint_cosine": 0.9124912532207302,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "9": {
+            "native_norm": 0.2856055978986767,
+            "joint_norm": 0.736857065062483,
+            "actual_joint_minus_native_norm": 0.6350879181717675,
+            "actual_joint_minus_native_ratio": 2.2236536077877416,
+            "native_joint_cosine": 0.5255207561972364,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 6
+          },
+          "10": {
+            "native_norm": 0.5355297924531569,
+            "joint_norm": 0.9775154121809898,
+            "actual_joint_minus_native_norm": 0.963425045833078,
+            "actual_joint_minus_native_ratio": 1.7990129763272682,
+            "native_joint_cosine": 0.30004541015688085,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 21
+          },
+          "13": {
+            "native_norm": 4.461881119390861,
+            "joint_norm": 14.974829896412922,
+            "actual_joint_minus_native_norm": 13.820850452414026,
+            "actual_joint_minus_native_ratio": 3.097538926429501,
+            "native_joint_cosine": 0.39764489429842764,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.667787173636492,
+            "joint_nonzero_tensors": 12
+          },
+          "16": {
+            "native_norm": 21.01487545109031,
+            "joint_norm": 93.72912756947379,
+            "actual_joint_minus_native_norm": 91.72969718211922,
+            "actual_joint_minus_native_ratio": 4.364988857326776,
+            "native_joint_cosine": 0.20623315669545186,
+            "native_clip_coef": 0.475853380498041,
+            "joint_clip_coef": 0.10669041900445936,
+            "joint_nonzero_tensors": 12
+          },
+          "17": {
+            "native_norm": 4.610466462561796,
+            "joint_norm": 4.610466462561796,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 0.9999999999999998,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "19": {
+            "native_norm": 15.577773416391278,
+            "joint_norm": 15.577773416391278,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 0.9999999999999999,
+            "native_clip_coef": 0.6419402241104339,
+            "joint_clip_coef": 0.6419402241104339,
+            "joint_nonzero_tensors": 12
+          },
+          "20": {
+            "native_norm": 0.4829624827976268,
+            "joint_norm": 0.4829624827976268,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0000000000000002,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 3
+          },
+          "22": {
+            "native_norm": 1.734375535945644,
+            "joint_norm": 1.734375535945644,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 1.0,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 1.0,
+            "joint_nonzero_tensors": 27
+          },
+          "23": {
+            "native_norm": 35.31252108865769,
+            "joint_norm": 35.31252108865769,
+            "actual_joint_minus_native_norm": 0.0,
+            "actual_joint_minus_native_ratio": 0.0,
+            "native_joint_cosine": 0.9999999999999998,
+            "native_clip_coef": 0.2831856635698072,
+            "joint_clip_coef": 0.2831856635698072,
+            "joint_nonzero_tensors": 101
+          },
+          "projection": {
+            "native_norm": 0.0,
+            "joint_norm": 50.92046174683568,
+            "actual_joint_minus_native_norm": 50.92046174683568,
+            "actual_joint_minus_native_ratio": null,
+            "native_joint_cosine": null,
+            "native_clip_coef": 1.0,
+            "joint_clip_coef": 0.19638470391986815,
+            "joint_nonzero_tensors": 6
+          }
+        }
+      },
+      "checkpoint_sha256": "3f032e3af4059e75636f0ecf7df67e1df6411633e617f25c2bd71b273a4c8ca6",
+      "native_master_sha256": "260909566e8cf846e45615eff1e1194e0c86f0567bffbfe3c5f4f54aa1a0aec3",
+      "strict_checkpoint": {
+        "sha256": "3f032e3af4059e75636f0ecf7df67e1df6411633e617f25c2bd71b273a4c8ca6",
+        "strict_reload": true,
+        "stripped_native_forward": true,
+        "state_sha256": "edf61fad3d0394c82e4caa2f74d7c57dcdaf0819e9507a1a1115789f26e3d24c",
+        "native_state_sha256": "260909566e8cf846e45615eff1e1194e0c86f0567bffbfe3c5f4f54aa1a0aec3",
+        "ema_state_sha256": "6e0476adc7ac3c43d2365806f3d9bb4739ed7065eabb442a2d2d56c349cee3f2",
+        "adam_slots": 296,
+        "head_tensors_removed": 6
+      },
+      "state_before_sha256": "edf61fad3d0394c82e4caa2f74d7c57dcdaf0819e9507a1a1115789f26e3d24c",
+      "bn_before_sha256": "361b8aac08f7d0d9325ffafc103430c7aa284d7ff7a28a06c933b0d632c2b274",
+      "optimizer_attempts": 0,
+      "effective_updates": 0,
+      "state_after_sha256": "edf61fad3d0394c82e4caa2f74d7c57dcdaf0819e9507a1a1115789f26e3d24c",
+      "bn_after_sha256": "361b8aac08f7d0d9325ffafc103430c7aa284d7ff7a28a06c933b0d632c2b274",
+      "rng_restored_exact": true,
+      "checkpoint_after_sha256": "3f032e3af4059e75636f0ecf7df67e1df6411633e617f25c2bd71b273a4c8ca6"
+    }
+  ]
+}

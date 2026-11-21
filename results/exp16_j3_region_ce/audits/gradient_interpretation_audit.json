@@ -1,0 +1,707 @@
+{
+  "status": "PASS_READONLY_GRADIENT_INTERPRETATION_AUDIT",
+  "source_summary_sha256": "a4b62365e4ca75500b498184b44c14a2b485ddd8cc83adb80f56eb865cab7c84",
+  "plan_sha256": "ea477e24922c7c3f1a609bae0024a4c57fa5882c30f29446676e5b2d004aa90c",
+  "script_sha256": "7718fcc89c98aa15a2bbccc5dbfec3d39c0a44ed80ec2253fb2faab0c8880ab9",
+  "protocol_sha256": "ebbbe80571554dd0dc3f1158c9a95363804e2c1c7238956ed10a554b65abf6ca",
+  "lambda_ce": 160.0,
+  "probe_count": 12,
+  "optimizer_attempts": 0,
+  "optimizer_updates": 0,
+  "val_inference": 0,
+  "test_inference": 0,
+  "all_12_full_state_bn_rng_and_checkpoint_preserved": true,
+  "definition": "actual_joint_minus_native_ratio = norm(g_YOLO_PLUS_160CE - g_YOLO) / norm(g_YOLO); AMP-rounded difference, not pure unweighted CE derivative",
+  "seed_epoch_summary": [
+    {
+      "seed": 42,
+      "epochs": {
+        "25": {
+          "batches": [
+            1,
+            21
+          ],
+          "backbone_actual_joint_minus_native_ratios": [
+            3.5600549676892794,
+            2.006161722929202
+          ],
+          "backbone_native_joint_cosines": [
+            0.20418708282449297,
+            0.28109407004202364
+          ],
+          "global_clip_joint_over_native": [
+            0.29091138081464724,
+            0.5062051321638622
+          ]
+        },
+        "100": {
+          "batches": [
+            1,
+            21
+          ],
+          "backbone_actual_joint_minus_native_ratios": [
+            0.983020772727184,
+            3.6009421081673643
+          ],
+          "backbone_native_joint_cosines": [
+            0.7460465720688397,
+            0.038661387999732844
+          ],
+          "global_clip_joint_over_native": [
+            0.7232421025824085,
+            0.24479842077833136
+          ]
+        }
+      }
+    },
+    {
+      "seed": 142,
+      "epochs": {
+        "25": {
+          "batches": [
+            1,
+            21
+          ],
+          "backbone_actual_joint_minus_native_ratios": [
+            1.1747167949796262,
+            1.7884586972444603
+          ],
+          "backbone_native_joint_cosines": [
+            0.7926562223757223,
+            0.7471050901626894
+          ],
+          "global_clip_joint_over_native": [
+            0.5334568295747455,
+            0.4125797643150095
+          ]
+        },
+        "100": {
+          "batches": [
+            1,
+            21
+          ],
+          "backbone_actual_joint_minus_native_ratios": [
+            1.5580037087202583,
+            6.539797726701649
+          ],
+          "backbone_native_joint_cosines": [
+            0.33825681473640457,
+            0.45219346719335757
+          ],
+          "global_clip_joint_over_native": [
+            0.47894436930857076,
+            0.20485090727919206
+          ]
+        }
+      }
+    },
+    {
+      "seed": 242,
+      "epochs": {
+        "25": {
+          "batches": [
+            1,
+            21
+          ],
+          "backbone_actual_joint_minus_native_ratios": [
+            0.7602287391895143,
+            2.143959871646748
+          ],
+          "backbone_native_joint_cosines": [
+            0.8284051769232169,
+            0.38770776805310964
+          ],
+          "global_clip_joint_over_native": [
+            0.6061492292878585,
+            0.4943441460297756
+          ]
+        },
+        "100": {
+          "batches": [
+            1,
+            21
+          ],
+          "backbone_actual_joint_minus_native_ratios": [
+            1.4682992343583814,
+            2.5048633182612603
+          ],
+          "backbone_native_joint_cosines": [
+            0.4118603713378234,
+            0.5502141507562374
+          ],
+          "global_clip_joint_over_native": [
+            0.6023486537092827,
+            0.3627653730344487
+          ]
+        }
+      }
+    }
+  ],
+  "probes": [
+    {
+      "seed": 42,
+      "epoch": 25,
+      "batch": 1,
+      "backbone_actual_joint_minus_native_ratio": 3.5600549676892794,
+      "backbone_native_joint_cosine": 0.20418708282449297,
+      "global_actual_joint_minus_native_ratio": 3.3392327365602523,
+      "global_native_joint_cosine": 0.2422920793975741,
+      "global_native_clip_coef": 0.1676883589217689,
+      "global_joint_clip_coef": 0.04878245204047396,
+      "global_clip_joint_over_native": 0.29091138081464724,
+      "largest_native_layer_effects": [
+        {
+          "seed": 42,
+          "epoch": 25,
+          "batch": 1,
+          "layer": 10,
+          "ratio": 11.184936009797081,
+          "native_joint_cosine": 0.4988534802130984
+        },
+        {
+          "seed": 42,
+          "epoch": 25,
+          "batch": 1,
+          "layer": 9,
+          "ratio": 6.9552795105240905,
+          "native_joint_cosine": 0.624931343213877
+        },
+        {
+          "seed": 42,
+          "epoch": 25,
+          "batch": 1,
+          "layer": 7,
+          "ratio": 6.953725327262907,
+          "native_joint_cosine": 0.6797601202145049
+        }
+      ],
+      "state_bn_rng_and_checkpoint_preserved": true,
+      "optimizer_attempts": 0
+    },
+    {
+      "seed": 42,
+      "epoch": 25,
+      "batch": 21,
+      "backbone_actual_joint_minus_native_ratio": 2.006161722929202,
+      "backbone_native_joint_cosine": 0.28109407004202364,
+      "global_actual_joint_minus_native_ratio": 1.762967338481968,
+      "global_native_joint_cosine": 0.4541880453704331,
+      "global_native_clip_coef": 0.14094230447868308,
+      "global_joint_clip_coef": 0.07134571786611107,
+      "global_clip_joint_over_native": 0.5062051321638622,
+      "largest_native_layer_effects": [
+        {
+          "seed": 42,
+          "epoch": 25,
+          "batch": 21,
+          "layer": 9,
+          "ratio": 5.981207333342472,
+          "native_joint_cosine": 0.6819654131434921
+        },
+        {
+          "seed": 42,
+          "epoch": 25,
+          "batch": 21,
+          "layer": 10,
+          "ratio": 5.372414645962705,
+          "native_joint_cosine": 0.5892785649685207
+        },
+        {
+          "seed": 42,
+          "epoch": 25,
+          "batch": 21,
+          "layer": 13,
+          "ratio": 4.892916685795866,
+          "native_joint_cosine": 0.44823646213246066
+        }
+      ],
+      "state_bn_rng_and_checkpoint_preserved": true,
+      "optimizer_attempts": 0
+    },
+    {
+      "seed": 42,
+      "epoch": 100,
+      "batch": 1,
+      "backbone_actual_joint_minus_native_ratio": 0.983020772727184,
+      "backbone_native_joint_cosine": 0.7460465720688397,
+      "global_actual_joint_minus_native_ratio": 0.8899018834530785,
+      "global_native_joint_cosine": 0.7665756194636584,
+      "global_native_clip_coef": 0.16813078709741097,
+      "global_joint_clip_coef": 0.12159926396916679,
+      "global_clip_joint_over_native": 0.7232421025824085,
+      "largest_native_layer_effects": [
+        {
+          "seed": 42,
+          "epoch": 100,
+          "batch": 1,
+          "layer": 7,
+          "ratio": 1.666009339828484,
+          "native_joint_cosine": 0.5435647886080908
+        },
+        {
+          "seed": 42,
+          "epoch": 100,
+          "batch": 1,
+          "layer": 16,
+          "ratio": 1.4470913138318096,
+          "native_joint_cosine": 0.6074202741146278
+        },
+        {
+          "seed": 42,
+          "epoch": 100,
+          "batch": 1,
+          "layer": 5,
+          "ratio": 1.2958362606063314,
+          "native_joint_cosine": 0.5597759807203647
+        }
+      ],
+      "state_bn_rng_and_checkpoint_preserved": true,
+      "optimizer_attempts": 0
+    },
+    {
+      "seed": 42,
+      "epoch": 100,
+      "batch": 21,
+      "backbone_actual_joint_minus_native_ratio": 3.6009421081673643,
+      "backbone_native_joint_cosine": 0.038661387999732844,
+      "global_actual_joint_minus_native_ratio": 3.9998431442099798,
+      "global_native_joint_cosine": 0.2066623218849085,
+      "global_native_clip_coef": 0.13766953897565748,
+      "global_joint_clip_coef": 0.03370128573052189,
+      "global_clip_joint_over_native": 0.24479842077833136,
+      "largest_native_layer_effects": [
+        {
+          "seed": 42,
+          "epoch": 100,
+          "batch": 21,
+          "layer": 16,
+          "ratio": 7.303957698424963,
+          "native_joint_cosine": 0.29859691203946354
+        },
+        {
+          "seed": 42,
+          "epoch": 100,
+          "batch": 21,
+          "layer": 10,
+          "ratio": 5.441573045320748,
+          "native_joint_cosine": 0.4683872604318313
+        },
+        {
+          "seed": 42,
+          "epoch": 100,
+          "batch": 21,
+          "layer": 13,
+          "ratio": 5.304773442946279,
+          "native_joint_cosine": 0.28739703730171584
+        }
+      ],
+      "state_bn_rng_and_checkpoint_preserved": true,
+      "optimizer_attempts": 0
+    },
+    {
+      "seed": 142,
+      "epoch": 25,
+      "batch": 1,
+      "backbone_actual_joint_minus_native_ratio": 1.1747167949796262,
+      "backbone_native_joint_cosine": 0.7926562223757223,
+      "global_actual_joint_minus_native_ratio": 1.365037790692426,
+      "global_native_joint_cosine": 0.707008770993858,
+      "global_native_clip_coef": 0.13584837127759028,
+      "global_joint_clip_coef": 0.07246924144463623,
+      "global_clip_joint_over_native": 0.5334568295747455,
+      "largest_native_layer_effects": [
+        {
+          "seed": 142,
+          "epoch": 25,
+          "batch": 1,
+          "layer": 9,
+          "ratio": 5.882021789127096,
+          "native_joint_cosine": 0.18782143496810097
+        },
+        {
+          "seed": 142,
+          "epoch": 25,
+          "batch": 1,
+          "layer": 10,
+          "ratio": 5.311145824493553,
+          "native_joint_cosine": 0.24669023601474704
+        },
+        {
+          "seed": 142,
+          "epoch": 25,
+          "batch": 1,
+          "layer": 16,
+          "ratio": 3.256561132646666,
+          "native_joint_cosine": 0.3740155598284175
+        }
+      ],
+      "state_bn_rng_and_checkpoint_preserved": true,
+      "optimizer_attempts": 0
+    },
+    {
+      "seed": 142,
+      "epoch": 25,
+      "batch": 21,
+      "backbone_actual_joint_minus_native_ratio": 1.7884586972444603,
+      "backbone_native_joint_cosine": 0.7471050901626894,
+      "global_actual_joint_minus_native_ratio": 1.962435866003266,
+      "global_native_joint_cosine": 0.623722536465566,
+      "global_native_clip_coef": 0.15945769284068326,
+      "global_joint_clip_coef": 0.06578901733042428,
+      "global_clip_joint_over_native": 0.4125797643150095,
+      "largest_native_layer_effects": [
+        {
+          "seed": 142,
+          "epoch": 25,
+          "batch": 21,
+          "layer": 9,
+          "ratio": 6.773471522617985,
+          "native_joint_cosine": 0.8015163787946262
+        },
+        {
+          "seed": 142,
+          "epoch": 25,
+          "batch": 21,
+          "layer": 8,
+          "ratio": 4.838480817094422,
+          "native_joint_cosine": 0.7431153102562759
+        },
+        {
+          "seed": 142,
+          "epoch": 25,
+          "batch": 21,
+          "layer": 7,
+          "ratio": 4.630370491030219,
+          "native_joint_cosine": 0.6082100304672851
+        }
+      ],
+      "state_bn_rng_and_checkpoint_preserved": true,
+      "optimizer_attempts": 0
+    },
+    {
+      "seed": 142,
+      "epoch": 100,
+      "batch": 1,
+      "backbone_actual_joint_minus_native_ratio": 1.5580037087202583,
+      "backbone_native_joint_cosine": 0.33825681473640457,
+      "global_actual_joint_minus_native_ratio": 1.9387702500939807,
+      "global_native_joint_cosine": 0.38329952063799294,
+      "global_native_clip_coef": 0.16026455688199914,
+      "global_joint_clip_coef": 0.07675780711836665,
+      "global_clip_joint_over_native": 0.47894436930857076,
+      "largest_native_layer_effects": [
+        {
+          "seed": 142,
+          "epoch": 100,
+          "batch": 1,
+          "layer": 16,
+          "ratio": 4.19245306076651,
+          "native_joint_cosine": 0.37324949614081626
+        },
+        {
+          "seed": 142,
+          "epoch": 100,
+          "batch": 1,
+          "layer": 4,
+          "ratio": 3.485937565322942,
+          "native_joint_cosine": 0.30850798663297263
+        },
+        {
+          "seed": 142,
+          "epoch": 100,
+          "batch": 1,
+          "layer": 3,
+          "ratio": 2.684840841516353,
+          "native_joint_cosine": 0.33284510445048027
+        }
+      ],
+      "state_bn_rng_and_checkpoint_preserved": true,
+      "optimizer_attempts": 0
+    },
+    {
+      "seed": 142,
+      "epoch": 100,
+      "batch": 21,
+      "backbone_actual_joint_minus_native_ratio": 6.539797726701649,
+      "backbone_native_joint_cosine": 0.45219346719335757,
+      "global_actual_joint_minus_native_ratio": 4.587147011131499,
+      "global_native_joint_cosine": 0.3879971822266057,
+      "global_native_clip_coef": 0.1677436013971753,
+      "global_joint_clip_coef": 0.03436242893649051,
+      "global_clip_joint_over_native": 0.20485090727919206,
+      "largest_native_layer_effects": [
+        {
+          "seed": 142,
+          "epoch": 100,
+          "batch": 21,
+          "layer": 9,
+          "ratio": 8.162099783678414,
+          "native_joint_cosine": 0.10124399271844944
+        },
+        {
+          "seed": 142,
+          "epoch": 100,
+          "batch": 21,
+          "layer": 0,
+          "ratio": 7.6473158895891205,
+          "native_joint_cosine": 0.5069481098994194
+        },
+        {
+          "seed": 142,
+          "epoch": 100,
+          "batch": 21,
+          "layer": 13,
+          "ratio": 6.427572916712954,
+          "native_joint_cosine": 0.27409229668324286
+        }
+      ],
+      "state_bn_rng_and_checkpoint_preserved": true,
+      "optimizer_attempts": 0
+    },
+    {
+      "seed": 242,
+      "epoch": 25,
+      "batch": 1,
+      "backbone_actual_joint_minus_native_ratio": 0.7602287391895143,
+      "backbone_native_joint_cosine": 0.8284051769232169,
+      "global_actual_joint_minus_native_ratio": 1.20716608824232,
+      "global_native_joint_cosine": 0.6862985019099532,
+      "global_native_clip_coef": 0.13811733297268852,
+      "global_joint_clip_coef": 0.08371971493268968,
+      "global_clip_joint_over_native": 0.6061492292878585,
+      "largest_native_layer_effects": [
+        {
+          "seed": 242,
+          "epoch": 25,
+          "batch": 1,
+          "layer": 16,
+          "ratio": 3.381971610472238,
+          "native_joint_cosine": 0.5016965262192479
+        },
+        {
+          "seed": 242,
+          "epoch": 25,
+          "batch": 1,
+          "layer": 7,
+          "ratio": 2.1331143343844126,
+          "native_joint_cosine": 0.6347712880818758
+        },
+        {
+          "seed": 242,
+          "epoch": 25,
+          "batch": 1,
+          "layer": 8,
+          "ratio": 2.090315169062302,
+          "native_joint_cosine": 0.7333595877264638
+        }
+      ],
+      "state_bn_rng_and_checkpoint_preserved": true,
+      "optimizer_attempts": 0
+    },
+    {
+      "seed": 242,
+      "epoch": 25,
+      "batch": 21,
+      "backbone_actual_joint_minus_native_ratio": 2.143959871646748,
+      "backbone_native_joint_cosine": 0.38770776805310964,
+      "global_actual_joint_minus_native_ratio": 1.7575239924776944,
+      "global_native_joint_cosine": 0.49512573954645117,
+      "global_native_clip_coef": 0.1984849970583401,
+      "global_joint_clip_coef": 0.09811989637052766,
+      "global_clip_joint_over_native": 0.4943441460297756,
+      "largest_native_layer_effects": [
+        {
+          "seed": 242,
+          "epoch": 25,
+          "batch": 21,
+          "layer": 7,
+          "ratio": 7.714828595526477,
+          "native_joint_cosine": -0.16357217301381705
+        },
+        {
+          "seed": 242,
+          "epoch": 25,
+          "batch": 21,
+          "layer": 8,
+          "ratio": 3.913268111965456,
+          "native_joint_cosine": 0.024111541021502345
+        },
+        {
+          "seed": 242,
+          "epoch": 25,
+          "batch": 21,
+          "layer": 0,
+          "ratio": 2.6100956862241187,
+          "native_joint_cosine": 0.1439090453033058
+        }
+      ],
+      "state_bn_rng_and_checkpoint_preserved": true,
+      "optimizer_attempts": 0
+    },
+    {
+      "seed": 242,
+      "epoch": 100,
+      "batch": 1,
+      "backbone_actual_joint_minus_native_ratio": 1.4682992343583814,
+      "backbone_native_joint_cosine": 0.4118603713378234,
+      "global_actual_joint_minus_native_ratio": 1.4469676292774198,
+      "global_native_joint_cosine": 0.5006850714177321,
+      "global_native_clip_coef": 0.15070074507139558,
+      "global_joint_clip_coef": 0.09077439090674094,
+      "global_clip_joint_over_native": 0.6023486537092827,
+      "largest_native_layer_effects": [
+        {
+          "seed": 242,
+          "epoch": 100,
+          "batch": 1,
+          "layer": 7,
+          "ratio": 5.443809783587572,
+          "native_joint_cosine": -0.052794135983245796
+        },
+        {
+          "seed": 242,
+          "epoch": 100,
+          "batch": 1,
+          "layer": 8,
+          "ratio": 4.656238306478916,
+          "native_joint_cosine": 0.24237545019403367
+        },
+        {
+          "seed": 242,
+          "epoch": 100,
+          "batch": 1,
+          "layer": 10,
+          "ratio": 3.5051041670120124,
+          "native_joint_cosine": -0.14098889941457238
+        }
+      ],
+      "state_bn_rng_and_checkpoint_preserved": true,
+      "optimizer_attempts": 0
+    },
+    {
+      "seed": 242,
+      "epoch": 100,
+      "batch": 21,
+      "backbone_actual_joint_minus_native_ratio": 2.5048633182612603,
+      "backbone_native_joint_cosine": 0.5502141507562374,
+      "global_actual_joint_minus_native_ratio": 2.446306927487465,
+      "global_native_joint_cosine": 0.47421435405001283,
+      "global_native_clip_coef": 0.15557870057612794,
+      "global_joint_clip_coef": 0.05643856535071386,
+      "global_clip_joint_over_native": 0.3627653730344487,
+      "largest_native_layer_effects": [
+        {
+          "seed": 242,
+          "epoch": 100,
+          "batch": 21,
+          "layer": 16,
+          "ratio": 4.364988857326776,
+          "native_joint_cosine": 0.20623315669545186
+        },
+        {
+          "seed": 242,
+          "epoch": 100,
+          "batch": 21,
+          "layer": 13,
+          "ratio": 3.097538926429501,
+          "native_joint_cosine": 0.39764489429842764
+        },
+        {
+          "seed": 242,
+          "epoch": 100,
+          "batch": 21,
+          "layer": 6,
+          "ratio": 2.876085695215208,
+          "native_joint_cosine": 0.4392886409873092
+        }
+      ],
+      "state_bn_rng_and_checkpoint_preserved": true,
+      "optimizer_attempts": 0
+    }
+  ],
+  "backbone_ratio_range": [
+    0.7602287391895143,
+    6.539797726701649
+  ],
+  "backbone_native_joint_cosine_range": [
+    0.038661387999732844,
+    0.8284051769232169
+  ],
+  "global_clip_joint_over_native_range": [
+    0.20485090727919206,
+    0.7232421025824085
+  ],
+  "max_native_layer_effect": {
+    "seed": 42,
+    "epoch": 25,
+    "batch": 1,
+    "layer": 10,
+    "ratio": 11.184936009797081,
+    "native_joint_cosine": 0.4988534802130984
+  },
+  "negative_native_joint_layer_cosines": [
+    {
+      "seed": 42,
+      "epoch": 25,
+      "batch": 21,
+      "layer": 0,
+      "ratio": 2.1527881757102367,
+      "native_joint_cosine": -0.20542804269377557
+    },
+    {
+      "seed": 42,
+      "epoch": 100,
+      "batch": 21,
+      "layer": 0,
+      "ratio": 3.4774238849316492,
+      "native_joint_cosine": -0.20241039137639613
+    },
+    {
+      "seed": 242,
+      "epoch": 25,
+      "batch": 21,
+      "layer": 7,
+      "ratio": 7.714828595526477,
+      "native_joint_cosine": -0.16357217301381705
+    },
+    {
+      "seed": 242,
+      "epoch": 100,
+      "batch": 1,
+      "layer": 7,
+      "ratio": 5.443809783587572,
+      "native_joint_cosine": -0.052794135983245796
+    },
+    {
+      "seed": 242,
+      "epoch": 100,
+      "batch": 1,
+      "layer": 9,
+      "ratio": 3.0526042787126024,
+      "native_joint_cosine": -0.04836705866862399
+    },
+    {
+      "seed": 242,
+      "epoch": 100,
+      "batch": 1,
+      "layer": 10,
+      "ratio": 3.5051041670120124,
+      "native_joint_cosine": -0.14098889941457238
+    }
+  ],
+  "interpretation": [
+    "The fixed CE intervention is much stronger on these later TRAIN states than on the early calibration snapshots.",
+    "Global clipping scales the joint gradient more strongly than the same-state native gradient on all twelve probes.",
+    "Per-layer hypothetical clipping coefficients are excluded from this audit; only actual global clipping comparisons are interpreted.",
+    "These are twelve prespecified state/batch probes, not the full gradient trajectory or an AdamW parameter-update counterfactual.",
+    "The negative J3 VAL result establishes failure of this fixed-CE implementation to improve over these J0/J1 results; it does not establish that ordinary CE cannot work.",
+    "Different auxiliary strength trajectories, all-valid CE supervision versus SupCon relations, and the CE classifier prevent attributing the entire J1 advantage solely to contrastive relationships.",
+    "A future separately gated TRAIN-only strength-trajectory or schedule study could investigate this confound; no weight, checkpoint or training configuration was changed here."
+  ],
+  "development_provenance_notes": [
+    "The early forensic snapshot report recorded batch hash after in-place image preprocessing, whereas its preceding assertion checked the original raw batch hash against the frozen prior.",
+    "That forensic probe also called the disabled-head check on an already preprocessed batch; that mechanical equality check used doubly normalized images. The subsequent gradient comparisons used the once-normalized cached payload after complete model/BN/RNG restoration.",
+    "The original stopped preparation did not persist its failing raw gradient vectors. The separate forensic comparison supports a precision explanation but should not be described as a direct cryptographic replay of captured failed gradients.",
+    "Final code_r2 calibration and all formal paired trajectories use the correct raw-batch identity and preprocessing order."
+  ]
+}

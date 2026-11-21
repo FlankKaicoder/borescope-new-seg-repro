@@ -1,0 +1,1687 @@
+{
+  "attempts_sha256": "238c49a4717e1b0570a408c34756373ac0f0319f72b36fa933dcb0f7c3da2372",
+  "authorization_sha256": "6afa78bcc4b881f928f85322f36b8075fddec062d7e46307e7c3e9be85d6263d",
+  "checkpoint_bytes_rechecked": true,
+  "completed_passes": 6,
+  "j0_j1_validation_passes_added": 0,
+  "passes": {
+    "142_j3_fixed": {
+      "arm": "j3",
+      "completed_at": "2026-11-22T02:51:49+08:00",
+      "diagnostic_trace_sha256": "d2979f7a2f6b8ecd2815b178c3973816f96426cb40e36d3899c4d07734c2d24e",
+      "diagnostics": {
+        "box_tp_with_mask_iou_below_50": 3,
+        "gt": 296,
+        "mean_mask_iou_on_box_tp": 0.7090442310740699,
+        "native_box_tp": 67,
+        "native_mask_tp": 64,
+        "no_same_class_overlap": 212,
+        "predictions": 118,
+        "same_class_box_good_mask_below_50": 3,
+        "same_class_mask_edge_lost_one_to_one": 0,
+        "same_class_overlap_below_50": 17,
+        "wrong_class_mask_overlap": 0
+      },
+      "metrics": {
+        "fixed_counts": {
+          "overall": {
+            "box_fn": 229,
+            "box_fp": 51,
+            "box_tp": 67,
+            "detections": 118,
+            "gt": 296,
+            "mask_fn": 232,
+            "mask_fp": 54,
+            "mask_precision": 0.5423728813559322,
+            "mask_recall": 0.21621621621621623,
+            "mask_tp": 64
+          },
+          "per_class": [
+            {
+              "box_fn": 70,
+              "box_fp": 13,
+              "box_tp": 11,
+              "class": "Burn",
+              "class_id": 0,
+              "detections": 24,
+              "gt": 81,
+              "mask_fn": 71,
+              "mask_fp": 14,
+              "mask_tp": 10
+            },
+            {
+              "box_fn": 22,
+              "box_fp": 13,
+              "box_tp": 2,
+              "class": "Crack",
+              "class_id": 1,
+              "detections": 15,
+              "gt": 24,
+              "mask_fn": 22,
+              "mask_fp": 13,
+              "mask_tp": 2
+            },
+            {
+              "box_fn": 16,
+              "box_fp": 8,
+              "box_tp": 21,
+              "class": "Dent",
+              "class_id": 2,
+              "detections": 29,
+              "gt": 37,
+              "mask_fn": 16,
+              "mask_fp": 8,
+              "mask_tp": 21
+            },
+            {
+              "box_fn": 19,
+              "box_fp": 3,
+              "box_tp": 13,
+              "class": "Material missing",
+              "class_id": 3,
+              "detections": 16,
+              "gt": 32,
+              "mask_fn": 19,
+              "mask_fp": 3,
+              "mask_tp": 13
+            },
+            {
+              "box_fn": 2,
+              "box_fp": 4,
+              "box_tp": 8,
+              "class": "Tears",
+              "class_id": 4,
+              "detections": 12,
+              "gt": 10,
+              "mask_fn": 3,
+              "mask_fp": 5,
+              "mask_tp": 7
+            },
+            {
+              "box_fn": 1,
+              "box_fp": 3,
+              "box_tp": 2,
+              "class": "Tip curl",
+              "class_id": 5,
+              "detections": 5,
+              "gt": 3,
+              "mask_fn": 1,
+              "mask_fp": 3,
+              "mask_tp": 2
+            },
+            {
+              "box_fn": 99,
+              "box_fp": 7,
+              "box_tp": 10,
+              "class": "corrosion",
+              "class_id": 6,
+              "detections": 17,
+              "gt": 109,
+              "mask_fn": 100,
+              "mask_fp": 8,
+              "mask_tp": 9
+            }
+          ]
+        },
+        "images": 154,
+        "instances": 296,
+        "overall": {
+          "fitness": 0.3635339503984632,
+          "metrics/mAP50(B)": 0.3595616052816973,
+          "metrics/mAP50(M)": 0.3467531433801902,
+          "metrics/mAP50-95(B)": 0.18046896645810634,
+          "metrics/mAP50-95(M)": 0.18306498394035686,
+          "metrics/precision(B)": 0.5404580797836376,
+          "metrics/precision(M)": 0.743163613267632,
+          "metrics/recall(B)": 0.39305187942420355,
+          "metrics/recall(M)": 0.3092275000258971
+        },
+        "size_recall": {
+          "overall": {
+            "large": {
+              "gt": 55,
+              "mask_fn": 49,
+              "mask_recall": 0.10909090909090909,
+              "mask_tp": 6
+            },
+            "medium": {
+              "gt": 62,
+              "mask_fn": 42,
+              "mask_recall": 0.3225806451612903,
+              "mask_tp": 20
+            },
+            "small": {
+              "gt": 76,
+              "mask_fn": 52,
+              "mask_recall": 0.3157894736842105,
+              "mask_tp": 24
+            },
+            "tiny": {
+              "gt": 103,
+              "mask_fn": 89,
+              "mask_recall": 0.13592233009708737,
+              "mask_tp": 14
+            }
+          },
+          "per_class": {
+            "Burn": {
+              "large": {
+                "gt": 33,
+                "mask_fn": 29,
+                "mask_recall": 0.12121212121212122,
+                "mask_tp": 4
+              },
+              "medium": {
+                "gt": 15,
+                "mask_fn": 10,
+                "mask_recall": 0.3333333333333333,
+                "mask_tp": 5
+              },
+              "small": {
+                "gt": 2,
+                "mask_fn": 2,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              },
+              "tiny": {
+                "gt": 31,
+                "mask_fn": 30,
+                "mask_recall": 0.03225806451612903,
+                "mask_tp": 1
+              }
+            },
+            "Crack": {
+              "large": {
+                "gt": 0,
+                "mask_fn": 0,
+                "mask_recall": null,
+                "mask_tp": 0
+              },
+              "medium": {
+                "gt": 8,
+                "mask_fn": 8,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              },
+              "small": {
+                "gt": 11,
+                "mask_fn": 9,
+                "mask_recall": 0.18181818181818182,
+                "mask_tp": 2
+              },
+              "tiny": {
+                "gt": 5,
+                "mask_fn": 5,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              }
+            },
+            "Dent": {
+              "large": {
+                "gt": 0,
+                "mask_fn": 0,
+                "mask_recall": null,
+                "mask_tp": 0
+              },
+              "medium": {
+                "gt": 0,
+                "mask_fn": 0,
+                "mask_recall": null,
+                "mask_tp": 0
+              },
+              "small": {
+                "gt": 11,
+                "mask_fn": 0,
+                "mask_recall": 1.0,
+                "mask_tp": 11
+              },
+              "tiny": {
+                "gt": 26,
+                "mask_fn": 16,
+                "mask_recall": 0.38461538461538464,
+                "mask_tp": 10
+              }
+            },
+            "Material missing": {
+              "large": {
+                "gt": 3,
+                "mask_fn": 2,
+                "mask_recall": 0.3333333333333333,
+                "mask_tp": 1
+              },
+              "medium": {
+                "gt": 17,
+                "mask_fn": 5,
+                "mask_recall": 0.7058823529411765,
+                "mask_tp": 12
+              },
+              "small": {
+                "gt": 9,
+                "mask_fn": 9,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              },
+              "tiny": {
+                "gt": 3,
+                "mask_fn": 3,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              }
+            },
+            "Tears": {
+              "large": {
+                "gt": 0,
+                "mask_fn": 0,
+                "mask_recall": null,
+                "mask_tp": 0
+              },
+              "medium": {
+                "gt": 3,
+                "mask_fn": 0,
+                "mask_recall": 1.0,
+                "mask_tp": 3
+              },
+              "small": {
+                "gt": 5,
+                "mask_fn": 2,
+                "mask_recall": 0.6,
+                "mask_tp": 3
+              },
+              "tiny": {
+                "gt": 2,
+                "mask_fn": 1,
+                "mask_recall": 0.5,
+                "mask_tp": 1
+              }
+            },
+            "Tip curl": {
+              "large": {
+                "gt": 0,
+                "mask_fn": 0,
+                "mask_recall": null,
+                "mask_tp": 0
+              },
+              "medium": {
+                "gt": 1,
+                "mask_fn": 1,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              },
+              "small": {
+                "gt": 2,
+                "mask_fn": 0,
+                "mask_recall": 1.0,
+                "mask_tp": 2
+              },
+              "tiny": {
+                "gt": 0,
+                "mask_fn": 0,
+                "mask_recall": null,
+                "mask_tp": 0
+              }
+            },
+            "corrosion": {
+              "large": {
+                "gt": 19,
+                "mask_fn": 18,
+                "mask_recall": 0.05263157894736842,
+                "mask_tp": 1
+              },
+              "medium": {
+                "gt": 18,
+                "mask_fn": 18,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              },
+              "small": {
+                "gt": 36,
+                "mask_fn": 30,
+                "mask_recall": 0.16666666666666666,
+                "mask_tp": 6
+              },
+              "tiny": {
+                "gt": 36,
+                "mask_fn": 34,
+                "mask_recall": 0.05555555555555555,
+                "mask_tp": 2
+              }
+            }
+          }
+        }
+      },
+      "metrics_sha256": "9dad3b3e74c79e84fef7e2ae809aa468b20b48c66727955f4c061b3afde495e0",
+      "mode": "fixed",
+      "seed": 142,
+      "weights": {
+        "acceptance_sha256": "22d08a6a37a04fd86249198a32c541d052798b819663ee0e4a73213603ad9274",
+        "arm": "j3",
+        "checkpoint_cpu_synthetic_64_finite_check": true,
+        "epoch": 100,
+        "file_sha256": "77f9f95b4945c157bc49669f667c52eeec07fbad1ed131b4b9a689a69bc8eda7",
+        "full_master_sha256": "5f968365a7aead6ce264463ae1d143538e062b7fe7efb64fd3f627e4ccd37954",
+        "mode": "fixed",
+        "native_constructor_cpu_synthetic_stride_setup": true,
+        "native_master_sha256": "670339c201e0f462c94223703c03ea6b8c1266f2b43c977f1ffb20a63a1a170a",
+        "projection_state_entries_removed": 6,
+        "seed": 142,
+        "strict_native_fp32_load": true,
+        "strict_optimizer_scaler_load": true,
+        "val_model_forward_calls": 0
+      }
+    },
+    "142_j3_standard": {
+      "arm": "j3",
+      "completed_at": "2026-11-22T02:51:45+08:00",
+      "diagnostic_trace_sha256": "02cf5f5965be3af55fee61226b823753dea76be075fe95e6e1f8b9be1f471e07",
+      "diagnostics": {
+        "gt": 296,
+        "high_subset_mask_missed_gt": 232,
+        "low_band_candidate_gt": 104,
+        "low_band_native_box_tp": 146,
+        "low_band_native_mask_tp": 104,
+        "low_band_predictions": 23616,
+        "native_box_tp": 213,
+        "native_mask_tp": 168,
+        "predictions": 23734
+      },
+      "metrics": {
+        "images": 154,
+        "instances": 296,
+        "overall": {
+          "fitness": 0.39986863333340783,
+          "metrics/mAP50(B)": 0.40951856491919825,
+          "metrics/mAP50(M)": 0.3948199867498162,
+          "metrics/mAP50-95(B)": 0.20222159309934815,
+          "metrics/mAP50-95(M)": 0.19764704023405968,
+          "metrics/precision(B)": 0.5262582332959054,
+          "metrics/precision(M)": 0.743163613267632,
+          "metrics/recall(B)": 0.39896638287027913,
+          "metrics/recall(M)": 0.3092275000258971
+        },
+        "per_class": [
+          {
+            "box_ap50": 0.1577606558466092,
+            "box_ap50_95": 0.06847898177177417,
+            "box_precision": 0.45938301816172683,
+            "box_recall": 0.14814814814814814,
+            "class": "Burn",
+            "class_id": 0,
+            "gt_instances": 81,
+            "mask_ap50": 0.09534803067126121,
+            "mask_ap50_95": 0.03044827429109424,
+            "mask_precision": 0.5677608682993698,
+            "mask_recall": 0.03305689732090984
+          },
+          {
+            "box_ap50": 0.04940923700890788,
+            "box_ap50_95": 0.012193623287120946,
+            "box_precision": 0.12064058664782062,
+            "box_recall": 0.08333333333333333,
+            "class": "Crack",
+            "class_id": 1,
+            "gt_instances": 24,
+            "mask_ap50": 0.06492564656613771,
+            "mask_ap50_95": 0.01669449522032235,
+            "mask_precision": 0.1854872620267973,
+            "mask_recall": 0.04825387504271239
+          },
+          {
+            "box_ap50": 0.6440295479085856,
+            "box_ap50_95": 0.2585277119386268,
+            "box_precision": 0.7320806481575481,
+            "box_recall": 0.5909127158684695,
+            "class": "Dent",
+            "class_id": 2,
+            "gt_instances": 37,
+            "mask_ap50": 0.6471499970073942,
+            "mask_ap50_95": 0.22807455571380725,
+            "mask_precision": 0.9342787890769442,
+            "mask_recall": 0.38451106428288134
+          },
+          {
+            "box_ap50": 0.40843517869384394,
+            "box_ap50_95": 0.33860000476344154,
+            "box_precision": 0.7724560710203803,
+            "box_recall": 0.40625,
+            "class": "Material missing",
+            "class_id": 3,
+            "gt_instances": 32,
+            "mask_ap50": 0.41694126117968194,
+            "mask_ap50_95": 0.3067127820168977,
+            "mask_precision": 0.9246415576880546,
+            "mask_recall": 0.40625
+          },
+          {
+            "box_ap50": 0.765518207282913,
+            "box_ap50_95": 0.4403521910793435,
+            "box_precision": 0.6450103908153203,
+            "box_recall": 0.8,
+            "class": "Tears",
+            "class_id": 4,
+            "gt_instances": 10,
+            "mask_ap50": 0.7278212375859434,
+            "mask_ap50_95": 0.3593310051507431,
+            "mask_precision": 0.821185957234688,
+            "mask_recall": 0.6
+          },
+          {
+            "box_ap50": 0.6763793103448276,
+            "box_ap50_95": 0.23463793103448274,
+            "box_precision": 0.3841207556437071,
+            "box_recall": 0.6666666666666666,
+            "class": "Tip curl",
+            "class_id": 5,
+            "gt_instances": 3,
+            "mask_ap50": 0.665,
+            "mask_ap50_95": 0.38275000000000003,
+            "mask_precision": 1.0,
+            "mask_recall": 0.6312686368585145
+          },
+          {
+            "box_ap50": 0.16509781734870102,
+            "box_ap50_95": 0.06276070782064706,
+            "box_precision": 0.5701161626248346,
+            "box_recall": 0.0974538160753365,
+            "class": "corrosion",
+            "class_id": 6,
+            "gt_instances": 109,
+            "mask_ap50": 0.14655373423829493,
+            "mask_ap50_95": 0.05951816924555291,
+            "mask_precision": 0.7687908585475701,
+            "mask_recall": 0.06125202667626169
+          }
+        ]
+      },
+      "metrics_sha256": "a6c824390ac5d774174be30c34e87b47b97a281449b6ab0a19cf80670ca0ec3c",
+      "mode": "standard",
+      "seed": 142,
+      "weights": {
+        "acceptance_sha256": "22d08a6a37a04fd86249198a32c541d052798b819663ee0e4a73213603ad9274",
+        "arm": "j3",
+        "checkpoint_cpu_synthetic_64_finite_check": true,
+        "epoch": 100,
+        "file_sha256": "77f9f95b4945c157bc49669f667c52eeec07fbad1ed131b4b9a689a69bc8eda7",
+        "full_master_sha256": "5f968365a7aead6ce264463ae1d143538e062b7fe7efb64fd3f627e4ccd37954",
+        "mode": "standard",
+        "native_constructor_cpu_synthetic_stride_setup": true,
+        "native_master_sha256": "670339c201e0f462c94223703c03ea6b8c1266f2b43c977f1ffb20a63a1a170a",
+        "projection_state_entries_removed": 6,
+        "seed": 142,
+        "strict_native_fp32_load": true,
+        "strict_optimizer_scaler_load": true,
+        "val_model_forward_calls": 0
+      }
+    },
+    "242_j3_fixed": {
+      "arm": "j3",
+      "completed_at": "2026-11-22T02:51:56+08:00",
+      "diagnostic_trace_sha256": "74f6fd20fd17aefa61ca93656effc16786f37df39397fb81e501a998a3b6e6d3",
+      "diagnostics": {
+        "box_tp_with_mask_iou_below_50": 1,
+        "gt": 296,
+        "mean_mask_iou_on_box_tp": 0.7171741967253825,
+        "native_box_tp": 68,
+        "native_mask_tp": 68,
+        "no_same_class_overlap": 186,
+        "predictions": 110,
+        "same_class_box_good_mask_below_50": 1,
+        "same_class_mask_edge_lost_one_to_one": 0,
+        "same_class_overlap_below_50": 39,
+        "wrong_class_mask_overlap": 2
+      },
+      "metrics": {
+        "fixed_counts": {
+          "overall": {
+            "box_fn": 228,
+            "box_fp": 42,
+            "box_tp": 68,
+            "detections": 110,
+            "gt": 296,
+            "mask_fn": 228,
+            "mask_fp": 42,
+            "mask_precision": 0.6181818181818182,
+            "mask_recall": 0.22972972972972974,
+            "mask_tp": 68
+          },
+          "per_class": [
+            {
+              "box_fn": 71,
+              "box_fp": 13,
+              "box_tp": 10,
+              "class": "Burn",
+              "class_id": 0,
+              "detections": 23,
+              "gt": 81,
+              "mask_fn": 72,
+              "mask_fp": 14,
+              "mask_tp": 9
+            },
+            {
+              "box_fn": 22,
+              "box_fp": 8,
+              "box_tp": 2,
+              "class": "Crack",
+              "class_id": 1,
+              "detections": 10,
+              "gt": 24,
+              "mask_fn": 22,
+              "mask_fp": 8,
+              "mask_tp": 2
+            },
+            {
+              "box_fn": 14,
+              "box_fp": 12,
+              "box_tp": 23,
+              "class": "Dent",
+              "class_id": 2,
+              "detections": 35,
+              "gt": 37,
+              "mask_fn": 13,
+              "mask_fp": 11,
+              "mask_tp": 24
+            },
+            {
+              "box_fn": 19,
+              "box_fp": 2,
+              "box_tp": 13,
+              "class": "Material missing",
+              "class_id": 3,
+              "detections": 15,
+              "gt": 32,
+              "mask_fn": 19,
+              "mask_fp": 2,
+              "mask_tp": 13
+            },
+            {
+              "box_fn": 3,
+              "box_fp": 2,
+              "box_tp": 7,
+              "class": "Tears",
+              "class_id": 4,
+              "detections": 9,
+              "gt": 10,
+              "mask_fn": 3,
+              "mask_fp": 2,
+              "mask_tp": 7
+            },
+            {
+              "box_fn": 1,
+              "box_fp": 0,
+              "box_tp": 2,
+              "class": "Tip curl",
+              "class_id": 5,
+              "detections": 2,
+              "gt": 3,
+              "mask_fn": 1,
+              "mask_fp": 0,
+              "mask_tp": 2
+            },
+            {
+              "box_fn": 98,
+              "box_fp": 5,
+              "box_tp": 11,
+              "class": "corrosion",
+              "class_id": 6,
+              "detections": 16,
+              "gt": 109,
+              "mask_fn": 98,
+              "mask_fp": 5,
+              "mask_tp": 11
+            }
+          ]
+        },
+        "images": 154,
+        "instances": 296,
+        "overall": {
+          "fitness": 0.3974346419131981,
+          "metrics/mAP50(B)": 0.36398962475433067,
+          "metrics/mAP50(M)": 0.3751381846833528,
+          "metrics/mAP50-95(B)": 0.20597893359169625,
+          "metrics/mAP50-95(M)": 0.19145570832150188,
+          "metrics/precision(B)": 0.6605528443261363,
+          "metrics/precision(M)": 0.6584232968549738,
+          "metrics/recall(B)": 0.38603512041967697,
+          "metrics/recall(M)": 0.3881324558503457
+        },
+        "size_recall": {
+          "overall": {
+            "large": {
+              "gt": 55,
+              "mask_fn": 50,
+              "mask_recall": 0.09090909090909091,
+              "mask_tp": 5
+            },
+            "medium": {
+              "gt": 62,
+              "mask_fn": 43,
+              "mask_recall": 0.3064516129032258,
+              "mask_tp": 19
+            },
+            "small": {
+              "gt": 76,
+              "mask_fn": 50,
+              "mask_recall": 0.34210526315789475,
+              "mask_tp": 26
+            },
+            "tiny": {
+              "gt": 103,
+              "mask_fn": 85,
+              "mask_recall": 0.17475728155339806,
+              "mask_tp": 18
+            }
+          },
+          "per_class": {
+            "Burn": {
+              "large": {
+                "gt": 33,
+                "mask_fn": 29,
+                "mask_recall": 0.12121212121212122,
+                "mask_tp": 4
+              },
+              "medium": {
+                "gt": 15,
+                "mask_fn": 11,
+                "mask_recall": 0.26666666666666666,
+                "mask_tp": 4
+              },
+              "small": {
+                "gt": 2,
+                "mask_fn": 2,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              },
+              "tiny": {
+                "gt": 31,
+                "mask_fn": 30,
+                "mask_recall": 0.03225806451612903,
+                "mask_tp": 1
+              }
+            },
+            "Crack": {
+              "large": {
+                "gt": 0,
+                "mask_fn": 0,
+                "mask_recall": null,
+                "mask_tp": 0
+              },
+              "medium": {
+                "gt": 8,
+                "mask_fn": 8,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              },
+              "small": {
+                "gt": 11,
+                "mask_fn": 9,
+                "mask_recall": 0.18181818181818182,
+                "mask_tp": 2
+              },
+              "tiny": {
+                "gt": 5,
+                "mask_fn": 5,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              }
+            },
+            "Dent": {
+              "large": {
+                "gt": 0,
+                "mask_fn": 0,
+                "mask_recall": null,
+                "mask_tp": 0
+              },
+              "medium": {
+                "gt": 0,
+                "mask_fn": 0,
+                "mask_recall": null,
+                "mask_tp": 0
+              },
+              "small": {
+                "gt": 11,
+                "mask_fn": 0,
+                "mask_recall": 1.0,
+                "mask_tp": 11
+              },
+              "tiny": {
+                "gt": 26,
+                "mask_fn": 13,
+                "mask_recall": 0.5,
+                "mask_tp": 13
+              }
+            },
+            "Material missing": {
+              "large": {
+                "gt": 3,
+                "mask_fn": 2,
+                "mask_recall": 0.3333333333333333,
+                "mask_tp": 1
+              },
+              "medium": {
+                "gt": 17,
+                "mask_fn": 5,
+                "mask_recall": 0.7058823529411765,
+                "mask_tp": 12
+              },
+              "small": {
+                "gt": 9,
+                "mask_fn": 9,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              },
+              "tiny": {
+                "gt": 3,
+                "mask_fn": 3,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              }
+            },
+            "Tears": {
+              "large": {
+                "gt": 0,
+                "mask_fn": 0,
+                "mask_recall": null,
+                "mask_tp": 0
+              },
+              "medium": {
+                "gt": 3,
+                "mask_fn": 0,
+                "mask_recall": 1.0,
+                "mask_tp": 3
+              },
+              "small": {
+                "gt": 5,
+                "mask_fn": 2,
+                "mask_recall": 0.6,
+                "mask_tp": 3
+              },
+              "tiny": {
+                "gt": 2,
+                "mask_fn": 1,
+                "mask_recall": 0.5,
+                "mask_tp": 1
+              }
+            },
+            "Tip curl": {
+              "large": {
+                "gt": 0,
+                "mask_fn": 0,
+                "mask_recall": null,
+                "mask_tp": 0
+              },
+              "medium": {
+                "gt": 1,
+                "mask_fn": 1,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              },
+              "small": {
+                "gt": 2,
+                "mask_fn": 0,
+                "mask_recall": 1.0,
+                "mask_tp": 2
+              },
+              "tiny": {
+                "gt": 0,
+                "mask_fn": 0,
+                "mask_recall": null,
+                "mask_tp": 0
+              }
+            },
+            "corrosion": {
+              "large": {
+                "gt": 19,
+                "mask_fn": 19,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              },
+              "medium": {
+                "gt": 18,
+                "mask_fn": 18,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              },
+              "small": {
+                "gt": 36,
+                "mask_fn": 28,
+                "mask_recall": 0.2222222222222222,
+                "mask_tp": 8
+              },
+              "tiny": {
+                "gt": 36,
+                "mask_fn": 33,
+                "mask_recall": 0.08333333333333333,
+                "mask_tp": 3
+              }
+            }
+          }
+        }
+      },
+      "metrics_sha256": "4c27cefa7b6c12b9c97e41e00ef2079aa24dd1d73a31ac0c85f60d6c0dbb4574",
+      "mode": "fixed",
+      "seed": 242,
+      "weights": {
+        "acceptance_sha256": "7a88367e10604ffb3a70bc3dcc342b64f8b531cbe335a76be0faee70de159b23",
+        "arm": "j3",
+        "checkpoint_cpu_synthetic_64_finite_check": true,
+        "epoch": 100,
+        "file_sha256": "3f032e3af4059e75636f0ecf7df67e1df6411633e617f25c2bd71b273a4c8ca6",
+        "full_master_sha256": "edf61fad3d0394c82e4caa2f74d7c57dcdaf0819e9507a1a1115789f26e3d24c",
+        "mode": "fixed",
+        "native_constructor_cpu_synthetic_stride_setup": true,
+        "native_master_sha256": "260909566e8cf846e45615eff1e1194e0c86f0567bffbfe3c5f4f54aa1a0aec3",
+        "projection_state_entries_removed": 6,
+        "seed": 242,
+        "strict_native_fp32_load": true,
+        "strict_optimizer_scaler_load": true,
+        "val_model_forward_calls": 0
+      }
+    },
+    "242_j3_standard": {
+      "arm": "j3",
+      "completed_at": "2026-11-22T02:51:52+08:00",
+      "diagnostic_trace_sha256": "2a319536fe022fd4fb3d7ab1af5bced0471b1e72999069bae772b2c91b135a03",
+      "diagnostics": {
+        "gt": 296,
+        "high_subset_mask_missed_gt": 228,
+        "low_band_candidate_gt": 100,
+        "low_band_native_box_tp": 142,
+        "low_band_native_mask_tp": 100,
+        "low_band_predictions": 22475,
+        "native_box_tp": 210,
+        "native_mask_tp": 168,
+        "predictions": 22585
+      },
+      "metrics": {
+        "images": 154,
+        "instances": 296,
+        "overall": {
+          "fitness": 0.4261555430489249,
+          "metrics/mAP50(B)": 0.417493358061206,
+          "metrics/mAP50(M)": 0.4105866326759814,
+          "metrics/mAP50-95(B)": 0.22372919276755074,
+          "metrics/mAP50-95(M)": 0.20242635028137412,
+          "metrics/precision(B)": 0.561456671720257,
+          "metrics/precision(M)": 0.6099836535717316,
+          "metrics/recall(B)": 0.40042959352974644,
+          "metrics/recall(M)": 0.38887733578543593
+        },
+        "per_class": [
+          {
+            "box_ap50": 0.17071059943437208,
+            "box_ap50_95": 0.07823101395439096,
+            "box_precision": 0.4307881529185128,
+            "box_recall": 0.16049382716049382,
+            "class": "Burn",
+            "class_id": 0,
+            "gt_instances": 81,
+            "mask_ap50": 0.12273599552617454,
+            "mask_ap50_95": 0.036457127649371514,
+            "mask_precision": 0.39341088942059854,
+            "mask_recall": 0.1121365176015612
+          },
+          {
+            "box_ap50": 0.09362684126567886,
+            "box_ap50_95": 0.026474753154726173,
+            "box_precision": 0.12116822302941176,
+            "box_recall": 0.08333333333333333,
+            "class": "Crack",
+            "class_id": 1,
+            "gt_instances": 24,
+            "mask_ap50": 0.13399925303454716,
+            "mask_ap50_95": 0.03320183980788345,
+            "mask_precision": 0.1883696404378821,
+            "mask_recall": 0.08333333333333333
+          },
+          {
+            "box_ap50": 0.6431010396277791,
+            "box_ap50_95": 0.25221023115199276,
+            "box_precision": 0.6270141188238368,
+            "box_recall": 0.6486486486486487,
+            "class": "Dent",
+            "class_id": 2,
+            "gt_instances": 37,
+            "mask_ap50": 0.6564374587383482,
+            "mask_ap50_95": 0.2513979730742461,
+            "mask_precision": 0.6774855735450172,
+            "mask_recall": 0.6486486486486487
+          },
+          {
+            "box_ap50": 0.40975825197812343,
+            "box_ap50_95": 0.35166444139871744,
+            "box_precision": 0.7947685898983091,
+            "box_recall": 0.40625,
+            "class": "Material missing",
+            "class_id": 3,
+            "gt_instances": 32,
+            "mask_ap50": 0.41007132517773814,
+            "mask_ap50_95": 0.31318484042953526,
+            "mask_precision": 0.8230769205184918,
+            "mask_recall": 0.40625
+          },
+          {
+            "box_ap50": 0.756753238170764,
+            "box_ap50_95": 0.48541613906028036,
+            "box_precision": 0.7023840624965932,
+            "box_recall": 0.7,
+            "class": "Tears",
+            "class_id": 4,
+            "gt_instances": 10,
+            "mask_ap50": 0.7174369988545246,
+            "mask_ap50_95": 0.4167816936472016,
+            "mask_precision": 0.7274723253948755,
+            "mask_recall": 0.7
+          },
+          {
+            "box_ap50": 0.665,
+            "box_ap50_95": 0.3,
+            "box_precision": 0.7292879600462452,
+            "box_recall": 0.6666666666666666,
+            "class": "Tip curl",
+            "class_id": 5,
+            "gt_instances": 3,
+            "mask_ap50": 0.665,
+            "mask_ap50_95": 0.30189285714285713,
+            "mask_precision": 0.764177319747485,
+            "mask_recall": 0.6666666666666666
+          },
+          {
+            "box_ap50": 0.18350353595172453,
+            "box_ap50_95": 0.07210777065274751,
+            "box_precision": 0.5247855948288903,
+            "box_recall": 0.13761467889908258,
+            "class": "corrosion",
+            "class_id": 6,
+            "gt_instances": 109,
+            "mask_ap50": 0.16842539740053714,
+            "mask_ap50_95": 0.06406812021852384,
+            "mask_precision": 0.6958929059377709,
+            "mask_recall": 0.10510618424784159
+          }
+        ]
+      },
+      "metrics_sha256": "c664a82d74511440b169ec57506de8bfbfe1de9db2df1ecf68400037a5651565",
+      "mode": "standard",
+      "seed": 242,
+      "weights": {
+        "acceptance_sha256": "7a88367e10604ffb3a70bc3dcc342b64f8b531cbe335a76be0faee70de159b23",
+        "arm": "j3",
+        "checkpoint_cpu_synthetic_64_finite_check": true,
+        "epoch": 100,
+        "file_sha256": "3f032e3af4059e75636f0ecf7df67e1df6411633e617f25c2bd71b273a4c8ca6",
+        "full_master_sha256": "edf61fad3d0394c82e4caa2f74d7c57dcdaf0819e9507a1a1115789f26e3d24c",
+        "mode": "standard",
+        "native_constructor_cpu_synthetic_stride_setup": true,
+        "native_master_sha256": "260909566e8cf846e45615eff1e1194e0c86f0567bffbfe3c5f4f54aa1a0aec3",
+        "projection_state_entries_removed": 6,
+        "seed": 242,
+        "strict_native_fp32_load": true,
+        "strict_optimizer_scaler_load": true,
+        "val_model_forward_calls": 0
+      }
+    },
+    "42_j3_fixed": {
+      "arm": "j3",
+      "completed_at": "2026-11-22T02:51:42+08:00",
+      "diagnostic_trace_sha256": "61696537921f262604acccd739a5dc658ff1fdeebc0bbdb4b17527889e98232a",
+      "diagnostics": {
+        "box_tp_with_mask_iou_below_50": 6,
+        "gt": 296,
+        "mean_mask_iou_on_box_tp": 0.7139996615323153,
+        "native_box_tp": 77,
+        "native_mask_tp": 71,
+        "no_same_class_overlap": 178,
+        "predictions": 128,
+        "same_class_box_good_mask_below_50": 6,
+        "same_class_mask_edge_lost_one_to_one": 0,
+        "same_class_overlap_below_50": 40,
+        "wrong_class_mask_overlap": 1
+      },
+      "metrics": {
+        "fixed_counts": {
+          "overall": {
+            "box_fn": 219,
+            "box_fp": 51,
+            "box_tp": 77,
+            "detections": 128,
+            "gt": 296,
+            "mask_fn": 225,
+            "mask_fp": 57,
+            "mask_precision": 0.5546875,
+            "mask_recall": 0.23986486486486486,
+            "mask_tp": 71
+          },
+          "per_class": [
+            {
+              "box_fn": 69,
+              "box_fp": 20,
+              "box_tp": 12,
+              "class": "Burn",
+              "class_id": 0,
+              "detections": 32,
+              "gt": 81,
+              "mask_fn": 69,
+              "mask_fp": 20,
+              "mask_tp": 12
+            },
+            {
+              "box_fn": 19,
+              "box_fp": 4,
+              "box_tp": 5,
+              "class": "Crack",
+              "class_id": 1,
+              "detections": 9,
+              "gt": 24,
+              "mask_fn": 24,
+              "mask_fp": 9,
+              "mask_tp": 0
+            },
+            {
+              "box_fn": 17,
+              "box_fp": 6,
+              "box_tp": 20,
+              "class": "Dent",
+              "class_id": 2,
+              "detections": 26,
+              "gt": 37,
+              "mask_fn": 17,
+              "mask_fp": 6,
+              "mask_tp": 20
+            },
+            {
+              "box_fn": 19,
+              "box_fp": 5,
+              "box_tp": 13,
+              "class": "Material missing",
+              "class_id": 3,
+              "detections": 18,
+              "gt": 32,
+              "mask_fn": 19,
+              "mask_fp": 5,
+              "mask_tp": 13
+            },
+            {
+              "box_fn": 2,
+              "box_fp": 1,
+              "box_tp": 8,
+              "class": "Tears",
+              "class_id": 4,
+              "detections": 9,
+              "gt": 10,
+              "mask_fn": 3,
+              "mask_fp": 2,
+              "mask_tp": 7
+            },
+            {
+              "box_fn": 1,
+              "box_fp": 1,
+              "box_tp": 2,
+              "class": "Tip curl",
+              "class_id": 5,
+              "detections": 3,
+              "gt": 3,
+              "mask_fn": 1,
+              "mask_fp": 1,
+              "mask_tp": 2
+            },
+            {
+              "box_fn": 92,
+              "box_fp": 14,
+              "box_tp": 17,
+              "class": "corrosion",
+              "class_id": 6,
+              "detections": 31,
+              "gt": 109,
+              "mask_fn": 92,
+              "mask_fp": 14,
+              "mask_tp": 17
+            }
+          ]
+        },
+        "images": 154,
+        "instances": 296,
+        "overall": {
+          "fitness": 0.3986633617769863,
+          "metrics/mAP50(B)": 0.366339868179291,
+          "metrics/mAP50(M)": 0.3409870226121597,
+          "metrics/mAP50-95(B)": 0.21593810768178553,
+          "metrics/mAP50-95(M)": 0.18272525409520077,
+          "metrics/precision(B)": 0.646564457048328,
+          "metrics/precision(M)": 0.5513263618102328,
+          "metrics/recall(B)": 0.4179859987772832,
+          "metrics/recall(M)": 0.37393837972966415
+        },
+        "size_recall": {
+          "overall": {
+            "large": {
+              "gt": 55,
+              "mask_fn": 48,
+              "mask_recall": 0.12727272727272726,
+              "mask_tp": 7
+            },
+            "medium": {
+              "gt": 62,
+              "mask_fn": 40,
+              "mask_recall": 0.3548387096774194,
+              "mask_tp": 22
+            },
+            "small": {
+              "gt": 76,
+              "mask_fn": 51,
+              "mask_recall": 0.32894736842105265,
+              "mask_tp": 25
+            },
+            "tiny": {
+              "gt": 103,
+              "mask_fn": 86,
+              "mask_recall": 0.1650485436893204,
+              "mask_tp": 17
+            }
+          },
+          "per_class": {
+            "Burn": {
+              "large": {
+                "gt": 33,
+                "mask_fn": 28,
+                "mask_recall": 0.15151515151515152,
+                "mask_tp": 5
+              },
+              "medium": {
+                "gt": 15,
+                "mask_fn": 9,
+                "mask_recall": 0.4,
+                "mask_tp": 6
+              },
+              "small": {
+                "gt": 2,
+                "mask_fn": 2,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              },
+              "tiny": {
+                "gt": 31,
+                "mask_fn": 30,
+                "mask_recall": 0.03225806451612903,
+                "mask_tp": 1
+              }
+            },
+            "Crack": {
+              "large": {
+                "gt": 0,
+                "mask_fn": 0,
+                "mask_recall": null,
+                "mask_tp": 0
+              },
+              "medium": {
+                "gt": 8,
+                "mask_fn": 8,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              },
+              "small": {
+                "gt": 11,
+                "mask_fn": 11,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              },
+              "tiny": {
+                "gt": 5,
+                "mask_fn": 5,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              }
+            },
+            "Dent": {
+              "large": {
+                "gt": 0,
+                "mask_fn": 0,
+                "mask_recall": null,
+                "mask_tp": 0
+              },
+              "medium": {
+                "gt": 0,
+                "mask_fn": 0,
+                "mask_recall": null,
+                "mask_tp": 0
+              },
+              "small": {
+                "gt": 11,
+                "mask_fn": 3,
+                "mask_recall": 0.7272727272727273,
+                "mask_tp": 8
+              },
+              "tiny": {
+                "gt": 26,
+                "mask_fn": 14,
+                "mask_recall": 0.46153846153846156,
+                "mask_tp": 12
+              }
+            },
+            "Material missing": {
+              "large": {
+                "gt": 3,
+                "mask_fn": 2,
+                "mask_recall": 0.3333333333333333,
+                "mask_tp": 1
+              },
+              "medium": {
+                "gt": 17,
+                "mask_fn": 5,
+                "mask_recall": 0.7058823529411765,
+                "mask_tp": 12
+              },
+              "small": {
+                "gt": 9,
+                "mask_fn": 9,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              },
+              "tiny": {
+                "gt": 3,
+                "mask_fn": 3,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              }
+            },
+            "Tears": {
+              "large": {
+                "gt": 0,
+                "mask_fn": 0,
+                "mask_recall": null,
+                "mask_tp": 0
+              },
+              "medium": {
+                "gt": 3,
+                "mask_fn": 0,
+                "mask_recall": 1.0,
+                "mask_tp": 3
+              },
+              "small": {
+                "gt": 5,
+                "mask_fn": 2,
+                "mask_recall": 0.6,
+                "mask_tp": 3
+              },
+              "tiny": {
+                "gt": 2,
+                "mask_fn": 1,
+                "mask_recall": 0.5,
+                "mask_tp": 1
+              }
+            },
+            "Tip curl": {
+              "large": {
+                "gt": 0,
+                "mask_fn": 0,
+                "mask_recall": null,
+                "mask_tp": 0
+              },
+              "medium": {
+                "gt": 1,
+                "mask_fn": 1,
+                "mask_recall": 0.0,
+                "mask_tp": 0
+              },
+              "small": {
+                "gt": 2,
+                "mask_fn": 0,
+                "mask_recall": 1.0,
+                "mask_tp": 2
+              },
+              "tiny": {
+                "gt": 0,
+                "mask_fn": 0,
+                "mask_recall": null,
+                "mask_tp": 0
+              }
+            },
+            "corrosion": {
+              "large": {
+                "gt": 19,
+                "mask_fn": 18,
+                "mask_recall": 0.05263157894736842,
+                "mask_tp": 1
+              },
+              "medium": {
+                "gt": 18,
+                "mask_fn": 17,
+                "mask_recall": 0.05555555555555555,
+                "mask_tp": 1
+              },
+              "small": {
+                "gt": 36,
+                "mask_fn": 24,
+                "mask_recall": 0.3333333333333333,
+                "mask_tp": 12
+              },
+              "tiny": {
+                "gt": 36,
+                "mask_fn": 33,
+                "mask_recall": 0.08333333333333333,
+                "mask_tp": 3
+              }
+            }
+          }
+        }
+      },
+      "metrics_sha256": "20720b148544204732a5f7c89c3b304259a5336e766fe4746bde24c864fcc73c",
+      "mode": "fixed",
+      "seed": 42,
+      "weights": {
+        "acceptance_sha256": "3cc1f69e1a966ee3acb69ef5d33936a42f0410947d5ce4b5588b87cf1fea5598",
+        "arm": "j3",
+        "checkpoint_cpu_synthetic_64_finite_check": true,
+        "epoch": 100,
+        "file_sha256": "220cf7fb9c8814da0934c5ae6056f018fad663d698852477535c97e80123ec9d",
+        "full_master_sha256": "8c028f32db5a2462b9e27d6c9980778d4345faaadd436e51d09c36254a1d2523",
+        "mode": "fixed",
+        "native_constructor_cpu_synthetic_stride_setup": true,
+        "native_master_sha256": "3c1800a2e61475a81e02359358569e026db2f0f58f87ed98d6795e4b742aba82",
+        "projection_state_entries_removed": 6,
+        "seed": 42,
+        "strict_native_fp32_load": true,
+        "strict_optimizer_scaler_load": true,
+        "val_model_forward_calls": 0
+      }
+    },
+    "42_j3_standard": {
+      "arm": "j3",
+      "completed_at": "2026-11-22T02:51:38+08:00",
+      "diagnostic_trace_sha256": "f6704517b28020e07d34573f3bd821e8af2a9b73ce603df8077986cb5818cc2d",
+      "diagnostics": {
+        "gt": 296,
+        "high_subset_mask_missed_gt": 225,
+        "low_band_candidate_gt": 106,
+        "low_band_native_box_tp": 149,
+        "low_band_native_mask_tp": 106,
+        "low_band_predictions": 20260,
+        "native_box_tp": 226,
+        "native_mask_tp": 177,
+        "predictions": 20388
+      },
+      "metrics": {
+        "images": 154,
+        "instances": 296,
+        "overall": {
+          "fitness": 0.4568202543796409,
+          "metrics/mAP50(B)": 0.4558583123217165,
+          "metrics/mAP50(M)": 0.3988039109398945,
+          "metrics/mAP50-95(B)": 0.2519684934720522,
+          "metrics/mAP50-95(M)": 0.20485176090758875,
+          "metrics/precision(B)": 0.5863255543123601,
+          "metrics/precision(M)": 0.4927472968100504,
+          "metrics/recall(B)": 0.44890482652023145,
+          "metrics/recall(M)": 0.4122376692648327
+        },
+        "per_class": [
+          {
+            "box_ap50": 0.17230672849011164,
+            "box_ap50_95": 0.07673613260283778,
+            "box_precision": 0.377789466444965,
+            "box_recall": 0.202458925703646,
+            "class": "Burn",
+            "class_id": 0,
+            "gt_instances": 81,
+            "mask_ap50": 0.15688167489649374,
+            "mask_ap50_95": 0.05124875570009013,
+            "mask_precision": 0.3613567048080318,
+            "mask_recall": 0.20987654320987653
+          },
+          {
+            "box_ap50": 0.37665982682582194,
+            "box_ap50_95": 0.10540505730808285,
+            "box_precision": 0.6539910694581549,
+            "box_recall": 0.31590438717162966,
+            "class": "Crack",
+            "class_id": 1,
+            "gt_instances": 24,
+            "mask_ap50": 0.04402448117476042,
+            "mask_ap50_95": 0.006395186211450861,
+            "mask_precision": 0.1385762034821831,
+            "mask_recall": 0.08062801747832404
+          },
+          {
+            "box_ap50": 0.5981973573423002,
+            "box_ap50_95": 0.26966249675682874,
+            "box_precision": 0.6944430532985016,
+            "box_recall": 0.5675675675675675,
+            "class": "Dent",
+            "class_id": 2,
+            "gt_instances": 37,
+            "mask_ap50": 0.6195176997812201,
+            "mask_ap50_95": 0.22937460680176688,
+            "mask_precision": 0.6693711870561726,
+            "mask_recall": 0.5675675675675675
+          },
+          {
+            "box_ap50": 0.43366492257716405,
+            "box_ap50_95": 0.33475039684836344,
+            "box_precision": 0.6274295018340955,
+            "box_recall": 0.40625,
+            "class": "Material missing",
+            "class_id": 3,
+            "gt_instances": 32,
+            "mask_ap50": 0.42948755526886023,
+            "mask_ap50_95": 0.31193876219507816,
+            "mask_precision": 0.6140052503652492,
+            "mask_recall": 0.40625
+          },
+          {
+            "box_ap50": 0.8258205128205127,
+            "box_ap50_95": 0.4974833333333333,
+            "box_precision": 0.7327739959312068,
+            "box_recall": 0.8,
+            "class": "Tears",
+            "class_id": 4,
+            "gt_instances": 10,
+            "mask_ap50": 0.7924871794871794,
+            "mask_ap50_95": 0.40504319557254337,
+            "mask_precision": 0.65793595496948,
+            "mask_recall": 0.771188651399284
+          },
+          {
+            "box_ap50": 0.570714285714286,
+            "box_ap50_95": 0.39107142857142857,
+            "box_precision": 0.5328727025002173,
+            "box_recall": 0.6666666666666666,
+            "class": "Tip curl",
+            "class_id": 5,
+            "gt_instances": 3,
+            "mask_ap50": 0.555,
+            "mask_ap50_95": 0.3397,
+            "mask_precision": 0.5303814602885966,
+            "mask_recall": 0.6666666666666666
+          },
+          {
+            "box_ap50": 0.2136445524818183,
+            "box_ap50_95": 0.08867060888349051,
+            "box_precision": 0.4849790907193792,
+            "box_recall": 0.1834862385321101,
+            "class": "corrosion",
+            "class_id": 6,
+            "gt_instances": 109,
+            "mask_ap50": 0.19422878597074678,
+            "mask_ap50_95": 0.09026181987219156,
+            "mask_precision": 0.4776043167006394,
+            "mask_recall": 0.1834862385321101
+          }
+        ]
+      },
+      "metrics_sha256": "463fbbfad4caa140bb21516c5596f8390f2722baf78bc0d97fa6838c0f4efaec",
+      "mode": "standard",
+      "seed": 42,
+      "weights": {
+        "acceptance_sha256": "3cc1f69e1a966ee3acb69ef5d33936a42f0410947d5ce4b5588b87cf1fea5598",
+        "arm": "j3",
+        "checkpoint_cpu_synthetic_64_finite_check": true,
+        "epoch": 100,
+        "file_sha256": "220cf7fb9c8814da0934c5ae6056f018fad663d698852477535c97e80123ec9d",
+        "full_master_sha256": "8c028f32db5a2462b9e27d6c9980778d4345faaadd436e51d09c36254a1d2523",
+        "mode": "standard",
+        "native_constructor_cpu_synthetic_stride_setup": true,
+        "native_master_sha256": "3c1800a2e61475a81e02359358569e026db2f0f58f87ed98d6795e4b742aba82",
+        "projection_state_entries_removed": 6,
+        "seed": 42,
+        "strict_native_fp32_load": true,
+        "strict_optimizer_scaler_load": true,
+        "val_model_forward_calls": 0
+      }
+    }
+  },
+  "preflight": {
+    "evaluation": {
+      "batch": 32,
+      "checkpoint": "epoch100_last_master_fp32",
+      "conf": 0.001,
+      "fixed_conf": 0.25,
+      "gt_size_definition": "native_rasterized_polygon_area_over_full_image_area",
+      "imgsz": 640,
+      "match_iou": 0.5,
+      "matching": "NATIVE_ULTRALYTICS_CLASS_AWARE_IOU_GREEDY_ONE_TO_ONE",
+      "max_det": 300,
+      "nms_iou": 0.7,
+      "precision": "CUDA_FP32_TF32_DISABLED",
+      "size_thresholds": [
+        0.0020196759259259256,
+        0.007364969135802469,
+        0.029209280303030303
+      ],
+      "split": "val",
+      "test_model_inference": false
+    },
+    "free_disk_bytes": 7939842048,
+    "identity": {
+      "adapter_head": "e9b44a65f456b8b64569b39a484823bd777efdbc",
+      "approved_parent": "401210427a61f3430f18bb4fe93261c911f66080",
+      "checkpoint_spec": {
+        "142": {
+          "acceptance_sha256": "22d08a6a37a04fd86249198a32c541d052798b819663ee0e4a73213603ad9274",
+          "file_sha256": "77f9f95b4945c157bc49669f667c52eeec07fbad1ed131b4b9a689a69bc8eda7",
+          "full_master_sha256": "5f968365a7aead6ce264463ae1d143538e062b7fe7efb64fd3f627e4ccd37954",
+          "native_master_sha256": "670339c201e0f462c94223703c03ea6b8c1266f2b43c977f1ffb20a63a1a170a"
+        },
+        "242": {
+          "acceptance_sha256": "7a88367e10604ffb3a70bc3dcc342b64f8b531cbe335a76be0faee70de159b23",
+          "file_sha256": "3f032e3af4059e75636f0ecf7df67e1df6411633e617f25c2bd71b273a4c8ca6",
+          "full_master_sha256": "edf61fad3d0394c82e4caa2f74d7c57dcdaf0819e9507a1a1115789f26e3d24c",
+          "native_master_sha256": "260909566e8cf846e45615eff1e1194e0c86f0567bffbfe3c5f4f54aa1a0aec3"
+        },
+        "42": {
+          "acceptance_sha256": "3cc1f69e1a966ee3acb69ef5d33936a42f0410947d5ce4b5588b87cf1fea5598",
+          "file_sha256": "220cf7fb9c8814da0934c5ae6056f018fad663d698852477535c97e80123ec9d",
+          "full_master_sha256": "8c028f32db5a2462b9e27d6c9980778d4345faaadd436e51d09c36254a1d2523",
+          "native_master_sha256": "3c1800a2e61475a81e02359358569e026db2f0f58f87ed98d6795e4b742aba82"
+        }
+      },
+      "diagnostic_definitions": {
+        "box_match_quality": "mask IoU on the same pair selected by native fixed class-aware box matching",
+        "fixed_mask_fn_priority": [
+          "same_class_mask_edge_lost_one_to_one",
+          "wrong_class_mask_overlap",
+          "same_class_box_good_mask_below_50",
+          "same_class_overlap_below_50",
+          "no_same_class_overlap"
+        ],
+        "low_conf_band": "0.001 <= score < 0.25 from standard pass post-NMS predictions",
+        "low_conf_candidate_gt": "GT unmatched by native mask matching on the >=0.25 subset of the standard pass, with >=1 same-class mask IoU >=0.50 candidate in the low band",
+        "mask_overlap_cutoff": 0.5,
+        "nonzero_overlap_criterion": "box IoU or mask IoU strictly above zero"
+      },
+      "endpoints_manifest_sha256": "a598a92e990e645abf70cc5de45052e5c2ba9a9e86227a0def25d9fcb71e1272",
+      "evaluation_source_sha256": {
+        "tools/exp14/a11_full_eval.py": "7a6fc016ac69e8ea0293403c77f5f62df7229f630d9657c4b2e247a2b9dddc46",
+        "tools/exp15/jd.py": "21b7c6019efc76d46e239ba73668fd159af7e8e1152c819a937ec0ff4f3a6947",
+        "tools/exp15/jd_diagnostics.py": "6e42650ac7bb9d2804bda9c6313542e11260b7954cacaf850ded59e355f950ec",
+        "tools/exp16/evaluate.py": "f347a27fa805d3d8f0c705968d74859a1407e3c2b6d927254507865d7ece81b8"
+      },
+      "framework_source_sha256": {
+        "ultralytics/data/augment.py": "d30f823e330ea4d8f165eda6f16e81a8d41acf22918a9c1c97d022b7bfc9dc5a",
+        "ultralytics/data/base.py": "41bb1349e4baa74b94728d2c323fbdd7fd318b1f82b951880b292fb34840dac3",
+        "ultralytics/data/build.py": "2f14a4860a3f18c07ceb14272f0c4b5b482fd4e779ebdd37fa258aefeb80452a",
+        "ultralytics/data/dataset.py": "36aa66daa0949747745b8e1986a812b152dffc7ec050d78e25e37c16285b11c5",
+        "ultralytics/data/utils.py": "3896dc106c2a68425ab0b7b2695e2f6609c98d5ed11c9750be6301e5c8a42173",
+        "ultralytics/engine/trainer.py": "77023dbf526a1b9b6925f1e665fe2c215c913cd65e2c1cf4438301479961d025",
+        "ultralytics/engine/validator.py": "b0d3c7496b38df086ecb0e829fe7946a3f9b82079045914808abf71a824bce6f",
+        "ultralytics/models/yolo/detect/val.py": "18432532b9749b6108afb5b2a17892bb4250cc2952dd2fd2e4647ce6e7776152",
+        "ultralytics/models/yolo/segment/val.py": "701f57cd593609e54930d52b29e2b20734b706f8a2464fd450ec625a3992f4d6",
+        "ultralytics/nn/autobackend.py": "08b52c6d3f851c81583ab01298b2be71511eea446cda57262eb7f8aa2850e1ec",
+        "ultralytics/nn/tasks.py": "2c78d12335ea68411146698ddff9f056e24b3fc1f30ce00efca54837a22ca68f",
+        "ultralytics/utils/loss.py": "dbda30466bcef7f2513699c7a187c4210eb1961d33e3072e3b83ed7206b1d349",
+        "ultralytics/utils/metrics.py": "974116d855398c48cd4cb30919b5ee424f8eaf555198086d7d5dc3068bc71ce2",
+        "ultralytics/utils/nms.py": "d336cff44861dd5c84e7b7020428d9f64b408d7c21cd4b3b17d772f4b455ef83",
+        "ultralytics/utils/torch_utils.py": "357b4eb93788e0e3a93846a4a511d0940ffc089d8e57563df09ec0f78e719336"
+      },
+      "protocol_sha256": "ebbbe80571554dd0dc3f1158c9a95363804e2c1c7238956ed10a554b65abf6ca",
+      "runtime": {
+        "cuda": "12.8",
+        "cuda_devices": 1,
+        "gpu": "NVIDIA GeForce RTX 3080 Ti",
+        "python": "3.12.3",
+        "torch": "2.8.0+cu128",
+        "torchvision": "0.23.0+cu128",
+        "ultralytics": "8.4.117"
+      },
+      "source_archive_sha256": "a4efbad8f425d5cc7dd85bbe378604e5fce5636d728b7fe57ec38240f602f43c"
+    },
+    "model_val_passes": 0,
+    "optimizer_updates": 0,
+    "registered_at": "2026-11-22T02:49:44+08:00",
+    "status": "PASS_EXP16_J3_NO_VAL_INFERENCE_PREFLIGHT",
+    "val_files_sha256": "50e4561534750edc5f1d739c4c8c24591edb6e75a9d70f8d1a640e2bd139c467",
+    "val_images": 154,
+    "val_instances": 296,
+    "val_model_forward_calls": 0,
+    "weights": {
+      "142": {
+        "acceptance_sha256": "22d08a6a37a04fd86249198a32c541d052798b819663ee0e4a73213603ad9274",
+        "arm": "j3",
+        "checkpoint_cpu_synthetic_64_finite_check": true,
+        "epoch": 100,
+        "file_sha256": "77f9f95b4945c157bc49669f667c52eeec07fbad1ed131b4b9a689a69bc8eda7",
+        "full_master_sha256": "5f968365a7aead6ce264463ae1d143538e062b7fe7efb64fd3f627e4ccd37954",
+        "native_constructor_cpu_synthetic_stride_setup": true,
+        "native_master_sha256": "670339c201e0f462c94223703c03ea6b8c1266f2b43c977f1ffb20a63a1a170a",
+        "projection_state_entries_removed": 6,
+        "seed": 142,
+        "strict_native_fp32_load": true,
+        "strict_optimizer_scaler_load": true,
+        "val_model_forward_calls": 0
+      },
+      "242": {
+        "acceptance_sha256": "7a88367e10604ffb3a70bc3dcc342b64f8b531cbe335a76be0faee70de159b23",
+        "arm": "j3",
+        "checkpoint_cpu_synthetic_64_finite_check": true,
+        "epoch": 100,
+        "file_sha256": "3f032e3af4059e75636f0ecf7df67e1df6411633e617f25c2bd71b273a4c8ca6",
+        "full_master_sha256": "edf61fad3d0394c82e4caa2f74d7c57dcdaf0819e9507a1a1115789f26e3d24c",
+        "native_constructor_cpu_synthetic_stride_setup": true,
+        "native_master_sha256": "260909566e8cf846e45615eff1e1194e0c86f0567bffbfe3c5f4f54aa1a0aec3",
+        "projection_state_entries_removed": 6,
+        "seed": 242,
+        "strict_native_fp32_load": true,
+        "strict_optimizer_scaler_load": true,
+        "val_model_forward_calls": 0
+      },
+      "42": {
+        "acceptance_sha256": "3cc1f69e1a966ee3acb69ef5d33936a42f0410947d5ce4b5588b87cf1fea5598",
+        "arm": "j3",
+        "checkpoint_cpu_synthetic_64_finite_check": true,
+        "epoch": 100,
+        "file_sha256": "220cf7fb9c8814da0934c5ae6056f018fad663d698852477535c97e80123ec9d",
+        "full_master_sha256": "8c028f32db5a2462b9e27d6c9980778d4345faaadd436e51d09c36254a1d2523",
+        "native_constructor_cpu_synthetic_stride_setup": true,
+        "native_master_sha256": "3c1800a2e61475a81e02359358569e026db2f0f58f87ed98d6795e4b742aba82",
+        "projection_state_entries_removed": 6,
+        "seed": 42,
+        "strict_native_fp32_load": true,
+        "strict_optimizer_scaler_load": true,
+        "val_model_forward_calls": 0
+      }
+    }
+  },
+  "status": "EXP16_J3_THREE_SEED_TRAIN_VAL_COMPLETE_PENDING_CHATGPT_RESULT_GATE",
+  "test_image_reads": 0,
+  "test_inference": 0,
+  "test_label_reads": 0,
+  "training_updates": 0,
+  "val_bytes_rechecked": true
+}

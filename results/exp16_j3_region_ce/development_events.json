@@ -1,0 +1,49 @@
+{
+  "evaluation_hard_gate_events": 0,
+  "evaluation_retries": 0,
+  "events": [
+    {
+      "event": "UNSCALED_AMP_CE_ENDPOINT_CHECK_STOPPED",
+      "forensic_caveats": [
+        "Forensic receipt recorded post-preprocess batch hash; raw hash was checked before preprocessing.",
+        "Old forensic disabled-equivalence subcheck double-normalized its input; the actual gradient comparison used the once-normalized cached payload.",
+        "Final calibration correctly reran disabled equivalence on raw input and checked24 actual joint gradients."
+      ],
+      "forensic_snapshot_report_sha256": "e070498cc5704985cb2584245acfc5ed7c391d222e57a9460f7a75535fa6ab68",
+      "formal_updates": 0,
+      "optimizer_attempts": 0,
+      "precision_convergence_report_sha256": "5b137fc7ed7061e6190c7b0db9cb830fbb414eeaf7c2c1288f208fa2fda76549",
+      "resolution": "Preserved original output; conditioned independent derivative measurement before a fresh final preparation. Formal AMP unchanged.",
+      "source_head": "64bf9cf25068c92b8cd123072f07b8242be306cf",
+      "stage": "initial_preparation",
+      "val_inference": 0
+    },
+    {
+      "event": "ALL_VALID_CE_SELECTED",
+      "final_policy": "All valid pooled regions; present-class means; equal availability does not imply equal gradient support.",
+      "reason": "Non-anchor SupCon candidates can receive gradient; anchor-only CE withholds some singleton labels.",
+      "stage": "pre_freeze_method_review"
+    },
+    {
+      "details": [
+        "Forensic quoting/import-path setup errors preserved.",
+        "The first protocol metadata builder used the base interpreter; corrected to the pinned virtual environment before formal training."
+      ],
+      "event": "TRANSPORT_OR_IMPORT_FAILURES_BEFORE_SCIENTIFIC_EXECUTION",
+      "formal_or_val_retries": 0,
+      "stage": "development_environment"
+    },
+    {
+      "details": [
+        "Sorted JSON mapping order is not execution order; corrected helper verifies set equality plus durable ledger order.",
+        "CSV BOM handled with UTF-8-sig in the independent file reader."
+      ],
+      "evaluation_retries": 0,
+      "event": "READER_COMPATIBILITY_CORRECTIONS",
+      "frozen_source_changes": false,
+      "model_calls": 0,
+      "stage": "independent_read_only_reviews"
+    }
+  ],
+  "formal_hard_gate_events": 0
+}

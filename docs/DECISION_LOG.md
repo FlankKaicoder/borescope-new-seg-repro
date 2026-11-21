@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp16 frozen region CE result (2026-11-22)
+
+Decision D082. Preserve the valid three-seed negative CE result under fixed lambda 160. J1 exceeds this fixed CE configuration in all seeds; late strength and supervision differ, so no unique causal SupCon claim. No retuning or reruns. Wait for Result Gate. [Handoff](exp16/EXP16_J3_HANDOFF.md).
+
 ## Exp15 J-E2 frozen VAL across three seeds (2026-11-22)
 
 Decision D081. Retain all three preregistered seeds and unrounded paired effects. Apply the fixed 3/3 positive interpretation as preliminary stability on frozen VAL, alongside class and size trade-offs. Preserve the report-only CRLF identity stop and canonical-source correction. Wait for independent Result Gate. [Handoff](exp15/EXP15_JE2_HANDOFF.md).

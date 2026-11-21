@@ -1,0 +1,133 @@
+{
+  "audit_engineering_events": [
+    {
+      "additional_model_calls": 0,
+      "additional_val_passes": 0,
+      "issue": "UTF8_BOM_IN_FROZEN_SPLIT_MANIFEST_HEADER",
+      "resolution": "Read unchanged CSV with utf-8-sig after initial file-audit parser stop"
+    }
+  ],
+  "code_head": "e9b44a65f456b8b64569b39a484823bd777efdbc",
+  "completed_seeds": [
+    42,
+    142,
+    242
+  ],
+  "disk": {
+    "before_val_free_bytes": 7939842048,
+    "final_free_GB": 7.939555328,
+    "final_free_GiB": 7.394287109375,
+    "final_free_bytes": 7939555328,
+    "initial_free_bytes": 11124400128,
+    "post_training_audit_free_bytes": 7973195776
+  },
+  "endpoint_post_val_and_offline_backup_identity": {
+    "142": {
+      "bytes": 46671729,
+      "file_sha256": "77f9f95b4945c157bc49669f667c52eeec07fbad1ed131b4b9a689a69bc8eda7",
+      "native_master_sha256": "670339c201e0f462c94223703c03ea6b8c1266f2b43c977f1ffb20a63a1a170a",
+      "offline_backup_receipt_sha256": "c5054979a45509e0b10c44ae12046ab78454597d4f7cf09321fa49ef6af339c3",
+      "offline_backup_rehashed": true
+    },
+    "242": {
+      "bytes": 46671729,
+      "file_sha256": "3f032e3af4059e75636f0ecf7df67e1df6411633e617f25c2bd71b273a4c8ca6",
+      "native_master_sha256": "260909566e8cf846e45615eff1e1194e0c86f0567bffbfe3c5f4f54aa1a0aec3",
+      "offline_backup_receipt_sha256": "62f46605d7425a02cde7dbe633d646c13ad8f58d2b897f51cf3e5fff2d320a97",
+      "offline_backup_rehashed": true
+    },
+    "42": {
+      "bytes": 46671729,
+      "file_sha256": "220cf7fb9c8814da0934c5ae6056f018fad663d698852477535c97e80123ec9d",
+      "native_master_sha256": "3c1800a2e61475a81e02359358569e026db2f0f58f87ed98d6795e4b742aba82",
+      "offline_backup_receipt_sha256": "9adfccf0bf1ab42c41b1e212722351d9d59e6ce242899916728e1981f95ce968",
+      "offline_backup_rehashed": true
+    }
+  },
+  "endpoints_manifest_sha256": "a598a92e990e645abf70cc5de45052e5c2ba9a9e86227a0def25d9fcb71e1272",
+  "final_training_audit_sha256": "6c34eb61e52154c86b4a1b9847d59b0ce8fa82c1b41f9c2408cf8f81a0b45356",
+  "formal_effective_updates": 6300,
+  "formal_optimizer_attempts": 6300,
+  "historical_checkpoint_member_counts": {
+    "142/j0": 21,
+    "142/j1": 21,
+    "242/j0": 21,
+    "242/j1": 21,
+    "42/j0": 21,
+    "42/j1": 21
+  },
+  "historical_checkpoints_present": 126,
+  "historical_result_files_rehashed": 8,
+  "j0_j1_val_passes_added": 0,
+  "optimizer_updates_during_val": 0,
+  "original_and_staged_val_members_rehashed": 308,
+  "paired_receipt_sha256": "7f89b6c69be1040c84d34af8437c2351fa376b221ded922ce9c4c290468e6215",
+  "pass_receipts": {
+    "142_j3_fixed": {
+      "confidence": 0.25,
+      "diagnostic_trace_sha256": "d2979f7a2f6b8ecd2815b178c3973816f96426cb40e36d3899c4d07734c2d24e",
+      "metrics_sha256": "9dad3b3e74c79e84fef7e2ae809aa468b20b48c66727955f4c061b3afde495e0",
+      "ticket": 4
+    },
+    "142_j3_standard": {
+      "confidence": 0.001,
+      "diagnostic_trace_sha256": "02cf5f5965be3af55fee61226b823753dea76be075fe95e6e1f8b9be1f471e07",
+      "metrics_sha256": "a6c824390ac5d774174be30c34e87b47b97a281449b6ab0a19cf80670ca0ec3c",
+      "ticket": 3
+    },
+    "242_j3_fixed": {
+      "confidence": 0.25,
+      "diagnostic_trace_sha256": "74f6fd20fd17aefa61ca93656effc16786f37df39397fb81e501a998a3b6e6d3",
+      "metrics_sha256": "4c27cefa7b6c12b9c97e41e00ef2079aa24dd1d73a31ac0c85f60d6c0dbb4574",
+      "ticket": 6
+    },
+    "242_j3_standard": {
+      "confidence": 0.001,
+      "diagnostic_trace_sha256": "2a319536fe022fd4fb3d7ab1af5bced0471b1e72999069bae772b2c91b135a03",
+      "metrics_sha256": "c664a82d74511440b169ec57506de8bfbfe1de9db2df1ecf68400037a5651565",
+      "ticket": 5
+    },
+    "42_j3_fixed": {
+      "confidence": 0.25,
+      "diagnostic_trace_sha256": "61696537921f262604acccd739a5dc658ff1fdeebc0bbdb4b17527889e98232a",
+      "metrics_sha256": "20720b148544204732a5f7c89c3b304259a5336e766fe4746bde24c864fcc73c",
+      "ticket": 2
+    },
+    "42_j3_standard": {
+      "confidence": 0.001,
+      "diagnostic_trace_sha256": "f6704517b28020e07d34573f3bd821e8af2a9b73ce603df8077986cb5818cc2d",
+      "metrics_sha256": "463fbbfad4caa140bb21516c5596f8390f2722baf78bc0d97fa6838c0f4efaec",
+      "ticket": 1
+    }
+  },
+  "protected_manifest_sha256": "cef2499b61c07bc608ba8da1846ab5e2de3ad7bc878ff26000765a7a61280889",
+  "protected_members_rehashed": 24,
+  "protocol_sha256": "ebbbe80571554dd0dc3f1158c9a95363804e2c1c7238956ed10a554b65abf6ca",
+  "review": "Independent postflight raw-file, checkpoint and offline-backup byte identity, original/staged VAL members, six durable claims, attempt budget, immutable historical inputs and source review; performance direction does not determine engineering acceptance",
+  "review_model_constructions": 0,
+  "review_model_forwards": 0,
+  "review_optimizer_calls": 0,
+  "reviewed_at": "2026-11-21T18:57:11.107010+00:00",
+  "smoke_effective_updates": 3,
+  "smoke_optimizer_attempts": 3,
+  "source_files_verified": 18,
+  "status": "PASS",
+  "test_image_reads": 0,
+  "test_inference": 0,
+  "test_label_reads": 0,
+  "val_attempts_sha256": "238c49a4717e1b0570a408c34756373ac0f0319f72b36fa933dcb0f7c3da2372",
+  "val_authorization_sha256": "6afa78bcc4b881f928f85322f36b8075fddec062d7e46307e7c3e9be85d6263d",
+  "val_files_sha256": "50e4561534750edc5f1d739c4c8c24591edb6e75a9d70f8d1a640e2bd139c467",
+  "val_instances_verified": 296,
+  "val_order": [
+    "42_j3_standard",
+    "42_j3_fixed",
+    "142_j3_standard",
+    "142_j3_fixed",
+    "242_j3_standard",
+    "242_j3_fixed"
+  ],
+  "val_passes": 6,
+  "val_preflight_sha256": "9960eb559b606fcd8e19b43cef0cd81737547d4e08dd27e4ee84519878e367cd",
+  "val_retries": 0
+}

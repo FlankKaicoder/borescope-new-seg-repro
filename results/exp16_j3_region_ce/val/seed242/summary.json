@@ -1,0 +1,61 @@
+{
+  "pass_receipts": {
+    "fixed": {
+      "completed_at": "2026-11-22T02:51:56+08:00",
+      "diagnostic_trace_sha256": "74f6fd20fd17aefa61ca93656effc16786f37df39397fb81e501a998a3b6e6d3",
+      "metrics_sha256": "4c27cefa7b6c12b9c97e41e00ef2079aa24dd1d73a31ac0c85f60d6c0dbb4574",
+      "weights": {
+        "acceptance_sha256": "7a88367e10604ffb3a70bc3dcc342b64f8b531cbe335a76be0faee70de159b23",
+        "arm": "j3",
+        "checkpoint_cpu_synthetic_64_finite_check": true,
+        "epoch": 100,
+        "file_sha256": "3f032e3af4059e75636f0ecf7df67e1df6411633e617f25c2bd71b273a4c8ca6",
+        "full_master_sha256": "edf61fad3d0394c82e4caa2f74d7c57dcdaf0819e9507a1a1115789f26e3d24c",
+        "mode": "fixed",
+        "native_constructor_cpu_synthetic_stride_setup": true,
+        "native_master_sha256": "260909566e8cf846e45615eff1e1194e0c86f0567bffbfe3c5f4f54aa1a0aec3",
+        "projection_state_entries_removed": 6,
+        "seed": 242,
+        "strict_native_fp32_load": true,
+        "strict_optimizer_scaler_load": true,
+        "val_model_forward_calls": 0
+      }
+    },
+    "standard": {
+      "completed_at": "2026-11-22T02:51:52+08:00",
+      "diagnostic_trace_sha256": "2a319536fe022fd4fb3d7ab1af5bced0471b1e72999069bae772b2c91b135a03",
+      "metrics_sha256": "c664a82d74511440b169ec57506de8bfbfe1de9db2df1ecf68400037a5651565",
+      "weights": {
+        "acceptance_sha256": "7a88367e10604ffb3a70bc3dcc342b64f8b531cbe335a76be0faee70de159b23",
+        "arm": "j3",
+        "checkpoint_cpu_synthetic_64_finite_check": true,
+        "epoch": 100,
+        "file_sha256": "3f032e3af4059e75636f0ecf7df67e1df6411633e617f25c2bd71b273a4c8ca6",
+        "full_master_sha256": "edf61fad3d0394c82e4caa2f74d7c57dcdaf0819e9507a1a1115789f26e3d24c",
+        "mode": "standard",
+        "native_constructor_cpu_synthetic_stride_setup": true,
+        "native_master_sha256": "260909566e8cf846e45615eff1e1194e0c86f0567bffbfe3c5f4f54aa1a0aec3",
+        "projection_state_entries_removed": 6,
+        "seed": 242,
+        "strict_native_fp32_load": true,
+        "strict_optimizer_scaler_load": true,
+        "val_model_forward_calls": 0
+      }
+    }
+  },
+  "primary_metric": {
+    "j0": 0.2568702965649325,
+    "j1": 0.25920905235058367,
+    "j1_minus_j0": 0.002338755785651181,
+    "j1_minus_j3": 0.056782702069209545,
+    "j3": 0.20242635028137412,
+    "j3_minus_j0": -0.054443946283558364,
+    "j3_minus_j1": -0.056782702069209545,
+    "metric": "metrics/mAP50-95(M)",
+    "seed": 242
+  },
+  "seed": 242,
+  "status": "EXP16_J3_THREE_SEED_TRAIN_VAL_COMPLETE_PENDING_CHATGPT_RESULT_GATE",
+  "val_images": 154,
+  "val_instances": 296
+}

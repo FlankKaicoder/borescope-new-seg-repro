@@ -1,0 +1,129 @@
+{
+  "schema": "exp16_post_train_gradient_diagnostic_plan_v1",
+  "registered_at": "2026-11-21T18:01:28.046076+00:00",
+  "purpose": "Interpret late fixed-CE gradient influence on TRAIN without changing training or selection",
+  "protocol_sha256": "ebbbe80571554dd0dc3f1158c9a95363804e2c1c7238956ed10a554b65abf6ca",
+  "preflight_sha256": "d1e72508d83dfdd09cab900c376c86427eb22f52dee5459a493cd35233e8db8b",
+  "launch": "ROOT_ONLY_AFTER_ALL_THREE_FORMAL_AND_INDEPENDENT_AUDITS_PASS",
+  "seeds": [
+    42,
+    142,
+    242
+  ],
+  "checkpoints": [
+    {
+      "epoch": 25,
+      "step": 525,
+      "file": "step_0525.pt"
+    },
+    {
+      "epoch": 100,
+      "step": 2100,
+      "file": "last.pt"
+    }
+  ],
+  "fixed_train_epoch_zero_batches": [
+    1,
+    21
+  ],
+  "lambda_ce": 160.0,
+  "probes": [
+    {
+      "seed": 42,
+      "epoch": 25,
+      "step": 525,
+      "batch": 1
+    },
+    {
+      "seed": 42,
+      "epoch": 25,
+      "step": 525,
+      "batch": 21
+    },
+    {
+      "seed": 42,
+      "epoch": 100,
+      "step": 2100,
+      "batch": 1
+    },
+    {
+      "seed": 42,
+      "epoch": 100,
+      "step": 2100,
+      "batch": 21
+    },
+    {
+      "seed": 142,
+      "epoch": 25,
+      "step": 525,
+      "batch": 1
+    },
+    {
+      "seed": 142,
+      "epoch": 25,
+      "step": 525,
+      "batch": 21
+    },
+    {
+      "seed": 142,
+      "epoch": 100,
+      "step": 2100,
+      "batch": 1
+    },
+    {
+      "seed": 142,
+      "epoch": 100,
+      "step": 2100,
+      "batch": 21
+    },
+    {
+      "seed": 242,
+      "epoch": 25,
+      "step": 525,
+      "batch": 1
+    },
+    {
+      "seed": 242,
+      "epoch": 25,
+      "step": 525,
+      "batch": 21
+    },
+    {
+      "seed": 242,
+      "epoch": 100,
+      "step": 2100,
+      "batch": 1
+    },
+    {
+      "seed": 242,
+      "epoch": 100,
+      "step": 2100,
+      "batch": 21
+    }
+  ],
+  "probe_count": 12,
+  "forward": "NATIVE_CUDA_AMP_ON_FRESH_CHECKPOINT_COPY",
+  "gradient_definition": "actual_joint_minus_native_ratio = norm(g_YOLO_PLUS_160CE - g_YOLO) / norm(g_YOLO); AMP-rounded difference, not pure unweighted CE derivative",
+  "record": [
+    "BB/per-layer/global native and actual joint norms",
+    "native-joint cosine",
+    "gradient clipping coefficients",
+    "actual joint-minus-native ratio",
+    "native/CE/total losses",
+    "CE coverage",
+    "head gradients",
+    "checkpoint/state/BN/RNG identities"
+  ],
+  "optimizer_attempts": 0,
+  "optimizer_updates": 0,
+  "val_inference": 0,
+  "test_inference": 0,
+  "prohibitions": [
+    "No training modification",
+    "No weight adjustment",
+    "No checkpoint selection",
+    "No VAL/TEST",
+    "No automatic inference launch"
+  ],
+  "restore": "Full copied checkpoint model/BN and CPU/CUDA/Python/NumPy RNG after each probe; original checkpoint remains read-only"
+}
