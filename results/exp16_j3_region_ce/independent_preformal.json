@@ -1,0 +1,198 @@
+{
+  "actual_joint_probes": 24,
+  "analytical_probes": 24,
+  "calibration_ce_coverage": {
+    "batches": 70,
+    "batches_with_regions_by_class": [
+      70,
+      68,
+      70,
+      70,
+      61,
+      54,
+      70
+    ],
+    "ce_group_exposures_by_class": [
+      469,
+      262,
+      389,
+      495,
+      142,
+      90,
+      640
+    ],
+    "ce_regions_by_class": [
+      942,
+      309,
+      415,
+      590,
+      143,
+      92,
+      1602
+    ],
+    "valid_regions": 4093,
+    "zero_valid_batches": 0
+  },
+  "calibration_sha256": "7283d95969efd83c8cb52c1c2a46d8588e371f8bd5570628430e52f3fddf3470",
+  "code_head": "e9b44a65f456b8b64569b39a484823bd777efdbc",
+  "disk_free_bytes": 10948861952,
+  "estimated_three_arm_checkpoint_bytes": 2940306831,
+  "formal_optimizer_updates": 0,
+  "lambda_ce": 160,
+  "max_actual_analytic_joint_norm_error_over_native": 0.0006451425735802669,
+  "max_actual_weighted_backbone_ratio": 0.11479925231485613,
+  "min_actual_native_joint_cosine": 0.993411359223734,
+  "old_failure_sha256": "6653d5322d24823dc6c8760af89ee973b0695e3b1c1d868a5aa1b51ca64bfca9",
+  "old_prototype_optimizer_attempts": 0,
+  "preflight_sha256": "d1e72508d83dfdd09cab900c376c86427eb22f52dee5459a493cd35233e8db8b",
+  "required_safety_margin_bytes": 2147483648,
+  "review": "READ_ONLY_JSON_SOURCE_CHECKPOINT_BYTE_AND_NUMERICAL_EVENT_AUDIT_NO_MODEL_FORWARD_OR_OPTIMIZER_CALLS",
+  "reviewed_at": "2026-11-21T17:54:46.226139+00:00",
+  "scientific_limits": [
+    "CE supervises all valid pooled regions; common pool availability does not imply identical per-region gradient support with SupCon",
+    "Conditioned/unscaled auxiliary calibration and actual joint gradients use fixed TRAIN only; early snapshots with a fresh CE head do not determine later auxiliary strength",
+    "Lambda is fixed before formal training; no VAL weight selection; only three fixed seeds and frozen VAL can later support descriptive conclusions"
+  ],
+  "smoke": {
+    "142": {
+      "amp_skips": 0,
+      "attempts": 1,
+      "ce_coverage": {
+        "batches": 1,
+        "batches_with_regions_by_class": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "ce_group_exposures_by_class": [
+          10,
+          2,
+          5,
+          8,
+          1,
+          0,
+          12
+        ],
+        "ce_regions_by_class": [
+          24,
+          2,
+          5,
+          8,
+          1,
+          0,
+          39
+        ],
+        "valid_regions": 79,
+        "zero_valid_batches": 0
+      },
+      "effective_updates": 1
+    },
+    "242": {
+      "amp_skips": 0,
+      "attempts": 1,
+      "ce_coverage": {
+        "batches": 1,
+        "batches_with_regions_by_class": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "ce_group_exposures_by_class": [
+          10,
+          2,
+          7,
+          9,
+          0,
+          0,
+          10
+        ],
+        "ce_regions_by_class": [
+          19,
+          2,
+          8,
+          10,
+          0,
+          0,
+          18
+        ],
+        "valid_regions": 57,
+        "zero_valid_batches": 0
+      },
+      "effective_updates": 1
+    },
+    "42": {
+      "amp_skips": 0,
+      "attempts": 1,
+      "ce_coverage": {
+        "batches": 1,
+        "batches_with_regions_by_class": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "ce_group_exposures_by_class": [
+          9,
+          1,
+          5,
+          6,
+          2,
+          4,
+          9
+        ],
+        "ce_regions_by_class": [
+          28,
+          1,
+          5,
+          7,
+          2,
+          4,
+          15
+        ],
+        "valid_regions": 62,
+        "zero_valid_batches": 0
+      },
+      "effective_updates": 1
+    }
+  },
+  "smoke_identities": {
+    "142": {
+      "checkpoint_sha256": "5608fe45c5b0265e98e93f38c4223c4c5f95cd1784f9aafd092824c8c3e28046",
+      "events_sha256": "bbbef91d46f6e3d8ee67d8b41caabd8d6f419536e75aa18f51c1a18e7005a735",
+      "summary_sha256": "a69be39e73a577a48e7869ce96161bd04aca465b4437ac5f3c01d92058586550",
+      "ticket_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    "242": {
+      "checkpoint_sha256": "a4e4e435d22a0976bb0c4b9f0fc06ec38cc2f7a036e9d3f3024fdbc43dede71e",
+      "events_sha256": "546b9ae171f6a908e43dbd0543864ee4de437dd91ac4ddbafb2516805b6c2613",
+      "summary_sha256": "64006939a668a46de6d17dbf56f604f882fe2db90ccdb4ff1fc4fbc3651975c2",
+      "ticket_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    "42": {
+      "checkpoint_sha256": "86a7722e9a9eb3ecbf7750b8645aae3ac8a0ec26248f99bdede462522e4b3f01",
+      "events_sha256": "c9cef234fb963455aa00a399bc201123ea272a9bd38ce89ed8bb59e8e2ad093a",
+      "summary_sha256": "52c190e2615c75595459af2168bd0f0e2efe6f9cb9ceba59c1ef83687bb61f93",
+      "ticket_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    }
+  },
+  "source_files_verified": 18,
+  "status": "PASS",
+  "test_inference": 0,
+  "val_inference": 0,
+  "weighted_snapshot_backbone_medians": {
+    "coco_init": 0.022017007471873126,
+    "ja_j0_step70_fresh_ce_head": 0.0464301164547902,
+    "ja_j1_step70_fresh_ce_head": 0.04858403291040549
+  }
+}
