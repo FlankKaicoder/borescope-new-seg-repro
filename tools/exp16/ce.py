@@ -1,4 +1,4 @@
-"""Ordinary region CE on exactly the frozen J1 polygon/anchor exposure."""
+"""Ordinary class-mean CE on all valid frozen J1 pooled Polygon regions."""
 
 import numpy as np
 import torch
@@ -21,17 +21,32 @@ def add_head(model):
 
 
 def region_cross_entropy(embedding, regions, classifier):
-    """Average classes equally, then average the same eligible anchors as J1."""
-    _, _, active = regions.pairs()
-    require(active.any() and embedding.shape == (int((regions.cells > 0).sum()), 128),
-            "No eligible CE regions or unexpected projected feature shape")
-    labels = regions.classes[regions.cells > 0][active]
+    """Average classes equally over all valid regions, without pair eligibility."""
+    labels = regions.classes[regions.cells > 0]
+    require(len(labels) > 0 and embedding.shape == (len(labels), 128),
+            "No valid CE regions or unexpected projected feature shape")
     weights = 1 / np.bincount(labels, minlength=7)[labels]
     with torch.autocast(embedding.device.type, enabled=False):
-        logits = classifier(embedding.float()[torch.as_tensor(active, device=embedding.device)])
+        logits = classifier(embedding.float())
         loss = F.cross_entropy(logits, torch.as_tensor(labels, device=embedding.device), reduction="none")
         weight = torch.as_tensor(weights / weights.sum(), dtype=torch.float32, device=embedding.device)
         return (loss * weight).sum()
+
+
+def coverage(regions):
+    keep = regions.cells > 0
+    classes, groups = regions.classes[keep], regions.groups[keep]
+    return {"valid_regions": int(keep.sum()),
+            "ce_regions_by_class": np.bincount(classes, minlength=7).tolist(),
+            "ce_groups_by_class": [len(set(groups[classes == c])) for c in range(7)]}
+
+
+def summarize_coverage(rows):
+    return {"batches": len(rows), "zero_valid_batches": sum(r["valid_regions"] == 0 for r in rows),
+            "valid_regions": sum(r["valid_regions"] for r in rows),
+            "ce_regions_by_class": np.sum([r["ce_regions_by_class"] for r in rows], axis=0).tolist(),
+            "ce_group_exposures_by_class": np.sum([r["ce_groups_by_class"] for r in rows], axis=0).tolist(),
+            "batches_with_regions_by_class": np.count_nonzero([r["ce_regions_by_class"] for r in rows], axis=0).tolist()}
 
 
 def forward(model, batch, regions, read_bn=None):

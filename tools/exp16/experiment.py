@@ -1,6 +1,7 @@
 """TRAIN-only preparation and sequential, explicitly bound Exp16 J3 execution."""
 
 import argparse
+import copy
 import gc
 import json
 import math
@@ -17,6 +18,7 @@ import torch
 from ultralytics.utils.torch_utils import autocast
 
 from tools.exp14.a11_full_protocol import source_sha256
+from tools.exp14.a11_full_numerics import capture_rng_state, restore_rng_state
 from tools.exp14.a11_smoke_numerics import finite_tree
 from tools.exp14.audit_admission import require, sha256_file
 from tools.exp14.formal_e0_e1 import hash_state
@@ -30,6 +32,7 @@ PARENT = "401210427a61f3430f18bb4fe93261c911f66080"
 JE0_SHA = "1e114398c58a87337a1addbc4392b4485e651f928e95ca9d8c189af52972a305"
 SEEDS = (42, 142, 242)
 PROBES = (1, 7, 11, 21, 32, 42, 56, 70)
+AUXILIARY_DIAGNOSTIC_SCALE = 16384.0
 
 
 def load(p):
@@ -105,8 +108,9 @@ def use_trainer(env, seed, output, identity, action):
 def gradients(model, native, auxiliary):
     names, params = zip(*[(n, p) for n, p in model.named_parameters() if p.requires_grad])
     y = torch.autograd.grad(native, params, retain_graph=True, allow_unused=True)
-    s = torch.autograd.grad(auxiliary, params, allow_unused=True)
-    require(finite_tree((y, s)), "Calibration nonfinite gradients")
+    scaled = torch.autograd.grad(auxiliary*AUXILIARY_DIAGNOSTIC_SCALE, params, allow_unused=True)
+    s = tuple(None if value is None else value.float()/AUXILIARY_DIAGNOSTIC_SCALE for value in scaled)
+    require(finite_tree((y, scaled, s)), "Calibration nonfinite gradients")
     def stats(indexes):
         n, a = (jb.grad_norm([g[i] for i in indexes]) for g in (y, s))
         dot = jb.dot([y[i] for i in indexes], [s[i] for i in indexes])
@@ -117,11 +121,10 @@ def gradients(model, native, auxiliary):
     result = {"backbone": stats(back), "global": stats(list(range(len(names)))),
               "layers": {layer: stats([i for i,n in enumerate(names) if jb.native_layer(n) == layer])
                          for layer in dict.fromkeys(map(jb.native_layer,names))}}
-    require(result["backbone"]["nonzero_aux_tensors"] == 120
-            and result["layers"]["projection"]["nonzero_aux_tensors"] == 6
-            and not any(row["nonzero_aux_tensors"] for layer,row in result["layers"].items()
-                        if layer != "projection" and int(layer) > 16),
-            "CE auxiliary gradient endpoint mismatch")
+    result["endpoint_valid"] = (result["backbone"]["nonzero_aux_tensors"] == 120
+        and result["layers"]["projection"]["nonzero_aux_tensors"] == 6
+        and not any(row["nonzero_aux_tensors"] for layer,row in result["layers"].items()
+                    if layer != "projection" and int(layer) > 16))
     return result
 
 
@@ -133,10 +136,33 @@ def weighted(row, weight):
             "joint_norm": joint, "clip_native": min(1,10/(n+1e-6)), "clip_joint": min(1,10/(joint+1e-6))}
 
 
+def actual_joint_probe(model,native,auxiliary,weight,analytical):
+    """Measure the actual AMP joint derivative at the fixed candidate weight."""
+    names,params=zip(*[(n,p) for n,p in model.named_parameters() if p.requires_grad])
+    y=torch.autograd.grad(native,params,retain_graph=True,allow_unused=True)
+    joint=torch.autograd.grad(native+weight*auxiliary,params,allow_unused=True)
+    require(finite_tree((y,joint)),"Selected-weight native/joint gradient is nonfinite")
+    def scope(indexes,expected):
+        n=jb.grad_norm([y[i] for i in indexes]);j=jb.grad_norm([joint[i] for i in indexes])
+        delta=[(torch.zeros_like(params[i]) if joint[i] is None else joint[i])
+               -(torch.zeros_like(params[i]) if y[i] is None else y[i]) for i in indexes]
+        return {"native_norm":n,"joint_norm":j,"weighted_ratio":jb.grad_norm(delta)/n if n else None,
+                "native_joint_cosine":jb.dot([y[i] for i in indexes],[joint[i] for i in indexes])/(n*j) if n and j else None,
+                "analytic_joint_norm":expected["joint_norm"],
+                "analytic_joint_norm_error_over_native":abs(j-expected["joint_norm"])/n if n else None,
+                "clip_native":min(1.0,10/(n+1e-6)),"clip_joint":min(1.0,10/(j+1e-6))}
+    backbone=[i for i,n in enumerate(names) if n.startswith("model.") and int(jb.native_layer(n))<=10]
+    return {"backbone":scope(backbone,analytical["backbone"]),
+            "global":scope(list(range(len(names))),analytical["global"]),
+            "joint_head_nonzero_tensors":sum(joint[i] is not None and bool(joint[i].count_nonzero())
+                                             for i,n in enumerate(names) if n.startswith(ce.HEAD_PREFIX))}
+
+
 def calibrate(trainer, prior, config):
     trainer.setup()
     require(trainer.initial_native == prior["native_initial_sha256"], "CE calibration native init mismatch")
     initial = {k:v.detach().cpu().clone() for k,v in trainer.model.state_dict().items()}
+    pristine_rng = capture_rng_state()
     head = {k:v for k,v in initial.items() if k.startswith(ce.HEAD_PREFIX)}
     ja_public = load(BASE / "results/exp15_ja/summary.json")
     _, previous = jb.read_reference(Path(config["ja_root"]), ja_public)
@@ -147,10 +173,12 @@ def calibrate(trainer, prior, config):
     private = trainer.output / "private_binding"
     private.mkdir()
     counts, featured, probes = Counter(), set(), []
+    cached_batches, ce_counts = {}, []
     disabled_equivalence = None
     for step, batch in jb.matched_batches(trainer, 70):
         require(ja.batch_digest(batch) == prior["batch_tensor_sha256"][step-1], "TRAIN calibration trajectory mismatch")
         region = inspect_regions(batch, trainer.groups)
+        ce_counts.append(ce.coverage(region))
         require(region.report() == prior["per_batch_regions"][step-1], "CE/J1 region eligibility differs")
         counts.update(check_pool_tags(batch, trainer.groups, private, featured))
         if step == 1:
@@ -160,6 +188,7 @@ def calibrate(trainer, prior, config):
                     "Native equivalence diagnostic did not restore initial BN")
         if step not in PROBES:
             continue
+        cached_batches[step]=copy.deepcopy({k:v for k,v in batch.items() if k != "jb_binding"})
         payload = trainer.preprocess_batch({k:v for k,v in batch.items() if k != "jb_binding"})
         for label, state in snapshots.items():
             trainer.model.load_state_dict(state, strict=True)
@@ -167,25 +196,72 @@ def calibrate(trainer, prior, config):
                 y, parts, aux = ce.forward(trainer.model, payload, region, lambda: ja.bn_fingerprint(trainer.model))
             require(finite_tree((y,parts,aux)), "Calibration nonfinite loss")
             probes.append({"batch":step, "snapshot":label, "native_loss":float(y.detach()),
-                           "ce_loss":float(aux.detach()), "coverage":region.report(), **gradients(trainer.model,y,aux)})
+                           "ce_loss":float(aux.detach()), "coverage":region.report(), "ce_coverage":ce.coverage(region),
+                           **gradients(trainer.model,y,aux)})
+    write(trainer.output/"raw_gradient_probes.json",{"optimizer_attempts":0,
+        "diagnostic_scale":AUXILIARY_DIAGNOSTIC_SCALE,"probes":probes,"binding":dict(counts)})
+    require(all(p["endpoint_valid"] for p in probes),"CE auxiliary gradient endpoint mismatch")
     medians = {label:statistics.median(p["backbone"]["ratio"] for p in probes if p["snapshot"]==label) for label in snapshots}
-    raw = min(.05/max(medians.values()), .19/max(p["backbone"]["ratio"] for p in probes))
+    lower=.01/min(medians.values())
+    upper=min(.10/max(medians.values()),.19/max(p["backbone"]["ratio"] for p in probes))
+    target=.05/max(medians.values())
+    selection={"lower":lower,"upper":upper,"target":target,
+        "lower_definition":"0.01/min_snapshot_median",
+        "upper_definition":"min(0.10/max_snapshot_median,0.19/max_probe_ratio)",
+        "target_definition":"0.05/max_snapshot_median",
+        "rounding":"two-significant-digit floor; ceil only if floor falls below lower; require <= upper"}
+    write(trainer.output/"selection_interval.json",selection)
+    require(lower<=upper,"No feasible conservative CE gradient-strength interval")
+    raw=min(max(target,lower),upper)
     quantum = 10**(math.floor(math.log10(raw))-1)
     weight = math.floor(raw/quantum)*quantum
+    if weight<lower:
+        weight=math.ceil(raw/quantum)*quantum
+    selection.update(clamped_target=raw,quantum=quantum,lambda_ce_candidate=weight)
+    write(trainer.output/"weight_candidate.json",selection)
+    require(lower<=weight<=upper,"Rounded fixed CE weight does not fit the feasible interval")
     for p in probes:
         p["backbone"] = weighted(p["backbone"],weight)
         p["global"] = weighted(p["global"],weight)
         p["layers"] = {k:weighted(v,weight) for k,v in p["layers"].items()}
         p["joint_loss"] = p["native_loss"]+weight*p["ce_loss"]
+    actual=[]
+    lookup={(p["batch"],p["snapshot"]):p for p in probes}
+    for step,batch in cached_batches.items():
+        region=inspect_regions(batch,trainer.groups)
+        payload=trainer.preprocess_batch(dict(batch))
+        for label,state in snapshots.items():
+            trainer.model.load_state_dict(state,strict=True)
+            restore_rng_state(pristine_rng)
+            with autocast(trainer.amp,device="cuda"):
+                y,parts,aux=ce.forward(trainer.model,payload,region,lambda:ja.bn_fingerprint(trainer.model))
+            require(finite_tree((y,parts,aux)),"Selected-weight recheck loss is nonfinite")
+            actual.append({"batch":step,"snapshot":label,"native_loss":float(y.detach()),
+                "ce_loss":float(aux.detach()),"joint_loss":float((y+weight*aux).detach()),
+                **actual_joint_probe(trainer.model,y,aux,weight,lookup[(step,label)])})
+    trainer.model.load_state_dict(initial,strict=True)
+    restore_rng_state(pristine_rng)
+    require(hash_state(trainer.model.state_dict())==hash_state(initial)
+            and ja.bn_fingerprint(trainer.model)==trainer.initial_bn,"Calibration failed to restore pristine state")
+    evidence={"optimizer_attempts":0,"lambda_ce":weight,"diagnostic_scale":AUXILIARY_DIAGNOSTIC_SCALE,
+        "snapshot_raw_medians":medians,"selection":selection,"analytical_probes":probes,"actual_joint_probes":actual,
+        "ce_coverage":ce.summarize_coverage(ce_counts),"binding":dict(counts),"featured":sorted(featured)}
+    write(trainer.output/"selected_weight_measurements.json",evidence)
     require(all(.01 <= weight*x <= .10 for x in medians.values())
             and min(p["backbone"]["native_joint_cosine"] for p in probes) >= .98,
             "Conservative TRAIN gradient strength screen did not pass")
+    require(all(p["backbone"]["weighted_ratio"]<=.20 and p["backbone"]["native_joint_cosine"]>=.98
+                and p["joint_head_nonzero_tensors"]==6
+                and all(p[scope]["analytic_joint_norm_error_over_native"]<.005 for scope in ("backbone","global"))
+                for p in actual),"Actual selected-weight joint gradients failed the conservative screen")
     require(featured == {"high_overlap","small_polygon","thin_crack","mixed_class"}
             and trainer.audit.optimizer_attempts == 0, "Binding coverage or zero-update calibration failed")
     return {"status":"PASS_TRAIN_CE_CALIBRATION", "lambda_ce":weight, "optimizer_attempts":0,
             "disabled_equivalence":disabled_equivalence,
-            "joint_gradient_computation":"Exact linear-combination identity reconstructed from independent native and CE gradients; no third backward",
-            "selection":"two_significant_digit_floor(min(0.05/max_snapshot_median,0.19/max_probe_ratio))",
+            "joint_gradient_computation":"Independent native and diagnostically scaled/unscaled CE derivatives; actual joint backward rechecked on all fresh matched states",
+            "auxiliary_diagnostic_scale":AUXILIARY_DIAGNOSTIC_SCALE,"actual_joint_probes":actual,
+            "ce_coverage":ce.summarize_coverage(ce_counts),
+            "selection":selection,
             "snapshot_raw_medians":medians, "probes":probes, "binding":dict(counts), "featured":sorted(featured),
             "initial_bn_sha256":trainer.initial_bn, "initial_native_sha256":trainer.initial_native,
             "limitation":"Early frozen native snapshots with a fresh CE head; later trained auxiliary strength may differ"}

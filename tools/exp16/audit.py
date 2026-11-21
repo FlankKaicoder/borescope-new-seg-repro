@@ -34,6 +34,33 @@ def write(path, value):
         out.write("\n")
 
 
+def check_ce_coverage(geometry, supervised, images):
+    """Verify CE uses every nonempty pooled polygon, including non-anchors."""
+    require(set(supervised) == {"valid_regions", "ce_regions_by_class", "ce_groups_by_class"},
+            "J3 CE supervision fields differ")
+    counts, groups = supervised["ce_regions_by_class"], supervised["ce_groups_by_class"]
+    expected = [n - missing for n, missing in zip(
+        geometry["targets_by_class"], geometry["raster_missing_by_class"], strict=True)]
+    require(len(counts) == len(groups) == len(expected) == 7
+            and type(supervised["valid_regions"]) is int
+            and all(type(n) is int and n >= 0 for n in counts + groups)
+            and counts == expected and sum(counts) == supervised["valid_regions"]
+            == geometry["targets"] - geometry["missing_native_raster"] > 0,
+            "J3 CE did not supervise all valid polygon regions")
+    require(all((group == 0 if count == 0 else 1 <= group <= min(count, images))
+                and group >= eligible for count, group, eligible in zip(
+                    counts, groups, geometry["eligible_groups_by_class"], strict=True)),
+            "J3 CE source-group support bounds differ")
+
+
+def summarize_ce_coverage(rows):
+    return {"batches": len(rows), "valid_regions": sum(r["valid_regions"] for r in rows),
+            "zero_valid_batches": sum(r["valid_regions"] == 0 for r in rows),
+            "ce_regions_by_class": [sum(r["ce_regions_by_class"][c] for r in rows) for c in range(7)],
+            "ce_group_exposures_by_class": [sum(r["ce_groups_by_class"][c] for r in rows) for c in range(7)],
+            "batches_with_regions_by_class": [sum(r["ce_regions_by_class"][c] > 0 for r in rows) for c in range(7)]}
+
+
 def strict_terminal(record):
     """Construct the declared architecture independently of the training loader."""
     require(record["class_names"] == dict(enumerate(CLASSES)), "J3 class mapping differs")
@@ -138,7 +165,7 @@ def audit_arm(root, seed, baseline_root, protocol, expected_identity=None):
     for arm, ref in references.items():
         require(len(ref["batch_read"]) == len(ref["jb_update"]) == STEPS, "Historical complete trajectory missing")
         audit_jc.compare_batches(batches, ref["batch_read"], STEPS)
-    coverage, rows, stats, seen = [], [], collections.Counter(), set()
+    coverage, ce_coverage, rows, stats, seen = [], [], [], collections.Counter(), set()
     max_lr_error, scale_changes = 0.0, []
     for i, (batch, up, declared) in enumerate(zip(batches, updates, summary["updates"], strict=True), 1):
         epoch, tail = (i - 1) // 21 + 1, i % 21 == 0
@@ -160,7 +187,9 @@ def audit_arm(root, seed, baseline_root, protocol, expected_identity=None):
             prior = ref["jb_update"][i-1]
             require(up["batch_sha256"] == prior["batch_sha256"] and up["lr"] == prior["lr"],
                     f"J3 augmented input/schedule differs from {arm} at {i}")
-        require(up["coverage"] == references["j1"]["jb_update"][i-1]["coverage"], "J3 regional exposure differs from J1")
+        require(up["coverage"] == references["j1"]["jb_update"][i-1]["coverage"],
+                "J3 polygon geometry or pooled-region availability differs from J1")
+        check_ce_coverage(up["coverage"], up["ce_coverage"], len(paths))
         opt = up["optimizer"]
         require(opt["effective_update"] == i and opt["optimizer_attempted"] and opt["native_step_called"]
                 and opt["parameter_changed"] and opt["model_state_fp32_finite"] and opt["optimizer_state_finite"]
@@ -175,18 +204,20 @@ def audit_arm(root, seed, baseline_root, protocol, expected_identity=None):
                 and up["global_gradient_norm"] == opt["gradient_norm"] > 0
                 and math.isclose(up["total_loss"], up["native_loss"]+weight*up["ce_loss"], rel_tol=3e-7, abs_tol=2e-5)
                 and math.isclose(up["clip_coef"], min(1.0, 10.0/(opt["gradient_norm"]+1e-6)), abs_tol=1e-14)
-                and up["projection_nonzero_gradients"] == 6 and up["coverage"]["eligible_anchors"] > 0
+                and up["projection_nonzero_gradients"] == 6
                 and up["coverage"]["targets"] == sum(augmented)
                 and up["lambda_ce"] == weight
                 and up["bn_native_only_check"] == (i in (1, 64, 70) or (i-1) % 21 == 0),
                 "J3 CE equation/gradient/coverage/BN audit differs")
         coverage.append(up["coverage"])
+        ce_coverage.append(up["ce_coverage"])
         stats.update(images=len(paths), raw=sum(raw), augmented=sum(augmented), bn=up["bn_native_only_check"],
                      clipped=up["clip_coef"] < 1)
         rows.append((i, epoch, len(paths), sum(raw), sum(augmented), audit_jc.digest(paths), up["batch_sha256"], *up["lr"]))
     require(stats["images"] == 66800 and stats["raw"] == 126600 and scale_changes == [2000]
             and summary["coverage"] == ja.summarize_regions(coverage)
-            and all(summary["coverage"]["eligible_anchors_by_class"])
+            and summary["ce_coverage"] == summarize_ce_coverage(ce_coverage)
+            and all(summary["ce_coverage"]["ce_regions_by_class"])
             and summary["counts"] == {"all_original": STEPS, "augmented_instances": stats["augmented"],
                 "batches_read": STEPS, "original_exposures": stats["images"], "raw_instance_exposures": stats["raw"],
                 "repair_exposures": 0}, "J3 total exposure/coverage/scaler trajectory differs")
@@ -194,12 +225,16 @@ def audit_arm(root, seed, baseline_root, protocol, expected_identity=None):
     result = {"status": PASS, "seed": seed, "arm": "j3", "matched_native_batches": STEPS,
               "matched_historical_arms": ["j0", "j1"], "matched_initial_native_optimizer_and_bn": True,
               "matched_main_sampling_augmentation_exposure_lr_and_regions": True,
+              "region_comparison": "SAME_POLYGON_GEOMETRY_AND_VALID_POOLED_REGION_AVAILABILITY",
+              "ce_supervision": "ALL_VALID_POOLED_REGIONS_CLASS_BALANCED_MEAN",
+              "identical_per_region_gradient_support_claimed": False,
               "effective_updates": STEPS, "optimizer_attempts": STEPS, "amp_skips": 0,
               "initial_native_sha256": summary["initial_native_sha256"], "lambda_ce": weight,
               "exposure": dict(stats), "max_lr_absolute_error": max_lr_error, "amp_growth_after_steps": scale_changes,
               "terminal_strict_cpu_reload": True, "stripped_native_synthetic_prediction": True,
               "checkpoints": history, "endpoint": history[-1], "runtime": summary["runtime"],
-              "coverage": summary["coverage"], "peak_allocated_bytes": summary["peak_allocated_bytes"],
+              "coverage": summary["coverage"], "ce_coverage": summary["ce_coverage"],
+              "peak_allocated_bytes": summary["peak_allocated_bytes"],
               "peak_reserved_bytes": summary["peak_reserved_bytes"], "elapsed_seconds": summary.get("elapsed_seconds"),
               "events_sha256": sha256_file(run / "events.jsonl"), "summary_sha256": sha256_file(run / "summary.json"),
               "tickets_sha256": sha256_file(tickets), "exit_timestamp": exit_row[0], "val_inference": 0, "test_inference": 0}

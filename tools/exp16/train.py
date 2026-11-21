@@ -136,7 +136,7 @@ def run_arm(trainer, prior, gate, budget, lambda_ce, formal=False):
     if "native_groups" in gate:
         require(native_groups == gate["native_groups"], "J3 native optimizer groups differ from frozen J0")
     before = hash_state(backbone), hash_state(head)
-    reports, coverage, checkpoints = [], [], {}
+    reports, coverage, ce_coverage, checkpoints = [], [], [], {}
     torch.cuda.reset_peak_memory_stats()
     for step, batch in jb.matched_batches(trainer, limit):
         digest = ja.batch_digest(batch)
@@ -147,6 +147,7 @@ def run_arm(trainer, prior, gate, budget, lambda_ce, formal=False):
                     f"J3 native LR differs at step {step}")
         regions = inspect_regions(batch, trainer.groups)
         roi = regions.report()
+        ce_roi = ce.coverage(regions)
         if step <= len(prior.get("per_batch_regions", [])):
             require(roi == prior["per_batch_regions"][step - 1], "J3 region exposure differs from frozen J1")
         timed = time.perf_counter()
@@ -182,7 +183,8 @@ def run_arm(trainer, prior, gate, budget, lambda_ce, formal=False):
                   "audited_seconds": time.perf_counter() - timed}
         reports.append(report)
         coverage.append(roi)
-        trainer.event("jb_update", **report, coverage=roi, optimizer=numeric)
+        ce_coverage.append(ce_roi)
+        trainer.event("jb_update", **report, coverage=roi, ce_coverage=ce_roi, optimizer=numeric)
         if step in (1, limit) or (formal and step % 105 == 0):
             require(hash_state(backbone) != before[0] and hash_state(head) != before[1],
                     "J3 backbone or auxiliary head did not update")
@@ -202,4 +204,5 @@ def run_arm(trainer, prior, gate, budget, lambda_ce, formal=False):
             "projection_before": before[1], "projection_after": hash_state(head),
             "peak_allocated_bytes": torch.cuda.max_memory_allocated(),
             "peak_reserved_bytes": torch.cuda.max_memory_reserved(), "coverage": ja.summarize_regions(coverage),
+            "ce_coverage": ce.summarize_coverage(ce_coverage),
             "updates": reports, "elapsed_seconds": time.perf_counter() - started}
