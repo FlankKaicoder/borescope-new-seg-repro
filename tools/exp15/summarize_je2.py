@@ -86,7 +86,7 @@ def reconcile_passes(root):
             and prep["status"] == "PASS_JE2_NO_VAL_INFERENCE_PREFLIGHT"
             and prep["identity"]["protocol_sha256"] == je2.PROTOCOL_SHA
             and prep["val_files_sha256"] == je2.VAL_FILES_SHA
-            and prep["model_val_passes"] == prep["model_forward_calls"] == prep["optimizer_updates"] == 0
+            and prep["model_val_passes"] == prep["val_model_forward_calls"] == prep["optimizer_updates"] == 0
             and prep["val_images"] == 154 and prep["val_instances"] == 296,
             "Eight-pass receipt is not bound to its saved preflight")
     require(set(receipt["passes"]) == set(je2.PASSES)
