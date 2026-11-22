@@ -1,0 +1,110 @@
+{
+  "class_evidence_routes_field_meaning": "Original summary class_group_coverage.evidence_routes counts the untouched Exp17-E evidence_route strings among the final pool, including rows now accepted by the user. It is not the final evidence-tier partition. Use the explicitly separated tiers below.",
+  "class_group_final_evidence_tiers": {
+    "Burn": {
+      "final_evidence_tiers": {
+        "CROP_EXACT_REVIEWED_TARGET_PIXEL_DERIVATION": 2,
+        "EXACT_REVIEWED_ALIGNED_REGION": 46,
+        "NEW_USER_ACCEPT_CURRENT_A10_ALIGNED": 8,
+        "RAW_INFERENTIAL_REGION_INHERITANCE_VIA_FROZEN_H": 12
+      },
+      "independent_source_groups": 38,
+      "new_user_accept_by_asset_type": {
+        "ALIGNED": 8
+      },
+      "pending_data_gate_polygons": 68
+    },
+    "Crack": {
+      "final_evidence_tiers": {
+        "CROP_EXACT_REVIEWED_TARGET_PIXEL_DERIVATION": 1,
+        "EXACT_REVIEWED_ALIGNED_REGION": 49,
+        "NEW_USER_ACCEPT_CURRENT_A10_ALIGNED": 3,
+        "NEW_USER_ACCEPT_CURRENT_A10_RAW": 1,
+        "RAW_INFERENTIAL_REGION_INHERITANCE_VIA_FROZEN_H": 11
+      },
+      "independent_source_groups": 51,
+      "new_user_accept_by_asset_type": {
+        "ALIGNED": 3,
+        "RAW": 1
+      },
+      "pending_data_gate_polygons": 65
+    },
+    "Dent": {
+      "final_evidence_tiers": {
+        "BOUNDED_EXACT_REVIEWED_TARGET_PIXEL_DERIVATION": 1,
+        "EXACT_REVIEWED_ALIGNED_REGION": 90,
+        "NEW_USER_ACCEPT_CURRENT_A10_ALIGNED": 4,
+        "RAW_INFERENTIAL_REGION_INHERITANCE_VIA_FROZEN_H": 1
+      },
+      "independent_source_groups": 86,
+      "new_user_accept_by_asset_type": {
+        "ALIGNED": 4
+      },
+      "pending_data_gate_polygons": 96
+    },
+    "Material missing": {
+      "final_evidence_tiers": {
+        "EXACT_REVIEWED_ALIGNED_REGION": 63,
+        "NEW_USER_ACCEPT_CURRENT_A10_ALIGNED": 17,
+        "RAW_INFERENTIAL_REGION_INHERITANCE_VIA_FROZEN_H": 1
+      },
+      "independent_source_groups": 78,
+      "new_user_accept_by_asset_type": {
+        "ALIGNED": 17
+      },
+      "pending_data_gate_polygons": 81
+    },
+    "Tears": {
+      "final_evidence_tiers": {
+        "EXACT_REVIEWED_ALIGNED_REGION": 40
+      },
+      "independent_source_groups": 38,
+      "new_user_accept_by_asset_type": {},
+      "pending_data_gate_polygons": 40
+    },
+    "Tip curl": {
+      "final_evidence_tiers": {},
+      "independent_source_groups": 0,
+      "new_user_accept_by_asset_type": {},
+      "pending_data_gate_polygons": 0
+    },
+    "corrosion": {
+      "final_evidence_tiers": {
+        "CROP_EXACT_REVIEWED_TARGET_PIXEL_DERIVATION": 1,
+        "EXACT_REVIEWED_ALIGNED_REGION": 171,
+        "NEW_USER_ACCEPT_CURRENT_A10_ALIGNED": 30,
+        "NEW_USER_ACCEPT_CURRENT_A10_RAW": 2,
+        "RAW_INFERENTIAL_REGION_INHERITANCE_VIA_FROZEN_H": 10
+      },
+      "independent_source_groups": 79,
+      "new_user_accept_by_asset_type": {
+        "ALIGNED": 30,
+        "RAW": 2
+      },
+      "pending_data_gate_polygons": 214
+    }
+  },
+  "final_evidence_tier_counts": {
+    "BOUNDED_EXACT_REVIEWED_TARGET_PIXEL_DERIVATION": 1,
+    "CROP_EXACT_REVIEWED_TARGET_PIXEL_DERIVATION": 4,
+    "EXACT_REVIEWED_ALIGNED_REGION": 459,
+    "NEW_USER_ACCEPT_CURRENT_A10_ALIGNED": 62,
+    "NEW_USER_ACCEPT_CURRENT_A10_RAW": 3,
+    "RAW_INFERENTIAL_REGION_INHERITANCE_VIA_FROZEN_H": 35
+  },
+  "formal_trusted_pairs": 0,
+  "independent_data_gate": "NOT_GRANTED",
+  "new_approvals_created_by_audit": 0,
+  "new_model_runs": 0,
+  "new_user_approvals_field_meaning": "The original summary value new_user_approvals=0 means no human approval was invented by this audit; it does not mean the65 actual user ACCEPT decisions were absent.",
+  "original_executed_code_sha256": "eef790284a35c752c7c28b0a9f0f8ff598104b5c96f4401b81fe1ebc16e5af70",
+  "original_summary_sha256": "503436631c9336dd3cd0560434959ac42511f655cbddece5bc7894755b5356b7",
+  "prior_files_modified": 0,
+  "raw_split": {
+    "historical_raw_inferential_inheritance": 35,
+    "new_user_accept_current_raw": 3
+  },
+  "status": "INTERPRETATION_CLARIFICATION_NO_PRIOR_RECEIPT_CHANGED",
+  "user_accept_decisions_imported": 65,
+  "user_reject_decisions_imported": 4
+}

@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp17-F user review reconciliation (2026-11-22)
+
+EXP17_F_USER_REVIEW_RECONCILIATION_PENDING_CHATGPT_DATA_GATE. Exact 69-row import yields 65 ACCEPT / four REJECT; the complete 576-row ledger retains 499 inherited, 65 newly accepted, four excluded and eight technical HOLD. The 564 candidates / 353 groups remain unapproved. All 69 bindings reproduce after narrowly scoped coordinate serialization compatibility. [Handoff](exp17f/EXP17_F_HANDOFF.md) · [Evidence limits](exp17f/EXP17_F_EVIDENCE_LIMITS.md) · [Summary](../results/exp17f_user_review_reconciliation/summary.json) · [Compatibility](../results/exp17f_user_review_reconciliation/compatibility_summary.json).
+
 ## Exp17-E A10 S379 Polygon expansion (2026-11-22)
 
 EXP17_E_A10_379_POLYGON_EXPANSION_COMPLETE_PENDING_HUMAN_AND_DATA_GATE. P379=576; B545 intersection=513; new scope=63. Fixed A10 N yields 499 inherited, 14 targeted, 55 new-review and 8 technical exceptions, with zero automatic approval. [Handoff](exp17e/EXP17_E_HANDOFF.md) · [Mapping review](exp17e/EXP17_E_MAPPING_REVIEW.md) · [Final recovery](../results/exp17e_a10_379_polygon_expansion/polygon_recovery_summary_final.json) · [Coverage](../results/exp17e_a10_379_polygon_expansion/pair_structure_coverage.json) · [Review receipt](../results/exp17e_a10_379_polygon_expansion/review_summary.json).

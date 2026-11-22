@@ -1,5 +1,9 @@
 # Project state
 
+## Exp17-F user review reconciliation (2026-11-22)
+
+EXP17_F_USER_REVIEW_RECONCILIATION_PENDING_CHATGPT_DATA_GATE. Import the exact 69-row user CSV: 65 Polygon-scoped ACCEPT and four REJECT. The frozen Python importer has 30 coordinate int/float serialization failures; an independent exact-value adapter reproduces all 69 Candidate IDs and bindings without changing any historical file. Reconcile all 576 original rows as 499 inherited candidates, 65 user-accepted candidates, four exclusions and eight technical HOLD. The 564 pending candidates span 373 sources / 353 independent groups; retain 35 historical Raw inference cases separately from three new Raw acceptances and five target-pixel Crop/Bounded cases. Full B remains 668 TRAIN images / 632 groups. Data Gate NOT_GRANTED, formal trusted Pair zero; no models, registration, sampling changes or training. [Current handoff](exp17f/EXP17_F_HANDOFF.md).
+
 ## Exp17-E A10 S379 Polygon expansion (2026-11-22)
 
 EXP17_E_A10_379_POLYGON_EXPANSION_COMPLETE_PENDING_HUMAN_AND_DATA_GATE. The authoritative A10 379-source/359-group manifest contains 576 original GT Polygons: 513 intersect B545 and 63 are outside it. Each source keeps one actual frozen A10 N. Current evidence queues are 499 inherited candidates, 14 targeted questions, 55 new human-review candidates and eight locked mapping/support exceptions. Raw inheritance is explicitly same-generation regional inference; Crop/Bounded target-pixel lineage is verified. Full original 668 TRAIN metadata remains the B reference scope. The offline page defaults to 69 human decisions; new user acceptance/Data Gate/Trusted Pair remain zero. Thirty-two CPU tests and actual offline Chrome import/export/identity tests passed; no model, training, generation or registration. [Current handoff](exp17e/EXP17_E_HANDOFF.md).

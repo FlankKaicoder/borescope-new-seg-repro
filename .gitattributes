@@ -22,3 +22,8 @@
 /tools/exp17e/** -text
 /docs/exp17e/** -text
 /results/exp17e_a10_379_polygon_expansion/** -text
+
+# Preserve exact Exp17-F read-only audit source and receipt byte identities.
+/tools/exp17f/** -text
+/docs/exp17f/** -text
+/results/exp17f_user_review_reconciliation/** -text

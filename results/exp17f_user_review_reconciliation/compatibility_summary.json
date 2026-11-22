@@ -1,0 +1,42 @@
+{
+  "bundle_sha256": "43115742e25c550475ff3f4d86e7c40f92b31079620faa7964ef085a18dcf1e7",
+  "compat_code_sha256": "dc070bf4d9fa95f6d7023ef82048a0e02a7805abdb6e4ab7fd46a4fae5f1a383",
+  "coordinate_semantic_fields": [
+    "source_coordinates",
+    "n_coordinates"
+  ],
+  "csv_sha256": "b0a5f768040539a6c2daaab18b1166f99995d4fcf7d0f968e10bec4de2e476fd",
+  "decision_counts": {
+    "ACCEPT_THIS_POLYGON_FOR_J2": 65,
+    "REJECT_THIS_POLYGON_FOR_J2": 4
+  },
+  "formal_trusted_pairs": 0,
+  "genuine_identity_mismatches": 0,
+  "genuine_identity_or_review_mismatches": 0,
+  "historical_files_modified": false,
+  "independent_data_gate": "NOT_GRANTED",
+  "invalid_review_or_technical_gate_records": 0,
+  "non_coordinate_type_coercions": 0,
+  "normalization_paths": [
+    "accepted_region_scope.source_coordinates",
+    "accepted_region_scope.n_coordinates",
+    "asset_identity.accepted_region_scope.source_coordinates",
+    "asset_identity.accepted_region_scope.n_coordinates"
+  ],
+  "normalization_tolerance": 0,
+  "normalized_binding_reproduces": 69,
+  "normalized_candidate_reproduces": 69,
+  "normalized_validator_fail": 0,
+  "normalized_validator_pass": 69,
+  "original_validator_fail": 30,
+  "original_validator_pass": 39,
+  "original_validator_sha256": "f9314c487577eb98c892909eb0a4ca042287414359dd93d8cc569d400f869da2",
+  "package_id": "a0d977ae3dae0a148f0c3f128c113954f18a282ac70a5371d0cf90b352560351",
+  "raw_binding_reproduces": 39,
+  "raw_candidate_reproduces": 39,
+  "raw_input_records_modified": false,
+  "records": 69,
+  "serialization_only_failures": 30,
+  "status": "PASS_EXACT_IDENTITY_WITH_COORDINATE_SERIALIZATION_COMPATIBILITY",
+  "unique_reviewers": 1
+}

@@ -1,0 +1,42 @@
+{
+  "audited_base_commit": "a5d86a3d92b1cd6e5a974435c653e2fdd32f66b9",
+  "formal_trusted_pairs": 0,
+  "independent_data_gate": "NOT_GRANTED",
+  "private_artifacts": {
+    "accepted_564_candidate_manifest.csv": "5823770d14ddb9dc7a75367aab079d8a039d27a2ab269be21c0cd5c501f77ba6",
+    "accepted_564_evidence_tiers.csv": "349768440f9012435bba2974755ee08210a9d637fffafcfe4760d94c2d5d7c29",
+    "class_group_coverage_after_review.csv": "519a950691e8349591e6755aa48444392ebb0a7aad5c2d84f1d162d88f9e95ea",
+    "data_gate_evidence_matrix.csv": "8ebcb333b61df557f32febcdae93893a90c0fb3287600da33fd5e15ccf973142",
+    "data_gate_evidence_matrix.json": "016b14ef87776810cfadda2872c35f55354d15cf6f28559a5e37a9718fd6b625",
+    "input_identity.json": "58a585ed2b1cef26c9f2482fd5a0323e15c91dec6182521d6ef3c19dac901479",
+    "p379_576_merged_decisions.csv": "f993eb271943d44df4c519e2e2789ef4a93519a193baa2526589d528b5f9f515",
+    "p379_576_merged_decisions.json": "40f659b28a1022ba9ab7198a09a33637336df9cd1b8d5163946b8c5c66230101",
+    "rejected_4_polygon_manifest.csv": "ac33b19856def938c74076c526ac0e434230725ae23cd18ed1baf0f82a30ab4b",
+    "review_bundle_crosswalk.csv": "3d59de7e89e43d90877f692763ecab07309df5246fc521656942520fff1ecb81",
+    "review_decision_by_original_status.csv": "c87190e6023c148c095c1b44d42ffd683f8aee6fa89146067a77c9fd23d19ab7",
+    "technical_hold_8_manifest.csv": "a1f7b213012e201ac88456d97792705b5a915aa4f630593d51b9bab062c5046b",
+    "user_review_csv_audit.json": "21cf843dae503c69e207793c5222104158d7f40e0f0e45b86ee5cec11e77f3ac"
+  },
+  "private_delivery_receipt_sha256": "ddc914434475af85e9e6c30c9d8b48f28747e4afd58a4341c79c4cfc8705c8be",
+  "public_files": {
+    "docs/exp17f/EXP17_F_EVIDENCE_LIMITS.md": "2246f924e834d38b7809c24f3f0ea5ae9c58ef5d42cb4d9a8ecd9bb234dd0f2a",
+    "docs/exp17f/EXP17_F_HANDOFF.md": "38e1617aef16312d20483218c47a42ebe6c44201846f1526625cc9acb6447b2b",
+    "results/exp17f_user_review_reconciliation/compatibility_summary.json": "2b040b8110006f03e54acb838d6962855355ad49d47d8eba5d6f5787f7001cdd",
+    "results/exp17f_user_review_reconciliation/cpu_test_summary.json": "7fd0d732da6844afed28785773ba9774117002a2a520426c40a1dc0f98610b38",
+    "results/exp17f_user_review_reconciliation/evidence_review_clarifications.json": "fcf59bce8dc527566a3cfad76ddcdc8306be26eccd87b797b710862a58da632a",
+    "results/exp17f_user_review_reconciliation/evidence_review_summary.json": "503436631c9336dd3cd0560434959ac42511f655cbddece5bc7894755b5356b7",
+    "results/exp17f_user_review_reconciliation/reconciliation_summary.json": "e6aea1a447fa4679b33584cb0bfec1764006a2366532d0db2668b472e4cc82d8",
+    "results/exp17f_user_review_reconciliation/summary.json": "f14b201b1d06c73c02117d38fceea8d02df111e6808b4fdb0a1f8af18317e404"
+  },
+  "schema": "EXP17_F_PUBLIC_EVIDENCE_MANIFEST_V1",
+  "source_sha256": {
+    "compat.py": "dc070bf4d9fa95f6d7023ef82048a0e02a7805abdb6e4ab7fd46a4fae5f1a383",
+    "evidence_audit.py": "eef790284a35c752c7c28b0a9f0f8ff598104b5c96f4401b81fe1ebc16e5af70",
+    "package_integrity.py": "cf5ab10445c0fea743e7d340d32140cc09be2499e8f451d6630051c3db3f9f46",
+    "reconcile.py": "e01eeccb10286c8fba9bae38e34760bf9f6a56136d8fe19960824dbd83b566d5",
+    "test_compat.py": "c60a19f45afcc9ff8dac28bdc725c8df3ac207ec349ef7308069447e6e55b813",
+    "test_evidence_audit.py": "ad7c17df6fe24b341882066af45181bc94b46a2a1085bcda5f9adc8a209ac72f",
+    "test_package_integrity.py": "7e30b899c84dbf77351e2459a07012734afdcb1186ee7388caa85821cf049234",
+    "test_reconcile.py": "9548bc77dda3965897f366f5a3f84984479aa72fa5a0505f7d27d8bddc643c15"
+  }
+}

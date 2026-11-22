@@ -1,0 +1,179 @@
+{
+  "accepted_65_technical_pass": 65,
+  "all_current_sha256_postchecked": true,
+  "asset_types": {
+    "ALIGNED": 346,
+    "BOUNDED": 1,
+    "CROP": 3,
+    "RAW": 29
+  },
+  "candidate_pool": 564,
+  "class_group_coverage": {
+    "Burn": {
+      "evidence_routes": {
+        "CROP_EXACT_REVIEWED_TARGET_PIXEL_DERIVATION": 2,
+        "EXACT_REVIEWED_ALIGNED_REGION": 54,
+        "RAW_INFERENTIAL_REGION_INHERITANCE_VIA_FROZEN_H": 12
+      },
+      "full_train_b_groups": 139,
+      "groups_with_cross_source_b": 38,
+      "independent_source_groups": 38,
+      "new_user_accept": 8,
+      "pending_data_gate_polygons": 68,
+      "technical_hold": 1,
+      "user_reject": 2
+    },
+    "Crack": {
+      "evidence_routes": {
+        "CROP_EXACT_REVIEWED_TARGET_PIXEL_DERIVATION": 1,
+        "EXACT_REVIEWED_ALIGNED_REGION": 52,
+        "RAW_INFERENTIAL_REGION_INHERITANCE_VIA_FROZEN_H": 12
+      },
+      "full_train_b_groups": 75,
+      "groups_with_cross_source_b": 51,
+      "independent_source_groups": 51,
+      "new_user_accept": 4,
+      "pending_data_gate_polygons": 65,
+      "technical_hold": 0,
+      "user_reject": 0
+    },
+    "Dent": {
+      "evidence_routes": {
+        "BOUNDED_EXACT_REVIEWED_TARGET_PIXEL_DERIVATION": 1,
+        "EXACT_REVIEWED_ALIGNED_REGION": 94,
+        "RAW_INFERENTIAL_REGION_INHERITANCE_VIA_FROZEN_H": 1
+      },
+      "full_train_b_groups": 112,
+      "groups_with_cross_source_b": 86,
+      "independent_source_groups": 86,
+      "new_user_accept": 4,
+      "pending_data_gate_polygons": 96,
+      "technical_hold": 0,
+      "user_reject": 0
+    },
+    "Material missing": {
+      "evidence_routes": {
+        "EXACT_REVIEWED_ALIGNED_REGION": 80,
+        "RAW_INFERENTIAL_REGION_INHERITANCE_VIA_FROZEN_H": 1
+      },
+      "full_train_b_groups": 150,
+      "groups_with_cross_source_b": 78,
+      "independent_source_groups": 78,
+      "new_user_accept": 17,
+      "pending_data_gate_polygons": 81,
+      "technical_hold": 1,
+      "user_reject": 0
+    },
+    "Tears": {
+      "evidence_routes": {
+        "EXACT_REVIEWED_ALIGNED_REGION": 40
+      },
+      "full_train_b_groups": 43,
+      "groups_with_cross_source_b": 38,
+      "independent_source_groups": 38,
+      "new_user_accept": 0,
+      "pending_data_gate_polygons": 40,
+      "technical_hold": 0,
+      "user_reject": 0
+    },
+    "Tip curl": {
+      "evidence_routes": {},
+      "full_train_b_groups": 18,
+      "groups_with_cross_source_b": 0,
+      "independent_source_groups": 0,
+      "new_user_accept": 0,
+      "pending_data_gate_polygons": 0,
+      "technical_hold": 0,
+      "user_reject": 0
+    },
+    "corrosion": {
+      "evidence_routes": {
+        "CROP_EXACT_REVIEWED_TARGET_PIXEL_DERIVATION": 1,
+        "EXACT_REVIEWED_ALIGNED_REGION": 201,
+        "RAW_INFERENTIAL_REGION_INHERITANCE_VIA_FROZEN_H": 12
+      },
+      "full_train_b_groups": 193,
+      "groups_with_cross_source_b": 79,
+      "independent_source_groups": 79,
+      "new_user_accept": 32,
+      "pending_data_gate_polygons": 214,
+      "technical_hold": 6,
+      "user_reject": 2
+    }
+  },
+  "elapsed_seconds": 10.016628899960779,
+  "formal_trusted_pairs": 0,
+  "full_train_b_images": 668,
+  "full_train_b_independent_groups": 632,
+  "historical499_evidence_routes": {
+    "BOUNDED_EXACT_REVIEWED_TARGET_PIXEL_DERIVATION": 1,
+    "CROP_EXACT_REVIEWED_TARGET_PIXEL_DERIVATION": 4,
+    "EXACT_REVIEWED_ALIGNED_REGION": 459,
+    "RAW_INFERENTIAL_REGION_INHERITANCE_VIA_FROZEN_H": 35
+  },
+  "identity_errors": 0,
+  "image_decode_calls": 0,
+  "independent_data_gate": "NOT_GRANTED",
+  "input_file_categories": {
+    "a10_frozen_manifest": 1,
+    "a9_saved_verified_metadata": 1,
+    "bounded_base": 1,
+    "bounded_edit_mask": 1,
+    "bounded_parent_aligned": 1,
+    "bounded_request": 1,
+    "bounded_valid_mask": 1,
+    "crop_parent_aligned": 3,
+    "crop_parent_valid": 3,
+    "frozen_e_polygon_mapping": 1,
+    "frozen_e_source_mapping": 1,
+    "frozen_target_pixel_lineage": 2,
+    "full_668_train_metadata": 1,
+    "historical_geometry_file": 192,
+    "n_valid_mask": 378,
+    "original_e_queue": 1,
+    "original_professional_json": 379,
+    "original_train_image": 379,
+    "original_user_csv": 1,
+    "prior_e_delivered_metadata": 2,
+    "published_a10_n": 379,
+    "selected_a10_n": 379,
+    "source_valid_mask": 378
+  },
+  "input_manifest_sha256": "87f6af1cf28a9601b548e5bd7fccb156f4052ba07c5eb338c23e1f8a61dd5509",
+  "limitations": [
+    "Revalidates immutable E support/provenance metadata and current bytes, without new pixel or geometry experiments.",
+    "35 Raw inherited regions remain same-generation frozen-H inference, distinct from3 newly reviewed Raw acceptances.",
+    "Five Crop/Bounded lineages apply to exact target pixels, not all context or Backbone receptive fields.",
+    "Full TRAIN B availability is population-level; unchanged native batches may lack cross-group same-class B."
+  ],
+  "model_forwards": 0,
+  "new_raster_calls": 0,
+  "new_registration": 0,
+  "new_user65_asset_types": {
+    "ALIGNED": 62,
+    "RAW": 3
+  },
+  "new_user_approvals": 0,
+  "one_current_a10_n_per_source": true,
+  "optimizer_updates": 0,
+  "polygons": 576,
+  "pool_asset_types": {
+    "ALIGNED": 521,
+    "BOUNDED": 1,
+    "CROP": 4,
+    "RAW": 38
+  },
+  "pool_independent_groups": 353,
+  "pool_sources": 373,
+  "queue_sha256": "1bf154d3f0a565892fad12c5f7e80882424baeee34be289cf77911bb8b1ac363",
+  "rejected_exact_scope_polygons": 4,
+  "source185_accepts_preserved": 2,
+  "source_assets": 379,
+  "source_sha256": "eef790284a35c752c7c28b0a9f0f8ff598104b5c96f4401b81fe1ebc16e5af70",
+  "status": "PASS_CURRENT_ASSET_AND_EVIDENCE_PRECONDITIONS_NOT_DATA_GATE",
+  "technical_hold": 8,
+  "technical_matrix_sha256": "7d2f1b4e1429c21f04a255c0408039298e81bac385cc4a007a5a5e5efa8d40ea",
+  "user_csv_sha256": "b0a5f768040539a6c2daaab18b1166f99995d4fcf7d0f968e10bec4de2e476fd",
+  "verified_unique_bytes": 648828687,
+  "verified_unique_files": 2482
+}

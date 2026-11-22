@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp17-F user review reconciliation (2026-11-22)
+
+Decision D086. Preserve the original CSV, bundle, page and Python importer. Treat only exactly equal finite coordinate int/float serialization as compatible in a separate read-only adapter; reject other identity/type/value differences. Bind each imported user decision to its exact current A10 N, Polygon, H and both Valid masks. Retain all 576 original records unchanged inside new merge wrappers; four rejects exclude only their own Polygons and do not affect other accepted targets in the same image. Keep historical Raw inference distinct from new current-Raw user acceptance and exact Aligned/Crop/Bounded evidence. The 564-candidate count does not grant Data Gate, trusted Pair or training. [Handoff](exp17f/EXP17_F_HANDOFF.md).
+
 ## Exp17-E A10 S379 Polygon expansion (2026-11-22)
 
 Decision D085. Define A/N scope only from the 379 actually frozen A10 N assets, retaining one exact N per source and all 576 original GT Polygons. Preserve D's exact 513-record intersection without transporting decisions to another asset. Recover old regional evidence via exact Aligned pixels, verified Crop/Bounded target-pixel lineage or explicitly identified same-generation Raw/frozen-H semantic inference; none grants Data Gate. Keep 55 new J2 review candidates and 14 current-asset questions actionable, eight geometry/support exceptions locked, and full 668 TRAIN metadata as the independent B population. Do not replace N, refit geometry, alter GT/SupCon/sampling or execute models/training. [Handoff](exp17e/EXP17_E_HANDOFF.md).

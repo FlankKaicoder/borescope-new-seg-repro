@@ -1,0 +1,26 @@
+{
+  "command": "py -3.14 -m unittest discover -s tools/exp17f -p test_*.py -v",
+  "image_decodes": 0,
+  "log_sha256": "06e0226bbbe2fbbadc250d459c967d710f426ce67d50a1c9fb7e8cc2d04baa4c",
+  "model_forwards": 0,
+  "optimizer_updates": 0,
+  "python_version": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+  "source_sha256": {
+    "compat.py": "dc070bf4d9fa95f6d7023ef82048a0e02a7805abdb6e4ab7fd46a4fae5f1a383",
+    "evidence_audit.py": "eef790284a35c752c7c28b0a9f0f8ff598104b5c96f4401b81fe1ebc16e5af70",
+    "package_integrity.py": "cf5ab10445c0fea743e7d340d32140cc09be2499e8f451d6630051c3db3f9f46",
+    "reconcile.py": "e01eeccb10286c8fba9bae38e34760bf9f6a56136d8fe19960824dbd83b566d5",
+    "test_compat.py": "c60a19f45afcc9ff8dac28bdc725c8df3ac207ec349ef7308069447e6e55b813",
+    "test_evidence_audit.py": "ad7c17df6fe24b341882066af45181bc94b46a2a1085bcda5f9adc8a209ac72f",
+    "test_package_integrity.py": "7e30b899c84dbf77351e2459a07012734afdcb1186ee7388caa85821cf049234",
+    "test_reconcile.py": "9548bc77dda3965897f366f5a3f84984479aa72fa5a0505f7d27d8bddc643c15"
+  },
+  "status": "PASS",
+  "suites": {
+    "compatibility": 6,
+    "independent_evidence": 3,
+    "package_integrity": 3,
+    "reconcile": 9
+  },
+  "tests": 21
+}
