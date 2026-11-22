@@ -1,0 +1,40 @@
+{
+  "additional_code_review_fixes": [
+    "Permit finalization-only recovery after committedupdate2100 unlessTRAIN_COMPLETEalreadyrecorded",
+    "Frontload path/protocol/80passVALscope before realtrainerconstruction",
+    "Independent append-only native initialization directories onresume",
+    "Rebind cloned diagnostic nativecriterion to avoidliveForegroundAudit closure",
+    "Explicit INITIAL_STATE_COMMIT beforefirstepoch",
+    "Reject optimizerreservation whileAUXpending",
+    "Exactinstalledframeworksource/legacybyteidentity and architecture/classmapping recovery checks"
+  ],
+  "no_failed_real_research_training_or_evaluation": true,
+  "no_scientific_parameter_changes": true,
+  "preserved_ordinary_engineering_failures": [
+    {
+      "effect": "No model/data execution; all original errors preserved; type-agnostic inspection then verified exact installed source",
+      "event": "Three readonly fitness-source probes used incorrect function/property inspection variants"
+    },
+    {
+      "effect": "Stopped synthetic test at firstBest; canonical native-state hashes corrected; finalfrozenCPUtests pass",
+      "event": "Pre-final CPU common-executor Best used full-recovery hash vocabulary for a native-state selection identity"
+    },
+    {
+      "effect": "Eight test-loader import errors before test bodies; stopped; unchanged frozen production snapshot tested via separatelynamed spawn-safe wrapper with explicit source path",
+      "event": "First remote CPU wrapper omitted explicit code root from sys.path"
+    }
+  ],
+  "remaining_limits": [
+    "No additional GPU Smoke: prior50/50 budget remains exhausted",
+    "Full63warmup audited mathematically/CPU, not additionalrealGPUupdates",
+    "Nativeadapter not executed on realTRAIN inG1; synthetic recovery is not a nativeGPU recovery efficacy claim",
+    "Pairlambda4additionalcandidate/localconflicts/heterogeneity anddetachedAstatsassumption retained",
+    "TipcurlPaircoveragezero; artifact/contextconfounding remains",
+    "NoJ2performanceorTESTgeneralizationclaim",
+    "Resourceestimate tight andmustbefreshlyrechecked beforeformalGate",
+    "Durablyuncommitted physical work and incomplete epoch-prefetch caches or partial exports mayneedan independent manual recoveryplan; no automatic replay or repair",
+    "Nativeadapter construction, actualnativeepoch-precache and GPUresume were deliberately not run inG1",
+    "Strict capacity estimate has limitedmargin beyondreserved1GiB; storage expansion is recommended beforetheformalGate"
+  ],
+  "schema": "EXP17_G1_FAILURES_AND_LIMITS_V1"
+}

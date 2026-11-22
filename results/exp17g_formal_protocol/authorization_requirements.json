@@ -1,0 +1,17 @@
+{
+  "experiment": "EXP17_J2_SEED42_FORMAL_V1",
+  "formal_training_authorized": false,
+  "native_real_adapter_executed_in_G1": false,
+  "no_enable_flag": true,
+  "private_VAL_authorization_created": false,
+  "private_formal_authorization_created": false,
+  "private_runtime_config_candidate_sha256": "02f0f6548ee1cfd57af449fd1c9118417252b3a528273a1c80d2eee28c96d7b8",
+  "protocol_sha256": "613e4e154a872e0fd88791013f8e63716100470bb4a2f73084b702bb5cd37e44",
+  "required_actions": [
+    "train",
+    "scheduled_val_master_and_ema",
+    "isolated_train_diagnostics",
+    "retire_owned_ephemeral_epoch_cache"
+  ],
+  "stage": "EXP17_G1_FORMAL_TRAIN_AUTHORIZATION"
+}

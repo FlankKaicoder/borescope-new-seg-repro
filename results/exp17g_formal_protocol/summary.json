@@ -1,0 +1,71 @@
+{
+  "CPU_tests": 129,
+  "GPU_model_calls": 0,
+  "VAL_TEST_image_reads": 0,
+  "audited_base": "855ea91d3b181625ab802fd1879b1722c4e6db79",
+  "capacity_note": "TIGHT; recheckbeforeGateandlaunch; storageexpansionrecommended; nohistoricalcleanup",
+  "code_sha256": "86987123cffef957d7f639f0559e48f6c033562947ddd1ba64689ce6b8bbba4b",
+  "data": {
+    "Pair_groups": 327,
+    "Pair_polygons": 521,
+    "Pair_source_images": 345,
+    "TEST_access": false,
+    "TRAIN_images": 668,
+    "TRAIN_instances": 1266,
+    "Tip_curl_pair_polygons": 0,
+    "VAL_images": 154,
+    "VAL_instances": 296,
+    "held_43_plus_excluded_12_outside_main_pool": true,
+    "historical_aligned": 459,
+    "new_accepted_aligned": 62
+  },
+  "date": "2026-11-23",
+  "engineering_smoke_budget_sealed_at": 50,
+  "engineering_smoke_ledger_sha256": "02d36ee22aefffbb3eac4f90f703dd0be636851031144132b43af85384a2afcd",
+  "estimated_required_including_reserve_bytes": 6977789880,
+  "formal_training_authorized": false,
+  "formal_training_updates": 0,
+  "frozen_J2": {
+    "N_prefix": [
+      0,
+      16
+    ],
+    "bn_mode": "replay_a",
+    "checkpoint_prefix": false,
+    "lambda_pair": 4,
+    "lambda_supcon": 8,
+    "margin": 0.2,
+    "temperature": 0.1
+  },
+  "generation_registration": 0,
+  "new_formal_CPU_tests": 59,
+  "post_test_available_bytes": 7145230336,
+  "post_test_margin_bytes": 167440456,
+  "production_sources_bound": 256,
+  "prospective_VAL": {
+    "Best": "nativefitness latesttie supplementary independentlyMASTERandEMA",
+    "current_stage_actual_passes": 0,
+    "events": 20,
+    "fitness": "Box_AP95 + Mask_AP95",
+    "native_passes": 80,
+    "primary": "fixed epoch100 FP32 MASTER",
+    "states": 40
+  },
+  "protocol_sha256": "613e4e154a872e0fd88791013f8e63716100470bb4a2f73084b702bb5cd37e44",
+  "recovery": "PASS_CPU_SYNTHETIC_COMMITTED_BOUNDARY_AND_FINALIZATION_RECOVERY",
+  "schedule": {
+    "AdamW_beta1": 0.937,
+    "bit_exact_updates": 2100,
+    "last_used_LR": 0.0001990000000000001,
+    "warmup_momentum_inactive_for_AdamW": true,
+    "warmup_updates": [
+      1,
+      63
+    ]
+  },
+  "schema": "EXP17_G1_DELIVERY_V1",
+  "status": "EXP17_G1_FORMAL_PROTOCOL_AND_EXECUTOR_READY_PENDING_CHATGPT_GATE",
+  "stop_after_publication": true,
+  "unchanged_engineering_regression_tests": 70,
+  "unresolved_critical_protocol_fields": []
+}

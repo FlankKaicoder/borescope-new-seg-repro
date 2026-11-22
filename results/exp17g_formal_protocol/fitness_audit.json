@@ -1,0 +1,186 @@
+{
+  "G1_execution": {
+    "GPU_model_calls": 0,
+    "VAL_TEST_image_reads": 0,
+    "formal_training_authorized": false,
+    "real_TRAIN_optimizer_updates": 0,
+    "real_VAL_native_passes": 0
+  },
+  "fitness": {
+    "AP50_weight": 0.0,
+    "box_AP95_weight": 1.0,
+    "fitness_can_choose_different_checkpoint_than_highest_mask_AP": true,
+    "formula": "Mask_mAP50_95 + Box_mAP50_95",
+    "initial_best": null,
+    "mask_AP95_weight": 1.0,
+    "native_best_file_update": "BEST_FITNESS_EQUALS_CURRENT_FITNESS_INCLUDING_TIES",
+    "native_numeric_best_update": "STRICT_IMPROVEMENT_OR_INITIAL_NONE",
+    "nonfinite_metrics": "HARD_GATE_REJECT_NO_NATIVE_NAN_TO_NUM_FALLBACK",
+    "precision_weight": 0.0,
+    "primary_paper_metric": "Mask_mAP50_95",
+    "recall_weight": 0.0,
+    "selected_tie_policy": "LATEST_EQUAL_NATIVE_FITNESS"
+  },
+  "frozen_evaluation": {
+    "batch": 32,
+    "checkpoint": "epoch100_last_master_fp32",
+    "conf": 0.001,
+    "fixed_conf": 0.25,
+    "full_native_overall_and_per_class_results_retained": true,
+    "gt_size_definition": "native_rasterized_polygon_area_over_full_image_area",
+    "images": 154,
+    "imgsz": 640,
+    "instances": 296,
+    "match_iou": 0.5,
+    "matching": "NATIVE_ULTRALYTICS_CLASS_AWARE_IOU_GREEDY_ONE_TO_ONE",
+    "max_det": 300,
+    "nms_iou": 0.7,
+    "precision": "CUDA_FP32_TF32_DISABLED",
+    "roles_are_stripped_native_7_class_FP32": true,
+    "size_and_fixed_threshold_definitions_unchanged": true,
+    "size_thresholds": [
+      0.0020196759259259256,
+      0.007364969135802469,
+      0.029209280303030303
+    ],
+    "split": "val",
+    "test_model_inference": false,
+    "ultralytics": "8.4.117"
+  },
+  "historical_evaluators": {
+    "tools/exp14/a11_full_eval.py": {
+      "canonical_LF_sha256": "7a6fc016ac69e8ea0293403c77f5f62df7229f630d9657c4b2e247a2b9dddc46",
+      "executed_working_bytes_sha256": "558f136f8710f66ce054ca74ad7059b366a4f0bc36a6275222d30a3f969e05ce",
+      "historical_file_modified": false
+    },
+    "tools/exp15/jd.py": {
+      "canonical_LF_sha256": "21b7c6019efc76d46e239ba73668fd159af7e8e1152c819a937ec0ff4f3a6947",
+      "executed_working_bytes_sha256": "461fe3ddc285b434b59938dbf7640e40498867386b014ef66e3cc3a3e24fe25b",
+      "historical_file_modified": false
+    },
+    "tools/exp15/jd_diagnostics.py": {
+      "canonical_LF_sha256": "6e42650ac7bb9d2804bda9c6313542e11260b7954cacaf850ded59e355f950ec",
+      "executed_working_bytes_sha256": "889c0d892e6374889515657ebcf9d30eaa0dc1b0b84a5305ba94f694e8010daa",
+      "historical_file_modified": false
+    }
+  },
+  "isolation": {
+    "VAL_no_grad": true,
+    "callback_global_state_restored": [
+      "Python_RNG",
+      "NumPy_RNG",
+      "Torch_CPU_RNG",
+      "initialized_CUDA_RNG",
+      "TF32_and_cuDNN_backend_flags"
+    ],
+    "callback_uses_disposable_source_model_clone": true,
+    "gradient_diagnostics_only_on_disposable_copy": true,
+    "live_optimizer_step_pre_hook_rejects_before_update": true,
+    "live_state_protected": [
+      "FP32_parameters_and_BN_buffers",
+      "all_module_train_eval_flags",
+      "preexisting_gradients",
+      "EMA_model_and_all_EMA_wrapper_attributes",
+      "optimizer_state_groups_and_defaults",
+      "scheduler_state",
+      "GradScaler_public_state_and_internal_per_optimizer_stage",
+      "sampler_cursor_and_generator_state"
+    ],
+    "unexpected_live_mutation_is_restored_and_still_hard_gate": true
+  },
+  "limitations": [
+    "Synthetic isolation tests do not establish real CUDA validation equivalence or completed 80-pass runtime stability",
+    "Full formal and VAL scopes require independent ChatGPT authorization",
+    "Historical J0/J1 only have fixed Last evaluation; no matched Best claim is currently available",
+    "Lambda4, detached A-statistics, local gradient conflicts and Tip-curl zero Pair coverage remain unchanged"
+  ],
+  "native_checkpoint_behavior_not_reused": {
+    "experiment_requires_separate_FP32_master_and_EMA_strict_checkpoint_module": true,
+    "native_default_saves_half_EMA_and_reduced_precision_optimizer": true,
+    "native_nonfinite_EMA_repair_or_clamp_not_allowed_by_experiment_hard_gates": true
+  },
+  "schedule": {
+    "attempts_are_persistent_and_no_retry": true,
+    "epoch_boundary_only": true,
+    "epochs": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100
+    ],
+    "model_evaluations_total": 40,
+    "model_roles": [
+      "master",
+      "ema"
+    ],
+    "models_evaluated_per_event": 2,
+    "native_passes_per_model": [
+      "standard",
+      "fixed"
+    ],
+    "total_native_passes": 80,
+    "validation_events": 20
+  },
+  "schema": "EXP17_G1_NATIVE_FITNESS_AND_FROZEN_VAL_AUDIT_V1",
+  "selection": {
+    "Best_comparisons_require_identical_validation_cadence_fitness_role_and_ties": true,
+    "best_EMA_supplement": "SEPARATE_NATIVE_FITNESS_TRACKER_ON_EMA_VAL_ONLY_LATEST_TIE",
+    "best_master_supplement": "NATIVE_FITNESS_ON_MASTER_VAL_ONLY_LATEST_TIE",
+    "best_records_bind_master_and_corresponding_EMA_state_hashes_and_full_metrics": true,
+    "historical_J0_J1_Last_results_preserved": true,
+    "last_primary": "FIXED_EPOCH100_FP32_MASTER",
+    "selection_bias": "Best uses VAL for model selection and is not unbiased TEST performance; fixed-budget Last remains the primary method comparison."
+  },
+  "source_inspection": {
+    "BaseTrainer.save_model": {
+      "file_sha256": "77023dbf526a1b9b6925f1e665fe2c215c913cd65e2c1cf4438301479961d025",
+      "function_source_sha256": "9394d4b5c2c54d4d188679d86f3894e428564adae7f6cfa6720901107eb2fb6a",
+      "relative_file": "ultralytics/engine/trainer.py",
+      "source_line": 709
+    },
+    "BaseTrainer.validate": {
+      "file_sha256": "77023dbf526a1b9b6925f1e665fe2c215c913cd65e2c1cf4438301479961d025",
+      "function_source_sha256": "e56ca46cb1e386150b16c26515d6fa1495fd92e6c2da1222e97234cd597e75cf",
+      "relative_file": "ultralytics/engine/trainer.py",
+      "source_line": 856
+    },
+    "DetMetrics.fitness": {
+      "file_sha256": "974116d855398c48cd4cb30919b5ee424f8eaf555198086d7d5dc3068bc71ce2",
+      "function_source_sha256": "eed49e7f7b118a605fc39d8faa76262717ffd6da2089f8fbfe7c2c991854fe20",
+      "relative_file": "ultralytics/utils/metrics.py",
+      "source_line": 1205
+    },
+    "Metric.fitness": {
+      "file_sha256": "974116d855398c48cd4cb30919b5ee424f8eaf555198086d7d5dc3068bc71ce2",
+      "function_source_sha256": "377bffb63216cf1e208a3afacdfd3807fcb124b6f2e9152537e1b1a8fefc17ee",
+      "relative_file": "ultralytics/utils/metrics.py",
+      "source_line": 1007
+    },
+    "SegmentMetrics.fitness": {
+      "file_sha256": "974116d855398c48cd4cb30919b5ee424f8eaf555198086d7d5dc3068bc71ce2",
+      "function_source_sha256": "69922625dbc74d6ce55c108a92aeaecc864cfdbaf13899018dd58f87d0e3c3ab",
+      "relative_file": "ultralytics/utils/metrics.py",
+      "source_line": 1368
+    }
+  },
+  "source_receipt_sha256": "0be69db7bb9498c2db3a7a7d667bd5a8e675e2e6250c41c19de83d476e9d17a7",
+  "status": "PASS_SOURCE_AUDIT_AND_SYNTHETIC_POLICY_TESTS",
+  "ultralytics": "8.4.117",
+  "val_files_sha256": "50e4561534750edc5f1d739c4c8c24591edb6e75a9d70f8d1a640e2bd139c467"
+}

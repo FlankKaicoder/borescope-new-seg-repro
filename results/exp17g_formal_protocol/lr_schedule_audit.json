@@ -1,0 +1,151 @@
+{
+  "AdamW": {
+    "amsgrad": false,
+    "betas": [
+      0.937,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "reason": "Native warmup updates only a literal momentum key. AdamW groups contain betas, no momentum key; beta1 stays .937, never .8.",
+    "warmup_momentum_is_inactive": true,
+    "weight_decay_by_group": [
+      0.0005,
+      0.0,
+      0.0
+    ],
+    "weight_decay_scaling": ".0005 * batch32 * accumulate1 / nbs32 = .0005"
+  },
+  "GPU_calls": 0,
+  "J1_protocol_canonical_sha256": "b638850fc21fc26dc0075282340a40ecc25e5bda891a3dbf9327dc415681b0ca",
+  "batch_tail": {
+    "drop_last": false,
+    "epochs_verified": 100,
+    "full_batches_per_epoch": 20,
+    "tail_images": 28,
+    "total_image_exposures": 66800
+  },
+  "call_order": [
+    "construction: LambdaLR initial step",
+    "_setup_train sets scheduler.last_epoch=-1",
+    "epoch start: model.train then scheduler.step",
+    "new_epoch_loader",
+    "before each update: warmup(global_zero_based_iteration,63)",
+    "native AdamW step/GradScaler/EMA once; no scheduler.step per batch"
+  ],
+  "code_reference": {
+    "CUDA_calls": 0,
+    "model_forwards": 0,
+    "native_optimizer_method": "BaseTrainer.build_optimizer",
+    "native_scheduler_method": "BaseTrainer._setup_scheduler",
+    "native_trainer_file_sha256": "77023dbf526a1b9b6925f1e665fe2c215c913cd65e2c1cf4438301479961d025",
+    "native_warmup_method": "BoundedSmokeTrainer.warmup",
+    "optimizer_steps": 0,
+    "torch": "2.8.0+cpu",
+    "ultralytics": "8.4.117"
+  },
+  "formal_training_authorized": false,
+  "groups": [
+    "weight",
+    "bn",
+    "bias"
+  ],
+  "historical_J1_bit_exact_rows": 2100,
+  "historical_J1_ledger_raw_sha256": "91fffd24dc5f1a904b42e97375e24ac4536813ad680bc9a2e1793f60fe4dfaf5",
+  "historical_J1_max_lr_absolute_error": 0.0,
+  "historical_column_naming_note": "Historical columns lr_no_decay/lr_decay have equal LR throughout. Authoritative native optimizer order is weight(decay), bn(no_decay), bias(no_decay); historical LR column names do not prove weight-decay assignment.",
+  "independent_decimal_math_max_absolute_error": 1.3877787807814457e-17,
+  "independent_decimal_math_tolerance": 2e-16,
+  "independent_math_note": "Decimal derivation verifies real arithmetic; native C/Python binary operation order may differ by <=1 ULP. Code-vs-code and actual historical LR comparisons are bit exact.",
+  "inherited_source_identity": {
+    "tools/exp14/a11_full_protocol.py": {
+      "canonical_LF_sha256": "faece4870df0580ea089c65d05cd2341f385173779c885bf06eb6de3c2a403a8",
+      "working_bytes_sha256": "235f0a13894faf4c9d949b5dcdea7f3905e221a3f54f2e921301476653736099"
+    },
+    "tools/exp14/a11_full_train.py": {
+      "canonical_LF_sha256": "d555b91193105b04e46952753c5c1db60143d4dcaac7547014a8c462702390f6",
+      "working_bytes_sha256": "6a0128d7cc01f3a4ef4d3c6c21f2fbd5df601ac3a1dc4695f4bf1fe37808514e"
+    },
+    "tools/exp14/a11_smoke_train.py": {
+      "canonical_LF_sha256": "345a86f660061a72a6498949b4cb0290c551f3f68e5cd0ed3de9f3348e4c5b5a",
+      "working_bytes_sha256": "001775b15e8b3027e49e8f9fc25640af11b5dc86b5da76ac91df793bfcac1a29"
+    },
+    "tools/exp15/ja.py": {
+      "canonical_LF_sha256": "a792247e86243c712ded8f0552e4209c23b8b3a26b1b9952377c0677d7deb44b",
+      "working_bytes_sha256": "95a5d4ab11e4192d1bf8999a42fc04c2e4465d9adf530343a7a5191f8375572e"
+    },
+    "tools/exp15/jb.py": {
+      "canonical_LF_sha256": "c74d82c19534c72d57734dcdb0f9b272a480f0c5699a2f505fcb9d1caf125a8d",
+      "working_bytes_sha256": "c4a6b1e87e1f5b476b2a14aae5fd48a977acdf955bc77c8956916ded6e1b5cc9"
+    },
+    "tools/exp15/jb_binding.py": {
+      "canonical_LF_sha256": "28a89345b56d544f12a7bc4bce984d783c7ab34de7e901c1381244d501784b4c",
+      "working_bytes_sha256": "cf955897f137e78e2083da5e7225ead37f207173bb7ddab7f58609deb73185ba"
+    },
+    "tools/exp15/regions.py": {
+      "canonical_LF_sha256": "a3c9f78e855348327b8a707afc879056f2d9ae89666481b59f5b72af865b687e",
+      "working_bytes_sha256": "683f467f817dcf41ce50036c640ed3b45548abde867667dc1066222d1cafd65a"
+    }
+  },
+  "lr_endpoints": {
+    "final_epoch100_update": [
+      0.0001990000000000001,
+      0.0001990000000000001,
+      0.0001990000000000001
+    ],
+    "first_update": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "theoretical_lambda_at_epoch_index100_unused": 0.0001
+  },
+  "metadata_only": true,
+  "model_forwards": 0,
+  "native_J1_vs_J2_candidate_bit_exact_rows": 2100,
+  "optimizer_updates": 0,
+  "profile": {
+    "batch": 32,
+    "batches_per_epoch": 21,
+    "beta2": 0.999,
+    "epochs": 100,
+    "lr0": 0.01,
+    "lrf": 0.01,
+    "momentum": 0.937,
+    "nbs": 32,
+    "train_images": 668,
+    "warmup_bias_lr": 0.1,
+    "warmup_iterations": 63,
+    "warmup_momentum": 0.8,
+    "weight_decay": 0.0005
+  },
+  "real_data_reads": 0,
+  "schema": "exp17g_f1_schedule_audit_v1",
+  "source_locations": {
+    "epoch_seeded_loader": "tools/exp14/a11_full_train.py:163",
+    "matched_batches": "tools/exp15/jb.py:176",
+    "optimizer": "ultralytics/engine/trainer.py:1093",
+    "scheduler": "ultralytics/engine/trainer.py:245",
+    "warmup": "tools/exp14/a11_smoke_train.py:193"
+  },
+  "source_sha256": "ebed1e75418898ebd0cfa0f4d70ed2fd938ab417e612b8dfbc276c9d0da65f48",
+  "status": "PASS_EXACT_NATIVE_J1_2100_UPDATE_SCHEDULE",
+  "trajectory_csv_sha256": "6776d48400049e9b894f76478c4a5e7480432b26e86e2ea6f216c9b82723b8aa",
+  "updates": 2100,
+  "warmup": {
+    "condition": "iteration < 63",
+    "first_non_warmup_lr": 0.009703,
+    "first_non_warmup_update": 64,
+    "iterations": 63,
+    "last_warmup_bias_lr": 0.011233714285714291,
+    "no_GPU_extension_of_exhausted_smoke": true,
+    "one_based_updates": [
+      1,
+      63
+    ],
+    "positions_51_through_63_checked": 13,
+    "zero_based_positions": [
+      0,
+      62
+    ]
+  }
+}

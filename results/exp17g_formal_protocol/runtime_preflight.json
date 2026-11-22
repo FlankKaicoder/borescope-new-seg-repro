@@ -1,0 +1,73 @@
+{
+  "GPU_compute_processes": "",
+  "GPU_model_calls": 0,
+  "GPU_readonly_nvidia_smi": "NVIDIA GeForce RTX 3080 Ti, 12288, 1, 595.71.05",
+  "VAL_TEST_image_reads": 0,
+  "VAL_instances_note": "296 is inherited frozen protocol metadata; G1 rechecks the exact 154-member file manifest without opening image or label bytes.",
+  "coco_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+  "cuda": "12.8",
+  "disk": {
+    "available_bytes": 7155695616,
+    "free_bytes": 7155695616,
+    "free_inodes": 729153896,
+    "inodes": 750146560,
+    "total_bytes": 53687091200,
+    "used_bytes": 46531395584
+  },
+  "existing_engineering_checkpoint_bytes": 46654139,
+  "formal_training_authorized": false,
+  "framework_sources_sha256": {
+    "data/augment.py": "d30f823e330ea4d8f165eda6f16e81a8d41acf22918a9c1c97d022b7bfc9dc5a",
+    "data/base.py": "41bb1349e4baa74b94728d2c323fbdd7fd318b1f82b951880b292fb34840dac3",
+    "data/dataset.py": "36aa66daa0949747745b8e1986a812b152dffc7ec050d78e25e37c16285b11c5",
+    "engine/trainer.py": "77023dbf526a1b9b6925f1e665fe2c215c913cd65e2c1cf4438301479961d025",
+    "nn/tasks.py": "2c78d12335ea68411146698ddff9f056e24b3fc1f30ce00efca54837a22ca68f",
+    "utils/loss.py": "dbda30466bcef7f2513699c7a187c4210eb1961d33e3072e3b83ed7206b1d349",
+    "utils/metrics.py": "974116d855398c48cd4cb30919b5ee424f8eaf555198086d7d5dc3068bc71ce2",
+    "utils/torch_utils.py": "357b4eb93788e0e3a93846a4a511d0940ffc089d8e57563df09ec0f78e719336"
+  },
+  "manifest_sha256": "fe6a36601c6c8d90cfddfc19ab58335552c18653b66f3535e84c97b4c222dc22",
+  "metrics_source_sha256": "974116d855398c48cd4cb30919b5ee424f8eaf555198086d7d5dc3068bc71ce2",
+  "native_identity_sha256": "289848daad87bbb8601251a88305d58dd48f41963f7d6adff0c4777603b14c4e",
+  "new_GPU_jobs": 0,
+  "postcheck": {
+    "CPU_tests": 129,
+    "GPU_compute_jobs": "",
+    "GPU_readonly": "NVIDIA GeForce RTX 3080 Ti, 12288, 1, 595.71.05",
+    "VAL_TEST_image_reads": 0,
+    "VAL_metadata": {
+      "expected_instances": 296,
+      "images": 154,
+      "val_files_sha256": "50e4561534750edc5f1d739c4c8c24591edb6e75a9d70f8d1a640e2bd139c467"
+    },
+    "VAL_metadata_only_image_or_label_reads": 0,
+    "VAL_split_manifest_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+    "coco_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+    "code_sha256": "86987123cffef957d7f639f0559e48f6c033562947ddd1ba64689ce6b8bbba4b",
+    "disk": {
+      "free_bytes": 7145230336,
+      "total_bytes": 53687091200,
+      "used_bytes": 46541860864
+    },
+    "formal_control_anchor_exists": false,
+    "formal_output_exists": false,
+    "manifest_sha256": "fe6a36601c6c8d90cfddfc19ab58335552c18653b66f3535e84c97b4c222dc22",
+    "model_calls": 0,
+    "native_identity_sha256": "289848daad87bbb8601251a88305d58dd48f41963f7d6adff0c4777603b14c4e",
+    "prior_smoke_checkpoint_sha256": "5ce54eb3ecb6e39b8d335dc74064b965d229da8000adc7e23b5a4f86839fc2fb",
+    "private_VAL_or_formal_authorization_created": false,
+    "production_source_files_verified": 256,
+    "protocol_sha256": "613e4e154a872e0fd88791013f8e63716100470bb4a2f73084b702bb5cd37e44",
+    "real_TRAIN_optimizer_updates": 0,
+    "smoke_ledger_attempts": 50,
+    "smoke_ledger_sha256": "02d36ee22aefffbb3eac4f90f703dd0be636851031144132b43af85384a2afcd",
+    "status": "PASS_G1_READONLY_POSTCHECK"
+  },
+  "python": "3.12.3",
+  "real_TRAIN_optimizer_updates": 0,
+  "smoke_budget_lines": 50,
+  "smoke_budget_sha256": "02d36ee22aefffbb3eac4f90f703dd0be636851031144132b43af85384a2afcd",
+  "status": "PASS_G1_READONLY_ENVIRONMENT_AND_FROZEN_IDENTITIES",
+  "torch": "2.8.0+cu128",
+  "ultralytics": "8.4.117"
+}

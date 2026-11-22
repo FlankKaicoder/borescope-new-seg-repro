@@ -1,0 +1,62 @@
+{
+  "GPU_model_calls": 0,
+  "VAL_TEST_image_reads": 0,
+  "code_sha256": "86987123cffef957d7f639f0559e48f6c033562947ddd1ba64689ce6b8bbba4b",
+  "formal_training_authorized": false,
+  "guard": "Explicit frozen source path, CUDA invisible, GPU initialization assertion, protected research file/image access guards, spawn-safe main",
+  "protocol_sha256": "613e4e154a872e0fd88791013f8e63716100470bb4a2f73084b702bb5cd37e44",
+  "real_TRAIN_optimizer_updates": 0,
+  "source_packet_sha256": "1298addd8b91e25eb694bd9748a73826e71051bbbc5cb23b03df2087276f200e",
+  "status": "PASS_ALL_G1_AND_REGRESSION_CPU_TESTS",
+  "suites": [
+    {
+      "CUDA_VISIBLE_DEVICES": "",
+      "CUDA_initialized": false,
+      "errors": 0,
+      "exit_code": 0,
+      "failures": 0,
+      "protected_asset_access_blocked_attempts": 0,
+      "real_TRAIN_optimizer_updates": 0,
+      "research_VAL_TEST_images_read": 0,
+      "scope": "CPU_SYNTHETIC_ONLY; full-core test2100 updates and validation fixtures are not research training/VAL",
+      "seconds": 74.73307105107233,
+      "skipped": 0,
+      "status": "PASS",
+      "suite": "tools/exp17/formal/tests",
+      "tests": 59
+    },
+    {
+      "CUDA_VISIBLE_DEVICES": "",
+      "CUDA_initialized": false,
+      "errors": 0,
+      "exit_code": 0,
+      "failures": 0,
+      "protected_asset_access_blocked_attempts": 0,
+      "real_TRAIN_optimizer_updates": 0,
+      "research_VAL_TEST_images_read": 0,
+      "scope": "CPU_SYNTHETIC_ONLY; full-core test2100 updates and validation fixtures are not research training/VAL",
+      "seconds": 9.155190551653504,
+      "skipped": 0,
+      "status": "PASS",
+      "suite": "tools/exp17/engineering",
+      "tests": 49
+    },
+    {
+      "CUDA_VISIBLE_DEVICES": "",
+      "CUDA_initialized": false,
+      "errors": 0,
+      "exit_code": 0,
+      "failures": 0,
+      "protected_asset_access_blocked_attempts": 0,
+      "real_TRAIN_optimizer_updates": 0,
+      "research_VAL_TEST_images_read": 0,
+      "scope": "CPU_SYNTHETIC_ONLY; full-core test2100 updates and validation fixtures are not research training/VAL",
+      "seconds": 1.7204065113328397,
+      "skipped": 0,
+      "status": "PASS",
+      "suite": "tools/exp17/tests",
+      "tests": 21
+    }
+  ],
+  "tests": 129
+}

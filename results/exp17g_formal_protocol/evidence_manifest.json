@@ -1,0 +1,153 @@
+{
+  "audited_base_commit": "855ea91d3b181625ab802fd1879b1722c4e6db79",
+  "deployed_source_packet_sha256": "1298addd8b91e25eb694bd9748a73826e71051bbbc5cb23b03df2087276f200e",
+  "formal_training_authorized": false,
+  "handoff": {
+    "bytes": 26294,
+    "path": "docs/exp17g/EXP17_G1_FORMAL_PROTOCOL_HANDOFF.md",
+    "sha256": "b2cc6e540b9ba00763077d7fbef7339a9ef9f49033fec1cf2e7facf25c3936aa"
+  },
+  "new_formal_source_and_tests": {
+    "tools/exp17/formal/__init__.py": {
+      "bytes": 80,
+      "sha256": "4744a8099ee34fea3971793d5ea30f1246e2e0a5e387798f23bbff9678326f1a"
+    },
+    "tools/exp17/formal/authorization.py": {
+      "bytes": 10246,
+      "sha256": "7ea62e8be5de60d4ba20380cb44d8d4e1c1eaa83b7fbb3e36c0fca27d33c9523"
+    },
+    "tools/exp17/formal/checkpoint.py": {
+      "bytes": 16465,
+      "sha256": "fe0d2480a17cc56a20e36b238346518312164e477add17ce114323c466f8f268"
+    },
+    "tools/exp17/formal/diagnostics.py": {
+      "bytes": 3567,
+      "sha256": "1ecea391c2d47a88ae4885a49bf3f677160ec307bf54614627de64b931f66232"
+    },
+    "tools/exp17/formal/executor.py": {
+      "bytes": 12783,
+      "sha256": "9173810303a9c55e7e0aeee451691aafd3158649972fbb78a9e4cb3f246f27d5"
+    },
+    "tools/exp17/formal/exports.py": {
+      "bytes": 14515,
+      "sha256": "ae37bb2b2d9a11a87fa19c8d5b42e7b06d92c294a567216d61d2472173a8b069"
+    },
+    "tools/exp17/formal/monitor.py": {
+      "bytes": 3318,
+      "sha256": "a2d2da0f0de4529dd9c034e3208700d27bfa64bc34a0ef9e71b197b5b4776ff4"
+    },
+    "tools/exp17/formal/native_adapter.py": {
+      "bytes": 23835,
+      "sha256": "e6dd9f60f61aadfadd1b2f114f6870458f96915cfed90b40e679c25e321f3a77"
+    },
+    "tools/exp17/formal/resources.py": {
+      "bytes": 2322,
+      "sha256": "a2241127f94b6dd4cfb43720a0c5664a44e7720d35829b2b3a08386c6a895dbb"
+    },
+    "tools/exp17/formal/rng.py": {
+      "bytes": 2227,
+      "sha256": "a88c614be51e62900f6b9dcb2a07e3d120f4d84445855c1bc40d84b458e0c9df"
+    },
+    "tools/exp17/formal/sampler.py": {
+      "bytes": 8912,
+      "sha256": "a7f98491b754e65012d7b67890604669d2fc01430de769ac9c43c04878a26ba1"
+    },
+    "tools/exp17/formal/schedule.py": {
+      "bytes": 18086,
+      "sha256": "ebed1e75418898ebd0cfa0f4d70ed2fd938ab417e612b8dfbc276c9d0da65f48"
+    },
+    "tools/exp17/formal/tests/test_authorization.py": {
+      "bytes": 5318,
+      "sha256": "24f471c0fd9c9424ff87adca14aa452369469e6b00c2ab5bd92825e85c690759"
+    },
+    "tools/exp17/formal/tests/test_checkpoint.py": {
+      "bytes": 5843,
+      "sha256": "d055e8fa62e1690770fc7d2b82e5331f0c06964402236a3ba27945a302aa96ba"
+    },
+    "tools/exp17/formal/tests/test_executor.py": {
+      "bytes": 11947,
+      "sha256": "b08be6a5c23b1ec2119a8057cb156d072996d5f9187f13728429bcea6082cd20"
+    },
+    "tools/exp17/formal/tests/test_exports.py": {
+      "bytes": 9241,
+      "sha256": "f64944783b567c60242f3eeda0ced1d6b3fbca7e5974b5580905592040daaaa5"
+    },
+    "tools/exp17/formal/tests/test_monitor_resources.py": {
+      "bytes": 1404,
+      "sha256": "9096b0d82ecfbaf5fe332d903607b5625e6f667ac30a7641bc28189ec5770637"
+    },
+    "tools/exp17/formal/tests/test_recovery.py": {
+      "bytes": 10971,
+      "sha256": "d073f3677052187795762407a83c593fdf390f527e9c1759a739666bfe2a6d7b"
+    },
+    "tools/exp17/formal/tests/test_schedule.py": {
+      "bytes": 5874,
+      "sha256": "85a23bf9843e169d106422d1ff2998d50df9cbd16b9a34513a308fb2007021e4"
+    },
+    "tools/exp17/formal/tests/test_validation.py": {
+      "bytes": 12072,
+      "sha256": "1003adabf338ae57ad9b84fee277834285c85099434b1f8bd71d3c8ba902276a"
+    },
+    "tools/exp17/formal/validation.py": {
+      "bytes": 14862,
+      "sha256": "c9372df7b38081f506c003e9b29f2bfdbc3979a2634f39e88a2a6ff7bd89533c"
+    }
+  },
+  "no_private_assets_or_paths_published": true,
+  "private_final_CPU_summary_sha256": "bccbfd636eb0294fc7c2d6f115f3b96fc3e5ff80bd9f8b1e94697f4afe9a297f",
+  "private_postcheck_receipt_sha256": "22b767bef71df9800c71481852d0205c95cd804723a6f6a23f6588a487e0fe19",
+  "production_code_sha256": "86987123cffef957d7f639f0559e48f6c033562947ddd1ba64689ce6b8bbba4b",
+  "protocol_sha256": "613e4e154a872e0fd88791013f8e63716100470bb4a2f73084b702bb5cd37e44",
+  "public_receipts": {
+    "results/exp17g_formal_protocol/authorization_requirements.json": {
+      "bytes": 660,
+      "sha256": "9f614a81710e69a4bc8a2085ae9aea431015a345a7f6c73cb50b7d810fd808bb"
+    },
+    "results/exp17g_formal_protocol/cpu_tests.json": {
+      "bytes": 2240,
+      "sha256": "8849d2baf6ca39633e737a62fda6bec5922b1e434bbb9cddb38de31b48e3df42"
+    },
+    "results/exp17g_formal_protocol/failures_and_limits.json": {
+      "bytes": 2569,
+      "sha256": "322f5391c53deb4fe4928a384de397aba1b4c9db13c41c475d47c6320b78b0da"
+    },
+    "results/exp17g_formal_protocol/fitness_audit.json": {
+      "bytes": 7239,
+      "sha256": "26b071d94cff807fe8924b6296c1ded6f9518be041adf6ba55e44c62ed0958bc"
+    },
+    "results/exp17g_formal_protocol/formal_training_protocol_v1.json": {
+      "bytes": 45002,
+      "sha256": "613e4e154a872e0fd88791013f8e63716100470bb4a2f73084b702bb5cd37e44"
+    },
+    "results/exp17g_formal_protocol/lr_schedule_2100.csv": {
+      "bytes": 485563,
+      "sha256": "6776d48400049e9b894f76478c4a5e7480432b26e86e2ea6f216c9b82723b8aa"
+    },
+    "results/exp17g_formal_protocol/lr_schedule_audit.json": {
+      "bytes": 5773,
+      "sha256": "4a5ad111cca34721c50763c136b466164d41019d86530ef868209811ff81878a"
+    },
+    "results/exp17g_formal_protocol/protocol_audit.json": {
+      "bytes": 4210,
+      "sha256": "299575a67e48107647e954bf423e491484e7bd070e459d74ff3dcb61d0c6bd15"
+    },
+    "results/exp17g_formal_protocol/recovery_audit.json": {
+      "bytes": 3257,
+      "sha256": "97740396177cb6001191242a029c2218fa39ec21d78a0acee9e02c5555173a58"
+    },
+    "results/exp17g_formal_protocol/resource_budget.json": {
+      "bytes": 1991,
+      "sha256": "88abfc2d51f3e91dcbfb36f1500b44b9ac7f730ce79b290afff6966d84207c9e"
+    },
+    "results/exp17g_formal_protocol/runtime_preflight.json": {
+      "bytes": 3671,
+      "sha256": "d29ed859ac819d8466145144c5af83259d1218c01f9c9dbf70374bc844e76a69"
+    },
+    "results/exp17g_formal_protocol/summary.json": {
+      "bytes": 2321,
+      "sha256": "f8dfb4c8fba1748526a93ef499692bba2d3504d6cbe28eb091045fee5835e00b"
+    }
+  },
+  "schema": "EXP17_G1_EVIDENCE_MANIFEST_V1",
+  "status": "EXP17_G1_FORMAL_PROTOCOL_AND_EXECUTOR_READY_PENDING_CHATGPT_GATE"
+}

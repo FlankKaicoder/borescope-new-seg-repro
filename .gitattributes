@@ -30,3 +30,7 @@
 
 # Bind independent Exp17 J2 engineering receipts without rewriting historical files.
 /results/exp17_j2_engineering/** -text
+
+# Preserve Exp17-G1 formal source/protocol and evidence byte identities.
+/docs/exp17g/** -text
+/results/exp17g_formal_protocol/** -text

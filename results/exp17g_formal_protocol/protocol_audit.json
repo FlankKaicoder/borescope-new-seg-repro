@@ -1,0 +1,115 @@
+{
+  "declared_differences_from_historical_J1": [
+    {
+      "classification": "FROZEN_J2_RESEARCH_VARIABLE",
+      "item": "Pair4 + sparse N + detached A statistics",
+      "meaning": "Approved fixed J2 method, no new search or mathematical changes inG1"
+    },
+    {
+      "classification": "RECOVERY_ENGINEERING_TIMING_EXTENSION",
+      "item": "worker-stream epoch pre-materialization",
+      "meaning": "Same native2worker RNG/seed/loader, sealed21batch bytes; CPUtwo-worker proof and future fullnative trajectory hardgate; nativeGPUcache equivalence not executed inG1"
+    },
+    {
+      "classification": "NEW_SUPPLEMENTARY_SELECTION_PROTOCOL",
+      "item": "scheduled external MASTER+EMA validation",
+      "meaning": "HistoricalJ1 had no training-timeVAL; candidate20events/40states/80passes requires explicit futureGate, isolated fromtraining, fixedLast staysprimary; Best cannot be compared to historical Last as a method gain"
+    },
+    {
+      "classification": "CHECKPOINT_ENGINEERING_EXTENSION",
+      "item": "recovery and Best retention",
+      "meaning": "Everyupdate atomic recovery, every5epoch fullarchive, independent Bestslots,FP32nativefinal endpoints; replaces native half/implicitEMA checkpointserialization only inindependentJ2executor"
+    }
+  ],
+  "formal_training_authorized": false,
+  "identical_to_frozen_J1": {
+    "batches_per_epoch": 21,
+    "effective_updates": 2100,
+    "environment": {
+      "cuda": "12.8",
+      "cuda_devices": 1,
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "python": "3.12.3",
+      "torch": "2.8.0+cu128",
+      "torchvision": "0.23.0+cu128",
+      "ultralytics": "8.4.117"
+    },
+    "training": {
+      "accumulate": 1,
+      "amp": true,
+      "amp_backoff_factor": 0.5,
+      "amp_growth_factor": 2.0,
+      "amp_growth_interval": 2000,
+      "amp_initial_scale": 1.0,
+      "augmentation": {
+        "bgr": 0.0,
+        "close_mosaic": 0,
+        "copy_paste": 0.0,
+        "cutmix": 0.0,
+        "degrees": 0.0,
+        "fliplr": 0.5,
+        "flipud": 0.0,
+        "hsv_h": 0.015,
+        "hsv_s": 0.7,
+        "hsv_v": 0.4,
+        "mixup": 0.0,
+        "mosaic": 0.0,
+        "multi_scale": 0.0,
+        "perspective": 0.0,
+        "rect": false,
+        "scale": 0.5,
+        "shear": 0.0,
+        "translate": 0.1
+      },
+      "batch": 32,
+      "checkpoint_interval_epochs": 5,
+      "compile": false,
+      "cos_lr": false,
+      "deterministic": true,
+      "drop_last": false,
+      "epochs": 100,
+      "gradient_clip_l2_max": 10.0,
+      "imgsz": 640,
+      "lr0": 0.01,
+      "lr_schedule": "NATIVE_LINEAR_PER_EPOCH_WITH_NATIVE_ITERATION_WARMUP",
+      "lrf": 0.01,
+      "momentum": 0.937,
+      "nbs": 32,
+      "optimizer": "AdamW",
+      "patience": 0,
+      "sampling": "SEEDED_NATIVE_RANDOM_SAMPLER_WITHOUT_REPLACEMENT_PER_EPOCH",
+      "seed": 42,
+      "skip_policy": "STOP_ON_FIRST_NONFINITE_OR_NATIVE_SKIP",
+      "validation_during_training": false,
+      "warmup_bias_lr": 0.1,
+      "warmup_epochs": 3.0,
+      "warmup_momentum": 0.8,
+      "weight_decay": 0.0005,
+      "workers": 2
+    }
+  },
+  "initialization": "same fresh frozen COCO seed42 and native/projection state identities; no engineering/J1 checkpoint initialization",
+  "interpretation_notes": [
+    "Momentum0.937 is AdamW beta1 and staysfixed; warmup_momentum0.8 doesnotmodifybetas",
+    "Historical firsttwoLRcolumnnamesdo notestablishweightdecayorder; actual weight,bn,bias groups explicitlybound",
+    "FinalusedLR isepoch_index99 value0.000199, notunusedendpoint0.0001",
+    "VAL count is20events not20nativepasses; bothrolesandbothconfidencepasses means80"
+  ],
+  "no_silent_hyperparameter_fix": true,
+  "schedule_audit": "2100 nativecode and historicledger rows bit exact; independentDecimal maxerror1.3877787807814457e-17; full63warmup CPUaudit",
+  "schema": "EXP17_G1_CONFIGURATION_AUDIT_V1",
+  "status": "PASS_AUDITED_CANDIDATE_WITH_EXPLICIT_ENGINEERING_EXTENSIONS",
+  "unchanged_J2_method": {
+    "N_prefix": [
+      0,
+      16
+    ],
+    "bn_mode": "replay_a",
+    "checkpoint_prefix": false,
+    "lambda_pair": 4,
+    "lambda_supcon": 8,
+    "margin": 0.2,
+    "temperature": 0.1
+  },
+  "unresolved_critical_protocol_fields": []
+}

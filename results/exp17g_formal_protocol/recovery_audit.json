@@ -1,0 +1,89 @@
+{
+  "GPU_model_calls": 0,
+  "VAL_TEST_image_reads": 0,
+  "atomic_failpoints": [
+    "after_fsync",
+    "before_blob_rename",
+    "after_blob_rename",
+    "before_pointer_commit",
+    "after_pointer_commit"
+  ],
+  "before_pointer_failure_preserves_prior_valid_last": true,
+  "formal_authorization_absent": true,
+  "full_core_simulation": {
+    "Best_lightweight_selection_history": 40,
+    "Best_slots": 4,
+    "CPU_toy_effective_updates": 2100,
+    "epochs": 100,
+    "final_cache_epochs_zero_based": [
+      98,
+      99
+    ],
+    "gradient_fixture_events": 20,
+    "image_exposure_metadata": 66800,
+    "instance_exposure_metadata": 126600,
+    "interruption_after_durable_update": 2100,
+    "latest_slots": 2,
+    "metric_role_fixture_calls": 40,
+    "real_VAL_passes": 0,
+    "resumed_final_epoch_events_without_new_optimizer_updates": true,
+    "retained_periodic_fullstates": 20,
+    "simulated_native_passes": 80
+  },
+  "guarantee": "Safe exact CPU reproduction at durably committed consistent boundaries. NOT automatic recovery at every machine instruction; an ambiguous attempted-but-uncommitted physical step or interruptedVAL/diagnostic event hard-stops for independent investigation.",
+  "native_final_exports": "Explicit nativeFP32MASTERandEMAseparately; original projection removal; futureproduction strictUltralytics load_checkpoint verification, no inference duringG1. Fullycommitted matching endpoint is idempotently reused after separate recoveryGate; no overwrite.",
+  "protocol_sha256": "613e4e154a872e0fd88791013f8e63716100470bb4a2f73084b702bb5cd37e44",
+  "real_TRAIN_optimizer_updates": 0,
+  "rejection_cases": [
+    "checkpointbitcorruption",
+    "wrongcheckpointSHA",
+    "changedmanifest",
+    "changedcodebinding",
+    "changedenvironment",
+    "changedmodelarchitectureorclassnames",
+    "FP16master",
+    "AdamWstepinconsistency",
+    "missing/duplicate/skipped/excessoptimizerupdate",
+    "repeatedVALpass",
+    "missingprivateGate",
+    "changedoutput/controlanchor",
+    "deletedclaimedledger",
+    "concurrentprocesslease",
+    "truncatedormutatedjournal",
+    "uncommittedoptimizerattempt",
+    "uncommittedepochAUX",
+    "VALmodifiesliveBNoroptimizerorscalerinternalstate",
+    "incompleteorchangedsealedcache",
+    "orphanfinalexportwithoutreceipt"
+  ],
+  "restart_equivalence": {
+    "bitwise_comparison": [
+      "Loss",
+      "ordered synthetic inputs and Pair binding",
+      "FP32master",
+      "EMAweightsandupdates",
+      "AdamWparametersandstate",
+      "CPUAMPGradScaler",
+      "BN",
+      "Scheduler",
+      "PythonNumPyTorchCPURNG",
+      "samplercursor",
+      "exposureandauditcounts"
+    ],
+    "common_core_mid_epoch_resume": [
+      51,
+      74
+    ],
+    "independent_small_tests_update_boundaries": [
+      1,
+      21,
+      51,
+      63,
+      64
+    ]
+  },
+  "schema": "EXP17_G1_RECOVERY_AUDIT_V1",
+  "scope": "Same executor/checkpoint/epoch-cache/journal/Best functions with tiny CPU synthetic models; native endpoint writer is fixture-replaced in the full2100simulation and separately tested with Tiny7 CPU exports. No frozen COCO model instantiated or researchdata optimizer updates.",
+  "source_protocol_frozen_after_fixes": true,
+  "status": "PASS_CPU_SYNTHETIC_RECOVERY_AND_AUTHORIZATION"
+}

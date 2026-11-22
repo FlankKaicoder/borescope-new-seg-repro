@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp17-G1 formal protocol and recovery preparation (2026-11-23)
+
+EXP17_G1_FORMAL_PROTOCOL_AND_EXECUTOR_READY_PENDING_CHATGPT_GATE. NativeLR2100exact / warmup63; CPU129PASS; complete CPUtoyexecution/recovery, independentVAL/Best/Last/EMA and permanentauthorizationguards. No realtraining/GPU/VAL/TEST;50oldSmokeattempts remainsealed. [Handoff](exp17g/EXP17_G1_FORMAL_PROTOCOL_HANDOFF.md) · [Summary](../results/exp17g_formal_protocol/summary.json) · [Frozen non-authorizing protocol](../results/exp17g_formal_protocol/formal_training_protocol_v1.json) · [Recovery](../results/exp17g_formal_protocol/recovery_audit.json).
+
 ## Exp17 J2 real-TRAIN engineering (2026-11-23)
 
 EXP17_J2_ENGINEERING_COMPLETE_PENDING_FORMAL_TRAINING_GATE. 521 Aligned Polygons / 327 groups; 2100 native batches matched; TRAIN-calibrated fixed Pair4 with SupCon8 and A-statistics replay; 70 CPU tests; real640/batch32 Smoke50/50 and zero AMP skips. Formal training and VAL/TEST remain disabled. [Handoff](exp17/EXP17_J2_ENGINEERING_HANDOFF.md) · [Summary](../results/exp17_j2_engineering/summary.json) · [Calibration](../results/exp17_j2_engineering/calibration_summary.json) · [Smoke](../results/exp17_j2_engineering/smoke_summary.json) · [Non-authorizing protocol draft](../results/exp17_j2_engineering/formal_protocol_draft.json).
