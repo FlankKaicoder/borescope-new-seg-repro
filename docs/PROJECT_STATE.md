@@ -1,5 +1,9 @@
 # Project state
 
+## Exp17-E A10 S379 Polygon expansion (2026-11-22)
+
+EXP17_E_A10_379_POLYGON_EXPANSION_COMPLETE_PENDING_HUMAN_AND_DATA_GATE. The authoritative A10 379-source/359-group manifest contains 576 original GT Polygons: 513 intersect B545 and 63 are outside it. Each source keeps one actual frozen A10 N. Current evidence queues are 499 inherited candidates, 14 targeted questions, 55 new human-review candidates and eight locked mapping/support exceptions. Raw inheritance is explicitly same-generation regional inference; Crop/Bounded target-pixel lineage is verified. Full original 668 TRAIN metadata remains the B reference scope. The offline page defaults to 69 human decisions; new user acceptance/Data Gate/Trusted Pair remain zero. Thirty-two CPU tests and actual offline Chrome import/export/identity tests passed; no model, training, generation or registration. [Current handoff](exp17e/EXP17_E_HANDOFF.md).
+
 ## Exp17-D historical review reconciliation (2026-11-22)
 
 EXP17_D_HISTORICAL_RECONCILIATION_COMPLETE_PENDING_CHATGPT_DATA_GATE. All 545 current selected Polygons inherit same-version historical user regional acceptance; the new empty G1 form is not evidence of zero historical acceptance. Exact reconciliation yields 357 directly inherited candidates / 257 independent groups, 176 asset-binding-only records / 96 groups and 12 specific evidence questions / 12 groups. Group counts overlap between queues. Current selected user rejection, AI-only and identity mismatch are zero. Historical scope is preserved, no new human or formal approval is created, and no image/model work is repeated. Eleven audit CPU tests pass; existing engineering evidence is reused. [Current handoff](exp17d/EXP17_D_HANDOFF.md).

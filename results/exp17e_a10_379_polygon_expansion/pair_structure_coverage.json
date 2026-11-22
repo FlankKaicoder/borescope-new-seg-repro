@@ -1,0 +1,446 @@
+{
+  "asset_types": {
+    "ALIGNED": {
+      "polygons": 528,
+      "reliable_supported_groups": 327,
+      "reliable_supported_polygons": 525,
+      "source_groups": 328,
+      "sources": 346
+    },
+    "BOUNDED": {
+      "polygons": 1,
+      "reliable_supported_groups": 1,
+      "reliable_supported_polygons": 1,
+      "source_groups": 1,
+      "sources": 1
+    },
+    "CROP": {
+      "polygons": 4,
+      "reliable_supported_groups": 3,
+      "reliable_supported_polygons": 4,
+      "source_groups": 3,
+      "sources": 3
+    },
+    "RAW": {
+      "polygons": 43,
+      "reliable_supported_groups": 24,
+      "reliable_supported_polygons": 38,
+      "source_groups": 29,
+      "sources": 29
+    }
+  },
+  "b_reference_scope": "FULL_ORIGINAL_668_TRAIN_METADATA_NOT_S379",
+  "b_reference_train_images": 668,
+  "b_reference_train_independent_groups": 632,
+  "classes": {
+    "Burn": {
+      "a_groups_with_other_group_same_class_b_in_full_train": {
+        "independent_source_groups": 39,
+        "polygons": 71
+      },
+      "a_n_scope": {
+        "independent_source_groups": 39,
+        "polygons": 71
+      },
+      "asset_types": {
+        "ALIGNED": {
+          "independent_source_groups": 32,
+          "polygons": 56
+        },
+        "BOUNDED": {
+          "independent_source_groups": 0,
+          "polygons": 0
+        },
+        "CROP": {
+          "independent_source_groups": 2,
+          "polygons": 2
+        },
+        "RAW": {
+          "independent_source_groups": 6,
+          "polygons": 13
+        }
+      },
+      "full_train_b_independent_groups": 139,
+      "inherited_a_b_n_candidates_pending_data_gate": {
+        "independent_source_groups": 37,
+        "polygons": 60
+      },
+      "potential_a_b_n_ranking_pending_review_and_data_gate": {
+        "independent_source_groups": 38,
+        "polygons": 70
+      },
+      "reliable_n_and_full_target_support": {
+        "independent_source_groups": 38,
+        "polygons": 70
+      },
+      "source_concentration": {
+        "effective_groups_inverse_hhi": 16.973063973063972,
+        "group_polygon_count_histogram": {
+          "1": 22,
+          "2": 13,
+          "3": 3,
+          "14": 1
+        },
+        "group_share_hhi": 0.05891688157111684,
+        "independent_groups": 39,
+        "max_group_polygon_share": 0.19718309859154928,
+        "polygons": 71
+      }
+    },
+    "Crack": {
+      "a_groups_with_other_group_same_class_b_in_full_train": {
+        "independent_source_groups": 51,
+        "polygons": 65
+      },
+      "a_n_scope": {
+        "independent_source_groups": 51,
+        "polygons": 65
+      },
+      "asset_types": {
+        "ALIGNED": {
+          "independent_source_groups": 39,
+          "polygons": 52
+        },
+        "BOUNDED": {
+          "independent_source_groups": 0,
+          "polygons": 0
+        },
+        "CROP": {
+          "independent_source_groups": 1,
+          "polygons": 1
+        },
+        "RAW": {
+          "independent_source_groups": 12,
+          "polygons": 12
+        }
+      },
+      "full_train_b_independent_groups": 75,
+      "inherited_a_b_n_candidates_pending_data_gate": {
+        "independent_source_groups": 47,
+        "polygons": 61
+      },
+      "potential_a_b_n_ranking_pending_review_and_data_gate": {
+        "independent_source_groups": 51,
+        "polygons": 65
+      },
+      "reliable_n_and_full_target_support": {
+        "independent_source_groups": 51,
+        "polygons": 65
+      },
+      "source_concentration": {
+        "effective_groups_inverse_hhi": 34.349593495934954,
+        "group_polygon_count_histogram": {
+          "1": 45,
+          "2": 2,
+          "3": 2,
+          "4": 1,
+          "6": 1
+        },
+        "group_share_hhi": 0.029112426035502962,
+        "independent_groups": 51,
+        "max_group_polygon_share": 0.09230769230769231,
+        "polygons": 65
+      }
+    },
+    "Dent": {
+      "a_groups_with_other_group_same_class_b_in_full_train": {
+        "independent_source_groups": 86,
+        "polygons": 96
+      },
+      "a_n_scope": {
+        "independent_source_groups": 86,
+        "polygons": 96
+      },
+      "asset_types": {
+        "ALIGNED": {
+          "independent_source_groups": 84,
+          "polygons": 94
+        },
+        "BOUNDED": {
+          "independent_source_groups": 1,
+          "polygons": 1
+        },
+        "CROP": {
+          "independent_source_groups": 0,
+          "polygons": 0
+        },
+        "RAW": {
+          "independent_source_groups": 1,
+          "polygons": 1
+        }
+      },
+      "full_train_b_independent_groups": 112,
+      "inherited_a_b_n_candidates_pending_data_gate": {
+        "independent_source_groups": 83,
+        "polygons": 92
+      },
+      "potential_a_b_n_ranking_pending_review_and_data_gate": {
+        "independent_source_groups": 86,
+        "polygons": 96
+      },
+      "reliable_n_and_full_target_support": {
+        "independent_source_groups": 86,
+        "polygons": 96
+      },
+      "source_concentration": {
+        "effective_groups_inverse_hhi": 70.8923076923077,
+        "group_polygon_count_histogram": {
+          "1": 80,
+          "2": 4,
+          "3": 1,
+          "5": 1
+        },
+        "group_share_hhi": 0.014105902777777778,
+        "independent_groups": 86,
+        "max_group_polygon_share": 0.052083333333333336,
+        "polygons": 96
+      }
+    },
+    "Material missing": {
+      "a_groups_with_other_group_same_class_b_in_full_train": {
+        "independent_source_groups": 79,
+        "polygons": 82
+      },
+      "a_n_scope": {
+        "independent_source_groups": 79,
+        "polygons": 82
+      },
+      "asset_types": {
+        "ALIGNED": {
+          "independent_source_groups": 78,
+          "polygons": 81
+        },
+        "BOUNDED": {
+          "independent_source_groups": 0,
+          "polygons": 0
+        },
+        "CROP": {
+          "independent_source_groups": 0,
+          "polygons": 0
+        },
+        "RAW": {
+          "independent_source_groups": 1,
+          "polygons": 1
+        }
+      },
+      "full_train_b_independent_groups": 150,
+      "inherited_a_b_n_candidates_pending_data_gate": {
+        "independent_source_groups": 61,
+        "polygons": 64
+      },
+      "potential_a_b_n_ranking_pending_review_and_data_gate": {
+        "independent_source_groups": 78,
+        "polygons": 81
+      },
+      "reliable_n_and_full_target_support": {
+        "independent_source_groups": 78,
+        "polygons": 81
+      },
+      "source_concentration": {
+        "effective_groups_inverse_hhi": 76.4090909090909,
+        "group_polygon_count_histogram": {
+          "1": 76,
+          "2": 3
+        },
+        "group_share_hhi": 0.013087447947650209,
+        "independent_groups": 79,
+        "max_group_polygon_share": 0.024390243902439025,
+        "polygons": 82
+      }
+    },
+    "Tears": {
+      "a_groups_with_other_group_same_class_b_in_full_train": {
+        "independent_source_groups": 38,
+        "polygons": 40
+      },
+      "a_n_scope": {
+        "independent_source_groups": 38,
+        "polygons": 40
+      },
+      "asset_types": {
+        "ALIGNED": {
+          "independent_source_groups": 38,
+          "polygons": 40
+        },
+        "BOUNDED": {
+          "independent_source_groups": 0,
+          "polygons": 0
+        },
+        "CROP": {
+          "independent_source_groups": 0,
+          "polygons": 0
+        },
+        "RAW": {
+          "independent_source_groups": 0,
+          "polygons": 0
+        }
+      },
+      "full_train_b_independent_groups": 43,
+      "inherited_a_b_n_candidates_pending_data_gate": {
+        "independent_source_groups": 38,
+        "polygons": 40
+      },
+      "potential_a_b_n_ranking_pending_review_and_data_gate": {
+        "independent_source_groups": 38,
+        "polygons": 40
+      },
+      "reliable_n_and_full_target_support": {
+        "independent_source_groups": 38,
+        "polygons": 40
+      },
+      "source_concentration": {
+        "effective_groups_inverse_hhi": 34.782608695652165,
+        "group_polygon_count_histogram": {
+          "1": 37,
+          "3": 1
+        },
+        "group_share_hhi": 0.028750000000000005,
+        "independent_groups": 38,
+        "max_group_polygon_share": 0.075,
+        "polygons": 40
+      }
+    },
+    "Tip curl": {
+      "a_groups_with_other_group_same_class_b_in_full_train": {
+        "independent_source_groups": 0,
+        "polygons": 0
+      },
+      "a_n_scope": {
+        "independent_source_groups": 0,
+        "polygons": 0
+      },
+      "asset_types": {
+        "ALIGNED": {
+          "independent_source_groups": 0,
+          "polygons": 0
+        },
+        "BOUNDED": {
+          "independent_source_groups": 0,
+          "polygons": 0
+        },
+        "CROP": {
+          "independent_source_groups": 0,
+          "polygons": 0
+        },
+        "RAW": {
+          "independent_source_groups": 0,
+          "polygons": 0
+        }
+      },
+      "full_train_b_independent_groups": 18,
+      "inherited_a_b_n_candidates_pending_data_gate": {
+        "independent_source_groups": 0,
+        "polygons": 0
+      },
+      "potential_a_b_n_ranking_pending_review_and_data_gate": {
+        "independent_source_groups": 0,
+        "polygons": 0
+      },
+      "reliable_n_and_full_target_support": {
+        "independent_source_groups": 0,
+        "polygons": 0
+      },
+      "source_concentration": {
+        "effective_groups_inverse_hhi": null,
+        "group_polygon_count_histogram": {},
+        "group_share_hhi": null,
+        "independent_groups": 0,
+        "max_group_polygon_share": null,
+        "polygons": 0
+      }
+    },
+    "corrosion": {
+      "a_groups_with_other_group_same_class_b_in_full_train": {
+        "independent_source_groups": 84,
+        "polygons": 222
+      },
+      "a_n_scope": {
+        "independent_source_groups": 84,
+        "polygons": 222
+      },
+      "asset_types": {
+        "ALIGNED": {
+          "independent_source_groups": 73,
+          "polygons": 205
+        },
+        "BOUNDED": {
+          "independent_source_groups": 0,
+          "polygons": 0
+        },
+        "CROP": {
+          "independent_source_groups": 1,
+          "polygons": 1
+        },
+        "RAW": {
+          "independent_source_groups": 10,
+          "polygons": 16
+        }
+      },
+      "full_train_b_independent_groups": 193,
+      "inherited_a_b_n_candidates_pending_data_gate": {
+        "independent_source_groups": 76,
+        "polygons": 182
+      },
+      "potential_a_b_n_ranking_pending_review_and_data_gate": {
+        "independent_source_groups": 79,
+        "polygons": 216
+      },
+      "reliable_n_and_full_target_support": {
+        "independent_source_groups": 79,
+        "polygons": 216
+      },
+      "source_concentration": {
+        "effective_groups_inverse_hhi": 30.84105131414268,
+        "group_polygon_count_histogram": {
+          "1": 41,
+          "2": 19,
+          "3": 9,
+          "4": 2,
+          "5": 5,
+          "6": 3,
+          "7": 1,
+          "9": 1,
+          "10": 1,
+          "11": 1,
+          "28": 1
+        },
+        "group_share_hhi": 0.03242431620809999,
+        "independent_groups": 84,
+        "max_group_polygon_share": 0.12612612612612611,
+        "polygons": 222
+      }
+    }
+  },
+  "code_sha256": "e8d90d7db253035794b760e546b5f332c8376441e622b1ba3879374bc7678c8c",
+  "extra_b_sampling": false,
+  "formal_trusted_pairs_created": 0,
+  "frozen_split_sha256": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d",
+  "group_counts_overlap_across_classes_and_asset_types": true,
+  "interpretation": "Population-level structural availability only; B presence in an actual unchanged native batch is not guaranteed. Potential ranking counts remain subject to regional review and independent Data Gate. No new sampling or model execution.",
+  "one_frozen_n_per_source": true,
+  "population_concentration": {
+    "effective_groups_inverse_hhi": 140.22654268808114,
+    "group_polygon_count_histogram": {
+      "1": 270,
+      "2": 53,
+      "3": 15,
+      "4": 5,
+      "5": 6,
+      "6": 4,
+      "7": 1,
+      "9": 1,
+      "11": 1,
+      "12": 1,
+      "14": 1,
+      "28": 1
+    },
+    "group_share_hhi": 0.007131317515432099,
+    "independent_groups": 359,
+    "max_group_polygon_share": 0.04861111111111111,
+    "polygons": 576
+  },
+  "queue_sha256": "1bf154d3f0a565892fad12c5f7e80882424baeee34be289cf77911bb8b1ac363",
+  "sampler_or_batch_changes": false,
+  "schema": "exp17e_pair_structure_coverage_v1",
+  "sources": 379
+}

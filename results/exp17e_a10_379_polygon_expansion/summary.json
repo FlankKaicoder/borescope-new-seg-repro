@@ -1,0 +1,135 @@
+{
+  "actual_chrome_qa": "PASS",
+  "all_action_including_locked_technical": 77,
+  "all_cpu_tests_passed": 32,
+  "audited_base_commit": "6e10d201f522a4bac60db67f5432a6aab9ce1903",
+  "b_reference_scope": {
+    "actual_batch_b_guaranteed": false,
+    "extra_b_sampling": false,
+    "independent_groups": 632,
+    "main_sampler_changed": false,
+    "train_images": 668
+  },
+  "branch": "phase/exp17-j2-pseudonormal-pair",
+  "census_input_files_stat_preserved": 1575,
+  "completed_utc": "2026-11-22T11:36:44.194734+00:00",
+  "cpu_test_suites": {
+    "census": 6,
+    "coverage": 6,
+    "expansion": 8,
+    "mapping": 6,
+    "review": 6
+  },
+  "current_statuses": {
+    "CURRENT_INHERITED": {
+      "independent_source_groups": 330,
+      "polygons": 499,
+      "source_images": 349
+    },
+    "CURRENT_TARGETED_REVIEW": {
+      "independent_source_groups": 12,
+      "polygons": 14,
+      "source_images": 12
+    },
+    "MAPPING_UNVERIFIED": {
+      "independent_source_groups": 1,
+      "polygons": 1,
+      "source_images": 1
+    },
+    "NEW_HUMAN_REVIEW_CANDIDATE": {
+      "independent_source_groups": 40,
+      "polygons": 55,
+      "source_images": 40
+    },
+    "TECHNICAL_SUPPORT_FAILURE": {
+      "independent_source_groups": 6,
+      "polygons": 7,
+      "source_images": 6
+    }
+  },
+  "default_page_filter": "NEEDS_HUMAN_REVIEW",
+  "evidence_sha256": {
+    "census_summary.json": "be06317c7605c3869177fcfb37a0d4596ae91fcd63fcf240227903499fef35c3",
+    "mapping_summary.json": "f3bbf2ba95163cd5986a3d5255d82dc291988cf281ffe532248dcecf6d857a89",
+    "pair_structure_coverage.json": "b3dd0fd801d434fb17955fb3665b0b953fa80b6e452d665bcac096aba15783ad",
+    "polygon_recovery_summary.json": "98b1db0161d624997da186fdebe9df1c888c44cff98adf313652ebb810267741",
+    "polygon_recovery_summary_final.json": "7a6c48427ee22ce8061974872643d0caff32bf200c0495c8395c954848a58b05",
+    "region_lineage_summary.json": "f88e0bb750321e7e4b0c69281c7b7a619855aa51764ac7b18f885f127faaf983",
+    "review_summary.json": "3d0b4747a4b6c296c9f9dfe274521e5872626400193c195d0e9ce001cceb93fb"
+  },
+  "final_queue_sha256": "1bf154d3f0a565892fad12c5f7e80882424baeee34be289cf77911bb8b1ac363",
+  "final_recovery_report": "polygon_recovery_summary_final.json",
+  "final_review_package_id": "a0d977ae3dae0a148f0c3f128c113954f18a282ac70a5371d0cf90b352560351",
+  "formal_trusted_pairs": 0,
+  "full_target_support_polygons": 568,
+  "historical_b545": {
+    "d_asset_subset": 159,
+    "d_direct_subset": 342,
+    "d_targeted_subset": 12,
+    "inside": 513,
+    "new_scope_polygons": 63,
+    "outside": 32
+  },
+  "historical_experiments_diff_empty": true,
+  "historical_metadata_files_exactly_preserved": 19,
+  "human_judgment_polygons": 69,
+  "independent_data_gate_approved_polygons": 0,
+  "inherited_evidence_routes": {
+    "BOUNDED_EXACT_REVIEWED_TARGET_PIXEL_DERIVATION": {
+      "independent_source_groups": 1,
+      "polygons": 1,
+      "source_images": 1
+    },
+    "CROP_EXACT_REVIEWED_TARGET_PIXEL_DERIVATION": {
+      "independent_source_groups": 3,
+      "polygons": 4,
+      "source_images": 3
+    },
+    "EXACT_REVIEWED_ALIGNED_REGION": {
+      "independent_source_groups": 304,
+      "polygons": 459,
+      "source_images": 321
+    },
+    "RAW_INFERENTIAL_REGION_INHERITANCE_VIA_FROZEN_H": {
+      "independent_source_groups": 24,
+      "polygons": 35,
+      "source_images": 24
+    }
+  },
+  "intermediate_metadata_preserved": "Initial expansion/review draft is retained privately; final aliases are expansion_r2 and review_r2",
+  "json_csv_import_export_roundtrip": "PASS",
+  "mapping_verified_polygons": 575,
+  "model_forwards": 0,
+  "new_generation": 0,
+  "new_registration": 0,
+  "new_scope_63_breakdown": {
+    "mapping_unverified": 1,
+    "new_human_review": 55,
+    "support_failure": 7
+  },
+  "new_user_polygon_acceptances": 0,
+  "optimizer_updates": 0,
+  "private_archive_bytes": 400367618,
+  "private_archive_sha256": "29a4bee6c7fd40c20cf7fa22cc686c5a4631f368d8db56ca09faeb6984cd56fb",
+  "production_new_review_records_pending": 576,
+  "research_boundary": "Inherited candidates and technical availability do not grant Data Gate. Raw regional inheritance is explicitly inferential. No changes to SupCon/lambda_s, sampling or formal protocol; real lambda_p/BN/640-batch32/seed42 remain separate future Gates.",
+  "schema": "exp17e_final_delivery_summary_v1",
+  "scope": {
+    "a10_asset_types": {
+      "ALIGNED": 346,
+      "BOUNDED": 1,
+      "CROP": 3,
+      "RAW": 29
+    },
+    "a10_assets": 379,
+    "a9_selected_gt_polygons": 576,
+    "derived_polygon_ids": 576,
+    "excluded_a10_sources_kept_out": 13,
+    "extra_original_gt": 0,
+    "independent_groups": 359,
+    "original_gt_polygons": 576,
+    "original_sources": 379
+  },
+  "status": "EXP17_E_A10_379_POLYGON_EXPANSION_COMPLETE_PENDING_HUMAN_AND_DATA_GATE",
+  "val_test_image_reads": 0
+}

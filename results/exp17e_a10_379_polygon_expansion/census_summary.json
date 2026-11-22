@@ -1,0 +1,184 @@
+{
+  "a9_original_selected_polygons": {
+    "groups": 359,
+    "polygons": 576,
+    "sources": 379
+  },
+  "additional_original_annotations_not_a9_selected": {
+    "groups": 0,
+    "polygons": 0,
+    "sources": 0
+  },
+  "asset_types": {
+    "ALIGNED": 346,
+    "BOUNDED": 1,
+    "CROP": 3,
+    "RAW": 29
+  },
+  "b545_inside_s379": {
+    "groups": 338,
+    "polygons": 513,
+    "sources": 358
+  },
+  "b545_intersection_exact_a10_selected_pixels": {
+    "groups": 310,
+    "polygons": 465,
+    "sources": 328
+  },
+  "b545_outside_s379": {
+    "groups": 18,
+    "polygons": 32,
+    "sources": 18
+  },
+  "b545_total": 545,
+  "class_coverage": {
+    "Burn": {
+      "groups": 39,
+      "polygons": 71,
+      "sources": 40
+    },
+    "Crack": {
+      "groups": 51,
+      "polygons": 65,
+      "sources": 56
+    },
+    "Dent": {
+      "groups": 86,
+      "polygons": 96,
+      "sources": 94
+    },
+    "Material missing": {
+      "groups": 79,
+      "polygons": 82,
+      "sources": 81
+    },
+    "Tears": {
+      "groups": 38,
+      "polygons": 40,
+      "sources": 40
+    },
+    "Tip curl": {
+      "groups": 0,
+      "polygons": 0,
+      "sources": 0
+    },
+    "corrosion": {
+      "groups": 84,
+      "polygons": 222,
+      "sources": 84
+    }
+  },
+  "current_sha256_audit": {
+    "asset_reference_count": 1516,
+    "full_image_scope_hash_and_header_validation_seconds": 20.817096400016453,
+    "hardlink_hash_reuse_references": 0,
+    "physical_bytes_read_for_sha256": 608707197,
+    "scope": "379 original TRAIN images,379 original professional JSON,379 selected N,379 published N; no VAL/TEST or empty label files read",
+    "sha256_read_seconds": 20.172208199626766,
+    "total_census_seconds": 24.01467100001173,
+    "unique_files_including_metadata": 1575
+  },
+  "d545_historical_subsets_within_s379": {
+    "ASSET_BINDING_ONLY_PENDING": {
+      "groups": 86,
+      "polygons": 159,
+      "sources": 90
+    },
+    "INHERITED_REGION_PAIR_CANDIDATE": {
+      "groups": 248,
+      "polygons": 342,
+      "sources": 259
+    },
+    "TARGETED_EVIDENCE_REVIEW": {
+      "groups": 12,
+      "polygons": 12,
+      "sources": 12
+    }
+  },
+  "exact_current_aligned_n_historical_region_evidence": {
+    "groups": 328,
+    "polygons": 528,
+    "sources": 346
+  },
+  "excluded_original_13_sources": 13,
+  "final_polygon_states_assigned_here": false,
+  "five_human_inputs": [
+    {
+      "name": "Exp14_A7B_CSV-B_2026-11-13T14-02-32-268Z.csv",
+      "rows": 84,
+      "sha256": "45abd54863404bdc58e72dc5b4933a2921ca3bf52cbf8f2b748a4887c1773fcb"
+    },
+    {
+      "name": "Exp14_A8_FINAL_V4_2026-11-14T06-51-11-506Z.csv",
+      "rows": 31,
+      "sha256": "57e94943882de94d0332a7714b5a732fbf5faafe07ee264263b244f00d73c7e8"
+    },
+    {
+      "name": "Exp14_review_AI_assisted_2026-11-13T07-37-09-066Z.csv",
+      "rows": 530,
+      "sha256": "b1dddcf664a8e69fb53062bf0a36b54e4fd372a92e643d9db5db7ddc81c5ff49"
+    },
+    {
+      "name": "Exp14_review_AI_assisted_2026-11-13T10-50-40-611Z.csv",
+      "rows": 288,
+      "sha256": "be536dc39a7cb8e3fb3671180e55699b8cdff4a909eb28ead5dd6d8694d58d38"
+    },
+    {
+      "name": "Exp14_review_AI_assisted_2026-11-13T12-04-02-854Z.csv",
+      "rows": 23,
+      "sha256": "ae2465227161dc9c78cbfa8b4a1a74c254c5fa2edd0395683de4a929abfe5225"
+    }
+  ],
+  "formal_data_gate_pass": 0,
+  "formal_trusted_pairs": 0,
+  "generation_calls": 0,
+  "groups": 359,
+  "historical_human_review_rows": 956,
+  "id_basis_counts": {
+    "DERIVED_ID": 576
+  },
+  "input_sha256": {
+    "a10_exceptions": "5856342f496ae3b03c12a21e5c7f65cd9079faa4340fd8c08ecc72e872e30e18",
+    "a10_manifest": "1d98e7effbe9c5ec900afaa5cafeaa9994cedf0f839a0c21b2452d5a868819bd",
+    "a10_release_file_index": "b0674f782c6da97f34585a3ff4b4aeb1b4f53972fb6e533361e019749b6750d3",
+    "d_delivery": "9c6e69e4466fc66c2eae03590f101b8f39c229955a80451c10c04e13accd3fa6",
+    "d_matrix": "6d2e2a145e4264ba9ca046ba323b4cdcfef6f7d1ee92746920503decf61ddbdb"
+  },
+  "model_forwards": 0,
+  "new_p379_not_in_b545": {
+    "groups": 46,
+    "polygons": 63,
+    "sources": 46
+  },
+  "new_user_approval": 0,
+  "one_fixed_n_per_source": true,
+  "optimizer_updates": 0,
+  "original_annotations_not_in_a9_all_registry": {
+    "groups": 0,
+    "polygons": 0,
+    "sources": 0
+  },
+  "output_sha256": {
+    "asset_manifest.csv": "81222bd2c73479ebfa2dae5c829234da71c51cafb12d198874c7233a8bcbf2f3",
+    "existing_b545_crosswalk.csv": "5649b3a61703619264f05d915dbfe0d18ffd8094c76c704c4714aa10bc516b38",
+    "input_identity.json": "b6ae69008933362c77ef495a687c1a914adf5b16272c46a98e6b540f2e27b944",
+    "p379_polygon_census.json": "94d5fe701435ab6fe1927875e1166c67ccde2e17dd2d617904ed847b5ec6a6fa",
+    "source_scope.json": "a1d5c84ef73d4d556cb7edc657ba0e06510366e83a77a3a9ea04a2385dd8961e",
+    "version_consistency_report.csv": "82b8eb9f99d57e943150197ff386c4bddb1de593979ee0a07f258683ebcac04e"
+  },
+  "p379": {
+    "groups": 359,
+    "polygons": 576,
+    "sources": 379
+  },
+  "registrations": 0,
+  "same_review_historical_polygon_pass_and_b_confirmed": {
+    "groups": 358,
+    "polygons": 575,
+    "sources": 378
+  },
+  "source_sha256": "af3e0cdd62d7683562c6523e77f242386d4a42c9d3fab5b27e52077331b524dc",
+  "sources": 379,
+  "status": "PASS_EXP17E_A10_MANIFEST_SCOPE_AND_ORIGINAL_POLYGON_CENSUS",
+  "val_test_image_reads": 0
+}

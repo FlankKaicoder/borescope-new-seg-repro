@@ -1,0 +1,110 @@
+{
+  "audited_base_commit": "6e10d201f522a4bac60db67f5432a6aab9ce1903",
+  "canonical_final_private_aliases": [
+    "expansion_r2",
+    "review_r2"
+  ],
+  "canonical_final_recovery": "results/exp17e_a10_379_polygon_expansion/polygon_recovery_summary_final.json",
+  "canonical_summary": "results/exp17e_a10_379_polygon_expansion/summary.json",
+  "exact_bytes_preserved_by_narrow_gitattributes": true,
+  "files": {
+    "docs/exp17e/EXP17_E_HANDOFF.md": {
+      "bytes": 12933,
+      "sha256": "578dae6ce5806be4865a8fc336635e81b4f9e4e51d5cca9abe8747d07e73b694"
+    },
+    "docs/exp17e/EXP17_E_MAPPING_REVIEW.md": {
+      "bytes": 8056,
+      "sha256": "dad2d129a5bda247f37cb0774473e99826bbd0e5c3d846ab456c6255f79937eb"
+    },
+    "results/exp17e_a10_379_polygon_expansion/census_summary.json": {
+      "bytes": 5292,
+      "sha256": "be06317c7605c3869177fcfb37a0d4596ae91fcd63fcf240227903499fef35c3"
+    },
+    "results/exp17e_a10_379_polygon_expansion/mapping_summary.json": {
+      "bytes": 2373,
+      "sha256": "f3bbf2ba95163cd5986a3d5255d82dc291988cf281ffe532248dcecf6d857a89"
+    },
+    "results/exp17e_a10_379_polygon_expansion/pair_structure_coverage.json": {
+      "bytes": 12501,
+      "sha256": "b3dd0fd801d434fb17955fb3665b0b953fa80b6e452d665bcac096aba15783ad"
+    },
+    "results/exp17e_a10_379_polygon_expansion/polygon_recovery_summary.json": {
+      "bytes": 8687,
+      "sha256": "98b1db0161d624997da186fdebe9df1c888c44cff98adf313652ebb810267741"
+    },
+    "results/exp17e_a10_379_polygon_expansion/polygon_recovery_summary_final.json": {
+      "bytes": 8687,
+      "sha256": "7a6c48427ee22ce8061974872643d0caff32bf200c0495c8395c954848a58b05"
+    },
+    "results/exp17e_a10_379_polygon_expansion/region_lineage_summary.json": {
+      "bytes": 959,
+      "sha256": "f88e0bb750321e7e4b0c69281c7b7a619855aa51764ac7b18f885f127faaf983"
+    },
+    "results/exp17e_a10_379_polygon_expansion/review_summary.json": {
+      "bytes": 3623,
+      "sha256": "3d0b4747a4b6c296c9f9dfe274521e5872626400193c195d0e9ce001cceb93fb"
+    },
+    "results/exp17e_a10_379_polygon_expansion/summary.json": {
+      "bytes": 4839,
+      "sha256": "d9aefed70afccbe45f42d71974520f55c0c59d82cf89b2c96e3234d10eb3addc"
+    },
+    "tools/exp17e/__init__.py": {
+      "bytes": 78,
+      "sha256": "9d9c761008c707bd713b72b436dc25f9ce561eab90b9e92917f4f5f57ca6007d"
+    },
+    "tools/exp17e/census.py": {
+      "bytes": 25446,
+      "sha256": "af3e0cdd62d7683562c6523e77f242386d4a42c9d3fab5b27e52077331b524dc"
+    },
+    "tools/exp17e/coverage.py": {
+      "bytes": 8150,
+      "sha256": "e8d90d7db253035794b760e546b5f332c8376441e622b1ba3879374bc7678c8c"
+    },
+    "tools/exp17e/expansion.py": {
+      "bytes": 20732,
+      "sha256": "606d9e033e7a70d58a649529bf0e9c96e722d13ad9ae8e52a04479d53273ed45"
+    },
+    "tools/exp17e/lineage.py": {
+      "bytes": 5386,
+      "sha256": "4a2ad345c4a67214ab3b8ff6c441ea899f73232c4542fc5768cbdfd37ea4b681"
+    },
+    "tools/exp17e/mapping.py": {
+      "bytes": 17523,
+      "sha256": "0b239dcb83ec12fd0190715b05b040f8f9341ccb40b5387d8e2dad4f0b31bfbe"
+    },
+    "tools/exp17e/review_package.html": {
+      "bytes": 25321,
+      "sha256": "c19d0a89a6e19fc18003abe6868e9386d8c787a02106803fee2f43e108d50c35"
+    },
+    "tools/exp17e/review_package.py": {
+      "bytes": 17997,
+      "sha256": "f9314c487577eb98c892909eb0a4ca042287414359dd93d8cc569d400f869da2"
+    },
+    "tools/exp17e/test_census.py": {
+      "bytes": 4026,
+      "sha256": "bbc239f0917f2487c368dcabdd48da42c137a1e9a6de013fce32686eae6f538f"
+    },
+    "tools/exp17e/test_coverage.py": {
+      "bytes": 2295,
+      "sha256": "0f64b9de7ffa0183c9cfaa9eedfa012d5beb87c3d2798ffa4e293436465a541a"
+    },
+    "tools/exp17e/test_expansion.py": {
+      "bytes": 3198,
+      "sha256": "8344c3a3657a5750e89abceb010344c8811842f149ba7a898af934af0c2c10c1"
+    },
+    "tools/exp17e/test_mapping.py": {
+      "bytes": 4920,
+      "sha256": "bf73293a871a951e4f4f6cc6f01e1f5c5655766a6e2cbe322f81f7b28391ed69"
+    },
+    "tools/exp17e/test_review_browser.mjs": {
+      "bytes": 12495,
+      "sha256": "7c230926e1e500d77437d98bd7fdf1e33102acba261555b1be9ffdf14d0bd231"
+    },
+    "tools/exp17e/test_review_package.py": {
+      "bytes": 8578,
+      "sha256": "dd61b74dd4cd8e7062bf3858217663fd80e2636d8f284fc7da7d01565c7c36ec"
+    }
+  },
+  "schema": "exp17e_public_evidence_manifest_v1",
+  "scope": "Only new Exp17-E source, sanitized aggregates and reports; excludes this manifest itself"
+}

@@ -1,5 +1,9 @@
 # Historical methods boundary
 
+## Exp17-E A10-selected N scope and regional recovery (2026-11-22)
+
+S379 is the immutable A10 selected-image cohort, not the old B545 population. Extract every original professional-JSON Polygon (P379=576), preserve each source's actual N/type/version and existing regional evidence, and prepare only unresolved records for review. Raw same-generation regional inference is distinguished from exact pixel evidence; no mapping is invented from dimensions. A10 whole-image acceptance cannot create missing local correspondence or regional user approval. B remains full 668 original TRAIN metadata. This is data preparation with zero model updates, new human approval or Data Gate, not a J2 performance result. [Current handoff](exp17e/EXP17_E_HANDOFF.md).
+
 ## Exp17-D historical regional-review inheritance (2026-11-22)
 
 The new Exp17 G1 form is a recording tool, not a retroactive requirement that invalidates old same-version user regional acceptance. Reconcile original source/Polygon/asset identity, preserve explicit/default UI semantics and accepted scope, and submit inherited candidates to independent Data Gate. Regional coarse correspondence does not require G2/TRE or repeated boundary points. This corrects the preparation handoff's assumption that new human review was the sole route forward; it does not rewrite that historical report, change J2 loss or grant training approval. [Reconciliation handoff](exp17d/EXP17_D_HANDOFF.md).

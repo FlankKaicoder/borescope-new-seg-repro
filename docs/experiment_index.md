@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp17-E A10 S379 Polygon expansion (2026-11-22)
+
+EXP17_E_A10_379_POLYGON_EXPANSION_COMPLETE_PENDING_HUMAN_AND_DATA_GATE. P379=576; B545 intersection=513; new scope=63. Fixed A10 N yields 499 inherited, 14 targeted, 55 new-review and 8 technical exceptions, with zero automatic approval. [Handoff](exp17e/EXP17_E_HANDOFF.md) · [Mapping review](exp17e/EXP17_E_MAPPING_REVIEW.md) · [Final recovery](../results/exp17e_a10_379_polygon_expansion/polygon_recovery_summary_final.json) · [Coverage](../results/exp17e_a10_379_polygon_expansion/pair_structure_coverage.json) · [Review receipt](../results/exp17e_a10_379_polygon_expansion/review_summary.json).
+
 ## Exp17-D historical review reconciliation (2026-11-22)
 
 EXP17_D_HISTORICAL_RECONCILIATION_COMPLETE_PENDING_CHATGPT_DATA_GATE. Reconcile the five frozen human exports and 545 selected Polygons without repeating image review. Historical accepted 545; actions: inherited 357, asset-binding-only 176, targeted questions 12; no formal data/training approval. [Handoff](exp17d/EXP17_D_HANDOFF.md) · [Historical semantics](exp17d/EXP17_D_HISTORICAL_DECISION_SEMANTICS.md) · [G1 and engineering gaps](exp17d/EXP17_D_G1_AND_ENGINEERING_GAP_REVIEW.md) · [Sanitized summary](../results/exp17_d_historical_reconciliation/summary.json).

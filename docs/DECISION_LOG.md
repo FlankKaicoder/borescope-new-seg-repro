@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp17-E A10 S379 Polygon expansion (2026-11-22)
+
+Decision D085. Define A/N scope only from the 379 actually frozen A10 N assets, retaining one exact N per source and all 576 original GT Polygons. Preserve D's exact 513-record intersection without transporting decisions to another asset. Recover old regional evidence via exact Aligned pixels, verified Crop/Bounded target-pixel lineage or explicitly identified same-generation Raw/frozen-H semantic inference; none grants Data Gate. Keep 55 new J2 review candidates and 14 current-asset questions actionable, eight geometry/support exceptions locked, and full 668 TRAIN metadata as the independent B population. Do not replace N, refit geometry, alter GT/SupCon/sampling or execute models/training. [Handoff](exp17e/EXP17_E_HANDOFF.md).
+
 ## Exp17-D historical review reconciliation (2026-11-22)
 
 Decision D084. Inherit exact same-version user Polygon acceptance and its original scope from the five frozen human CSVs. Do not require 545 new G1 forms, independent geometric points or G2/TRE, and do not let new Codex HOLD suggestions replace historical human decisions. Preserve A9 recommended assets and pending pixel choices; classify 357 inherited candidates, 176 asset-only bindings and 12 precise evidence questions while retaining all 545 historical acceptances. Other-version failures, source flags and ROI-only risks do not propagate automatically. Independent ChatGPT Data Gate and all real-training engineering/calibration permissions remain pending. [Handoff](exp17d/EXP17_D_HANDOFF.md).

@@ -1,0 +1,23 @@
+{
+  "all_target_rgb_pixels_equal_reviewed_parent": true,
+  "bounded_polygons": 1,
+  "bounded_private_sha256": "95fa84973de394a48dc4cf80d837175e4cb6dd343c9e3d37c3a767ebd95704f3",
+  "bounded_sources": 1,
+  "bounded_target_pixels": 377,
+  "crop_polygons": 4,
+  "crop_private_sha256": "87cf92ebc3c2d6a8e9189a3f0cd2a468ccbee6f53471abee168775e105b05a85",
+  "crop_sources": 3,
+  "formal_trusted_pairs": 0,
+  "limitations": [
+    "Pixel equivalence is limited to each exact target support; larger feature receptive fields/context can differ.",
+    "Preserves the selected A10 asset; no substitution of Aligned for Bounded or Crop."
+  ],
+  "model_forwards": 0,
+  "new_image_files": 0,
+  "optimizer_updates": 0,
+  "region_historical_pass_and_b_confirmed": 5,
+  "registration": 0,
+  "source_sha256": "4a2ad345c4a67214ab3b8ff6c441ea899f73232c4542fc5768cbdfd37ea4b681",
+  "status": "PASS_PIXEL_PRESERVING_REGION_LINEAGE_NOT_SEMANTIC_OR_DATA_GATE",
+  "verified_files": 8
+}

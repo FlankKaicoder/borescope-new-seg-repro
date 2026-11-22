@@ -1,0 +1,285 @@
+{
+  "class_coverage": {
+    "Burn": {
+      "all": {
+        "independent_source_groups": 39,
+        "polygons": 71,
+        "source_images": 40
+      },
+      "inherited": {
+        "independent_source_groups": 37,
+        "polygons": 60,
+        "source_images": 38
+      },
+      "new_scope": {
+        "independent_source_groups": 7,
+        "polygons": 7,
+        "source_images": 7
+      }
+    },
+    "Crack": {
+      "all": {
+        "independent_source_groups": 51,
+        "polygons": 65,
+        "source_images": 56
+      },
+      "inherited": {
+        "independent_source_groups": 47,
+        "polygons": 61,
+        "source_images": 52
+      },
+      "new_scope": {
+        "independent_source_groups": 3,
+        "polygons": 3,
+        "source_images": 3
+      }
+    },
+    "Dent": {
+      "all": {
+        "independent_source_groups": 86,
+        "polygons": 96,
+        "source_images": 94
+      },
+      "inherited": {
+        "independent_source_groups": 83,
+        "polygons": 92,
+        "source_images": 90
+      },
+      "new_scope": {
+        "independent_source_groups": 2,
+        "polygons": 2,
+        "source_images": 2
+      }
+    },
+    "Material missing": {
+      "all": {
+        "independent_source_groups": 79,
+        "polygons": 82,
+        "source_images": 81
+      },
+      "inherited": {
+        "independent_source_groups": 61,
+        "polygons": 64,
+        "source_images": 63
+      },
+      "new_scope": {
+        "independent_source_groups": 13,
+        "polygons": 13,
+        "source_images": 13
+      }
+    },
+    "Tears": {
+      "all": {
+        "independent_source_groups": 38,
+        "polygons": 40,
+        "source_images": 40
+      },
+      "inherited": {
+        "independent_source_groups": 38,
+        "polygons": 40,
+        "source_images": 40
+      },
+      "new_scope": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_images": 0
+      }
+    },
+    "Tip curl": {
+      "all": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_images": 0
+      },
+      "inherited": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_images": 0
+      },
+      "new_scope": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_images": 0
+      }
+    },
+    "corrosion": {
+      "all": {
+        "independent_source_groups": 84,
+        "polygons": 222,
+        "source_images": 84
+      },
+      "inherited": {
+        "independent_source_groups": 76,
+        "polygons": 182,
+        "source_images": 76
+      },
+      "new_scope": {
+        "independent_source_groups": 24,
+        "polygons": 38,
+        "source_images": 24
+      }
+    }
+  },
+  "code_sha256": "606d9e033e7a70d58a649529bf0e9c96e722d13ad9ae8e52a04479d53273ed45",
+  "data_gate_approved_polygons": 0,
+  "default_action_queue": {
+    "independent_source_groups": 57,
+    "polygons": 77,
+    "source_images": 57
+  },
+  "existing_b545_inside": {
+    "independent_source_groups": 338,
+    "polygons": 513,
+    "source_images": 358
+  },
+  "existing_b545_outside": 32,
+  "existing_b545_total": 545,
+  "formal_trusted_pairs": 0,
+  "inherited_by_evidence_route": {
+    "BOUNDED_EXACT_REVIEWED_TARGET_PIXEL_DERIVATION": {
+      "independent_source_groups": 1,
+      "polygons": 1,
+      "source_images": 1
+    },
+    "CROP_EXACT_REVIEWED_TARGET_PIXEL_DERIVATION": {
+      "independent_source_groups": 3,
+      "polygons": 4,
+      "source_images": 3
+    },
+    "EXACT_REVIEWED_ALIGNED_REGION": {
+      "independent_source_groups": 304,
+      "polygons": 459,
+      "source_images": 321
+    },
+    "RAW_INFERENTIAL_REGION_INHERITANCE_VIA_FROZEN_H": {
+      "independent_source_groups": 24,
+      "polygons": 35,
+      "source_images": 24
+    }
+  },
+  "input_sha256": {
+    "bounded_region_lineage.json": "95fa84973de394a48dc4cf80d837175e4cb6dd343c9e3d37c3a767ebd95704f3",
+    "crop_region_lineage.json": "87cf92ebc3c2d6a8e9189a3f0cd2a468ccbee6f53471abee168775e105b05a85",
+    "p379_polygon_census.json": "94d5fe701435ab6fe1927875e1166c67ccde2e17dd2d617904ed847b5ec6a6fa",
+    "polygon_mappings.json": "1de5a1cbb38c4a5a1c624de24e08fe206a31609e323f0afc2c01633eca1148a7",
+    "source_mappings.json": "da27c5abc659f0e0e1c775f44bcf8719f22bfe8bfde7c86930f2bfdaf874fd37",
+    "source_scope.json": "a1d5c84ef73d4d556cb7edc657ba0e06510366e83a77a3a9ea04a2385dd8961e"
+  },
+  "mapping_supported": {
+    "independent_source_groups": 353,
+    "polygons": 568,
+    "source_images": 373
+  },
+  "model_forwards": 0,
+  "needs_human_judgment": {
+    "independent_source_groups": 51,
+    "polygons": 69,
+    "source_images": 51
+  },
+  "needs_technical_evidence": {
+    "independent_source_groups": 19,
+    "polygons": 22,
+    "source_images": 19
+  },
+  "new_human_acceptances": 0,
+  "new_registration": 0,
+  "new_scope_polygons": {
+    "independent_source_groups": 46,
+    "polygons": 63,
+    "source_images": 46
+  },
+  "old_asset_pending_resolved_by_a10_exact_aligned_selection": {
+    "independent_source_groups": 82,
+    "polygons": 152,
+    "source_images": 86
+  },
+  "one_fixed_a10_n_per_source": true,
+  "optimizer_updates": 0,
+  "original_d_subset": {
+    "ASSET_BINDING_ONLY_PENDING": {
+      "independent_source_groups": 86,
+      "polygons": 159,
+      "source_images": 90
+    },
+    "INHERITED_REGION_PAIR_CANDIDATE": {
+      "independent_source_groups": 248,
+      "polygons": 342,
+      "source_images": 259
+    },
+    "TARGETED_EVIDENCE_REVIEW": {
+      "independent_source_groups": 12,
+      "polygons": 12,
+      "source_images": 12
+    }
+  },
+  "policy": {
+    "d_scope": "Preserve the original D category and asset separately. A D decision on another N is not transported automatically.",
+    "gate": "All inherited and new candidates remain NOT_GRANTED for independent Data Gate; no new human acceptance or Formal Trusted Pair is created.",
+    "geometry": "Unverified mapping cannot expose a corresponding N ROI or accept a Pair. Full target support is required; no new matrix is fitted.",
+    "inherited_aligned": "Exact historically reviewed Aligned bytes, same-review local PASS and B confirmation, complete verified target support.",
+    "inherited_derived": "Crop/Bounded retain the fixed A10 N and require hash-bound proof that all used target pixels equal the accepted Aligned parent. Only the Polygon scope transfers.",
+    "inherited_raw": "Explicit inferential regional-semantic inheritance: exact current Raw SHA is the frozen parent of the same reviewed Aligned, same-review Polygon PASS plus B confirmation, A10 final Raw selection, frozen H and full target support. This is not exact-pixel acceptance or a new user J2 decision.",
+    "n_scope": "Exactly one A10-frozen N per source; never replace it with an A9 recommendation.",
+    "new_scope": "P379 minus B545 is retained in full, including mapping/support exceptions. A10 whole-image acceptance alone cannot create regional approval.",
+    "specific_conflicts": "Same-current-N/parent D questions and A9 ineligible regional proposals remain actionable. AI conflict does not become user rejection."
+  },
+  "population": {
+    "independent_source_groups": 359,
+    "polygons": 576,
+    "source_images": 379
+  },
+  "primary_states": {
+    "CURRENT_INHERITED": {
+      "independent_source_groups": 330,
+      "polygons": 499,
+      "source_images": 349
+    },
+    "CURRENT_TARGETED_REVIEW": {
+      "independent_source_groups": 12,
+      "polygons": 14,
+      "source_images": 12
+    },
+    "MAPPING_UNVERIFIED": {
+      "independent_source_groups": 1,
+      "polygons": 1,
+      "source_images": 1
+    },
+    "NEW_HUMAN_REVIEW_CANDIDATE": {
+      "independent_source_groups": 40,
+      "polygons": 55,
+      "source_images": 40
+    },
+    "TECHNICAL_SUPPORT_FAILURE": {
+      "independent_source_groups": 6,
+      "polygons": 7,
+      "source_images": 6
+    }
+  },
+  "queue_sha256": "1bf154d3f0a565892fad12c5f7e80882424baeee34be289cf77911bb8b1ac363",
+  "raw_inferential_inheritance_is_not_exact_pixel_approval": true,
+  "recoverability": {
+    "NEEDS_HUMAN_SEMANTIC_REVIEW": {
+      "independent_source_groups": 12,
+      "polygons": 14,
+      "source_images": 12
+    },
+    "NEEDS_TECHNICAL_EVIDENCE": {
+      "independent_source_groups": 1,
+      "polygons": 1,
+      "source_images": 1
+    },
+    "NOT_RECOVERABLE_WITH_CURRENT_ASSETS": {
+      "independent_source_groups": 6,
+      "polygons": 7,
+      "source_images": 6
+    },
+    "READY_FOR_HUMAN_REVIEW": {
+      "independent_source_groups": 345,
+      "polygons": 554,
+      "source_images": 364
+    }
+  },
+  "source_groups": 359,
+  "source_scope": 379,
+  "status": "EXP17_E_A10_379_POLYGON_EXPANSION_COMPLETE_PENDING_HUMAN_AND_DATA_GATE"
+}

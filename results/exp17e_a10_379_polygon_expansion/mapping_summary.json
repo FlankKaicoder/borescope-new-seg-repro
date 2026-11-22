@@ -1,0 +1,67 @@
+{
+  "a9_saved_evidence_sha256": "64e184db336f768f976fae777ddc696859e5e95fc028eafde0083be92629fa3c",
+  "asset_type_counts": {
+    "ALIGNED": 346,
+    "BOUNDED": 1,
+    "CROP": 3,
+    "RAW": 29
+  },
+  "by_asset_type": {
+    "ALIGNED": {
+      "full_support_polygons": 525,
+      "mapping_verified_sources": 346,
+      "polygons": 528,
+      "sources": 346
+    },
+    "BOUNDED": {
+      "full_support_polygons": 1,
+      "mapping_verified_sources": 1,
+      "polygons": 1,
+      "sources": 1
+    },
+    "CROP": {
+      "full_support_polygons": 4,
+      "mapping_verified_sources": 3,
+      "polygons": 4,
+      "sources": 3
+    },
+    "RAW": {
+      "full_support_polygons": 38,
+      "mapping_verified_sources": 28,
+      "polygons": 43,
+      "sources": 29
+    }
+  },
+  "elapsed_seconds": 25.207279399968684,
+  "exception_polygons": 8,
+  "exceptions_by_reason": {
+    "NO_RELIABLE_FROZEN_HISTORICAL_MAPPING": 1,
+    "TARGET_NATIVE_N_NEAREST_VALID_SUPPORT_INCOMPLETE": 7,
+    "TARGET_NOT_FULLY_INSIDE_FROZEN_N_FRAME": 4,
+    "TARGET_SOURCE_VALID_SUPPORT_INCOMPLETE": 7
+  },
+  "formal_trusted_pairs": 0,
+  "full_target_support_polygons": 568,
+  "limitations": [
+    "Historical affine reuse is region correspondence, not Formal TRE or new registration.",
+    "Raw uses inverse frozen Raw-to-source transform, never same-size identity.",
+    "Aligned is already source-grid; Raw transform is not applied twice.",
+    "Native N support conservatively checks mapped polygon raster and nearest validity; it does not prove normal semantics."
+  ],
+  "mapping_unverified_sources": 1,
+  "mapping_verified_polygons": 575,
+  "mapping_verified_sources": 378,
+  "model_forward": 0,
+  "new_registration": 0,
+  "optimizer_updates": 0,
+  "polygon_census_sha256": "94d5fe701435ab6fe1927875e1166c67ccde2e17dd2d617904ed847b5ec6a6fa",
+  "polygons": 576,
+  "private_polygon_mappings_sha256": "1de5a1cbb38c4a5a1c624de24e08fe206a31609e323f0afc2c01633eca1148a7",
+  "private_source_mappings_sha256": "da27c5abc659f0e0e1c775f44bcf8719f22bfe8bfde7c86930f2bfdaf874fd37",
+  "scope_sha256": "a1d5c84ef73d4d556cb7edc657ba0e06510366e83a77a3a9ea04a2385dd8961e",
+  "source_assets": 379,
+  "source_sha256": "0b239dcb83ec12fd0190715b05b040f8f9341ccb40b5387d8e2dad4f0b31bfbe",
+  "status": "FROZEN_MAPPING_AUDIT_COMPLETE_NOT_DATA_GATE",
+  "verified_input_bytes": 253132592,
+  "verified_unique_input_files": 956
+}

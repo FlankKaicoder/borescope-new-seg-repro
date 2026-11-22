@@ -17,3 +17,8 @@
 /tools/exp17d/** -text
 /docs/exp17d/** -text
 /results/exp17_d_historical_reconciliation/** -text
+
+# Preserve Exp17-E source, display-tool and audit receipt byte identities.
+/tools/exp17e/** -text
+/docs/exp17e/** -text
+/results/exp17e_a10_379_polygon_expansion/** -text
