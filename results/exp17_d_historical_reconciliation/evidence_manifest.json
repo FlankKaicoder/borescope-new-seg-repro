@@ -1,0 +1,78 @@
+{
+  "audited_base_commit": "e2ae411ecf6eb92511d83829388838693fd027b0",
+  "canonical_final_receipt_alias": "reconciliation_r4",
+  "canonical_final_summary": "results/exp17_d_historical_reconciliation/summary.json",
+  "files": {
+    "docs/exp17d/EXP17_D_G1_AND_ENGINEERING_GAP_REVIEW.md": {
+      "bytes": 22711,
+      "sha256": "5abc3df14cefe4d81873fed7f4d10f93eb379724f48ade19a18b0b2c7a22b4bd"
+    },
+    "docs/exp17d/EXP17_D_HANDOFF.md": {
+      "bytes": 11892,
+      "sha256": "077ab28c7bb909eba45534967a275c78812b7427d570db882137f4c1725c89ae"
+    },
+    "docs/exp17d/EXP17_D_HISTORICAL_DECISION_SEMANTICS.md": {
+      "bytes": 9906,
+      "sha256": "6d0dd8a1d6eb68ec73a5904aacf949cd8efd9f374aa4e777421605d06b7f8ce2"
+    },
+    "results/exp17_d_historical_reconciliation/audit_revision_receipt.json": {
+      "bytes": 4125,
+      "sha256": "9ed0e271b9005263057c0a6d3a7c6d4fd7ab1f700c9a3cc48496ae8d6400dae6"
+    },
+    "results/exp17_d_historical_reconciliation/final_review.json": {
+      "bytes": 1777,
+      "sha256": "27f7aede74d3ab15a343e830e501f858c186915c4063bc0adcea8fa3b571f117"
+    },
+    "results/exp17_d_historical_reconciliation/historical_source_identity.json": {
+      "bytes": 1047,
+      "sha256": "7840d18e85f0e913a7f6dd15d173bfa12ac05f7fb7aba7687f271f4113f7221b"
+    },
+    "results/exp17_d_historical_reconciliation/reconciliation_r2/rules.json": {
+      "bytes": 2070,
+      "sha256": "96f22de257c58441d3f4100eaf178cf248f67c6322f318ce31701de05d67d6ac"
+    },
+    "results/exp17_d_historical_reconciliation/reconciliation_r2/summary.json": {
+      "bytes": 18505,
+      "sha256": "dc438390a15c01ec674c4caf8a272c48a7a441cef52a97fa38753dacb2f6f4eb"
+    },
+    "results/exp17_d_historical_reconciliation/reconciliation_r3/rules.json": {
+      "bytes": 2070,
+      "sha256": "96f22de257c58441d3f4100eaf178cf248f67c6322f318ce31701de05d67d6ac"
+    },
+    "results/exp17_d_historical_reconciliation/reconciliation_r3/summary.json": {
+      "bytes": 18505,
+      "sha256": "6d0664718f0038b3ad4547695aea166c7d88ed29e889cbff9fbba3b5f87e74b6"
+    },
+    "results/exp17_d_historical_reconciliation/reconciliation_r4/rules.json": {
+      "bytes": 2070,
+      "sha256": "96f22de257c58441d3f4100eaf178cf248f67c6322f318ce31701de05d67d6ac"
+    },
+    "results/exp17_d_historical_reconciliation/reconciliation_r4/summary.json": {
+      "bytes": 18905,
+      "sha256": "38aa237a1a080c4ad429e15922427095929ac32c90dff93fcb43b491007a0c77"
+    },
+    "results/exp17_d_historical_reconciliation/rules.json": {
+      "bytes": 2070,
+      "sha256": "96f22de257c58441d3f4100eaf178cf248f67c6322f318ce31701de05d67d6ac"
+    },
+    "results/exp17_d_historical_reconciliation/summary.json": {
+      "bytes": 18905,
+      "sha256": "38aa237a1a080c4ad429e15922427095929ac32c90dff93fcb43b491007a0c77"
+    },
+    "tools/exp17d/__init__.py": {
+      "bytes": 77,
+      "sha256": "ee94b8fd84a18e3c15e8bd14498b68a81377de3bbe414d90cf9a094a9b0efdc0"
+    },
+    "tools/exp17d/reconcile.py": {
+      "bytes": 36952,
+      "sha256": "a2c28ed20673a87da9e48c96e9a0e12b027f09ffec988eb90397d91c0c0c5722"
+    },
+    "tools/exp17d/test_reconcile.py": {
+      "bytes": 4822,
+      "sha256": "75bc6b5a6f01cfc0afca6e12df3b59116926dbe72794d3b445ea1be22fb7d07b"
+    }
+  },
+  "historical_outputs_are_read_only": true,
+  "schema": "exp17_d_published_evidence_manifest_v1",
+  "scope": "New Exp17-D source, sanitized results and reports only; excludes this manifest"
+}

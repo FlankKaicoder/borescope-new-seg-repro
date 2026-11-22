@@ -1,0 +1,591 @@
+{
+  "all_historical_event_states": {
+    "HISTORICAL_ALIGNMENT_UNRESOLVED": 163,
+    "HISTORICAL_USER_ACCEPTED": 615,
+    "HISTORICAL_USER_ACCEPTED_WITH_SCOPE": 24,
+    "HISTORICAL_USER_PENDING": 409,
+    "HISTORICAL_USER_REJECTED": 575
+  },
+  "all_historical_overall_user_decisions": {
+    "HOLD": 79,
+    "PASS": 418,
+    "RETRY_ALIGNMENT": 111,
+    "RETRY_REPAIR": 346,
+    "UNREVIEWED": 2
+  },
+  "all_historical_resolved_polygon_states": {
+    "HOLD": 221,
+    "PASS": 812,
+    "RETRY_ALIGNMENT": 163,
+    "RETRY_REPAIR": 575,
+    "UNREVIEWED": 15
+  },
+  "all_historical_semantically_accepted_distinct_polygons": 623,
+  "all_historical_semantically_accepted_polygon_versions": 639,
+  "alternate_polygon_version_rows": 10,
+  "alternate_unique_review_ids": 5,
+  "asset_and_action_axes": {
+    "action_axis": {
+      "ASSET_BINDING_ONLY_PENDING": {
+        "independent_source_groups": 96,
+        "polygons": 176,
+        "source_ids": 100
+      },
+      "EXPLICITLY_EXCLUDED_FOR_J2": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      },
+      "INHERITED_REGION_PAIR_CANDIDATE": {
+        "independent_source_groups": 257,
+        "polygons": 357,
+        "source_ids": 268
+      },
+      "TARGETED_EVIDENCE_REVIEW": {
+        "independent_source_groups": 12,
+        "polygons": 12,
+        "source_ids": 12
+      },
+      "UNKNOWN_HOLD": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      }
+    },
+    "asset_axis": {
+      "bound": {
+        "independent_source_groups": 263,
+        "polygons": 365,
+        "source_ids": 274
+      },
+      "pending": {
+        "independent_source_groups": 99,
+        "polygons": 180,
+        "source_ids": 103
+      }
+    },
+    "targeted_scope": "Specific missing technical explanation/clarification, not a repeated five-round human G1 review"
+  },
+  "class_coverage": {
+    "Burn": {
+      "ASSET_BINDING_ONLY_PENDING": {
+        "independent_source_groups": 12,
+        "polygons": 18,
+        "source_ids": 12
+      },
+      "EXPLICITLY_EXCLUDED_FOR_J2": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      },
+      "INHERITED_REGION_PAIR_CANDIDATE": {
+        "independent_source_groups": 29,
+        "polygons": 47,
+        "source_ids": 29
+      },
+      "TARGETED_EVIDENCE_REVIEW": {
+        "independent_source_groups": 2,
+        "polygons": 2,
+        "source_ids": 2
+      },
+      "UNKNOWN_HOLD": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      },
+      "total": {
+        "independent_source_groups": 41,
+        "polygons": 67,
+        "source_ids": 42
+      }
+    },
+    "Crack": {
+      "ASSET_BINDING_ONLY_PENDING": {
+        "independent_source_groups": 3,
+        "polygons": 3,
+        "source_ids": 3
+      },
+      "EXPLICITLY_EXCLUDED_FOR_J2": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      },
+      "INHERITED_REGION_PAIR_CANDIDATE": {
+        "independent_source_groups": 45,
+        "polygons": 59,
+        "source_ids": 50
+      },
+      "TARGETED_EVIDENCE_REVIEW": {
+        "independent_source_groups": 1,
+        "polygons": 1,
+        "source_ids": 1
+      },
+      "UNKNOWN_HOLD": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      },
+      "total": {
+        "independent_source_groups": 49,
+        "polygons": 63,
+        "source_ids": 54
+      }
+    },
+    "Dent": {
+      "ASSET_BINDING_ONLY_PENDING": {
+        "independent_source_groups": 29,
+        "polygons": 35,
+        "source_ids": 32
+      },
+      "EXPLICITLY_EXCLUDED_FOR_J2": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      },
+      "INHERITED_REGION_PAIR_CANDIDATE": {
+        "independent_source_groups": 60,
+        "polygons": 63,
+        "source_ids": 63
+      },
+      "TARGETED_EVIDENCE_REVIEW": {
+        "independent_source_groups": 2,
+        "polygons": 2,
+        "source_ids": 2
+      },
+      "UNKNOWN_HOLD": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      },
+      "total": {
+        "independent_source_groups": 88,
+        "polygons": 100,
+        "source_ids": 96
+      }
+    },
+    "Material missing": {
+      "ASSET_BINDING_ONLY_PENDING": {
+        "independent_source_groups": 20,
+        "polygons": 21,
+        "source_ids": 20
+      },
+      "EXPLICITLY_EXCLUDED_FOR_J2": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      },
+      "INHERITED_REGION_PAIR_CANDIDATE": {
+        "independent_source_groups": 44,
+        "polygons": 45,
+        "source_ids": 45
+      },
+      "TARGETED_EVIDENCE_REVIEW": {
+        "independent_source_groups": 5,
+        "polygons": 5,
+        "source_ids": 5
+      },
+      "UNKNOWN_HOLD": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      },
+      "total": {
+        "independent_source_groups": 68,
+        "polygons": 71,
+        "source_ids": 70
+      }
+    },
+    "Tears": {
+      "ASSET_BINDING_ONLY_PENDING": {
+        "independent_source_groups": 5,
+        "polygons": 5,
+        "source_ids": 5
+      },
+      "EXPLICITLY_EXCLUDED_FOR_J2": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      },
+      "INHERITED_REGION_PAIR_CANDIDATE": {
+        "independent_source_groups": 34,
+        "polygons": 35,
+        "source_ids": 35
+      },
+      "TARGETED_EVIDENCE_REVIEW": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      },
+      "UNKNOWN_HOLD": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      },
+      "total": {
+        "independent_source_groups": 38,
+        "polygons": 40,
+        "source_ids": 40
+      }
+    },
+    "Tip curl": {
+      "ASSET_BINDING_ONLY_PENDING": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      },
+      "EXPLICITLY_EXCLUDED_FOR_J2": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      },
+      "INHERITED_REGION_PAIR_CANDIDATE": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      },
+      "TARGETED_EVIDENCE_REVIEW": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      },
+      "UNKNOWN_HOLD": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      },
+      "total": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      }
+    },
+    "corrosion": {
+      "ASSET_BINDING_ONLY_PENDING": {
+        "independent_source_groups": 35,
+        "polygons": 94,
+        "source_ids": 35
+      },
+      "EXPLICITLY_EXCLUDED_FOR_J2": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      },
+      "INHERITED_REGION_PAIR_CANDIDATE": {
+        "independent_source_groups": 50,
+        "polygons": 108,
+        "source_ids": 50
+      },
+      "TARGETED_EVIDENCE_REVIEW": {
+        "independent_source_groups": 2,
+        "polygons": 2,
+        "source_ids": 2
+      },
+      "UNKNOWN_HOLD": {
+        "independent_source_groups": 0,
+        "polygons": 0,
+        "source_ids": 0
+      },
+      "total": {
+        "independent_source_groups": 86,
+        "polygons": 204,
+        "source_ids": 86
+      }
+    }
+  },
+  "completed_utc": "2026-11-22T08:49:10.436312+00:00",
+  "five_human_inputs": [
+    {
+      "input": "Exp14_A7B_CSV-B_2026-11-13T14-02-32-268Z.csv",
+      "physical_lines": 85,
+      "review_rows": 84,
+      "sha256": "45abd54863404bdc58e72dc5b4933a2921ca3bf52cbf8f2b748a4887c1773fcb"
+    },
+    {
+      "input": "Exp14_A8_FINAL_V4_2026-11-14T06-51-11-506Z.csv",
+      "physical_lines": 32,
+      "review_rows": 31,
+      "sha256": "57e94943882de94d0332a7714b5a732fbf5faafe07ee264263b244f00d73c7e8"
+    },
+    {
+      "input": "Exp14_review_AI_assisted_2026-11-13T07-37-09-066Z.csv",
+      "physical_lines": 531,
+      "review_rows": 530,
+      "sha256": "b1dddcf664a8e69fb53062bf0a36b54e4fd372a92e643d9db5db7ddc81c5ff49"
+    },
+    {
+      "input": "Exp14_review_AI_assisted_2026-11-13T10-50-40-611Z.csv",
+      "physical_lines": 289,
+      "review_rows": 288,
+      "sha256": "be536dc39a7cb8e3fb3671180e55699b8cdff4a909eb28ead5dd6d8694d58d38"
+    },
+    {
+      "input": "Exp14_review_AI_assisted_2026-11-13T12-04-02-854Z.csv",
+      "physical_lines": 24,
+      "review_rows": 23,
+      "sha256": "ae2465227161dc9c78cbfa8b4a1a74c254c5fa2edd0395683de4a929abfe5225"
+    }
+  ],
+  "formal_data_gate_pass": 0,
+  "formal_trusted_pairs": 0,
+  "gpu_calls": 0,
+  "historical_files_modified": 0,
+  "historical_polygon_version_events": 1786,
+  "historical_review_rows": 956,
+  "historical_status_counts": {
+    "ASSET_IDENTITY_MISMATCH": {
+      "independent_source_groups": 0,
+      "polygons": 0,
+      "source_ids": 0
+    },
+    "HISTORICAL_AI_ONLY_PASS": {
+      "independent_source_groups": 0,
+      "polygons": 0,
+      "source_ids": 0
+    },
+    "HISTORICAL_ALIGNMENT_UNRESOLVED": {
+      "independent_source_groups": 0,
+      "polygons": 0,
+      "source_ids": 0
+    },
+    "HISTORICAL_USER_ACCEPTED": {
+      "independent_source_groups": 340,
+      "polygons": 508,
+      "source_ids": 359
+    },
+    "HISTORICAL_USER_ACCEPTED_WITH_SCOPE": {
+      "independent_source_groups": 16,
+      "polygons": 37,
+      "source_ids": 17
+    },
+    "HISTORICAL_USER_PENDING": {
+      "independent_source_groups": 0,
+      "polygons": 0,
+      "source_ids": 0
+    },
+    "HISTORICAL_USER_REJECTED": {
+      "independent_source_groups": 0,
+      "polygons": 0,
+      "source_ids": 0
+    },
+    "HISTORICAL_VERSION_UNRESOLVED": {
+      "independent_source_groups": 0,
+      "polygons": 0,
+      "source_ids": 0
+    },
+    "NO_HISTORICAL_DECISION": {
+      "independent_source_groups": 0,
+      "polygons": 0,
+      "source_ids": 0
+    }
+  },
+  "historically_semantically_accepted_polygons_outside_current_545_not_promoted": 78,
+  "identity_errors": 0,
+  "independent_group_counts_can_overlap_between_classes_or_queues": true,
+  "new_alignment": 0,
+  "new_generation": 0,
+  "new_human_g1_pass": 0,
+  "optimizer_updates": 0,
+  "population": {
+    "independent_source_groups": 356,
+    "polygons": 545,
+    "source_ids": 376
+  },
+  "prior_audit": {
+    "candidate_ledger_sha256": "11244f84b9fe0025a79b49e8c362c3c838d7d752a146071edc0a7712f0b84472",
+    "current_image_byte_rehashes": 0,
+    "current_image_decodes": 0,
+    "current_rasters_or_registrations": 0,
+    "file_ledger_sha256": "65398fafec214019839d10bab0f55d835955db1d52793ae0ee9aaecdd515e8fc",
+    "image_and_other_files_previously_byte_verified": 3998
+  },
+  "private_output_sha256": {
+    "historical_polygon_events.json": "7e1f869372e517f9738b9dd30e91b620d8ed33db48bfeced41cb89e350045ef7",
+    "historical_review_rows.json": "86bc8dc8d31b132ae0b17210bd53ed9aa2b917e8868e7b1ebf043ffd089a86f0",
+    "input_metadata_identity.json": "531d7ee2126f677ec45bd975b891de850e1b78c36dc72744d57460bdcac0cbc0",
+    "reconciliation.csv": "d6840f6d051b09da9459a5957894e8da28875b1e88fa70cf7b4c2a548f3fa6ac",
+    "reconciliation.json": "87be078e222fd2abdc68b0d6d01b411072bf57b3fcb56bba170c67d04893c192"
+  },
+  "recommended_rows": 545,
+  "required_13_counts": {
+    "10_inherited_region_pair_candidate": {
+      "independent_source_groups": 257,
+      "polygons": 357,
+      "source_ids": 268
+    },
+    "11_asset_binding_only": {
+      "independent_source_groups": 96,
+      "polygons": 176,
+      "source_ids": 100
+    },
+    "12_targeted_review_required": {
+      "independent_source_groups": 12,
+      "polygons": 12,
+      "source_ids": 12
+    },
+    "13_explicitly_excluded_for_j2": {
+      "independent_source_groups": 0,
+      "polygons": 0,
+      "source_ids": 0
+    },
+    "1_historical_human_polygon_pass": {
+      "independent_source_groups": 356,
+      "polygons": 545,
+      "source_ids": 376
+    },
+    "2_same_version_aligned_identity": {
+      "independent_source_groups": 356,
+      "polygons": 545,
+      "source_ids": 376
+    },
+    "3_historical_valid_mask_file_identity": {
+      "independent_source_groups": 356,
+      "polygons": 545,
+      "source_ids": 376
+    },
+    "4_traceable_historical_matrix": {
+      "independent_source_groups": 356,
+      "polygons": 545,
+      "source_ids": 376
+    },
+    "5_coordinate_defined_crop_fov_limited_acceptance": {
+      "independent_source_groups": 0,
+      "polygons": 0,
+      "source_ids": 0
+    },
+    "6_selected_version_identity_conflict": {
+      "independent_source_groups": 0,
+      "polygons": 0,
+      "source_ids": 0
+    },
+    "7_selected_historical_user_rejected": {
+      "independent_source_groups": 0,
+      "polygons": 0,
+      "source_ids": 0
+    },
+    "8_selected_ai_only_pass": {
+      "independent_source_groups": 0,
+      "polygons": 0,
+      "source_ids": 0
+    },
+    "9_selected_no_historical_human_decision": {
+      "independent_source_groups": 0,
+      "polygons": 0,
+      "source_ids": 0
+    }
+  },
+  "rules": {
+    "asset_binding": "A9 pending pixel asset selection remains pending. V4 final_version_choice blank does not negate existing same-version regional semantic acceptance.",
+    "coarse_correspondence": "Reuse audited same-version source-grid affine, Valid asset and full target support; no Formal TRE, G2 or repeated independent-boundary review is required for inheritance.",
+    "conflicts": "Specific same-version unresolved target/part/serious UI evidence may create a targeted queue without revoking the historical user decision. Only explicit local evidence can exclude a selected version.",
+    "explicit_exclusion": "After identity checking, an explicit user EXCLUDE takes precedence over a same-row Polygon PASS and region confirmation.",
+    "gate": "Inherited candidates are eligible for independent J2 Data Gate review, not formal Data Gate PASS or training approval. Current new human G1 fields remain a separate historical snapshot.",
+    "identity": "Join exact review_id, source, version, variant, original/JSON/raw/aligned/request/edit SHA, Polygon and historical affine/Valid support. Reuse prior 3998-file audit; do not rehash/decode images.",
+    "independence": "Count selected Polygons and unique frozen group_id separately. Multiple versions or Polygons never create extra independent source groups.",
+    "nonautomatic_rejection": "Frame-edge, modest texture/brightness differences, source-level version flags, other GT elsewhere in ROI and D0 ROI/context thresholds are not automatic target failures.",
+    "polygon": "Reuse A9 explicit.get(pid, overall_decision) only for that review identity's frozen target IDs. b_region_review must also be CONFIRMED. Whole-image PASS alone does not establish a region Pair.",
+    "scope": "Every inherited claim is limited to the hash-bound selected Polygon. Preserve region-only and explicit textual restrictions separately from coordinate-defined crop/FOV restrictions.",
+    "selection": "Keep A9 recommended unchanged. Ten alternates and all other historical versions are evidence context, never silently substitute them."
+  },
+  "selected_disposition_counts": {
+    "ASSET_BINDING_ONLY_PENDING": 176,
+    "INHERITED_REGION_PAIR_CANDIDATE": 357,
+    "TARGETED_EVIDENCE_REVIEW": 12
+  },
+  "selected_unique_review_ids": 377,
+  "semantic_evidence_sha256": "3b15d42ee7fa61e56b05cd31d164b9a60da055341cb6373088292aa9d2f4ed74",
+  "source_sha256": {
+    "tools/exp14/final_dataset_identity.py": "0c3e6c65021c81b7ea4817828f46cc3c0093614c558abb3ff2c3300ba95c50c2",
+    "tools/exp14/final_dataset_selection.py": "0f53c821f7d4502b7a580390cc30e13dfb2049c2d1ed5723c4ffe4442faf9b95",
+    "tools/exp17d/reconcile.py": "bf07de6d384decc3fff962c2bde77ed35f5f0ab00e39d4ba876b025d97290f7f",
+    "tools/exp17d/test_reconcile.py": "84ea0b2b5a6d75b20fab5c007001fb117fe280bc5f118be92f255822854061dd"
+  },
+  "status": "EXP17_D_HISTORICAL_RECONCILIATION_COMPLETE_PENDING_CHATGPT_DATA_GATE",
+  "supplemental_counts": {
+    "aligned_review_id_bound_including_targeted": {
+      "independent_source_groups": 263,
+      "polygons": 365,
+      "source_ids": 274
+    },
+    "asset_binding_pending_including_targeted": {
+      "independent_source_groups": 99,
+      "polygons": 180,
+      "source_ids": 103
+    },
+    "historical_acceptance_inherited_including_pending_issues": {
+      "independent_source_groups": 356,
+      "polygons": 545,
+      "source_ids": 376
+    },
+    "historical_full_frame_valid": {
+      "independent_source_groups": 219,
+      "polygons": 322,
+      "source_ids": 231
+    },
+    "historical_full_roi_valid": {
+      "independent_source_groups": 345,
+      "polygons": 519,
+      "source_ids": 365
+    },
+    "historical_full_target_valid": {
+      "independent_source_groups": 356,
+      "polygons": 545,
+      "source_ids": 376
+    },
+    "historical_region_only_user_confirmation": {
+      "independent_source_groups": 10,
+      "polygons": 23,
+      "source_ids": 10
+    },
+    "historical_text_explicitly_region_scoped": {
+      "independent_source_groups": 7,
+      "polygons": 14,
+      "source_ids": 7
+    },
+    "other_version_retry_alignment_context_only": {
+      "independent_source_groups": 90,
+      "polygons": 123,
+      "source_ids": 91
+    },
+    "other_version_retry_repair_context_only": {
+      "independent_source_groups": 99,
+      "polygons": 158,
+      "source_ids": 104
+    },
+    "other_version_retry_repair_or_alignment_context_only": {
+      "independent_source_groups": 182,
+      "polygons": 277,
+      "source_ids": 189
+    },
+    "other_version_user_hold_context_only": {
+      "independent_source_groups": 10,
+      "polygons": 10,
+      "source_ids": 10
+    },
+    "same_source_multiple_selected_region_versions": {
+      "independent_source_groups": 1,
+      "polygons": 2,
+      "source_ids": 1
+    },
+    "source_version_flag_not_selected_conflict": {
+      "independent_source_groups": 37,
+      "polygons": 122,
+      "source_ids": 37
+    },
+    "targeted_already_bound_overlap": {
+      "independent_source_groups": 8,
+      "polygons": 8,
+      "source_ids": 8
+    },
+    "targeted_asset_pending_overlap": {
+      "independent_source_groups": 4,
+      "polygons": 4,
+      "source_ids": 4
+    },
+    "unknown_hold": {
+      "independent_source_groups": 0,
+      "polygons": 0,
+      "source_ids": 0
+    }
+  },
+  "val_test_image_reads": 0
+}

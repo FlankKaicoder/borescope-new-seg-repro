@@ -1,0 +1,74 @@
+{
+  "corrections": [
+    {
+      "current_batch_effect": "none; current31V4 final-choice fields all blank",
+      "issue": "Explicit final EXCLUDE must precede same-row local PASS plus regional confirmation",
+      "test": "PASS+CONFIRMED+EXCLUDE maps to HISTORICAL_USER_REJECTED and EXPLICITLY_EXCLUDED_FOR_J2"
+    },
+    {
+      "current_batch_effect": "none; final runs all used exact same49-rule input",
+      "fix": "Mandatory CLI and API input, exact frozen SHA256, nonempty49rules with37ACCEPTED_WITH_SCOPE and12TARGETED_REVIEW",
+      "issue": "Semantic evidence was previously optional; omission could hide the12-targeted/37-scoped overlay"
+    },
+    {
+      "current_batch_effect": "all 2661 unique paths passed",
+      "fix": "Current regular-file existence and exact stat bytes checked against previously verified ledger; no image rehash/decoding",
+      "issue": "Current candidate asset checks needed file type and size in addition to prior SHA references"
+    }
+  ],
+  "cpu_tests": {
+    "command": "py -3.14 -m unittest tools.exp17d.test_reconcile",
+    "failed": 0,
+    "passed": 11
+  },
+  "current_checks": {
+    "current_asset_size_mismatches": 0,
+    "image_byte_sha256_policy": "Reused accepted prior 3998-file SHA256/postcheck ledger; current pass checks file existence, regular type and size only; no image SHA256 rehash or decode",
+    "metadata_files_sha256_checked_and_postchecked": 799,
+    "unique_asset_paths_existence_regular_type_size_statted": 2661
+  },
+  "final_private_directory_alias": "reconciliation_r4",
+  "final_private_summary_sha256": "38aa237a1a080c4ad429e15922427095929ac32c90dff93fcb43b491007a0c77",
+  "final_public_summary_sha256": "38aa237a1a080c4ad429e15922427095929ac32c90dff93fcb43b491007a0c77",
+  "final_source_sha256": {
+    "tools/exp14/final_dataset_identity.py": "0c3e6c65021c81b7ea4817828f46cc3c0093614c558abb3ff2c3300ba95c50c2",
+    "tools/exp14/final_dataset_selection.py": "0f53c821f7d4502b7a580390cc30e13dfb2049c2d1ed5723c4ffe4442faf9b95",
+    "tools/exp17d/reconcile.py": "a2c28ed20673a87da9e48c96e9a0e12b027f09ffec988eb90397d91c0c0c5722",
+    "tools/exp17d/test_reconcile.py": "75bc6b5a6f01cfc0afca6e12df3b59116926dbe72794d3b445ea1be22fb7d07b"
+  },
+  "gpu_calls": 0,
+  "historical_inputs_modified": 0,
+  "new_image_reads": 0,
+  "new_rasters": 0,
+  "optimizer_updates": 0,
+  "previous_private_receipts_preserved": {
+    "reconciliation": {
+      "required_counts_unchanged": true,
+      "source_sha256": {
+        "tools/exp17d/reconcile.py": "a9b468b09f849a484c178a9be2ef57fd85923c4bb9bc8173e12127398b379409"
+      },
+      "summary_sha256": "57c8b5032e909814bcab1f3cf7a082001559e20ac6d32d4cc9d152d25ae9e3e2"
+    },
+    "reconciliation_r2": {
+      "required_counts_unchanged": true,
+      "source_sha256": {
+        "tools/exp14/final_dataset_identity.py": "0c3e6c65021c81b7ea4817828f46cc3c0093614c558abb3ff2c3300ba95c50c2",
+        "tools/exp14/final_dataset_selection.py": "0f53c821f7d4502b7a580390cc30e13dfb2049c2d1ed5723c4ffe4442faf9b95",
+        "tools/exp17d/reconcile.py": "bf07de6d384decc3fff962c2bde77ed35f5f0ab00e39d4ba876b025d97290f7f",
+        "tools/exp17d/test_reconcile.py": "84ea0b2b5a6d75b20fab5c007001fb117fe280bc5f118be92f255822854061dd"
+      },
+      "summary_sha256": "dc438390a15c01ec674c4caf8a272c48a7a441cef52a97fa38753dacb2f6f4eb"
+    },
+    "reconciliation_r3": {
+      "required_counts_unchanged": true,
+      "source_sha256": {
+        "tools/exp14/final_dataset_identity.py": "0c3e6c65021c81b7ea4817828f46cc3c0093614c558abb3ff2c3300ba95c50c2",
+        "tools/exp14/final_dataset_selection.py": "0f53c821f7d4502b7a580390cc30e13dfb2049c2d1ed5723c4ffe4442faf9b95",
+        "tools/exp17d/reconcile.py": "1190d977f0d0ea2c2e090b5d9cd5f4b15a557efc9582e5c40146464c2c7a1755",
+        "tools/exp17d/test_reconcile.py": "75bc6b5a6f01cfc0afca6e12df3b59116926dbe72794d3b445ea1be22fb7d07b"
+      },
+      "summary_sha256": "6d0664718f0038b3ad4547695aea166c7d88ed29e889cbff9fbba3b5f87e74b6"
+    }
+  },
+  "status": "PASS_METADATA_AUDIT_CODE_BOUNDARY_CORRECTIONS_FINAL_R4"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS_UNCHANGED_HISTORICAL_SOURCE_BYTE_CROSSWALK",
+  "basis": "Runtime receipt records exact unchanged Windows checkout bytes; Git stores LF for these historical paths. No normalization or historical source write performed.",
+  "files": [
+    {
+      "path": "tools/exp14/final_dataset_identity.py",
+      "actual_windows_bytes_sha256": "0c3e6c65021c81b7ea4817828f46cc3c0093614c558abb3ff2c3300ba95c50c2",
+      "frozen_git_blob_sha256": "acf9d80fd931606306c70b0098a87ec755bdc50842c635c899c340eca4aad254",
+      "working_crlf_count": 326,
+      "lf_normalized_equals_frozen_git": true,
+      "historical_source_changed": false
+    },
+    {
+      "path": "tools/exp14/final_dataset_selection.py",
+      "actual_windows_bytes_sha256": "0f53c821f7d4502b7a580390cc30e13dfb2049c2d1ed5723c4ffe4442faf9b95",
+      "frozen_git_blob_sha256": "edb35531ed376cae42009a7518e163863b06b79c9c3ae5746105cd70e922b0d6",
+      "working_crlf_count": 329,
+      "lf_normalized_equals_frozen_git": true,
+      "historical_source_changed": false
+    }
+  ]
+}

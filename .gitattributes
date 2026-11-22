@@ -12,3 +12,8 @@
 /tools/exp17/** -text
 /docs/exp17/** -text
 /results/exp17_j2_preparation/** -text
+
+# Preserve exact Exp17-D reconciliation source and receipt bytes.
+/tools/exp17d/** -text
+/docs/exp17d/** -text
+/results/exp17_d_historical_reconciliation/** -text

@@ -1,0 +1,32 @@
+{
+  "asset_binding_only": 176,
+  "auditor": "Separate read-only agent plus root metadata/identity verification; no ChatGPT Data Gate claimed",
+  "base_commit": "e2ae411ecf6eb92511d83829388838693fd027b0",
+  "cpu_audit_tests_passed": 11,
+  "current_image_reads": 0,
+  "direct_inherited_candidates": 357,
+  "existing_21_tests_and_3_gpu_smoke_rerun": false,
+  "final_summary_sha256": "38aa237a1a080c4ad429e15922427095929ac32c90dff93fcb43b491007a0c77",
+  "formal_trusted_pairs": 0,
+  "historical_selected_acceptance": 545,
+  "historical_source_and_exp17_results_diff_empty": true,
+  "independent_five_csv_physical_row_reconciliation": "PASS_956_ROWS",
+  "model_calls": 0,
+  "new_human_pass_created": 0,
+  "optimizer_updates": 0,
+  "private_csv_sha256": "3c87190a3d0900518d1c9cd154447cef6ca931737bcc871c34d9d6dcc343b7de",
+  "private_matrix_sha256": "6d2e2a145e4264ba9ca046ba323b4cdcfef6f7d1ee92746920503decf61ddbdb",
+  "protected_metadata_files_byte_hash_and_size_unchanged": 15,
+  "root_timestamp_serialization_exception": {
+    "cause": "Start snapshot nanosecond timestamps passed through JavaScript Number and were rounded; strict integer equality was not a valid check",
+    "event": "ROOT_POSTCHECK_TIMESTAMP_INTEGER_ASSERTION_STOP",
+    "historical_bytes_or_sizes_changed": false,
+    "model_calls_during_investigation": 0,
+    "reconciliation_results_changed": false,
+    "resolution": "All 15 byte hashes and sizes exactly match. All timestamps match at recorded binary64 precision. Exact current nanoseconds are retained as decimal strings; no original file touched."
+  },
+  "selected_and_alternate_records": 555,
+  "specific_questions": 12,
+  "status": "PASS_FINAL_R4_INDEPENDENT_METADATA_REVIEW_NOT_DATA_GATE",
+  "timestamps_match_at_recorded_binary64_precision": true
+}

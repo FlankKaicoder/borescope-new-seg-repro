@@ -1,5 +1,9 @@
 # Project state
 
+## Exp17-D historical review reconciliation (2026-11-22)
+
+EXP17_D_HISTORICAL_RECONCILIATION_COMPLETE_PENDING_CHATGPT_DATA_GATE. All 545 current selected Polygons inherit same-version historical user regional acceptance; the new empty G1 form is not evidence of zero historical acceptance. Exact reconciliation yields 357 directly inherited candidates / 257 independent groups, 176 asset-binding-only records / 96 groups and 12 specific evidence questions / 12 groups. Group counts overlap between queues. Current selected user rejection, AI-only and identity mismatch are zero. Historical scope is preserved, no new human or formal approval is created, and no image/model work is repeated. Eleven audit CPU tests pass; existing engineering evidence is reused. [Current handoff](exp17d/EXP17_D_HANDOFF.md).
+
 ## Exp17 J2 source-aware Pair preparation (2026-11-22)
 
 EXP17_J2_PREPARATION_COMPLETE_PENDING_HUMAN_PAIR_GATE. User accepted Exp15 three-seed SupCon stability and the separate Exp16 fixed-weight CE negative result. This isolated branch preserves both. All 545 Pair candidates pass identity audit across 376 images / 356 independent source groups; human G1 PASS and trusted Pair remain zero. The full offline review package, 21 CPU tests, three synthetic-only joint GPU updates and one 36-group read-only TRAIN diagnostic are complete. Context domain cues remain a risk. Real native paired augmentation is not implemented; lambda_p is unset; human/Data/calibration/engineering/Formal Gates remain. No real Pair optimization or VAL/TEST. [Handoff](exp17/EXP17_J2_HANDOFF.md).

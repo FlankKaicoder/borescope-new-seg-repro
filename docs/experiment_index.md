@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp17-D historical review reconciliation (2026-11-22)
+
+EXP17_D_HISTORICAL_RECONCILIATION_COMPLETE_PENDING_CHATGPT_DATA_GATE. Reconcile the five frozen human exports and 545 selected Polygons without repeating image review. Historical accepted 545; actions: inherited 357, asset-binding-only 176, targeted questions 12; no formal data/training approval. [Handoff](exp17d/EXP17_D_HANDOFF.md) · [Historical semantics](exp17d/EXP17_D_HISTORICAL_DECISION_SEMANTICS.md) · [G1 and engineering gaps](exp17d/EXP17_D_G1_AND_ENGINEERING_GAP_REVIEW.md) · [Sanitized summary](../results/exp17_d_historical_reconciliation/summary.json).
+
 ## Exp17 J2 source-aware Pair preparation (2026-11-22)
 
 EXP17_J2_PREPARATION_COMPLETE_PENDING_HUMAN_PAIR_GATE. 545 audited Polygons, 356 independent groups, zero trusted Pair; offline human-review package and synthetic shared-Backbone prototype ready. [Handoff](exp17/EXP17_J2_HANDOFF.md) · [Asset audit](exp17/EXP17_PAIR_ASSET_AUDIT.md) · [Method and gates](exp17/EXP17_J2_METHOD_AND_GATES.md) · [Summary](../results/exp17_j2_preparation/summary.json) · [Non-authorizing protocol draft](../results/exp17_j2_preparation/formal_protocol_draft.json).

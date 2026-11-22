@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp17-D historical review reconciliation (2026-11-22)
+
+Decision D084. Inherit exact same-version user Polygon acceptance and its original scope from the five frozen human CSVs. Do not require 545 new G1 forms, independent geometric points or G2/TRE, and do not let new Codex HOLD suggestions replace historical human decisions. Preserve A9 recommended assets and pending pixel choices; classify 357 inherited candidates, 176 asset-only bindings and 12 precise evidence questions while retaining all 545 historical acceptances. Other-version failures, source flags and ROI-only risks do not propagate automatically. Independent ChatGPT Data Gate and all real-training engineering/calibration permissions remain pending. [Handoff](exp17d/EXP17_D_HANDOFF.md).
+
 ## Exp15 J-E2 frozen VAL across three seeds (2026-11-22)
 
 Decision D081. Retain all three preregistered seeds and unrounded paired effects. Apply the fixed 3/3 positive interpretation as preliminary stability on frozen VAL, alongside class and size trade-offs. Preserve the report-only CRLF identity stop and canonical-source correction. Wait for independent Result Gate. [Handoff](exp15/EXP15_JE2_HANDOFF.md).

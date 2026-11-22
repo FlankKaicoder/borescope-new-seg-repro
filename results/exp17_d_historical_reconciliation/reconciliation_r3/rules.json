@@ -1,0 +1,13 @@
+{
+  "asset_binding": "A9 pending pixel asset selection remains pending. V4 final_version_choice blank does not negate existing same-version regional semantic acceptance.",
+  "coarse_correspondence": "Reuse audited same-version source-grid affine, Valid asset and full target support; no Formal TRE, G2 or repeated independent-boundary review is required for inheritance.",
+  "conflicts": "Specific same-version unresolved target/part/serious UI evidence may create a targeted queue without revoking the historical user decision. Only explicit local evidence can exclude a selected version.",
+  "explicit_exclusion": "After identity checking, an explicit user EXCLUDE takes precedence over a same-row Polygon PASS and region confirmation.",
+  "gate": "Inherited candidates are eligible for independent J2 Data Gate review, not formal Data Gate PASS or training approval. Current new human G1 fields remain a separate historical snapshot.",
+  "identity": "Join exact review_id, source, version, variant, original/JSON/raw/aligned/request/edit SHA, Polygon and historical affine/Valid support. Reuse prior 3998-file audit; do not rehash/decode images.",
+  "independence": "Count selected Polygons and unique frozen group_id separately. Multiple versions or Polygons never create extra independent source groups.",
+  "nonautomatic_rejection": "Frame-edge, modest texture/brightness differences, source-level version flags, other GT elsewhere in ROI and D0 ROI/context thresholds are not automatic target failures.",
+  "polygon": "Reuse A9 explicit.get(pid, overall_decision) only for that review identity's frozen target IDs. b_region_review must also be CONFIRMED. Whole-image PASS alone does not establish a region Pair.",
+  "scope": "Every inherited claim is limited to the hash-bound selected Polygon. Preserve region-only and explicit textual restrictions separately from coordinate-defined crop/FOV restrictions.",
+  "selection": "Keep A9 recommended unchanged. Ten alternates and all other historical versions are evidence context, never silently substitute them."
+}
