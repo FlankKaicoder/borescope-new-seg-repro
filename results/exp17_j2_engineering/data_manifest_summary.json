@@ -1,0 +1,92 @@
+{
+  "all_native_label_rows_verified_by_exact_byte_reconstruction": 1266,
+  "class_coverage": {
+    "Burn": {
+      "a_groups_with_other_group_b": 32,
+      "full_train_b_groups": 139,
+      "independent_a_groups": 32,
+      "polygons": 54
+    },
+    "Crack": {
+      "a_groups_with_other_group_b": 39,
+      "full_train_b_groups": 75,
+      "independent_a_groups": 39,
+      "polygons": 52
+    },
+    "Dent": {
+      "a_groups_with_other_group_b": 84,
+      "full_train_b_groups": 112,
+      "independent_a_groups": 84,
+      "polygons": 94
+    },
+    "Material missing": {
+      "a_groups_with_other_group_b": 77,
+      "full_train_b_groups": 150,
+      "independent_a_groups": 77,
+      "polygons": 80
+    },
+    "Tears": {
+      "a_groups_with_other_group_b": 38,
+      "full_train_b_groups": 43,
+      "independent_a_groups": 38,
+      "polygons": 40
+    },
+    "Tip curl": {
+      "a_groups_with_other_group_b": 0,
+      "full_train_b_groups": 18,
+      "independent_a_groups": 0,
+      "polygons": 0
+    },
+    "corrosion": {
+      "a_groups_with_other_group_b": 72,
+      "full_train_b_groups": 193,
+      "independent_a_groups": 72,
+      "polygons": 201
+    }
+  },
+  "elapsed_seconds": 34.0113841999555,
+  "evidence_tiers": {
+    "EXACT_REVIEWED_ALIGNED_REGION": 459,
+    "NEW_USER_ACCEPTED_CURRENT_ALIGNED_POLYGON": 62
+  },
+  "formal_training_authorized": false,
+  "full_train_groups": 632,
+  "full_train_images": 668,
+  "full_train_instances": 1266,
+  "held_outside_main_manifest": {
+    "BOUNDED": 1,
+    "CROP": 4,
+    "RAW": 38,
+    "TECHNICAL_HOLD": 8,
+    "USER_REJECTED_EXCLUDE": 4
+  },
+  "independent_groups": 327,
+  "input_hashes_sha256": "5831b7193e0566d3e7cd7c2a5ea054303bd687cbec9ec080ee82ac62985d8e80",
+  "manifest_csv_sha256": "b5bf196b735101f28cf02c51a3297c2a1043c101bbce4473136bc67ebf4b462c",
+  "manifest_json_sha256": "fe6a36601c6c8d90cfddfc19ab58335552c18653b66f3535e84c97b4c222dc22",
+  "model_forwards": 0,
+  "native_train_identity_sha256": "289848daad87bbb8601251a88305d58dd48f41963f7d6adff0c4777603b14c4e",
+  "new_image_copies": 0,
+  "new_optimizer_updates": 0,
+  "one_n_version_per_source": true,
+  "polygons_per_source_histogram": {
+    "1": 272,
+    "2": 44,
+    "3": 12,
+    "4": 4,
+    "5": 5,
+    "6": 3,
+    "7": 1,
+    "9": 1,
+    "10": 1,
+    "12": 1,
+    "28": 1
+  },
+  "source_images": 345,
+  "source_sha256": "6a28836396dfd1865294a1190efa14578772f18ea9c98ed6178d738730d154f8",
+  "status": "PASS_521_ALIGNED_DATAGATE_MANIFEST_AND_NATIVE_IDENTITY_RELEASE",
+  "trusted_polygons": 521,
+  "val_test_assets_read": 0,
+  "verified_input_files": 3056,
+  "verified_unique_bytes": 462597844
+}

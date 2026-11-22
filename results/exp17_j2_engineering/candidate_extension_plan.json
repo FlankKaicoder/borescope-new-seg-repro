@@ -1,0 +1,23 @@
+{
+  "additional_candidates": [
+    4.0
+  ],
+  "candidate_origin": "ADDITIONAL_TRAIN_ONLY_CANDIDATE_NOT_PREREGISTERED",
+  "formal_training_authorized": false,
+  "manifest_sha256": "fe6a36601c6c8d90cfddfc19ab58335552c18653b66f3535e84c97b4c222dc22",
+  "new_model_forwards": 0,
+  "optimizer_updates": 0,
+  "original_gradient_summary_sha256": "fbc33a52d983108ff4fc6f11123dff2089a2234bcff09bc4eca67ea2d72cc7e8",
+  "original_hold_report_and_screens_preserved": true,
+  "original_suggested_candidates": [
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "reason": "All suggested weights fail only minimum intervention; unchanged four-state screens have nonempty analytic interval [3.3227706543,4.6003000519]. Evaluate one simple fixed integer inside it on the same16 gradient bases.",
+  "stage": "SINGLE_ADDITIONAL_TRAIN_ONLY_LAMBDA_CALIBRATION"
+}

@@ -1,0 +1,15 @@
+{
+  "counts": {
+    "active_ABN_anchor_exposures": 79,
+    "active_image_slot_exposures": 65,
+    "active_slots_with_multiple_native_instances": 10,
+    "augmented_target_mask_touches_frame_border": 5,
+    "batches": 4,
+    "small_P3_support_1_to4_cells": 4
+  },
+  "model_forwards": 0,
+  "optimizer_updates": 0,
+  "real_N_image_decodes": 0,
+  "status": "PASS_ACTUAL_FIXED_A_EQUALS_N_REPLAY_BITWISE_AND_RNG_INVARIANCE",
+  "summary_sha256": "44471af776404852c83a8199579c4c827b8c11c33c187fed843a2de5047b8c9b"
+}

@@ -1,0 +1,200 @@
+{
+  "base_commit": "0ce2225e224e49f816675f7097692650d4f2c4b1",
+  "deployed_r5_packet_sha256": "6b546672941571bcbe2b98feef68c5426158239a77edad3d7de9fdd961d15a10",
+  "deployed_source_ledger_sha256": "c64e1266941509d12c16ce72d4574b32bddec3aca5de8a8342740708ef8de19b",
+  "formal_training_authorized": false,
+  "independent_smoke_review_sha256": "4a34941aaaee264f30a7b01d13dd22b3a7efa4527dbcda9cb690c1a66f6896b9",
+  "no_private_images_paths_group_ids_or_original_notes": true,
+  "original_gradient_summary_sha256": "fbc33a52d983108ff4fc6f11123dff2089a2234bcff09bc4eca67ea2d72cc7e8",
+  "private_smoke_summary_sha256": "9540c2e4302054fd248e907e4ea826d03fd82043c9e9d93bcf0b2cda5784f7bd",
+  "reports": {
+    "docs/exp17/EXP17_J2_ENGINEERING_HANDOFF.md": {
+      "bytes": 24146,
+      "sha256": "d5322f0d1f9afa22f725a90ebcda52cecdc3879b0bbf21b102fcc627f6afcc5a"
+    },
+    "results/exp17_j2_engineering/batch_pair_coverage.csv": {
+      "bytes": 129299,
+      "sha256": "bff1f99c1c54560f03a54e1e1873da1c4f0f3bc0a0e8feb0c80eda00378a9449"
+    },
+    "results/exp17_j2_engineering/bn_prefix_benchmark.json": {
+      "bytes": 3013,
+      "sha256": "9f5391b9970cb40b1141183f16562502ab2a51a55f42d2c02d5e41161b1e2e03"
+    },
+    "results/exp17_j2_engineering/calibration_probe_metrics.csv": {
+      "bytes": 9153,
+      "sha256": "5f26040a4b9e7765eafe5a3124a104498e02fbd9a9046698eaac69efb56170f2"
+    },
+    "results/exp17_j2_engineering/calibration_summary.json": {
+      "bytes": 362153,
+      "sha256": "9e56cfc062a5cfa8fd3d032845b0becc5b7cb0487b4f1756f3c6c068038ea386"
+    },
+    "results/exp17_j2_engineering/candidate_extension_plan.json": {
+      "bytes": 885,
+      "sha256": "adae3c2bb1cfa18ad3b3a44da102b092c1bd7b8f04369ecb67440356498a2fe5"
+    },
+    "results/exp17_j2_engineering/coverage_summary.json": {
+      "bytes": 77784,
+      "sha256": "649056791ec2c9687e303a66a7fb3f1548c5bbe9211a6f7b8fafa61019ed4f85"
+    },
+    "results/exp17_j2_engineering/cpu_cache_benchmark.json": {
+      "bytes": 1317,
+      "sha256": "ae8dcf773491e1b521ebab394fc99a9abace172805272e501b787438fa12a1ed"
+    },
+    "results/exp17_j2_engineering/data_manifest_summary.json": {
+      "bytes": 2625,
+      "sha256": "27834be3571675c991d8328037d9216552fd10a283955b9331257817bca0ed62"
+    },
+    "results/exp17_j2_engineering/engineering_plan.json": {
+      "bytes": 3526,
+      "sha256": "d3b330cbabdec35d16fff43a498f977cccc17dbbbd201f836c9c616c3a9098fa"
+    },
+    "results/exp17_j2_engineering/final_cpu_tests.json": {
+      "bytes": 541,
+      "sha256": "cd16b0c19117555331d493cd5f6518a12098bcbc00cf264da4bd96537aa4d6f3"
+    },
+    "results/exp17_j2_engineering/formal_protocol_draft.json": {
+      "bytes": 4895,
+      "sha256": "2ba941fd56de13cb7268f827251e4f4a4e8c15b920034ae1b86f573b892edda4"
+    },
+    "results/exp17_j2_engineering/replay_summary.json": {
+      "bytes": 508,
+      "sha256": "1765ccf3b547ce383d70a135c948db619fec183507cfadfebfb87fd763412299"
+    },
+    "results/exp17_j2_engineering/runtime_cpu_tests.json": {
+      "bytes": 1080,
+      "sha256": "e19a757ff0c80d2523b8564902adab460ed9ed3668bd25fad0c697500320c5ef"
+    },
+    "results/exp17_j2_engineering/runtime_preflight.json": {
+      "bytes": 4390,
+      "sha256": "ca2c530073a2fd2796ee4dfdee394c38aa91a7a923f34a7f8a9e08a960371e70"
+    },
+    "results/exp17_j2_engineering/smoke_steps.csv": {
+      "bytes": 13033,
+      "sha256": "a1bc9a0a63e7b40df1380d40c195409d0e1b595ec0de9d735a3c7b0f2b1b1021"
+    },
+    "results/exp17_j2_engineering/smoke_summary.json": {
+      "bytes": 5757,
+      "sha256": "82317dbc0bba41030b3627c71a9b4ab9034057bbcdeb3ee971ae66c8959df0f6"
+    },
+    "results/exp17_j2_engineering/summary.json": {
+      "bytes": 4489,
+      "sha256": "7dc58e4a038a0f0fa54f426f1b020d7fd18288e488f9fce19af0f6e233fbd096"
+    }
+  },
+  "schema": "exp17_j2_engineering_evidence_manifest_v1",
+  "source_files": {
+    "tools/exp17/engineering/__init__.py": {
+      "bytes": 85,
+      "sha256": "1ab9b608a5807fa666d1efa3694eb5241ba9ad6ec98c4d817a742a2dc7c53a94"
+    },
+    "tools/exp17/engineering/augmentation.py": {
+      "bytes": 25794,
+      "sha256": "b5564c4c1f8a9a5c52b4737182a4eb65565a6044511d55a4780cf7265be4b8f5"
+    },
+    "tools/exp17/engineering/batch_pairing.py": {
+      "bytes": 9892,
+      "sha256": "8e2cc8442ab2968fc9e42b96f11b20f254559a89d78a8e633cac4ada56335dd0"
+    },
+    "tools/exp17/engineering/benchmark.py": {
+      "bytes": 9685,
+      "sha256": "ce3c37b1d108e43e52e3589001915955e72d049a5831fa7ae00311f2be4b53ea"
+    },
+    "tools/exp17/engineering/bn.py": {
+      "bytes": 6165,
+      "sha256": "04b06afd45e89a8f620b94cba9b8ae8a859aefb1b0e0dae697f74569fe19fdcc"
+    },
+    "tools/exp17/engineering/calibration.py": {
+      "bytes": 25769,
+      "sha256": "3ac529f5498badb90831f39287124ca141f7cdbeeac69a7fe755f2a7f300cc31"
+    },
+    "tools/exp17/engineering/calibration_extension.py": {
+      "bytes": 9202,
+      "sha256": "e595e192bc90f4d16b52c8aaceee55aa95f04d2c806fb48ad933d2bdb447285b"
+    },
+    "tools/exp17/engineering/calibration_rules.py": {
+      "bytes": 5513,
+      "sha256": "594c7e2afed37447041cad8716876b1431736ae00c3bda1cf80de69bd4f2c7a9"
+    },
+    "tools/exp17/engineering/checkpoint.py": {
+      "bytes": 4707,
+      "sha256": "549a2b1af1aa58bd7e84b22f93427f88504604e5fa0b091b782e665b71024bcd"
+    },
+    "tools/exp17/engineering/coverage.py": {
+      "bytes": 21850,
+      "sha256": "b94a6d335993e268e655efae3a832fb21e78ae00da913ce27ac0b9cc2a1acb8c"
+    },
+    "tools/exp17/engineering/data.py": {
+      "bytes": 20366,
+      "sha256": "8104d5c9ea4ed6e2fa5f50c6936e1651a04975c9956fc0bac7436101dcfa7593"
+    },
+    "tools/exp17/engineering/losses.py": {
+      "bytes": 4098,
+      "sha256": "57431ebbedce87af9e46d5e8e9163042f60ded81b969581114da8aadc2124aa2"
+    },
+    "tools/exp17/engineering/model.py": {
+      "bytes": 11029,
+      "sha256": "535355c9e82eb80da5a826df3afe8c3c59c5d1846e57dd399270849837f3b20d"
+    },
+    "tools/exp17/engineering/runtime.py": {
+      "bytes": 14856,
+      "sha256": "442ff9b2adc5fad1c40604eb6dc3f4b9307a382c930d3caa8d27660c006cbe3e"
+    },
+    "tools/exp17/engineering/smoke.py": {
+      "bytes": 17505,
+      "sha256": "11fb3232f256e9af4b08badfc775d2feecbd5e6c196f151533178f54d6c13aae"
+    },
+    "tools/exp17/engineering/test_bn.py": {
+      "bytes": 3493,
+      "sha256": "e273b933c99dfb956f30be25281fadf762f71626068bb64b9a3af07c327c21fa"
+    },
+    "tools/exp17/engineering/test_calibration.py": {
+      "bytes": 6522,
+      "sha256": "b57ce713f38988fc7680c0ad5b147a6f2556a8d70358506da20a54cea3de3a1b"
+    },
+    "tools/exp17/engineering/test_losses.py": {
+      "bytes": 2990,
+      "sha256": "0b877b6f220bb2b78435949ae0db0f769ec4acf59a10c277679f40780db50ad3"
+    },
+    "tools/exp17/engineering/test_model.py": {
+      "bytes": 9370,
+      "sha256": "9bd75abcf0c7e2dd9c431266d3155fbb9bf765cf8ade01a7dcbe7bcf19f1ce57"
+    },
+    "tools/exp17/engineering/tests/__init__.py": {
+      "bytes": 82,
+      "sha256": "1f775b13da145006dca2e73519bf179029de83636fc96d33f584fb03f7d12e18"
+    },
+    "tools/exp17/engineering/tests/test_calibration_extension.py": {
+      "bytes": 3626,
+      "sha256": "f8645c2d540367b3f69bd03eecfcd0780bcc22f56060c1accd5183c1880a5485"
+    },
+    "tools/exp17/engineering/tests/test_calibration_rules.py": {
+      "bytes": 2484,
+      "sha256": "2ab516d436967982200274ee5b35e0ea332d2ca8011db623c378c22cb9dfc48a"
+    },
+    "tools/exp17/engineering/tests/test_data.py": {
+      "bytes": 5055,
+      "sha256": "ae2242a43742f5db608b0ef66b9a23eea0b6a40d82ebcb01f1c10fbedca15fc7"
+    },
+    "tools/exp17/engineering/tests/test_pairing.py": {
+      "bytes": 4619,
+      "sha256": "4ff209f4f5c8a2451036b30d4f3f0393c3cd9c32e3c2c153d4a85f212d74929c"
+    },
+    "tools/exp17/engineering/tests/test_runtime.py": {
+      "bytes": 4916,
+      "sha256": "13034aad52246dd3b50ec2e1e961cf32e85e4a0219386cff43decf755fd5b6d0"
+    },
+    "tools/exp17/engineering/tests/test_smoke_guards.py": {
+      "bytes": 1646,
+      "sha256": "60e08362a9088ed451e90d444003d4427bd5bb92d7edba4a0916767e72049d2f"
+    },
+    "tools/exp17/tests/test_augmentation.py": {
+      "bytes": 13442,
+      "sha256": "ec789cd6677871d476e979544a709535494cf5577a11ec736a53fbc4a2282287"
+    },
+    "tools/exp17/tests/test_coverage.py": {
+      "bytes": 6016,
+      "sha256": "4a95a44e24d53f3749a6c84d7f50785908b150aa13acae4c68dcf13dc89ed0f9"
+    }
+  },
+  "status": "EXP17_J2_ENGINEERING_COMPLETE_PENDING_FORMAL_TRAINING_GATE"
+}

@@ -1,0 +1,148 @@
+{
+  "amp_skips": 0,
+  "bn_mode": "replay_a",
+  "budget_ledger_sha256": "02d36ee22aefffbb3eac4f90f703dd0be636851031144132b43af85384a2afcd",
+  "budget_reserved_attempts": 50,
+  "checkpoint": {
+    "effective_updates": 50,
+    "formal_checkpoint": false,
+    "master_and_ema_differ": true,
+    "native_seven_class_synthetic_forward": true,
+    "native_state_sha256": "7165da16f3ca1dadf320e10fe0ca77cc9757fa82e93e92d14137b54155d3f881",
+    "schema": "exp17_j2_engineering_smoke_only_v1",
+    "sha256": "5ce54eb3ecb6e39b8d335dc74064b965d229da8000adc7e23b5a4f86839fc2fb",
+    "strict_adamw_reload": true,
+    "strict_ema_reload": true,
+    "strict_gradscaler_reload": true,
+    "strict_master_reload": true
+  },
+  "effective_updates": 50,
+  "elapsed_seconds": 151.89258715417236,
+  "formal_training_authorized": false,
+  "independent_review": {
+    "aggregates": {
+      "N_CPU_decode_misses": 342,
+      "N_image_slot_exposures": 798,
+      "loss_equation_max_abs_residual": 3.9637088775634766e-05,
+      "per_class_valid_ABN_exposures": {
+        "0": 123,
+        "1": 128,
+        "2": 217,
+        "3": 183,
+        "4": 80,
+        "5": 0,
+        "6": 468
+      },
+      "valid_ABN_anchor_exposures": 1199
+    },
+    "checks": {
+      "all_N_prefix_layers_0_through_16": true,
+      "all_auxiliary_RNG_invariant": true,
+      "all_native_BN_advances_once": true,
+      "all_numeric_master_optimizer_parameter_updates": true,
+      "all_original_optimizer_groups_unchanged": true,
+      "all_projection_and_backbone_updated_per_step_assertion_in_smoke_code": true,
+      "all_sparse_N_P3_gradients_positive_finite": true,
+      "all_trainable_gradients_present": true,
+      "attempts_effective_and_reservations_50": true,
+      "exactly_50_contiguous_rows": true,
+      "formal_training_not_authorized": true,
+      "local_current_sources_identical_r5_deployment_packet": true,
+      "loss_equation_FP32_rounding_only": true,
+      "master_differs_EMA": true,
+      "native_50_batch_trajectory_match": true,
+      "native_7class_structure_synthetic_forward": true,
+      "no_VAL_TEST_image_reads": true,
+      "strict_master_EMA_AdamW_GradScaler_reload": true,
+      "zero_N_BN_buffer_updates": true,
+      "zero_N_detection_or_segmentation_heads": true,
+      "zero_amp_skips": true,
+      "zero_nonfinite_unscaled_gradients": true
+    },
+    "material_blockers": [],
+    "ranges": {
+      "N_P3_unscaled_gradient_norm": {
+        "max": 0.07265960425138474,
+        "mean": 0.030358223635703327,
+        "median": 0.02760806679725647,
+        "min": 0.012968779541552067
+      },
+      "clip_coefficient": {
+        "max": 0.04266761094996474,
+        "mean": 0.0195247539297062,
+        "median": 0.01832853170335083,
+        "min": 0.002761922607549419
+      },
+      "end_to_end_iteration_seconds": {
+        "max": 13.245853186119348,
+        "mean": 2.906841299906373,
+        "median": 2.241796363145113,
+        "min": 1.5049727158620954
+      },
+      "gradient_norm": {
+        "max": 3620.666259765625,
+        "mean": 843.9888851928711,
+        "median": 546.136962890625,
+        "min": 234.36981201171875
+      },
+      "pair_loss": {
+        "max": 0.21813641488552094,
+        "mean": 0.1775771202147007,
+        "median": 0.18132026493549347,
+        "min": 0.08889859169721603
+      },
+      "seconds": {
+        "max": 11.10557984886691,
+        "mean": 1.6946230849437416,
+        "median": 1.0242053954862058,
+        "min": 0.7363581312820315
+      },
+      "supcon_loss": {
+        "max": 4.440921306610107,
+        "mean": 3.9369979524612426,
+        "median": 3.93583881855011,
+        "min": 3.466334342956543
+      },
+      "total_loss": {
+        "max": 527.2703247070312,
+        "mean": 488.86968383789065,
+        "median": 494.2703399658203,
+        "min": 421.35089111328125
+      },
+      "yolo_loss": {
+        "max": 493.158447265625,
+        "mean": 456.6633905029297,
+        "median": 462.86834716796875,
+        "min": 391.5435791015625
+      }
+    },
+    "status": "PASS_INDEPENDENT_SMOKE_EVIDENCE_REVIEW"
+  },
+  "independent_review_sha256": "4a34941aaaee264f30a7b01d13dd22b3a7efa4527dbcda9cb690c1a66f6896b9",
+  "inference_uses": "FP32_NATIVE_MASTER_ONLY_AUXILIARY_HEAD_REMOVED",
+  "initial_native_sha256": "8e0479ecdae6dc60558ed44d5d62c01f8b61075514bc34c109295950603fc886",
+  "initial_projection_sha256": "83664f93724017b43a2861826141fc41074a0ae58729d170829f787395d1fc6e",
+  "lambda_pair": 4.0,
+  "limitations": [
+    "50 steps do not cover all 63 warmup positions or establish formal-training stability.",
+    "J1 four-snapshot gradients are not future J2 trajectory evidence.",
+    "Snapshot/batch/layer conflicts and strong class heterogeneity remain.",
+    "Tipcurl has zero trusted Pair and zero Pair contribution.",
+    "This is software/engineering evidence; no VAL/TEST performance or scientific efficacy claim.",
+    "Backbone/projection each-step update claims rely on mandatory executable guards; summary stores aggregate parameter-change counters rather than per-domain per-step hashes."
+  ],
+  "mean_end_to_end_iteration_seconds": 2.906841299906373,
+  "mean_full_training_loop_seconds_per_update": 2.9412596487626432,
+  "mean_step_seconds": 1.6946230849437416,
+  "native_trajectory_matched_batches": 50,
+  "optimizer_attempts": 50,
+  "peak_allocated_bytes": 7111184896,
+  "peak_reserved_bytes": 7379877888,
+  "raw_private_summary_sha256": "9540c2e4302054fd248e907e4ea826d03fd82043c9e9d93bcf0b2cda5784f7bd",
+  "reference_warmup_positions": 63,
+  "status": "PASS_521_J2_ENGINEERING_SMOKE",
+  "step_timing_scope": "JOINT_FORWARD_BACKWARD_NUMERIC_AUDIT_EXCLUDES_DATA_REPLAY_AND_BINDING",
+  "training_loop_wall_seconds": 147.06298243813217,
+  "val_test_image_reads": 0,
+  "warmup_positions_covered": 50
+}

@@ -1,0 +1,104 @@
+{
+  "active_GPU_compute_jobs_after": 0,
+  "before_disk": {
+    "free_bytes": 7799709696,
+    "total_bytes": 53687091200,
+    "used_bytes": 45887381504
+  },
+  "budget_ledger_sha256": "02d36ee22aefffbb3eac4f90f703dd0be636851031144132b43af85384a2afcd",
+  "capacity_estimate": {
+    "additional_audit_and_temporary_reserve_bytes": 2147483648,
+    "checkpoint_space_estimate_only_not_formal_authorization": true,
+    "engineering_checkpoint_bytes": 46654139,
+    "possible_extra_endpoint_bytes": 46654139,
+    "reference_20_checkpoints_bytes": 933082780,
+    "remaining_after_reference_checkpoints_endpoint_and_reserve_bytes": 4028827305
+  },
+  "checked_asset_bytes": 184166997,
+  "checked_asset_files": 553,
+  "checked_deployed_code_files": 374,
+  "checkpoint_file_sha256": "5ce54eb3ecb6e39b8d335dc74064b965d229da8000adc7e23b5a4f86839fc2fb",
+  "cuda": "12.8",
+  "deployed_source_ledger_sha256": "c64e1266941509d12c16ce72d4574b32bddec3aca5de8a8342740708ef8de19b",
+  "deployment_note": "Existing historical server Git worktree was not altered or used as code identity; separately manifested source snapshot r5 was executed.",
+  "disk": {
+    "available_bytes": 7156047872,
+    "free_bytes": 7156047872,
+    "free_inodes": 729155254,
+    "inodes": 750146560,
+    "total_bytes": 53687091200,
+    "used_bytes": 46531043328
+  },
+  "effective_updates": 50,
+  "formal_training_authorized": false,
+  "frozen_protocol_sha256": "b638850fc21fc26dc0075282340a40ecc25e5bda891a3dbf9327dc415681b0ca",
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "gpu_memory_bytes": 12491292672,
+  "manifest_sha256": "fe6a36601c6c8d90cfddfc19ab58335552c18653b66f3535e84c97b4c222dc22",
+  "model_forwards": 0,
+  "native_identity_sha256": "289848daad87bbb8601251a88305d58dd48f41963f7d6adff0c4777603b14c4e",
+  "new_training_launched": false,
+  "opencv": "5.0.0",
+  "optimizer_attempts": 50,
+  "optimizer_updates_this_check": 0,
+  "original_protocol_note": "Canonical frozen LF Git blob exported to new input; historical CRLF working checkout left untouched.",
+  "python": "3.12.3",
+  "source_newline_identity": {
+    "ja.py": {
+      "canonical_frozen_git_sha256": "a792247e86243c712ded8f0552e4209c23b8b3a26b1b9952377c0677d7deb44b",
+      "only_working_CRLF_difference": true,
+      "working_sha256": "95a5d4ab11e4192d1bf8999a42fc04c2e4465d9adf530343a7a5191f8375572e"
+    },
+    "jb.py": {
+      "canonical_frozen_git_sha256": "c74d82c19534c72d57734dcdb0f9b272a480f0c5699a2f505fcb9d1caf125a8d",
+      "only_working_CRLF_difference": true,
+      "working_sha256": "c4a6b1e87e1f5b476b2a14aae5fd48a977acdf955bc77c8956916ded6e1b5cc9"
+    },
+    "jb_binding.py": {
+      "canonical_frozen_git_sha256": "28a89345b56d544f12a7bc4bce984d783c7ab34de7e901c1381244d501784b4c",
+      "only_working_CRLF_difference": true,
+      "working_sha256": "cf955897f137e78e2083da5e7225ead37f207173bb7ddab7f58609deb73185ba"
+    },
+    "regions.py": {
+      "canonical_frozen_git_sha256": "a3c9f78e855348327b8a707afc879056f2d9ae89666481b59f5b72af865b687e",
+      "only_working_CRLF_difference": true,
+      "working_sha256": "683f467f817dcf41ce50036c640ed3b45548abde867667dc1066222d1cafd65a"
+    }
+  },
+  "status": "PASS_POST_ENGINEERING_READONLY_IDENTITIES",
+  "torch": "2.8.0+cu128",
+  "torchvision": "0.23.0+cu128",
+  "training_inputs_rehashed_after": {
+    "J1_checkpoint_files": 3,
+    "TRAIN_images": 668,
+    "TRAIN_labels": 668,
+    "coco_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+    "existing_aligned_N": 345,
+    "raw_instances": 1266
+  },
+  "ultralytics": "8.4.117",
+  "ultralytics_source_files": {
+    "data/augment.py": {
+      "bytes": 145174,
+      "sha256": "d30f823e330ea4d8f165eda6f16e81a8d41acf22918a9c1c97d022b7bfc9dc5a"
+    },
+    "data/base.py": {
+      "bytes": 21122,
+      "sha256": "41bb1349e4baa74b94728d2c323fbdd7fd318b1f82b951880b292fb34840dac3"
+    },
+    "data/build.py": {
+      "bytes": 19210,
+      "sha256": "2f14a4860a3f18c07ceb14272f0c4b5b482fd4e779ebdd37fa258aefeb80452a"
+    },
+    "data/dataset.py": {
+      "bytes": 57645,
+      "sha256": "36aa66daa0949747745b8e1986a812b152dffc7ec050d78e25e37c16285b11c5"
+    },
+    "utils/instance.py": {
+      "bytes": 19525,
+      "sha256": "b2fdaecb2d62847fb9ed04d80a1e495c268ed1a46c27fa34ae6d0c3d0336a0d0"
+    }
+  },
+  "val_test_image_reads": 0,
+  "working_protocol_sha256": "fd3f755c8fd9c1b5915f22acce6b09c2f49f9ebcb16ee752f5ae8732bf736623"
+}

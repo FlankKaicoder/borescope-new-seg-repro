@@ -27,3 +27,6 @@
 /tools/exp17f/** -text
 /docs/exp17f/** -text
 /results/exp17f_user_review_reconciliation/** -text
+
+# Bind independent Exp17 J2 engineering receipts without rewriting historical files.
+/results/exp17_j2_engineering/** -text

@@ -1,5 +1,9 @@
 # Experiment index
 
+## Exp17 J2 real-TRAIN engineering (2026-11-23)
+
+EXP17_J2_ENGINEERING_COMPLETE_PENDING_FORMAL_TRAINING_GATE. 521 Aligned Polygons / 327 groups; 2100 native batches matched; TRAIN-calibrated fixed Pair4 with SupCon8 and A-statistics replay; 70 CPU tests; real640/batch32 Smoke50/50 and zero AMP skips. Formal training and VAL/TEST remain disabled. [Handoff](exp17/EXP17_J2_ENGINEERING_HANDOFF.md) · [Summary](../results/exp17_j2_engineering/summary.json) · [Calibration](../results/exp17_j2_engineering/calibration_summary.json) · [Smoke](../results/exp17_j2_engineering/smoke_summary.json) · [Non-authorizing protocol draft](../results/exp17_j2_engineering/formal_protocol_draft.json).
+
 ## Exp17-F user review reconciliation (2026-11-22)
 
 EXP17_F_USER_REVIEW_RECONCILIATION_PENDING_CHATGPT_DATA_GATE. Exact 69-row import yields 65 ACCEPT / four REJECT; the complete 576-row ledger retains 499 inherited, 65 newly accepted, four excluded and eight technical HOLD. The 564 candidates / 353 groups remain unapproved. All 69 bindings reproduce after narrowly scoped coordinate serialization compatibility. [Handoff](exp17f/EXP17_F_HANDOFF.md) · [Evidence limits](exp17f/EXP17_F_EVIDENCE_LIMITS.md) · [Summary](../results/exp17f_user_review_reconciliation/summary.json) · [Compatibility](../results/exp17f_user_review_reconciliation/compatibility_summary.json).

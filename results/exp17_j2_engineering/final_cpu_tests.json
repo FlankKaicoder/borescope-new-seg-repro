@@ -1,0 +1,22 @@
+{
+  "GPU_model_forwards": 0,
+  "code_packet_sha256": "6b546672941571bcbe2b98feef68c5426158239a77edad3d7de9fdd961d15a10",
+  "deployed_revision": "r5",
+  "engineering_tests": 49,
+  "real_data_forwards": 0,
+  "replay_and_coverage_tests": 21,
+  "status": "PASS_COMPONENT_CPU_TESTS",
+  "suites": [
+    {
+      "elapsed_seconds": 11.439143066760153,
+      "exit_code": 0,
+      "suite": "engineering"
+    },
+    {
+      "elapsed_seconds": 3.8212762740440667,
+      "exit_code": 0,
+      "suite": "replay_coverage"
+    }
+  ],
+  "total_tests": 70
+}

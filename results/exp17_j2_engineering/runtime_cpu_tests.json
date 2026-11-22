@@ -1,0 +1,25 @@
+{
+  "schema": "EXP17_J2_ENGINEERING_RUNTIME_CPU_TEST_RECEIPT_V1",
+  "status": "PASS_SYNTHETIC_CPU_ADAPTER_TESTS_ONLY",
+  "runtime_source_sha256": "442ff9b2adc5fad1c40604eb6dc3f4b9307a382c930d3caa8d27660c006cbe3e",
+  "test_module": "tools.exp17.engineering.tests.test_runtime",
+  "tests_run": 4,
+  "failures": 0,
+  "errors": 0,
+  "elapsed_seconds": 0.138,
+  "torch_version": "2.8.0+cpu",
+  "ultralytics_version": "8.4.117",
+  "scope": [
+    "Metadata-only coverage does not decode N images or mutate native tensors",
+    "Sparse N-slot compaction preserves original A-row identity and uses normalized FP32 tensor hashes",
+    "Wrong native trace class fails before N image decode",
+    "Formal train entry and incorrect normalized image ranges fail closed"
+  ],
+  "limitations": [
+    "Synthetic adapter fixtures do not replace actual 2100-batch native trajectory coverage",
+    "No trainer initialization, model forward, GPU execution, or optimizer update was performed by these tests"
+  ],
+  "model_forwards": 0,
+  "optimizer_updates": 0,
+  "formal_training_authorized": false
+}

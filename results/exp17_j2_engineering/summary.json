@@ -1,0 +1,116 @@
+{
+  "CPU_tests": {
+    "engineering": 49,
+    "passed": 70,
+    "replay_coverage": 21
+  },
+  "VAL_TEST_image_reads": 0,
+  "audited_base_commit": "0ce2225e224e49f816675f7097692650d4f2c4b1",
+  "date_client_timezone": "2026-11-23 Asia/Shanghai",
+  "engineering_started_date": "2026-11-22",
+  "final_readonly_check": {
+    "N_and_valid_assets": 553,
+    "TRAIN_images_and_labels": 1336,
+    "available_bytes": 7156047872,
+    "deployed_code_files": 374,
+    "historical_J1_checkpoints": 3,
+    "status": "PASS_POST_ENGINEERING_READONLY_IDENTITIES"
+  },
+  "formal_training_authorized": false,
+  "formal_training_updates": 0,
+  "independent_engineering_review": "PASS_INDEPENDENT_SMOKE_EVIDENCE_REVIEW",
+  "native_TRAIN": {
+    "groups": 632,
+    "images": 668,
+    "instances": 1266,
+    "model_updates_during_readonly_replay": 0,
+    "raw_image_exposures": 66800,
+    "raw_instance_exposures": 126600,
+    "readonly_batches_matched": 2100,
+    "sampling_augmentation_unchanged": true
+  },
+  "new_generation_or_registration": 0,
+  "pair_coverage": {
+    "Tip_curl_pair_polygons": 0,
+    "batches_without_valid_pair": 0,
+    "participating_A_groups": 327,
+    "participating_B_groups": 614,
+    "participating_polygons": 521,
+    "valid_anchor_exposures": 49762
+  },
+  "preserved_zero_update_engineering_stops": [
+    "r2 fixture packaging omission; byte-identical frozen ledger supplied without code/math change",
+    "r2 observer flat-coordinate shape exception before batch0; strict in-memory shape adapter fixed; manifests unchanged",
+    "Generic environment discovery failed before model execution; pinned existing environment used"
+  ],
+  "recommendation": {
+    "BN": "replay_a",
+    "N_head_17_plus_executed_in_production": false,
+    "N_prefix_layers": [
+      0,
+      16
+    ],
+    "activation_checkpoint_prefix": false,
+    "lambda4_is_explicit_single_additional_TRAIN_candidate": true,
+    "lambda_pair": 4.0,
+    "lambda_supcon": 8.0,
+    "original_seven_candidate_HOLD_retained": true,
+    "pair_margin": 0.2,
+    "temperature": 0.1
+  },
+  "reports": {
+    "BN_prefix": "bn_prefix_benchmark.json",
+    "all_batch_counts": "batch_pair_coverage.csv",
+    "cache": "cpu_cache_benchmark.json",
+    "calibration": "calibration_summary.json",
+    "calibration_probes": "calibration_probe_metrics.csv",
+    "coverage": "coverage_summary.json",
+    "data": "data_manifest_summary.json",
+    "evidence": "evidence_manifest.json",
+    "final_CPU": "final_cpu_tests.json",
+    "handoff": "docs/exp17/EXP17_J2_ENGINEERING_HANDOFF.md",
+    "preflight": "runtime_preflight.json",
+    "protocol_draft": "formal_protocol_draft.json",
+    "replay": "replay_summary.json",
+    "smoke": "smoke_summary.json",
+    "smoke_steps": "smoke_steps.csv"
+  },
+  "schema": "exp17_j2_engineering_delivery_v1",
+  "scientific_limits": [
+    "No J2 VAL/TEST or formal-training efficacy evidence",
+    "50 updates do not cover all 63 warmup positions",
+    "Calibration uses historical J1 states, not the future J2 trajectory",
+    "Local strong gradient conflicts and class/batch heterogeneity remain",
+    "Pair covers six classes; Tip curl has no trusted Pair",
+    "A BN statistics are detached references on N, an explicit counterfactual normalization assumption",
+    "Aligned image artifacts/context confounding remain a scientific risk",
+    "Additional lambda4 candidate was not in the initial suggested grid and is disclosed for independent Gate review"
+  ],
+  "smoke": {
+    "AMP_skips": 0,
+    "N_image_slot_exposures": 798,
+    "attempts": 50,
+    "budget_remaining": 0,
+    "checkpoint_sha256": "5ce54eb3ecb6e39b8d335dc74064b965d229da8000adc7e23b5a4f86839fc2fb",
+    "effective_updates": 50,
+    "formal_checkpoint": false,
+    "native_master_sha256": "7165da16f3ca1dadf320e10fe0ca77cc9757fa82e93e92d14137b54155d3f881",
+    "peak_allocated_bytes": 7111184896,
+    "peak_reserved_bytes": 7379877888,
+    "status": "PASS_521_J2_ENGINEERING_SMOKE",
+    "strict_master_EMA_AdamW_Scaler_reload": true,
+    "strict_native_7class_synthetic_structure": true,
+    "valid_ABN_exposures": 1199
+  },
+  "status": "EXP17_J2_ENGINEERING_COMPLETE_PENDING_FORMAL_TRAINING_GATE",
+  "stop_after_publication": true,
+  "trusted_release": {
+    "historical_exact_aligned": 459,
+    "independent_groups": 327,
+    "manifest_sha256": "fe6a36601c6c8d90cfddfc19ab58335552c18653b66f3535e84c97b4c222dc22",
+    "new_user_aligned": 62,
+    "polygons": 521,
+    "source_images": 345
+  },
+  "unresolved_engineering_blockers": []
+}

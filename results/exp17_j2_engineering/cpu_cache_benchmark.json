@@ -1,0 +1,45 @@
+{
+  "RNG_unchanged": true,
+  "all_tensor_mask_and_binding_identities_bitwise_equal": true,
+  "batch_position": 1,
+  "cache_after_cold": {
+    "asset_decodes": {
+      "N": 14,
+      "n_valid": 9,
+      "source_valid": 9
+    },
+    "cache_bytes": 19784704,
+    "cache_hits": 10,
+    "cache_limit_bytes": 536870912
+  },
+  "cache_after_warm": {
+    "asset_decodes": {
+      "N": 14,
+      "n_valid": 9,
+      "source_valid": 9
+    },
+    "cache_bytes": 19784704,
+    "cache_hits": 136,
+    "cache_limit_bytes": 536870912
+  },
+  "cached_cold_seconds": 1.7637280249036849,
+  "cached_warm_median_seconds": 1.2881027041003108,
+  "cached_warm_seconds": [
+    1.373363295570016,
+    1.2881027041003108,
+    1.272404087241739
+  ],
+  "fixed_batch_sha256": "802114bde743ce7c58e997be279987148f33d91898d43b511ad5040939edd929",
+  "model_forwards": 0,
+  "optimizer_updates": 0,
+  "source_sha256": "df64d635df44c8c5bd5cdef3d236ded43f8dc5d5ae7ea190d133be21b676b43a",
+  "status": "PASS_CPU_DECODE_CACHE_EQUIVALENCE",
+  "timing_scope": "CPU_PREPARE_NORMALIZE_HASH_BIND_ONLY_NO_MODEL; APPLICATION_CACHE_ONLY; OS_CACHE_NOT_FLUSHED",
+  "uncached_median_seconds": 1.4751415681093931,
+  "uncached_seconds": [
+    1.4751415681093931,
+    1.405112984124571,
+    1.4809050457552075
+  ],
+  "warm_median_reduction_fraction": 0.12679384003041794
+}

@@ -1,0 +1,74 @@
+{
+  "N_images": 14,
+  "amp": true,
+  "checkpoint_prefix_permitted_by_equivalence_but_not_selected": true,
+  "gradient_equivalence": "P3, embeddings and all parameter gradients bitwise equal across full-N reference / prefix / checkpoint-prefix",
+  "identity": {
+    "batch_position": 1,
+    "batch_sha256": "802114bde743ce7c58e997be279987148f33d91898d43b511ad5040939edd929",
+    "config_sha256": "b79db0e1107e82650630316b68b42f39121c3831707416c7183fcae3cc71e61b",
+    "manifest_sha256": "fe6a36601c6c8d90cfddfc19ab58335552c18653b66f3535e84c97b4c222dc22",
+    "model_sources_sha256": {
+      "bn.py": "04b06afd45e89a8f620b94cba9b8ae8a859aefb1b0e0dae697f74569fe19fdcc",
+      "losses.py": "57431ebbedce87af9e46d5e8e9163042f60ded81b969581114da8aadc2124aa2",
+      "model.py": "535355c9e82eb80da5a826df3afe8c3c59c5d1846e57dd399270849837f3b20d"
+    },
+    "rules_sha256": "594c7e2afed37447041cad8716876b1431736ae00c3bda1cf80de69bd4f2c7a9",
+    "source_sha256": "ce3c37b1d108e43e52e3589001915955e72d049a5831fa7ae00311f2be4b53ea"
+  },
+  "invariance": {
+    "independent": {
+      "extra_bn_updates": 0,
+      "max_embedding_cosine_distance": 0.048131346702575684,
+      "relative_P3_L2_error": 0.23215331137180328,
+      "same_input_sparse_slots": 14
+    },
+    "replay_a": {
+      "extra_bn_updates": 0,
+      "max_embedding_cosine_distance": 5.960464477539062e-07,
+      "relative_P3_L2_error": 0.0014291404513642192,
+      "same_input_sparse_slots": 14
+    }
+  },
+  "note": "Full N heads are an isolated equivalence reference only; production N stops at16.",
+  "optimizer_updates": 0,
+  "selected_BN": "replay_a",
+  "selected_checkpoint_prefix": false,
+  "selection_basis": "SAME_INPUT_A_NORMALIZER_COUNTERFACTUAL; prefix beats full reference; checkpoint prefix has greater measured memory/time than prefix",
+  "status": "PASS_PREFIX_EQUIVALENCE_AND_SPARSE_COUNTERFACTUAL",
+  "variants": {
+    "checkpointed_prefix": {
+      "equivalent_P3_embedding_and_gradients": true,
+      "median_seconds": 0.08322640368714929,
+      "peak_allocated_bytes": 1778528768,
+      "seconds_each": [
+        0.5717194266617298,
+        0.08322640368714929,
+        0.08183769090101123
+      ],
+      "timing_scope": "N_ONLY_FORWARD_AND_BACKWARD_THREE_REPEATS_INCLUDES_FIRST_CALL"
+    },
+    "full_N_reference": {
+      "equivalent_P3_embedding_and_gradients": true,
+      "median_seconds": 0.05977783305570483,
+      "peak_allocated_bytes": 2343268864,
+      "seconds_each": [
+        3.106363540980965,
+        0.05977783305570483,
+        0.05893153790384531
+      ],
+      "timing_scope": "N_ONLY_FORWARD_AND_BACKWARD_THREE_REPEATS_INCLUDES_FIRST_CALL"
+    },
+    "prefix": {
+      "equivalent_P3_embedding_and_gradients": true,
+      "median_seconds": 0.0481723602861166,
+      "peak_allocated_bytes": 1700038656,
+      "seconds_each": [
+        0.047610851004719734,
+        0.0481723602861166,
+        0.04978072503581643
+      ],
+      "timing_scope": "N_ONLY_FORWARD_AND_BACKWARD_THREE_REPEATS_INCLUDES_FIRST_CALL"
+    }
+  }
+}

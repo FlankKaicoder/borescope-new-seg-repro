@@ -1,5 +1,9 @@
 # Decision log
 
+## Exp17 J2 real-TRAIN engineering (2026-11-23)
+
+Decision D087. Use only the explicitly admitted 521 Aligned regional pairs; keep the 43 Raw/Crop/Bounded and 12 excluded records outside the main release. Preserve native J1 sampling, augmentations, YOLO and SupCon. Select detached A-statistics replay for counterfactual normalization and the numerically equivalent original N prefix, without activation checkpointing. The suggested lambda grid 0.05-1 remains a preserved weak-strength HOLD; transparently evaluate one additional TRAIN-only lambda4 against the same 16 gradient bases and unchanged screens. This yields a fixed engineering recommendation, not VAL selection or formal authorization. The sole real 50-update Smoke passed and exhausted its budget. Independent Training Protocol Gate must assess the candidate extension, local conflicts, early/late variation, class limits and detached-statistics assumption; formal duration/schedule/endpoint stay pending. [Handoff](exp17/EXP17_J2_ENGINEERING_HANDOFF.md).
+
 ## Exp17-F user review reconciliation (2026-11-22)
 
 Decision D086. Preserve the original CSV, bundle, page and Python importer. Treat only exactly equal finite coordinate int/float serialization as compatible in a separate read-only adapter; reject other identity/type/value differences. Bind each imported user decision to its exact current A10 N, Polygon, H and both Valid masks. Retain all 576 original records unchanged inside new merge wrappers; four rejects exclude only their own Polygons and do not affect other accepted targets in the same image. Keep historical Raw inference distinct from new current-Raw user acceptance and exact Aligned/Crop/Bounded evidence. The 564-candidate count does not grant Data Gate, trusted Pair or training. [Handoff](exp17f/EXP17_F_HANDOFF.md).

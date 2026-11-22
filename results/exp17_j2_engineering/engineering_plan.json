@@ -1,0 +1,114 @@
+{
+  "base_commit": "0ce2225e224e49f816675f7097692650d4f2c4b1",
+  "calibration": {
+    "amp": true,
+    "batch_positions": [
+      1,
+      7,
+      11,
+      21
+    ],
+    "lambda_candidates": [
+      0.05,
+      0.1,
+      0.2,
+      0.3,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "optimizer_updates": 0,
+    "rules": {
+      "AMP_N_equals_A_max_embedding_cosine_distance": 0.0001,
+      "AMP_N_equals_A_relative_P3_L2_tolerance": 0.01,
+      "A_statistics_gradient_on_N": "DETACHED_WITHIN_STEP_REFERENCE",
+      "FP32_N_equals_A_max_embedding_cosine_distance": 1e-05,
+      "FP32_N_equals_A_relative_P3_L2_tolerance": 0.0002,
+      "bn_modes_compared": [
+        "independent",
+        "replay_a"
+      ],
+      "bn_recommendation_basis": "SAME_A_NORMALIZER_COUNTERFACTUAL_AND_N_EQUALS_A_INVARIANCE_NOT_MINIMUM_LOSS",
+      "formal_training_authorized": false,
+      "maximum_individual_probe_ratio": 0.15,
+      "maximum_pooled_class_gradient_norm_share": 0.65,
+      "maximum_snapshot_median_ratio": 0.1,
+      "minimum_snapshot_median_ratio": 0.005,
+      "persistent_conflict_cosine": -0.5,
+      "persistent_conflict_snapshot_count": 3,
+      "primary_gradient_domain": "SHARED_BACKBONE_LAYERS_0_THROUGH_10",
+      "reference": "norm(grad(L_YOLO)+grad(8*L_SUPCON))",
+      "selection": "MINIMIZE_WORST_ABSOLUTE_LOG_SNAPSHOT_MEDIAN_DISTANCE_TO_0.05_THEN_SMALLER_LAMBDA",
+      "target_snapshot_median_ratio": 0.05
+    },
+    "states": {
+      "coco_initial": 0,
+      "j1_epoch005": 105,
+      "j1_epoch050": 1050,
+      "j1_epoch100": 2100
+    }
+  },
+  "coverage": {
+    "batches": 2100,
+    "epochs": 100,
+    "optimizer_updates": 0,
+    "reference": "SEALED_JC_SEED42_NATIVE_BATCH_LEDGER"
+  },
+  "engineering_smoke": {
+    "checkpoint": "ENGINEERING_ONLY_NEVER_FORMAL_RESUME",
+    "fresh_COCO_only": true,
+    "maximum_effective_updates": 50,
+    "maximum_optimizer_attempts": 50,
+    "separate_persistent_ledger": true,
+    "warmup_and_schedule": "UNCHANGED_J1_REFERENCE_100_EPOCH_HORIZON_FOR_SMOKE"
+  },
+  "evidence_tiers": {
+    "historical_exact_aligned": 459,
+    "new_user_current_aligned": 62
+  },
+  "excluded_from_main_pool": {
+    "bounded": 1,
+    "crop": 4,
+    "raw_historical": 35,
+    "raw_new_user": 3,
+    "technical": 8,
+    "user_reject": 4
+  },
+  "formal_training_authorized": false,
+  "formal_training_protocol_draft": {
+    "checkpoint_rule": null,
+    "decision": "PENDING_INDEPENDENT_TRAINING_PROTOCOL_GATE",
+    "effective_updates": null,
+    "epochs": null,
+    "historical_comparability_reference": "100_EPOCH_2100_UPDATES_EPOCH100_FP32_MASTER",
+    "schedule": null
+  },
+  "main_task": {
+    "batch": 32,
+    "imgsz": 640,
+    "native_sampling_unchanged": true,
+    "native_yolo_loss_unchanged": true,
+    "raw_instances": 1266,
+    "seed": 42,
+    "train_images": 668
+  },
+  "pair": {
+    "B": "ONLY_SAME_NATIVE_BATCH_DIFFERENT_GROUP_SAME_CLASS",
+    "N": "ONLY_BOUND_ALIGNED_THIS_POLYGON_ONLY_NO_YOLO_LABEL_LOSS",
+    "lambda": null,
+    "margin": 0.2,
+    "reduction": "ORIGINAL_MEAN_CLASS_MEAN_A_GROUP_MEAN_POLYGON_HINGE_MEAN_B_GROUP_DISTANCE"
+  },
+  "schema": "exp17_j2_engineering_plan_v1",
+  "supcon": {
+    "lambda": 8.0,
+    "pooling": "ORIGINAL_FUSED_P3_POLYGON_COVERAGE",
+    "projection": "ORIGINAL_SHARED_64_128_128",
+    "temperature": 0.1
+  },
+  "trusted_aligned_polygons": 521,
+  "trusted_manifest_sha256": "fe6a36601c6c8d90cfddfc19ab58335552c18653b66f3535e84c97b4c222dc22",
+  "trusted_source_groups": 327,
+  "trusted_source_images": 345,
+  "val_test_authorized": false
+}
