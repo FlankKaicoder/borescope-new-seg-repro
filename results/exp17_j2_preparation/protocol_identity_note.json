@@ -1,0 +1,13 @@
+{
+  "event": "DRAFT_BUILDER_LOCAL_BYTE_HASH_ASSERTION_STOP",
+  "resolution": "Windows checkout CRLF versus frozen Git LF; JSON identical; original file not modified",
+  "frozen_protocol_sha256": "b638850fc21fc26dc0075282340a40ecc25e5bda891a3dbf9327dc415681b0ca",
+  "windows_checkout_sha256": "fd3f755c8fd9c1b5915f22acce6b09c2f49f9ebcb16ee752f5ae8732bf736623",
+  "working_crlf_count": 113,
+  "frozen_crlf_count": 0,
+  "parsed_json_equal": true,
+  "draft_sha256": "c278de6488515ff59055f2599cf3a3ffbb280e7dafe84785627af2c184c08c04",
+  "draft_sha256_role": "Event-time builder receipt, before the subsequent bounded-cosine wording clarification; use final evidence manifest for current draft SHA",
+  "model_runs_during_resolution": 0,
+  "historical_files_modified": 0
+}

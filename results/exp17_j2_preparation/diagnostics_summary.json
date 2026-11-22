@@ -1,0 +1,149 @@
+{
+  "backward_calls": 0,
+  "bn_sha256_after": "fb702aa29df624682965c95989bc38009b314732365795095feda09c3d9550fe",
+  "bn_sha256_before": "fb702aa29df624682965c95989bc38009b314732365795095feda09c3d9550fe",
+  "cases": 36,
+  "checkpoint_file_sha256_after": "902fbc1efa4693e2601c162c76fb3736b38036d7eb0473438fe84317bb7895f5",
+  "checkpoint_file_sha256_before": "902fbc1efa4693e2601c162c76fb3736b38036d7eb0473438fe84317bb7895f5",
+  "definitions": {
+    "context": "ROI intersect Valid minus 5 native-pixel square dilation of union(all annotated GT polygons, historical request edit support)",
+    "distance": "1-cosine of paired L2-normalized pooled P3-64 and original learned projection-128",
+    "domain_probe": "Leave-one-independent-source-group-out balanced nearest normalized-centroid; two domain examples per group; ties receive 0.5; no fitted model or optimizer",
+    "edit_support": "Same-frame historical RGBA request mask alpha==0; request support does not prove edits were confined there",
+    "input": "Original and historical aligned repair in the same full 640 letterbox; RGB /255; no random augmentation",
+    "interpretation": "All are descriptive artifact/representation PROXIES, not pure style causal effects, semantic restoration, normal GT, or G1 PASS thresholds",
+    "model": "Frozen J1 seed42 epoch100 FP32 master including its original projection; eval/inference_mode, no optimizer",
+    "pixels": "Same valid proxy context: RGB absolute error /255, signed mean RGB change, grayscale Laplacian variance ratio, RGB perimeter contrast change",
+    "pooling": "Nearest-neighbor native /4 binary raster, average /2 fractional P3 weights, same project_regions as Exp15",
+    "population": "36 previously selected historical D0 pilot cases; 36 independent frozen source groups; not a random sample",
+    "target": "Historical target Polygon intersected with Valid, shared by both domains"
+  },
+  "elapsed_seconds": 3.2847845554351807,
+  "forward_calls": 36,
+  "fp32": true,
+  "human_pass": 0,
+  "images_forwarded": 72,
+  "independent_groups": 36,
+  "input_sha256_postchecked": true,
+  "limitations": [
+    "Historical hand-selected population, no population-level estimate.",
+    "Content/registration and generation effects confound domain separation; this is not pure style identification.",
+    "Context excludes all annotated GT and requested edit support but may contain unannotated defects or edits outside request support.",
+    "No thresholds, filtering, semantic approvals, or trusted Pairs are produced."
+  ],
+  "model_full_state_sha256_after": "0767484c5cb95afab803f3d655489a88dd7bf8fbcfb48e7de7984c4f3f63c41c",
+  "model_full_state_sha256_before": "0767484c5cb95afab803f3d655489a88dd7bf8fbcfb48e7de7984c4f3f63c41c",
+  "native_fp32_state_sha256": "1ffe60884850dd454bb7c5ffdddcd9e5c5d9163f4db5d3b5b40026d10a24c107",
+  "optimizer_updates": 0,
+  "packet_manifest_sha256": "2faa14e3afb545583e1422ad60cad33b3d743c55cbcc27e56293f0931988ea5b",
+  "peak_cuda_allocated_bytes": 99298816,
+  "precheck_sha256": "c75f46f43160fc773462407cba00ec106fe4a3f93eb3ad504b9ad613b5dc80da",
+  "runtime": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 3080 Ti",
+    "numpy": "2.3.2",
+    "opencv": "5.0.0",
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "ultralytics": "8.4.117"
+  },
+  "source_sha256": {
+    "tools/exp15/regions.py": "683f467f817dcf41ce50036c640ed3b45548abde867667dc1066222d1cafd65a",
+    "tools/exp17/diagnostics.py": "e83ef71ec9eb0ebbbd70d5130abb010c5f229fda3e17dc0ed89af215de6d9d47"
+  },
+  "status": "PASS_TRAIN_READONLY_DIAGNOSTICS_NOT_PAIR_ADMISSION",
+  "summaries": {
+    "context_projection128": {
+      "domain_probe": {
+        "balanced_accuracy": 0.5833333333333334,
+        "chance": 0.5,
+        "correct_weight": 42.0,
+        "groups": 36,
+        "samples": 72,
+        "tie_credit": 0.5
+      },
+      "paired_cosine_distance": {
+        "max": 0.6389364302158356,
+        "mean": 0.1220210451218817,
+        "median": 0.05412593483924866,
+        "min": 0.0003681182861328125,
+        "n": 36
+      }
+    },
+    "context_raw64": {
+      "domain_probe": {
+        "balanced_accuracy": 0.6666666666666666,
+        "chance": 0.5,
+        "correct_weight": 48.0,
+        "groups": 36,
+        "samples": 72,
+        "tie_credit": 0.5
+      },
+      "paired_cosine_distance": {
+        "max": 0.10205650329589844,
+        "mean": 0.035708942347102694,
+        "median": 0.0283220112323761,
+        "min": 0.0021355152130126953,
+        "n": 36
+      }
+    },
+    "outside_context_mae_rgb_0_1": {
+      "max": 0.08650287011604355,
+      "mean": 0.038774211359302035,
+      "median": 0.03476124123728011,
+      "min": 0.010552757836589403,
+      "n": 36
+    },
+    "repair_over_original_laplacian_variance": {
+      "max": 29.282563335743678,
+      "mean": 5.248059565470276,
+      "median": 3.066203353783652,
+      "min": 0.10692583424862415,
+      "n": 36
+    },
+    "target_perimeter_change_mae_0_1": {
+      "max": 0.24217459593656585,
+      "mean": 0.0961086547056443,
+      "median": 0.0859603397723965,
+      "min": 0.02888096652802535,
+      "n": 36
+    },
+    "target_projection128": {
+      "domain_probe": {
+        "balanced_accuracy": 0.6666666666666666,
+        "chance": 0.5,
+        "correct_weight": 48.0,
+        "groups": 36,
+        "samples": 72,
+        "tie_credit": 0.5
+      },
+      "paired_cosine_distance": {
+        "max": 1.0961509495973587,
+        "mean": 0.40088145890169674,
+        "median": 0.3124646842479706,
+        "min": 0.005269110202789307,
+        "n": 36
+      }
+    },
+    "target_raw64": {
+      "domain_probe": {
+        "balanced_accuracy": 0.875,
+        "chance": 0.5,
+        "correct_weight": 63.0,
+        "groups": 36,
+        "samples": 72,
+        "tie_credit": 0.5
+      },
+      "paired_cosine_distance": {
+        "max": 0.8074137270450592,
+        "mean": 0.365187868475914,
+        "median": 0.3656005263328552,
+        "min": 0.05776280164718628,
+        "n": 36
+      }
+    }
+  },
+  "tf32": false,
+  "trusted_pairs": 0,
+  "val_test_forwards": 0
+}

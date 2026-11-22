@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Exp17 独立 G1 人工复核</title>
+<style>
+:root{font-family:Arial,"Microsoft YaHei",sans-serif;color:#e4edf3;background:#121b22;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0}main{max-width:1500px;margin:auto;padding:20px}h1{margin:0 0 8px;font-size:27px}h2{font-size:19px;margin:10px 0}
+p{line-height:1.55;margin:8px 0}section,nav{border:1px solid #485f6c;border-radius:8px;padding:14px;background:#1d2c35;margin:12px 0}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}input,select,button,textarea{font:inherit;background:#111e26;color:inherit;border:1px solid #6f8a9a;border-radius:4px;padding:7px}
+input[type=search]{max-width:170px}button{cursor:pointer}button:disabled{opacity:.4}a{color:#8cd4ff}.notice{color:#ffdf91}.muted{color:#b3c8d5}.code{font:12px Consolas,monospace;overflow-wrap:anywhere}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:12px}.visual{position:relative;background:#050b0f;overflow:hidden}
+.visual>img{width:100%;height:100%;display:block;object-fit:fill}.visual>svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+figure{margin:0}figcaption{padding:8px 0;overflow-wrap:anywhere}.quality{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:9px}
+.quality label{display:flex;justify-content:space-between;align-items:center;gap:8px}.quality select{width:130px}textarea{width:100%;min-height:70px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px Consolas,monospace}.danger{color:#ffb3a4}
+[hidden]{display:none!important}.small{font-size:13px}.pill{padding:4px 8px;background:#344c5b;border-radius:4px}
+</style></head><body><main>
+<h1>Exp17 · 同源缺陷—伪正常区域独立 G1 复核</h1>
+<p class="notice">正式可信 Pair = 0。本页 PASS 只是用户本次复核记录，仍须独立 Data Gate；历史整图 PASS、数值支持及 Codex 可行观察都不能替代 G1 准入。当前候选 Tip curl 覆盖为 0，不能称为七类 Pair 覆盖。</p>
+<p class="small muted">先查看六个历史可行案例。逐例独立检查同一机械部件、目标修复、结构、有效支持、其他缺陷与 UI／风格捷径。黄线为目标 Polygon，橙线为其他原标注，青框为几何上下文窗；未标注区域不自动视为正常。</p>
+<nav><div class="row">
+<label>集合 <select id="scope"><option value="six">历史六例优先复核</option><option value="all">全部 545 候选</option></select></label>
+<label>类别 <select id="class"><option value="">全部</option></select></label>
+<label>来源 <input id="source" type="search" placeholder="精确来源／组／Polygon"></label>
+<label>技术状态 <select id="status"><option value="">全部</option></select></label>
+<label>本次状态 <select id="decisionFilter"><option value="">全部</option><option>PENDING</option><option>PASS</option><option>HOLD</option><option>REJECT</option></select></label>
+<button id="prev">上一例</button><button id="next">下一例</button><span id="position"></span>
+</div><p id="counts" class="small"></p></nav>
+<p id="empty" hidden>没有匹配案例。调整筛选即可恢复；已有本次记录保留。</p>
+<section id="case"><h2 id="heading"></h2><p id="identity" class="code"></p><p id="risk" class="notice"></p>
+<details><summary>历史人工语义记录（仅对应此来源／Polygon／版本）</summary><pre id="historical"></pre></details>
+<details><summary>历史 Codex G1 试验（不是用户人工 G1 PASS）</summary><p id="encoding" class="danger"></p><pre id="oldPilot"></pre></details>
+<details><summary>本次 Codex 独立视觉观察（不作为用户决定或正式准入）</summary><pre id="currentCodex"></pre></details>
+<details><summary>本次 Codex 技术核验、矩阵与支持（不替代用户视觉判断）</summary><pre id="technical"></pre></details>
+<div class="row"><label>视图 <select id="view"><option value="roi">局部上下文 ROI</option><option value="full">完整图像</option></select></label>
+<label>显示 <select id="show"><option value="both">原图与修复图对照</option><option value="original">仅原图</option><option value="repaired">仅修复图</option></select></label>
+<label><input id="overlay" type="checkbox" checked>Polygon／其他原标注／窗口</label>
+<label><input id="valid" type="checkbox" checked>显示 Valid Mask</label></div>
+<div class="grid" id="images"></div>
+<p class="small muted">点击图像名称打开对应文件。所有页面媒体均在本审核包内，仅加载当前案例；白色 Valid 像素为历史配准支持，黑色不支持。矩阵与源图未重新配准。ROI 文件仅供显示。</p>
+<h2>本次用户独立复核</h2>
+<p class="small notice">正向条目 PASS 需全部 YES；风险条目需全部 NO，并填写复核者及独立机械边界证据。无法判断请选择 UNCERTAIN／HOLD。G1 不要求 G2 Formal TRE，拟合用 SIFT 内点不能替代独立视觉边界。</p>
+<label>复核者 <input id="reviewer" type="text" autocomplete="off" placeholder="由实际用户填写"></label>
+<div id="quality" class="quality"></div>
+<label>独立边界／结构证据说明<textarea id="boundaryNote" placeholder="描述用于对应的独立孔、机械边缘或上下文；不要复制拟合内点"></textarea></label>
+<label>复核备注<textarea id="note"></textarea></label>
+<div class="row"><label>最终决定 <select id="decision"><option>PENDING</option><option>PASS</option><option>HOLD</option><option>REJECT</option></select></label><button id="save">保存本例到本机</button><span id="message" role="status"></span></div>
+<p id="currentAttribution" class="small muted"></p></section>
+<section><h2>保存与交付</h2><p class="small">切换案例前请保存。记录按包身份隔离，本次数据不会改写历史 CSV。关闭页面前导出；本机存储失败仍可导出。所有导出 training_approved=false、independent_data_gate=NOT_GRANTED。</p>
+<div class="row"><button id="json">导出本次已保存 JSON</button><button id="csv">导出本次已保存 CSV</button><a href="new_review_template.json" download>全量待审 JSON 模板</a><a href="new_review_template.csv" download>全量待审 CSV 模板</a><a href="file_manifest.json" target="_blank" rel="noopener">文件身份清单</a></div>
+<p id="package" class="code"></p><p id="storageWarning" class="danger"></p></section>
+</main><script id="bundle" type="application/json">__BUNDLE__</script><script>
+(() => {
+  "use strict";
+  const $=id=>document.getElementById(id), B=JSON.parse($("bundle").textContent);
+  const fieldLabels={same_mechanical_part:"同一机械部件",defect_removed:"目标缺陷已去除",normal_texture_plausible:"正常纹理合理",
+    mechanical_structure_preserved:"机械结构保留",target_support_complete:"目标完整支持",context_correspondence:"上下文对应",
+    independent_boundary_evidence:"存在独立机械边界证据",hallucinated_structure:"存在幻觉结构（风险）",residual_defect:"存在残留缺陷（风险）",
+    seam_or_blur:"存在接缝／模糊（风险）",other_defect_contamination:"正常参照有其他缺陷污染（风险）",UI_or_FOV_shortcut:"存在 UI／视野捷径（风险）"};
+  const fields=B.positive.concat(B.negative), key="exp17:"+B.package_id;
+  let saved={}, available=[], index=0, current=null, dirty=false;
+  try{saved=JSON.parse(localStorage.getItem(key)||"{}");}catch(e){$("storageWarning").textContent="本机存储不可用；请依靠 JSON/CSV 导出。";}
+  const lookup=new Map(B.records.map(r=>[r.candidate_id,r]));
+  function fresh(r){return Object.assign({schema:B.schema,package_id:B.package_id,candidate_id:r.candidate_id,binding_sha256:r.binding_sha256,
+    source_id:r.source_id,group_id:r.group_id,polygon_id:r.polygon_id,class:r.class,review_id:r.review_id,variant_id:r.variant_id,version:r.version,
+    asset_identity:r.asset_identity,final_decision:"PENDING",reviewer_id:"",reviewer_note:"",boundary_evidence_note:"",reviewed_at:null,
+    review_role:"UNREVIEWED",training_approved:false,independent_data_gate:"NOT_GRANTED"},Object.fromEntries(fields.map(k=>[k,"PENDING"])));}
+  function validate(r,v){const errors=[];
+    if(v.package_id!==B.package_id||v.binding_sha256!==r.binding_sha256||v.candidate_id!==r.candidate_id)errors.push("包／来源／资产绑定不一致");
+    if(v.schema!==B.schema||!["source_id","group_id","polygon_id","class","review_id","variant_id","version"].every(k=>v[k]===r[k]))errors.push("冗余身份字段与绑定资产不一致");
+    if(JSON.stringify(v.asset_identity)!==JSON.stringify(r.asset_identity))errors.push("资产／版本／矩阵身份不一致");
+    if(!fields.every(k=>["PENDING","YES","NO","UNCERTAIN"].includes(v[k]))||!["PENDING","PASS","HOLD","REJECT"].includes(v.final_decision))errors.push("审核字段值不合法");
+    if(!["UNREVIEWED","USER_LOCAL_REVIEW_UNVERIFIED"].includes(v.review_role))errors.push("审核归属不合法");
+    if(v.training_approved!==false||v.independent_data_gate!=="NOT_GRANTED")errors.push("本页不得授予训练准入");
+    if(v.final_decision==="PASS"){
+      if(r.g0_status!=="G0_PASS")errors.push("G0 身份未通过");
+      if(!B.positive.every(k=>v[k]==="YES")||!B.negative.every(k=>v[k]==="NO"))errors.push("PASS 的全部正向证据／风险排除尚未完成");
+      if(!v.reviewer_id.trim()||!v.boundary_evidence_note.trim())errors.push("PASS 需要复核者和独立边界说明");
+    }return errors;}
+  for(const k of Object.keys(saved)){const r=lookup.get(k);if(!r||validate(r,saved[k]).length){delete saved[k];$("storageWarning").textContent="已忽略失效或不满足当前身份绑定的本机记录，请重新复核。";}}
+  for(const name of fields){const label=document.createElement("label");label.textContent=fieldLabels[name];const select=document.createElement("select");select.id=name;
+    for(const value of ["PENDING","YES","NO","UNCERTAIN"]){const opt=document.createElement("option");opt.value=value;opt.textContent=value;select.append(opt);}
+    label.append(select);$("quality").append(label);}
+  function options(id,values){for(const val of [...new Set(values)].sort()){const o=document.createElement("option");o.value=val;o.textContent=val;$(id).append(o);}}
+  options("class",B.records.map(r=>r.class));options("status",B.records.map(r=>r.g1_status));
+  const imageCache=new Map();
+  function imageFor(url,name){
+    const cacheKey=name+"|"+url;
+    if(imageCache.has(cacheKey)){const image=imageCache.get(cacheKey);imageCache.delete(cacheKey);imageCache.set(cacheKey,image);return image;}
+    const image=document.createElement("img");image.alt=name;image.loading="eager";image.decoding="async";image.src=url;
+    imageCache.set(cacheKey,image);while(imageCache.size>18)imageCache.delete(imageCache.keys().next().value);
+    return image;
+  }
+  function updateCounts(){const values=Object.values(saved);$("counts").textContent="545 个 Polygon 候选；"+new Set(B.records.map(r=>r.group_id)).size+" 个独立来源组。已保存 "+values.length+" 例，本次用户标记 PASS "+values.filter(r=>r.final_decision==="PASS").length+"；正式可信 Pair 仍为 0。";}
+  function filters(){if(dirty&&!save())return;available=B.records.filter(r=>($("scope").value!=="six"||r.priority_six)&&(!$("class").value||r.class===$("class").value)&&
+    (!$("source").value.trim()||r.source_id===$("source").value.trim()||r.group_id===$("source").value.trim()||r.polygon_id===$("source").value.trim())&&
+    (!$("status").value||r.g1_status===$("status").value)&&(!$("decisionFilter").value||(saved[r.candidate_id]||fresh(r)).final_decision===$("decisionFilter").value));
+    index=0;render();}
+  function poly(points,color){const node=document.createElementNS("http://www.w3.org/2000/svg","polygon");node.setAttribute("points",points.map(p=>p.join(",")).join(" "));node.setAttribute("fill","none");node.setAttribute("stroke",color);node.setAttribute("stroke-width","1.5");node.setAttribute("vector-effect","non-scaling-stroke");return node;}
+  function gallery(){const container=$("images");container.replaceChildren();if(!current)return;
+    const roi=$("view").value==="roi", files=roi?current.roi_files:current.files;
+    for(const name of ["original","repaired","valid"]){if(name==="valid"&&!$("valid").checked)continue;if(name!=="valid"&&$("show").value!=="both"&&$("show").value!==name)continue;
+      const figure=document.createElement("figure"), box=document.createElement("div"),image=imageFor(files[name],name),caption=document.createElement("figcaption"),link=document.createElement("a");
+      box.className="visual";const r=roi?current.roi:[0,0,...current.frame_size],w=roi?r[2]-r[0]:r[2],h=roi?r[3]-r[1]:r[3];box.style.aspectRatio=w+"/"+h;
+      box.append(image);
+      if($("overlay").checked){const svg=document.createElementNS("http://www.w3.org/2000/svg","svg");svg.setAttribute("viewBox",[r[0],r[1],w,h].join(" "));
+        for(const item of current.other_polygons)svg.append(poly(item.points,"#fa9348"));svg.append(poly(current.polygon_coordinates,"#ffe300"));
+        const rect=document.createElementNS("http://www.w3.org/2000/svg","rect");const q=current.roi;for(const [k,v] of Object.entries({x:q[0],y:q[1],width:q[2]-q[0],height:q[3]-q[1],fill:"none",stroke:"#00e6ff","stroke-width":2,"vector-effect":"non-scaling-stroke"}))rect.setAttribute(k,v);
+        svg.append(rect);box.append(svg);}
+      link.href=files[name];link.target="_blank";link.rel="noopener";link.textContent={original:"原始图像",repaired:"历史 Aligned 修复图",valid:"历史 Valid Mask"}[name]+(roi?" · ROI":" · 完整");caption.append(link);figure.append(box,caption);container.append(figure);
+    }}
+  function render(){const exists=available.length>0;$("case").hidden=!exists;$("empty").hidden=exists;$("position").textContent=exists?String(index+1)+" / "+available.length:"0 / 0";$("prev").disabled=!exists||index===0;$("next").disabled=!exists||index===available.length-1;updateCounts();if(!exists){current=null;return;}
+    current=available[index];$("heading").textContent=current.source_id+" · "+current.class+" · "+current.polygon_id+" · "+current.version;
+    $("identity").textContent="组 "+current.group_id+" | "+current.variant_id+" | review "+current.review_id+" | binding "+current.binding_sha256;
+    $("risk").textContent="本次技术状态："+current.g0_status+" / "+current.g1_status+"；风险："+JSON.stringify(current.risk_flags);
+    $("historical").textContent=JSON.stringify(current.history.human||current.history.historical_human||{status:"未提供明确人工字段，保持未知；不猜测或继承"},null,2);
+    const history=current.history.pilot||current.history.pilot_row||{};$("oldPilot").textContent=JSON.stringify({historical_g1_result:current.historical_g1_result,pilot:history},null,2);
+    $("currentCodex").textContent=JSON.stringify(current.codex_current_observation,null,2);
+    $("encoding").textContent=JSON.stringify(history).includes("\ufffd")?"历史文字含编码替换字符，保留原记录且不猜测修复；请依据图像独立判断。":"";
+    $("technical").textContent=JSON.stringify({g0:current.g0_status,g1:current.g1_status,metrics:current.metrics,matrix_output_to_source:current.matrix_output_to_source,roi:current.roi,frame_size:current.frame_size,asset_identity:current.asset_identity},null,2);
+    const v=saved[current.candidate_id]||fresh(current);for(const name of fields)$(name).value=v[name];$("decision").value=v.final_decision;$("note").value=v.reviewer_note;$("boundaryNote").value=v.boundary_evidence_note;$("reviewer").value=v.reviewer_id;
+    dirty=false;$("message").textContent="";$("currentAttribution").textContent="归属："+v.review_role+"；时间："+(v.reviewed_at||"未复核")+"；独立 Data Gate：NOT_GRANTED";gallery();}
+  function save(){if(!current)return false;const v=fresh(current);for(const k of fields)v[k]=$(k).value;
+    Object.assign(v,{final_decision:$("decision").value,reviewer_id:$("reviewer").value.trim(),reviewer_note:$("note").value,boundary_evidence_note:$("boundaryNote").value,reviewed_at:new Date().toISOString(),review_role:"USER_LOCAL_REVIEW_UNVERIFIED"});
+    const errors=validate(current,v);if(errors.length){$("message").textContent=errors.join("；");$("message").className="danger";return false;}
+    saved[current.candidate_id]=v;try{localStorage.setItem(key,JSON.stringify(saved));}catch(e){$("storageWarning").textContent="本机保存失败；本次内存记录仍在，请立即导出。";}
+    dirty=false;$("message").textContent="本次记录已保存；尚未获得 Data Gate。";$("message").className="notice";$("currentAttribution").textContent="归属："+v.review_role+"；时间："+v.reviewed_at+"；独立 Data Gate：NOT_GRANTED";updateCounts();return true;}
+  function payload(){const records=Object.values(saved).map(v=>{const errors=validate(lookup.get(v.candidate_id),v);if(errors.length)throw Error(errors.join(";"));return v;});
+    return {schema:B.schema,package_id:B.package_id,exported_at:new Date().toISOString(),review_role:"USER_LOCAL_REVIEW_UNVERIFIED",training_approved:false,independent_data_gate:"NOT_GRANTED",records:records};}
+  function csvText(data){if(!data.records.length)return "candidate_id,final_decision\r\n";const keys=Object.keys(data.records[0]);const quote=v=>{let s=v==null?"":typeof v==="object"?JSON.stringify(v):String(v);if(/^[=+@\t\r-]/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"';};return "\ufeff"+[keys.map(quote).join(","),...data.records.map(r=>keys.map(k=>quote(r[k])).join(","))].join("\r\n")+"\r\n";}
+  function download(kind){try{const data=payload(),text=kind==="json"?JSON.stringify(data,null,2):csvText(data);const blob=new Blob([text],{type:kind==="json"?"application/json;charset=utf-8":"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="exp17_user_review_"+new Date().toISOString().replace(/[:.]/g,"-")+"."+kind;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}catch(e){$("storageWarning").textContent="导出未完成："+e.message;}}
+  for(const id of ["scope","class","status","decisionFilter"])$(id).addEventListener("change",filters);$("source").addEventListener("input",filters);
+  $("prev").onclick=()=>{if(dirty&&!save())return;index--;render();};$("next").onclick=()=>{if(dirty&&!save())return;index++;render();};
+  for(const id of fields.concat(["decision","note","boundaryNote","reviewer"]))$(id).addEventListener("input",()=>{dirty=true;});
+  window.addEventListener("beforeunload",event=>{if(dirty){event.preventDefault();event.returnValue="";}});
+  for(const id of ["view","show","overlay","valid"])$(id).addEventListener("change",gallery);
+  $("save").onclick=save;$("json").onclick=()=>download("json");$("csv").onclick=()=>download("csv");
+  $("package").textContent="Package "+B.package_id+" | Audit SHA256 "+B.audit_sha256;
+  window.exp17Review={bundle:B,exportPayload:payload,csvText:csvText,validate:validate};
+  filters();
+})();
+</script></body></html>

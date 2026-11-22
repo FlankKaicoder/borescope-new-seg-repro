@@ -1,0 +1,128 @@
+{
+  "base_commit": "401210427a61f3430f18bb4fe93261c911f66080",
+  "files": {
+    "docs/exp17/EXP17_J2_HANDOFF.md": {
+      "bytes": 9592,
+      "sha256": "644fbc6918a954ca53d5e2f2468a27254fff84df6921afb52a622b45d8e79815"
+    },
+    "docs/exp17/EXP17_J2_METHOD_AND_GATES.md": {
+      "bytes": 10671,
+      "sha256": "53d811e3d4bd361730a709baa401c966ce8ad34313d3202f2ca4a1fec6347d18"
+    },
+    "docs/exp17/EXP17_PAIR_ASSET_AUDIT.md": {
+      "bytes": 6435,
+      "sha256": "bc7b6076fa4429807f81ac65389072b173a62f3de2d6479e5c480a0e96b1e8d0"
+    },
+    "results/exp17_j2_preparation/asset_audit_summary.json": {
+      "bytes": 3344,
+      "sha256": "9d54352cf227d7c8447acd160c332bb08927c452a0290b561c4af38d12506a9c"
+    },
+    "results/exp17_j2_preparation/asset_group_coverage_summary.json": {
+      "bytes": 1501,
+      "sha256": "7f90e2f13a585d50d2b1ba7bfe6542148216bf9cdbd4e27052c58fa8ec438b15"
+    },
+    "results/exp17_j2_preparation/asset_lineage_supplement.json": {
+      "bytes": 913,
+      "sha256": "73c0889a7aa435c7e2d3728894eee949d54865cf1ca216a5aabdf3f6e97006c7"
+    },
+    "results/exp17_j2_preparation/diagnostics_interpretation.json": {
+      "bytes": 3470,
+      "sha256": "381b532ac157e80f87f31eccda71cd072c28e618914a3a1da5afc7a9d50c0223"
+    },
+    "results/exp17_j2_preparation/diagnostics_precheck.json": {
+      "bytes": 2697,
+      "sha256": "c75f46f43160fc773462407cba00ec106fe4a3f93eb3ad504b9ad613b5dc80da"
+    },
+    "results/exp17_j2_preparation/diagnostics_summary.json": {
+      "bytes": 6054,
+      "sha256": "b8073ad1cdf73ec58de8d3866f4abf56918ccc83ec80621bdaf16ab340fa2815"
+    },
+    "results/exp17_j2_preparation/formal_protocol_draft.json": {
+      "bytes": 7326,
+      "sha256": "348228b35f1a3976e11af133081d3826844c68e53b95abf57a01ac9641dcd870"
+    },
+    "results/exp17_j2_preparation/precommit_review.json": {
+      "bytes": 1074,
+      "sha256": "ef971289d220652ef91ba1ccb0a05157ee54ca58e9ebfbac7e19d263b59865a5"
+    },
+    "results/exp17_j2_preparation/protocol_identity_note.json": {
+      "bytes": 779,
+      "sha256": "f7ed4e15675be9a0d9221c8dca57bc05d60c70c2ed33de0645119ebc3f11213a"
+    },
+    "results/exp17_j2_preparation/prototype_report.md": {
+      "bytes": 16878,
+      "sha256": "181e52ee7e5440c13dfe147b625a99b20d1e7f781a8872086a7e6a27a40ce6f9"
+    },
+    "results/exp17_j2_preparation/prototype_summary.json": {
+      "bytes": 9117,
+      "sha256": "bcd0df1536e79f611c6623bc0b0116f9c1d65d95fbb2c82d4d1a8a54c63918d1"
+    },
+    "results/exp17_j2_preparation/review_summary.json": {
+      "bytes": 2107,
+      "sha256": "c8549b79443396f941e65bbf115a3699f0767242db459a420b808ea2ed930f40"
+    },
+    "results/exp17_j2_preparation/runtime_preflight.json": {
+      "bytes": 585,
+      "sha256": "d1f6b630ef2269e3810ecb31e25e409f82343f8a3b2a4caed65b09fe0e4e8618"
+    },
+    "results/exp17_j2_preparation/source_newline_identity_note.json": {
+      "bytes": 749,
+      "sha256": "79e05fcfbd70318566d29e687515438f2d6182f41aafafb06232201958f426ce"
+    },
+    "results/exp17_j2_preparation/summary.json": {
+      "bytes": 5475,
+      "sha256": "506f711b4ac18e39f8abe3508d205f5231bdd3e0c6ce6e1346e66208e460b7c1"
+    },
+    "tools/exp17/audit_assets.py": {
+      "bytes": 20038,
+      "sha256": "86fbdeee585966029644da433bce1b52b570e572b37c84126a24dcefc60498b3"
+    },
+    "tools/exp17/audit_coverage.py": {
+      "bytes": 3106,
+      "sha256": "db725a72bbc1384ce99a4519f15ac1c4095639927c0c10847a274cdb2ee58d65"
+    },
+    "tools/exp17/diagnostics.py": {
+      "bytes": 21505,
+      "sha256": "e83ef71ec9eb0ebbbd70d5130abb010c5f229fda3e17dc0ed89af215de6d9d47"
+    },
+    "tools/exp17/pair_loss.py": {
+      "bytes": 14287,
+      "sha256": "d9dba2e3c1ecd46f72a00950215f20737f5bd1a039eeafbe7668e6d00050aaf4"
+    },
+    "tools/exp17/prototype.py": {
+      "bytes": 15935,
+      "sha256": "95fbba9106e84df02d7e39fed5a7726138023509aed2d9ebc7811c7781bbf7f7"
+    },
+    "tools/exp17/review_package.html": {
+      "bytes": 19229,
+      "sha256": "4f6ee26645d0a23cc42b71d6e0de3debc2d0de4bb8ad15f7a733db35567ba966"
+    },
+    "tools/exp17/review_package.py": {
+      "bytes": 14371,
+      "sha256": "04cd2724c588e9eeaf1ab0de7972e004425da0b566ab9342a930a52c4924048f"
+    },
+    "tools/exp17/test_audit_assets.py": {
+      "bytes": 2641,
+      "sha256": "b4b9f0f964444a49af9374eadb578ec4e216810d4949c064d62a7dbe536147b0"
+    },
+    "tools/exp17/test_diagnostics.py": {
+      "bytes": 1567,
+      "sha256": "0b36f93283689f3ac971b46c229a6d574ee0a0505307f50777f693fd34c1969f"
+    },
+    "tools/exp17/test_pair.py": {
+      "bytes": 7018,
+      "sha256": "8da6bc5ed0132d6061d84b480a62728d5a03557cbde06db564db7d12ae93e46b"
+    },
+    "tools/exp17/test_review_browser.mjs": {
+      "bytes": 8837,
+      "sha256": "4d5bf952d98d84f33f47230a09892795d8511e68a6c0eefbef6c1507f34274da"
+    },
+    "tools/exp17/test_review_package.py": {
+      "bytes": 3191,
+      "sha256": "23175ac174bbd5bec4999b9c20dccdd3b705e7af8505808bee6a6916510afab1"
+    }
+  },
+  "new_paths_preserved_by_gitattributes_minus_text": true,
+  "schema": "exp17_published_evidence_byte_manifest_v1",
+  "scope": "New Exp17 source, documents and sanitized results only; excludes this manifest itself"
+}

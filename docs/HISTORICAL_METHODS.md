@@ -1,5 +1,9 @@
 # Historical methods boundary
 
+## Exp17 source-aware regional Pair extension (2026-11-22)
+
+The user accepted Exp15's three-seed SupCon positive direction and Exp16's fixed-lambda CE negative result in their separate branches. Exp17 adds a proposed shared-head source-group A/B/N ranking term alongside unchanged SupCon; it is a new research extension, not a reproduced historical method or demonstrated performance gain. Synthetic engineering passes and read-only TRAIN context diagnostics do not establish semantic Pair quality. Human G1 PASS and trusted Pair are zero, real native Pair replay is unimplemented, and formal training remains gated. [Current handoff](exp17/EXP17_J2_HANDOFF.md).
+
 本文只整理已有任务说明明确给出的历史信息，不新增未经确认的历史事实。
 
 ## A. 旧 537 张任务确认做过的思想

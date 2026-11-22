@@ -1,0 +1,19 @@
+{
+  "schema": "exp17_runtime_readonly_preflight_v1",
+  "device": "NVIDIA GeForce RTX 3080 Ti",
+  "gpu_memory_bytes": 12491292672,
+  "python": "3.12.3",
+  "torch": "2.8.0+cu128",
+  "torchvision": "0.23.0+cu128",
+  "ultralytics": "8.4.117",
+  "data_disk": {
+    "total_bytes": 53687091200,
+    "used_bytes": 45878145024,
+    "free_bytes": 7808946176
+  },
+  "gpu_compute_applications": [],
+  "formal_training_started": false,
+  "real_pair_optimizer_updates": 0,
+  "val_test_inference": 0,
+  "resource_limitation": "Synthetic128/batch14 capacity is not formal640/batch32 capacity proof"
+}

@@ -1,0 +1,58 @@
+{
+  "audited_candidates_sha256": "11244f84b9fe0025a79b49e8c362c3c838d7d752a146071edc0a7712f0b84472",
+  "candidate_polygons": 545,
+  "class_source_groups_overlapping": {
+    "Burn": 41,
+    "Crack": 49,
+    "Dent": 88,
+    "Material missing": 68,
+    "Tears": 38,
+    "Tip curl": 0,
+    "corrosion": 86
+  },
+  "current_human_pass": 0,
+  "formal_trusted_pairs": 0,
+  "independent_source_groups": 356,
+  "multiple_images_in_same_group": 11,
+  "polygons_per_source_group_histogram": {
+    "1": 272,
+    "2": 46,
+    "3": 19,
+    "4": 7,
+    "5": 6,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "10": 1,
+    "13": 1,
+    "22": 1
+  },
+  "polygons_per_source_image_histogram": {
+    "1": 300,
+    "2": 41,
+    "3": 18,
+    "4": 6,
+    "5": 6,
+    "7": 1,
+    "8": 2,
+    "10": 1,
+    "22": 1
+  },
+  "risk_source_groups_overlapping": {
+    "FINAL_PIXEL_ASSET_CONFIRMATION_PENDING": 99,
+    "G1_NUMERIC_SUPPORT_NOT_MET": 4,
+    "HISTORICAL_SOURCE_VERSION_CONFLICT": 37,
+    "LEGACY_GEOMETRY_FILE_NO_HISTORICAL_FILE_SHA_ONLY_MATRIX_AND_ASSET_BINDING": 178,
+    "OTHER_ANNOTATED_DEFECT_IN_ROI_REQUIRE_SEMANTIC_REVIEW": 63,
+    "ROI_TOUCHES_FRAME_EDGE": 102,
+    "SAME_POLYGON_ALTERNATE_VARIANTS_NOT_INDEPENDENT": 5
+  },
+  "source_images": 376,
+  "strata_source_groups_overlapping": {
+    "G1_NUMERIC_CANDIDATE": 330,
+    "G1_REJECT": 4,
+    "G1_VISUAL_PENDING": 32,
+    "UNKNOWN_HOLD": 4
+  },
+  "warning": "Source-group counts for different classes, risks or strata overlap; do not sum them as independent groups."
+}

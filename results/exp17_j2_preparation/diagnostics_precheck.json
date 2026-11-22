@@ -1,0 +1,41 @@
+{
+  "cases": 36,
+  "checkpoint_file_sha256": "902fbc1efa4693e2601c162c76fb3736b38036d7eb0473438fe84317bb7895f5",
+  "definitions": {
+    "context": "ROI intersect Valid minus 5 native-pixel square dilation of union(all annotated GT polygons, historical request edit support)",
+    "distance": "1-cosine of paired L2-normalized pooled P3-64 and original learned projection-128",
+    "domain_probe": "Leave-one-independent-source-group-out balanced nearest normalized-centroid; two domain examples per group; ties receive 0.5; no fitted model or optimizer",
+    "edit_support": "Same-frame historical RGBA request mask alpha==0; request support does not prove edits were confined there",
+    "input": "Original and historical aligned repair in the same full 640 letterbox; RGB /255; no random augmentation",
+    "interpretation": "All are descriptive artifact/representation PROXIES, not pure style causal effects, semantic restoration, normal GT, or G1 PASS thresholds",
+    "model": "Frozen J1 seed42 epoch100 FP32 master including its original projection; eval/inference_mode, no optimizer",
+    "pixels": "Same valid proxy context: RGB absolute error /255, signed mean RGB change, grayscale Laplacian variance ratio, RGB perimeter contrast change",
+    "pooling": "Nearest-neighbor native /4 binary raster, average /2 fractional P3 weights, same project_regions as Exp15",
+    "population": "36 previously selected historical D0 pilot cases; 36 independent frozen source groups; not a random sample",
+    "target": "Historical target Polygon intersected with Valid, shared by both domains"
+  },
+  "disk_free_bytes": 7801233408,
+  "ema_state_sha256_not_used": "182c503e6c86f2eb2ca1bdaa280fd8cbabf23baec3cb2da4473e9670c0db669f",
+  "full_fp32_state_sha256": "0767484c5cb95afab803f3d655489a88dd7bf8fbcfb48e7de7984c4f3f63c41c",
+  "independent_groups": 36,
+  "input_files": 288,
+  "native_fp32_state_sha256": "1ffe60884850dd454bb7c5ffdddcd9e5c5d9163f4db5d3b5b40026d10a24c107",
+  "optimizer_updates": 0,
+  "packet_manifest_sha256": "2faa14e3afb545583e1422ad60cad33b3d743c55cbcc27e56293f0931988ea5b",
+  "protocol_sha256": "b638850fc21fc26dc0075282340a40ecc25e5bda891a3dbf9327dc415681b0ca",
+  "runtime": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 3080 Ti",
+    "numpy": "2.3.2",
+    "opencv": "5.0.0",
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "ultralytics": "8.4.117"
+  },
+  "source_sha256": {
+    "tools/exp15/regions.py": "683f467f817dcf41ce50036c640ed3b45548abde867667dc1066222d1cafd65a",
+    "tools/exp17/diagnostics.py": "e83ef71ec9eb0ebbbd70d5130abb010c5f229fda3e17dc0ed89af215de6d9d47"
+  },
+  "status": "PASS_TRAIN_READONLY_DIAGNOSTIC_PRECHECK",
+  "val_test_forwards": 0
+}

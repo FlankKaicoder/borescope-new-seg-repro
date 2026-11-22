@@ -6,3 +6,9 @@
 /configs/exp14/repair/*.txt -text
 /results/exp14_e0_e1_full_protocol/protocol.json text eol=lf
 /results/exp14_e0_e1_full_protocol/execution_identity.json text eol=lf
+
+# Bind the new Exp17 execution/review source and receipts to their exact bytes.
+# Historical Exp15 files retain their existing attributes and are not rewritten.
+/tools/exp17/** -text
+/docs/exp17/** -text
+/results/exp17_j2_preparation/** -text

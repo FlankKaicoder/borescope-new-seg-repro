@@ -1,0 +1,247 @@
+{
+  "attempt_ledger": [
+    1,
+    2,
+    3
+  ],
+  "attempt_ledger_sha256": "14c5e74c4b96ccef41cd94db73a9ec3348038ac094feca4fd897cecffa07cdae",
+  "attempts": {
+    "amp_skips": 0,
+    "attempt_cap": 3,
+    "effective_updates": 3,
+    "native_optimizer_calls": 3,
+    "optimizer_attempts": 3
+  },
+  "bn": {
+    "N_route_track_running_stats": false,
+    "N_route_training": true,
+    "extra_N_running_stats_updates": 0,
+    "identical_A_N_features_and_embeddings": true,
+    "main_running_stats_and_rng_protected": true,
+    "mode": "full same-slot counterfactual batch uses TRAIN batch statistics; no BN.eval route",
+    "native_BN_updates_per_joint_step": 1
+  },
+  "budget_exhausted_no_further_gpu_optimization_permitted": true,
+  "checkpoint": {
+    "ema_sha256": "1f15330b34a9dbb54eecd7caeaf18f690c63254671a3d74e83304c54d25bc3d5",
+    "file_sha256": "0b0476299783decc050cff72b8eb8542780c072f2f7f144bb4d181b7054ed989",
+    "model_state_sha256": "5b551f37e0f0e3ce7063b5ca46e69a3b0f0b68090cb32f91fd5a023816bd4f0c",
+    "native_sha256": "1b1a83a833cd9c73e8ebd4c5efcdb5d45a980408390ffd1926f98c88f55db3f0",
+    "optimizer_slots": 294,
+    "strict_reload": true,
+    "stripped_native_synthetic_prediction": true
+  },
+  "cpu_tests": {
+    "elapsed_seconds": 0.166,
+    "embedding_optimization_assertion": "isolated normalized embedding hinge after 50 CPU SGD steps < 0.1 times initial; no numeric trajectory saved",
+    "log_sha256": "a3a96b7731b11f20a7424e62c7e8b0c862366e90803d250d22052ee56062edda",
+    "passed": 9
+  },
+  "exp15_code_unchanged_from_audited_base": true,
+  "formal_training_authorized": false,
+  "gradient_proof": {
+    "N_P3_gradient_norm": 0.010236268863081932,
+    "actual_joint_minus_J1_backbone_norm": 33.21715759859944,
+    "diagnostic_loss_scale_cancelled": 1024,
+    "pair_backbone_nonzero_tensors": 120,
+    "pair_backbone_norm": 26.57050761032345,
+    "pair_grad_finite": true
+  },
+  "initialization": "RANDOM_NATIVE_ARCHITECTURE_SYNTHETIC_ENGINEERING_ONLY",
+  "launch_receipt_sha256": "f05b0029023598b33e1912b68c237060fc7e496f64cdf6a3d002d4d1a724e903",
+  "loss": {
+    "definition": "native YOLO + 8 * unchanged J1 SupCon + 1 * synthetic source ranking",
+    "formal_lambda_pair": null,
+    "lambda_pair_synthetic": 1.0,
+    "lambda_s": 8.0,
+    "margin_candidate": 0.2,
+    "pair_loss_monotonic_in_joint_smoke": false,
+    "temperature": 0.1
+  },
+  "optimizer": {
+    "global_clip": 10,
+    "initial_grad_scaler": 1.0,
+    "joint_optimizer_only": true,
+    "learning_rate_synthetic": 0.001,
+    "momentum_synthetic": 0.937,
+    "name": "AdamW",
+    "native_amp_enabled": true,
+    "weight_decay_synthetic": 0.0005
+  },
+  "prohibited_activity_counters": {
+    "formal_updates": 0,
+    "real_pair_updates": 0,
+    "test_inference": 0,
+    "val_inference": 0
+  },
+  "real_native_augmentation_adapter_implemented": false,
+  "receipt_sha256": "853a9e23188d466c18925521e2ebef8946335fd91f7761bf2f020d7efa190ccf",
+  "remote_archive_receipt_ledger_hashes_rechecked": true,
+  "resources": {
+    "elapsed_seconds": 5.796000860631466,
+    "peak_allocated_bytes": 305948160,
+    "peak_reserved_bytes": 350224384
+  },
+  "runtime": {
+    "device": "NVIDIA GeForce RTX 3080 Ti",
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "ultralytics": "8.4.117"
+  },
+  "schema": "exp17_j2_public_synthetic_prototype_review_v1",
+  "scientific_limits": [
+    "Random native architecture, artificial groups/pixels/Polygons and one repeated 128-pixel batch; not COCO/TRAIN identity or 640/batch32 trajectory evidence.",
+    "Synthetic quality/provenance tokens are typed/hash-bound but cannot establish human acceptance, source-group truth, valid repair semantics or real transform equivalence.",
+    "Class/group means prevent variant-count inflation; they do not establish adequate independent class coverage or eliminate repair-domain shortcuts.",
+    "Global gradient clipping is active and severe in this random smoke. Unit synthetic pair coefficient and AMP derivative norms are not a formal strength calibration.",
+    "The 1024-scaled/cancelled Pair derivative and unscaled AMP joint-minus-J1 derivative have distinct finite-precision behavior; neither is a measured real-TRAIN update ratio.",
+    "The standalone CPU hinge decreases; the combined YOLO/SupCon/Pair smoke hinge does not decrease monotonically.",
+    "Native full geometric/photometric augmentation replay, historical aligned asset admission and source-aware real loader remain unimplemented.",
+    "Future human G1, independent Data Gate, TRAIN-only zero-update calibration and independent Formal Gate are still required."
+  ],
+  "scope": "SYNTHETIC_ENGINEERING_ONLY_REAL_PAIR_TRAINING_HOLD",
+  "source_and_receipt_identity_rechecked": true,
+  "source_archive_sha256": "9e72991307d75a8f78cbcb9e2869741b74e38ade8df1c20f0f738489727b19db",
+  "source_commit": "8b4986a8571acebf4709af8a8d772d3d9f051256",
+  "source_identity_canonical_lf_sha256": {
+    "pair_loss.py": "d9dba2e3c1ecd46f72a00950215f20737f5bd1a039eeafbe7668e6d00050aaf4",
+    "prototype.py": "95fbba9106e84df02d7e39fed5a7726138023509aed2d9ebc7811c7781bbf7f7",
+    "regions.py": "a3c9f78e855348327b8a707afc879056f2d9ae89666481b59f5b72af865b687e",
+    "test_pair.py": "8da6bc5ed0132d6061d84b480a62728d5a03557cbde06db564db7d12ae93e46b"
+  },
+  "status": "PASS_EXP17_SYNTHETIC_J2_SMOKE",
+  "synthetic_images": 14,
+  "synthetic_resolution": 128,
+  "trace": [
+    {
+      "amp_skipped": false,
+      "classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cross_source_B_groups_per_anchor": [
+        1
+      ],
+      "derived_clip_coefficient": 0.0011244570842112451,
+      "independent_synthetic_A_groups": 14,
+      "missing_trainable_gradient_tensors": 0,
+      "model_state_fp32_finite": true,
+      "native_found_inf": {
+        "cuda:0": 0.0
+      },
+      "native_loss": 317.2008972167969,
+      "native_step_called": true,
+      "optimizer_state_finite": true,
+      "pair_loss": 0.13514640927314758,
+      "paired_anchors": 14,
+      "parameter_changed": true,
+      "preclip_global_gradient_norm": 8893.1806640625,
+      "scaled_gradient_nonfinite": 0,
+      "scaler_after": 1.0,
+      "scaler_before": 1.0,
+      "shared_projection_layer_gradient_norms": {
+        "region_projection.0": 26.408720016479492,
+        "region_projection.2": 18.09087562561035
+      },
+      "step": 1,
+      "supcon_loss": 2.7412939071655273,
+      "ticket": 1,
+      "total_loss": 339.2663879394531,
+      "trainable_gradient_tensors": 294,
+      "unscaled_gradient_nonfinite": 0,
+      "zero_gradient_element_fraction": 0.15222939017125345
+    },
+    {
+      "amp_skipped": false,
+      "classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cross_source_B_groups_per_anchor": [
+        1
+      ],
+      "derived_clip_coefficient": 0.005595774804365402,
+      "independent_synthetic_A_groups": 14,
+      "missing_trainable_gradient_tensors": 0,
+      "model_state_fp32_finite": true,
+      "native_found_inf": {
+        "cuda:0": 0.0
+      },
+      "native_loss": 274.12432861328125,
+      "native_step_called": true,
+      "optimizer_state_finite": true,
+      "pair_loss": 0.22160251438617706,
+      "paired_anchors": 14,
+      "parameter_changed": true,
+      "preclip_global_gradient_norm": 1787.0626220703125,
+      "scaled_gradient_nonfinite": 0,
+      "scaler_after": 1.0,
+      "scaler_before": 1.0,
+      "shared_projection_layer_gradient_norms": {
+        "region_projection.0": 26.23332405090332,
+        "region_projection.2": 20.110403060913086
+      },
+      "step": 2,
+      "supcon_loss": 2.7853541374206543,
+      "ticket": 2,
+      "total_loss": 296.6287536621094,
+      "trainable_gradient_tensors": 294,
+      "unscaled_gradient_nonfinite": 0,
+      "zero_gradient_element_fraction": 0.15216141723912074
+    },
+    {
+      "amp_skipped": false,
+      "classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cross_source_B_groups_per_anchor": [
+        1
+      ],
+      "derived_clip_coefficient": 0.009152245336150599,
+      "independent_synthetic_A_groups": 14,
+      "missing_trainable_gradient_tensors": 0,
+      "model_state_fp32_finite": true,
+      "native_found_inf": {
+        "cuda:0": 0.0
+      },
+      "native_loss": 243.27142333984375,
+      "native_step_called": true,
+      "optimizer_state_finite": true,
+      "pair_loss": 0.19303078949451447,
+      "paired_anchors": 14,
+      "parameter_changed": true,
+      "preclip_global_gradient_norm": 1092.6280517578125,
+      "scaled_gradient_nonfinite": 0,
+      "scaler_after": 1.0,
+      "scaler_before": 1.0,
+      "shared_projection_layer_gradient_norms": {
+        "region_projection.0": 21.056737899780273,
+        "region_projection.2": 16.19407081604004
+      },
+      "step": 3,
+      "supcon_loss": 2.026778221130371,
+      "ticket": 3,
+      "total_loss": 259.6786804199219,
+      "trainable_gradient_tensors": 294,
+      "unscaled_gradient_nonfinite": 0,
+      "zero_gradient_element_fraction": 0.1521642058722339
+    }
+  ],
+  "trusted_real_pairs": 0
+}

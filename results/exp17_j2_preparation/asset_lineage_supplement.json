@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "same review_id binds human and variant rows",
+    "raw SHA256 human=variant=verified byte descriptor",
+    "historical edit-mask SHA256 human=variant=verified byte descriptor",
+    "request SHA256 human=variant",
+    "aligned SHA256 human=variant=verified byte descriptor",
+    "variant_id/version human=variant=choice"
+  ],
+  "historical_text_replacement_characters": 0,
+  "human_pass": 0,
+  "original_private_summary_retained": true,
+  "private_candidates_sha256": "11244f84b9fe0025a79b49e8c362c3c838d7d752a146071edc0a7712f0b84472",
+  "status": "PASS_SUPPLEMENTAL_VARIANT_LINEAGE_AND_TEXT_CHECK",
+  "text_note": "UTF-8 historical notes preserved; zero replacement characters found; console display garbling is not evidence loss.",
+  "trusted_pairs": 0,
+  "variant_polygon_combinations": 555,
+  "variant_registry_sha256": "8ee85a5bf220b59ad3380da348a64aba7adb8caf9371c506b69ed1375602c879"
+}

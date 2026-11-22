@@ -1,0 +1,122 @@
+{
+  "accepted_upstream_user_gates": [
+    "EXP15_JE2_PASS / THREE_SEED_PRELIMINARY_STABILITY_ACCEPTED",
+    "EXP16_J3_PASS_NEGATIVE_RESULT_ACCEPTED"
+  ],
+  "asset_audit": {
+    "candidate_polygons": 545,
+    "complete_roi_support": 519,
+    "current_human_g1_pass": 0,
+    "formal_trusted_pairs": 0,
+    "g0_pass": 545,
+    "independent_source_groups": 356,
+    "numeric_candidates": 541,
+    "priority_cases": 6,
+    "source_images": 376,
+    "tip_curl_candidates": 0,
+    "unique_files_verified": 3998,
+    "variant_combinations": 555
+  },
+  "base_commit": "401210427a61f3430f18bb4fe93261c911f66080",
+  "branch": "phase/exp17-j2-pseudonormal-pair",
+  "completed_utc": "2026-11-22T05:05:33.920752+00:00",
+  "data_disk_free_bytes_after_diagnostics": 7800221696,
+  "engineering": {
+    "amp_skips": 0,
+    "candidate_margin": 0.2,
+    "candidate_margin_is_formally_validated": false,
+    "cpu_test_suites": {
+      "asset_identity": 4,
+      "read_only_diagnostic": 4,
+      "review_export": 4,
+      "synthetic_pair": 9
+    },
+    "cpu_tests_passed": 21,
+    "extra_N_bn_running_updates": 0,
+    "formal_lambda_pair": null,
+    "n_equals_a_feature_identity": true,
+    "native_synthetic_inference_after_stripping_projection": true,
+    "pair_backbone_nonzero_tensors": 120,
+    "real_native_pair_augmentation_adapter": "NOT_IMPLEMENTED_BLOCKED",
+    "strict_checkpoint_reload": true,
+    "synthetic_gpu_attempts": 3,
+    "synthetic_gpu_cap": 3,
+    "synthetic_gpu_effective_updates": 3
+  },
+  "evidence": {
+    "asset_audit_summary.json": "9d54352cf227d7c8447acd160c332bb08927c452a0290b561c4af38d12506a9c",
+    "asset_group_coverage_summary.json": "7f90e2f13a585d50d2b1ba7bfe6542148216bf9cdbd4e27052c58fa8ec438b15",
+    "asset_lineage_supplement.json": "73c0889a7aa435c7e2d3728894eee949d54865cf1ca216a5aabdf3f6e97006c7",
+    "diagnostics_interpretation.json": "381b532ac157e80f87f31eccda71cd072c28e618914a3a1da5afc7a9d50c0223",
+    "diagnostics_precheck.json": "c75f46f43160fc773462407cba00ec106fe4a3f93eb3ad504b9ad613b5dc80da",
+    "diagnostics_summary.json": "b8073ad1cdf73ec58de8d3866f4abf56918ccc83ec80621bdaf16ab340fa2815",
+    "formal_protocol_draft.json": "348228b35f1a3976e11af133081d3826844c68e53b95abf57a01ac9641dcd870",
+    "protocol_identity_note.json": "f7ed4e15675be9a0d9221c8dca57bc05d60c70c2ed33de0645119ebc3f11213a",
+    "prototype_summary.json": "bcd0df1536e79f611c6623bc0b0116f9c1d65d95fbb2c82d4d1a8a54c63918d1",
+    "review_summary.json": "c8549b79443396f941e65bbf115a3699f0767242db459a420b808ea2ed930f40",
+    "runtime_preflight.json": "d1f6b630ef2269e3810ecb31e25e409f82343f8a3b2a4caed65b09fe0e4e8618",
+    "source_newline_identity_note.json": "79e05fcfbd70318566d29e687515438f2d6182f41aafafb06232201958f426ce"
+  },
+  "exceptions": [
+    {
+      "event": "Windows CRLF identity mismatch at draft build and first diagnostic precheck",
+      "forward_calls_at_stop": 0,
+      "resolution": "Preserved old files and packets; exact frozen LF Git protocol blob in separately named packet; second precheck passed before the sole forward run; no model retry"
+    }
+  ],
+  "formal_training_authorized": false,
+  "formal_training_ready": false,
+  "formal_training_updates": 0,
+  "generation_calls": 0,
+  "handoff": "docs/exp17/EXP17_J2_HANDOFF.md",
+  "limitations": [
+    "No trusted real Pair or semantic efficacy result",
+    "No Tip curl Pair coverage",
+    "Legacy geometry whole-file provenance weaker than exact matrix/asset chain",
+    "36 historically selected groups are not a random sample; the frozen representation already saw these TRAIN sources",
+    "Feature receptive fields cross exclusion boundaries; content/registration/UI/style effects confounded",
+    "Synthetic128/batch14 clipping and gradients do not calibrate admitted640/batch32 real supervision",
+    "Full native trajectory equivalence and full-size resource capacity remain gated"
+  ],
+  "method": "docs/exp17/EXP17_J2_METHOD_AND_GATES.md",
+  "new_registration": 0,
+  "observed_gpu": "RTX 3080 Ti ~12GB",
+  "preserved_exp16_commit": "2f1d3b8d1bc10d635099867fab4a935d6cdb88cb",
+  "prototype_executed_commit": "8b4986a8571acebf4709af8a8d772d3d9f051256",
+  "read_only_train_diagnostics": {
+    "backward_calls": 0,
+    "context_projection128_domain_accuracy": 0.5833333333333334,
+    "context_raw64_domain_accuracy": 0.6666666666666666,
+    "forward_calls": 36,
+    "groups": 36,
+    "images": 72,
+    "interpretation": "Descriptive mixed context/domain cues; not pure style causality or semantic G1 admission",
+    "model_bn_checkpoint_unchanged": true,
+    "optimizer_updates": 0
+  },
+  "real_pair_optimizer_updates": 0,
+  "remaining_gates": [
+    "USER_G1_REVIEW",
+    "INDEPENDENT_DATA_GATE",
+    "REAL_NATIVE_ADAPTER_AND_BOUNDED_SMOKE",
+    "TRAIN_ONLY_EARLY_MID_LATE_LAMBDA_PAIR_CALIBRATION",
+    "FORMAL_TRAIN_AUTHORIZATION",
+    "LATER_INDEPENDENT_VAL_GATE"
+  ],
+  "review": {
+    "all_user_records_pending": true,
+    "browser_qa": "PASS",
+    "codex_suggestions_hold": 6,
+    "codex_visual_observations": 6,
+    "export_roundtrip": "PASS",
+    "external_requests": 0,
+    "prepared_cases": 545,
+    "zip_bytes": 351881569,
+    "zip_sha256": "5f4823e40386e9a686ceadc8862c137c72f05d363b35710d899167ee8c52f238"
+  },
+  "schema": "exp17_j2_preparation_summary_v1",
+  "status": "EXP17_J2_PREPARATION_COMPLETE_PENDING_HUMAN_PAIR_GATE",
+  "stop": "No automatic real Pair optimization, formal training, VAL/TEST or experiment extension",
+  "test_inference": 0,
+  "val_inference": 0
+}

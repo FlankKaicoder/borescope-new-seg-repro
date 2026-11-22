@@ -1,0 +1,102 @@
+{
+  "candidate_count": 545,
+  "class_counts": {
+    "Burn": {
+      "human_pass": 0,
+      "polygons": 67,
+      "source_groups": 41,
+      "source_ids": 42
+    },
+    "Crack": {
+      "human_pass": 0,
+      "polygons": 63,
+      "source_groups": 49,
+      "source_ids": 54
+    },
+    "Dent": {
+      "human_pass": 0,
+      "polygons": 100,
+      "source_groups": 88,
+      "source_ids": 96
+    },
+    "Material missing": {
+      "human_pass": 0,
+      "polygons": 71,
+      "source_groups": 68,
+      "source_ids": 70
+    },
+    "Tears": {
+      "human_pass": 0,
+      "polygons": 40,
+      "source_groups": 38,
+      "source_ids": 40
+    },
+    "Tip curl": {
+      "human_pass": 0,
+      "polygons": 0,
+      "source_groups": 0,
+      "source_ids": 0
+    },
+    "corrosion": {
+      "human_pass": 0,
+      "polygons": 204,
+      "source_groups": 86,
+      "source_ids": 86
+    }
+  },
+  "complete_roi": 519,
+  "completed_utc": "2026-11-22T04:45:24.872872+00:00",
+  "current_user_human_pass": 0,
+  "file_bytes_sha256_verified": 3998,
+  "formal_trusted_pairs": 0,
+  "frame_edge_rois": 124,
+  "g0_status": {
+    "G0_PASS": 545
+  },
+  "g1_numeric_candidates": 541,
+  "g1_technical_strata": {
+    "G1_NUMERIC_CANDIDATE": 505,
+    "G1_REJECT": 4,
+    "G1_VISUAL_PENDING": 32,
+    "UNKNOWN_HOLD": 4
+  },
+  "historical_feasible_priority_cases": 6,
+  "historical_human_pair_pass": 0,
+  "historical_pilot_cases": 36,
+  "historical_text_replacement_character_cases": 0,
+  "identity_errors": 0,
+  "input_sha256": {
+    "b_manifest": "08042f6c05a0d823565394493bd9abdd8dec6cb94c27fa2df0cc794907264c6e",
+    "d0_numeric_population": "8b89916203c762a52beb535afa6248c894557f2ba9312243bac626e024802e4e",
+    "d0_pilot": "4085986a1d2e96b1384ceba3c2a6f7c94f93465716cb67382c185b27007ed4e4",
+    "frozen_split": "35d577c18eee0a697c4eae9119b9950197f949e8c6c737b57f2018f7f9c9634d"
+  },
+  "limitations": [
+    "Numeric support is not visual G1 approval.",
+    "Historical feasible trials are not current human PASS.",
+    "Legacy geometry file SHA provenance is distinguished from its pinned affine matrix.",
+    "Unannotated context is not assumed normal.",
+    "UTF-8 historical notes preserved; zero replacement characters found; console display garbling is not evidence loss."
+  ],
+  "new_generation": 0,
+  "new_registration": 0,
+  "optimizer_updates": 0,
+  "original_source_ids": 376,
+  "private_ledger_sha256": "11244f84b9fe0025a79b49e8c362c3c838d7d752a146071edc0a7712f0b84472",
+  "risk_flags": {
+    "FINAL_PIXEL_ASSET_CONFIRMATION_PENDING": 180,
+    "G1_NUMERIC_SUPPORT_NOT_MET": 4,
+    "HISTORICAL_SOURCE_VERSION_CONFLICT": 122,
+    "LEGACY_GEOMETRY_FILE_NO_HISTORICAL_FILE_SHA_ONLY_MATRIX_AND_ASSET_BINDING": 246,
+    "OTHER_ANNOTATED_DEFECT_IN_ROI_REQUIRE_SEMANTIC_REVIEW": 175,
+    "ROI_TOUCHES_FRAME_EDGE": 124,
+    "SAME_POLYGON_ALTERNATE_VARIANTS_NOT_INDEPENDENT": 10
+  },
+  "source_groups": 356,
+  "status": "PASS_EXP17_ASSET_IDENTITY_AUDIT",
+  "supplemental_lineage_receipt_sha256": "73c0889a7aa435c7e2d3728894eee949d54865cf1ca216a5aabdf3f6e97006c7",
+  "training_approved": 0,
+  "val_test_image_reads": 0,
+  "variant_polygon_combinations_audited": 555,
+  "verified_files_sha256": "65398fafec214019839d10bab0f55d835955db1d52793ae0ee9aaecdd515e8fc"
+}

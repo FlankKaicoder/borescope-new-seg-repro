@@ -1,0 +1,54 @@
+{
+  "centroid_terminology_clarification": "This probe estimates two domain centroids from the 35 non-held-out independent source groups for each fold. It is a fitted descriptive nearest-centroid classifier, with no neural-network training, optimizer updates or held-out group leakage. The executable definition phrase no fitted model means no additional learned neural model; this clarification controls interpretation.",
+  "cpu_tests": {
+    "count": 4,
+    "pass": 4,
+    "runtime": "Pinned AutoDL Python3.12.3, CPU; no model forward"
+  },
+  "executed_forward_repeats": 0,
+  "execution_exceptions": [
+    {
+      "model_forward_calls_at_stop": 0,
+      "optimizer_updates": 0,
+      "reason": "Windows Git checkout CRLF protocol bytes differed from frozen Git LF blob",
+      "resolution": "Independent new code_git_protocol packet uses exact historical Git blob. Original packet and protocols retained; second precheck PASS before the sole forward run.",
+      "stage": "first precheck",
+      "status": "STOPPED_BEFORE_FORWARD"
+    }
+  ],
+  "human_pass": 0,
+  "interpretation": [
+    "Context domain predictability is a risk signal on a selected 36-group TRAIN sample, not proof of a pure style shortcut or a population estimate.",
+    "Target domain predictability can reflect intended defect removal as well as generation/registration differences; do not interpret target separation alone as artifacts.",
+    "Laplacian variance ratios above one indicate changed high-frequency energy, not a calibrated blur quality score. Registration, resampling, sharpening and noise can contribute.",
+    "Perimeter absolute error is a seam-adjacent change proxy; intended restoration and structural displacement are confounded.",
+    "No diagnostic score approves, rejects or ranks cases for human G1. Unannotated context is not normal GT.",
+    "P3 receptive fields can cross excluded masks: context feature changes can still reflect intended target removal even when context pooling pixels exclude annotated/edit support. Five-pixel exclusion does not isolate causal style.",
+    "The frozen representation was trained on these original TRAIN members. Group holding out applies only to the descriptive centroid probe, not to representation pretraining; this is not held-out predictive validation."
+  ],
+  "optimizer_updates": 0,
+  "population": {
+    "cases": 36,
+    "historical_priority_six": 6,
+    "independent_source_groups": 36
+  },
+  "precheck_sha256": "c75f46f43160fc773462407cba00ec106fe4a3f93eb3ad504b9ad613b5dc80da",
+  "primary_context_findings": {
+    "laplacian_variance_ratio_median": 3.066203353783652,
+    "outside_context_rgb_mae_mean_0_1": 0.038774211359302035,
+    "projection128_cosine_distance_mean": 0.1220210451218817,
+    "projection128_domain_balanced_accuracy": 0.5833333333333334,
+    "raw64_cosine_distance_mean": 0.035708942347102694,
+    "raw64_domain_balanced_accuracy": 0.6666666666666666
+  },
+  "priority_six_descriptive_means": {
+    "context_projection128": 0.18465009331703186,
+    "context_raw64": 0.03812411427497864,
+    "target_projection128": 0.3360004921754201,
+    "target_raw64": 0.3119649291038513
+  },
+  "private_output_index_sha256": "fa30286c6961161e560656d971120340c8bfa983be344d95bb5cf0c75a9e219d",
+  "status": "DESCRIPTIVE_TRAIN_ONLY_PROXIES_NOT_ADMISSION",
+  "summary_sha256": "b8073ad1cdf73ec58de8d3866f4abf56918ccc83ec80621bdaf16ab340fa2815",
+  "trusted_pairs": 0
+}

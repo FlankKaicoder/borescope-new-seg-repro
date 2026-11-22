@@ -1,5 +1,9 @@
 # Project state
 
+## Exp17 J2 source-aware Pair preparation (2026-11-22)
+
+EXP17_J2_PREPARATION_COMPLETE_PENDING_HUMAN_PAIR_GATE. User accepted Exp15 three-seed SupCon stability and the separate Exp16 fixed-weight CE negative result. This isolated branch preserves both. All 545 Pair candidates pass identity audit across 376 images / 356 independent source groups; human G1 PASS and trusted Pair remain zero. The full offline review package, 21 CPU tests, three synthetic-only joint GPU updates and one 36-group read-only TRAIN diagnostic are complete. Context domain cues remain a risk. Real native paired augmentation is not implemented; lambda_p is unset; human/Data/calibration/engineering/Formal Gates remain. No real Pair optimization or VAL/TEST. [Handoff](exp17/EXP17_J2_HANDOFF.md).
+
 ## Exp15 J-E2 frozen VAL across three seeds (2026-11-22)
 
 EXP15_JE2_MULTISEED_VAL_COMPLETE_PENDING_RESULT_GATE. Both new validation pairs completed eight native passes. All three Mask mAP50–95 paired effects were positive, mean +0.0123911540 and sample SD 0.0104685932. Tears AP and Dent Tiny Recall improved across seeds. Class and size trade-offs remain. Independent Result Gate pending. [Handoff](exp15/EXP15_JE2_HANDOFF.md).

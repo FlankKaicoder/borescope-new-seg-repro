@@ -1,0 +1,10 @@
+{
+  "status": "EXPLAINED_UNCHANGED_HISTORICAL_SOURCE_LINE_ENDINGS",
+  "source": "tools/exp15/regions.py",
+  "windows_bytes_used_in_readonly_diagnostics_sha256": "683f467f817dcf41ce50036c640ed3b45548abde867667dc1066222d1cafd65a",
+  "git_lf_bytes_used_in_synthetic_smoke_sha256": "a3c9f78e855348327b8a707afc879056f2d9ae89666481b59f5b72af865b687e",
+  "windows_crlf_count": 158,
+  "lf_normalized_windows_bytes_equal_frozen_git_bytes": true,
+  "historical_source_modified": false,
+  "interpretation": "Two execution packets retain their actual byte hashes. Only line endings differ; no historical source normalization or overwrite was performed. New Exp17 files use narrow -text attributes so their published blob hashes match execution/review bytes."
+}
