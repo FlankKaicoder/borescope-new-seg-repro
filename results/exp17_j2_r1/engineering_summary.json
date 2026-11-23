@@ -1,0 +1,60 @@
+{
+  "schema": "EXP17_J2_R1_PUBLIC_NON_AUTHORIZING_ENGINEERING_SUMMARY_V1",
+  "status": "EXP17_J2_R1_EPOCH5_AUX_RECOVERED_TRAINING_CONTINUES",
+  "formal_training_complete": false,
+  "base_commit": "e57b9cbb2ef3c18188d3b2fffb336082c582f419",
+  "protocol_sha256": "613e4e154a872e0fd88791013f8e63716100470bb4a2f73084b702bb5cd37e44",
+  "runtime_config_sha256": "02f0f6548ee1cfd57af449fd1c9118417252b3a528273a1c80d2eee28c96d7b8",
+  "original_code_sha256": "86987123cffef957d7f639f0559e48f6c033562947ddd1ba64689ce6b8bbba4b",
+  "effective_code_sha256": "3ccdfe26b414c9c5c6c45a1be93a9fa38210cae8c36bc7e1a8a8c227a7b30f42",
+  "engineering_repair_addendum_sha256": "73cb4d6f7250240e079f2596062507af690d057a454a4937e11eb74c8592e63e",
+  "production_changes": {
+    "tools/exp17/formal/repair_r1.py": {
+      "old_sha256": null,
+      "new_sha256": "fd24ac663ff0e70a6ffb9b9c90f1c39d3d1aa0189f0921b40dab1b5c8f187321"
+    },
+    "tools/exp17/formal/repair_evidence.py": {
+      "old_sha256": null,
+      "new_sha256": "a3d8e907aef376452964f07b092209e39807f76b94aa0e990ff4886e40007efb"
+    },
+    "tools/exp17/engineering/model.py": {
+      "old_sha256": "535355c9e82eb80da5a826df3afe8c3c59c5d1846e57dd399270849837f3b20d",
+      "new_sha256": "ab02d70c99c2b362f431a272e75ea2a897f2682fbb89e6525e7627a48f369e83"
+    },
+    "tools/exp17/formal/executor.py": {
+      "old_sha256": "9173810303a9c55e7e0aeee451691aafd3158649972fbb78a9e4cb3f246f27d5",
+      "new_sha256": "8b8d9dc83b2386b8d434f872c213e37d5d9e40e3aa794b5bc00b17875dbda825"
+    }
+  },
+  "cpu_tests": {
+    "passed": true,
+    "tests": 72,
+    "skipped": 0,
+    "receipt_sha256": "2148a83510f3a328fe176c1b2d9734a37dc220d471da8c9f2bfd4d6f7136216d"
+  },
+  "origin_checkpoint_sha256": "b8671bb8db32b40209020232478fa92e258e1d11681121d265323dc01553f83a",
+  "origin_journal_prefix_sha256": "3b7ef98469bb0a45587e2dd73ee7abded1a1e712871388faa34c4862cd7576d7",
+  "retained_origin_native_state_sha256": {
+    "master": "f2eaf4acd0bafda5dc1bda5b420f0634a151098f4ce160ac95c3fd1dd5e151e6",
+    "ema": "3c9316b36523632810099c0f51005ea78f24aba06db381edd7b2db23b401bd09"
+  },
+  "historical_master_evidence": "POST_HOC_FROM_SEALED_ARTIFACTS; missing contemporaneous model/confidence/field-diff bindings explicitly retained",
+  "epoch5_recovery": {
+    "committed_updates_preserved": 105,
+    "AUX_commit_sequence": 227,
+    "MASTER_passes_retained": 2,
+    "EMA_passes_added": 2,
+    "diagnostic_probes_reused": 4,
+    "first_new_update": 106
+  },
+  "total_budget": {
+    "effective_updates": 2100,
+    "epochs": 100,
+    "native_VAL_passes": 80,
+    "VAL_events": 20
+  },
+  "scientific_parameters_changed": false,
+  "original_protocol_runtime_authorizations_claim_seal_checkpoint_rewritten": false,
+  "TEST_access": false,
+  "authorization_issued_by_this_public_file": false
+}

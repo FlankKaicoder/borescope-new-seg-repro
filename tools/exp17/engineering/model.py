@@ -5,6 +5,7 @@ authorization lives here. N stops after original layer16, including its true nec
 dependencies; original J1 pooling, projection and SupCon are imported unchanged.
 """
 import copy
+from contextlib import contextmanager
 from dataclasses import dataclass
 
 import numpy as np
@@ -187,12 +188,30 @@ def native_state_dict(model):
     return {k: v.detach().clone() for k, v in state.items() if not k.startswith("region_projection.")}
 
 
+@contextmanager
+def _native_activation_scope():
+    """Give a newly constructed native graph its own default activation.
+
+    Pinned Ultralytics Conv instances otherwise reuse a class-level SiLU,
+    including the activation owned by the live training graph. Constructor
+    mode changes and later native eval must only reach the new graph. Restore
+    the exact class attribute on success, exception and nested construction.
+    """
+    from ultralytics.nn.modules.conv import Conv
+    original = Conv.default_act
+    Conv.default_act = copy.deepcopy(original)
+    try:
+        yield
+    finally:
+        Conv.default_act = original
+
+
 def export_native_model(model):
     """Strictly reload a native seven-class skeleton, without the auxiliary module."""
     from ultralytics.nn.tasks import SegmentationModel
     require(model.model[-1].nc == 7, "Native class mapping changed")
     state = {k: v.cpu() for k, v in native_state_dict(model).items()}
-    with torch.random.fork_rng(devices=[]):
+    with torch.random.fork_rng(devices=[]), _native_activation_scope():
         native = SegmentationModel(copy.deepcopy(model.yaml), ch=3, nc=7, verbose=False)
     native.load_state_dict(state, strict=True)
     require(not hasattr(native, "region_projection") and native.model[-1].nc == 7, "Projection stripping/native class identity failed")

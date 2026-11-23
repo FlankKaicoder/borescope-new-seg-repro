@@ -1,0 +1,146 @@
+{
+  "AMP_scale_observed": [
+    1.0
+  ],
+  "AMP_skips": 0,
+  "N_gradient_already_lambda4_preclip": {
+    "max": 0.09204447269439697,
+    "mean": 0.031112379234816346,
+    "median": 0.02833154797554016,
+    "min": 0.00845007412135601,
+    "n": 105,
+    "p25": 0.020621510222554207,
+    "p75": 0.03920499607920647
+  },
+  "TEST_access_this_analysis": false,
+  "Torch_imported": false,
+  "all_updates_parameter_changed": true,
+  "clip_coefficient": {
+    "max": 0.09054982172046554,
+    "mean": 0.0370369011260041,
+    "median": 0.033964202104733776,
+    "min": 0.002761922607549419,
+    "n": 105,
+    "p25": 0.01924140656805001,
+    "p75": 0.051872030253870646
+  },
+  "clip_l2_max": 10.0,
+  "clipped_updates": 105,
+  "existing_diagnostic_probes": 4,
+  "formal_training_complete": false,
+  "fraction_updates_clipped": 1.0,
+  "generated_at_utc": "2026-11-23T15:56:39.044773+00:00",
+  "gradient_element_counts": [
+    2868789
+  ],
+  "gradient_tensor_counts": [
+    294
+  ],
+  "limitations": [
+    "The fraction is clipped optimizer updates /21 per epoch, not clipped parameter elements/classes.",
+    "The logged gradient_norm is global parameter L2 after AMP unscale and before Clip10; it includes all gradient-bearing model/projection parameters even if an optimizer group LR is zero.",
+    "Postclip norm is a formula estimate from norm*coefficient, not an independently logged measurement.",
+    "The clip coefficient is not an AdamW effective learning-rate multiplier; moments, adaptive division and weight decay intervene.",
+    "N_P3_unscaled_gradient_norm already includes lambda_pair4 through total.backward; manual division removes AMP scale only. It is observed before parameter clipping and is not a postclip feature gradient.",
+    "In fixed diagnostics SupCon is already weighted8; logged Pair/main ratio is unweighted and must be multiplied4 exactly once.",
+    "The Pair-removed reference uses the same J2 checkpoint and fixed TRAIN packets, not actual J1 training or a causal ablation.",
+    "Four epoch5 probes are saved historical evidence inside an originally uncommitted AUX. They are not105 per-step objective-gradient decompositions and are not replayed.",
+    "Observed clipping100percent does not alone prove exploding gradients, Pair domination, ineffective Pair training or scientific failure.",
+    "No change to Pair4, SupCon8, Clip10, LR, seed, data, loss reduction or formal stopping rules is inferred or authorized.",
+    "Formal training remains105/2100 updates; engineering isolation/AUX recovery status is separate from clipping analysis."
+  ],
+  "new_diagnostic_probes": 0,
+  "new_inference_runs": 0,
+  "new_optimizer_updates": 0,
+  "nonfinite_or_missing_trainable_gradient_rows": 0,
+  "original_committed_AUX_epochs": 4,
+  "postclip_norm_formula_estimate_not_measurement": {
+    "max": 9.999999997238078,
+    "mean": 9.9999999629631,
+    "median": 9.999999966035798,
+    "min": 9.999999909450178,
+    "n": 105,
+    "p25": 9.99999994812797,
+    "p75": 9.999999980758593
+  },
+  "preclip_norm": {
+    "max": 3620.666259765625,
+    "mean": 512.8256006876628,
+    "median": 294.4276428222656,
+    "min": 110.43643951416016,
+    "n": 105,
+    "p25": 192.78211975097656,
+    "p75": 519.7125244140625
+  },
+  "research_efficacy_conclusion": null,
+  "schema": "EXP17_J2_R1_FROZEN105_CLIPPING_ANALYSIS_V1",
+  "source_archive_sha256": "253993e1963a1144a47f5209fd0000e211bcf2281dc6fdd15c20df046f7b5547",
+  "source_manifest_sha256": "b0f6bba442c636eedae2e5d1fab9967091d117c6304db865c71873cc0ab3e76d",
+  "source_members": [
+    {
+      "bytes": 18369778,
+      "member": "run/steps.jsonl",
+      "sha256": "b411ebdd1c87f134f94e291fe3a651955b5e865c99dbf45a59331c30e447501c"
+    },
+    {
+      "bytes": 2692,
+      "member": "run/epoch001.json",
+      "sha256": "d2139fa4066be47e3165fb72d236b8dcaafd9c35511aedb65ddc80fbf3e9af91"
+    },
+    {
+      "bytes": 2696,
+      "member": "run/epoch002.json",
+      "sha256": "2b3579fcc14af4e7a9f0676ff1718c8a112d698ba7f734e8869657870c11e771"
+    },
+    {
+      "bytes": 2624,
+      "member": "run/epoch003.json",
+      "sha256": "fd56bec8b8d1d5aa5cc8a509b2d6a08af4023edaab345c9c3b04f99617d2ad9a"
+    },
+    {
+      "bytes": 2633,
+      "member": "run/epoch004.json",
+      "sha256": "3079de17d9393a15b403d4837271a8eedd12aed249ab4f1d9459a03ee3a9a1b9"
+    },
+    {
+      "bytes": 2608,
+      "member": "run/epoch005.json",
+      "sha256": "822ae7c78efd107fc5bf9e22f65acc2b27ebb003f7541f8913fe14be939edf50"
+    },
+    {
+      "bytes": 40584,
+      "member": "run/diagnostics_epoch005.json",
+      "sha256": "57b0d7e535dffee507be8639b0bb02efaa931e922b764cc9846284833edb2195"
+    }
+  ],
+  "source_refs": [
+    {
+      "file": "tools/exp17/formal/monitor.py",
+      "line": 49,
+      "purpose": "clipping fraction denominator21"
+    },
+    {
+      "file": "tools/exp14/a11_smoke_numerics.py",
+      "line": 115,
+      "purpose": "unscale precedes clipping"
+    },
+    {
+      "file": "tools/exp14/revised_amp_smoke.py",
+      "line": 52,
+      "purpose": "Clip10 global preclip norm"
+    },
+    {
+      "file": "tools/exp17/formal/native_adapter.py",
+      "line": 258,
+      "purpose": "N intermediate gradient/AMPscale before parameter clipping"
+    },
+    {
+      "file": "tools/exp17/formal/diagnostics.py",
+      "line": 47,
+      "purpose": "YOLO, SupCon8, unweighted Pair diagnostic bases"
+    }
+  ],
+  "status": "DESCRIPTIVE_PARTIAL_RUN_ANALYSIS_COMPLETE",
+  "update_epochs": 5,
+  "updates": 105
+}

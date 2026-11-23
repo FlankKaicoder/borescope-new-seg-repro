@@ -1,5 +1,8 @@
 # Experiment index
 
+- **Exp17-J2-R1 (2026-11-24)** — Isolation repair and exact AUX5 recovery complete; Seed42 continues from106 under preserved original experiment/2100 updates/80passes. CPU72PASS; MASTER2 retained/EMA2 added; no scientific parameter changes or TEST. [R1 handoff](exp17/EXP17_J2_R1_ENGINEERING_HANDOFF.md).
+
+
 ## Exp17-J2 Seed42 formal run: isolation hard gate at update105 (2026-11-23)
 
 EXP17_J2_SEED42_FORMAL_HARD_GATE_AT_UPDATE_105_PENDING_REPAIR_GATE. Approved plan-level authority materialized unchanged G1 formal/VAL bindings; freshCOCO seed42 completed5 training epochs/105effective updates, AMPskip0. Epoch5 MASTER standard/fixed consumed2passes, but live-model isolation failed before role/AUXcommit; EMA not attempted. Preserve105checkpoint/journal/pendingAUX and private evidence. CPU shared-activation alias mechanism reproduced without forward/optimizer/CUDA. No source/Protocol/hyperparameter changes or restart; not a completed efficacy result. [Handoff](../EXP17_J2_SEED42_FORMAL_TRAINING_HANDOFF.md) · [Summary](../results/exp17_j2_seed42_formal/summary.json) · [Repair proposal](exp17/EXP17_J2_SEED42_ISOLATION_REPAIR_PROPOSAL.md).

@@ -49,7 +49,8 @@ def _epoch_callbacks(adapter, epoch, payload, output, best):
     return result
 
 
-def run_session(adapter, protocol, bindings, output, journal, store, *, recovered=None, synthetic_stop_after=None):
+def run_session(adapter, protocol, bindings, output, journal, store, *, recovered=None, synthetic_stop_after=None,
+                legacy_cache_bindings=None):
     """Same checkpoint/ledger/epoch logic for native adapter and CPU toy tests."""
     from tools.exp17.formal.checkpoint import capture_training_state, restore_training_state, atomic_json
     from tools.exp17.formal.monitor import append_json, ensure_space, epoch_summary
@@ -116,7 +117,11 @@ def run_session(adapter, protocol, bindings, output, journal, store, *, recovere
             old = output / "epoch_cache" / f"epoch_{epoch-2:03d}"
             if epoch >= 2 and old.is_dir():
                 old_manifest = old / "manifest.json"
-                SealedEpochCache.open(old, bindings=bindings, expected_manifest_sha256=file_sha(old_manifest)).retire(
+                manifest_sha = file_sha(old_manifest)
+                cache_bindings = bindings
+                if legacy_cache_bindings is not None:
+                    cache_bindings = legacy_cache_bindings(old, manifest_sha)
+                SealedEpochCache.open(old, bindings=cache_bindings, expected_manifest_sha256=manifest_sha).retire(
                     owned_cache_root=output / "epoch_cache", committed_sampler_state=cursor.state_dict(), retention_authorized=True)
             if synthetic_stop_after == step:
                 return {"status":"SYNTHETIC_PAUSE_AT_COMMITTED_UPDATE", "updates":step}

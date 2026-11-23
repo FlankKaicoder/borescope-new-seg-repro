@@ -1,5 +1,10 @@
 # Project state
 
+## Exp17-J2-R1 isolation repair and exact AUX5 recovery (2026-11-24)
+
+EXP17_J2_R1_EPOCH5_AUX_RECOVERED_TRAINING_CONTINUES. Native activation ownership isolated with original live-state guard retained; CPU72PASS/zero skips includes sealed105 model export and synthetic106 continuity. Original105 checkpoint/221-line journal prefix/authorizations/claim/seal remain; MASTER2 passes reused as explicitly posthoc-associated evidence, EMA2 new passes only, diagnostics reused. AUX5 committed at journal227; continuation starts106 under C1/Addendum and same2100/80 budget. Not a completed scientific result. [R1 handoff](exp17/EXP17_J2_R1_ENGINEERING_HANDOFF.md).
+
+
 ## Exp17-J2 Seed42 formal run: isolation hard gate at update105 (2026-11-23)
 
 EXP17_J2_SEED42_FORMAL_HARD_GATE_AT_UPDATE_105_PENDING_REPAIR_GATE. Approved plan-level authority materialized unchanged G1 formal/VAL bindings; freshCOCO seed42 completed5 training epochs/105effective updates, AMPskip0. Epoch5 MASTER standard/fixed consumed2passes, but live-model isolation failed before role/AUXcommit; EMA not attempted. Preserve105checkpoint/journal/pendingAUX and private evidence. CPU shared-activation alias mechanism reproduced without forward/optimizer/CUDA. No source/Protocol/hyperparameter changes or restart; not a completed efficacy result. [Handoff](../EXP17_J2_SEED42_FORMAL_TRAINING_HANDOFF.md) · [Summary](../results/exp17_j2_seed42_formal/summary.json) · [Repair proposal](exp17/EXP17_J2_SEED42_ISOLATION_REPAIR_PROPOSAL.md).
