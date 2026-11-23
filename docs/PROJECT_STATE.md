@@ -1,5 +1,10 @@
 # Project state
 
+## Exp17-J2 Seed42 completed execution after R1 (2026-11-23 UTC)
+
+EXP17_J2_SEED42_FORMAL_TRAINING_COMPLETE_PENDING_CHATGPT_RESULT_GATE. Actual100epochs/2100attempts=commits/20VALevents/80passes/20periodic; AMPskip0; exit0 at2026-11-23T20:36:15Z. Original105/C0 evidence preserved; R1 AUX5closed, MASTER2 retained/EMA2 added, resumed106 under C1. LastMASTER MaskAP95=0 vs J1=.2727438798549706, delta -27.27438798549706pp; all40standard roles zeroAP. SCIENTIFIC_INTERPRETATION_HOLD_UNEXPLAINED_ZERO_AP; static review found no definitive cause, no causal Pair claim, no additional seeds recommended before Result Gate. CPUtensor and46integrity checks PASS; private1.207GB archive copied Windows/SHAverified. No extraVAL/TEST or parameter changes. [Final handoff](../EXP17_J2_SEED42_FORMAL_TRAINING_HANDOFF.md).
+
+
 ## Exp17-J2-R1 isolation repair and exact AUX5 recovery (2026-11-24)
 
 EXP17_J2_R1_EPOCH5_AUX_RECOVERED_TRAINING_CONTINUES. Native activation ownership isolated with original live-state guard retained; CPU72PASS/zero skips includes sealed105 model export and synthetic106 continuity. Original105 checkpoint/221-line journal prefix/authorizations/claim/seal remain; MASTER2 passes reused as explicitly posthoc-associated evidence, EMA2 new passes only, diagnostics reused. AUX5 committed at journal227; continuation starts106 under C1/Addendum and same2100/80 budget. Not a completed scientific result. [R1 handoff](exp17/EXP17_J2_R1_ENGINEERING_HANDOFF.md).

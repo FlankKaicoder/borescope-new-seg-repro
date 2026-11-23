@@ -1,5 +1,8 @@
 # Experiment index
 
+- **Exp17-J2 Seed42 completed execution (2026-11-23 UTC)** — 100epochs/2100updates/20VALevents/80passes after exactR1 recovery; LastMASTER MaskAP95=0 (J1 .2727438799); scientific interpretation HOLD for unexplained all-zero evaluation. No additional seeds/TEST. [Final handoff](../EXP17_J2_SEED42_FORMAL_TRAINING_HANDOFF.md).
+
+
 - **Exp17-J2-R1 (2026-11-24)** — Isolation repair and exact AUX5 recovery complete; Seed42 continues from106 under preserved original experiment/2100 updates/80passes. CPU72PASS; MASTER2 retained/EMA2 added; no scientific parameter changes or TEST. [R1 handoff](exp17/EXP17_J2_R1_ENGINEERING_HANDOFF.md).
 
 

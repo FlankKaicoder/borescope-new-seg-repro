@@ -1,0 +1,33 @@
+class,metric,J1,J2,delta_percentage_points,definition
+overall,mask_precision,0.6363636363636364,,,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+overall,mask_recall,0.3310810810810811,0.0,-33.108108108108105,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+overall,box_precision,0.6623376623376623,,,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+overall,box_recall,0.34459459459459457,0.0,-34.45945945945946,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Burn,mask_precision,0.5714285714285714,,,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Burn,mask_recall,0.14814814814814814,0.0,-14.814814814814813,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Burn,box_precision,0.6666666666666666,,,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Burn,box_recall,0.1728395061728395,0.0,-17.28395061728395,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Crack,mask_precision,0.25,,,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Crack,mask_recall,0.16666666666666666,0.0,-16.666666666666664,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Crack,box_precision,0.3125,,,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Crack,box_recall,0.20833333333333334,0.0,-20.833333333333336,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Dent,mask_precision,0.7777777777777778,,,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Dent,mask_recall,0.7567567567567568,0.0,-75.67567567567568,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Dent,box_precision,0.7777777777777778,,,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Dent,box_recall,0.7567567567567568,0.0,-75.67567567567568,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Material missing,mask_precision,0.9333333333333333,,,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Material missing,mask_recall,0.4375,0.0,-43.75,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Material missing,box_precision,0.9333333333333333,,,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Material missing,box_recall,0.4375,0.0,-43.75,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Tears,mask_precision,0.6666666666666666,,,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Tears,mask_recall,0.8,0.0,-80.0,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Tears,box_precision,0.6666666666666666,,,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Tears,box_recall,0.8,0.0,-80.0,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Tip curl,mask_precision,1.0,,,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Tip curl,mask_recall,0.6666666666666666,0.0,-66.66666666666666,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Tip curl,box_precision,1.0,,,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+Tip curl,box_recall,0.6666666666666666,0.0,-66.66666666666666,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+corrosion,mask_precision,0.5769230769230769,,,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+corrosion,mask_recall,0.27522935779816515,0.0,-27.522935779816514,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+corrosion,box_precision,0.5961538461538461,,,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R
+corrosion,box_recall,0.28440366972477066,0.0,-28.440366972477065,Derived from fixed conf .25 native TP/FP/FN; separate from standard native P/R

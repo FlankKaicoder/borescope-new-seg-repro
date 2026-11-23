@@ -1,0 +1,54 @@
+{
+  "Best_EMA_selection": "Supplementary within J2 only; excluded from this primary matched comparison",
+  "J1_native_master_sha256": "1ffe60884850dd454bb7c5ffdddcd9e5c5d9163f4db5d3b5b40026d10a24c107",
+  "J2_native_master_sha256": "d222a70d7570680459359a36a682312690b052cc10197f4916ec1df66492782f",
+  "TEST_access_this_comparison": false,
+  "baseline_index_sha256": "b5da2e7d41caf87a8183e98cf021713bef6ab272476c2dd9dc3e0b6cb5834c35",
+  "epoch": 100,
+  "evaluation_definitions": {
+    "batch": 32,
+    "checkpoint": "epoch100_last_master_fp32",
+    "conf": 0.001,
+    "fixed_conf": 0.25,
+    "gt_size_definition": "native_rasterized_polygon_area_over_full_image_area",
+    "imgsz": 640,
+    "match_iou": 0.5,
+    "matching": "NATIVE_ULTRALYTICS_CLASS_AWARE_IOU_GREEDY_ONE_TO_ONE",
+    "max_det": 300,
+    "nms_iou": 0.7,
+    "precision": "CUDA_FP32_TF32_DISABLED",
+    "size_thresholds": [
+      0.0020196759259259256,
+      0.007364969135802469,
+      0.029209280303030303
+    ],
+    "split": "val"
+  },
+  "generated_at_utc": "2026-11-23T20:39:40.621312+00:00",
+  "independent_scientific_audit": "PENDING",
+  "limitations": [
+    "No J2 result is present or inferred in this baseline index.",
+    "Standard native P/R and fixed conf.25 TP/FP/FN-derived precision/recall are separate definitions.",
+    "The fixed-pass native AP is not the primary standard-pass AP.",
+    "J2 Best/EMA comparisons with this J1 Last MASTER are supplementary mismatched-selection comparisons, not the primary result.",
+    "Tip curl has3 VAL GTs; low-count class and zero-GT size strata require descriptive treatment, with nulls retained.",
+    "J2 single-seed differences and coverage/gradient associations do not establish statistical superiority or causal mechanisms.",
+    "Do not request J1/J2 extra inference, TEST, other seeds or threshold/weight selection from this comparison."
+  ],
+  "method_effectiveness_verdict": null,
+  "new_model_evaluations": 0,
+  "new_optimizer_updates": 0,
+  "primary": {
+    "J1_seed42_epoch100_Last_MASTER": 0.2727438798549706,
+    "J2_seed42_epoch100_Last_MASTER": 0.0,
+    "delta_J2_minus_J1": -0.2727438798549706,
+    "delta_percentage_points": -27.27438798549706,
+    "metric": "metrics/mAP50-95(M)",
+    "purpose": "standard_native_metric"
+  },
+  "primary_metric": "Standard conf .001 Mask AP50:95",
+  "role": "Last FP32 MASTER",
+  "schema": "EXP17_J2_FIXED_LAST_MASTER_COMPARISON_V1",
+  "seed": 42,
+  "status": "ENGINEERING_COMPARISON_READY_FOR_INDEPENDENT_RESULT_REVIEW"
+}

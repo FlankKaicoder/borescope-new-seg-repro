@@ -1,62 +1,86 @@
-# EXP17-J2 Seed42 正式训练交接：第105步隔离硬停止
+# Exp17-J2 Seed42：R1恢复后的完整正式训练交接
 
-日期：2026-11-23（Asia/Shanghai）。
+执行状态：**EXP17_J2_SEED42_FORMAL_TRAINING_COMPLETE_PENDING_CHATGPT_RESULT_GATE**。科学解释状态：**HOLD_UNEXPLAINED_ZERO_AP**。
 
-状态：**EXP17_J2_SEED42_FORMAL_HARD_GATE_AT_UPDATE_105_PENDING_REPAIR_GATE**。
+100轮、2100次有效更新、20次VAL事件/80次native pass已真实完成，R1进程退出0。固定Epoch100 Last FP32 MASTER的Mask AP50–95为**0**，J1同Seed42/Last MASTER为**0.2727438798549706**，观测差值**−27.27438798549706个百分点**。全部40个MASTER/EMA标准评价角色的AP、P、R均为0。必须保留这个异常结果；目前未找到确定工程根因，不能将它直接归因于Pair或宣布方法已得到有效科研否定。
 
-## 结论
+科学配置保持原G1：YOLO11n-seg、fresh COCO、Seed42、668 TRAIN/1266实例、521 Pair/345图/327组，640/Batch32，100epoch/2100更新，AdamW、AMP、Clip10、warmup63；SupCon8/Temperature.10、Pair4/Margin.20、BN replay_a。Last FP32 MASTER为主，Best与EMA独立；无TEST或追加seed。
 
-Seed42已真实从fresh COCO启动，完成5轮主任务训练、105次有效更新；第5轮辅助事务中的首次MASTER VAL结束时，live-state隔离检查抛出`IsolationViolation: Validation/diagnostic changed live training state: model`，进程退出1并停止。没有自动重启或重放。
+## 执行与验收
 
-**这不是完成的100轮科研实验，也不是J2性能负结果。** Epoch100 Last、最终EMA和Best均未产生，不能进行正式J2−J1性能比较或追加随机种子。
+| 项目 | 实际结果 |
+|---|---|
+| 训练 | 100完整epoch；2100attempt=2100commit=2100effective=2100EMA；AMP skip0 |
+| 曝光 | 66,800原图；126,600增强前实例；每轮668图/1266实例、21批、尾批28 |
+| 事务 | 100个AUX_COMMIT；无pending attempt/AUX；4408行Journal；无新硬门 |
+| 评价 | 20事件、40角色、80唯一claim及80原始pass目录；未追加评价 |
+| 梯度诊断 | 20组、80个既有固定TRAIN probe；无额外optimizer更新 |
+| 保存 | 双槽完整Last、20份periodic、独立Best MASTER/EMA、两个Epoch100原生FP32端点 |
+| 工程验收 | R1 CPU72PASS/0skip；结束后CPU tensor identities PASS；独立46项完整性检查全部PASS |
 
-## 实际配置与授权
+R1活动窗口为2026-11-23T16:11:23.912832Z至20:36:15.553748Z。原故障进程窗口860.861秒，R1窗口15,891.641秒，两窗口合计16,752.502秒；不含中间停机审查间隔。结束时刻换算UTC+8为2026-11-24 04:36:15。完整轨迹和账本保存在私有归档；公开[100轮汇总](results/exp17_j2_seed42_formal/completed_r1/epochs_sanitized.csv)、[2100步投影](results/exp17_j2_seed42_formal/completed_r1/updates_2100.csv)、[80次评价表](results/exp17_j2_seed42_formal/completed_r1/validation_overall.csv)。投影不替代原始持久Journal。
 
-训练源码基座：`201c78ab9de870f582aa8d9d2a4ac60bb125102f`；已有Exp17独立worktree。YOLO11n-seg，fresh COCO，seed42，668 TRAIN/1266 GT，521 Aligned Pair/345图/327组，640/batch32，计划100epoch/2100updates，AdamW/AMP/clip10，warmup63，SupCon8/τ.10、Pair4/margin.20、BN replay_a。实际前105步按冻结原生轨迹通过。
+## R1恢复与身份
 
-本次依据已接受的ChatGPT Plan Gate及用户明确授予的计划级工程授权生成两份精确记录；保留原schema、四项action、身份和预算保护，没有声称取得新的外部独立签名。VAL记录一次覆盖20事件/MASTER+EMA/standard+fixed最多80pass。公共Protocol仍false/pending且原字节未改。
+保留原105步Checkpoint、原recovery/latest、Journal前221行/57024字节、Formal/VAL Authorization、永久CLAIM、Execution Seal和原execution ID。原Protocol、Runtime Config、COCO和521 Manifest未变。Conv.default_act构造期所有权隔离修复保留原IsolationViolation和严格重载；安装框架未修改。
+
+原MASTER两pass未重claim、未重跑；四个Epoch5 probe复用。仅补EMA standard/fixed两pass，生成两个角色Best和periodic，真实AUX5_COMMIT位于序号227；首次新attempt=106，此后完成1995次更新。历史MASTER证据继续标为POST_HOC_FROM_SEALED_ARTIFACTS；没有向旧evaluation.json倒填checkpoint SHA、role或confidence。
 
 | 身份 | SHA256 |
 |---|---|
-| G1 Protocol | 613e4e154a872e0fd88791013f8e63716100470bb4a2f73084b702bb5cd37e44 |
-| source catalog | 86987123cffef957d7f639f0559e48f6c033562947ddd1ba64689ce6b8bbba4b |
-| runtime config | 02f0f6548ee1cfd57af449fd1c9118417252b3a528273a1c80d2eee28c96d7b8 |
-| 521 Manifest | fe6a36601c6c8d90cfddfc19ab58335552c18653b66f3535e84c97b4c222dc22 |
-| COCO | 55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152 |
-| Formal auth | 81103040c2269dc4e2fcbe2010eabacc29e7e06458b6ab15fb3d2f0db135c847 |
-| VAL auth | 763cb92c5eeef40aa9bc10339721a481800f948300c64dbc3010331efd5a0fd8 |
+| G1 Protocol | `613e4e154a872e0fd88791013f8e63716100470bb4a2f73084b702bb5cd37e44` |
+| Runtime Config | `02f0f6548ee1cfd57af449fd1c9118417252b3a528273a1c80d2eee28c96d7b8` |
+| C0原源码 | `86987123cffef957d7f639f0559e48f6c033562947ddd1ba64689ce6b8bbba4b` |
+| C1修复源码 | `3ccdfe26b414c9c5c6c45a1be93a9fa38210cae8c36bc7e1a8a8c227a7b30f42` |
+| Engineering Addendum | `73cb4d6f7250240e079f2596062507af690d057a454a4937e11eb74c8592e63e` |
+| 521 Manifest | `fe6a36601c6c8d90cfddfc19ab58335552c18653b66f3535e84c97b4c222dc22` |
+| fresh COCO | `55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152` |
+| 原105步文件 | `b8671bb8db32b40209020232478fa92e258e1d11681121d265323dc01553f83a` |
+| 原Journal前缀 | `3b7ef98469bb0a45587e2dd73ee7abded1a1e712871388faa34c4862cd7576d7` |
+| 最终Journal | `b394c00bf73b41316fc5fa4c3e721767efa0112d497c402bc05c32e2033f5d06` |
 
-## 真实运行与提交边界
+C0→C1/B0→B1通过独立Addendum记录，原105步不声称由C1产生。B1 Last/periodic位于同一output内recovery_r1_v1；原B0 store不覆盖。普通入口的pending AUX/源码绑定拒绝仍保留。工程细节见[R1交接](docs/exp17/EXP17_J2_R1_ENGINEERING_HANDOFF.md)。[105步原交接副本](docs/exp17/EXP17_J2_SEED42_UPDATE105_HARD_GATE_HANDOFF.md)与e57b9cb原始Git blob按字节相同；原工作区CRLF版本另存私有副本。
 
-- 启动：2026-11-23 22:38:35.688953 +08:00；停止：22:52:56.550070 +08:00。墙钟860.861117秒。
-- 主任务更新完成5/100轮、105/2100步；attempt/native/effective/EMA均105，AMP skip0。
-- 原图曝光3340、原始GT曝光6330；105步A-BN各进位1，N额外BN进位0，N不消耗原生RNG。
-- epoch1–4的AUX均已提交；epoch5有`AUX_BEGIN`及`HARD_GATE`，没有`AUX_COMMIT`。不存在不确定的optimizer attempt，但存在未完成的辅助事务。
-- 既有step记录与5份epoch训练汇总保留；epoch5汇总的complete仅表示21次更新齐全，不表示其VAL/诊断事务已提交。
-- epoch5的4个固定TRAIN梯度probe已写出诊断文件，但其外层AUX尚未提交。
-- MASTER standard/fixed两个native pass已claim并各有evaluation.json；上层角色JSON尚未写出。EMA尚未尝试。**已消耗2/80 pass，完整验收VAL事件为0/20，不能按0个角色JSON推断没有执行VAL。**
-- epoch5 periodic归档尚未执行；双槽Last及105步完整状态保留。当前剩余1995更新、78个未claim的native pass。
+## 固定Last主比较及异常评价
 
-Checkpoint文件SHA：`b8671bb8db32b40209020232478fa92e258e1d11681121d265323dc01553f83a`；永久journal SHA：`3b7ef98469bb0a45587e2dd73ee7abded1a1e712871388faa34c4862cd7576d7`。
+standard使用conf=.001；fixed使用conf=.25、IoU=.5匹配。二者不混用，Best和EMA不替换Last主结果。标准P/R、Box/Mask AP50及AP50–95均为0。J1标准Mask P/R为0.5944994976911117/0.4793975586127764；J1 Box AP95为0.2847894100488274。完整未舍入结果见[整体比较](results/exp17_j2_seed42_formal/completed_r1/primary_J1_J2_overall.csv)和[七类比较](results/exp17_j2_seed42_formal/completed_r1/primary_J1_J2_per_class.csv)。
 
-已在独立CPU进程以weights_only读取105步Checkpoint并核对MASTER/EMA哈希、计数和位置`epoch=4,batch_position=21,global_update=105`，读取前后文件SHA一致；未构造YOLO或执行前向/反向/优化器。
+| 类别 | VAL GT | J1 Mask AP95 | J2 Mask AP95 | J1 Box AP95 | J2 Box AP95 |
+|---|---:|---:|---:|---:|---:|
+| Burn | 81 | 0.061374 | 0 | 0.110351 | 0 |
+| Crack | 24 | 0.030078 | 0 | 0.059224 | 0 |
+| Dent | 37 | 0.330177 | 0 | 0.365387 | 0 |
+| Material missing | 32 | 0.357642 | 0 | 0.372628 | 0 |
+| Tears | 10 | 0.521800 | 0 | 0.506710 | 0 |
+| Tip curl | 3 | 0.451700 | 0 | 0.407000 | 0 |
+| corrosion | 109 | 0.156437 | 0 | 0.172226 | 0 |
 
-## 隔离机制诊断及证据边界
+Epoch100 fixed时MASTER和EMA均0检测、Mask/Box TP0 FP0 FN296；J1 Last MASTER为154检测，Mask TP98 FP56 FN198、Box TP102 FP52 FN194。J2固定点Recall为0；0检测下TP/(TP+FP)为0/0，派生Precision为null，不能把FP减少解释成改善。tiny/small/medium/large GT为103/76/62/55，J2 Recall均0；J1为28/103、38/76、26/62、6/55。见[固定点计数](results/exp17_j2_seed42_formal/completed_r1/primary_J1_J2_fixed_conf025.csv)和[尺度表](results/exp17_j2_seed42_formal/completed_r1/primary_J1_J2_size_recall.csv)。
 
-部署版Ultralytics Conv将`default_act=nn.SiLU()`定义为类级实例，并将各Conv的`self.act`直接指向它。正式评价回调先重建native SegmentationModel，再eval；构造器自身也切换模型mode。因此新骨架可能重新引用live训练模型的同一SiLU，造成mode变化。
+并非全程无预测：Epoch5和10的两个角色各有46,200个fixed检测（154×max_det300），全部FP；之后检测数波动，Epoch100回到0。所有事件的标准AP仍为0。原始standard结果没有独立预测数量字段，不能由AP0倒推无检测。两种Best均因fitness始终0和latest-tie规则选择Epoch100；这是机械选择结果，不能解释为恢复性能。
 
-独立CPU fixture用两个tiny Conv验证：两者act与类级default_act确实是同一对象；第二个eval将第一个act.training从True变为False。没有前向/反向/optimizer，CUDA未初始化。安装版Conv源码SHA为`548ee1f3fa28542ad46b920e4d4271594efa09bc76c4ab3067a08a966f30648d`，tasks源码SHA为`2c78d12335ea68411146698ddff9f056e24b3fc1f30ce00efca54837a22ca68f`。
+![20次定期VAL](results/exp17_j2_seed42_formal/completed_r1/figures/02_scheduled_VAL.svg)
 
-这确认了可触发当前硬门的具体机制；原故障只记录changed component=model，没有现场state/modes/gradients逐字段差异，不能倒填“现场只改mode”的证明。隔离检查应继续保留，不能忽略SiLU或压掉异常。恢复基点是AUX前已持久提交的105步Checkpoint，不是已退出进程的内存。
+## Pair、梯度、BN及成本
 
-## 最小必要修复提案
+49,762次Pair anchor曝光覆盖全部521 Polygon/345来源图/327组，Tip curl无准入Pair。训练均值YOLO由442.807降至280.632，SupCon由3.959降至2.808，Pair由.19237降至.07250。早期1–5轮d(A,B)/d(A,N)曝光均值为.05248/.10348，末20轮为.10736/.35589；辅助分支存在学习信号，但不证明语义有效，也不解释主任务的全零AP。
 
-详见[隔离修复与AUX恢复提案](docs/exp17/EXP17_J2_SEED42_ISOLATION_REPAIR_PROPOSAL.md)。当前不实施代码修改或重启：普通resume会先拒绝pending AUX；修复源码也会改变catalog身份，不能沿用旧绑定偷渡。
+2100步全部触Clip10；unscale后preclip范数min/median/max为63.9367/146.2234/8556.2207，clip系数中位.068388。80个backbone probe的λ4 Pair/main范数比min/median/max为.01049/.07876/.49705；Pair–YOLO负cos52/80、Pair–SupCon8负cos44/80。postclip值仅公式推导；clip系数不是AdamW更新缩放的精确比例。Pair/main原比值乘4一次，N_P3梯度已含4，不再乘。去Pair代数参照不是重新训练的J1对照。**未改变Clip10或任何科研参数。**
 
-需要版本化工程补充，同时解决构造器activation所有权隔离和一次性epoch5 AUX恢复。保留原Protocol、claims、seal、journal、pass记录及105步状态；不覆盖原协议、不重置预算、不重复MASTER评价或4个诊断probe。两份旧evaluation没有原生checkpoint SHA字段，复用须明确审查冻结调用链和历史证据等级，不能补造“当时已记录”的身份。
+每步A-BN进位1、N额外进位0、N不改变原生RNG的断言均通过；N梯度2100步均大于0。AMP skip/overflow0；step2000结束后scale由1增长至2，并非全程scale1。训练计时合计4182.137秒，中位每步1.940秒；峰值allocated6.716GiB、reserved7.090GiB。内部计时不含全部N准备、预取、checkpoint/fsync、VAL/probe成本；无匹配J1成本基线。
 
-## 交付与限制
+见[完整机制与裁剪报告](results/exp17_j2_seed42_formal/completed_r1/MECHANISM_AND_CLIPPING.md)。J1已封存VAL与G1要求中7项环境、12项评价字段及8项共享框架SHA一致；不声称证明同一物理GPU或J1全程训练AMP/硬件身份。
 
-公开[机器摘要](results/exp17_j2_seed42_formal/summary.json)和[5轮训练观察](results/exp17_j2_seed42_formal/epoch_training_observations.csv)。私有45,493,828字节故障归档含38项原始证据及105步Checkpoint，SHA256 `253993e1963a1144a47f5209fd0000e211bcf2281dc6fdd15c20df046f7b5547`，服务器与Windows副本一致。缓存batch仍留原位，未删除或迁移。
+## 全零AP的只读排查与解释边界
 
-未访问TEST，未追加seed，未改科学参数、数据准入或冻结Protocol，未重跑Smoke。原始数据、旧Exp13、Exp15/16保持只读。当前状态是工程硬停止，不能标记`EXP17_J2_SEED42_FORMAL_TRAINING_COMPLETE_PENDING_CHATGPT_RESULT_GATE`。
+未发现SupCon重复加入、输入重复/255、明显七类导出或评价接口合同错误；native持久张量与恢复状态一致，解码stride/anchor重建路径、Segment输出合同、FP32评估路径已静态核对。两个native端点的pickle元数据仅用zipfile/pickletools读取，未unpickle或新推理。详见[静态复核](results/exp17_j2_seed42_formal/completed_r1/ZERO_AP_STATIC_REVIEW.md)。
+
+这些核对没有定位确定工程根因，也不能证明所有非持久运行时属性及推理行为均正确。**观察到的是完整运行下的灾难性评价退化；根因和科研可解释性未决。** 不把账本/哈希PASS等同于方法有效，也不为了得到非零结果更改参数、重跑评价或消耗超过80pass。计划内预算已耗尽。
+
+## 模型、私有归档和交付
+
+原生Last MASTER文件SHA=`063e473cf0b878f105c85790be47332a30d8192e09a14ad28ab2180b85ba6e2d`，canonical native state=`d222a70d7570680459359a36a682312690b052cc10197f4916ec1df66492782f`。EMA文件SHA=`506ed7c7341f05e072ea8283664206bf7b8d5804f1e8214fd79699ba4d930c94`，canonical state=`651c453e578c7084d4b333ec1b56488d2a0d3f60604852e08601e516b80bebe3`。文件SHA、canonical state、授权JSON digest分开记录。模型和20份periodic完整清单见[工件SHA表](results/exp17_j2_seed42_formal/completed_r1/artifacts.csv)。Best以独立FP32 tensor bundle、选择指针及历史receipt保存，不伪称原生Best导出。
+
+主私有归档`exp17_j2_seed42_formal_completed_20261124T043621_v2.tar.gz`含739项自有代码/结果/Checkpoint/日志/私有授权，1,206,711,760字节，SHA256 `aa823d2b83a93921bf23252b56b5a542ee94e141e479fa114054ac7a1ce15c47`；服务器及Windows副本一致。原始图像、标签、epoch batch缓存和Python环境不进入归档。完整原始账本、日志、授权和大模型均保持私有；公开数据只含脱敏摘要、统计和身份。结束后离线比较脚本的一个字段名适配错误已版本化修正，原拒绝记录保留；未改生产源码、指标或原结果，未重跑tensor/summary/模型评价。
+
+当前建议：**暂不追加Seed142/242**。先由独立Result Gate审查全零AP的实现与证据边界，再决定是否批准新的诊断实验；本次不自动修复第二个假设问题、不调参、不再推理、不访问TEST。正式训练已结束，进程不再运行。

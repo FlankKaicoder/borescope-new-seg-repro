@@ -1,5 +1,7 @@
 # Exp17-J2-R1：隔离修复与Epoch5 AUX恢复交接
 
+后续进展：正式运行已完成100轮/2100更新/80pass；全零AP的科学解释待审查，见[最终交接](../../EXP17_J2_SEED42_FORMAL_TRAINING_HANDOFF.md)。以下保留R1恢复完成时的工程快照。
+
 日期：2026-11-24（Asia/Shanghai）。状态：**EXP17_J2_R1_EPOCH5_AUX_RECOVERED_TRAINING_CONTINUES**。
 
 ## 已完成的工程恢复
