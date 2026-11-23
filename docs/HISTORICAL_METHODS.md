@@ -15,7 +15,7 @@
 
 ## B. 当前根据旧思想重新实现的方法
 
-后续代码属于可审计的 method reconstruction，而非原版代码或权重的 bit-exact reproduction。具体实现尚未进入本阶段。
+后续代码属于可审计的 method reconstruction，而非原版代码或权重的 bit-exact reproduction。Exp03–Exp10 已有方法重建实现及审计结果；各方法的实际执行状态、有效性边界与证据见 [实验索引](experiment_index.md)。
 
 ## C. 后来新增的扩展方法
 

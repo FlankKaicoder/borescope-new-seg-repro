@@ -1,5 +1,36 @@
 # Project state
 
+<a id="current-authoritative-snapshot"></a>
+
+## 当前权威摘要（2026-11-23，Asia/Shanghai）
+
+本摘要适用于由 phase/exp14-pseudonormal-region 派生的 codex/research-collaboration-workflow 分支，结果基线为 83274732f72133cbe9a3abff2ab9a6c66c0e2eea。它不代表 main、Exp13 或 Exp15–17 工作树的最新状态。恢复任务先核对实际 Git，再读[最近交接](latest_handoff.md)；未来计划见[ROADMAP](../ROADMAP.md)。
+
+| 项目 | 当前事实与边界 |
+| --- | --- |
+| 最新科研里程碑 | Exp14 E0／E1-FULL seed42 正式训练及冻结 VAL 已完成（2026-11-15） |
+| 独立科研审计 | EXP14_E0_E1_FULL_SEED42_VAL_COMPLETE_PENDING_CHATGPT_RESULT_GATE；尚待结果审计，本次工程自审不代签科研结论 |
+| 主要结果 | Mask mAP50–95：E0 0.24951245667305366，E1-FULL 0.23039514532654876，下降约 1.912 个百分点 |
+| 固定置信度 | Mask FP 57 → 66，FN 201 → 219 |
+| 训练比较边界 | 各 100 轮、原图各 66,800 张次；有效更新为 2,100／3,300，E1 额外修复图 37,900 张次；单种子且不等更新数 |
+| 数据状态 | 原 v1 划分 668／154／147 保持冻结；A10 冻结 379 张 A 图（359 个来源组），13 条同资产标签冲突保持隔离；E0／E1 TRAIN 为 668／1,047 张 |
+| B 路线 | 545 个区域 Polygon 候选仍不等于正式可信 Pair；可信 Pair 准入未建立，不因 A 路线完成而自动放行 |
+| TEST 使用范围 | Exp14 本次 TEST 图像、标签读取及推理均为 0；Exp11 历史正式 TEST 已完成，不能表述为项目从未访问 TEST |
+| 已关闭阶段 | Exp00–11 的最终 Baseline／seed44 和冻结 TEST 结论保持不变；PROJECT_COMPLETE 仅指该已关闭阶段，后续独立研究不重开其模型选择 |
+| 本次任务授权 | 协作体系文档整改、验证、commit 和正常 push；不包含训练、评估、数据变更、付费调用或论文仓库操作 |
+| 后续实验权限 | 更新预算匹配 E0、配对多种子、B 路线均未由本次治理批准；既有冻结协议和执行器授权要求继续有效 |
+| 环境证据 | 最近 Exp14 运行报告记录单张 RTX 3080 Ti；本次未远端探测，历史 2080 Ti 约 22GB 不作为当前环境保证 |
+
+证据入口：[最新 VAL 交接](exp14/EXP14_E0_E1_FULL_SEED42_VAL_HANDOFF.md)、[VAL 指标 CSV](../results/exp14_e0_e1_full_seed42_val/overall_metrics.csv)、[固定点计数](../results/exp14_e0_e1_full_seed42_val/fixed_counts.csv)、[训练汇总](../results/exp14_e0_e1_full_seed42_train/summary.json)、[冻结协议](exp14/EXP14_E0_E1_FULL_FORMAL_PROTOCOL.md)、[A10 交接](exp14/EXP14_A10_A_DATASET_FREEZE_HANDOFF.md)、[Exp11 最终总结](final_project_summary.md)。
+
+本地调查已核对仓库可见的汇总、结果表和冻结代码身份。完整逐批日志、权重及授权回执在私有目录，本次未重新核验；不把这次调查称为完整训练复验。当前负向结果只描述该单种子和既定比较口径，不外推为全面否定伪正常方法。
+
+协作规则见 [AGENTS](../AGENTS.md)，本次治理决定见 [DECISION_LOG](DECISION_LOG.md)。普通工程修复在批准范围内自主执行，正式科研边界变化才提交裁决。docs/zh/ 和云端旧索引属于历史学习或专项证据入口；不得从其旧头部推导本分支当前授权。
+
+## 历史状态快照（保留原文）
+
+以下全部内容为原有阶段记录，保留发生时的事实、状态及授权边界，不再作为并列的当前摘要。其中 Current、Latest、PROJECT_COMPLETE、NO_MORE_MODEL_EXPERIMENTS 和 WAITING／PENDING 应按原阶段、日期和分支理解；已有后续执行证据的旧等待状态不是今天的执行待办。原记录内部的编号、结论和段落顺序均不重写。无法找到适用的后续明确授权时，不得仅凭新协作规则推定旧科研 Gate 已通过。
+
 ## Exp14 E0/E1-FULL seed 42 frozen VAL (2026-11-15)
 
 EXP14_E0_E1_FULL_SEED42_VAL_COMPLETE_PENDING_CHATGPT_RESULT_GATE. The single authorized paired evaluation completed on frozen VAL, with 154 images and 296 instances in each pass. Mask mAP50–95 was 24.95% for E0 and 23.04% for E1-FULL. Fixed-confidence Mask FP rose from 57 to 66 and FN from 201 to 219. TEST inference remains zero. [Handoff](exp14/EXP14_E0_E1_FULL_SEED42_VAL_HANDOFF.md).

@@ -1,5 +1,31 @@
 # Decision log
 
+<a id="gov-20261123-01"></a>
+
+## 协作治理决策 GOV-20261123-01（2026-11-23）
+
+- 来源：用户已批准科研协作体系改造方案并要求实施；本条只记录协作文档整改，不授予新实验、数据准入、模型训练、VAL/TEST 评估或付费调用权限。
+- 职责：用户确定研究目标并批准重大科研变更及正式数据/TEST 使用；ChatGPT 负责方案分析、独立结果审计和方法贡献判断；Codex 在已批准范围内完成规划、工程实现、验证、记录和 Git 交付。
+- 执行：普通工程问题由 Codex 自主修复并验证；科研假设、冻结数据与正式协议的变更，及其他明确暂停条件，按 [AGENTS.md](../AGENTS.md) 处理。既有未获批准的科研事项保持待决，工程检查通过不替代科研授权。
+- 记忆：当前权威状态使用 [PROJECT_STATE.md](PROJECT_STATE.md)，最近里程碑使用 [latest_handoff.md](latest_handoff.md)；本日志记录重大决定及其适用范围，实验细节继续链接原报告。
+- 生效范围：本次整改在当前工作树的 `codex/research-collaboration-workflow` 分支实施；不合并科研分支，也不宣称其他工作树或主分支已同步生效。
+- 保全：保留既有决策号、历史报告、结果和 registry；治理整改不作为模型实验登记。后续治理决策采用唯一的 `GOV-YYYYMMDD-NN` 标识。
+
+### 历史决策号消歧
+
+历史 D043、D044 各有两条不同范围的记录，原号及原文保留。引用时必须同时给出日期、范围和报告链接，不能仅凭 D 号确认授权。
+
+| 旧号 | 日期与范围 | 对应证据 |
+|---|---|---|
+| D043 | 2026-10-25，Exp13.2-M0 matched model preflight | [M0 preflight](exp13_2_m0_matched_comparison_preflight.md) |
+| D043 | 2026-11-02，Exp13-G2 three-source input freeze | [G2 preparation](exp13_cloud/reports/G2_three_source_preparation.md) |
+| D044 | 2026-10-25，Exp13.2-M0-R1 revised pool/input review | [M0-R1 review](exp13_2_m0_r1_source_reselection_review.md) |
+| D044 | 2026-11-02，Exp13-G2 evaluation/executor preparation | [G2 executor preparation](exp13_cloud/reports/G2_protocol_executor_preparation.md) |
+
+## 历史科研决策记录
+
+以下保留发生时决策及状态；是否已有后续决定，应按日期、实验范围及证据链核对，不将旧条目的 WAITING/PENDING 当作全项目当前状态。
+
 ## Exp14 E0/E1-FULL seed 42 frozen VAL (2026-11-15)
 
 Decision D074. Record the authorized frozen VAL pair from the two epoch-100 FP32 master checkpoints. Treat the observed primary metric decline and rise in fixed-confidence FP and FN as descriptive seed 42 results. Submit the pair for independent result review before any follow-up experiments. [Handoff](exp14/EXP14_E0_E1_FULL_SEED42_VAL_HANDOFF.md).

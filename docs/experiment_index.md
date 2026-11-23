@@ -1,5 +1,16 @@
 # Experiment index
 
+## 当前导航
+
+- [PROJECT_STATE.md](PROJECT_STATE.md)：当前分支的权威状态、已核验证据和待决事项。
+- [latest_handoff.md](latest_handoff.md)：最近里程碑、恢复入口与本次协作文档交付。
+- 最近实验里程碑：Exp14 E0/E1-FULL seed 42 frozen VAL，[原始交接报告](exp14/EXP14_E0_E1_FULL_SEED42_VAL_HANDOFF.md) · [结果摘要](../results/exp14_e0_e1_full_seed42_val/summary.json)。
+- [总实验 registry](../results/experiment_registry.csv) 为实验登记入口；[云端专项 registry](exp13_cloud/experiment_registry.csv) 保留该专项的历史台账。协作治理整改不新增实验条目。
+
+## 历史实验记录
+
+下方至文件末尾保留发生时的实验记录与证据链接。旧文中的 Latest extension、Current、WAITING/PENDING 和 Gate 状态均有各自日期与范围，不是另一份当前状态或单独的当前授权依据；应结合 PROJECT_STATE 所引后续决定核对。历史科研限制和未获授权事项不会因新增导航而解除。
+
 ## Exp14 E0/E1-FULL seed 42 frozen VAL (2026-11-15)
 
 EXP14_E0_E1_FULL_SEED42_VAL_COMPLETE_PENDING_CHATGPT_RESULT_GATE. Four preregistered VAL passes covered the same 154 images and 296 instances. Both checkpoint hashes, the frozen VAL bytes and aggregate counts reconciled. E1-FULL Mask mAP50–95 declined by 1.912 percentage points. [Handoff](exp14/EXP14_E0_E1_FULL_SEED42_VAL_HANDOFF.md) · [Sanitized summary](../results/exp14_e0_e1_full_seed42_val/summary.json).

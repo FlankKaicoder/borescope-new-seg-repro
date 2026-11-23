@@ -1,6 +1,18 @@
 # Changelog
 
+## 2026-11-23 — 科研协作体系整改
+
+- 明确用户、ChatGPT 和 Codex 的职责，以及批准范围内的工程自主权、科研暂停条件和按风险设置的验证要求。
+- 复用 AGENTS、PROJECT_STATE、ROADMAP、DECISION_LOG 和 experiment_index，建立 latest_handoff 最近里程碑入口；历史报告与原始证据继续保留。
+- 将 README 的 `PROJECT_COMPLETE`、最终 Baseline／TEST 和 ROADMAP 的“no more model experiments”限定为已关闭的 Exp00–Exp11 阶段，补充 Exp13 历史与 Exp14 已核验进展导航。
+- 采用复杂任务先规划并审核科研方案、再持续执行与自审，普通工程任务直接执行；长上下文优先 Compact，交接按里程碑组织。
+- 本次仅整改协作文档与导航，不运行模型训练、推理或评估，不改变数据集、模型代码、实验结果、权重、冻结划分或论文仓库，也不新增模型实验授权。
+- 工程验收通过：九文件范围、51 个新增本地链接及锚点、20 个冻结代码 SHA256、历史正文保全及结果表对账；未以本次自审代替 ChatGPT 科研结果审计。
+
 ## Unreleased
+
+以下保留原有阶段更新；其中“当前”“等待授权”等描述是发生时快照，现行状态见 [PROJECT_STATE](docs/PROJECT_STATE.md)。
+
 - Exp12.1 formal TRAIN-only SimSiam and Exp12.2 audit PASS: 100/100 epochs and 2,000 optimizer steps completed with finite metrics and no collapse; 120/120 encoder parameter tensors changed; final checkpoint and backbone export matched 120/120 in-memory hashes; VAL/TEST access remained 0/0. Downstream Route A/B remains separately gated.
 
 - Exp12.1-S TRAIN-only smoke PASS: explicit unfreeze changed the encoder from 0/120 to 120/120 trainable parameter tensors; optimizer identity, real-batch gradient and update Gates all passed. The first step and full one-epoch smoke each changed 120/120 backbone parameters; checkpoint/export reload matched 120/120 hashes; metrics were finite with no smoke collapse signal; VAL/TEST access was 0/0. Formal SSL remains separately gated.
