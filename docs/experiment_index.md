@@ -1,5 +1,10 @@
 # Experiment index
 
+## Exp17-J2 Seed42 formal run: isolation hard gate at update105 (2026-11-23)
+
+EXP17_J2_SEED42_FORMAL_HARD_GATE_AT_UPDATE_105_PENDING_REPAIR_GATE. Approved plan-level authority materialized unchanged G1 formal/VAL bindings; freshCOCO seed42 completed5 training epochs/105effective updates, AMPskip0. Epoch5 MASTER standard/fixed consumed2passes, but live-model isolation failed before role/AUXcommit; EMA not attempted. Preserve105checkpoint/journal/pendingAUX and private evidence. CPU shared-activation alias mechanism reproduced without forward/optimizer/CUDA. No source/Protocol/hyperparameter changes or restart; not a completed efficacy result. [Handoff](../EXP17_J2_SEED42_FORMAL_TRAINING_HANDOFF.md) · [Summary](../results/exp17_j2_seed42_formal/summary.json) · [Repair proposal](exp17/EXP17_J2_SEED42_ISOLATION_REPAIR_PROPOSAL.md).
+
+
 ## Exp17-G1 formal protocol and recovery preparation (2026-11-23)
 
 EXP17_G1_FORMAL_PROTOCOL_AND_EXECUTOR_READY_PENDING_CHATGPT_GATE. NativeLR2100exact / warmup63; CPU129PASS; complete CPUtoyexecution/recovery, independentVAL/Best/Last/EMA and permanentauthorizationguards. No realtraining/GPU/VAL/TEST;50oldSmokeattempts remainsealed. [Handoff](exp17g/EXP17_G1_FORMAL_PROTOCOL_HANDOFF.md) · [Summary](../results/exp17g_formal_protocol/summary.json) · [Frozen non-authorizing protocol](../results/exp17g_formal_protocol/formal_training_protocol_v1.json) · [Recovery](../results/exp17g_formal_protocol/recovery_audit.json).
