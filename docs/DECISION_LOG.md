@@ -1,5 +1,9 @@
 # Decision log
 
+## D100 — R4-D temporal geometry and next early-state question (2026-11-24)
+
+Continue authorized offline work after R4-C.22 saved Checkpoints and original tables align actual historical parameter displacement with terminal detached excess d=gA−gB; negative d is positively aligned in all19 Neck16 intervals. Actual terminal Conv radial directions and saved AdamW outward proxies support a scale-dynamics hypothesis. Do not infer historical gradient shares or mismatch onset from buffer growth. FirstE5MASTER failure predatesR1 and laterFPs recur. Preserve originalLast0/80VAL; propose exactly2 earlyE5 running/Mean-only TRAIN forwards to determine whether early failure shares the terminal proximal mechanism, without executing them. [Handoff](../EXP17_J2_R4_D_TEMPORAL_MECHANISM_HANDOFF.md).
+
 ## D099 — R4-C v3 endpoint detach effect confirmed (2026-11-24)
 
 User explicitly approved v3 lossless disk saved tensors and additional2A+2N/6-gradient scope. Completed within all resource limits; original12 CPU Autograd evidence reused. Forward values, YOLO and SupCon8 gradients are bitwise identical. Pair4 parameter norm26.9690→2.41061, cosine.25608; actual convolution weights change, while projection and direct focus N-gradient controls agree. This establishes an endpoint mechanism, not historical drift causality or improved training. Preserve v1/v2 partial attempts and formal Last AP0/80VAL. Recommend offline temporal alignment before any separately reviewed new numerical experiment. [Handoff](../EXP17_J2_R4_C_V3_GRADIENT_MECHANISM_HANDOFF.md).

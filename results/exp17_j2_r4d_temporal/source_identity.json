@@ -1,0 +1,60 @@
+{
+  "scripts": {
+    "directions.py": "f9a51796a8c1b170e0e2727b5d1fd0f1a6e427282def9a98fcf79320d5759b42",
+    "summarize.py": "3eb064c27877fb7979d9f82e0a12c4442f1adec7076d820106ba3464281dd5b7",
+    "temporal.py": "da49f6d4d6ddc7aa6fc030e4e718d4a0313f6adf53ff36e0ef587b0965f62c06"
+  },
+  "remote_reader_executed": "f9a51796a8c1b170e0e2727b5d1fd0f1a6e427282def9a98fcf79320d5759b42",
+  "reader_v1_failure_preserved": true,
+  "temporal_revision": {
+    "original_alignment_source_sha256": "42bc535b79fbbb57507a2bf993c83efc48ada58df562395801a1e10144cc12b5",
+    "final_source_with_early_boundaries_sha256": "da49f6d4d6ddc7aa6fc030e4e718d4a0313f6adf53ff36e0ef587b0965f62c06",
+    "revision_scope": "Appended early-boundary CLI; first completed alignment outputs retained; no original data changed.",
+    "new_model_or_autograd_calls": 0
+  },
+  "temporal_initial_execution_script_sha256": "42bc535b79fbbb57507a2bf993c83efc48ada58df562395801a1e10144cc12b5",
+  "temporal_inputs": {
+    "private_assets\\exp17_j2_r3_20261124\\analysis_v2\\training_steps.csv": {
+      "sha256_before": "d83e02d64f21cae2fc70e2d29712551b9e61fca9243cc1735e4c9e7fd837e822",
+      "bytes": 701314,
+      "sha256_after": "d83e02d64f21cae2fc70e2d29712551b9e61fca9243cc1735e4c9e7fd837e822"
+    },
+    "private_assets\\exp17_j2_r3_20261124\\analysis_v2\\training_epochs.csv": {
+      "sha256_before": "859028db557c1d8027afd1f2715c756c350edb5fdb9b1d4b6e62431e46309367",
+      "bytes": 66646,
+      "sha256_after": "859028db557c1d8027afd1f2715c756c350edb5fdb9b1d4b6e62431e46309367"
+    },
+    "private_assets\\exp17_j2_r3_20261124\\analysis_v2\\gradient_domain_trajectory.csv": {
+      "sha256_before": "598052627383e69fac97066dd7c1d865cbd2305d75a29844534ed83f6539fa7d",
+      "bytes": 432866,
+      "sha256_after": "598052627383e69fac97066dd7c1d865cbd2305d75a29844534ed83f6539fa7d"
+    },
+    "private_assets\\exp17_j2_r3_20261124\\analysis_v2\\bn_layer_summary.csv": {
+      "sha256_before": "b32ad97f91e22a69b49cb5989d4dd4b104048145ae1724811cfb96c301b58f2a",
+      "bytes": 6577647,
+      "sha256_after": "b32ad97f91e22a69b49cb5989d4dd4b104048145ae1724811cfb96c301b58f2a"
+    },
+    "results\\exp17_j2_r3_bn_drift\\conv_layer_changes.csv": {
+      "sha256_before": "f3787aba2b7b97d109ca1a1524e13084ff7faf9e9abafbeaecd445ba48448974",
+      "bytes": 526883,
+      "sha256_after": "f3787aba2b7b97d109ca1a1524e13084ff7faf9e9abafbeaecd445ba48448974"
+    },
+    "private_assets\\exp17_j2_r3_20261124\\analysis_v2\\optimizer_bn_associations.csv": {
+      "sha256_before": "3ee0e8187d18dfd2dc662ad859c4c7c398ff02d50204e2aaca9a8775cefb5d12",
+      "bytes": 1414325,
+      "sha256_after": "3ee0e8187d18dfd2dc662ad859c4c7c398ff02d50204e2aaca9a8775cefb5d12"
+    },
+    "results\\exp17_j2_seed42_formal\\completed_r1\\validation_fixed_counts.csv": {
+      "sha256_before": "61dfbf1cb20caca2636616356eff9279ef52888e03f314f5e29983fd716e3e06",
+      "bytes": 1324,
+      "sha256_after": "61dfbf1cb20caca2636616356eff9279ef52888e03f314f5e29983fd716e3e06"
+    },
+    "results\\exp17_j2_seed42_formal\\completed_r1\\validation_overall.csv": {
+      "sha256_before": "2a885e31711ddaec4f99ac82f93a56f9535d1cefc1566cd9e0bbfc9fff71aefd",
+      "bytes": 4417,
+      "sha256_after": "2a885e31711ddaec4f99ac82f93a56f9535d1cefc1566cd9e0bbfc9fff71aefd"
+    }
+  },
+  "first_model_budget": 0,
+  "production_source_modified": false
+}

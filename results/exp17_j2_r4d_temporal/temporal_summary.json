@@ -1,0 +1,171 @@
+{
+  "scope": "LOCAL_NUMPY_ALIGNMENT_ONLY_NO_MODEL_OR_AUTOGRAD",
+  "epochs": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55,
+    60,
+    65,
+    70,
+    75,
+    80,
+    85,
+    90,
+    95,
+    100
+  ],
+  "checkpoint_spacing_updates": 105,
+  "first_saved_checkpoint_epoch": 5,
+  "first_formal_failure_observed_epoch": 5,
+  "earliest_causal_onset_identifiable": false,
+  "fixed_conf025_saturated_epochs": {
+    "master": [
+      5,
+      10
+    ],
+    "ema": [
+      5,
+      10
+    ]
+  },
+  "fixed_conf025_zero_detection_epochs": {
+    "master": [
+      20,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      100
+    ],
+    "ema": [
+      20,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      100
+    ]
+  },
+  "fixed_conf025_nonzero_detection_epochs": {
+    "master": [
+      5,
+      10,
+      15,
+      25,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95
+    ],
+    "ema": [
+      5,
+      10,
+      15,
+      25,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95
+    ]
+  },
+  "fixed_conf025_FP_reappearance_after_E65": {
+    "master": [
+      70,
+      75,
+      80,
+      85,
+      90,
+      95
+    ],
+    "ema": [
+      70,
+      75,
+      80,
+      85,
+      90,
+      95
+    ]
+  },
+  "all_40_standard_roles_AP0": true,
+  "all_40_fixed_roles_TP0": true,
+  "all_2100_updates_Clip10_triggered": true,
+  "epochs_where_saved_probes_have_positive_Pair4_in_all_24_selected_rows": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55,
+    60,
+    65,
+    70,
+    75,
+    80,
+    85,
+    90,
+    95,
+    100
+  ],
+  "E1_and_E100_training": {
+    "1": {
+      "YOLO_native_mean": 442.8074326288132,
+      "SupCon8_weighted_mean": 31.67589805239723,
+      "Pair4_weighted_mean": 0.7694746851921082,
+      "preclip_norm_mean": 1432.5182596842449,
+      "clip_coefficient_median": 0.008600039171493355
+    },
+    "100": {
+      "YOLO_native_mean": 280.63164992559524,
+      "SupCon8_weighted_mean": 22.466271264212473,
+      "Pair4_weighted_mean": 0.2900161136473928,
+      "total_loss_saved_mean": 303.387939453125,
+      "preclip_norm_mean": 161.43229384649368,
+      "clip_coefficient_median": 0.059518841178924,
+      "active_hinge_step_mean": 0.4721700953535312,
+      "qualified_ABN_step_mean": 23.523809523809526,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.08508610539138317,
+      "LR_group0_mean": 0.0001990000000000001
+    }
+  },
+  "field_semantics": {
+    "training_losses": "Saved native YOLO, 8*raw SupCon, 4*raw Pair. Total retains original saved FP32 value.",
+    "historic_probe_gradients": "Already weighted SupCon8 and Pair4 derived from sealed original Gram matrices; do not weight again. Original probes use AMP, unlike R4-C FP32.",
+    "N_P3": "Already contains Pair4; original logged gradient is unscaled and observed before global parameter clipping.",
+    "hinge": "Mean of per-step anchor fractions, not pooled anchor-weighted fraction or formal class/group loss reduction.",
+    "AdamW": "Algebraic proxy from saved moments. Not a newly executed step and not a component attribution.",
+    "running_statistics": "Saved BN buffers may drift normally. Absolute magnitude or change does not measure input-statistic mismatch."
+  },
+  "evidence_gaps": [
+    "No connected-statistic historical gradient vectors were saved at epochs5\u201395.",
+    "No historical per-BN actual input activation statistics corresponding to these checkpoint epochs were saved.",
+    "Early formal AP0 precedes any available checkpoint-to-checkpoint temporal comparison; early and final failure need not share one cause.",
+    "Endpoint R4-C gradient direction cannot be treated as the gradient direction of preceding updates.",
+    "Original 80 probes are20 checkpoint times by4 fixed batches, not80 independent temporal observations.",
+    "Standard-pass prediction counts are absent from the summary; formal fixed counts apply only at confidence.25."
+  ]
+}

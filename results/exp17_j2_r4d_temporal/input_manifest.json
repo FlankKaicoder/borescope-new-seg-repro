@@ -1,0 +1,152 @@
+{
+  "inputs": {
+    "private_assets\\exp17_j2_r4d_20261124\\evidence\\direction_alignment.json": "63beee5dd149f1030b30787b4684763c2468dd7ed1d3a44a6190ee14111261d4",
+    "private_assets\\exp17_j2_r4d_20261124\\evidence\\parameter_radial_alignment.json": "5099c9fb75d6a51def96d39bd9c26cd20f79fbbf749bfc061222c22afef167df",
+    "private_assets\\exp17_j2_r4d_20261124\\evidence\\completion.json": "3fb2989faf0045e8d2c8c374380fb29f6d86b0fe0bfc487d7841c77be8c844a5",
+    "private_assets\\exp17_j2_r4d_20261124\\evidence\\request.json": "460f188a641724ad3e7c014bd5f8a7fece5f7d8dd03db38e64ae41642da21cca",
+    "private_assets\\exp17_j2_r3_20261124\\analysis_v2\\optimizer_bn_associations.csv": "3ee0e8187d18dfd2dc662ad859c4c7c398ff02d50204e2aaca9a8775cefb5d12",
+    "results\\exp17_j2_r3_bn_drift\\conv_layer_changes.csv": "f3787aba2b7b97d109ca1a1524e13084ff7faf9e9abafbeaecd445ba48448974"
+  },
+  "source_commit": "93ece1d9aed59c8428a40f3894d4c6b8f2448b77",
+  "checkpoint_bindings": [
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery/recovery_slot_0.pt",
+      "sha256": "babfd61d793afd1937e6e8db5dfee645abeb9cad13eb2c33683addf0256b2da3",
+      "label": "B0_slot0_update104",
+      "update": 104
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery/recovery_slot_1.pt",
+      "sha256": "b8671bb8db32b40209020232478fa92e258e1d11681121d265323dc01553f83a",
+      "label": "B0_slot1_update105",
+      "update": 105
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/epoch005_full_recovery.pt",
+      "sha256": "6f1a57552c6b2d48b822c345ddb8d511dcc17e8b9fbe1285bba8378c12a28833",
+      "label": "J2_epoch005",
+      "update": 105
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/epoch010_full_recovery.pt",
+      "sha256": "e73f2f16dbba16d8019a89554e262bd4190683d57524d28ae36b1b0f6036d341",
+      "label": "J2_epoch010",
+      "update": 210
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/epoch015_full_recovery.pt",
+      "sha256": "e3ca1909ac27656506496d15244f07aae4dd249026651b5dafd8844de9c1a869",
+      "label": "J2_epoch015",
+      "update": 315
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/epoch020_full_recovery.pt",
+      "sha256": "1f3a6e5fa69513c763496979f1c92d20a72e35b0bc83edf01670bb0f73a09a20",
+      "label": "J2_epoch020",
+      "update": 420
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/epoch025_full_recovery.pt",
+      "sha256": "96a7288a2f7c57e775fc74f2c8356d94f66bcc2ce02354f8974ee4f7781b5a82",
+      "label": "J2_epoch025",
+      "update": 525
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/epoch030_full_recovery.pt",
+      "sha256": "fa2cbea2b43f0073b6554fd1085043d2f43a7329e644122439b382c50fbc181a",
+      "label": "J2_epoch030",
+      "update": 630
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/epoch035_full_recovery.pt",
+      "sha256": "13bba5c2b6e2716bfc9f549c01695a85854e96a2d3c87f09c9c06d124d9dccb5",
+      "label": "J2_epoch035",
+      "update": 735
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/epoch040_full_recovery.pt",
+      "sha256": "5675aa379d96f59576ae7b3db298422d2e5fa4c6d573a49f9fd64f6c81a4738c",
+      "label": "J2_epoch040",
+      "update": 840
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/epoch045_full_recovery.pt",
+      "sha256": "f3d3bc95c83b6ee66bda732ebfbf84d1355db3157a8419b4fef0dcb64a2b9728",
+      "label": "J2_epoch045",
+      "update": 945
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/epoch050_full_recovery.pt",
+      "sha256": "b6c13954daaf53834e399604bc6cd5aad3ec2a3755c6a8e31862d76d7adb2383",
+      "label": "J2_epoch050",
+      "update": 1050
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/epoch055_full_recovery.pt",
+      "sha256": "625e1ef291953a46150422d8d457b62c94aa646d0a540e04cdd945f93b0e0df9",
+      "label": "J2_epoch055",
+      "update": 1155
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/epoch060_full_recovery.pt",
+      "sha256": "048a6018fd749ad5d12cc1a07c39a5a92748095b7c62fed5532dfdc9fbf5c042",
+      "label": "J2_epoch060",
+      "update": 1260
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/epoch065_full_recovery.pt",
+      "sha256": "9b30f99ddd9a5fe394572d520dbc79c1af0c10943219f4e229bfc45f5971e867",
+      "label": "J2_epoch065",
+      "update": 1365
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/epoch070_full_recovery.pt",
+      "sha256": "7f64c2c9701cf12592aa2d9be7647a98cf1f45eae9ca7682125cc7cff5fa55b9",
+      "label": "J2_epoch070",
+      "update": 1470
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/epoch075_full_recovery.pt",
+      "sha256": "94335db3caafcdce8800d1ed5131b63b6110a74c9b251165009dc5ffb4ee7ed5",
+      "label": "J2_epoch075",
+      "update": 1575
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/epoch080_full_recovery.pt",
+      "sha256": "12f21d7ab41760cafce57cbc7a12c5c0bb1fd32e2b3026485b8459e63fbc1f95",
+      "label": "J2_epoch080",
+      "update": 1680
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/epoch085_full_recovery.pt",
+      "sha256": "a4ab825a3b665630102572e71d3ed822fa863e404bcafea5e27b799bff072e26",
+      "label": "J2_epoch085",
+      "update": 1785
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/epoch090_full_recovery.pt",
+      "sha256": "da4d066ada436b8584ae18ff5af3eb7b220cc7a719024334b4b24af746ee75be",
+      "label": "J2_epoch090",
+      "update": 1890
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/epoch095_full_recovery.pt",
+      "sha256": "d13e1483388e1ae240ab2cc91f0f240fbc7f51bc770c45ef126cdbb8cb944088",
+      "label": "J2_epoch095",
+      "update": 1995
+    },
+    {
+      "path": "/root/autodl-tmp/exp17_j2_seed42_formal_v1/recovery_r1_v1/recovery_slot_0.pt",
+      "sha256": "79b237241517e9112687f9ecd155d21c096ce54243e9a8267b21a963d58c675e",
+      "label": "J2_epoch100",
+      "update": 2100
+    }
+  ],
+  "all_inputs_unchanged": true,
+  "private_remote_archive": {
+    "path": "/root/autodl-tmp/exp17_j2_r4d_temporal_20261124_v2_evidence.tar.gz",
+    "bytes": 557720,
+    "sha256": "46d76a67492cdc1aa455329f384b287621f6fc08f13e17a6cea4f296160bed24",
+    "files": 12
+  }
+}

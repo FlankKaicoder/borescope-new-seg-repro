@@ -1,0 +1,244 @@
+{
+  "source_SHA256": {
+    "private_assets\\exp17_j2_r3_20261124\\analysis_v2\\training_steps.csv": "d83e02d64f21cae2fc70e2d29712551b9e61fca9243cc1735e4c9e7fd837e822",
+    "results\\exp17g_formal_protocol\\formal_training_protocol_v1.json": "613e4e154a872e0fd88791013f8e63716100470bb4a2f73084b702bb5cd37e44",
+    "docs\\exp17\\EXP17_J2_R1_ENGINEERING_HANDOFF.md": "0ab49b3c962d02f161bfee4ff7b753f30a91aef0631f4cde6b891c41257095b5"
+  },
+  "selected_updates": [
+    {
+      "update": 1,
+      "epoch": 1,
+      "batch_index_zero_based": 0,
+      "warmup_from_frozen_protocol": true,
+      "LR": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "gradient_norm_preclip": 3591.690673828125,
+      "clip_coefficient": 0.0027842041270657405,
+      "YOLO_native": 434.87261962890625,
+      "SupCon8": 32.400394439697266,
+      "Pair4": 0.7669514417648315,
+      "AMP_before_scale_in_saved_step": 1.0
+    },
+    {
+      "update": 21,
+      "epoch": 1,
+      "batch_index_zero_based": 20,
+      "warmup_from_frozen_protocol": true,
+      "LR": [
+        0.0031746031746031746,
+        0.0031746031746031746,
+        0.07142857142857142
+      ],
+      "gradient_norm_preclip": 452.5845031738281,
+      "clip_coefficient": 0.02209532122239698,
+      "YOLO_native": 391.5435791015625,
+      "SupCon8": 29.085363388061523,
+      "Pair4": 0.721947431564331,
+      "AMP_before_scale_in_saved_step": 1.0
+    },
+    {
+      "update": 42,
+      "epoch": 2,
+      "batch_index_zero_based": 20,
+      "warmup_from_frozen_protocol": true,
+      "LR": [
+        0.0064435079365079365,
+        0.0064435079365079365,
+        0.041364142857142856
+      ],
+      "gradient_norm_preclip": 333.0039367675781,
+      "clip_coefficient": 0.030029674925284376,
+      "YOLO_native": 429.872314453125,
+      "SupCon8": 28.641761779785156,
+      "Pair4": 0.6576574444770813,
+      "AMP_before_scale_in_saved_step": 1.0
+    },
+    {
+      "update": 62,
+      "epoch": 3,
+      "batch_index_zero_based": 19,
+      "warmup_from_frozen_protocol": true,
+      "LR": [
+        0.009490825396825397,
+        0.009490825396825397,
+        0.012665428571428577
+      ],
+      "gradient_norm_preclip": 267.2979431152344,
+      "clip_coefficient": 0.03741143626487795,
+      "YOLO_native": 464.79937744140625,
+      "SupCon8": 28.992347717285156,
+      "Pair4": 0.564795196056366,
+      "AMP_before_scale_in_saved_step": 1.0
+    },
+    {
+      "update": 63,
+      "epoch": 3,
+      "batch_index_zero_based": 20,
+      "warmup_from_frozen_protocol": true,
+      "LR": [
+        0.0096464126984127,
+        0.0096464126984127,
+        0.011233714285714291
+      ],
+      "gradient_norm_preclip": 274.5445861816406,
+      "clip_coefficient": 0.036423956132793575,
+      "YOLO_native": 431.8157958984375,
+      "SupCon8": 30.383424758911133,
+      "Pair4": 0.6255013346672058,
+      "AMP_before_scale_in_saved_step": 1.0
+    },
+    {
+      "update": 64,
+      "epoch": 4,
+      "batch_index_zero_based": 0,
+      "warmup_from_frozen_protocol": false,
+      "LR": [
+        0.009703,
+        0.009703,
+        0.009703
+      ],
+      "gradient_norm_preclip": 257.59503173828125,
+      "clip_coefficient": 0.03882062434860724,
+      "YOLO_native": 477.63751220703125,
+      "SupCon8": 31.55162811279297,
+      "Pair4": 0.6452752351760864,
+      "AMP_before_scale_in_saved_step": 1.0
+    },
+    {
+      "update": 84,
+      "epoch": 4,
+      "batch_index_zero_based": 20,
+      "warmup_from_frozen_protocol": false,
+      "LR": [
+        0.009703,
+        0.009703,
+        0.009703
+      ],
+      "gradient_norm_preclip": 124.65686798095703,
+      "clip_coefficient": 0.08022020833466972,
+      "YOLO_native": 392.337646484375,
+      "SupCon8": 32.329345703125,
+      "Pair4": 0.5938899517059326,
+      "AMP_before_scale_in_saved_step": 1.0
+    },
+    {
+      "update": 104,
+      "epoch": 5,
+      "batch_index_zero_based": 19,
+      "warmup_from_frozen_protocol": false,
+      "LR": [
+        0.009604,
+        0.009604,
+        0.009604
+      ],
+      "gradient_norm_preclip": 338.97802734375,
+      "clip_coefficient": 0.029500437089861248,
+      "YOLO_native": 412.49188232421875,
+      "SupCon8": 30.45677375793457,
+      "Pair4": 0.46805819869041443,
+      "AMP_before_scale_in_saved_step": 1.0
+    },
+    {
+      "update": 105,
+      "epoch": 5,
+      "batch_index_zero_based": 20,
+      "warmup_from_frozen_protocol": false,
+      "LR": [
+        0.009604,
+        0.009604,
+        0.009604
+      ],
+      "gradient_norm_preclip": 192.78211975097656,
+      "clip_coefficient": 0.051872030253870646,
+      "YOLO_native": 392.02117919921875,
+      "SupCon8": 33.172672271728516,
+      "Pair4": 0.4257376194000244,
+      "AMP_before_scale_in_saved_step": 1.0
+    },
+    {
+      "update": 106,
+      "epoch": 6,
+      "batch_index_zero_based": 0,
+      "warmup_from_frozen_protocol": false,
+      "LR": [
+        0.009505,
+        0.009505,
+        0.009505
+      ],
+      "gradient_norm_preclip": 163.05435180664062,
+      "clip_coefficient": 0.0613292428436951,
+      "YOLO_native": 450.2006530761719,
+      "SupCon8": 29.149003982543945,
+      "Pair4": 0.48295924067497253,
+      "AMP_before_scale_in_saved_step": 1.0
+    },
+    {
+      "update": 126,
+      "epoch": 6,
+      "batch_index_zero_based": 20,
+      "warmup_from_frozen_protocol": false,
+      "LR": [
+        0.009505,
+        0.009505,
+        0.009505
+      ],
+      "gradient_norm_preclip": 149.6546173095703,
+      "clip_coefficient": 0.0668205239033409,
+      "YOLO_native": 372.79449462890625,
+      "SupCon8": 33.23949432373047,
+      "Pair4": 0.4786433279514313,
+      "AMP_before_scale_in_saved_step": 1.0
+    }
+  ],
+  "descriptive_windows": [
+    {
+      "label": "warmup",
+      "updates_inclusive": [
+        1,
+        63
+      ],
+      "update_count": 63,
+      "YOLO_native_mean": 458.2285611591642,
+      "Pair4_mean": 0.6752638745875585,
+      "gradient_preclip_median": 452.5845031738281,
+      "clip_coefficient_median": 0.02209532122239698
+    },
+    {
+      "label": "postwarmup_before_R1",
+      "updates_inclusive": [
+        64,
+        105
+      ],
+      "update_count": 42,
+      "YOLO_native_mean": 457.90571957542784,
+      "Pair4_mean": 0.5714449077135041,
+      "gradient_preclip_median": 179.83281707763672,
+      "clip_coefficient_median": 0.05566963556066401
+    },
+    {
+      "label": "first_continuation_epoch",
+      "updates_inclusive": [
+        106,
+        126
+      ],
+      "update_count": 21,
+      "YOLO_native_mean": 442.58776419503346,
+      "Pair4_mean": 0.413408168724605,
+      "gradient_preclip_median": 175.0004119873047,
+      "clip_coefficient_median": 0.05714272229017794
+    }
+  ],
+  "first_nonwarmup_update": 64,
+  "first_R1_continuation_update": 106,
+  "historical_E5_provenance": {
+    "MASTER_standard_and_fixed": "Originally executed before R1 repair; post-hoc sealed association accepted in R1, not newly generated direct identity fields.",
+    "EMA_standard_and_fixed": "Executed during R1 AUX5 recovery using restored105-step state; no optimizer update or repeated MASTER pass.",
+    "E5_training_updates": "All105 updates precede the R1 isolation repair.",
+    "inference": "R1 activation isolation repair cannot be the onset of the already-observed E5 MASTER AP0; this does not prove all later functional defects have the same cause."
+  },
+  "new_forward": 0,
+  "new_autograd": 0
+}

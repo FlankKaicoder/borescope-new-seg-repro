@@ -1,0 +1,22 @@
+{
+  "status": "EXP17_J2_R4_D_OFFLINE_TEMPORAL_ANALYSIS_COMPLETE_PENDING_CHATGPT_REVIEW",
+  "scientific_status": "DETACH_SCALE_DRIFT_MECHANISM_SUPPORTED_HISTORICAL_CAUSALITY_UNRESOLVED",
+  "new_model_forward": 0,
+  "Autograd": 0,
+  "optimizer_update": 0,
+  "VAL": 0,
+  "TEST": 0,
+  "checkpoints_read": 22,
+  "Neck16_intervals": 19,
+  "Neck16_positive_alignment_with_negative_detached_excess": 19,
+  "Neck16_median_cosine": 0.4978220775016891,
+  "earlier_onset_unknown": true,
+  "R1_not_first_MASTER_AP0_onset": true,
+  "formal_Last_MASTER_Mask_AP": 0,
+  "formal_native_passes": 80,
+  "next_scope": "R4-E two TRAIN forward proposal only; not executed",
+  "row_magnitude_matches": 895,
+  "distinct_magnitude_checks": 179,
+  "first_full_epoch_boundary_and_first_failed_evaluation_epoch": 5,
+  "earliest_preserved_update_read": 104
+}

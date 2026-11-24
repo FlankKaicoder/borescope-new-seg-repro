@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "reader_completion": {
+    "status": "R4_D_CPU_SAVED_TENSOR_ALGEBRA_COMPLETE",
+    "input_SHA_unchanged": 30,
+    "checkpoints": 22,
+    "direction_rows": 4200,
+    "radial_rows": 9900,
+    "forbidden_calls": {
+      "model_constructor": 0,
+      "model_call": 0,
+      "functional_model": 0,
+      "autograd": 0,
+      "optimizer": 0,
+      "save": 0,
+      "cuda": 0
+    },
+    "CUDA_initialized": false,
+    "CPU_RNG_unchanged": true,
+    "elapsed_seconds": 41.248756430111825,
+    "arithmetic_fixture_tests": 8,
+    "warning": "Endpoint direction alignment is descriptive and does not identify historical gradient contribution."
+  },
+  "8_arithmetic_fixtures": true,
+  "new_forward": 0,
+  "new_Autograd": 0,
+  "optimizer_update": 0,
+  "VAL": 0,
+  "TEST": 0,
+  "first_reader_failure": "Frozen DFL parameter lacks AdamW state; first reader stopped before outputs. Second reader reads only the exact294 trainable names. Both versions/logs preserved.",
+  "R3_row_magnitude_matches": 895,
+  "R3_distinct_magnitude_checks": 179,
+  "repetition_note": "Five endpoint references share the same historical magnitude in each domain.895 row checks represent179 distinct historical magnitudes."
+}

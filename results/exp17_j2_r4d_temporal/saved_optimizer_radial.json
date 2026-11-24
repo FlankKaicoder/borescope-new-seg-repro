@@ -1,0 +1,1002 @@
+[
+  {
+    "epoch": 5,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 3.2172491989069316,
+    "negative_adaptive_outward_component": 0.002077332862459708,
+    "decay_inward_component": 1.5449230653151086e-05,
+    "net_proxy_outward_component": 0.002061883631806557,
+    "lr": 0.009604,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 10,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 3.425842989950733,
+    "negative_adaptive_outward_component": 0.001696195307071724,
+    "decay_inward_component": 1.5603001897730616e-05,
+    "net_proxy_outward_component": 0.0016805923051739933,
+    "lr": 0.009109,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 15,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 3.6472203946157613,
+    "negative_adaptive_outward_component": 0.0022831928182030507,
+    "decay_inward_component": 1.5708578239610087e-05,
+    "net_proxy_outward_component": 0.0022674842399634408,
+    "lr": 0.008614,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 20,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 3.9133202159871785,
+    "negative_adaptive_outward_component": 0.002711684106434632,
+    "decay_inward_component": 1.5886123416799956e-05,
+    "net_proxy_outward_component": 0.0026957979830178323,
+    "lr": 0.008119000000000001,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 25,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 4.202021456566726,
+    "negative_adaptive_outward_component": 0.002176644116691521,
+    "decay_inward_component": 1.6018105792432362e-05,
+    "net_proxy_outward_component": 0.0021606260108990886,
+    "lr": 0.007624,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 30,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 4.409470508997498,
+    "negative_adaptive_outward_component": 0.002239006977323874,
+    "decay_inward_component": 1.5717557629321586e-05,
+    "net_proxy_outward_component": 0.0022232894196945524,
+    "lr": 0.007129,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 35,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 4.63129648252374,
+    "negative_adaptive_outward_component": 0.0021968579512881515,
+    "decay_inward_component": 1.5362010432531246e-05,
+    "net_proxy_outward_component": 0.0021814959408556203,
+    "lr": 0.006633999999999999,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 40,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 4.791283197851045,
+    "negative_adaptive_outward_component": 0.001064480218372025,
+    "decay_inward_component": 1.4706843775803784e-05,
+    "net_proxy_outward_component": 0.0010497733745962212,
+    "lr": 0.006139,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 45,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 4.971386948623511,
+    "negative_adaptive_outward_component": 0.0017805224376199781,
+    "decay_inward_component": 1.402925396901555e-05,
+    "net_proxy_outward_component": 0.0017664931836509625,
+    "lr": 0.005644000000000001,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 50,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 5.114651010876429,
+    "negative_adaptive_outward_component": 0.0012749500562279105,
+    "decay_inward_component": 1.3167669027501367e-05,
+    "net_proxy_outward_component": 0.0012617823872004092,
+    "lr": 0.005149,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 55,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 5.239319289783006,
+    "negative_adaptive_outward_component": 0.0012639973128507208,
+    "decay_inward_component": 1.2191895987325055e-05,
+    "net_proxy_outward_component": 0.0012518054168633957,
+    "lr": 0.004654,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 60,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 5.356819487013889,
+    "negative_adaptive_outward_component": 0.0011721121902146631,
+    "decay_inward_component": 1.1139506123245383e-05,
+    "net_proxy_outward_component": 0.0011609726840914178,
+    "lr": 0.004159,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 65,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 5.485826319540446,
+    "negative_adaptive_outward_component": 0.0006521988638775799,
+    "decay_inward_component": 1.0050033817398098e-05,
+    "net_proxy_outward_component": 0.0006421488300601819,
+    "lr": 0.003664,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 70,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 5.569975933249688,
+    "negative_adaptive_outward_component": 0.0006669010897079886,
+    "decay_inward_component": 8.825626866234132e-06,
+    "net_proxy_outward_component": 0.0006580754628417544,
+    "lr": 0.003169000000000001,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 75,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 5.656312503443668,
+    "negative_adaptive_outward_component": 0.0008644488201185916,
+    "decay_inward_component": 7.562489817104184e-06,
+    "net_proxy_outward_component": 0.0008568863303014874,
+    "lr": 0.002674,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 80,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 5.729684078213953,
+    "negative_adaptive_outward_component": 0.0004528535879862644,
+    "decay_inward_component": 6.242490803214102e-06,
+    "net_proxy_outward_component": 0.0004466110971830503,
+    "lr": 0.002179,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 85,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 5.7843885601722,
+    "negative_adaptive_outward_component": 0.00042023036879786893,
+    "decay_inward_component": 4.870455167664995e-06,
+    "net_proxy_outward_component": 0.00041535991363020395,
+    "lr": 0.0016840000000000006,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 90,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 5.82327537752728,
+    "negative_adaptive_outward_component": 0.00028159266911507064,
+    "decay_inward_component": 3.461937211939967e-06,
+    "net_proxy_outward_component": 0.0002781307319031307,
+    "lr": 0.0011889999999999997,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 95,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 5.85432404431635,
+    "negative_adaptive_outward_component": 0.0001520090678429058,
+    "decay_inward_component": 2.031450443377775e-06,
+    "net_proxy_outward_component": 0.00014997761739952802,
+    "lr": 0.0006940000000000005,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 100,
+    "parameter": "model.0.conv.weight",
+    "theta_L2": 5.8671182283423295,
+    "negative_adaptive_outward_component": 5.835286204118681e-05,
+    "decay_inward_component": 5.837782637200621e-07,
+    "net_proxy_outward_component": 5.776908377746675e-05,
+    "lr": 0.0001990000000000001,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 5,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 5.070235213419869,
+    "negative_adaptive_outward_component": 0.027013087212955117,
+    "decay_inward_component": 2.4347269494842213e-05,
+    "net_proxy_outward_component": 0.026988739943460276,
+    "lr": 0.009604,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 10,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 7.4515508596543825,
+    "negative_adaptive_outward_component": 0.03250105526885763,
+    "decay_inward_component": 3.3938088390295896e-05,
+    "net_proxy_outward_component": 0.03246711718046733,
+    "lr": 0.009109,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 15,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 10.875786765670425,
+    "negative_adaptive_outward_component": 0.030741832704387684,
+    "decay_inward_component": 4.684201359974253e-05,
+    "net_proxy_outward_component": 0.030694990690787943,
+    "lr": 0.008614,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 20,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 14.526261597663199,
+    "negative_adaptive_outward_component": 0.033928595693468,
+    "decay_inward_component": 5.896935895571379e-05,
+    "net_proxy_outward_component": 0.033869626334512286,
+    "lr": 0.008119000000000001,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 25,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 18.51968878117329,
+    "negative_adaptive_outward_component": 0.04531371653645893,
+    "decay_inward_component": 7.05970536338326e-05,
+    "net_proxy_outward_component": 0.0452431194828251,
+    "lr": 0.007624,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 30,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 22.74726898929178,
+    "negative_adaptive_outward_component": 0.04177610594143446,
+    "decay_inward_component": 8.108264031233056e-05,
+    "net_proxy_outward_component": 0.04169502330112213,
+    "lr": 0.007129,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 35,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 28.16886537734035,
+    "negative_adaptive_outward_component": 0.0529818437396186,
+    "decay_inward_component": 9.343612645663794e-05,
+    "net_proxy_outward_component": 0.052888407613161964,
+    "lr": 0.006633999999999999,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 40,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 34.90522606788887,
+    "negative_adaptive_outward_component": 0.05712074509729751,
+    "decay_inward_component": 0.00010714159141538491,
+    "net_proxy_outward_component": 0.057013603505882124,
+    "lr": 0.006139,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 45,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 41.66981605001299,
+    "negative_adaptive_outward_component": 0.06462421283051428,
+    "decay_inward_component": 0.00011759222089313669,
+    "net_proxy_outward_component": 0.06450662060962115,
+    "lr": 0.005644000000000001,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 50,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 47.851719374702306,
+    "negative_adaptive_outward_component": 0.06060366447008821,
+    "decay_inward_component": 0.00012319425153017112,
+    "net_proxy_outward_component": 0.06048047021855804,
+    "lr": 0.005149,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 55,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 54.41362776748053,
+    "negative_adaptive_outward_component": 0.056203162245241245,
+    "decay_inward_component": 0.0001266205118149272,
+    "net_proxy_outward_component": 0.05607654173342632,
+    "lr": 0.004654,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 60,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 59.187598881884554,
+    "negative_adaptive_outward_component": 0.041000597655535403,
+    "decay_inward_component": 0.00012308061187487894,
+    "net_proxy_outward_component": 0.04087751704366052,
+    "lr": 0.004159,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 65,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 62.809108016531546,
+    "negative_adaptive_outward_component": 0.0337883375854658,
+    "decay_inward_component": 0.00011506628588628582,
+    "net_proxy_outward_component": 0.03367327129957952,
+    "lr": 0.003664,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 70,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 66.37598339102966,
+    "negative_adaptive_outward_component": 0.026391103343609938,
+    "decay_inward_component": 0.00010517274568308657,
+    "net_proxy_outward_component": 0.026285930597926853,
+    "lr": 0.003169000000000001,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 75,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 69.85475933212528,
+    "negative_adaptive_outward_component": 0.03397598473121437,
+    "decay_inward_component": 9.339581322705153e-05,
+    "net_proxy_outward_component": 0.033882588917987316,
+    "lr": 0.002674,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 80,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 72.68646576076944,
+    "negative_adaptive_outward_component": 0.025067491861808653,
+    "decay_inward_component": 7.919190444635831e-05,
+    "net_proxy_outward_component": 0.024988299957362296,
+    "lr": 0.002179,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 85,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 75.55605732009958,
+    "negative_adaptive_outward_component": 0.02281135739539883,
+    "decay_inward_component": 6.361820026352389e-05,
+    "net_proxy_outward_component": 0.022747739195135307,
+    "lr": 0.0016840000000000006,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 90,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 77.53099600190934,
+    "negative_adaptive_outward_component": 0.014883761863659578,
+    "decay_inward_component": 4.609217712313509e-05,
+    "net_proxy_outward_component": 0.014837669686536444,
+    "lr": 0.0011889999999999997,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 95,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 79.12246323649424,
+    "negative_adaptive_outward_component": 0.008958857810021308,
+    "decay_inward_component": 2.7455494743063524e-05,
+    "net_proxy_outward_component": 0.008931402315278244,
+    "lr": 0.0006940000000000005,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 100,
+    "parameter": "model.4.cv1.conv.weight",
+    "theta_L2": 79.79070697839231,
+    "negative_adaptive_outward_component": 0.003355743820170777,
+    "decay_inward_component": 7.93917534435004e-06,
+    "net_proxy_outward_component": 0.003347804644826427,
+    "lr": 0.0001990000000000001,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 5,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 9.21034403606096,
+    "negative_adaptive_outward_component": 0.036548837035029175,
+    "decay_inward_component": 4.422807206116474e-05,
+    "net_proxy_outward_component": 0.03650460896296801,
+    "lr": 0.009604,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 10,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 11.962907299317804,
+    "negative_adaptive_outward_component": 0.025015260532266412,
+    "decay_inward_component": 5.448506129474295e-05,
+    "net_proxy_outward_component": 0.02496077547097167,
+    "lr": 0.009109,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 15,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 14.566694870872196,
+    "negative_adaptive_outward_component": 0.023846457599196094,
+    "decay_inward_component": 6.273875480884652e-05,
+    "net_proxy_outward_component": 0.023783718844387246,
+    "lr": 0.008614,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 20,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 17.04800261208632,
+    "negative_adaptive_outward_component": 0.02320483057255974,
+    "decay_inward_component": 6.920636660376445e-05,
+    "net_proxy_outward_component": 0.023135624205955975,
+    "lr": 0.008119000000000001,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 25,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 19.12243934857512,
+    "negative_adaptive_outward_component": 0.02252954131803397,
+    "decay_inward_component": 7.289473879676835e-05,
+    "net_proxy_outward_component": 0.022456646579237204,
+    "lr": 0.007624,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 30,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 21.383228563908656,
+    "negative_adaptive_outward_component": 0.025408864307184434,
+    "decay_inward_component": 7.622051821605238e-05,
+    "net_proxy_outward_component": 0.025332643788968382,
+    "lr": 0.007129,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 35,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 24.109537359977917,
+    "negative_adaptive_outward_component": 0.031749347594364305,
+    "decay_inward_component": 7.997133542304673e-05,
+    "net_proxy_outward_component": 0.031669376258941256,
+    "lr": 0.006633999999999999,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 40,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 26.821218972263576,
+    "negative_adaptive_outward_component": 0.030983337122254494,
+    "decay_inward_component": 8.232773163536307e-05,
+    "net_proxy_outward_component": 0.03090100939061913,
+    "lr": 0.006139,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 45,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 29.548055129985674,
+    "negative_adaptive_outward_component": 0.026081732443660362,
+    "decay_inward_component": 8.338461157681957e-05,
+    "net_proxy_outward_component": 0.025998347832083542,
+    "lr": 0.005644000000000001,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 50,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 31.939047319888154,
+    "negative_adaptive_outward_component": 0.019606393295153568,
+    "decay_inward_component": 8.222707732505201e-05,
+    "net_proxy_outward_component": 0.019524166217828515,
+    "lr": 0.005149,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 55,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 34.34839521979838,
+    "negative_adaptive_outward_component": 0.015058648475784359,
+    "decay_inward_component": 7.99287156764708e-05,
+    "net_proxy_outward_component": 0.014978719760107888,
+    "lr": 0.004654,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 60,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 36.5898262985607,
+    "negative_adaptive_outward_component": 0.026879944593600758,
+    "decay_inward_component": 7.608854378785695e-05,
+    "net_proxy_outward_component": 0.0268038560498129,
+    "lr": 0.004159,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 65,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 38.84129562522572,
+    "negative_adaptive_outward_component": 0.01710232034559562,
+    "decay_inward_component": 7.11572535854135e-05,
+    "net_proxy_outward_component": 0.017031163092010207,
+    "lr": 0.003664,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 70,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 40.96408417343113,
+    "negative_adaptive_outward_component": 0.022265868720045063,
+    "decay_inward_component": 6.490759137280162e-05,
+    "net_proxy_outward_component": 0.022200961128672262,
+    "lr": 0.003169000000000001,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 75,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 43.367415971555495,
+    "negative_adaptive_outward_component": 0.016503864889752317,
+    "decay_inward_component": 5.798223515396967e-05,
+    "net_proxy_outward_component": 0.016445882654598346,
+    "lr": 0.002674,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 80,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 45.16246534473716,
+    "negative_adaptive_outward_component": 0.01741587719678808,
+    "decay_inward_component": 4.920450599309111e-05,
+    "net_proxy_outward_component": 0.017366672690794987,
+    "lr": 0.002179,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 85,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 46.798151485933666,
+    "negative_adaptive_outward_component": 0.010294051821527692,
+    "decay_inward_component": 3.940404355115615e-05,
+    "net_proxy_outward_component": 0.010254647777976536,
+    "lr": 0.0016840000000000006,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 90,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 47.789516526999485,
+    "negative_adaptive_outward_component": 0.0063625493097916935,
+    "decay_inward_component": 2.841086757530117e-05,
+    "net_proxy_outward_component": 0.006334138442216392,
+    "lr": 0.0011889999999999997,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 95,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 48.5029265813103,
+    "negative_adaptive_outward_component": 0.004145138512340155,
+    "decay_inward_component": 1.6830515523714673e-05,
+    "net_proxy_outward_component": 0.0041283079968164405,
+    "lr": 0.0006940000000000005,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 100,
+    "parameter": "model.13.cv1.conv.weight",
+    "theta_L2": 48.82291422822528,
+    "negative_adaptive_outward_component": 0.0016354664928801316,
+    "decay_inward_component": 4.857879965708416e-06,
+    "net_proxy_outward_component": 0.0016306086129144232,
+    "lr": 0.0001990000000000001,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 5,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 8.708734861676101,
+    "negative_adaptive_outward_component": 0.07157759402590144,
+    "decay_inward_component": 4.181934480576864e-05,
+    "net_proxy_outward_component": 0.07153577468109568,
+    "lr": 0.009604,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 10,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 14.52302763651428,
+    "negative_adaptive_outward_component": 0.06968740006464166,
+    "decay_inward_component": 6.614512937050431e-05,
+    "net_proxy_outward_component": 0.06962125493527116,
+    "lr": 0.009109,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 15,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 22.269673012308996,
+    "negative_adaptive_outward_component": 0.08725339835844462,
+    "decay_inward_component": 9.591548166401487e-05,
+    "net_proxy_outward_component": 0.0871574828767806,
+    "lr": 0.008614,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 20,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 32.98369215926273,
+    "negative_adaptive_outward_component": 0.1121057833210245,
+    "decay_inward_component": 0.0001338972983205271,
+    "net_proxy_outward_component": 0.11197188602270397,
+    "lr": 0.008119000000000001,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 25,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 44.29779742133015,
+    "negative_adaptive_outward_component": 0.11276063849795248,
+    "decay_inward_component": 0.0001688632037701105,
+    "net_proxy_outward_component": 0.11259177529418236,
+    "lr": 0.007624,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 30,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 55.55097854020985,
+    "negative_adaptive_outward_component": 0.11860524707486597,
+    "decay_inward_component": 0.00019801146300657798,
+    "net_proxy_outward_component": 0.1184072356118594,
+    "lr": 0.007129,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 35,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 68.68800792130905,
+    "negative_adaptive_outward_component": 0.13600605867012983,
+    "decay_inward_component": 0.00022783812227498206,
+    "net_proxy_outward_component": 0.13577822054785485,
+    "lr": 0.006633999999999999,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 40,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 81.07913799261755,
+    "negative_adaptive_outward_component": 0.126046730126214,
+    "decay_inward_component": 0.0002488724140683396,
+    "net_proxy_outward_component": 0.12579785771214566,
+    "lr": 0.006139,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 45,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 94.50884366710243,
+    "negative_adaptive_outward_component": 0.129128354006295,
+    "decay_inward_component": 0.0002667039568285631,
+    "net_proxy_outward_component": 0.12886165004946643,
+    "lr": 0.005644000000000001,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 50,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 106.28674437566255,
+    "negative_adaptive_outward_component": 0.0951482133195766,
+    "decay_inward_component": 0.0002736352233951433,
+    "net_proxy_outward_component": 0.09487457809618145,
+    "lr": 0.005149,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 55,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 116.38170603521573,
+    "negative_adaptive_outward_component": 0.07693376770162394,
+    "decay_inward_component": 0.0002708202299439469,
+    "net_proxy_outward_component": 0.07666294747168,
+    "lr": 0.004654,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 60,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 125.08587923295309,
+    "negative_adaptive_outward_component": 0.11218831474665465,
+    "decay_inward_component": 0.0002601160858649259,
+    "net_proxy_outward_component": 0.11192819866078972,
+    "lr": 0.004159,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 65,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 133.66128821994792,
+    "negative_adaptive_outward_component": 0.07581008403823011,
+    "decay_inward_component": 0.0002448674800189446,
+    "net_proxy_outward_component": 0.07556521655821116,
+    "lr": 0.003664,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 70,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 141.13190339883516,
+    "negative_adaptive_outward_component": 0.06471342408530024,
+    "decay_inward_component": 0.00022362350093545438,
+    "net_proxy_outward_component": 0.06448980058436479,
+    "lr": 0.003169000000000001,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 75,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 148.71863035086594,
+    "negative_adaptive_outward_component": 0.06716579664437101,
+    "decay_inward_component": 0.00019883680877910774,
+    "net_proxy_outward_component": 0.06696695983559191,
+    "lr": 0.002674,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 80,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 154.8096582501218,
+    "negative_adaptive_outward_component": 0.049368035673313736,
+    "decay_inward_component": 0.0001686651226635077,
+    "net_proxy_outward_component": 0.049199370550650226,
+    "lr": 0.002179,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 85,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 159.85853138422664,
+    "negative_adaptive_outward_component": 0.034971770685448,
+    "decay_inward_component": 0.00013460088342551885,
+    "net_proxy_outward_component": 0.034837169802022484,
+    "lr": 0.0016840000000000006,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 90,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 163.1402682691257,
+    "negative_adaptive_outward_component": 0.021369299765700345,
+    "decay_inward_component": 9.698688948599522e-05,
+    "net_proxy_outward_component": 0.02127231287621435,
+    "lr": 0.0011889999999999997,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 95,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 165.48307204108386,
+    "negative_adaptive_outward_component": 0.014028121394258687,
+    "decay_inward_component": 5.7422625998256135e-05,
+    "net_proxy_outward_component": 0.013970698768260431,
+    "lr": 0.0006940000000000005,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 100,
+    "parameter": "model.16.cv1.conv.weight",
+    "theta_L2": 166.507012197101,
+    "negative_adaptive_outward_component": 0.005306420456593819,
+    "decay_inward_component": 1.6567447713611555e-05,
+    "net_proxy_outward_component": 0.005289853008880208,
+    "lr": 0.0001990000000000001,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 5,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 6.780391227999511,
+    "negative_adaptive_outward_component": 0.06203189951042873,
+    "decay_inward_component": 3.2559438676853656e-05,
+    "net_proxy_outward_component": 0.061999340071751875,
+    "lr": 0.009604,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 10,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 11.797665228147089,
+    "negative_adaptive_outward_component": 0.0597573822646252,
+    "decay_inward_component": 5.373246628159593e-05,
+    "net_proxy_outward_component": 0.059703649798343604,
+    "lr": 0.009109,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 15,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 18.034620476164854,
+    "negative_adaptive_outward_component": 0.06399900903703373,
+    "decay_inward_component": 7.767511039084205e-05,
+    "net_proxy_outward_component": 0.06392133392664288,
+    "lr": 0.008614,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 20,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 25.29332390831407,
+    "negative_adaptive_outward_component": 0.07645286333918327,
+    "decay_inward_component": 0.00010267824840580101,
+    "net_proxy_outward_component": 0.07635018509077747,
+    "lr": 0.008119000000000001,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 25,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 32.52120748976496,
+    "negative_adaptive_outward_component": 0.06776863216653098,
+    "decay_inward_component": 0.00012397084295098407,
+    "net_proxy_outward_component": 0.06764466132357999,
+    "lr": 0.007624,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 30,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 39.360903797728106,
+    "negative_adaptive_outward_component": 0.07072881337461996,
+    "decay_inward_component": 0.00014030194158700187,
+    "net_proxy_outward_component": 0.07058851143303296,
+    "lr": 0.007129,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 35,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 46.67920148568046,
+    "negative_adaptive_outward_component": 0.07249596236893537,
+    "decay_inward_component": 0.0001548349113280021,
+    "net_proxy_outward_component": 0.07234112745760736,
+    "lr": 0.006633999999999999,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 40,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 53.747547762398405,
+    "negative_adaptive_outward_component": 0.07520141647315792,
+    "decay_inward_component": 0.00016497809785668196,
+    "net_proxy_outward_component": 0.07503643837530125,
+    "lr": 0.006139,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 45,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 61.402725943812875,
+    "negative_adaptive_outward_component": 0.07142596275939343,
+    "decay_inward_component": 0.00017327849261343997,
+    "net_proxy_outward_component": 0.07125268426678,
+    "lr": 0.005644000000000001,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 50,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 68.05485375249339,
+    "negative_adaptive_outward_component": 0.0550250481076135,
+    "decay_inward_component": 0.00017520722098579423,
+    "net_proxy_outward_component": 0.054849840886627706,
+    "lr": 0.005149,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 55,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 74.10539008816173,
+    "negative_adaptive_outward_component": 0.05157331710042645,
+    "decay_inward_component": 0.00017244324273515236,
+    "net_proxy_outward_component": 0.0514008738576913,
+    "lr": 0.004654,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 60,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 79.4368488112923,
+    "negative_adaptive_outward_component": 0.06637607769190583,
+    "decay_inward_component": 0.00016518892710308235,
+    "net_proxy_outward_component": 0.06621088876480274,
+    "lr": 0.004159,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 65,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 84.53078247355005,
+    "negative_adaptive_outward_component": 0.04652639790542151,
+    "decay_inward_component": 0.00015486039349154373,
+    "net_proxy_outward_component": 0.04637153751192997,
+    "lr": 0.003664,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 70,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 89.00303727474444,
+    "negative_adaptive_outward_component": 0.04016964821618079,
+    "decay_inward_component": 0.00014102531256183264,
+    "net_proxy_outward_component": 0.04002862290361896,
+    "lr": 0.003169000000000001,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 75,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 93.55657150335969,
+    "negative_adaptive_outward_component": 0.04044129835142906,
+    "decay_inward_component": 0.00012508513609999194,
+    "net_proxy_outward_component": 0.04031621321532907,
+    "lr": 0.002674,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 80,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 97.22241761586535,
+    "negative_adaptive_outward_component": 0.028203104507621056,
+    "decay_inward_component": 0.00010592382399248531,
+    "net_proxy_outward_component": 0.02809718068362857,
+    "lr": 0.002179,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 85,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 100.28684649896749,
+    "negative_adaptive_outward_component": 0.021848473013907927,
+    "decay_inward_component": 8.444152475213068e-05,
+    "net_proxy_outward_component": 0.021764031489155795,
+    "lr": 0.0016840000000000006,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 90,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 102.2432998365132,
+    "negative_adaptive_outward_component": 0.012271636477024837,
+    "decay_inward_component": 6.078364175280709e-05,
+    "net_proxy_outward_component": 0.01221085283527203,
+    "lr": 0.0011889999999999997,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 95,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 103.56836862868758,
+    "negative_adaptive_outward_component": 0.007389784946269558,
+    "decay_inward_component": 3.593822391415462e-05,
+    "net_proxy_outward_component": 0.007353846722355404,
+    "lr": 0.0006940000000000005,
+    "not_actual_next_update": true
+  },
+  {
+    "epoch": 100,
+    "parameter": "model.16.cv2.conv.weight",
+    "theta_L2": 104.13428308469794,
+    "negative_adaptive_outward_component": 0.002941761971169469,
+    "decay_inward_component": 1.0361361166927451e-05,
+    "net_proxy_outward_component": 0.0029314006100025413,
+    "lr": 0.0001990000000000001,
+    "not_actual_next_update": true
+  }
+]

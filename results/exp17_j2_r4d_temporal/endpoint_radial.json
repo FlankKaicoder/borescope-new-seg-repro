@@ -1,0 +1,290 @@
+{
+  "definitions": {
+    "Graph_A": "production detached replay_a at final checkpoint, fixed TRAIN batch1, FP32",
+    "Graph_B": "same forward with connected A-statistics surrogate at final checkpoint",
+    "added_statistic_gradient": "s = gB - gA",
+    "detached_excess": "d = gA - gB = -s; private raw key omitted_pair4",
+    "direction_reference": "-gA, -gB, -d; compare with real historical parameter displacement",
+    "cosine_interpretation": "descriptive alignment, not historical gradients, causal attribution or drift-explained fraction",
+    "saved_moment_proxy": "post-step bias-corrected AdamW adaptive direction at saved LR; mixed clipped history, not loss-decomposable",
+    "radial_proxy": "positive outward projection onto current saved parameter; not BN input translation",
+    "batch_mismatch": "final optimizer state ends at batch21; R4-C gradient uses position1"
+  },
+  "rows": [
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.0.conv.weight",
+      "reference": "A_pair4",
+      "x_L2": 12.152252381010317,
+      "y_L2": 5.8671182283423295,
+      "dot": -0.08517565303194519,
+      "cosine": -0.0011946311964696878,
+      "projection_on_y_unit": -0.014517459801727969
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.0.conv.weight",
+      "reference": "B_pair4",
+      "x_L2": 1.4131454149208487,
+      "y_L2": 5.8671182283423295,
+      "dot": -0.01549903448930793,
+      "cosine": -0.0018693600241636754,
+      "projection_on_y_unit": -0.002641677546983225
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.0.conv.weight",
+      "reference": "detached_excess",
+      "x_L2": 11.124355039500953,
+      "y_L2": 5.8671182283423295,
+      "dot": -0.06967661736196906,
+      "cosine": -0.0010675479172806705,
+      "projection_on_y_unit": -0.011875782053509972
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.0.conv.weight",
+      "reference": "A_yolo",
+      "x_L2": 92.03072596190526,
+      "y_L2": 5.8671182283423295,
+      "dot": 2.151208252224321,
+      "cosine": 0.003984049884119781,
+      "projection_on_y_unit": 0.3666550031039879
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.0.conv.weight",
+      "reference": "A_supcon8",
+      "x_L2": 27.198994094665412,
+      "y_L2": 5.8671182283423295,
+      "dot": 0.36012508202549265,
+      "cosine": 0.002256709658741886,
+      "projection_on_y_unit": 0.06138023268149496
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.4.cv1.conv.weight",
+      "reference": "A_pair4",
+      "x_L2": 8.712081729044423,
+      "y_L2": 79.79070697839231,
+      "dot": 392.5161029110759,
+      "cosine": 0.564655059940912,
+      "projection_on_y_unit": 4.919321030923703
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.4.cv1.conv.weight",
+      "reference": "B_pair4",
+      "x_L2": 0.34036510820896937,
+      "y_L2": 79.79070697839231,
+      "dot": 0.0020110712214029616,
+      "cosine": 7.405085975781496e-05,
+      "projection_on_y_unit": 2.52043288944359e-05
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.4.cv1.conv.weight",
+      "reference": "detached_excess",
+      "x_L2": 8.70589585117565,
+      "y_L2": 79.79070697839231,
+      "dot": 392.51409183184614,
+      "cosine": 0.5650533742406458,
+      "projection_on_y_unit": 4.919295826494441
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.4.cv1.conv.weight",
+      "reference": "A_yolo",
+      "x_L2": 14.896592347915602,
+      "y_L2": 79.79070697839231,
+      "dot": 0.007880938025316642,
+      "cosine": 6.63038376367893e-06,
+      "projection_on_y_unit": 9.87701240377634e-05
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.4.cv1.conv.weight",
+      "reference": "A_supcon8",
+      "x_L2": 4.783460241975377,
+      "y_L2": 79.79070697839231,
+      "dot": 0.00641661887348699,
+      "cosine": 1.6811705073215824e-05,
+      "projection_on_y_unit": 8.041812281754365e-05
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.13.cv1.conv.weight",
+      "reference": "A_pair4",
+      "x_L2": 0.360000360018561,
+      "y_L2": 48.82291422822528,
+      "dot": 7.192089575443688,
+      "cosine": 0.4091932432797804,
+      "projection_on_y_unit": 0.14730971489788355
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.13.cv1.conv.weight",
+      "reference": "B_pair4",
+      "x_L2": 0.05006064849865185,
+      "y_L2": 48.82291422822528,
+      "dot": 2.6094959075825645e-06,
+      "cosine": 1.0676685500207502e-06,
+      "projection_on_y_unit": 5.344817999565406e-08
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.13.cv1.conv.weight",
+      "reference": "detached_excess",
+      "x_L2": 0.354228366996174,
+      "y_L2": 48.82291422822528,
+      "dot": 7.192086967207108,
+      "cosine": 0.41586071359747545,
+      "projection_on_y_unit": 0.14730966147549734
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.13.cv1.conv.weight",
+      "reference": "A_yolo",
+      "x_L2": 2.3963949127318807,
+      "y_L2": 48.82291422822528,
+      "dot": 3.875748509085675e-05,
+      "cosine": 3.31263434979467e-07,
+      "projection_on_y_unit": 7.938380103588828e-07
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.13.cv1.conv.weight",
+      "reference": "A_supcon8",
+      "x_L2": 0.8954753730829497,
+      "y_L2": 48.82291422822528,
+      "dot": 4.625179061690243e-06,
+      "cosine": 1.0579160488177353e-07,
+      "projection_on_y_unit": 9.473377685055015e-08
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.16.cv1.conv.weight",
+      "reference": "A_pair4",
+      "x_L2": 6.078796408354432,
+      "y_L2": 166.507012197101,
+      "dot": 611.751118871824,
+      "cosine": 0.6044002652185149,
+      "projection_on_y_unit": 3.6740261614187744
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.16.cv1.conv.weight",
+      "reference": "B_pair4",
+      "x_L2": 0.27597781465279214,
+      "y_L2": 166.507012197101,
+      "dot": 0.002139150448944069,
+      "cosine": 4.655160196924281e-05,
+      "projection_on_y_unit": 1.2847209380058246e-05
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.16.cv1.conv.weight",
+      "reference": "detached_excess",
+      "x_L2": 6.066719452804418,
+      "y_L2": 166.507012197101,
+      "dot": 611.7489797207195,
+      "cosine": 0.6056013209094575,
+      "projection_on_y_unit": 3.6740133142054567
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.16.cv1.conv.weight",
+      "reference": "A_yolo",
+      "x_L2": 11.61858143867455,
+      "y_L2": 166.507012197101,
+      "dot": 0.009753235382553571,
+      "cosine": 5.041538303894107e-06,
+      "projection_on_y_unit": 5.857552335999085e-05
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.16.cv1.conv.weight",
+      "reference": "A_supcon8",
+      "x_L2": 4.259384211371219,
+      "y_L2": 166.507012197101,
+      "dot": -0.011802009171144323,
+      "cosine": -1.6640892043801663e-05,
+      "projection_on_y_unit": -7.087995283450173e-05
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.16.cv2.conv.weight",
+      "reference": "A_pair4",
+      "x_L2": 5.969325317519211,
+      "y_L2": 104.13428308469794,
+      "dot": 231.84721142764593,
+      "cosine": 0.3729777265798237,
+      "projection_on_y_unit": 2.2264253861436996
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.16.cv2.conv.weight",
+      "reference": "B_pair4",
+      "x_L2": 0.3268504521864486,
+      "y_L2": 104.13428308469794,
+      "dot": 0.0010877059727633226,
+      "cosine": 3.1957197871389405e-05,
+      "projection_on_y_unit": 1.0445224574875439e-05
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.16.cv2.conv.weight",
+      "reference": "detached_excess",
+      "x_L2": 5.94552813918924,
+      "y_L2": 104.13428308469794,
+      "dot": 231.84612372312353,
+      "cosine": 0.3744688257814985,
+      "projection_on_y_unit": 2.2264149409330525
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.16.cv2.conv.weight",
+      "reference": "A_yolo",
+      "x_L2": 16.053017231023357,
+      "y_L2": 104.13428308469794,
+      "dot": -0.04469296131850253,
+      "cosine": -2.673552571483064e-05,
+      "projection_on_y_unit": -0.00042918585498064434
+    },
+    {
+      "epoch": 100.0,
+      "update": 2100,
+      "parameter": "model.16.cv2.conv.weight",
+      "reference": "A_supcon8",
+      "x_L2": 6.351981576744936,
+      "y_L2": 104.13428308469794,
+      "dot": -0.00266840970304677,
+      "cosine": -4.034126848034511e-06,
+      "projection_on_y_unit": -2.562469941696733e-05
+    }
+  ]
+}

@@ -1,0 +1,1282 @@
+[
+  {
+    "epoch": 5,
+    "committed_update": 105,
+    "epoch_training": {
+      "YOLO_native_mean": 452.9314647856213,
+      "SupCon8_weighted_mean": 30.853104364304315,
+      "Pair4_weighted_mean": 0.49859927878493354,
+      "total_loss_saved_mean": 484.28316970098587,
+      "preclip_norm_mean": 180.848021371024,
+      "clip_coefficient_median": 0.0661402703040954,
+      "active_hinge_step_mean": 0.8043168385106974,
+      "qualified_ABN_step_mean": 23.904761904761905,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.041378915398603396,
+      "LR_group0_mean": 0.009604
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 1,
+      "last_epoch": 5,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 458.09942452566963,
+      "SupCon8_weighted_mean": 31.35625657581148,
+      "Pair4_weighted_mean": 0.6337362878379368,
+      "preclip_norm_median": 294.4276428222656,
+      "clip_coefficient_median": 0.033964202104733776,
+      "qualified_ABN_min": 9,
+      "qualified_ABN_max": 54,
+      "hinge_active_step_mean": 0.895837728270052
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 46200,
+        "mask_tp": 0,
+        "mask_fp": 46200,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 46200,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 46200,
+        "mask_tp": 0,
+        "mask_fp": 46200,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 46200,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  },
+  {
+    "epoch": 10,
+    "committed_update": 210,
+    "epoch_training": {
+      "YOLO_native_mean": 417.1069553920201,
+      "SupCon8_weighted_mean": 30.273663112095424,
+      "Pair4_weighted_mean": 0.39675607354868025,
+      "total_loss_saved_mean": 447.7773742675781,
+      "preclip_norm_mean": 147.4612539382208,
+      "clip_coefficient_median": 0.07311932132648957,
+      "active_hinge_step_mean": 0.6102054029015009,
+      "qualified_ABN_step_mean": 23.571428571428573,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.038246308852519305,
+      "LR_group0_mean": 0.009109000000000003
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 6,
+      "last_epoch": 10,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 428.7329113188244,
+      "SupCon8_weighted_mean": 30.931317066010976,
+      "Pair4_weighted_mean": 0.4464945898169563,
+      "preclip_norm_median": 167.9669647216797,
+      "clip_coefficient_median": 0.05953551614768075,
+      "qualified_ABN_min": 7,
+      "qualified_ABN_max": 51,
+      "hinge_active_step_mean": 0.7197652115653502
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 46200,
+        "mask_tp": 0,
+        "mask_fp": 46200,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 46200,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 46200,
+        "mask_tp": 0,
+        "mask_fp": 46200,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 46200,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  },
+  {
+    "epoch": 15,
+    "committed_update": 315,
+    "epoch_training": {
+      "YOLO_native_mean": 398.54906790597096,
+      "SupCon8_weighted_mean": 29.76473245166597,
+      "Pair4_weighted_mean": 0.39684882050468806,
+      "total_loss_saved_mean": 428.7106526692708,
+      "preclip_norm_mean": 163.3352751958938,
+      "clip_coefficient_median": 0.06942839121292055,
+      "active_hinge_step_mean": 0.630123519549394,
+      "qualified_ABN_step_mean": 23.80952380952381,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.04531708685681224,
+      "LR_group0_mean": 0.008614000000000002
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 11,
+      "last_epoch": 15,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 411.58078526088167,
+      "SupCon8_weighted_mean": 29.913673219226656,
+      "Pair4_weighted_mean": 0.44341655657404944,
+      "preclip_norm_median": 143.0475311279297,
+      "clip_coefficient_median": 0.06990683342273141,
+      "qualified_ABN_min": 10,
+      "qualified_ABN_max": 51,
+      "hinge_active_step_mean": 0.6749163679202359
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 201,
+        "mask_tp": 0,
+        "mask_fp": 201,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 201,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 186,
+        "mask_tp": 0,
+        "mask_fp": 186,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 186,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  },
+  {
+    "epoch": 20,
+    "committed_update": 420,
+    "epoch_training": {
+      "YOLO_native_mean": 386.23071725027904,
+      "SupCon8_weighted_mean": 28.225786663237074,
+      "Pair4_weighted_mean": 0.39845990779854,
+      "total_loss_saved_mean": 414.85496593656995,
+      "preclip_norm_mean": 129.99752516973587,
+      "clip_coefficient_median": 0.08816883306817846,
+      "active_hinge_step_mean": 0.5283432557600646,
+      "qualified_ABN_step_mean": 23.857142857142858,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.05204049426884878,
+      "LR_group0_mean": 0.008118999999999998
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 16,
+      "last_epoch": 20,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 392.99648931594123,
+      "SupCon8_weighted_mean": 28.791460473196846,
+      "Pair4_weighted_mean": 0.4356246298267728,
+      "preclip_norm_median": 125.26553344726562,
+      "clip_coefficient_median": 0.07983041819224271,
+      "qualified_ABN_min": 11,
+      "qualified_ABN_max": 52,
+      "hinge_active_step_mean": 0.6369288274596339
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  },
+  {
+    "epoch": 25,
+    "committed_update": 525,
+    "epoch_training": {
+      "YOLO_native_mean": 374.67104085286456,
+      "SupCon8_weighted_mean": 27.729285648890905,
+      "Pair4_weighted_mean": 0.4119987899348849,
+      "total_loss_saved_mean": 402.8123241606213,
+      "preclip_norm_mean": 143.07225036621094,
+      "clip_coefficient_median": 0.06991254588818531,
+      "active_hinge_step_mean": 0.6122343067745366,
+      "qualified_ABN_step_mean": 23.714285714285715,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.055504368972920236,
+      "LR_group0_mean": 0.007623999999999999
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 21,
+      "last_epoch": 25,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 379.11351899646576,
+      "SupCon8_weighted_mean": 28.013173911685037,
+      "Pair4_weighted_mean": 0.36524623802730016,
+      "preclip_norm_median": 136.7996368408203,
+      "clip_coefficient_median": 0.07309960872583576,
+      "qualified_ABN_min": 11,
+      "qualified_ABN_max": 52,
+      "hinge_active_step_mean": 0.5255685432304861
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 975,
+        "mask_tp": 0,
+        "mask_fp": 975,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 975,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 383,
+        "mask_tp": 0,
+        "mask_fp": 383,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 383,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  },
+  {
+    "epoch": 30,
+    "committed_update": 630,
+    "epoch_training": {
+      "YOLO_native_mean": 365.633794875372,
+      "SupCon8_weighted_mean": 28.19855953398205,
+      "Pair4_weighted_mean": 0.43638778868175687,
+      "total_loss_saved_mean": 394.26874360584077,
+      "preclip_norm_mean": 127.59653872535343,
+      "clip_coefficient_median": 0.082413838497739,
+      "active_hinge_step_mean": 0.5301350225372237,
+      "qualified_ABN_step_mean": 24.19047619047619,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.0447875422736009,
+      "LR_group0_mean": 0.007128999999999999
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 26,
+      "last_epoch": 30,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 369.07542898995536,
+      "SupCon8_weighted_mean": 27.6941835857573,
+      "Pair4_weighted_mean": 0.4152347120500746,
+      "preclip_norm_median": 134.02967834472656,
+      "clip_coefficient_median": 0.07461034040288818,
+      "qualified_ABN_min": 12,
+      "qualified_ABN_max": 61,
+      "hinge_active_step_mean": 0.5784991881363638
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  },
+  {
+    "epoch": 35,
+    "committed_update": 735,
+    "epoch_training": {
+      "YOLO_native_mean": 354.50227719261534,
+      "SupCon8_weighted_mean": 26.925249463035946,
+      "Pair4_weighted_mean": 0.35136807426100686,
+      "total_loss_saved_mean": 381.7788928803943,
+      "preclip_norm_mean": 124.5250502086821,
+      "clip_coefficient_median": 0.08607859049968146,
+      "active_hinge_step_mean": 0.5234113416076505,
+      "qualified_ABN_step_mean": 23.61904761904762,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.04282394756696054,
+      "LR_group0_mean": 0.006633999999999999
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 31,
+      "last_epoch": 35,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 358.96575230189734,
+      "SupCon8_weighted_mean": 27.258409045991442,
+      "Pair4_weighted_mean": 0.37645319884731654,
+      "preclip_norm_median": 123.79306030273438,
+      "clip_coefficient_median": 0.08077997179135207,
+      "qualified_ABN_min": 11,
+      "qualified_ABN_max": 48,
+      "hinge_active_step_mean": 0.5442109919781345
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  },
+  {
+    "epoch": 40,
+    "committed_update": 840,
+    "epoch_training": {
+      "YOLO_native_mean": 344.6904950823103,
+      "SupCon8_weighted_mean": 26.330808639526367,
+      "Pair4_weighted_mean": 0.33724926766895114,
+      "total_loss_saved_mean": 371.35855393182663,
+      "preclip_norm_mean": 130.04122743152436,
+      "clip_coefficient_median": 0.08294393179048538,
+      "active_hinge_step_mean": 0.46861494864114306,
+      "qualified_ABN_step_mean": 23.476190476190474,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.06034495264646553,
+      "LR_group0_mean": 0.006139000000000001
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 36,
+      "last_epoch": 40,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 349.85111665271575,
+      "SupCon8_weighted_mean": 26.267411477225167,
+      "Pair4_weighted_mean": 0.34903252798886525,
+      "preclip_norm_median": 126.35920715332031,
+      "clip_coefficient_median": 0.07913946396266043,
+      "qualified_ABN_min": 11,
+      "qualified_ABN_max": 53,
+      "hinge_active_step_mean": 0.48309593067728795
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  },
+  {
+    "epoch": 45,
+    "committed_update": 945,
+    "epoch_training": {
+      "YOLO_native_mean": 337.14271763392856,
+      "SupCon8_weighted_mean": 25.284321285429456,
+      "Pair4_weighted_mean": 0.3439058221521832,
+      "total_loss_saved_mean": 362.7709466843378,
+      "preclip_norm_mean": 138.71533966064453,
+      "clip_coefficient_median": 0.07702791779581612,
+      "active_hinge_step_mean": 0.5012638356431263,
+      "qualified_ABN_step_mean": 23.904761904761905,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.0669263761845373,
+      "LR_group0_mean": 0.005644
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 41,
+      "last_epoch": 45,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 344.5795976911272,
+      "SupCon8_weighted_mean": 25.998138318743024,
+      "Pair4_weighted_mean": 0.351136892466318,
+      "preclip_norm_median": 132.95541381835938,
+      "clip_coefficient_median": 0.07521318340935396,
+      "qualified_ABN_min": 9,
+      "qualified_ABN_max": 49,
+      "hinge_active_step_mean": 0.5004658135960434
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  },
+  {
+    "epoch": 50,
+    "committed_update": 1050,
+    "epoch_training": {
+      "YOLO_native_mean": 330.8944251650856,
+      "SupCon8_weighted_mean": 25.389612833658855,
+      "Pair4_weighted_mean": 0.345912733957881,
+      "total_loss_saved_mean": 356.6299511137463,
+      "preclip_norm_mean": 149.4368166242327,
+      "clip_coefficient_median": 0.07946837996013004,
+      "active_hinge_step_mean": 0.5049623993518002,
+      "qualified_ABN_step_mean": 23.571428571428573,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.057151773101871924,
+      "LR_group0_mean": 0.005149
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 46,
+      "last_epoch": 50,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 336.36443510509673,
+      "SupCon8_weighted_mean": 25.664164079938615,
+      "Pair4_weighted_mean": 0.33836926917235055,
+      "preclip_norm_median": 131.8786163330078,
+      "clip_coefficient_median": 0.07582730394229806,
+      "qualified_ABN_min": 11,
+      "qualified_ABN_max": 51,
+      "hinge_active_step_mean": 0.4955533200826188
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  },
+  {
+    "epoch": 55,
+    "committed_update": 1155,
+    "epoch_training": {
+      "YOLO_native_mean": 324.8571588425409,
+      "SupCon8_weighted_mean": 25.03682399931408,
+      "Pair4_weighted_mean": 0.3416689485311508,
+      "total_loss_saved_mean": 350.23565092540923,
+      "preclip_norm_mean": 154.94000207810174,
+      "clip_coefficient_median": 0.07103787592071821,
+      "active_hinge_step_mean": 0.5042097696645629,
+      "qualified_ABN_step_mean": 23.761904761904763,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.058544812546599476,
+      "LR_group0_mean": 0.004654000000000001
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 51,
+      "last_epoch": 55,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 328.7625046502976,
+      "SupCon8_weighted_mean": 25.408581633794874,
+      "Pair4_weighted_mean": 0.3574125056465467,
+      "preclip_norm_median": 139.17648315429688,
+      "clip_coefficient_median": 0.07185121869376714,
+      "qualified_ABN_min": 14,
+      "qualified_ABN_max": 52,
+      "hinge_active_step_mean": 0.5081307153004021
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  },
+  {
+    "epoch": 60,
+    "committed_update": 1260,
+    "epoch_training": {
+      "YOLO_native_mean": 318.7710207984561,
+      "SupCon8_weighted_mean": 24.95917474655878,
+      "Pair4_weighted_mean": 0.34244185118448167,
+      "total_loss_saved_mean": 344.07264346168154,
+      "preclip_norm_mean": 138.0992729550316,
+      "clip_coefficient_median": 0.07260568796722836,
+      "active_hinge_step_mean": 0.5309104202922322,
+      "qualified_ABN_step_mean": 23.904761904761905,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.06918937482294582,
+      "LR_group0_mean": 0.0041589999999999995
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 56,
+      "last_epoch": 60,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 323.7841552734375,
+      "SupCon8_weighted_mean": 24.956079810006276,
+      "Pair4_weighted_mean": 0.3608934192430405,
+      "preclip_norm_median": 143.3482666015625,
+      "clip_coefficient_median": 0.0697601733687851,
+      "qualified_ABN_min": 11,
+      "qualified_ABN_max": 60,
+      "hinge_active_step_mean": 0.5218326671614243
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  },
+  {
+    "epoch": 65,
+    "committed_update": 1365,
+    "epoch_training": {
+      "YOLO_native_mean": 314.8215840657552,
+      "SupCon8_weighted_mean": 25.228247869582404,
+      "Pair4_weighted_mean": 0.36370850673743654,
+      "total_loss_saved_mean": 340.41354079473587,
+      "preclip_norm_mean": 174.29806409563338,
+      "clip_coefficient_median": 0.07111070165717244,
+      "active_hinge_step_mean": 0.5009535410531016,
+      "qualified_ABN_step_mean": 23.714285714285715,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.08143233578829538,
+      "LR_group0_mean": 0.0036639999999999997
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 61,
+      "last_epoch": 65,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 316.4376964750744,
+      "SupCon8_weighted_mean": 24.585736047653924,
+      "Pair4_weighted_mean": 0.34330541385071617,
+      "preclip_norm_median": 141.7774200439453,
+      "clip_coefficient_median": 0.07053309283218237,
+      "qualified_ABN_min": 9,
+      "qualified_ABN_max": 60,
+      "hinge_active_step_mean": 0.49073836855897585
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  },
+  {
+    "epoch": 70,
+    "committed_update": 1470,
+    "epoch_training": {
+      "YOLO_native_mean": 307.7130315871466,
+      "SupCon8_weighted_mean": 23.89837137858073,
+      "Pair4_weighted_mean": 0.3069525432019007,
+      "total_loss_saved_mean": 331.9183538527716,
+      "preclip_norm_mean": 164.02841985793341,
+      "clip_coefficient_median": 0.063017577714732,
+      "active_hinge_step_mean": 0.4228110891198038,
+      "qualified_ABN_step_mean": 23.952380952380953,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.060370015778711865,
+      "LR_group0_mean": 0.0031690000000000004
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 66,
+      "last_epoch": 70,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 311.89057384672617,
+      "SupCon8_weighted_mean": 24.2075006212507,
+      "Pair4_weighted_mean": 0.3211907200160481,
+      "preclip_norm_median": 152.48414611816406,
+      "clip_coefficient_median": 0.06558058781186435,
+      "qualified_ABN_min": 10,
+      "qualified_ABN_max": 48,
+      "hinge_active_step_mean": 0.47038463221585486
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 162,
+        "mask_tp": 0,
+        "mask_fp": 162,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 162,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 308,
+        "mask_tp": 0,
+        "mask_fp": 308,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 308,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  },
+  {
+    "epoch": 75,
+    "committed_update": 1575,
+    "epoch_training": {
+      "YOLO_native_mean": 308.74408249627976,
+      "SupCon8_weighted_mean": 23.83126531328474,
+      "Pair4_weighted_mean": 0.33537720143795013,
+      "total_loss_saved_mean": 332.9107230050223,
+      "preclip_norm_mean": 206.47578793480284,
+      "clip_coefficient_median": 0.048244436282520335,
+      "active_hinge_step_mean": 0.5040926069902847,
+      "qualified_ABN_step_mean": 23.952380952380953,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.08138857036828995,
+      "LR_group0_mean": 0.0026740000000000006
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 71,
+      "last_epoch": 75,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 305.26969662620905,
+      "SupCon8_weighted_mean": 23.64566141764323,
+      "Pair4_weighted_mean": 0.32405108043125697,
+      "preclip_norm_median": 148.71766662597656,
+      "clip_coefficient_median": 0.06724150640359625,
+      "qualified_ABN_min": 9,
+      "qualified_ABN_max": 53,
+      "hinge_active_step_mean": 0.49327393128676
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 308,
+        "mask_tp": 0,
+        "mask_fp": 308,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 308,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 308,
+        "mask_tp": 0,
+        "mask_fp": 308,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 308,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  },
+  {
+    "epoch": 80,
+    "committed_update": 1680,
+    "epoch_training": {
+      "YOLO_native_mean": 300.7812223888579,
+      "SupCon8_weighted_mean": 23.132334845406668,
+      "Pair4_weighted_mean": 0.26180636173202876,
+      "total_loss_saved_mean": 324.17535981677827,
+      "preclip_norm_mean": 190.22047969273157,
+      "clip_coefficient_median": 0.05445238087348552,
+      "active_hinge_step_mean": 0.39997784177760576,
+      "qualified_ABN_step_mean": 23.523809523809526,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.07312020987627052,
+      "LR_group0_mean": 0.002179
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 76,
+      "last_epoch": 80,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 301.31038469587054,
+      "SupCon8_weighted_mean": 23.408768426804315,
+      "Pair4_weighted_mean": 0.31664333315122695,
+      "preclip_norm_median": 150.04348754882812,
+      "clip_coefficient_median": 0.06664734402483408,
+      "qualified_ABN_min": 12,
+      "qualified_ABN_max": 52,
+      "hinge_active_step_mean": 0.46472616341030365
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 1826,
+        "mask_tp": 0,
+        "mask_fp": 1826,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 1826,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 1970,
+        "mask_tp": 0,
+        "mask_fp": 1970,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 1970,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  },
+  {
+    "epoch": 85,
+    "committed_update": 1785,
+    "epoch_training": {
+      "YOLO_native_mean": 291.34822736467635,
+      "SupCon8_weighted_mean": 23.523324603126163,
+      "Pair4_weighted_mean": 0.34087945449919926,
+      "total_loss_saved_mean": 315.2124314081101,
+      "preclip_norm_mean": 154.57279750279017,
+      "clip_coefficient_median": 0.06878880908553232,
+      "active_hinge_step_mean": 0.5189463058378451,
+      "qualified_ABN_step_mean": 23.904761904761905,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.0831073202370178,
+      "LR_group0_mean": 0.0016840000000000004
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 81,
+      "last_epoch": 85,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 295.2555239722842,
+      "SupCon8_weighted_mean": 23.424864523751395,
+      "Pair4_weighted_mean": 0.3220881883587156,
+      "preclip_norm_median": 151.490234375,
+      "clip_coefficient_median": 0.06601085525575909,
+      "qualified_ABN_min": 12,
+      "qualified_ABN_max": 56,
+      "hinge_active_step_mean": 0.48681976316375764
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 308,
+        "mask_tp": 0,
+        "mask_fp": 308,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 308,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 308,
+        "mask_tp": 0,
+        "mask_fp": 308,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 308,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  },
+  {
+    "epoch": 90,
+    "committed_update": 1890,
+    "epoch_training": {
+      "YOLO_native_mean": 293.1741856166295,
+      "SupCon8_weighted_mean": 23.673053559802828,
+      "Pair4_weighted_mean": 0.3845575224785578,
+      "total_loss_saved_mean": 317.23179699125745,
+      "preclip_norm_mean": 216.57170940580824,
+      "clip_coefficient_median": 0.048919677763865514,
+      "active_hinge_step_mean": 0.5172414791309455,
+      "qualified_ABN_step_mean": 23.523809523809526,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.08144948471869741,
+      "LR_group0_mean": 0.0011889999999999995
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 86,
+      "last_epoch": 90,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 290.1018880208333,
+      "SupCon8_weighted_mean": 23.260188602265856,
+      "Pair4_weighted_mean": 0.3583613624707574,
+      "preclip_norm_median": 172.25477600097656,
+      "clip_coefficient_median": 0.058053542398672095,
+      "qualified_ABN_min": 9,
+      "qualified_ABN_max": 55,
+      "hinge_active_step_mean": 0.5092712008787401
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 2257,
+        "mask_tp": 0,
+        "mask_fp": 2257,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 2257,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 2259,
+        "mask_tp": 0,
+        "mask_fp": 2259,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 2259,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  },
+  {
+    "epoch": 95,
+    "committed_update": 1995,
+    "epoch_training": {
+      "YOLO_native_mean": 282.19608197893416,
+      "SupCon8_weighted_mean": 21.93781480335054,
+      "Pair4_weighted_mean": 0.2891468405723572,
+      "total_loss_saved_mean": 304.4230433872768,
+      "preclip_norm_mean": 171.0671361287435,
+      "clip_coefficient_median": 0.06045218262748803,
+      "active_hinge_step_mean": 0.4596289628491616,
+      "qualified_ABN_step_mean": 23.523809523809526,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.06618907644102971,
+      "LR_group0_mean": 0.0006940000000000004
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 91,
+      "last_epoch": 95,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 285.37898719424294,
+      "SupCon8_weighted_mean": 22.410875265938895,
+      "Pair4_weighted_mean": 0.33292011320590975,
+      "preclip_norm_median": 156.04977416992188,
+      "clip_coefficient_median": 0.06408211731872761,
+      "qualified_ABN_min": 10,
+      "qualified_ABN_max": 57,
+      "hinge_active_step_mean": 0.49343304056505244
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 120,
+        "mask_tp": 0,
+        "mask_fp": 120,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 120,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 154,
+        "mask_tp": 0,
+        "mask_fp": 154,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 154,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  },
+  {
+    "epoch": 100,
+    "committed_update": 2100,
+    "epoch_training": {
+      "YOLO_native_mean": 280.63164992559524,
+      "SupCon8_weighted_mean": 22.466271264212473,
+      "Pair4_weighted_mean": 0.2900161136473928,
+      "total_loss_saved_mean": 303.387939453125,
+      "preclip_norm_mean": 161.43229384649368,
+      "clip_coefficient_median": 0.059518841178924,
+      "active_hinge_step_mean": 0.4721700953535312,
+      "qualified_ABN_step_mean": 23.523809523809526,
+      "N_P3_gradient_norm_step_mean_ALREADY_INCLUDES_PAIR4": 0.08508610539138317,
+      "LR_group0_mean": 0.0001990000000000001
+    },
+    "preceding_five_epoch_window": {
+      "first_epoch": 96,
+      "last_epoch": 100,
+      "updates": 105,
+      "all_updates_clipped": true,
+      "YOLO_native_mean": 281.7475369408017,
+      "SupCon8_weighted_mean": 22.50741994948614,
+      "Pair4_weighted_mean": 0.3366873181291989,
+      "preclip_norm_median": 159.608642578125,
+      "clip_coefficient_median": 0.06265324844456319,
+      "qualified_ABN_min": 12,
+      "qualified_ABN_max": 55,
+      "hinge_active_step_mean": 0.49863575329730986
+    },
+    "formal_fixed_conf025": {
+      "master": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      },
+      "ema": {
+        "detections": 0,
+        "mask_tp": 0,
+        "mask_fp": 0,
+        "mask_fn": 296,
+        "box_tp": 0,
+        "box_fp": 0,
+        "box_fn": 296
+      }
+    },
+    "formal_standard": {
+      "master": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      },
+      "ema": {
+        "Box_AP50_95": 0.0,
+        "Mask_AP50_95": 0.0,
+        "predictions_count": null,
+        "count_note": "Standard-pass prediction count was not saved in this table; fixed-pass count is not substituted."
+      }
+    }
+  }
+]

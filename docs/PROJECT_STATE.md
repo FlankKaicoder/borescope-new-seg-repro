@@ -1,5 +1,9 @@
 # Project state
 
+## Exp17-J2-R4-D offline temporal mechanism (2026-11-24)
+
+EXP17_J2_R4_D_OFFLINE_TEMPORAL_ANALYSIS_COMPLETE_PENDING_CHATGPT_REVIEW.22 saved Checkpoints/20 temporal snapshots/80 saved probes, zero model/Autograd/update/VAL/TEST. Negative terminal detached-excess Pair direction aligns positively with all19 historical Neck16 intervals (median cosine.49782); terminal Conv radial excess largely disappears with connected statistics.20 saved AdamW snapshots support outward Neck16 scale pressure. These are descriptive endpoint/history associations, not causal decomposition. E5MASTER AP0 precedesR1; FP returnsE70–95.895 magnitude cross-checks PASS. Original Last0/80VAL preserved. R4-E early Mean-only2TRAINforward proposal only. [Handoff](../EXP17_J2_R4_D_TEMPORAL_MECHANISM_HANDOFF.md).
+
 ## Exp17-J2-R4-C v3 gradient mechanism complete (2026-11-24)
 
 EXP17_J2_R4_C_V3_GRADIENT_DIAGNOSTIC_COMPLETE_PENDING_CHATGPT_REVIEW. Explicit v3 disk/budget approval; 19 guard +23 storage tests PASS; original12 CPU derivative checks reused. New2A+2N/6 Autograd complete. Both forward graphs and YOLO/SupCon8 gradients bitwise equal; Pair4 norm26.9690→2.41061, cosine.25608, real Conv-weight and Neck16 effects.672 original files/C1 unchanged. Original Last AP0/80VAL preserved. Endpoint detach effect confirmed; historical training cause unresolved. [Handoff](../EXP17_J2_R4_C_V3_GRADIENT_MECHANISM_HANDOFF.md).
