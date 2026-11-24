@@ -1,0 +1,66 @@
+{
+  "artifacts": [
+    {
+      "file": "01_cross_batch_TP.png",
+      "bytes": 83774,
+      "sha256": "640da87299e0eeee29a7d52f477260cf8b98f6e3f37b31439a16441dc5a21e5c"
+    },
+    {
+      "file": "01_cross_batch_TP.svg",
+      "bytes": 28263,
+      "sha256": "e830e9ca8573215c1a176ac4fee72ca24056eeac3e5a5b27e60f4b415c84cede"
+    },
+    {
+      "file": "02_cross_batch_BN_offsets.png",
+      "bytes": 151110,
+      "sha256": "b4173cc665c536f2f081e98569f06150527cc68e0e8a9db7cc092899a54bdabe"
+    },
+    {
+      "file": "02_cross_batch_BN_offsets.svg",
+      "bytes": 44734,
+      "sha256": "36e8ee9d77202abcc602de25a29d4e93c540f71d825cfe130438b9398c0bbf35"
+    },
+    {
+      "file": "analysis_checks.json",
+      "bytes": 346,
+      "sha256": "e253381cb0dfb415dfff58d6261b80d41be3bc644209fd6345acea338df1689d"
+    },
+    {
+      "file": "analysis_input_bindings.json",
+      "bytes": 2627,
+      "sha256": "d7c4dc4e7bbf5811acf7a3b19d7e7a9a1706e74d652d499ae53718876b52ba8a"
+    },
+    {
+      "file": "bn_layer_statistics.json",
+      "bytes": 358034,
+      "sha256": "f34eee179408171ec5d2991fadbf2559398355c93b23bb524fa9ac16b37bb1a1"
+    },
+    {
+      "file": "case_results.json",
+      "bytes": 5922,
+      "sha256": "79857502ac1f2632046385b2e3d3a537bc6bcbfacdce40a1990bd22c6800f963"
+    },
+    {
+      "file": "execution_bindings.json",
+      "bytes": 5572,
+      "sha256": "639c27927cc037bde76e52f386a5a371ab5da10992b8bb392bb6dae74707f24d"
+    },
+    {
+      "file": "pooled_bn_layer_statistics.json",
+      "bytes": 64664,
+      "sha256": "284ff3d651f19509336a85a9fedbf368be42ab40bd35ff66a0a4c8a63f77453a"
+    },
+    {
+      "file": "summary.json",
+      "bytes": 3661,
+      "sha256": "df6f0b8a85fd756b01934afcb9a97a6c6019202175662c0bdf003fab18ce14df"
+    },
+    {
+      "file": "verification_summary.json",
+      "bytes": 8456,
+      "sha256": "1e3a3af1eebabb887a09bb79dc6210e7b3cdd4c7537b73d295fb5bc617a83202"
+    }
+  ],
+  "report": "../../EXP17_J2_R4_B_CROSS_BATCH_BN_DIAGNOSTIC_REPORT.md",
+  "raw_evidence": "PRIVATE_R4_B_ARCHIVE"
+}

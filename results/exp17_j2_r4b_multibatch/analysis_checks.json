@@ -1,0 +1,12 @@
+{
+  "eight_saved_roles": true,
+  "sixteen_threshold_rows": true,
+  "BN_layer_rows": 720,
+  "pooled_channel_rows": 16080,
+  "same_frozen_weights_buffers_all_four_batches": true,
+  "pooled_variance_second_moment_agrees": true,
+  "raw_inputs_hash_verified": 16,
+  "new_model_calls": 0,
+  "new_autograd_calls": 0,
+  "old_position1_not_rerun": true
+}

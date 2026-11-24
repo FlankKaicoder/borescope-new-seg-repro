@@ -1,0 +1,82 @@
+[
+  {
+    "stage": "R3-B historical",
+    "file": "results/running.json",
+    "sha256": "fbe63871bb62bd4631033bede398fb8050b8a38a5041c13f7b40fbee179129f9"
+  },
+  {
+    "stage": "R3-B historical",
+    "file": "results/running_bn_channels.json",
+    "sha256": "9a24b02bc19bf7095a454e81cf3f6b08ddf7d20c3ae6c931d2c360a63d364bd1"
+  },
+  {
+    "stage": "R3-B historical",
+    "file": "results/batch_both.json",
+    "sha256": "f5f9c09428763ef20779147615cf4a132837e129b0681501e003f3f099a4b2e2"
+  },
+  {
+    "stage": "R3-B historical",
+    "file": "results/batch_both_bn_channels.json",
+    "sha256": "fbd15b168e86acfb4cf46bb98117fb38b7693366730087cfbff085206f1844fd"
+  },
+  {
+    "stage": "R4-B",
+    "file": "results/batch007_running.json",
+    "sha256": "1f948d8f78042215e071d4ad3e1263adef52c1afbbf91bf6a8aead3f53330cd5"
+  },
+  {
+    "stage": "R4-B",
+    "file": "results/batch007_running_bn_channels.json",
+    "sha256": "3e6ac9ca070740c48a2ea60321cdce12cac4b8fad065adc414813d58e9888ab3"
+  },
+  {
+    "stage": "R4-B",
+    "file": "results/batch007_batch_both.json",
+    "sha256": "73b0797e3f6f03d0c60a7793131bcce4e8fabfbc0ebebb50285ed90078db8422"
+  },
+  {
+    "stage": "R4-B",
+    "file": "results/batch007_batch_both_bn_channels.json",
+    "sha256": "ea558d88ac9ec1ca2712a801f87bdeabb05b4f3a5f87c21866cc9a3a817aab99"
+  },
+  {
+    "stage": "R4-B",
+    "file": "results/batch011_running.json",
+    "sha256": "fd9f7d5c71887c28255da4407d135804823aca27f9b63197d05201255664fd63"
+  },
+  {
+    "stage": "R4-B",
+    "file": "results/batch011_running_bn_channels.json",
+    "sha256": "4f8fb1613bd52bed7947dc9c8c4e48049d787b59a0b9bb1453b55cc6a8f66e1a"
+  },
+  {
+    "stage": "R4-B",
+    "file": "results/batch011_batch_both.json",
+    "sha256": "62d7e1234fa5352a6a1e0e4de08b34021cfb0075ba59a3fff0efec72e8fc2639"
+  },
+  {
+    "stage": "R4-B",
+    "file": "results/batch011_batch_both_bn_channels.json",
+    "sha256": "7b4946124e9011ddf1104a8c7ee082150bc152d2d8adbb071c03f9fa261ee41d"
+  },
+  {
+    "stage": "R4-B",
+    "file": "results/batch021_running.json",
+    "sha256": "65efb5b0f4682f39778a63cb9d6dc51f1d121df9bd6b9b975c4553ea0e3083b7"
+  },
+  {
+    "stage": "R4-B",
+    "file": "results/batch021_running_bn_channels.json",
+    "sha256": "a72c664da95aabcb548777da8a09cd17001e607123d57b43da36895aa44cc93f"
+  },
+  {
+    "stage": "R4-B",
+    "file": "results/batch021_batch_both.json",
+    "sha256": "cfa8779f350ed8c7dde9d1d0c1108aac36cc090b5e71e84ecb4f67a133162225"
+  },
+  {
+    "stage": "R4-B",
+    "file": "results/batch021_batch_both_bn_channels.json",
+    "sha256": "17d9e1dc438da27fa41db3562003dc640f5519352dbc9c346d20e3b7eee00716"
+  }
+]

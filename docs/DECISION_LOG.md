@@ -1,5 +1,10 @@
 # Decision log
 
+## D096 — Exp17-J2-R4-B cross-batch statistic dependence (2026-11-24)
+
+User approved continuing the6-forward R4-B scope. Preserve original32/32/28 packets, strict source/model/precision identity and independent durable budget. All3 new batches reproduce running0TP versus current-stat positiveTP; reuse sealed position1 only. Four-batch channel offsets support a systematic current mismatch, but upstream batch normalization constrains between-batch means: no historical lag estimate or Pair/Clip attribution follows. Keep formal Last0/80VAL and original weights untouched. Stop after6calls/delivery; recommend the separately scoped equal-forward derivative test, not further localization scans or retraining. [Evidence](../EXP17_J2_R4_B_CROSS_BATCH_BN_DIAGNOSTIC_REPORT.md).
+
+
 ## D095 — Exp17-J2-R4-A discriminating training-origin design (2026-11-24)
 
 Continue with read-only assets and mechanism design after conditional Neck16 localization. Keep formal Last0/80VAL unchanged. Reuse position1 sealed results; propose exactly6 new A traversals on positions7/11/21 to test cross-batch statistics. A later independent2A+2N/6autograd design would compare identical forward values with detached versus connected A-statistics derivatives. Six NumPy fixtures verify a structural distinction, not measured parameter gradients or historical causation. Preserve tail28; restore projection and bound saved args for any future loss diagnostic. No numerical model scope is executed or issued in this phase. [Handoff](../EXP17_J2_R4_A_TRAINING_ORIGIN_MECHANISM_HANDOFF.md).

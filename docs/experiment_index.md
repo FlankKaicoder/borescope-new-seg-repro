@@ -1,5 +1,8 @@
 # Experiment index
 
+- **Exp17-J2-R4-B (2026-11-24)** — Six fixed TRAIN forwards: new3batches running TP0 versus batch-both52TP23FP; sealed4batch total70TP29FP/230GT. Cross-batch BN mismatch supported; training origin HOLD; no backward/VAL. [Report](../EXP17_J2_R4_B_CROSS_BATCH_BN_DIAGNOSTIC_REPORT.md).
+
+
 - **Exp17-J2-R4-A (2026-11-24)** — Frozen124TRAIN/230GT assets and full projection/args verified; six synthetic BN derivative fixtures PASS; no new model calls. Training-origin study design completed, causal origin HOLD. [Handoff](../EXP17_J2_R4_A_TRAINING_ORIGIN_MECHANISM_HANDOFF.md).
 
 

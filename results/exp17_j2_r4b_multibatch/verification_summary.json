@@ -1,0 +1,408 @@
+{
+  "BN_output_moment_scaled_residuals": {
+    "batch007_batch_both": {
+      "mean": 5.04256104543966e-05,
+      "variance_biased": 3.067273194744768e-06
+    },
+    "batch007_running": {
+      "mean": 1.5858957415295793e-05,
+      "variance_biased": 1.3004733369931643e-06
+    },
+    "batch011_batch_both": {
+      "mean": 3.246064038242235e-05,
+      "variance_biased": 2.8590124298955033e-06
+    },
+    "batch011_running": {
+      "mean": 1.2427337791990791e-05,
+      "variance_biased": 1.458736742774082e-06
+    },
+    "batch021_batch_both": {
+      "mean": 3.6577697643310084e-05,
+      "variance_biased": 1.92646202018766e-06
+    },
+    "batch021_running": {
+      "mean": 1.2153763158855858e-05,
+      "variance_biased": 1.1937717381197947e-06
+    }
+  },
+  "R3_B_same_weights_buffers_verified": true,
+  "all_pass": true,
+  "audit_forward_calls": 0,
+  "check_count": 93,
+  "checks": [
+    {
+      "name": "exact_fourteen_ledger_rows",
+      "pass": true
+    },
+    {
+      "name": "chain_0",
+      "pass": true
+    },
+    {
+      "name": "chain_1",
+      "pass": true
+    },
+    {
+      "name": "chain_2",
+      "pass": true
+    },
+    {
+      "name": "chain_3",
+      "pass": true
+    },
+    {
+      "name": "chain_4",
+      "pass": true
+    },
+    {
+      "name": "chain_5",
+      "pass": true
+    },
+    {
+      "name": "chain_6",
+      "pass": true
+    },
+    {
+      "name": "chain_7",
+      "pass": true
+    },
+    {
+      "name": "chain_8",
+      "pass": true
+    },
+    {
+      "name": "chain_9",
+      "pass": true
+    },
+    {
+      "name": "chain_10",
+      "pass": true
+    },
+    {
+      "name": "chain_11",
+      "pass": true
+    },
+    {
+      "name": "chain_12",
+      "pass": true
+    },
+    {
+      "name": "chain_13",
+      "pass": true
+    },
+    {
+      "name": "authorization_binding",
+      "pass": true
+    },
+    {
+      "name": "six_ordered_attempts",
+      "pass": true
+    },
+    {
+      "name": "six_ordered_commits",
+      "pass": true
+    },
+    {
+      "name": "completed_boundary",
+      "pass": true
+    },
+    {
+      "name": "protected_originals",
+      "pass": true
+    },
+    {
+      "name": "frozen_scripts",
+      "pass": true
+    },
+    {
+      "name": "audit_no_CUDA",
+      "pass": true
+    },
+    {
+      "name": "batch007_running_commit_sha",
+      "pass": true
+    },
+    {
+      "name": "batch007_running_artifact_sha",
+      "pass": true
+    },
+    {
+      "name": "batch007_running_source_and_input",
+      "pass": true
+    },
+    {
+      "name": "batch007_running_persistent_state",
+      "pass": true
+    },
+    {
+      "name": "batch007_running_8040_channels_90_BN",
+      "pass": true
+    },
+    {
+      "name": "batch007_running_finite_channels",
+      "pass": true
+    },
+    {
+      "name": "batch007_running_statistics_source",
+      "pass": true
+    },
+    {
+      "name": "batch007_running_weights_buffers_match_reference",
+      "pass": true
+    },
+    {
+      "name": "batch007_running_bound_batch_size",
+      "pass": true
+    },
+    {
+      "name": "batch007_running_0.001_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "batch007_running_0.25_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "batch007_batch_both_commit_sha",
+      "pass": true
+    },
+    {
+      "name": "batch007_batch_both_artifact_sha",
+      "pass": true
+    },
+    {
+      "name": "batch007_batch_both_source_and_input",
+      "pass": true
+    },
+    {
+      "name": "batch007_batch_both_persistent_state",
+      "pass": true
+    },
+    {
+      "name": "batch007_batch_both_8040_channels_90_BN",
+      "pass": true
+    },
+    {
+      "name": "batch007_batch_both_finite_channels",
+      "pass": true
+    },
+    {
+      "name": "batch007_batch_both_statistics_source",
+      "pass": true
+    },
+    {
+      "name": "batch007_batch_both_weights_buffers_match_reference",
+      "pass": true
+    },
+    {
+      "name": "batch007_batch_both_bound_batch_size",
+      "pass": true
+    },
+    {
+      "name": "batch007_batch_both_first_BN_input_equal",
+      "pass": true
+    },
+    {
+      "name": "batch007_batch_both_0.001_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "batch007_batch_both_0.25_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "batch011_running_commit_sha",
+      "pass": true
+    },
+    {
+      "name": "batch011_running_artifact_sha",
+      "pass": true
+    },
+    {
+      "name": "batch011_running_source_and_input",
+      "pass": true
+    },
+    {
+      "name": "batch011_running_persistent_state",
+      "pass": true
+    },
+    {
+      "name": "batch011_running_8040_channels_90_BN",
+      "pass": true
+    },
+    {
+      "name": "batch011_running_finite_channels",
+      "pass": true
+    },
+    {
+      "name": "batch011_running_statistics_source",
+      "pass": true
+    },
+    {
+      "name": "batch011_running_weights_buffers_match_reference",
+      "pass": true
+    },
+    {
+      "name": "batch011_running_bound_batch_size",
+      "pass": true
+    },
+    {
+      "name": "batch011_running_0.001_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "batch011_running_0.25_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "batch011_batch_both_commit_sha",
+      "pass": true
+    },
+    {
+      "name": "batch011_batch_both_artifact_sha",
+      "pass": true
+    },
+    {
+      "name": "batch011_batch_both_source_and_input",
+      "pass": true
+    },
+    {
+      "name": "batch011_batch_both_persistent_state",
+      "pass": true
+    },
+    {
+      "name": "batch011_batch_both_8040_channels_90_BN",
+      "pass": true
+    },
+    {
+      "name": "batch011_batch_both_finite_channels",
+      "pass": true
+    },
+    {
+      "name": "batch011_batch_both_statistics_source",
+      "pass": true
+    },
+    {
+      "name": "batch011_batch_both_weights_buffers_match_reference",
+      "pass": true
+    },
+    {
+      "name": "batch011_batch_both_bound_batch_size",
+      "pass": true
+    },
+    {
+      "name": "batch011_batch_both_first_BN_input_equal",
+      "pass": true
+    },
+    {
+      "name": "batch011_batch_both_0.001_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "batch011_batch_both_0.25_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "batch021_running_commit_sha",
+      "pass": true
+    },
+    {
+      "name": "batch021_running_artifact_sha",
+      "pass": true
+    },
+    {
+      "name": "batch021_running_source_and_input",
+      "pass": true
+    },
+    {
+      "name": "batch021_running_persistent_state",
+      "pass": true
+    },
+    {
+      "name": "batch021_running_8040_channels_90_BN",
+      "pass": true
+    },
+    {
+      "name": "batch021_running_finite_channels",
+      "pass": true
+    },
+    {
+      "name": "batch021_running_statistics_source",
+      "pass": true
+    },
+    {
+      "name": "batch021_running_weights_buffers_match_reference",
+      "pass": true
+    },
+    {
+      "name": "batch021_running_bound_batch_size",
+      "pass": true
+    },
+    {
+      "name": "batch021_running_0.001_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "batch021_running_0.25_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "batch021_batch_both_commit_sha",
+      "pass": true
+    },
+    {
+      "name": "batch021_batch_both_artifact_sha",
+      "pass": true
+    },
+    {
+      "name": "batch021_batch_both_source_and_input",
+      "pass": true
+    },
+    {
+      "name": "batch021_batch_both_persistent_state",
+      "pass": true
+    },
+    {
+      "name": "batch021_batch_both_8040_channels_90_BN",
+      "pass": true
+    },
+    {
+      "name": "batch021_batch_both_finite_channels",
+      "pass": true
+    },
+    {
+      "name": "batch021_batch_both_statistics_source",
+      "pass": true
+    },
+    {
+      "name": "batch021_batch_both_weights_buffers_match_reference",
+      "pass": true
+    },
+    {
+      "name": "batch021_batch_both_bound_batch_size",
+      "pass": true
+    },
+    {
+      "name": "batch021_batch_both_first_BN_input_equal",
+      "pass": true
+    },
+    {
+      "name": "batch021_batch_both_0.001_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "batch021_batch_both_0.25_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "completion_budget",
+      "pass": true
+    },
+    {
+      "name": "completion_ledger_sha",
+      "pass": true
+    }
+  ],
+  "independent_match_cases": 12,
+  "original_artifacts_unchanged": 585
+}

@@ -1,5 +1,10 @@
 # Project state
 
+## Exp17-J2-R4-B cross-batch BN statistics controls (2026-11-24)
+
+EXP17_J2_R4_B_SIX_FORWARD_COMPLETE_PENDING_CHATGPT_GATE. Exactly6 new TRAIN forwards on fixed positions7/11/21 (32/32/28 images): running fixedconf TP0 in all; batch-both TP21/18/13 with FP9/7/7. New92TRAIN/168GT total52TP23FP; with sealed position1 total124TRAIN/230GT gives70TP29FP versus0. Four-batch Neck16 cv1 offsets share sign across all64 channels under both paths; current statistic mismatch repeats beyond one batch, training origin unresolved.25 CPU tests/93 independent checks PASS;585 protected files unchanged; RNG/state/source-runtime checks pass.0backward/update/VAL/TEST; original formal LastMaskAP0/80VAL remain. Six-call budget exhausted; separate R4-C derivative design remains unexecuted. [Report](../EXP17_J2_R4_B_CROSS_BATCH_BN_DIAGNOSTIC_REPORT.md).
+
+
 ## Exp17-J2-R4-A training-origin mechanism design (2026-11-24)
 
 EXP17_J2_R4_A_MECHANISM_DESIGN_COMPLETE_PENDING_CHATGPT_GATE. Read-only four frozen TRAIN packets:124 unique images/230 augmented instances, including28-image tail; final full Checkpoint/projection and saved loss args verified. Six NumPy finite-difference fixtures establish a synthetic detached-statistics common-shift derivative distinction, not actual J2 causality. No model/gradient/GPU/update/VAL/TEST calls.11 targeted original file hashes unchanged. R4-B six-forward multi-batch proposal and separate R4-C2A+2N/6autograd design prepared; neither executed or authorized here. Original Last AP0/80VAL remain; training origin HOLD. [Handoff](../EXP17_J2_R4_A_TRAINING_ORIGIN_MECHANISM_HANDOFF.md).
