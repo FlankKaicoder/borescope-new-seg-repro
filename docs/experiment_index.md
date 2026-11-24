@@ -1,5 +1,7 @@
 # Experiment index
 
+- **Exp17-J2-R4-C (2026-11-24)** — CPU derivative bridge PASS; diagnostic counter mismatch after1A+1N. No Graph B or model gradients, no retry. Original Last0/80VAL unchanged; numerical investigation HOLD. [Report](../EXP17_J2_R4_C_DETACH_GRADIENT_MECHANISM_REPORT.md).
+
 - **Exp17-J2-R4-B (2026-11-24)** — Six fixed TRAIN forwards: new3batches running TP0 versus batch-both52TP23FP; sealed4batch total70TP29FP/230GT. Cross-batch BN mismatch supported; training origin HOLD; no backward/VAL. [Report](../EXP17_J2_R4_B_CROSS_BATCH_BN_DIAGNOSTIC_REPORT.md).
 
 

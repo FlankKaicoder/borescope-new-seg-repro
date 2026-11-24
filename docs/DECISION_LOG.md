@@ -1,5 +1,9 @@
 # Decision log
 
+## D097 — Exp17-J2-R4-C diagnostic budget HOLD (2026-11-24)
+
+User approved implementing the full R4-C plan. The independent diagnostic passed12 CPU Autograd calls but failed after1A+1N because its Module hook assertion confused direct forward method recursion with Module.__call__. Preserve the pending N attempt and all source/evidence bytes; no automatic retry or budget reset. Graph A is lost, so a new paired run would consume an additional2A+2N and requires an explicit revised scope. This is an instrumentation failure, not evidence for or against the J2 detach mechanism. [Handoff](../EXP17_J2_R4_C_DETACH_GRADIENT_MECHANISM_REPORT.md).
+
 ## D096 — Exp17-J2-R4-B cross-batch statistic dependence (2026-11-24)
 
 User approved continuing the6-forward R4-B scope. Preserve original32/32/28 packets, strict source/model/precision identity and independent durable budget. All3 new batches reproduce running0TP versus current-stat positiveTP; reuse sealed position1 only. Four-batch channel offsets support a systematic current mismatch, but upstream batch normalization constrains between-batch means: no historical lag estimate or Pair/Clip attribution follows. Keep formal Last0/80VAL and original weights untouched. Stop after6calls/delivery; recommend the separately scoped equal-forward derivative test, not further localization scans or retraining. [Evidence](../EXP17_J2_R4_B_CROSS_BATCH_BN_DIAGNOSTIC_REPORT.md).

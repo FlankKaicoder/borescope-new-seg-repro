@@ -1,5 +1,9 @@
 # Project state
 
+## Exp17-J2-R4-C diagnostic HOLD (2026-11-24)
+
+EXP17_J2_R4_C_HOLD_DIAGNOSTIC_COUNTER_MISMATCH. Six CPU derivative fixtures PASS/12 Autograd calls. One A-full traversal committed and one N-prefix returned but remains pending; the new diagnostic incorrectly expected a direct self.forward call to trigger a root Module hook. Graph B/model Autograd=0; no retries, updates, VAL or TEST.634 original files and C1 production catalog unchanged. No real detach-gradient conclusion. Full two-graph restart would require an explicit additional2A+2N scope; proposal only. [Report](../EXP17_J2_R4_C_DETACH_GRADIENT_MECHANISM_REPORT.md).
+
 ## Exp17-J2-R4-B cross-batch BN statistics controls (2026-11-24)
 
 EXP17_J2_R4_B_SIX_FORWARD_COMPLETE_PENDING_CHATGPT_GATE. Exactly6 new TRAIN forwards on fixed positions7/11/21 (32/32/28 images): running fixedconf TP0 in all; batch-both TP21/18/13 with FP9/7/7. New92TRAIN/168GT total52TP23FP; with sealed position1 total124TRAIN/230GT gives70TP29FP versus0. Four-batch Neck16 cv1 offsets share sign across all64 channels under both paths; current statistic mismatch repeats beyond one batch, training origin unresolved.25 CPU tests/93 independent checks PASS;585 protected files unchanged; RNG/state/source-runtime checks pass.0backward/update/VAL/TEST; original formal LastMaskAP0/80VAL remain. Six-call budget exhausted; separate R4-C derivative design remains unexecuted. [Report](../EXP17_J2_R4_B_CROSS_BATCH_BN_DIAGNOSTIC_REPORT.md).

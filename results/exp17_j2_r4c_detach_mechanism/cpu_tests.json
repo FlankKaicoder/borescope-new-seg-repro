@@ -1,0 +1,61 @@
+{
+  "FD_scope": "float64 reference all6; FP32 cases5-6 additionally compared to closed-form NumPy derivatives; no model forwards",
+  "autograd_calls": 12,
+  "fixtures": [
+    {
+      "autograd_calls": 2,
+      "bridge_reference_max_abs": 8.881784197001252e-16,
+      "case": 1,
+      "dtype": "torch.float64",
+      "finite_difference_asserted": true,
+      "finite_difference_max_abs": 5.873690422930622e-11,
+      "forward_equal": true
+    },
+    {
+      "autograd_calls": 2,
+      "bridge_reference_max_abs": 1.1102230246251565e-16,
+      "case": 2,
+      "dtype": "torch.float64",
+      "finite_difference_asserted": true,
+      "finite_difference_max_abs": 3.941061366141696e-11,
+      "forward_equal": true
+    },
+    {
+      "autograd_calls": 2,
+      "bridge_reference_max_abs": 3.3306690738754696e-16,
+      "case": 3,
+      "dtype": "torch.float64",
+      "finite_difference_asserted": true,
+      "finite_difference_max_abs": 9.608721457388114e-11,
+      "forward_equal": true
+    },
+    {
+      "autograd_calls": 2,
+      "bridge_reference_max_abs": 4.440892098500626e-16,
+      "case": 4,
+      "dtype": "torch.float64",
+      "finite_difference_asserted": true,
+      "finite_difference_max_abs": 5.328901764301008e-10,
+      "forward_equal": true
+    },
+    {
+      "autograd_calls": 2,
+      "bridge_reference_max_abs": 1.1920928955078125e-07,
+      "case": 5,
+      "dtype": "torch.float32",
+      "finite_difference_asserted": true,
+      "finite_difference_max_abs": 5.2665482352165505e-05,
+      "forward_equal": true
+    },
+    {
+      "autograd_calls": 2,
+      "bridge_reference_max_abs": 5.960464477539063e-08,
+      "case": 6,
+      "dtype": "torch.float32",
+      "finite_difference_asserted": true,
+      "finite_difference_max_abs": 1.9033309672789045e-07,
+      "forward_equal": true
+    }
+  ],
+  "passed": true
+}
