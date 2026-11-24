@@ -1,0 +1,113 @@
+{
+  "evidence_grade": "RESOURCE_RECEIPTS_PLUS_STATIC_OFFLOADER_REVIEW",
+  "new_model_calls": 0,
+  "new_autograd_calls": 0,
+  "A_complete_RSS_bytes": 14161891328,
+  "observed_A_complete_RSS_bytes": 14174720000,
+  "HOLD_RSS_bytes": 21475991552,
+  "RSS_limit_bytes": 21474836480,
+  "RSS_over_limit_bytes": 1155072,
+  "cgroup_peak_bytes": 28919959552,
+  "cgroup_limit_bytes": 32212254720,
+  "cgroup_free_at_HOLD_bytes": 3292295168,
+  "hard_trigger": "process_RSS_limit, not CUDA OOM or cgroup reserve",
+  "offloader_static_fact": "Each saved-tensor pack performs tensor.detach().cpu(); no deduplication or disk spill is implemented.",
+  "offloader_static_inference": "Repeated saves of one CUDA tensor may allocate repeated CPU copies. The run did not log individual pack identities; the size of that contribution is unknown.",
+  "A_call_counts": {
+    "A": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "N": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "method_dispatch": [
+      "dict",
+      "tensor"
+    ],
+    "projection": 2,
+    "root_dispatch": [
+      "dict"
+    ]
+  },
+  "B_partial_call_counts": {
+    "A": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "N": [],
+    "method_dispatch": [
+      "dict",
+      "tensor"
+    ],
+    "projection": 0,
+    "root_dispatch": [
+      "dict"
+    ]
+  },
+  "A_losses_FP32": {
+    "pair": 0.052910733968019485,
+    "supcon": 3.067108631134033,
+    "total": 329.117919921875,
+    "yolo": 304.3694152832031
+  },
+  "no_graph_B_loss_or_gradient_result": true,
+  "post_exit_cgroup_bytes": 7944105984,
+  "disk_free_bytes": 20226039808
+}

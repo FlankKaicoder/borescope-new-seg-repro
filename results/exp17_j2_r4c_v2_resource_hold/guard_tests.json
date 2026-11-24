@@ -1,0 +1,10 @@
+{
+  "Torch_imported": false,
+  "autograd_calls": 0,
+  "exit_code": 0,
+  "model_calls": 0,
+  "passed": true,
+  "stderr_sha256": "8d916f06d57cb9b1fb9ee0c41728a5cb07fcb4e4d8896346a6674b99d9e1f76c",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests": 19
+}

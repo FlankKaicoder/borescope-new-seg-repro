@@ -1,5 +1,9 @@
 # Decision log
 
+## D098 — R4-C v2 host-memory boundary (2026-11-24)
+
+User explicitly approved another2A+2N/6-component-gradient scope.19 non-model tests pass and the frozen bridge reuses12 prior CPU Autograd checks. Graph A validates, but the second graph reaches the20GiB RSS ceiling before N or component backward. Preserve partial B attempt and stop; no automatic limit increase or retry. A disk-backed saved-tensor design would change the prior no-disk constraint and needs an explicit revised numerical budget. No scientific gradient conclusion follows. [Handoff](../EXP17_J2_R4_C_V2_RESOURCE_HOLD_HANDOFF.md).
+
 ## D097 — Exp17-J2-R4-C diagnostic budget HOLD (2026-11-24)
 
 User approved implementing the full R4-C plan. The independent diagnostic passed12 CPU Autograd calls but failed after1A+1N because its Module hook assertion confused direct forward method recursion with Module.__call__. Preserve the pending N attempt and all source/evidence bytes; no automatic retry or budget reset. Graph A is lost, so a new paired run would consume an additional2A+2N and requires an explicit revised scope. This is an instrumentation failure, not evidence for or against the J2 detach mechanism. [Handoff](../EXP17_J2_R4_C_DETACH_GRADIENT_MECHANISM_REPORT.md).

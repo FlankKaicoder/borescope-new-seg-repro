@@ -1,0 +1,34 @@
+{
+  "archive_SHA_verified": true,
+  "file_SHA_checks": 21,
+  "ledger_rows": 8,
+  "attempts": [
+    "A_full",
+    "A_N_prefix",
+    "B_full"
+  ],
+  "commits": [
+    "A_full",
+    "A_N_prefix"
+  ],
+  "pending_preserved": "B_full",
+  "A_graph_dispatch_verified": true,
+  "A_N_buffer_equality": true,
+  "original_files_unchanged": 650,
+  "resource_limit_was_process_RSS": true,
+  "no_OS_CUDA_OOM_reported": true,
+  "scripts_match_execution": true,
+  "new_CPU_autograd": 0,
+  "new_model_autograd": 0,
+  "audit_model_calls": 0,
+  "audit_autograd_calls": 0,
+  "cumulative_consumed_slots": {
+    "A_full_attempts": 3,
+    "A_full_returns": 2,
+    "partial_A_attempts": 1,
+    "N_prefix_attempts": 2,
+    "N_prefix_returns": 2,
+    "model_autograd": 0,
+    "CPU_autograd": 12
+  }
+}

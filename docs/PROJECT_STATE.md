@@ -1,5 +1,9 @@
 # Project state
 
+## Exp17-J2-R4-C v2 host-memory HOLD (2026-11-24)
+
+EXP17_J2_R4_C_V2_HOLD_HOST_MEMORY_LIMIT.19 pure-Python tests PASS; original12 CPU Autograd evidence reused. Graph A now passes exact dispatch and A/N forward checks; PairLoss=.052910733968019485. Holding A while constructing B crosses20GiB process RSS at module19, before B N or any model Autograd.650 original files/C1 unchanged. Cumulative3A attempts(1partial),2N; no retries/update/VAL/TEST. Proposed disk-backed A saved tensors and additional2A+2N require revised scope; no detach-gradient conclusion. [Handoff](../EXP17_J2_R4_C_V2_RESOURCE_HOLD_HANDOFF.md).
+
 ## Exp17-J2-R4-C diagnostic HOLD (2026-11-24)
 
 EXP17_J2_R4_C_HOLD_DIAGNOSTIC_COUNTER_MISMATCH. Six CPU derivative fixtures PASS/12 Autograd calls. One A-full traversal committed and one N-prefix returned but remains pending; the new diagnostic incorrectly expected a direct self.forward call to trigger a root Module hook. Graph B/model Autograd=0; no retries, updates, VAL or TEST.634 original files and C1 production catalog unchanged. No real detach-gradient conclusion. Full two-graph restart would require an explicit additional2A+2N scope; proposal only. [Report](../EXP17_J2_R4_C_DETACH_GRADIENT_MECHANISM_REPORT.md).
