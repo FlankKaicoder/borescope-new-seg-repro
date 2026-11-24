@@ -1,0 +1,127 @@
+{
+  "artifacts": [
+    {
+      "file": "01_bn_heatmaps.png",
+      "bytes": 236712,
+      "sha256": "f0b6ebea36fa572b3b7c8e07f68c574376f40c5bda64662dc1e2878439629e25"
+    },
+    {
+      "file": "01_bn_heatmaps.svg",
+      "bytes": 256163,
+      "sha256": "cd4a5fe7ebf4cc58d0a412b75c0af561ddc7fcb742855ade95e6f26890c6986e"
+    },
+    {
+      "file": "02_selected_trajectories.png",
+      "bytes": 335504,
+      "sha256": "17be963565f6934c6f99ba424d9b401cdf75af322e6fc20e191e0e54cd059147"
+    },
+    {
+      "file": "02_selected_trajectories.svg",
+      "bytes": 166741,
+      "sha256": "1ce11afd930f6e23544c47511e0f92a872d8d57d47f6bdeb3246e5234ffde725"
+    },
+    {
+      "file": "03_channel_distributions.png",
+      "bytes": 177079,
+      "sha256": "bdb0bc76cddd14a1ed6de70b9f2e1ffa34508128c1e318aa1c029e21bd3f0d11"
+    },
+    {
+      "file": "03_channel_distributions.svg",
+      "bytes": 128606,
+      "sha256": "e494abb13898bbbf981a418f4b2c88e422d6d2a53f66be65f35ce440ac25c8d7"
+    },
+    {
+      "file": "04_gradients_and_clip.png",
+      "bytes": 225066,
+      "sha256": "c52684b30004d233ec9990e04808f2b6a33a7c60c6947e586110b47394126717"
+    },
+    {
+      "file": "04_gradients_and_clip.svg",
+      "bytes": 94884,
+      "sha256": "39660136d7d8b5bc1bba2db85276a632ef089e7bc8af2f3de50ba723fc3467ee"
+    },
+    {
+      "file": "05_ema_comparison.png",
+      "bytes": 199002,
+      "sha256": "429a94e40b41fa56bfcce07773fbcc2493d78f7282358dbf0014cb5c1e57c746"
+    },
+    {
+      "file": "05_ema_comparison.svg",
+      "bytes": 71762,
+      "sha256": "973a17093343e15d23e5aadf08fef1c8ab883c7775428cd0d88d5917562a738e"
+    },
+    {
+      "file": "bn_memory_and_ema_schedule.json",
+      "bytes": 817,
+      "sha256": "289e6a80ff5653a2de828061316977590c3fbf6230435116943831523ee066f4"
+    },
+    {
+      "file": "bn_role_comparison.csv",
+      "bytes": 271054,
+      "sha256": "2b3266ff3a15b75072735f43349c0f04c8a8bd5e6fffdc48d4568779b0b9c45b"
+    },
+    {
+      "file": "conv_layer_changes.csv",
+      "bytes": 526883,
+      "sha256": "f3787aba2b7b97d109ca1a1524e13084ff7faf9e9abafbeaecd445ba48448974"
+    },
+    {
+      "file": "descriptive_associations.csv",
+      "bytes": 8162,
+      "sha256": "d185ce14e421abf25c616632177d019c20c62f7f2110cfcef2428d085f3a5a2c"
+    },
+    {
+      "file": "descriptive_onsets.csv",
+      "bytes": 6702,
+      "sha256": "176507c0a25e7645b6608fbec710b345afcccee89b552ca1e40039160413a130"
+    },
+    {
+      "file": "gradient_epoch_regions.csv",
+      "bytes": 5768,
+      "sha256": "26b8f2b041b929e081589dc36c1658e869cf93ce78bd484e08257382527f3974"
+    },
+    {
+      "file": "layer_trajectory.csv",
+      "bytes": 871819,
+      "sha256": "1911a60d4c00007b9193c88e88f41edd3e4661f3ad601a907fee80a3dce9e716"
+    },
+    {
+      "file": "mechanism_evidence.json",
+      "bytes": 2354,
+      "sha256": "3e7947bd3da2633e67e0dae584aa5a5f667931c7b9c7af3a574f05a73a0e1c9a"
+    },
+    {
+      "file": "pair_layer_energy.csv",
+      "bytes": 1188,
+      "sha256": "8e644bc7406ad41ceae763818fc66a84a2de12ed2acc23820bbf1eb24f7c3d06"
+    },
+    {
+      "file": "R3_B_PROPOSAL_NOT_AUTHORIZATION.md",
+      "bytes": 3227,
+      "sha256": "ab01f2d78e75d16592a750ef16a4a5af624de21bd0f7918785a82e1eb3974552"
+    },
+    {
+      "file": "selected_channels.csv",
+      "bytes": 146444,
+      "sha256": "80d379b716344335e427f48b293661c9c5ee2f5dde8d92e90a2bce8c0cb47a05"
+    },
+    {
+      "file": "setup_configuration.json",
+      "bytes": 520,
+      "sha256": "237cc810a0a9d1a8011b521112734670ad43a95e5a14d12919d1404995ee88dc"
+    },
+    {
+      "file": "summary.json",
+      "bytes": 50338,
+      "sha256": "22bfa49e1e55532585c80b5a819ccbcabf336e8e197d0eb70f3c78ff5674ee38"
+    },
+    {
+      "file": "verification_summary.json",
+      "bytes": 266,
+      "sha256": "3fd7255186f53233c103ddfda405812319176b9619bdaced9b71d8fe0e8497c8"
+    }
+  ],
+  "primary_report": "../../EXP17_J2_R3_BN_DRIFT_REPORT.md",
+  "raw_channels_and_scripts": "PRIVATE_R3_A_ARCHIVE",
+  "R3_B_authorized": false
+}

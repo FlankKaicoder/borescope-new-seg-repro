@@ -1,5 +1,8 @@
 # Experiment index
 
+- **Exp17-J2-R3-A (2026-11-24)** — CPU-only90BN channel/affine/Conv andsavedgradient investigation. Initialcounter andEMA semantics resolved;P3Neck mean/offset drift prioritized, upstream causality unresolved. No newmodel execution;R3-B four-forward proposal remains pending. [Report](../EXP17_J2_R3_BN_DRIFT_REPORT.md).
+
+
 - **Exp17-J2-R2 (2026-11-24)** — BN running-stat-dependent inference collapse supported on bound TRAIN: same-weight TP0→18/62 with batch statistics, J1TP19; bounded18forwards exhausted, no formalVAL/backward/update. Drift origin and Pair causality remain HOLD. [R2 report](../EXP17_J2_R2_ROOT_CAUSE_REPORT.md).
 
 

@@ -1,5 +1,10 @@
 # Decision log
 
+## D090 — Exp17-J2-R3-A offline BN drift (2026-11-24)
+
+Keep formalLastMaskAP95=0 and80VAL intact. Separate learnedscale changes from currentactivation mismatch;do not label largevariance orcounter2101 as a BNbug. COCOinitialBN identity andEMAfloat-update semantics verified. Prioritize sharedP3Neck mean/variance source separation;Pair/clip correlations do not establish causality. Stop afterCPUdelivery and propose4 independentlybudgeted TRAIN forwards;no automaticR3-B/calibration/retraining/re-VAL. [Evidence](../EXP17_J2_R3_BN_DRIFT_REPORT.md).
+
+
 ## D089 — Exp17-J2-R2 BN-statistic investigation (2026-11-24)
 
 Preserve formal100epochs/2100updates/80VAL and LastMaskAP95=0. Treat disposable TRAIN-only BN-stat substitution as mechanism evidence, not a repaired checkpoint, calibration or replacement metric. Same input/weights and eval head yield TP0 with running statistics and18 with batch statistics; inference-state mismatch is supported locally, upstream origin/Pair/clip causality unresolved. Do not change protocol or re-evaluate before a separately reviewed next scope. The18forward diagnostic budget is exhausted; CUBLAS reproducibility warnings remain disclosed. [Evidence](../EXP17_J2_R2_ROOT_CAUSE_REPORT.md).

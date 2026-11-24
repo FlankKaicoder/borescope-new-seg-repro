@@ -1,0 +1,13 @@
+{
+  "arithmetic_fixtures": 12,
+  "direct_tensor_comparisons": 2700,
+  "delivery_checks": 108,
+  "all_pass": true,
+  "protected_original_files": 442,
+  "new_forward": 0,
+  "new_backward": 0,
+  "new_optimizer_update": 0,
+  "new_VAL": 0,
+  "TEST": 0,
+  "R3_B": false
+}

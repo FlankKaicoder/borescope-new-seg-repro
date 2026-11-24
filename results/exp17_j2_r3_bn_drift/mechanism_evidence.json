@@ -1,0 +1,66 @@
+{
+  "schema": "EXP17_J2_R3_A_EVIDENCE_V1",
+  "status": "OFFLINE_COMPLETE_PENDING_REVIEW",
+  "R3_B_authorized": false,
+  "R3_B_executed": false,
+  "recommended_R3_B_forwards": 4,
+  "confirmed": [
+    {
+      "id": "F1",
+      "claim": "All90 initial BN counters are inherited as1 from frozenCOCO; complete initial BN hash equals historical preparation",
+      "source": "PRIVATE initial_bn_identity.json"
+    },
+    {
+      "id": "F2",
+      "claim": "Variance squared energy is highly concentrated; channel and layer statistics differ from globalL2",
+      "source": "summary.json"
+    },
+    {
+      "id": "F3",
+      "claim": "P3 Neck running means and effective offsets diverge from J1 Last; these are not activation fit measurements",
+      "source": "layer_trajectory.csv"
+    },
+    {
+      "id": "F4",
+      "claim": "EMA floating buffers update and closely track final MASTER; integer counters remain1 by code",
+      "source": "bn_role_comparison.csv"
+    },
+    {
+      "id": "F5",
+      "claim": "Pair gradients reach Backbone and shared Neck; head component norms are zero in savedprobes",
+      "source": "gradient_epoch_regions.csv"
+    }
+  ],
+  "refuted_simple_hypotheses": [
+    "2101 implies an extra formal training forward",
+    "EMA count1 means no EMA update",
+    "all channels scale uniformly with globalL2",
+    "largest training variance growth identifies the causal layer",
+    "Pair directly updates native Head parameters"
+  ],
+  "still_plausible": [
+    "feature distribution drift and normalization lag",
+    "mean and/or variance mismatch compounded through the graph",
+    "detach-A-stat auxiliary gradients and optimizer interaction",
+    "EMA parameter-buffer mismatch despite close buffers"
+  ],
+  "insufficient_evidence": [
+    "Pair uniquely caused drift",
+    "Clip10 caused drift",
+    "a framework BN implementation defect",
+    "mean rather than variance is functionally dominant",
+    "same mechanism explains every early failed epoch"
+  ],
+  "missing_history": [
+    "per-step actual BN input moments",
+    "component gradients per BN channel",
+    "J1 matched intermediate checkpoint trajectory",
+    "continuous pre-epoch5 saved states"
+  ],
+  "scientific_result_unchanged": {
+    "Last_MASTER_Mask_AP95": 0,
+    "formal_updates": 2100,
+    "VAL_native_passes": 80,
+    "R2_forward_budget_remaining": 0
+  }
+}

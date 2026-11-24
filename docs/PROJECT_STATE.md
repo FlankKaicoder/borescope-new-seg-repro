@@ -1,5 +1,10 @@
 # Project state
 
+## Exp17-J2-R3-A offline BN drift investigation (2026-11-24)
+
+EXP17_J2_R3_A_OFFLINE_ANALYSIS_COMPLETE_PENDING_CHATGPT_GATE. CPU25checkpoint sources;90BN/8040channels;369840channel rows;2100savedsteps/80savedprobes. InitialBN hash matches historical preparation;COCOcounter1 explainsMASTER2101,EMAinteger1 is expected. GlobalvarianceL2 is extreme-channel dominated;sharedP3Neck mean/effectiveoffset andConv changes prioritize directactivation measurement. EMAfloatbuffersupdate andfollowMASTER. Pair/Clip causality unresolved;originalLastMaskAP0/80VAL unchanged.12arithmeticfixtures+108checks PASS;442protectedfilesSHAstable. Zero newforward/backward/update/VAL/TEST. Recommend separate4-forward R3-B;notauthorized/notexecuted. [R3 report](../EXP17_J2_R3_BN_DRIFT_REPORT.md).
+
+
 ## Exp17-J2-R2 BN-statistic inference mismatch investigation (2026-11-24)
 
 EXP17_J2_R2_INVESTIGATION_COMPLETE_PENDING_CHATGPT_GATE. CPU25checkpoints and bounded18forwards=15TRAIN+3stride complete; newbackward/update/VAL/TEST0. Same32TRAIN/62GT, J2 running-stat0det versus BNbatchstat24det/18BoxTP (J1 24det/19TP); no saved-state change/calibration. Full/native/serialized and fused/backend control pairs bitwise equal; fusion roundoff retained. BN-stat-dependent train/eval mismatch supported as proximal mechanism; upstream drift/Pair/clip/AMP cause unresolved. Original442criticalfiles/80VALrecords unchanged, formal LastMaskAP95 stays0. CUBLAS warn_only limitation retained. SCIENTIFIC_HOLD_BN_MISMATCH_UPSTREAM_UNRESOLVED; stop before repair/retrain/re-VAL. [R2 report](../EXP17_J2_R2_ROOT_CAUSE_REPORT.md).

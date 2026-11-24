@@ -1,0 +1,23 @@
+{
+  "augmentation": {
+    "close_mosaic": 0,
+    "cutmix": 0.0,
+    "degrees": 0.0,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "mixup": 0.0,
+    "mosaic": 0.0,
+    "multi_scale": 0.0,
+    "scale": 0.5,
+    "translate": 0.1
+  },
+  "config_seed": 42,
+  "weight_transfer": {
+    "exactly_transferred_state_entries": 510,
+    "source_classes": 80,
+    "source_weight_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+    "target_classes": 7,
+    "target_state_entries": 561
+  }
+}
