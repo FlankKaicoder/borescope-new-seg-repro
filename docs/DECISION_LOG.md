@@ -1,5 +1,10 @@
 # Decision log
 
+## D092 — Exp17-J2-R3-C shared-prefix Mean sufficiency (2026-11-24)
+
+The user explicitly approved two complementary local Mean controls. Preserve all original identities and budgets; use independent copies and a new two-call ledger. Correcting only shared0-16 restores fixed-conf TP19/FP6, while correcting only17-23 does not (TP0/FP2599; low-conf TP17). Downstream inputs improve without downstream Mean intervention. This establishes conditional local sufficiency, not necessity, unique origin, Pair causality, or repaired VAL performance. Stop after two calls and delivery; propose Backbone0-10 versus P3Neck11-16 as two new controls requiring a new approved scope. [Evidence](../EXP17_J2_R3_C_LOCAL_MEAN_DIAGNOSTIC_REPORT.md).
+
+
 ## D091 — Exp17-J2-R3-B Mean-source intervention (2026-11-24)
 
 The user explicitly approved continuing the four-forward proposal; engineering authorization binds this scope without claiming a new external signature. Preserve original Protocol, weights, runtime and all historical budgets. Same-batch Mean-only rescue establishes global functional sufficiency, not Pair causality or a repaired model. Actual healthy-path means near1000 refute treating absolute buffer magnitude as a defect. Stop after four calls and delivery; propose two complementary local Mean controls under a new scope. [Evidence](../EXP17_J2_R3_B_BN_SOURCE_DIAGNOSTIC_REPORT.md).

@@ -1,5 +1,10 @@
 # Project state
 
+## Exp17-J2-R3-C local Mean controls (2026-11-24)
+
+EXP17_J2_R3_C_TWO_FORWARD_COMPLETE_PENDING_CHATGPT_GATE. Two TRAIN forwards completed on the bound 32-image/62-GT packet. Mean correction in shared modules0-16 (48 BN) restores fixed-conf TP19/FP6; correction only in17-23 (42 BN) gives TP0/FP2599, with TP17 at the pre-existing .001 threshold. Shared-prefix correction is sufficient on this batch, not a unique cause or Pair causal attribution. First48 BN moments match sealed references exactly. 20 CPU tests and40 independent checks pass;492 protected files unchanged. No backward, update, calibration, new VAL or TEST. Formal Last Mask AP95=0 remains. Two-call budget exhausted; R3-D Backbone/P3-Neck split proposed, not authorized or executed. [Report](../EXP17_J2_R3_C_LOCAL_MEAN_DIAGNOSTIC_REPORT.md).
+
+
 ## Exp17-J2-R3-B BN statistics source controls (2026-11-24)
 
 EXP17_J2_R3_B_FOUR_FORWARD_COMPLETE_PENDING_CHATGPT_GATE. Four independent TRAIN forwards completed on the bound 32-image/62-GT packet. At confidence .25: Running TP0; Mean-only TP19/FP6; Variance-only TP0/FP9600; Batch-both TP18/FP6. Global Mean substitution is sufficient on this batch; local sufficiency and upstream Pair/optimizer causality remain unresolved. Actual BN moments show propagated mismatch; large absolute means alone are not defects. Four-call ledger exhausted; 14 CPU tests and 66 completion checks pass; 451 original files unchanged. No backward, update, calibration, new VAL or TEST. Formal Last Mask AP95=0 remains. Two local Mean controls are proposed for R3-C, not authorized or executed. [Report](../EXP17_J2_R3_B_BN_SOURCE_DIAGNOSTIC_REPORT.md).

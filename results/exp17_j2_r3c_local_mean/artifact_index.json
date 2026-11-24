@@ -1,0 +1,71 @@
+{
+  "artifacts": [
+    {
+      "file": "01_local_mean_controls.png",
+      "bytes": 74090,
+      "sha256": "e523e9ce00a4da6a1f640d36e81c499bd245261c2d2f9e60bd03c79fd5e173ad"
+    },
+    {
+      "file": "01_local_mean_controls.svg",
+      "bytes": 59280,
+      "sha256": "9ccaf27ea787d18cf900c74cb1b618b8e5ff8675a4525346d4776c18b8c6bfce"
+    },
+    {
+      "file": "02_local_mean_activation_paths.png",
+      "bytes": 423459,
+      "sha256": "a79da6da68c42959d836262251984ea8c3d5ea526985843442d4eb870e54eb14"
+    },
+    {
+      "file": "02_local_mean_activation_paths.svg",
+      "bytes": 95816,
+      "sha256": "200d7fe60262ef8ad021f4ae6e93187795307091683912a56dc7ec9664cc5293"
+    },
+    {
+      "file": "analysis_input_bindings.json",
+      "bytes": 1320,
+      "sha256": "c00299a41e459d57cd364658f36bf6db63578b4f13362836d12489ebfe1e3d7c"
+    },
+    {
+      "file": "analysis_verification.json",
+      "bytes": 584,
+      "sha256": "9a64bece8e3551721cbd753b0daa941136851ed29ba0c5733c99008fa6a3ee95"
+    },
+    {
+      "file": "bn_layer_actual_statistics.csv",
+      "bytes": 101378,
+      "sha256": "7d84d666b128cc224cdf44b94c7149d6178c52dd070763639ca6c9bf29c2d495"
+    },
+    {
+      "file": "case_results.csv",
+      "bytes": 1111,
+      "sha256": "6a3f5e6aee2b92cf79109fefa042f8822c7e12d025699d2d8be9c4b3fb5df9c8"
+    },
+    {
+      "file": "execution_bindings.json",
+      "bytes": 4245,
+      "sha256": "7517014afd4db64821e28abe2c80e1ce91b85c204493021749be6f36897bb440"
+    },
+    {
+      "file": "R3_D_PROPOSAL_NOT_AUTHORIZATION.md",
+      "bytes": 2386,
+      "sha256": "e181528100740ba4d1c0256f71a84844182b578c380860aa55234cab69f81ffd"
+    },
+    {
+      "file": "selected_bn_layers.csv",
+      "bytes": 9162,
+      "sha256": "8532c61cb31c1be886810cb59d632cff9be70777cc80abbd88b96dc808f6077d"
+    },
+    {
+      "file": "summary.json",
+      "bytes": 35089,
+      "sha256": "0ee710d290d8f1bc4c4bd403fd78eaf040e080e332d757b9b90205edcfd5736a"
+    },
+    {
+      "file": "verification_summary.json",
+      "bytes": 3585,
+      "sha256": "e51933342df047f47809646bfda5d14052b05d64680049bd7189a7ae036f7dc1"
+    }
+  ],
+  "report": "../../EXP17_J2_R3_C_LOCAL_MEAN_DIAGNOSTIC_REPORT.md",
+  "raw_data": "PRIVATE_R3_C_ARCHIVE"
+}

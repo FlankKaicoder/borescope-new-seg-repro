@@ -1,0 +1,24 @@
+{
+  "R3_B_references_not_new_passes": true,
+  "case_rows": 8,
+  "layer_rows": 360,
+  "new_channel_rows": 16080,
+  "new_model_calls_by_analysis": 0,
+  "prefix_moments_exact": [
+    {
+      "channel_count": 4712,
+      "new_condition": "prefix_0_16_mean",
+      "scope": "module0-16",
+      "sealed_reference": "mean_only",
+      "six_moments_exact": true
+    },
+    {
+      "channel_count": 4712,
+      "new_condition": "suffix_17_23_mean",
+      "scope": "module0-16",
+      "sealed_reference": "running",
+      "six_moments_exact": true
+    }
+  ],
+  "reference_channel_rows": 16080
+}

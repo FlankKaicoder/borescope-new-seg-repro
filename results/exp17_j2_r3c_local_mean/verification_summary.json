@@ -1,0 +1,180 @@
+{
+  "BN_output_moment_scaled_residuals": {
+    "prefix_0_16_mean": {
+      "mean": 3.292217198542645e-05,
+      "variance_biased": 1.2767091521297785e-06
+    },
+    "suffix_17_23_mean": {
+      "mean": 1.6223570609199485e-05,
+      "variance_biased": 1.9646733264694032e-06
+    }
+  },
+  "R3_B_prefix_reference_verified": true,
+  "all_pass": true,
+  "audit_forward_calls": 0,
+  "check_count": 40,
+  "checks": [
+    {
+      "name": "exact_six_ledger_rows",
+      "pass": true
+    },
+    {
+      "name": "chain_0",
+      "pass": true
+    },
+    {
+      "name": "chain_1",
+      "pass": true
+    },
+    {
+      "name": "chain_2",
+      "pass": true
+    },
+    {
+      "name": "chain_3",
+      "pass": true
+    },
+    {
+      "name": "chain_4",
+      "pass": true
+    },
+    {
+      "name": "chain_5",
+      "pass": true
+    },
+    {
+      "name": "authorization_binding",
+      "pass": true
+    },
+    {
+      "name": "two_ordered_attempts",
+      "pass": true
+    },
+    {
+      "name": "two_ordered_commits",
+      "pass": true
+    },
+    {
+      "name": "completed_boundary",
+      "pass": true
+    },
+    {
+      "name": "protected_originals",
+      "pass": true
+    },
+    {
+      "name": "frozen_scripts",
+      "pass": true
+    },
+    {
+      "name": "audit_no_CUDA",
+      "pass": true
+    },
+    {
+      "name": "prefix_0_16_mean_commit_sha",
+      "pass": true
+    },
+    {
+      "name": "prefix_0_16_mean_artifact_sha",
+      "pass": true
+    },
+    {
+      "name": "prefix_0_16_mean_source_and_input",
+      "pass": true
+    },
+    {
+      "name": "prefix_0_16_mean_persistent_state",
+      "pass": true
+    },
+    {
+      "name": "prefix_0_16_mean_8040_channels_90_BN",
+      "pass": true
+    },
+    {
+      "name": "prefix_0_16_mean_finite_channels",
+      "pass": true
+    },
+    {
+      "name": "prefix_0_16_mean_statistics_source",
+      "pass": true
+    },
+    {
+      "name": "prefix_0_16_mean_exact_scope",
+      "pass": true
+    },
+    {
+      "name": "prefix_0_16_mean_prefix_matches_sealed_reference",
+      "pass": true
+    },
+    {
+      "name": "prefix_0_16_mean_weights_buffers_match_reference",
+      "pass": true
+    },
+    {
+      "name": "prefix_0_16_mean_0.001_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "prefix_0_16_mean_0.25_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "suffix_17_23_mean_commit_sha",
+      "pass": true
+    },
+    {
+      "name": "suffix_17_23_mean_artifact_sha",
+      "pass": true
+    },
+    {
+      "name": "suffix_17_23_mean_source_and_input",
+      "pass": true
+    },
+    {
+      "name": "suffix_17_23_mean_persistent_state",
+      "pass": true
+    },
+    {
+      "name": "suffix_17_23_mean_8040_channels_90_BN",
+      "pass": true
+    },
+    {
+      "name": "suffix_17_23_mean_finite_channels",
+      "pass": true
+    },
+    {
+      "name": "suffix_17_23_mean_statistics_source",
+      "pass": true
+    },
+    {
+      "name": "suffix_17_23_mean_exact_scope",
+      "pass": true
+    },
+    {
+      "name": "suffix_17_23_mean_prefix_matches_sealed_reference",
+      "pass": true
+    },
+    {
+      "name": "suffix_17_23_mean_weights_buffers_match_reference",
+      "pass": true
+    },
+    {
+      "name": "suffix_17_23_mean_0.001_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "suffix_17_23_mean_0.25_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "completion_budget",
+      "pass": true
+    },
+    {
+      "name": "completion_ledger_sha",
+      "pass": true
+    }
+  ],
+  "independent_match_cases": 4,
+  "original_artifacts_unchanged": 492
+}
