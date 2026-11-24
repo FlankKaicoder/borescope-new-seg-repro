@@ -24,6 +24,18 @@ G1_SHA = "613e4e154a872e0fd88791013f8e63716100470bb4a2f73084b702bb5cd37e44"
 MODE = "replay_a_connected"
 
 
+def validate_science(protocol, repository):
+    original = repository / "results/exp17g_formal_protocol/formal_training_protocol_v1.json"
+    require(file_sha(original) == G1_SHA, "Original G1 protocol changed")
+    baseline = load(original)
+    for key in ("batches_per_epoch", "effective_updates", "training", "schedule", "initialization", "identity",
+                "data", "environment", "model", "sampler_and_recovery", "checkpoint", "validation", "hard_stop"):
+        require(protocol[key] == baseline[key], f"R5 frozen scientific field changed: {key}")
+    method = copy.deepcopy(baseline["method"])
+    method["bn_mode"] = MODE
+    require(protocol["method"] == method, "R5 method differs beyond connected statistics")
+
+
 def val_scope(config, protocol_sha):
     from tools.exp17.formal.validation import MAX_PASSES, PASSES, ROLES, VAL_EPOCHS, VAL_FILES_SHA256
     return {"stage": "EXP17_R5_FROZEN_VAL_AUTHORIZATION", "authorized": True,
@@ -80,16 +92,19 @@ def prepare(repository, gate):
                   input_reference=str(gate / "input_reference.json"))
     exclusive_json(gate / "runtime_config.json", config)
     exclusive_json(gate / "val_authorization.json", val_scope(config, file_sha(gate / "protocol.json")))
-    print(json.dumps({"status": "PREPARED_PENDING_CPU_AND_AMP", "gate": str(gate)}, flush=True))
+    print(json.dumps({"status": "PREPARED_PENDING_CPU_AND_AMP", "gate": str(gate)}), flush=True)
 
 
 def authorize(repository, gate):
     protocol = load(gate / "protocol.json")
+    validate_science(protocol, repository)
     require(protocol["code"]["files"] == source_catalog(repository), "Source changed after candidate freeze")
     for name in ("cpu_tests.json", "smoke.json"):
         report = load(gate / name)
         require(report["status"] == "PASS" and report["code_sha256"] == protocol["code"]["sha256"],
                 "R5 engineering prerequisite failed or used different sources")
+    require(load(gate / "smoke.json")["counts"] == protocol["engineering_repair"]["smoke_budget"],
+            "R5 AMP smoke scope is incomplete or exceeded")
     require(shutil.disk_usage(ROOT.parent).free >= 8 * 1024**3, "Less than approved 8GiB independent storage headroom")
     exclusive_json(gate / "formal_authorization.json", {
         "stage": "EXP17_R5_FORMAL_TRAIN_AUTHORIZATION", "gate": "USER_APPROVED_R5_PLAN_EXECUTION",
@@ -102,6 +117,7 @@ def authorize(repository, gate):
 
 def validate(repository, gate):
     protocol, config = load(gate / "protocol.json"), load(gate / "runtime_config.json")
+    validate_science(protocol, repository)
     auth = load(gate / "formal_authorization.json")
     require(protocol["experiment"] == EXPERIMENT and protocol["method"]["bn_mode"] == MODE
             and protocol["formal_training_authorized"] is False and protocol["pending_fields"] == [], "Invalid R5 protocol")
@@ -166,6 +182,7 @@ def epoch_boundary(epoch, journal, store):
         from tools.exp14.formal_e0_e1 import hash_state
         for role, field in (("master", "state"), ("ema", "ema")):
             expected_state = hash_state({k: v for k, v in payload[field].items() if not k.startswith("region_projection.")})
+            role_result = load(ROOT / f"VAL_epoch005_{role}.json")
             for mode in ("standard", "fixed"):
                 directory = ROOT / "val" / f"epoch005_{role}_{mode}"
                 receipt_file = load(directory / "pass_receipt.json")
@@ -174,6 +191,9 @@ def epoch_boundary(epoch, journal, store):
                         and (receipt_file["epoch"], receipt_file["role"], receipt_file["mode"]) == (5, role, mode)
                         and receipt_file["evaluation_sha256"] == file_sha(directory / "evaluation.json"),
                         "R5 early VAL pass completion/model identity differs")
+                require(receipt_file["result_digest"] == digest(role_result[mode])
+                        and receipt_file["confidence"] == (.001 if mode == "standard" else .25),
+                        "R5 early role summary or confidence differs from pass receipt")
         result = decide(reports, load(ROOT / "VAL_epoch005_master.json"))
         result.update(checkpoint=receipt, bindings=store.bindings, journal_prefix_sha256=file_sha(journal.path),
                       journal_last_sha256=journal.rows[-1]["sha256"], updates=105,
@@ -194,12 +214,13 @@ def epoch_boundary(epoch, journal, store):
     return None
 
 
-def run(repository, gate):
+def run(repository, gate, resume_authorization=None):
     protocol, config, auth, bindings = validate(repository, gate)
     claim = {"experiment": EXPERIMENT, "authorization_sha256": digest(auth), "execution_id": auth["execution_id"],
              "output": str(ROOT), "cap": 2100}
     fresh = not ANCHOR.exists()
     if fresh:
+        require(resume_authorization is None, "Fresh R5 cannot supply recovery authorization")
         require(not ROOT.exists(), "Fresh R5 output already exists")
         ANCHOR.mkdir(parents=True, exist_ok=False)
         exclusive_json(ANCHOR / "CLAIM.json", claim)
@@ -214,9 +235,19 @@ def run(repository, gate):
         store = AtomicCheckpointStore(ROOT / "recovery", bindings)
         recovered = None
         if not fresh:
-            require(journal.committed == 105, "Only plan-approved105 continuation can resume automatically")
-            epoch_boundary(5, journal, store)
-            recovered, _ = store.load_latest()
+            recovered, receipt = store.load_latest()
+            last_sha = next((r["checkpoint_sha256"] for r in reversed(journal.rows)
+                             if r["event"] in ("INITIAL_STATE_COMMIT", "UPDATE_COMMIT", "AUX_COMMIT")), None)
+            require(receipt["sha256"] == last_sha, "R5 latest and committed journal disagree")
+            if resume_authorization is None:
+                require(journal.committed == 105, "Only plan-approved105 continuation can resume automatically")
+                epoch_boundary(5, journal, store)
+            else:
+                expected = {"stage": "EXP17_R5_EXACT_STATE_RECOVERY_AUTHORIZATION",
+                    "gate": "R5_EXACT_STATE_RECOVERY_GATE_PASS", "execution_id": auth["execution_id"],
+                    "authorization_sha256": digest(auth), "checkpoint_sha256": receipt["sha256"],
+                    "journal_sha256": file_sha(journal.path), "committed_update": journal.committed, "output": str(ROOT)}
+                require(load(resume_authorization) == expected, "R5 exact-state recovery authorization differs")
         adapter = None
         try:
             adapter = adapter_type()(config, protocol, ROOT, bindings)
@@ -246,9 +277,14 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("action", choices=("prepare", "authorize", "run"))
     parser.add_argument("--gate", type=Path, required=True)
+    parser.add_argument("--resume-authorization", type=Path)
     args = parser.parse_args()
     repository = Path(__file__).resolve().parents[3]
-    {"prepare": prepare, "authorize": authorize, "run": run}[args.action](repository, args.gate)
+    if args.action == "run":
+        run(repository, args.gate, args.resume_authorization)
+    else:
+        require(args.resume_authorization is None, "Recovery record only applies to run")
+        {"prepare": prepare, "authorize": authorize}[args.action](repository, args.gate)
 
 
 if __name__ == "__main__":

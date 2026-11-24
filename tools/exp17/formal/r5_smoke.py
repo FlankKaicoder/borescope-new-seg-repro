@@ -12,13 +12,18 @@ from tools.exp17.formal.authorization import exclusive_json, file_sha, load, pro
 from tools.exp17.formal.repaired_seed42 import MODE, adapter_type
 
 
+def forward_fingerprints(result):
+    from tools.exp17.formal.checkpoint import state_hash
+    return {key: state_hash(getattr(result, key).detach().cpu())
+            for key in ("yolo", "parts", "supcon", "pair", "total", "a_p3", "n_p3", "a_embedding", "n_embedding")}
+
+
 def run(gate):
-    from tools.exp14.formal_e0_e1 import hash_state
     from tools.exp17.engineering.bn import buffer_snapshot, buffers_equal
     from tools.exp17.engineering.calibration import gradient_basis, cosine, norm
     from tools.exp17.engineering.model import forward_joint
     from tools.exp17.engineering.runtime import DecodedAssetCache, prepare_batch
-    from tools.exp17.formal.checkpoint import capture_training_state, restore_training_state
+    from tools.exp17.formal.checkpoint import capture_training_state, restore_training_state, state_hash
     protocol, config = load(gate / "protocol.json"), load(gate / "runtime_config.json")
     bindings = protocol_bindings(protocol, file_sha(gate / "protocol.json"))
     exclusive_json(gate / "smoke_claim.json", {"code_sha256": protocol["code"]["sha256"],
@@ -48,8 +53,7 @@ def run(gate):
                     prepared.normal_masks, prepared.normal_regions, prepared.bindings,
                     bn_mode=mode, lambda_pair=4., checkpoint_prefix=False)
             require(float(result.pair.detach()) > 0 and prepared.bindings, "Smoke requires an active Pair hinge")
-            fingerprints[mode] = {k: hash_state(getattr(result, k).detach().cpu())
-                                  for k in ("yolo", "parts", "supcon", "pair", "total", "a_p3", "n_p3", "a_embedding", "n_embedding")}
+            fingerprints[mode] = forward_fingerprints(result)
             buffers[mode] = buffer_snapshot(trainer.model)
             vectors[mode] = []
             for loss in (result.yolo, 8 * result.supcon, 4 * result.pair):
@@ -57,15 +61,17 @@ def run(gate):
                 vectors[mode].append(gradient_basis(loss, parameters, scale=trainer.scaler.get_scale()))
             require(buffers_equal(trainer.model, buffers[mode]), "R5 smoke backward changed BN buffers")
             require(all(p.grad is None for p in parameters), "Component gradients polluted param.grad")
-            del result, prepared, packet
+            del loss, result, prepared, packet
             gc.collect()
         require(fingerprints["replay_a"] == fingerprints[MODE], "R5 forward differs under AMP")
-        require(hash_state(buffers["replay_a"]) == hash_state(buffers[MODE]), "A running BN differs")
+        require(state_hash(buffers["replay_a"]) == state_hash(buffers[MODE]), "A running BN differs")
         require(torch.equal(vectors["replay_a"][0], vectors[MODE][0])
                 and torch.equal(vectors["replay_a"][1], vectors[MODE][1]), "YOLO/SupCon8 gradients changed")
         pair = {"detached_L2": norm(vectors["replay_a"][2]), "connected_L2": norm(vectors[MODE][2]),
                 "cosine": cosine(vectors["replay_a"][2], vectors[MODE][2])}
         del vectors
+        component_peak = torch.cuda.max_memory_allocated()
+        component_reserved = torch.cuda.max_memory_reserved()
         restore_training_state(trainer, initial, bindings=bindings)
         adapter.start_epoch(0)
         packet = torch.load(spec["path"], map_location="cpu", weights_only=False)
@@ -83,8 +89,8 @@ def run(gate):
         report = {"status": "PASS", "code_sha256": protocol["code"]["sha256"], "counts": counts,
             "seconds": time.perf_counter() - started, "forward_bitwise_equal": True,
             "YOLO_SupCon8_gradients_bitwise_equal": True, "pair": pair,
-            "peak_allocated_bytes": torch.cuda.max_memory_allocated(),
-            "peak_reserved_bytes": torch.cuda.max_memory_reserved(), "disposable_update": row,
+            "peak_allocated_bytes": max(component_peak, torch.cuda.max_memory_allocated()),
+            "peak_reserved_bytes": max(component_reserved, torch.cuda.max_memory_reserved()), "disposable_update": row,
             "capacity_limitation": "N14 fixture; formal historical maxN25 is monitored without changing batch",
             "constructor_stride_probes": "Native setup only, outside counted A/N training traversals"}
         exclusive_json(gate / "smoke.json", report)

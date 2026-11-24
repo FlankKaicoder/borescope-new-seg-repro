@@ -3,6 +3,7 @@ import copy
 import tempfile
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
 from unittest.mock import patch
 
 import torch
@@ -87,6 +88,20 @@ class ConnectedDerivativeTests(unittest.TestCase):
         self.assertTrue(all(torch.equal(x, z) for x, z in zip(first, second)))
         self.assertTrue(all(v.grad is None for v in values))
 
+    def test_smoke_hashes_actual_tensor_outputs_and_nested_buffers(self):
+        from tools.exp17.formal.r5_smoke import forward_fingerprints
+        from tools.exp17.formal.checkpoint import state_hash
+        names = ("yolo", "parts", "supcon", "pair", "total", "a_p3", "n_p3", "a_embedding", "n_embedding")
+        result = SimpleNamespace(**{name: torch.tensor([1., 2.], requires_grad=True) for name in names})
+        first = forward_fingerprints(result)
+        self.assertEqual(first, forward_fingerprints(result))
+        self.assertEqual(len(first), 9)
+        result.parts = result.parts + 1
+        self.assertNotEqual(first["parts"], forward_fingerprints(result)["parts"])
+        nested = {"model.0.bn": {"running_mean": torch.zeros(2), "running_var": torch.ones(2),
+                                 "num_batches_tracked": torch.tensor(1)}}
+        self.assertEqual(state_hash(nested), state_hash(copy.deepcopy(nested)))
+
 
 class EarlyGateTests(unittest.TestCase):
     def fixture(self):
@@ -118,11 +133,24 @@ class EarlyGateTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             decide(reports[1:], metrics)
 
+    def test_scientific_identity_only_permits_connected_mode(self):
+        from tools.exp17.formal.authorization import load, HardGate
+        from tools.exp17.formal.repaired_seed42 import validate_science, MODE
+        repository = Path(__file__).resolve().parents[4]
+        protocol = load(repository / "results/exp17g_formal_protocol/formal_training_protocol_v1.json")
+        protocol["method"]["bn_mode"] = MODE
+        validate_science(protocol, repository)
+        for key, value in (("effective_updates", 2101), ("method", {"bn_mode": MODE})):
+            changed = copy.deepcopy(protocol)
+            changed[key] = value
+            with self.assertRaises(HardGate):
+                validate_science(changed, repository)
+
 
 class Epoch5TransactionTests(unittest.TestCase):
     def test_commit_gate_reload_then106_without_repeating_aux(self):
         from tools.exp14.formal_e0_e1 import hash_state
-        from tools.exp17.formal.authorization import exclusive_json, file_sha, HardGate
+        from tools.exp17.formal.authorization import exclusive_json, file_sha, digest, HardGate
         from tools.exp17.formal.repaired_seed42 import epoch_boundary
         from tools.exp17.formal.executor import run_session
         from tools.exp17.formal.tests.test_executor import SyntheticAdapter, PROTOCOL, session
@@ -150,6 +178,7 @@ class Epoch5TransactionTests(unittest.TestCase):
                             exclusive_json(directory / "pass_receipt.json", {"epoch": 5, "role": role, "mode": mode,
                                 "native_state_sha256": hash_state(model.state_dict()),
                                 "protocol_sha256": BINDINGS["protocol_sha256"],
+                                "result_digest": digest(result[mode]), "confidence": .001 if mode == "standard" else .25,
                                 "evaluation_sha256": file_sha(directory / "evaluation.json")})
                         return result
                 (anchor / "val_passes").mkdir()
@@ -168,7 +197,7 @@ class Epoch5TransactionTests(unittest.TestCase):
                     self.assertEqual(adapter.diagnostic_epochs, [5])
                     self.assertEqual(adapter.val_events, [(5, "master"), (5, "ema")])
                     self.assertEqual(adapter.cache_epochs, list(range(6)))
-                    self.assertEqual(adapter.trainer.scheduler.last_epoch, 5)
+                    self.assertEqual(adapter.trainer.scheduler.last_epoch, payload["scheduler"]["last_epoch"] + 1)
                     # A changed accepted artifact fails closed even after commit106.
                     (output / "VAL_epoch005_master.json").write_text("{}")
                     with self.assertRaises(HardGate):
