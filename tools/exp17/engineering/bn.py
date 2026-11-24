@@ -65,7 +65,7 @@ def rng_equal(state):
 
 
 @contextmanager
-def capture_native_bn(model):
+def capture_native_bn(model, *, connected_prefix=False):
     """Observe actual BN inputs without replacing A normalization or buffer writes."""
     modules = bn_modules(model)
     require(modules and all(m.training and m.track_running_stats for m in modules.values()),
@@ -73,7 +73,8 @@ def capture_native_bn(model):
     captured, handles = {}, []
     def hook(name):
         def capture(_module, inputs):
-            x = inputs[0].detach().float()
+            prefix = name.startswith("model.") and int(name.split(".")[1]) <= 16
+            x = inputs[0].float() if connected_prefix and prefix else inputs[0].detach().float()
             dimensions = (0,) + tuple(range(2, x.ndim))
             variance, mean = torch.var_mean(x, dim=dimensions, unbiased=False)
             require(bool(torch.isfinite(mean).all()) and bool(torch.isfinite(variance).all()), "Nonfinite A BN statistics")
@@ -87,6 +88,32 @@ def capture_native_bn(model):
         for handle in handles: handle.remove()
 
 
+class StatisticsGradient(torch.autograd.Function):
+    """Native forward and base VJP, plus only the two A-statistic partials.
+
+    This first-order bridge is reentrant for retained component-gradient graphs.
+    Detached N/affine inputs cannot receive a second direct derivative.
+    """
+    @staticmethod
+    def forward(ctx, base, mean, variance, normal, weight, epsilon):
+        ctx.save_for_backward(mean.detach(), variance.detach(), normal.detach(), weight.detach())
+        ctx.epsilon = epsilon
+        return base.clone()
+
+    @staticmethod
+    def backward(ctx, upstream):
+        mean, variance, normal, weight = ctx.saved_tensors
+        dtype = torch.float64 if mean.dtype == torch.float64 else torch.float32
+        with torch.autocast(upstream.device.type, enabled=False):
+            h, n, gamma = upstream.to(dtype), normal.to(dtype), weight.to(dtype)
+            dimensions = (0,) + tuple(range(2, n.ndim))
+            shape = (1, -1) + (1,) * (n.ndim - 2)
+            invstd = (variance.to(dtype) + ctx.epsilon).rsqrt()
+            gm = -gamma * invstd * h.sum(dimensions)
+            gv = -.5 * gamma * invstd.pow(3) * (h * (n - mean.to(dtype).view(shape))).sum(dimensions)
+        return upstream, gm.to(mean.dtype), gv.to(variance.dtype), None, None, None
+
+
 @contextmanager
 def auxiliary_bn(model, mode, captured=None):
     """Mode independent uses N batch statistics; replay_a uses detached A statistics.
@@ -95,11 +122,11 @@ def auxiliary_bn(model, mode, captured=None):
     PyTorch BN primitive and is removed, including on exceptions. Every RNG stream
     is checked, never restored to conceal auxiliary stochastic operations.
     """
-    require(mode in ("independent", "replay_a"), "Unknown auxiliary BN mode")
+    require(mode in ("independent", "replay_a", "replay_a_connected"), "Unknown auxiliary BN mode")
     modules = bn_modules(model)
     require(modules and all(m.training and m.track_running_stats for m in modules.values()),
             "N route requires native TRAIN BatchNorm")
-    require(mode != "replay_a" or isinstance(captured, dict), "A statistics required for replay mode")
+    require(mode == "independent" or isinstance(captured, dict), "A statistics required for replay mode")
     before, rng = buffer_snapshot(model), rng_snapshot()
     flags = {name: (m.training, m.track_running_stats) for name, m in modules.items()}
     overrides = {name: ("forward" in m.__dict__, m.__dict__.get("forward")) for name, m in modules.items()}
@@ -112,14 +139,25 @@ def auxiliary_bn(model, mode, captured=None):
             require(name in captured and count < len(captured[name]), "N called a BN without matching A statistics: " + name)
             item = captured[name][count]; counts[name] = count + 1
             require(item.mean.shape == item.biased_variance.shape == (x.shape[1],)
-                    and item.mean.device == x.device and not item.mean.requires_grad and not item.biased_variance.requires_grad
-                    and item.mean.grad_fn is None and item.biased_variance.grad_fn is None, "Invalid or graph-connected replay statistics")
-            return F.batch_norm(x, item.mean, item.biased_variance, module.weight, module.bias, False, 0.0, module.eps)
+                    and item.mean.device == x.device, "Invalid replay statistics")
+            if mode == "replay_a":
+                require(not item.mean.requires_grad and not item.biased_variance.requires_grad
+                        and item.mean.grad_fn is None and item.biased_variance.grad_fn is None,
+                        "Invalid or graph-connected replay statistics")
+            else:
+                require(item.mean.requires_grad and item.biased_variance.requires_grad,
+                        "Connected replay lost its A statistics graph")
+            base = F.batch_norm(x, item.mean.detach(), item.biased_variance.detach(),
+                                module.weight, module.bias, False, 0.0, module.eps)
+            if mode == "replay_a_connected":
+                return StatisticsGradient.apply(base, item.mean, item.biased_variance,
+                                                x.detach(), module.weight.detach(), module.eps)
+            return base
         return normalize
     try:
         for name, module in modules.items():
             module.forward = MethodType(replacement(name), module)
-        yield {"mode": mode, "A_statistics_detached": True, "replayed_calls": counts}
+        yield {"mode": mode, "A_statistics_detached": mode != "replay_a_connected", "replayed_calls": counts}
     finally:
         for name, module in modules.items():
             existed, old = overrides[name]

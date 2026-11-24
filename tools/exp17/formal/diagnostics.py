@@ -1,5 +1,6 @@
 """Fixed-weight gradient diagnostics on disposable model/batch copies only."""
 import math
+from contextlib import nullcontext
 
 import torch
 
@@ -28,7 +29,7 @@ def analyze_gradients(yolo, supcon8, pair, domains, class_components=None):
             "optimizer_updates": 0, "dynamic_lambda": False}
 
 
-def fixed_gradient_diagnostic(model_clone, batch_factory, *, amp, gradient_scale):
+def fixed_gradient_diagnostic(model_clone, batch_factory, *, amp, gradient_scale, bn_mode="replay_a"):
     """Call inside validation.run_isolated(allow_grad=True), never on the live model.
 
     batch_factory is a deterministic frozen CPU-cache -> prepared-batch adapter.
@@ -40,10 +41,16 @@ def fixed_gradient_diagnostic(model_clone, batch_factory, *, amp, gradient_scale
     names, _, domains = parameter_layout(model_clone)
     parameters = [dict(model_clone.named_parameters())[n] for n in names]
     device_type = next(model_clone.parameters()).device.type
-    with torch.autocast(device_type, enabled=amp, dtype=torch.float16 if device_type == "cuda" else torch.bfloat16):
-        output = forward_joint(model_clone, prepared.batch, prepared.a_regions, prepared.normal_images,
-            prepared.normal_masks, prepared.normal_regions, prepared.bindings,
-            bn_mode="replay_a", lambda_pair=4.0, checkpoint_prefix=False)
+    if bn_mode == "replay_a_connected":
+        from tools.exp17.formal.r5_gate import observe_mean_gap
+        observation = observe_mean_gap(model_clone)
+    else:
+        observation = nullcontext({})
+    with observation as mean_gap:
+        with torch.autocast(device_type, enabled=amp, dtype=torch.float16 if device_type == "cuda" else torch.bfloat16):
+            output = forward_joint(model_clone, prepared.batch, prepared.a_regions, prepared.normal_images,
+                prepared.normal_masks, prepared.normal_regions, prepared.bindings,
+                bn_mode=bn_mode, lambda_pair=4.0, checkpoint_prefix=False)
     y = gradient_basis(output.yolo, parameters, gradient_scale)
     s = gradient_basis(8 * output.supcon, parameters, gradient_scale)
     p = gradient_basis(output.pair, parameters, gradient_scale)
@@ -52,7 +59,12 @@ def fixed_gradient_diagnostic(model_clone, batch_factory, *, amp, gradient_scale
                         for c, loss in output.per_class_pair_tensors.items()}
     result = analyze_gradients(y, s, p, domains, class_components)
     result["losses"] = {name: float(getattr(output, name).detach()) for name in ("yolo", "supcon", "pair", "total")}
-    result["bn_mode"] = "replay_a"
-    result["assumption"] = "DETACHED_WITHIN_STEP_A_STATISTICS_ON_N"
+    result["bn_mode"] = bn_mode
+    result["assumption"] = ("CONNECTED_WITHIN_STEP_A_STATISTICS_ON_N" if bn_mode == "replay_a_connected"
+                            else "DETACHED_WITHIN_STEP_A_STATISTICS_ON_N")
+    if bn_mode == "replay_a_connected":
+        result["bn_mean_gap"] = mean_gap
+        result["focus_parameter_L2"] = {name: float(p.detach().float().norm()) for name, p in model_clone.named_parameters()
+                                        if name.startswith(("model.16.cv1.conv.", "model.16.cv2.conv."))}
     result["read_only_scope"] = "DISPOSABLE_MODEL_COPY_AND_FROZEN_BATCH_COPY"
     return result

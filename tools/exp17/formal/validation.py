@@ -250,11 +250,13 @@ class FrozenValAdapter:
     ledger_root is outside per-epoch outputs; duplicate or failed pass claims
     cannot be retried. G1 only tests refusal and synthetic callbacks.
     """
+    authorization_stage = "EXP17_G1_FROZEN_VAL_AUTHORIZATION"
+
     def __init__(self, *, authorization, protocol_sha256, val_copy, val_root, output, ledger_root):
         self.protocol_sha256 = protocol_sha256
         self.val_copy, self.val_root = Path(val_copy).resolve(), Path(val_root).resolve()
         self.output, self.ledger_root = Path(output).resolve(), Path(ledger_root).resolve()
-        expected = {"stage": "EXP17_G1_FROZEN_VAL_AUTHORIZATION", "authorized": True,
+        expected = {"stage": self.authorization_stage, "authorized": True,
                     "protocol_sha256": protocol_sha256, "val_files_sha256": VAL_FILES_SHA256,
                     "validation_epochs": list(VAL_EPOCHS), "roles": list(ROLES), "passes": list(PASSES),
                     "maximum_native_passes": MAX_PASSES, "output": str(self.output),

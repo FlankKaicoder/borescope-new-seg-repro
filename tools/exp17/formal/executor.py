@@ -50,7 +50,7 @@ def _epoch_callbacks(adapter, epoch, payload, output, best):
 
 
 def run_session(adapter, protocol, bindings, output, journal, store, *, recovered=None, synthetic_stop_after=None,
-                legacy_cache_bindings=None):
+                legacy_cache_bindings=None, epoch_boundary=None):
     """Same checkpoint/ledger/epoch logic for native adapter and CPU toy tests."""
     from tools.exp17.formal.checkpoint import capture_training_state, restore_training_state, atomic_json
     from tools.exp17.formal.monitor import append_json, ensure_space, epoch_summary
@@ -83,6 +83,10 @@ def run_session(adapter, protocol, bindings, output, journal, store, *, recovere
         journal.append("INITIAL_STATE_COMMIT", checkpoint_sha256=initial_receipt["sha256"])
     completed = journal.committed
     for epoch in range(begin_epoch, 100):
+        if epoch_boundary is not None:
+            decision = epoch_boundary(epoch, journal, store)
+            if decision is not None:
+                return decision
         if cursor is None:
             ensure_space(output, required_bytes=protocol["resources"]["before_epoch_min_free_bytes"])
             adapter.start_epoch(epoch)

@@ -82,6 +82,9 @@ class NativeJ2Trainer(JATrainer):
 
 
 class NativeAdapter:
+    bn_mode = "replay_a"
+    validator_class = FrozenValAdapter
+
     def __init__(self, config, protocol, output, bindings):
         self.config, self.protocol, self.bindings = config, protocol, copy.deepcopy(bindings)
         self.output = Path(output)
@@ -91,7 +94,7 @@ class NativeAdapter:
         require(all(sha(framework_root / name) == expected for name, expected in
                     protocol["framework_sources_sha256"].items()), "Installed frozen framework source changed")
         expected_method = {"lambda_supcon": 8, "temperature": .1, "lambda_pair": 4, "margin": .2,
-                           "bn_mode": "replay_a", "checkpoint_prefix": False, "N_prefix": [0, 16]}
+                           "bn_mode": self.bn_mode, "checkpoint_prefix": False, "N_prefix": [0, 16]}
         require(protocol["method"] == expected_method, "Frozen J2 method changed")
         require(bindings["seed"] == 42 and bindings["epochs"] == 100 and bindings["effective_updates"] == 2100,
                 "Native adapter budget/seed differs from the authorized bindings")
@@ -99,7 +102,7 @@ class NativeAdapter:
         val_authorization = load(supplied) if isinstance(supplied, (str, Path)) else supplied
         # Metadata/path/scope validation only. Discover an invalid future VAL
         # scope before constructing a model or consuming a training update.
-        self.validator = FrozenValAdapter(authorization=val_authorization,
+        self.validator = self.validator_class(authorization=val_authorization,
             protocol_sha256=bindings["protocol_sha256"], val_copy=config["val_copy"],
             val_root=config["val_root"], output=config["val_output"], ledger_root=config["val_ledger_root"])
         require(sha(config["manifest"]) == bindings["manifest_sha256"] == config["manifest_sha256"]
@@ -227,6 +230,7 @@ class NativeAdapter:
         prepared = prepare_batch(batch, self.index, self.groups, decode_N=True,
                                  device=trainer.device, asset_cache=self.asset_cache)
         require(rng_equal(replay_rng), "Auxiliary replay consumed a main-task RNG stream")
+        self.check_prepared(prepared, original, step)
         trainer.optimizer.zero_grad(set_to_none=True)
         before_bn = {name: int(module.num_batches_tracked) for name, module in bn_modules(trainer.model).items()}
         before_backbone = _parameter_identity(trainer.model)
@@ -238,7 +242,7 @@ class NativeAdapter:
             require(torch.is_autocast_enabled("cuda"), "Native CUDA AMP is not enabled")
             result = forward_joint(trainer.model, prepared.batch, prepared.a_regions, prepared.normal_images,
                 prepared.normal_masks, prepared.normal_regions, prepared.bindings,
-                bn_mode="replay_a", lambda_pair=4., checkpoint_prefix=False)
+                bn_mode=self.bn_mode, lambda_pair=4., checkpoint_prefix=False)
         require(finite_tree((result.total, result.yolo, result.supcon, result.pair, result.parts)),
                 "Nonfinite native/SupCon/Pair/total loss")
         trainer.loss = result.total
@@ -323,6 +327,9 @@ class NativeAdapter:
                 "scheduler": trainer.scheduler, "scaler": trainer.scaler, "sampler": self.sampler,
                 "extras": {"training_observers": self.audit_state}}
 
+    def check_prepared(self, prepared, original, step):
+        """Versioned experiments can enforce additional frozen input evidence."""
+
     def gradient_diagnostics(self):
         trainer = self.trainer
         require(trainer.audit.effective_updates % 105 == 0 and 0 < trainer.audit.effective_updates <= 2100,
@@ -343,7 +350,7 @@ class NativeAdapter:
                     return prepare_batch(packet["batch"], self.index, self.groups, decode_N=True,
                         device=trainer.device, asset_cache=DecodedAssetCache(max_bytes=0))
                 return fixed_gradient_diagnostic(clone, batch_factory, amp=trainer.amp,
-                                                 gradient_scale=trainer.scaler.get_scale())
+                                                 gradient_scale=trainer.scaler.get_scale(), bn_mode=self.bn_mode)
             report = run_isolated(diagnostic, trainer.model, allow_grad=True, **self._protected())
             reports.append({"batch_position": position, "batch_sha256": spec["sha256"], **report})
         return reports
@@ -355,7 +362,7 @@ class NativeAdapter:
         if self.validator is None:
             supplied = self.config["val_authorization"]
             authorization = load(supplied) if isinstance(supplied, (str, Path)) else supplied
-            self.validator = FrozenValAdapter(authorization=authorization,
+            self.validator = self.validator_class(authorization=authorization,
                 protocol_sha256=self.bindings["protocol_sha256"], val_copy=self.config["val_copy"],
                 val_root=self.config["val_root"], output=self.config["val_output"],
                 ledger_root=self.config["val_ledger_root"])

@@ -87,13 +87,13 @@ class JointForward:
     per_class_pair_tensors: dict
 
 
-def forward_a(model, batch, regions):
+def forward_a(model, batch, regions, *, connected_prefix=False):
     check_projection(model)
     require(model.training and torch.is_grad_enabled(), "A needs the original native TRAIN graph")
     features = []
     handle = model.model[j1.P3_LAYER].register_forward_hook(lambda _m, _i, value: features.append(value))
     try:
-        with capture_native_bn(model) as statistics:
+        with capture_native_bn(model, connected_prefix=connected_prefix) as statistics:
             native, parts = model(batch)
     finally:
         handle.remove()
@@ -156,7 +156,10 @@ def forward_joint(model, batch, a_regions, normal_images, normal_masks, normal_r
         validate_tensor_bindings(batch, a_regions, normal_images, normal_regions, bindings)
     else:
         require(normal_images is None or len(normal_images) == 0, "No-Pair batch must not expose extra N images")
-    a = forward_a(model, batch, a_regions)
+    require(bn_mode in ("independent", "replay_a", "replay_a_connected"), "Unknown J2 BN mode")
+    require(bn_mode != "replay_a_connected" or not checkpoint_prefix, "Connected replay requires the original single traversal")
+    a = forward_a(model, batch, a_regions,
+                  connected_prefix=bn_mode == "replay_a_connected" and bool(bindings))
     if bindings:
         n_feature = forward_n(model, normal_images, bn_mode=bn_mode, a_statistics=a.bn_statistics,
                               checkpoint_prefix=checkpoint_prefix)
@@ -168,7 +171,7 @@ def forward_joint(model, batch, a_regions, normal_images, normal_masks, normal_r
         pair = a.embedding.sum() * 0
         per_class = {}
         report = {"paired_anchors": 0, "independent_A_groups": 0, "classes": [], "per_anchor": []}
-    report = {**report, "bn_mode": bn_mode, "A_statistics_detached_on_N": True,
+    report = {**report, "bn_mode": bn_mode, "A_statistics_detached_on_N": bn_mode != "replay_a_connected",
               "N_executed_layers": list(range(j1.P3_LAYER + 1)) if bindings else [],
               "N_prefix_activation_checkpoint": checkpoint_prefix,
               "N_images": len(normal_images) if bindings else 0, "N_has_native_detection_or_segmentation_head": False}
