@@ -1,0 +1,65 @@
+epoch,role,class,size,gt,mask_tp,mask_fn,mask_recall
+5,ema,overall,large,55,0,55,0.0
+5,ema,overall,medium,62,0,62,0.0
+5,ema,overall,small,76,0,76,0.0
+5,ema,overall,tiny,103,0,103,0.0
+5,ema,Burn,large,33,0,33,0.0
+5,ema,Burn,medium,15,0,15,0.0
+5,ema,Burn,small,2,0,2,0.0
+5,ema,Burn,tiny,31,0,31,0.0
+5,ema,Crack,large,0,0,0,
+5,ema,Crack,medium,8,0,8,0.0
+5,ema,Crack,small,11,0,11,0.0
+5,ema,Crack,tiny,5,0,5,0.0
+5,ema,Dent,large,0,0,0,
+5,ema,Dent,medium,0,0,0,
+5,ema,Dent,small,11,0,11,0.0
+5,ema,Dent,tiny,26,0,26,0.0
+5,ema,Material missing,large,3,0,3,0.0
+5,ema,Material missing,medium,17,0,17,0.0
+5,ema,Material missing,small,9,0,9,0.0
+5,ema,Material missing,tiny,3,0,3,0.0
+5,ema,Tears,large,0,0,0,
+5,ema,Tears,medium,3,0,3,0.0
+5,ema,Tears,small,5,0,5,0.0
+5,ema,Tears,tiny,2,0,2,0.0
+5,ema,Tip curl,large,0,0,0,
+5,ema,Tip curl,medium,1,0,1,0.0
+5,ema,Tip curl,small,2,0,2,0.0
+5,ema,Tip curl,tiny,0,0,0,
+5,ema,corrosion,large,19,0,19,0.0
+5,ema,corrosion,medium,18,0,18,0.0
+5,ema,corrosion,small,36,0,36,0.0
+5,ema,corrosion,tiny,36,0,36,0.0
+5,master,overall,large,55,0,55,0.0
+5,master,overall,medium,62,0,62,0.0
+5,master,overall,small,76,0,76,0.0
+5,master,overall,tiny,103,0,103,0.0
+5,master,Burn,large,33,0,33,0.0
+5,master,Burn,medium,15,0,15,0.0
+5,master,Burn,small,2,0,2,0.0
+5,master,Burn,tiny,31,0,31,0.0
+5,master,Crack,large,0,0,0,
+5,master,Crack,medium,8,0,8,0.0
+5,master,Crack,small,11,0,11,0.0
+5,master,Crack,tiny,5,0,5,0.0
+5,master,Dent,large,0,0,0,
+5,master,Dent,medium,0,0,0,
+5,master,Dent,small,11,0,11,0.0
+5,master,Dent,tiny,26,0,26,0.0
+5,master,Material missing,large,3,0,3,0.0
+5,master,Material missing,medium,17,0,17,0.0
+5,master,Material missing,small,9,0,9,0.0
+5,master,Material missing,tiny,3,0,3,0.0
+5,master,Tears,large,0,0,0,
+5,master,Tears,medium,3,0,3,0.0
+5,master,Tears,small,5,0,5,0.0
+5,master,Tears,tiny,2,0,2,0.0
+5,master,Tip curl,large,0,0,0,
+5,master,Tip curl,medium,1,0,1,0.0
+5,master,Tip curl,small,2,0,2,0.0
+5,master,Tip curl,tiny,0,0,0,
+5,master,corrosion,large,19,0,19,0.0
+5,master,corrosion,medium,18,0,18,0.0
+5,master,corrosion,small,36,0,36,0.0
+5,master,corrosion,tiny,36,0,36,0.0

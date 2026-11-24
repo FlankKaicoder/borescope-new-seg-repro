@@ -2,7 +2,7 @@
 
 ## Exp17-J2-R5 connected training repair (2026-11-24)
 
-EXP17_J2_R5_HOLD_SMOKE_REATTEMPT_REVIEW. Independent connected-statistics production path, dual authorization generation/validation, frozen original2100-step input comparison and committedEpoch5 Gate implemented.58CPU tests PASS. Two smoke attempts each stop after1A+1N in output fingerprint instrumentation, before component Autograd or updates. Cumulative2A2N; formal updates/VAL/TEST0; no formalClaim. v5 repairs nested-state hashing and reuses the connected component graph in the native disposable update, requiring2A2N/6componentVJP/1jointBackward/1disposableUpdate; cumulative cap4A4N retained. Await explicit reattempt approval. Original J2Last0/80VAL preserved. [Handoff](../EXP17_J2_R5_CONNECTED_TRAINING_HANDOFF.md).
+EXP17_J2_R5_E10_OBSERVATION_RUNNING. Connected repair passed58CPU tests/v5AMP smoke and completed105updates/4VAL, butE5AP0 caused originalscienceHOLD. Independent1397checksPASS. User-approved3TRAINcontrols: R5running0Box/MaskTP; batch-both17Box/9MaskTP at.001; J1E5running4Box/3MaskTP;567auditchecksPASS. User then explicitly approvedE5→E10 observation andconditional100continuation. VersionedAddendum/sourcecatalog928f…→6c549… preserves alloriginalidentities/105store/221journalprefix;9targetedCPUtestsPASS; firstnew106committed, sameexecution active. E10PASS requiredbefore211. OriginalJ2Last0/80VAL andoriginalE5HOLD retained. [Handoff](../EXP17_J2_R5_CONNECTED_TRAINING_HANDOFF.md).
 
 ## Exp17-J2-R4-D offline temporal mechanism (2026-11-24)
 

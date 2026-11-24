@@ -1,0 +1,13 @@
+{
+  "VAL_pass_cap": 80,
+  "authorization_sha256": "6bab2087ab777b2c6136ced55a656638210b6ba200e4a28341638d9ad22af895",
+  "execution_id": "8647e22cb72e4b8aab7191fd9046220c",
+  "experiment": "EXP17_J2_REPAIRED_SEED42",
+  "official_update_cap": 2100,
+  "protocol_sha256": "8aff5fa076e0fbf66d5473648f7f06c54d689f7b8ed2d7f2edfe8152d13a1c38",
+  "runtime_config_sha256": "1d90672b5ae86d2d2c6a64bf7326bdfefe35ae473b86c6ef579ee66f67b9b763",
+  "smoke_receipt_sha256": "64c1335cef005daac024566f119353de68c4f79f072f5a63bcca639b9c167465",
+  "source_catalog_sha256": "928f2726b9ca07bf44c1d1eee14beda25036c4e8957b5afd96f14a3fc0c17e07",
+  "user_scope": "APPROVED_R5_PLAN_PLUS_AUTONOMOUS_ENGINEERING_RECOVERY",
+  "val_authorization_sha256": "2a9bc338bf51dce9f69338f386b30a29b41b8fbeca24dc51f5cf4809cea2ef6f"
+}

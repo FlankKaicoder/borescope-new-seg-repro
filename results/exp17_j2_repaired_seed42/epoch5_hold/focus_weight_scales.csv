@@ -1,0 +1,9 @@
+epoch,batch_position,parameter,L2
+5,1,model.16.cv1.conv.weight,7.786221504211426
+5,1,model.16.cv2.conv.weight,5.577482223510742
+5,7,model.16.cv1.conv.weight,7.786221504211426
+5,7,model.16.cv2.conv.weight,5.577482223510742
+5,11,model.16.cv1.conv.weight,7.786221504211426
+5,11,model.16.cv2.conv.weight,5.577482223510742
+5,21,model.16.cv1.conv.weight,7.786221504211426
+5,21,model.16.cv2.conv.weight,5.577482223510742

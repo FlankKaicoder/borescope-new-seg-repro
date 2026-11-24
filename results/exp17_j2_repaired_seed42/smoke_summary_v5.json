@@ -1,0 +1,27 @@
+{
+  "YOLO_SupCon8_gradients_bitwise_equal": true,
+  "capacity_limitation": "N14 fixture; formal historical maxN25 is monitored without changing batch",
+  "code_sha256": "928f2726b9ca07bf44c1d1eee14beda25036c4e8957b5afd96f14a3fc0c17e07",
+  "constructor_stride_probes": "Native setup only, outside counted A/N training traversals",
+  "counts": {
+    "A": 2,
+    "N": 2,
+    "VAL": 0,
+    "component_autograd": 6,
+    "disposable_updates": 1,
+    "joint_backward": 1
+  },
+  "cumulative_A": 4,
+  "cumulative_N": 4,
+  "forward_bitwise_equal": true,
+  "original_smoke_receipt_sha256": "64c1335cef005daac024566f119353de68c4f79f072f5a63bcca639b9c167465",
+  "pair": {
+    "connected_L2": 10.25826728229973,
+    "cosine": 0.48166682319758647,
+    "detached_L2": 22.03823529086299
+  },
+  "peak_allocated_bytes": 8261645824,
+  "peak_reserved_bytes": 8797552640,
+  "seconds": 32.08776362705976,
+  "status": "PASS"
+}

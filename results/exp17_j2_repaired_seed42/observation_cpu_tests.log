@@ -1,0 +1,14 @@
+test_bound_file_reference_and_journal_prefix_sha_are_strict (test_observation_extension.ExtensionTests.test_bound_file_reference_and_journal_prefix_sha_are_strict) ... ok
+test_boundary_rejects_wrong_epoch_pending_attempt_and_bad_journal (test_observation_extension.ExtensionTests.test_boundary_rejects_wrong_epoch_pending_attempt_and_bad_journal) ... ok
+test_bounded105_to106_and210_to211_preserves_scheduler_and_events (test_observation_extension.ExtensionTests.test_bounded105_to106_and210_to211_preserves_scheduler_and_events) ... ok
+test_e10_zero_ap_or_mean_mismatch_holds (test_observation_extension.ExtensionTests.test_e10_zero_ap_or_mean_mismatch_holds) ... ok
+test_extended_catalog_rejects_unapproved_source_changes (test_observation_extension.ExtensionTests.test_extended_catalog_rejects_unapproved_source_changes) ... ok
+test_migration_changes_only_bindings_and_addendum_lineage (test_observation_extension.ExtensionTests.test_migration_changes_only_bindings_and_addendum_lineage) ... ok
+test_migration_rejects_data_identity_and_extra_attempt (test_observation_extension.ExtensionTests.test_migration_rejects_data_identity_and_extra_attempt) ... ok
+test_old_cache_allowlist_and_future_binding_are_exact (test_observation_extension.ExtensionTests.test_old_cache_allowlist_and_future_binding_are_exact) ... ok
+test_partial_marker_or_orphan_checkpoint_cannot_be_accepted (test_observation_extension.ExtensionTests.test_partial_marker_or_orphan_checkpoint_cannot_be_accepted) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 8.518s
+
+OK

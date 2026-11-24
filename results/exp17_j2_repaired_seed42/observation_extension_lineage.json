@@ -1,0 +1,84 @@
+{
+  "E10_rule": {
+    "channel_reduction": "median_abs_normalized_mean_gap",
+    "layers": [
+      "model.0.bn",
+      "model.4.cv1.bn",
+      "model.16.cv1.bn",
+      "model.16.cv2.bn"
+    ],
+    "minimum_batches": 3,
+    "positions": [
+      1,
+      7,
+      11,
+      21
+    ],
+    "required_master_mask_AP50_95": "strictly_positive",
+    "threshold": 3.0,
+    "threshold_status": "PREDECLARED_ENGINEERING_BOUND_NOT_HEALTHY_BASELINE_CALIBRATED"
+  },
+  "active_store": {
+    "addendum_sha256": "c7e5bf6a49a505c192d1c649d7c25d1c95be229f6703a224bbca96449fe0f4e5",
+    "best_directory": "/root/autodl-tmp/exp17_j2_repaired_seed42/best_e10_observation_v1",
+    "bindings_sha256": "37f6154afbc498bebf2ff25641032064d79baaa81338428fd10dddbdb5247c3d",
+    "completion_path": "/root/exp17_r5_e10_observation_v2/completion.json",
+    "epoch10_gate_path": "/root/exp17_r5_e10_observation_v2/epoch010_gate.json",
+    "extension_root": "/root/exp17_r5_e10_observation_v2",
+    "migration_checkpoint_sha256": "3544ec84f2c71c54967ec545ff6d4521e92cd9964648fe0aca44a72ced4687c9",
+    "migration_event_sha256": "f7ad56ac7fa8d6ba2cf8511748cd98b07f8cc529c45cc2c57f7e557272fb842e",
+    "schema": "EXP17_J2_R5_E10_OBSERVATION_V1_ACTIVE_STORE",
+    "store_directory": "/root/autodl-tmp/exp17_j2_repaired_seed42/recovery_e10_observation_v1"
+  },
+  "addendum_sha256": "c7e5bf6a49a505c192d1c649d7c25d1c95be229f6703a224bbca96449fe0f4e5",
+  "approval_sha256": "16a4f9f23e0e553af64cfaeba8274e18bc15f88ac9ad2cb70d2ef762686fa03c",
+  "cpu_test_receipt_sha256": "0ba4f667853de8ee1b0c721c0c89e53a17a1a18aaa956cf1f4c5c3701eaaa346",
+  "new_best_namespace": "best_e10_observation_v1",
+  "new_code_sha256": "6c5496624c5249d1c5c11327c63a04f2fc7a30d891001e1da3e922dccd62b7da",
+  "new_recovery_namespace": "recovery_e10_observation_v1",
+  "old_cache_compatibility": [
+    {
+      "epoch": 3,
+      "manifest_sha256": "df05c8862a342a069661c9cba17b7b8b7d17aea77ce241863eca9570c58a6cac"
+    },
+    {
+      "epoch": 4,
+      "manifest_sha256": "bc6680d27cee5b605995c3e7dbffde46811a835357b188da1235ac0bfdbbdffd"
+    }
+  ],
+  "origin_checkpoint_sha256": "9193e57e2a31b7b7dafdfece107ddbce8f6f10a97a70390865cfcefcda5784ad",
+  "origin_code_sha256": "928f2726b9ca07bf44c1d1eee14beda25036c4e8957b5afd96f14a3fc0c17e07",
+  "origin_execution_id": "8647e22cb72e4b8aab7191fd9046220c",
+  "origin_journal_prefix_rows": 221,
+  "origin_journal_prefix_sha256": "43c0acde2747c0d829b44786f03792a2e0455b5b8040d3809a0dfd6709076fb6",
+  "origin_latest_pointer": {
+    "bindings_sha256": "cb15b35f94864700277f60074a2eba9d76ed4fec58847b838954320f1a80ed74",
+    "bytes": 46670585,
+    "directory_fsync_supported": true,
+    "file": "recovery_slot_0.pt",
+    "position": {
+      "batch_position": 21,
+      "epoch": 4,
+      "global_update": 105
+    },
+    "role": "last_recovery",
+    "schema": "EXP17_G1_ATOMIC_RECOVERY_POINTER_V1",
+    "sha256": "9193e57e2a31b7b7dafdfece107ddbce8f6f10a97a70390865cfcefcda5784ad"
+  },
+  "production_source_files": 262,
+  "schema": "EXP17_J2_R5_E10_OBSERVATION_V1",
+  "scope": {
+    "E10_HOLD": "STOP_AT210",
+    "E10_PASS": "RELOAD_SAME210_AND_CONTINUE_TO2100",
+    "accept_original_epoch5_HOLD_for_observation_only": true,
+    "conditional_first_update": 211,
+    "first_new_update": 106,
+    "maximum_effective_updates": 2100,
+    "maximum_native_VAL_passes": 80,
+    "observation_epoch": 10,
+    "observation_update": 210,
+    "origin_update": 105,
+    "original_scientific_parameters_unchanged": true
+  },
+  "targeted_CPU_tests": 9
+}

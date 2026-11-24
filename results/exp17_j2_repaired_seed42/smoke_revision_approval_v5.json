@@ -1,0 +1,22 @@
+{
+  "authorized": true,
+  "basis": "USER_APPROVED_V5_CONTINUATION_AND_AUTONOMOUS_ENGINEERING_RECOVERY",
+  "cumulative_upper_bound": {
+    "A": 4,
+    "N": 4,
+    "VAL": 0,
+    "component_autograd": 6,
+    "disposable_updates": 1,
+    "joint_backward": 1
+  },
+  "proposal_sha256": "51f8621c3aacb0e78029f95539904bc993ac8d4845aab06044a5fb4731a310a5",
+  "scientific_budgets_preserved": true,
+  "scope": {
+    "A": 2,
+    "N": 2,
+    "VAL": 0,
+    "component_autograd": 6,
+    "disposable_updates": 1,
+    "joint_backward": 1
+  }
+}

@@ -1,0 +1,2332 @@
+{
+  "Autograd": 0,
+  "TEST": 0,
+  "VAL": 0,
+  "actual_model_forwards": 3,
+  "artifact_hashes": {
+    "j1_running": {
+      "NMS": {
+        ".001": "3fa1e2faba70290c03db3d8447dc2a47857f11ed9f5b55f2f0c112d3e74dc9d6",
+        ".25": "0b784f21a62c7369c202e69e3f2f59b0a6193a14e59e6d008c16e8aaca11fdf4"
+      },
+      "raw_npz_sha256": "ad1429aee712e5a7cfd1e590779b92e2d704324e6600cee45fe5aa79dc732fa2",
+      "result_sha256": "0fad3c9bb70ef58db5291b6e1aa55d3c03749487cb7f521465b389969b425a51"
+    },
+    "r5_batch_both": {
+      "NMS": {
+        ".001": "ad833dfda5eb23659468ff3e8791bfe8f3bc8611ba4af0aae7e03200aa237e3e",
+        ".25": "324d09a35090a6cddf35783173ab76c8352409a7dfd4ab698ece67535fdd0b24"
+      },
+      "raw_npz_sha256": "ab463fd05c02416e549405fb1e915a1d3bf83e950c00ad66eb8f900d2f56b3b8",
+      "result_sha256": "86090ff90fc8c74c1bdd56dd59bd7aeadee3c1d2322400dbca0de7ae621139d2"
+    },
+    "r5_running": {
+      "NMS": {
+        ".001": "a53c1c67a9d998ed37dd50a049349f4e4bd03c977c65e63e7b64ab2f0a7757bd",
+        ".25": "a53c1c67a9d998ed37dd50a049349f4e4bd03c977c65e63e7b64ab2f0a7757bd"
+      },
+      "raw_npz_sha256": "9f5614d66e7fe3fab8ac94a25754a173383f49390443260f35013d725127f58f",
+      "result_sha256": "cc9220d9a9cc48ce126d2fba81f9249697814c5bc490e1fb3f25a0cf033f3f28"
+    }
+  },
+  "authorization_sha256": "a2db0b10daa95d39854ea82940013defa70b8bfdbbe1a4e79ed071cb714d3e99",
+  "checks": 567,
+  "completion_sha256": "5f8865f90bb90240257afaf2fd48f0fe38130a2623781cda95bd176b29eda108",
+  "constructor_forwards": 0,
+  "details": [
+    {
+      "check": "authorization_exact_three_calls",
+      "pass": true
+    },
+    {
+      "check": "completion_exact_scope",
+      "pass": true
+    },
+    {
+      "check": "CPU_test_receipt_bound",
+      "pass": true
+    },
+    {
+      "check": "diagnostic_source_train_controls.py",
+      "pass": true
+    },
+    {
+      "check": "diagnostic_source_train_controls_core.py",
+      "pass": true
+    },
+    {
+      "check": "protected_original_1",
+      "pass": true
+    },
+    {
+      "check": "protected_original_2",
+      "pass": true
+    },
+    {
+      "check": "protected_original_3",
+      "pass": true
+    },
+    {
+      "check": "protected_original_4",
+      "pass": true
+    },
+    {
+      "check": "protected_original_5",
+      "pass": true
+    },
+    {
+      "check": "protected_original_6",
+      "pass": true
+    },
+    {
+      "check": "protected_original_7",
+      "pass": true
+    },
+    {
+      "check": "protected_original_8",
+      "pass": true
+    },
+    {
+      "check": "protected_original_9",
+      "pass": true
+    },
+    {
+      "check": "protected_original_10",
+      "pass": true
+    },
+    {
+      "check": "protected_original_11",
+      "pass": true
+    },
+    {
+      "check": "protected_original_12",
+      "pass": true
+    },
+    {
+      "check": "protected_original_13",
+      "pass": true
+    },
+    {
+      "check": "protected_original_14",
+      "pass": true
+    },
+    {
+      "check": "protected_original_15",
+      "pass": true
+    },
+    {
+      "check": "protected_original_16",
+      "pass": true
+    },
+    {
+      "check": "protected_original_17",
+      "pass": true
+    },
+    {
+      "check": "protected_original_18",
+      "pass": true
+    },
+    {
+      "check": "protected_original_19",
+      "pass": true
+    },
+    {
+      "check": "protected_original_20",
+      "pass": true
+    },
+    {
+      "check": "protected_original_21",
+      "pass": true
+    },
+    {
+      "check": "protected_original_22",
+      "pass": true
+    },
+    {
+      "check": "protected_original_23",
+      "pass": true
+    },
+    {
+      "check": "protected_original_24",
+      "pass": true
+    },
+    {
+      "check": "protected_original_25",
+      "pass": true
+    },
+    {
+      "check": "protected_original_26",
+      "pass": true
+    },
+    {
+      "check": "protected_original_27",
+      "pass": true
+    },
+    {
+      "check": "protected_original_28",
+      "pass": true
+    },
+    {
+      "check": "protected_original_29",
+      "pass": true
+    },
+    {
+      "check": "protected_original_30",
+      "pass": true
+    },
+    {
+      "check": "formal_protocol_and_R5_checkpoint_bound",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/dataset/audit_dataset.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/dataset/audit_group_consistency.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/dataset/build_crack_only.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/dataset/build_dataset_v1.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/dataset/inspect_source_fields.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/dataset/review_conflict_groups.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/dataset/review_unpaired_images.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/environment/report_training_env.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/environment/smoke_training_env.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/audit_baseline_errors.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/audit_training_curve.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/evaluate_seg_model.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/exp02_2a_early_epoch_audit.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/exp02_2a_finalize.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/exp02_2a_forward_trace.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/exp02_2a_source_audit.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/exp02_2a_val_loss_probe.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/exp03_low_conf_fast_repro.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/exp05_build_hard_pool.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/exp09_transfer_repair.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/exp10_1a_nan_probe.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/exp10_1b_true_fp32.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/exp10_aggregate.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/exp10_build_hard_pool.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/exp10_fixed_size.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/exp10_unified_val.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/exp11_final_test.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/fasttrack_common.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/fasttrack_finalize.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/finalize_exp09_transfer_repair.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/finalize_exp11.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/finalize_fasttrack_c_gate.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/finalize_project_docs.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/fixed_point_errors.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/record_project_closure.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/evaluation/verify_checkpoints.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_2_a3_prepare_review.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_2_a4_targeted_quality.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_2_h1_hallucination_replay.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_2_h1_validate_existing.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_2_m0_preflight.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_2_m0_r1_source_reselection.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_2_m0_r1_validate_package.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_2_m0_validate_cpu.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_2_m1_budget_check.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_2_m1_matched_restoration.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_2_m1_validate_existing.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/audit_publication.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/build_public_catalog.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1b/audit_live_output.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1b/audit_output.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1b/cloud_repair_once.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1b/gate_b_live_once.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1b/prepare_inputs.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1b/relay_probe.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1c/finalize_manifest.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1c/run_g1c_postprocess.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1d/offline_protocol_audit.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1e/audit_g1e_pair.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1e/g1e_live_pair.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1e/prepare_g1e.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1f0/prepare_g1f0.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1f0b/prepare_roi_4x3.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1f0b/verify_dpapi_dry_run.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1f1a/audit_saved_output.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1f1a/offline_protocol_tests.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1f1a/prepare_preflight.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1f1a/protocol.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1f1a/seal_preflight.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1f1a/single_repair.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g1f2/audit_alignment.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g2/audit_g2_closeout.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g2/g2_single_executor.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g2/offline_executor_tests.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g2/prepare_three_source_pilot.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g3/align_g3b2_batch.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g3/audit_final_selection.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g3/build_candidate_review.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g3/build_g3c0_review_page.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g3/build_source_review.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g3/closeout_g3c1_review.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g3/closeout_g3d2_partial.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g3/g3_batch_executor.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g3/g3d2_benchmark.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g3/prepare_g3b2a_batch.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g3/prepare_g3b2b_batch.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g3/prepare_g3c2_v2.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g3/repair_source_review_page.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g3/restore_source_review_backup.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g3/review_decisions.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g3/source_review_ui.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g3/validate_alignment_g3d.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/g3/verify_train_export.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_cloud/sync_public_records.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_diffusion_diagnosis.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_diffusion_pilot.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_diffusion_pilot_r1.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_phase0_r1_audit.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_phase0_readonly_audit.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_restoration/__init__.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_restoration/audit_phase1b_s1_sources.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_restoration/audit_phase1b_s2_sources.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_restoration/audit_phase1b_s3.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_restoration/audit_phase1b_s4_r2_independence.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_restoration/finalize_phase1b_s5.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_restoration/geometry.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_restoration/prepare_phase1b_s4_r1.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_restoration/protocol.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_restoration/roi_composition.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_restoration/run_phase1a_audit.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_restoration/run_phase1a_r1.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_restoration/run_phase1a_r2.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_restoration/run_phase1b_s2_smoke.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_restoration/run_phase1b_s4_eligibility.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_restoration/run_phase1b_s5_matched_input.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_restoration/verify_phase1b_r3_artifact.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_restoration_feasibility_audit.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp13_vlm_semantic_audit.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/a10_dataset_entries.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/a10_freeze.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/a10_selection.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/a11_full_eval.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/a11_full_numerics.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/a11_full_protocol.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/a11_full_train.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/a11_loader.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/a11_release_audit.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/a11_smoke_diagnostics.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/a11_smoke_numerics.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/a11_smoke_train.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/admission_diagnosis.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/admission_diagnosis_a.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/admission_diagnosis_b.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/ai_visual_review.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/aligned_support.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/audit_admission.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/audit_final_v4.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/audit_formal_e0_e1.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/audit_revised_amp_smoke.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/audit_targeted_v2.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/audit_targeted_v3.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/diagnose_amp_first_batch.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/diagnose_formal_zero_gradients.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/evaluate_formal_e0_e1.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/export_ai_review_pilot.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/final_dataset.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/final_dataset_identity.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/final_dataset_selection.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/final_v4.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/final_v4_alignment.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/final_v4_review.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/foreground_audit.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/formal_e0_e1.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/freeze_core.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/full392_recovery.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/import_human_review.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/label_plan.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/large_scale_review.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/postprocess_large_scale_repair.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/prepare_large_scale_repair.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/publish_ai_visual_review.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/revised_amp_smoke.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/run_large_scale_repair.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/smoke_trainer.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/summarize_smoke.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/targeted_v2.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/targeted_v2_alignment.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/targeted_v2_review.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/targeted_v3.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/targeted_v3_alignment.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/targeted_v3_remaining.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp14/targeted_v3_review.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp15/audit_jc.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp15/diagnose_jc.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp15/ja.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp15/jb.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp15/jb_binding.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp15/jd.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp15/jd_diagnostics.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp15/je0.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp15/je2.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp15/preflight_jc.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp15/regions.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp15/summarize.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp15/summarize_jb.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp15/summarize_jd.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp15/summarize_je0.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp15/summarize_je2.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp15/verify_cpu_train.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/audit_assets.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/audit_coverage.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/diagnostics.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/engineering/__init__.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/engineering/augmentation.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/engineering/batch_pairing.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/engineering/benchmark.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/engineering/bn.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/engineering/calibration.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/engineering/calibration_extension.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/engineering/calibration_rules.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/engineering/checkpoint.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/engineering/coverage.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/engineering/data.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/engineering/losses.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/engineering/model.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/engineering/runtime.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/engineering/smoke.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/formal/__init__.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/formal/authorization.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/formal/checkpoint.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/formal/diagnostics.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/formal/executor.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/formal/exports.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/formal/monitor.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/formal/native_adapter.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/formal/r5_gate.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/formal/r5_smoke.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/formal/repair_evidence.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/formal/repair_r1.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/formal/repaired_seed42.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/formal/resources.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/formal/rng.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/formal/sampler.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/formal/schedule.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/formal/validation.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/pair_loss.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/prototype.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17/review_package.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17d/__init__.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17d/reconcile.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17e/__init__.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17e/census.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17e/coverage.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17e/expansion.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17e/lineage.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17e/mapping.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17e/review_package.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17f/compat.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17f/evidence_audit.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17f/package_integrity.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/exp17f/reconcile.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/fasttrack_b.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/finalize_fasttrack_b.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/ssl/exp12_encoder_analysis.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/ssl/exp12_local_change.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/ssl/exp12_simsiam_formal.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/ssl/exp12_simsiam_smoke.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/training/exp02_2a_short_repro.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/training/exp05_sampler_train.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/training/exp08_kd_train.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/training/exp09_simsiam.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/training/exp10_controlled_run.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/training/exp10_train.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/training/exp12_3_downstream.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/training/exp12_5_local_change_downstream.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/training/exp12_5_local_change_downstream_v2.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/training/fasttrack_train.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/training/run_yolo_seg.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/visualization/render_exp03_no_response.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/visualization/render_image_list.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_tools/visualization/render_near_duplicate_groups.py",
+      "pass": true
+    },
+    {
+      "check": "production_source_domain_exact",
+      "pass": true
+    },
+    {
+      "check": "production_source_catalog_digest",
+      "pass": true
+    },
+    {
+      "check": "argument_file_r5",
+      "pass": true
+    },
+    {
+      "check": "argument_file_j1",
+      "pass": true
+    },
+    {
+      "check": "frozen_TRAIN_packet_bound",
+      "pass": true
+    },
+    {
+      "check": "R5_model_identity_to_original_pass",
+      "pass": true
+    },
+    {
+      "check": "original_formal_budget_remains105_221_4passes",
+      "pass": true
+    },
+    {
+      "check": "nine_complete_ledger_lines",
+      "pass": true
+    },
+    {
+      "check": "ledger_1_hash_order_scope",
+      "pass": true
+    },
+    {
+      "check": "ledger_2_hash_order_scope",
+      "pass": true
+    },
+    {
+      "check": "ledger_3_hash_order_scope",
+      "pass": true
+    },
+    {
+      "check": "ledger_4_hash_order_scope",
+      "pass": true
+    },
+    {
+      "check": "ledger_5_hash_order_scope",
+      "pass": true
+    },
+    {
+      "check": "ledger_6_hash_order_scope",
+      "pass": true
+    },
+    {
+      "check": "ledger_7_hash_order_scope",
+      "pass": true
+    },
+    {
+      "check": "ledger_8_hash_order_scope",
+      "pass": true
+    },
+    {
+      "check": "ledger_9_hash_order_scope",
+      "pass": true
+    },
+    {
+      "check": "r5_running_input_state_ledger_links",
+      "pass": true
+    },
+    {
+      "check": "r5_running_scope_and_state_guards",
+      "pass": true
+    },
+    {
+      "check": "r5_running_five_raw_arrays",
+      "pass": true
+    },
+    {
+      "check": "r5_running_raw_shape_dtype_decoded",
+      "pass": true
+    },
+    {
+      "check": "r5_running_raw_shape_dtype_dfl_boxes",
+      "pass": true
+    },
+    {
+      "check": "r5_running_raw_shape_dtype_mask_coefficient",
+      "pass": true
+    },
+    {
+      "check": "r5_running_raw_shape_dtype_proto",
+      "pass": true
+    },
+    {
+      "check": "r5_running_raw_shape_dtype_scores",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_32images_62GT_7classes",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_frozen_postprocess_rules",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_NMS_file_identity",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_NMS_members",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_0_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_1_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_2_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_3_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_4_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_5_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_6_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_7_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_8_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_9_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_10_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_11_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_12_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_13_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_14_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_15_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_16_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_17_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_18_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_19_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_20_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_21_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_22_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_23_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_24_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_25_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_26_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_27_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_28_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_29_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_30_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_image_31_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_class_counts_from_NMS",
+      "pass": true
+    },
+    {
+      "check": "r5_running.001_invalid_coordinate_totals",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_32images_62GT_7classes",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_frozen_postprocess_rules",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_NMS_file_identity",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_NMS_members",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_0_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_1_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_2_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_3_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_4_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_5_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_6_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_7_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_8_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_9_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_10_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_11_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_12_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_13_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_14_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_15_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_16_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_17_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_18_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_19_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_20_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_21_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_22_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_23_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_24_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_25_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_26_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_27_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_28_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_29_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_30_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_image_31_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_class_counts_from_NMS",
+      "pass": true
+    },
+    {
+      "check": "r5_running.25_invalid_coordinate_totals",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both_input_state_ledger_links",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both_scope_and_state_guards",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both_five_raw_arrays",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both_raw_shape_dtype_decoded",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both_raw_shape_dtype_dfl_boxes",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both_raw_shape_dtype_mask_coefficient",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both_raw_shape_dtype_proto",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both_raw_shape_dtype_scores",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_32images_62GT_7classes",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_frozen_postprocess_rules",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_NMS_file_identity",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_NMS_members",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_0_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_1_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_2_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_3_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_4_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_5_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_6_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_7_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_8_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_9_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_10_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_11_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_12_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_13_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_14_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_15_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_16_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_17_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_18_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_19_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_20_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_21_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_22_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_23_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_24_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_25_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_26_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_27_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_28_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_29_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_30_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_image_31_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_class_counts_from_NMS",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.001_invalid_coordinate_totals",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_32images_62GT_7classes",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_frozen_postprocess_rules",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_NMS_file_identity",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_NMS_members",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_0_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_1_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_2_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_3_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_4_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_5_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_6_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_7_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_8_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_9_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_10_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_11_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_12_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_13_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_14_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_15_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_16_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_17_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_18_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_19_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_20_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_21_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_22_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_23_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_24_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_25_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_26_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_27_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_28_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_29_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_30_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_image_31_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_class_counts_from_NMS",
+      "pass": true
+    },
+    {
+      "check": "r5_batch_both.25_invalid_coordinate_totals",
+      "pass": true
+    },
+    {
+      "check": "j1_running_input_state_ledger_links",
+      "pass": true
+    },
+    {
+      "check": "j1_running_scope_and_state_guards",
+      "pass": true
+    },
+    {
+      "check": "j1_running_five_raw_arrays",
+      "pass": true
+    },
+    {
+      "check": "j1_running_raw_shape_dtype_decoded",
+      "pass": true
+    },
+    {
+      "check": "j1_running_raw_shape_dtype_dfl_boxes",
+      "pass": true
+    },
+    {
+      "check": "j1_running_raw_shape_dtype_mask_coefficient",
+      "pass": true
+    },
+    {
+      "check": "j1_running_raw_shape_dtype_proto",
+      "pass": true
+    },
+    {
+      "check": "j1_running_raw_shape_dtype_scores",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_32images_62GT_7classes",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_frozen_postprocess_rules",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_NMS_file_identity",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_NMS_members",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_0_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_1_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_2_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_3_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_4_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_5_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_6_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_7_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_8_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_9_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_10_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_11_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_12_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_13_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_14_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_15_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_16_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_17_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_18_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_19_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_20_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_21_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_22_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_23_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_24_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_25_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_26_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_27_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_28_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_29_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_30_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_image_31_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_class_counts_from_NMS",
+      "pass": true
+    },
+    {
+      "check": "j1_running.001_invalid_coordinate_totals",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_32images_62GT_7classes",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_frozen_postprocess_rules",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_NMS_file_identity",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_NMS_members",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_0_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_1_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_2_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_3_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_4_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_5_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_6_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_7_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_8_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_9_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_10_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_11_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_12_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_13_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_14_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_15_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_16_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_17_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_18_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_19_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_20_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_21_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_22_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_23_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_24_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_25_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_26_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_27_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_28_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_29_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_30_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_image_31_NMS_counts_matches",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_class_counts_from_NMS",
+      "pass": true
+    },
+    {
+      "check": "j1_running.25_invalid_coordinate_totals",
+      "pass": true
+    },
+    {
+      "check": "decoder_runtime_cache_transition_consistent",
+      "pass": true
+    }
+  ],
+  "failures": [],
+  "input_sha256": "160487354f4bf32c64e8ca7f6cce944ca99ba49afe52267f9e6de999c518cd32",
+  "ledger_sha256": "fab5a191ab7c04c86dd7cb53ca85b11adc4c40dd5dc827d203679c2a49830863",
+  "limits": [
+    "One frozen augmented TRAIN batch32/62GT; selected diagnostic cohort does not estimate VAL AP.",
+    "Unfused FP32 models; R5 batch-both uses temporary current-batch Mean and Variance without persistent buffer writes.",
+    "Mask matches use native prototype160 masks and the TRAIN overlap raster, distinct from formal VAL mask evaluation.",
+    "Raw NPZ checks validate file bytes, array headers and recorded statistics; this audit does not recompute all raw tensor statistics.",
+    "NMS arrays and match-index arithmetic were independently checked; GT geometry/class-aware IoU assignment is inherited from the pinned postprocessor.",
+    "Native model-state identity is linked through original receipts and checkpoints; no tensor deserialization or strict reload was repeated.",
+    "All cases share the same decoder runtime-cache hash transition on private copies; persistent weights/buffers/modes/RNG were guarded.",
+    "Forward/update/VAL/TEST counts are supported by source guards and sealed ledger; this audit adds no model calls.",
+    "Codex engineering audit does not constitute ChatGPT independent scientific review."
+  ],
+  "native_state_sha256": {
+    "j1": "7219f396e54eeb05d3850ae400b89f0eb22a0985de19d856c6ef48ab9dc85ee7",
+    "r5": "39222dd01de2bfa60a56777bb4a92e907ddacc7809a6713891e070bcb055669c"
+  },
+  "optimizer_updates": 0,
+  "passed": 567,
+  "protected_original_file_count": 30,
+  "source_sha256": {
+    "train_controls.py": "7d1428ff8aedc0af8d51868414b5e0af24d3e4be8db11f805a2fd07a48752c28",
+    "train_controls_core.py": "e482dea10bab7d70b4d193c76302a84515e03b666a1337baf6c79f47e92899cc"
+  },
+  "status": "PASS"
+}

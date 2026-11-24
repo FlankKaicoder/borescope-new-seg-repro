@@ -1,0 +1,67 @@
+{
+  "addendum_sha256": "c7e5bf6a49a505c192d1c649d7c25d1c95be229f6703a224bbca96449fe0f4e5",
+  "derived_checkpoint": {
+    "bindings_sha256": "bc2a9ac11a346fd544c25d76a0e52a15bede2ba2beeb3ec09932caa7b54050c0",
+    "bytes": 46671033,
+    "directory_fsync_supported": true,
+    "file": "recovery_slot_0.pt",
+    "position": {
+      "batch_position": 21,
+      "epoch": 4,
+      "global_update": 105
+    },
+    "role": "last_recovery",
+    "schema": "EXP17_G1_ATOMIC_RECOVERY_POINTER_V1",
+    "sha256": "3544ec84f2c71c54967ec545ff6d4521e92cd9964648fe0aca44a72ced4687c9"
+  },
+  "immutable_derived_checkpoint": {
+    "bindings_sha256": "bc2a9ac11a346fd544c25d76a0e52a15bede2ba2beeb3ec09932caa7b54050c0",
+    "bytes": 46671033,
+    "directory_fsync_supported": true,
+    "file": "derived_update000105_observation.pt",
+    "position": {
+      "batch_position": 21,
+      "epoch": 4,
+      "global_update": 105
+    },
+    "role": "epoch_last",
+    "schema": "EXP17_G1_ATOMIC_RECOVERY_POINTER_V1",
+    "sha256": "3544ec84f2c71c54967ec545ff6d4521e92cd9964648fe0aca44a72ced4687c9"
+  },
+  "origin_checkpoint": {
+    "bindings_sha256": "cb15b35f94864700277f60074a2eba9d76ed4fec58847b838954320f1a80ed74",
+    "bytes": 46670585,
+    "directory_fsync_supported": true,
+    "file": "recovery_slot_0.pt",
+    "position": {
+      "batch_position": 21,
+      "epoch": 4,
+      "global_update": 105
+    },
+    "role": "last_recovery",
+    "schema": "EXP17_G1_ATOMIC_RECOVERY_POINTER_V1",
+    "sha256": "9193e57e2a31b7b7dafdfece107ddbce8f6f10a97a70390865cfcefcda5784ad"
+  },
+  "unchanged_training_fields": [
+    "schema",
+    "position",
+    "model_config",
+    "class_names",
+    "state",
+    "ema",
+    "ema_updates",
+    "optimizer",
+    "optimizer_names",
+    "trainable_parameter_names",
+    "scaler",
+    "scheduler",
+    "rng",
+    "sampler",
+    "audit",
+    "counters",
+    "training_modes",
+    "bn_state_sha256",
+    "master_state_sha256",
+    "ema_state_sha256"
+  ]
+}

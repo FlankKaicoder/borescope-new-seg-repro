@@ -1,0 +1,16 @@
+{
+  "CPU_ONLY": true,
+  "GPU_calls": 0,
+  "base_code_sha256": "928f2726b9ca07bf44c1d1eee14beda25036c4e8957b5afd96f14a3fc0c17e07",
+  "code_sha256": "6c5496624c5249d1c5c11327c63a04f2fc7a30d891001e1da3e922dccd62b7da",
+  "exit_code": 0,
+  "extended_code_sha256": "6c5496624c5249d1c5c11327c63a04f2fc7a30d891001e1da3e922dccd62b7da",
+  "extension_file_sha256": "152c282eda60a028c36d53c3115129041754b5bb06cf40b63188287c79f1100c",
+  "log_sha256": "cfc53360307b8726fbb020aee4d3c00491538107af941547867f5fe7edd1f624",
+  "original_test_receipt_sha256": "27e1514f70cf7eab281ea777358f9a0d29ffc2ad8b1bbaf352207793d32ed714",
+  "real_VAL": 0,
+  "real_model_forwards": 0,
+  "receipt_adapter": "code_sha256 is the original extended_code_sha256, no expected identity regenerated",
+  "status": "PASS",
+  "test_file_sha256": "c12bd3702bf2d7d9d43d40f2e3cd09f8ba24985f7e3bad2ef4feeae2375b9e14"
+}

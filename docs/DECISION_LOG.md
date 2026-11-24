@@ -1,5 +1,11 @@
 # Decision log
 
+## D101 — R5 Connected repair and reviewed early observation extension (2026-11-24)
+
+User approved independent repairedSeed42 execution. Native-forward statistics VJP passed58CPU tests andv5AMP smoke after two sealed output-fingerprint errors; cumulativeSmoke4A4N/6componentVJP/1disposableUpdate. FreshCOCO formal run reached105updates/4VAL and preserved originalE5scienceHOLD because bothrolesAP0. FourTRAIN-A sentinel gaps<3 did not establish completeeval compatibility. Three separately approvedTRAIN controls recovered17Box/9MaskTP only with currentbatchstats at.001; J1E5running had4Box/3MaskTP plus manyFP. J1earlyloss andclip histories are available, butE5formalVAL is absent. Keep these evidence boundaries.
+
+User explicitly approved extending the same105-step state toEpoch10, preserving the originalHOLD and all100ep/2100update/80pass scientific parameters and budgets. EngineeringAddendum binds oldR5catalog928f… to fullcatalog6c549… including only the new observation entry. OriginalProtocol/Runtime/auth/Claim/executionID/105store/221journalprefix remain intact; B1recovery/Best namespaces and immutablederived105 artifact preserve provenance.9targetedCPUtestsPASS, sourceMigration committed and firstnew106committed. E10uses originalPASS/HOLD rules;PASSstrictreload210→211thencomplete100, HOLDstop210. This window revision follows observedE5results and is disclosed as an exploratory decision. [Handoff](../EXP17_J2_R5_CONNECTED_TRAINING_HANDOFF.md).
+
 ## D100 — R4-D temporal geometry and next early-state question (2026-11-24)
 
 Continue authorized offline work after R4-C.22 saved Checkpoints and original tables align actual historical parameter displacement with terminal detached excess d=gA−gB; negative d is positively aligned in all19 Neck16 intervals. Actual terminal Conv radial directions and saved AdamW outward proxies support a scale-dynamics hypothesis. Do not infer historical gradient shares or mismatch onset from buffer growth. FirstE5MASTER failure predatesR1 and laterFPs recur. Preserve originalLast0/80VAL; propose exactly2 earlyE5 running/Mean-only TRAIN forwards to determine whether early failure shares the terminal proximal mechanism, without executing them. [Handoff](../EXP17_J2_R4_D_TEMPORAL_MECHANISM_HANDOFF.md).

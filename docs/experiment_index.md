@@ -1,6 +1,6 @@
 # Experiment index
 
-- **Exp17-J2-R5 (2026-11-24)** — Independent Connected Statistics repair implemented with58CPU tests PASS. Two output-fingerprint failures consume total2A2N and zero gradients/updates/VAL. v5 bounded2A2N reattempt proposal ready; formal training awaits successful AMP Smoke. [Handoff](../EXP17_J2_R5_CONNECTED_TRAINING_HANDOFF.md).
+- **Exp17-J2-R5 (2026-11-24)** — Connected repair reached105updates/4VAL andE5zeroAP HOLD.3approvedTRAINcontrols show statistical-source dependence. User-approvedversionedE10observation passed9CPUtests, preserved105andoldidentities, resumed106withsame2100/80budget. E10Gate determinesconditionalcontinuation. [Handoff](../EXP17_J2_R5_CONNECTED_TRAINING_HANDOFF.md).
 
 - **Exp17-J2-R4-D (2026-11-24)** — Offline endpoint/history alignment supports detach-related scale mechanism; no historical causality claim.19/19Neck16 intervals align; E5failure predatesR1; recurringFP timeline corrected. No new model calls. [Handoff](../EXP17_J2_R4_D_TEMPORAL_MECHANISM_HANDOFF.md).
 

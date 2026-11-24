@@ -1,0 +1,33 @@
+{
+  "operations": "SAVED_TENSOR_NORM_ONLY_CPU_NO_MODEL",
+  "rows": [
+    {
+      "method": "J1",
+      "epoch": 5,
+      "parameter": "model.16.cv1.conv.weight",
+      "weight_L2_float64": 7.515458662745726,
+      "checkpoint_sha256": "09c9b216ba24c73c14629057dae4078fc029c9404ed5f9be83db880604cbb1ea"
+    },
+    {
+      "method": "J1",
+      "epoch": 5,
+      "parameter": "model.16.cv2.conv.weight",
+      "weight_L2_float64": 5.406599967040923,
+      "checkpoint_sha256": "09c9b216ba24c73c14629057dae4078fc029c9404ed5f9be83db880604cbb1ea"
+    },
+    {
+      "method": "R5",
+      "epoch": 5,
+      "parameter": "model.16.cv1.conv.weight",
+      "weight_L2_float64": 7.7862214014809785,
+      "checkpoint_sha256": "9193e57e2a31b7b7dafdfece107ddbce8f6f10a97a70390865cfcefcda5784ad"
+    },
+    {
+      "method": "R5",
+      "epoch": 5,
+      "parameter": "model.16.cv2.conv.weight",
+      "weight_L2_float64": 5.577482013511091,
+      "checkpoint_sha256": "9193e57e2a31b7b7dafdfece107ddbce8f6f10a97a70390865cfcefcda5784ad"
+    }
+  ]
+}

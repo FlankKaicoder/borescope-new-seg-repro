@@ -1,0 +1,5613 @@
+{
+  "Git_source_snapshot": "a5905bfd8e4b55bc8271a67c68c722c21bc158ca",
+  "checkpoint_binary_files": 5,
+  "checks": 1397,
+  "details": [
+    {
+      "check": "sealed_private_archive_sha256",
+      "pass": true
+    },
+    {
+      "check": "protocol_experiment_and_connected_method",
+      "pass": true
+    },
+    {
+      "check": "training_authorization_bindings",
+      "pass": true
+    },
+    {
+      "check": "runtime_config_byte_identity",
+      "pass": true
+    },
+    {
+      "check": "claim_and_seal_exact",
+      "pass": true
+    },
+    {
+      "check": "early_gate_exact_bindings",
+      "pass": true
+    },
+    {
+      "check": "val_authorization_scope",
+      "pass": true
+    },
+    {
+      "check": "engineering_receipt_cpu_tests.json",
+      "pass": true
+    },
+    {
+      "check": "engineering_receipt_smoke.json",
+      "pass": true
+    },
+    {
+      "check": "successful_smoke_exact_scope",
+      "pass": true
+    },
+    {
+      "check": "original_reference_byte_identity",
+      "pass": true
+    },
+    {
+      "check": "exact105_step_sequence",
+      "pass": true
+    },
+    {
+      "check": "105_images_raw_exposures",
+      "pass": true
+    },
+    {
+      "check": "update_1_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_1_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_1_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_1_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_1_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_1_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_2_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_2_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_2_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_2_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_2_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_2_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_3_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_3_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_3_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_3_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_3_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_3_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_4_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_4_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_4_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_4_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_4_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_4_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_5_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_5_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_5_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_5_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_5_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_5_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_6_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_6_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_6_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_6_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_6_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_6_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_7_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_7_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_7_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_7_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_7_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_7_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_8_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_8_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_8_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_8_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_8_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_8_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_9_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_9_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_9_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_9_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_9_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_9_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_10_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_10_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_10_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_10_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_10_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_10_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_11_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_11_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_11_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_11_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_11_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_11_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_12_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_12_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_12_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_12_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_12_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_12_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_13_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_13_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_13_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_13_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_13_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_13_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_14_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_14_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_14_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_14_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_14_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_14_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_15_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_15_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_15_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_15_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_15_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_15_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_16_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_16_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_16_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_16_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_16_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_16_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_17_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_17_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_17_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_17_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_17_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_17_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_18_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_18_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_18_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_18_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_18_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_18_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_19_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_19_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_19_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_19_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_19_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_19_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_20_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_20_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_20_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_20_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_20_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_20_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_21_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_21_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_21_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_21_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_21_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_21_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_22_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_22_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_22_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_22_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_22_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_22_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_23_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_23_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_23_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_23_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_23_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_23_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_24_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_24_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_24_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_24_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_24_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_24_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_25_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_25_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_25_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_25_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_25_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_25_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_26_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_26_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_26_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_26_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_26_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_26_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_27_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_27_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_27_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_27_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_27_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_27_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_28_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_28_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_28_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_28_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_28_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_28_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_29_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_29_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_29_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_29_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_29_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_29_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_30_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_30_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_30_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_30_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_30_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_30_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_31_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_31_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_31_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_31_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_31_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_31_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_32_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_32_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_32_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_32_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_32_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_32_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_33_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_33_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_33_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_33_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_33_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_33_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_34_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_34_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_34_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_34_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_34_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_34_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_35_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_35_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_35_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_35_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_35_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_35_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_36_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_36_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_36_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_36_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_36_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_36_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_37_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_37_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_37_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_37_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_37_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_37_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_38_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_38_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_38_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_38_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_38_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_38_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_39_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_39_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_39_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_39_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_39_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_39_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_40_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_40_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_40_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_40_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_40_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_40_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_41_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_41_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_41_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_41_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_41_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_41_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_42_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_42_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_42_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_42_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_42_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_42_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_43_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_43_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_43_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_43_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_43_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_43_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_44_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_44_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_44_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_44_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_44_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_44_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_45_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_45_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_45_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_45_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_45_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_45_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_46_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_46_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_46_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_46_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_46_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_46_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_47_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_47_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_47_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_47_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_47_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_47_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_48_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_48_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_48_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_48_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_48_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_48_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_49_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_49_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_49_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_49_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_49_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_49_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_50_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_50_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_50_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_50_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_50_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_50_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_51_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_51_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_51_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_51_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_51_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_51_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_52_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_52_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_52_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_52_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_52_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_52_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_53_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_53_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_53_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_53_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_53_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_53_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_54_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_54_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_54_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_54_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_54_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_54_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_55_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_55_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_55_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_55_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_55_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_55_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_56_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_56_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_56_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_56_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_56_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_56_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_57_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_57_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_57_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_57_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_57_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_57_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_58_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_58_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_58_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_58_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_58_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_58_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_59_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_59_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_59_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_59_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_59_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_59_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_60_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_60_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_60_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_60_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_60_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_60_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_61_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_61_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_61_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_61_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_61_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_61_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_62_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_62_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_62_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_62_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_62_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_62_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_63_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_63_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_63_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_63_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_63_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_63_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_64_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_64_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_64_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_64_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_64_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_64_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_65_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_65_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_65_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_65_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_65_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_65_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_66_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_66_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_66_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_66_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_66_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_66_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_67_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_67_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_67_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_67_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_67_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_67_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_68_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_68_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_68_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_68_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_68_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_68_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_69_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_69_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_69_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_69_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_69_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_69_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_70_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_70_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_70_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_70_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_70_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_70_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_71_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_71_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_71_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_71_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_71_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_71_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_72_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_72_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_72_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_72_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_72_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_72_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_73_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_73_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_73_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_73_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_73_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_73_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_74_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_74_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_74_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_74_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_74_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_74_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_75_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_75_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_75_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_75_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_75_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_75_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_76_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_76_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_76_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_76_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_76_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_76_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_77_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_77_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_77_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_77_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_77_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_77_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_78_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_78_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_78_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_78_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_78_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_78_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_79_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_79_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_79_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_79_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_79_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_79_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_80_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_80_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_80_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_80_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_80_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_80_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_81_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_81_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_81_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_81_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_81_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_81_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_82_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_82_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_82_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_82_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_82_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_82_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_83_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_83_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_83_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_83_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_83_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_83_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_84_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_84_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_84_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_84_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_84_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_84_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_85_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_85_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_85_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_85_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_85_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_85_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_86_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_86_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_86_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_86_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_86_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_86_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_87_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_87_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_87_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_87_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_87_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_87_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_88_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_88_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_88_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_88_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_88_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_88_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_89_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_89_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_89_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_89_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_89_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_89_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_90_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_90_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_90_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_90_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_90_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_90_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_91_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_91_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_91_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_91_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_91_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_91_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_92_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_92_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_92_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_92_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_92_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_92_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_93_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_93_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_93_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_93_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_93_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_93_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_94_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_94_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_94_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_94_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_94_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_94_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_95_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_95_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_95_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_95_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_95_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_95_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_96_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_96_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_96_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_96_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_96_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_96_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_97_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_97_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_97_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_97_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_97_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_97_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_98_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_98_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_98_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_98_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_98_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_98_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_99_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_99_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_99_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_99_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_99_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_99_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_100_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_100_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_100_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_100_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_100_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_100_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_101_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_101_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_101_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_101_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_101_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_101_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_102_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_102_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_102_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_102_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_102_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_102_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_103_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_103_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_103_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_103_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_103_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_103_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_104_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_104_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_104_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_104_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_104_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_104_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "update_105_counters_and_epoch",
+      "pass": true
+    },
+    {
+      "check": "update_105_AMP_and_finite_state",
+      "pass": true
+    },
+    {
+      "check": "update_105_BN_RNG_connected",
+      "pass": true
+    },
+    {
+      "check": "update_105_native_trajectory",
+      "pass": true
+    },
+    {
+      "check": "update_105_trace_sha256",
+      "pass": true
+    },
+    {
+      "check": "update_105_Pair_qualification",
+      "pass": true
+    },
+    {
+      "check": "epoch_1_complete_tail_and_counts",
+      "pass": true
+    },
+    {
+      "check": "epoch_2_complete_tail_and_counts",
+      "pass": true
+    },
+    {
+      "check": "epoch_3_complete_tail_and_counts",
+      "pass": true
+    },
+    {
+      "check": "epoch_4_complete_tail_and_counts",
+      "pass": true
+    },
+    {
+      "check": "epoch_5_complete_tail_and_counts",
+      "pass": true
+    },
+    {
+      "check": "journal_221_complete_lines",
+      "pass": true
+    },
+    {
+      "check": "journal_1_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_1_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_2_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_2_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_3_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_3_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_4_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_4_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_5_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_5_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_6_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_6_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_7_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_7_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_8_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_8_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_9_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_9_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_10_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_10_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_11_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_11_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_12_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_12_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_13_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_13_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_14_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_14_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_15_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_15_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_16_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_16_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_17_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_17_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_18_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_18_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_19_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_19_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_20_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_20_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_21_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_21_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_22_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_22_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_23_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_23_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_24_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_24_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_25_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_25_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_26_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_26_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_27_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_27_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_28_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_28_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_29_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_29_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_30_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_30_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_31_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_31_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_32_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_32_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_33_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_33_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_34_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_34_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_35_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_35_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_36_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_36_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_37_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_37_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_38_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_38_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_39_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_39_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_40_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_40_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_41_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_41_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_42_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_42_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_43_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_43_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_44_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_44_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_45_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_45_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_46_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_46_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_47_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_47_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_48_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_48_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_49_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_49_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_50_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_50_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_51_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_51_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_52_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_52_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_53_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_53_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_54_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_54_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_55_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_55_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_56_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_56_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_57_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_57_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_58_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_58_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_59_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_59_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_60_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_60_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_61_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_61_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_62_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_62_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_63_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_63_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_64_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_64_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_65_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_65_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_66_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_66_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_67_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_67_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_68_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_68_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_69_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_69_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_70_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_70_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_71_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_71_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_72_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_72_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_73_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_73_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_74_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_74_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_75_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_75_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_76_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_76_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_77_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_77_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_78_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_78_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_79_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_79_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_80_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_80_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_81_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_81_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_82_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_82_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_83_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_83_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_84_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_84_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_85_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_85_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_86_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_86_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_87_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_87_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_88_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_88_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_89_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_89_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_90_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_90_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_91_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_91_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_92_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_92_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_93_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_93_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_94_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_94_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_95_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_95_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_96_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_96_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_97_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_97_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_98_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_98_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_99_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_99_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_100_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_100_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_101_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_101_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_102_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_102_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_103_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_103_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_104_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_104_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_105_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_105_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_106_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_106_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_107_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_107_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_108_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_108_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_109_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_109_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_110_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_110_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_111_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_111_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_112_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_112_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_113_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_113_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_114_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_114_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_115_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_115_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_116_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_116_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_117_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_117_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_118_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_118_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_119_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_119_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_120_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_120_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_121_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_121_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_122_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_122_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_123_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_123_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_124_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_124_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_125_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_125_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_126_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_126_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_127_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_127_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_128_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_128_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_129_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_129_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_130_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_130_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_131_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_131_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_132_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_132_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_133_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_133_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_134_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_134_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_135_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_135_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_136_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_136_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_137_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_137_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_138_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_138_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_139_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_139_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_140_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_140_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_141_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_141_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_142_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_142_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_143_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_143_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_144_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_144_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_145_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_145_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_146_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_146_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_147_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_147_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_148_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_148_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_149_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_149_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_150_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_150_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_151_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_151_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_152_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_152_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_153_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_153_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_154_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_154_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_155_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_155_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_156_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_156_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_157_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_157_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_158_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_158_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_159_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_159_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_160_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_160_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_161_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_161_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_162_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_162_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_163_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_163_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_164_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_164_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_165_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_165_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_166_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_166_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_167_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_167_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_168_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_168_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_169_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_169_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_170_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_170_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_171_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_171_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_172_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_172_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_173_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_173_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_174_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_174_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_175_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_175_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_176_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_176_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_177_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_177_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_178_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_178_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_179_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_179_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_180_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_180_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_181_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_181_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_182_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_182_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_183_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_183_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_184_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_184_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_185_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_185_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_186_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_186_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_187_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_187_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_188_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_188_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_189_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_189_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_190_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_190_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_191_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_191_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_192_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_192_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_193_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_193_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_194_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_194_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_195_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_195_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_196_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_196_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_197_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_197_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_198_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_198_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_199_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_199_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_200_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_200_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_201_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_201_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_202_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_202_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_203_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_203_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_204_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_204_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_205_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_205_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_206_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_206_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_207_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_207_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_208_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_208_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_209_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_209_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_210_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_210_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_211_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_211_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_212_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_212_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_213_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_213_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_214_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_214_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_215_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_215_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_216_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_216_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_217_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_217_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_218_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_218_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_219_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_219_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_220_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_220_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_221_hash_chain",
+      "pass": true
+    },
+    {
+      "check": "journal_221_legal_transaction",
+      "pass": true
+    },
+    {
+      "check": "journal_closed105_AUX5_no106",
+      "pass": true
+    },
+    {
+      "check": "early_gate_journal_prefix",
+      "pass": true
+    },
+    {
+      "check": "latest_gate_AUX_pointer",
+      "pass": true
+    },
+    {
+      "check": "early_gate_artifact_VAL_epoch005_ema.json",
+      "pass": true
+    },
+    {
+      "check": "early_gate_artifact_VAL_epoch005_master.json",
+      "pass": true
+    },
+    {
+      "check": "early_gate_artifact_diagnostics_epoch005.json",
+      "pass": true
+    },
+    {
+      "check": "every_checkpoint_binary_has_receipt",
+      "pass": true
+    },
+    {
+      "check": "checkpoint_bytes_epoch005_full_recovery.pt_epoch005_full_recovery.pt.json",
+      "pass": true
+    },
+    {
+      "check": "checkpoint_bytes_recovery_slot_0.pt_latest.json",
+      "pass": true
+    },
+    {
+      "check": "checkpoint_bytes_best_ema_slot0.pt_best_ema.json",
+      "pass": true
+    },
+    {
+      "check": "checkpoint_bytes_best_ema_slot0.pt_best_ema_epoch005.selection.json",
+      "pass": true
+    },
+    {
+      "check": "checkpoint_bytes_best_master_slot0.pt_best_master.json",
+      "pass": true
+    },
+    {
+      "check": "checkpoint_bytes_best_master_slot0.pt_best_master_epoch005.selection.json",
+      "pass": true
+    },
+    {
+      "check": "checkpoint_bytes_recovery_slot_1.pt_UPDATE_COMMIT105",
+      "pass": true
+    },
+    {
+      "check": "periodic_and_Last_same_bytes",
+      "pass": true
+    },
+    {
+      "check": "best_master_first_selection",
+      "pass": true
+    },
+    {
+      "check": "best_ema_first_selection",
+      "pass": true
+    },
+    {
+      "check": "exact_four_VAL_claims",
+      "pass": true
+    },
+    {
+      "check": "VAL_master_standard_claim",
+      "pass": true
+    },
+    {
+      "check": "VAL_master_standard_model_and_result",
+      "pass": true
+    },
+    {
+      "check": "VAL_master_standard_frozen_counts_finite",
+      "pass": true
+    },
+    {
+      "check": "VAL_master_fixed_claim",
+      "pass": true
+    },
+    {
+      "check": "VAL_master_fixed_model_and_result",
+      "pass": true
+    },
+    {
+      "check": "VAL_master_fixed_frozen_counts_finite",
+      "pass": true
+    },
+    {
+      "check": "VAL_master_all_standard_zero",
+      "pass": true
+    },
+    {
+      "check": "VAL_ema_standard_claim",
+      "pass": true
+    },
+    {
+      "check": "VAL_ema_standard_model_and_result",
+      "pass": true
+    },
+    {
+      "check": "VAL_ema_standard_frozen_counts_finite",
+      "pass": true
+    },
+    {
+      "check": "VAL_ema_fixed_claim",
+      "pass": true
+    },
+    {
+      "check": "VAL_ema_fixed_model_and_result",
+      "pass": true
+    },
+    {
+      "check": "VAL_ema_fixed_frozen_counts_finite",
+      "pass": true
+    },
+    {
+      "check": "VAL_ema_all_standard_zero",
+      "pass": true
+    },
+    {
+      "check": "four_connected_TRAIN_probes",
+      "pass": true
+    },
+    {
+      "check": "predeclared_scientific_HOLD",
+      "pass": true
+    },
+    {
+      "check": "terminal_completion_and_clean_exit",
+      "pass": true
+    },
+    {
+      "check": "E100_and_final_endpoints_absent",
+      "pass": true
+    },
+    {
+      "check": "exact_archive_anchor_member_CLAIM.json",
+      "pass": true
+    },
+    {
+      "check": "exact_archive_anchor_member_updates.jsonl",
+      "pass": true
+    },
+    {
+      "check": "exact_archive_anchor_member_val_passes/epoch005_ema_fixed.json",
+      "pass": true
+    },
+    {
+      "check": "exact_archive_anchor_member_val_passes/epoch005_ema_standard.json",
+      "pass": true
+    },
+    {
+      "check": "exact_archive_anchor_member_val_passes/epoch005_master_fixed.json",
+      "pass": true
+    },
+    {
+      "check": "exact_archive_anchor_member_val_passes/epoch005_master_standard.json",
+      "pass": true
+    },
+    {
+      "check": "exact_archive_run_seal",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/dataset/audit_dataset.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/dataset/audit_group_consistency.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/dataset/build_crack_only.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/dataset/build_dataset_v1.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/dataset/inspect_source_fields.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/dataset/review_conflict_groups.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/dataset/review_unpaired_images.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/environment/report_training_env.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/environment/smoke_training_env.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/audit_baseline_errors.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/audit_training_curve.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/evaluate_seg_model.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/exp02_2a_early_epoch_audit.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/exp02_2a_finalize.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/exp02_2a_forward_trace.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/exp02_2a_source_audit.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/exp02_2a_val_loss_probe.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/exp03_low_conf_fast_repro.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/exp05_build_hard_pool.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/exp09_transfer_repair.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/exp10_1a_nan_probe.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/exp10_1b_true_fp32.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/exp10_aggregate.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/exp10_build_hard_pool.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/exp10_fixed_size.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/exp10_unified_val.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/exp11_final_test.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/fasttrack_common.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/fasttrack_finalize.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/finalize_exp09_transfer_repair.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/finalize_exp11.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/finalize_fasttrack_c_gate.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/finalize_project_docs.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/fixed_point_errors.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/record_project_closure.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/evaluation/verify_checkpoints.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_2_a3_prepare_review.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_2_a4_targeted_quality.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_2_h1_hallucination_replay.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_2_h1_validate_existing.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_2_m0_preflight.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_2_m0_r1_source_reselection.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_2_m0_r1_validate_package.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_2_m0_validate_cpu.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_2_m1_budget_check.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_2_m1_matched_restoration.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_2_m1_validate_existing.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/audit_publication.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/build_public_catalog.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1b/audit_live_output.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1b/audit_output.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1b/cloud_repair_once.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1b/gate_b_live_once.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1b/prepare_inputs.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1b/relay_probe.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1c/finalize_manifest.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1c/run_g1c_postprocess.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1d/offline_protocol_audit.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1e/audit_g1e_pair.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1e/g1e_live_pair.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1e/prepare_g1e.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1f0/prepare_g1f0.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1f0b/prepare_roi_4x3.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1f0b/verify_dpapi_dry_run.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1f1a/audit_saved_output.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1f1a/offline_protocol_tests.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1f1a/prepare_preflight.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1f1a/protocol.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1f1a/seal_preflight.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1f1a/single_repair.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g1f2/audit_alignment.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g2/audit_g2_closeout.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g2/g2_single_executor.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g2/offline_executor_tests.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g2/prepare_three_source_pilot.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g3/align_g3b2_batch.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g3/audit_final_selection.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g3/build_candidate_review.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g3/build_g3c0_review_page.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g3/build_source_review.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g3/closeout_g3c1_review.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g3/closeout_g3d2_partial.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g3/g3_batch_executor.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g3/g3d2_benchmark.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g3/prepare_g3b2a_batch.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g3/prepare_g3b2b_batch.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g3/prepare_g3c2_v2.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g3/repair_source_review_page.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g3/restore_source_review_backup.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g3/review_decisions.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g3/source_review_ui.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g3/validate_alignment_g3d.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/g3/verify_train_export.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_cloud/sync_public_records.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_diffusion_diagnosis.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_diffusion_pilot.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_diffusion_pilot_r1.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_phase0_r1_audit.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_phase0_readonly_audit.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_restoration/__init__.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_restoration/audit_phase1b_s1_sources.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_restoration/audit_phase1b_s2_sources.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_restoration/audit_phase1b_s3.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_restoration/audit_phase1b_s4_r2_independence.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_restoration/finalize_phase1b_s5.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_restoration/geometry.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_restoration/prepare_phase1b_s4_r1.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_restoration/protocol.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_restoration/roi_composition.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_restoration/run_phase1a_audit.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_restoration/run_phase1a_r1.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_restoration/run_phase1a_r2.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_restoration/run_phase1b_s2_smoke.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_restoration/run_phase1b_s4_eligibility.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_restoration/run_phase1b_s5_matched_input.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_restoration/verify_phase1b_r3_artifact.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_restoration_feasibility_audit.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp13_vlm_semantic_audit.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/a10_dataset_entries.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/a10_freeze.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/a10_selection.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/a11_full_eval.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/a11_full_numerics.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/a11_full_protocol.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/a11_full_train.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/a11_loader.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/a11_release_audit.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/a11_smoke_diagnostics.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/a11_smoke_numerics.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/a11_smoke_train.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/admission_diagnosis.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/admission_diagnosis_a.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/admission_diagnosis_b.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/ai_visual_review.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/aligned_support.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/audit_admission.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/audit_final_v4.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/audit_formal_e0_e1.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/audit_revised_amp_smoke.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/audit_targeted_v2.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/audit_targeted_v3.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/diagnose_amp_first_batch.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/diagnose_formal_zero_gradients.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/evaluate_formal_e0_e1.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/export_ai_review_pilot.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/final_dataset.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/final_dataset_identity.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/final_dataset_selection.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/final_v4.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/final_v4_alignment.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/final_v4_review.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/foreground_audit.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/formal_e0_e1.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/freeze_core.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/full392_recovery.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/import_human_review.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/label_plan.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/large_scale_review.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/postprocess_large_scale_repair.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/prepare_large_scale_repair.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/publish_ai_visual_review.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/revised_amp_smoke.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/run_large_scale_repair.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/smoke_trainer.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/summarize_smoke.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/targeted_v2.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/targeted_v2_alignment.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/targeted_v2_review.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/targeted_v3.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/targeted_v3_alignment.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/targeted_v3_remaining.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp14/targeted_v3_review.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp15/audit_jc.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp15/diagnose_jc.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp15/ja.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp15/jb.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp15/jb_binding.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp15/jd.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp15/jd_diagnostics.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp15/je0.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp15/je2.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp15/preflight_jc.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp15/regions.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp15/summarize.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp15/summarize_jb.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp15/summarize_jd.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp15/summarize_je0.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp15/summarize_je2.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp15/verify_cpu_train.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/audit_assets.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/audit_coverage.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/diagnostics.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/engineering/__init__.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/engineering/augmentation.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/engineering/batch_pairing.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/engineering/benchmark.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/engineering/bn.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/engineering/calibration.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/engineering/calibration_extension.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/engineering/calibration_rules.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/engineering/checkpoint.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/engineering/coverage.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/engineering/data.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/engineering/losses.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/engineering/model.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/engineering/runtime.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/engineering/smoke.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/formal/__init__.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/formal/authorization.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/formal/checkpoint.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/formal/diagnostics.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/formal/executor.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/formal/exports.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/formal/monitor.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/formal/native_adapter.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/formal/r5_gate.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/formal/r5_smoke.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/formal/repair_evidence.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/formal/repair_r1.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/formal/repaired_seed42.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/formal/resources.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/formal/rng.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/formal/sampler.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/formal/schedule.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/formal/validation.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/pair_loss.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/prototype.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17/review_package.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17d/__init__.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17d/reconcile.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17e/__init__.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17e/census.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17e/coverage.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17e/expansion.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17e/lineage.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17e/mapping.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17e/review_package.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17f/compat.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17f/evidence_audit.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17f/package_integrity.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/exp17f/reconcile.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/fasttrack_b.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/finalize_fasttrack_b.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/ssl/exp12_encoder_analysis.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/ssl/exp12_local_change.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/ssl/exp12_simsiam_formal.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/ssl/exp12_simsiam_smoke.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/training/exp02_2a_short_repro.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/training/exp05_sampler_train.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/training/exp08_kd_train.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/training/exp09_simsiam.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/training/exp10_controlled_run.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/training/exp10_train.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/training/exp12_3_downstream.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/training/exp12_5_local_change_downstream.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/training/exp12_5_local_change_downstream_v2.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/training/fasttrack_train.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/training/run_yolo_seg.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/visualization/render_exp03_no_response.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/visualization/render_image_list.py",
+      "pass": true
+    },
+    {
+      "check": "Git_blob_tools/visualization/render_near_duplicate_groups.py",
+      "pass": true
+    },
+    {
+      "check": "Git_source_domain_exact",
+      "pass": true
+    },
+    {
+      "check": "Git_source_catalog_digest",
+      "pass": true
+    }
+  ],
+  "failures": [],
+  "limits": [
+    "Checkpoint byte hashes and JSON linkage verified without torch or tensor deserialization.",
+    "Existing runtime Gate receipts report strict tensor reload; this script does not repeat it.",
+    "Native model-state SHA links use recorded receipts and Best pointers, not recomputed tensor hashes.",
+    "Windows case-only root merge is resolved against exact original archive member names.",
+    "No images, model forward/backward, optimizer update or VAL/TEST were used by this verification.",
+    "This is Codex engineering verification; ChatGPT independent scientific audit remains pending."
+  ],
+  "passed": 1397,
+  "private_archive_sha256": "45310b0ed9c2df53b6d91cdade7cc1f94ba9422313141cd4e914b330ba0c24ce",
+  "protocol_sha256": "8aff5fa076e0fbf66d5473648f7f06c54d689f7b8ed2d7f2edfe8152d13a1c38",
+  "scientific_gate": "HOLD_ZERO_AP",
+  "source_catalog_sha256": "928f2726b9ca07bf44c1d1eee14beda25036c4e8957b5afd96f14a3fc0c17e07",
+  "status": "PASS",
+  "verification_kind": "CODEX_OFFLINE_ENGINEERING_SELF_AUDIT",
+  "verified_VAL_passes": 4,
+  "verified_effective_updates": 105
+}

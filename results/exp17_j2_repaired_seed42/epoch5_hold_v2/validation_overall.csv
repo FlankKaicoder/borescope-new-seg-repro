@@ -1,0 +1,5 @@
+epoch,role,pass,images,instances,fitness,metrics/precision(B),metrics/recall(B),metrics/mAP50(B),metrics/mAP50-95(B),metrics/precision(M),metrics/recall(M),metrics/mAP50(M),metrics/mAP50-95(M)
+5,ema,standard,154,296,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5,ema,fixed,154,296,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5,master,standard,154,296,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5,master,fixed,154,296,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

@@ -1,0 +1,353 @@
+{
+  "analysis_operations": {
+    "TEST_access": 0,
+    "checkpoint_tensor_loads": 0,
+    "model_imports": 0,
+    "new_VAL": 0,
+    "new_backward": 0,
+    "new_forward": 0,
+    "new_optimizer_updates": 0
+  },
+  "baseline_files_sha256": {
+    "primary_J1_J2_fixed_conf025.csv": "65a13d66ca8d1cab49817b5ba17d1900f8dda3047b6852fe7a8ff866101b4068",
+    "primary_J1_J2_overall.csv": "1d2512d436015ae150b31177507a0487e0b5053e922864889f5628cde4889166",
+    "primary_J1_J2_per_class.csv": "6f48fc86b940a0fda4e1612b30af548ed0067d3f900f7534104128ae9b6a09f6",
+    "primary_J1_J2_size_recall.csv": "162ff79b87fbe6a2f5adf2e5f0d6e8084d8f61028d9f0ddd13ee32b01e5da56d"
+  },
+  "counts": {
+    "AMP_skips": 0,
+    "diagnostic_events": 1,
+    "epoch_reports": 5,
+    "final_endpoint_receipts": 0,
+    "fixed_TRAIN_probes": 4,
+    "original_image_exposures": 3340,
+    "pass_completion_receipts": 4,
+    "periodic_recovery_receipts": 1,
+    "raw_instance_exposures": 6330,
+    "scheduled_pass_reports": 4,
+    "standard_role_results": 2,
+    "step_rows": 105
+  },
+  "early_gate": {
+    "master_mask_AP50_95": 0.0,
+    "mismatched_layers": [],
+    "rule": {
+      "channel_reduction": "median_abs_normalized_mean_gap",
+      "layers": [
+        "model.0.bn",
+        "model.4.cv1.bn",
+        "model.16.cv1.bn",
+        "model.16.cv2.bn"
+      ],
+      "minimum_batches": 3,
+      "positions": [
+        1,
+        7,
+        11,
+        21
+      ],
+      "required_master_mask_AP50_95": "strictly_positive",
+      "threshold": 3.0,
+      "threshold_status": "PREDECLARED_ENGINEERING_BOUND_NOT_HEALTHY_BASELINE_CALIBRATED"
+    },
+    "status": "HOLD",
+    "updates": 105
+  },
+  "evidence_issues": [],
+  "execution_complete": false,
+  "experiment": "EXP17_J2_REPAIRED_SEED42",
+  "focus_parameter_scale_change": {
+    "model.16.cv1.conv.weight": {
+      "first_L2": 7.786221504211426,
+      "first_observed_epoch": 5,
+      "last_L2": 7.786221504211426,
+      "last_observed_epoch": 5,
+      "ratio_last_to_first_observed": 1.0
+    },
+    "model.16.cv2.conv.weight": {
+      "first_L2": 5.577482223510742,
+      "first_observed_epoch": 5,
+      "last_L2": 5.577482223510742,
+      "last_observed_epoch": 5,
+      "ratio_last_to_first_observed": 1.0
+    }
+  },
+  "generated_utc": "2026-11-24T13:14:03.752662+00:00",
+  "independent_scientific_audit": "PENDING",
+  "input_files_sha256": {
+    "EXECUTION_SEAL.json": "9d713f02a8c1c699dad008076d4aba6b31c9437075ae6f99e293b4fde3fea932",
+    "completion.json": "3e5a5924ba1a9460a0f2ae280b83d89bf7f52060878ba4c327f662605609feeb",
+    "epoch005_gate.json": "ef1eab393dcbfd856b9511eb0d96901bb919d91c1207b4e185cd910aca59d57d",
+    "steps.jsonl": "cfaa1a48d96b1e2f38539c6c101d7c5b435b60eeefd169b862f3410cd4d6d816"
+  },
+  "interpretation": [
+    "Early-stopped training does not supply the Epoch100 primary result.",
+    "Pair diagnostic norms are recorded raw, then multiplied by4 exactly once in the exported weighted fields.",
+    "SupCon gradient norms already include8; N_P3_unscaled_gradient_norm already includesPair4.",
+    "Clipped norm and coefficients are algebraic diagnostics, not measured AdamW update scaling.",
+    "Fixed confidence TP/FP/FN-derived precision is null for zero detections.",
+    "BN mean gaps use TRAIN A inputs against pre-probe saved buffers, not running-mode input distributions.",
+    "Single-seed comparisons do not establish cross-seed superiority or the unique historical cause of BN drift."
+  ],
+  "journal": {
+    "committed_updates": 105,
+    "events": {
+      "ATTEMPT_BEGIN": 105,
+      "AUX_BEGIN": 5,
+      "AUX_COMMIT": 5,
+      "INITIAL_STATE_COMMIT": 1,
+      "UPDATE_COMMIT": 105
+    },
+    "hash_chain_verified": true,
+    "last_record_sha256": "70d8b74a25f507891ceeec94f354d92214e4f27f2c299559807d2e8c01f42f30",
+    "pending_attempt": null,
+    "pending_aux": null,
+    "provided": true,
+    "rows": 221,
+    "sha256": "43c0acde2747c0d829b44786f03792a2e0455b5b8040d3809a0dfd6709076fb6"
+  },
+  "latest_scheduled": {
+    "epoch": 5,
+    "standard_metrics": {
+      "ema": {
+        "metrics/mAP50(B)": 0.0,
+        "metrics/mAP50(M)": 0.0,
+        "metrics/mAP50-95(B)": 0.0,
+        "metrics/mAP50-95(M)": 0.0,
+        "metrics/precision(B)": 0.0,
+        "metrics/precision(M)": 0.0,
+        "metrics/recall(B)": 0.0,
+        "metrics/recall(M)": 0.0
+      },
+      "master": {
+        "metrics/mAP50(B)": 0.0,
+        "metrics/mAP50(M)": 0.0,
+        "metrics/mAP50-95(B)": 0.0,
+        "metrics/mAP50-95(M)": 0.0,
+        "metrics/precision(B)": 0.0,
+        "metrics/precision(M)": 0.0,
+        "metrics/recall(B)": 0.0,
+        "metrics/recall(M)": 0.0
+      }
+    }
+  },
+  "method_effectiveness_verdict": null,
+  "pair": {
+    "raw_loss": {
+      "count": 105,
+      "max": 0.20500318706035614,
+      "mean": 0.16864682081199828,
+      "median": 0.17335821688175201,
+      "min": 0.08573316037654877
+    },
+    "steps_with_valid_ABN": 105,
+    "steps_with_zero_raw_pair_loss": 0,
+    "valid_ABN_exposures": 2481,
+    "weighted_pair_to_main_ratio_by_domain": {
+      "all_trainable": {
+        "count": 4,
+        "max": 0.03340141407296054,
+        "mean": 0.023027489569033475,
+        "median": 0.024513471834218578,
+        "min": 0.009681600534736214
+      },
+      "backbone": {
+        "count": 4,
+        "max": 0.04011820930690733,
+        "mean": 0.026879750363298024,
+        "median": 0.028374303290108923,
+        "min": 0.01065218556606692
+      },
+      "model.0": {
+        "count": 4,
+        "max": 0.04539582557347003,
+        "mean": 0.024267179782981953,
+        "median": 0.021771523101062555,
+        "min": 0.008129847356332673
+      },
+      "model.1": {
+        "count": 4,
+        "max": 0.05085587613762759,
+        "mean": 0.03496872040293515,
+        "median": 0.03544827917306252,
+        "min": 0.018122447127987978
+      },
+      "model.10": {
+        "count": 4,
+        "max": 0.027244821156338583,
+        "mean": 0.01773035299372909,
+        "median": 0.019597703381282458,
+        "min": 0.004481184056012864
+      },
+      "model.13": {
+        "count": 4,
+        "max": 0.08014902344601198,
+        "mean": 0.04876449156020808,
+        "median": 0.05086907236468355,
+        "min": 0.01317079806545324
+      },
+      "model.16": {
+        "count": 4,
+        "max": 0.032750801534598674,
+        "mean": 0.022207891064902875,
+        "median": 0.022612697397878134,
+        "min": 0.010855367929256548
+      },
+      "model.17": {
+        "count": 4,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0
+      },
+      "model.19": {
+        "count": 4,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0
+      },
+      "model.2": {
+        "count": 4,
+        "max": 0.05098617606326021,
+        "mean": 0.0343050046228328,
+        "median": 0.030251892952815967,
+        "min": 0.02573005652243904
+      },
+      "model.20": {
+        "count": 4,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0
+      },
+      "model.22": {
+        "count": 4,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0
+      },
+      "model.23": {
+        "count": 4,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0
+      },
+      "model.3": {
+        "count": 4,
+        "max": 0.042214928177471626,
+        "mean": 0.025829183327631934,
+        "median": 0.022541999089172895,
+        "min": 0.016017806954710327
+      },
+      "model.4": {
+        "count": 4,
+        "max": 0.057244224002522236,
+        "mean": 0.0335390170945243,
+        "median": 0.03069095559863836,
+        "min": 0.015529933178298249
+      },
+      "model.5": {
+        "count": 4,
+        "max": 0.02980210163074173,
+        "mean": 0.019447257808705955,
+        "median": 0.019306125307588143,
+        "min": 0.009374678988905809
+      },
+      "model.6": {
+        "count": 4,
+        "max": 0.040798133831987146,
+        "mean": 0.022197582806941535,
+        "median": 0.01899874397661427,
+        "min": 0.009994709442550456
+      },
+      "model.7": {
+        "count": 4,
+        "max": 0.032018536997786264,
+        "mean": 0.01839079248753925,
+        "median": 0.016610925238872837,
+        "min": 0.008322782474625067
+      },
+      "model.8": {
+        "count": 4,
+        "max": 0.025766856775661394,
+        "mean": 0.013690888324763761,
+        "median": 0.01237219304463092,
+        "min": 0.004252310434131812
+      },
+      "model.9": {
+        "count": 4,
+        "max": 0.020796516134330305,
+        "mean": 0.017296221003314623,
+        "median": 0.019463205424576066,
+        "min": 0.009461957029776055
+      },
+      "region_projection": {
+        "count": 4,
+        "max": 0.3523093279180193,
+        "mean": 0.16827821742256963,
+        "median": 0.13774417261633506,
+        "min": 0.04531519653958909
+      }
+    }
+  },
+  "primary": {
+    "J1_seed42_epoch100_Last_MASTER": 0.2727438798549706,
+    "available": false,
+    "reason": "EPOCH100_LAST_MASTER_SCHEDULED_RESULT_ABSENT"
+  },
+  "resource": {
+    "peak_allocated_bytes": 8575898112,
+    "peak_reserved_bytes": 9145679872,
+    "provided_gate_process_wall": {
+      "elapsed_seconds": 1034.329354763031,
+      "exit_code": 0
+    },
+    "training_step_internal_seconds_sum": 275.8596289679408,
+    "training_step_seconds": {
+      "count": 105,
+      "max": 14.900525691919029,
+      "mean": 2.6272345615994364,
+      "median": 2.202757064253092,
+      "min": 1.691004492342472
+    }
+  },
+  "schema": "EXP17_R5_OFFLINE_PUBLIC_SUMMARY_V1",
+  "stability": {
+    "A_BN_counter_violations": 0,
+    "N_RNG_violations": 0,
+    "N_extra_BN_violations": 0,
+    "clip_coefficient": {
+      "count": 105,
+      "max": 0.10518409875432612,
+      "mean": 0.036634222830404725,
+      "median": 0.03484960513508935,
+      "min": 0.002784545580896556
+    },
+    "fraction_updates_clipped": 1.0,
+    "gradient_norm": {
+      "count": 105,
+      "max": 3591.250244140625,
+      "mean": 531.6540576026554,
+      "median": 286.9472961425781,
+      "min": 95.07140350341797
+    }
+  },
+  "status": "R5_EPOCH5_SCIENTIFIC_HOLD",
+  "supplementary_best": {
+    "ema": {
+      "epoch": 5,
+      "fitness": 0.0,
+      "mask_mAP50_95": null,
+      "sha256": "f762088b008c6da6efbff054c1b6b4ba118025727bd76244b34de37b18e46f86"
+    },
+    "master": {
+      "epoch": 5,
+      "fitness": 0.0,
+      "mask_mAP50_95": null,
+      "sha256": "b1ecd9c4550202e0109b742f6ae15897d30e847a9721e1c40c008fc561e5d135"
+    }
+  }
+}
