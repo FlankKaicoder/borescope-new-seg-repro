@@ -1,6 +1,9 @@
 """Independent derivative and early-gate regressions for R5."""
 import copy
+import tempfile
 import unittest
+from pathlib import Path
+from unittest.mock import patch
 
 import torch
 from torch.nn import functional as F
@@ -114,6 +117,64 @@ class EarlyGateTests(unittest.TestCase):
             decide(reports, metrics)
         with self.assertRaises(ValueError):
             decide(reports[1:], metrics)
+
+
+class Epoch5TransactionTests(unittest.TestCase):
+    def test_commit_gate_reload_then106_without_repeating_aux(self):
+        from tools.exp14.formal_e0_e1 import hash_state
+        from tools.exp17.formal.authorization import exclusive_json, file_sha, HardGate
+        from tools.exp17.formal.repaired_seed42 import epoch_boundary
+        from tools.exp17.formal.executor import run_session
+        from tools.exp17.formal.tests.test_executor import SyntheticAdapter, PROTOCOL, session
+        from tools.exp17.formal.tests.test_recovery import BINDINGS, seed_all
+        old_threads = torch.get_num_threads()
+        torch.set_num_threads(1)
+        try:
+            with tempfile.TemporaryDirectory() as temporary:
+                seed_all()
+                output, journal, store = session(Path(temporary) / "r5")
+                anchor = journal.path.parent
+                class FixtureAdapter(SyntheticAdapter):
+                    def gradient_diagnostics(self):
+                        self.diagnostic_epochs.append(self.trainer.epoch + 1)
+                        return EarlyGateTests().fixture()[0]
+
+                    def evaluate(self, epoch, role):
+                        result = super().evaluate(epoch, role)
+                        model = self.trainer.model if role == "master" else self.trainer.ema.ema
+                        for mode in ("standard", "fixed"):
+                            exclusive_json(anchor / "val_passes" / f"epoch005_{role}_{mode}.json", {"CPU_FIXTURE": True})
+                            directory = output / "val" / f"epoch005_{role}_{mode}"
+                            directory.mkdir(parents=True)
+                            exclusive_json(directory / "evaluation.json", result[mode])
+                            exclusive_json(directory / "pass_receipt.json", {"epoch": 5, "role": role, "mode": mode,
+                                "native_state_sha256": hash_state(model.state_dict()),
+                                "protocol_sha256": BINDINGS["protocol_sha256"],
+                                "evaluation_sha256": file_sha(directory / "evaluation.json")})
+                        return result
+                (anchor / "val_passes").mkdir()
+                adapter = FixtureAdapter()
+                with patch("tools.exp17.formal.repaired_seed42.ROOT", output), patch("tools.exp17.formal.repaired_seed42.ANCHOR", anchor):
+                    first = run_session(adapter, PROTOCOL, BINDINGS, output, journal, store, epoch_boundary=epoch_boundary)
+                    self.assertEqual(first["status"], "R5_EPOCH5_PASS")
+                    self.assertEqual(journal.committed, 105)
+                    self.assertEqual(journal.rows[-1]["event"], "AUX_COMMIT")
+                    self.assertEqual(adapter.cache_epochs, list(range(5)))
+                    payload, _ = store.load_latest()
+                    self.assertTrue(payload["extra"]["epoch_events_complete"])
+                    second = run_session(adapter, PROTOCOL, BINDINGS, output, journal, store, recovered=payload,
+                                         epoch_boundary=epoch_boundary, synthetic_stop_after=106)
+                    self.assertEqual(second["updates"], 106)
+                    self.assertEqual(adapter.diagnostic_epochs, [5])
+                    self.assertEqual(adapter.val_events, [(5, "master"), (5, "ema")])
+                    self.assertEqual(adapter.cache_epochs, list(range(6)))
+                    self.assertEqual(adapter.trainer.scheduler.last_epoch, 5)
+                    # A changed accepted artifact fails closed even after commit106.
+                    (output / "VAL_epoch005_master.json").write_text("{}")
+                    with self.assertRaises(HardGate):
+                        epoch_boundary(6, journal, store)
+        finally:
+            torch.set_num_threads(old_threads)
 
 
 if __name__ == "__main__":

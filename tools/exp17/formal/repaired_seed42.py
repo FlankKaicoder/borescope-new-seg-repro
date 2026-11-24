@@ -128,6 +128,7 @@ def adapter_type():
     from tools.exp17.formal.validation import FrozenValAdapter
     class RepairedVal(FrozenValAdapter):
         authorization_stage = "EXP17_R5_FROZEN_VAL_AUTHORIZATION"
+        write_pass_receipts = True
     class RepairedAdapter(NativeAdapter):
         bn_mode = MODE
         validator_class = RepairedVal
@@ -158,6 +159,21 @@ def epoch_boundary(epoch, journal, store):
         require(journal.rows[-1]["event"] == "AUX_COMMIT" and journal.rows[-1]["epoch"] == 5
                 and journal.rows[-1]["checkpoint_sha256"] == receipt["sha256"], "R5 gate AUX not committed")
         reports = load(ROOT / "diagnostics_epoch005.json")
+        periodic, _ = store.load_artifact("epoch005_full_recovery.pt")
+        from tools.exp17.formal.checkpoint import state_hash
+        require(state_hash(periodic) == state_hash(payload), "R5 periodic/Last states disagree")
+        require(len(list((ANCHOR / "val_passes").glob("*.json"))) == 4, "R5 early pass count differs")
+        from tools.exp14.formal_e0_e1 import hash_state
+        for role, field in (("master", "state"), ("ema", "ema")):
+            expected_state = hash_state({k: v for k, v in payload[field].items() if not k.startswith("region_projection.")})
+            for mode in ("standard", "fixed"):
+                directory = ROOT / "val" / f"epoch005_{role}_{mode}"
+                receipt_file = load(directory / "pass_receipt.json")
+                require(receipt_file["native_state_sha256"] == expected_state
+                        and receipt_file["protocol_sha256"] == store.bindings["protocol_sha256"]
+                        and (receipt_file["epoch"], receipt_file["role"], receipt_file["mode"]) == (5, role, mode)
+                        and receipt_file["evaluation_sha256"] == file_sha(directory / "evaluation.json"),
+                        "R5 early VAL pass completion/model identity differs")
         result = decide(reports, load(ROOT / "VAL_epoch005_master.json"))
         result.update(checkpoint=receipt, bindings=store.bindings, journal_prefix_sha256=file_sha(journal.path),
                       journal_last_sha256=journal.rows[-1]["sha256"], updates=105,

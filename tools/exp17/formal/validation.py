@@ -251,6 +251,7 @@ class FrozenValAdapter:
     cannot be retried. G1 only tests refusal and synthetic callbacks.
     """
     authorization_stage = "EXP17_G1_FROZEN_VAL_AUTHORIZATION"
+    write_pass_receipts = False
 
     def __init__(self, *, authorization, protocol_sha256, val_copy, val_root, output, ledger_root):
         self.protocol_sha256 = protocol_sha256
@@ -297,7 +298,16 @@ class FrozenValAdapter:
             self._claim(epoch, role, mode)
             pass_model = copy.deepcopy(native_model).float().eval()
             path = self.output / f"epoch{epoch:03d}_{role}_{mode}"
+            if self.write_pass_receipts:
+                from tools.exp14.formal_e0_e1 import hash_state
+                source_sha = hash_state(pass_model.state_dict())
             results[mode] = native.evaluate_master(pass_model, config, val_dir, labels, path, cutoff)
+            if self.write_pass_receipts:
+                from tools.exp17.formal.authorization import exclusive_json, digest
+                exclusive_json(path / "pass_receipt.json", {"epoch": epoch, "role": role, "mode": mode,
+                    "confidence": cutoff, "protocol_sha256": self.protocol_sha256,
+                    "native_state_sha256": source_sha, "result_digest": digest(results[mode]),
+                    "evaluation_sha256": sha256_file(path / "evaluation.json")})
         read_val_copy(SimpleNamespace(output=self.val_copy, val=self.val_root))
         results["fitness"] = native_fitness(results["standard"])
         results["role"] = role
