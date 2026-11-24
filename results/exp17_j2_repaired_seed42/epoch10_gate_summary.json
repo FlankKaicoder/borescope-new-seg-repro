@@ -1,0 +1,55 @@
+{
+  "BN_D_range": {
+    "model.0.bn": [
+      0.2775067389011383,
+      0.350676953792572
+    ],
+    "model.16.cv1.bn": [
+      0.06569419056177139,
+      0.06789321452379227
+    ],
+    "model.16.cv2.bn": [
+      0.12489756941795349,
+      0.1294635534286499
+    ],
+    "model.4.cv1.bn": [
+      0.1736038625240326,
+      0.18171903491020203
+    ]
+  },
+  "BN_mismatched_layers": [],
+  "addendum_sha256": "c7e5bf6a49a505c192d1c649d7c25d1c95be229f6703a224bbca96449fe0f4e5",
+  "committed_updates_at_gate": 210,
+  "epoch": 10,
+  "formal_VAL_passes_at_gate": 8,
+  "full210_checkpoint_sha256": "4e7939d4a2038e8b4fee8aa6a8ab9a0a4ca2b2c09ac7f250858a819baeccf7fe",
+  "new_source_sha256": "6c5496624c5249d1c5c11327c63a04f2fc7a30d891001e1da3e922dccd62b7da",
+  "original_E5_HOLD_preserved": true,
+  "raw_gate_sha256": "b39feb0670953a931d71cf3d80914c51e16cbeee8369f0310e430ef81093f9b1",
+  "scope": "NORMAL_RUNNING_STATISTICS_FROZEN_VAL; original scientific rule; same experiment2100/80 total budget",
+  "standard_metrics": {
+    "ema": {
+      "fitness": 0.02272034281747868,
+      "metrics/mAP50(B)": 0.05325992530572777,
+      "metrics/mAP50(M)": 0.03374594063073999,
+      "metrics/mAP50-95(B)": 0.010972874824433518,
+      "metrics/mAP50-95(M)": 0.011747467993045163,
+      "metrics/precision(B)": 0.3660508554830689,
+      "metrics/precision(M)": 0.35779230575124626,
+      "metrics/recall(B)": 0.1017509563954518,
+      "metrics/recall(M)": 0.04686891183450816
+    },
+    "master": {
+      "fitness": 0.022791204572062504,
+      "metrics/mAP50(B)": 0.05326206152385906,
+      "metrics/mAP50(M)": 0.03335101346615254,
+      "metrics/mAP50-95(B)": 0.010990049764107754,
+      "metrics/mAP50-95(M)": 0.011801154807954748,
+      "metrics/precision(B)": 0.3728299692993172,
+      "metrics/precision(M)": 0.36420883965165657,
+      "metrics/recall(B)": 0.1017509563954518,
+      "metrics/recall(M)": 0.04686891183450816
+    }
+  },
+  "status": "PASS"
+}

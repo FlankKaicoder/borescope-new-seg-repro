@@ -325,27 +325,66 @@ def pass_receipts(run, issues):
     return rows
 
 
-def artifact_receipts(run, issues, areas=("recovery", "best", "final"), expected_bindings=None):
+def artifact_receipts(run, issues, areas=("recovery", "best", "final"), expected_bindings=None, results=None):
     rows = []
+    histories = {role: [] for role in ("master", "ema")}
     for area in areas:
         for path in sorted((run / area).glob("*.json")):
             record = read(path)
             filename = record.get("file")
             if not filename or not record.get("sha256"):
                 continue
+            history = re.fullmatch(r"best_(master|ema)_epoch(\d{3})\.selection\.json", path.name)
             blob = path.parent / filename
             present = blob.is_file()
-            verified = sha(blob) == record["sha256"] if present else None
+            # A selection receipt is immutable evidence of the selection. Its
+            # two-slot filename is reused later and is not a historical archive.
+            verified = sha(blob) == record["sha256"] if present and not history else None
             if present and not verified:
-                issues.append("ARTIFACT_BLOB_SHA_CONFLICT_" + Path(filename).name)
+                if not history:
+                    issues.append("ARTIFACT_BLOB_SHA_CONFLICT_" + Path(filename).name)
             if expected_bindings and area in expected_bindings and record.get("bindings_sha256") != expected_bindings[area]:
                 issues.append("ARTIFACT_BINDING_CONFLICT_" + area + "_" + Path(filename).name)
+            if history:
+                role, epoch = history[1], int(history[2])
+                histories[role].append(epoch)
+                if (record.get("role") != "best_" + role or record.get("epoch") != epoch
+                        or record.get("schema") != "EXP17_G1_BEST_FP32_TENSOR_BUNDLE_V1"
+                        or record.get("historical_selection_record_is_weight_archive") is not False
+                        or record.get("strict_tensor_reload") is not True or record.get("optimizer_included") is not False):
+                    issues.append(f"BEST_HISTORY_RECEIPT_FORMAT_CONFLICT_{epoch}_{role}")
+                if results is not None:
+                    scheduled = results.get((epoch, role))
+                    metrics = (scheduled or {}).get("standard", {}).get("overall", {})
+                    if (not all(finite(metrics.get(k)) for k in (PRIMARY, "metrics/mAP50-95(B)"))
+                            or not finite(record.get("fitness"))
+                            or not math.isclose(record["fitness"], metrics[PRIMARY] + metrics["metrics/mAP50-95(B)"], rel_tol=0, abs_tol=1e-12)):
+                        issues.append(f"BEST_HISTORY_FITNESS_ROLE_RESULT_CONFLICT_{epoch}_{role}")
+                    for state_role in ("master", "ema"):
+                        receipt = optional(run / "val" / f"epoch{epoch:03d}_{state_role}_standard/pass_receipt.json")
+                        if receipt is None or record.get(state_role + "_native_state_sha256") != receipt.get("native_state_sha256"):
+                            issues.append(f"BEST_HISTORY_NATIVE_ROLE_STATE_CONFLICT_{epoch}_{role}_{state_role}")
             rows.append({"area": area, "artifact": Path(filename).name,
                 **{key: record.get(key) for key in ("role", "epoch", "sha256", "bytes", "fitness", "native_state_sha256",
                     "master_native_state_sha256", "ema_native_state_sha256", "strict_native_state_reload", "strict_tensor_reload",
                     "native_ultralytics_loader_checked")},
                 "blob_present_in_analysis_copy": present,
-                "blob_sha_verified": verified})
+                "blob_sha_verified": verified, "historical_selection_receipt": bool(history), "receipt_sha256": sha(path)})
+    if results is not None:
+        for role in ("master", "ema"):
+            selected, best_fitness = [], None
+            for (epoch, selected_role), record in sorted(results.items()):
+                if selected_role != role:
+                    continue
+                metrics = record.get("standard", {}).get("overall", {})
+                if not all(finite(metrics.get(k)) for k in (PRIMARY, "metrics/mAP50-95(B)")):
+                    continue
+                fitness = metrics[PRIMARY] + metrics["metrics/mAP50-95(B)"]
+                if best_fitness is None or fitness >= best_fitness:
+                    selected.append(epoch)
+                    best_fitness = fitness
+            if sorted(histories[role]) != selected:
+                issues.append("BEST_HISTORY_LATEST_EQUAL_SELECTION_CONFLICT_" + role)
     return rows
 
 
@@ -360,7 +399,7 @@ def observation_context(run, observation_root, journal, issues):
                 or any(row["event"] == "SOURCE_MIGRATION_COMMIT" for row in rows))
     context = {"provided": provided, "lineage_verified": False, "store_areas": ["recovery"],
                "best_areas": ["best"], "expected_bindings": {}, "completion": optional(run / "completion.json"),
-               "gate": None, "metadata_hashes": {}, "details": {"provided": provided}}
+               "gate": None, "metadata_hashes": {}, "details": {"provided": provided, "lineage_verified": False}}
     if not provided:
         return context
     first_issue = len(issues)
@@ -389,6 +428,10 @@ def observation_context(run, observation_root, journal, issues):
     if not addendum or not approval or not provenance:
         issues.append("MISSING_OBSERVATION_ADDENDUM_APPROVAL_OR_PROVENANCE")
         return context
+    schema = "EXP17_J2_R5_E10_OBSERVATION_V1"
+    if (addendum.get("schema") != schema or marker.get("schema") != schema + "_ACTIVE_STORE"
+            or approval.get("schema") != schema + "_APPROVAL" or addendum.get("experiment") != "EXP17_J2_REPAIRED_SEED42"):
+        issues.append("OBSERVATION_SCHEMA_OR_EXPERIMENT_CONFLICT")
     addendum_sha = sha(root / "engineering_observation_addendum.json")
     base = addendum["origin_bindings"]
     effective = {**base, "code_sha256": addendum["code"]["sha256"], "origin_code_sha256": base["code_sha256"],
@@ -429,6 +472,22 @@ def observation_context(run, observation_root, journal, issues):
             or migrations[0].get("bindings_sha256") != digest(effective)
             or any(migrations[0].get(key) != marker.get(key) for key in fields)):
         issues.append("OBSERVATION_SOURCE_MIGRATION_JOURNAL_CONFLICT")
+    origin_journal = addendum.get("origin_journal", {})
+    origin_rows = origin_journal.get("rows", 0)
+    if journal and origin_journal.get("bytes") and Path(journal).is_file():
+        with Path(journal).open("rb") as stream:
+            prefix = stream.read(origin_journal["bytes"])
+        prefix_verified = len(prefix) == origin_journal["bytes"] and hashlib.sha256(prefix).hexdigest() == origin_journal.get("sha256")
+    else:
+        prefix_verified = False
+    if (not prefix_verified or origin_rows != 221 or len(rows) < origin_rows
+            or rows[origin_rows - 1].get("sha256") != origin_journal.get("last_row_sha256")
+            or rows[origin_rows - 1].get("event") != "AUX_COMMIT" or rows[origin_rows - 1].get("epoch") != 5
+            or rows[origin_rows - 1].get("checkpoint_sha256") != addendum.get("origin_checkpoint", {}).get("sha256")
+            or sum(row["event"] == "UPDATE_COMMIT" for row in rows[:origin_rows]) != 105
+            or (len(migrations) == 1 and (migrations[0].get("sequence") != origin_rows + 1
+                                         or migrations[0].get("previous") != origin_journal.get("last_row_sha256")))):
+        issues.append("OBSERVATION_ORIGINAL105_JOURNAL_PREFIX_CONFLICT")
     if (provenance.get("addendum_sha256") != addendum_sha
             or provenance.get("origin_checkpoint", {}).get("sha256") != addendum.get("origin_checkpoint", {}).get("sha256")
             or provenance.get("derived_checkpoint", {}).get("sha256") != marker.get("migration_checkpoint_sha256")):
@@ -439,16 +498,24 @@ def observation_context(run, observation_root, journal, issues):
         issues.append("OBSERVATION_IMMUTABLE_DERIVED105_RECEIPT_CONFLICT")
     old_pointer = optional(run / "recovery/latest.json")
     new_pointer = optional(run / OBSERVATION_STORE / "latest.json")
-    if old_pointer != addendum.get("origin_latest_pointer"):
+    if (old_pointer != addendum.get("origin_latest_pointer") or (old_pointer or {}).get("position")
+            != {"epoch": 4, "batch_position": 21, "global_update": 105}):
         issues.append("OBSERVATION_ORIGINAL105_POINTER_CHANGED")
     stateful = [row for row in rows if row["event"] in ("UPDATE_COMMIT", "AUX_COMMIT", "SOURCE_MIGRATION_COMMIT")]
     if not new_pointer or not stateful or new_pointer.get("sha256") != stateful[-1].get("checkpoint_sha256"):
         issues.append("OBSERVATION_ACTIVE_LATEST_JOURNAL_CONFLICT")
+    if stateful and new_pointer:
+        last = stateful[-1]
+        expected_update = (last["step"] if last["event"] == "UPDATE_COMMIT" else
+                           last["epoch"] * 21 if last["event"] == "AUX_COMMIT" else 105)
+        if new_pointer.get("position", {}).get("global_update") != expected_update:
+            issues.append("OBSERVATION_ACTIVE_POINTER_UPDATE_CONFLICT")
     context["expected_bindings"] = {"recovery": plain_state_hash(base), "best": plain_state_hash(base),
         OBSERVATION_STORE: plain_state_hash(effective), OBSERVATION_BEST: plain_state_hash(effective), "final": plain_state_hash(effective)}
     gate = context["gate"]
     if gate:
-        if gate.get("bindings") != effective or gate.get("addendum_sha256") != addendum_sha or gate.get("updates") != 210:
+        if (gate.get("bindings") != effective or gate.get("addendum_sha256") != addendum_sha or gate.get("updates") != 210
+                or gate.get("checkpoint", {}).get("position") != {"epoch": 9, "batch_position": 21, "global_update": 210}):
             issues.append("OBSERVATION_EPOCH10_GATE_BINDING_CONFLICT")
         boundaries = [row for row in rows if row["event"] == "AUX_COMMIT" and row.get("epoch") == 10]
         if not any(row["sha256"] == gate.get("journal_last_sha256") and row.get("checkpoint_sha256") == gate.get("checkpoint", {}).get("sha256") for row in boundaries):
@@ -575,6 +642,20 @@ def supplementary_best(run, completion, results, issues, best_areas=("best",)):
     return best
 
 
+def execution_status(complete, context, early_gate):
+    if complete:
+        return "R5_FULL_EXECUTION_EVIDENCE_COMPLETE_PENDING_INDEPENDENT_RESULT_GATE"
+    if context["provided"]:
+        if not context["lineage_verified"]:
+            return "R5_OBSERVATION_EXTENSION_EVIDENCE_INCOMPLETE"
+        if context["gate"] and context["gate"].get("status") == "HOLD":
+            return "R5_EPOCH10_SCIENTIFIC_HOLD"
+        if context["gate"] and context["gate"].get("status") == "PASS":
+            return "R5_POST_EPOCH10_IN_PROGRESS_OR_INCOMPLETE_EVIDENCE"
+        return "R5_EPOCH10_OBSERVATION_IN_PROGRESS_OR_INCOMPLETE_EVIDENCE"
+    return "R5_EPOCH5_SCIENTIFIC_HOLD" if early_gate and early_gate.get("status") == "HOLD" else "R5_PARTIAL_OR_INCOMPLETE_EXECUTION_EVIDENCE"
+
+
 def summarize(run, output, *, journal=None, gate_root=None, observation_root=None, baseline=None):
     run, output = Path(run), Path(output)
     baseline = Path(baseline) if baseline else Path(__file__).resolve().parents[2] / "results/exp17_j2_seed42_formal/completed_r1"
@@ -588,9 +669,11 @@ def summarize(run, output, *, journal=None, gate_root=None, observation_root=Non
     overall, per_class, fixed, sizes, results = validation_projection(run, issues)
     bn, gradients, weights = diagnostic_projection(run)
     chain = journal_summary(Path(journal) if journal else None, issues)
+    if chain.get("provided") and chain.get("committed_updates") != len(records):
+        issues.append("STEP_ROWS_AND_COMMITTED_JOURNAL_DIFFER")
     context = observation_context(run, observation_root, journal, issues)
     areas = tuple(dict.fromkeys([*context["store_areas"], *context["best_areas"], "final"]))
-    receipts, artifacts = pass_receipts(run, issues), artifact_receipts(run, issues, areas, context["expected_bindings"])
+    receipts, artifacts = pass_receipts(run, issues), artifact_receipts(run, issues, areas, context["expected_bindings"], results)
     completion, early_gate = context["completion"], optional(run / "epoch005_gate.json")
     best = supplementary_best(run, completion, results, issues, context["best_areas"])
     primary, primary_overall, primary_classes, primary_fixed, primary_sizes = matched_comparison(baseline, results)
@@ -619,23 +702,14 @@ def summarize(run, output, *, journal=None, gate_root=None, observation_root=Non
     final_receipts = [r for r in artifacts if r["area"] == "final"]
     final_complete = (len(final_receipts) == 2 and {r["role"] for r in final_receipts} == {"epoch100_master", "epoch100_ema"}
                       and all(r["strict_native_state_reload"] is True and r["native_ultralytics_loader_checked"] is True for r in final_receipts))
-    execution_complete = bool(complete_counts and complete_chain and periodic_count == 20 and final_complete
+    periodic_schedule_complete = sorted(periodic_epochs) == list(range(5, 101, 5))
+    active_best_area = context["best_areas"][0]
+    best_pointers_complete = all((run / active_best_area / f"best_{role}.json").is_file() for role in ("master", "ema"))
+    execution_complete = bool(complete_counts and complete_chain and periodic_schedule_complete and final_complete and best_pointers_complete
                               and completion and completion.get("updates") == 2100
                               and (not context["provided"] or (context["lineage_verified"] and context["gate"] and context["gate"].get("status") == "PASS"))
                               and skips == bn_violations == extra_bn == rng_violations == 0 and not issues)
-    if execution_complete:
-        status = "R5_FULL_EXECUTION_EVIDENCE_COMPLETE_PENDING_INDEPENDENT_RESULT_GATE"
-    elif context["provided"]:
-        if not context["lineage_verified"]:
-            status = "R5_OBSERVATION_EXTENSION_EVIDENCE_INCOMPLETE"
-        elif context["gate"] and context["gate"].get("status") == "HOLD":
-            status = "R5_EPOCH10_SCIENTIFIC_HOLD"
-        elif context["gate"] and context["gate"].get("status") == "PASS":
-            status = "R5_POST_EPOCH10_IN_PROGRESS_OR_INCOMPLETE_EVIDENCE"
-        else:
-            status = "R5_EPOCH10_OBSERVATION_IN_PROGRESS_OR_INCOMPLETE_EVIDENCE"
-    else:
-        status = "R5_EPOCH5_SCIENTIFIC_HOLD" if early_gate and early_gate.get("status") == "HOLD" else "R5_PARTIAL_OR_INCOMPLETE_EXECUTION_EVIDENCE"
+    status = execution_status(execution_complete, context, early_gate)
     if primary["available"]:
         primary["full_execution_evidence_complete"] = execution_complete
     wall = {}
@@ -734,7 +808,7 @@ def summarize(run, output, *, journal=None, gate_root=None, observation_root=Non
             "result_digest", "evaluation_sha256", "raw_file_sha_verified", "raw_result_digest_verified"]),
         ("artifact_receipts.csv", artifacts, ["area", "artifact", "role", "epoch", "sha256", "bytes", "fitness", "native_state_sha256",
             "master_native_state_sha256", "ema_native_state_sha256", "strict_native_state_reload", "strict_tensor_reload", "native_ultralytics_loader_checked",
-            "blob_present_in_analysis_copy", "blob_sha_verified"]),
+            "blob_present_in_analysis_copy", "blob_sha_verified", "historical_selection_receipt", "receipt_sha256"]),
         ("primary_J1_R5_overall.csv", primary_overall, ["metric", "J1", "R5", "delta", "delta_percentage_points"]),
         ("primary_J1_R5_per_class.csv", primary_classes, ["class_id", "class", "metric", "gt_instances", "J1", "R5", "delta"]),
         ("primary_J1_R5_fixed.csv", primary_fixed, ["class", "metric", "J1", "R5", "delta"]),

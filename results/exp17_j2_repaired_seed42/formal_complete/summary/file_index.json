@@ -1,0 +1,87 @@
+[
+  {
+    "bytes": 13979,
+    "file": "artifact_receipts.csv",
+    "sha256": "4511329a1f6e24ee8c40a79f5cb0109cd11c2b5dba1eeb171e1165367938ce63"
+  },
+  {
+    "bytes": 30790,
+    "file": "bn_mean_gap.csv",
+    "sha256": "9e539475e817eae479ec9d6a2208c6777427717bc0f56d9e5fbf805f3b8d2cca"
+  },
+  {
+    "bytes": 20397,
+    "file": "coverage_epoch_class.csv",
+    "sha256": "3e7d7219b33483235e5d1f7df316bb98fc46b6a0196c1baed8bbc2222016fd16"
+  },
+  {
+    "bytes": 17057,
+    "file": "epochs.csv",
+    "sha256": "6b72dc6981679b17abd6315be27f8ce27fd2b6b18d8a26f202ac42aca2312f03"
+  },
+  {
+    "bytes": 8043,
+    "file": "focus_weight_scales.csv",
+    "sha256": "472280cdb84f953a0c97dcd37666cabb3136053d0abd675347b4817063566acd"
+  },
+  {
+    "bytes": 395948,
+    "file": "gradient_diagnostics.csv",
+    "sha256": "d1fe0f0eecce7eeee332765ed24754724d76fd9b676de66afec9b67e0448f12c"
+  },
+  {
+    "bytes": 23545,
+    "file": "pass_receipts.csv",
+    "sha256": "38eb015826091601193bac5dde9b4b75b566e2d31e9da5cc1a79509536a3bcb9"
+  },
+  {
+    "bytes": 1853,
+    "file": "primary_J1_R5_fixed.csv",
+    "sha256": "edcf0f8cbb16108958f0729ff7ed7f00f5ab8d8c3a13eadfc03f3d604a6c7f6e"
+  },
+  {
+    "bytes": 835,
+    "file": "primary_J1_R5_overall.csv",
+    "sha256": "183767fc93a48bbf569fe7f88c6734987b316dddaabbf2515546ff6126d5e02c"
+  },
+  {
+    "bytes": 4650,
+    "file": "primary_J1_R5_per_class.csv",
+    "sha256": "ef0d0e889e238d59fa3155fdfae0f2680d7cb9ae4170a8095bd26949f1459aa7"
+  },
+  {
+    "bytes": 1726,
+    "file": "primary_J1_R5_size.csv",
+    "sha256": "8774ee13f7d247fadd3a3198005b0ee6709672c7c31a557ed3285ff057a0839f"
+  },
+  {
+    "bytes": 14761,
+    "file": "summary.json",
+    "sha256": "52675b062e33570695af002ea46356fc737db4d1946fad6a06862816fb4730c2"
+  },
+  {
+    "bytes": 694687,
+    "file": "updates.csv",
+    "sha256": "1f6233de5e4b1fa47c3387bb796998451a80905d5d4da3f8eac6c812989e82d6"
+  },
+  {
+    "bytes": 18331,
+    "file": "validation_fixed_counts.csv",
+    "sha256": "a31726337b9ef85f44b960cee47d96dcb1148b9d6c481b105c2d4bf4a697e57f"
+  },
+  {
+    "bytes": 15595,
+    "file": "validation_overall.csv",
+    "sha256": "a87547e5492a252c9a1d470eaffd598bc26c0e71269cbe5a9aad86007b9c810a"
+  },
+  {
+    "bytes": 38438,
+    "file": "validation_per_class.csv",
+    "sha256": "a56cae29828cb948d75325aa555675eec40bb67e2e411edfc6b6a58312cb6398"
+  },
+  {
+    "bytes": 47184,
+    "file": "validation_size_recall.csv",
+    "sha256": "3b044fcd961093ca899ae23561dd3083653f2e3a0a92b333faac37c706ff69dd"
+  }
+]

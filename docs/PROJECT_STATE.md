@@ -1,8 +1,8 @@
 # Project state
 
-## Exp17-J2-R5 connected training repair (2026-11-24)
+## Exp17-J2-R5 completed connected training repair (2026-11-25)
 
-EXP17_J2_R5_E10_OBSERVATION_RUNNING. Connected repair passed58CPU tests/v5AMP smoke and completed105updates/4VAL, butE5AP0 caused originalscienceHOLD. Independent1397checksPASS. User-approved3TRAINcontrols: R5running0Box/MaskTP; batch-both17Box/9MaskTP at.001; J1E5running4Box/3MaskTP;567auditchecksPASS. User then explicitly approvedE5→E10 observation andconditional100continuation. VersionedAddendum/sourcecatalog928f…→6c549… preserves alloriginalidentities/105store/221journalprefix;9targetedCPUtestsPASS; firstnew106committed, sameexecution active. E10PASS requiredbefore211. OriginalJ2Last0/80VAL andoriginalE5HOLD retained. [Handoff](../EXP17_J2_R5_CONNECTED_TRAINING_HANDOFF.md).
+`EXP17_J2_REPAIRED_SEED42_COMPLETE_PENDING_CHATGPT_RESULT_GATE`. The independent repaired experiment completed100 epochs,2100 effective updates and20 scheduled events/80 native VAL passes with exit0 and AMP skip0. Last FP32 MASTER Mask AP50–95 is0.24972101442002576 versus J1 Seed42 0.2727438798549706 (−2.3022865435pp); EMA0.24998586298529024. Both supplementary Best roles selectEpoch100. Running-statistics detection recovered relative to originalJ2 AP0, but this Seed42 experiment did not improveJ1. Independent final audit21168/21168PASS;20periodic/80TRAINprobes, frozen2100-step inputs and endpoint identities verified. Original105 checkpoint/221-line prefix, source migration, E5HOLD and approved post-observation E10GatePASS remain traceable. All originalJ2 results are preserved. Final report,16CSV, PNG/PDF and private archive are delivered; no TEST or extra seed. Do not automatically append142/242. [Handoff](../EXP17_J2_R5_CONNECTED_TRAINING_HANDOFF.md), [final evidence](../results/exp17_j2_repaired_seed42/formal_complete/README.md).
 
 ## Exp17-J2-R4-D offline temporal mechanism (2026-11-24)
 

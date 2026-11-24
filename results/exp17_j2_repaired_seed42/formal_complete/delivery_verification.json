@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "summary_files_sha_verified": 17,
+  "figure_files_sha_verified": 6,
+  "plot_sources_sha_verified": 8,
+  "handoff_and_readme_links_checked": 35,
+  "production_source_git_blob_files_verified": 262,
+  "verified_production_git_commit": "cdad4e6b136af196dc812c4d86d546bf88afeffa",
+  "working_tree_line_endings_not_used_for_linux_source_identity": true,
+  "independent_final_audit_sha256": "114a55595f57fd209108bb7d0f84e83d995ebd9d8224eae4cf2fe932215ac596",
+  "summary_sha256": "52675b062e33570695af002ea46356fc737db4d1946fad6a06862816fb4730c2",
+  "new_model_forward": 0,
+  "new_VAL": 0,
+  "TEST": 0,
+  "git_index_manifest_artifacts_byte_sha_verified": 25,
+  "byte_preserving_git_attributes": "formal_complete/.gitattributes"
+}

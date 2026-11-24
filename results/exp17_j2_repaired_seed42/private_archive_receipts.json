@@ -1,0 +1,25 @@
+{
+  "status": "SHA_VERIFIED",
+  "archives": [
+    {
+      "archive": "full_private_archive.tar.gz",
+      "sha256": "45310b0ed9c2df53b6d91cdade7cc1f94ba9422313141cd4e914b330ba0c24ce",
+      "bytes": 179763303,
+      "scope": "E5 complete checkpoint/authorization/journal evidence excluding consumed-cache pixels"
+    },
+    {
+      "archive": "train_controls_private.tar.gz",
+      "sha256": "5bb4cbeb7d6d3683dfa7067d65294569d550dcc0e4819a2e2a64c4a01537e297",
+      "bytes": 522823281,
+      "scope": "3 approved TRAIN controls including complete raw outputs and NMS matches"
+    },
+    {
+      "archive": "exp17_r5_seed42_complete_private_v1.tar.gz",
+      "sha256": "7eaf92a969d6443d1d57d249be0655976e93f16ead8f420d157c4940de99a7a5",
+      "bytes": 1300303644,
+      "manifest_sha256": "6471a5ea0c40c068f2a93b067c720a401be99a1d75027b4ba9037a6f491fff2b",
+      "members_verified": 800,
+      "scope": "Full E100 R5 run, original/new recovery, final endpoints, authorization, journal, saved args and frozen production source; epoch_cache and smoke_output excluded; initial reporter source retained, corrected final reporting delivered in Git."
+    }
+  ]
+}

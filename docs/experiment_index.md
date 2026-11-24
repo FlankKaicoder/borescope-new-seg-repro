@@ -1,6 +1,6 @@
 # Experiment index
 
-- **Exp17-J2-R5 (2026-11-24)** — Connected repair reached105updates/4VAL andE5zeroAP HOLD.3approvedTRAINcontrols show statistical-source dependence. User-approvedversionedE10observation passed9CPUtests, preserved105andoldidentities, resumed106withsame2100/80budget. E10Gate determinesconditionalcontinuation. [Handoff](../EXP17_J2_R5_CONNECTED_TRAINING_HANDOFF.md).
+- **Exp17-J2-R5 (2026-11-24–25)** — Completed100epochs/2100updates/80VAL, exit0/AMPskip0. LastMASTER Mask AP0.2497210144, J1−2.3022865435pp; EMA0.2499858630, bothBestE100. Running detection recovered; Seed42 did not beatJ1.21168 final checksPASS, originalJ2/E5HOLD/approvedE10observation lineage preserved. No TEST/additional seed. [Handoff](../EXP17_J2_R5_CONNECTED_TRAINING_HANDOFF.md), [results and plots](../results/exp17_j2_repaired_seed42/formal_complete/README.md).
 
 - **Exp17-J2-R4-D (2026-11-24)** — Offline endpoint/history alignment supports detach-related scale mechanism; no historical causality claim.19/19Neck16 intervals align; E5failure predatesR1; recurringFP timeline corrected. No new model calls. [Handoff](../EXP17_J2_R4_D_TEMPORAL_MECHANISM_HANDOFF.md).
 

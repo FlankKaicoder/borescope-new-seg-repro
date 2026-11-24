@@ -1,0 +1,47 @@
+{
+  "schema": "EXP17_R5_FINAL_OFFLINE_AUDIT_CPU_TEST_RECEIPT_V1",
+  "status": "PASS",
+  "experiment": "EXP17_J2_REPAIRED_SEED42",
+  "command": "py -3 -m unittest discover -s diagnostics/exp17_j2_r5 -p test_audit_final.py -v",
+  "working_directory": "REPOSITORY_ROOT",
+  "runtime": {
+    "platform": "Windows",
+    "python": "3.14.0"
+  },
+  "observed_result": {
+    "tests_run": 9,
+    "unittest_reported_seconds": 43.666,
+    "exit_code": 0,
+    "final_line": "OK",
+    "failures": 0,
+    "errors": 0
+  },
+  "tests": [
+    "test_complete_metadata_snapshot_and_latest_tie_best",
+    "test_e10_hold_or_missing_accepted_artifacts_reject_continuation",
+    "test_empty_reference_cannot_bypass_per_step_comparisons",
+    "test_missing_final_or_exit_cannot_pass",
+    "test_missing_or_duplicate_pass_and_wrong_final_model_identity_reject",
+    "test_original_journal_byte_prefix_change_rejects_even_valid_rehash",
+    "test_running_snapshot_is_incomplete_not_full_negative",
+    "test_source_order_replay_trace_or_pair_evidence_mismatch_rejects",
+    "test_wrong_live_source_pointer_and_old_checkpoint_bytes_reject"
+  ],
+  "source_sha256": {
+    "diagnostics/exp17_j2_r5/audit_final.py": "9362fea035c36a3837b26cc9c4b712bb1ece592e99186420b5ef6777b2d3852d",
+    "diagnostics/exp17_j2_r5/test_audit_final.py": "cc56e64c1f6e49de1a528e0a26e13ca994ab76442b063becc4d016f856883059"
+  },
+  "receipt_basis": "Recorded from the completed unittest tool output; no test rerun was performed to create this receipt. Source hashes were read again before writing.",
+  "scope": {
+    "fixtures": "Synthetic JSON metadata and tiny byte blobs; blobs are not model or checkpoint tensors",
+    "model_construction": 0,
+    "checkpoint_tensor_loads": 0,
+    "model_forwards": 0,
+    "optimizer_updates": 0,
+    "new_VAL_passes": 0,
+    "TEST_access": 0,
+    "training_result_audit": "NOT_YET_PERFORMED",
+    "independent_scientific_audit": "PENDING"
+  },
+  "privacy": "Repository-relative paths and identity digests only; no execution ID, private absolute path or source group content."
+}

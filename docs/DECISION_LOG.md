@@ -1,5 +1,11 @@
 # Decision log
 
+## D102 — R5 completed repair, negative Seed42 gain over J1 (2026-11-25)
+
+Complete the already-approved100epoch/2100update experiment after the reviewed E10 observation PASS. Final normal-running Last MASTER Mask AP50–95=0.24972101442002576, versus J1 Seed42=0.2727438798549706 (−2.3022865434944864pp); EMA=0.24998586298529024. BothBest roles selectEpoch100 by frozenfitness. Independent final audit passes21168 checks with80VAL/80TRAINprobes/20periodic and all2100 frozen input comparisons; no additional evaluation or TEST. Keep originalJ2 AP0 and initialE5 HOLD immutable; disclose that E10 observation was approved after the E5 result.
+
+Separate the recovered running-statistics functionality from the absent J1 benefit. Pair was active2095/2100 updates, with validABN onall2100; logged probes do not show persistent global gradient conflict. Neck16 endpoint scales are much lower than originalJ2, but still grow; fourTRAIN sentinel gaps cannot certify every running-eval BN distribution. FixedMaskTP decreases98→88 andFN198→208. Preserve the full negative/partial-positive evidence, request independent result review and do not automatically expandSeed142/242. A Best-slot reporting bug was fixed only in offline analysis with9 regression tests; frozen training source, original logs and model state were unchanged. [Handoff](../EXP17_J2_R5_CONNECTED_TRAINING_HANDOFF.md).
+
 ## D101 — R5 Connected repair and reviewed early observation extension (2026-11-24)
 
 User approved independent repairedSeed42 execution. Native-forward statistics VJP passed58CPU tests andv5AMP smoke after two sealed output-fingerprint errors; cumulativeSmoke4A4N/6componentVJP/1disposableUpdate. FreshCOCO formal run reached105updates/4VAL and preserved originalE5scienceHOLD because bothrolesAP0. FourTRAIN-A sentinel gaps<3 did not establish completeeval compatibility. Three separately approvedTRAIN controls recovered17Box/9MaskTP only with currentbatchstats at.001; J1E5running had4Box/3MaskTP plus manyFP. J1earlyloss andclip histories are available, butE5formalVAL is absent. Keep these evidence boundaries.

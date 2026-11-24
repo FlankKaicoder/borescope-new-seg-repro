@@ -1,0 +1,58 @@
+{
+  "TEST_access": 0,
+  "figures": [
+    {
+      "bytes": 31053,
+      "file": "01_scheduled_performance.pdf",
+      "sha256": "99b3df5f7802960e05405113f062c0108b8dbb77e349a6b6dfa58937b0d149bb"
+    },
+    {
+      "bytes": 269172,
+      "file": "01_scheduled_performance.png",
+      "sha256": "c507294edffa85b9edceb42dbdd6653ac406a821fd79f8295a4127280a5d3189"
+    },
+    {
+      "bytes": 39760,
+      "file": "02_losses_and_clipping.pdf",
+      "sha256": "b6f86d2c826e928131f3f759a5a1efb45649ad5dd32348048c739fc64e19aaf7"
+    },
+    {
+      "bytes": 316243,
+      "file": "02_losses_and_clipping.png",
+      "sha256": "ffb72955cd3da0e3f4e85e73f851bfbb8f1bca36e3be3099e63ddf942f5c7ad5"
+    },
+    {
+      "bytes": 38422,
+      "file": "03_bn_pair_and_weight_scale.pdf",
+      "sha256": "a71fb80d96a7e006e51cbe6e08258e6e001259c2ee20c2b0e553566518df4415"
+    },
+    {
+      "bytes": 383429,
+      "file": "03_bn_pair_and_weight_scale.png",
+      "sha256": "a9fabce7de8c6423b21e6f4cc3e9c8c673d8a2d76942eeb57631180746171916"
+    }
+  ],
+  "imputed_observations": 0,
+  "matplotlib_version": "3.10.5",
+  "new_VAL": 0,
+  "new_backward": 0,
+  "new_forward": 0,
+  "plotter_sha256": "11bd03e88644eaeb48522f4efa400e1d4451b785d9d277b2e44b222582fab700",
+  "range_definition": "Observed min-max over recorded fixed TRAIN probes, with no confidence interval",
+  "reference_values": {
+    "J1_seed42_epoch100_Last_MASTER_mask_AP50_95": 0.2727438798549706,
+    "original_J2_scheduled_standard_AP": 0.0
+  },
+  "schema": "EXP17_R5_OFFLINE_FIGURE_MANIFEST_V1",
+  "source_files_sha256": {
+    "bn_mean_gap.csv": "9e539475e817eae479ec9d6a2208c6777427717bc0f56d9e5fbf805f3b8d2cca",
+    "epochs.csv": "6b72dc6981679b17abd6315be27f8ce27fd2b6b18d8a26f202ac42aca2312f03",
+    "focus_weight_scales.csv": "472280cdb84f953a0c97dcd37666cabb3136053d0abd675347b4817063566acd",
+    "gradient_diagnostics.csv": "d1fe0f0eecce7eeee332765ed24754724d76fd9b676de66afec9b67e0448f12c",
+    "primary_J1_R5_per_class.csv": "ef0d0e889e238d59fa3155fdfae0f2680d7cb9ae4170a8095bd26949f1459aa7",
+    "summary.json": "52675b062e33570695af002ea46356fc737db4d1946fad6a06862816fb4730c2",
+    "updates.csv": "1f6233de5e4b1fa47c3387bb796998451a80905d5d4da3f8eac6c812989e82d6",
+    "validation_overall.csv": "a87547e5492a252c9a1d470eaffd598bc26c0e71269cbe5a9aad86007b9c810a"
+  },
+  "source_status": "R5_FULL_EXECUTION_EVIDENCE_COMPLETE_PENDING_INDEPENDENT_RESULT_GATE"
+}

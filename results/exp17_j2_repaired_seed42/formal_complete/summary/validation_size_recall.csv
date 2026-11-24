@@ -1,0 +1,1281 @@
+epoch,role,class,size,gt,mask_tp,mask_fn,mask_recall
+5,ema,overall,large,55,0,55,0.0
+5,ema,overall,medium,62,0,62,0.0
+5,ema,overall,small,76,0,76,0.0
+5,ema,overall,tiny,103,0,103,0.0
+5,ema,Burn,large,33,0,33,0.0
+5,ema,Burn,medium,15,0,15,0.0
+5,ema,Burn,small,2,0,2,0.0
+5,ema,Burn,tiny,31,0,31,0.0
+5,ema,Crack,large,0,0,0,
+5,ema,Crack,medium,8,0,8,0.0
+5,ema,Crack,small,11,0,11,0.0
+5,ema,Crack,tiny,5,0,5,0.0
+5,ema,Dent,large,0,0,0,
+5,ema,Dent,medium,0,0,0,
+5,ema,Dent,small,11,0,11,0.0
+5,ema,Dent,tiny,26,0,26,0.0
+5,ema,Material missing,large,3,0,3,0.0
+5,ema,Material missing,medium,17,0,17,0.0
+5,ema,Material missing,small,9,0,9,0.0
+5,ema,Material missing,tiny,3,0,3,0.0
+5,ema,Tears,large,0,0,0,
+5,ema,Tears,medium,3,0,3,0.0
+5,ema,Tears,small,5,0,5,0.0
+5,ema,Tears,tiny,2,0,2,0.0
+5,ema,Tip curl,large,0,0,0,
+5,ema,Tip curl,medium,1,0,1,0.0
+5,ema,Tip curl,small,2,0,2,0.0
+5,ema,Tip curl,tiny,0,0,0,
+5,ema,corrosion,large,19,0,19,0.0
+5,ema,corrosion,medium,18,0,18,0.0
+5,ema,corrosion,small,36,0,36,0.0
+5,ema,corrosion,tiny,36,0,36,0.0
+5,master,overall,large,55,0,55,0.0
+5,master,overall,medium,62,0,62,0.0
+5,master,overall,small,76,0,76,0.0
+5,master,overall,tiny,103,0,103,0.0
+5,master,Burn,large,33,0,33,0.0
+5,master,Burn,medium,15,0,15,0.0
+5,master,Burn,small,2,0,2,0.0
+5,master,Burn,tiny,31,0,31,0.0
+5,master,Crack,large,0,0,0,
+5,master,Crack,medium,8,0,8,0.0
+5,master,Crack,small,11,0,11,0.0
+5,master,Crack,tiny,5,0,5,0.0
+5,master,Dent,large,0,0,0,
+5,master,Dent,medium,0,0,0,
+5,master,Dent,small,11,0,11,0.0
+5,master,Dent,tiny,26,0,26,0.0
+5,master,Material missing,large,3,0,3,0.0
+5,master,Material missing,medium,17,0,17,0.0
+5,master,Material missing,small,9,0,9,0.0
+5,master,Material missing,tiny,3,0,3,0.0
+5,master,Tears,large,0,0,0,
+5,master,Tears,medium,3,0,3,0.0
+5,master,Tears,small,5,0,5,0.0
+5,master,Tears,tiny,2,0,2,0.0
+5,master,Tip curl,large,0,0,0,
+5,master,Tip curl,medium,1,0,1,0.0
+5,master,Tip curl,small,2,0,2,0.0
+5,master,Tip curl,tiny,0,0,0,
+5,master,corrosion,large,19,0,19,0.0
+5,master,corrosion,medium,18,0,18,0.0
+5,master,corrosion,small,36,0,36,0.0
+5,master,corrosion,tiny,36,0,36,0.0
+10,ema,overall,large,55,0,55,0.0
+10,ema,overall,medium,62,6,56,0.0967741935483871
+10,ema,overall,small,76,14,62,0.18421052631578946
+10,ema,overall,tiny,103,7,96,0.06796116504854369
+10,ema,Burn,large,33,0,33,0.0
+10,ema,Burn,medium,15,0,15,0.0
+10,ema,Burn,small,2,0,2,0.0
+10,ema,Burn,tiny,31,0,31,0.0
+10,ema,Crack,large,0,0,0,
+10,ema,Crack,medium,8,0,8,0.0
+10,ema,Crack,small,11,0,11,0.0
+10,ema,Crack,tiny,5,0,5,0.0
+10,ema,Dent,large,0,0,0,
+10,ema,Dent,medium,0,0,0,
+10,ema,Dent,small,11,7,4,0.6363636363636364
+10,ema,Dent,tiny,26,6,20,0.23076923076923078
+10,ema,Material missing,large,3,0,3,0.0
+10,ema,Material missing,medium,17,5,12,0.29411764705882354
+10,ema,Material missing,small,9,0,9,0.0
+10,ema,Material missing,tiny,3,0,3,0.0
+10,ema,Tears,large,0,0,0,
+10,ema,Tears,medium,3,0,3,0.0
+10,ema,Tears,small,5,0,5,0.0
+10,ema,Tears,tiny,2,0,2,0.0
+10,ema,Tip curl,large,0,0,0,
+10,ema,Tip curl,medium,1,0,1,0.0
+10,ema,Tip curl,small,2,0,2,0.0
+10,ema,Tip curl,tiny,0,0,0,
+10,ema,corrosion,large,19,0,19,0.0
+10,ema,corrosion,medium,18,1,17,0.05555555555555555
+10,ema,corrosion,small,36,7,29,0.19444444444444445
+10,ema,corrosion,tiny,36,1,35,0.027777777777777776
+10,master,overall,large,55,0,55,0.0
+10,master,overall,medium,62,6,56,0.0967741935483871
+10,master,overall,small,76,13,63,0.17105263157894737
+10,master,overall,tiny,103,7,96,0.06796116504854369
+10,master,Burn,large,33,0,33,0.0
+10,master,Burn,medium,15,0,15,0.0
+10,master,Burn,small,2,0,2,0.0
+10,master,Burn,tiny,31,0,31,0.0
+10,master,Crack,large,0,0,0,
+10,master,Crack,medium,8,0,8,0.0
+10,master,Crack,small,11,0,11,0.0
+10,master,Crack,tiny,5,0,5,0.0
+10,master,Dent,large,0,0,0,
+10,master,Dent,medium,0,0,0,
+10,master,Dent,small,11,7,4,0.6363636363636364
+10,master,Dent,tiny,26,6,20,0.23076923076923078
+10,master,Material missing,large,3,0,3,0.0
+10,master,Material missing,medium,17,5,12,0.29411764705882354
+10,master,Material missing,small,9,0,9,0.0
+10,master,Material missing,tiny,3,0,3,0.0
+10,master,Tears,large,0,0,0,
+10,master,Tears,medium,3,0,3,0.0
+10,master,Tears,small,5,0,5,0.0
+10,master,Tears,tiny,2,0,2,0.0
+10,master,Tip curl,large,0,0,0,
+10,master,Tip curl,medium,1,0,1,0.0
+10,master,Tip curl,small,2,0,2,0.0
+10,master,Tip curl,tiny,0,0,0,
+10,master,corrosion,large,19,0,19,0.0
+10,master,corrosion,medium,18,1,17,0.05555555555555555
+10,master,corrosion,small,36,6,30,0.16666666666666666
+10,master,corrosion,tiny,36,1,35,0.027777777777777776
+15,ema,overall,large,55,0,55,0.0
+15,ema,overall,medium,62,0,62,0.0
+15,ema,overall,small,76,0,76,0.0
+15,ema,overall,tiny,103,0,103,0.0
+15,ema,Burn,large,33,0,33,0.0
+15,ema,Burn,medium,15,0,15,0.0
+15,ema,Burn,small,2,0,2,0.0
+15,ema,Burn,tiny,31,0,31,0.0
+15,ema,Crack,large,0,0,0,
+15,ema,Crack,medium,8,0,8,0.0
+15,ema,Crack,small,11,0,11,0.0
+15,ema,Crack,tiny,5,0,5,0.0
+15,ema,Dent,large,0,0,0,
+15,ema,Dent,medium,0,0,0,
+15,ema,Dent,small,11,0,11,0.0
+15,ema,Dent,tiny,26,0,26,0.0
+15,ema,Material missing,large,3,0,3,0.0
+15,ema,Material missing,medium,17,0,17,0.0
+15,ema,Material missing,small,9,0,9,0.0
+15,ema,Material missing,tiny,3,0,3,0.0
+15,ema,Tears,large,0,0,0,
+15,ema,Tears,medium,3,0,3,0.0
+15,ema,Tears,small,5,0,5,0.0
+15,ema,Tears,tiny,2,0,2,0.0
+15,ema,Tip curl,large,0,0,0,
+15,ema,Tip curl,medium,1,0,1,0.0
+15,ema,Tip curl,small,2,0,2,0.0
+15,ema,Tip curl,tiny,0,0,0,
+15,ema,corrosion,large,19,0,19,0.0
+15,ema,corrosion,medium,18,0,18,0.0
+15,ema,corrosion,small,36,0,36,0.0
+15,ema,corrosion,tiny,36,0,36,0.0
+15,master,overall,large,55,0,55,0.0
+15,master,overall,medium,62,0,62,0.0
+15,master,overall,small,76,0,76,0.0
+15,master,overall,tiny,103,0,103,0.0
+15,master,Burn,large,33,0,33,0.0
+15,master,Burn,medium,15,0,15,0.0
+15,master,Burn,small,2,0,2,0.0
+15,master,Burn,tiny,31,0,31,0.0
+15,master,Crack,large,0,0,0,
+15,master,Crack,medium,8,0,8,0.0
+15,master,Crack,small,11,0,11,0.0
+15,master,Crack,tiny,5,0,5,0.0
+15,master,Dent,large,0,0,0,
+15,master,Dent,medium,0,0,0,
+15,master,Dent,small,11,0,11,0.0
+15,master,Dent,tiny,26,0,26,0.0
+15,master,Material missing,large,3,0,3,0.0
+15,master,Material missing,medium,17,0,17,0.0
+15,master,Material missing,small,9,0,9,0.0
+15,master,Material missing,tiny,3,0,3,0.0
+15,master,Tears,large,0,0,0,
+15,master,Tears,medium,3,0,3,0.0
+15,master,Tears,small,5,0,5,0.0
+15,master,Tears,tiny,2,0,2,0.0
+15,master,Tip curl,large,0,0,0,
+15,master,Tip curl,medium,1,0,1,0.0
+15,master,Tip curl,small,2,0,2,0.0
+15,master,Tip curl,tiny,0,0,0,
+15,master,corrosion,large,19,0,19,0.0
+15,master,corrosion,medium,18,0,18,0.0
+15,master,corrosion,small,36,0,36,0.0
+15,master,corrosion,tiny,36,0,36,0.0
+20,ema,overall,large,55,0,55,0.0
+20,ema,overall,medium,62,0,62,0.0
+20,ema,overall,small,76,0,76,0.0
+20,ema,overall,tiny,103,0,103,0.0
+20,ema,Burn,large,33,0,33,0.0
+20,ema,Burn,medium,15,0,15,0.0
+20,ema,Burn,small,2,0,2,0.0
+20,ema,Burn,tiny,31,0,31,0.0
+20,ema,Crack,large,0,0,0,
+20,ema,Crack,medium,8,0,8,0.0
+20,ema,Crack,small,11,0,11,0.0
+20,ema,Crack,tiny,5,0,5,0.0
+20,ema,Dent,large,0,0,0,
+20,ema,Dent,medium,0,0,0,
+20,ema,Dent,small,11,0,11,0.0
+20,ema,Dent,tiny,26,0,26,0.0
+20,ema,Material missing,large,3,0,3,0.0
+20,ema,Material missing,medium,17,0,17,0.0
+20,ema,Material missing,small,9,0,9,0.0
+20,ema,Material missing,tiny,3,0,3,0.0
+20,ema,Tears,large,0,0,0,
+20,ema,Tears,medium,3,0,3,0.0
+20,ema,Tears,small,5,0,5,0.0
+20,ema,Tears,tiny,2,0,2,0.0
+20,ema,Tip curl,large,0,0,0,
+20,ema,Tip curl,medium,1,0,1,0.0
+20,ema,Tip curl,small,2,0,2,0.0
+20,ema,Tip curl,tiny,0,0,0,
+20,ema,corrosion,large,19,0,19,0.0
+20,ema,corrosion,medium,18,0,18,0.0
+20,ema,corrosion,small,36,0,36,0.0
+20,ema,corrosion,tiny,36,0,36,0.0
+20,master,overall,large,55,0,55,0.0
+20,master,overall,medium,62,0,62,0.0
+20,master,overall,small,76,0,76,0.0
+20,master,overall,tiny,103,0,103,0.0
+20,master,Burn,large,33,0,33,0.0
+20,master,Burn,medium,15,0,15,0.0
+20,master,Burn,small,2,0,2,0.0
+20,master,Burn,tiny,31,0,31,0.0
+20,master,Crack,large,0,0,0,
+20,master,Crack,medium,8,0,8,0.0
+20,master,Crack,small,11,0,11,0.0
+20,master,Crack,tiny,5,0,5,0.0
+20,master,Dent,large,0,0,0,
+20,master,Dent,medium,0,0,0,
+20,master,Dent,small,11,0,11,0.0
+20,master,Dent,tiny,26,0,26,0.0
+20,master,Material missing,large,3,0,3,0.0
+20,master,Material missing,medium,17,0,17,0.0
+20,master,Material missing,small,9,0,9,0.0
+20,master,Material missing,tiny,3,0,3,0.0
+20,master,Tears,large,0,0,0,
+20,master,Tears,medium,3,0,3,0.0
+20,master,Tears,small,5,0,5,0.0
+20,master,Tears,tiny,2,0,2,0.0
+20,master,Tip curl,large,0,0,0,
+20,master,Tip curl,medium,1,0,1,0.0
+20,master,Tip curl,small,2,0,2,0.0
+20,master,Tip curl,tiny,0,0,0,
+20,master,corrosion,large,19,0,19,0.0
+20,master,corrosion,medium,18,0,18,0.0
+20,master,corrosion,small,36,0,36,0.0
+20,master,corrosion,tiny,36,0,36,0.0
+25,ema,overall,large,55,1,54,0.01818181818181818
+25,ema,overall,medium,62,6,56,0.0967741935483871
+25,ema,overall,small,76,2,74,0.02631578947368421
+25,ema,overall,tiny,103,6,97,0.05825242718446602
+25,ema,Burn,large,33,0,33,0.0
+25,ema,Burn,medium,15,0,15,0.0
+25,ema,Burn,small,2,0,2,0.0
+25,ema,Burn,tiny,31,0,31,0.0
+25,ema,Crack,large,0,0,0,
+25,ema,Crack,medium,8,0,8,0.0
+25,ema,Crack,small,11,0,11,0.0
+25,ema,Crack,tiny,5,0,5,0.0
+25,ema,Dent,large,0,0,0,
+25,ema,Dent,medium,0,0,0,
+25,ema,Dent,small,11,1,10,0.09090909090909091
+25,ema,Dent,tiny,26,6,20,0.23076923076923078
+25,ema,Material missing,large,3,1,2,0.3333333333333333
+25,ema,Material missing,medium,17,5,12,0.29411764705882354
+25,ema,Material missing,small,9,0,9,0.0
+25,ema,Material missing,tiny,3,0,3,0.0
+25,ema,Tears,large,0,0,0,
+25,ema,Tears,medium,3,1,2,0.3333333333333333
+25,ema,Tears,small,5,0,5,0.0
+25,ema,Tears,tiny,2,0,2,0.0
+25,ema,Tip curl,large,0,0,0,
+25,ema,Tip curl,medium,1,0,1,0.0
+25,ema,Tip curl,small,2,0,2,0.0
+25,ema,Tip curl,tiny,0,0,0,
+25,ema,corrosion,large,19,0,19,0.0
+25,ema,corrosion,medium,18,0,18,0.0
+25,ema,corrosion,small,36,1,35,0.027777777777777776
+25,ema,corrosion,tiny,36,0,36,0.0
+25,master,overall,large,55,1,54,0.01818181818181818
+25,master,overall,medium,62,5,57,0.08064516129032258
+25,master,overall,small,76,2,74,0.02631578947368421
+25,master,overall,tiny,103,6,97,0.05825242718446602
+25,master,Burn,large,33,0,33,0.0
+25,master,Burn,medium,15,0,15,0.0
+25,master,Burn,small,2,0,2,0.0
+25,master,Burn,tiny,31,0,31,0.0
+25,master,Crack,large,0,0,0,
+25,master,Crack,medium,8,0,8,0.0
+25,master,Crack,small,11,0,11,0.0
+25,master,Crack,tiny,5,0,5,0.0
+25,master,Dent,large,0,0,0,
+25,master,Dent,medium,0,0,0,
+25,master,Dent,small,11,1,10,0.09090909090909091
+25,master,Dent,tiny,26,6,20,0.23076923076923078
+25,master,Material missing,large,3,1,2,0.3333333333333333
+25,master,Material missing,medium,17,4,13,0.23529411764705882
+25,master,Material missing,small,9,0,9,0.0
+25,master,Material missing,tiny,3,0,3,0.0
+25,master,Tears,large,0,0,0,
+25,master,Tears,medium,3,1,2,0.3333333333333333
+25,master,Tears,small,5,0,5,0.0
+25,master,Tears,tiny,2,0,2,0.0
+25,master,Tip curl,large,0,0,0,
+25,master,Tip curl,medium,1,0,1,0.0
+25,master,Tip curl,small,2,0,2,0.0
+25,master,Tip curl,tiny,0,0,0,
+25,master,corrosion,large,19,0,19,0.0
+25,master,corrosion,medium,18,0,18,0.0
+25,master,corrosion,small,36,1,35,0.027777777777777776
+25,master,corrosion,tiny,36,0,36,0.0
+30,ema,overall,large,55,0,55,0.0
+30,ema,overall,medium,62,2,60,0.03225806451612903
+30,ema,overall,small,76,0,76,0.0
+30,ema,overall,tiny,103,0,103,0.0
+30,ema,Burn,large,33,0,33,0.0
+30,ema,Burn,medium,15,0,15,0.0
+30,ema,Burn,small,2,0,2,0.0
+30,ema,Burn,tiny,31,0,31,0.0
+30,ema,Crack,large,0,0,0,
+30,ema,Crack,medium,8,0,8,0.0
+30,ema,Crack,small,11,0,11,0.0
+30,ema,Crack,tiny,5,0,5,0.0
+30,ema,Dent,large,0,0,0,
+30,ema,Dent,medium,0,0,0,
+30,ema,Dent,small,11,0,11,0.0
+30,ema,Dent,tiny,26,0,26,0.0
+30,ema,Material missing,large,3,0,3,0.0
+30,ema,Material missing,medium,17,2,15,0.11764705882352941
+30,ema,Material missing,small,9,0,9,0.0
+30,ema,Material missing,tiny,3,0,3,0.0
+30,ema,Tears,large,0,0,0,
+30,ema,Tears,medium,3,0,3,0.0
+30,ema,Tears,small,5,0,5,0.0
+30,ema,Tears,tiny,2,0,2,0.0
+30,ema,Tip curl,large,0,0,0,
+30,ema,Tip curl,medium,1,0,1,0.0
+30,ema,Tip curl,small,2,0,2,0.0
+30,ema,Tip curl,tiny,0,0,0,
+30,ema,corrosion,large,19,0,19,0.0
+30,ema,corrosion,medium,18,0,18,0.0
+30,ema,corrosion,small,36,0,36,0.0
+30,ema,corrosion,tiny,36,0,36,0.0
+30,master,overall,large,55,0,55,0.0
+30,master,overall,medium,62,2,60,0.03225806451612903
+30,master,overall,small,76,0,76,0.0
+30,master,overall,tiny,103,0,103,0.0
+30,master,Burn,large,33,0,33,0.0
+30,master,Burn,medium,15,0,15,0.0
+30,master,Burn,small,2,0,2,0.0
+30,master,Burn,tiny,31,0,31,0.0
+30,master,Crack,large,0,0,0,
+30,master,Crack,medium,8,0,8,0.0
+30,master,Crack,small,11,0,11,0.0
+30,master,Crack,tiny,5,0,5,0.0
+30,master,Dent,large,0,0,0,
+30,master,Dent,medium,0,0,0,
+30,master,Dent,small,11,0,11,0.0
+30,master,Dent,tiny,26,0,26,0.0
+30,master,Material missing,large,3,0,3,0.0
+30,master,Material missing,medium,17,2,15,0.11764705882352941
+30,master,Material missing,small,9,0,9,0.0
+30,master,Material missing,tiny,3,0,3,0.0
+30,master,Tears,large,0,0,0,
+30,master,Tears,medium,3,0,3,0.0
+30,master,Tears,small,5,0,5,0.0
+30,master,Tears,tiny,2,0,2,0.0
+30,master,Tip curl,large,0,0,0,
+30,master,Tip curl,medium,1,0,1,0.0
+30,master,Tip curl,small,2,0,2,0.0
+30,master,Tip curl,tiny,0,0,0,
+30,master,corrosion,large,19,0,19,0.0
+30,master,corrosion,medium,18,0,18,0.0
+30,master,corrosion,small,36,0,36,0.0
+30,master,corrosion,tiny,36,0,36,0.0
+35,ema,overall,large,55,0,55,0.0
+35,ema,overall,medium,62,7,55,0.11290322580645161
+35,ema,overall,small,76,1,75,0.013157894736842105
+35,ema,overall,tiny,103,0,103,0.0
+35,ema,Burn,large,33,0,33,0.0
+35,ema,Burn,medium,15,0,15,0.0
+35,ema,Burn,small,2,0,2,0.0
+35,ema,Burn,tiny,31,0,31,0.0
+35,ema,Crack,large,0,0,0,
+35,ema,Crack,medium,8,0,8,0.0
+35,ema,Crack,small,11,0,11,0.0
+35,ema,Crack,tiny,5,0,5,0.0
+35,ema,Dent,large,0,0,0,
+35,ema,Dent,medium,0,0,0,
+35,ema,Dent,small,11,0,11,0.0
+35,ema,Dent,tiny,26,0,26,0.0
+35,ema,Material missing,large,3,0,3,0.0
+35,ema,Material missing,medium,17,7,10,0.4117647058823529
+35,ema,Material missing,small,9,0,9,0.0
+35,ema,Material missing,tiny,3,0,3,0.0
+35,ema,Tears,large,0,0,0,
+35,ema,Tears,medium,3,0,3,0.0
+35,ema,Tears,small,5,0,5,0.0
+35,ema,Tears,tiny,2,0,2,0.0
+35,ema,Tip curl,large,0,0,0,
+35,ema,Tip curl,medium,1,0,1,0.0
+35,ema,Tip curl,small,2,0,2,0.0
+35,ema,Tip curl,tiny,0,0,0,
+35,ema,corrosion,large,19,0,19,0.0
+35,ema,corrosion,medium,18,0,18,0.0
+35,ema,corrosion,small,36,1,35,0.027777777777777776
+35,ema,corrosion,tiny,36,0,36,0.0
+35,master,overall,large,55,0,55,0.0
+35,master,overall,medium,62,8,54,0.12903225806451613
+35,master,overall,small,76,1,75,0.013157894736842105
+35,master,overall,tiny,103,0,103,0.0
+35,master,Burn,large,33,0,33,0.0
+35,master,Burn,medium,15,0,15,0.0
+35,master,Burn,small,2,0,2,0.0
+35,master,Burn,tiny,31,0,31,0.0
+35,master,Crack,large,0,0,0,
+35,master,Crack,medium,8,0,8,0.0
+35,master,Crack,small,11,0,11,0.0
+35,master,Crack,tiny,5,0,5,0.0
+35,master,Dent,large,0,0,0,
+35,master,Dent,medium,0,0,0,
+35,master,Dent,small,11,0,11,0.0
+35,master,Dent,tiny,26,0,26,0.0
+35,master,Material missing,large,3,0,3,0.0
+35,master,Material missing,medium,17,8,9,0.47058823529411764
+35,master,Material missing,small,9,0,9,0.0
+35,master,Material missing,tiny,3,0,3,0.0
+35,master,Tears,large,0,0,0,
+35,master,Tears,medium,3,0,3,0.0
+35,master,Tears,small,5,0,5,0.0
+35,master,Tears,tiny,2,0,2,0.0
+35,master,Tip curl,large,0,0,0,
+35,master,Tip curl,medium,1,0,1,0.0
+35,master,Tip curl,small,2,0,2,0.0
+35,master,Tip curl,tiny,0,0,0,
+35,master,corrosion,large,19,0,19,0.0
+35,master,corrosion,medium,18,0,18,0.0
+35,master,corrosion,small,36,1,35,0.027777777777777776
+35,master,corrosion,tiny,36,0,36,0.0
+40,ema,overall,large,55,0,55,0.0
+40,ema,overall,medium,62,0,62,0.0
+40,ema,overall,small,76,0,76,0.0
+40,ema,overall,tiny,103,0,103,0.0
+40,ema,Burn,large,33,0,33,0.0
+40,ema,Burn,medium,15,0,15,0.0
+40,ema,Burn,small,2,0,2,0.0
+40,ema,Burn,tiny,31,0,31,0.0
+40,ema,Crack,large,0,0,0,
+40,ema,Crack,medium,8,0,8,0.0
+40,ema,Crack,small,11,0,11,0.0
+40,ema,Crack,tiny,5,0,5,0.0
+40,ema,Dent,large,0,0,0,
+40,ema,Dent,medium,0,0,0,
+40,ema,Dent,small,11,0,11,0.0
+40,ema,Dent,tiny,26,0,26,0.0
+40,ema,Material missing,large,3,0,3,0.0
+40,ema,Material missing,medium,17,0,17,0.0
+40,ema,Material missing,small,9,0,9,0.0
+40,ema,Material missing,tiny,3,0,3,0.0
+40,ema,Tears,large,0,0,0,
+40,ema,Tears,medium,3,0,3,0.0
+40,ema,Tears,small,5,0,5,0.0
+40,ema,Tears,tiny,2,0,2,0.0
+40,ema,Tip curl,large,0,0,0,
+40,ema,Tip curl,medium,1,0,1,0.0
+40,ema,Tip curl,small,2,0,2,0.0
+40,ema,Tip curl,tiny,0,0,0,
+40,ema,corrosion,large,19,0,19,0.0
+40,ema,corrosion,medium,18,0,18,0.0
+40,ema,corrosion,small,36,0,36,0.0
+40,ema,corrosion,tiny,36,0,36,0.0
+40,master,overall,large,55,0,55,0.0
+40,master,overall,medium,62,0,62,0.0
+40,master,overall,small,76,0,76,0.0
+40,master,overall,tiny,103,0,103,0.0
+40,master,Burn,large,33,0,33,0.0
+40,master,Burn,medium,15,0,15,0.0
+40,master,Burn,small,2,0,2,0.0
+40,master,Burn,tiny,31,0,31,0.0
+40,master,Crack,large,0,0,0,
+40,master,Crack,medium,8,0,8,0.0
+40,master,Crack,small,11,0,11,0.0
+40,master,Crack,tiny,5,0,5,0.0
+40,master,Dent,large,0,0,0,
+40,master,Dent,medium,0,0,0,
+40,master,Dent,small,11,0,11,0.0
+40,master,Dent,tiny,26,0,26,0.0
+40,master,Material missing,large,3,0,3,0.0
+40,master,Material missing,medium,17,0,17,0.0
+40,master,Material missing,small,9,0,9,0.0
+40,master,Material missing,tiny,3,0,3,0.0
+40,master,Tears,large,0,0,0,
+40,master,Tears,medium,3,0,3,0.0
+40,master,Tears,small,5,0,5,0.0
+40,master,Tears,tiny,2,0,2,0.0
+40,master,Tip curl,large,0,0,0,
+40,master,Tip curl,medium,1,0,1,0.0
+40,master,Tip curl,small,2,0,2,0.0
+40,master,Tip curl,tiny,0,0,0,
+40,master,corrosion,large,19,0,19,0.0
+40,master,corrosion,medium,18,0,18,0.0
+40,master,corrosion,small,36,0,36,0.0
+40,master,corrosion,tiny,36,0,36,0.0
+45,ema,overall,large,55,0,55,0.0
+45,ema,overall,medium,62,5,57,0.08064516129032258
+45,ema,overall,small,76,0,76,0.0
+45,ema,overall,tiny,103,0,103,0.0
+45,ema,Burn,large,33,0,33,0.0
+45,ema,Burn,medium,15,0,15,0.0
+45,ema,Burn,small,2,0,2,0.0
+45,ema,Burn,tiny,31,0,31,0.0
+45,ema,Crack,large,0,0,0,
+45,ema,Crack,medium,8,0,8,0.0
+45,ema,Crack,small,11,0,11,0.0
+45,ema,Crack,tiny,5,0,5,0.0
+45,ema,Dent,large,0,0,0,
+45,ema,Dent,medium,0,0,0,
+45,ema,Dent,small,11,0,11,0.0
+45,ema,Dent,tiny,26,0,26,0.0
+45,ema,Material missing,large,3,0,3,0.0
+45,ema,Material missing,medium,17,5,12,0.29411764705882354
+45,ema,Material missing,small,9,0,9,0.0
+45,ema,Material missing,tiny,3,0,3,0.0
+45,ema,Tears,large,0,0,0,
+45,ema,Tears,medium,3,0,3,0.0
+45,ema,Tears,small,5,0,5,0.0
+45,ema,Tears,tiny,2,0,2,0.0
+45,ema,Tip curl,large,0,0,0,
+45,ema,Tip curl,medium,1,0,1,0.0
+45,ema,Tip curl,small,2,0,2,0.0
+45,ema,Tip curl,tiny,0,0,0,
+45,ema,corrosion,large,19,0,19,0.0
+45,ema,corrosion,medium,18,0,18,0.0
+45,ema,corrosion,small,36,0,36,0.0
+45,ema,corrosion,tiny,36,0,36,0.0
+45,master,overall,large,55,0,55,0.0
+45,master,overall,medium,62,5,57,0.08064516129032258
+45,master,overall,small,76,0,76,0.0
+45,master,overall,tiny,103,0,103,0.0
+45,master,Burn,large,33,0,33,0.0
+45,master,Burn,medium,15,0,15,0.0
+45,master,Burn,small,2,0,2,0.0
+45,master,Burn,tiny,31,0,31,0.0
+45,master,Crack,large,0,0,0,
+45,master,Crack,medium,8,0,8,0.0
+45,master,Crack,small,11,0,11,0.0
+45,master,Crack,tiny,5,0,5,0.0
+45,master,Dent,large,0,0,0,
+45,master,Dent,medium,0,0,0,
+45,master,Dent,small,11,0,11,0.0
+45,master,Dent,tiny,26,0,26,0.0
+45,master,Material missing,large,3,0,3,0.0
+45,master,Material missing,medium,17,5,12,0.29411764705882354
+45,master,Material missing,small,9,0,9,0.0
+45,master,Material missing,tiny,3,0,3,0.0
+45,master,Tears,large,0,0,0,
+45,master,Tears,medium,3,0,3,0.0
+45,master,Tears,small,5,0,5,0.0
+45,master,Tears,tiny,2,0,2,0.0
+45,master,Tip curl,large,0,0,0,
+45,master,Tip curl,medium,1,0,1,0.0
+45,master,Tip curl,small,2,0,2,0.0
+45,master,Tip curl,tiny,0,0,0,
+45,master,corrosion,large,19,0,19,0.0
+45,master,corrosion,medium,18,0,18,0.0
+45,master,corrosion,small,36,0,36,0.0
+45,master,corrosion,tiny,36,0,36,0.0
+50,ema,overall,large,55,0,55,0.0
+50,ema,overall,medium,62,2,60,0.03225806451612903
+50,ema,overall,small,76,0,76,0.0
+50,ema,overall,tiny,103,0,103,0.0
+50,ema,Burn,large,33,0,33,0.0
+50,ema,Burn,medium,15,0,15,0.0
+50,ema,Burn,small,2,0,2,0.0
+50,ema,Burn,tiny,31,0,31,0.0
+50,ema,Crack,large,0,0,0,
+50,ema,Crack,medium,8,0,8,0.0
+50,ema,Crack,small,11,0,11,0.0
+50,ema,Crack,tiny,5,0,5,0.0
+50,ema,Dent,large,0,0,0,
+50,ema,Dent,medium,0,0,0,
+50,ema,Dent,small,11,0,11,0.0
+50,ema,Dent,tiny,26,0,26,0.0
+50,ema,Material missing,large,3,0,3,0.0
+50,ema,Material missing,medium,17,2,15,0.11764705882352941
+50,ema,Material missing,small,9,0,9,0.0
+50,ema,Material missing,tiny,3,0,3,0.0
+50,ema,Tears,large,0,0,0,
+50,ema,Tears,medium,3,0,3,0.0
+50,ema,Tears,small,5,0,5,0.0
+50,ema,Tears,tiny,2,0,2,0.0
+50,ema,Tip curl,large,0,0,0,
+50,ema,Tip curl,medium,1,0,1,0.0
+50,ema,Tip curl,small,2,0,2,0.0
+50,ema,Tip curl,tiny,0,0,0,
+50,ema,corrosion,large,19,0,19,0.0
+50,ema,corrosion,medium,18,0,18,0.0
+50,ema,corrosion,small,36,0,36,0.0
+50,ema,corrosion,tiny,36,0,36,0.0
+50,master,overall,large,55,0,55,0.0
+50,master,overall,medium,62,2,60,0.03225806451612903
+50,master,overall,small,76,0,76,0.0
+50,master,overall,tiny,103,0,103,0.0
+50,master,Burn,large,33,0,33,0.0
+50,master,Burn,medium,15,0,15,0.0
+50,master,Burn,small,2,0,2,0.0
+50,master,Burn,tiny,31,0,31,0.0
+50,master,Crack,large,0,0,0,
+50,master,Crack,medium,8,0,8,0.0
+50,master,Crack,small,11,0,11,0.0
+50,master,Crack,tiny,5,0,5,0.0
+50,master,Dent,large,0,0,0,
+50,master,Dent,medium,0,0,0,
+50,master,Dent,small,11,0,11,0.0
+50,master,Dent,tiny,26,0,26,0.0
+50,master,Material missing,large,3,0,3,0.0
+50,master,Material missing,medium,17,0,17,0.0
+50,master,Material missing,small,9,0,9,0.0
+50,master,Material missing,tiny,3,0,3,0.0
+50,master,Tears,large,0,0,0,
+50,master,Tears,medium,3,2,1,0.6666666666666666
+50,master,Tears,small,5,0,5,0.0
+50,master,Tears,tiny,2,0,2,0.0
+50,master,Tip curl,large,0,0,0,
+50,master,Tip curl,medium,1,0,1,0.0
+50,master,Tip curl,small,2,0,2,0.0
+50,master,Tip curl,tiny,0,0,0,
+50,master,corrosion,large,19,0,19,0.0
+50,master,corrosion,medium,18,0,18,0.0
+50,master,corrosion,small,36,0,36,0.0
+50,master,corrosion,tiny,36,0,36,0.0
+55,ema,overall,large,55,0,55,0.0
+55,ema,overall,medium,62,0,62,0.0
+55,ema,overall,small,76,1,75,0.013157894736842105
+55,ema,overall,tiny,103,0,103,0.0
+55,ema,Burn,large,33,0,33,0.0
+55,ema,Burn,medium,15,0,15,0.0
+55,ema,Burn,small,2,0,2,0.0
+55,ema,Burn,tiny,31,0,31,0.0
+55,ema,Crack,large,0,0,0,
+55,ema,Crack,medium,8,0,8,0.0
+55,ema,Crack,small,11,0,11,0.0
+55,ema,Crack,tiny,5,0,5,0.0
+55,ema,Dent,large,0,0,0,
+55,ema,Dent,medium,0,0,0,
+55,ema,Dent,small,11,1,10,0.09090909090909091
+55,ema,Dent,tiny,26,0,26,0.0
+55,ema,Material missing,large,3,0,3,0.0
+55,ema,Material missing,medium,17,0,17,0.0
+55,ema,Material missing,small,9,0,9,0.0
+55,ema,Material missing,tiny,3,0,3,0.0
+55,ema,Tears,large,0,0,0,
+55,ema,Tears,medium,3,0,3,0.0
+55,ema,Tears,small,5,0,5,0.0
+55,ema,Tears,tiny,2,0,2,0.0
+55,ema,Tip curl,large,0,0,0,
+55,ema,Tip curl,medium,1,0,1,0.0
+55,ema,Tip curl,small,2,0,2,0.0
+55,ema,Tip curl,tiny,0,0,0,
+55,ema,corrosion,large,19,0,19,0.0
+55,ema,corrosion,medium,18,0,18,0.0
+55,ema,corrosion,small,36,0,36,0.0
+55,ema,corrosion,tiny,36,0,36,0.0
+55,master,overall,large,55,0,55,0.0
+55,master,overall,medium,62,0,62,0.0
+55,master,overall,small,76,0,76,0.0
+55,master,overall,tiny,103,0,103,0.0
+55,master,Burn,large,33,0,33,0.0
+55,master,Burn,medium,15,0,15,0.0
+55,master,Burn,small,2,0,2,0.0
+55,master,Burn,tiny,31,0,31,0.0
+55,master,Crack,large,0,0,0,
+55,master,Crack,medium,8,0,8,0.0
+55,master,Crack,small,11,0,11,0.0
+55,master,Crack,tiny,5,0,5,0.0
+55,master,Dent,large,0,0,0,
+55,master,Dent,medium,0,0,0,
+55,master,Dent,small,11,0,11,0.0
+55,master,Dent,tiny,26,0,26,0.0
+55,master,Material missing,large,3,0,3,0.0
+55,master,Material missing,medium,17,0,17,0.0
+55,master,Material missing,small,9,0,9,0.0
+55,master,Material missing,tiny,3,0,3,0.0
+55,master,Tears,large,0,0,0,
+55,master,Tears,medium,3,0,3,0.0
+55,master,Tears,small,5,0,5,0.0
+55,master,Tears,tiny,2,0,2,0.0
+55,master,Tip curl,large,0,0,0,
+55,master,Tip curl,medium,1,0,1,0.0
+55,master,Tip curl,small,2,0,2,0.0
+55,master,Tip curl,tiny,0,0,0,
+55,master,corrosion,large,19,0,19,0.0
+55,master,corrosion,medium,18,0,18,0.0
+55,master,corrosion,small,36,0,36,0.0
+55,master,corrosion,tiny,36,0,36,0.0
+60,ema,overall,large,55,0,55,0.0
+60,ema,overall,medium,62,7,55,0.11290322580645161
+60,ema,overall,small,76,0,76,0.0
+60,ema,overall,tiny,103,1,102,0.009708737864077669
+60,ema,Burn,large,33,0,33,0.0
+60,ema,Burn,medium,15,0,15,0.0
+60,ema,Burn,small,2,0,2,0.0
+60,ema,Burn,tiny,31,0,31,0.0
+60,ema,Crack,large,0,0,0,
+60,ema,Crack,medium,8,0,8,0.0
+60,ema,Crack,small,11,0,11,0.0
+60,ema,Crack,tiny,5,0,5,0.0
+60,ema,Dent,large,0,0,0,
+60,ema,Dent,medium,0,0,0,
+60,ema,Dent,small,11,0,11,0.0
+60,ema,Dent,tiny,26,1,25,0.038461538461538464
+60,ema,Material missing,large,3,0,3,0.0
+60,ema,Material missing,medium,17,7,10,0.4117647058823529
+60,ema,Material missing,small,9,0,9,0.0
+60,ema,Material missing,tiny,3,0,3,0.0
+60,ema,Tears,large,0,0,0,
+60,ema,Tears,medium,3,0,3,0.0
+60,ema,Tears,small,5,0,5,0.0
+60,ema,Tears,tiny,2,0,2,0.0
+60,ema,Tip curl,large,0,0,0,
+60,ema,Tip curl,medium,1,0,1,0.0
+60,ema,Tip curl,small,2,0,2,0.0
+60,ema,Tip curl,tiny,0,0,0,
+60,ema,corrosion,large,19,0,19,0.0
+60,ema,corrosion,medium,18,0,18,0.0
+60,ema,corrosion,small,36,0,36,0.0
+60,ema,corrosion,tiny,36,0,36,0.0
+60,master,overall,large,55,0,55,0.0
+60,master,overall,medium,62,7,55,0.11290322580645161
+60,master,overall,small,76,0,76,0.0
+60,master,overall,tiny,103,1,102,0.009708737864077669
+60,master,Burn,large,33,0,33,0.0
+60,master,Burn,medium,15,0,15,0.0
+60,master,Burn,small,2,0,2,0.0
+60,master,Burn,tiny,31,0,31,0.0
+60,master,Crack,large,0,0,0,
+60,master,Crack,medium,8,0,8,0.0
+60,master,Crack,small,11,0,11,0.0
+60,master,Crack,tiny,5,0,5,0.0
+60,master,Dent,large,0,0,0,
+60,master,Dent,medium,0,0,0,
+60,master,Dent,small,11,0,11,0.0
+60,master,Dent,tiny,26,1,25,0.038461538461538464
+60,master,Material missing,large,3,0,3,0.0
+60,master,Material missing,medium,17,7,10,0.4117647058823529
+60,master,Material missing,small,9,0,9,0.0
+60,master,Material missing,tiny,3,0,3,0.0
+60,master,Tears,large,0,0,0,
+60,master,Tears,medium,3,0,3,0.0
+60,master,Tears,small,5,0,5,0.0
+60,master,Tears,tiny,2,0,2,0.0
+60,master,Tip curl,large,0,0,0,
+60,master,Tip curl,medium,1,0,1,0.0
+60,master,Tip curl,small,2,0,2,0.0
+60,master,Tip curl,tiny,0,0,0,
+60,master,corrosion,large,19,0,19,0.0
+60,master,corrosion,medium,18,0,18,0.0
+60,master,corrosion,small,36,0,36,0.0
+60,master,corrosion,tiny,36,0,36,0.0
+65,ema,overall,large,55,1,54,0.01818181818181818
+65,ema,overall,medium,62,9,53,0.14516129032258066
+65,ema,overall,small,76,4,72,0.05263157894736842
+65,ema,overall,tiny,103,1,102,0.009708737864077669
+65,ema,Burn,large,33,0,33,0.0
+65,ema,Burn,medium,15,0,15,0.0
+65,ema,Burn,small,2,0,2,0.0
+65,ema,Burn,tiny,31,0,31,0.0
+65,ema,Crack,large,0,0,0,
+65,ema,Crack,medium,8,0,8,0.0
+65,ema,Crack,small,11,0,11,0.0
+65,ema,Crack,tiny,5,0,5,0.0
+65,ema,Dent,large,0,0,0,
+65,ema,Dent,medium,0,0,0,
+65,ema,Dent,small,11,3,8,0.2727272727272727
+65,ema,Dent,tiny,26,1,25,0.038461538461538464
+65,ema,Material missing,large,3,1,2,0.3333333333333333
+65,ema,Material missing,medium,17,9,8,0.5294117647058824
+65,ema,Material missing,small,9,0,9,0.0
+65,ema,Material missing,tiny,3,0,3,0.0
+65,ema,Tears,large,0,0,0,
+65,ema,Tears,medium,3,0,3,0.0
+65,ema,Tears,small,5,0,5,0.0
+65,ema,Tears,tiny,2,0,2,0.0
+65,ema,Tip curl,large,0,0,0,
+65,ema,Tip curl,medium,1,0,1,0.0
+65,ema,Tip curl,small,2,1,1,0.5
+65,ema,Tip curl,tiny,0,0,0,
+65,ema,corrosion,large,19,0,19,0.0
+65,ema,corrosion,medium,18,0,18,0.0
+65,ema,corrosion,small,36,0,36,0.0
+65,ema,corrosion,tiny,36,0,36,0.0
+65,master,overall,large,55,1,54,0.01818181818181818
+65,master,overall,medium,62,9,53,0.14516129032258066
+65,master,overall,small,76,4,72,0.05263157894736842
+65,master,overall,tiny,103,1,102,0.009708737864077669
+65,master,Burn,large,33,0,33,0.0
+65,master,Burn,medium,15,0,15,0.0
+65,master,Burn,small,2,0,2,0.0
+65,master,Burn,tiny,31,0,31,0.0
+65,master,Crack,large,0,0,0,
+65,master,Crack,medium,8,0,8,0.0
+65,master,Crack,small,11,0,11,0.0
+65,master,Crack,tiny,5,0,5,0.0
+65,master,Dent,large,0,0,0,
+65,master,Dent,medium,0,0,0,
+65,master,Dent,small,11,3,8,0.2727272727272727
+65,master,Dent,tiny,26,1,25,0.038461538461538464
+65,master,Material missing,large,3,1,2,0.3333333333333333
+65,master,Material missing,medium,17,9,8,0.5294117647058824
+65,master,Material missing,small,9,0,9,0.0
+65,master,Material missing,tiny,3,0,3,0.0
+65,master,Tears,large,0,0,0,
+65,master,Tears,medium,3,0,3,0.0
+65,master,Tears,small,5,0,5,0.0
+65,master,Tears,tiny,2,0,2,0.0
+65,master,Tip curl,large,0,0,0,
+65,master,Tip curl,medium,1,0,1,0.0
+65,master,Tip curl,small,2,1,1,0.5
+65,master,Tip curl,tiny,0,0,0,
+65,master,corrosion,large,19,0,19,0.0
+65,master,corrosion,medium,18,0,18,0.0
+65,master,corrosion,small,36,0,36,0.0
+65,master,corrosion,tiny,36,0,36,0.0
+70,ema,overall,large,55,0,55,0.0
+70,ema,overall,medium,62,2,60,0.03225806451612903
+70,ema,overall,small,76,1,75,0.013157894736842105
+70,ema,overall,tiny,103,1,102,0.009708737864077669
+70,ema,Burn,large,33,0,33,0.0
+70,ema,Burn,medium,15,0,15,0.0
+70,ema,Burn,small,2,0,2,0.0
+70,ema,Burn,tiny,31,0,31,0.0
+70,ema,Crack,large,0,0,0,
+70,ema,Crack,medium,8,0,8,0.0
+70,ema,Crack,small,11,1,10,0.09090909090909091
+70,ema,Crack,tiny,5,0,5,0.0
+70,ema,Dent,large,0,0,0,
+70,ema,Dent,medium,0,0,0,
+70,ema,Dent,small,11,0,11,0.0
+70,ema,Dent,tiny,26,1,25,0.038461538461538464
+70,ema,Material missing,large,3,0,3,0.0
+70,ema,Material missing,medium,17,2,15,0.11764705882352941
+70,ema,Material missing,small,9,0,9,0.0
+70,ema,Material missing,tiny,3,0,3,0.0
+70,ema,Tears,large,0,0,0,
+70,ema,Tears,medium,3,0,3,0.0
+70,ema,Tears,small,5,0,5,0.0
+70,ema,Tears,tiny,2,0,2,0.0
+70,ema,Tip curl,large,0,0,0,
+70,ema,Tip curl,medium,1,0,1,0.0
+70,ema,Tip curl,small,2,0,2,0.0
+70,ema,Tip curl,tiny,0,0,0,
+70,ema,corrosion,large,19,0,19,0.0
+70,ema,corrosion,medium,18,0,18,0.0
+70,ema,corrosion,small,36,0,36,0.0
+70,ema,corrosion,tiny,36,0,36,0.0
+70,master,overall,large,55,0,55,0.0
+70,master,overall,medium,62,2,60,0.03225806451612903
+70,master,overall,small,76,1,75,0.013157894736842105
+70,master,overall,tiny,103,1,102,0.009708737864077669
+70,master,Burn,large,33,0,33,0.0
+70,master,Burn,medium,15,0,15,0.0
+70,master,Burn,small,2,0,2,0.0
+70,master,Burn,tiny,31,0,31,0.0
+70,master,Crack,large,0,0,0,
+70,master,Crack,medium,8,0,8,0.0
+70,master,Crack,small,11,1,10,0.09090909090909091
+70,master,Crack,tiny,5,0,5,0.0
+70,master,Dent,large,0,0,0,
+70,master,Dent,medium,0,0,0,
+70,master,Dent,small,11,0,11,0.0
+70,master,Dent,tiny,26,1,25,0.038461538461538464
+70,master,Material missing,large,3,0,3,0.0
+70,master,Material missing,medium,17,2,15,0.11764705882352941
+70,master,Material missing,small,9,0,9,0.0
+70,master,Material missing,tiny,3,0,3,0.0
+70,master,Tears,large,0,0,0,
+70,master,Tears,medium,3,0,3,0.0
+70,master,Tears,small,5,0,5,0.0
+70,master,Tears,tiny,2,0,2,0.0
+70,master,Tip curl,large,0,0,0,
+70,master,Tip curl,medium,1,0,1,0.0
+70,master,Tip curl,small,2,0,2,0.0
+70,master,Tip curl,tiny,0,0,0,
+70,master,corrosion,large,19,0,19,0.0
+70,master,corrosion,medium,18,0,18,0.0
+70,master,corrosion,small,36,0,36,0.0
+70,master,corrosion,tiny,36,0,36,0.0
+75,ema,overall,large,55,1,54,0.01818181818181818
+75,ema,overall,medium,62,4,58,0.06451612903225806
+75,ema,overall,small,76,1,75,0.013157894736842105
+75,ema,overall,tiny,103,2,101,0.019417475728155338
+75,ema,Burn,large,33,1,32,0.030303030303030304
+75,ema,Burn,medium,15,0,15,0.0
+75,ema,Burn,small,2,0,2,0.0
+75,ema,Burn,tiny,31,0,31,0.0
+75,ema,Crack,large,0,0,0,
+75,ema,Crack,medium,8,0,8,0.0
+75,ema,Crack,small,11,0,11,0.0
+75,ema,Crack,tiny,5,0,5,0.0
+75,ema,Dent,large,0,0,0,
+75,ema,Dent,medium,0,0,0,
+75,ema,Dent,small,11,0,11,0.0
+75,ema,Dent,tiny,26,2,24,0.07692307692307693
+75,ema,Material missing,large,3,0,3,0.0
+75,ema,Material missing,medium,17,2,15,0.11764705882352941
+75,ema,Material missing,small,9,0,9,0.0
+75,ema,Material missing,tiny,3,0,3,0.0
+75,ema,Tears,large,0,0,0,
+75,ema,Tears,medium,3,2,1,0.6666666666666666
+75,ema,Tears,small,5,0,5,0.0
+75,ema,Tears,tiny,2,0,2,0.0
+75,ema,Tip curl,large,0,0,0,
+75,ema,Tip curl,medium,1,0,1,0.0
+75,ema,Tip curl,small,2,1,1,0.5
+75,ema,Tip curl,tiny,0,0,0,
+75,ema,corrosion,large,19,0,19,0.0
+75,ema,corrosion,medium,18,0,18,0.0
+75,ema,corrosion,small,36,0,36,0.0
+75,ema,corrosion,tiny,36,0,36,0.0
+75,master,overall,large,55,1,54,0.01818181818181818
+75,master,overall,medium,62,4,58,0.06451612903225806
+75,master,overall,small,76,1,75,0.013157894736842105
+75,master,overall,tiny,103,2,101,0.019417475728155338
+75,master,Burn,large,33,1,32,0.030303030303030304
+75,master,Burn,medium,15,0,15,0.0
+75,master,Burn,small,2,0,2,0.0
+75,master,Burn,tiny,31,0,31,0.0
+75,master,Crack,large,0,0,0,
+75,master,Crack,medium,8,0,8,0.0
+75,master,Crack,small,11,0,11,0.0
+75,master,Crack,tiny,5,0,5,0.0
+75,master,Dent,large,0,0,0,
+75,master,Dent,medium,0,0,0,
+75,master,Dent,small,11,0,11,0.0
+75,master,Dent,tiny,26,2,24,0.07692307692307693
+75,master,Material missing,large,3,0,3,0.0
+75,master,Material missing,medium,17,2,15,0.11764705882352941
+75,master,Material missing,small,9,0,9,0.0
+75,master,Material missing,tiny,3,0,3,0.0
+75,master,Tears,large,0,0,0,
+75,master,Tears,medium,3,2,1,0.6666666666666666
+75,master,Tears,small,5,0,5,0.0
+75,master,Tears,tiny,2,0,2,0.0
+75,master,Tip curl,large,0,0,0,
+75,master,Tip curl,medium,1,0,1,0.0
+75,master,Tip curl,small,2,1,1,0.5
+75,master,Tip curl,tiny,0,0,0,
+75,master,corrosion,large,19,0,19,0.0
+75,master,corrosion,medium,18,0,18,0.0
+75,master,corrosion,small,36,0,36,0.0
+75,master,corrosion,tiny,36,0,36,0.0
+80,ema,overall,large,55,0,55,0.0
+80,ema,overall,medium,62,9,53,0.14516129032258066
+80,ema,overall,small,76,0,76,0.0
+80,ema,overall,tiny,103,2,101,0.019417475728155338
+80,ema,Burn,large,33,0,33,0.0
+80,ema,Burn,medium,15,0,15,0.0
+80,ema,Burn,small,2,0,2,0.0
+80,ema,Burn,tiny,31,0,31,0.0
+80,ema,Crack,large,0,0,0,
+80,ema,Crack,medium,8,0,8,0.0
+80,ema,Crack,small,11,0,11,0.0
+80,ema,Crack,tiny,5,0,5,0.0
+80,ema,Dent,large,0,0,0,
+80,ema,Dent,medium,0,0,0,
+80,ema,Dent,small,11,0,11,0.0
+80,ema,Dent,tiny,26,2,24,0.07692307692307693
+80,ema,Material missing,large,3,0,3,0.0
+80,ema,Material missing,medium,17,9,8,0.5294117647058824
+80,ema,Material missing,small,9,0,9,0.0
+80,ema,Material missing,tiny,3,0,3,0.0
+80,ema,Tears,large,0,0,0,
+80,ema,Tears,medium,3,0,3,0.0
+80,ema,Tears,small,5,0,5,0.0
+80,ema,Tears,tiny,2,0,2,0.0
+80,ema,Tip curl,large,0,0,0,
+80,ema,Tip curl,medium,1,0,1,0.0
+80,ema,Tip curl,small,2,0,2,0.0
+80,ema,Tip curl,tiny,0,0,0,
+80,ema,corrosion,large,19,0,19,0.0
+80,ema,corrosion,medium,18,0,18,0.0
+80,ema,corrosion,small,36,0,36,0.0
+80,ema,corrosion,tiny,36,0,36,0.0
+80,master,overall,large,55,0,55,0.0
+80,master,overall,medium,62,9,53,0.14516129032258066
+80,master,overall,small,76,0,76,0.0
+80,master,overall,tiny,103,1,102,0.009708737864077669
+80,master,Burn,large,33,0,33,0.0
+80,master,Burn,medium,15,0,15,0.0
+80,master,Burn,small,2,0,2,0.0
+80,master,Burn,tiny,31,0,31,0.0
+80,master,Crack,large,0,0,0,
+80,master,Crack,medium,8,0,8,0.0
+80,master,Crack,small,11,0,11,0.0
+80,master,Crack,tiny,5,0,5,0.0
+80,master,Dent,large,0,0,0,
+80,master,Dent,medium,0,0,0,
+80,master,Dent,small,11,0,11,0.0
+80,master,Dent,tiny,26,1,25,0.038461538461538464
+80,master,Material missing,large,3,0,3,0.0
+80,master,Material missing,medium,17,9,8,0.5294117647058824
+80,master,Material missing,small,9,0,9,0.0
+80,master,Material missing,tiny,3,0,3,0.0
+80,master,Tears,large,0,0,0,
+80,master,Tears,medium,3,0,3,0.0
+80,master,Tears,small,5,0,5,0.0
+80,master,Tears,tiny,2,0,2,0.0
+80,master,Tip curl,large,0,0,0,
+80,master,Tip curl,medium,1,0,1,0.0
+80,master,Tip curl,small,2,0,2,0.0
+80,master,Tip curl,tiny,0,0,0,
+80,master,corrosion,large,19,0,19,0.0
+80,master,corrosion,medium,18,0,18,0.0
+80,master,corrosion,small,36,0,36,0.0
+80,master,corrosion,tiny,36,0,36,0.0
+85,ema,overall,large,55,4,51,0.07272727272727272
+85,ema,overall,medium,62,9,53,0.14516129032258066
+85,ema,overall,small,76,5,71,0.06578947368421052
+85,ema,overall,tiny,103,7,96,0.06796116504854369
+85,ema,Burn,large,33,3,30,0.09090909090909091
+85,ema,Burn,medium,15,0,15,0.0
+85,ema,Burn,small,2,0,2,0.0
+85,ema,Burn,tiny,31,0,31,0.0
+85,ema,Crack,large,0,0,0,
+85,ema,Crack,medium,8,0,8,0.0
+85,ema,Crack,small,11,0,11,0.0
+85,ema,Crack,tiny,5,0,5,0.0
+85,ema,Dent,large,0,0,0,
+85,ema,Dent,medium,0,0,0,
+85,ema,Dent,small,11,4,7,0.36363636363636365
+85,ema,Dent,tiny,26,7,19,0.2692307692307692
+85,ema,Material missing,large,3,1,2,0.3333333333333333
+85,ema,Material missing,medium,17,9,8,0.5294117647058824
+85,ema,Material missing,small,9,0,9,0.0
+85,ema,Material missing,tiny,3,0,3,0.0
+85,ema,Tears,large,0,0,0,
+85,ema,Tears,medium,3,0,3,0.0
+85,ema,Tears,small,5,1,4,0.2
+85,ema,Tears,tiny,2,0,2,0.0
+85,ema,Tip curl,large,0,0,0,
+85,ema,Tip curl,medium,1,0,1,0.0
+85,ema,Tip curl,small,2,0,2,0.0
+85,ema,Tip curl,tiny,0,0,0,
+85,ema,corrosion,large,19,0,19,0.0
+85,ema,corrosion,medium,18,0,18,0.0
+85,ema,corrosion,small,36,0,36,0.0
+85,ema,corrosion,tiny,36,0,36,0.0
+85,master,overall,large,55,2,53,0.03636363636363636
+85,master,overall,medium,62,10,52,0.16129032258064516
+85,master,overall,small,76,6,70,0.07894736842105263
+85,master,overall,tiny,103,7,96,0.06796116504854369
+85,master,Burn,large,33,1,32,0.030303030303030304
+85,master,Burn,medium,15,0,15,0.0
+85,master,Burn,small,2,0,2,0.0
+85,master,Burn,tiny,31,0,31,0.0
+85,master,Crack,large,0,0,0,
+85,master,Crack,medium,8,0,8,0.0
+85,master,Crack,small,11,0,11,0.0
+85,master,Crack,tiny,5,0,5,0.0
+85,master,Dent,large,0,0,0,
+85,master,Dent,medium,0,0,0,
+85,master,Dent,small,11,4,7,0.36363636363636365
+85,master,Dent,tiny,26,7,19,0.2692307692307692
+85,master,Material missing,large,3,1,2,0.3333333333333333
+85,master,Material missing,medium,17,10,7,0.5882352941176471
+85,master,Material missing,small,9,0,9,0.0
+85,master,Material missing,tiny,3,0,3,0.0
+85,master,Tears,large,0,0,0,
+85,master,Tears,medium,3,0,3,0.0
+85,master,Tears,small,5,1,4,0.2
+85,master,Tears,tiny,2,0,2,0.0
+85,master,Tip curl,large,0,0,0,
+85,master,Tip curl,medium,1,0,1,0.0
+85,master,Tip curl,small,2,1,1,0.5
+85,master,Tip curl,tiny,0,0,0,
+85,master,corrosion,large,19,0,19,0.0
+85,master,corrosion,medium,18,0,18,0.0
+85,master,corrosion,small,36,0,36,0.0
+85,master,corrosion,tiny,36,0,36,0.0
+90,ema,overall,large,55,2,53,0.03636363636363636
+90,ema,overall,medium,62,12,50,0.1935483870967742
+90,ema,overall,small,76,10,66,0.13157894736842105
+90,ema,overall,tiny,103,10,93,0.0970873786407767
+90,ema,Burn,large,33,1,32,0.030303030303030304
+90,ema,Burn,medium,15,0,15,0.0
+90,ema,Burn,small,2,0,2,0.0
+90,ema,Burn,tiny,31,0,31,0.0
+90,ema,Crack,large,0,0,0,
+90,ema,Crack,medium,8,0,8,0.0
+90,ema,Crack,small,11,0,11,0.0
+90,ema,Crack,tiny,5,0,5,0.0
+90,ema,Dent,large,0,0,0,
+90,ema,Dent,medium,0,0,0,
+90,ema,Dent,small,11,5,6,0.45454545454545453
+90,ema,Dent,tiny,26,10,16,0.38461538461538464
+90,ema,Material missing,large,3,1,2,0.3333333333333333
+90,ema,Material missing,medium,17,12,5,0.7058823529411765
+90,ema,Material missing,small,9,0,9,0.0
+90,ema,Material missing,tiny,3,0,3,0.0
+90,ema,Tears,large,0,0,0,
+90,ema,Tears,medium,3,0,3,0.0
+90,ema,Tears,small,5,1,4,0.2
+90,ema,Tears,tiny,2,0,2,0.0
+90,ema,Tip curl,large,0,0,0,
+90,ema,Tip curl,medium,1,0,1,0.0
+90,ema,Tip curl,small,2,1,1,0.5
+90,ema,Tip curl,tiny,0,0,0,
+90,ema,corrosion,large,19,0,19,0.0
+90,ema,corrosion,medium,18,0,18,0.0
+90,ema,corrosion,small,36,3,33,0.08333333333333333
+90,ema,corrosion,tiny,36,0,36,0.0
+90,master,overall,large,55,2,53,0.03636363636363636
+90,master,overall,medium,62,13,49,0.20967741935483872
+90,master,overall,small,76,12,64,0.15789473684210525
+90,master,overall,tiny,103,10,93,0.0970873786407767
+90,master,Burn,large,33,1,32,0.030303030303030304
+90,master,Burn,medium,15,0,15,0.0
+90,master,Burn,small,2,0,2,0.0
+90,master,Burn,tiny,31,0,31,0.0
+90,master,Crack,large,0,0,0,
+90,master,Crack,medium,8,0,8,0.0
+90,master,Crack,small,11,0,11,0.0
+90,master,Crack,tiny,5,0,5,0.0
+90,master,Dent,large,0,0,0,
+90,master,Dent,medium,0,0,0,
+90,master,Dent,small,11,5,6,0.45454545454545453
+90,master,Dent,tiny,26,10,16,0.38461538461538464
+90,master,Material missing,large,3,1,2,0.3333333333333333
+90,master,Material missing,medium,17,12,5,0.7058823529411765
+90,master,Material missing,small,9,0,9,0.0
+90,master,Material missing,tiny,3,0,3,0.0
+90,master,Tears,large,0,0,0,
+90,master,Tears,medium,3,1,2,0.3333333333333333
+90,master,Tears,small,5,2,3,0.4
+90,master,Tears,tiny,2,0,2,0.0
+90,master,Tip curl,large,0,0,0,
+90,master,Tip curl,medium,1,0,1,0.0
+90,master,Tip curl,small,2,1,1,0.5
+90,master,Tip curl,tiny,0,0,0,
+90,master,corrosion,large,19,0,19,0.0
+90,master,corrosion,medium,18,0,18,0.0
+90,master,corrosion,small,36,4,32,0.1111111111111111
+90,master,corrosion,tiny,36,0,36,0.0
+95,ema,overall,large,55,2,53,0.03636363636363636
+95,ema,overall,medium,62,15,47,0.24193548387096775
+95,ema,overall,small,76,25,51,0.32894736842105265
+95,ema,overall,tiny,103,15,88,0.14563106796116504
+95,ema,Burn,large,33,1,32,0.030303030303030304
+95,ema,Burn,medium,15,0,15,0.0
+95,ema,Burn,small,2,0,2,0.0
+95,ema,Burn,tiny,31,1,30,0.03225806451612903
+95,ema,Crack,large,0,0,0,
+95,ema,Crack,medium,8,0,8,0.0
+95,ema,Crack,small,11,2,9,0.18181818181818182
+95,ema,Crack,tiny,5,0,5,0.0
+95,ema,Dent,large,0,0,0,
+95,ema,Dent,medium,0,0,0,
+95,ema,Dent,small,11,10,1,0.9090909090909091
+95,ema,Dent,tiny,26,14,12,0.5384615384615384
+95,ema,Material missing,large,3,1,2,0.3333333333333333
+95,ema,Material missing,medium,17,12,5,0.7058823529411765
+95,ema,Material missing,small,9,0,9,0.0
+95,ema,Material missing,tiny,3,0,3,0.0
+95,ema,Tears,large,0,0,0,
+95,ema,Tears,medium,3,3,0,1.0
+95,ema,Tears,small,5,4,1,0.8
+95,ema,Tears,tiny,2,0,2,0.0
+95,ema,Tip curl,large,0,0,0,
+95,ema,Tip curl,medium,1,0,1,0.0
+95,ema,Tip curl,small,2,1,1,0.5
+95,ema,Tip curl,tiny,0,0,0,
+95,ema,corrosion,large,19,0,19,0.0
+95,ema,corrosion,medium,18,0,18,0.0
+95,ema,corrosion,small,36,8,28,0.2222222222222222
+95,ema,corrosion,tiny,36,0,36,0.0
+95,master,overall,large,55,2,53,0.03636363636363636
+95,master,overall,medium,62,15,47,0.24193548387096775
+95,master,overall,small,76,25,51,0.32894736842105265
+95,master,overall,tiny,103,16,87,0.1553398058252427
+95,master,Burn,large,33,1,32,0.030303030303030304
+95,master,Burn,medium,15,0,15,0.0
+95,master,Burn,small,2,0,2,0.0
+95,master,Burn,tiny,31,1,30,0.03225806451612903
+95,master,Crack,large,0,0,0,
+95,master,Crack,medium,8,0,8,0.0
+95,master,Crack,small,11,1,10,0.09090909090909091
+95,master,Crack,tiny,5,0,5,0.0
+95,master,Dent,large,0,0,0,
+95,master,Dent,medium,0,0,0,
+95,master,Dent,small,11,10,1,0.9090909090909091
+95,master,Dent,tiny,26,15,11,0.5769230769230769
+95,master,Material missing,large,3,1,2,0.3333333333333333
+95,master,Material missing,medium,17,12,5,0.7058823529411765
+95,master,Material missing,small,9,0,9,0.0
+95,master,Material missing,tiny,3,0,3,0.0
+95,master,Tears,large,0,0,0,
+95,master,Tears,medium,3,3,0,1.0
+95,master,Tears,small,5,4,1,0.8
+95,master,Tears,tiny,2,0,2,0.0
+95,master,Tip curl,large,0,0,0,
+95,master,Tip curl,medium,1,0,1,0.0
+95,master,Tip curl,small,2,1,1,0.5
+95,master,Tip curl,tiny,0,0,0,
+95,master,corrosion,large,19,0,19,0.0
+95,master,corrosion,medium,18,0,18,0.0
+95,master,corrosion,small,36,9,27,0.25
+95,master,corrosion,tiny,36,0,36,0.0
+100,ema,overall,large,55,8,47,0.14545454545454545
+100,ema,overall,medium,62,21,41,0.3387096774193548
+100,ema,overall,small,76,36,40,0.47368421052631576
+100,ema,overall,tiny,103,23,80,0.22330097087378642
+100,ema,Burn,large,33,5,28,0.15151515151515152
+100,ema,Burn,medium,15,4,11,0.26666666666666666
+100,ema,Burn,small,2,0,2,0.0
+100,ema,Burn,tiny,31,2,29,0.06451612903225806
+100,ema,Crack,large,0,0,0,
+100,ema,Crack,medium,8,0,8,0.0
+100,ema,Crack,small,11,2,9,0.18181818181818182
+100,ema,Crack,tiny,5,0,5,0.0
+100,ema,Dent,large,0,0,0,
+100,ema,Dent,medium,0,0,0,
+100,ema,Dent,small,11,11,0,1.0
+100,ema,Dent,tiny,26,16,10,0.6153846153846154
+100,ema,Material missing,large,3,1,2,0.3333333333333333
+100,ema,Material missing,medium,17,13,4,0.7647058823529411
+100,ema,Material missing,small,9,0,9,0.0
+100,ema,Material missing,tiny,3,0,3,0.0
+100,ema,Tears,large,0,0,0,
+100,ema,Tears,medium,3,3,0,1.0
+100,ema,Tears,small,5,4,1,0.8
+100,ema,Tears,tiny,2,0,2,0.0
+100,ema,Tip curl,large,0,0,0,
+100,ema,Tip curl,medium,1,0,1,0.0
+100,ema,Tip curl,small,2,2,0,1.0
+100,ema,Tip curl,tiny,0,0,0,
+100,ema,corrosion,large,19,2,17,0.10526315789473684
+100,ema,corrosion,medium,18,1,17,0.05555555555555555
+100,ema,corrosion,small,36,17,19,0.4722222222222222
+100,ema,corrosion,tiny,36,5,31,0.1388888888888889
+100,master,overall,large,55,8,47,0.14545454545454545
+100,master,overall,medium,62,21,41,0.3387096774193548
+100,master,overall,small,76,36,40,0.47368421052631576
+100,master,overall,tiny,103,23,80,0.22330097087378642
+100,master,Burn,large,33,5,28,0.15151515151515152
+100,master,Burn,medium,15,4,11,0.26666666666666666
+100,master,Burn,small,2,0,2,0.0
+100,master,Burn,tiny,31,2,29,0.06451612903225806
+100,master,Crack,large,0,0,0,
+100,master,Crack,medium,8,0,8,0.0
+100,master,Crack,small,11,2,9,0.18181818181818182
+100,master,Crack,tiny,5,0,5,0.0
+100,master,Dent,large,0,0,0,
+100,master,Dent,medium,0,0,0,
+100,master,Dent,small,11,11,0,1.0
+100,master,Dent,tiny,26,16,10,0.6153846153846154
+100,master,Material missing,large,3,1,2,0.3333333333333333
+100,master,Material missing,medium,17,13,4,0.7647058823529411
+100,master,Material missing,small,9,0,9,0.0
+100,master,Material missing,tiny,3,0,3,0.0
+100,master,Tears,large,0,0,0,
+100,master,Tears,medium,3,3,0,1.0
+100,master,Tears,small,5,4,1,0.8
+100,master,Tears,tiny,2,0,2,0.0
+100,master,Tip curl,large,0,0,0,
+100,master,Tip curl,medium,1,0,1,0.0
+100,master,Tip curl,small,2,2,0,1.0
+100,master,Tip curl,tiny,0,0,0,
+100,master,corrosion,large,19,2,17,0.10526315789473684
+100,master,corrosion,medium,18,1,17,0.05555555555555555
+100,master,corrosion,small,36,17,19,0.4722222222222222
+100,master,corrosion,tiny,36,5,31,0.1388888888888889

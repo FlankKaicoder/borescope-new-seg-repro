@@ -1,0 +1,57 @@
+{
+  "schema": "EXP17_R5_FINAL_SUMMARY_BEST_HISTORY_REVISION_V1",
+  "status": "PASS",
+  "experiment": "EXP17_J2_REPAIRED_SEED42",
+  "problem": "The first offline summary compared immutable historical Best selection SHAs with the current bytes of legitimately rotated slots, producing false artifact conflicts.",
+  "minimal_change": [
+    "Historical .selection.json receipts record their own file SHA and do not claim the current slot bytes are a historical weight archive.",
+    "Historical receipts retain binding and format checks, scheduled VAL fitness and both native model-state identity checks, and latest-equal-fitness selection-history checks.",
+    "Current best_<role>.json pointers retain the existing blob SHA rejection when the referenced blob is present.",
+    "The original first-version analysis remains preserved; corrected summaries must use a new output directory."
+  ],
+  "completed_tests": {
+    "command": "py -3 -m unittest discover -s diagnostics/exp17_j2_r5 -p test_summary_observation.py -v",
+    "tests_run": 9,
+    "unittest_reported_seconds": 5.306,
+    "exit_code": 0,
+    "result": "OK",
+    "tests": [
+      "test_corrupt_current_slot_still_rejects",
+      "test_historical_native_state_or_fitness_tamper_still_rejects",
+      "test_missing_latest_tie_selection_history_rejects",
+      "test_rotated_historical_blob_is_not_compared_to_current_slot",
+      "test_active_context_overrides_historical_hold_and_links_origin_prefix",
+      "test_active_marker_without_metadata_argument_never_uses_old_hold",
+      "test_bad_marker_and_uncommitted_lineage_are_incomplete",
+      "test_new_completion_and_e10_hold_are_current",
+      "test_old_and_new_artifact_namespaces_are_separate"
+    ],
+    "current_slot_negative_case": {
+      "test": "test_corrupt_current_slot_still_rejects",
+      "observed_rejection": "ARTIFACT_BLOB_SHA_CONFLICT_best_master_slot0.pt",
+      "status": "PASS"
+    }
+  },
+  "completed_self_test": {
+    "command": "py -3 -B diagnostics/exp17_j2_r5/summarize.py --self-test",
+    "status": "PASS",
+    "exit_code": 0,
+    "observed_output": "SELF_TEST_PASS partial-HOLD, null precision, no premature primary, Pair4 weighting, journal, exact Last comparisons"
+  },
+  "source_sha256": {
+    "diagnostics/exp17_j2_r5/summarize.py": "40d9a6cf1c960f5883aa807f8001a9fe7fb0421a4eba59a0b082ce6af6b7984b",
+    "diagnostics/exp17_j2_r5/test_summary_observation.py": "00bfa88f64b085e33e441690c8ca7ff76a27fb2111a80010e1173f612cbc931a"
+  },
+  "receipt_basis": "Recorded from the already completed unittest and self-test tool output; no tests were rerun to create this receipt.",
+  "scope": {
+    "fixtures": "CPU JSON and tiny byte blobs only",
+    "production_or_observation_source_changed": false,
+    "audit_or_plot_source_changed": false,
+    "historical_training_or_VAL_evidence_changed": false,
+    "new_model_calls": 0,
+    "new_training_updates": 0,
+    "new_VAL_passes": 0,
+    "TEST_access": 0
+  },
+  "privacy": "Repository-relative labels and source digests only; no execution ID, private absolute path or source group content."
+}

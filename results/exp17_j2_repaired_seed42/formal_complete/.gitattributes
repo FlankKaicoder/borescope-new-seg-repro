@@ -1,0 +1,5 @@
+# Preserve the exact scientific artifact bytes covered by SHA256 manifests.
+summary/** -text
+figures/** -text
+audit_final.json -text
+delivery_verification.json -text

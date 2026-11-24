@@ -1,0 +1,65 @@
+class,metric,J1,R5,delta
+overall,gt,296.0,296,0.0
+overall,detections,154.0,139,-15.0
+overall,mask_tp,98.0,88,-10.0
+overall,mask_fp,56.0,51,-5.0
+overall,mask_fn,198.0,208,10.0
+overall,box_tp,102.0,94,-8.0
+overall,box_fp,52.0,45,-7.0
+overall,box_fn,194.0,202,8.0
+Burn,gt,81.0,81,0.0
+Burn,detections,21.0,30,9.0
+Burn,mask_tp,12.0,11,-1.0
+Burn,mask_fp,9.0,19,10.0
+Burn,mask_fn,69.0,70,1.0
+Burn,box_tp,14.0,16,2.0
+Burn,box_fp,7.0,14,7.0
+Burn,box_fn,67.0,65,-2.0
+Crack,gt,24.0,24,0.0
+Crack,detections,16.0,6,-10.0
+Crack,mask_tp,4.0,2,-2.0
+Crack,mask_fp,12.0,4,-8.0
+Crack,mask_fn,20.0,22,2.0
+Crack,box_tp,5.0,2,-3.0
+Crack,box_fp,11.0,4,-7.0
+Crack,box_fn,19.0,22,3.0
+Dent,gt,37.0,37,0.0
+Dent,detections,36.0,32,-4.0
+Dent,mask_tp,28.0,27,-1.0
+Dent,mask_fp,8.0,5,-3.0
+Dent,mask_fn,9.0,10,1.0
+Dent,box_tp,28.0,27,-1.0
+Dent,box_fp,8.0,5,-3.0
+Dent,box_fn,9.0,10,1.0
+Material missing,gt,32.0,32,0.0
+Material missing,detections,15.0,16,1.0
+Material missing,mask_tp,14.0,14,0.0
+Material missing,mask_fp,1.0,2,1.0
+Material missing,mask_fn,18.0,18,0.0
+Material missing,box_tp,14.0,14,0.0
+Material missing,box_fp,1.0,2,1.0
+Material missing,box_fn,18.0,18,0.0
+Tears,gt,10.0,10,0.0
+Tears,detections,12.0,9,-3.0
+Tears,mask_tp,8.0,7,-1.0
+Tears,mask_fp,4.0,2,-2.0
+Tears,mask_fn,2.0,3,1.0
+Tears,box_tp,8.0,7,-1.0
+Tears,box_fp,4.0,2,-2.0
+Tears,box_fn,2.0,3,1.0
+Tip curl,gt,3.0,3,0.0
+Tip curl,detections,2.0,2,0.0
+Tip curl,mask_tp,2.0,2,0.0
+Tip curl,mask_fp,0.0,0,0.0
+Tip curl,mask_fn,1.0,1,0.0
+Tip curl,box_tp,2.0,2,0.0
+Tip curl,box_fp,0.0,0,0.0
+Tip curl,box_fn,1.0,1,0.0
+corrosion,gt,109.0,109,0.0
+corrosion,detections,52.0,44,-8.0
+corrosion,mask_tp,30.0,25,-5.0
+corrosion,mask_fp,22.0,19,-3.0
+corrosion,mask_fn,79.0,84,5.0
+corrosion,box_tp,31.0,26,-5.0
+corrosion,box_fp,21.0,18,-3.0
+corrosion,box_fn,78.0,83,5.0
