@@ -1,5 +1,10 @@
 # Decision log
 
+## D093 — Exp17-J2-R3-D combined-prefix Mean dependence (2026-11-24)
+
+User approved the two Backbone/P3-Neck controls. Exact40/8 BN selection leaves all42 downstream BN untouched; all variance sources remain original. Backbone-only yields TP0; Neck-only partially restores TP2/FP19 (lowconf31), versus sealed joint TP19/FP6. Interpret as conditional functional dependence across tested regions, not per-BN necessity or Pair causality. Neck16 propagation and head variance changes prioritize a bounded conditional Neck13/16 comparison. Stop after delivery; no automatic finer scanning or causal training verdict. [Evidence](../EXP17_J2_R3_D_BACKBONE_NECK_DIAGNOSTIC_REPORT.md).
+
+
 ## D092 — Exp17-J2-R3-C shared-prefix Mean sufficiency (2026-11-24)
 
 The user explicitly approved two complementary local Mean controls. Preserve all original identities and budgets; use independent copies and a new two-call ledger. Correcting only shared0-16 restores fixed-conf TP19/FP6, while correcting only17-23 does not (TP0/FP2599; low-conf TP17). Downstream inputs improve without downstream Mean intervention. This establishes conditional local sufficiency, not necessity, unique origin, Pair causality, or repaired VAL performance. Stop after two calls and delivery; propose Backbone0-10 versus P3Neck11-16 as two new controls requiring a new approved scope. [Evidence](../EXP17_J2_R3_C_LOCAL_MEAN_DIAGNOSTIC_REPORT.md).

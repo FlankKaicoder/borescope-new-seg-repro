@@ -1,0 +1,71 @@
+{
+  "artifacts": [
+    {
+      "file": "01_backbone_neck_controls.png",
+      "bytes": 71252,
+      "sha256": "5ec7af1f24830a4083a25ca52306fd344922f460d553c0fb616f8b0f0c7b1cbb"
+    },
+    {
+      "file": "01_backbone_neck_controls.svg",
+      "bytes": 58067,
+      "sha256": "3d4446d72ab7674f061c663cbf849249e27cd57576a13616d8345a61164a8406"
+    },
+    {
+      "file": "02_backbone_neck_activation_paths.png",
+      "bytes": 412470,
+      "sha256": "0059daa60f725117e1f910a07f60b533b690c9cec3ef293ce631d287ce0b6535"
+    },
+    {
+      "file": "02_backbone_neck_activation_paths.svg",
+      "bytes": 98921,
+      "sha256": "721f8878c7fd9c9af3296e459aa14948184564d1d8ca9a68883ff679c8352d80"
+    },
+    {
+      "file": "analysis_input_bindings.json",
+      "bytes": 1338,
+      "sha256": "360c247b267e558f2427f261a1683136a40b274daf63f53a9e519eafd3232a57"
+    },
+    {
+      "file": "analysis_verification.json",
+      "bytes": 677,
+      "sha256": "b109d5a1962cb0499bedb782f38d355ad7b93c5a2cfc4ca5d13ef8578b0a8612"
+    },
+    {
+      "file": "bn_layer_actual_statistics.csv",
+      "bytes": 102978,
+      "sha256": "048781e760fba59edfa1693c991aa02aa93fd07ab5f44a2bd46c87bc52c5b82d"
+    },
+    {
+      "file": "case_results.csv",
+      "bytes": 1104,
+      "sha256": "8e157f0cdcfb892eac98352094b296749d4557abf9d4014a95ba32f4fa929eec"
+    },
+    {
+      "file": "execution_bindings.json",
+      "bytes": 3015,
+      "sha256": "593c40c2f3348bca89a6cbcce71e6285d17fec5eddc84bbf6ebc91804b6505a7"
+    },
+    {
+      "file": "R3_E_PROPOSAL_NOT_AUTHORIZATION.md",
+      "bytes": 2475,
+      "sha256": "3399fc57c2f0e5d41302eb5ade82056973ae8e7d0ab6a090082eb0f1a3a59187"
+    },
+    {
+      "file": "selected_bn_layers.csv",
+      "bytes": 15051,
+      "sha256": "3ec7b327b4f8d85fd10e7afadeac787f0b3a02fa3391cb2d6a15ec83fa70390a"
+    },
+    {
+      "file": "summary.json",
+      "bytes": 51798,
+      "sha256": "95c38c5dd2f001b9a9020828809283c4a05bd7d805e6c50a65f100f36f046b1b"
+    },
+    {
+      "file": "verification_summary.json",
+      "bytes": 3612,
+      "sha256": "2e95717c6b88b432e4230228f0fde6c1ead1802c883fb19e30f5fd4770e78d39"
+    }
+  ],
+  "report": "../../EXP17_J2_R3_D_BACKBONE_NECK_DIAGNOSTIC_REPORT.md",
+  "raw_data": "PRIVATE_R3_D_ARCHIVE"
+}

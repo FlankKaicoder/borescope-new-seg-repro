@@ -1,5 +1,10 @@
 # Project state
 
+## Exp17-J2-R3-D Backbone/P3-Neck Mean controls (2026-11-24)
+
+EXP17_J2_R3_D_TWO_FORWARD_COMPLETE_PENDING_CHATGPT_GATE. Two TRAIN forwards completed on the same32-image/62-GT packet. Backbone0-10 Mean-only gives fixedconf TP0/FP0; P3Neck11-16 Mean-only TP2/FP19 (lowconf TP31). Sealed joint-prefix correction gives TP19/FP6. Neither individual region reproduces joint behavior; Neck16 and downstream activation mismatch remain after Backbone-only correction. First40 BN and first-Neck input moments match historical references exactly.21 CPU tests/40 audit checks PASS;522 protected files unchanged. No training/backward/calibration/new VAL/TEST; formal Last Mask AP95=0 unchanged. Two-call budget exhausted. Conditional Neck13/16 two-forward R3-E proposed only. [Report](../EXP17_J2_R3_D_BACKBONE_NECK_DIAGNOSTIC_REPORT.md).
+
+
 ## Exp17-J2-R3-C local Mean controls (2026-11-24)
 
 EXP17_J2_R3_C_TWO_FORWARD_COMPLETE_PENDING_CHATGPT_GATE. Two TRAIN forwards completed on the bound 32-image/62-GT packet. Mean correction in shared modules0-16 (48 BN) restores fixed-conf TP19/FP6; correction only in17-23 (42 BN) gives TP0/FP2599, with TP17 at the pre-existing .001 threshold. Shared-prefix correction is sufficient on this batch, not a unique cause or Pair causal attribution. First48 BN moments match sealed references exactly. 20 CPU tests and40 independent checks pass;492 protected files unchanged. No backward, update, calibration, new VAL or TEST. Formal Last Mask AP95=0 remains. Two-call budget exhausted; R3-D Backbone/P3-Neck split proposed, not authorized or executed. [Report](../EXP17_J2_R3_C_LOCAL_MEAN_DIAGNOSTIC_REPORT.md).

@@ -1,0 +1,26 @@
+{
+  "case_rows": 8,
+  "historical_references_not_new_passes": true,
+  "layer_rows": 360,
+  "new_channel_rows": 16080,
+  "new_model_calls_by_analysis": 0,
+  "prefix_moments_exact": [
+    {
+      "BN_count": 40,
+      "channel_count": 4184,
+      "first_neck_input_moments_exact": true,
+      "new_condition": "backbone_0_10_mean",
+      "sealed_reference": "prefix_0_16_mean",
+      "six_moments_exact": true
+    },
+    {
+      "BN_count": 40,
+      "channel_count": 4184,
+      "first_neck_input_moments_exact": true,
+      "new_condition": "p3neck_11_16_mean",
+      "sealed_reference": "running",
+      "six_moments_exact": true
+    }
+  ],
+  "reference_channel_rows": 16080
+}

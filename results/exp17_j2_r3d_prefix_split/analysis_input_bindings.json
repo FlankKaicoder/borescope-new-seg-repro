@@ -1,0 +1,42 @@
+[
+  {
+    "file": "running.json",
+    "sha256": "fbe63871bb62bd4631033bede398fb8050b8a38a5041c13f7b40fbee179129f9",
+    "stage": "R3-B sealed reference"
+  },
+  {
+    "file": "running_bn_channels.json",
+    "sha256": "9a24b02bc19bf7095a454e81cf3f6b08ddf7d20c3ae6c931d2c360a63d364bd1",
+    "stage": "R3-B sealed reference"
+  },
+  {
+    "file": "prefix_0_16_mean.json",
+    "sha256": "d482f2ac984f7579e1024bf40d1aca77807b8d61edd657ec34a1d668f17499da",
+    "stage": "R3-C sealed reference"
+  },
+  {
+    "file": "prefix_0_16_mean_bn_channels.json",
+    "sha256": "85c7ecba8929ee284dcfbd45b372436d46c2e6b56e919a39d0b118dae7e3ac0f",
+    "stage": "R3-C sealed reference"
+  },
+  {
+    "file": "backbone_0_10_mean.json",
+    "sha256": "fb761f01dffd87b4e7ed64bc8ed197cdbff1ff9de048b52136ed0e388eeac50c",
+    "stage": "R3-D new forward"
+  },
+  {
+    "file": "backbone_0_10_mean_bn_channels.json",
+    "sha256": "a8b67746184201e88ed734d2fb0e585b5586332e0582e320342f170a6c1babe9",
+    "stage": "R3-D new forward"
+  },
+  {
+    "file": "p3neck_11_16_mean.json",
+    "sha256": "c61ce5079acc933cb1a760ac4a794e4646eed0bf5ffab50326a50ae84941c3ff",
+    "stage": "R3-D new forward"
+  },
+  {
+    "file": "p3neck_11_16_mean_bn_channels.json",
+    "sha256": "88d566376549b5a40123694acffee5bfc3a66cf442241bc868e4f4da790a1e8b",
+    "stage": "R3-D new forward"
+  }
+]

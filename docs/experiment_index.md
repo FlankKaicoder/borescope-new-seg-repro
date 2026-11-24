@@ -1,5 +1,8 @@
 # Experiment index
 
+- **Exp17-J2-R3-D (2026-11-24)** — Backbone-only TP0; P3Neck-only TP2/FP19 versus sealed joint TP19/FP6. Combined-region dependence and downstream activation differences documented; training origin unresolved. Two TRAIN calls, no new formal result. [Report](../EXP17_J2_R3_D_BACKBONE_NECK_DIAGNOSTIC_REPORT.md).
+
+
 - **Exp17-J2-R3-C (2026-11-24)** — Two TRAIN local Mean controls: shared0-16 TP19/FP6; remaining17-23 TP0/FP2599 at fixedconf. Local sufficiency established; upstream cause unresolved. No new formal result. [Report](../EXP17_J2_R3_C_LOCAL_MEAN_DIAGNOSTIC_REPORT.md).
 
 
