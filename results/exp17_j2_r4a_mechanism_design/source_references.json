@@ -1,0 +1,33 @@
+{
+  "files": [
+    {
+      "file": "tools/exp17/engineering/bn.py",
+      "sha256": "04b06afd45e89a8f620b94cba9b8ae8a859aefb1b0e0dae697f74569fe19fdcc"
+    },
+    {
+      "file": "tools/exp17/engineering/model.py",
+      "sha256": "ab02d70c99c2b362f431a272e75ea2a897f2682fbb89e6525e7627a48f369e83"
+    },
+    {
+      "file": "tools/exp17/engineering/runtime.py",
+      "sha256": "442ff9b2adc5fad1c40604eb6dc3f4b9307a382c930d3caa8d27660c006cbe3e"
+    },
+    {
+      "file": "tools/exp17/engineering/calibration.py",
+      "sha256": "3ac529f5498badb90831f39287124ca141f7cdbeeac69a7fe755f2a7f300cc31"
+    },
+    {
+      "file": "tools/exp17/formal/checkpoint.py",
+      "sha256": "fe0d2480a17cc56a20e36b238346518312164e477add17ce114323c466f8f268"
+    },
+    {
+      "file": "tools/exp17/formal/native_adapter.py",
+      "sha256": "e6dd9f60f61aadfadd1b2f114f6870458f96915cfed90b40e679c25e321f3a77"
+    },
+    {
+      "file": "tools/exp17/formal/diagnostics.py",
+      "sha256": "1ecea391c2d47a88ae4885a49bf3f677160ec307bf54614627de64b931f66232"
+    }
+  ],
+  "scope": "Selected existing implementation only; no new production source changes."
+}

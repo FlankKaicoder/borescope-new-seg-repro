@@ -1,5 +1,10 @@
 # Project state
 
+## Exp17-J2-R4-A training-origin mechanism design (2026-11-24)
+
+EXP17_J2_R4_A_MECHANISM_DESIGN_COMPLETE_PENDING_CHATGPT_GATE. Read-only four frozen TRAIN packets:124 unique images/230 augmented instances, including28-image tail; final full Checkpoint/projection and saved loss args verified. Six NumPy finite-difference fixtures establish a synthetic detached-statistics common-shift derivative distinction, not actual J2 causality. No model/gradient/GPU/update/VAL/TEST calls.11 targeted original file hashes unchanged. R4-B six-forward multi-batch proposal and separate R4-C2A+2N/6autograd design prepared; neither executed or authorized here. Original Last AP0/80VAL remain; training origin HOLD. [Handoff](../EXP17_J2_R4_A_TRAINING_ORIGIN_MECHANISM_HANDOFF.md).
+
+
 ## Exp17-J2-R3-E conditional Neck13/16 Mean controls (2026-11-24)
 
 EXP17_J2_R3_E_TWO_FORWARD_COMPLETE_PENDING_CHATGPT_GATE. Two TRAIN forwards on the same32-image/62-GT packet, with common40 Backbone BN corrected and either4 Neck13 or4 Neck16 BN. Backbone+Neck13 gives fixedconf TP0/FP0; Backbone+Neck16 TP17/FP7 (lowconf TP53), versus sealed joint TP19/FP6. Prefix44 BN and first-Neck16 input moments match the respective sealed references exactly. Neck16 conditional functional rescue is supported; training origin/Pair causality unresolved.22 CPU tests/42 audit checks PASS;552 protected files unchanged. No backward/update/calibration/new VAL/TEST; formal Last Mask AP95=0 unchanged. Two-call budget exhausted; close module localization and design a discriminating training-origin study before any new model/gradient scope. [Report](../EXP17_J2_R3_E_CONDITIONAL_NECK_DIAGNOSTIC_REPORT.md).

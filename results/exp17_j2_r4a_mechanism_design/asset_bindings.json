@@ -1,0 +1,209 @@
+{
+  "schema": "EXP17_J2_R4_A_ASSET_BINDINGS_V1",
+  "base_commit": "d11b9c7b6d20fa3bf94bc44aa3fba6e5284b9c72",
+  "runtime_config_sha256": "02f0f6548ee1cfd57af449fd1c9118417252b3a528273a1c80d2eee28c96d7b8",
+  "inherited_protocol_bindings": {
+    "protocol_sha256": "613e4e154a872e0fd88791013f8e63716100470bb4a2f73084b702bb5cd37e44",
+    "code_sha256": "3ccdfe26b414c9c5c6c45a1be93a9fa38210cae8c36bc7e1a8a8c227a7b30f42",
+    "manifest_sha256": "fe6a36601c6c8d90cfddfc19ab58335552c18653b66f3535e84c97b4c222dc22",
+    "native_identity_sha256": "289848daad87bbb8601251a88305d58dd48f41963f7d6adff0c4777603b14c4e",
+    "coco_sha256": "55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152",
+    "seed": 42,
+    "epochs": 100,
+    "effective_updates": 2100,
+    "environment": {
+      "cuda": "12.8",
+      "cuda_devices": 1,
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "python": "3.12.3",
+      "torch": "2.8.0+cu128",
+      "torchvision": "0.23.0+cu128",
+      "ultralytics": "8.4.117"
+    },
+    "origin_code_sha256": "86987123cffef957d7f639f0559e48f6c033562947ddd1ba64689ce6b8bbba4b",
+    "engineering_repair_addendum_sha256": "73cb4d6f7250240e079f2596062507af690d057a454a4937e11eb74c8592e63e"
+  },
+  "fixed_packets": [
+    {
+      "position": 1,
+      "epoch": 0,
+      "bytes": 45080021,
+      "sha256": "802114bde743ce7c58e997be279987148f33d91898d43b511ad5040939edd929",
+      "six_tensor_sha256": "cd68f03b38dd29874322e54a22052ff78401dc042f66fd0313dd4dd03443b63a",
+      "input_img_sha256": "160487354f4bf32c64e8ca7f6cce944ca99ba49afe52267f9e6de999c518cd32",
+      "images": 32,
+      "instances": 62,
+      "class_histogram": [
+        28,
+        1,
+        5,
+        7,
+        2,
+        4,
+        15
+      ],
+      "all_sources_in_TRAIN668": true,
+      "source_groups": 32,
+      "replay_traces": 32
+    },
+    {
+      "position": 7,
+      "epoch": 0,
+      "bytes": 45145877,
+      "sha256": "07cff77e68290e0281cc6f8ac49a54dde0dbb25600c5c4932a0d5ba7b712ff76",
+      "six_tensor_sha256": "a6fd72a4a0580cfd9f6b61655a62c23258b40a9d237a39047919c197f39ccfad",
+      "input_img_sha256": "e4285a3c49d53fb301dee025a39b19426750f1ab3f43b3c013c2ccd0c6d0b87b",
+      "images": 32,
+      "instances": 65,
+      "class_histogram": [
+        20,
+        5,
+        5,
+        14,
+        4,
+        0,
+        17
+      ],
+      "all_sources_in_TRAIN668": true,
+      "source_groups": 32,
+      "replay_traces": 32
+    },
+    {
+      "position": 11,
+      "epoch": 0,
+      "bytes": 45028693,
+      "sha256": "5395b0c3d0d7e0d22d3eb546f78e02fab29c9298aa886977328b140af6ff3f08",
+      "six_tensor_sha256": "d33864e9d9de2c91c534d749bf29a739d70ae235d14f3fbe059bb349370a7db9",
+      "input_img_sha256": "1d23497b18e0479e945ce4f0f1a88710eab463e4264195a57828c263aaeb7548",
+      "images": 32,
+      "instances": 56,
+      "class_histogram": [
+        15,
+        6,
+        5,
+        9,
+        4,
+        0,
+        17
+      ],
+      "all_sources_in_TRAIN668": true,
+      "source_groups": 32,
+      "replay_traces": 32
+    },
+    {
+      "position": 21,
+      "epoch": 0,
+      "bytes": 41676437,
+      "sha256": "c93789fb512af377a6d0793f3199126cd23e89ab1844fd08ecf30654e85aa90a",
+      "six_tensor_sha256": "c4e9cdbbe0a16a25441f449f87edb0623fab2d0881d8950706274d5ec9d20e82",
+      "input_img_sha256": "3e47f77c918c9443ccb6443c66b5b5970e23e5eaa68a1e034476f52e14939c00",
+      "images": 28,
+      "instances": 47,
+      "class_histogram": [
+        5,
+        2,
+        8,
+        7,
+        2,
+        0,
+        23
+      ],
+      "all_sources_in_TRAIN668": true,
+      "source_groups": 28,
+      "replay_traces": 28
+    }
+  ],
+  "unique_TRAIN_sources": 124,
+  "total_augmented_instances": 230,
+  "checkpoint": {
+    "file_sha256": "79b237241517e9112687f9ecd155d21c096ce54243e9a8267b21a963d58c675e",
+    "pointer_sha256": "ba8fc5973a835cdb8befdfb02fa3530bea0fe4124a9722a0fe6472e8ed845eef",
+    "position": {
+      "epoch": 99,
+      "batch_position": 21,
+      "global_update": 2100
+    },
+    "schema": "EXP17_G1_FULL_RECOVERY_V1",
+    "full_state_sha256": "609f1ae560829ca9c5bad715a68f1022a36be85b7ce45d003a0464dc21e1ea85",
+    "native_state_sha256": "d222a70d7570680459359a36a682312690b052cc10197f4916ec1df66492782f",
+    "projection_shapes": {
+      "region_projection.0.weight": [
+        128,
+        64
+      ],
+      "region_projection.0.bias": [
+        128
+      ],
+      "region_projection.2.weight": [
+        128,
+        128
+      ],
+      "region_projection.2.bias": [
+        128
+      ]
+    },
+    "projection_sha256": "3b7f92a85bd790ec143e18962cf7c8011565731750d91874a756ad7ac0ebf11f",
+    "trainable_parameters": 294,
+    "optimizer_state_entries": 294,
+    "scaler": {
+      "scale": 2.0,
+      "growth_factor": 2.0,
+      "backoff_factor": 0.5,
+      "growth_interval": 2000,
+      "_growth_tracker": 100
+    },
+    "model_config_present": true,
+    "class_names": {
+      "0": "Burn",
+      "1": "Crack",
+      "2": "Dent",
+      "3": "Material missing",
+      "4": "Tears",
+      "5": "Tip curl",
+      "6": "corrosion"
+    },
+    "saved_gradients": false,
+    "native_conv_bias_present": false,
+    "native_serialized_has_projection": false,
+    "native_args_type": "NoneType",
+    "native_model_config_equals_checkpoint": true,
+    "native_serialized_class_names": {
+      "0": "Burn",
+      "1": "Crack",
+      "2": "Dent",
+      "3": "Material missing",
+      "4": "Tears",
+      "5": "Tip curl",
+      "6": "corrosion"
+    }
+  },
+  "hash_schemes": {
+    "checkpoint_file_sha256": "79b237241517e9112687f9ecd155d21c096ce54243e9a8267b21a963d58c675e",
+    "checkpoint_state_hash": "609f1ae560829ca9c5bad715a68f1022a36be85b7ce45d003a0464dc21e1ea85",
+    "R3_A_raw_tensor_concatenation_sha256": "fead9b162035fcca97c3d129e47494e12fbdf7e71df2af4409e4a22a0ca448da",
+    "checkpoint_py_sha256": "fe0d2480a17cc56a20e36b238346518312164e477add17ce114323c466f8f268",
+    "all_bound_tensors_finite": true,
+    "model_forward": 0,
+    "autograd": 0,
+    "CUDA_initialized": false,
+    "file_unchanged": true
+  },
+  "saved_args": [
+    {
+      "initialization": 0,
+      "sha256": "5bdbd15250cd144db5ff00613f80b09fe353e23e7bd7ed26269204361b6d56b9",
+      "bytes": 1852
+    },
+    {
+      "initialization": 1,
+      "sha256": "d1dfef12c7d5808e8530443f84577eee40d09f42d01cffc47214efa2a42c495a",
+      "bytes": 1852
+    }
+  ],
+  "saved_args_only_different_keys": [
+    "project",
+    "save_dir"
+  ],
+  "N_image_or_Valid_decode_performed": false,
+  "production_catalog_inherited_not_reaudited": true
+}

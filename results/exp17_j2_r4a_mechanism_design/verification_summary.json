@@ -1,0 +1,72 @@
+{
+  "status": "EXP17_J2_R4_A_MECHANISM_DESIGN_COMPLETE_PENDING_CHATGPT_GATE",
+  "scientific_status": "HOLD_TRAINING_ORIGIN_UNRESOLVED",
+  "base_commit": "d11b9c7b6d20fa3bf94bc44aa3fba6e5284b9c72",
+  "completed_utc": "2026-11-24T09:25:10.430534+00:00",
+  "checks": [
+    {
+      "name": "four_packets_32_32_32_28",
+      "pass": true
+    },
+    {
+      "name": "TRAIN668_membership_and_trace",
+      "pass": true
+    },
+    {
+      "name": "124_unique_sources",
+      "pass": true
+    },
+    {
+      "name": "230_augmented_instances",
+      "pass": true
+    },
+    {
+      "name": "native_export_checkpoint_tensor_identity",
+      "pass": true
+    },
+    {
+      "name": "projection_four_tensors",
+      "pass": true
+    },
+    {
+      "name": "full_checkpoint_hash_schemes",
+      "pass": true
+    },
+    {
+      "name": "saved_args_two_path_only_differences",
+      "pass": true
+    },
+    {
+      "name": "six_finite_difference_fixtures",
+      "pass": true
+    },
+    {
+      "name": "no_model_or_autograd_execution",
+      "pass": true
+    },
+    {
+      "name": "no_CUDA_initialization",
+      "pass": true
+    },
+    {
+      "name": "sealed_R3_B_references_hash_verified",
+      "pass": true
+    }
+  ],
+  "targeted_original_file_hashes_unchanged": 11,
+  "original_VAL_passes": 80,
+  "formal_Last_MASTER_Mask_AP50_95": 0,
+  "actual_model_forward": 0,
+  "actual_autograd": 0,
+  "actual_optimizer": 0,
+  "actual_VAL": 0,
+  "actual_TEST": 0,
+  "synthetic_algebra_cases": 6,
+  "maximum_coordinate_error": 5.846795367303592e-09,
+  "new_causal_claim": false,
+  "R4_B_runner_ready": false,
+  "R4_C_graph_equivalence_tested": false,
+  "failed_preinspection_import_attempts": 2,
+  "failures_entered_model_execution": false,
+  "scope_limit": "No new numerical model budget issued; specific R4-B/R4-C designs are proposals."
+}

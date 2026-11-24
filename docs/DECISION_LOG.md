@@ -1,5 +1,10 @@
 # Decision log
 
+## D095 — Exp17-J2-R4-A discriminating training-origin design (2026-11-24)
+
+Continue with read-only assets and mechanism design after conditional Neck16 localization. Keep formal Last0/80VAL unchanged. Reuse position1 sealed results; propose exactly6 new A traversals on positions7/11/21 to test cross-batch statistics. A later independent2A+2N/6autograd design would compare identical forward values with detached versus connected A-statistics derivatives. Six NumPy fixtures verify a structural distinction, not measured parameter gradients or historical causation. Preserve tail28; restore projection and bound saved args for any future loss diagnostic. No numerical model scope is executed or issued in this phase. [Handoff](../EXP17_J2_R4_A_TRAINING_ORIGIN_MECHANISM_HANDOFF.md).
+
+
 ## D094 — Exp17-J2-R3-E conditional Neck16 functional rescue (2026-11-24)
 
 User approved two fixed-Backbone conditional controls. Exact44/44 BN selections share40 Backbone BN; only Neck13 or16 differs, with original remaining Mean/all Variance. Neck16 addition gives TP17/FP7, Neck13 addition TP0. Two historical/new matched pairs have identical prefix44 BN and Neck16 input moments, supporting the intervention boundary. Preserve the Backbone condition and single-batch limitation; no unique-cause/Pair or formal VAL recovery claim. Close module localization rather than automatically scan individual BN. Next work requires a discriminating training-origin design with explicit input, forward and autograd budgets. [Evidence](../EXP17_J2_R3_E_CONDITIONAL_NECK_DIAGNOSTIC_REPORT.md).

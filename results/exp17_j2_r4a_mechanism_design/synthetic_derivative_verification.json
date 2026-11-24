@@ -1,0 +1,195 @@
+{
+  "schema": "EXP17_J2_R4_A_SYNTHETIC_BN_ALGEBRA_V1",
+  "seed": 20261124,
+  "dtype": "float64",
+  "eps": 0.001,
+  "cases": [
+    {
+      "case": "generic",
+      "A_samples": 7,
+      "N_samples": 5,
+      "channels": 3,
+      "finite_difference_step": 1e-05,
+      "forward_objective_exactly_equal": true,
+      "detached_common_shift_derivative": [
+        3.0239547236891955,
+        0.6988517652768955,
+        -0.5150898590482206
+      ],
+      "connected_common_shift_derivative": [
+        -2.220446049250313e-15,
+        -3.3306690738754696e-16,
+        -4.440892098500626e-16
+      ],
+      "finite_difference_connected": [
+        -8.881784197001251e-11,
+        8.881784197001251e-11,
+        1.7763568394002502e-10
+      ],
+      "finite_difference_frozen_statistics": [
+        3.023954723602173,
+        0.69885176534612,
+        -0.5150898588546227
+      ],
+      "max_coordinate_gradient_error": 2.0186741167549371e-10,
+      "pass": true
+    },
+    {
+      "case": "different_sample_counts",
+      "A_samples": 11,
+      "N_samples": 4,
+      "channels": 3,
+      "finite_difference_step": 1e-05,
+      "forward_objective_exactly_equal": true,
+      "detached_common_shift_derivative": [
+        -2.899269457237291,
+        -0.29647653884351743,
+        0.04832757782492744
+      ],
+      "connected_common_shift_derivative": [
+        -8.881784197001252e-16,
+        0.0,
+        -2.7755575615628914e-17
+      ],
+      "finite_difference_connected": [
+        -2.2204460492503128e-11,
+        -2.2204460492503128e-11,
+        0.0
+      ],
+      "finite_difference_frozen_statistics": [
+        -2.899269457246056,
+        -0.2964765388524526,
+        0.04832757782846641
+      ],
+      "max_coordinate_gradient_error": 1.2792984727116874e-10,
+      "pass": true
+    },
+    {
+      "case": "zero_N_sum",
+      "A_samples": 7,
+      "N_samples": 5,
+      "channels": 3,
+      "finite_difference_step": 1e-05,
+      "forward_objective_exactly_equal": true,
+      "detached_common_shift_derivative": [
+        -2.220446049250313e-16,
+        0.0,
+        5.169475958410885e-16
+      ],
+      "connected_common_shift_derivative": [
+        2.220446049250313e-16,
+        1.1102230246251565e-16,
+        5.030698080332741e-16
+      ],
+      "finite_difference_connected": [
+        -8.881784197001251e-11,
+        -8.881784197001251e-11,
+        1.7763568394002502e-10
+      ],
+      "finite_difference_frozen_statistics": [
+        -8.881784197001251e-11,
+        -8.881784197001251e-11,
+        8.881784197001251e-11
+      ],
+      "max_coordinate_gradient_error": 1.5223346194748189e-10,
+      "pass": true
+    },
+    {
+      "case": "zero_gamma",
+      "A_samples": 7,
+      "N_samples": 5,
+      "channels": 3,
+      "finite_difference_step": 1e-05,
+      "forward_objective_exactly_equal": true,
+      "detached_common_shift_derivative": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "connected_common_shift_derivative": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "finite_difference_connected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "finite_difference_frozen_statistics": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_coordinate_gradient_error": 0.0,
+      "pass": true
+    },
+    {
+      "case": "large_offset",
+      "A_samples": 7,
+      "N_samples": 5,
+      "channels": 3,
+      "finite_difference_step": 0.0001,
+      "forward_objective_exactly_equal": true,
+      "detached_common_shift_derivative": [
+        -2.0344608451510595,
+        -1.770621603108399,
+        3.081524203558383
+      ],
+      "connected_common_shift_derivative": [
+        -3.743672039036028e-13,
+        2.220446049250313e-16,
+        2.3803181647963356e-13
+      ],
+      "finite_difference_connected": [
+        6.448175327022909e-09,
+        0.0,
+        4.6984638402136625e-09
+      ],
+      "finite_difference_frozen_statistics": [
+        -2.034460840514285,
+        -1.7706216026702748,
+        3.081524203976116
+      ],
+      "max_coordinate_gradient_error": 5.846795367303592e-09,
+      "pass": true
+    },
+    {
+      "case": "negative_gamma",
+      "A_samples": 7,
+      "N_samples": 5,
+      "channels": 3,
+      "finite_difference_step": 1e-05,
+      "forward_objective_exactly_equal": true,
+      "detached_common_shift_derivative": [
+        1.930143725737352,
+        -0.11092360090432171,
+        -0.7613232845245377
+      ],
+      "connected_common_shift_derivative": [
+        -1.1102230246251565e-15,
+        1.1102230246251565e-16,
+        6.661338147750939e-16
+      ],
+      "finite_difference_connected": [
+        8.881784197001251e-11,
+        0.0,
+        0.0
+      ],
+      "finite_difference_frozen_statistics": [
+        1.9301437258256724,
+        -0.11092360088227336,
+        -0.7613232845038452
+      ],
+      "max_coordinate_gradient_error": 1.4280066018557136e-10,
+      "pass": true
+    }
+  ],
+  "cases_passed": 6,
+  "scalar_numpy_objective_evaluations": 360,
+  "model_forward_calls": 0,
+  "autograd_calls": 0,
+  "optimizer_steps": 0,
+  "interpretation": "Synthetic stop-gradient derivative distinction only; not measured J2 gradients or causal attribution.",
+  "script_sha256": "abea6d81a5cda28e07aaf497030eabacf832c7ff587fcd142bda2e6cf6e35035"
+}

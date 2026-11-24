@@ -1,5 +1,8 @@
 # Experiment index
 
+- **Exp17-J2-R4-A (2026-11-24)** — Frozen124TRAIN/230GT assets and full projection/args verified; six synthetic BN derivative fixtures PASS; no new model calls. Training-origin study design completed, causal origin HOLD. [Handoff](../EXP17_J2_R4_A_TRAINING_ORIGIN_MECHANISM_HANDOFF.md).
+
+
 - **Exp17-J2-R3-E (2026-11-24)** — Conditional on Backbone Mean correction: Neck13 TP0; Neck16 TP17/FP7, versus joint TP19/FP6. Two TRAIN calls establish conditional Neck16 function; module localization closes, training origin unresolved. [Report](../EXP17_J2_R3_E_CONDITIONAL_NECK_DIAGNOSTIC_REPORT.md).
 
 
