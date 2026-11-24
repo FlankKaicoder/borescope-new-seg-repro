@@ -1,5 +1,8 @@
 # Experiment index
 
+- **Exp17-J2-R2 (2026-11-24)** — BN running-stat-dependent inference collapse supported on bound TRAIN: same-weight TP0→18/62 with batch statistics, J1TP19; bounded18forwards exhausted, no formalVAL/backward/update. Drift origin and Pair causality remain HOLD. [R2 report](../EXP17_J2_R2_ROOT_CAUSE_REPORT.md).
+
+
 - **Exp17-J2 Seed42 completed execution (2026-11-23 UTC)** — 100epochs/2100updates/20VALevents/80passes after exactR1 recovery; LastMASTER MaskAP95=0 (J1 .2727438799); scientific interpretation HOLD for unexplained all-zero evaluation. No additional seeds/TEST. [Final handoff](../EXP17_J2_SEED42_FORMAL_TRAINING_HANDOFF.md).
 
 

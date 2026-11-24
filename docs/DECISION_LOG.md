@@ -1,5 +1,10 @@
 # Decision log
 
+## D089 — Exp17-J2-R2 BN-statistic investigation (2026-11-24)
+
+Preserve formal100epochs/2100updates/80VAL and LastMaskAP95=0. Treat disposable TRAIN-only BN-stat substitution as mechanism evidence, not a repaired checkpoint, calibration or replacement metric. Same input/weights and eval head yield TP0 with running statistics and18 with batch statistics; inference-state mismatch is supported locally, upstream origin/Pair/clip causality unresolved. Do not change protocol or re-evaluate before a separately reviewed next scope. The18forward diagnostic budget is exhausted; CUBLAS reproducibility warnings remain disclosed. [Evidence](../EXP17_J2_R2_ROOT_CAUSE_REPORT.md).
+
+
 ## Exp17-G1 formal protocol and recovery preparation (2026-11-23)
 
 Decision D088. Freeze existing Pair4/SupCon8/replay_a without further search. Audit native100epoch/2100update scheduling rather than assume an LRendpoint or AdamWmomentum warmup. Use originaltwo-worker epoch streams sealed into hashedCPUbatch caches for exactremaining-batch recovery. Define recovery at durablycommitted boundaries; ambiguous physicalsteps or incompleteepoch events hard-stop. Keep fixedepoch100FP32MASTER primary, EMAseparate and nativefitnessLatestTieBest supplementary;20futurevalidationevents requireexplicit80passscope and cannotbecomparedasJ2Best versus historicalJ1Last. Preserve20fullperiodicarchives with boundedactiveLast/Best and explicitlyownedephemeralcache retention. CPU129PASS is software evidence only; no newGPUrun or scientific performance evidence. Formal protocol remains unauthorized pending independentGate. [Handoff](exp17g/EXP17_G1_FORMAL_PROTOCOL_HANDOFF.md).

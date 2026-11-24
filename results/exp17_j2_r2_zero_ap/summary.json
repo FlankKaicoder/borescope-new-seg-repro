@@ -1,0 +1,420 @@
+{
+  "schema": "EXP17_J2_R2_PUBLIC_INVESTIGATION_SUMMARY_V1",
+  "status": "EXP17_J2_R2_INVESTIGATION_COMPLETE_PENDING_CHATGPT_GATE",
+  "proximate_mechanism": "BN_RUNNING_STATISTICS_DEPENDENT_TRAIN_EVAL_MISMATCH_SUPPORTED_ON_FROZEN_TRAIN_INPUTS",
+  "upstream_root_cause": "UNRESOLVED",
+  "scientific_interpretation": "HOLD_BN_MISMATCH_UPSTREAM_UNRESOLVED",
+  "Pair_causal_verdict": null,
+  "formal_VAL_result_revised": false,
+  "formal_Last_MASTER_mask_AP95": 0.0,
+  "formal_J1_delta_percentage_points": -27.27438798549706,
+  "base_commit": "07a1a451d9885368401381bf329f72053734dbdb",
+  "production_C1_sha256": "3ccdfe26b414c9c5c6c45a1be93a9fa38210cae8c36bc7e1a8a8c227a7b30f42",
+  "protocol_sha256": "613e4e154a872e0fd88791013f8e63716100470bb4a2f73084b702bb5cd37e44",
+  "original_critical_files_verified_unchanged": 442,
+  "original_VAL_claims_and_evaluations_each": 80,
+  "checkpoint_tensor_analyses": 25,
+  "new_forward_calls": 18,
+  "new_real_TRAIN_forwards": 15,
+  "new_synthetic_stride_forwards": 3,
+  "new_backward": 0,
+  "optimizer_updates": 0,
+  "new_VAL_passes": 0,
+  "TEST_access": false,
+  "new_seeds": 0,
+  "guard_fixture_tests": 14,
+  "guard_fixture_tests_passed": true,
+  "new_BN_calibration": false,
+  "new_or_rewritten_checkpoints": 0,
+  "result_cases": {
+    "j1_full": {
+      "images": 32,
+      "postprocess": {
+        "0.001": {
+          "GT": 62,
+          "best_geometric_IoU_ignoring_class_mean": 0.7391493164693876,
+          "box_FN": 8,
+          "box_FP": 3889,
+          "box_TP": 54,
+          "detections": 3943,
+          "invalid_boxes": 0
+        },
+        "0.25": {
+          "GT": 62,
+          "best_geometric_IoU_ignoring_class_mean": 0.27251417526314337,
+          "box_FN": 43,
+          "box_FP": 5,
+          "box_TP": 19,
+          "detections": 24,
+          "invalid_boxes": 0
+        }
+      },
+      "raw_class_logit_mean": -17.656225204467773,
+      "raw_class_logit_max": 2.9985876083374023,
+      "FP32_YOLO_parts": {
+        "box_loss": 1.6645842790603638,
+        "cls_loss": 2.0741519927978516,
+        "dfl_loss": 2.074723958969116,
+        "seg_loss": 3.108228921890259,
+        "sem_loss": 0.0
+      },
+      "FP32_YOLO_sum": 285.49407958984375,
+      "foreground_by_scale": [
+        [
+          420,
+          150,
+          16
+        ]
+      ],
+      "persistent_state_unchanged": true,
+      "input_unchanged": true,
+      "head_training": false
+    },
+    "j2_full": {
+      "images": 32,
+      "postprocess": {
+        "0.001": {
+          "GT": 62,
+          "best_geometric_IoU_ignoring_class_mean": 0.008046584774649913,
+          "box_FN": 62,
+          "box_FP": 30,
+          "box_TP": 0,
+          "detections": 30,
+          "invalid_boxes": 0
+        },
+        "0.25": {
+          "GT": 62,
+          "best_geometric_IoU_ignoring_class_mean": 0.0,
+          "box_FN": 62,
+          "box_FP": 0,
+          "box_TP": 0,
+          "detections": 0,
+          "invalid_boxes": 0
+        }
+      },
+      "raw_class_logit_mean": -60.30329132080078,
+      "raw_class_logit_max": -4.8446044921875,
+      "FP32_YOLO_parts": {
+        "box_loss": 2.816948413848877,
+        "cls_loss": 17.585826873779297,
+        "dfl_loss": 117.32044982910156,
+        "seg_loss": 423.16461181640625,
+        "sem_loss": 0.0
+      },
+      "FP32_YOLO_sum": 17948.41015625,
+      "foreground_by_scale": [
+        [
+          305,
+          207,
+          63
+        ]
+      ],
+      "persistent_state_unchanged": true,
+      "input_unchanged": true,
+      "head_training": false
+    },
+    "j2_batch_stats": {
+      "images": 32,
+      "postprocess": {
+        "0.001": {
+          "GT": 62,
+          "best_geometric_IoU_ignoring_class_mean": 0.7094466222390052,
+          "box_FN": 10,
+          "box_FP": 4605,
+          "box_TP": 52,
+          "detections": 4657,
+          "invalid_boxes": 0
+        },
+        "0.25": {
+          "GT": 62,
+          "best_geometric_IoU_ignoring_class_mean": 0.249433996696626,
+          "box_FN": 44,
+          "box_FP": 6,
+          "box_TP": 18,
+          "detections": 24,
+          "invalid_boxes": 0
+        }
+      },
+      "raw_class_logit_mean": -16.612747192382812,
+      "raw_class_logit_max": 2.4751548767089844,
+      "FP32_YOLO_parts": {
+        "box_loss": 1.791323184967041,
+        "cls_loss": 2.247450590133667,
+        "dfl_loss": 2.1826796531677246,
+        "seg_loss": 3.290090799331665,
+        "sem_loss": 0.0
+      },
+      "FP32_YOLO_sum": 304.3694152832031,
+      "foreground_by_scale": [
+        [
+          413,
+          157,
+          15
+        ]
+      ],
+      "persistent_state_unchanged": true,
+      "input_unchanged": true,
+      "head_training": false
+    },
+    "j1_raw_train": {
+      "images": 2,
+      "postprocess": {
+        "0.001": {
+          "GT": 2,
+          "best_geometric_IoU_ignoring_class_mean": 0.8831258118152618,
+          "box_FN": 0,
+          "box_FP": 42,
+          "box_TP": 2,
+          "detections": 44,
+          "invalid_boxes": 0
+        },
+        "0.25": {
+          "GT": 2,
+          "best_geometric_IoU_ignoring_class_mean": 0.8831258118152618,
+          "box_FN": 0,
+          "box_FP": 1,
+          "box_TP": 2,
+          "detections": 3,
+          "invalid_boxes": 0
+        }
+      },
+      "raw_class_logit_mean": -18.20619773864746,
+      "raw_class_logit_max": 1.5196466445922852,
+      "FP32_YOLO_parts": {
+        "box_loss": 0.8571993708610535,
+        "cls_loss": 0.612709641456604,
+        "dfl_loss": 1.228651523590088,
+        "seg_loss": 1.342239499092102,
+        "sem_loss": 0.0
+      },
+      "FP32_YOLO_sum": 8.081600189208984,
+      "foreground_by_scale": [
+        [
+          20,
+          0,
+          0
+        ]
+      ],
+      "persistent_state_unchanged": true,
+      "input_unchanged": true,
+      "head_training": false
+    },
+    "j2_raw_train": {
+      "images": 2,
+      "postprocess": {
+        "0.001": {
+          "GT": 2,
+          "best_geometric_IoU_ignoring_class_mean": 0.0,
+          "box_FN": 2,
+          "box_FP": 2,
+          "box_TP": 0,
+          "detections": 2,
+          "invalid_boxes": 0
+        },
+        "0.25": {
+          "GT": 2,
+          "best_geometric_IoU_ignoring_class_mean": 0.0,
+          "box_FN": 2,
+          "box_FP": 0,
+          "box_TP": 0,
+          "detections": 0,
+          "invalid_boxes": 0
+        }
+      },
+      "raw_class_logit_mean": -60.896705627441406,
+      "raw_class_logit_max": -4.906130790710449,
+      "FP32_YOLO_parts": null,
+      "FP32_YOLO_sum": null,
+      "foreground_by_scale": null,
+      "persistent_state_unchanged": true,
+      "input_unchanged": true,
+      "head_training": false
+    },
+    "j2_epoch005": {
+      "images": 32,
+      "postprocess": {
+        "0.001": {
+          "GT": 62,
+          "best_geometric_IoU_ignoring_class_mean": 0.00773088603971466,
+          "box_FN": 62,
+          "box_FP": 9600,
+          "box_TP": 0,
+          "detections": 9600,
+          "invalid_boxes": 0
+        },
+        "0.25": {
+          "GT": 62,
+          "best_geometric_IoU_ignoring_class_mean": 0.00773088603971466,
+          "box_FN": 62,
+          "box_FP": 9600,
+          "box_TP": 0,
+          "detections": 9600,
+          "invalid_boxes": 0
+        }
+      },
+      "raw_class_logit_mean": -622.816650390625,
+      "raw_class_logit_max": 1198.9217529296875,
+      "FP32_YOLO_parts": {
+        "box_loss": 4.3447675704956055,
+        "cls_loss": 218865.265625,
+        "dfl_loss": 6556.9658203125,
+        "seg_loss": 15617232.0,
+        "sem_loss": 0.0
+      },
+      "FP32_YOLO_sum": 506965056.0,
+      "foreground_by_scale": [
+        [
+          148,
+          391,
+          0
+        ]
+      ],
+      "persistent_state_unchanged": true,
+      "input_unchanged": true,
+      "head_training": false
+    },
+    "j2_epoch010": {
+      "images": 32,
+      "postprocess": {
+        "0.001": {
+          "GT": 62,
+          "best_geometric_IoU_ignoring_class_mean": 0.1028457403505942,
+          "box_FN": 62,
+          "box_FP": 9600,
+          "box_TP": 0,
+          "detections": 9600,
+          "invalid_boxes": 0
+        },
+        "0.25": {
+          "GT": 62,
+          "best_geometric_IoU_ignoring_class_mean": 0.1028457403505942,
+          "box_FN": 62,
+          "box_FP": 9600,
+          "box_TP": 0,
+          "detections": 9600,
+          "invalid_boxes": 0
+        }
+      },
+      "raw_class_logit_mean": -27.3303279876709,
+      "raw_class_logit_max": 30.260208129882812,
+      "FP32_YOLO_parts": {
+        "box_loss": 3.833627700805664,
+        "cls_loss": 17105.9140625,
+        "dfl_loss": 31.591766357421875,
+        "seg_loss": 1607.6148681640625,
+        "sem_loss": 0.0
+      },
+      "FP32_YOLO_sum": 599966.5625,
+      "foreground_by_scale": [
+        [
+          308,
+          183,
+          93
+        ]
+      ],
+      "persistent_state_unchanged": true,
+      "input_unchanged": true,
+      "head_training": false
+    },
+    "j2_epoch015": {
+      "images": 32,
+      "postprocess": {
+        "0.001": {
+          "GT": 62,
+          "best_geometric_IoU_ignoring_class_mean": 0.061895540498587635,
+          "box_FN": 62,
+          "box_FP": 2183,
+          "box_TP": 0,
+          "detections": 2183,
+          "invalid_boxes": 0
+        },
+        "0.25": {
+          "GT": 62,
+          "best_geometric_IoU_ignoring_class_mean": 0.003238578428394131,
+          "box_FN": 62,
+          "box_FP": 76,
+          "box_TP": 0,
+          "detections": 76,
+          "invalid_boxes": 0
+        }
+      },
+      "raw_class_logit_mean": -107.08761596679688,
+      "raw_class_logit_max": 3.006999969482422,
+      "FP32_YOLO_parts": {
+        "box_loss": 4.873508453369141,
+        "cls_loss": 13.29450511932373,
+        "dfl_loss": 252.629150390625,
+        "seg_loss": 128841.28125,
+        "sem_loss": 0.0
+      },
+      "FP32_YOLO_sum": 4131586.5,
+      "foreground_by_scale": [
+        [
+          75,
+          287,
+          71
+        ]
+      ],
+      "persistent_state_unchanged": true,
+      "input_unchanged": true,
+      "head_training": false
+    },
+    "j2_ema_saved": {
+      "images": 32,
+      "postprocess": {
+        "0.001": {
+          "GT": 62,
+          "best_geometric_IoU_ignoring_class_mean": 0.008047828270543006,
+          "box_FN": 62,
+          "box_FP": 30,
+          "box_TP": 0,
+          "detections": 30,
+          "invalid_boxes": 0
+        },
+        "0.25": {
+          "GT": 62,
+          "best_geometric_IoU_ignoring_class_mean": 0.0,
+          "box_FN": 62,
+          "box_FP": 0,
+          "box_TP": 0,
+          "detections": 0,
+          "invalid_boxes": 0
+        }
+      },
+      "raw_class_logit_mean": -61.537750244140625,
+      "raw_class_logit_max": -4.8618903160095215,
+      "FP32_YOLO_parts": null,
+      "FP32_YOLO_sum": null,
+      "foreground_by_scale": null,
+      "persistent_state_unchanged": true,
+      "input_unchanged": true,
+      "head_training": false
+    }
+  },
+  "best_extra_inference": false,
+  "resources": {
+    "whole_successful_process_seconds": 55.104724,
+    "sum_case_seconds": 29.09110237006098,
+    "maximum_case_GPU_allocated_bytes": 1286262272,
+    "GPU_limit_bytes": 10737418240
+  },
+  "determinism_limitation": "FP32 and TF32 disabled; deterministic warn_only was set but CUBLAS_WORKSPACE_CONFIG was absent. Four cuBLAS warnings retained. Observed bitwise controls do not establish a strict rerun guarantee. No budget retry.",
+  "evidence": {
+    "before_sha256": "2214b049576436ddcd42dd350cb3ed2d15c9f35db043b35a5cac462bb941546b",
+    "after_sha256": "701346c6ef9a5c0ab990d878e292371011febc556af23fed585594280223302b",
+    "private_R2_ledger_sha256": "a29b46b2b3a9e35498ebba3a7ed3336d0ebcbc176d9cdab486d9f690e27cec1d",
+    "CPU_findings_sha256": "5e10493380722a4d54f786330cfb05b7eb81cfe683d7d2bce8d42c7f52290235",
+    "independent_mechanism_review_sha256": "8af2150cb96e0fff19a7199307b863984b883cf72ed37ca6c26e6f2ae5d1a8ce",
+    "successful_runner_receipt_sha256": "1cfe345f9a52579c3c92e07002e0f7e3b324470e0535b4c6bb5eda45e6b51d83"
+  },
+  "preflight_refusals": "Metadata lazy-import refusal and packet lexical-path comparison refusal preserved; both occurred with zero model forward/claims. Helper was corrected to the existing C1 lexical path policy, not widened.",
+  "limitations": [
+    "Only one frozen augmented TRAIN batch and two fixed original TRAIN images, not population performance.",
+    "No new Mask TP/AP or VAL; the batch-stat variant is disposable and is not Last, Best or EMA.",
+    "All BN mean/variance sources were changed together; no individual layer or mean-versus-variance causal localization.",
+    "Only final MASTER had a BN intervention; early states and EMA were not independently rescued.",
+    "Pair, clipping, optimizer dynamics, local AMP sensitivity and BN drift formation remain causal hypotheses."
+  ],
+  "independent_completed_diagnostic_checks": 59,
+  "independent_completed_diagnostic_audit_sha256": "43fdd6080c6f4456e80d18f82a3c4dbacf4f36b93929118be434a86751d556b1"
+}

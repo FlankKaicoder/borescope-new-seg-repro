@@ -1,0 +1,227 @@
+{
+  "comparisons": [
+    {
+      "a": "j1_full",
+      "b": "j1_native",
+      "tensors": {
+        "decoded": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        },
+        "dfl_boxes": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        },
+        "mask_coefficient": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        },
+        "proto": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        },
+        "scores": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        }
+      },
+      "tolerance_is_investigation_marker_not_bug_verdict": true
+    },
+    {
+      "a": "j2_full",
+      "b": "j2_native",
+      "tensors": {
+        "decoded": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        },
+        "dfl_boxes": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        },
+        "mask_coefficient": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        },
+        "proto": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        },
+        "scores": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        }
+      },
+      "tolerance_is_investigation_marker_not_bug_verdict": true
+    },
+    {
+      "a": "j2_native",
+      "b": "j2_saved",
+      "tensors": {
+        "decoded": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        },
+        "dfl_boxes": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        },
+        "mask_coefficient": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        },
+        "proto": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        },
+        "scores": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        }
+      },
+      "tolerance_is_investigation_marker_not_bug_verdict": true
+    },
+    {
+      "a": "j2_saved",
+      "b": "j2_fused",
+      "tensors": {
+        "decoded": {
+          "allclose_atol1e_5_rtol1e_4": false,
+          "exact": false,
+          "max_abs": 0.02734375,
+          "relative_L2": 1.6392886357507487e-06
+        },
+        "dfl_boxes": {
+          "allclose_atol1e_5_rtol1e_4": false,
+          "exact": false,
+          "max_abs": 0.020263671875,
+          "relative_L2": 3.4512001792317893e-06
+        },
+        "mask_coefficient": {
+          "allclose_atol1e_5_rtol1e_4": false,
+          "exact": false,
+          "max_abs": 0.0018463134765625,
+          "relative_L2": 3.844169519647239e-06
+        },
+        "proto": {
+          "allclose_atol1e_5_rtol1e_4": false,
+          "exact": false,
+          "max_abs": 0.0007047653198242188,
+          "relative_L2": 1.7137896826063156e-05
+        },
+        "scores": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": false,
+          "max_abs": 0.0032806396484375,
+          "relative_L2": 6.153446387825329e-06
+        }
+      },
+      "tolerance_is_investigation_marker_not_bug_verdict": true
+    },
+    {
+      "a": "j1_native",
+      "b": "j1_backend",
+      "tensors": {
+        "decoded": {
+          "allclose_atol1e_5_rtol1e_4": false,
+          "exact": false,
+          "max_abs": 0.008392333984375,
+          "relative_L2": 2.386227795390088e-07
+        },
+        "dfl_boxes": {
+          "allclose_atol1e_5_rtol1e_4": false,
+          "exact": false,
+          "max_abs": 0.000946044921875,
+          "relative_L2": 1.360804427601697e-06
+        },
+        "mask_coefficient": {
+          "allclose_atol1e_5_rtol1e_4": false,
+          "exact": false,
+          "max_abs": 9.369850158691406e-05,
+          "relative_L2": 1.4257966337357503e-06
+        },
+        "proto": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": false,
+          "max_abs": 1.3053417205810547e-05,
+          "relative_L2": 1.5242780161160681e-06
+        },
+        "scores": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": false,
+          "max_abs": 5.91278076171875e-05,
+          "relative_L2": 2.2904340792529656e-07
+        }
+      },
+      "tolerance_is_investigation_marker_not_bug_verdict": true
+    },
+    {
+      "a": "j2_fused",
+      "b": "j2_backend",
+      "tensors": {
+        "decoded": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        },
+        "dfl_boxes": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        },
+        "mask_coefficient": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        },
+        "proto": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        },
+        "scores": {
+          "allclose_atol1e_5_rtol1e_4": true,
+          "exact": true,
+          "max_abs": 0.0,
+          "relative_L2": 0.0
+        }
+      },
+      "tolerance_is_investigation_marker_not_bug_verdict": true
+    }
+  ],
+  "scope": "Actual wrapper return and raw head tensors on one frozen TRAIN packet; numerical fusion markers are retained, not automatically declared causal bugs."
+}

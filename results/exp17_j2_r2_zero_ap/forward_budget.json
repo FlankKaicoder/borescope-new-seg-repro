@@ -1,0 +1,231 @@
+{
+  "maximum": 18,
+  "completed": 18,
+  "real_TRAIN": 15,
+  "synthetic_stride": 3,
+  "new_backward": 0,
+  "optimizer_updates": 0,
+  "new_VAL_passes": 0,
+  "TEST_access": false,
+  "original_VAL_passes_unchanged": 80,
+  "remaining_R2_forward_budget": 0,
+  "calls": [
+    {
+      "device": "cpu",
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "label": "construct_full_template",
+      "source_result_sha256": "80a52a5996fefbad355cfd0f912e6685b4016625feac81d0d77f70a8ed67cd10",
+      "kind": "SYNTHETIC_STRIDE_FORWARD"
+    },
+    {
+      "device": "cpu",
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "label": "export_j1_native",
+      "source_result_sha256": "93800fdfb617e2ac822f733176aebc5070301ad2e73d3fd193afccf3c500998c",
+      "kind": "SYNTHETIC_STRIDE_FORWARD"
+    },
+    {
+      "device": "cpu",
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "label": "export_j2_native",
+      "source_result_sha256": "226fca78d7edd3c8711e02b96e309ee0744595233f34aba73ad2891afaf8bd3c",
+      "kind": "SYNTHETIC_STRIDE_FORWARD"
+    },
+    {
+      "device": "cuda:0",
+      "input_shape": [
+        32,
+        3,
+        640,
+        640
+      ],
+      "label": "j1_full",
+      "source_result_sha256": "0ada74127e6dc756e67a34fbaaac657d1cf940b165fb1f59fb6dae9144f94ef8",
+      "kind": "TRAIN_FORWARD"
+    },
+    {
+      "device": "cuda:0",
+      "input_shape": [
+        32,
+        3,
+        640,
+        640
+      ],
+      "label": "j2_full",
+      "source_result_sha256": "a3323b121e26f27eba482957a66f61206dce39255276d535c1805d67f7bb630a",
+      "kind": "TRAIN_FORWARD"
+    },
+    {
+      "device": "cuda:0",
+      "input_shape": [
+        32,
+        3,
+        640,
+        640
+      ],
+      "label": "j1_native",
+      "source_result_sha256": "b2065d4085ae628cd98902a7b516abf985e3f837186adf54701dff4542e742f6",
+      "kind": "TRAIN_FORWARD"
+    },
+    {
+      "device": "cuda:0",
+      "input_shape": [
+        32,
+        3,
+        640,
+        640
+      ],
+      "label": "j2_native",
+      "source_result_sha256": "50ecf18ece9ee9c184fd7730141aab3b7c51f62ecf4f1da52c973597453aac74",
+      "kind": "TRAIN_FORWARD"
+    },
+    {
+      "device": "cuda:0",
+      "input_shape": [
+        32,
+        3,
+        640,
+        640
+      ],
+      "label": "j2_saved",
+      "source_result_sha256": "6902b5e151a83d8bfd7dfc77005151d991e5769f7b3b4f6a70345ca21675e1b4",
+      "kind": "TRAIN_FORWARD"
+    },
+    {
+      "device": "cuda:0",
+      "input_shape": [
+        32,
+        3,
+        640,
+        640
+      ],
+      "label": "j2_fused",
+      "source_result_sha256": "1b76571fd7445f559e22aa53674e1a41e2d151809ac5219fa320f9a2454a930f",
+      "kind": "TRAIN_FORWARD"
+    },
+    {
+      "device": "cuda:0",
+      "input_shape": [
+        32,
+        3,
+        640,
+        640
+      ],
+      "label": "j1_backend",
+      "source_result_sha256": "80a02a1f07afffd950d6840aea5b97339b5ef531f00ebae71c437e0c752e4432",
+      "kind": "TRAIN_FORWARD"
+    },
+    {
+      "device": "cuda:0",
+      "input_shape": [
+        32,
+        3,
+        640,
+        640
+      ],
+      "label": "j2_backend",
+      "source_result_sha256": "1d987feb67e2d7234dd25334f87d11b896fd2ee1addf3712ef8ccf89182acdb9",
+      "kind": "TRAIN_FORWARD"
+    },
+    {
+      "device": "cuda:0",
+      "input_shape": [
+        2,
+        3,
+        640,
+        640
+      ],
+      "label": "j1_raw_train",
+      "source_result_sha256": "c3f8193c37cba3990a350de238f13d26f467520fdb72a8287a4d2a26542d924d",
+      "kind": "TRAIN_FORWARD"
+    },
+    {
+      "device": "cuda:0",
+      "input_shape": [
+        2,
+        3,
+        640,
+        640
+      ],
+      "label": "j2_raw_train",
+      "source_result_sha256": "076b9e7597c4d27fef42a6d7117145d4ac14041605e657c4490d6dbd804adc12",
+      "kind": "TRAIN_FORWARD"
+    },
+    {
+      "device": "cuda:0",
+      "input_shape": [
+        32,
+        3,
+        640,
+        640
+      ],
+      "label": "j2_batch_stats",
+      "source_result_sha256": "3475fb4087f4419f21301a3d7abf52370a556286b63fae3e79a3a6f093500807",
+      "kind": "TRAIN_FORWARD"
+    },
+    {
+      "device": "cuda:0",
+      "input_shape": [
+        32,
+        3,
+        640,
+        640
+      ],
+      "label": "j2_epoch005",
+      "source_result_sha256": "04e4384a2a6d9da4287619b3a5ec1fc53aba7b64971730f6af2d3eb7cb7e5c83",
+      "kind": "TRAIN_FORWARD"
+    },
+    {
+      "device": "cuda:0",
+      "input_shape": [
+        32,
+        3,
+        640,
+        640
+      ],
+      "label": "j2_epoch010",
+      "source_result_sha256": "b6f8ca58cf11e9e7f6398604ef500ceefc4e6c55743f0c8e9ba66c35b74e4be1",
+      "kind": "TRAIN_FORWARD"
+    },
+    {
+      "device": "cuda:0",
+      "input_shape": [
+        32,
+        3,
+        640,
+        640
+      ],
+      "label": "j2_epoch015",
+      "source_result_sha256": "aa44235e3a5e410c904dc89b682d2993c9f6c99e36b56f9197542dcc6caf688f",
+      "kind": "TRAIN_FORWARD"
+    },
+    {
+      "device": "cuda:0",
+      "input_shape": [
+        32,
+        3,
+        640,
+        640
+      ],
+      "label": "j2_ema_saved",
+      "source_result_sha256": "5f589193328dcf00b437e63d01a0153422c20c826316238fc49152075d9ee7d2",
+      "kind": "TRAIN_FORWARD"
+    }
+  ],
+  "original_private_ledger_sha256": "a29b46b2b3a9e35498ebba3a7ed3336d0ebcbc176d9cdab486d9f690e27cec1d"
+}

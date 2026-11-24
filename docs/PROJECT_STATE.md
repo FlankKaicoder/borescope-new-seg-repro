@@ -1,5 +1,10 @@
 # Project state
 
+## Exp17-J2-R2 BN-statistic inference mismatch investigation (2026-11-24)
+
+EXP17_J2_R2_INVESTIGATION_COMPLETE_PENDING_CHATGPT_GATE. CPU25checkpoints and bounded18forwards=15TRAIN+3stride complete; newbackward/update/VAL/TEST0. Same32TRAIN/62GT, J2 running-stat0det versus BNbatchstat24det/18BoxTP (J1 24det/19TP); no saved-state change/calibration. Full/native/serialized and fused/backend control pairs bitwise equal; fusion roundoff retained. BN-stat-dependent train/eval mismatch supported as proximal mechanism; upstream drift/Pair/clip/AMP cause unresolved. Original442criticalfiles/80VALrecords unchanged, formal LastMaskAP95 stays0. CUBLAS warn_only limitation retained. SCIENTIFIC_HOLD_BN_MISMATCH_UPSTREAM_UNRESOLVED; stop before repair/retrain/re-VAL. [R2 report](../EXP17_J2_R2_ROOT_CAUSE_REPORT.md).
+
+
 ## Exp17-J2 Seed42 completed execution after R1 (2026-11-23 UTC)
 
 EXP17_J2_SEED42_FORMAL_TRAINING_COMPLETE_PENDING_CHATGPT_RESULT_GATE. Actual100epochs/2100attempts=commits/20VALevents/80passes/20periodic; AMPskip0; exit0 at2026-11-23T20:36:15Z. Original105/C0 evidence preserved; R1 AUX5closed, MASTER2 retained/EMA2 added, resumed106 under C1. LastMASTER MaskAP95=0 vs J1=.2727438798549706, delta -27.27438798549706pp; all40standard roles zeroAP. SCIENTIFIC_INTERPRETATION_HOLD_UNEXPLAINED_ZERO_AP; static review found no definitive cause, no causal Pair claim, no additional seeds recommended before Result Gate. CPUtensor and46integrity checks PASS; private1.207GB archive copied Windows/SHAverified. No extraVAL/TEST or parameter changes. [Final handoff](../EXP17_J2_SEED42_FORMAL_TRAINING_HANDOFF.md).

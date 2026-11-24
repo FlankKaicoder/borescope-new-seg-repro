@@ -1,0 +1,288 @@
+{
+  "analysis_script_sha256_at_tensor_execution": "11554c465eab3f73738cf26f55253df2862da89dee6d634d38b084c88d2a7143",
+  "b0_one_step_consistency": {
+    "actual_delta_l2": 1.0455001646882844,
+    "conservative_FP32_roundoff_l2_bound_estimate": 9.866921120284882e-06,
+    "fp32_emulation_error_l2": 5.070881314841103e-07,
+    "fp32_emulation_exact_elements": 2823311,
+    "ideal_formula_residual_l2": 4.971020675757625e-06,
+    "max_fp32_emulation_error_ulp": 3462.0,
+    "negative_g2_beyond_roundoff_bound": 0,
+    "parameter_elements": 2868789,
+    "parameter_tensors": 294,
+    "reconstructed_postclip_gradient_l2": 9.999999819505089,
+    "second_moment_reconstructed_squared_gradient_sum": 100.00011481722206,
+    "updates": [
+      104,
+      105
+    ]
+  },
+  "b1_final_slot_different_fields": [
+    "extra"
+  ],
+  "b1_final_slot_positions": [
+    {
+      "batch_position": 21,
+      "epoch": 99,
+      "global_update": 2100
+    },
+    {
+      "batch_position": 21,
+      "epoch": 99,
+      "global_update": 2100
+    }
+  ],
+  "b1_physical_fields_identical": true,
+  "bn_last_master": {
+    "global_running_var_l2_ratio": 7.549857733641252,
+    "j1": {
+      "beta_l2": 104.24264179273668,
+      "bn_layers": 90,
+      "epoch": 100,
+      "gamma_l2": 104.751539994708,
+      "label": "J1_epoch100_Last",
+      "max_running_var": 13606.10546875,
+      "negative_var_channels": 0,
+      "num_batches_tracked_max": 2101,
+      "num_batches_tracked_min": 2101,
+      "role": "MASTER",
+      "running_mean_l2": 3365.450573288055,
+      "running_var_l2": 31437.436990009486,
+      "zero_var_channels": 0
+    },
+    "j2": {
+      "beta_l2": 271.2646315755801,
+      "bn_layers": 90,
+      "epoch": 100,
+      "gamma_l2": 107.68735109486852,
+      "label": "J2_epoch100",
+      "max_running_var": 78868.1953125,
+      "negative_var_channels": 0,
+      "num_batches_tracked_max": 2101,
+      "num_batches_tracked_min": 2101,
+      "role": "MASTER",
+      "running_mean_l2": 26295.644519133253,
+      "running_var_l2": 237348.17678488267,
+      "zero_var_channels": 0
+    }
+  },
+  "counts": {
+    "b0_slots": 2,
+    "b1_final_slots": 2,
+    "bn_rows": 3780,
+    "delta_rows": 588,
+    "domain_rows": 588,
+    "j1_checkpoints": 1,
+    "moment_rows": 6174,
+    "periodic_checkpoints": 20,
+    "tensor_rows": 23730
+  },
+  "derived_inputs": [
+    {
+      "file": "report.json",
+      "sha256": "c1bd99aff2125cc487856229a5ad6ef21e479be3443bddd56e3b83cf8fef2574"
+    },
+    {
+      "file": "tensor_statistics.csv",
+      "sha256": "ec80dbc7ca3b2cf178edf3cfa7e21570738af1e1286d4e634f23810c0cf85219"
+    },
+    {
+      "file": "bn_statistics.csv",
+      "sha256": "3034943e80ba900a73919749b2004af0bbb8d8015b3fcf27c507a23453ad89f1"
+    },
+    {
+      "file": "adamw_moments.csv",
+      "sha256": "1047515260ecdafabbd6f80c1021a616a505c9bc31d4878183c7b676c4315995"
+    },
+    {
+      "file": "state_deltas.csv",
+      "sha256": "a656a6066cb33644baf5031018155b1d75e75f596a58f985bcab762fbb15ae4d"
+    }
+  ],
+  "derived_summary_script_sha256": "15c857ec7be4ee3980e80a513ba30efecb4d2ef9a67b009a355247564d6395e2",
+  "dfl_unchanged_in_all_comparisons": true,
+  "evidence_boundaries": [
+    "No model, optimizer, forward, backward, dataset, image, VAL or TEST was constructed/read/executed.",
+    "All tensor loads used weights_only=True and map_location=cpu. Native-module export pickle files were not opened.",
+    "Finite state/moments and update consistency do not establish correct predictions or a causal source of zero AP.",
+    "The 104-to-105 moment difference approximates the optimizer-fed post-unscale/post-clip gradient, with FP32 cancellation error; it is not the raw preclip gradient or historical gradient sequence.",
+    "The FP32 roundoff bound is a conservative arithmetic estimate, not a formal implementation-specific error proof; foreach/fused arithmetic may differ from the single-tensor emulation.",
+    "BN statistics are persisted buffers/affine tensors; no feature activation distributions or runtime BN epsilon were measured.",
+    "Periodic checkpoint spacing cannot localize events within each 105-update interval. Both final slots are update2100 and cannot reveal update2099-to-2100 gradients.",
+    "AdamW adaptive/decay proxies at periodic snapshots are algebraic summaries, not additional optimizer updates or matched J1/J2 interventions.",
+    "No missing YOLO box/seg/cls/dfl loss or foreground history can be reconstructed from these saved tensors.",
+    "J1/J2 tensor differences are observational across two training procedures; no abnormal statistic alone attributes collapse to Pair Ranking.",
+    "state_deltas.csv covers all floating state including BN buffers. Parameter-only adjacent deltas were not separately retained; they cannot be derived by subtracting aggregate L2 norms.",
+    "Parameter-only moments/weight trajectories and BN comparisons are descriptive; no new forward/backward was used to test feature distributions or intervention effects."
+  ],
+  "j1_j2_metadata": {
+    "class_names_equal": true,
+    "file_sha256": "902fbc1efa4693e2601c162c76fb3736b38036d7eb0473438fe84317bb7895f5",
+    "model_config_equal": true,
+    "native_master_sha256": "1ffe60884850dd454bb7c5ffdddcd9e5c5d9163f4db5d3b5b40026d10a24c107",
+    "optimizer_hyperparameters_equal": true,
+    "optimizer_names_equal": true,
+    "state_keys_equal": true,
+    "state_tensor_count": 565
+  },
+  "observations": [
+    "All 25 loaded plain-tensor checkpoints were finite and CPU-only, with their persisted MASTER/EMA hashes verified and all registered inputs unchanged.",
+    "J1 and J2 Last have identical model configuration/class metadata, state keys/shapes, optimizer-name ordering and final optimizer hyperparameters. This does not establish a matched training intervention.",
+    "The large all-floating-state norms are dominated by BN running_var buffers. Separate parameter-only statistics are supplied so these are not described as weight explosion.",
+    "Several J2 final BN variance tensors are much larger than the J1 Last observational reference. This justifies a BN-state/activation hypothesis, but does not prove BN caused zero AP or that Pair caused the drift.",
+    "J1 also has large head/proto running variances; a large BN statistic by itself is not sufficient to declare failure.",
+    "The B0 104-to-105 AdamW tensor formula agrees closely with the observed actual update; this checks one step only and cannot be generalized to the full 2100-update gradient history.",
+    "B1 final slots both hold update2100, and all physical training fields are identical. Only extra differs, consistent with AUX changing metadata rather than training tensors.",
+    "The DFL constant is unchanged in all aggregate deltas and has no AdamW state, as expected for its frozen parameter.",
+    "No NaN/Inf, negative persisted BN variance, negative AdamW second moment or missing trainable moment state was observed in the inspected checkpoints.",
+    "Final head classification biases overlap the J1 range; biases alone cannot recover logits, assignment, detection confidence or explain AP."
+  ],
+  "parameter_only_definition": "All state entries except running_mean/running_var/num_batches_tracked; 295 tensors equal the exact optimizer-name count, including frozen DFL.",
+  "parameter_only_summary": [
+    {
+      "label": "J2_epoch005",
+      "parameter_elements": 2868805,
+      "parameter_l2": 173.93340346448866,
+      "parameter_max_abs": 15.0,
+      "parameter_tensors": 295
+    },
+    {
+      "label": "J2_epoch100",
+      "parameter_elements": 2868805,
+      "parameter_l2": 477.81340852857375,
+      "parameter_max_abs": 16.93086051940918,
+      "parameter_tensors": 295
+    },
+    {
+      "label": "J1_epoch100_Last",
+      "parameter_elements": 2868805,
+      "parameter_l2": 244.16581326331647,
+      "parameter_max_abs": 15.0,
+      "parameter_tensors": 295
+    }
+  ],
+  "schema": "EXP17_J2_R2_OFFLINE_TENSOR_FINDINGS_V1",
+  "status": "CPU_OFFLINE_ANALYSIS_COMPLETE_RESULT_VALIDITY_HOLD",
+  "top_bn_master_j2_j1_l2_ratios": [
+    {
+      "domain": "neck_11_22",
+      "j1_l2": 11.43491378213804,
+      "j1_max": 5.501498222351074,
+      "j2_j1_l2_ratio": 1919.4981266628895,
+      "j2_l2": 21949.295583365623,
+      "j2_max": 19130.61328125,
+      "name": "model.16.m.0.cv1.bn.running_var",
+      "role": "MASTER"
+    },
+    {
+      "domain": "neck_11_22",
+      "j1_l2": 120.49661053434279,
+      "j1_max": 42.93805694580078,
+      "j2_j1_l2_ratio": 413.2813289837818,
+      "j2_l2": 49798.99933967435,
+      "j2_max": 23954.404296875,
+      "name": "model.13.m.0.cv1.bn.running_var",
+      "role": "MASTER"
+    },
+    {
+      "domain": "backbone_0_10",
+      "j1_l2": 731.0357027365859,
+      "j1_max": 195.01385498046875,
+      "j2_j1_l2_ratio": 296.2649230578416,
+      "j2_l2": 216580.23622378978,
+      "j2_max": 78868.1953125,
+      "name": "model.5.bn.running_var",
+      "role": "MASTER"
+    },
+    {
+      "domain": "neck_11_22",
+      "j1_l2": 186.88333357390553,
+      "j1_max": 59.08230209350586,
+      "j2_j1_l2_ratio": 277.66368196423167,
+      "j2_l2": 51890.714497880326,
+      "j2_max": 26202.3125,
+      "name": "model.13.m.0.cv2.bn.running_var",
+      "role": "MASTER"
+    },
+    {
+      "domain": "backbone_0_10",
+      "j1_l2": 3.8468135878793914,
+      "j1_max": 1.523303508758545,
+      "j2_j1_l2_ratio": 268.3694363663789,
+      "j2_l2": 1032.36719438572,
+      "j2_max": 826.7713012695312,
+      "name": "model.2.m.0.cv2.bn.running_var",
+      "role": "MASTER"
+    },
+    {
+      "domain": "backbone_0_10",
+      "j1_l2": 37.77714745880647,
+      "j1_max": 12.290828704833984,
+      "j2_j1_l2_ratio": 209.85137934662404,
+      "j2_l2": 7927.586502011351,
+      "j2_max": 5759.31640625,
+      "name": "model.4.m.0.cv2.bn.running_var",
+      "role": "MASTER"
+    },
+    {
+      "domain": "neck_11_22",
+      "j1_l2": 21.28176064128099,
+      "j1_max": 6.386264801025391,
+      "j2_j1_l2_ratio": 193.20853018605752,
+      "j2_l2": 4111.817693273389,
+      "j2_max": 2990.88134765625,
+      "name": "model.16.m.0.cv2.bn.running_var",
+      "role": "MASTER"
+    },
+    {
+      "domain": "backbone_0_10",
+      "j1_l2": 24.353793505199825,
+      "j1_max": 9.228796005249023,
+      "j2_j1_l2_ratio": 66.88119541100737,
+      "j2_l2": 1628.8108224205916,
+      "j2_max": 1015.7946166992188,
+      "name": "model.4.m.0.cv1.bn.running_var",
+      "role": "MASTER"
+    },
+    {
+      "domain": "neck_11_22",
+      "j1_l2": 17.108292890252937,
+      "j1_max": 3.953169584274292,
+      "j2_j1_l2_ratio": 53.021204933349594,
+      "j2_l2": 907.1023033938689,
+      "j2_max": 655.51123046875,
+      "name": "model.16.cv2.bn.running_var",
+      "role": "MASTER"
+    },
+    {
+      "domain": "backbone_0_10",
+      "j1_l2": 158.38277773558903,
+      "j1_max": 64.66384887695312,
+      "j2_j1_l2_ratio": 51.75233472767235,
+      "j2_l2": 8196.678528470735,
+      "j2_max": 7579.921875,
+      "name": "model.6.m.0.m.1.cv1.bn.running_var",
+      "role": "MASTER"
+    },
+    {
+      "domain": "backbone_0_10",
+      "j1_l2": 0.24911995250628888,
+      "j1_max": 0.1736215204000473,
+      "j2_j1_l2_ratio": 48.842409100782895,
+      "j2_l2": 12.167618635479766,
+      "j2_max": 11.537008285522461,
+      "name": "model.0.bn.running_var",
+      "role": "MASTER"
+    },
+    {
+      "domain": "backbone_0_10",
+      "j1_l2": 51.29353619747649,
+      "j1_max": 13.57569694519043,
+      "j2_j1_l2_ratio": 44.05942073840968,
+      "j2_l2": 2259.963492485463,
+      "j2_max": 1107.389404296875,
+      "name": "model.6.cv1.bn.running_var",
+      "role": "MASTER"
+    }
+  ]
+}

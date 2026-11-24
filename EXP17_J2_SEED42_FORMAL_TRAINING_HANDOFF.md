@@ -1,5 +1,7 @@
 # Exp17-J2 Seed42：R1恢复后的完整正式训练交接
 
+R2后续调查：冻结TRAIN同权重BN统计对照支持train/eval归一化失配近因；上游原因未决，正式VAL结果保持0。见[R2根因调查](EXP17_J2_R2_ROOT_CAUSE_REPORT.md)。以下保留原正式训练交接。
+
 执行状态：**EXP17_J2_SEED42_FORMAL_TRAINING_COMPLETE_PENDING_CHATGPT_RESULT_GATE**。科学解释状态：**HOLD_UNEXPLAINED_ZERO_AP**。
 
 100轮、2100次有效更新、20次VAL事件/80次native pass已真实完成，R1进程退出0。固定Epoch100 Last FP32 MASTER的Mask AP50–95为**0**，J1同Seed42/Last MASTER为**0.2727438798549706**，观测差值**−27.27438798549706个百分点**。全部40个MASTER/EMA标准评价角色的AP、P、R均为0。必须保留这个异常结果；目前未找到确定工程根因，不能将它直接归因于Pair或宣布方法已得到有效科研否定。
