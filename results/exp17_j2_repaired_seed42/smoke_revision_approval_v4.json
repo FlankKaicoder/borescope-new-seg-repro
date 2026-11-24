@@ -1,0 +1,21 @@
+{
+  "authorized": true,
+  "basis": "USER_REPLY_APPROVED_ADDITIONAL_BUDGET_AND_CONTINUE",
+  "cumulative_upper_bound": {
+    "A": 4,
+    "N": 4,
+    "VAL": 0,
+    "component_autograd": 6,
+    "disposable_updates": 1,
+    "joint_backward": 1
+  },
+  "proposal_sha256": "1d6a7b8198e5e4767976603456974fd5518ed27a9e9bbbbe3e7def7bccc0cb45",
+  "scope": {
+    "A": 3,
+    "N": 3,
+    "VAL": 0,
+    "component_autograd": 6,
+    "disposable_updates": 1,
+    "joint_backward": 1
+  }
+}

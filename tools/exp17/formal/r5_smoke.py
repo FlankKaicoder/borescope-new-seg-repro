@@ -1,10 +1,11 @@
-"""Single-use R5 AMP validation, bounded to 3A/3N/6 VJPs/1 disposable update."""
+"""Single-use R5 AMP validation, bounded to 2A/2N/6 VJPs/1 disposable update."""
 import argparse
 import gc
 import json
 import time
 import traceback
 from pathlib import Path
+from unittest.mock import patch
 
 import torch
 
@@ -14,7 +15,7 @@ from tools.exp17.formal.repaired_seed42 import MODE, adapter_type
 
 def forward_fingerprints(result):
     from tools.exp17.formal.checkpoint import state_hash
-    return {key: state_hash(getattr(result, key).detach().cpu())
+    return {key: state_hash(getattr(result, key))
             for key in ("yolo", "parts", "supcon", "pair", "total", "a_p3", "n_p3", "a_embedding", "n_embedding")}
 
 
@@ -41,47 +42,60 @@ def run(gate):
         require(file_sha(spec["path"]) == spec["sha256"], "R5 smoke batch identity differs")
         vectors, fingerprints, buffers = {}, {}, {}
         torch.cuda.reset_peak_memory_stats()
-        for mode in ("replay_a", MODE):
-            restore_training_state(trainer, initial, bindings=bindings)
-            packet = torch.load(spec["path"], map_location="cpu", weights_only=False)
-            prepared = prepare_batch(packet["batch"], adapter.index, adapter.groups, decode_N=True,
-                                     device=trainer.device, asset_cache=DecodedAssetCache(max_bytes=0))
-            with torch.autocast("cuda", dtype=torch.float16):
-                counts["A"] += 1
-                counts["N"] += 1
-                result = forward_joint(trainer.model, prepared.batch, prepared.a_regions, prepared.normal_images,
-                    prepared.normal_masks, prepared.normal_regions, prepared.bindings,
-                    bn_mode=mode, lambda_pair=4., checkpoint_prefix=False)
-            require(float(result.pair.detach()) > 0 and prepared.bindings, "Smoke requires an active Pair hinge")
+        def inspect(result, mode):
+            require(float(result.pair.detach()) > 0, "Smoke requires an active Pair hinge")
             fingerprints[mode] = forward_fingerprints(result)
             buffers[mode] = buffer_snapshot(trainer.model)
+            if mode == MODE:
+                # Verify equivalent forward BEFORE any connected backward or update.
+                require(fingerprints["replay_a"] == fingerprints[MODE], "R5 forward differs under AMP")
+                require(state_hash(buffers["replay_a"]) == state_hash(buffers[MODE]), "A running BN differs")
             vectors[mode] = []
             for loss in (result.yolo, 8 * result.supcon, 4 * result.pair):
                 counts["component_autograd"] += 1
-                vectors[mode].append(gradient_basis(loss, parameters, scale=trainer.scaler.get_scale()))
+                with torch.autocast("cuda", enabled=False):
+                    vectors[mode].append(gradient_basis(loss, parameters, scale=trainer.scaler.get_scale()))
             require(buffers_equal(trainer.model, buffers[mode]), "R5 smoke backward changed BN buffers")
             require(all(p.grad is None for p in parameters), "Component gradients polluted param.grad")
-            del loss, result, prepared, packet
-            gc.collect()
-        require(fingerprints["replay_a"] == fingerprints[MODE], "R5 forward differs under AMP")
-        require(state_hash(buffers["replay_a"]) == state_hash(buffers[MODE]), "A running BN differs")
-        require(torch.equal(vectors["replay_a"][0], vectors[MODE][0])
-                and torch.equal(vectors["replay_a"][1], vectors[MODE][1]), "YOLO/SupCon8 gradients changed")
-        pair = {"detached_L2": norm(vectors["replay_a"][2]), "connected_L2": norm(vectors[MODE][2]),
-                "cosine": cosine(vectors["replay_a"][2], vectors[MODE][2])}
-        del vectors
+            if mode == MODE:
+                require(torch.equal(vectors["replay_a"][0], vectors[MODE][0])
+                        and torch.equal(vectors["replay_a"][1], vectors[MODE][1]), "YOLO/SupCon8 gradients changed")
+
+        packet = torch.load(spec["path"], map_location="cpu", weights_only=False)
+        prepared = prepare_batch(packet["batch"], adapter.index, adapter.groups, decode_N=True,
+                                 device=trainer.device, asset_cache=DecodedAssetCache(max_bytes=0))
+        with torch.autocast("cuda", dtype=torch.float16):
+            counts["A"] += 1
+            counts["N"] += 1
+            result = forward_joint(trainer.model, prepared.batch, prepared.a_regions, prepared.normal_images,
+                prepared.normal_masks, prepared.normal_regions, prepared.bindings,
+                bn_mode="replay_a", lambda_pair=4., checkpoint_prefix=False)
+        inspect(result, "replay_a")
+        del result, prepared
+        gc.collect()
         component_peak = torch.cuda.max_memory_allocated()
         component_reserved = torch.cuda.max_memory_reserved()
         restore_training_state(trainer, initial, bindings=bindings)
         adapter.start_epoch(0)
-        packet = torch.load(spec["path"], map_location="cpu", weights_only=False)
-        counts["A"] += 1
-        counts["N"] += 1
-        counts["joint_backward"] += 1
-        counts["disposable_updates"] += 1
-        row = adapter.train_batch(packet["batch"], 1)
+
+        def inspected_forward(*args, **kwargs):
+            require(kwargs["bn_mode"] == MODE, "Smoke native update used the old method")
+            counts["A"] += 1
+            counts["N"] += 1
+            connected_result = forward_joint(*args, **kwargs)
+            inspect(connected_result, MODE)
+            return connected_result
+
+        # Observe the normal train_batch graph. Its original joint backward and
+        # optimizer consume that same retained graph, avoiding a third forward.
+        with patch("tools.exp17.formal.native_adapter.forward_joint", side_effect=inspected_forward):
+            row = adapter.train_batch(packet["batch"], 1)
+        counts["joint_backward"] = trainer.counters["backwards"]
+        counts["disposable_updates"] = row["effective_updates"]
         require(row["effective_updates"] == 1 and row["amp_skipped"] == 0 and row["N_extra_BN_updates"] == 0,
                 "R5 disposable native update failed")
+        pair = {"detached_L2": norm(vectors["replay_a"][2]), "connected_L2": norm(vectors[MODE][2]),
+                "cosine": cosine(vectors["replay_a"][2], vectors[MODE][2])}
         final = capture_training_state(trainer, bindings=bindings,
             position={"epoch": 0, "batch_position": 1, "global_update": 1},
             sampler_state={"schema": "SMOKE_ONLY_NO_FORMAL_RESUME", "epoch": 0, "next_batch": 1})
@@ -96,6 +110,9 @@ def run(gate):
         exclusive_json(gate / "smoke.json", report)
         print(json.dumps({k: v for k, v in report.items() if k != "disposable_update"}), flush=True)
     except BaseException as error:
+        if adapter is not None and adapter.trainer is not None:
+            counts["joint_backward"] = adapter.trainer.counters["backwards"]
+            counts["disposable_updates"] = adapter.trainer.audit.optimizer_attempts
         exclusive_json(gate / "smoke_failure.json", {"status": "HOLD", "counts": counts,
             "error": str(error), "traceback": traceback.format_exc(), "seconds": time.perf_counter() - started})
         raise

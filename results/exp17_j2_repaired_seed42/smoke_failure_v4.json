@@ -1,0 +1,14 @@
+{
+  "counts": {
+    "A": 1,
+    "N": 1,
+    "VAL": 0,
+    "component_autograd": 0,
+    "disposable_updates": 0,
+    "joint_backward": 0
+  },
+  "error": "'dict' object has no attribute 'detach'",
+  "seconds": 17.164775633253157,
+  "status": "HOLD",
+  "traceback": "Traceback (most recent call last):\n  File \"/root/borescope-exp17-j2-r5/tools/exp17/formal/r5_smoke.py\", line 56, in run\n    fingerprints[mode] = forward_fingerprints(result)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/borescope-exp17-j2-r5/tools/exp17/formal/r5_smoke.py\", line 17, in forward_fingerprints\n    return {key: state_hash(getattr(result, key).detach().cpu())\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'dict' object has no attribute 'detach'\n"
+}

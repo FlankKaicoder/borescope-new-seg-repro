@@ -1,0 +1,49 @@
+{
+  "code_sha256": "928f2726b9ca07bf44c1d1eee14beda25036c4e8957b5afd96f14a3fc0c17e07",
+  "cumulative_upper_bound": {
+    "A": 4,
+    "N": 4,
+    "VAL": 0,
+    "component_autograd": 6,
+    "disposable_updates": 1,
+    "joint_backward": 1
+  },
+  "formal_updates": 0,
+  "implementation": "Recursively hash actual tensor/dict fields. Run the connected component checks inside an observer of the normal disposable train_batch, then consume that same retained graph for joint backward/update.",
+  "new_scope": {
+    "A": 2,
+    "N": 2,
+    "VAL": 0,
+    "component_autograd": 6,
+    "disposable_updates": 1,
+    "joint_backward": 1
+  },
+  "prior_failures": [
+    {
+      "counts": {
+        "A": 1,
+        "N": 1,
+        "VAL": 0,
+        "component_autograd": 0,
+        "disposable_updates": 0,
+        "joint_backward": 0
+      },
+      "path": "/root/exp17_r5_gate_20261124_v3/smoke_failure.json",
+      "sha256": "9636375ddedf411086ede08f805a8e8490031077dffe84f7e20707a192f3f118"
+    },
+    {
+      "counts": {
+        "A": 1,
+        "N": 1,
+        "VAL": 0,
+        "component_autograd": 0,
+        "disposable_updates": 0,
+        "joint_backward": 0
+      },
+      "path": "/root/exp17_r5_gate_20261124_v4/smoke_failure.json",
+      "sha256": "4272fc0fef56af9a4aa796c73a5a566d24ed1b6cdfc5bc5754a157c0e89e5eeb"
+    }
+  ],
+  "status": "PENDING_EXPLICIT_REATTEMPT_APPROVAL",
+  "tests": "58 CPU tests PASS including nested native parts and buffer fingerprints"
+}

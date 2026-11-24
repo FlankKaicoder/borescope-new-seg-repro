@@ -96,8 +96,14 @@ class ConnectedDerivativeTests(unittest.TestCase):
         first = forward_fingerprints(result)
         self.assertEqual(first, forward_fingerprints(result))
         self.assertEqual(len(first), 9)
-        result.parts = result.parts + 1
+        # Native loss parts are a nested dictionary, unlike the other outputs.
+        result.parts = {"box": result.parts, "metadata": {"active": True, "empty": None},
+                        "components": [torch.tensor(2.), torch.tensor([3., 4.])]}
+        nested_fingerprint = forward_fingerprints(result)
+        self.assertEqual(nested_fingerprint, forward_fingerprints(result))
+        result.parts["box"] = result.parts["box"] + 1
         self.assertNotEqual(first["parts"], forward_fingerprints(result)["parts"])
+        self.assertNotEqual(nested_fingerprint["parts"], forward_fingerprints(result)["parts"])
         nested = {"model.0.bn": {"running_mean": torch.zeros(2), "running_var": torch.ones(2),
                                  "num_batches_tracked": torch.tensor(1)}}
         self.assertEqual(state_hash(nested), state_hash(copy.deepcopy(nested)))

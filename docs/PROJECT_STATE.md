@@ -1,5 +1,9 @@
 # Project state
 
+## Exp17-J2-R5 connected training repair (2026-11-24)
+
+EXP17_J2_R5_HOLD_SMOKE_REATTEMPT_REVIEW. Independent connected-statistics production path, dual authorization generation/validation, frozen original2100-step input comparison and committedEpoch5 Gate implemented.58CPU tests PASS. Two smoke attempts each stop after1A+1N in output fingerprint instrumentation, before component Autograd or updates. Cumulative2A2N; formal updates/VAL/TEST0; no formalClaim. v5 repairs nested-state hashing and reuses the connected component graph in the native disposable update, requiring2A2N/6componentVJP/1jointBackward/1disposableUpdate; cumulative cap4A4N retained. Await explicit reattempt approval. Original J2Last0/80VAL preserved. [Handoff](../EXP17_J2_R5_CONNECTED_TRAINING_HANDOFF.md).
+
 ## Exp17-J2-R4-D offline temporal mechanism (2026-11-24)
 
 EXP17_J2_R4_D_OFFLINE_TEMPORAL_ANALYSIS_COMPLETE_PENDING_CHATGPT_REVIEW.22 saved Checkpoints/20 temporal snapshots/80 saved probes, zero model/Autograd/update/VAL/TEST. Negative terminal detached-excess Pair direction aligns positively with all19 historical Neck16 intervals (median cosine.49782); terminal Conv radial excess largely disappears with connected statistics.20 saved AdamW snapshots support outward Neck16 scale pressure. These are descriptive endpoint/history associations, not causal decomposition. E5MASTER AP0 precedesR1; FP returnsE70–95.895 magnitude cross-checks PASS. Original Last0/80VAL preserved. R4-E early Mean-only2TRAINforward proposal only. [Handoff](../EXP17_J2_R4_D_TEMPORAL_MECHANISM_HANDOFF.md).

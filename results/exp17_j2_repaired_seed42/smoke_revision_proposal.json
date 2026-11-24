@@ -1,0 +1,37 @@
+{
+  "CPU": "58 tests PASS; zero new GPU calls after failure",
+  "cumulative_upper_bound": {
+    "A": 4,
+    "N": 4,
+    "VAL": 0,
+    "component_autograd": 6,
+    "disposable_updates": 1,
+    "joint_backward": 1
+  },
+  "experiment": "EXP17_J2_REPAIRED_SEED42",
+  "fix": "Use full-state tensor/nested-buffer hash API and regression-test both actual input types. Release the final retained loss before constructing the second graph.",
+  "formal_claim_exists": false,
+  "formal_updates": 0,
+  "new_catalog": "f09be5dbbd56f5051c8a3b52c49a759c76ed733ff5cabb00fa8aecbdf4d38e0c",
+  "prior_catalog": "03489568712907f67d78b77cfc23c8db90870f8ee00e52465d912ca04d08de44",
+  "prior_consumed": {
+    "A": 1,
+    "N": 1,
+    "VAL": 0,
+    "component_autograd": 0,
+    "disposable_updates": 0,
+    "joint_backward": 0
+  },
+  "prior_failure": "/root/exp17_r5_gate_20261124_v3/smoke_failure.json",
+  "prior_failure_sha256": "9636375ddedf411086ede08f805a8e8490031077dffe84f7e20707a192f3f118",
+  "requested_new_attempt": {
+    "A": 3,
+    "N": 3,
+    "VAL": 0,
+    "component_autograd": 6,
+    "disposable_updates": 1,
+    "joint_backward": 1
+  },
+  "resume_condition": "Explicit additional-budget approval, followed by a successful single new smoke; same approved scientific parameters and early Gate.",
+  "status": "PENDING_USER_INCREMENTAL_SMOKE_APPROVAL"
+}

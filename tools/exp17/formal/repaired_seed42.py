@@ -72,7 +72,7 @@ def prepare(repository, gate):
         "early_gate_rule": RULE, "production_derivative": "NATIVE_FORWARD_FIRST_ORDER_STATISTICS_VJP",
         "previous_steps_sha256": PREVIOUS_SHA,
         "input_reference_sha256": file_sha(gate / "input_reference.json"),
-        "smoke_budget": {"A": 3, "N": 3, "component_autograd": 6, "joint_backward": 1,
+        "smoke_budget": {"A": 2, "N": 2, "component_autograd": 6, "joint_backward": 1,
                          "disposable_updates": 1, "VAL": 0}}
     protocol["authorization"] = {"basis": "USER_APPROVED_R5_PLAN_EXECUTION",
         "training_stage": "EXP17_R5_FORMAL_TRAIN_AUTHORIZATION", "val_stage": "EXP17_R5_FROZEN_VAL_AUTHORIZATION",
