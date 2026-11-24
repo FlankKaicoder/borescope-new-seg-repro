@@ -1,0 +1,72 @@
+{
+  "status": "EXP17_J2_R4_C_V3_GRADIENT_DIAGNOSTIC_COMPLETE_PENDING_CHATGPT_REVIEW",
+  "scientific_status": "DETACH_ENDPOINT_GRADIENT_EFFECT_CONFIRMED_TRAINING_ORIGIN_UNRESOLVED",
+  "new_A_full": 2,
+  "new_N_prefix": 2,
+  "new_model_autograd": 6,
+  "new_CPU_autograd": 0,
+  "reused_CPU_autograd": 12,
+  "cumulative_consumption": {
+    "A_attempts": 5,
+    "A_complete_returns": 4,
+    "N_attempts_and_returns": 4,
+    "model_autograd": 6,
+    "CPU_autograd": 12,
+    "optimizer": 0,
+    "VAL": 0,
+    "TEST": 0
+  },
+  "protected_original_files_unchanged": 672,
+  "forward_bitwise_equal": true,
+  "YOLO_gradient_max_abs_delta": 0.0,
+  "SupCon8_gradient_max_abs_delta": 0.0,
+  "Pair4_all_parameters": {
+    "A_L2": 26.969006448692525,
+    "A_RMS": 0.01592266080736151,
+    "B_L2": 2.410610102660494,
+    "B_RMS": 0.0014232384524986014,
+    "cosine": 0.2560763395150528,
+    "delta_L2": 26.454534642466893,
+    "relative_delta": 0.9809235906704834
+  },
+  "formal_Last_MASTER_Mask_AP": 0.0,
+  "formal_VAL_passes": 80,
+  "GPU_peak_allocated_bytes": 1988482048,
+  "GPU_peak_reserved_bytes": 4011851776,
+  "RSS_peak_bytes": 18102165504,
+  "cgroup_peak_bytes": 25592381440,
+  "numerical_seconds": 209.16000675968826,
+  "process_seconds": 218.89479642733932,
+  "disk_saved": {
+    "allocated_data_bytes": 11151114240,
+    "cache_retained_on_server": true,
+    "disk_limit_bytes": 17179869184,
+    "disk_reserve_bytes": 2147483648,
+    "fadvise_calls": 7915,
+    "forward_recomputations": 0,
+    "manifest_bytes": 809887,
+    "manifest_sha256": "ab936bf8182b4613530aae00f22dc801a36b2d7171171a99e4a5acb0a48c2999",
+    "pack_calls": 2423,
+    "pack_seconds": 48.01594803482294,
+    "payload_read_bytes": 21215400974,
+    "payload_written_bytes": 11145794990,
+    "precision_changes": 0,
+    "unpack_calls": 3069,
+    "unpack_seconds": 82.02831460535526
+  },
+  "memory_saved": {
+    "cumulative_packed_bytes": 13246689934,
+    "pack_calls": 2663,
+    "unpack_calls": 3309
+  },
+  "evidence_archive": {
+    "path": "/root/autodl-tmp/exp17_j2_r4c_detach_mechanism_v3_evidence.tar.gz",
+    "sha256": "e0f89fa6c3b6e91903333f433916269235038f6c0bbda87e220a53a21573d3ec",
+    "bytes": 45434538,
+    "files": 46,
+    "ledger_sha256": "b0e750f46745fcd16cfc1f371226921ed1f7751f63cf7b4587c26f60c4e929ad",
+    "cache_payloads": 2423,
+    "cache_payload_bytes": 11145794990
+  },
+  "production_catalog_sha256": "3ccdfe26b414c9c5c6c45a1be93a9fa38210cae8c36bc7e1a8a8c227a7b30f42"
+}

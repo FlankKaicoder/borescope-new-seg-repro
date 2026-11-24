@@ -1,5 +1,7 @@
 # Experiment index
 
+- **Exp17-J2-R4-C v3 (2026-11-24)** — Completed2A+2N and6 gradients; identical forward/YOLO/SupCon8 controls, substantial Pair4 shared-parameter difference. No training/VAL/TEST; historical BN drift causality unresolved. [Handoff](../EXP17_J2_R4_C_V3_GRADIENT_MECHANISM_HANDOFF.md).
+
 - **Exp17-J2-R4-C v2 (2026-11-24)** — Dispatch repair verified; Graph A complete; B A-path stops at20GiB RSS before gradients.650 original files unchanged; disk-storage/budget revision proposed. [Handoff](../EXP17_J2_R4_C_V2_RESOURCE_HOLD_HANDOFF.md).
 
 - **Exp17-J2-R4-C (2026-11-24)** — CPU derivative bridge PASS; diagnostic counter mismatch after1A+1N. No Graph B or model gradients, no retry. Original Last0/80VAL unchanged; numerical investigation HOLD. [Report](../EXP17_J2_R4_C_DETACH_GRADIENT_MECHANISM_REPORT.md).

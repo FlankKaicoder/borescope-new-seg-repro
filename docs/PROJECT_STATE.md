@@ -1,5 +1,9 @@
 # Project state
 
+## Exp17-J2-R4-C v3 gradient mechanism complete (2026-11-24)
+
+EXP17_J2_R4_C_V3_GRADIENT_DIAGNOSTIC_COMPLETE_PENDING_CHATGPT_REVIEW. Explicit v3 disk/budget approval; 19 guard +23 storage tests PASS; original12 CPU derivative checks reused. New2A+2N/6 Autograd complete. Both forward graphs and YOLO/SupCon8 gradients bitwise equal; Pair4 norm26.9690→2.41061, cosine.25608, real Conv-weight and Neck16 effects.672 original files/C1 unchanged. Original Last AP0/80VAL preserved. Endpoint detach effect confirmed; historical training cause unresolved. [Handoff](../EXP17_J2_R4_C_V3_GRADIENT_MECHANISM_HANDOFF.md).
+
 ## Exp17-J2-R4-C v2 host-memory HOLD (2026-11-24)
 
 EXP17_J2_R4_C_V2_HOLD_HOST_MEMORY_LIMIT.19 pure-Python tests PASS; original12 CPU Autograd evidence reused. Graph A now passes exact dispatch and A/N forward checks; PairLoss=.052910733968019485. Holding A while constructing B crosses20GiB process RSS at module19, before B N or any model Autograd.650 original files/C1 unchanged. Cumulative3A attempts(1partial),2N; no retries/update/VAL/TEST. Proposed disk-backed A saved tensors and additional2A+2N require revised scope; no detach-gradient conclusion. [Handoff](../EXP17_J2_R4_C_V2_RESOURCE_HOLD_HANDOFF.md).

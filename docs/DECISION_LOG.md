@@ -1,5 +1,9 @@
 # Decision log
 
+## D099 — R4-C v3 endpoint detach effect confirmed (2026-11-24)
+
+User explicitly approved v3 lossless disk saved tensors and additional2A+2N/6-gradient scope. Completed within all resource limits; original12 CPU Autograd evidence reused. Forward values, YOLO and SupCon8 gradients are bitwise identical. Pair4 parameter norm26.9690→2.41061, cosine.25608; actual convolution weights change, while projection and direct focus N-gradient controls agree. This establishes an endpoint mechanism, not historical drift causality or improved training. Preserve v1/v2 partial attempts and formal Last AP0/80VAL. Recommend offline temporal alignment before any separately reviewed new numerical experiment. [Handoff](../EXP17_J2_R4_C_V3_GRADIENT_MECHANISM_HANDOFF.md).
+
 ## D098 — R4-C v2 host-memory boundary (2026-11-24)
 
 User explicitly approved another2A+2N/6-component-gradient scope.19 non-model tests pass and the frozen bridge reuses12 prior CPU Autograd checks. Graph A validates, but the second graph reaches the20GiB RSS ceiling before N or component backward. Preserve partial B attempt and stop; no automatic limit increase or retry. A disk-backed saved-tensor design would change the prior no-disk constraint and needs an explicit revised numerical budget. No scientific gradient conclusion follows. [Handoff](../EXP17_J2_R4_C_V2_RESOURCE_HOLD_HANDOFF.md).

@@ -1,0 +1,30 @@
+{
+  "executed_scripts": {
+    "core.py": "6f83ab591fc48907968e602942b6e800db796728dab276b382d0443172ad227b",
+    "disk_saved.py": "57ce26e03d45777ad46dfbac9a794237a02ce3719906c696202d15adbac4afcd",
+    "fixtures.py": "8e67410646eaad51c9dc6d5d8231f562131b2e76236d68dc5df65860817aad70",
+    "guards.py": "79f26df9c3ed1d6b1ebe71e8e2bff8047ffd01c806927d76d88c3753e2d7327c",
+    "run.py": "7979389338b6da8d968e1a8511ec656b6dd49545e46583eb80d8fd09a47e6901",
+    "test_guards.py": "cae0b7d57d12f615a6ad47038f0b880a7e93d94f52bbfa583ee294466400fdda",
+    "test_storage.py": "8c86ed1365575af801224b67c78be5934dfb31941b5c4d277c4788dc6a5d2703"
+  },
+  "CPU_reuse": {
+    "bridge_function_sha256": "06507576c8b0170d095296a036794e820bd257aa155607012be3d5384a12db63",
+    "bridge_identical_to_v1": true,
+    "fixtures_identical_to_v1": true,
+    "fixtures_sha256": "8e67410646eaad51c9dc6d5d8231f562131b2e76236d68dc5df65860817aad70",
+    "no_model_or_autograd_calls": true,
+    "origin_authorization_sha256": "6410b1b588d16ad7dc54ab8995c6687feb837ec3448a15d9d25dfb93346f1df9",
+    "origin_completion_sha256": "62b4e6d89a5a3587395b8420a427b6371681ad102b61bc9a0fb3c97b0b08cd5f",
+    "origin_cpu_receipt_sha256": "e2c43d0da4fcc3330ad24e317532de6172e22b29d6314bfa6f04defc8f206a20",
+    "origin_ledger_sha256": "e3561ec94d2fe881d5fdcd4651945a2e1e31a40fd14a86da83939e8940ac55a5",
+    "scope": "REUSE_12_PASSED_CPU_AUTOGRAD_NO_NEW_CPU_AUTOGRAD"
+  },
+  "parent_commit": "86681183f20a737141487c654e244f9669869ddc",
+  "production_catalog_sha256": "3ccdfe26b414c9c5c6c45a1be93a9fa38210cae8c36bc7e1a8a8c227a7b30f42",
+  "checkpoint_file_sha256": "79b237241517e9112687f9ecd155d21c096ce54243e9a8267b21a963d58c675e",
+  "args_sha256": "d1dfef12c7d5808e8530443f84577eee40d09f42d01cffc47214efa2a42c495a",
+  "authorization_file_sha256": "a423a1f8553db9c3ac962fe551a1a9671c86594f55c30f476cf035102823efa9",
+  "authorization_canonical_digest": "92a56cc8404ac4f814b38410fa72637b2f33cac3df33e5d05a26adebcf4932a7",
+  "offline_analysis_not_deployed": true
+}

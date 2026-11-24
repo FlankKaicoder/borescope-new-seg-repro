@@ -1,0 +1,49 @@
+{
+  "guard": {
+    "Torch_imported": false,
+    "autograd_calls": 0,
+    "exit_code": 0,
+    "model_calls": 0,
+    "passed": true,
+    "stderr_sha256": "8d916f06d57cb9b1fb9ee0c41728a5cb07fcb4e4d8896346a6674b99d9e1f76c",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests": 19
+  },
+  "storage": {
+    "CUDA_visible": false,
+    "Torch_imported": true,
+    "autograd_calls": 0,
+    "exit_code": 0,
+    "model_calls": 0,
+    "passed": true,
+    "scripts": {
+      "core.py": "6f83ab591fc48907968e602942b6e800db796728dab276b382d0443172ad227b",
+      "disk_saved.py": "57ce26e03d45777ad46dfbac9a794237a02ce3719906c696202d15adbac4afcd",
+      "fixtures.py": "8e67410646eaad51c9dc6d5d8231f562131b2e76236d68dc5df65860817aad70",
+      "guards.py": "79f26df9c3ed1d6b1ebe71e8e2bff8047ffd01c806927d76d88c3753e2d7327c",
+      "run.py": "7979389338b6da8d968e1a8511ec656b6dd49545e46583eb80d8fd09a47e6901",
+      "test_guards.py": "cae0b7d57d12f615a6ad47038f0b880a7e93d94f52bbfa583ee294466400fdda",
+      "test_storage.py": "8c86ed1365575af801224b67c78be5934dfb31941b5c4d277c4788dc6a5d2703"
+    },
+    "stderr_sha256": "8055d564616091ac99f0c6e2178928628fce4e014d5e64844a10ab878d6a5f18",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests": 23
+  },
+  "cache_postrun": {
+    "records": 2423,
+    "serials_contiguous": true,
+    "all_payload_SHA_verified": true,
+    "payload_bytes": 11145794990,
+    "manifest_sha256": "ab936bf8182b4613530aae00f22dc801a36b2d7171171a99e4a5acb0a48c2999",
+    "disk_free_bytes": 8999116800,
+    "payloads_retained_on_server": true,
+    "payloads_excluded_from_transport": true,
+    "new_model_or_autograd": 0
+  },
+  "forward_gate": {
+    "A_traversals": 2,
+    "N_traversals": 2,
+    "bitwise_equal": true,
+    "passed": true
+  }
+}
