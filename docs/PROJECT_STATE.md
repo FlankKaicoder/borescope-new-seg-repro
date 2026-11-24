@@ -1,5 +1,10 @@
 # Project state
 
+## Exp17-J2-R3-E conditional Neck13/16 Mean controls (2026-11-24)
+
+EXP17_J2_R3_E_TWO_FORWARD_COMPLETE_PENDING_CHATGPT_GATE. Two TRAIN forwards on the same32-image/62-GT packet, with common40 Backbone BN corrected and either4 Neck13 or4 Neck16 BN. Backbone+Neck13 gives fixedconf TP0/FP0; Backbone+Neck16 TP17/FP7 (lowconf TP53), versus sealed joint TP19/FP6. Prefix44 BN and first-Neck16 input moments match the respective sealed references exactly. Neck16 conditional functional rescue is supported; training origin/Pair causality unresolved.22 CPU tests/42 audit checks PASS;552 protected files unchanged. No backward/update/calibration/new VAL/TEST; formal Last Mask AP95=0 unchanged. Two-call budget exhausted; close module localization and design a discriminating training-origin study before any new model/gradient scope. [Report](../EXP17_J2_R3_E_CONDITIONAL_NECK_DIAGNOSTIC_REPORT.md).
+
+
 ## Exp17-J2-R3-D Backbone/P3-Neck Mean controls (2026-11-24)
 
 EXP17_J2_R3_D_TWO_FORWARD_COMPLETE_PENDING_CHATGPT_GATE. Two TRAIN forwards completed on the same32-image/62-GT packet. Backbone0-10 Mean-only gives fixedconf TP0/FP0; P3Neck11-16 Mean-only TP2/FP19 (lowconf TP31). Sealed joint-prefix correction gives TP19/FP6. Neither individual region reproduces joint behavior; Neck16 and downstream activation mismatch remain after Backbone-only correction. First40 BN and first-Neck input moments match historical references exactly.21 CPU tests/40 audit checks PASS;522 protected files unchanged. No training/backward/calibration/new VAL/TEST; formal Last Mask AP95=0 unchanged. Two-call budget exhausted. Conditional Neck13/16 two-forward R3-E proposed only. [Report](../EXP17_J2_R3_D_BACKBONE_NECK_DIAGNOSTIC_REPORT.md).

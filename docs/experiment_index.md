@@ -1,5 +1,8 @@
 # Experiment index
 
+- **Exp17-J2-R3-E (2026-11-24)** — Conditional on Backbone Mean correction: Neck13 TP0; Neck16 TP17/FP7, versus joint TP19/FP6. Two TRAIN calls establish conditional Neck16 function; module localization closes, training origin unresolved. [Report](../EXP17_J2_R3_E_CONDITIONAL_NECK_DIAGNOSTIC_REPORT.md).
+
+
 - **Exp17-J2-R3-D (2026-11-24)** — Backbone-only TP0; P3Neck-only TP2/FP19 versus sealed joint TP19/FP6. Combined-region dependence and downstream activation differences documented; training origin unresolved. Two TRAIN calls, no new formal result. [Report](../EXP17_J2_R3_D_BACKBONE_NECK_DIAGNOSTIC_REPORT.md).
 
 

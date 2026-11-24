@@ -1,5 +1,10 @@
 # Decision log
 
+## D094 — Exp17-J2-R3-E conditional Neck16 functional rescue (2026-11-24)
+
+User approved two fixed-Backbone conditional controls. Exact44/44 BN selections share40 Backbone BN; only Neck13 or16 differs, with original remaining Mean/all Variance. Neck16 addition gives TP17/FP7, Neck13 addition TP0. Two historical/new matched pairs have identical prefix44 BN and Neck16 input moments, supporting the intervention boundary. Preserve the Backbone condition and single-batch limitation; no unique-cause/Pair or formal VAL recovery claim. Close module localization rather than automatically scan individual BN. Next work requires a discriminating training-origin design with explicit input, forward and autograd budgets. [Evidence](../EXP17_J2_R3_E_CONDITIONAL_NECK_DIAGNOSTIC_REPORT.md).
+
+
 ## D093 — Exp17-J2-R3-D combined-prefix Mean dependence (2026-11-24)
 
 User approved the two Backbone/P3-Neck controls. Exact40/8 BN selection leaves all42 downstream BN untouched; all variance sources remain original. Backbone-only yields TP0; Neck-only partially restores TP2/FP19 (lowconf31), versus sealed joint TP19/FP6. Interpret as conditional functional dependence across tested regions, not per-BN necessity or Pair causality. Neck16 propagation and head variance changes prioritize a bounded conditional Neck13/16 comparison. Stop after delivery; no automatic finer scanning or causal training verdict. [Evidence](../EXP17_J2_R3_D_BACKBONE_NECK_DIAGNOSTIC_REPORT.md).

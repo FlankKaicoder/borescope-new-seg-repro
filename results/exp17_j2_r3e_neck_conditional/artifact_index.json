@@ -1,0 +1,71 @@
+{
+  "artifacts": [
+    {
+      "file": "01_conditional_neck_controls.png",
+      "bytes": 72312,
+      "sha256": "dba3718c851cab962defd89c89f5ccb8404b84db861bb1eb087b7a17f4e73e92"
+    },
+    {
+      "file": "01_conditional_neck_controls.svg",
+      "bytes": 58674,
+      "sha256": "6e190874c077a583692ea2db16f4d00567d9eb86677eba84ebe0db948c7e962e"
+    },
+    {
+      "file": "02_conditional_neck_activation_paths.png",
+      "bytes": 376995,
+      "sha256": "71ebe81e8a5ee1c56d8e1ef2b0ef66ba75573ed993887ad88d54821547ff95fa"
+    },
+    {
+      "file": "02_conditional_neck_activation_paths.svg",
+      "bytes": 90490,
+      "sha256": "2c7cbd4ed34e8321eacddf84b49f34ff9579423eda48849b704ff3dd7c3f68a0"
+    },
+    {
+      "file": "analysis_input_bindings.json",
+      "bytes": 1390,
+      "sha256": "73ef3c835ef8d6aea10e539b92860dad12e384fd5454e7c0fa111247fe4342a8"
+    },
+    {
+      "file": "analysis_verification.json",
+      "bytes": 707,
+      "sha256": "2937fb27799791173fc5b3055cda9450dfb41486648c25b9918c9481acad2d47"
+    },
+    {
+      "file": "bn_layer_actual_statistics.csv",
+      "bytes": 105747,
+      "sha256": "c6751fdf0b833b40737689f954dc99aa7a9754ec374f72522eb95223019972f2"
+    },
+    {
+      "file": "case_results.csv",
+      "bytes": 1164,
+      "sha256": "e941e3d9140c87bb76bd19eff79b0812e64d234d2c62e3b90a2df80092d98d9d"
+    },
+    {
+      "file": "execution_bindings.json",
+      "bytes": 4143,
+      "sha256": "0d128b7d1f285b95d015fc1255c5ed5999dc0c3b3044e40a8ac05ccf8eeac57f"
+    },
+    {
+      "file": "selected_bn_layers.csv",
+      "bytes": 15434,
+      "sha256": "7faa56e550d5be003b626b3f8056f1aa773314400f5f1a23c8a61f7ea996c0f4"
+    },
+    {
+      "file": "summary.json",
+      "bytes": 52677,
+      "sha256": "2e04081e88de8915ffebe3e4d63f6b34b7aa7d83b03ec209893f0968b7c51f5a"
+    },
+    {
+      "file": "TRAINING_ORIGIN_NEXT_STEPS_NOT_AUTHORIZATION.md",
+      "bytes": 3626,
+      "sha256": "8714faf56d0259b529d3089a0b1b5442ff6d11b1b5733e69babf24498d4da616"
+    },
+    {
+      "file": "verification_summary.json",
+      "bytes": 4029,
+      "sha256": "a21d4edb001d519419a448f6cc49a42907f70a900fa17a0600cc52ecedadf8fd"
+    }
+  ],
+  "report": "../../EXP17_J2_R3_E_CONDITIONAL_NECK_DIAGNOSTIC_REPORT.md",
+  "raw_data": "PRIVATE_R3_E_ARCHIVE"
+}

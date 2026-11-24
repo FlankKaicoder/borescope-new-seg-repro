@@ -1,0 +1,9 @@
+condition,origin,confidence,detections,box_TP,box_FP,box_FN,GT,best_geometric_IoU_ignoring_class_mean,raw_cls_logit_mean,raw_cls_logit_max,new_forward,selected_BN_count
+backbone_0_10_mean,R3-D sealed reference,0.001,42,0,42,62,62,0.013052136796402684,-29.544979095458984,-2.647688865661621,False,40
+backbone_0_10_mean,R3-D sealed reference,0.25,0,0,0,62,62,0.0,-29.544979095458984,-2.647688865661621,False,40
+prefix_0_16_mean,R3-C sealed reference,0.001,4903,53,4850,9,62,0.7173391229683354,-16.606216430664062,2.351999282836914,False,48
+prefix_0_16_mean,R3-C sealed reference,0.25,25,19,6,43,62,0.25164198298608104,-16.606216430664062,2.351999282836914,False,48
+backbone_plus_neck13_mean,R3-E new forward,0.001,126,0,126,62,62,0.0613775784346921,-24.8214168548584,-2.1856555938720703,True,44
+backbone_plus_neck13_mean,R3-E new forward,0.25,0,0,0,62,62,0.0,-24.8214168548584,-2.1856555938720703,True,44
+backbone_plus_neck16_mean,R3-E new forward,0.001,4916,53,4863,9,62,0.7193243926571261,-16.521095275878906,2.2336044311523438,True,44
+backbone_plus_neck16_mean,R3-E new forward,0.25,24,17,7,45,62,0.2233112963937944,-16.521095275878906,2.2336044311523438,True,44

@@ -1,0 +1,26 @@
+{
+  "case_rows": 8,
+  "historical_references_not_new_passes": true,
+  "layer_rows": 360,
+  "new_channel_rows": 16080,
+  "new_model_calls_by_analysis": 0,
+  "prefix_moments_exact": [
+    {
+      "BN_count": 44,
+      "channel_count": 4536,
+      "first_neck16_input_moments_exact": true,
+      "new_condition": "backbone_plus_neck13_mean",
+      "sealed_reference": "prefix_0_16_mean",
+      "six_moments_exact": true
+    },
+    {
+      "BN_count": 44,
+      "channel_count": 4536,
+      "first_neck16_input_moments_exact": true,
+      "new_condition": "backbone_plus_neck16_mean",
+      "sealed_reference": "backbone_0_10_mean",
+      "six_moments_exact": true
+    }
+  ],
+  "reference_channel_rows": 16080
+}
