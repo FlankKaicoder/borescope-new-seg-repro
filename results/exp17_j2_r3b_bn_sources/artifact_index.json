@@ -1,0 +1,71 @@
+{
+  "artifacts": [
+    {
+      "file": "01_mean_variance_controls.png",
+      "bytes": 55734,
+      "sha256": "78c4dbe6148fa5e3f59738f4c8e35dc5f37ae63f9537179c928e68c42bc778fc"
+    },
+    {
+      "file": "01_mean_variance_controls.svg",
+      "bytes": 47440,
+      "sha256": "68baeaf9d4183221624bf0c97d0942c61c9a691737a2b5474671fef3e4c17f31"
+    },
+    {
+      "file": "02_actual_BN_mismatch_paths.png",
+      "bytes": 390062,
+      "sha256": "39d2fa4ccec3d533142bab7b64c71acfbbc2b11d4c711f2d88c1256d11931653"
+    },
+    {
+      "file": "02_actual_BN_mismatch_paths.svg",
+      "bytes": 90227,
+      "sha256": "4a971f386a2aac08c108be4cce929be79d598266d24f40fd7b63209bd18b3d2b"
+    },
+    {
+      "file": "03_selected_layers.png",
+      "bytes": 113495,
+      "sha256": "2f6b91a6e1b029e2a80754a02f4e215ed7a4889778b1eb4b56920463bde03b67"
+    },
+    {
+      "file": "03_selected_layers.svg",
+      "bytes": 74895,
+      "sha256": "68017a5287072d6e382fd6568635e2edffecb708f294369573ed969df4be5afa"
+    },
+    {
+      "file": "bn_layer_actual_statistics.csv",
+      "bytes": 108855,
+      "sha256": "4a5c3d2eb0d630f974fcc678e3830c2e67d623736d3306eb0df612d092e03046"
+    },
+    {
+      "file": "case_results.csv",
+      "bytes": 1256,
+      "sha256": "ac2b820927565f003814602123ecc566fb4066d5666bf5b66b12dd25ecad003e"
+    },
+    {
+      "file": "execution_bindings.json",
+      "bytes": 1394,
+      "sha256": "5fc8894d2ffc60f0a21d49194eb112a90880f6c66f6a2dff3e14e09f6e030f61"
+    },
+    {
+      "file": "R3_C_PROPOSAL_NOT_AUTHORIZATION.md",
+      "bytes": 2108,
+      "sha256": "d3d5a39ec2769db4d58a4cebf351ff3a6c95c45b6f5fca83988cccef66ea15f9"
+    },
+    {
+      "file": "selected_bn_layers.csv",
+      "bytes": 12318,
+      "sha256": "f06d5e85418e8c084e7f3b08e613bc052a3e26ec60966a9b30ab91455c511614"
+    },
+    {
+      "file": "summary.json",
+      "bytes": 59022,
+      "sha256": "65f337f09ee2b53ce186e4ec468260b77cac3f29d0db45d8887aac671a12bdfb"
+    },
+    {
+      "file": "verification_summary.json",
+      "bytes": 6355,
+      "sha256": "b6def7c42de64dd82731f9cbb7230f0f0a616f3612e0bb20612e6a19bcf038cf"
+    }
+  ],
+  "report": "../../EXP17_J2_R3_B_BN_SOURCE_DIAGNOSTIC_REPORT.md",
+  "raw_data": "PRIVATE_R3_B_ARCHIVE"
+}

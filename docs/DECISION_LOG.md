@@ -1,5 +1,10 @@
 # Decision log
 
+## D091 — Exp17-J2-R3-B Mean-source intervention (2026-11-24)
+
+The user explicitly approved continuing the four-forward proposal; engineering authorization binds this scope without claiming a new external signature. Preserve original Protocol, weights, runtime and all historical budgets. Same-batch Mean-only rescue establishes global functional sufficiency, not Pair causality or a repaired model. Actual healthy-path means near1000 refute treating absolute buffer magnitude as a defect. Stop after four calls and delivery; propose two complementary local Mean controls under a new scope. [Evidence](../EXP17_J2_R3_B_BN_SOURCE_DIAGNOSTIC_REPORT.md).
+
+
 ## D090 — Exp17-J2-R3-A offline BN drift (2026-11-24)
 
 Keep formalLastMaskAP95=0 and80VAL intact. Separate learnedscale changes from currentactivation mismatch;do not label largevariance orcounter2101 as a BNbug. COCOinitialBN identity andEMAfloat-update semantics verified. Prioritize sharedP3Neck mean/variance source separation;Pair/clip correlations do not establish causality. Stop afterCPUdelivery and propose4 independentlybudgeted TRAIN forwards;no automaticR3-B/calibration/retraining/re-VAL. [Evidence](../EXP17_J2_R3_BN_DRIFT_REPORT.md).

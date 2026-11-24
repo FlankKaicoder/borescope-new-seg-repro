@@ -1,0 +1,24 @@
+{
+  "model_file_sha256": "063e473cf0b878f105c85790be47332a30d8192e09a14ad28ab2180b85ba6e2d",
+  "model_state_sha256": "d222a70d7570680459359a36a682312690b052cc10197f4916ec1df66492782f",
+  "input_sha256": "160487354f4bf32c64e8ca7f6cce944ca99ba49afe52267f9e6de999c518cd32",
+  "packet_sha256": "802114bde743ce7c58e997be279987148f33d91898d43b511ad5040939edd929",
+  "runtime_config_sha256": "02f0f6548ee1cfd57af449fd1c9118417252b3a528273a1c80d2eee28c96d7b8",
+  "protocol_sha256": "613e4e154a872e0fd88791013f8e63716100470bb4a2f73084b702bb5cd37e44",
+  "production_code_sha256": "3ccdfe26b414c9c5c6c45a1be93a9fa38210cae8c36bc7e1a8a8c227a7b30f42",
+  "script_sha256": {
+    "r3b_core.py": "251b36e6b5f41e28f947645f4e24c790e0d1e3a44cc976f9be6bac5e4ed59f33",
+    "run_r3b.py": "a9012c89a6d8bc9cb0c9962b6bf0076512dd1eefb20966fab7314e510ea59d97",
+    "test_r3b_core.py": "a1edeba4743140d270451d9ebe6177d8d9bd6a88d59d6c4a09b2a4a8a18e5300"
+  },
+  "maximum_forward_calls": 4,
+  "synthetic_forward_calls": 0,
+  "authorization_file_sha256": "77eae4b2a86f388d54df26680b8b2dd727da8a8ce90810e09a083b1d79e63910",
+  "ledger_sha256": "817ad60e91b0bb60e2e7657191945f386b0c9bad7b1d02c8f04de511358078e3",
+  "forward_calls_completed": 4,
+  "original_files_unchanged": 451,
+  "formal_VAL_passes_unchanged": 80,
+  "R3_C_authorized": false,
+  "GPU_peak_allocated_bytes": 1269120512,
+  "execution_seconds": 21.790444280020893
+}

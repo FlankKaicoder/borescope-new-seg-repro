@@ -1,5 +1,10 @@
 # Project state
 
+## Exp17-J2-R3-B BN statistics source controls (2026-11-24)
+
+EXP17_J2_R3_B_FOUR_FORWARD_COMPLETE_PENDING_CHATGPT_GATE. Four independent TRAIN forwards completed on the bound 32-image/62-GT packet. At confidence .25: Running TP0; Mean-only TP19/FP6; Variance-only TP0/FP9600; Batch-both TP18/FP6. Global Mean substitution is sufficient on this batch; local sufficiency and upstream Pair/optimizer causality remain unresolved. Actual BN moments show propagated mismatch; large absolute means alone are not defects. Four-call ledger exhausted; 14 CPU tests and 66 completion checks pass; 451 original files unchanged. No backward, update, calibration, new VAL or TEST. Formal Last Mask AP95=0 remains. Two local Mean controls are proposed for R3-C, not authorized or executed. [Report](../EXP17_J2_R3_B_BN_SOURCE_DIAGNOSTIC_REPORT.md).
+
+
 ## Exp17-J2-R3-A offline BN drift investigation (2026-11-24)
 
 EXP17_J2_R3_A_OFFLINE_ANALYSIS_COMPLETE_PENDING_CHATGPT_GATE. CPU25checkpoint sources;90BN/8040channels;369840channel rows;2100savedsteps/80savedprobes. InitialBN hash matches historical preparation;COCOcounter1 explainsMASTER2101,EMAinteger1 is expected. GlobalvarianceL2 is extreme-channel dominated;sharedP3Neck mean/effectiveoffset andConv changes prioritize directactivation measurement. EMAfloatbuffersupdate andfollowMASTER. Pair/Clip causality unresolved;originalLastMaskAP0/80VAL unchanged.12arithmeticfixtures+108checks PASS;442protectedfilesSHAstable. Zero newforward/backward/update/VAL/TEST. Recommend separate4-forward R3-B;notauthorized/notexecuted. [R3 report](../EXP17_J2_R3_BN_DRIFT_REPORT.md).

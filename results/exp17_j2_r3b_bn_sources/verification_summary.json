@@ -1,0 +1,337 @@
+{
+  "BN_output_moment_scaled_residuals": {
+    "batch_both": {
+      "mean": 4.9087597831183476e-05,
+      "variance_biased": 2.5406820998724427e-06
+    },
+    "mean_only": {
+      "mean": 3.292217198542645e-05,
+      "variance_biased": 1.2767091521297785e-06
+    },
+    "running": {
+      "mean": 1.6223570609199485e-05,
+      "variance_biased": 1.9646733264694032e-06
+    },
+    "variance_only": {
+      "mean": 1.6797755255510305e-05,
+      "variance_biased": 1.215378887586251e-06
+    }
+  },
+  "R2_first2_raw_comparison": {
+    "batch_both": {
+      "decoded": {
+        "exact_equal": true,
+        "max_abs": 0.0
+      },
+      "dfl_boxes": {
+        "exact_equal": true,
+        "max_abs": 0.0
+      },
+      "mask_coefficient": {
+        "exact_equal": true,
+        "max_abs": 0.0
+      },
+      "proto": {
+        "exact_equal": true,
+        "max_abs": 0.0
+      },
+      "scores": {
+        "exact_equal": true,
+        "max_abs": 0.0
+      }
+    },
+    "running": {
+      "decoded": {
+        "exact_equal": true,
+        "max_abs": 0.0
+      },
+      "dfl_boxes": {
+        "exact_equal": true,
+        "max_abs": 0.0
+      },
+      "mask_coefficient": {
+        "exact_equal": true,
+        "max_abs": 0.0
+      },
+      "proto": {
+        "exact_equal": true,
+        "max_abs": 0.0
+      },
+      "scores": {
+        "exact_equal": true,
+        "max_abs": 0.0
+      }
+    }
+  },
+  "all_pass": true,
+  "audit_forward_calls": 0,
+  "check_count": 66,
+  "checks": [
+    {
+      "name": "exact_ten_ledger_rows",
+      "pass": true
+    },
+    {
+      "name": "chain_0",
+      "pass": true
+    },
+    {
+      "name": "chain_1",
+      "pass": true
+    },
+    {
+      "name": "chain_2",
+      "pass": true
+    },
+    {
+      "name": "chain_3",
+      "pass": true
+    },
+    {
+      "name": "chain_4",
+      "pass": true
+    },
+    {
+      "name": "chain_5",
+      "pass": true
+    },
+    {
+      "name": "chain_6",
+      "pass": true
+    },
+    {
+      "name": "chain_7",
+      "pass": true
+    },
+    {
+      "name": "chain_8",
+      "pass": true
+    },
+    {
+      "name": "chain_9",
+      "pass": true
+    },
+    {
+      "name": "authorization_binding",
+      "pass": true
+    },
+    {
+      "name": "four_ordered_attempts",
+      "pass": true
+    },
+    {
+      "name": "four_ordered_commits",
+      "pass": true
+    },
+    {
+      "name": "completed_boundary",
+      "pass": true
+    },
+    {
+      "name": "protected_originals",
+      "pass": true
+    },
+    {
+      "name": "frozen_scripts",
+      "pass": true
+    },
+    {
+      "name": "audit_no_CUDA",
+      "pass": true
+    },
+    {
+      "name": "running_commit_sha",
+      "pass": true
+    },
+    {
+      "name": "running_artifact_sha",
+      "pass": true
+    },
+    {
+      "name": "running_source_and_input",
+      "pass": true
+    },
+    {
+      "name": "running_persistent_state",
+      "pass": true
+    },
+    {
+      "name": "running_8040_channels_90_BN",
+      "pass": true
+    },
+    {
+      "name": "running_finite_channels",
+      "pass": true
+    },
+    {
+      "name": "running_statistics_source",
+      "pass": true
+    },
+    {
+      "name": "running_0.001_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "running_0.25_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "running_decoded_shape",
+      "pass": true
+    },
+    {
+      "name": "running_scores_shape",
+      "pass": true
+    },
+    {
+      "name": "running_dfl_boxes_shape",
+      "pass": true
+    },
+    {
+      "name": "running_mask_coefficient_shape",
+      "pass": true
+    },
+    {
+      "name": "running_proto_shape",
+      "pass": true
+    },
+    {
+      "name": "mean_only_commit_sha",
+      "pass": true
+    },
+    {
+      "name": "mean_only_artifact_sha",
+      "pass": true
+    },
+    {
+      "name": "mean_only_source_and_input",
+      "pass": true
+    },
+    {
+      "name": "mean_only_persistent_state",
+      "pass": true
+    },
+    {
+      "name": "mean_only_8040_channels_90_BN",
+      "pass": true
+    },
+    {
+      "name": "mean_only_finite_channels",
+      "pass": true
+    },
+    {
+      "name": "mean_only_statistics_source",
+      "pass": true
+    },
+    {
+      "name": "mean_only_0.001_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "mean_only_0.25_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "variance_only_commit_sha",
+      "pass": true
+    },
+    {
+      "name": "variance_only_artifact_sha",
+      "pass": true
+    },
+    {
+      "name": "variance_only_source_and_input",
+      "pass": true
+    },
+    {
+      "name": "variance_only_persistent_state",
+      "pass": true
+    },
+    {
+      "name": "variance_only_8040_channels_90_BN",
+      "pass": true
+    },
+    {
+      "name": "variance_only_finite_channels",
+      "pass": true
+    },
+    {
+      "name": "variance_only_statistics_source",
+      "pass": true
+    },
+    {
+      "name": "variance_only_0.001_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "variance_only_0.25_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "batch_both_commit_sha",
+      "pass": true
+    },
+    {
+      "name": "batch_both_artifact_sha",
+      "pass": true
+    },
+    {
+      "name": "batch_both_source_and_input",
+      "pass": true
+    },
+    {
+      "name": "batch_both_persistent_state",
+      "pass": true
+    },
+    {
+      "name": "batch_both_8040_channels_90_BN",
+      "pass": true
+    },
+    {
+      "name": "batch_both_finite_channels",
+      "pass": true
+    },
+    {
+      "name": "batch_both_statistics_source",
+      "pass": true
+    },
+    {
+      "name": "batch_both_0.001_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "batch_both_0.25_independent_matches",
+      "pass": true
+    },
+    {
+      "name": "batch_both_decoded_shape",
+      "pass": true
+    },
+    {
+      "name": "batch_both_scores_shape",
+      "pass": true
+    },
+    {
+      "name": "batch_both_dfl_boxes_shape",
+      "pass": true
+    },
+    {
+      "name": "batch_both_mask_coefficient_shape",
+      "pass": true
+    },
+    {
+      "name": "batch_both_proto_shape",
+      "pass": true
+    },
+    {
+      "name": "completion_budget",
+      "pass": true
+    },
+    {
+      "name": "completion_ledger_sha",
+      "pass": true
+    }
+  ],
+  "independent_match_cases": 8,
+  "original_artifacts_unchanged": 451
+}
