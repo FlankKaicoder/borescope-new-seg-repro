@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "input_files": 1899,
+  "source_files": 446,
+  "models_or_tensors_loaded_by_finalization": 0,
+  "source_archive_sha256": "db2a7f79ce9bd1f92ca98251cd427de4822d10d15e91306d5adb88a3f7708b58",
+  "full_private_receipt_member": "audit.tar.gz:closure/readonly_input_and_source_postcheck.json",
+  "full_private_receipt_sha256": "55f35b49d66a9641680d33570349a07cda70f0afa11e474c4b8ebc947f9f52a2",
+  "runtime_source": {
+    "repository_files": {
+      "tools/exp18/data.py": "dc11bcfaa64188da1371916c6fb691de359b6d8f871d2686131a06d7adf0891a",
+      "tools/exp18/replay.py": "331bb80aff0d4a2905b71b581ea9295d1e0a380e740f9e53950887562ad6f0c8",
+      "tools/exp18/pairing.py": "06ea102069e0105c51a3f3bd8747591ac6cbf160c658f0c878c308dc490ca0d8",
+      "tools/exp18/geometry.py": "01e809fd0851fffe9b4796005f8b1693738bfb4ce9c33c251a5e8e777145ab0e",
+      "tools/exp18/common.py": "ac0275e37fd3a70f22f8ce7244ee70f68626ea81c2baa9ca203deed2c5ba8d7a",
+      "tools/exp18/guards.py": "ed00274fda35192f26730aaf6e6a5e8cc1ec17759e710268c7223ad802fbe274",
+      "tools/exp18/protocol.py": "2526cb20ee7fed59a7798c4ffd4d5ffd4c77a16996bc61e7a89cffe2ac4950ef",
+      "tools/exp18/schedule.py": "d32d0b23fa7a42ecdb147260205391452dfd62b05a3f6f5559985338ffcbd85b",
+      "tools/exp17/engineering/augmentation.py": "b5564c4c1f8a9a5c52b4737182a4eb65565a6044511d55a4780cf7265be4b8f5",
+      "tools/exp17/engineering/data.py": "8104d5c9ea4ed6e2fa5f50c6936e1651a04975c9956fc0bac7436101dcfa7593",
+      "tools/exp15/regions.py": "683f467f817dcf41ce50036c640ed3b45548abde867667dc1066222d1cafd65a",
+      "tools/exp14/audit_admission.py": "eeff09efe03af04152e34a8c880073d98a4873d8484e22d75eb3376f96cfe167"
+    },
+    "native_ultralytics": {
+      "data/augment.py": "d30f823e330ea4d8f165eda6f16e81a8d41acf22918a9c1c97d022b7bfc9dc5a",
+      "data/base.py": "41bb1349e4baa74b94728d2c323fbdd7fd318b1f82b951880b292fb34840dac3",
+      "data/dataset.py": "36aa66daa0949747745b8e1986a812b152dffc7ec050d78e25e37c16285b11c5",
+      "data/build.py": "2f14a4860a3f18c07ceb14272f0c4b5b482fd4e779ebdd37fa258aefeb80452a",
+      "data/utils.py": "3896dc106c2a68425ab0b7b2695e2f6609c98d5ed11c9750be6301e5c8a42173",
+      "utils/instance.py": "b2fdaecb2d62847fb9ed04d80a1e495c268ed1a46c27fa34ae6d0c3d0336a0d0",
+      "cfg/__init__.py": "1caac06004f28277b9cc94b10c77ea7006d0534272cd2db500422ad45b690bfa"
+    },
+    "packages": {
+      "torch": "2.8.0+cu128",
+      "ultralytics": "8.4.117",
+      "numpy": "2.3.2",
+      "scipy": "1.18.0"
+    }
+  },
+  "additional_Torch_sources": {
+    "utils/data/dataloader.py": "fbd260c9587fadb2f81dc255b080356261df3a6827272c07f11ab1ac20276ef0",
+    "utils/data/_utils/worker.py": "d3652cf902df501a6e824659b5a07941db9b689834a2acd18dabf16f2e0633e8",
+    "utils/data/_utils/collate.py": "99ccd4e95f8f927d13248f3f17ce7b494c505e3e03131ccf4931353cafb6e20e",
+    "multiprocessing/reductions.py": "8d2ff4ea1fccf967b8dba8e51b3883f11ef41974d8b994b894e72cf807abc1f1",
+    "optim/adamw.py": "3112d8799ef9ab608b855a5708087d5576971463923c41d4a6a227006871f551",
+    "nn/utils/clip_grad.py": "534f39d7308c6ab4fa9e5994a177803abe958ce53d5681e66049a9917e0115c1"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "GPU_compute": 0,
+  "NumPy_imports": 0,
+  "SciPy_imports": 0,
+  "Torch_imports": 0,
+  "audited_batches": 21,
+  "complete_4200": false,
+  "historical_abn_sha256": "1118238c6a87c19bd315a678b7a4c8ad8d3db01b7e72a8f9f27437c7e2e2e8f1",
+  "input_metadata_sha256": [
+    "23d34d787f79e6a7ba97e7bdcaf4c827097e345408e86c9d2647962505795f5f",
+    "d3b1118c1693662e4d3228c68cf642daec3112e73ab7ff8fe87218043b037a0a"
+  ],
+  "interpretation": "Existing summary PASS applies only to structural audit of these 21 saved batches. Full 4200 CPU replay, maximum assignment recomputation and GPU stages remain pending.",
+  "maximum_assignment_recomputed": false,
+  "new_dataset_batches": 0,
+  "new_test_jobs": 0,
+  "overall_status": "ENGINEERING_PASS_FULL_REPLAY_PENDING",
+  "planned_batches": 4200,
+  "private_input_manifest_sha256": "8f5b5d9dee822b4417a702f542e51dfa51282050a81d210d527f3fabd10aeb6d",
+  "remaining_batches": 4179,
+  "review_action": "METADATA_AGGREGATION_OF_EXISTING_SAVED_RECORDS_ONLY",
+  "scope": "PARTIAL_SAVED_21_BATCHES_ONLY",
+  "structural_summary_status": "CPU_COVERAGE_AUDIT_PASS_GPU_PENDING"
+}

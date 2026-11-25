@@ -1,0 +1,41 @@
+{
+  "status": "EXP18_CPU_ENGINEERING_PASS_FULL_REPLAY_PENDING",
+  "branch": "codex/exp18-cpu-engineering",
+  "base_head": "3d58386d969a56279660d535bb63ce87e2255292",
+  "source_commit": null,
+  "local_worktree": "E:\\github_repositories\\borescope-exp18",
+  "local_delivery": "E:\\autodlwenjian\\exp18\\cpu-20261125",
+  "source_manifest_sha256": "d545d9e59232aa60c5109fac7128ba43dfbb0207cd85f9614ec44e823d48408e",
+  "packages": [
+    {
+      "file": "source.tar",
+      "bytes": 5447680,
+      "sha256": "db2a7f79ce9bd1f92ca98251cd427de4822d10d15e91306d5adb88a3f7708b58"
+    },
+    {
+      "file": "audit.tar.gz",
+      "bytes": 41865514,
+      "sha256": "43da8447ee67a5554ae0a8ce03372fa8b0f9fd94765c4343bf74fa5eac228d22"
+    },
+    {
+      "file": "context.zip",
+      "bytes": 143965,
+      "sha256": "f694f2e769e76b27e509c2ef04b494d1d704e66eaa5db261f76b9d59ec2f5d5e"
+    },
+    {
+      "file": "r5-history.jsonl.gz",
+      "bytes": 940875,
+      "sha256": "1118238c6a87c19bd315a678b7a4c8ad8d3db01b7e72a8f9f27437c7e2e2e8f1"
+    },
+    {
+      "file": "files.csv.gz",
+      "bytes": 265378,
+      "sha256": "5a12d1a0b1e93e7844b03f6f78a07d1ffa8c089469c2372524e23d1c2cf09fd9"
+    }
+  ],
+  "engineering_receipt_sha256": "9a5dd3034a72a89512afbe949b49ea08d31e18628ea7debb73b6a9f425f944d3",
+  "remaining_tests_deferred_by_user": true,
+  "final_CPU_READY_achieved": false,
+  "formal_H200_training_authorized": false,
+  "lambda_state": null
+}

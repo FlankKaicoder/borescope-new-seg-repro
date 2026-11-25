@@ -1,0 +1,29 @@
+{
+  "GPU_calls": 0,
+  "TEST_accesses": 0,
+  "VAL_passes": 0,
+  "data_memory_policy": {
+    "decoded_asset_cache_MiB": 32,
+    "materialize_N_batch": false,
+    "native_tensor_hashes_must_match": true,
+    "parent_CPU_threads": 1,
+    "prefetch_factor": 1,
+    "worker_buffer_images": 8,
+    "workers": 2
+  },
+  "device": "cpu",
+  "formal_training_authorized": false,
+  "historical_runtime_config": "/root/exp17_r5_gate_20261124_v5/runtime_config.json",
+  "historical_runtime_sha256": "1d90672b5ae86d2d2c6a64bf7326bdfefe35ae473b86c6ef579ee66f67b9b763",
+  "horizon": 100,
+  "lambda_state": null,
+  "output_policy": "new_EXP18_roots_only_immutable_artifacts_no_cleanup",
+  "protocol": "configs/exp18/protocol_h100.json",
+  "protocol_file_sha256": "6ce837ae5a5649e8e849a845f704859504b76d469c7b7c352bbb8e2b2f96ebe7",
+  "protocol_sha256": "a7c9fa58a9f46dacb7b6d77880123c08300e294bee9b4b90a199bc619dc94b1b",
+  "python": "/root/autodl-tmp/borescope-new-seg-repro/.venv/bin/python",
+  "real_checkpoint_tensor_loads": 0,
+  "real_models": 0,
+  "schema": "EXP18_CPU_RUNTIME_V1",
+  "seed": 42
+}

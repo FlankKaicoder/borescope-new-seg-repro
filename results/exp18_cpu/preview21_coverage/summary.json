@@ -1,0 +1,84 @@
+{
+  "audited_batches": 21,
+  "audited_epochs": 1,
+  "bindings_sha256": "88de3c2615099c8f661c708fe814b952e1c9378d7d7095c4da9e382083fdb8de",
+  "counts": {
+    "admitted_521_rows": 505,
+    "admitted_poolable_rows": 505,
+    "batches": 21,
+    "candidate_has_B": 497,
+    "candidate_no_B": 5,
+    "candidate_unique_groups": 338,
+    "candidate_unique_polygons": 502,
+    "candidates": 502,
+    "incomplete_augmented_valid_support": 3,
+    "input_native_rows": 1232,
+    "matched_rows": 92,
+    "maximum_assignment_recomputations": 0,
+    "no_admitted_N": 727,
+    "permutation_audits": 21,
+    "poolable_has_B": 500,
+    "poolable_no_B": 5,
+    "support_complete_candidates": 502,
+    "weight_marginal_audits": 21
+  },
+  "historical_availability_batches": {
+    "AVAILABLE_ORIGINAL_R5_ABN": 21
+  },
+  "historical_source_sha256": "1118238c6a87c19bd315a678b7a4c8ad8d3db01b7e72a8f9f27437c7e2e2e8f1",
+  "historical_weight_definition": "mean_class(mean_A_group(mean_polygon)); only known R5 steps <=2100",
+  "image_or_model_reads": 0,
+  "interpretation": "K is all support-complete approved candidates; S is their common closed-permutation subset. No-B rows can enter K but cannot enter S under same-batch same-class cross-group matching.",
+  "maximum_assignment_recomputed": false,
+  "partial_history_is_not_zero": true,
+  "schema": "EXP18_CPU_COVERAGE_AUDIT_V1",
+  "scientific_coverage_gate": "PENDING_REVIEW",
+  "sources": [
+    {
+      "bytes": 1043526,
+      "commit_file": "epoch_000.commit.json",
+      "commit_sha256": "d3b1118c1693662e4d3228c68cf642daec3112e73ab7ff8fe87218043b037a0a",
+      "file": "epoch_000.2700463d62bd4cfda9254b2636d89019.jsonl.gz",
+      "sha256": "23d34d787f79e6a7ba97e7bdcaf4c827097e345408e86c9d2647962505795f5f"
+    }
+  ],
+  "status": "CPU_COVERAGE_AUDIT_PASS_GPU_PENDING",
+  "structural_gate": "PASS",
+  "tables": [
+    {
+      "file": "population_by_class.csv",
+      "rows": 42,
+      "sha256": "369aa431437e3c22d8240f2e6b2763621007dffa433b699da306786c1e50c153"
+    },
+    {
+      "file": "group_concentration.csv",
+      "rows": 42,
+      "sha256": "369aa431437e3c22d8240f2e6b2763621007dffa433b699da306786c1e50c153"
+    },
+    {
+      "file": "class_family_P3_coverage.csv",
+      "rows": 35,
+      "sha256": "b9fe49be5061b7b66a36ea161546bb523681fbcf054215f788fcea5e9c2a02fe"
+    },
+    {
+      "file": "constraint_funnel_by_class.csv",
+      "rows": 49,
+      "sha256": "b25c4d0d2a13248ce212bbabf925b70bb957529fb0874c7f621a24e07b48d865"
+    },
+    {
+      "file": "candidate_eligibility_funnel.csv",
+      "rows": 18,
+      "sha256": "e71777148b9da962cd417a61ae4ba868f2e1b3486bde0a6682c3fc02c0758c04"
+    },
+    {
+      "file": "partner_diversity_by_class.csv",
+      "rows": 7,
+      "sha256": "8e37123e47fb50045d8468e66bd217d91352487d2cc6c08355118ed61abbb0df"
+    },
+    {
+      "file": "original_R5_weight_retention.csv",
+      "rows": 7,
+      "sha256": "f261f714e5df27bcd8ff384ae302c872a8ec978c71a6d00c3e7f8a36cb17ec26"
+    }
+  ]
+}

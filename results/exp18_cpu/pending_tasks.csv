@@ -1,0 +1,8 @@
+﻿task,status,reason
+H200_4200_CPU_replay,DEFERRED_BY_USER,2GiB/.5CPU external SIGKILL; preserve all partials
+full_matching_population_and_maximum_recomputation,PENDING_FULL_REPLAY,preview21 only
+real_YOLO_AMP_BN_memory_restore,GPU_PENDING_NOT_AUTHORIZED,real models/GPU currently zero
+lambda_calibration,NOT_RUN_LAMBDA_NULL,TRAIN-only future Gate
+native_VAL_and_export_reload,NOT_RUN,future bounded Gate; TEST forbidden
+formal_append_only_capacity,PENDING,no overwrite/delete authority
+independent_scientific_and_formal_training_Gate,PENDING,H200 is not training authority

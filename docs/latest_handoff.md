@@ -1,3 +1,7 @@
+# 当前交接：EXP18工程已交付，全量回放待资源
+
+`EXP18_CPU_ENGINEERING_PASS_FULL_REPLAY_PENDING`。83项CPU测试、四个固定包、21批预演PASS。用户允许等算力恢复；全量0/4200封存，尚非最终CPU READY。lambda=null，正式H200未授权；真实模型/GPU/新VAL/TEST均未执行。[权威交接](../EXP18_CPU_ENGINEERING_HANDOFF.md)。以下R5历史交接保留。
+
 # 最近里程碑交接：Exp17-J2-R5 Seed42
 
 核验日期：2026-11-25，Asia/Shanghai。适用分支：`codex/exp17-j2-r5-connected`。

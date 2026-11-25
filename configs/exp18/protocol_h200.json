@@ -1,0 +1,122 @@
+{
+  "arms": [
+    "j1",
+    "a1_true",
+    "a1_shuffled"
+  ],
+  "base_head": "3d58386d969a56279660d535bb63ce87e2255292",
+  "budgets": {
+    "CUDA_initializations": 0,
+    "GPU_compute": 0,
+    "TEST_accesses": 0,
+    "VAL_passes": 0,
+    "real_checkpoint_tensor_loads": 0,
+    "real_model_backwards": 0,
+    "real_model_constructions": 0,
+    "real_model_forwards": 0
+  },
+  "formal_training_authorized": false,
+  "future_validation": {
+    "events_per_arm": 40,
+    "executed": false,
+    "interval_epochs": 5,
+    "modes": [
+      "standard",
+      "fixed_conf_0.25"
+    ],
+    "native_passes_per_arm": 160,
+    "prediction_dump": "same_pass_lossless_mask_and_matching_stream",
+    "primary": "Last_FP32_MASTER_running_statistics_macro7_MaskAP50_95",
+    "roles": [
+      "MASTER",
+      "EMA"
+    ]
+  },
+  "lambda_state": null,
+  "matching": {
+    "area_field": "native_polygon_area_divided_by_frame_area",
+    "area_ratio_max": 2.0,
+    "cells_ratio_max": 2.0,
+    "closed_permutation": true,
+    "different_group": true,
+    "no_fixed_points": true,
+    "objective": "maximum_non_diagonal_assignment_then_seeded_integer_cost",
+    "p3_buckets": [
+      1,
+      4
+    ],
+    "permutation_after_N_pooling": true,
+    "same_batch": true,
+    "same_class": true,
+    "same_repair_family": true,
+    "seed": 42,
+    "unique_N": true
+  },
+  "method": {
+    "A0": "synthetic_mechanism_reference_only",
+    "B": "excluded",
+    "C": "excluded",
+    "N_prefix": [
+      0,
+      16
+    ],
+    "bn_derivative": "R5_StatisticsGradient_unchanged",
+    "bn_mode": "replay_a_connected",
+    "bn_statistics": "whole_native_A_batch_and_spatial_biased_variance",
+    "checkpoint_prefix": false,
+    "empty_head_policy": "grad_None_skip_AdamW_and_EMA_head",
+    "head_ema_decay": "global_update_decay",
+    "mask_stride": 4,
+    "p3_layer": 16,
+    "p3_stride": 8,
+    "raw_pooling": "native_overlap_2x2_coverage_weighted_then_L2_eps1e-12",
+    "reduction": "mean_active_class_mean_retained_polygon",
+    "state_head": {
+      "bias": false,
+      "in_features": 64,
+      "initializer": "torch_Linear_default_uniform_nonzero_independent_CPU_generator",
+      "out_features": 1,
+      "seed_namespace": "exp18:state-head:v1:42"
+    },
+    "state_loss": "softplus(-(score_A-score_N))",
+    "state_temperature": 1.0,
+    "supcon_coefficient": 8.0,
+    "supcon_temperature": 0.1
+  },
+  "phase": "EXP18_CPU",
+  "schema": "EXP18_PROTOCOL_V1",
+  "seed": 42,
+  "storage": {
+    "artifact_delete_allowed": false,
+    "artifact_overwrite_allowed": false,
+    "formal_storage_gate": "PENDING",
+    "immutable_artifacts": true
+  },
+  "train": {
+    "accumulate": 1,
+    "batch": 32,
+    "batches_per_epoch": 21,
+    "betas": [
+      0.937,
+      0.999
+    ],
+    "clip_global_norm": 10.0,
+    "cos_lr": false,
+    "drop_last": false,
+    "epochs": 200,
+    "eps": 1e-08,
+    "images": 668,
+    "imgsz": 640,
+    "instances": 1266,
+    "lr0": 0.01,
+    "lrf": 0.01,
+    "nbs": 32,
+    "optimizer": "AdamW",
+    "tail": 28,
+    "updates": 4200,
+    "warmup_bias_lr": 0.1,
+    "warmup_iterations": 63,
+    "weight_decay": 0.0005,
+    "workers": 2
+  }
+}

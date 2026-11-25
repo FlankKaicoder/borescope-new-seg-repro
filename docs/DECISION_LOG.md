@@ -1,5 +1,11 @@
 # Decision log
 
+## EXP18-CPU-20261125 — Engineering delivered; full replay deferred by user
+
+用户授权独立worktree的EXP18代码、TRAIN回放、CPU验证及Commit/Push，冻结三臂/H200候选、lambda=null和GPU/真实模型/VAL/TEST预算0。保留R5整批A统计导数和P3覆盖定义，闭合置换只改池化后N索引；类别等权，空head的AdamW/EMA冻结。83项CPU测试、四固定包、21批数据/trace对齐与匹配预演通过。
+
+实际无卡0.5CPU/2GiB，多次外部SIGKILL、无内核OOM计数增长。用户说明CPU固定并允许待算力恢复再测试。因此停止全量并封存现场；不改科研定义、不假报4200完成、不自动开GPU。当前`EXP18_CPU_ENGINEERING_PASS_FULL_REPLAY_PENDING`，未达到最终CPU READY；R5科学Gate、真实网络/AMP/λ和正式容量Gate仍待下一阶段。[交接](../EXP18_CPU_ENGINEERING_HANDOFF.md)。
+
 ## D102 — R5 completed repair, negative Seed42 gain over J1 (2026-11-25)
 
 Complete the already-approved100epoch/2100update experiment after the reviewed E10 observation PASS. Final normal-running Last MASTER Mask AP50–95=0.24972101442002576, versus J1 Seed42=0.2727438798549706 (−2.3022865434944864pp); EMA=0.24998586298529024. BothBest roles selectEpoch100 by frozenfitness. Independent final audit passes21168 checks with80VAL/80TRAINprobes/20periodic and all2100 frozen input comparisons; no additional evaluation or TEST. Keep originalJ2 AP0 and initialE5 HOLD immutable; disclose that E10 observation was approved after the E5 result.

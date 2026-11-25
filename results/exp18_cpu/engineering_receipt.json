@@ -1,0 +1,62 @@
+{
+  "status": "EXP18_CPU_ENGINEERING_PASS_FULL_REPLAY_PENDING",
+  "CPU_tests": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "success": true,
+    "tests_run": 83
+  },
+  "CPU_test_seconds": 142.59112649969757,
+  "four_fixed_batches": [
+    {
+      "position": 1,
+      "packet_sha256": "802114bde743ce7c58e997be279987148f33d91898d43b511ad5040939edd929",
+      "native_images": 32,
+      "matched_rows": 0
+    },
+    {
+      "position": 7,
+      "packet_sha256": "07cff77e68290e0281cc6f8ac49a54dde0dbb25600c5c4932a0d5ba7b712ff76",
+      "native_images": 32,
+      "matched_rows": 2
+    },
+    {
+      "position": 11,
+      "packet_sha256": "5395b0c3d0d7e0d22d3eb546f78e02fab29c9298aa886977328b140af6ff3f08",
+      "native_images": 32,
+      "matched_rows": 10
+    },
+    {
+      "position": 21,
+      "packet_sha256": "c93789fb512af377a6d0793f3199126cd23e89ab1844fd08ecf30654e85aa90a",
+      "native_images": 28,
+      "matched_rows": 6
+    }
+  ],
+  "input_files_verified": 1899,
+  "source_files_verified": 446,
+  "archive_members_verified": 4658,
+  "sample_restore_count": 4,
+  "full_CPU_replay_sealed_batches": 0,
+  "full_CPU_replay_required_batches": 4200,
+  "independent_preview_batches": 21,
+  "independent_preview_candidates": 502,
+  "independent_preview_matched": 92,
+  "preview_is_not_full_run_progress": true,
+  "GPU_compute": 0,
+  "CUDA_initializations": 0,
+  "real_model_constructions": 0,
+  "real_checkpoint_tensor_loads": 0,
+  "real_model_forwards": 0,
+  "real_model_backwards": 0,
+  "VAL_evaluations": 0,
+  "TEST_file_reads": 0,
+  "lambda_state": null,
+  "formal_training_authorized": false,
+  "remaining_tests_deferred_by_user": true,
+  "scientific_coverage_gate": "PENDING_REVIEW",
+  "test_log_sha256": "2de3e05ccb0c281f9d7f90075dfb8fb6047080d39a9f454c7a17b9a1ecaffead",
+  "test_private_receipt_sha256": "98d4c3d613cfabe81ba8c2ac0d37e05a7ac95fd9acac162692ca11c8b55da994",
+  "fixed_private_receipt_sha256": "a50674a42907a86ff4e34c4053494977297c7c3006078818134b85e6d851fb46"
+}

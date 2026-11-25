@@ -1,0 +1,108 @@
+{
+  "base_head": "3d58386d969a56279660d535bb63ce87e2255292",
+  "branch": "codex/exp18-cpu-engineering",
+  "context_archive_sha256": "f694f2e769e76b27e509c2ef04b494d1d704e66eaa5db261f76b9d59ec2f5d5e",
+  "files": [
+    {
+      "bytes": 982,
+      "git_status": "",
+      "path": "AGENTS.md",
+      "sha256": "c6704f41c8e53f4730315d1e23e3325877a7581731a66db26f0b03bc2f70be07",
+      "source": "E:\\github_repositories\\borescope-exp17-j2-r5\\AGENTS.md"
+    },
+    {
+      "bytes": 101561,
+      "git_status": "M docs/PROJECT_STATE.md",
+      "path": "docs/PROJECT_STATE.md",
+      "sha256": "e41186002a4879499758f3151cf883b62f54d9d4c5147da672ec5c767e0ff734",
+      "source": "E:\\github_repositories\\borescope-exp17-j2-r5\\docs\\PROJECT_STATE.md"
+    },
+    {
+      "bytes": 71877,
+      "git_status": "M docs/DECISION_LOG.md",
+      "path": "docs/DECISION_LOG.md",
+      "sha256": "6b01691e32fb4c527e5e1cf33c2c9dade7eec9799073c1f5de6fe6ffa5bdef5f",
+      "source": "E:\\github_repositories\\borescope-exp17-j2-r5\\docs\\DECISION_LOG.md"
+    },
+    {
+      "bytes": 4550,
+      "git_status": "M docs/latest_handoff.md",
+      "path": "docs/latest_handoff.md",
+      "sha256": "0280b0c1329e49dba5894e37784ce188fdd51e57bdb31b8909e95becab56dacd",
+      "source": "E:\\github_repositories\\borescope-exp17-j2-r5\\docs\\latest_handoff.md"
+    },
+    {
+      "bytes": 3084,
+      "git_status": "",
+      "path": "docs/HISTORICAL_METHODS.md",
+      "sha256": "bafdcf88e31c81d83eac481bdba6569fd4b89595215e2ce1e7e29ffa73dfd83c",
+      "source": "E:\\github_repositories\\borescope-exp17-j2-r5\\docs\\HISTORICAL_METHODS.md"
+    },
+    {
+      "bytes": 31923,
+      "git_status": "?? EXP18_NEXT_METHOD_DESIGN_REVIEW.md",
+      "path": "EXP18_NEXT_METHOD_DESIGN_REVIEW.md",
+      "sha256": "ecf84cca73473ae9cc72812c51a15886d196805159f03d96747edac3ff55aace",
+      "source": "E:\\github_repositories\\borescope-exp17-j2-r5\\EXP18_NEXT_METHOD_DESIGN_REVIEW.md"
+    },
+    {
+      "bytes": 15624,
+      "git_status": "?? EXP18_P1_PREREGISTRATION_DRAFT.md",
+      "path": "EXP18_P1_PREREGISTRATION_DRAFT.md",
+      "sha256": "66473752e699b36bfed4dba515200120c34fb391f379e5dc11c572235cba1384",
+      "source": "E:\\github_repositories\\borescope-exp17-j2-r5\\EXP18_P1_PREREGISTRATION_DRAFT.md"
+    },
+    {
+      "bytes": 2752,
+      "git_status": "?? STORAGE_MIGRATION_HANDOFF_20261125.md",
+      "path": "STORAGE_MIGRATION_HANDOFF_20261125.md",
+      "sha256": "4436130210e0a3cd4796a700b233ed26a22091fc71c010f2d0c8f0e6e54c4cda",
+      "source": "E:\\github_repositories\\borescope-exp17-j2-r5\\STORAGE_MIGRATION_HANDOFF_20261125.md"
+    },
+    {
+      "bytes": 4604,
+      "git_status": "?? EXP17_R5_POSTHOC_ANALYSIS_HANDOFF.md",
+      "path": "EXP17_R5_POSTHOC_ANALYSIS_HANDOFF.md",
+      "sha256": "4444c8085a2b016b57f19a576572bf78049d2c59c61055fe621f5f0845292587",
+      "source": "E:\\github_repositories\\borescope-exp17-j2-r5\\EXP17_R5_POSTHOC_ANALYSIS_HANDOFF.md"
+    },
+    {
+      "bytes": 977,
+      "git_status": "?? results/exp17_r5_posthoc/20261125T055351Z_v1/EXECUTIVE_FINDINGS.md",
+      "path": "results/exp17_r5_posthoc/20261125T055351Z_v1/EXECUTIVE_FINDINGS.md",
+      "sha256": "a068e31cacbdaa773ca206a73f88b3af11772b0ec8e4aba3b1052ad3323bbdf0",
+      "source": "E:\\github_repositories\\borescope-exp17-j2-r5\\results\\exp17_r5_posthoc\\20261125T055351Z_v1\\EXECUTIVE_FINDINGS.md"
+    },
+    {
+      "bytes": 14113,
+      "git_status": "?? results/exp17_r5_posthoc/20261125T055351Z_v1/POSTHOC_REPORT_COMPLETE.md",
+      "path": "results/exp17_r5_posthoc/20261125T055351Z_v1/POSTHOC_REPORT_COMPLETE.md",
+      "sha256": "e3464b32ba4ea82a2568bbfcfee40489cdb36968b2cdb728d4c8cadf63fb3776",
+      "source": "E:\\github_repositories\\borescope-exp17-j2-r5\\results\\exp17_r5_posthoc\\20261125T055351Z_v1\\POSTHOC_REPORT_COMPLETE.md"
+    }
+  ],
+  "historical_status_before": " M docs/DECISION_LOG.md\n M docs/PROJECT_STATE.md\n M docs/experiment_index.md\n M docs/latest_handoff.md\n M results/experiment_registry.csv\n?? EXP17_R5_POSTHOC_ANALYSIS_HANDOFF.md\n?? EXP17_R5_POSTHOC_ANALYSIS_PLAN.md\n?? EXP18_NEXT_METHOD_DESIGN_REVIEW.md\n?? EXP18_P1_PREREGISTRATION_DRAFT.md\n?? STORAGE_MIGRATION_HANDOFF_20261125.md\n?? diagnostics/exp17_r5_posthoc/\n?? results/exp17_r5_posthoc/\n",
+  "historical_worktree": "E:\\github_repositories\\borescope-exp17-j2-r5",
+  "inherited_execution": [
+    {
+      "historical_sha256": "c51b6f29efd6c0b50cb3e27b73cb474f4c2bdbb25cefd2d4f5112ebdad977d42",
+      "path": "tools/exp17/engineering/bn.py",
+      "sha256": "c51b6f29efd6c0b50cb3e27b73cb474f4c2bdbb25cefd2d4f5112ebdad977d42"
+    },
+    {
+      "historical_sha256": "b5564c4c1f8a9a5c52b4737182a4eb65565a6044511d55a4780cf7265be4b8f5",
+      "path": "tools/exp17/engineering/augmentation.py",
+      "sha256": "b5564c4c1f8a9a5c52b4737182a4eb65565a6044511d55a4780cf7265be4b8f5"
+    },
+    {
+      "historical_sha256": "47f68ac89800efd203f96663816cc0eb241a5d564a1e1ce16d125a4a816b3948",
+      "path": "tools/exp17/engineering/model.py",
+      "sha256": "47f68ac89800efd203f96663816cc0eb241a5d564a1e1ce16d125a4a816b3948"
+    },
+    {
+      "historical_sha256": "683f467f817dcf41ce50036c640ed3b45548abde867667dc1066222d1cafd65a",
+      "path": "tools/exp15/regions.py",
+      "sha256": "683f467f817dcf41ce50036c640ed3b45548abde867667dc1066222d1cafd65a"
+    }
+  ]
+}

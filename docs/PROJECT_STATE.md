@@ -1,5 +1,9 @@
 # Project state
 
+## EXP18 CPU implementation (2026-11-25)
+
+`EXP18_CPU_ENGINEERING_PASS_FULL_REPLAY_PENDING`. 83 CPU tests、固定TRAIN包1/7/11/21、21批预演PASS（S92/K502，仅首轮）。无卡0.5CPU/2GiB，全量启动SIGKILL；用户允许待算力恢复再测试。全量0/4200封存，尚非最终CPU_READY。1899输入/446源码复核和4658归档成员SHA通过。lambda=null、正式H200未授权；真实模型/GPU/newVAL/TEST=0，R5科研Gate未改变。[当前交接](../EXP18_CPU_ENGINEERING_HANDOFF.md)、[剩余清单](exp18/GPU_PENDING.md)。
+
 ## Exp17-J2-R5 completed connected training repair (2026-11-25)
 
 `EXP17_J2_REPAIRED_SEED42_COMPLETE_PENDING_CHATGPT_RESULT_GATE`. The independent repaired experiment completed100 epochs,2100 effective updates and20 scheduled events/80 native VAL passes with exit0 and AMP skip0. Last FP32 MASTER Mask AP50–95 is0.24972101442002576 versus J1 Seed42 0.2727438798549706 (−2.3022865435pp); EMA0.24998586298529024. Both supplementary Best roles selectEpoch100. Running-statistics detection recovered relative to originalJ2 AP0, but this Seed42 experiment did not improveJ1. Independent final audit21168/21168PASS;20periodic/80TRAINprobes, frozen2100-step inputs and endpoint identities verified. Original105 checkpoint/221-line prefix, source migration, E5HOLD and approved post-observation E10GatePASS remain traceable. All originalJ2 results are preserved. Final report,16CSV, PNG/PDF and private archive are delivered; no TEST or extra seed. Do not automatically append142/242. [Handoff](../EXP17_J2_R5_CONNECTED_TRAINING_HANDOFF.md), [final evidence](../results/exp17_j2_repaired_seed42/formal_complete/README.md).

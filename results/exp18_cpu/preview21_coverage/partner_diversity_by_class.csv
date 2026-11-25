@@ -1,0 +1,8 @@
+class_id,class,matched_unique_polygons,matched_exposures,distinct_partner_polygon_min,distinct_partner_polygon_median,distinct_partner_polygon_mean,distinct_partner_polygon_max,distinct_partner_group_median,distinct_partner_group_q25,distinct_partner_group_q75
+0,Burn,13,13,1,1,1.0,1,1,1.0,1.0
+1,Crack,13,13,1,1,1.0,1,1,1.0,1.0
+2,Dent,23,23,1,1,1.0,1,1,1.0,1.0
+3,Material missing,16,16,1,1.0,1.0,1,1.0,1.0,1.0
+4,Tears,6,6,1,1.0,1.0,1,1.0,1.0,1.0
+5,Tip curl,0,0,,,,,,,
+6,corrosion,21,21,1,1,1.0,1,1,1.0,1.0
