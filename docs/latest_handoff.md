@@ -1,0 +1,26 @@
+# 最近里程碑交接：Exp17-J2-R5 Seed42
+
+核验日期：2026-11-25，Asia/Shanghai。适用分支：`codex/exp17-j2-r5-connected`。
+
+当前状态为 `EXP17_J2_REPAIRED_SEED42_COMPLETE_PENDING_CHATGPT_RESULT_GATE`。R5已经完成100 Epoch、2100次有效更新、20个正式VAL事件和80次Native Pass，exit0、AMP skip0；结果、归档和Git交付已完成。没有运行中的训练任务，没有pending attempt/AUX。
+
+| 主结果 | 数值 |
+|---|---:|
+| R5 Epoch100 Last FP32 MASTER Mask AP50–95 | 0.24972101442002576 |
+| J1 Seed42 Last MASTER | 0.2727438798549706 |
+| R5−J1 | −2.3022865434944864 pp |
+| R5 Epoch100 EMA | 0.24998586298529024 |
+
+两个角色Best均选中Epoch100。当前结论是恢复正常Running Statistics检测功能，但本次Seed42未改善J1。独立终验21,168项全PASS，私有归档整体和800个成员SHA通过。该工程验收不代替ChatGPT独立科研结果Gate。
+
+- [本轮会话完整交接](../EXP17_J2_R5_SESSION_HANDOFF_20261125.md)：授权变更、前序研究链、路径、身份、进程终态和新会话启动提示。
+- [稳定训练与科研报告](../EXP17_J2_R5_CONNECTED_TRAINING_HANDOFF.md)。
+- [最终结果、CSV与PNG/PDF索引](../results/exp17_j2_repaired_seed42/formal_complete/README.md)。
+- [独立终验](../results/exp17_j2_repaired_seed42/formal_complete/audit_final.json)。
+- [当前权威项目状态](PROJECT_STATE.md)、[Decision D102](DECISION_LOG.md)、[实验索引](experiment_index.md)。
+
+结果交付固定提交为 `e6d4fffcc859b14077adc00b148225226bf15df7`，已正常Push并核对。本文和会话总结是之后的独立文档补充；其交付提交号由最终回复或 `git log -1 --format=%H -- docs/latest_handoff.md` 获取。
+
+注意：旧 `RUN/completion.json` 的E5 HOLD和旧 `RUN/recovery/latest.json` 的105步是故意保留的历史记录，不是当前运行进度。当前应读 `/root/exp17_r5_e10_observation_v2/completion.json`、同目录exit0回执、活动store的2100步及永久账本TRAIN_COMPLETE。不要据旧指针重启或重复VAL。
+
+下一步仅为独立结果审查或用户的新任务。原始J2、R5全轨迹、E5 HOLD和获批E10观察扩展均保留。当前不自动追加Seed142/242、不访问TEST、不增加模型调用；新的科研或预算变化需明确方案和授权。实际R5 worktree为 `E:/github_repositories/borescope-exp17-j2-r5`，不要被桌面旧Exp14 cwd误导。
