@@ -75,4 +75,4 @@ python -B -m tools.exp18 replay --config configs/exp18/runtime_h200.json --outpu
 
 恢复只跳过已提交且校验的epoch；本次会从epoch0新attempt开始，保留旧partial。完成200轮及全轨迹匹配重算、输入源码复核、独立CPU审计后，才能标记最终CPU_READY。
 
-[代码与合同说明](docs/exp18/README.md)。没有自动GPU启动或定时任务；等待资源及下一阶段明确授权。
+[实验设计与Gate顺序](docs/exp18/EXPERIMENT_DESIGN.md)、[代码与合同说明](docs/exp18/README.md)。没有自动GPU启动或定时任务；等待资源及下一阶段明确授权。

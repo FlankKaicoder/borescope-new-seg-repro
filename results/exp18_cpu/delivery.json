@@ -2,7 +2,7 @@
   "status": "EXP18_CPU_ENGINEERING_PASS_FULL_REPLAY_PENDING",
   "branch": "codex/exp18-cpu-engineering",
   "base_head": "3d58386d969a56279660d535bb63ce87e2255292",
-  "source_commit": null,
+  "source_commit": "6e3955e1c2632e1d832631935454397fba3a82ff",
   "local_worktree": "E:\\github_repositories\\borescope-exp18",
   "local_delivery": "E:\\autodlwenjian\\exp18\\cpu-20261125",
   "source_manifest_sha256": "d545d9e59232aa60c5109fac7128ba43dfbb0207cd85f9614ec44e823d48408e",
