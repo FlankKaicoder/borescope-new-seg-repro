@@ -1,0 +1,19 @@
+{
+  "status": "PASS_AUDITOR_SCHEMA_COMPATIBILITY_ONLY",
+  "audited_batches": 21,
+  "full_4200_acceptance": false,
+  "counts_K_S_N_reuse": [
+    502,
+    92,
+    85,
+    7
+  ],
+  "scope": "FIRST_COMMITTED_EPOCH_METADATA_ONLY_NOT_FINAL_ACCEPTANCE",
+  "auditor_sha256": "1135e11856bad024c329736c21c4c31049b58e19e527303397788a0e35174dec",
+  "chunk_sha256": "23d34d787f79e6a7ba97e7bdcaf4c827097e345408e86c9d2647962505795f5f",
+  "scipy": "1.18.0",
+  "real_model_constructions": 0,
+  "GPU_compute": 0,
+  "VAL_passes": 0,
+  "TEST_accesses": 0
+}

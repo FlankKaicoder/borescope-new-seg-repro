@@ -1,5 +1,7 @@
 # EXP18 无卡工程
 
+**2026-11-28当前状态：`EXP18_CPU_READY_GPU_PENDING`。** 完整200轮/4200批及独立元数据/归档验收完成。[当前交接](../../EXP18_CPU_READY_HANDOFF_20261128.md)、[结果与人口](../../results/exp18_cpu/full_replay_20261128/README.md)。λ、真实GPU及正式训练仍待后续Gate。以下11月25日工程记录保留为历史。
+
 **交付状态：`EXP18_CPU_ENGINEERING_PASS_FULL_REPLAY_PENDING`。** 83项CPU测试、四个固定包和21批预演通过；用户允许剩余测试待资源。尚未达到最终CPU READY。[权威交接](../../EXP18_CPU_ENGINEERING_HANDOFF.md)、[待验清单](GPU_PENDING.md)。
 
 当前继续工作以[实验设计](EXPERIMENT_DESIGN.md)和代码审查为主；服务器测试、数据回放和GPU验证均等待算力与相应Gate。

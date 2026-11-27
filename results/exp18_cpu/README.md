@@ -1,5 +1,9 @@
 # EXP18 CPU工程交付
 
+**2026-11-28当前：`EXP18_CPU_READY_GPU_PENDING`。** [完整4200批验收](full_replay_20261128/README.md)、[当前交接](../../EXP18_CPU_READY_HANDOFF_20261128.md)。K521/S497唯一区域，3901非空/299空批；1899输入/446源码及E盘469成员核验通过。真实模型/GPU/VAL/TEST=0，λ=null，正式H200未授权。当前本地资料入口为`E:/autodlwenjian/exp18/cpu-20261128/README.md`。
+
+以下保留2026-11-25快照，其JSON/归档哈希对应当日状态。
+
 **状态：`EXP18_CPU_ENGINEERING_PASS_FULL_REPLAY_PENDING`。未达到最终CPU READY。**
 
 用户允许等服务器算力恢复再做剩余测试。代码已构造，83项CPU测试、四个固定TRAIN数据包和独立21批预演通过；完整4200批未完成，不自动启动GPU。

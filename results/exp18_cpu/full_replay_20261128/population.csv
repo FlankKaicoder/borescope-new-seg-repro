@@ -1,0 +1,8 @@
+class,K_unique_polygons,S_unique_polygons,K_unique_groups,S_unique_groups,K_exposures,S_exposures
+Burn,54,46,32,29,10613,1701
+Crack,52,49,39,36,10268,2968
+Dent,94,91,84,81,18439,5373
+Material missing,80,77,77,74,15572,4747
+Tears,40,39,38,37,7783,2160
+Tip curl,0,0,0,0,0,0
+corrosion,201,195,72,72,38192,5488

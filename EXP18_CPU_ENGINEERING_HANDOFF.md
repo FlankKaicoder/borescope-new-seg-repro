@@ -1,5 +1,7 @@
 # EXP18 无卡工程交付与后续验收
 
+> 本文保留2026-11-25工程快照。2026-11-28完整CPU验收已完成，当前请读[CPU READY交接](EXP18_CPU_READY_HANDOFF_20261128.md)。
+
 **2026-11-25｜`EXP18_CPU_ENGINEERING_PASS_FULL_REPLAY_PENDING`。尚未达到 `EXP18_CPU_READY_GPU_PENDING`。**
 
 用户确认CPU资源固定，并允许等服务器有算力后完成困难测试。本轮停止全量回放及其worker，交付代码、现有验收、归档和Git；不自动进入GPU或训练阶段。

@@ -1,0 +1,8 @@
+class_id,class,matched_unique_polygons,matched_exposures,distinct_partner_polygon_min,distinct_partner_polygon_median,distinct_partner_polygon_mean,distinct_partner_polygon_max,distinct_partner_group_median,distinct_partner_group_q25,distinct_partner_group_q75
+0,Burn,46,1701,1,12.5,11.08695652173913,21,10.5,4.0,13.0
+1,Crack,49,2968,1,14,14.448979591836734,28,10,5.0,22.0
+2,Dent,91,5373,1,10,14.714285714285714,35,10,4.0,23.0
+3,Material missing,77,4747,1,9,16.194805194805195,34,8,6.0,28.0
+4,Tears,39,2160,1,16,14.0,26,16,3.0,20.0
+5,Tip curl,0,0,,,,,,,
+6,corrosion,195,5488,1,9,9.820512820512821,27,6,4.0,10.0

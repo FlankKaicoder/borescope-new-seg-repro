@@ -1,0 +1,49 @@
+{
+  "schema": "EXP18_CPU_POSTFLIGHT_V1",
+  "status": "PASS",
+  "input_files": 1899,
+  "source_files": 446,
+  "baseline_receipt_sha256": "55f35b49d66a9641680d33570349a07cda70f0afa11e474c4b8ebc947f9f52a2",
+  "source_manifest_sha256": "d545d9e59232aa60c5109fac7128ba43dfbb0207cd85f9614ec44e823d48408e",
+  "source_archive_sha256": "db2a7f79ce9bd1f92ca98251cd427de4822d10d15e91306d5adb88a3f7708b58",
+  "input_size_mtime_sha_unchanged_since_preflight": true,
+  "native_environment_source_matches_baseline": true,
+  "torch_imported": false,
+  "completed_epochs": 200,
+  "completed_batches": 4200,
+  "coverage_summary_sha256": "a57d07d213f88cb835f8ec368805e394d4ffc44f4fd65affb20471cad90aff60",
+  "full_audit_summary_sha256": "e025918c85a5c5b133bd59c1511ca1e8028e17066306cb122cc6c60fd5147bc0",
+  "reused_CPU83_and_fixed4_receipts": [
+    {
+      "file": "tests_a10/unittest.log",
+      "sha256": "2de3e05ccb0c281f9d7f90075dfb8fb6047080d39a9f454c7a17b9a1ecaffead"
+    },
+    {
+      "file": "tests_a10/receipt_1795616915507367955.json",
+      "sha256": "98d4c3d613cfabe81ba8c2ac0d37e05a7ac95fd9acac162692ca11c8b55da994"
+    },
+    {
+      "file": "fixed_a10/receipt.json",
+      "sha256": "a50674a42907a86ff4e34c4053494977297c7c3006078818134b85e6d851fb46"
+    }
+  ],
+  "CPU83_tests_rerun_in_this_session": false,
+  "budgets": {
+    "CUDA_initializations": 0,
+    "GPU_compute": 0,
+    "TEST_accesses": 0,
+    "VAL_passes": 0,
+    "real_checkpoint_tensor_loads": 0,
+    "real_model_backwards": 0,
+    "real_model_constructions": 0,
+    "real_model_forwards": 0
+  },
+  "lambda_state": null,
+  "formal_training_authorized": false,
+  "scientific_coverage_gate": "PENDING_REVIEW",
+  "checked_at_unix": 1795800476.924471,
+  "postflight_source_sha256": "04a4b75f67b916b7b2bcdff1ab1c2a4379c4f768d496d0910dc7b49f2c599151",
+  "full_private_receipt_sha256": "1b13bf6c380d802351b3172befe23a9b2cd83af73c63343029c149f2d70c9e46",
+  "private_archive_member": "resume_20261128_01/postflight.json",
+  "checked_inputs_count": 1899
+}

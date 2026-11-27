@@ -1,0 +1,220 @@
+{
+  "schema": "EXP18_CPU_READY_ACCEPTANCE_V1",
+  "status": "EXP18_CPU_READY_GPU_PENDING",
+  "date_local": "2026-11-28",
+  "timezone": "Asia/Shanghai",
+  "runtime_source_commit": "6e3955e1c2632e1d832631935454397fba3a82ff",
+  "acceptance_tools_commit": "820537c97bf8e625e7fc94d01c171bc2b72cb518",
+  "completed_epochs": 200,
+  "completed_batches": 4200,
+  "counts": {
+    "N_replays": 20470,
+    "batches": 4200,
+    "candidate_admitted_521_rows": 101822,
+    "candidate_admitted_poolable_rows": 101822,
+    "candidate_candidate_has_B": 99623,
+    "candidate_candidate_no_B": 1244,
+    "candidate_candidate_unique_groups": 67506,
+    "candidate_candidate_unique_polygons": 100867,
+    "candidate_incomplete_augmented_valid_support": 955,
+    "candidate_input_native_rows": 246000,
+    "candidate_no_admitted_N": 144178,
+    "candidate_poolable_has_B": 100578,
+    "candidate_poolable_no_B": 1244,
+    "candidate_support_complete_candidates": 100867,
+    "candidates": 100867,
+    "historical_verified": 2100,
+    "images": 133600,
+    "matched_rows": 22437,
+    "raw_targets": 253200
+  },
+  "global_populations": {
+    "K": {
+      "exposures": 100867,
+      "unique_polygons": 521,
+      "unique_groups": 327,
+      "unique_sources": 345
+    },
+    "S": {
+      "exposures": 22437,
+      "unique_polygons": 497,
+      "unique_groups": 316,
+      "unique_sources": 334
+    }
+  },
+  "per_class_populations": {
+    "K": [
+      {
+        "class_id": 0,
+        "class": "Burn",
+        "exposures": 10613,
+        "unique_polygons": 54,
+        "unique_groups": 32,
+        "unique_sources": 32
+      },
+      {
+        "class_id": 1,
+        "class": "Crack",
+        "exposures": 10268,
+        "unique_polygons": 52,
+        "unique_groups": 39,
+        "unique_sources": 43
+      },
+      {
+        "class_id": 2,
+        "class": "Dent",
+        "exposures": 18439,
+        "unique_polygons": 94,
+        "unique_groups": 84,
+        "unique_sources": 92
+      },
+      {
+        "class_id": 3,
+        "class": "Material missing",
+        "exposures": 15572,
+        "unique_polygons": 80,
+        "unique_groups": 77,
+        "unique_sources": 79
+      },
+      {
+        "class_id": 4,
+        "class": "Tears",
+        "exposures": 7783,
+        "unique_polygons": 40,
+        "unique_groups": 38,
+        "unique_sources": 40
+      },
+      {
+        "class_id": 5,
+        "class": "Tip curl",
+        "exposures": 0,
+        "unique_polygons": 0,
+        "unique_groups": 0,
+        "unique_sources": 0
+      },
+      {
+        "class_id": 6,
+        "class": "corrosion",
+        "exposures": 38192,
+        "unique_polygons": 201,
+        "unique_groups": 72,
+        "unique_sources": 72
+      }
+    ],
+    "S": [
+      {
+        "class_id": 0,
+        "class": "Burn",
+        "exposures": 1701,
+        "unique_polygons": 46,
+        "unique_groups": 29,
+        "unique_sources": 29
+      },
+      {
+        "class_id": 1,
+        "class": "Crack",
+        "exposures": 2968,
+        "unique_polygons": 49,
+        "unique_groups": 36,
+        "unique_sources": 40
+      },
+      {
+        "class_id": 2,
+        "class": "Dent",
+        "exposures": 5373,
+        "unique_polygons": 91,
+        "unique_groups": 81,
+        "unique_sources": 89
+      },
+      {
+        "class_id": 3,
+        "class": "Material missing",
+        "exposures": 4747,
+        "unique_polygons": 77,
+        "unique_groups": 74,
+        "unique_sources": 76
+      },
+      {
+        "class_id": 4,
+        "class": "Tears",
+        "exposures": 2160,
+        "unique_polygons": 39,
+        "unique_groups": 37,
+        "unique_sources": 39
+      },
+      {
+        "class_id": 5,
+        "class": "Tip curl",
+        "exposures": 0,
+        "unique_polygons": 0,
+        "unique_groups": 0,
+        "unique_sources": 0
+      },
+      {
+        "class_id": 6,
+        "class": "corrosion",
+        "exposures": 5488,
+        "unique_polygons": 195,
+        "unique_groups": 72,
+        "unique_sources": 72
+      }
+    ]
+  },
+  "auxiliary_supervision_batches": 3901,
+  "empty_matching_batches": 299,
+  "longest_empty_segment": {
+    "start_step": 1,
+    "end_step": 3,
+    "length": 3
+  },
+  "multi_polygon_N_image_replay_reuses": 1967,
+  "maximum_seeded_map_recomputations": 4200,
+  "independent_binary_cardinality_checks": 4200,
+  "H100_H200_LR_math_points_checked": 6300,
+  "CPU83_tests": {
+    "status": "PASS_REUSED_SAME_FROZEN_SOURCE",
+    "tests": 83,
+    "rerun_this_session": false
+  },
+  "fixed4_packets": {
+    "status": "PASS_REUSED_SHA_VERIFIED",
+    "positions": [
+      1,
+      7,
+      11,
+      21
+    ]
+  },
+  "input_files_verified_before_and_after": 1899,
+  "source_files_verified_before_and_after": 446,
+  "archive_members_verified": 469,
+  "archive_regular_files": 452,
+  "archive_sample_restores": 4,
+  "gzip_full_stream_verified": true,
+  "bindings_sha256": "68aa155ea740173b58ea3a1e612f29c4828fb41f29d80b796697da5016b5c5ac",
+  "source_manifest_sha256": "d545d9e59232aa60c5109fac7128ba43dfbb0207cd85f9614ec44e823d48408e",
+  "source_archive_sha256": "db2a7f79ce9bd1f92ca98251cd427de4822d10d15e91306d5adb88a3f7708b58",
+  "protocol_sha256": "fab9e2289a96fab68e90c8560548de2f2849b9c3d9f6a844215d5a8e7b86e15b",
+  "CPU_replay_process_seconds": 4750.913676261902,
+  "CPU_replay_peak_cgroup_memory_bytes_sampled": 1607557120,
+  "resource_cpu_quota": "20 logical CPU equivalents",
+  "resource_memory_GiB": 30,
+  "budgets": {
+    "CUDA_initializations": 0,
+    "GPU_compute": 0,
+    "TEST_accesses": 0,
+    "VAL_passes": 0,
+    "real_checkpoint_tensor_loads": 0,
+    "real_model_backwards": 0,
+    "real_model_constructions": 0,
+    "real_model_forwards": 0
+  },
+  "lambda_state": null,
+  "formal_training_authorized": false,
+  "scientific_coverage_gate": "PENDING_REVIEW",
+  "ChatGPT_independent_gate": "PENDING",
+  "real_GPU_behavior_verified": false,
+  "real_training_started": false,
+  "head_activity_scope": "Data supervision condition only; no real optimizer/EMA updates executed",
+  "execution_jobs_remaining": 0
+}

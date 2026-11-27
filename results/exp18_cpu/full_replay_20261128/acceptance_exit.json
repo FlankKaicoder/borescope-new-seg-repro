@@ -1,0 +1,59 @@
+{
+  "status": "PASS_METADATA_AND_POSTFLIGHT",
+  "phases": [
+    {
+      "phase": "coverage",
+      "command": [
+        "/root/autodl-tmp/borescope-new-seg-repro/.venv/bin/python",
+        "-B",
+        "-m",
+        "tools.exp18.coverage_report",
+        "--replay-root",
+        "/root/autodl-tmp/exp18_cpu/20261125T131451Z/full_a10/replay",
+        "--output",
+        "/root/autodl-tmp/exp18_cpu/20261125T131451Z/resume_20261128_01/coverage",
+        "--historical-steps",
+        "/root/autodl-tmp/exp18_cpu/20261125T131451Z/resume_20261128_01/r5_abn.jsonl.gz"
+      ],
+      "returncode": 0,
+      "seconds": 35.955350160598755,
+      "log_sha256": "52654357b2d97fa9b7a8722d2f6d02acee12c56e21787d21008522a26610ba5d"
+    },
+    {
+      "phase": "full_audit",
+      "command": [
+        "/root/autodl-tmp/borescope-new-seg-repro/.venv/bin/python",
+        "-B",
+        "/root/autodl-tmp/exp18_cpu/20261125T131451Z/resume_20261128_01/full_replay_audit.py",
+        "--code-root",
+        "/root/autodl-tmp/exp18_cpu/20261125T131451Z/code_a10",
+        "--replay-root",
+        "/root/autodl-tmp/exp18_cpu/20261125T131451Z/full_a10/replay",
+        "--coverage-root",
+        "/root/autodl-tmp/exp18_cpu/20261125T131451Z/resume_20261128_01/coverage",
+        "--output",
+        "/root/autodl-tmp/exp18_cpu/20261125T131451Z/resume_20261128_01/full_audit"
+      ],
+      "returncode": 0,
+      "seconds": 55.57555055618286,
+      "log_sha256": "a3c2ff8b3b7d52dc06dc965b16da3771ed5afa74aa91b24b49a3330f2c7a5210"
+    },
+    {
+      "phase": "postflight",
+      "command": [
+        "/root/autodl-tmp/borescope-new-seg-repro/.venv/bin/python",
+        "-B",
+        "/root/autodl-tmp/exp18_cpu/20261125T131451Z/resume_20261128_01/postflight.py",
+        "--root",
+        "/root/autodl-tmp/exp18_cpu/20261125T131451Z",
+        "--record",
+        "/root/autodl-tmp/exp18_cpu/20261125T131451Z/resume_20261128_01"
+      ],
+      "returncode": 0,
+      "seconds": 1.9934768676757812,
+      "log_sha256": "0c5c520369c9a979d559dc41323fabafb4ceb34663d276d7ead46d5d492038ca"
+    }
+  ],
+  "GPU_budget": 0,
+  "finished_unix": 1795800476.9601214
+}

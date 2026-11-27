@@ -1,6 +1,6 @@
 ﻿task,status,reason
-H200_4200_CPU_replay,DEFERRED_BY_USER,2GiB/.5CPU external SIGKILL; preserve all partials
-full_matching_population_and_maximum_recomputation,PENDING_FULL_REPLAY,preview21 only
+H200_4200_CPU_replay,PASS_20261128,200 epochs/4200 batches; previous partials preserved
+full_matching_population_and_maximum_recomputation,PASS_20261128,4200 seeded maps and independent binary maximum cardinalities; K521/S497 unique polygons
 real_YOLO_AMP_BN_memory_restore,GPU_PENDING_NOT_AUTHORIZED,real models/GPU currently zero
 lambda_calibration,NOT_RUN_LAMBDA_NULL,TRAIN-only future Gate
 native_VAL_and_export_reload,NOT_RUN,future bounded Gate; TEST forbidden

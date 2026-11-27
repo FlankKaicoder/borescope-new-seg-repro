@@ -1,0 +1,87 @@
+{
+  "schema": "EXP18_FULL_CPU_METADATA_ACCEPTANCE_V1",
+  "status": "PASS_FULL_200_EPOCH_4200_BATCH_METADATA",
+  "completed_epochs": 200,
+  "completed_batches": 4200,
+  "bindings_sha256": "68aa155ea740173b58ea3a1e612f29c4828fb41f29d80b796697da5016b5c5ac",
+  "counts": {
+    "multi_polygon_forward_reuses": 1967,
+    "batches": 4200,
+    "images": 133600,
+    "raw_targets": 253200,
+    "historical_verified": 2100,
+    "candidates": 100867,
+    "matched_rows": 22437,
+    "N_replays": 20470,
+    "candidate_admitted_521_rows": 101822,
+    "candidate_admitted_poolable_rows": 101822,
+    "candidate_candidate_has_B": 99623,
+    "candidate_candidate_unique_groups": 67506,
+    "candidate_candidate_unique_polygons": 100867,
+    "candidate_input_native_rows": 246000,
+    "candidate_no_admitted_N": 144178,
+    "candidate_poolable_has_B": 100578,
+    "candidate_support_complete_candidates": 100867,
+    "candidate_candidate_no_B": 1244,
+    "candidate_poolable_no_B": 1244,
+    "candidate_incomplete_augmented_valid_support": 955
+  },
+  "global_populations": {
+    "K": {
+      "exposures": 100867,
+      "unique_polygons": 521,
+      "unique_groups": 327,
+      "unique_sources": 345
+    },
+    "S": {
+      "exposures": 22437,
+      "unique_polygons": 497,
+      "unique_groups": 316,
+      "unique_sources": 334
+    }
+  },
+  "per_class_populations_table": "coverage:population_by_class.csv (SHA verified; repeated exposures distinguished from unions)",
+  "coverage_maximum_recomputed": true,
+  "scientific_coverage_gate": "PENDING_REVIEW",
+  "independent_closed_cardinality": {
+    "batches_checked": 4200,
+    "solver": "scipy.optimize.linear_sum_assignment",
+    "scipy_version": "1.18.0",
+    "solver_binary": "/root/autodl-tmp/borescope-new-seg-repro/.venv/lib/python3.12/site-packages/scipy/optimize/_lsap.cpython-312-x86_64-linux-gnu.so",
+    "solver_binary_sha256": "9e9602ef6d54be544b8a1d697f1f6038ca2bd3e2ad8e40f0440c5bc70f6f8b12",
+    "matrix_costs": "DIAGONAL_1_LEGAL_NONDIAGONAL_0_FORBIDDEN_K_PLUS_1",
+    "build_matching_or_legal_pair_reused": false
+  },
+  "H200_and_H100_schedule_math": "PASS_4200_PLUS_2100_NUMERIC_POINTS",
+  "epoch_seed_math": "PASS_200_UNIQUE_SAME_FIRST100",
+  "schedule_helper": "/root/autodl-tmp/exp18_cpu/20261125T131451Z/code_a10/tools/exp18/schedule.py",
+  "step_index": {
+    "file": "steps.csv",
+    "sha256": "3283f8b0c61945fe76080dc899ca467d0af5dd796ee64a6516d8942df0d3438d",
+    "rows": 4200
+  },
+  "input_postcheck": "PASS",
+  "auditor_sha256": "1135e11856bad024c329736c21c4c31049b58e19e527303397788a0e35174dec",
+  "budgets": {
+    "CUDA_initializations": 0,
+    "GPU_compute": 0,
+    "TEST_accesses": 0,
+    "VAL_passes": 0,
+    "real_checkpoint_tensor_loads": 0,
+    "real_model_backwards": 0,
+    "real_model_constructions": 0,
+    "real_model_forwards": 0
+  },
+  "lambda_state": null,
+  "formal_training_authorized": false,
+  "limits": [
+    "Six tensor pixel SHA and full trace SHA are audited capture evidence; pixels are not reread or regenerated.",
+    "LR and epoch seeds are configuration mathematics, not observed real optimizer state.",
+    "A different zero/one objective independently verifies maximum cardinality with the same pinned SciPy implementation; seeded map identity is checked by coverage.",
+    "CPU guard receipts describe Python-level guarded execution; SHA checks are not OS-level syscall attestation.",
+    "No GPU, real-model, lambda, scientific benefit or formal-training Gate is granted."
+  ],
+  "full_private_receipt_sha256": "e025918c85a5c5b133bd59c1511ca1e8028e17066306cb122cc6c60fd5147bc0",
+  "private_archive_member": "resume_20261128_01/full_audit/summary.json",
+  "metadata_and_source_inputs_count": 440
+}

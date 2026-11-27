@@ -1,0 +1,159 @@
+{
+  "CPU_memory_policy": {
+    "IPC_transport": "NATIVE_TORCH_FILE_DESCRIPTOR_SHARED_STORAGE_NO_NUMPY_PICKLE_COPY",
+    "N_batch_materialized": false,
+    "R5_reference_projection": "NATIVE_AND_TRACES_ONLY_AFTER_COMPLETE_ORIGINAL_FILE_SHA_CHECK",
+    "decoded_asset_RAM_cache_cleared_before_native_phase": true,
+    "decoded_asset_cache_bytes": 33554432,
+    "epoch_stages": [
+      "NATIVE_21_BATCH_CAPTURE_DROP_IMAGE_PIXELS_JOIN_2_WORKERS",
+      "AUXILIARY_GEOMETRY_MATCHING_N_REPLAY_WITH_NO_NATIVE_WORKERS"
+    ],
+    "first_release": {
+      "gc_unreachable": 30,
+      "malloc_trim_return": 1,
+      "malloc_trim_supported": true,
+      "rss_after_KiB": 637216,
+      "rss_before_KiB": 638208
+    },
+    "fork_memory": {
+      "after_freeze_release": {
+        "gc_unreachable": 0,
+        "malloc_trim_return": 1,
+        "malloc_trim_supported": true,
+        "rss_after_KiB": 637216,
+        "rss_before_KiB": 637216
+      },
+      "before_freeze_release": {
+        "gc_unreachable": 30,
+        "malloc_trim_return": 1,
+        "malloc_trim_supported": true,
+        "rss_after_KiB": 637216,
+        "rss_before_KiB": 638208
+      },
+      "gc_freeze_count": 314599,
+      "gc_freeze_count_before": 375,
+      "new_batch_cycles_still_collected": true,
+      "permanent_generation_retained_until_exit": true,
+      "preloaded_modules": [
+        {
+          "module": "scipy.optimize",
+          "version": null
+        },
+        {
+          "module": "tools.exp18.pairing",
+          "version": null
+        },
+        {
+          "module": "tools.exp18.geometry",
+          "version": null
+        },
+        {
+          "module": "tools.exp15.regions",
+          "version": null
+        },
+        {
+          "module": "tools.exp17.engineering.augmentation",
+          "version": null
+        },
+        {
+          "module": "torch.multiprocessing.reductions",
+          "version": null
+        },
+        {
+          "module": "multiprocessing.resource_sharer",
+          "version": null
+        },
+        {
+          "module": "multiprocessing.connection",
+          "version": null
+        }
+      ]
+    },
+    "malloc_trim_returned_1_count": 8802,
+    "memory_release": "GC_COLLECT_AND_POSIX_LIBC_MALLOC_TRIM_BEFORE_FIRST_FORK_AND_AFTER_EACH_BATCH",
+    "native_first_2100_data_and_trace_byte_verification_required": true,
+    "native_worker_image_buffer": 8,
+    "original_six_tensor_hash_scope": "REAL_NATIVE_BATCH_BEFORE_PIXEL_RELEASE",
+    "prefetch_factor": 1,
+    "release_calls": 8802,
+    "retained_epoch_images": 0,
+    "retained_epoch_semantic_masks": 0,
+    "workers": 2
+  },
+  "CUDA_initialized": false,
+  "TEST_accesses": 0,
+  "VAL_passes": 0,
+  "bindings": {
+    "code": {
+      "native_ultralytics": {
+        "cfg/__init__.py": "1caac06004f28277b9cc94b10c77ea7006d0534272cd2db500422ad45b690bfa",
+        "data/augment.py": "d30f823e330ea4d8f165eda6f16e81a8d41acf22918a9c1c97d022b7bfc9dc5a",
+        "data/base.py": "41bb1349e4baa74b94728d2c323fbdd7fd318b1f82b951880b292fb34840dac3",
+        "data/build.py": "2f14a4860a3f18c07ceb14272f0c4b5b482fd4e779ebdd37fa258aefeb80452a",
+        "data/dataset.py": "36aa66daa0949747745b8e1986a812b152dffc7ec050d78e25e37c16285b11c5",
+        "data/utils.py": "3896dc106c2a68425ab0b7b2695e2f6609c98d5ed11c9750be6301e5c8a42173",
+        "utils/instance.py": "b2fdaecb2d62847fb9ed04d80a1e495c268ed1a46c27fa34ae6d0c3d0336a0d0"
+      },
+      "packages": {
+        "numpy": "2.3.2",
+        "scipy": "1.18.0",
+        "torch": "2.8.0+cu128",
+        "ultralytics": "8.4.117"
+      },
+      "repository_files": {
+        "tools/exp14/audit_admission.py": "eeff09efe03af04152e34a8c880073d98a4873d8484e22d75eb3376f96cfe167",
+        "tools/exp15/regions.py": "683f467f817dcf41ce50036c640ed3b45548abde867667dc1066222d1cafd65a",
+        "tools/exp17/engineering/augmentation.py": "b5564c4c1f8a9a5c52b4737182a4eb65565a6044511d55a4780cf7265be4b8f5",
+        "tools/exp17/engineering/data.py": "8104d5c9ea4ed6e2fa5f50c6936e1651a04975c9956fc0bac7436101dcfa7593",
+        "tools/exp18/common.py": "ac0275e37fd3a70f22f8ce7244ee70f68626ea81c2baa9ca203deed2c5ba8d7a",
+        "tools/exp18/data.py": "dc11bcfaa64188da1371916c6fb691de359b6d8f871d2686131a06d7adf0891a",
+        "tools/exp18/geometry.py": "01e809fd0851fffe9b4796005f8b1693738bfb4ce9c33c251a5e8e777145ab0e",
+        "tools/exp18/guards.py": "ed00274fda35192f26730aaf6e6a5e8cc1ec17759e710268c7223ad802fbe274",
+        "tools/exp18/pairing.py": "06ea102069e0105c51a3f3bd8747591ac6cbf160c658f0c878c308dc490ca0d8",
+        "tools/exp18/protocol.py": "2526cb20ee7fed59a7798c4ffd4d5ffd4c77a16996bc61e7a89cffe2ac4950ef",
+        "tools/exp18/replay.py": "331bb80aff0d4a2905b71b581ea9295d1e0a380e740f9e53950887562ad6f0c8",
+        "tools/exp18/schedule.py": "d32d0b23fa7a42ecdb147260205391452dfd62b05a3f6f5559985338ffcbd85b"
+      }
+    },
+    "protocol_sha256": "fab9e2289a96fab68e90c8560548de2f2849b9c3d9f6a844215d5a8e7b86e15b",
+    "runtime_config_sha256": "1d90672b5ae86d2d2c6a64bf7326bdfefe35ae473b86c6ef579ee66f67b9b763",
+    "scope": "NATIVE_CPU_DATA_NO_REAL_MODEL_ALL_HORIZON"
+  },
+  "bindings_sha256": "68aa155ea740173b58ea3a1e612f29c4828fb41f29d80b796697da5016b5c5ac",
+  "completed_epochs": 200,
+  "counts": {
+    "N_replays": 20470,
+    "batches": 4200,
+    "candidate_admitted_521_rows": 101822,
+    "candidate_admitted_poolable_rows": 101822,
+    "candidate_candidate_has_B": 99623,
+    "candidate_candidate_no_B": 1244,
+    "candidate_candidate_unique_groups": 67506,
+    "candidate_candidate_unique_polygons": 100867,
+    "candidate_incomplete_augmented_valid_support": 955,
+    "candidate_input_native_rows": 246000,
+    "candidate_no_admitted_N": 144178,
+    "candidate_poolable_has_B": 100578,
+    "candidate_poolable_no_B": 1244,
+    "candidate_support_complete_candidates": 100867,
+    "candidates": 100867,
+    "historical_verified": 2100,
+    "images": 133600,
+    "matched_rows": 22437,
+    "raw_targets": 253200
+  },
+  "elapsed_seconds": 4745.872501632199,
+  "horizon": 200,
+  "image_epoch_cache_files": 0,
+  "lambda_state": null,
+  "real_checkpoint_tensor_loads": 0,
+  "real_model_constructions": 0,
+  "real_model_forwards": 0,
+  "schema": "EXP18_CPU_REPLAY_SUMMARY_V1",
+  "source_postcheck": "PASS",
+  "status": "CPU_DATA_READY_GPU_PENDING",
+  "full_private_receipt_sha256": "205249b6f54fa34b8c20c1f6eac70faf30c01772d71c2edb639977c8fd9f266b",
+  "private_archive_member": "full_a10/replay/attempt_51ce065d6b3f4258af9ed55bf0f8f584/summary.json",
+  "commits_count": 200
+}

@@ -1,0 +1,6 @@
+coverage
+{"status": "CPU_COVERAGE_AUDIT_PASS_GPU_PENDING", "batches": 4200}
+full_audit
+{"status": "PASS_FULL_200_EPOCH_4200_BATCH_METADATA", "batches": 4200, "output": "/root/autodl-tmp/exp18_cpu/20261125T131451Z/resume_20261128_01/full_audit"}
+postflight
+{"status": "PASS", "input_files": 1899, "source_files": 446, "completed_batches": 4200}

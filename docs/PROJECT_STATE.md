@@ -1,6 +1,10 @@
 # Project state
 
-## EXP18 CPU full replay resumed (2026-11-28)
+## EXP18 CPU acceptance completed (2026-11-28)
+
+`EXP18_CPU_READY_GPU_PENDING`。完整200轮/4200批CPU回放、133600图次/253200原始实例次、前2100历史对照通过；4200具体匹配重算及独立最大闭合人口、P3/身份/N索引/权重、H100/H200数学、1899输入/446源码前后核对PASS。83项CPU测试/四固定包按冻结SHA复用；独立实际证据终验与E盘469成员/4样本/完整gzip核验PASS。K521/S497唯一区域；S316组，3901非空/299空匹配批。20CPU/30GiB下回放79.18分钟。lambda=null，正式H200未授权；真实模型/CUDA/GPU/VAL/TEST=0。科研覆盖、ChatGPT独立审查、GPU预算/AMP/真实恢复/λ/smoke/容量Gate仍待下一阶段；本轮停止。[当前交接](../EXP18_CPU_READY_HANDOFF_20261128.md)、[验收](../results/exp18_cpu/full_replay_20261128/README.md)。
+
+## EXP18 CPU full replay resume log (start, 2026-11-28)
 
 用户重新开启服务器并要求按原进度继续。实际容器恢复为20CPU/30GiB、数据盘约46GiB可用；1899输入、446冻结a10源码与原生环境源码SHA前置核对PASS。仅恢复获批CPU全量TRAIN数据回放，服务器记录`/root/autodl-tmp/exp18_cpu/20261125T131451Z/resume_20261128_01`。完整200轮/4200批、全轨迹匹配重算与独立总审查仍以最终回执为准；当前不能提前记CPU_READY。lambda=null，真实模型/GPU/VAL/TEST和正式训练均未启动。旧partial和全部历史产物保留。
 

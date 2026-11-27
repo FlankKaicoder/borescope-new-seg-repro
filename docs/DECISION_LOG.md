@@ -1,5 +1,11 @@
 # Decision log
 
+## EXP18-CPU-FULL-20261128 — Full CPU acceptance; stop before GPU Gate
+
+用户重新开启服务器并要求延续进度，恢复已授权CPU范围；不据此启动模型或训练。20CPU/30GiB环境使用原a10源码和同一H200 CPU协议，完成200轮/4200批、前2100历史精确匹配、4200带种子地图重算与独立0/1最大闭合人口核验、N own-ROI索引/复用、权重、P3及全轨迹身份审查。83项测试和四固定包按原SHA复用，1899输入/446源码前后一致。469成员E盘包、4个样本恢复和完整gzip核验PASS；全部失败/partial及服务器资料保留。
+
+K521区域/327组，S497区域/316组；累计K100867/S22437曝光，3901非空/299空匹配批。曝光和活动条件不表示独立样本或实际模型更新。当前`EXP18_CPU_READY_GPU_PENDING`，λ=null、正式H200未授权，真实模型/CUDA/GPU/VAL/TEST=0。技术终验不替代科研覆盖、ChatGPT独立审查及GPU/λ/smoke/容量Gate。按原授权完成后停止。[交接](../EXP18_CPU_READY_HANDOFF_20261128.md)。
+
 ## EXP18-CPU-20261125 — Engineering delivered; full replay deferred by user
 
 用户授权独立worktree的EXP18代码、TRAIN回放、CPU验证及Commit/Push，冻结三臂/H200候选、lambda=null和GPU/真实模型/VAL/TEST预算0。保留R5整批A统计导数和P3覆盖定义，闭合置换只改池化后N索引；类别等权，空head的AdamW/EMA冻结。83项CPU测试、四固定包、21批数据/trace对齐与匹配预演通过。

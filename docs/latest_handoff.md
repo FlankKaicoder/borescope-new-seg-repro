@@ -1,4 +1,8 @@
-# 当前交接：EXP18工程已交付，全量回放待资源
+# 当前交接：EXP18 CPU验收完成，GPU待Gate
+
+2026-11-28。`EXP18_CPU_READY_GPU_PENDING`。完整200轮/4200批、前2100历史对照、4200具体地图及独立闭合最大人口、N索引/权重、1899输入/446源码和E盘469成员核验PASS。83项CPU测试/四固定包按SHA复用；K521/S497唯一区域，3901非空/299空批。lambda=null，正式H200未授权；真实模型/GPU/VAL/TEST均0。等待ChatGPT独立科学审查与下一阶段Gate。[权威交接](../EXP18_CPU_READY_HANDOFF_20261128.md)。以下11月25日交接保留为历史。
+
+# 2026-11-25交接：EXP18工程已交付，全量回放待资源
 
 `EXP18_CPU_ENGINEERING_PASS_FULL_REPLAY_PENDING`。83项CPU测试、四个固定包、21批预演PASS。用户允许等算力恢复；全量0/4200封存，尚非最终CPU READY。lambda=null，正式H200未授权；真实模型/GPU/新VAL/TEST均未执行。[权威交接](../EXP18_CPU_ENGINEERING_HANDOFF.md)。以下R5历史交接保留。
 

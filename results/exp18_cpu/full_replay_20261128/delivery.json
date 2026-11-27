@@ -1,0 +1,26 @@
+{
+  "status": "EXP18_CPU_READY_GPU_PENDING",
+  "branch": "codex/exp18-cpu-engineering",
+  "runtime_source_commit": "6e3955e1c2632e1d832631935454397fba3a82ff",
+  "acceptance_tools_commit": "820537c97bf8e625e7fc94d01c171bc2b72cb518",
+  "local_delivery": "E:\\autodlwenjian\\exp18\\cpu-20261128",
+  "package": {
+    "file": "core.tar.gz",
+    "bytes": 215898884,
+    "sha256": "0e4bd57cb5778f09f4de5c723e504199e0531b65a739f3711223385056b33463"
+  },
+  "inventory_sha256": "851da2f8027cfea1e1ba85e92cc834b40ac7bd1f029d74c50574d3822d4324eb",
+  "files_index": {
+    "file": "files.csv.gz",
+    "sha256": "a6e91c076b192ffd0d6fadfc13aea1433f8fd374f9fc5333430e2e4b1de552b5"
+  },
+  "acceptance_receipt_sha256": "934298e0c6e50a878600e68f580490b6bcd6c8217cdd8cd076a8622b5cca2e74",
+  "reused_a10_source_archive": "../cpu-20261125/source.tar",
+  "reused_a10_source_sha256": "db2a7f79ce9bd1f92ca98251cd427de4822d10d15e91306d5adb88a3f7708b58",
+  "GPU_compute": 0,
+  "VAL_passes": 0,
+  "TEST_accesses": 0,
+  "lambda_state": null,
+  "formal_training_authorized": false,
+  "server_files_deleted": 0
+}

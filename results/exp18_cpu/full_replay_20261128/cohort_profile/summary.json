@@ -1,0 +1,195 @@
+{
+  "schema": "EXP18_CPU_COHORT_ACTIVITY_PROFILE_V1",
+  "status": "PASS_COMPLETE_4200_BATCH_METADATA_PROFILE",
+  "bindings_sha256": "68aa155ea740173b58ea3a1e612f29c4828fb41f29d80b796697da5016b5c5ac",
+  "completed_epochs": 200,
+  "completed_batches": 4200,
+  "counts": {
+    "batches": 4200,
+    "active_batches": 3901,
+    "empty_batches": 299,
+    "K": 100867,
+    "S": 22437,
+    "N_replays": 20470
+  },
+  "auxiliary_supervision_fraction": 0.9288095238095239,
+  "empty_S_fraction": 0.07119047619047619,
+  "empty_segments": 274,
+  "longest_empty_segment": {
+    "start_step": 1,
+    "end_step": 3,
+    "length": 3
+  },
+  "first_auxiliary_step": 4,
+  "last_auxiliary_step": 4200,
+  "global_populations": {
+    "K": {
+      "exposures": 100867,
+      "unique_polygons": 521,
+      "unique_groups": 327,
+      "unique_sources": 345
+    },
+    "S": {
+      "exposures": 22437,
+      "unique_polygons": 497,
+      "unique_groups": 316,
+      "unique_sources": 334
+    }
+  },
+  "per_class_populations": {
+    "K": [
+      {
+        "class_id": 0,
+        "class": "Burn",
+        "exposures": 10613,
+        "unique_polygons": 54,
+        "unique_groups": 32,
+        "unique_sources": 32
+      },
+      {
+        "class_id": 1,
+        "class": "Crack",
+        "exposures": 10268,
+        "unique_polygons": 52,
+        "unique_groups": 39,
+        "unique_sources": 43
+      },
+      {
+        "class_id": 2,
+        "class": "Dent",
+        "exposures": 18439,
+        "unique_polygons": 94,
+        "unique_groups": 84,
+        "unique_sources": 92
+      },
+      {
+        "class_id": 3,
+        "class": "Material missing",
+        "exposures": 15572,
+        "unique_polygons": 80,
+        "unique_groups": 77,
+        "unique_sources": 79
+      },
+      {
+        "class_id": 4,
+        "class": "Tears",
+        "exposures": 7783,
+        "unique_polygons": 40,
+        "unique_groups": 38,
+        "unique_sources": 40
+      },
+      {
+        "class_id": 5,
+        "class": "Tip curl",
+        "exposures": 0,
+        "unique_polygons": 0,
+        "unique_groups": 0,
+        "unique_sources": 0
+      },
+      {
+        "class_id": 6,
+        "class": "corrosion",
+        "exposures": 38192,
+        "unique_polygons": 201,
+        "unique_groups": 72,
+        "unique_sources": 72
+      }
+    ],
+    "S": [
+      {
+        "class_id": 0,
+        "class": "Burn",
+        "exposures": 1701,
+        "unique_polygons": 46,
+        "unique_groups": 29,
+        "unique_sources": 29
+      },
+      {
+        "class_id": 1,
+        "class": "Crack",
+        "exposures": 2968,
+        "unique_polygons": 49,
+        "unique_groups": 36,
+        "unique_sources": 40
+      },
+      {
+        "class_id": 2,
+        "class": "Dent",
+        "exposures": 5373,
+        "unique_polygons": 91,
+        "unique_groups": 81,
+        "unique_sources": 89
+      },
+      {
+        "class_id": 3,
+        "class": "Material missing",
+        "exposures": 4747,
+        "unique_polygons": 77,
+        "unique_groups": 74,
+        "unique_sources": 76
+      },
+      {
+        "class_id": 4,
+        "class": "Tears",
+        "exposures": 2160,
+        "unique_polygons": 39,
+        "unique_groups": 37,
+        "unique_sources": 39
+      },
+      {
+        "class_id": 5,
+        "class": "Tip curl",
+        "exposures": 0,
+        "unique_polygons": 0,
+        "unique_groups": 0,
+        "unique_sources": 0
+      },
+      {
+        "class_id": 6,
+        "class": "corrosion",
+        "exposures": 5488,
+        "unique_polygons": 195,
+        "unique_groups": 72,
+        "unique_sources": 72
+      }
+    ]
+  },
+  "activity": {
+    "file": "activity.csv",
+    "rows": 4200,
+    "sha256": "6990019e328aa3834be68818cdfa9bbc84c6393427d4dfb586db27f8e7e6f78a"
+  },
+  "full_audit": {
+    "file": "/root/autodl-tmp/exp18_cpu/20261125T131451Z/resume_20261128_01/full_audit/summary.json",
+    "sha256": "e025918c85a5c5b133bd59c1511ca1e8028e17066306cb122cc6c60fd5147bc0",
+    "auditor_sha256": "1135e11856bad024c329736c21c4c31049b58e19e527303397788a0e35174dec",
+    "step_index_sha256": "3283f8b0c61945fe76080dc899ca467d0af5dd796ee64a6516d8942df0d3438d"
+  },
+  "input_postcheck": "PASS",
+  "profile_source_sha256": "064419ccc7baa301fd05cbb4ead1da94c8db85304b366e5879cf8ed7ae495a1d",
+  "budgets": {
+    "CUDA_initializations": 0,
+    "GPU_compute": 0,
+    "TEST_accesses": 0,
+    "VAL_passes": 0,
+    "real_checkpoint_tensor_loads": 0,
+    "real_model_backwards": 0,
+    "real_model_constructions": 0,
+    "real_model_forwards": 0
+  },
+  "lambda_state": null,
+  "formal_training_authorized": false,
+  "head_activity_semantics": "HAS_AUXILIARY_SUPERVISION iff matching S is nonempty; future head activity condition only.",
+  "real_optimizer_updates_executed": 0,
+  "nonzero_head_gradient_established": false,
+  "limits": [
+    "No image or tensor byte is reread; accepted metadata records are checked by SHA.",
+    "Nonempty S does not imply a nonzero gradient, nonzero lambda, real optimizer step or actual EMA update.",
+    "Unique populations are unions over the entire horizon; epoch/batch unique counters are never summed.",
+    "No GPU, scientific, lambda, smoke or formal-training Gate is granted."
+  ],
+  "full_private_receipt_sha256": "6bb1d12674d81942dc61b2778d99c38c6963fe8910becd75fbc499cc15523a5e",
+  "private_archive_member": "resume_20261128_01/cohort_profile/summary.json",
+  "inputs_count": 442,
+  "committed_sources_count": 200
+}

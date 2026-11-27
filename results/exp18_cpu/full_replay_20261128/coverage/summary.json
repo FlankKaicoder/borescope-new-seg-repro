@@ -1,0 +1,1478 @@
+{
+  "audited_batches": 4200,
+  "audited_epochs": 200,
+  "bindings_sha256": "68aa155ea740173b58ea3a1e612f29c4828fb41f29d80b796697da5016b5c5ac",
+  "counts": {
+    "admitted_521_rows": 101822,
+    "admitted_poolable_rows": 101822,
+    "batches": 4200,
+    "candidate_has_B": 99623,
+    "candidate_no_B": 1244,
+    "candidate_unique_groups": 67506,
+    "candidate_unique_polygons": 100867,
+    "candidates": 100867,
+    "incomplete_augmented_valid_support": 955,
+    "input_native_rows": 246000,
+    "matched_rows": 22437,
+    "maximum_assignment_recomputations": 4200,
+    "no_admitted_N": 144178,
+    "permutation_audits": 4200,
+    "poolable_has_B": 100578,
+    "poolable_no_B": 1244,
+    "support_complete_candidates": 100867,
+    "weight_marginal_audits": 4200
+  },
+  "historical_availability_batches": {
+    "AVAILABLE_ORIGINAL_R5_ABN": 2100,
+    "NOT_APPLICABLE_AFTER_R5_STEP_2100": 2100
+  },
+  "historical_source_sha256": "1118238c6a87c19bd315a678b7a4c8ad8d3db01b7e72a8f9f27437c7e2e2e8f1",
+  "historical_weight_definition": "mean_class(mean_A_group(mean_polygon)); only known R5 steps <=2100",
+  "image_or_model_reads": 0,
+  "interpretation": "K is all support-complete approved candidates; S is their common closed-permutation subset. No-B rows can enter K but cannot enter S under same-batch same-class cross-group matching.",
+  "maximum_assignment_recomputed": true,
+  "partial_history_is_not_zero": true,
+  "schema": "EXP18_CPU_COVERAGE_AUDIT_V1",
+  "scientific_coverage_gate": "PENDING_REVIEW",
+  "sources": [
+    {
+      "bytes": 1043526,
+      "commit_file": "epoch_000.commit.json",
+      "commit_sha256": "3cba4cd65fdebb4f6659887be24ab6784892e6dde10ee1dac7ca2fead6bcd10e",
+      "file": "epoch_000.fccaaea65bca4013ae3154c912c1104b.jsonl.gz",
+      "sha256": "23d34d787f79e6a7ba97e7bdcaf4c827097e345408e86c9d2647962505795f5f"
+    },
+    {
+      "bytes": 1048317,
+      "commit_file": "epoch_001.commit.json",
+      "commit_sha256": "874414413410ff7e2bd4531309ee93faafb82ad10db068fe4ab2762768389ece",
+      "file": "epoch_001.af30a8d4e3e241e1802e077cc28db5e4.jsonl.gz",
+      "sha256": "4a9fa72c574b840306093fe0301b75be7d32f9962267d3c8b377f277497f8c39"
+    },
+    {
+      "bytes": 1049081,
+      "commit_file": "epoch_002.commit.json",
+      "commit_sha256": "6fe87032d0d5307e73a297554061bda5aa4f2096011694e0806f2acabdf97ac1",
+      "file": "epoch_002.7cae3cbf9a764e26bb02c016d2ccc8f0.jsonl.gz",
+      "sha256": "a03c2271369a5667b8eb3ea38fead0ec4cad184313ba64785d1c6b406190d06e"
+    },
+    {
+      "bytes": 1044836,
+      "commit_file": "epoch_003.commit.json",
+      "commit_sha256": "72b8393d0622c103451e86355818b025f9b0e841dcc88dc2d2fdd2f82f261f85",
+      "file": "epoch_003.103f7f6e7f254c58a4ebe5fd2dc7e9b6.jsonl.gz",
+      "sha256": "9d1f11440dc60548530159e8ca1e630c0eae856a3a2f7b7330f8631454899dcc"
+    },
+    {
+      "bytes": 1056484,
+      "commit_file": "epoch_004.commit.json",
+      "commit_sha256": "e0c3b50737b369f9183ffebc77f557e1cc5e10b4dad4a64b999e245294556e37",
+      "file": "epoch_004.bff69650456f4aedaed9dd58c75d7abe.jsonl.gz",
+      "sha256": "34492ef88e05431962e499765bbde2cff9ed1ae8223af7b497a2bb4154416387"
+    },
+    {
+      "bytes": 1053922,
+      "commit_file": "epoch_005.commit.json",
+      "commit_sha256": "5754b677f955967a7057f7dab4390cf611899fb2d6330b926a8f4a8dd6f5f95a",
+      "file": "epoch_005.542789c9cd4843b38d152ff4b824c823.jsonl.gz",
+      "sha256": "f51a9b684ba186d82bccc053a1e45f70699a5be1aae9c00bffc9f6d444879a81"
+    },
+    {
+      "bytes": 1059738,
+      "commit_file": "epoch_006.commit.json",
+      "commit_sha256": "ecc5a2736596fe436a0306ff2d35dcc69c3f18b724e98f1773fa79b34a114358",
+      "file": "epoch_006.7cd8ce73c7c34787b9f74d0f2ecbeac8.jsonl.gz",
+      "sha256": "cf31914e419c941898deed445addb43c011e05509d3d688c7a7011b2190880e6"
+    },
+    {
+      "bytes": 1052860,
+      "commit_file": "epoch_007.commit.json",
+      "commit_sha256": "e83cc0fcb1f58ee31ed2f2eb6a02c1868ef2744a15e5bb182b6f139783099522",
+      "file": "epoch_007.bda9e72fdb334151b82713628d525533.jsonl.gz",
+      "sha256": "1497952e966299ad236026983f54cfb64da5b76cb665ab41fe9670bd5d72bd71"
+    },
+    {
+      "bytes": 1056756,
+      "commit_file": "epoch_008.commit.json",
+      "commit_sha256": "b297255cf85120794ad0ef7b7dddbcb0b57aea385e39c61502621ae309d9a34f",
+      "file": "epoch_008.309adbd0fdc249fd8c2db49dcffc4415.jsonl.gz",
+      "sha256": "1c9278dec9ac4b28aea497ecb01d2e2c5a7441e7da72cf34e9e1d3c17f4475f8"
+    },
+    {
+      "bytes": 1062114,
+      "commit_file": "epoch_009.commit.json",
+      "commit_sha256": "39d6b10e82c11f93f820dc4249f652f18eb55c61f45bc99a49cb6ed9b9606c6b",
+      "file": "epoch_009.8b0a0aee5a1245de8aa221ea1c62b6c1.jsonl.gz",
+      "sha256": "7880a498bc6e755925acb101f4f147323b11ad63a589b4fff8cf48fcb2d79ab2"
+    },
+    {
+      "bytes": 1062344,
+      "commit_file": "epoch_010.commit.json",
+      "commit_sha256": "a9bd2675ffc3a5e697bb7f88cba542cef7f795d9e8cce2cb8bbf586c1b7c6c1d",
+      "file": "epoch_010.0e33023f23354a1f97ae43fabe23ca37.jsonl.gz",
+      "sha256": "d11193dd3ba61237c42d038a37b33b0ea8fc22ef8e1b192655faeb5e1dc65dc6"
+    },
+    {
+      "bytes": 1050377,
+      "commit_file": "epoch_011.commit.json",
+      "commit_sha256": "467a5b1734175b92b22799fd49b7fc0be717fece525524aab97159b6bee75c44",
+      "file": "epoch_011.0d82b2f9f1934fd39748476deb291d60.jsonl.gz",
+      "sha256": "6f8692e19f84712078b96aa2942f6195ac0f52fd41dd989a396b5767967b6f06"
+    },
+    {
+      "bytes": 1054880,
+      "commit_file": "epoch_012.commit.json",
+      "commit_sha256": "9453981f3d57ccef6c1b31a1ad588cad8ba2a2215d953466e29468fb568c683b",
+      "file": "epoch_012.7e2d0e31e41a41c1b3b7ab9be05e017f.jsonl.gz",
+      "sha256": "ddb04ee0fa4c68c6a9cb76f8e7560d27aa0a4f07f8e4e559706229b3b8fefb26"
+    },
+    {
+      "bytes": 1059422,
+      "commit_file": "epoch_013.commit.json",
+      "commit_sha256": "ce0a9bf913f7740a79fb6dc9a6fe16d4179f87e98ccfdd9b807961f27c873104",
+      "file": "epoch_013.faa52dd2ea574964852e561ab037e943.jsonl.gz",
+      "sha256": "8ed59968c44b33049ce1975b1caa28b526762b5cd44ee6378a60f3cc7d0b9baf"
+    },
+    {
+      "bytes": 1060185,
+      "commit_file": "epoch_014.commit.json",
+      "commit_sha256": "ba81c1f4e6fcd2f51923b3cd358a3c5552875331be2abafdfe8f18f2d89953f6",
+      "file": "epoch_014.9f6b271f0b274ef6bed514d76481af72.jsonl.gz",
+      "sha256": "bf71fdd6aa3afb24a1e1a4bb51ae2fee1a42228bdda4e5461d564c42afed8cb7"
+    },
+    {
+      "bytes": 1063324,
+      "commit_file": "epoch_015.commit.json",
+      "commit_sha256": "e03dd37a07cc3d89742dcc8f83236ad021a8f0c446e45f5aab1e0401b6677434",
+      "file": "epoch_015.f9726eea98c24808bda17f0e6134fc89.jsonl.gz",
+      "sha256": "9e63702f97c700196ff04a587190642c732f00f2464bf79c6c2f0db7562fd522"
+    },
+    {
+      "bytes": 1053905,
+      "commit_file": "epoch_016.commit.json",
+      "commit_sha256": "6afe42048604fe95b18578a8e60e96a7c586c95e8a95dadf22b70be920f3a2fa",
+      "file": "epoch_016.2c6fbf129fd54a8999ea3f52a351619e.jsonl.gz",
+      "sha256": "7ba914f987b545162424a9a4b434cc58d68e351bec5ae0e5c3f8d1b3dcd896e9"
+    },
+    {
+      "bytes": 1052385,
+      "commit_file": "epoch_017.commit.json",
+      "commit_sha256": "61b853b6e53e1caebbc7e1d96ab5f44106b596aeb4417d31441a079366c1b03c",
+      "file": "epoch_017.5ba4c6ae4e534430a93153a4443aa202.jsonl.gz",
+      "sha256": "f97836b7e23e0aacb1a8c11c83221985beab34b9cee3ccb44519982fa57945cb"
+    },
+    {
+      "bytes": 1051290,
+      "commit_file": "epoch_018.commit.json",
+      "commit_sha256": "5b608876564c1d6c230f232248d3c24ae470b669311898e545c6fa7134199220",
+      "file": "epoch_018.9f85915154be4b2580889a3e1444e4fc.jsonl.gz",
+      "sha256": "1b0740f4f01be4874716f440e8a240b09049935c1809b67f6678b4bb1c70db1f"
+    },
+    {
+      "bytes": 1055185,
+      "commit_file": "epoch_019.commit.json",
+      "commit_sha256": "ee3c3417e16821ffcce883737b905be43f7cb043c1d48999525400ab96d2b63c",
+      "file": "epoch_019.fdf82d90e24540f7a266d8d2bad87dc6.jsonl.gz",
+      "sha256": "210bcbf9448437e07d8715a7ff04b3119bc993066ecbc5fbf0930cda15e34595"
+    },
+    {
+      "bytes": 1065932,
+      "commit_file": "epoch_020.commit.json",
+      "commit_sha256": "39f3edf446ce7661530073a15b6e2cbd97c6eafe86e1d73ad9ef578560489fa8",
+      "file": "epoch_020.7497c4f035224f059b112e44b008259a.jsonl.gz",
+      "sha256": "e17fe6e030f7ed63570751998ce1cf7b35d9b3b5e2ba26f18c0c8e8fcbd2c037"
+    },
+    {
+      "bytes": 1056837,
+      "commit_file": "epoch_021.commit.json",
+      "commit_sha256": "6147e8f98ee67cac38a4b7b3b230a70dcf587b0bac9b9d09d8388eea0c950706",
+      "file": "epoch_021.6ad8bb607c8b4f468e5bffe5f5489c14.jsonl.gz",
+      "sha256": "2126e9f35bea4e8481c16f0c2ad46d3e55915a7012e6bf03d937792b612bcfd9"
+    },
+    {
+      "bytes": 1048921,
+      "commit_file": "epoch_022.commit.json",
+      "commit_sha256": "ab5c6c6920e0ee781f97a3b7d262e3436467fc782197a416ecd778304278477a",
+      "file": "epoch_022.59e6cc806ae34d24bb96058adcda1861.jsonl.gz",
+      "sha256": "922eb409a81659d3a6cf9bd1ecbf43ac691accd5594c56e30244a14b4f6a6f99"
+    },
+    {
+      "bytes": 1051089,
+      "commit_file": "epoch_023.commit.json",
+      "commit_sha256": "ec5cf15a7a81f71121e01ab78a7e210408dcf8b3aee1e0582c7873b8839e81d7",
+      "file": "epoch_023.5efbf511735c4ffe81b30d8fab4ee646.jsonl.gz",
+      "sha256": "34a17a9915dbb12b770b8066a99faac92471b9a98fee9ad3365d8af7e5a0945d"
+    },
+    {
+      "bytes": 1055034,
+      "commit_file": "epoch_024.commit.json",
+      "commit_sha256": "ed9ae61900445ec9316ee05da913df2aa476eccb32dde6e1e722d93dd3bc3d77",
+      "file": "epoch_024.f05dd54d63464a16aa5ee60b5223e3d6.jsonl.gz",
+      "sha256": "5d636c855eee929b8ffbb291fd252a1fd54c48f6a8d862110fc645b2b2a97b95"
+    },
+    {
+      "bytes": 1049694,
+      "commit_file": "epoch_025.commit.json",
+      "commit_sha256": "08f5b4f10e33b550514b89cd319aa049e7733b0149cebb51e8b2db8ef743ac23",
+      "file": "epoch_025.e68d8fbfd744444d8b22febd053715be.jsonl.gz",
+      "sha256": "87ca7652e22644da555af1722ea9e11d799b3d089b1bb335ba2a1c0def911635"
+    },
+    {
+      "bytes": 1057316,
+      "commit_file": "epoch_026.commit.json",
+      "commit_sha256": "ad0e3086264bd7a52a1ab4ed147d38446e2910560a9db1de281057d1d9aeee28",
+      "file": "epoch_026.f3165484258f4ebb83b97a14296bbef2.jsonl.gz",
+      "sha256": "9e044e24a91d322687f1074bcc570e38c1c6d2c4d2d5f0a2859f2106192145fd"
+    },
+    {
+      "bytes": 1052658,
+      "commit_file": "epoch_027.commit.json",
+      "commit_sha256": "bdd7fafcae4c3698e0b80475d8578107bcac69c1e171a03d0165f63acf04b8af",
+      "file": "epoch_027.8c82fb20525b4614aee89b9e4dbc1121.jsonl.gz",
+      "sha256": "3aa6cd6ac6ca7528b4ca93014052dff724db24d902dc691f980341e929352272"
+    },
+    {
+      "bytes": 1048963,
+      "commit_file": "epoch_028.commit.json",
+      "commit_sha256": "dbf94e2f21c01972e040c248b248df51dcb50463f0c6bb29e8c69fbfea0ab1ff",
+      "file": "epoch_028.12367f415b2c46f4a7c9ac7434abf1ad.jsonl.gz",
+      "sha256": "46bd319129414a3d1bc67d2af9f62cfa2c6983f0519bfd7990a675a6af53b8ce"
+    },
+    {
+      "bytes": 1054572,
+      "commit_file": "epoch_029.commit.json",
+      "commit_sha256": "448510633e36cf86eaf471b6031c79eca121c0ef5fe754b56ca21b6978ba062b",
+      "file": "epoch_029.92c829ec5de74ba5af02f93a86307502.jsonl.gz",
+      "sha256": "4d1ef8c43117611c8ccd60338641b39da92e159ea426b8411e7975ea78c600be"
+    },
+    {
+      "bytes": 1051418,
+      "commit_file": "epoch_030.commit.json",
+      "commit_sha256": "0edc6d65d594ca6f234987d069a638a9f90d0e54be8ee35336dd31313f90c581",
+      "file": "epoch_030.7c556d2c561d4f519c5a4ab480e01821.jsonl.gz",
+      "sha256": "7b549f6412f903424885ac342e33719e505450614c3feccf8b479a1cac3c1864"
+    },
+    {
+      "bytes": 1043882,
+      "commit_file": "epoch_031.commit.json",
+      "commit_sha256": "05ca9e79db7dc329a82ddf59e7a03a3c3eb8cbbc7e7e5d2ccac1440ec159d9d3",
+      "file": "epoch_031.eb94c9b6c6ef4d24af51fb0cb5ec90f1.jsonl.gz",
+      "sha256": "9178d48bf22852ae53b43d19c90d064d2e01bcc8ab458f40de1095bd5987a433"
+    },
+    {
+      "bytes": 1056281,
+      "commit_file": "epoch_032.commit.json",
+      "commit_sha256": "9be8f07346d762626c8c884bab17ff11cc928d953c1f985c33fd8ca9a790ef02",
+      "file": "epoch_032.4f4d9dd8c9684966b80d4fd140451274.jsonl.gz",
+      "sha256": "765a40321d8f817ef9b3d8f47631eb33bafdbfaa52e3fc0310bbc1c5bc2e3d59"
+    },
+    {
+      "bytes": 1056952,
+      "commit_file": "epoch_033.commit.json",
+      "commit_sha256": "b56322f407a84c456289759fe3ed00522110bfdf3eb3fd633ef18b78e9bea782",
+      "file": "epoch_033.11c34e95e8d74b199806dcef0447282b.jsonl.gz",
+      "sha256": "430be9b99783a0e6e50889b895aa8104769a4e8267cf331a1cd263f3d65c13e9"
+    },
+    {
+      "bytes": 1063913,
+      "commit_file": "epoch_034.commit.json",
+      "commit_sha256": "a8fb62b7d380f95abd2ffae5c70b2b48ecd2b4d6dd91fe63c3ec2ac9828c0984",
+      "file": "epoch_034.39e422e57d504dc1af0f37005dd01b4f.jsonl.gz",
+      "sha256": "33507a8eb0a103a79bf51ac662aa5a8547c5046c7b6fb31aae64cc7f3e11f9a0"
+    },
+    {
+      "bytes": 1048272,
+      "commit_file": "epoch_035.commit.json",
+      "commit_sha256": "618d1ce1779623f1b87e142567b9b6e051231e976a410aa56b1b5b3bb28f0b6b",
+      "file": "epoch_035.e71d57a7878a4eff9825552595e9963e.jsonl.gz",
+      "sha256": "d9ad5c4f568e37303fb38cf220c7d331264858608d913f90da33bfc45f5a6836"
+    },
+    {
+      "bytes": 1052081,
+      "commit_file": "epoch_036.commit.json",
+      "commit_sha256": "28c268b1b6a5cbe465e3872d59b1fd9d32543485a8452e1a3bbd1d8a3ce6285a",
+      "file": "epoch_036.39cc0bc8d2eb4b76b5118e48e5fd19e5.jsonl.gz",
+      "sha256": "981b5fa0d6024d8877fb3cb2732fef160c7f557ba57d6cb48cdcda94163a7ea7"
+    },
+    {
+      "bytes": 1056742,
+      "commit_file": "epoch_037.commit.json",
+      "commit_sha256": "b2483b783ee762926039e9dd0f3a608e1a6714159eae506bb60f79d00a0b1552",
+      "file": "epoch_037.b4f10e02086e42b6b398c3d7c4a7d065.jsonl.gz",
+      "sha256": "3431c474c5aa51ae6846ddcfd1e184bd54d7b52e2167e73dd3eb8e61960484a1"
+    },
+    {
+      "bytes": 1047881,
+      "commit_file": "epoch_038.commit.json",
+      "commit_sha256": "b175781b6cf67f0dbfe5579ea0c193596bfecf7dcd1c9937e7f131d01923e84e",
+      "file": "epoch_038.fcfbe08ea3e24bf5b504d24f5e32edf7.jsonl.gz",
+      "sha256": "7a15a369e18f8fc7534f87bf8c52e73a22f0c6e46af249e1901edb929f16d4f3"
+    },
+    {
+      "bytes": 1054079,
+      "commit_file": "epoch_039.commit.json",
+      "commit_sha256": "372caf913b76f78f085f30b321dc189c47ee730a2ad011b602c198dc6b19a413",
+      "file": "epoch_039.025021cb651f42d19b0158f31d8d00b2.jsonl.gz",
+      "sha256": "79eb28f4f0a4d7a0b6648cfa84e82262d301ab31fb5bfe0d1b63f1894892b4af"
+    },
+    {
+      "bytes": 1056629,
+      "commit_file": "epoch_040.commit.json",
+      "commit_sha256": "cc50ff33a3487d41348e8b48bb396c33095645cf6675f4db16129f236b88051a",
+      "file": "epoch_040.9ded199a005446c591aa66bdd55a9b58.jsonl.gz",
+      "sha256": "394b6aa019ffed2a22b0a73c53acfac5d2b0a0bfa0ce6cc87cfc70d33ef3d74e"
+    },
+    {
+      "bytes": 1051257,
+      "commit_file": "epoch_041.commit.json",
+      "commit_sha256": "8187d5250b1c755b17ce352b85055dbff9fb404d4f56579a46345271606a4c97",
+      "file": "epoch_041.f2f22e42d8ce48b4986980a7481a3cb8.jsonl.gz",
+      "sha256": "80b71a60443223d1ed4a6fc409bed52b2ed846e873d5b6cfae2c09cd0ef7fba1"
+    },
+    {
+      "bytes": 1062942,
+      "commit_file": "epoch_042.commit.json",
+      "commit_sha256": "55e38e2fabe524b1421b9711bae67a74ea10e01970827f1346ea8ae5e107c064",
+      "file": "epoch_042.cd7aa427121840b2a83de47d0f4b0922.jsonl.gz",
+      "sha256": "477c22c43cba13ee07bfb01f474b414a73075d689a1078b5ca7aec7b43a378e4"
+    },
+    {
+      "bytes": 1054642,
+      "commit_file": "epoch_043.commit.json",
+      "commit_sha256": "9e65002a98b6eefc4b0a74ec9cfa1469d334a6cfbedc74eb5b74c68fa1990133",
+      "file": "epoch_043.ead3fe85a0004e87853e16cdd88c839e.jsonl.gz",
+      "sha256": "ebbfb54679955cdcb8026d02e801a3f18d7f8fccd7e95ee0b075903cdc86a4c2"
+    },
+    {
+      "bytes": 1062685,
+      "commit_file": "epoch_044.commit.json",
+      "commit_sha256": "f09fec92043b0d81dbc2458bd6ff37436e65e7fdcc3947742b9d9cc7ea50457d",
+      "file": "epoch_044.14d5f4fd2c3f447480cc2d36e210645b.jsonl.gz",
+      "sha256": "f64f65ac2aa1cbef142ce54f851e1e89aba375c0ddaccd615aa5dc9aa0e29123"
+    },
+    {
+      "bytes": 1056042,
+      "commit_file": "epoch_045.commit.json",
+      "commit_sha256": "7fa470aef3a9977dc17f54774492490bc7ea70d520bdaa99d6cb2da1202dafa5",
+      "file": "epoch_045.6d1179887fd8468e807cadc61e7540cd.jsonl.gz",
+      "sha256": "7bc2b3fdc1393a402c0fdf08f9495570cac7d3898f09faed588c8e79de728ee5"
+    },
+    {
+      "bytes": 1056876,
+      "commit_file": "epoch_046.commit.json",
+      "commit_sha256": "6437e3743ee2195b58e745bbd1f0f3b1f34ff66be1936fda32eb257727f5216c",
+      "file": "epoch_046.5a49075a94614fb491b90bd68856e276.jsonl.gz",
+      "sha256": "80d2613e1e82e775afcbb7d4ab262fb0434d490b8f7415d37b966ed4701e0975"
+    },
+    {
+      "bytes": 1051918,
+      "commit_file": "epoch_047.commit.json",
+      "commit_sha256": "f667611d7becb4a23a368de6734a37ebe71262919df4c3e0d28dbde90a37057d",
+      "file": "epoch_047.e95cf5b34d484851bb879cb9936158b8.jsonl.gz",
+      "sha256": "d49d78d144f8d6f82396bebdae1596fd3ae5adb4398d5c399505cfce15159f62"
+    },
+    {
+      "bytes": 1050361,
+      "commit_file": "epoch_048.commit.json",
+      "commit_sha256": "4d4cb6204e2d71bf060d8604cc7c165f7fcdbd260f8ccc37741ac66377d8ca3f",
+      "file": "epoch_048.5ddbc46062ea444a9227c7da5c87e5ad.jsonl.gz",
+      "sha256": "a802070b19702ada5ab108999a4d10e037b6d7bf22cb3e572d4714c4bacdaf69"
+    },
+    {
+      "bytes": 1054452,
+      "commit_file": "epoch_049.commit.json",
+      "commit_sha256": "d9e6652879fe47d878444e1e30e7cc545d7e59a58f76bb9b1359e89f3f9e7311",
+      "file": "epoch_049.f082618f433640dead89ca3287726717.jsonl.gz",
+      "sha256": "b7da469bb19b54d30a23e44f7329f7783ed4b370a3fcae86c4ccd1a19d1ad1fa"
+    },
+    {
+      "bytes": 1058122,
+      "commit_file": "epoch_050.commit.json",
+      "commit_sha256": "4e38dff39b8e5da6de9762e12511c4a1ad8695ffe76eebe3b9c32771d555bcfa",
+      "file": "epoch_050.6eea898b472c42e699619c8e08c31247.jsonl.gz",
+      "sha256": "4d6956311ee1c5aec478cd6aa9ce10f2c4e15f66adca53fa97858da9223c3dd3"
+    },
+    {
+      "bytes": 1057735,
+      "commit_file": "epoch_051.commit.json",
+      "commit_sha256": "6957ef879d89082e7184dcb93bcfe2a018d1ba752847553dd3f448352a4a13c7",
+      "file": "epoch_051.32097ea1d5df4e29ac9e5c9692e9684a.jsonl.gz",
+      "sha256": "7e647966539213adcee1779a03d2ee2627a97c5d6798f5a48376b5621ab5014e"
+    },
+    {
+      "bytes": 1052349,
+      "commit_file": "epoch_052.commit.json",
+      "commit_sha256": "6b3a985c9e1f3663f11a98464312f11413ed5a8147e6a69e1fac4a006b901ba7",
+      "file": "epoch_052.a8dc544071cb462f9242d6190d1687a1.jsonl.gz",
+      "sha256": "6c65f8f545dd0318aa19f45a5a4beb9d9d79bb94ffe01a424dff8584bc0c8215"
+    },
+    {
+      "bytes": 1057273,
+      "commit_file": "epoch_053.commit.json",
+      "commit_sha256": "2d84e8f486e7fd96e2f45f211af5d6ac3294d3a3e48efd3cc8fca1ea1e05deef",
+      "file": "epoch_053.8dfef5734c724ea29b58566826cef728.jsonl.gz",
+      "sha256": "ada7df5ddea84188a54063ab6f2753e788a8a4b3017c8b69a3c2d80427fdc581"
+    },
+    {
+      "bytes": 1049477,
+      "commit_file": "epoch_054.commit.json",
+      "commit_sha256": "6f1cd9831804a32e9c0d23960bce29a1d733385165bcdfa4ed3a216732e27418",
+      "file": "epoch_054.e93ebd0fac544b9aacbc44ad28af43a7.jsonl.gz",
+      "sha256": "a4bb2918844609227f477fb00193aa47d61c14ede8a6ada300ec67a4eb6ef827"
+    },
+    {
+      "bytes": 1056365,
+      "commit_file": "epoch_055.commit.json",
+      "commit_sha256": "e4997677f2ec9ebb17a4fc846efb1e528b7c3bc0735599a8fd169b99bfae4a9b",
+      "file": "epoch_055.247f4fe15bf04cacb4fa86e402761e1c.jsonl.gz",
+      "sha256": "3a1944f4be9d589b7b3a6781131ae048896d1eb3fcffdfaf8f5397a19fb41289"
+    },
+    {
+      "bytes": 1059007,
+      "commit_file": "epoch_056.commit.json",
+      "commit_sha256": "2c8eddcb10c9de2cb50b1d1d509718213c85886bfd3c545a4de73af26158b05f",
+      "file": "epoch_056.d3511db1879e4a86b53f4198b6a200f4.jsonl.gz",
+      "sha256": "a3450990f613a78ecfcfbc447a591242c0f9ac7aa555b70b60ad7f09d565870c"
+    },
+    {
+      "bytes": 1049723,
+      "commit_file": "epoch_057.commit.json",
+      "commit_sha256": "106e956c8ee989100d4a1b5ac809de117ba8921b7f55814602e46db20f78be9e",
+      "file": "epoch_057.4f43b4de3be74c12a667747bb81fea5a.jsonl.gz",
+      "sha256": "572d512ba2c7e9e9cab22dabb6535ca0cbae301bc971364b587a5b5fdeed44ab"
+    },
+    {
+      "bytes": 1048516,
+      "commit_file": "epoch_058.commit.json",
+      "commit_sha256": "a09f2aa1df56a33cc2401939e2ff8fb531552929997bd3e5e6b1c12a00c2a3bd",
+      "file": "epoch_058.a903925550d844db99fce06dba70fe61.jsonl.gz",
+      "sha256": "8c51ce879c7caf6fd769f86666db63d94dddadd3851e6a30796eccbdf6254e98"
+    },
+    {
+      "bytes": 1057433,
+      "commit_file": "epoch_059.commit.json",
+      "commit_sha256": "f4f6936e92ce799ebc9a88e8971481a1ea69b605947880aace548db9be5e46b8",
+      "file": "epoch_059.066481a11c9c4550810fc41b3c799164.jsonl.gz",
+      "sha256": "091ef14df81a6ab3e3216df32583ac159a686a4240dd64201ec0f075b8832004"
+    },
+    {
+      "bytes": 1054062,
+      "commit_file": "epoch_060.commit.json",
+      "commit_sha256": "a597dcf71d4d7151569f50db2f9d9c33279546f506da1963d7855f4fa4cefda8",
+      "file": "epoch_060.a8990fb10a424c23bfca4ec75ba8464f.jsonl.gz",
+      "sha256": "b28a07562d74c8fbf55ae00b4cc10902a5b12ae0f06754ed4416404aed73c07c"
+    },
+    {
+      "bytes": 1057683,
+      "commit_file": "epoch_061.commit.json",
+      "commit_sha256": "e8075830e74a11bc5c08e8f7b6866a1d72358406a92a80267540f84ffc79ffe8",
+      "file": "epoch_061.dbe9e995f08b4897bf9589609d07e4dd.jsonl.gz",
+      "sha256": "35dadc9bb18bc1d03553beb39d896b2a1f35bfc4ec629ce108ec51e6fd69c1bd"
+    },
+    {
+      "bytes": 1056784,
+      "commit_file": "epoch_062.commit.json",
+      "commit_sha256": "6a7c3fc0fb572ffe3cad79e69ceff1204f7a0ee4b3076d2710a5bf4ff666cfd4",
+      "file": "epoch_062.334693926036422c958043e1b5115a81.jsonl.gz",
+      "sha256": "0b0122962016ac2f5502ea7f55b915eff7f179aa964d2bfdf00ba61f43390886"
+    },
+    {
+      "bytes": 1050803,
+      "commit_file": "epoch_063.commit.json",
+      "commit_sha256": "2a32a850ce9d2faae5e94f98b059a52c8dc79a80318481853bd7fe21e16b3955",
+      "file": "epoch_063.bf653a85b7054ae4859dc6136b2c2546.jsonl.gz",
+      "sha256": "7a79b3a4de18d85006d5e9cb3a7f51fcd13887b6622c9936970f1bacd16f440c"
+    },
+    {
+      "bytes": 1051487,
+      "commit_file": "epoch_064.commit.json",
+      "commit_sha256": "05af3f610d452952c462878a857f852cbb386a335a3554fc7ce00612bb16d32a",
+      "file": "epoch_064.0209f31a08d44b3080bd73d6c56b26f4.jsonl.gz",
+      "sha256": "30d727f23845b5ea1403637caa7c20907956220419d5ac377be6cb31685d5203"
+    },
+    {
+      "bytes": 1052261,
+      "commit_file": "epoch_065.commit.json",
+      "commit_sha256": "166dd255276b8e9d61b767778e457735e7f49ca7bfe49d70b25e8f674e80d1b1",
+      "file": "epoch_065.be160115afa34f83b2e777b9060dab46.jsonl.gz",
+      "sha256": "ab8d886115d053d8486ed54af6db32a4612c71aa446f16dfdc83f40d2c008998"
+    },
+    {
+      "bytes": 1055730,
+      "commit_file": "epoch_066.commit.json",
+      "commit_sha256": "ef7bd5132526512a4857e6f33a1f49cb93ccc6597503c212f4d684fd6cdb17ec",
+      "file": "epoch_066.c11a9a9067e2424687c1ee746fed0dbf.jsonl.gz",
+      "sha256": "f43a0c8b3673806fe98d0360bf538df751a38291c9b4194087bbf261c7ce1515"
+    },
+    {
+      "bytes": 1058859,
+      "commit_file": "epoch_067.commit.json",
+      "commit_sha256": "c21df70430cdfd4ccde3db44432fe66e94109671405c31341c3eb7de1f4d57bd",
+      "file": "epoch_067.bec00abc63604e07bd52970638d6b280.jsonl.gz",
+      "sha256": "15aa94decf9b0e9a8f45c73d7eede9bc944a1a2f95471da76d61d373a0a26f4f"
+    },
+    {
+      "bytes": 1050411,
+      "commit_file": "epoch_068.commit.json",
+      "commit_sha256": "121f6814d30220791fd310f0c37cc74c3606e5f0f8be9e94d547ccb1b3c15d81",
+      "file": "epoch_068.9613cbeb32c142429e8915be12583300.jsonl.gz",
+      "sha256": "fcf1c7d7b4488f4c75f1e0485e7fc2a1677b3611ed317f1d65cdc4387bd4e9d9"
+    },
+    {
+      "bytes": 1068033,
+      "commit_file": "epoch_069.commit.json",
+      "commit_sha256": "b6e23433dfcea6fc46d93fa59035484f2740b44d98a73938dd487b4704f84aa7",
+      "file": "epoch_069.b8ebd4b3446e4e32bf3b5ce6f3657291.jsonl.gz",
+      "sha256": "81c4a9dd7d35954102991d0e47f6983f51e55394d740887a0c62ba7c2108a4d6"
+    },
+    {
+      "bytes": 1051377,
+      "commit_file": "epoch_070.commit.json",
+      "commit_sha256": "e00c67d49c62340a428bc0a2f80b9dd272e7056a46b3937df59bcb41011f1c60",
+      "file": "epoch_070.374fa7e7312e47aaaab866f7f7bfc4d1.jsonl.gz",
+      "sha256": "0dded3645bd4938d951ccd19912d7b353f3192ef5ddf44b7c843e5fe2e5cf319"
+    },
+    {
+      "bytes": 1064221,
+      "commit_file": "epoch_071.commit.json",
+      "commit_sha256": "9f89c327b05a974033d4492cdbe1ddda3683601919542abf0784347dea94c35a",
+      "file": "epoch_071.d4c63024b299460282f1b97b7abe5d65.jsonl.gz",
+      "sha256": "e4b6c3a4f2f5ded4a8cf0f0c015cc1ee176d32c869c616d19e999dfc6f33445e"
+    },
+    {
+      "bytes": 1057307,
+      "commit_file": "epoch_072.commit.json",
+      "commit_sha256": "842b0eb11ff32e9df035f5645636a2b28efd0b9b8e136c5cac0ba8639ee2936f",
+      "file": "epoch_072.2b0caecda6b84b65a87c56322ab50d78.jsonl.gz",
+      "sha256": "6b8025bb52c0b80af1e3ab1cd7afac8de5957fc3723bfc6331f8ced7c4e2725c"
+    },
+    {
+      "bytes": 1061368,
+      "commit_file": "epoch_073.commit.json",
+      "commit_sha256": "68aa66e9bb41ff289b4cd0a1bad1ef5512801b545c631c8dce749670533d6936",
+      "file": "epoch_073.6c26e3340c39469c847a4a475e2b9457.jsonl.gz",
+      "sha256": "d966e707177ba7974c5de23a1bb1ef5ae127e63090c466707bc87877ad7473e8"
+    },
+    {
+      "bytes": 1058646,
+      "commit_file": "epoch_074.commit.json",
+      "commit_sha256": "44c52c0bcc535603e08f11115622233f83affda70dd3db57af842f8d05f3d4d2",
+      "file": "epoch_074.c3314b50df5946fd9669aa9a1ffd7642.jsonl.gz",
+      "sha256": "7c77278c096b0eff15e73b0df65096373c08bbf034af432f92f6c0fb5e8c9bb5"
+    },
+    {
+      "bytes": 1053338,
+      "commit_file": "epoch_075.commit.json",
+      "commit_sha256": "8f06c40e49ce27544f7652b465d1dd46f6a1d780fddd4a9e314fc6fae536555c",
+      "file": "epoch_075.dc09caa72c0f479d9920ceb36e73cd5c.jsonl.gz",
+      "sha256": "f53d380f299204e4f08ea3440981cc11addcd365b72e45e14d20967e43444411"
+    },
+    {
+      "bytes": 1055587,
+      "commit_file": "epoch_076.commit.json",
+      "commit_sha256": "2f9b27f4e6d82c00db02ff0e4205d307c1be5ecd454df4990fb49b43919f2c88",
+      "file": "epoch_076.389816b1f95548cdba222caa38c0a324.jsonl.gz",
+      "sha256": "18949790953814ef687af12eef1f2a789a5b8c40c7ae63b1a63d3768b729ef7a"
+    },
+    {
+      "bytes": 1050870,
+      "commit_file": "epoch_077.commit.json",
+      "commit_sha256": "ec25aa190b3694729eb4333267cf4d0870bda07ede9f8902b491f6935e5698fa",
+      "file": "epoch_077.957b182cba4a48b48aa34e5b02350139.jsonl.gz",
+      "sha256": "0d55fc21512b76852b77d81bfef22a347e4a2cb94e99fde6705c295f84c51de3"
+    },
+    {
+      "bytes": 1049470,
+      "commit_file": "epoch_078.commit.json",
+      "commit_sha256": "8f56f55d6e40d8a965042cba24a45ab8056afb1384f4f098ff8a79058573686b",
+      "file": "epoch_078.b5d7c266140142f2aa5acee9e98f84d3.jsonl.gz",
+      "sha256": "7f369f5ebed838dac4c95785c126e3b31505e8fdf43865be00e47b49f10508c3"
+    },
+    {
+      "bytes": 1056341,
+      "commit_file": "epoch_079.commit.json",
+      "commit_sha256": "869ea643a71fd1ea3a64ad099270428a526aea0a01eb69c1eea5f0d16191818b",
+      "file": "epoch_079.25527230992342f09fb3948f3684d5eb.jsonl.gz",
+      "sha256": "cd2f51c35c74c1547b378a4ab1bc6fc04089319639e766b26e629506e2694f00"
+    },
+    {
+      "bytes": 1055425,
+      "commit_file": "epoch_080.commit.json",
+      "commit_sha256": "bff51107b45bc26d0fc57d5ea0561ff8fa2b5a747463ee06489ee34ca7b05351",
+      "file": "epoch_080.105cb9382dc4496c91aec40eaff196c2.jsonl.gz",
+      "sha256": "8e191fb5337c0d22e042c8ced28ba774ab6d4e91a4a54910cf988d9678e72277"
+    },
+    {
+      "bytes": 1062132,
+      "commit_file": "epoch_081.commit.json",
+      "commit_sha256": "a41767958240ef5ac771a170e6c64755d43171fc7dce10cc76544acae6fd741e",
+      "file": "epoch_081.b3a224b1b0fe4ec694004fef665e3960.jsonl.gz",
+      "sha256": "e568b83ba81946b66160b72dfe936262a64c7f9c94b2d454472c48cc52080094"
+    },
+    {
+      "bytes": 1059902,
+      "commit_file": "epoch_082.commit.json",
+      "commit_sha256": "054f01023a94ffd26a003954b00bee5b90754a46f9e2c0323c6f43a1836e33fb",
+      "file": "epoch_082.426b27a85bfc4c9d9943413182ecd9dd.jsonl.gz",
+      "sha256": "3e3b5451ba0befa908e348fffbf0e6c2b62c5213ebe54008930d3d94908a818b"
+    },
+    {
+      "bytes": 1057113,
+      "commit_file": "epoch_083.commit.json",
+      "commit_sha256": "43a5eec696cfe6cd0c73b16e846a509526628efde64b12b30b93e5078ba3cdec",
+      "file": "epoch_083.dec1c3bec2ad4d9d9f1539237cfc9458.jsonl.gz",
+      "sha256": "37bee06ece3e9f527c75d810eb8b7f050d79c728ac04e552e2e90fb5e905e6b1"
+    },
+    {
+      "bytes": 1059616,
+      "commit_file": "epoch_084.commit.json",
+      "commit_sha256": "23a2c47e3b98d0e78e69372f21755e78957212853777d3cd8d1bd73b852f93ea",
+      "file": "epoch_084.797faac04cb1491f9952cf76296a3cbc.jsonl.gz",
+      "sha256": "8015391854d0c54641fa7b8553837f6b6c0348c09e5afbe874d8afd8b9cacf02"
+    },
+    {
+      "bytes": 1054494,
+      "commit_file": "epoch_085.commit.json",
+      "commit_sha256": "826c33550f8be0c207bef76516737d089ce748a7f0df6ad5100e9f9b62e94bc7",
+      "file": "epoch_085.d0b1f6ebff374777a2116a4550a9dc43.jsonl.gz",
+      "sha256": "ba6d32e371c29733666f13ab5a275bccae46433f08012dbb5800748ee7032da3"
+    },
+    {
+      "bytes": 1053760,
+      "commit_file": "epoch_086.commit.json",
+      "commit_sha256": "1091e4f258c4e4d09edebd6ac9035291b542457249db27afa982a46e490f8b96",
+      "file": "epoch_086.1a108af3d1a642608cac4831afc5df97.jsonl.gz",
+      "sha256": "ef3246431879c7efe90cc89c7cadb905fe94843bbb107ad94c8ee06df5a49e6e"
+    },
+    {
+      "bytes": 1052713,
+      "commit_file": "epoch_087.commit.json",
+      "commit_sha256": "e8cc4ff9fd556377076f15ce74d5a2338ff84bbd43f7d7b1d0b9ea22a93b7407",
+      "file": "epoch_087.0d047f147c4a413f844c5c636efab161.jsonl.gz",
+      "sha256": "ac0a2124caf33189570467713485995379ec8a73f03dd4c223c92a74e911a0b6"
+    },
+    {
+      "bytes": 1060972,
+      "commit_file": "epoch_088.commit.json",
+      "commit_sha256": "4ad4655cee3c29a1671e755a1cc3c27ac10278198ebb47e9436b8ed87af78485",
+      "file": "epoch_088.2d9c5abec65f4edd81b07cab6ac3565b.jsonl.gz",
+      "sha256": "6f81ace9936ceb92587886d2e5cf11e280639505476fc45eff1a2069f34947fc"
+    },
+    {
+      "bytes": 1056200,
+      "commit_file": "epoch_089.commit.json",
+      "commit_sha256": "3d416c7966d65200eb010e19cd10e7cc86b556fd09a2a00f2513810e56fafc83",
+      "file": "epoch_089.22606c98bf23428eab289ca65d897ebb.jsonl.gz",
+      "sha256": "48ecd15f253813b48ada77044eb2df850a2fed0d171aa31b1dd73d7a6f60f8d6"
+    },
+    {
+      "bytes": 1059911,
+      "commit_file": "epoch_090.commit.json",
+      "commit_sha256": "668290638ad0b401c2bb347afd47a6c0317efb5cadf8f318de8bd13b98274984",
+      "file": "epoch_090.e9d3bc5a309c4fe8b58c38a983bbb6f1.jsonl.gz",
+      "sha256": "feccde7f25eccb2ff9a16580e1a53e1443b8f57651602cac31c1df742fd703fc"
+    },
+    {
+      "bytes": 1049962,
+      "commit_file": "epoch_091.commit.json",
+      "commit_sha256": "5e20ade325f4ae01c2f4f8edd19d24dd2f848d7ed126c8f9dad2f07df2c5f0c7",
+      "file": "epoch_091.4003599b0dac4d7a8255cf7efa331327.jsonl.gz",
+      "sha256": "ce7fdea67dbde623bcdd15d1113b6bbb4929bbdc7b4fd739165fad3be961433c"
+    },
+    {
+      "bytes": 1062265,
+      "commit_file": "epoch_092.commit.json",
+      "commit_sha256": "85cb8b1af2d25ff97227bb1dbde6fe1802c6d45bb425ccaf341d7ed14d019828",
+      "file": "epoch_092.2cbe5027f27245e58f152edb3b2ed08b.jsonl.gz",
+      "sha256": "6f50f3b2edd24a68b9ce1f645d483c586695ec06a44bbbea98b3acd92b2a5d91"
+    },
+    {
+      "bytes": 1045037,
+      "commit_file": "epoch_093.commit.json",
+      "commit_sha256": "15110962d345d9b26be9d6484e3be1ae52963a8adc0f078573485df4c777c0db",
+      "file": "epoch_093.a547a49985314292b8f059490c46c4cf.jsonl.gz",
+      "sha256": "67b03631167fe47a502eb70a12cbb99375accff4813ff22cba745c04611118ce"
+    },
+    {
+      "bytes": 1052674,
+      "commit_file": "epoch_094.commit.json",
+      "commit_sha256": "cf200d95061bdf334cf45f549b0f7f46c2c701d5032e2dac282748f56f2a072f",
+      "file": "epoch_094.84078574bd2e46da9f93e7a89e2ea69e.jsonl.gz",
+      "sha256": "0481114fdfb686e31325b4e6b0ba0ac2f626456f1e0d103f721db987cafa791e"
+    },
+    {
+      "bytes": 1066672,
+      "commit_file": "epoch_095.commit.json",
+      "commit_sha256": "2120ba98e7abc905919f15258a40acef221da04b824193db6b82f17940611152",
+      "file": "epoch_095.dd0dc79f39e04f1dbd2481b0f8d76bf5.jsonl.gz",
+      "sha256": "c8564ee47e593fa55ef5484a30f48067db350957afe36337ce1e654a547041e3"
+    },
+    {
+      "bytes": 1059585,
+      "commit_file": "epoch_096.commit.json",
+      "commit_sha256": "6eb4e5a3c3857e4db58f1d1c4c44fcc2cca5f740a91c2b41b39c145d43312c21",
+      "file": "epoch_096.60a038349fc04111bea973c5743287de.jsonl.gz",
+      "sha256": "d558fda4ae9fea15312bc2e2a2ae4aa06cdfe7764697de8b56ff9f02cd475caa"
+    },
+    {
+      "bytes": 1053982,
+      "commit_file": "epoch_097.commit.json",
+      "commit_sha256": "77cc4cd47a9eee2f9b1201ea73831e774d9be7004a92bea2c534081345dddad8",
+      "file": "epoch_097.dd65fa085c554fd98a0e1bab8d6aa92f.jsonl.gz",
+      "sha256": "0904f80464370ee5c0bdc8a907348b41b725c90dd61d3c0b92b9d5241c48c870"
+    },
+    {
+      "bytes": 1061122,
+      "commit_file": "epoch_098.commit.json",
+      "commit_sha256": "437303b465afe72d69d54fbcb601f2cb77d1f562409863393d601a0bd4a2d4fb",
+      "file": "epoch_098.a35ff90574c74c989c289171f3580dd7.jsonl.gz",
+      "sha256": "4a4eb88abd841960c5283fccd95a3a900295315031f7ca3d2bc285b674264969"
+    },
+    {
+      "bytes": 1050826,
+      "commit_file": "epoch_099.commit.json",
+      "commit_sha256": "afacaa8d0fc0f3df0d7d843fe41a213e19d85209dffd8cca08c9b687793ce3ec",
+      "file": "epoch_099.abb171aa9c074383b9804ddf18467357.jsonl.gz",
+      "sha256": "c8b99211729c14379e1a57ef613e8935cc1e703b20c686a869124b9028608a23"
+    },
+    {
+      "bytes": 1053741,
+      "commit_file": "epoch_100.commit.json",
+      "commit_sha256": "52a20879c5533375370f141c4785bfa4ce7aea3d0d45b0fb0fa30067917c50c0",
+      "file": "epoch_100.0e5ab30837e24f71a987e236d547b120.jsonl.gz",
+      "sha256": "4a65ef3b3756f58c5bc29ec9cfe6f3702a9c238513da39f0322507ad4897607c"
+    },
+    {
+      "bytes": 1063940,
+      "commit_file": "epoch_101.commit.json",
+      "commit_sha256": "cc746a7ed83378ce5e5c8bce16c67e2ac06fdd17c7310328824b76394d6c3f5c",
+      "file": "epoch_101.ed112f92c5b44951b7444a4028ff5e6d.jsonl.gz",
+      "sha256": "c8ddb5930f2e7ac79c8a2f3b3f29cbea6ea682d72327d89b28cf60ac6ecdc86d"
+    },
+    {
+      "bytes": 1060240,
+      "commit_file": "epoch_102.commit.json",
+      "commit_sha256": "84e6e0331eddfab0e6ba7040731bdd168d322055f2973f4ea181e37165e1024a",
+      "file": "epoch_102.e98265491e31462d84ce884abf8bd327.jsonl.gz",
+      "sha256": "8116f2797e9903f2d63cdb7862aca56a199de2d3e018364694dbf064e70f64e8"
+    },
+    {
+      "bytes": 1048392,
+      "commit_file": "epoch_103.commit.json",
+      "commit_sha256": "b64d8250295488d42b3029b4a0e5ddde911a6d6be139bc51408d11d0c678a222",
+      "file": "epoch_103.bb31f5efbe884d4298eaf230698162da.jsonl.gz",
+      "sha256": "c0a8ba6c7114d3ddc272d280e140a3d0f29e8b87a3168402d79a8653c3ac76f1"
+    },
+    {
+      "bytes": 1045165,
+      "commit_file": "epoch_104.commit.json",
+      "commit_sha256": "0a7e25c26caad138da422c21e415b5716247022dc306cbd86b2218355def588a",
+      "file": "epoch_104.fa921ba887ee41cf966723e1be8e6f08.jsonl.gz",
+      "sha256": "428c8297a769a246a6f3ef648fec973b703090599174c62b700f81070b3f9000"
+    },
+    {
+      "bytes": 1049783,
+      "commit_file": "epoch_105.commit.json",
+      "commit_sha256": "bd21ae52b175c150caaa17e9ddc2bd4f32182104274e006cc43791bb6af3bc79",
+      "file": "epoch_105.80f9c76f8bde4125aadcfa060a6119da.jsonl.gz",
+      "sha256": "b01798c7eacffed702f800809279d93729843103e96ac41a89e975bd19eafbed"
+    },
+    {
+      "bytes": 1057235,
+      "commit_file": "epoch_106.commit.json",
+      "commit_sha256": "2bdd0cc7dc0a125ef3d138f27e400b38e5800d867f62a21bb9e86df5af697a06",
+      "file": "epoch_106.94997183a54b4e0093a40d908b5c4ca1.jsonl.gz",
+      "sha256": "8123f9f7cba5fdc5c8f9f4c5becb38e9567f4ff61787dd77bec3c90ad1161cb6"
+    },
+    {
+      "bytes": 1053895,
+      "commit_file": "epoch_107.commit.json",
+      "commit_sha256": "558ef1f68f50a2bb41cab86bd4891db007c74054da12204ae42e0ac7b2205a7a",
+      "file": "epoch_107.2722adad9c924ddda07c8695a73a1789.jsonl.gz",
+      "sha256": "8db57a5179172964f70f400f2bfa6b3f402bfea3b2bae564a27cdd1a67c1d568"
+    },
+    {
+      "bytes": 1051702,
+      "commit_file": "epoch_108.commit.json",
+      "commit_sha256": "4d02daab56f47b1daedc7574ee736abf682e5811000a5a417b1dfd4a52359ae8",
+      "file": "epoch_108.16bfa17fd03f4504b27ae20da962dae8.jsonl.gz",
+      "sha256": "26e6fd507fddd280139a8847f7894b1d5b3291b30094686a413f4609f0b83567"
+    },
+    {
+      "bytes": 1056559,
+      "commit_file": "epoch_109.commit.json",
+      "commit_sha256": "6e07ec0ac16fa017793e239c7e4e9f206f4cf6d66b344840fcf87c6392f72471",
+      "file": "epoch_109.a81cf1bb74534919a0ed7e90fc24c365.jsonl.gz",
+      "sha256": "6cc72bb0584d9ee91e2b2115e2f8b101577e91f35079bd1180c7a8bc2be6ab88"
+    },
+    {
+      "bytes": 1048260,
+      "commit_file": "epoch_110.commit.json",
+      "commit_sha256": "6b9fd768abfecf75b1c73f3e0b6603f3721eb893da4e0ffefc73ca83bd7108ac",
+      "file": "epoch_110.75f452bfed1f4d378a6e31fcdde8e69b.jsonl.gz",
+      "sha256": "dfdc1e606758a6e319bea87de41904f33ea3c4f4bcde46128109555e387b8885"
+    },
+    {
+      "bytes": 1049331,
+      "commit_file": "epoch_111.commit.json",
+      "commit_sha256": "bd78a65dc1238421020b2b95d840d6e5ee58d230fc2a67f809a8b333d07c87db",
+      "file": "epoch_111.0cc06490b8e544f2bb11dc87611cc472.jsonl.gz",
+      "sha256": "f518c3db06f96f102005ec9be80ab2aca777ce72851bb79cc2d0607872b27600"
+    },
+    {
+      "bytes": 1048322,
+      "commit_file": "epoch_112.commit.json",
+      "commit_sha256": "cf5ef1a3365b152e1808de3c90ccaf90339e530583d834a0e301317b3e264566",
+      "file": "epoch_112.7e8884685499436e90e4b65664cfe008.jsonl.gz",
+      "sha256": "e2dac43840450f3dd4fedfd5047beed5502a2387a56350bfed2db52970550bfe"
+    },
+    {
+      "bytes": 1060757,
+      "commit_file": "epoch_113.commit.json",
+      "commit_sha256": "e191750594d1959e346f1b0255d2665a5591d93f6ce4555ee87d22532e6f4950",
+      "file": "epoch_113.ba0706b4158d4a96b3c814d5f1fcbc36.jsonl.gz",
+      "sha256": "2c41974ca59c7b7934a182749b9c3667a30480489e4c03ed6145c2703e0b0cae"
+    },
+    {
+      "bytes": 1054104,
+      "commit_file": "epoch_114.commit.json",
+      "commit_sha256": "6b0fc0fdf36cb9f71fbde0ec91f5b858de45ed0c2aa1aedbdb4ad5e0cf32a598",
+      "file": "epoch_114.e7b35b5b6fba4a2a84d703249faf5b3f.jsonl.gz",
+      "sha256": "b65cc6c3c3de3645ee598c6f8bce93148e529013e5a3c8361bb152ccea684278"
+    },
+    {
+      "bytes": 1056115,
+      "commit_file": "epoch_115.commit.json",
+      "commit_sha256": "002f4c27e8b503d4eff09d37faf3582035302d6b78aa209ff738c496c4113dda",
+      "file": "epoch_115.ca6babc6226340eba4bd7760866e78ed.jsonl.gz",
+      "sha256": "0883b0fd4dd723ad482bcbd6157c38c19fb2e1061b1d8781eaf5b111092f239a"
+    },
+    {
+      "bytes": 1055499,
+      "commit_file": "epoch_116.commit.json",
+      "commit_sha256": "9ce7e1e82b233b0cfa21e98fea2216ab95a54d75a0843c7c6a88170c97660a88",
+      "file": "epoch_116.6469cb8b2b2b4f9e9ffb839d6f88ed52.jsonl.gz",
+      "sha256": "63cf5c4e155ddafdde2c8281d5390cf41bbc19952b16f70081e4889e78913bc4"
+    },
+    {
+      "bytes": 1051087,
+      "commit_file": "epoch_117.commit.json",
+      "commit_sha256": "85c5749426df3e821f75325df40a044822b8067e7dd8473b8b157f14ed29cb78",
+      "file": "epoch_117.b2c53fc90386474aa27f8bdcb05ed40a.jsonl.gz",
+      "sha256": "5b3e699e6a6bf1cecaea3b1ea6e6d3f6619a3eba093ccab4dc622c218a1673ed"
+    },
+    {
+      "bytes": 1055713,
+      "commit_file": "epoch_118.commit.json",
+      "commit_sha256": "90a3bde66ad9686493ee28234d738279d3cfe20b512a18e9ade9727777c240b6",
+      "file": "epoch_118.61b78f56bafa4d47a9c3ddd51b323c8f.jsonl.gz",
+      "sha256": "05731c450d8327f3df3175268057348a5d9ba2c96e63b60f67ea7e3b02d8d3ac"
+    },
+    {
+      "bytes": 1052548,
+      "commit_file": "epoch_119.commit.json",
+      "commit_sha256": "40836d7d4a62f08cd5adfc74946bde68e03df1fac6c028c7db8cc9134236a210",
+      "file": "epoch_119.0c72bdf40f1d44e9aa89d25f2b8d0ea5.jsonl.gz",
+      "sha256": "8c0da08de19de048148a11904ce4ddf4f4e8ba134286d4197de820caa68943c0"
+    },
+    {
+      "bytes": 1054326,
+      "commit_file": "epoch_120.commit.json",
+      "commit_sha256": "b39525bd137fa0d18a34cb72a6ccc83e65f7d747bde779e5acdd30733f3e9e58",
+      "file": "epoch_120.c0067f0636bf4aa6bd2ebeba23ceb439.jsonl.gz",
+      "sha256": "08b6a2bbd42af4c23a279393e2df531184c3336d26504f74013c86436455718b"
+    },
+    {
+      "bytes": 1051888,
+      "commit_file": "epoch_121.commit.json",
+      "commit_sha256": "6d507376cc0ac8ac5bdc7dbf9b20cdbc4a4381d7d300c8cd42379e01c8062b5e",
+      "file": "epoch_121.518ff8983407413a9a2a3c5df849ecc9.jsonl.gz",
+      "sha256": "ac84b3be691c2e74ac3cd86d86af03cbd4218f808598c6d237bfcdbfc0310921"
+    },
+    {
+      "bytes": 1059669,
+      "commit_file": "epoch_122.commit.json",
+      "commit_sha256": "993ca5b5a2035512ebe569a52a95ea26854410d3fdf569539e3524773d08baf0",
+      "file": "epoch_122.f7571c3ab1f84075ab696feb4a60faa8.jsonl.gz",
+      "sha256": "3e040515f83a5094d509db94697db521d11037f7ae22a445dfcf5dab745859d3"
+    },
+    {
+      "bytes": 1051827,
+      "commit_file": "epoch_123.commit.json",
+      "commit_sha256": "1a965b3a8314ca55f1e6a4f473fadbc6db8910ab245555b532509ceb8a3f90c4",
+      "file": "epoch_123.7a5c86a5d95c40fdb057a1f69c6c69d7.jsonl.gz",
+      "sha256": "8e1c63187edbbe59c59a4c5a3cf4c7e2de5085e4d228d7938c3fcb6b6a78893b"
+    },
+    {
+      "bytes": 1057153,
+      "commit_file": "epoch_124.commit.json",
+      "commit_sha256": "3aa1021876ec8d205d2946be384bcedcbb85f5c524d8a88fbbdd7b54abccda5f",
+      "file": "epoch_124.760e4d6afe5b4c85a6cd81c2d1c17e1b.jsonl.gz",
+      "sha256": "2f233c625a749f23ad093d01d3b5abf5eee4f9d7d2177da95212eaf06c7f41d4"
+    },
+    {
+      "bytes": 1057466,
+      "commit_file": "epoch_125.commit.json",
+      "commit_sha256": "8f562370e368c960cacaa0160941b23134d88515493d6d2e999cda44a65100ed",
+      "file": "epoch_125.69f556aadb1645ae97da02a20be2901d.jsonl.gz",
+      "sha256": "43cfdb99122fb244c58280d1ecfdda1fa2793ffde0b08c7bc7d82886f304bad3"
+    },
+    {
+      "bytes": 1044863,
+      "commit_file": "epoch_126.commit.json",
+      "commit_sha256": "d0853a4c41e982caaec15683ac426db7a6a7ed03f35d15c32140e958d623fc0d",
+      "file": "epoch_126.941f2d9db6ef4eb8b60ac5340f0d312a.jsonl.gz",
+      "sha256": "2612b8d78aa7304cee6bd0805ff275587a0ed99538c7a6cf5b8ccbe867bb0a91"
+    },
+    {
+      "bytes": 1052555,
+      "commit_file": "epoch_127.commit.json",
+      "commit_sha256": "63762fdcd067f211c92bb916ec2b1e06fcbd7aaf8db62bfb8810d0e300c3387b",
+      "file": "epoch_127.40738215bf1c4d4db63f781f9ec77830.jsonl.gz",
+      "sha256": "e363acaa6609e0f0231f4d877842e9967cb79e0a3e733d65ff10f30cececcc35"
+    },
+    {
+      "bytes": 1054315,
+      "commit_file": "epoch_128.commit.json",
+      "commit_sha256": "665ba84002ed4626e5bf41298e67564482a72938a17843a9fd317f1f6b7af085",
+      "file": "epoch_128.9c32f7516c6647ce80226aaf475a5499.jsonl.gz",
+      "sha256": "2f01b0beccb0d529268ceb66a5fcf8c0b5004206d1de3ff7992bfed73d27f9ef"
+    },
+    {
+      "bytes": 1054058,
+      "commit_file": "epoch_129.commit.json",
+      "commit_sha256": "2d55b9a4a0bf3e729b239c4d3bd2c24df2e965135f1c114c8c58025e1ab24881",
+      "file": "epoch_129.3992edde5916425fbc29b1eba6c96d33.jsonl.gz",
+      "sha256": "d3750b3b533ec6c4944ad3f858af5c085122e97de45adb1bb39987c9725992bd"
+    },
+    {
+      "bytes": 1057931,
+      "commit_file": "epoch_130.commit.json",
+      "commit_sha256": "f47a7da2122e4a7a7073c5d076cbf1fba2016d54122e759bd2392a54e0aea1ee",
+      "file": "epoch_130.f5b3677c81b8486cbc7d2688a5c15db9.jsonl.gz",
+      "sha256": "4987769c260dee2a77fff26ccaa8d402fa9dc2bcf511d0fff1340cd55b456ac4"
+    },
+    {
+      "bytes": 1057926,
+      "commit_file": "epoch_131.commit.json",
+      "commit_sha256": "2e23d8d0b55248562adadc187cd84deb237d3da421925cc2fbd5b20a381d7f99",
+      "file": "epoch_131.6d264cb76a9a4c7f80d1c0be46232b87.jsonl.gz",
+      "sha256": "81a01f6414c8f82243e16b442f3fae4718769c45c8bcfb97cb4e7c5659c4b9b5"
+    },
+    {
+      "bytes": 1060132,
+      "commit_file": "epoch_132.commit.json",
+      "commit_sha256": "5fa2f04b0dfbfd9a64a3c5254281d1c1f623e446edbcfbcd91d17be69d245dbc",
+      "file": "epoch_132.4414fc1bc14341a491f430cc3cb64b31.jsonl.gz",
+      "sha256": "de31470de85b054be8f93e7d772c30e25d2dd612b3b0771623aab4779b469dd7"
+    },
+    {
+      "bytes": 1055369,
+      "commit_file": "epoch_133.commit.json",
+      "commit_sha256": "20989be06bf18bc4c59d8f25ec8cc73fec91a46ac7b3fa08923075a76822b210",
+      "file": "epoch_133.539c23d395844b11a4a6fb7dd5be194d.jsonl.gz",
+      "sha256": "49b9d56a2df734cf744cef2f322743aa4d5394880eebc3d7da5bad15d759bf31"
+    },
+    {
+      "bytes": 1054378,
+      "commit_file": "epoch_134.commit.json",
+      "commit_sha256": "ec0d863ba260d41b70d820e5eeec74b6598e2857ac1194c4af53c7de4a7f7171",
+      "file": "epoch_134.8236e74920f243a59f5bc9a756c457c3.jsonl.gz",
+      "sha256": "40e279a2f1d7b56e3e010004a08f36d60f1bff6885280b746514dafaa077e55d"
+    },
+    {
+      "bytes": 1044109,
+      "commit_file": "epoch_135.commit.json",
+      "commit_sha256": "4922d491b6fb22d7af4652eca44b65af8243dde7685760581800cb308f915a8a",
+      "file": "epoch_135.87128bdddfda4aa8a06610cd7c06f897.jsonl.gz",
+      "sha256": "f76c29a22fe311f7167bde306e2117158eb0a63957081a1b39cfd83a1a981a72"
+    },
+    {
+      "bytes": 1058922,
+      "commit_file": "epoch_136.commit.json",
+      "commit_sha256": "eb619338865542f4215fdd7990ff8b8e8667b423ed8939042a7e18bd31fa80a9",
+      "file": "epoch_136.eeb4012434704458b611e0cb07076c60.jsonl.gz",
+      "sha256": "b4e751729d7677802f5e0e57a7696922a48825afc0a71522d226b3568f734fbc"
+    },
+    {
+      "bytes": 1056951,
+      "commit_file": "epoch_137.commit.json",
+      "commit_sha256": "dc8700bb625a5bd5bc4ba2672f31cdc65c64f7b5a7213cffe039bcd347abc5a6",
+      "file": "epoch_137.a92e29fb1a8940d4a596e780aeb37367.jsonl.gz",
+      "sha256": "61603aad6c9c605c009f3f8cca185173119e18e24cbc2b2507274d233f98bf35"
+    },
+    {
+      "bytes": 1057680,
+      "commit_file": "epoch_138.commit.json",
+      "commit_sha256": "94a2926633c46df6f15ba0343f97fe95309179f451c5a8b0eca7be34eddf8b81",
+      "file": "epoch_138.7393b4423e864302a63dda581d7f8b73.jsonl.gz",
+      "sha256": "bfa33a2c147f0c1e34245def5a4dc6267f41a9bf85f0ae3d8c9e74519039f09e"
+    },
+    {
+      "bytes": 1057211,
+      "commit_file": "epoch_139.commit.json",
+      "commit_sha256": "ddd36879925b65f52119c20c8a26bb859a1d69b32149bd1860380a26d71a89a8",
+      "file": "epoch_139.2dac27776125441bb815a699dd2e741d.jsonl.gz",
+      "sha256": "80b6a9b494115cc1ee670548ebfa1eec2840faaa384e52ff089ab4eb16ee0380"
+    },
+    {
+      "bytes": 1049343,
+      "commit_file": "epoch_140.commit.json",
+      "commit_sha256": "b58207e7e2bdd192d33ed74c03979b309b27d2a4e799adc02d0e3a640c80abb0",
+      "file": "epoch_140.a2762769d40a4e379e534627661af058.jsonl.gz",
+      "sha256": "f5a87e0f62cf3da6aa89a3205623954c081f685a71c553f2babc2d4471973113"
+    },
+    {
+      "bytes": 1039520,
+      "commit_file": "epoch_141.commit.json",
+      "commit_sha256": "6f1158af94f63d95cbce2df26468d0052d832d42aeb1e1f5827bc8922d28fda7",
+      "file": "epoch_141.300f04051a0e4acfb1894034aabf698e.jsonl.gz",
+      "sha256": "38a90722e0e9a055c3b126b760447e7c98681a08c51ef9fd871a5497c7ad8f87"
+    },
+    {
+      "bytes": 1051930,
+      "commit_file": "epoch_142.commit.json",
+      "commit_sha256": "0ed6a0b286c3476eead577229477be1845ca2b7356d3c2c7fc8ee6d7f32abb09",
+      "file": "epoch_142.b57627b1c3e344b58edd41067c48072f.jsonl.gz",
+      "sha256": "38b6794faa9c73b01e6203d4837f8e8e0cb7f94d0d71c8ce2589a1953ee96505"
+    },
+    {
+      "bytes": 1058835,
+      "commit_file": "epoch_143.commit.json",
+      "commit_sha256": "f1c64e6308074c9f0881911ac0782c5db0368379476eecf7d86cf2e952db15f4",
+      "file": "epoch_143.1cd10594cb4f4ec9bb60f5d733739ac3.jsonl.gz",
+      "sha256": "b064bbeedbabd60a55409d0a6718a6df9066c2c1d503249d68073a6aafdb62fa"
+    },
+    {
+      "bytes": 1051761,
+      "commit_file": "epoch_144.commit.json",
+      "commit_sha256": "c8901f74755181076681ac3f8a5639d98c061e3e58358a589faf2cc9e40f41d1",
+      "file": "epoch_144.67d054667d894dd4acbafac7d261ee0a.jsonl.gz",
+      "sha256": "c88115b9ab3f0d36976af4c855bc9c82e0489266712b87ee7a31f6d26f6cddbc"
+    },
+    {
+      "bytes": 1052189,
+      "commit_file": "epoch_145.commit.json",
+      "commit_sha256": "ec6eb047a9eac849618de1ec8b284ac04eb35299eba0cc181c430843839a12dc",
+      "file": "epoch_145.c061968a75504c1987e1461200b300c5.jsonl.gz",
+      "sha256": "e046e535d9ce05dfa40b5a148479099a5640f015ef75969daeb2e6d71204e429"
+    },
+    {
+      "bytes": 1052680,
+      "commit_file": "epoch_146.commit.json",
+      "commit_sha256": "287506c4dfa107166d8b9ff7cc295ab432e62e03daf4b26528d212bf15261e13",
+      "file": "epoch_146.656195bf86884fb39c50ef75d7005412.jsonl.gz",
+      "sha256": "1517b27d8eb1cfbfeb37d699baa3663d7cb0d6c16fb64621b44a40dcbcb4e0ba"
+    },
+    {
+      "bytes": 1052846,
+      "commit_file": "epoch_147.commit.json",
+      "commit_sha256": "1c222cef62fe4d1278e106409539adc50c1ce7c30ee6742ac333ff9702599c28",
+      "file": "epoch_147.79c627d2d87940c4ab16a29327158155.jsonl.gz",
+      "sha256": "0a12a579ff2f20ef9bf2bfa6a10318d2d221ec1a21e931850e96c6a0010806a2"
+    },
+    {
+      "bytes": 1056922,
+      "commit_file": "epoch_148.commit.json",
+      "commit_sha256": "5563e5ff07d858e7ad8e8ecf54622ffb2c9722a36da795d519ec7e034fca4b12",
+      "file": "epoch_148.11b524fa1f384e1a9519ffad38af8aa8.jsonl.gz",
+      "sha256": "9c48d57a05cc05a2091a9716b22ae310879b64079d1e553f0fb66aac6437a28d"
+    },
+    {
+      "bytes": 1050707,
+      "commit_file": "epoch_149.commit.json",
+      "commit_sha256": "39c0a282cb06f4544e48155cbafc58548336f778fb30fc0f3ad7aa0c93adeed9",
+      "file": "epoch_149.9b38bbe1c0414feabbeaceaa92454646.jsonl.gz",
+      "sha256": "883b76b0e546df06283b2b0b97a9bfb9383185023272b85c01b74ce55f8a3aa3"
+    },
+    {
+      "bytes": 1056620,
+      "commit_file": "epoch_150.commit.json",
+      "commit_sha256": "4195e6e68e19f3a7081e20b227bb2d17c40d822151a95ba75ffe0f28ef52ce85",
+      "file": "epoch_150.b56b6716f97f4273a8da978d6900e3ab.jsonl.gz",
+      "sha256": "c9f345c69dc5fd7365b52be09e07db7dcbcb0fd6413b9079aa60e38ec1d74a96"
+    },
+    {
+      "bytes": 1064199,
+      "commit_file": "epoch_151.commit.json",
+      "commit_sha256": "50eb3016d5b7c0f26931422d63fcc2618b8cf0d71b7ca75222fd9e7dfca76aa6",
+      "file": "epoch_151.4a8c71eed7344dc4a87d861d83b6762e.jsonl.gz",
+      "sha256": "a0c5c41f8be2f1d597d79362ca4d961e6cc9dec2613f73296a1cadba88b54798"
+    },
+    {
+      "bytes": 1056758,
+      "commit_file": "epoch_152.commit.json",
+      "commit_sha256": "f9f94b477d562c20804613aca428ce40074fb084e520711cab9d6cea17e80da4",
+      "file": "epoch_152.a22cb63b901a44058d8705ecbe1dbdb4.jsonl.gz",
+      "sha256": "8d86df575692c8abcce812316a3acb5e6e5dfd8378c23572085bac1dd7c7394b"
+    },
+    {
+      "bytes": 1061839,
+      "commit_file": "epoch_153.commit.json",
+      "commit_sha256": "d6c19e5398ff1d88912428caaeb8284b5e8d22cdc2f4c680efd5b231cd1c3235",
+      "file": "epoch_153.eb3aa24681fa43d6b1af0b53fb04a0c0.jsonl.gz",
+      "sha256": "ccd4424c038f14ac3aa6317b0508cf7fafc7192cb13e11ae1ff8cec6fe751f8f"
+    },
+    {
+      "bytes": 1057890,
+      "commit_file": "epoch_154.commit.json",
+      "commit_sha256": "40ed43f3407c65313e9558194448575035cdbf7b9704219860d19e60450f14b9",
+      "file": "epoch_154.74cb3471f3cc4c829d67e2f205cb8e71.jsonl.gz",
+      "sha256": "32421e6013c873fccebf61fe6056a4b931b1d2be90747809ff9419d905f713ad"
+    },
+    {
+      "bytes": 1052963,
+      "commit_file": "epoch_155.commit.json",
+      "commit_sha256": "360a84787f67be14244a18fa107de568cec4c60db794f2da266fadfb5315de87",
+      "file": "epoch_155.cb2bebd55e194d7a9d4f54077ca6b54d.jsonl.gz",
+      "sha256": "11767a2bf800f12a6d15e5838634606aa1a8c5040a4f2ed82056e80d898b7b15"
+    },
+    {
+      "bytes": 1059252,
+      "commit_file": "epoch_156.commit.json",
+      "commit_sha256": "60ada7cd68d4f01e3b20dda6753b24b2a218f766339f8bc3ab46cd64cdeef075",
+      "file": "epoch_156.600cf7ae04254c66aae4619d996b7e5f.jsonl.gz",
+      "sha256": "eeab86a8b1ffe2a64b0ec735f5572cef3e5eaf461e2f6fd8c2168c581d13e5d1"
+    },
+    {
+      "bytes": 1059008,
+      "commit_file": "epoch_157.commit.json",
+      "commit_sha256": "ad2fce703f0e1e9eb8ff61f39f74e724393456998a3661d6f1be2f0e6014beed",
+      "file": "epoch_157.4f1254c491af4ff590c32e0a7f868f37.jsonl.gz",
+      "sha256": "2e7e7fb2f26b1eca40dc2498c0084b1fbbc86246dd9be4b0626b0b8288ad687a"
+    },
+    {
+      "bytes": 1058569,
+      "commit_file": "epoch_158.commit.json",
+      "commit_sha256": "e11996dfde79dac0c7015d6d30ecc55dcbca06145e06823f1356a7c5485dd91e",
+      "file": "epoch_158.9ccd46a613024c7db804942f53847d1c.jsonl.gz",
+      "sha256": "f55dbc1aff32e99354eb4efe4cba192deb38988f06f765d0cd208a740cbf4d4c"
+    },
+    {
+      "bytes": 1055543,
+      "commit_file": "epoch_159.commit.json",
+      "commit_sha256": "a37d9ad216b06a99f3e599e3c02b0dcf928896b35b5a3b324f62b156a1242b6a",
+      "file": "epoch_159.195d876b93fe48e0bc53fddc1b22fe2e.jsonl.gz",
+      "sha256": "0b3714a64e95266cce97b55893108b72b9ee900e2eda0ff885339bf29035c372"
+    },
+    {
+      "bytes": 1049198,
+      "commit_file": "epoch_160.commit.json",
+      "commit_sha256": "22bc1d6b5faed99177b68a73492f55c283d208d7dc27a1451e443e61358ff9c6",
+      "file": "epoch_160.c4aeb3ea5f91434982674df9d4cee32f.jsonl.gz",
+      "sha256": "42fe9fd0b8d330e360495e36c3e271f87676fae9ec6ce8e673c6ae1b67dd0e80"
+    },
+    {
+      "bytes": 1058411,
+      "commit_file": "epoch_161.commit.json",
+      "commit_sha256": "091829511aab4e26e04c46bc98340ff107ee64a05ae65fb06e291ed7e26e9ef9",
+      "file": "epoch_161.c1ad68c9a500453091e7277cb3c93bbb.jsonl.gz",
+      "sha256": "cfafdad087ce5c5ce8024e235efa7528f207140bb45705dffafd4adcef6c4291"
+    },
+    {
+      "bytes": 1053359,
+      "commit_file": "epoch_162.commit.json",
+      "commit_sha256": "326b6ded9b0f7a3d075658a1a9e0fdfdd82471db8c4d4399f967224f33be2466",
+      "file": "epoch_162.2a09d03b566f48eabe991519068ad963.jsonl.gz",
+      "sha256": "97466a4dbf481f17037c2cf328c7d9a6337d21d7645c09fa102686ba56482ffa"
+    },
+    {
+      "bytes": 1066706,
+      "commit_file": "epoch_163.commit.json",
+      "commit_sha256": "9edde59ea1b3ea3677c96518fa46ca9b4d6fa1f8e3edf8dfaee36be7c7c122c7",
+      "file": "epoch_163.314789a935c74bbc8da63c67b55d9b2d.jsonl.gz",
+      "sha256": "c8dfb1dcd9adb8a46cea9f0918d27d1aed7863621385ffd1820823393aa519d0"
+    },
+    {
+      "bytes": 1057436,
+      "commit_file": "epoch_164.commit.json",
+      "commit_sha256": "9279ee3fa7f43f835fe9a25ecc920662c771fe00b65ab595c32ff31f034f6c68",
+      "file": "epoch_164.690f820b9fd24124a1598dcdff114e9d.jsonl.gz",
+      "sha256": "16c797d338e8cad4cb6a0f408c2cc95770827fbb5461dba69731845e4292fb36"
+    },
+    {
+      "bytes": 1055142,
+      "commit_file": "epoch_165.commit.json",
+      "commit_sha256": "47ea9690966d3928b0f6f98a1f2c1067dc69f56a7bea8e7af2960be5530787f2",
+      "file": "epoch_165.4ed252ff98a74a97811a1e829ef524f4.jsonl.gz",
+      "sha256": "6bb88f9f0e95155ac53362752ec6917a3f40f10e5035168d8422c8e82ef90464"
+    },
+    {
+      "bytes": 1063139,
+      "commit_file": "epoch_166.commit.json",
+      "commit_sha256": "c53736fb9272e6a62618eb1c31885dff304387208fb9ceac1cb77fff83cf2a96",
+      "file": "epoch_166.3e1b00ed33d0441d80ff9af6d2eb0250.jsonl.gz",
+      "sha256": "a96121a3c1216a7667534fd1f9d4d024092f483826cea405648fcd9f6433acd5"
+    },
+    {
+      "bytes": 1057118,
+      "commit_file": "epoch_167.commit.json",
+      "commit_sha256": "47f9af421d21ded819a42fb0f440845864f980f0cbeff7489ac9abd37e161e31",
+      "file": "epoch_167.937c0bea08a2496db30a0b15c20f283e.jsonl.gz",
+      "sha256": "8520b7b5da7e59d033f93c3affd1f778b57b9ac22bd72a6614fdd61accaa1eee"
+    },
+    {
+      "bytes": 1052654,
+      "commit_file": "epoch_168.commit.json",
+      "commit_sha256": "d3af5b020f8ea69da684c14a95d90ad4cbc6308662e45531696bb78de7bfb7bb",
+      "file": "epoch_168.8eca5eda0a5241289f27381e4275f724.jsonl.gz",
+      "sha256": "01e42b16fcae3aa5167742da14106de080ee3b2143b627a24e98c20e25920419"
+    },
+    {
+      "bytes": 1048561,
+      "commit_file": "epoch_169.commit.json",
+      "commit_sha256": "18f2d5ccc8945aa5d03514c6f43266ec19c097b6141589e0f002165dcd4c0afc",
+      "file": "epoch_169.f34cf6cfa50e4ae1accd1347ada01ceb.jsonl.gz",
+      "sha256": "0ba2cd430ab4772b0a7a60f7a9826ca1b6388630f423081deffa2a30e6265dd0"
+    },
+    {
+      "bytes": 1057147,
+      "commit_file": "epoch_170.commit.json",
+      "commit_sha256": "fd5797a12066471a7103fc4edc147777fd2cc041a4e02922149671cea90272a9",
+      "file": "epoch_170.2c6df34bd9b047bfb4c05b58f522e61f.jsonl.gz",
+      "sha256": "852a8d910f3e5151d50de3c10e91ce473c54dfb8528ecf21d4002483e4e75860"
+    },
+    {
+      "bytes": 1045992,
+      "commit_file": "epoch_171.commit.json",
+      "commit_sha256": "e4e04bef982e33e117442f8f582783a73e0bab508d3f5250b5041d48720ba09b",
+      "file": "epoch_171.c764dc501a5b4f69bb26227fa7a5c099.jsonl.gz",
+      "sha256": "b8576748e9e990c8214949321549fd3ddf461a6bb392b8dd66d9930e330fb035"
+    },
+    {
+      "bytes": 1056903,
+      "commit_file": "epoch_172.commit.json",
+      "commit_sha256": "7baf0f334d9b2cfb6d6a791479aebd08045cdb265b38dd7f1aa792b269744dd0",
+      "file": "epoch_172.5368d296b6074c8cb91edd178eed11b7.jsonl.gz",
+      "sha256": "ee5643522198521c623fb422a113719ce7d691c559bf3b9f55d29a90cfd08ed7"
+    },
+    {
+      "bytes": 1052745,
+      "commit_file": "epoch_173.commit.json",
+      "commit_sha256": "da2dc19619f1a6fc772da473dd6d1f6524bb7f920f3f49e4484451449a501110",
+      "file": "epoch_173.4c427006ac954697abf0105a21295a9c.jsonl.gz",
+      "sha256": "08d770109df29973b9a0e1556671aa3972b8b20ea48d7382a2c3a8c1d1aec568"
+    },
+    {
+      "bytes": 1054559,
+      "commit_file": "epoch_174.commit.json",
+      "commit_sha256": "396b2ea5e6a355c927c7da04531600f553c61e20f1d910177b4f9471d8c061f5",
+      "file": "epoch_174.0af019108f8a4802b06adb000ddeeb35.jsonl.gz",
+      "sha256": "7e93a1d42c3e486215ddcb4cd9edbf120d29b6a19f5cf7541e72761d2c0ee0a8"
+    },
+    {
+      "bytes": 1057618,
+      "commit_file": "epoch_175.commit.json",
+      "commit_sha256": "d1269546d62b06c5bfe69817f99c976d16a292ca65b982e2f00e500faa49cff0",
+      "file": "epoch_175.7307de931b3f4b9ba42f135d101d8a5d.jsonl.gz",
+      "sha256": "31bddb55307533c0348b626ea744ff2ccb9b910479dde37b0105e678d468af49"
+    },
+    {
+      "bytes": 1063262,
+      "commit_file": "epoch_176.commit.json",
+      "commit_sha256": "d05457dddb622ea12ed950336aedf3f95ae9ac99243502fe640e7c9876b4dbda",
+      "file": "epoch_176.50d31694aac94521a669aba701191a3e.jsonl.gz",
+      "sha256": "88b4fbb720628184499c53bef7b68ef72e4ff28c1f55d581bdeac44192852715"
+    },
+    {
+      "bytes": 1050117,
+      "commit_file": "epoch_177.commit.json",
+      "commit_sha256": "b7bf96509e3e897e6985277d964259595e9d1ef9455565a93e6c33da24c6ccd9",
+      "file": "epoch_177.5a7629cf4e1c4863a6d9e4bf00a89c85.jsonl.gz",
+      "sha256": "b66ac1df31f2b07adbf9bd4ac03f0e03027ec069087b1808dc8306865b811d55"
+    },
+    {
+      "bytes": 1054211,
+      "commit_file": "epoch_178.commit.json",
+      "commit_sha256": "6abb69ac2748815537f0572c1c62272a3c2542c564a430fdb7c21e67190249b1",
+      "file": "epoch_178.6c92f2cc9d944c96a9199ad40472d7f9.jsonl.gz",
+      "sha256": "95c8411f2defa45c1302c405feaa51ac64a2769dbb93ee3d43486d12c5b7bfdc"
+    },
+    {
+      "bytes": 1056849,
+      "commit_file": "epoch_179.commit.json",
+      "commit_sha256": "d3c2f985e9946510293c95554c00840747d4aa2b477050e1e055e26f37bc4668",
+      "file": "epoch_179.5b712f1832a84f62a95546a59209c08c.jsonl.gz",
+      "sha256": "fd9befaea04a39d40e1df209f6e1e035fb19aefffa599b064c7c8f6574a13961"
+    },
+    {
+      "bytes": 1057094,
+      "commit_file": "epoch_180.commit.json",
+      "commit_sha256": "1a0469a60f29db60c68c8509ff4341b6be2df784f8247cea420e2777a6cb4bfe",
+      "file": "epoch_180.a17360f61b954df081c9cb7e987f7922.jsonl.gz",
+      "sha256": "b6cb36bb853c321905384878bcc2994374bafed4aad1871a83a8e63991ff6ec0"
+    },
+    {
+      "bytes": 1056379,
+      "commit_file": "epoch_181.commit.json",
+      "commit_sha256": "b81c8c4aa5fe28b1b40ea038abae9630dbefd3fd60663cd21cd85dbf78667f1f",
+      "file": "epoch_181.2683c4a21af64ee6befdd785c4af4cd1.jsonl.gz",
+      "sha256": "cad4fc5fbdfdb9c29ce78f36737e5b669bf6011591a97cb922e915e90c77ea13"
+    },
+    {
+      "bytes": 1044353,
+      "commit_file": "epoch_182.commit.json",
+      "commit_sha256": "6735d5f5968541ef606078c4c46ca054bd1ebb7d438663709ec3f9061d940e06",
+      "file": "epoch_182.f532519becbf4dd99192a41fef7467c7.jsonl.gz",
+      "sha256": "ae8f9dc1cfb28f56ac5de3ce00f07283389f8552ba7315000d52d1e9dba12306"
+    },
+    {
+      "bytes": 1055298,
+      "commit_file": "epoch_183.commit.json",
+      "commit_sha256": "7dce4d8f8924c572dd1860a19a2ec31374d3f255f582312363fd88ae48739790",
+      "file": "epoch_183.2505df9872194c10ba0fcd4e69327829.jsonl.gz",
+      "sha256": "6363e391bc2314529bfe48db58235f62f34256cfb78fdff014bc2a234b0ceda2"
+    },
+    {
+      "bytes": 1048686,
+      "commit_file": "epoch_184.commit.json",
+      "commit_sha256": "83ac0f361a5a198ab5e744c596412370997bee7e499e39ea3de1aae0857f9514",
+      "file": "epoch_184.e676ed22aa2b45458b3afd034a12160a.jsonl.gz",
+      "sha256": "bb895526f3d8a319121c13241de028d4262481429271bc6da2647497ab505058"
+    },
+    {
+      "bytes": 1062101,
+      "commit_file": "epoch_185.commit.json",
+      "commit_sha256": "8cdced049e1a8457942734c02b6e33fc5bba7f66092b37fca606a4de9baf0da7",
+      "file": "epoch_185.d5d0eff20295466e9790668c6596dcd7.jsonl.gz",
+      "sha256": "63156531730574279408ab25c4a1b76f49dc9e46b61ca3a47751179b41c02587"
+    },
+    {
+      "bytes": 1057006,
+      "commit_file": "epoch_186.commit.json",
+      "commit_sha256": "19a04c19ccd7338b237edbc70a3fef2148caedf6b747c289427a1a9669680011",
+      "file": "epoch_186.77d6aad69d294a8f9d55fdf0797a00ad.jsonl.gz",
+      "sha256": "cb1313359c5a80d84c71767cf9ee9e4149c764072e9358298d9bb7ca5d802e74"
+    },
+    {
+      "bytes": 1060546,
+      "commit_file": "epoch_187.commit.json",
+      "commit_sha256": "d247fd5280ef34a9690209ea1d2794ea70871aab3ce0d036d5569e4cdb324fe8",
+      "file": "epoch_187.e1452068a3664042b0c61d6ab94d93ab.jsonl.gz",
+      "sha256": "eb7add9998256a7ab06a6cc48ca20b2ce63fd5bcb47fbd59ccacd83d04a9a122"
+    },
+    {
+      "bytes": 1052232,
+      "commit_file": "epoch_188.commit.json",
+      "commit_sha256": "95042f4095b780dce9cc36db1819d43e9aba116aa6721be83425242e4be49058",
+      "file": "epoch_188.d3a5d5ed436548a6ba6eabafbe4fc3d1.jsonl.gz",
+      "sha256": "80c0a13b6f174166960cf8b79705aca50a25fd0c9e06fad7a9530b5bd753e9e8"
+    },
+    {
+      "bytes": 1054956,
+      "commit_file": "epoch_189.commit.json",
+      "commit_sha256": "c4de0ec1c24aadb4e795d7423ca4718d3510f18d972b18a0410b164b5501b03c",
+      "file": "epoch_189.f750eb3da49548f6aac02debf46e8c2e.jsonl.gz",
+      "sha256": "5febb55312d74ad0fa5a7c9ec830758b03c69182684e2de7e0b30a9213924070"
+    },
+    {
+      "bytes": 1061039,
+      "commit_file": "epoch_190.commit.json",
+      "commit_sha256": "707a5a8795779dfc15b243f24efb7f0bf0730f280c369be0a369881d898f82e0",
+      "file": "epoch_190.3869ff6ded104549969b8cfadb6d7b76.jsonl.gz",
+      "sha256": "c2d8fd791fa69564209e99486642172b47ae4b1c6f97c8d526fdc0aeecc6b218"
+    },
+    {
+      "bytes": 1054143,
+      "commit_file": "epoch_191.commit.json",
+      "commit_sha256": "c8ee40251cc52a0c57bd67dd9cc252d7385ed2da9ecd31e01fb72ba9ef193171",
+      "file": "epoch_191.b89b0ae2ea224854af5532eb3cbb2aa1.jsonl.gz",
+      "sha256": "022a06ed960a748b4a18ea796d504cb2e9817b83d251dd2de20d6c535b4cbdc6"
+    },
+    {
+      "bytes": 1059730,
+      "commit_file": "epoch_192.commit.json",
+      "commit_sha256": "eef59c8d23a827d6f31d05172beda09f7d365a1d3bd9c46bdf0016e51bf3b4c9",
+      "file": "epoch_192.5dc5e1a9d36c423b9d43f8a4a13ad1c0.jsonl.gz",
+      "sha256": "09276c6d7973c097aa8da9018034367168cb4f3e2fe07c033e06b291ad749c97"
+    },
+    {
+      "bytes": 1053869,
+      "commit_file": "epoch_193.commit.json",
+      "commit_sha256": "aa81e97cc62bcd06c9cf10d3a3f0edff0756b6dce1b62b40bb7ee40e5a989a9d",
+      "file": "epoch_193.6226b46b28ec4d94b7188adaaf6a15c5.jsonl.gz",
+      "sha256": "acabc1bac689922315c3f7dc80c45f4ba49ee7c2f355be7d9368cbbd32ee336d"
+    },
+    {
+      "bytes": 1054107,
+      "commit_file": "epoch_194.commit.json",
+      "commit_sha256": "6f964245e8fa082426d4317f03985e20d3e01158198e09f69bb87af3538589c6",
+      "file": "epoch_194.b4ef6c8415774cbdba0d4ecc64d66565.jsonl.gz",
+      "sha256": "68593dc73d3b8445dad4b281c477e1d58f5dff0c96e2233a5f75cf7676630b92"
+    },
+    {
+      "bytes": 1056238,
+      "commit_file": "epoch_195.commit.json",
+      "commit_sha256": "b84ad5b404aee3d008f313e041d77db736eb3ccef596624d0cc3281ec03a0eb1",
+      "file": "epoch_195.a05e0548719d45eda4974506cf83caf0.jsonl.gz",
+      "sha256": "b8d7e38b66d2fcaea217834ed933c3070a7e3d72f1b08a5cc7b43607025caf0a"
+    },
+    {
+      "bytes": 1053031,
+      "commit_file": "epoch_196.commit.json",
+      "commit_sha256": "e98ebab872c7f1965eba89cc213cf93bfc123e1414d359a1a3bb72f53314f046",
+      "file": "epoch_196.7583ec88415c4c9999877bc2f43f38b8.jsonl.gz",
+      "sha256": "484444fc1cdccca88c5ebe784c4c4d7b270664af1b9868403c634187b9464400"
+    },
+    {
+      "bytes": 1061319,
+      "commit_file": "epoch_197.commit.json",
+      "commit_sha256": "3ec04d5a58131e33a8defd3317bf72194880a6b840013a0544bccc30ca8a92ab",
+      "file": "epoch_197.d14c10f34a804e17a90971136e67dbb7.jsonl.gz",
+      "sha256": "d93f3f5c16e50ee0514f47b597b51a5f8e3bc6c4d565a375c2ee035ec0cf18d9"
+    },
+    {
+      "bytes": 1050177,
+      "commit_file": "epoch_198.commit.json",
+      "commit_sha256": "d09d14d22cc3d97f601ba10525e1bf34e95e91cdf4cae5ed9dfafaa3ffdf3ab3",
+      "file": "epoch_198.4a2c9fa4d4164493944f54616a52d65e.jsonl.gz",
+      "sha256": "57cb657ba52c816f44c855e15107f33811d50b7bb8c2d0dcdb3b01436ceba332"
+    },
+    {
+      "bytes": 1055308,
+      "commit_file": "epoch_199.commit.json",
+      "commit_sha256": "71f3b325381ee65f94ae637bb13069ace257ce4a6a49ab3982f4c10c4b6520ab",
+      "file": "epoch_199.3f8f0dcd211645129d5709a83a58f155.jsonl.gz",
+      "sha256": "40e7f88291a9108a6f0c8a97a9d5291e2ae41eb820c505c44b3b10d389a0b10f"
+    }
+  ],
+  "status": "CPU_COVERAGE_AUDIT_PASS_GPU_PENDING",
+  "structural_gate": "PASS",
+  "tables": [
+    {
+      "file": "population_by_class.csv",
+      "rows": 42,
+      "sha256": "c6b7986cca3b9d796a9f25fc9706e79f2f089e74dc0f4ffa9439f0bfb7c2821d"
+    },
+    {
+      "file": "group_concentration.csv",
+      "rows": 42,
+      "sha256": "c6b7986cca3b9d796a9f25fc9706e79f2f089e74dc0f4ffa9439f0bfb7c2821d"
+    },
+    {
+      "file": "class_family_P3_coverage.csv",
+      "rows": 52,
+      "sha256": "752d8dc07d85d0a09fe46c6908cb601291e15376c0a4fcd0ddd485e1b38c7d98"
+    },
+    {
+      "file": "constraint_funnel_by_class.csv",
+      "rows": 49,
+      "sha256": "f31f05cf800e139372db7be798ce89dda0afa4dcd4102395498b5114489cb311"
+    },
+    {
+      "file": "candidate_eligibility_funnel.csv",
+      "rows": 18,
+      "sha256": "7e34d016528d9fa5701352f62ea7fc11c0bf11d156201b466398908690d6f9f2"
+    },
+    {
+      "file": "partner_diversity_by_class.csv",
+      "rows": 7,
+      "sha256": "03edd5d3355fc73ca5dde078330997ea9c67bf70cb4bacf53aaf5e3e2276e361"
+    },
+    {
+      "file": "original_R5_weight_retention.csv",
+      "rows": 7,
+      "sha256": "9a2f9a9cdece6cd626cd71bd06151f944fcecf67b2bf441e743ae271856b5075"
+    }
+  ]
+}
