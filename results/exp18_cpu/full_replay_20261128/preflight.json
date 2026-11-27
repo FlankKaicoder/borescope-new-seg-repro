@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "input_files": 1899,
+  "source_files": 446,
+  "baseline_receipt_sha256": "55f35b49d66a9641680d33570349a07cda70f0afa11e474c4b8ebc947f9f52a2",
+  "source_manifest_sha256": "d545d9e59232aa60c5109fac7128ba43dfbb0207cd85f9614ec44e823d48408e",
+  "resources": {
+    "cpu.max": "2000000 100000",
+    "memory.max": "32212254720",
+    "memory.current": "498229248",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0"
+  },
+  "disk_free_bytes": 48646168576,
+  "torch_imported": false,
+  "real_model_constructions": 0,
+  "GPU_calls": 0,
+  "VAL_passes": 0,
+  "TEST_accesses": 0,
+  "checked_at_unix": 1795795619.96649,
+  "full_private_receipt_sha256": "25f0e24722c67c3482230acd96cc2da2c5e8aa8fbb4fe6ea4d6605959ba55694",
+  "runtime_source_matches_previous_baseline": true,
+  "source_archive_sha256": "db2a7f79ce9bd1f92ca98251cd427de4822d10d15e91306d5adb88a3f7708b58",
+  "protocol_sha256": "fab9e2289a96fab68e90c8560548de2f2849b9c3d9f6a844215d5a8e7b86e15b",
+  "protocol_file_sha256": "154af0e31984fff710af578c46e7cd07ed7e8c39591d744107d35f6a8ae18e56",
+  "lambda_state": null,
+  "formal_training_authorized": false
+}

@@ -1,5 +1,9 @@
 # Project state
 
+## EXP18 CPU full replay resumed (2026-11-28)
+
+用户重新开启服务器并要求按原进度继续。实际容器恢复为20CPU/30GiB、数据盘约46GiB可用；1899输入、446冻结a10源码与原生环境源码SHA前置核对PASS。仅恢复获批CPU全量TRAIN数据回放，服务器记录`/root/autodl-tmp/exp18_cpu/20261125T131451Z/resume_20261128_01`。完整200轮/4200批、全轨迹匹配重算与独立总审查仍以最终回执为准；当前不能提前记CPU_READY。lambda=null，真实模型/GPU/VAL/TEST和正式训练均未启动。旧partial和全部历史产物保留。
+
 ## EXP18 CPU implementation (2026-11-25)
 
 `EXP18_CPU_ENGINEERING_PASS_FULL_REPLAY_PENDING`. 83 CPU tests、固定TRAIN包1/7/11/21、21批预演PASS（S92/K502，仅首轮）。无卡0.5CPU/2GiB，全量启动SIGKILL；用户允许待算力恢复再测试。全量0/4200封存，尚非最终CPU_READY。1899输入/446源码复核和4658归档成员SHA通过。lambda=null、正式H200未授权；真实模型/GPU/newVAL/TEST=0，R5科研Gate未改变。[当前交接](../EXP18_CPU_ENGINEERING_HANDOFF.md)、[剩余清单](exp18/GPU_PENDING.md)。
