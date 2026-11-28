@@ -1,0 +1,14 @@
+{
+  "status": "PASS_REVIEW_REPORT_TEXT_AND_ALL_ZIP_MEMBER_SHA_CRC",
+  "report_sha256": "8288768ea900932a940390d7751c40385b1a9960f1822a0e5547550e46ead19a",
+  "report_bytes": 31254,
+  "ZIP": {
+    "file": "EXP18_CPU_GPT_REVIEW_PACKAGE_20261128.zip",
+    "bytes": 2644942,
+    "sha256": "f9149b1fa11fed7ef249537c817dd2b6123e23cb7972cbb0fbced79bcccf277d",
+    "members": 85
+  },
+  "new_experiments": 0,
+  "original_core_archive_changed": false,
+  "warning": "Packaging CRC/SHA checks are not new CPU model or GPU tests."
+}

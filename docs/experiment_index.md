@@ -1,5 +1,7 @@
 # Experiment index
 
+- **EXP18独立审查资料（2026-11-28）** — [CPU验收、覆盖与GPU待验完整报告](../EXP18_CPU_GPT_REVIEW_REPORT_20261128.md)。现有证据整理，无新实验或Gate变更。
+
 - **EXP18 CPU全量（2026-11-28）** — `EXP18_CPU_READY_GPU_PENDING`。200轮/4200批、前2100历史对照、4200闭合最大匹配独立审查、1899输入/446源码及469成员归档PASS；K521/S497唯一区域。lambda=null、正式H200未授权；真实模型/GPU/VAL/TEST=0。[交接](../EXP18_CPU_READY_HANDOFF_20261128.md)、[结果](../results/exp18_cpu/full_replay_20261128/README.md)。
 
 - **EXP18 CPU（2026-11-25）** — `EXP18_CPU_ENGINEERING_PASS_FULL_REPLAY_PENDING`。83项CPU测试、固定四包和21批预演PASS；用户允许剩余4200批待资源。lambda=null，真实模型/GPU/新VAL/TEST=0，正式H200未授权。[交接](../EXP18_CPU_ENGINEERING_HANDOFF.md)、[剩余清单](exp18/GPU_PENDING.md)。

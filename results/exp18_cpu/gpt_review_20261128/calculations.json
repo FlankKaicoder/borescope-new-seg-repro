@@ -1,0 +1,57 @@
+{
+  "schema": "EXP18_REVIEW_METADATA_CALCULATIONS_V1",
+  "evidence_head": "2c3c3cbf9c9987b10f04e5c9194c7dee680e305d",
+  "no_new_experiments_or_models": true,
+  "native_unique_instances": 1266,
+  "augmented_target_exposures": 246023,
+  "K_unique": 521,
+  "S_unique": 497,
+  "K_exposures": 100867,
+  "S_exposures": 22437,
+  "P3_bucket_exposures": {
+    "2_TO_4": [
+      6973,
+      366
+    ],
+    "OVER_4": [
+      93476,
+      22071
+    ],
+    "1": [
+      418,
+      0
+    ]
+  },
+  "repair_family_exposures": {
+    "V1": [
+      63139,
+      18679
+    ],
+    "V2": [
+      21444,
+      2249
+    ],
+    "V3": [
+      7443,
+      504
+    ],
+    "V4": [
+      8841,
+      1005
+    ]
+  },
+  "ordered_constraint_funnel": {
+    "K_SUPPORT_COMPLETE": 100867,
+    "SAME_CLASS_CROSS_GROUP": 94025,
+    "SAME_FAMILY": 67493,
+    "AREA_RATIO_0_5_TO_2": 36140,
+    "SAME_P3_BUCKET": 34465,
+    "CELLS_RATIO_0_5_TO_2": 25164,
+    "S_MAXIMUM_CLOSED_PERMUTATION": 22437
+  },
+  "cumulative_auxiliary_weight": 3901.0,
+  "old_R5_weight_denominator": 2100.0,
+  "old_R5_weight_retained": 456.5708789133055,
+  "source_tables_checked": 7,
+  "labels": "All rates are descriptive metadata ratios; no gradient/model effect is estimated."
+}

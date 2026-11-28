@@ -42,3 +42,7 @@
 /results/exp18_cpu/full_replay_20261128/** -text
 # Keep the captured native log verbatim, including its original trailing space.
 /results/exp18_cpu/full_replay_20261128/CPU_REPLAY_LOG.txt -whitespace
+
+# Keep the standalone GPT review report and its source manifest byte-stable.
+/EXP18_CPU_GPT_REVIEW_REPORT_20261128.md -text
+/results/exp18_cpu/gpt_review_20261128/** -text

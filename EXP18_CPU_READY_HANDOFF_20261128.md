@@ -2,6 +2,8 @@
 
 **2026-11-28，Asia/Shanghai。当前状态：`EXP18_CPU_READY_GPU_PENDING`。**
 
+提交GPT独立审查的完整材料见[审查报告](EXP18_CPU_GPT_REVIEW_REPORT_20261128.md)，含各类覆盖分母、尺度/版本偏移及GPU入口与容量问题；本交接的原验收结果保持不变。
+
 用户开启服务器后，本轮完成此前延期的全量CPU数据回放、独立元数据审查和E盘归档。真实模型构造/加载/前反向、CUDA初始化、GPU计算、VAL、TEST均为0。λ仍为`null`，200 Epoch正式训练未授权。按原授权在CPU READY停止，等待ChatGPT独立审查与下一阶段Gate。
 
 ## 身份和代码

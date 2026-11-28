@@ -2,6 +2,8 @@
 
 ## EXP18 CPU acceptance completed (2026-11-28)
 
+已整理[GPT独立审查完整报告](../EXP18_CPU_GPT_REVIEW_REPORT_20261128.md)，证据基点`2c3c3cb`。这是封存数据的文档汇总与比例计算，不是新实验；真实GPU入口、λ和正式训练Gate未改变。
+
 `EXP18_CPU_READY_GPU_PENDING`。完整200轮/4200批CPU回放、133600图次/253200原始实例次、前2100历史对照通过；4200具体匹配重算及独立最大闭合人口、P3/身份/N索引/权重、H100/H200数学、1899输入/446源码前后核对PASS。83项CPU测试/四固定包按冻结SHA复用；独立实际证据终验与E盘469成员/4样本/完整gzip核验PASS。K521/S497唯一区域；S316组，3901非空/299空匹配批。20CPU/30GiB下回放79.18分钟。lambda=null，正式H200未授权；真实模型/CUDA/GPU/VAL/TEST=0。科研覆盖、ChatGPT独立审查、GPU预算/AMP/真实恢复/λ/smoke/容量Gate仍待下一阶段；本轮停止。[当前交接](../EXP18_CPU_READY_HANDOFF_20261128.md)、[验收](../results/exp18_cpu/full_replay_20261128/README.md)。
 
 ## EXP18 CPU full replay resume log (start, 2026-11-28)
