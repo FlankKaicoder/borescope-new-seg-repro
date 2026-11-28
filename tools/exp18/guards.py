@@ -86,6 +86,7 @@ class CPUExecutionGuard:
         self.raw_roots = tuple(Path(p).resolve() for p in raw_roots)
         self.allowed_raw_files = {Path(p).resolve() for p in allowed_raw_files}
         self.loads = {}
+        self._v2_retirement = None
         self.active = False
         self.events = {"blocked_CUDA": 0, "blocked_real_model": 0, "blocked_load": 0,
                        "blocked_write": 0, "blocked_TEST": 0, "blocked_delete": 0,
@@ -125,6 +126,22 @@ class CPUExecutionGuard:
             raise PermissionError("EXP18 output escaped its owned roots: " + str(path))
         self.writes.add(str(path))
 
+    def retire_storage_v2_payload(self, path, expected_sha256):
+        """Narrow single-file exception for verified, owned V2 rotation."""
+        path = Path(path).resolve(strict=True)
+        require(self._v2_retirement is None and path.suffix in (".pt", ".packet")
+                and path.stat().st_nlink == 1
+                and any(p.name == "exp18_storage_v2" for p in path.parents)
+                and (path.name.startswith(("update_", "best_weights_", "batch_"))),
+                "V2 cache/checkpoint retirement path rejected")
+        self.check_write(path)
+        require(sha256(path) == expected_sha256, "V2 retiring artifact changed")
+        self._v2_retirement = path
+        try:
+            path.unlink()
+        finally:
+            self._v2_retirement = None
+
     def _audit(self, event, args):
         if not self.active:
             return
@@ -143,6 +160,8 @@ class CPUExecutionGuard:
             else:
                 self.check_read(name)
         elif event in ("os.remove", "os.rmdir", "os.rename", "os.truncate"):
+            if event == "os.remove" and self._v2_retirement is not None and Path(args[0]) == self._v2_retirement:
+                return
             self.events["blocked_delete"] += 1
             raise PermissionError("EXP18 artifacts cannot be deleted, replaced, or truncated: " + event)
         elif event in ("os.mkdir", "os.chmod", "os.link", "os.symlink"):

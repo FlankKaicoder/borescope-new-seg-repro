@@ -73,12 +73,14 @@ def _weights(weights, count, reference):
     return result
 
 
-def a1_loss(head, u_a, u_n, weights):
+def a1_loss(head, u_a, u_n, weights, *, observe=False):
     require(u_a.shape == u_n.shape and u_a.ndim == 2 and u_a.shape[1] == 64, "Raw state features must be paired 64-D rows")
     dtype = torch.float64 if u_a.dtype == torch.float64 else torch.float32
     with torch.autocast(u_a.device.type, enabled=False):
         gap = (head(u_a.to(dtype)) - head(u_n.to(dtype))).squeeze(-1)
-        return (_weights(weights, len(gap), gap) * F.softplus(-gap)).sum()
+        pair_loss = F.softplus(-gap)
+        loss = (_weights(weights, len(gap), gap) * pair_loss).sum()
+        return (loss, gap.detach(), pair_loss.detach()) if observe else loss
 
 
 def a0_loss(head, u_a, u_n, weights):
@@ -116,6 +118,9 @@ class JointForward:
     matching_sha256: str
     bn_statistics: dict
     parts: object = None
+    gap: object = None
+    pair_loss: object = None
+    pair_classes: tuple = ()
 
 
 def forward_joint(model, batch, a_regions, normal_images, normal_masks, normal_regions, matching,
@@ -156,8 +161,12 @@ def forward_joint(model, batch, a_regions, normal_images, normal_masks, normal_r
         selected_n = n_raw[n_index]
         if arm == "a1_shuffled":
             selected_n = selected_n[torch.tensor(permutation, dtype=torch.long, device=n_raw.device)]
-        state = a1_loss(model.state_head, a_raw[a_index], selected_n, _get(matching, "weights"))
+        state, gap, pair_loss = a1_loss(model.state_head, a_raw[a_index], selected_n,
+                                            _get(matching, "weights"), observe=True)
+        rows = matching.get("selected_candidates", ()) if isinstance(matching, Mapping) else getattr(matching, "selected_candidates", ())
+        pair_classes = tuple(row["class_id"] if isinstance(row, Mapping) else row.class_id for row in rows)
     else:
+        gap, pair_loss, pair_classes = None, None, ()
         a_raw, n_raw, n_p3 = None, None, None
         # No reference to head parameters: empty head grad MUST remain None.
         state = a.yolo.new_zeros(())
@@ -165,4 +174,4 @@ def forward_joint(model, batch, a_regions, normal_images, normal_masks, normal_r
     require(bool(torch.isfinite(total)), "Nonfinite joint loss")
     sha = _get(matching, "sha256") if matching is not None else ""
     return JointForward(a.yolo, a.supcon, state, total, active, a_raw, n_raw, a.p3,
-                        n_p3, sha, statistics, a.parts)
+                        n_p3, sha, statistics, a.parts, gap, pair_loss, pair_classes)

@@ -1,0 +1,34 @@
+{
+  "schema": "EXP18_CPU_STORAGE_RUNTIME_V2",
+  "device": "cpu",
+  "horizon": 200,
+  "base_runtime_file_sha256": "06b827fa1b502fc47ffd0d0878b19a180ad2705f216e7d34bf1b5424f4db5d70",
+  "base_protocol_sha256": "fab9e2289a96fab68e90c8560548de2f2849b9c3d9f6a844215d5a8e7b86e15b",
+  "storage": {
+    "schema": "EXP18_STORAGE_V2",
+    "checkpoint_interval_epochs": 5,
+    "permanent_epochs": [
+      0,
+      100,
+      200
+    ],
+    "recovery_slots": 2,
+    "cache_epochs": 2,
+    "max_replay_updates_per_incident": 105,
+    "native_replay_updates_authorized": 0,
+    "formal_storage_gate": "PENDING"
+  },
+  "storage_sha256": "c2ecb6fc320af8a9c9fb56527ac1a11cad62789466bb4e2a5f445ff699a35dd8",
+  "lambda_state": null,
+  "formal_training_authorized": false,
+  "budgets": {
+    "CUDA": 0,
+    "real_model": 0,
+    "real_tensor_load": 0,
+    "real_forward": 0,
+    "real_backward": 0,
+    "real_updates": 0,
+    "VAL": 0,
+    "TEST": 0
+  }
+}

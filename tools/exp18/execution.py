@@ -147,7 +147,7 @@ class ExperimentExecutor:
             head_active_updates=self.head_active_updates,
             extra={"epoch_events_complete": events_complete})
 
-    def _update(self, batch, step):
+    def _update(self, batch, step, *, observe=None):
         adapter = self.adapter
         adapter.before_batch(step)
         adapter.optimizer.zero_grad(set_to_none=True)
@@ -162,6 +162,7 @@ class ExperimentExecutor:
             result.total.backward()
         validate_gradients(adapter.model, head_active=result.head_active)
         before_clip = joint_gradient_stats(adapter.model)
+        diagnostics = observe(result) if observe is not None else None
         norm = torch.nn.utils.clip_grad_norm_(adapter.model.parameters(), self.protocol["train"]["clip_global_norm"])
         if not bool(torch.isfinite(norm)):
             raise ValueError("Nonfinite joint gradient norm")
@@ -195,6 +196,8 @@ class ExperimentExecutor:
             row["supcon_loss"] = float(result.supcon.detach())
         elif not self.synthetic:
             raise ValueError("Native joint forward omitted YOLO/SupCon components")
+        if diagnostics is not None:
+            row.update(diagnostics)
         if hasattr(adapter, "after_batch"):
             adapter.after_batch(row)
         return row

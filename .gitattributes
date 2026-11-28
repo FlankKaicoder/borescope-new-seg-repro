@@ -46,3 +46,8 @@
 # Keep the standalone GPT review report and its source manifest byte-stable.
 /EXP18_CPU_GPT_REVIEW_REPORT_20261128.md -text
 /results/exp18_cpu/gpt_review_20261128/** -text
+
+# Preserve V2 size, coverage and journal evidence byte identities.
+/results/exp18_cpu/storage_v2/** -text
+/docs/exp18/EXP18_CHECKPOINT_STORAGE_REVISION_V2.md -text
+/docs/exp18/EXP18_GPU_ENGINEERING_PROTOCOL_DRAFT.md -text
