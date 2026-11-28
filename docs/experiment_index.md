@@ -1,5 +1,7 @@
 # Experiment index
 
+- **EXP18 存储 V2（2026-11-28）** — `EXP18_STORAGE_REVISION_CPU_PASS_GPU_PENDING`。三臂 H200 永久完整状态共 9 份，训练期各臂另有最多两个滚动槽。V2 11 项 CPU 测试通过。H200 合成连续/中断恢复逐位一致，4,200 个逻辑更新、五次恢复、单次重算最多 105 步，160 模拟 VAL 无重复。封存账本补充覆盖完成。λ=null，真实 YOLO/CUDA/训练/VAL/TEST 均 0，正式容量 Gate 和真实 GPU 恢复待审。 [交接](../EXP18_STORAGE_V2_HANDOFF.md)。
+
 - **EXP18独立审查资料（2026-11-28）** — [CPU验收、覆盖与GPU待验完整报告](../EXP18_CPU_GPT_REVIEW_REPORT_20261128.md)。现有证据整理，无新实验或Gate变更。
 
 - **EXP18 CPU全量（2026-11-28）** — `EXP18_CPU_READY_GPU_PENDING`。200轮/4200批、前2100历史对照、4200闭合最大匹配独立审查、1899输入/446源码及469成员归档PASS；K521/S497唯一区域。lambda=null、正式H200未授权；真实模型/GPU/VAL/TEST=0。[交接](../EXP18_CPU_READY_HANDOFF_20261128.md)、[结果](../results/exp18_cpu/full_replay_20261128/README.md)。

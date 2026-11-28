@@ -1,5 +1,9 @@
 # Decision log
 
+## EXP18-STORAGE-V2-20261128 — Three permanent states and rolling recovery
+
+用户批准 V2 作为独立存储修订。H200 每臂永久保存 E0/E100/E200，交替保留两个每 5 轮恢复槽。先提交边界状态再发起既定 VAL。已提交评价使用回执恢复，未提交训练段记录为放弃并计量额外物理更新。冻结的数据、匹配和训练定义沿用原 CPU_READY。仓库交付通过合成 CPU 测试。真实 CUDA、VAL、TEST 和正式训练仍为零预算。详见 [V2 交接](../EXP18_STORAGE_V2_HANDOFF.md)。
+
 ## EXP18-CPU-FULL-20261128 — Full CPU acceptance; stop before GPU Gate
 
 用户重新开启服务器并要求延续进度，恢复已授权CPU范围；不据此启动模型或训练。20CPU/30GiB环境使用原a10源码和同一H200 CPU协议，完成200轮/4200批、前2100历史精确匹配、4200带种子地图重算与独立0/1最大闭合人口核验、N own-ROI索引/复用、权重、P3及全轨迹身份审查。83项测试和四固定包按原SHA复用，1899输入/446源码前后一致。469成员E盘包、4个样本恢复和完整gzip核验PASS；全部失败/partial及服务器资料保留。

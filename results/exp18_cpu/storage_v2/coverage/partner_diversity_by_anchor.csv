@@ -1,0 +1,522 @@
+arm,polygon_id,class_id,class,group_id,source_id,repair_family,K_exposures,aux_exposures,distinct_N_polygons,distinct_N_groups,max_partner_exposure_share,partner_entropy_bits,has_one_observed_partner,one_partner_single_exposure,one_partner_repeated_exposures
+a1_shuffled,1004_000,2,Dent,singleton_1004,1004,V1,200,100,26,24,0.1,4.429535036992078,False,False,False
+a1_shuffled,1005_000,2,Dent,singleton_1005,1005,V1,200,91,19,18,0.08791208791208792,4.071282449718279,False,False,False
+a1_shuffled,1008_000,2,Dent,singleton_1008,1008,V1,200,99,24,23,0.10101010101010101,4.413482732153993,False,False,False
+a1_shuffled,100_000,3,Material missing,singleton_100,100,V1,200,43,8,8,0.20930232558139536,2.8446431060812962,False,False,False
+a1_shuffled,103_000,6,corrosion,singleton_103,103,V2,200,28,9,7,0.21428571428571427,3.029696439528413,False,False,False
+a1_shuffled,103_001,3,Material missing,singleton_103,103,V2,200,28,6,5,0.2857142857142857,2.508621780036165,False,False,False
+a1_shuffled,103_002,6,corrosion,singleton_103,103,V2,200,14,4,4,0.42857142857142855,1.8423709931771084,False,False,False
+a1_shuffled,103_003,6,corrosion,singleton_103,103,V2,200,25,7,6,0.24,2.6986885704510972,False,False,False
+a1_shuffled,105_000,6,corrosion,singleton_105,105,V1,200,71,23,13,0.11267605633802817,4.213355874769604,False,False,False
+a1_shuffled,106_000,6,corrosion,singleton_106,106,V1,121,25,9,9,0.24,2.8732696895151086,False,False,False
+a1_shuffled,106_001,6,corrosion,singleton_106,106,V1,156,47,17,13,0.1702127659574468,3.833443043388678,False,False,False
+a1_shuffled,111_000,1,Crack,singleton_111,111,V1,200,49,7,3,0.20408163265306123,2.7066196745495517,False,False,False
+a1_shuffled,119_000,0,Burn,singleton_119,119,V1,200,59,20,15,0.11864406779661017,4.083406135490296,False,False,False
+a1_shuffled,119_001,0,Burn,singleton_119,119,V1,200,56,15,13,0.10714285714285714,3.8071179851228747,False,False,False
+a1_shuffled,132_000,3,Material missing,singleton_132,132,V2,200,38,8,7,0.21052631578947367,2.9033595152909317,False,False,False
+a1_shuffled,136_000,0,Burn,singleton_136,136,V1,200,75,19,13,0.14666666666666667,3.9177768077999455,False,False,False
+a1_shuffled,136_001,6,corrosion,singleton_136,136,V1,200,28,8,8,0.32142857142857145,2.76149018937388,False,False,False
+a1_shuffled,139_000,3,Material missing,singleton_139,139,V2,195,31,8,7,0.25806451612903225,2.7858324088103066,False,False,False
+a1_shuffled,13_000,6,corrosion,singleton_13,13,V2,200,25,14,5,0.2,3.5394705707972522,False,False,False
+a1_shuffled,13_001,6,corrosion,singleton_13,13,V2,200,29,12,5,0.2413793103448276,3.3267267897287205,False,False,False
+a1_shuffled,156_000,3,Material missing,singleton_156,156,V2,197,21,5,5,0.2857142857142857,2.2844763510411217,False,False,False
+a1_shuffled,15_000,3,Material missing,singleton_15,15,V2,200,42,9,8,0.19047619047619047,3.0036860199820854,False,False,False
+a1_shuffled,165_000,6,corrosion,singleton_165,165,V1,196,46,17,12,0.17391304347826086,3.716618141301279,False,False,False
+a1_shuffled,165_001,6,corrosion,singleton_165,165,V1,154,45,18,10,0.13333333333333333,3.8253260194476537,False,False,False
+a1_shuffled,165_002,6,corrosion,singleton_165,165,V1,200,36,13,11,0.19444444444444445,3.3815766567866516,False,False,False
+a1_shuffled,165_003,6,corrosion,singleton_165,165,V1,200,48,16,12,0.125,3.8346860742973052,False,False,False
+a1_shuffled,165_004,6,corrosion,singleton_165,165,V1,143,8,3,3,0.5,1.4056390622295665,False,False,False
+a1_shuffled,166_000,6,corrosion,singleton_166,166,V1,199,71,27,14,0.1267605633802817,4.425201654557981,False,False,False
+a1_shuffled,17_000,1,Crack,singleton_17,17,V2,200,10,1,1,1.0,-0.0,True,False,True
+a1_shuffled,17_001,6,corrosion,singleton_17,17,V2,171,11,5,4,0.36363636363636365,2.186704345910025,False,False,False
+a1_shuffled,184_000,6,corrosion,singleton_184,184,V1,200,71,16,12,0.1267605633802817,3.881453726434228,False,False,False
+a1_shuffled,185_000,6,corrosion,singleton_185,185,V2,200,42,11,9,0.16666666666666666,3.3253473296089173,False,False,False
+a1_shuffled,185_001,6,corrosion,singleton_185,185,V2,200,26,10,4,0.23076923076923078,3.1416195253341384,False,False,False
+a1_shuffled,185_002,6,corrosion,singleton_185,185,V2,157,18,13,5,0.2222222222222222,3.5032583347756456,False,False,False
+a1_shuffled,185_003,6,corrosion,singleton_185,185,V2,156,22,9,5,0.22727272727272727,2.9317206879810787,False,False,False
+a1_shuffled,185_004,6,corrosion,singleton_185,185,V2,200,15,5,4,0.3333333333333333,2.2322628970242686,False,False,False
+a1_shuffled,192_000,6,corrosion,singleton_192,192,V1,200,62,17,13,0.11290322580645161,3.896698125666904,False,False,False
+a1_shuffled,193_000,1,Crack,singleton_193,193,V1,200,0,0,0,,,False,False,False
+a1_shuffled,193_001,6,corrosion,singleton_193,193,V1,148,33,12,10,0.21212121212121213,3.349965423573798,False,False,False
+a1_shuffled,195_000,6,corrosion,singleton_195,195,V1,200,36,8,8,0.25,2.8362230995438447,False,False,False
+a1_shuffled,197_000,6,corrosion,singleton_197,197,V3,200,2,1,1,1.0,-0.0,True,False,True
+a1_shuffled,197_001,6,corrosion,singleton_197,197,V3,200,4,1,1,1.0,-0.0,True,False,True
+a1_shuffled,197_002,6,corrosion,singleton_197,197,V3,200,0,0,0,,,False,False,False
+a1_shuffled,197_003,6,corrosion,singleton_197,197,V3,167,14,4,4,0.35714285714285715,1.924174352300441,False,False,False
+a1_shuffled,199_000,6,corrosion,singleton_199,199,V1,172,37,11,10,0.21621621621621623,3.24920133825109,False,False,False
+a1_shuffled,199_001,6,corrosion,singleton_199,199,V1,200,54,18,12,0.12962962962962962,3.9262751246782077,False,False,False
+a1_shuffled,199_002,6,corrosion,singleton_199,199,V1,200,52,20,13,0.11538461538461539,4.053348554838312,False,False,False
+a1_shuffled,1_000,6,corrosion,singleton_1,1,V4,200,35,9,7,0.2,3.0069780187308544,False,False,False
+a1_shuffled,1_001,6,corrosion,singleton_1,1,V4,200,25,8,4,0.2,2.8244984515601637,False,False,False
+a1_shuffled,1_002,6,corrosion,singleton_1,1,V4,171,18,9,4,0.2222222222222222,2.974937501201927,False,False,False
+a1_shuffled,202_000,3,Material missing,singleton_202,202,V2,200,10,2,2,0.8,0.7219280948873623,False,False,False
+a1_shuffled,213_000,6,corrosion,singleton_213,213,V2,67,12,7,7,0.3333333333333333,2.584962500721156,False,False,False
+a1_shuffled,216_000,2,Dent,singleton_216,216,V4,200,5,1,1,1.0,-0.0,True,False,True
+a1_shuffled,217_000,6,corrosion,singleton_217,217,V4,200,39,9,7,0.1794871794871795,3.038180030748304,False,False,False
+a1_shuffled,21_000,2,Dent,singleton_21,21,V1,200,105,30,28,0.0761904761904762,4.740051176445281,False,False,False
+a1_shuffled,21_001,6,corrosion,singleton_21,21,V1,160,60,26,14,0.08333333333333333,4.475652212593065,False,False,False
+a1_shuffled,220_000,3,Material missing,singleton_220,220,V3,200,1,1,1,1.0,-0.0,True,True,False
+a1_shuffled,221_000,6,corrosion,singleton_221,221,V2,198,27,7,5,0.2222222222222222,2.6999266334462826,False,False,False
+a1_shuffled,221_001,2,Dent,singleton_221,221,V2,200,20,5,5,0.25,2.2854752972273342,False,False,False
+a1_shuffled,222_000,0,Burn,singleton_222,222,V2,200,23,5,3,0.43478260869565216,2.089902458185835,False,False,False
+a1_shuffled,222_001,1,Crack,singleton_222,222,V2,200,10,1,1,1.0,-0.0,True,False,True
+a1_shuffled,222_002,0,Burn,singleton_222,222,V2,200,9,1,1,1.0,-0.0,True,False,True
+a1_shuffled,223_000,6,corrosion,singleton_223,223,V2,200,30,11,7,0.2,3.085917579505496,False,False,False
+a1_shuffled,224_000,6,corrosion,singleton_224,224,V1,200,56,12,11,0.14285714285714285,3.438690584305922,False,False,False
+a1_shuffled,233_000,0,Burn,singleton_233,233,V1,200,44,15,12,0.13636363636363635,3.720715858091436,False,False,False
+a1_shuffled,233_001,0,Burn,singleton_233,233,V1,200,53,18,14,0.1509433962264151,3.9102092012115506,False,False,False
+a1_shuffled,233_002,0,Burn,singleton_233,233,V1,200,52,18,16,0.11538461538461539,3.94355036359703,False,False,False
+a1_shuffled,234_000,6,corrosion,singleton_234,234,V1,200,72,18,12,0.125,3.969109161967044,False,False,False
+a1_shuffled,235_000,6,corrosion,singleton_235,235,V4,200,13,7,4,0.23076923076923078,2.7192945256669794,False,False,False
+a1_shuffled,235_001,6,corrosion,singleton_235,235,V4,191,13,7,4,0.23076923076923078,2.6612262562697895,False,False,False
+a1_shuffled,235_002,6,corrosion,singleton_235,235,V4,200,30,9,8,0.3,2.7138755975478235,False,False,False
+a1_shuffled,235_003,6,corrosion,singleton_235,235,V4,200,26,8,6,0.2692307692307692,2.699823855410188,False,False,False
+a1_shuffled,235_004,6,corrosion,singleton_235,235,V4,200,14,7,4,0.21428571428571427,2.6995138503199656,False,False,False
+a1_shuffled,235_005,6,corrosion,singleton_235,235,V4,200,14,5,2,0.2857142857142857,2.217021885879718,False,False,False
+a1_shuffled,23_000,6,corrosion,singleton_23,23,V1,123,28,15,12,0.17857142857142858,3.624518654958899,False,False,False
+a1_shuffled,23_001,6,corrosion,singleton_23,23,V1,200,38,15,12,0.18421052631578946,3.6711868039463846,False,False,False
+a1_shuffled,243_000,3,Material missing,singleton_243,243,V1,200,58,11,11,0.15517241379310345,3.3722742649650783,False,False,False
+a1_shuffled,250_000,2,Dent,singleton_250,250,V3,200,5,1,1,1.0,-0.0,True,False,True
+a1_shuffled,252_000,0,Burn,singleton_252,252,V1,200,41,13,11,0.0975609756097561,3.6557364555737584,False,False,False
+a1_shuffled,252_001,0,Burn,singleton_252,252,V1,200,44,17,13,0.09090909090909091,4.032295538649315,False,False,False
+a1_shuffled,252_002,0,Burn,singleton_252,252,V1,200,50,19,15,0.12,4.1079764393853,False,False,False
+a1_shuffled,254_000,6,corrosion,singleton_254,254,V1,200,49,11,10,0.1836734693877551,3.3258327437392667,False,False,False
+a1_shuffled,254_001,6,corrosion,singleton_254,254,V1,152,38,16,8,0.13157894736842105,3.7421569621574373,False,False,False
+a1_shuffled,258_000,6,corrosion,singleton_258,258,V3,200,26,5,4,0.2692307692307692,2.2281060666990187,False,False,False
+a1_shuffled,258_001,6,corrosion,singleton_258,258,V3,200,14,5,4,0.35714285714285715,2.2098886380147267,False,False,False
+a1_shuffled,259_000,0,Burn,singleton_259,259,V1,200,11,3,3,0.7272727272727273,1.0957952550009336,False,False,False
+a1_shuffled,259_001,0,Burn,singleton_259,259,V1,200,53,18,14,0.11320754716981132,4.012942096269216,False,False,False
+a1_shuffled,259_002,0,Burn,singleton_259,259,V1,159,37,19,14,0.16216216216216217,4.0059580950078475,False,False,False
+a1_shuffled,261_000,6,corrosion,singleton_261,261,V1,185,58,22,11,0.13793103448275862,4.1297252889633045,False,False,False
+a1_shuffled,261_001,6,corrosion,singleton_261,261,V1,200,47,19,8,0.1702127659574468,3.897688788253654,False,False,False
+a1_shuffled,263_000,6,corrosion,singleton_263,263,V1,200,67,21,12,0.1044776119402985,4.181688542867757,False,False,False
+a1_shuffled,270_000,6,corrosion,singleton_270,270,V2,200,39,9,8,0.20512820512820512,3.0254287448258994,False,False,False
+a1_shuffled,270_001,6,corrosion,singleton_270,270,V2,200,25,7,5,0.2,2.7092750707107136,False,False,False
+a1_shuffled,274_000,0,Burn,singleton_274,274,V2,200,23,6,4,0.43478260869565216,2.1938311332103213,False,False,False
+a1_shuffled,276_000,0,Burn,singleton_276,276,V1,200,0,0,0,,,False,False,False
+a1_shuffled,27_000,6,corrosion,singleton_27,27,V1,200,61,20,13,0.08196721311475409,4.163153077185814,False,False,False
+a1_shuffled,27_001,6,corrosion,singleton_27,27,V1,200,46,14,12,0.10869565217391304,3.56655389468264,False,False,False
+a1_shuffled,27_002,6,corrosion,singleton_27,27,V1,200,15,5,2,0.26666666666666666,2.2892464285091583,False,False,False
+a1_shuffled,282_000,6,corrosion,singleton_282,282,V3,200,15,4,3,0.3333333333333333,1.9086126988727123,False,False,False
+a1_shuffled,282_001,6,corrosion,singleton_282,282,V3,144,10,3,3,0.5,1.4854752972273344,False,False,False
+a1_shuffled,283_000,2,Dent,singleton_283,283,V2,200,7,2,2,0.5714285714285714,0.9852281360342515,False,False,False
+a1_shuffled,283_001,3,Material missing,singleton_283,283,V2,200,20,4,4,0.4,1.8016094970590273,False,False,False
+a1_shuffled,28_000,2,Dent,singleton_28,28,V1,196,113,32,29,0.061946902654867256,4.834621640937438,False,False,False
+a1_shuffled,294_000,6,corrosion,singleton_294,294,V3,200,23,5,4,0.30434782608695654,2.224833025479758,False,False,False
+a1_shuffled,294_001,6,corrosion,singleton_294,294,V3,154,21,5,5,0.3333333333333333,2.201078735588117,False,False,False
+a1_shuffled,296_000,0,Burn,singleton_296,296,V2,200,17,5,3,0.35294117647058826,2.0948567835487384,False,False,False
+a1_shuffled,2_000,6,corrosion,singleton_2,2,V1,200,47,11,9,0.19148936170212766,3.273045247055968,False,False,False
+a1_shuffled,300_000,2,Dent,singleton_300,300,V4,200,40,7,6,0.3,2.4898227820087553,False,False,False
+a1_shuffled,300_001,6,corrosion,singleton_300,300,V4,200,40,11,8,0.15,3.3282129458410017,False,False,False
+a1_shuffled,301_000,2,Dent,singleton_301,301,V1,200,98,23,22,0.09183673469387756,4.384519987866952,False,False,False
+a1_shuffled,302_000,6,corrosion,singleton_302,302,V1,200,31,12,11,0.22580645161290322,3.227558006021377,False,False,False
+a1_shuffled,303_000,6,corrosion,singleton_303,303,V3,200,17,4,4,0.4117647058823529,1.8726696380501495,False,False,False
+a1_shuffled,303_001,6,corrosion,singleton_303,303,V3,200,4,2,2,0.75,0.8112781244591328,False,False,False
+a1_shuffled,306_000,6,corrosion,singleton_306,306,V1,197,39,15,8,0.15384615384615385,3.6188966173317105,False,False,False
+a1_shuffled,307_000,6,corrosion,singleton_307,307,V4,156,11,4,2,0.36363636363636365,1.823067982273661,False,False,False
+a1_shuffled,307_001,6,corrosion,singleton_307,307,V4,192,10,3,2,0.4,1.5709505944546684,False,False,False
+a1_shuffled,307_002,6,corrosion,singleton_307,307,V4,134,14,7,4,0.2857142857142857,2.556656707462823,False,False,False
+a1_shuffled,307_003,6,corrosion,singleton_307,307,V4,200,23,9,4,0.17391304347826086,3.0337940209922127,False,False,False
+a1_shuffled,307_004,6,corrosion,singleton_307,307,V4,200,20,7,4,0.2,2.7709505944546686,False,False,False
+a1_shuffled,307_005,6,corrosion,singleton_307,307,V4,200,44,11,8,0.13636363636363635,3.354809824679848,False,False,False
+a1_shuffled,312_000,1,Crack,singleton_312,312,V1,200,92,22,22,0.15217391304347827,4.190744496427038,False,False,False
+a1_shuffled,314_000,6,corrosion,singleton_314,314,V4,200,0,0,0,,,False,False,False
+a1_shuffled,314_001,6,corrosion,singleton_314,314,V4,200,0,0,0,,,False,False,False
+a1_shuffled,314_002,6,corrosion,singleton_314,314,V4,200,0,0,0,,,False,False,False
+a1_shuffled,314_003,6,corrosion,singleton_314,314,V4,200,25,10,5,0.32,2.983465189601647,False,False,False
+a1_shuffled,314_004,6,corrosion,singleton_314,314,V4,200,17,7,4,0.23529411764705882,2.7045348998193433,False,False,False
+a1_shuffled,317_000,6,corrosion,singleton_317,317,V1,200,63,20,13,0.1111111111111111,4.038312020032914,False,False,False
+a1_shuffled,317_001,6,corrosion,singleton_317,317,V1,200,37,21,10,0.10810810810810811,4.208924987016683,False,False,False
+a1_shuffled,317_002,6,corrosion,singleton_317,317,V1,200,45,19,10,0.13333333333333333,4.01120441892766,False,False,False
+a1_shuffled,318_000,6,corrosion,singleton_318,318,V1,102,7,5,4,0.42857142857142855,2.128085278891394,False,False,False
+a1_shuffled,321_000,6,corrosion,singleton_321,321,V1,192,33,7,6,0.21212121212121213,2.7557338940454095,False,False,False
+a1_shuffled,322_000,6,corrosion,singleton_322,322,V4,200,24,11,4,0.20833333333333334,3.236440501696144,False,False,False
+a1_shuffled,322_001,6,corrosion,singleton_322,322,V4,186,25,8,7,0.16,2.903465189601647,False,False,False
+a1_shuffled,322_002,6,corrosion,singleton_322,322,V4,200,20,7,7,0.25,2.7037016960573483,False,False,False
+a1_shuffled,322_003,6,corrosion,singleton_322,322,V4,199,22,8,5,0.18181818181818182,2.8796640049025943,False,False,False
+a1_shuffled,325_000,6,corrosion,singleton_325,325,V4,188,48,11,7,0.16666666666666666,3.2678941476196224,False,False,False
+a1_shuffled,327_000,6,corrosion,singleton_327,327,V1,200,44,19,10,0.1590909090909091,3.862143551876072,False,False,False
+a1_shuffled,327_001,6,corrosion,singleton_327,327,V1,200,37,16,8,0.13513513513513514,3.720437583742441,False,False,False
+a1_shuffled,327_002,6,corrosion,singleton_327,327,V1,200,35,15,9,0.17142857142857143,3.622738561139236,False,False,False
+a1_shuffled,332_000,3,Material missing,singleton_332,332,V2,200,27,5,5,0.3333333333333333,2.2017135403283756,False,False,False
+a1_shuffled,332_001,3,Material missing,singleton_332,332,V2,200,32,6,6,0.1875,2.579434002924965,False,False,False
+a1_shuffled,33_000,6,corrosion,singleton_33,33,V1,142,34,14,11,0.14705882352941177,3.536608254391499,False,False,False
+a1_shuffled,33_001,6,corrosion,singleton_33,33,V1,184,14,12,10,0.14285714285714285,3.521640636343318,False,False,False
+a1_shuffled,33_002,6,corrosion,singleton_33,33,V1,197,9,6,4,0.3333333333333333,2.4193819456463714,False,False,False
+a1_shuffled,33_003,6,corrosion,singleton_33,33,V1,131,3,3,3,0.3333333333333333,1.584962500721156,False,False,False
+a1_shuffled,33_004,6,corrosion,singleton_33,33,V1,200,8,7,6,0.25,2.75,False,False,False
+a1_shuffled,33_005,6,corrosion,singleton_33,33,V1,200,5,4,3,0.4,1.9219280948873623,False,False,False
+a1_shuffled,33_006,6,corrosion,singleton_33,33,V1,200,16,10,7,0.1875,3.10845859334435,False,False,False
+a1_shuffled,33_007,6,corrosion,singleton_33,33,V1,200,3,3,3,0.3333333333333333,1.584962500721156,False,False,False
+a1_shuffled,33_008,6,corrosion,singleton_33,33,V1,200,6,6,4,0.16666666666666666,2.584962500721156,False,False,False
+a1_shuffled,33_009,6,corrosion,singleton_33,33,V1,200,4,3,3,0.5,1.5,False,False,False
+a1_shuffled,33_010,6,corrosion,singleton_33,33,V1,200,24,11,11,0.20833333333333334,3.236440501696144,False,False,False
+a1_shuffled,33_011,6,corrosion,singleton_33,33,V1,200,23,11,11,0.2608695652173913,3.174885868724236,False,False,False
+a1_shuffled,33_012,6,corrosion,singleton_33,33,V1,200,1,1,1,1.0,-0.0,True,True,False
+a1_shuffled,33_013,6,corrosion,singleton_33,33,V1,200,40,14,12,0.175,3.5526555965581883,False,False,False
+a1_shuffled,33_014,6,corrosion,singleton_33,33,V1,190,5,4,3,0.4,1.9219280948873623,False,False,False
+a1_shuffled,33_015,6,corrosion,singleton_33,33,V1,175,12,9,8,0.16666666666666666,3.084962500721156,False,False,False
+a1_shuffled,33_016,6,corrosion,singleton_33,33,V1,134,10,5,5,0.3,2.1709505944546685,False,False,False
+a1_shuffled,33_017,6,corrosion,singleton_33,33,V1,193,6,6,6,0.16666666666666666,2.584962500721156,False,False,False
+a1_shuffled,33_018,6,corrosion,singleton_33,33,V1,200,7,3,2,0.5714285714285714,1.3787834934861753,False,False,False
+a1_shuffled,33_019,6,corrosion,singleton_33,33,V1,200,5,3,2,0.6,1.3709505944546687,False,False,False
+a1_shuffled,33_020,6,corrosion,singleton_33,33,V1,200,14,10,8,0.2857142857142857,3.0930692077718898,False,False,False
+a1_shuffled,33_021,6,corrosion,singleton_33,33,V1,200,9,8,5,0.2222222222222222,2.94770277922009,False,False,False
+a1_shuffled,33_022,6,corrosion,singleton_33,33,V1,190,3,3,2,0.3333333333333333,1.584962500721156,False,False,False
+a1_shuffled,33_023,6,corrosion,singleton_33,33,V1,166,14,9,6,0.21428571428571427,3.0391486719030705,False,False,False
+a1_shuffled,33_024,6,corrosion,singleton_33,33,V1,200,23,15,12,0.17391304347826086,3.708132064658601,False,False,False
+a1_shuffled,33_025,6,corrosion,singleton_33,33,V1,200,9,7,6,0.2222222222222222,2.725480556997868,False,False,False
+a1_shuffled,33_026,6,corrosion,singleton_33,33,V1,200,4,2,2,0.75,0.8112781244591328,False,False,False
+a1_shuffled,33_027,6,corrosion,singleton_33,33,V1,200,0,0,0,,,False,False,False
+a1_shuffled,341_000,6,corrosion,singleton_341,341,V1,200,53,12,11,0.1320754716981132,3.369551522855323,False,False,False
+a1_shuffled,347_000,0,Burn,singleton_347,347,V1,200,58,19,14,0.1206896551724138,4.024881426941336,False,False,False
+a1_shuffled,349_000,6,corrosion,singleton_349,349,V2,200,27,6,6,0.3333333333333333,2.4119845034160106,False,False,False
+a1_shuffled,349_001,6,corrosion,singleton_349,349,V2,199,39,9,8,0.1794871794871795,3.0662910023498298,False,False,False
+a1_shuffled,354_000,1,Crack,singleton_354,354,V1,200,103,22,22,0.07766990291262135,4.341123588073112,False,False,False
+a1_shuffled,362_000,3,Material missing,singleton_362,362,V2,200,32,7,6,0.28125,2.6359768596329824,False,False,False
+a1_shuffled,366_000,6,corrosion,singleton_366,366,V3,200,26,5,4,0.2692307692307692,2.218814723614935,False,False,False
+a1_shuffled,366_001,6,corrosion,singleton_366,366,V3,177,24,6,4,0.25,2.4795739585136225,False,False,False
+a1_shuffled,368_000,6,corrosion,singleton_368,368,V3,200,26,5,4,0.3076923076923077,2.199687794731328,False,False,False
+a1_shuffled,369_000,6,corrosion,singleton_369,369,V2,196,24,9,6,0.16666666666666666,3.0220552088742005,False,False,False
+a1_shuffled,369_001,6,corrosion,singleton_369,369,V2,200,19,12,4,0.21052631578947367,3.3660913291191923,False,False,False
+a1_shuffled,379_000,6,corrosion,singleton_379,379,V2,200,34,9,7,0.17647058823529413,2.999412298318252,False,False,False
+a1_shuffled,379_001,6,corrosion,singleton_379,379,V2,200,17,5,4,0.29411764705882354,2.133387491316597,False,False,False
+a1_shuffled,379_002,6,corrosion,singleton_379,379,V2,185,36,6,6,0.25,2.4948204868923636,False,False,False
+a1_shuffled,382_000,0,Burn,singleton_382,382,V1,200,63,17,13,0.15873015873015872,3.739694416980423,False,False,False
+a1_shuffled,384_000,6,corrosion,singleton_384,384,V1,200,73,22,12,0.136986301369863,4.183281244975154,False,False,False
+a1_shuffled,384_001,6,corrosion,singleton_384,384,V1,198,46,12,11,0.15217391304347827,3.470399521842351,False,False,False
+a1_shuffled,384_002,6,corrosion,singleton_384,384,V1,189,63,15,13,0.15873015873015872,3.628893623466993,False,False,False
+a1_shuffled,384_003,6,corrosion,singleton_384,384,V1,189,11,4,4,0.36363636363636365,1.867633890971212,False,False,False
+a1_shuffled,384_004,6,corrosion,singleton_384,384,V1,200,33,9,9,0.24242424242424243,2.9239647723573294,False,False,False
+a1_shuffled,386_000,3,Material missing,singleton_386,386,V1,200,36,6,6,0.2777777777777778,2.364099143367466,False,False,False
+a1_shuffled,398_000,6,corrosion,singleton_398,398,V2,147,7,5,4,0.2857142857142857,2.2359263506290326,False,False,False
+a1_shuffled,398_001,6,corrosion,singleton_398,398,V2,192,17,7,3,0.35294117647058826,2.4692407821722844,False,False,False
+a1_shuffled,398_002,6,corrosion,singleton_398,398,V2,200,15,5,4,0.4,2.1055872616982603,False,False,False
+a1_shuffled,398_003,6,corrosion,singleton_398,398,V2,200,19,11,5,0.15789473684210525,3.2866294867861954,False,False,False
+a1_shuffled,398_004,6,corrosion,singleton_398,398,V2,200,21,10,5,0.19047619047619047,3.213513256009071,False,False,False
+a1_shuffled,398_005,6,corrosion,singleton_398,398,V2,199,15,7,6,0.4,2.4729055953200563,False,False,False
+a1_shuffled,398_006,6,corrosion,singleton_398,398,V2,200,17,6,5,0.29411764705882354,2.41896119556797,False,False,False
+a1_shuffled,398_007,6,corrosion,singleton_398,398,V2,200,3,3,3,0.3333333333333333,1.584962500721156,False,False,False
+a1_shuffled,398_008,6,corrosion,singleton_398,398,V2,200,11,4,3,0.5454545454545454,1.6858157091530304,False,False,False
+a1_shuffled,398_009,6,corrosion,singleton_398,398,V2,197,20,7,3,0.25,2.6037016960573482,False,False,False
+a1_shuffled,398_010,6,corrosion,singleton_398,398,V2,200,6,3,2,0.3333333333333333,1.584962500721156,False,False,False
+a1_shuffled,398_011,3,Material missing,singleton_398,398,V2,133,17,5,5,0.29411764705882354,2.256908989558354,False,False,False
+a1_shuffled,399_000,6,corrosion,singleton_399,399,V3,200,11,3,3,0.6363636363636364,1.3092966682370037,False,False,False
+a1_shuffled,399_001,6,corrosion,singleton_399,399,V3,193,9,4,3,0.4444444444444444,1.8365916681089791,False,False,False
+a1_shuffled,399_002,6,corrosion,singleton_399,399,V3,200,6,2,1,0.6666666666666666,0.9182958340544896,False,False,False
+a1_shuffled,399_003,6,corrosion,singleton_399,399,V3,196,9,2,2,0.7777777777777778,0.7642045065086203,False,False,False
+a1_shuffled,399_004,6,corrosion,singleton_399,399,V3,200,0,0,0,,,False,False,False
+a1_shuffled,405_000,0,Burn,singleton_405,405,V3,200,0,0,0,,,False,False,False
+a1_shuffled,407_000,3,Material missing,singleton_407,407,V4,192,0,0,0,,,False,False,False
+a1_shuffled,407_001,1,Crack,singleton_407,407,V4,149,0,0,0,,,False,False,False
+a1_shuffled,415_000,6,corrosion,singleton_415,415,V1,200,49,16,12,0.22448979591836735,3.6007723280315154,False,False,False
+a1_shuffled,415_001,6,corrosion,singleton_415,415,V1,200,39,13,12,0.2564102564102564,3.318652875163847,False,False,False
+a1_shuffled,419_000,3,Material missing,singleton_419,419,V2,200,27,4,4,0.2962962962962963,1.9803464138951994,False,False,False
+a1_shuffled,423_000,6,corrosion,singleton_423,423,V1,200,60,24,12,0.1,4.295752420601878,False,False,False
+a1_shuffled,423_001,6,corrosion,singleton_423,423,V1,200,40,16,7,0.2,3.4939427079182686,False,False,False
+a1_shuffled,428_000,6,corrosion,singleton_428,428,V1,200,51,13,12,0.23529411764705882,3.420111196077021,False,False,False
+a1_shuffled,468_000,1,Crack,singleton_468,468,V1,200,108,23,23,0.08333333333333333,4.326330795794215,False,False,False
+a1_shuffled,470_000,1,Crack,near_0007,470,V1,200,36,8,8,0.19444444444444445,2.8924199769411847,False,False,False
+a1_shuffled,471_000,1,Crack,singleton_471,471,V1,200,20,8,5,0.25,2.7414460711655217,False,False,False
+a1_shuffled,474_000,1,Crack,singleton_474,474,V1,200,99,23,23,0.09090909090909091,4.396475920077389,False,False,False
+a1_shuffled,476_000,1,Crack,singleton_476,476,V1,200,96,25,25,0.07291666666666667,4.503914262972599,False,False,False
+a1_shuffled,476_001,1,Crack,singleton_476,476,V1,199,4,2,1,0.75,0.8112781244591328,False,False,False
+a1_shuffled,478_000,1,Crack,singleton_478,478,V1,200,52,14,10,0.1346153846153846,3.5225299910087724,False,False,False
+a1_shuffled,482_000,1,Crack,singleton_482,482,V1,200,25,8,5,0.36,2.5779065701049424,False,False,False
+a1_shuffled,482_001,1,Crack,singleton_482,482,V1,200,16,6,3,0.25,2.452819531114783,False,False,False
+a1_shuffled,482_002,1,Crack,singleton_482,482,V1,178,5,2,2,0.8,0.7219280948873623,False,False,False
+a1_shuffled,482_003,1,Crack,singleton_482,482,V1,188,7,2,2,0.5714285714285714,0.9852281360342515,False,False,False
+a1_shuffled,485_000,1,Crack,near_0007,485,V1,200,36,6,6,0.2777777777777778,2.3459040869215326,False,False,False
+a1_shuffled,486_000,1,Crack,singleton_486,486,V1,200,97,22,22,0.1134020618556701,4.29712948979371,False,False,False
+a1_shuffled,487_000,1,Crack,singleton_487,487,V1,200,91,18,14,0.13186813186813187,3.9471023395499127,False,False,False
+a1_shuffled,489_000,1,Crack,singleton_489,489,V1,200,17,6,4,0.23529411764705882,2.5136459293583706,False,False,False
+a1_shuffled,489_001,1,Crack,singleton_489,489,V1,200,13,7,5,0.23076923076923078,2.6612262562697895,False,False,False
+a1_shuffled,489_002,1,Crack,singleton_489,489,V1,200,17,8,5,0.23529411764705882,2.8221819586428722,False,False,False
+a1_shuffled,492_000,1,Crack,singleton_492,492,V1,200,105,27,24,0.08571428571428572,4.565795438848415,False,False,False
+a1_shuffled,494_000,1,Crack,singleton_494,494,V1,200,93,22,22,0.0967741935483871,4.276237678990627,False,False,False
+a1_shuffled,497_000,1,Crack,singleton_497,497,V1,200,105,22,22,0.08571428571428572,4.337955228217992,False,False,False
+a1_shuffled,498_000,1,Crack,singleton_498,498,V1,200,109,21,21,0.10091743119266056,4.276744213219838,False,False,False
+a1_shuffled,501_000,1,Crack,singleton_501,501,V1,200,102,27,23,0.06862745098039216,4.642788093353463,False,False,False
+a1_shuffled,505_000,1,Crack,singleton_505,505,V1,200,91,23,23,0.08791208791208792,4.435514119482599,False,False,False
+a1_shuffled,508_000,1,Crack,singleton_508,508,V1,200,88,22,22,0.10227272727272728,4.337359750210645,False,False,False
+a1_shuffled,510_000,1,Crack,singleton_510,510,V1,200,42,10,10,0.14285714285714285,3.267117875964918,False,False,False
+a1_shuffled,510_001,1,Crack,singleton_510,510,V1,200,18,7,5,0.2777777777777778,2.636056086195823,False,False,False
+a1_shuffled,513_000,1,Crack,singleton_513,513,V1,200,90,21,21,0.07777777777777778,4.3096996643746905,False,False,False
+a1_shuffled,514_000,1,Crack,singleton_514,514,V1,200,105,23,23,0.09523809523809523,4.387882547600638,False,False,False
+a1_shuffled,518_000,1,Crack,singleton_518,518,V1,200,87,21,21,0.09195402298850575,4.219585848972122,False,False,False
+a1_shuffled,520_000,1,Crack,singleton_520,520,V1,200,109,23,23,0.06422018348623854,4.448769707680423,False,False,False
+a1_shuffled,524_000,1,Crack,singleton_524,524,V1,200,102,22,22,0.09803921568627451,4.380895509802511,False,False,False
+a1_shuffled,528_000,1,Crack,singleton_528,528,V1,200,104,23,23,0.0673076923076923,4.460055951095563,False,False,False
+a1_shuffled,529_000,1,Crack,near_0007,529,V1,200,36,8,8,0.3333333333333333,2.484618488579615,False,False,False
+a1_shuffled,531_000,1,Crack,singleton_531,531,V1,200,97,19,19,0.12371134020618557,4.054984623182125,False,False,False
+a1_shuffled,532_000,1,Crack,near_0007,532,V1,200,36,8,8,0.3055555555555556,2.6889563143909148,False,False,False
+a1_shuffled,533_000,1,Crack,singleton_533,533,V1,200,32,9,5,0.28125,2.9484768596329824,False,False,False
+a1_shuffled,536_000,1,Crack,near_0007,536,V1,200,33,8,8,0.30303030303030304,2.694152380676302,False,False,False
+a1_shuffled,537_000,1,Crack,singleton_537,537,V1,200,69,13,9,0.17391304347826086,3.4497731782090684,False,False,False
+a1_shuffled,541_000,1,Crack,singleton_541,541,V1,199,20,8,5,0.2,2.9464393446710155,False,False,False
+a1_shuffled,541_001,1,Crack,singleton_541,541,V1,198,8,2,1,0.5,1.0,False,False,False
+a1_shuffled,541_002,1,Crack,singleton_541,541,V1,194,21,7,4,0.23809523809523808,2.6792617822531843,False,False,False
+a1_shuffled,544_000,1,Crack,singleton_544,544,V1,200,105,28,25,0.06666666666666667,4.672865615373918,False,False,False
+a1_shuffled,546_000,1,Crack,singleton_546,546,V1,200,96,22,22,0.10416666666666667,4.307203857235149,False,False,False
+a1_shuffled,547_000,1,Crack,singleton_547,547,V1,163,62,21,17,0.11290322580645161,4.117672377113201,False,False,False
+a1_shuffled,54_001,6,corrosion,singleton_54,54,V2,200,45,12,9,0.13333333333333333,3.3895562311268352,False,False,False
+a1_shuffled,54_002,6,corrosion,singleton_54,54,V2,200,13,10,5,0.15384615384615385,3.238901256602631,False,False,False
+a1_shuffled,54_003,6,corrosion,singleton_54,54,V2,200,11,7,4,0.2727272727272727,2.6635327548042547,False,False,False
+a1_shuffled,54_004,6,corrosion,singleton_54,54,V2,77,5,4,4,0.4,1.9219280948873623,False,False,False
+a1_shuffled,54_005,6,corrosion,singleton_54,54,V2,188,14,6,3,0.42857142857142855,2.1280852788913944,False,False,False
+a1_shuffled,54_006,6,corrosion,singleton_54,54,V2,200,15,9,4,0.2,3.0062389286533895,False,False,False
+a1_shuffled,54_007,6,corrosion,singleton_54,54,V2,200,18,9,4,0.2777777777777778,2.8855130303998817,False,False,False
+a1_shuffled,54_008,6,corrosion,singleton_54,54,V2,200,17,9,4,0.35294117647058826,2.8221819586428727,False,False,False
+a1_shuffled,54_009,6,corrosion,singleton_54,54,V2,200,30,7,6,0.26666666666666666,2.619250912838829,False,False,False
+a1_shuffled,54_010,6,corrosion,singleton_54,54,V2,200,32,7,6,0.25,2.67095859334435,False,False,False
+a1_shuffled,551_000,0,Burn,singleton_551,551,V1,200,45,10,10,0.2,3.222672342141792,False,False,False
+a1_shuffled,55_000,6,corrosion,singleton_55,55,V1,200,41,10,9,0.17073170731707318,3.066523726766934,False,False,False
+a1_shuffled,55_001,6,corrosion,singleton_55,55,V1,200,48,15,12,0.125,3.741139720220783,False,False,False
+a1_shuffled,563_000,0,Burn,singleton_563,563,V1,200,53,15,11,0.1320754716981132,3.6872604938382723,False,False,False
+a1_shuffled,569_000,0,Burn,singleton_569,569,V1,198,48,14,13,0.16666666666666666,3.6271673246578833,False,False,False
+a1_shuffled,570_000,0,Burn,singleton_570,570,V1,200,3,1,1,1.0,-0.0,True,False,True
+a1_shuffled,570_001,0,Burn,singleton_570,570,V1,200,28,5,5,0.32142857142857145,2.175548333782212,False,False,False
+a1_shuffled,573_000,0,Burn,singleton_573,573,V1,200,67,21,14,0.1044776119402985,4.115921797247359,False,False,False
+a1_shuffled,579_000,0,Burn,singleton_579,579,V2,200,16,5,4,0.3125,2.0487949406953985,False,False,False
+a1_shuffled,579_001,0,Burn,singleton_579,579,V2,200,16,5,4,0.3125,2.1737949406953985,False,False,False
+a1_shuffled,585_000,0,Burn,singleton_585,585,V1,200,37,8,8,0.21621621621621623,2.8102398539217344,False,False,False
+a1_shuffled,586_000,0,Burn,singleton_586,586,V1,200,63,18,13,0.09523809523809523,4.02699386888693,False,False,False
+a1_shuffled,588_000,0,Burn,singleton_588,588,V2,200,12,5,4,0.3333333333333333,2.188721875540867,False,False,False
+a1_shuffled,588_001,0,Burn,singleton_588,588,V2,200,18,5,4,0.3333333333333333,2.224394445405986,False,False,False
+a1_shuffled,594_000,0,Burn,singleton_594,594,V1,200,42,11,8,0.19047619047619047,3.2413960792635845,False,False,False
+a1_shuffled,594_001,0,Burn,singleton_594,594,V1,200,14,3,3,0.5,1.4926140680171258,False,False,False
+a1_shuffled,602_000,0,Burn,singleton_602,602,V1,200,70,18,14,0.1,4.017164354762241,False,False,False
+a1_shuffled,602_001,0,Burn,singleton_602,602,V1,200,7,2,2,0.5714285714285714,0.9852281360342515,False,False,False
+a1_shuffled,613_000,0,Burn,singleton_613,613,V1,200,19,6,6,0.2631578947368421,2.439268146254097,False,False,False
+a1_shuffled,616_000,0,Burn,singleton_616,616,V1,200,51,13,10,0.1568627450980392,3.4376409621310335,False,False,False
+a1_shuffled,618_000,0,Burn,singleton_618,618,V1,57,22,12,11,0.22727272727272727,3.3176400059662177,False,False,False
+a1_shuffled,618_001,0,Burn,singleton_618,618,V1,200,50,13,10,0.16,3.5089548220906432,False,False,False
+a1_shuffled,621_000,0,Burn,singleton_621,621,V1,200,47,19,14,0.10638297872340426,4.104823628541092,False,False,False
+a1_shuffled,622_000,0,Burn,singleton_622,622,V1,200,18,4,4,0.3333333333333333,1.954685946946356,False,False,False
+a1_shuffled,622_001,0,Burn,singleton_622,622,V1,200,40,11,11,0.15,3.3257163090882544,False,False,False
+a1_shuffled,628_001,0,Burn,singleton_628,628,V2,200,9,1,1,1.0,-0.0,True,False,True
+a1_shuffled,631_000,0,Burn,singleton_631,631,V1,200,19,3,3,0.3684210526315789,1.568316493272887,False,False,False
+a1_shuffled,631_001,0,Burn,singleton_631,631,V1,200,54,18,15,0.12962962962962962,3.882009207538149,False,False,False
+a1_shuffled,632_000,0,Burn,singleton_632,632,V1,200,17,3,3,0.4117647058823529,1.548565226030918,False,False,False
+a1_shuffled,632_001,0,Burn,singleton_632,632,V1,200,48,14,13,0.14583333333333334,3.555793950382455,False,False,False
+a1_shuffled,633_000,0,Burn,near_0061,633,V2,200,0,0,0,,,False,False,False
+a1_shuffled,633_001,0,Burn,near_0061,633,V2,200,0,0,0,,,False,False,False
+a1_shuffled,633_002,0,Burn,near_0061,633,V2,200,0,0,0,,,False,False,False
+a1_shuffled,633_003,0,Burn,near_0061,633,V2,200,0,0,0,,,False,False,False
+a1_shuffled,633_004,0,Burn,near_0061,633,V2,200,0,0,0,,,False,False,False
+a1_shuffled,633_005,0,Burn,near_0061,633,V2,199,0,0,0,,,False,False,False
+a1_shuffled,638_000,3,Material missing,singleton_638,638,V1,200,102,29,28,0.08823529411764706,4.622770015118498,False,False,False
+a1_shuffled,639_000,3,Material missing,singleton_639,639,V3,200,22,5,5,0.2727272727272727,2.214700801125745,False,False,False
+a1_shuffled,640_000,3,Material missing,near_0064,640,V2,150,22,8,8,0.2727272727272727,2.720128777433188,False,False,False
+a1_shuffled,641_000,3,Material missing,singleton_641,641,V3,200,23,5,5,0.30434782608695654,2.261996198187295,False,False,False
+a1_shuffled,642_000,3,Material missing,singleton_642,642,V1,200,105,28,27,0.08571428571428572,4.659370523092797,False,False,False
+a1_shuffled,650_000,3,Material missing,singleton_650,650,V2,200,0,0,0,,,False,False,False
+a1_shuffled,654_000,3,Material missing,singleton_654,654,V1,200,102,31,30,0.0784313725490196,4.763186867250462,False,False,False
+a1_shuffled,656_000,3,Material missing,singleton_656,656,V1,200,80,22,22,0.1,4.284306458753681,False,False,False
+a1_shuffled,658_000,3,Material missing,singleton_658,658,V1,200,112,28,27,0.07142857142857142,4.659802562350112,False,False,False
+a1_shuffled,659_000,3,Material missing,singleton_659,659,V1,200,107,29,28,0.07476635514018691,4.712039917446828,False,False,False
+a1_shuffled,65_000,6,corrosion,singleton_65,65,V2,200,34,8,7,0.17647058823529413,2.918386195313444,False,False,False
+a1_shuffled,65_001,3,Material missing,singleton_65,65,V2,195,33,6,6,0.21212121212121213,2.5628694099060074,False,False,False
+a1_shuffled,663_000,3,Material missing,singleton_663,663,V1,200,97,28,27,0.08247422680412371,4.641114395275937,False,False,False
+a1_shuffled,666_000,3,Material missing,singleton_666,666,V1,200,112,31,30,0.0625,4.8629095036540075,False,False,False
+a1_shuffled,66_000,6,corrosion,singleton_66,66,V2,197,41,8,7,0.1951219512195122,2.8250570309159553,False,False,False
+a1_shuffled,66_001,6,corrosion,singleton_66,66,V2,200,39,12,7,0.15384615384615385,3.401198540519581,False,False,False
+a1_shuffled,672_000,3,Material missing,singleton_672,672,V1,200,116,33,32,0.08620689655172414,4.847241185769268,False,False,False
+a1_shuffled,674_000,3,Material missing,singleton_674,674,V1,200,113,31,30,0.07079646017699115,4.7818945965123625,False,False,False
+a1_shuffled,675_000,3,Material missing,singleton_675,675,V1,200,121,32,31,0.06611570247933884,4.831792837885959,False,False,False
+a1_shuffled,678_000,3,Material missing,singleton_678,678,V1,200,122,31,30,0.05737704918032787,4.832217159026911,False,False,False
+a1_shuffled,682_000,3,Material missing,singleton_682,682,V2,200,20,5,5,0.4,2.0414460711655216,False,False,False
+a1_shuffled,683_000,3,Material missing,singleton_683,683,V1,195,39,8,8,0.20512820512820512,2.9177433361023155,False,False,False
+a1_shuffled,685_000,3,Material missing,singleton_685,685,V1,200,114,33,32,0.07894736842105263,4.83715997596551,False,False,False
+a1_shuffled,68_000,6,corrosion,singleton_68,68,V1,200,38,16,12,0.10526315789473684,3.852676197426378,False,False,False
+a1_shuffled,68_001,6,corrosion,singleton_68,68,V1,200,42,15,13,0.19047619047619047,3.6037599113796235,False,False,False
+a1_shuffled,694_000,3,Material missing,singleton_694,694,V1,200,102,28,27,0.058823529411764705,4.665400902044216,False,False,False
+a1_shuffled,696_000,3,Material missing,singleton_696,696,V1,200,33,7,7,0.24242424242424243,2.696395832832271,False,False,False
+a1_shuffled,697_000,3,Material missing,singleton_697,697,V1,200,80,24,24,0.0875,4.3797498590461785,False,False,False
+a1_shuffled,698_000,3,Material missing,singleton_698,698,V1,200,105,27,26,0.06666666666666667,4.605148347527371,False,False,False
+a1_shuffled,699_000,3,Material missing,near_0027,699,V1,200,99,27,27,0.08080808080808081,4.554023823844988,False,False,False
+a1_shuffled,69_000,3,Material missing,singleton_69,69,V1,200,44,11,11,0.1590909090909091,3.3278304835959145,False,False,False
+a1_shuffled,69_001,6,corrosion,singleton_69,69,V1,200,61,15,11,0.13114754098360656,3.7960980029962537,False,False,False
+a1_shuffled,705_000,3,Material missing,singleton_705,705,V1,200,114,34,33,0.06140350877192982,4.9214550678465345,False,False,False
+a1_shuffled,707_000,3,Material missing,singleton_707,707,V3,200,20,5,5,0.3,2.1477309221191607,False,False,False
+a1_shuffled,708_000,3,Material missing,singleton_708,708,V1,200,100,29,28,0.1,4.649304161129035,False,False,False
+a1_shuffled,710_000,3,Material missing,singleton_710,710,V1,200,111,28,27,0.06306306306306306,4.689014769526559,False,False,False
+a1_shuffled,711_000,3,Material missing,singleton_711,711,V1,200,117,28,27,0.06837606837606838,4.6669746062939605,False,False,False
+a1_shuffled,714_000,3,Material missing,singleton_714,714,V1,200,108,32,31,0.08333333333333333,4.752191211022912,False,False,False
+a1_shuffled,715_000,3,Material missing,singleton_715,715,V2,200,43,9,8,0.20930232558139536,2.9944409167884105,False,False,False
+a1_shuffled,716_000,3,Material missing,singleton_716,716,V3,200,26,5,5,0.3076923076923077,2.2092512591731315,False,False,False
+a1_shuffled,719_000,3,Material missing,singleton_719,719,V2,195,39,9,8,0.1794871794871795,3.0124482979880383,False,False,False
+a1_shuffled,71_000,6,corrosion,singleton_71,71,V1,200,35,14,12,0.14285714285714285,3.6827347174280893,False,False,False
+a1_shuffled,71_001,6,corrosion,singleton_71,71,V1,151,39,13,11,0.1794871794871795,3.4739867595265,False,False,False
+a1_shuffled,71_002,6,corrosion,singleton_71,71,V1,200,38,12,11,0.13157894736842105,3.4816271061076973,False,False,False
+a1_shuffled,71_003,6,corrosion,singleton_71,71,V1,139,28,16,8,0.14285714285714285,3.8248629576173565,False,False,False
+a1_shuffled,71_004,6,corrosion,singleton_71,71,V1,198,51,18,10,0.17647058823529413,3.8142262052948617,False,False,False
+a1_shuffled,71_005,6,corrosion,singleton_71,71,V1,200,11,7,3,0.2727272727272727,2.5949066182439395,False,False,False
+a1_shuffled,71_006,6,corrosion,singleton_71,71,V1,199,18,9,4,0.4444444444444444,2.614369445886757,False,False,False
+a1_shuffled,721_000,3,Material missing,singleton_721,721,V1,200,117,31,30,0.05982905982905983,4.787843917833074,False,False,False
+a1_shuffled,724_000,3,Material missing,near_0064,724,V2,141,22,9,9,0.18181818181818182,3.061482186720776,False,False,False
+a1_shuffled,726_000,3,Material missing,singleton_726,726,V1,200,117,33,32,0.06837606837606838,4.860546801821763,False,False,False
+a1_shuffled,727_000,3,Material missing,singleton_727,727,V1,200,98,27,26,0.061224489795918366,4.681064824485526,False,False,False
+a1_shuffled,728_000,3,Material missing,singleton_728,728,V3,200,23,5,5,0.30434782608695654,2.246147155726413,False,False,False
+a1_shuffled,731_000,3,Material missing,singleton_731,731,V3,200,17,5,5,0.4117647058823529,2.0923953729624785,False,False,False
+a1_shuffled,732_000,3,Material missing,singleton_732,732,V2,199,29,8,7,0.20689655172413793,2.836284771572721,False,False,False
+a1_shuffled,733_000,3,Material missing,singleton_733,733,V1,200,106,30,29,0.0660377358490566,4.728040531542365,False,False,False
+a1_shuffled,734_000,3,Material missing,singleton_734,734,V1,200,92,30,29,0.07608695652173914,4.722858119940186,False,False,False
+a1_shuffled,735_000,3,Material missing,near_0027,735,V1,200,105,32,32,0.08571428571428572,4.824560789454191,False,False,False
+a1_shuffled,737_000,3,Material missing,singleton_737,737,V1,200,102,28,27,0.06862745098039216,4.641809020117091,False,False,False
+a1_shuffled,73_000,6,corrosion,singleton_73,73,V4,200,34,7,6,0.2647058823529412,2.659658798780212,False,False,False
+a1_shuffled,741_000,3,Material missing,singleton_741,741,V1,200,35,9,9,0.2,2.991776047998298,False,False,False
+a1_shuffled,744_000,3,Material missing,singleton_744,744,V1,200,102,30,29,0.06862745098039216,4.6485463924037,False,False,False
+a1_shuffled,745_000,3,Material missing,singleton_745,745,V2,200,37,8,7,0.1891891891891892,2.867691124707485,False,False,False
+a1_shuffled,747_000,3,Material missing,singleton_747,747,V3,199,0,0,0,,,False,False,False
+a1_shuffled,748_000,3,Material missing,singleton_748,748,V1,200,115,29,28,0.0782608695652174,4.6871414390597455,False,False,False
+a1_shuffled,751_000,3,Material missing,singleton_751,751,V2,169,31,9,8,0.1935483870967742,3.011008214982762,False,False,False
+a1_shuffled,754_000,3,Material missing,singleton_754,754,V1,200,101,30,29,0.0594059405940594,4.784877642472036,False,False,False
+a1_shuffled,756_000,3,Material missing,singleton_756,756,V1,200,74,17,17,0.12162162162162163,3.88203651751551,False,False,False
+a1_shuffled,760_000,3,Material missing,singleton_760,760,V1,200,35,6,6,0.2571428571428571,2.507894275177697,False,False,False
+a1_shuffled,761_000,3,Material missing,singleton_761,761,V1,187,33,7,7,0.21212121212121213,2.7298322888250053,False,False,False
+a1_shuffled,762_000,3,Material missing,singleton_762,762,V1,200,63,17,17,0.12698412698412698,3.938462908041592,False,False,False
+a1_shuffled,764_000,3,Material missing,singleton_764,764,V1,200,45,8,8,0.2,2.860661363131719,False,False,False
+a1_shuffled,765_000,3,Material missing,singleton_765,765,V2,147,22,6,6,0.2727272727272727,2.4874280738530175,False,False,False
+a1_shuffled,766_000,3,Material missing,singleton_766,766,V1,172,6,2,2,0.6666666666666666,0.9182958340544896,False,False,False
+a1_shuffled,769_000,3,Material missing,near_0074,769,V1,199,4,1,1,1.0,-0.0,True,False,True
+a1_shuffled,770_000,3,Material missing,singleton_770,770,V1,200,49,8,8,0.1836734693877551,2.955976558914489,False,False,False
+a1_shuffled,771_000,3,Material missing,singleton_771,771,V3,107,1,1,1,1.0,-0.0,True,True,False
+a1_shuffled,777_000,4,Tears,near_0014,777,V1,199,91,22,22,0.10989010989010989,4.185744273843032,False,False,False
+a1_shuffled,779_000,4,Tears,singleton_779,779,V1,174,47,15,15,0.1276595744680851,3.8090760853519403,False,False,False
+a1_shuffled,780_000,4,Tears,singleton_780,780,V1,200,81,21,20,0.1111111111111111,4.153864282649986,False,False,False
+a1_shuffled,782_000,4,Tears,singleton_782,782,V1,196,62,14,14,0.11290322580645161,3.664709668082026,False,False,False
+a1_shuffled,784_000,4,Tears,singleton_784,784,V1,197,74,21,20,0.13513513513513514,4.17710459703505,False,False,False
+a1_shuffled,786_000,4,Tears,singleton_786,786,V1,197,54,14,14,0.14814814814814814,3.664260594949004,False,False,False
+a1_shuffled,787_000,4,Tears,singleton_787,787,V3,121,2,1,1,1.0,-0.0,True,False,True
+a1_shuffled,788_000,4,Tears,singleton_788,788,V1,200,59,14,14,0.13559322033898305,3.6346906682925075,False,False,False
+a1_shuffled,790_000,4,Tears,singleton_790,790,V1,200,59,14,14,0.15254237288135594,3.666671448996665,False,False,False
+a1_shuffled,791_000,4,Tears,singleton_791,791,V1,200,62,14,14,0.11290322580645161,3.694048788298839,False,False,False
+a1_shuffled,794_000,4,Tears,singleton_794,794,V1,200,83,22,21,0.10843373493975904,4.2202640577912165,False,False,False
+a1_shuffled,796_000,4,Tears,near_0014,796,V3,199,2,1,1,1.0,-0.0,True,False,True
+a1_shuffled,798_000,4,Tears,singleton_798,798,V1,200,84,21,20,0.11904761904761904,4.207328662020721,False,False,False
+a1_shuffled,799_000,4,Tears,singleton_799,799,V1,200,72,18,17,0.125,4.011047356531681,False,False,False
+a1_shuffled,800_000,4,Tears,singleton_800,800,V2,200,9,2,2,0.5555555555555556,0.9910760598382222,False,False,False
+a1_shuffled,802_000,4,Tears,singleton_802,802,V1,200,10,2,2,0.5,1.0,False,False,False
+a1_shuffled,804_000,4,Tears,singleton_804,804,V1,200,76,17,17,0.11842105263157894,3.9722832313660543,False,False,False
+a1_shuffled,805_000,4,Tears,singleton_805,805,V1,200,71,16,15,0.1267605633802817,3.809574810268591,False,False,False
+a1_shuffled,807_000,4,Tears,singleton_807,807,V1,173,47,16,16,0.1276595744680851,3.7322752241937103,False,False,False
+a1_shuffled,808_000,4,Tears,singleton_808,808,V1,200,94,26,25,0.06382978723404255,4.522599629038958,False,False,False
+a1_shuffled,809_000,4,Tears,singleton_809,809,V1,200,91,26,25,0.08791208791208792,4.481205184979888,False,False,False
+a1_shuffled,810_000,4,Tears,singleton_810,810,V1,200,76,17,16,0.10526315789473684,3.989180764460058,False,False,False
+a1_shuffled,812_000,4,Tears,singleton_812,812,V2,194,8,2,2,0.625,0.954434002924965,False,False,False
+a1_shuffled,813_000,4,Tears,singleton_813,813,V1,200,104,23,22,0.08653846153846154,4.4048684164130805,False,False,False
+a1_shuffled,814_000,4,Tears,singleton_814,814,V1,200,12,3,3,0.5,1.5,False,False,False
+a1_shuffled,815_000,4,Tears,singleton_815,815,V1,200,0,0,0,,,False,False,False
+a1_shuffled,816_000,4,Tears,singleton_816,816,V2,200,7,2,2,0.5714285714285714,0.9852281360342515,False,False,False
+a1_shuffled,817_000,4,Tears,singleton_817,817,V1,200,70,19,18,0.08571428571428572,4.095683518430935,False,False,False
+a1_shuffled,818_000,4,Tears,singleton_818,818,V1,200,88,24,23,0.10227272727272728,4.364522926637499,False,False,False
+a1_shuffled,821_000,4,Tears,singleton_821,821,V1,200,103,24,23,0.06796116504854369,4.459004262345697,False,False,False
+a1_shuffled,822_000,4,Tears,singleton_822,822,V1,193,10,2,2,0.7,0.8812908992306927,False,False,False
+a1_shuffled,826_000,4,Tears,singleton_826,826,V1,200,70,17,17,0.2,3.842552661526184,False,False,False
+a1_shuffled,828_000,4,Tears,singleton_828,828,V1,200,103,25,24,0.08737864077669903,4.458555959699013,False,False,False
+a1_shuffled,82_000,2,Dent,singleton_82,82,V1,200,0,0,0,,,False,False,False
+a1_shuffled,830_000,4,Tears,singleton_830,830,V1,200,14,3,3,0.5,1.2958363892911637,False,False,False
+a1_shuffled,831_000,4,Tears,singleton_831,831,V1,200,78,19,18,0.08974358974358974,4.109595099696452,False,False,False
+a1_shuffled,832_000,4,Tears,singleton_832,832,V1,200,6,2,2,0.8333333333333334,0.6500224216483541,False,False,False
+a1_shuffled,833_000,4,Tears,near_0014,833,V1,198,77,19,19,0.11688311688311688,4.077378261976823,False,False,False
+a1_shuffled,834_000,4,Tears,singleton_834,834,V1,200,84,20,19,0.16666666666666666,4.074731377825175,False,False,False
+a1_shuffled,835_000,4,Tears,singleton_835,835,V1,142,14,6,6,0.2857142857142857,2.41379956460568,False,False,False
+a1_shuffled,838_000,4,Tears,singleton_838,838,V1,200,6,2,2,0.8333333333333334,0.6500224216483541,False,False,False
+a1_shuffled,844_000,2,Dent,near_0082,844,V2,200,20,4,4,0.4,1.9219280948873623,False,False,False
+a1_shuffled,847_000,2,Dent,singleton_847,847,V1,200,95,21,19,0.08421052631578947,4.304793647075235,False,False,False
+a1_shuffled,850_000,2,Dent,singleton_850,850,V1,200,23,4,4,0.34782608695652173,1.9531525874151108,False,False,False
+a1_shuffled,852_000,2,Dent,singleton_852,852,V1,200,110,27,26,0.10909090909090909,4.573875455171755,False,False,False
+a1_shuffled,854_000,2,Dent,singleton_854,854,V1,200,88,21,19,0.09090909090909091,4.257854495411217,False,False,False
+a1_shuffled,855_000,2,Dent,singleton_855,855,V1,200,112,29,27,0.07142857142857142,4.671064080278805,False,False,False
+a1_shuffled,856_000,2,Dent,singleton_856,856,V1,200,23,4,4,0.2608695652173913,1.9957808479084207,False,False,False
+a1_shuffled,860_000,2,Dent,near_0082,860,V1,200,61,15,14,0.11475409836065574,3.7863111088665793,False,False,False
+a1_shuffled,861_000,2,Dent,singleton_861,861,V1,200,84,23,21,0.08333333333333333,4.402144471265963,False,False,False
+a1_shuffled,862_000,2,Dent,singleton_862,862,V1,200,81,20,19,0.08641975308641975,4.248809769955059,False,False,False
+a1_shuffled,866_000,2,Dent,singleton_866,866,V1,200,81,21,19,0.08641975308641975,4.257931684413824,False,False,False
+a1_shuffled,868_000,2,Dent,singleton_868,868,V4,198,36,7,6,0.2222222222222222,2.641159378118496,False,False,False
+a1_shuffled,86_000,1,Crack,singleton_86,86,V2,200,0,0,0,,,False,False,False
+a1_shuffled,871_000,2,Dent,singleton_871,871,V2,199,19,4,4,0.3684210526315789,1.9312952802328744,False,False,False
+a1_shuffled,874_000,2,Dent,singleton_874,874,V2,200,0,0,0,,,False,False,False
+a1_shuffled,875_000,2,Dent,singleton_875,875,V1,200,65,18,17,0.1076923076923077,4.0152680529534095,False,False,False
+a1_shuffled,879_000,2,Dent,singleton_879,879,V4,199,46,7,6,0.1956521739130435,2.7109278485913184,False,False,False
+a1_shuffled,883_000,2,Dent,singleton_883,883,V1,200,30,8,8,0.16666666666666666,2.920763631426055,False,False,False
+a1_shuffled,884_000,2,Dent,singleton_884,884,V1,200,135,33,30,0.05185185185185185,4.925342105760017,False,False,False
+a1_shuffled,885_000,2,Dent,singleton_885,885,V4,181,20,4,3,0.4,1.8464393446710154,False,False,False
+a1_shuffled,886_000,2,Dent,singleton_886,886,V4,197,35,7,6,0.2571428571428571,2.5422733756882714,False,False,False
+a1_shuffled,886_001,2,Dent,singleton_886,886,V4,178,23,5,3,0.34782608695652173,2.0942444351471337,False,False,False
+a1_shuffled,887_000,2,Dent,singleton_887,887,V4,200,35,7,6,0.34285714285714286,2.4104682884857804,False,False,False
+a1_shuffled,889_000,2,Dent,singleton_889,889,V2,196,18,4,4,0.2777777777777778,1.9910760598382224,False,False,False
+a1_shuffled,890_000,2,Dent,singleton_890,890,V3,200,0,0,0,,,False,False,False
+a1_shuffled,891_000,2,Dent,singleton_891,891,V1,200,24,4,4,0.4583333333333333,1.8489879890775278,False,False,False
+a1_shuffled,892_000,2,Dent,singleton_892,892,V1,200,93,27,26,0.08602150537634409,4.594341376262674,False,False,False
+a1_shuffled,893_000,2,Dent,near_0074,893,V1,197,50,10,10,0.2,3.1746939516467023,False,False,False
+a1_shuffled,894_000,2,Dent,singleton_894,894,V2,200,11,1,1,1.0,-0.0,True,False,True
+a1_shuffled,895_000,2,Dent,singleton_895,895,V2,171,13,3,3,0.46153846153846156,1.5262349099495225,False,False,False
+a1_shuffled,898_000,2,Dent,singleton_898,898,V1,200,40,10,10,0.15,3.213460684196428,False,False,False
+a1_shuffled,899_000,2,Dent,near_0084,899,V1,200,81,20,20,0.08641975308641975,4.143277900737245,False,False,False
+a1_shuffled,89_000,6,corrosion,singleton_89,89,V1,200,49,10,9,0.20408163265306123,3.1559820499304125,False,False,False
+a1_shuffled,89_001,6,corrosion,singleton_89,89,V1,200,61,16,12,0.16393442622950818,3.74263693858904,False,False,False
+a1_shuffled,8_000,6,corrosion,singleton_8,8,V1,200,54,19,12,0.16666666666666666,4.008521529500539,False,False,False
+a1_shuffled,900_000,2,Dent,near_0017,900,V4,197,28,6,6,0.2857142857142857,2.41379956460568,False,False,False
+a1_shuffled,901_000,2,Dent,near_0010,901,V1,200,96,24,24,0.09375,4.4296799855344275,False,False,False
+a1_shuffled,902_000,2,Dent,near_0017,902,V4,199,10,4,4,0.5,1.7609640474436812,False,False,False
+a1_shuffled,902_001,2,Dent,near_0017,902,V4,200,9,3,3,0.3333333333333333,1.584962500721156,False,False,False
+a1_shuffled,903_000,2,Dent,near_0084,903,V1,200,88,25,25,0.10227272727272728,4.413644335690157,False,False,False
+a1_shuffled,904_000,2,Dent,near_0085,904,V1,200,106,26,24,0.08490566037735849,4.568268248063865,False,False,False
+a1_shuffled,912_000,2,Dent,singleton_912,912,V4,200,5,1,1,1.0,-0.0,True,False,True
+a1_shuffled,917_000,2,Dent,singleton_917,917,V4,200,27,6,4,0.25925925925925924,2.4869136732791306,False,False,False
+a1_shuffled,918_000,2,Dent,singleton_918,918,V1,194,100,30,29,0.06,4.778430254961468,False,False,False
+a1_shuffled,919_000,2,Dent,singleton_919,919,V1,200,106,26,25,0.07547169811320754,4.588447167756484,False,False,False
+a1_shuffled,91_000,6,corrosion,singleton_91,91,V1,200,50,11,11,0.18,3.3563002608758223,False,False,False
+a1_shuffled,921_000,2,Dent,singleton_921,921,V1,200,101,25,25,0.07920792079207921,4.468849019466568,False,False,False
+a1_shuffled,923_000,2,Dent,singleton_923,923,V3,200,20,3,3,0.5,1.5,False,False,False
+a1_shuffled,927_000,2,Dent,singleton_927,927,V1,200,105,27,25,0.0761904761904762,4.589239719648905,False,False,False
+a1_shuffled,929_000,2,Dent,singleton_929,929,V1,200,125,32,29,0.064,4.829450238640476,False,False,False
+a1_shuffled,930_000,2,Dent,singleton_930,930,V1,161,67,20,18,0.1044776119402985,4.1518377965991,False,False,False
+a1_shuffled,931_000,2,Dent,singleton_931,931,V2,200,16,4,4,0.3125,1.9772170014624826,False,False,False
+a1_shuffled,935_000,2,Dent,singleton_935,935,V1,200,114,32,31,0.06140350877192982,4.825018941007141,False,False,False
+a1_shuffled,936_000,2,Dent,singleton_936,936,V1,200,105,23,22,0.08571428571428572,4.444320319780191,False,False,False
+a1_shuffled,938_000,2,Dent,singleton_938,938,V1,200,73,19,18,0.0821917808219178,4.143285566364963,False,False,False
+a1_shuffled,93_000,6,corrosion,singleton_93,93,V1,200,32,11,10,0.15625,3.3317475629608078,False,False,False
+a1_shuffled,941_000,2,Dent,singleton_941,941,V1,200,87,25,23,0.09195402298850575,4.478943249404841,False,False,False
+a1_shuffled,942_000,2,Dent,singleton_942,942,V4,199,28,5,4,0.2857142857142857,2.1820058147602133,False,False,False
+a1_shuffled,943_000,2,Dent,singleton_943,943,V1,200,24,7,7,0.20833333333333334,2.736440501696144,False,False,False
+a1_shuffled,945_000,2,Dent,singleton_945,945,V2,200,14,3,3,0.42857142857142855,1.5566567074628228,False,False,False
+a1_shuffled,947_000,2,Dent,near_0062,947,V1,164,58,19,18,0.1206896551724138,3.9717725396748538,False,False,False
+a1_shuffled,949_000,2,Dent,singleton_949,949,V2,193,15,3,3,0.4,1.5655962303576019,False,False,False
+a1_shuffled,950_000,2,Dent,singleton_950,950,V1,200,42,10,10,0.16666666666666666,3.201078735588117,False,False,False
+a1_shuffled,952_000,2,Dent,singleton_952,952,V1,200,88,21,19,0.10227272727272728,4.272662836183717,False,False,False
+a1_shuffled,953_000,2,Dent,singleton_953,953,V1,200,23,4,4,0.391304347826087,1.7349112826910291,False,False,False
+a1_shuffled,954_000,2,Dent,singleton_954,954,V3,200,22,4,4,0.3181818181818182,1.9290908511188092,False,False,False
+a1_shuffled,958_000,2,Dent,singleton_958,958,V1,193,39,10,10,0.15384615384615385,3.2724921300412766,False,False,False
+a1_shuffled,959_000,2,Dent,near_0014,959,V4,200,30,6,6,0.3,2.3587081964793706,False,False,False
+a1_shuffled,960_000,2,Dent,singleton_960,960,V1,200,100,28,27,0.07,4.644374471545718,False,False,False
+a1_shuffled,963_000,2,Dent,singleton_963,963,V1,200,117,30,28,0.08547008547008547,4.7225834731886325,False,False,False
+a1_shuffled,966_000,2,Dent,singleton_966,966,V1,200,128,35,32,0.09375,4.818447322419823,False,False,False
+a1_shuffled,968_000,2,Dent,singleton_968,968,V1,200,43,9,9,0.23255813953488372,2.942471966926574,False,False,False
+a1_shuffled,969_000,2,Dent,singleton_969,969,V1,200,115,31,30,0.06956521739130435,4.7590080695509664,False,False,False
+a1_shuffled,970_000,2,Dent,singleton_970,970,V1,197,84,22,20,0.08333333333333333,4.345846186108813,False,False,False
+a1_shuffled,971_000,2,Dent,near_0010,971,V1,200,81,21,21,0.07407407407407407,4.265017029544762,False,False,False
+a1_shuffled,974_000,2,Dent,near_0017,974,V3,186,19,4,4,0.5263157894736842,1.7229712791784755,False,False,False
+a1_shuffled,976_000,2,Dent,singleton_976,976,V3,200,21,3,3,0.47619047619047616,1.4937095464322434,False,False,False
+a1_shuffled,977_000,2,Dent,singleton_977,977,V2,192,11,1,1,1.0,-0.0,True,False,True
+a1_shuffled,981_000,2,Dent,near_0010,981,V1,200,85,22,22,0.08235294117647059,4.351439432001371,False,False,False
+a1_shuffled,984_000,2,Dent,singleton_984,984,V1,200,18,4,4,0.3888888888888889,1.8776402831734211,False,False,False
+a1_shuffled,985_000,2,Dent,singleton_985,985,V1,192,65,18,17,0.1076923076923077,4.031597191239875,False,False,False
+a1_shuffled,986_000,2,Dent,singleton_986,986,V1,200,95,22,21,0.08421052631578947,4.278281695200277,False,False,False
+a1_shuffled,98_000,6,corrosion,singleton_98,98,V2,106,5,3,3,0.6,1.3709505944546687,False,False,False
+a1_shuffled,98_001,6,corrosion,singleton_98,98,V2,200,37,8,7,0.21621621621621623,2.7683042056975893,False,False,False
+a1_shuffled,98_002,6,corrosion,singleton_98,98,V2,200,24,10,7,0.16666666666666666,3.1053885422075336,False,False,False
+a1_shuffled,98_003,6,corrosion,singleton_98,98,V2,200,33,10,6,0.18181818181818182,3.169415241148538,False,False,False
+a1_shuffled,98_004,6,corrosion,singleton_98,98,V2,200,37,14,5,0.13513513513513514,3.655833272240733,False,False,False
+a1_shuffled,98_005,6,corrosion,singleton_98,98,V2,200,25,8,5,0.28,2.723215692534584,False,False,False
+a1_shuffled,98_006,6,corrosion,singleton_98,98,V2,183,24,12,5,0.16666666666666666,3.470175521464345,False,False,False
+a1_shuffled,98_007,6,corrosion,singleton_98,98,V2,164,13,6,3,0.38461538461538464,2.345851989338261,False,False,False
+a1_shuffled,98_008,6,corrosion,singleton_98,98,V2,200,28,8,6,0.21428571428571427,2.900780708298527,False,False,False
+a1_shuffled,991_000,2,Dent,singleton_991,991,V1,180,94,24,23,0.0851063829787234,4.427755444508087,False,False,False
+a1_shuffled,995_000,2,Dent,singleton_995,995,V1,200,120,28,26,0.075,4.664224297380877,False,False,False
+a1_shuffled,996_000,2,Dent,singleton_996,996,V1,145,25,8,8,0.28,2.677405811425518,False,False,False
+a1_shuffled,997_000,2,Dent,singleton_997,997,V1,200,103,27,25,0.0970873786407767,4.560443252020776,False,False,False
+a1_shuffled,998_000,2,Dent,near_0017,998,V4,135,24,8,7,0.25,2.7049868557726664,False,False,False
+a1_shuffled,999_000,2,Dent,near_0085,999,V3,200,19,3,3,0.5263157894736842,1.359992492218488,False,False,False

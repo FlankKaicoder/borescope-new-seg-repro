@@ -1,0 +1,47 @@
+test_a0_invariant_and_a1_sensitive_with_fixed_marginals (tools.exp18.tests.test_model.ModelTests.test_a0_invariant_and_a1_sensitive_with_fixed_marginals) ... E:\github_repositories\borescope-exp18-storage-v2\tools\exp18\tests\test_model.py:69: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:836.)
+  self.assertAlmostEqual(float(a0_loss(head, a, n, weights)), float(a0_loss(head, a, n.flip(0), weights)), places=14)
+ok
+test_a1_zero_head_first_gradient_is_invariant (tools.exp18.tests.test_model.ModelTests.test_a1_zero_head_first_gradient_is_invariant) ... ok
+test_j1_has_no_state_head_and_no_n_traversal (tools.exp18.tests.test_model.ModelTests.test_j1_has_no_state_head_and_no_n_traversal) ... ok
+test_joint_n_gradient_buffers_empty_and_native_view (tools.exp18.tests.test_model.ModelTests.test_joint_n_gradient_buffers_empty_and_native_view) ... ok
+test_own_roi_pooling_precedes_permutation (tools.exp18.tests.test_model.ModelTests.test_own_roi_pooling_precedes_permutation) ... ok
+test_state_head_rng_bias_and_shared_initialization (tools.exp18.tests.test_model.ModelTests.test_state_head_rng_bias_and_shared_initialization) ... ok
+test_every_schedule_position (tools.exp18.tests.test_protocol.ProtocolTests.test_every_schedule_position) ... ok
+test_frozen_and_blocked (tools.exp18.tests.test_protocol.ProtocolTests.test_frozen_and_blocked) ... ok
+test_runtime_profiles_bind_their_own_horizon (tools.exp18.tests.test_protocol.ProtocolTests.test_runtime_profiles_bind_their_own_horizon) ... ok
+test_seed_prefix_and_extension (tools.exp18.tests.test_protocol.ProtocolTests.test_seed_prefix_and_extension) ... ok
+test_append_only_capacity_includes_every_epoch_and_checkpoint (tools.exp18.tests.test_recovery.RecoveryTests.test_append_only_capacity_includes_every_epoch_and_checkpoint) ... ok
+test_backend_policy_is_restored_with_full_state (tools.exp18.tests.test_recovery.RecoveryTests.test_backend_policy_is_restored_with_full_state) ... ok
+test_counter_and_binding_tampering_rejected (tools.exp18.tests.test_recovery.RecoveryTests.test_counter_and_binding_tampering_rejected) ... ok
+test_domain_gradient_stats_clip_and_empty_head (tools.exp18.tests.test_recovery.RecoveryTests.test_domain_gradient_stats_clip_and_empty_head) ... ok
+test_ema_requires_fresh_matching_activity (tools.exp18.tests.test_recovery.RecoveryTests.test_ema_requires_fresh_matching_activity) ... ok
+test_empty_active_empty_active_full_recovery (tools.exp18.tests.test_recovery.RecoveryTests.test_empty_active_empty_active_full_recovery) ... ok
+test_groups_and_native_export_filter (tools.exp18.tests.test_recovery.RecoveryTests.test_groups_and_native_export_filter) ... ok
+test_head_ema_freezes_while_native_ema_is_exact (tools.exp18.tests.test_recovery.RecoveryTests.test_head_ema_freezes_while_native_ema_is_exact) ... ok
+test_native_factory_rejected_before_construction (tools.exp18.tests.test_recovery.RecoveryTests.test_native_factory_rejected_before_construction) ... ok
+test_protocol_event_machine_complete_budget_and_callbacks (tools.exp18.tests.test_recovery.RecoveryTests.test_protocol_event_machine_complete_budget_and_callbacks) ... ok
+test_retained_lease_excludes_other_fds_and_processes_and_survives_failure (tools.exp18.tests.test_recovery.RecoveryTests.test_retained_lease_excludes_other_fds_and_processes_and_survives_failure) ... skipped 'Native flock backend requires Linux'
+test_stale_journal_is_rejected_before_attempt_reservation (tools.exp18.tests.test_recovery.RecoveryTests.test_stale_journal_is_rejected_before_attempt_reservation) ... ok
+test_uncommitted_orphan_and_torn_receipt_are_preserved_and_rejected (tools.exp18.tests.test_recovery.RecoveryTests.test_uncommitted_orphan_and_torn_receipt_are_preserved_and_rejected) ... ok
+test_lossless_masks_and_unsupported_probabilities (tools.exp18.tests.test_validation.ValidationTests.test_lossless_masks_and_unsupported_probabilities) ... ok
+test_native_callbacks_remain_unexecuted (tools.exp18.tests.test_validation.ValidationTests.test_native_callbacks_remain_unexecuted) ... ok
+test_native_greedy_identities (tools.exp18.tests.test_validation.ValidationTests.test_native_greedy_identities) ... ok
+test_synthetic_callback_restores_rng_flags_and_refuses_live_state_pollution (tools.exp18.tests.test_validation.ValidationTests.test_synthetic_callback_restores_rng_flags_and_refuses_live_state_pollution) ... ok
+test_synthetic_dump_empty_images_gt_mapping_and_exclusive_manifest (tools.exp18.tests.test_validation.ValidationTests.test_synthetic_dump_empty_images_gt_mapping_and_exclusive_manifest) ... ok
+test_artifact_delete_and_replace_blocked (tools.exp18.tests.test_guards.GuardTests.test_artifact_delete_and_replace_blocked) ... skipped 'Run through the guarded CPU CLI'
+test_cuda_transfer_and_initialization_rejected (tools.exp18.tests.test_guards.GuardTests.test_cuda_transfer_and_initialization_rejected) ... skipped 'Run through the guarded CPU CLI'
+test_future_entry_rejected_before_torch_import (tools.exp18.tests.test_guards.GuardTests.test_future_entry_rejected_before_torch_import) ... ok
+test_model_class_guard_and_unbound_checkpoint (tools.exp18.tests.test_guards.GuardTests.test_model_class_guard_and_unbound_checkpoint) ... skipped 'Run through the guarded CPU CLI'
+test_raw_and_historical_writes_rejected_before_open (tools.exp18.tests.test_guards.GuardTests.test_raw_and_historical_writes_rejected_before_open) ... skipped 'Run through the guarded CPU CLI'
+test_test_split_rejected_before_file_open (tools.exp18.tests.test_guards.GuardTests.test_test_split_rejected_before_file_open) ... skipped 'Run through the guarded CPU CLI'
+test_auxiliary_cpu_stochastic_operation_is_detected_without_rng_restore (tools.exp18.tests.test_bn.BatchNormTests.test_auxiliary_cpu_stochastic_operation_is_detected_without_rng_restore) ... ok
+test_detached_statistics_refused_by_connected_route (tools.exp18.tests.test_bn.BatchNormTests.test_detached_statistics_refused_by_connected_route) ... ok
+test_exception_restores_bn_method_flags_and_buffers (tools.exp18.tests.test_bn.BatchNormTests.test_exception_restores_bn_method_flags_and_buffers) ... ok
+test_uninitialized_cuda_rng_getters_are_never_called (tools.exp18.tests.test_bn.BatchNormTests.test_uninitialized_cuda_rng_getters_are_never_called) ... ok
+test_whole_a_batch_statistics_and_connected_derivatives (tools.exp18.tests.test_bn.BatchNormTests.test_whole_a_batch_statistics_and_connected_derivatives) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 73.848s
+
+OK (skipped=6)

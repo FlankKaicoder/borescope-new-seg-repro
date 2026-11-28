@@ -1,5 +1,9 @@
 # Project state
 
+## EXP18 V2 storage CPU acceptance (2026-11-28)
+
+`EXP18_STORAGE_REVISION_CPU_PASS_GPU_PENDING`。三臂 H200 永久完整状态共 9 份，训练期各臂另有最多两个滚动槽。V2 11 项 CPU 测试通过。H200 合成连续/中断恢复逐位一致，4,200 个逻辑更新、五次恢复、单次重算最多 105 步，160 模拟 VAL 无重复。封存账本补充覆盖完成。λ=null，真实 YOLO/CUDA/训练/VAL/TEST 均 0，正式容量 Gate 和真实 GPU 恢复待审。 [交接](../EXP18_STORAGE_V2_HANDOFF.md)。
+
 ## EXP18 CPU acceptance completed (2026-11-28)
 
 已整理[GPT独立审查完整报告](../EXP18_CPU_GPT_REVIEW_REPORT_20261128.md)，证据基点`2c3c3cb`。这是封存数据的文档汇总与比例计算，不是新实验；真实GPU入口、λ和正式训练Gate未改变。

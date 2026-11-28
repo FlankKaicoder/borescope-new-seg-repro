@@ -1,0 +1,442 @@
+{
+  "actual_budgets": {
+    "TEST": 0,
+    "VAL": 0,
+    "cuda_init": 0,
+    "data_replay": 0,
+    "gpu_compute": 0,
+    "real_checkpoint_load": 0,
+    "real_model": 0,
+    "real_model_backward": 0,
+    "real_model_forward": 0,
+    "real_training_update": 0
+  },
+  "analysis_and_report_sources": [
+    {
+      "bytes": 2506,
+      "path": "diagnostics/exp18_cpu/check_storage_v2_coverage.py",
+      "sha256": "87ac0e11ef145ae628ba2be31c2f763752489a108c5aa0d7e7159ae619eaed61"
+    },
+    {
+      "bytes": 4341,
+      "path": "diagnostics/exp18_cpu/storage_v2_capacity.py",
+      "sha256": "f29dd4813c006d0c6d70ebcd3c16c74d7d785ccccfb4eda6d3cb42d3bf1a7838"
+    },
+    {
+      "bytes": 13828,
+      "path": "diagnostics/exp18_cpu/coverage_supplement.py",
+      "sha256": "098d2548e0757f7eec27aa4c632ebc24632f00ffdd99ab7f820b6f25a2044400"
+    },
+    {
+      "bytes": 6526,
+      "path": "docs/exp18/EXP18_CHECKPOINT_STORAGE_REVISION_V2.md",
+      "sha256": "e273930a41aa6e69e4fb4155c0868a25f613a073787dbc05b484e75ece5f2bac"
+    },
+    {
+      "bytes": 7416,
+      "path": "docs/exp18/EXP18_GPU_ENGINEERING_PROTOCOL_DRAFT.md",
+      "sha256": "0e2bb2246e60367c4672bc49f029f17b3a911d773713e9da7172f9c21afb6b10"
+    },
+    {
+      "bytes": 3080,
+      "path": "EXP18_STORAGE_V2_HANDOFF.md",
+      "sha256": "12a6fd60c72ee2f5eb8a8d26d6ab1e23cc115becdb946180308effbef85b89cc"
+    }
+  ],
+  "base_commit": "11c514dea1fb3190f27c4881aa52660876b4b06a",
+  "formal_storage_gate": "PENDING",
+  "formal_training_authorized": false,
+  "implementation_commit": "cf021ba8449dc6871411ef9a6534bf7a009ccd1a",
+  "inputs": [
+    {
+      "bytes": 4588444,
+      "path": "results/exp18_cpu/full_replay_20261128/full_audit/steps.csv",
+      "sha256": "3283f8b0c61945fe76080dc899ca467d0af5dd796ee64a6516d8942df0d3438d"
+    },
+    {
+      "bytes": 3228,
+      "path": "results/exp18_cpu/full_replay_20261128/coverage/class_family_P3_coverage.csv",
+      "sha256": "752d8dc07d85d0a09fe46c6908cb601291e15376c0a4fcd0ddd485e1b38c7d98"
+    },
+    {
+      "bytes": 13979,
+      "path": "results/exp17_j2_repaired_seed42/formal_complete/summary/artifact_receipts.csv",
+      "sha256": "4511329a1f6e24ee8c40a79f5cb0109cd11c2b5dba1eeb171e1165367938ce63"
+    }
+  ],
+  "lambda_state": null,
+  "outputs": [
+    {
+      "bytes": 4118,
+      "path": "results/exp18_cpu/storage_v2/capacity.json",
+      "sha256": "e9fb7a39af2c1f8d86423f8a40967839496847d00d3fbbb0652efbf0c0cd2636"
+    },
+    {
+      "bytes": 10628,
+      "path": "results/exp18_cpu/storage_v2/coverage/coverage_class_version_p3_cross.csv",
+      "sha256": "2b556f0fcc38d7a8593b13ace395f024a66b1405e6133e03e9bf359e1d6195b4"
+    },
+    {
+      "bytes": 1189,
+      "path": "results/exp18_cpu/storage_v2/coverage/coverage_receipt.json",
+      "sha256": "5875470c69120e09cdbfc01ce0d68bfc0fed07d8ef919bcd989c4a24ec6928ab"
+    },
+    {
+      "bytes": 59320,
+      "path": "results/exp18_cpu/storage_v2/coverage/partner_diversity_by_anchor.csv",
+      "sha256": "fe8abca2add95db5280dec677c23f9dda0fa267f4ebbf1b3a62479bff1e72d66"
+    },
+    {
+      "bytes": 1054,
+      "path": "results/exp18_cpu/storage_v2/coverage/partner_diversity_summary_by_class.csv",
+      "sha256": "918e263ac2106b3a24db2bad70e658b4a05812893c126ce18f83fa32e7513f63"
+    },
+    {
+      "bytes": 111170,
+      "path": "results/exp18_cpu/storage_v2/coverage/partner_edges.csv",
+      "sha256": "ab8868f77072c70cb4a439fd3ad6e56f5c1b9e8c6ee379b9a721bb47de6d3c73"
+    },
+    {
+      "bytes": 345,
+      "path": "results/exp18_cpu/storage_v2/coverage/reference_reconciliation.json",
+      "sha256": "b2c9b723a643167aa45b99f2604c7f34759617100202271228bf9df3fed1a7f8"
+    },
+    {
+      "bytes": 959,
+      "path": "results/exp18_cpu/storage_v2/CPU_GUARDS_LOG.txt",
+      "sha256": "365684ce97542be59e89f014645380e6e80667a07c76743f09740c9b034d2a9f"
+    },
+    {
+      "bytes": 2797,
+      "path": "results/exp18_cpu/storage_v2/cpu_measurement.json",
+      "sha256": "b16e45d79e25a877385835d550213c53732ef6c7c1ef520276ec6d81338a7e8c"
+    },
+    {
+      "bytes": 6800,
+      "path": "results/exp18_cpu/storage_v2/CPU_REGRESSION_LOG.txt",
+      "sha256": "22256f17724c7b491d3de3ede69d93858c2bca82fa1eae9187231a49ac5cb6b9"
+    },
+    {
+      "bytes": 474,
+      "path": "results/exp18_cpu/storage_v2/CPU_ROTATION_FAULTS_LOG.txt",
+      "sha256": "24c894c84ef117c60d1f3c4bc6c11fd4847ae3d962567e8785e85f6b070f65c5"
+    },
+    {
+      "bytes": 1520,
+      "path": "results/exp18_cpu/storage_v2/CPU_TEST_LOG.txt",
+      "sha256": "1346b5d58b9665da17091da4b3ac10be1c8414b092903c7c1125b5a222108f10"
+    },
+    {
+      "bytes": 2431,
+      "path": "results/exp18_cpu/storage_v2/README.md",
+      "sha256": "865ec054dc9fd5aef8f6f71ca0f879853031e11ef423f0770560c82de233f72f"
+    },
+    {
+      "bytes": 240,
+      "path": "results/exp18_cpu/storage_v2/V2_NATIVE_GATE_LOG.txt",
+      "sha256": "2052b9391acfe92a6bcb6fcc2d84f4ba26d654ef326e0fa11c264900ca0acb4e"
+    }
+  ],
+  "schema": "EXP18_STORAGE_V2_DELIVERY_V1",
+  "sealed_external_inputs": [
+    {
+      "bytes": 215898884,
+      "file": "core.tar.gz",
+      "sha256": "0e4bd57cb5778f09f4de5c723e504199e0531b65a739f3711223385056b33463"
+    },
+    {
+      "file": "artifact_inventory.json",
+      "sha256": "851da2f8027cfea1e1ba85e92cc834b40ac7bd1f029d74c50574d3822d4324eb"
+    }
+  ],
+  "source_manifest": {
+    "files": [
+      {
+        "bytes": 3126,
+        "path": "configs/exp18/protocol_h100.json",
+        "sha256": "6ce837ae5a5649e8e849a845f704859504b76d469c7b7c352bbb8e2b2f96ebe7"
+      },
+      {
+        "bytes": 3127,
+        "path": "configs/exp18/protocol_h200.json",
+        "sha256": "154af0e31984fff710af578c46e7cd07ed7e8c39591d744107d35f6a8ae18e56"
+      },
+      {
+        "bytes": 1082,
+        "path": "configs/exp18/runtime_h100.json",
+        "sha256": "18c6e1581a08a575192cd1c4b72cb6f0644e1dfe2c5c6e05e74e5b5ddaad46f3"
+      },
+      {
+        "bytes": 1082,
+        "path": "configs/exp18/runtime_h200.json",
+        "sha256": "06b827fa1b502fc47ffd0d0878b19a180ad2705f216e7d34bf1b5424f4db5d70"
+      },
+      {
+        "bytes": 934,
+        "path": "configs/exp18/runtime_storage_v2_h100.json",
+        "sha256": "dc00dc4a541c1149b2a36556059d2a05b26a2806c5837b0a84b100fb4e89ad52"
+      },
+      {
+        "bytes": 935,
+        "path": "configs/exp18/runtime_storage_v2_h200.json",
+        "sha256": "fd1de0a518a57df295378d633750ba48904cf5775b0b4b26675a565c70eeeef8"
+      },
+      {
+        "bytes": 25073,
+        "path": "tools/exp14/a11_full_train.py",
+        "sha256": "6a0128d7cc01f3a4ef4d3c6c21f2fbd5df601ac3a1dc4695f4bf1fe37808514e"
+      },
+      {
+        "bytes": 20055,
+        "path": "tools/exp14/a11_smoke_train.py",
+        "sha256": "001775b15e8b3027e49e8f9fc25640af11b5dc86b5da76ac91df793bfcac1a29"
+      },
+      {
+        "bytes": 7698,
+        "path": "tools/exp15/regions.py",
+        "sha256": "683f467f817dcf41ce50036c640ed3b45548abde867667dc1066222d1cafd65a"
+      },
+      {
+        "bytes": 25794,
+        "path": "tools/exp17/engineering/augmentation.py",
+        "sha256": "b5564c4c1f8a9a5c52b4737182a4eb65565a6044511d55a4780cf7265be4b8f5"
+      },
+      {
+        "bytes": 8250,
+        "path": "tools/exp17/engineering/bn.py",
+        "sha256": "c51b6f29efd6c0b50cb3e27b73cb474f4c2bdbb25cefd2d4f5112ebdad977d42"
+      },
+      {
+        "bytes": 20366,
+        "path": "tools/exp17/engineering/data.py",
+        "sha256": "8104d5c9ea4ed6e2fa5f50c6936e1651a04975c9956fc0bac7436101dcfa7593"
+      },
+      {
+        "bytes": 12132,
+        "path": "tools/exp17/engineering/model.py",
+        "sha256": "47f68ac89800efd203f96663816cc0eb241a5d564a1e1ce16d125a4a816b3948"
+      },
+      {
+        "bytes": 240,
+        "path": "tools/exp18/__init__.py",
+        "sha256": "bc388f19ecf052e78267e71ae1325d1ec63f858322f2bbe645d8288ab7d6e75d"
+      },
+      {
+        "bytes": 4400,
+        "path": "tools/exp18/__main__.py",
+        "sha256": "1dc033cfaf6d5b62c181d2dfb9def4ef8df19787e4064a57140af3d4b5c40e4d"
+      },
+      {
+        "bytes": 8092,
+        "path": "tools/exp18/bn.py",
+        "sha256": "83a930082560977f8baa7286579d91fe009acbb6ed505bb61dee04a3080f1cad"
+      },
+      {
+        "bytes": 17391,
+        "path": "tools/exp18/checkpoint.py",
+        "sha256": "2054caca7c5c148760ee295188d715ad54886943e3f2a52fc96b9e80de66892d"
+      },
+      {
+        "bytes": 2002,
+        "path": "tools/exp18/common.py",
+        "sha256": "ac0275e37fd3a70f22f8ce7244ee70f68626ea81c2baa9ca203deed2c5ba8d7a"
+      },
+      {
+        "bytes": 26745,
+        "path": "tools/exp18/coverage_report.py",
+        "sha256": "836a9db9242f8b8ef8d85d02a84ef9db61d9930364f9f5db3369df48847a60aa"
+      },
+      {
+        "bytes": 25353,
+        "path": "tools/exp18/data.py",
+        "sha256": "dc11bcfaa64188da1371916c6fb691de359b6d8f871d2686131a06d7adf0891a"
+      },
+      {
+        "bytes": 1575,
+        "path": "tools/exp18/deploy.py",
+        "sha256": "8a63eabf313ec0f87f9c79d6bfe738b8066942bdccfc10c366e982284dd1a51a"
+      },
+      {
+        "bytes": 15244,
+        "path": "tools/exp18/execution.py",
+        "sha256": "d51acc5d7c2fb84869d80c90a23390b88d06f5625ff2f9247db836ff3535f1f8"
+      },
+      {
+        "bytes": 3370,
+        "path": "tools/exp18/exports.py",
+        "sha256": "5e8fb4a91e6949e614c4481ee7fd9972010e62885d1f16da21635a1307d7c1db"
+      },
+      {
+        "bytes": 2693,
+        "path": "tools/exp18/fixed_batch_audit.py",
+        "sha256": "2965a2cba23ae087a073638543c2a6a0f05a5b569114a0fbad75dd31145804cf"
+      },
+      {
+        "bytes": 8462,
+        "path": "tools/exp18/geometry.py",
+        "sha256": "01e809fd0851fffe9b4796005f8b1693738bfb4ce9c33c251a5e8e777145ab0e"
+      },
+      {
+        "bytes": 12888,
+        "path": "tools/exp18/guards.py",
+        "sha256": "2c4bec263d0c2ae4cb0f1e6dc463febbda86535fd70170c9ffeb56bf39a1e1ad"
+      },
+      {
+        "bytes": 8640,
+        "path": "tools/exp18/model.py",
+        "sha256": "9a9701a53229e5a0dbb6a618a6f2fbe7cd8b8c29ec53fd8f971d6e258fea22d2"
+      },
+      {
+        "bytes": 31351,
+        "path": "tools/exp18/native_adapter.py",
+        "sha256": "57d64d4826c1e32d2d0068cc6660d6f85d6920d0d38b17f604d6b964bd1b8da8"
+      },
+      {
+        "bytes": 8030,
+        "path": "tools/exp18/optimizer.py",
+        "sha256": "16fe969553475f2571525dcb57fd4af48872a19dad1e093a50a9e7cd419ddf88"
+      },
+      {
+        "bytes": 21757,
+        "path": "tools/exp18/pairing.py",
+        "sha256": "06ea102069e0105c51a3f3bd8747591ac6cbf160c658f0c878c308dc490ca0d8"
+      },
+      {
+        "bytes": 4826,
+        "path": "tools/exp18/prepare_context.py",
+        "sha256": "04790fa27729eca330ca2f6f39518c045ce2a7ffa94c2aa4db61e2280cc1e91b"
+      },
+      {
+        "bytes": 2029,
+        "path": "tools/exp18/project_history.py",
+        "sha256": "0c0f4d995d329ef172e0021616c0ccf40285dcbce0ad5722c7b9b758786ef808"
+      },
+      {
+        "bytes": 4500,
+        "path": "tools/exp18/protocol.py",
+        "sha256": "2526cb20ee7fed59a7798c4ffd4d5ffd4c77a16996bc61e7a89cffe2ac4950ef"
+      },
+      {
+        "bytes": 1680,
+        "path": "tools/exp18/remote_launch.py",
+        "sha256": "18cfe3c8423d225ae4cf4adbd9c9f7a009202714f7827d113b709f063ec8a7d4"
+      },
+      {
+        "bytes": 825,
+        "path": "tools/exp18/remote_supervise.py",
+        "sha256": "6d56548a1ee6ed96660a5dbb17433ec92ff4e930d32715a2d8644e4da2b0957d"
+      },
+      {
+        "bytes": 27838,
+        "path": "tools/exp18/replay.py",
+        "sha256": "331bb80aff0d4a2905b71b581ea9295d1e0a380e740f9e53950887562ad6f0c8"
+      },
+      {
+        "bytes": 1713,
+        "path": "tools/exp18/runtime_config.py",
+        "sha256": "dd53f6a9a0e7063d77cfa9b018b8d2c66405ab2ad50e0c27714a4e49726a8291"
+      },
+      {
+        "bytes": 1838,
+        "path": "tools/exp18/schedule.py",
+        "sha256": "d32d0b23fa7a42ecdb147260205391452dfd62b05a3f6f5559985338ffcbd85b"
+      },
+      {
+        "bytes": 10333,
+        "path": "tools/exp18/storage_assets.py",
+        "sha256": "a04da6c4b8fd02146e66f19ec7ed5a01ba2d2f524e46441d13fea59a76b7d0b0"
+      },
+      {
+        "bytes": 11957,
+        "path": "tools/exp18/storage_journal.py",
+        "sha256": "eb092cbcfbd7b3a35299c1e8c7b4a50337e3d64fda0e10f193cd71d0dca31036"
+      },
+      {
+        "bytes": 3907,
+        "path": "tools/exp18/storage_policy.py",
+        "sha256": "5cf691fcd756be5a54b49dbf3ef876d41b5a0429ea002e90be967c203cb5c8b3"
+      },
+      {
+        "bytes": 23780,
+        "path": "tools/exp18/storage_v2.py",
+        "sha256": "dc2f255a8949fe2e7146d37d2804c20204e1e0e1a953cb233e713a68ea6a2ee3"
+      },
+      {
+        "bytes": 51,
+        "path": "tools/exp18/tests/__init__.py",
+        "sha256": "3200dfb78c6b99dafbc6300ef89d0719e8fe1535d4f0f24958f060b444a3d149"
+      },
+      {
+        "bytes": 4583,
+        "path": "tools/exp18/tests/test_bn.py",
+        "sha256": "15cfbca88d66457f359a8f894378dbf196d3562e3a8234dee2634059327b1470"
+      },
+      {
+        "bytes": 8646,
+        "path": "tools/exp18/tests/test_coverage_report.py",
+        "sha256": "34072e3391b1c9a0259c3e7a6e59501e3c880cfbe6d53b00e1e8bd38af57e5ec"
+      },
+      {
+        "bytes": 10373,
+        "path": "tools/exp18/tests/test_data.py",
+        "sha256": "82bbd183541eee986556b7f19a463094e3a5cc6cf93cba2d7ab69a9f6df477e6"
+      },
+      {
+        "bytes": 6385,
+        "path": "tools/exp18/tests/test_geometry.py",
+        "sha256": "2305e4fe882f70ca0b87ef876fb3a3e79f92d13cf16be9938f65da5876f38d52"
+      },
+      {
+        "bytes": 2681,
+        "path": "tools/exp18/tests/test_guards.py",
+        "sha256": "e0740c1bb32e43a4698ea7302c5629e7c4233d5dfd511f25bcc71ac15bb876d1"
+      },
+      {
+        "bytes": 6497,
+        "path": "tools/exp18/tests/test_model.py",
+        "sha256": "2c7d3d86ceb2d177580594d1efaf99d0b2ef6f560507f81667655706fa64fb75"
+      },
+      {
+        "bytes": 10342,
+        "path": "tools/exp18/tests/test_pairing.py",
+        "sha256": "a660710ed7f983eea748b5f6c3112c91d76e8a77437bb97ef53c1e3eee9014a2"
+      },
+      {
+        "bytes": 2433,
+        "path": "tools/exp18/tests/test_protocol.py",
+        "sha256": "4e39d7d525903b002be1313cf1fc5172ff4fb236225e8dca964a34d023852086"
+      },
+      {
+        "bytes": 20972,
+        "path": "tools/exp18/tests/test_recovery.py",
+        "sha256": "1cb6c2591232990f7f8e21f1d77be50d91e956b48a430fd0c527d38be2870b8a"
+      },
+      {
+        "bytes": 23050,
+        "path": "tools/exp18/tests/test_storage_v2.py",
+        "sha256": "fcda58626199b61e8fb6e86e6f80ff8dc7d1f9ce3de22812a5fd8934df83dc86"
+      },
+      {
+        "bytes": 2185,
+        "path": "tools/exp18/tests/test_storage_v2_rotation_faults.py",
+        "sha256": "8dd183496185bf9904129a1e7a0d25846f818ceb56e2009802dcb6e81ff33ef0"
+      },
+      {
+        "bytes": 4780,
+        "path": "tools/exp18/tests/test_validation.py",
+        "sha256": "e1e683c90b7ab048373a5b8ef79ed9d3646209402d4e7368eba25e36f60c3584"
+      },
+      {
+        "bytes": 15421,
+        "path": "tools/exp18/validation.py",
+        "sha256": "cef1490437318414ec7a3001c08edbfb03d13923cbdc66f5ecff68f4ca9ac231"
+      },
+      {
+        "bytes": 2450,
+        "path": "tools/exp18/watch_cpu.py",
+        "sha256": "207956ac2104e0e2b19296bc0d0d01f47ba0ff586a4547371b1992aabf2e107b"
+      }
+    ],
+    "sha256": "e0e7a110a1058a4c055c5f2e5563e3bdbef60d0d491ee1f5274faf2a4453b379"
+  }
+}

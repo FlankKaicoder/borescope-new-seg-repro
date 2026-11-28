@@ -1,0 +1,11 @@
+test_artifact_delete_and_replace_blocked (tools.exp18.tests.test_guards.GuardTests.test_artifact_delete_and_replace_blocked) ... ok
+test_cuda_transfer_and_initialization_rejected (tools.exp18.tests.test_guards.GuardTests.test_cuda_transfer_and_initialization_rejected) ... ok
+test_future_entry_rejected_before_torch_import (tools.exp18.tests.test_guards.GuardTests.test_future_entry_rejected_before_torch_import) ... ok
+test_model_class_guard_and_unbound_checkpoint (tools.exp18.tests.test_guards.GuardTests.test_model_class_guard_and_unbound_checkpoint) ... ok
+test_raw_and_historical_writes_rejected_before_open (tools.exp18.tests.test_guards.GuardTests.test_raw_and_historical_writes_rejected_before_open) ... ok
+test_test_split_rejected_before_file_open (tools.exp18.tests.test_guards.GuardTests.test_test_split_rejected_before_file_open) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.032s
+
+OK

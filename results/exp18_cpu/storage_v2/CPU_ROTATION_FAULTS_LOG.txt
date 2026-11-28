@@ -1,0 +1,7 @@
+test_retirement_failure_keeps_all_valid_generations (tools.exp18.tests.test_storage_v2_rotation_faults.RotationFaults.test_retirement_failure_keeps_all_valid_generations) ... ok
+test_two_corrupt_rolling_slots_refuse_fallback_to_initial (tools.exp18.tests.test_storage_v2_rotation_faults.RotationFaults.test_two_corrupt_rolling_slots_refuse_fallback_to_initial) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 25.284s
+
+OK

@@ -1,0 +1,151 @@
+{
+  "cache_tensor_bytes_excluding_serialization": {
+    "A_per_epoch": 906342400,
+    "N_per_image": 4940800,
+    "single_builder_adjacent_epochs": 9368166400,
+    "single_builder_recovery_nonadjacent_epochs": 9580620800,
+    "three_arms_two_epochs": 7898572800
+  },
+  "checkpoint_examples_using_historical_max_bytes": {
+    "15": 700067415,
+    "16_including_publication": 746738576,
+    "9": 420040449
+  },
+  "excluded_from_subtotal": [
+    "Real VAL prediction bound, 480 passes",
+    "Real checkpoint and model-only output sizes",
+    "Real journal/diagnostic row and attempt upper bounds",
+    "Cache serialization/masks/metadata beyond counted tensors",
+    "Retention and failure-evidence working space",
+    "Real current filesystem free bytes, durability and inode headroom"
+  ],
+  "historical_best_bundle_max_bytes": 23428973,
+  "historical_full_state_max_bytes": 46671161,
+  "historical_server_free_estimate_bytes": 48318382080,
+  "old_architecture": {
+    "old_all_epoch_image_tensor_floor_GiB": 646.087646484375,
+    "old_combined_floor_GiB": 1210.439125888,
+    "old_full_checkpoint_parameter_and_moment_floor_GiB": 564.351479404
+  },
+  "partial_subtotal_using_historical_and_synthetic_proxies": {
+    "categories": {
+      "VAL_predictions": 0,
+      "best": 70286919,
+      "best_publish_headroom": 23428973,
+      "checkpoint_publish_headroom": 46671161,
+      "checkpoints": 700067415,
+      "diagnostics": 215280,
+      "epoch_cache_peak": 9580620800,
+      "journal": 54599475,
+      "last": 70286922,
+      "recovery_and_evidence": 0
+    },
+    "checkpoint_count": 15,
+    "max_replay_updates": 105,
+    "peak_bytes": 10546176945,
+    "required_free_bytes": 19136111537,
+    "reserve_bytes": 8589934592
+  },
+  "permanent_periodic_comparison_using_historical_max": [
+    {
+      "checkpoint_bytes_all_arms": 5740552803,
+      "checkpoints_all_arms": 123,
+      "checkpoints_per_arm": 41,
+      "interval_epochs": 5,
+      "max_replay_updates": 105
+    },
+    {
+      "checkpoint_bytes_all_arms": 2940283143,
+      "checkpoints_all_arms": 63,
+      "checkpoints_per_arm": 21,
+      "interval_epochs": 10,
+      "max_replay_updates": 210
+    },
+    {
+      "checkpoint_bytes_all_arms": 1540148313,
+      "checkpoints_all_arms": 33,
+      "checkpoints_per_arm": 11,
+      "interval_epochs": 20,
+      "max_replay_updates": 420
+    },
+    {
+      "checkpoint_bytes_all_arms": 1260121347,
+      "checkpoints_all_arms": 27,
+      "checkpoints_per_arm": 9,
+      "interval_epochs": 25,
+      "max_replay_updates": 525
+    },
+    {
+      "checkpoint_bytes_all_arms": 700067415,
+      "checkpoints_all_arms": 15,
+      "checkpoints_per_arm": 5,
+      "interval_epochs": 50,
+      "max_replay_updates": 1050
+    }
+  ],
+  "sources": {
+    "artifact_receipts.csv": "4511329a1f6e24ee8c40a79f5cb0109cd11c2b5dba1eeb171e1165367938ce63",
+    "coverage_receipt.json": "5875470c69120e09cdbfc01ce0d68bfc0fed07d8ef919bcd989c4a24ec6928ab",
+    "cpu_measurement.json": "b16e45d79e25a877385835d550213c53732ef6c7c1ef520276ec6d81338a7e8c"
+  },
+  "status": "FORMAL_STORAGE_GATE_PENDING",
+  "synthetic_real_serialized_sizes": {
+    "best_weight": 5129,
+    "checkpoint_payload_peak_during_rotation": 196837,
+    "checkpoints": [
+      29909,
+      41668,
+      41668,
+      41668,
+      41668,
+      41668,
+      41732,
+      41732,
+      41732,
+      41732,
+      41732,
+      41732,
+      41668,
+      41668,
+      41668,
+      41732,
+      41732,
+      41732,
+      41732,
+      41732,
+      41732,
+      41732,
+      41732,
+      41732,
+      41732,
+      41732,
+      41732,
+      41668,
+      41668,
+      41668,
+      41732,
+      41732,
+      41732,
+      41732,
+      41732,
+      41732,
+      41668,
+      41668,
+      41668,
+      41732,
+      41732
+    ],
+    "diagnostic_maximum": 1794,
+    "journal_bytes_per_row_average": 1915.5694137459216,
+    "journal_rows": 9501,
+    "journal_total": 18199825,
+    "last_exports": [
+      5065,
+      5065
+    ],
+    "maximum_epoch_packets": 767,
+    "two_live_plus_builder_cache_payload_peak": 2301,
+    "update_row_max": 3683,
+    "validation_per_pass_upper": 1899
+  }
+}

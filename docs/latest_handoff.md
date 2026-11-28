@@ -1,4 +1,8 @@
-# 当前交接：EXP18 CPU验收完成，GPU待Gate
+# 当前交接：EXP18 V2 存储 CPU 验收，GPU 待 Gate
+
+`EXP18_STORAGE_REVISION_CPU_PASS_GPU_PENDING`。三臂 H200 永久完整状态共 9 份，训练期各臂另有最多两个滚动槽。V2 11 项 CPU 测试通过。H200 合成连续/中断恢复逐位一致，4,200 个逻辑更新、五次恢复、单次重算最多 105 步，160 模拟 VAL 无重复。封存账本补充覆盖完成。λ=null，真实 YOLO/CUDA/训练/VAL/TEST 均 0，正式容量 Gate 和真实 GPU 恢复待审。 [V2 权威交接](../EXP18_STORAGE_V2_HANDOFF.md)。
+
+# 历史交接：EXP18 CPU验收完成，GPU待Gate
 
 GPT独立审查请使用[完整报告](../EXP18_CPU_GPT_REVIEW_REPORT_20261128.md)，包含逐类覆盖、尺度/版本族偏移、真实GPU待建设与待验清单及审查问题。报告整理未启动新实验；以下验收状态和授权边界保持不变。
 

@@ -27,6 +27,17 @@ N 以一次收集去重后的同批 N 图像、运行一次 `model.0..16` 为一
 - 初始化比较 COCO transfer、七类原生初值、J1 投影、两状态头初值、全局 RNG 和 BN。Smoke 固定 2071（空）、2064（N 复用）、2079（尾批），三臂各做 FP32/AMP。常规 18 A、8 N。另在 2064 两种精度各一次 A/A，合计额外 2 A、2 N。Component 为 18 主、8 辅、2 A/A、4 个预先选定 BN 局部 VJP，对应 32 次。Joint 只有常规 18 次。
 - 检查 S、权重、A/N 槽、P3、Connected BN 导数、True/Shuffled 只改 N 索引、A 的 BN 一次更新、N 不写 BN/RNG。用诊断系数 1 检查线性叠加，正式 λ 仍为 null。候选容差为 FP32 独立 VJP/联合梯度相对 L2 ≤ 1e-4，AMP 对 FP32 的损失相对差 ≤ 1%、梯度相对 L2 ≤ 5%、余弦 ≥ .99。身份、游标和非更新路径用严格字节相等。容差须随阶段审批冻结。
 
+## 封存参考身份
+
+A 数据归档为 `E:/autodlwenjian/exp17/r5/cache-01.tar.gz`，SHA-256 为 `2b37f87c1972689b6d59bbbf41269d386b0cba4bfde2f87b05550f52ce5aacab`，九个 A 包均来自 `epoch_098`。历史 J1 参考根为 `/root/autodl-tmp/exp15_jc_formal_seed42_20261115/j1`。
+
+| 参考 | 文件 | SHA-256 |
+|---|---|---|
+| J1 E5 | `step_0105.pt` | `09c9b216ba24c73c14629057dae4078fc029c9404ed5f9be83db880604cbb1ea` |
+| J1 E50 | `step_1050.pt` | `48d7231546d9030edb9d15eeb5af9a475591a3d15f29058eda18c21d318afab0` |
+| J1 E100 | `last.pt` | `902fbc1efa4693e2601c162c76fb3736b38036d7eb0473438fe84317bb7895f5` |
+| 原生 COCO | 锁定的初始化权重 | `55ed65c56c91713d23e8402371c6c49a6fd84f257f7dce452e8d70e41dcbe152` |
+
 ## 共同 λ 标定规则
 
 固定 TRAIN 批 2059、2060、2064、2068、2076、2079。模型状态为 J1 MASTER E5、E50、E100，fresh COCO 作为额外初始状态诊断。固定白名单校验历史文件 SHA 后只恢复 MASTER/BN/投影，统一使用独立初始化的同一状态头，不恢复历史 optimizer 或训练位置。

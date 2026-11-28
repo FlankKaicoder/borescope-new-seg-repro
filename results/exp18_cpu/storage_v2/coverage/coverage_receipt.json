@@ -1,0 +1,29 @@
+{
+  "K": 100867,
+  "N_image_replays": 20470,
+  "S": 22437,
+  "anchor_rows": 521,
+  "archive_sha256": "0e4bd57cb5778f09f4de5c723e504199e0531b65a739f3711223385056b33463",
+  "binding_sha256": "68aa155ea740173b58ea3a1e612f29c4828fb41f29d80b796697da5016b5c5ac",
+  "cross_rows": 145,
+  "csv_sha256": {
+    "coverage_class_version_p3_cross.csv": "2b556f0fcc38d7a8593b13ace395f024a66b1405e6133e03e9bf359e1d6195b4",
+    "partner_diversity_by_anchor.csv": "fe8abca2add95db5280dec677c23f9dda0fa267f4ebbf1b3a62479bff1e72d66",
+    "partner_diversity_summary_by_class.csv": "918e263ac2106b3a24db2bad70e658b4a05812893c126ce18f83fa32e7513f63",
+    "partner_edges.csv": "ab8868f77072c70cb4a439fd3ad6e56f5c1b9e8c6ee379b9a721bb47de6d3c73"
+  },
+  "edges": 6265,
+  "inventory_sha256": "851da2f8027cfea1e1ba85e92cc834b40ac7bd1f029d74c50574d3822d4324eb",
+  "max_N_slots_single_epoch": 131,
+  "max_N_slots_three_adjacent_epochs": 363,
+  "max_N_slots_two_adjacent_epochs": 249,
+  "status": "PASS_4200_SEALED_METADATA_STEPS",
+  "steps_sha256": "3283f8b0c61945fe76080dc899ca467d0af5dd796ee64a6516d8942df0d3438d",
+  "zero_budget": {
+    "TEST": 0,
+    "VAL": 0,
+    "model": 0,
+    "pixels": 0,
+    "replay": 0
+  }
+}

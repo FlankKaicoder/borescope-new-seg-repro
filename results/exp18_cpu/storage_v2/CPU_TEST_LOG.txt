@@ -1,0 +1,14 @@
+test_amp_skip_and_validation_mutation_hold (tools.exp18.tests.test_storage_v2.StorageV2Tests.test_amp_skip_and_validation_mutation_hold) ... ok
+test_cache_rebuild_equivalence_and_reject_altered_content (tools.exp18.tests.test_storage_v2.StorageV2Tests.test_cache_rebuild_equivalence_and_reject_altered_content) ... ok
+test_corrupt_checkpoint_and_binding_hold_before_resume (tools.exp18.tests.test_storage_v2.StorageV2Tests.test_corrupt_checkpoint_and_binding_hold_before_resume) ... ok
+test_fsync_failure_keeps_old_checkpoint_and_orphan (tools.exp18.tests.test_storage_v2.StorageV2Tests.test_fsync_failure_keeps_old_checkpoint_and_orphan) ... ok
+test_full_h200_uninterrupted_and_recovered_are_identical (tools.exp18.tests.test_storage_v2.StorageV2Tests.test_full_h200_uninterrupted_and_recovered_are_identical) ... ok
+test_interrupted_val_and_nonfinite_do_not_publish_a_false_commit (tools.exp18.tests.test_storage_v2.StorageV2Tests.test_interrupted_val_and_nonfinite_do_not_publish_a_false_commit) ... ok
+test_orphan_and_truncated_journal_hold (tools.exp18.tests.test_storage_v2.StorageV2Tests.test_orphan_and_truncated_journal_hold) ... ok
+test_profile_and_single_writer (tools.exp18.tests.test_storage_v2.StorageV2Tests.test_profile_and_single_writer) ... ok
+test_repeat_skip_budget_and_chain_rejected (tools.exp18.tests.test_storage_v2.StorageV2Tests.test_repeat_skip_budget_and_chain_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 554.800s
+
+OK

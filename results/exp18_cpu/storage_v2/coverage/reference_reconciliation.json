@@ -1,0 +1,9 @@
+{
+  "K_unique_groups": 327,
+  "S_unique_groups": 316,
+  "edge_rows_verified": 6265,
+  "old_cross_sha256": "752d8dc07d85d0a09fe46c6908cb601291e15376c0a4fcd0ddd485e1b38c7d98",
+  "positive_cross_rows_equal_previous": 52,
+  "status": "PASS",
+  "verified_coverage_receipt_sha256": "5875470c69120e09cdbfc01ce0d68bfc0fed07d8ef919bcd989c4a24ec6928ab"
+}
