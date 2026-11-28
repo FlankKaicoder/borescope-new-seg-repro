@@ -1,0 +1,26 @@
+{
+  "byte_exact_git_paths": 77,
+  "inherited_files_with_windows_CRLF_normalization": [
+    {
+      "git_blob_bytes": 24666,
+      "git_raw_sha256": "d555b91193105b04e46952753c5c1db60143d4dcaac7547014a8c462702390f6",
+      "path": "tools/exp14/a11_full_train.py",
+      "windows_checkout_sha256": "6a0128d7cc01f3a4ef4d3c6c21f2fbd5df601ac3a1dc4695f4bf1fe37808514e"
+    },
+    {
+      "git_blob_bytes": 19695,
+      "git_raw_sha256": "345a86f660061a72a6498949b4cb0290c551f3f68e5cd0ed3de9f3348e4c5b5a",
+      "path": "tools/exp14/a11_smoke_train.py",
+      "windows_checkout_sha256": "001775b15e8b3027e49e8f9fc25640af11b5dc86b5da76ac91df793bfcac1a29"
+    },
+    {
+      "git_blob_bytes": 7540,
+      "git_raw_sha256": "a3c9f78e855348327b8a707afc879056f2d9ae89666481b59f5b72af865b687e",
+      "path": "tools/exp15/regions.py",
+      "windows_checkout_sha256": "683f467f817dcf41ce50036c640ed3b45548abde867667dc1066222d1cafd65a"
+    }
+  ],
+  "paths": 80,
+  "status": "PASS",
+  "verified_sha_manifest": "d3935e9421f5e2bc14dc2a90cc0baf4ca1cc406731bdb3b44cc89d4044f0c928"
+}
